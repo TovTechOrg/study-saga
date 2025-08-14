@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Menu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar Menu -->
+        <div class="sidebar">
+            <div class="menu-container">
+                <h1 class="game-title">GAME MENU</h1>
+                <div class="menu-buttons">
+                    <button class="menu-btn start-btn" onclick="startGame()">
+                        <span class="btn-text">START GAME</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    
+                    <button class="menu-btn options-btn" onclick="openOptions()">
+                        <span class="btn-text">OPTIONS</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    
+                    <button class="menu-btn cancel-btn" onclick="cancelGame()">
+                        <span class="btn-text">CANCEL</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <div class="content-area">
+                <div class="welcome-text">
+                    <h2>Welcome to the Game</h2>
+                    <p>Select an option from the menu to begin your adventure!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Options Modal -->
+        <div id="optionsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Game Options</h2>
+                <div class="options-form">
+                    <div class="option-group">
+                        <label for="difficulty">Difficulty:</label>
+                        <select id="difficulty">
+                            <option value="Easy">Easy</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                    </div>
+                    
+                    <div class="option-group">
+                        <label for="soundEnabled">Sound:</label>
+                        <input type="checkbox" id="soundEnabled" checked>
+                    </div>
+                    
+                    <div class="option-group">
+                        <label for="musicVolume">Music Volume:</label>
+                        <input type="range" id="musicVolume" min="0" max="100" value="70">
+                        <span id="musicVolumeValue">70%</span>
+                    </div>
+                    
+                    <div class="option-group">
+                        <label for="sfxVolume">SFX Volume:</label>
+                        <input type="range" id="sfxVolume" min="0" max="100" value="80">
+                        <span id="sfxVolumeValue">80%</span>
+                    </div>
+                    
+                    <button class="save-btn" onclick="saveOptions()">Save Options</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
