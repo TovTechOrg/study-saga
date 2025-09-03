@@ -1,0 +1,180 @@
+{
+  "keepers": [
+    { "name": "Bio-Bear", "hp": 120, "cap": 20, "abilities": ["Ferment Fury", "Honey Shield"] },
+    { "name": "Focus Fox", "hp": 80, "cap": 30, "abilities": ["Sharp Mind", "Quick Paw"] },
+    { "name": "Clever Cat", "hp": 90, "cap": 28, "abilities": ["Night Stalk", "Pounce Strike"] },
+    { "name": "Quantum Quokka", "hp": 100, "cap": 25, "abilities": ["Wave Jump", "Probability Pounce"] }
+  ],
+  "enemies": [
+    { "name": "Mitochondrial Misconception", "hp": 130, "attack": 18 },
+    { "name": "Misconception Golem", "hp": 150, "attack": 15 },
+    { "name": "Forgetfulness Fog", "hp": 110, "attack": 12 },
+    { "name": "Distractor Daemon", "hp": 95, "attack": 20 }
+  ],
+  "syllabus": [
+    {
+      "questions": [
+        {
+          "type": "multiple_choice_single",
+          "text": "What organelle converts sugar into energy in cells?",
+          "options": [
+            { "text": "Mitochondria", "isCorrect": true, "feedback": "The mitochondria shrieks! Energy stolen! EMOTIONAL DAMAGE to me!" },
+            { "text": "Nucleus", "isCorrect": false, "feedback": "Wrong! Your ignorance empowers me! Take EMOTIONAL DAMAGE!" },
+            { "text": "Ribosome", "isCorrect": false, "feedback": "Nope! Proteins, not energy! I cackle with power!" },
+            { "text": "Chloroplast", "isCorrect": false, "feedback": "Photosynthesis is not ATP production here! You fuel my glee!" },
+            { "text": "Golgi Apparatus", "isCorrect": false, "feedback": "Wrong! Packaging only! I smirk at your failure!" },
+            { "text": "Cell Membrane", "isCorrect": false, "feedback": "Barrier, not energy. Your defeat feeds me emotionally!" }
+          ]
+        },
+        {
+          "type": "multiple_choice_multiple",
+          "text": "Which are prokaryotic organisms?",
+          "options": [
+            { "text": "Bacteria", "isCorrect": true, "feedback": "Correct! My plans thwarted! EMOTIONAL DAMAGE to me!" },
+            { "text": "Archaea", "isCorrect": true, "feedback": "Right! Your knowledge bites back! EMOTIONAL DAMAGE!" },
+            { "text": "Humans", "isCorrect": false, "feedback": "Fool! Humans are eukaryotes! I gloat!" },
+            { "text": "Fungi", "isCorrect": false, "feedback": "Wrong! Eukaryotic! You empower me!" },
+            { "text": "Amoeba", "isCorrect": false, "feedback": "Eukaryotic single cell. I revel in your failure!" },
+            { "text": "Viruses", "isCorrect": false, "feedback": "Non-living, nothing prokaryotic here. My delight grows!" }
+          ]
+        },
+        {
+          "type": "multiple_choice_single",
+          "text": "Which macromolecule stores genetic information?",
+          "options": [
+            { "text": "DNA", "isCorrect": true, "feedback": "Correct! You pierce my lies! EMOTIONAL DAMAGE to me!" },
+            { "text": "Protein", "isCorrect": false, "feedback": "Wrong! Proteins are effectors, not info carriers! I jeer!" },
+            { "text": "Carbohydrate", "isCorrect": false, "feedback": "Nope! Energy, not heredity. My glee intensifies!" },
+            { "text": "Lipid", "isCorrect": false, "feedback": "Fatty failure! I relish your ignorance!" },
+            { "text": "RNA", "isCorrect": false, "feedback": "Not DNA! Nice try, but I smirk!" },
+            { "text": "Vitamin", "isCorrect": false, "feedback": "Micronutrients won't save you. I chuckle!" }
+          ]
+        },
+        {
+          "type": "multiple_choice_single",
+          "text": "Which blood cells fight infections?",
+          "options": [
+            { "text": "White Blood Cells", "isCorrect": true, "feedback": "Correct! I shudder! EMOTIONAL DAMAGE to me!" },
+            { "text": "Red Blood Cells", "isCorrect": false, "feedback": "Nope! They carry oxygen. My condescension grows!" },
+            { "text": "Platelets", "isCorrect": false, "feedback": "Clotting only! I gloat at your error!" },
+            { "text": "Plasma", "isCorrect": false, "feedback": "Fluid alone won’t fight. Your failure feeds me!" },
+            { "text": "Lymph Nodes", "isCorrect": false, "feedback": "Part of the system, but not the fighters. I smirk!" },
+            { "text": "Bone Marrow", "isCorrect": false, "feedback": "Produces cells, but not active fighters. I jeer!" }
+          ]
+        },
+        {
+          "type": "multiple_choice_single",
+          "text": "Which part of a neuron sends signals away from the cell body?",
+          "options": [
+            { "text": "Axon", "isCorrect": true, "feedback": "Correct! EMOTIONAL DAMAGE to me! My neurons tremble!" },
+            { "text": "Dendrite", "isCorrect": false, "feedback": "Nope! Receives signals. I cackle at your misfire!" },
+            { "text": "Nucleus", "isCorrect": false, "feedback": "Not the brain of the neuron! I jeer!" },
+            { "text": "Synapse", "isCorrect": false, "feedback": "Where signals cross, not leave. I delight in your mistake!" },
+            { "text": "Myelin", "isCorrect": false, "feedback": "Insulation, not signaling. Your error empowers me!" },
+            { "text": "Axon Terminal", "isCorrect": false, "feedback": "Endings are not the path away. I smirk!" }
+          ]
+        },
+        {
+          "type": "multiple_choice_multiple",
+          "text": "Select all examples of fungi.",
+          "options": [
+            { "text": "Mushroom", "isCorrect": true, "feedback": "Correct! EMOTIONAL DAMAGE to me!" },
+            { "text": "Yeast", "isCorrect": true, "feedback": "Yes! I hiss in despair!" },
+            { "text": "Bread Mold", "isCorrect": true, "feedback": "Right! EMOTIONAL DAMAGE inflicted!" },
+            { "text": "Algae", "isCorrect": false, "feedback": "Wrong! Not a fungus! I cackle!" },
+            { "text": "Bacteria", "isCorrect": false, "feedback": "Non-fungal life! I delight!" },
+            { "text": "Plant", "isCorrect": false, "feedback": "Nope! Kingdom Plantae! Your brilliance haunts me!" }
+          ]
+        },
+        {
+          "type": "multiple_choice_single",
+          "text": "Which biomolecule forms enzymes?",
+          "options": [
+            { "text": "Proteins", "isCorrect": true, "feedback": "Correct! EMOTIONAL DAMAGE to me! I groan!" },
+            { "text": "Carbohydrates", "isCorrect": false, "feedback": "Nope! Energy storage only. I mock!" },
+            { "text": "Lipids", "isCorrect": false, "feedback": "Fats, not catalysts! I cackle!" },
+            { "text": "Nucleic Acids", "isCorrect": false, "feedback": "Information, not function! EMOTIONAL DAMAGE to me!" },
+            { "text": "Vitamins", "isCorrect": false, "feedback": "Micronutrient folly! I laugh!" },
+            { "text": "Minerals", "isCorrect": false, "feedback": "Mineral disaster! I snicker!" }
+          ]
+        },
+        {
+          "type": "multiple_choice_single",
+          "text": "Which process allows bacteria to exchange genetic material?",
+          "options": [
+            { "text": "Conjugation", "isCorrect": true, "feedback": "Correct! EMOTIONAL DAMAGE to me!" },
+            { "text": "Mitosis", "isCorrect": false, "feedback": "Cell division, not exchange! I jeer!" },
+            { "text": "Meiosis", "isCorrect": false, "feedback": "Gametes only! Your failure delights me!" },
+            { "text": "Binary Fission", "isCorrect": false, "feedback": "Replication, not sharing! I smirk!" },
+            { "text": "Transpiration", "isCorrect": false, "feedback": "Water transport? Ha! EMOTIONAL DAMAGE to me!" },
+            { "text": "Photosynthesis", "isCorrect": false, "feedback": "Energy capture, not DNA sharing. I revel in your misstep!" }
+          ]
+        },
+        {
+          "type": "multiple_choice_single",
+          "text": "Which kingdom do ants belong to?",
+          "options": [
+            { "text": "Animalia", "isCorrect": true, "feedback": "Correct! EMOTIONAL DAMAGE to me!" },
+            { "text": "Plantae", "isCorrect": false, "feedback": "Wrong! Photosynthesis won’t save you. I smirk!" },
+            { "text": "Fungi", "isCorrect": false, "feedback": "Mushrooms? Not ants! I cackle!" },
+            { "text": "Protista", "isCorrect": false, "feedback": "Single-celled fools! Not ants! EMOTIONAL DAMAGE!" },
+            { "text": "Archaea", "isCorrect": false, "feedback": "Ancient microbes, not insects! I laugh!" },
+            { "text": "Bacteria", "isCorrect": false, "feedback": "Wrong! I delight in your ignorance!" }
+          ]
+        }
+      ]
+    },
+    {
+      "questions": [
+        {
+          "type": "multiple_choice_single",
+          "text": "What is 12 × 8?",
+          "options": [
+            { "text": "96", "isCorrect": true, "feedback": "Correct! EMOTIONAL DAMAGE to me!" },
+            { "text": "88", "isCorrect": false, "feedback": "Wrong! My delight grows!" },
+            { "text": "104", "isCorrect": false, "feedback": "Nope! I smirk at your failure!" },
+            { "text": "100", "isCorrect": false, "feedback": "Incorrect! EMOTIONAL DAMAGE inflicted!" },
+            { "text": "92", "isCorrect": false, "feedback": "Wrong again! I cackle!" },
+            { "text": "98", "isCorrect": false, "feedback": "Close, but incorrect! I gloat!" }
+          ]
+        },
+        {
+          "type": "multiple_choice_multiple",
+          "text": "Which numbers are prime?",
+          "options": [
+            { "text": "2", "isCorrect": true, "feedback": "Correct! EMOTIONAL DAMAGE to me!" },
+            { "text": "3", "isCorrect": true, "feedback": "Yes! EMOTIONAL DAMAGE!" },
+            { "text": "4", "isCorrect": false, "feedback": "Wrong! My delight intensifies!" },
+            { "text": "5", "isCorrect": true, "feedback": "Correct! EMOTIONAL DAMAGE inflicted!" },
+            { "text": "6", "isCorrect": false, "feedback": "Not prime! I cackle!" },
+            { "text": "7", "isCorrect": true, "feedback": "Yes! EMOTIONAL DAMAGE to me!" }
+          ]
+        },
+        {
+          "type": "multiple_choice_single",
+          "text": "Solve for x: 2x + 5 = 13",
+          "options": [
+            { "text": "4", "isCorrect": true, "feedback": "Correct! EMOTIONAL DAMAGE to me!" },
+            { "text": "5", "isCorrect": false, "feedback": "Wrong! I cackle!" },
+            { "text": "6", "isCorrect": false, "feedback": "Nope! EMOTIONAL DAMAGE!" },
+            { "text": "3", "isCorrect": false, "feedback": "Incorrect! I smirk!" },
+            { "text": "2", "isCorrect": false, "feedback": "Fail! I rejoice!" },
+            { "text": "7", "isCorrect": false, "feedback": "Nope! I gloat!" }
+          ]
+        },
+        {
+          "type": "multiple_choice_single",
+          "text": "What is the square root of 144?",
+          "options": [
+            { "text": "12", "isCorrect": true, "feedback": "Correct! EMOTIONAL DAMAGE to me!" },
+            { "text": "14", "isCorrect": false, "feedback": "Wrong! I cackle!" },
+            { "text": "16", "isCorrect": false, "feedback": "Incorrect! My glee rises!" },
+            { "text": "10", "isCorrect": false, "feedback": "Nope! I smirk!" },
+            { "text": "11", "isCorrect": false, "feedback": "Fail! EMOTIONAL DAMAGE!" },
+            { "text": "13", "isCorrect": false, "feedback": "Wrong! I gloat!" }
+          ]
+        }
+      ]
+    }
+  ]
+}
