@@ -15,10 +15,13 @@ class Question {
 }
 
 class KnowledgeKeeper {
-  constructor(name, hp, cap, abilities = []) {
+  constructor(name, hp, stamina, damage, speed, defense, abilities = []) {
     this.name = name;
     this.hp = hp;
-    this.cap = cap;
+    this.stamina = stamina;
+    this.damage = damage;
+    this.speed = speed;
+    this.defense = defense;
     this.abilities = abilities;
   }
 }
@@ -57,7 +60,9 @@ function toJson(obj) {
 
 function fromJson(cls, jsonStr) {
   const data = JSON.parse(jsonStr);
-  if (cls === KnowledgeKeeper) return new KnowledgeKeeper(data.name, data.hp, data.cap, data.abilities);
+  if (cls === KnowledgeKeeper) return new KnowledgeKeeper(
+    data.name, data.hp, data.stamina, data.damage, data.speed, data.defense, data.abilities
+  );
   if (cls === Enemy) return new Enemy(data.name, data.hp, data.stats, data.effects);
   if (cls === Question) return new Question(data.type, data.text, data.options.map(o => new Option(o.text, o.isCorrect, o.feedback)));
   if (cls === Syllabus) return new Syllabus(data.name, data.questions.map(q => fromJson(Question, JSON.stringify(q))));

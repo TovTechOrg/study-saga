@@ -1,9 +1,9 @@
 {
   "keepers": [
-    { "name": "Bio-Bear", "hp": 120, "cap": 20, "abilities": ["Ferment Fury", "Honey Shield"] },
-    { "name": "Focus Fox", "hp": 80, "cap": 30, "abilities": ["Sharp Mind", "Quick Paw"] },
-    { "name": "Clever Cat", "hp": 90, "cap": 28, "abilities": ["Night Stalk", "Pounce Strike"] },
-    { "name": "Quantum Quokka", "hp": 100, "cap": 25, "abilities": ["Wave Jump", "Probability Pounce"] }
+    { "name": "Bio-Bear", "hp": 120, "stamina": 20, "damage": 25, "speed": 10, "defense": 18, "abilities": ["Ferment Fury", "Honey Shield"] },
+    { "name": "Focus Fox", "hp": 80, "stamina": 30, "damage": 18, "speed": 28, "defense": 12, "abilities": ["Sharp Mind", "Quick Paw"] },
+    { "name": "Clever Cat", "hp": 90, "stamina": 28, "damage": 22, "speed": 22, "defense": 15, "abilities": ["Night Stalk", "Pounce Strike"] },
+    { "name": "Quantum Quokka", "hp": 100, "stamina": 25, "damage": 20, "speed": 18, "defense": 14, "abilities": ["Wave Jump", "Probability Pounce"] }
   ],
   "enemies": [
     { "name": "Mitochondrial Misconception", "hp": 130, "attack": 18 },

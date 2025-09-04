@@ -32,10 +32,13 @@ class Question:
 
 
 class KnowledgeKeeper:
-    def __init__(self, name: str, hp: int, cap: int, abilities: List[str]):
+    def __init__(self, name: str, hp: int, stamina: int, damage: int, speed: int, defense: int, abilities: List[str]):
         self.name = name
         self.hp = hp
-        self.cap = cap
+        self.stamina = stamina
+        self.damage = damage
+        self.speed = speed
+        self.defense = defense
         self.abilities = abilities
 
     def to_dict(self):
@@ -43,7 +46,15 @@ class KnowledgeKeeper:
 
     @staticmethod
     def from_dict(data: Dict):
-        return KnowledgeKeeper(**data)
+        return KnowledgeKeeper(
+            data["name"],
+            data["hp"],
+            data["stamina"],
+            data["damage"],
+            data["speed"],
+            data["defense"],
+            data["abilities"]
+        )
 
 
 class Enemy:
