@@ -62,15 +62,17 @@ class Enemy:
 
 
 class Syllabus:
-    def __init__(self, questions: List[Question]):
+    def __init__(self, name: str, questions: List[Question]):
+        self.name = name
         self.questions = questions
 
     def to_dict(self):
-        return {"questions": [q.to_dict() for q in self.questions]}
+        return {"name": self.name, "questions": [q.to_dict() for q in self.questions]}
 
     @staticmethod
     def from_dict(data: Dict):
-        return Syllabus([Question.from_dict(q) for q in data.get("questions", [])])
+        questions = [Question.from_dict(q) for q in data.get("questions", [])]
+        return Syllabus(data.get("name", ""), questions)
 
 
 class BattleState:

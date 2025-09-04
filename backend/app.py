@@ -12,62 +12,55 @@ def index():
     """Serve the main game page"""
     return render_template('index.html')
 
-@app.route('/api/start-game', methods=['POST'])
-def start_game():
-    """API endpoint to start a new game"""
-    try:
-        # Here you can add game initialization logic
-        return jsonify({
-            'status': 'success',
-            'message': 'Game started successfully!',
-            'game_id': 'game_123'
-        })
-    except Exception as e:
-        return jsonify({
-            'status': 'error',
-            'message': str(e)
-        }), 500
 
-@app.route('/api/options', methods=['GET'])
-def get_options():
-    """API endpoint to get game options"""
-    return jsonify({
-        'difficulty': ['Easy', 'Medium', 'Hard'],
-        'sound_enabled': True,
-        'music_volume': 0.7,
-        'sfx_volume': 0.8
-    })
+# routes for the MVP
 
-@app.route('/api/options', methods=['POST'])
-def update_options():
-    """API endpoint to update game options"""
-    try:
-        data = request.get_json()
-        # Here you can add logic to save options
-        return jsonify({
-            'status': 'success',
-            'message': 'Options updated successfully!'
-        })
-    except Exception as e:
-        return jsonify({
-            'status': 'error',
-            'message': str(e)
-        }), 500
+@app.route('/api/get_keepers', methods=['GET'])
+def get_keepers():
+    from models import KnowledgeKeeper
+    import json
 
-@app.route('/api/cancel', methods=['POST'])
-def cancel_game():
-    """API endpoint to cancel current game"""
-    try:
-        # Here you can add logic to cancel/end current game
-        return jsonify({
-            'status': 'success',
-            'message': 'Game cancelled successfully!'
-        })
-    except Exception as e:
-        return jsonify({
-            'status': 'error',
-            'message': str(e)
-        }), 500
+    with open('data.json', 'r') as f:
+        data = json.load(f)
+    
+    keepers = [KnowledgeKeeper.from_dict(k).to_dict() for k in data.get('keepers', [])]
+    return jsonify(keepers)
+@app.route('/api/get_enemies', methods=['GET'])
+
+def get_enemies():
+    from models import Enemy
+    import json
+
+    with open('data.json', 'r') as f:
+        data = json.load(f)
+    
+    enemies = [Enemy.from_dict(e).to_dict() for e in data.get('enemies', [])]
+    return jsonify(enemies)
+
+@app.route('/api/list_syllabuses', methods=['GET'])
+def list_syllabuses():
+    from models import Syllabus
+    import json
+
+    with open('data.json', 'r') as f:
+        data = json.load(f)
+    
+    syllabus_list = [s.get('name', '') for s in data.get('syllabus', [])]
+    return jsonify(syllabus_list)
+
+@app.route('/api/get_syllabus/<name>', methods=['GET'])
+def get_syllabus(name):
+    from models import Syllabus
+    import json
+
+    with open('data.json', 'r') as f:
+        data = json.load(f)
+    
+    syllabus_list = data.get('syllabus', [])
+    for s in syllabus_list:
+        if s.get('name', '').lower() == name.lower():
+            return jsonify(Syllabus.from_dict(s).to_dict())
+    return jsonify({'error': 'Syllabus not found'}), 404
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

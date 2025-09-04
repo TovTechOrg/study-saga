@@ -33,7 +33,8 @@ class Enemy {
 }
 
 class Syllabus {
-  constructor(questions = []) {
+  constructor(name, questions = []) {
+    this.name = name;
     this.questions = questions;
   }
 }
@@ -59,7 +60,7 @@ function fromJson(cls, jsonStr) {
   if (cls === KnowledgeKeeper) return new KnowledgeKeeper(data.name, data.hp, data.cap, data.abilities);
   if (cls === Enemy) return new Enemy(data.name, data.hp, data.stats, data.effects);
   if (cls === Question) return new Question(data.type, data.text, data.options.map(o => new Option(o.text, o.isCorrect, o.feedback)));
-  if (cls === Syllabus) return new Syllabus(data.questions.map(q => fromJson(Question, JSON.stringify(q))));
+  if (cls === Syllabus) return new Syllabus(data.name, data.questions.map(q => fromJson(Question, JSON.stringify(q))));
   if (cls === BattleState) return new BattleState(
     fromJson(KnowledgeKeeper, JSON.stringify(data.keeper)),
     fromJson(Enemy, JSON.stringify(data.enemy)),
