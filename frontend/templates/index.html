@@ -3,83 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Menu</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Knowledge Keeper - Neural Intelligence</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-neural.css') }}?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        #main-menu, #syllabus-screen, #combat-screen, #victory-screen, #defeat-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #main-menu { z-index: 1; }
+        #syllabus-screen { z-index: 2; }
+        #combat-screen { z-index: 3; }
+        #victory-screen { z-index: 4; }
+        #defeat-screen { z-index: 4; }
+        
+        /* Override CSS display:flex !important */
+        #victory-screen[style*="display: none"],
+        #defeat-screen[style*="display: none"],
+        #combat-screen[style*="display: none"],
+        #syllabus-screen[style*="display: none"],
+        #main-menu[style*="display: none"] {
+            display: none !important;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Left Sidebar Menu -->
-        <div class="sidebar">
-            <div class="menu-container">
-                <h1 class="game-title">GAME MENU</h1>
-                <div class="menu-buttons">
-                    <button class="menu-btn start-btn" onclick="startGame()">
-                        <span class="btn-text">START GAME</span>
-                        <div class="btn-glow"></div>
-                    </button>
-                    
-                    <button class="menu-btn options-btn" onclick="openOptions()">
-                        <span class="btn-text">OPTIONS</span>
-                        <div class="btn-glow"></div>
-                    </button>
-                    
-                    <button class="menu-btn cancel-btn" onclick="cancelGame()">
-                        <span class="btn-text">CANCEL</span>
-                        <div class="btn-glow"></div>
-                    </button>
+    <!-- Neural Network Background Canvas -->
+    <canvas id="neuralCanvas" class="neural-background"></canvas>
+    
+    <!-- MAIN MENU SCREEN -->
+    <div id="main-menu" data-screen="main_menu" style="display: block;">
+        <div class="neural-menu-container">
+            <h1 class="neural-title">
+                KNOWLEDGE<span class="neural-subtitle">KEEPER</span>
+            </h1>
+            <p class="neural-version">Neural Intelligence v2.5</p>
+            <p style="color: red; font-size: 24px; font-weight: bold; margin: 20px 0; background: yellow; padding: 10px;">VERSION: JAN 14 11:57 AM</p>
+            <button onclick="startGame()" class="neural-btn">
+                Deploy System
+            </button>
+            <div style="color: yellow; margin-top: 20px; font-size: 14px;" id="test-output">Click Deploy System to start!</div>
+        </div>
+    </div>
+
+    <!-- SYLLABUS SELECT SCREEN -->
+    <div id="syllabus-screen" data-screen="syllabus_select" style="display: none;">
+        <div class="neural-syllabus-container">
+            <h2 class="neural-syllabus-title">REALM SELECT</h2>
+            <p class="neural-syllabus-subtitle">Target Neural Synchrony</p>
+            <div id="syllabi-grid" class="neural-syllabi-grid"></div>
+        </div>
+    </div>
+
+    <!-- COMBAT SCREEN -->
+    <div id="combat-screen" data-screen="combat" style="display: none;">
+        <div class="neural-combat-container">
+            <!-- Main Combat Area -->
+            <div class="neural-battlefield">
+                <!-- Player Side -->
+                <div class="neural-character-container player-container">
+                    <div class="neural-sprite-frame player-frame">
+                        <img src="{{ url_for('static', filename='images/player-sprite.png') }}" alt="Knowledge Keeper" class="neural-sprite player-sprite" id="player-sprite-img">
+                        <div class="sprite-overlay player-overlay"></div>
+                    </div>
+                    <div class="neural-hud player-neural-hud">
+                        <div class="hud-label">HP</div>
+                        <div class="neural-progress-bar">
+                            <div id="player-hp-bar" class="neural-progress-fill hp-fill"></div>
+                        </div>
+                        <div class="hud-value" id="player-hp">100/100</div>
+                        
+                        <div class="hud-label">CAP</div>
+                        <div class="neural-progress-bar">
+                            <div id="player-cap-bar" class="neural-progress-fill cap-fill"></div>
+                        </div>
+                        <div class="hud-value" id="player-cap">10/10</div>
+                    </div>
+                </div>
+
+                <!-- Center Battle Log -->
+                <div class="neural-center-panel">
+                    <div class="neural-match-title">Neural Match</div>
+                    <div class="neural-battle-log">
+                        <div class="battle-log-header">
+                            <span>Battle History</span>
+                            <span class="live-sync">Live Sync</span>
+                        </div>
+                        <div id="battle-log-content" class="battle-log-content"></div>
+                    </div>
+                </div>
+
+                <!-- Enemy Side -->
+                <div class="neural-character-container enemy-container">
+                    <div class="neural-sprite-frame enemy-frame">
+                        <img src="{{ url_for('static', filename='images/enemy-sprite.png') }}" alt="Enemy" class="neural-sprite enemy-sprite" id="enemy-sprite-img">
+                        <div class="sprite-overlay enemy-overlay"></div>
+                    </div>
+                    <div class="neural-hud enemy-neural-hud">
+                        <div class="hud-label">Enemy HP</div>
+                        <div class="neural-progress-bar">
+                            <div id="enemy-hp-bar" class="neural-progress-fill hp-fill"></div>
+                        </div>
+                        <div class="hud-value" id="enemy-hp">150/150</div>
+                        <div class="enemy-name" id="enemy-name">Misconception Golem</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Main Content Area -->
-        <div class="main-content">
-            <div class="content-area">
-                <div class="welcome-text">
-                    <h2>Welcome to the Game</h2>
-                    <p>Select an option from the menu to begin your adventure!</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Options Modal -->
-        <div id="optionsModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Game Options</h2>
-                <div class="options-form">
-                    <div class="option-group">
-                        <label for="difficulty">Difficulty:</label>
-                        <select id="difficulty">
-                            <option value="Easy">Easy</option>
-                            <option value="Medium">Medium</option>
-                            <option value="Hard">Hard</option>
-                        </select>
-                    </div>
-                    
-                    <div class="option-group">
-                        <label for="soundEnabled">Sound:</label>
-                        <input type="checkbox" id="soundEnabled" checked>
-                    </div>
-                    
-                    <div class="option-group">
-                        <label for="musicVolume">Music Volume:</label>
-                        <input type="range" id="musicVolume" min="0" max="100" value="70">
-                        <span id="musicVolumeValue">70%</span>
-                    </div>
-                    
-                    <div class="option-group">
-                        <label for="sfxVolume">SFX Volume:</label>
-                        <input type="range" id="sfxVolume" min="0" max="100" value="80">
-                        <span id="sfxVolumeValue">80%</span>
-                    </div>
-                    
-                    <button class="save-btn" onclick="saveOptions()">Save Options</button>
-                </div>
+            <!-- Control Bar -->
+            <div class="neural-control-bar">
+                <button id="attack-btn" class="neural-action-btn primary-action" onclick="performAction('attack')">
+                    Strike (3 CAP)
+                </button>
+                <button id="ability-btn" class="neural-action-btn secondary-action" onclick="performAction('ability')">
+                    Simplify (5 CAP)
+                </button>
+                <button id="recharge-btn" class="neural-action-btn recharge-action" onclick="performAction('recharge')">
+                    Recharge (+5)
+                </button>
             </div>
         </div>
     </div>
 
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- QUIZ MODAL -->
+    <div id="quiz-modal" class="neural-modal">
+        <div class="neural-modal-content quiz-modal-content">
+            <div class="modal-label">Neural Input Required</div>
+            <h2 id="quiz-question" class="quiz-question"></h2>
+            <div id="quiz-options" class="quiz-options-grid"></div>
+        </div>
+    </div>
+
+    <!-- FEEDBACK MODAL -->
+    <div id="feedback-modal" class="neural-modal">
+        <div class="neural-modal-content feedback-modal-content">
+            <div id="feedback-result-label" class="modal-label"></div>
+            <p id="feedback-damage" class="feedback-message"></p>
+            <button id="continue-btn" class="neural-btn continue-btn">Resume Synchronization</button>
+        </div>
+    </div>
+
+    <!-- VICTORY SCREEN -->
+    <div id="victory-screen" data-screen="victory" style="display: none;">
+        <div class="neural-endgame-container">
+            <h1 class="neural-endgame-title victory-title">DOMAIN SECURED</h1>
+            <button onclick="backToMenu()" class="neural-btn">Return to Hub</button>
+        </div>
+    </div>
+
+    <!-- DEFEAT SCREEN -->
+    <div id="defeat-screen" data-screen="defeat" style="display: none;">
+        <div class="neural-endgame-container">
+            <h1 class="neural-endgame-title defeat-title">SYSTEM BREACH</h1>
+            <button onclick="backToMenu()" class="neural-btn">Return to Hub</button>
+        </div>
+    </div>
+
+    <script>
+// Test that script is loading
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM READY');
+    const btn = document.querySelector('button.neural-btn');
+    if (btn) {
+        console.log('Found Deploy System button');
+        btn.onclick = function() {
+            console.log('BUTTON CLICKED');
+            startGame();
+        };
+    } else {
+        console.log('Button NOT found');
+    }
+});
+
+async function startGame() {
+    console.log('startGame called');
+    try {
+        const response = await fetch('/api/start-game', { method: 'POST', headers: { 'Content-Type': 'application/json' } });
+        const data = await response.json();
+        if (data.status === 'success' && data.game_id) {
+            window.gameId = data.game_id;
+            const syllResponse = await fetch('/api/syllabi');
+            const syllData = await syllResponse.json();
+            if (syllData.status === 'success') {
+                document.getElementById('main-menu').style.display = 'none';
+                document.getElementById('syllabus-screen').style.display = 'block';
+                const grid = document.getElementById('syllabi-grid');
+                grid.innerHTML = '';
+                syllData.syllabi.forEach(syllabus => {
+                    const card = document.createElement('div');
+                    card.className = 'syllabus-card';
+                    card.innerHTML = `<span class="syllabus-realm">${syllabus.name}</span><h3>${syllabus.name}</h3><p>${syllabus.description}</p>`;
+                    const button = document.createElement('button');
+                    button.textContent = 'Initialize Sync';
+                    button.dataset.syllabusId = syllabus.id;
+                    button.addEventListener('click', function() { selectSyllabus(this.dataset.syllabusId); });
+                    card.appendChild(button);
+                    grid.appendChild(card);
+                });
+            }
+        }
+    } catch(e) { console.error(e); }
+}
+
+async function selectSyllabus(id) {
+    try {
+        const response = await fetch('/api/start-combat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ game_id: window.gameId, syllabus_id: id, enemy_id: 'misconception_golem' }) });
+        const data = await response.json();
+        if (data.status === 'success') {
+            document.getElementById('syllabus-screen').style.display = 'none';
+            document.getElementById('combat-screen').style.display = 'block';
+            window.combatState = data.combat_state;
+            updateCombatHUD(data.combat_state);
+        }
+    } catch(e) { console.error(e); }
+}
+
+function updateCombatHUD(state) {
+    document.getElementById('player-hp').textContent = `${state.player.current_hp}/${state.player.max_hp}`;
+    document.getElementById('player-hp-bar').style.width = `${(state.player.current_hp / state.player.max_hp) * 100}%`;
+    document.getElementById('player-cap').textContent = `${state.player.current_cap}/${state.player.max_cap}`;
+    document.getElementById('player-cap-bar').style.width = `${(state.player.current_cap / state.player.max_cap) * 100}%`;
+    document.getElementById('enemy-name').textContent = state.enemy.name;
+    document.getElementById('enemy-hp').textContent = `${state.enemy.current_hp}/${state.enemy.max_hp}`;
+    document.getElementById('enemy-hp-bar').style.width = `${(state.enemy.current_hp / state.enemy.max_hp) * 100}%`;
+}
+    </script>
+    <script src="{{ url_for('static', filename='js/neural-bg.js') }}?v=3"></script>
 </body>
 </html>

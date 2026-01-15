@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Saga - Educational Combat Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- MAIN MENU SCREEN -->
+    <div data-screen="main_menu" style="display: block;">
+        <div class="menu-container">
+            <div class="menu-sidebar">
+                <h1 class="game-title">STUDY SAGA</h1>
+                <p class="game-subtitle">Learn Through Combat</p>
+                <div class="menu-buttons">
+                    <button id="start-game-btn" class="menu-btn start-btn">
+                        <span class="btn-text">START GAME</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <button id="options-btn" class="menu-btn options-btn">
+                        <span class="btn-text">OPTIONS</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="menu-content">
+                <div class="welcome-text">
+                    <h2>Welcome to Study Saga</h2>
+                    <p>Test your knowledge through combat! Answer questions correctly to defeat enemies and learn concepts through gameplay.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <h3>Combat-Based Learning</h3>
+                            <p>Every battle sharpens your knowledge</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Multiple Subjects</h3>
+                            <p>Choose from various subjects to learn</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Strategic Abilities</h3>
+                            <p>Use abilities to gain an advantage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SYLLABUS SELECT SCREEN -->
+    <div data-screen="syllabus_select" style="display: none;">
+        <div class="research-lab-container">
+            <div class="research-lab-header">
+                <h1>Research Lab</h1>
+                <p>Select a syllabus to begin your battle</p>
+                <button id="back-to-menu-btn" class="back-btn">← Back to Menu</button>
+            </div>
+            <div id="syllabi-grid" class="syllabi-grid"></div>
+        </div>
+    </div>
+
+    <!-- COMBAT SCREEN -->
+    <div data-screen="combat" style="display: none;">
+        <div class="combat-container">
+            <div class="status-bar">
+                <div class="turn-info"><span id="turn-count">Turn 0</span></div>
+            </div>
+            <div class="game-field">
+                <div class="player-side">
+                    <div class="character-display">
+                        <div class="player-sprite">🧠</div>
+                        <div class="player-name" id="player-name">Knowledge Keeper</div>
+                    </div>
+                </div>
+                <div class="field-center"></div>
+                <div class="enemy-side">
+                    <div class="character-display">
+                        <div class="enemy-sprite">👹</div>
+                        <div class="enemy-name" id="enemy-name">Misconception Golem</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hud-panels">
+                <div class="hud-panel player-hud">
+                    <h3>Your Stats</h3>
+                    <div class="stat-row">
+                        <label>HP:</label>
+                        <span id="player-hp">100/100</span>
+                        <div class="progress-bar">
+                            <div id="player-hp-bar" class="progress-fill hp-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <label>CAP:</label>
+                        <span id="player-cap">10/10</span>
+                        <div class="progress-bar">
+                            <div id="player-cap-bar" class="progress-fill cap-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hud-panel enemy-hud">
+                    <h3>Enemy Stats</h3>
+                    <div class="stat-row">
+                        <label>HP:</label>
+                        <span id="enemy-hp">150/150</span>
+                        <div class="progress-bar">
+                            <div id="enemy-hp-bar" class="progress-fill hp-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="action-bar">
+                <button id="attack-btn" class="action-btn attack-btn">
+                    <span class="action-name">ATTACK</span>
+                    <span class="action-cost">CAP: 3</span>
+                </button>
+                <button id="ability-btn" class="action-btn ability-btn">
+                    <span class="action-name">ABILITY</span>
+                    <span class="action-cost">CAP: 5</span>
+                </button>
+                <button id="recharge-btn" class="action-btn recharge-btn">
+                    <span class="action-name">RECHARGE</span>
+                    <span class="action-cost">+5 CAP</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- VICTORY SCREEN -->
+    <div data-screen="victory" style="display: none;">
+        <div class="game-over-container victory-container">
+            <div class="game-over-content">
+                <h1 class="victory-title">🎉 VICTORY! 🎉</h1>
+                <p class="victory-message">You have defeated the enemy and expanded your knowledge!</p>
+                <button id="victory-play-again-btn" class="btn-large play-again-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEFEAT SCREEN -->
+    <div data-screen="defeat" style="display: none;">
+        <div class="game-over-container defeat-container">
+            <div class="game-over-content">
+                <h1 class="defeat-title">💀 DEFEAT 💀</h1>
+                <p class="defeat-message">You have been defeated by the enemy. Study harder and try again!</p>
+                <button id="defeat-play-again-btn" class="btn-large play-again-btn">Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/models.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        async function gameFlow() {
+            try {
+                // Start game
+                const r1 = await fetch('/api/start-game', {method:'POST', headers:{'Content-Type':'application/json'}});
+                const d1 = await r1.json();
+                if (d1.status !== 'success') throw new Error('Start game failed: ' + d1.message);
+                
+                window.gameId = d1.game_id;
+                document.querySelector('[data-screen=main_menu]').style.display = 'none';
+                document.querySelector('[data-screen=syllabus_select]').style.display = 'block';
+                
+                // Load syllabi
+                const r2 = await fetch('/api/syllabi');
+                const d2 = await r2.json();
+                if (d2.status !== 'success') throw new Error('Load syllabi failed: ' + d2.message);
+                
+                const container = document.getElementById('syllabi-grid');
+                container.innerHTML = '';
+                d2.syllabi.forEach(syll => {
+                    const card = document.createElement('div');
+                    card.className = 'syllabus-card';
+                    card.innerHTML = '<h3>' + syll.title + '</h3><p>' + syll.description + '</p>';
+                    const btn = document.createElement('button');
+                    btn.className = 'select-btn';
+                    btn.textContent = 'Select';
+                    btn.onclick = () => selectSyll(syll.id);
+                    card.appendChild(btn);
+                    container.appendChild(card);
+                });
+            } catch (e) {
+                alert('Error: ' + e.message);
+                console.error(e);
+            }
+        }
+        
+        async function selectSyll(syllId) {
+            try {
+                const r = await fetch('/api/start-combat', {
+                    method: 'POST',
+                    headers: {'Content-Type':'application/json'},
+                    body: JSON.stringify({game_id: window.gameId, syllabus_id: syllId})
+                });
+                const d = await r.json();
+                if (d.status !== 'success') throw new Error(d.message);
+                
+                document.querySelector('[data-screen=syllabus_select]').style.display = 'none';
+                document.querySelector('[data-screen=combat]').style.display = 'block';
+            } catch (e) {
+                alert('Error starting combat: ' + e.message);
+                console.error(e);
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('start-game-btn');
+            if (btn) {
+                btn.addEventListener('click', gameFlow);
+            }
+        });
+    </script>
+</body>
+</html>
