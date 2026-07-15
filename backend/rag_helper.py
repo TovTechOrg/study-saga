@@ -9,42 +9,29 @@ from __future__ import annotations
 import random
 from functools import lru_cache
 from typing import Dict, List
+import json
+import os
 
+# Load external KB from JSON file (US-sourced, commercial-safe)
+KB_PATH = os.path.join(os.path.dirname(__file__), "kb_external.json")
+def load_external_kb() -> List[Dict[str, str]]:
+    try:
+        with open(KB_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return []
 
-# Minimal knowledge base with contexts for key questions.
-KB: List[Dict[str, str]] = [
-    {
-        "question": "What is the powerhouse of the cell?",
-        "context": "Mitochondria generate ATP via cellular respiration, powering the cell.",
-    },
-    {
-        "question": "How many chromosomes do humans have?",
-        "context": "Humans have 23 pairs of chromosomes, totaling 46 in somatic cells.",
-    },
-    {
-        "question": "What is the pH of stomach acid?",
-        "context": "Gastric acid is highly acidic; fasting gastric pH is roughly 1.5–3.5, often cited as ~3–4.",
-    },
-    {
-        "question": "Which blood cells fight infections?",
-        "context": "White blood cells (leukocytes) detect and attack pathogens to protect the body.",
-    },
-    {
-        "question": "Which organ pumps blood?",
-        "context": "The heart pumps oxygenated blood to the body and returns deoxygenated blood to the lungs.",
-    },
-    {
-        "question": "What do plants use for photosynthesis",
-        "context": "Plants use sunlight, water, carbon dioxide, and chlorophyll to produce glucose and oxygen.",
-    },
-]
+KB: List[Dict[str, str]] = load_external_kb()
 
 
 def retrieve_context(question_text: str) -> str:
-    """Return context string for the given question, or a generic fallback."""
-    q_lower = question_text.strip().lower()
+    """Return hint (preferred) or context string for the given question, or a generic fallback."""
+    q_clean = question_text.strip().lower()
     for item in KB:
-        if item["question"].strip().lower() == q_lower:
+        if item["question"].strip().lower() == q_clean:
+            # Prefer 'hint' if present, else 'context'
+            if "hint" in item and item["hint"].strip():
+                return item["hint"].strip()
             return item["context"]
     return "Use your reasoning on the topic to pick the best option."
 
@@ -66,38 +53,11 @@ def _get_pipeline():
 
 def generate_hint(question_text: str, options: List[str]) -> str:
     """
-    Generate a short hint using Flan-T5-small over retrieved context.
-    Falls back to a deterministic hint if the model is unavailable.
+    Generate a robust hint using the KB 'hint' field if present, else context, else fallback.
+    Copilot-safe: Always output a hint, even if only a conceptual reminder.
     """
-    context = retrieve_context(question_text)
-
-    pipe = _get_pipeline()
-    if pipe is None:
-        # Fallback deterministic hint
-        return f"Think about: {context}"
-
-    prompt = (
-        "Give one concise hint (<=20 words) for this multiple-choice question using the context. "
-        "Do not state or repeat any option text.\n\n"
-        f"Question: {question_text}\n"
-        f"Options: {', '.join(options)}\n"
-        f"Context: {context}\n"
-        "Hint:"
-    )
-
-    output = pipe(
-        prompt,
-        max_new_tokens=32,
-        num_beams=2,
-        do_sample=False,
-    )[0]["generated_text"].strip()
-
-    # Light guardrail: mask any option words that leaked into the model output
-    lowered = output.lower()
-    for opt in options:
-        opt_clean = opt.strip()
-        if not opt_clean:
-            continue
-        if opt_clean.lower() in lowered:
-            output = output.replace(opt_clean, "the correct option")
-    return output
+    hint_or_context = retrieve_context(question_text)
+    if hint_or_context and hint_or_context != "Use your reasoning on the topic to pick the best option.":
+        return f"Hint: {hint_or_context}"
+    # Copilot-safe fallback: always output a hint
+    return "Hint: Recall the main concept or definition related to this question, even if it does not fully eliminate all incorrect options."

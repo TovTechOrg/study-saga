@@ -1,3 +1,96 @@
+#combat-screen {
+    position: relative;
+}
+
+#quiz-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 1.5rem;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+#quiz-modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Quiz content transition */
+#quiz-modal .modal-content {
+    background: #0f172a !important;
+    padding: 3rem;
+    border-radius: 2.5rem;
+    max-width: 44rem;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    transform: translateY(20px) scale(0.98);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+}
+
+#quiz-modal.active .modal-content {
+    transform: translateY(0) scale(1);
+}
+
+/* Feedback Modal (Standardized) */
+.neural-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100000 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 1.5rem;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.neural-modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.neural-modal-content {
+    background: #0f172a !important;
+    padding: 3rem;
+    border-radius: 2.5rem;
+    max-width: 40rem;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    transform: translateY(20px) scale(0.98);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.neural-modal.active .neural-modal-content {
+    transform: translateY(0) scale(1);
+}
+
+/* Feedback Themes */
+.neural-modal.good .neural-modal-content {
+    border-color: #34d399cc;
+    box-shadow: 0 0 50px rgba(52, 211, 153, 0.3);
+}
+
+.neural-modal.bad .neural-modal-content {
+    border-color: #ef4444cc;
+    box-shadow: 0 0 50px rgba(239, 68, 68, 0.3);
+}
+
 /* ==================== NEURAL THEME - KNOWLEDGE KEEPER ==================== */
 
 * {
@@ -6,25 +99,25 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: #020617; /* slate-950 */
+    background: #020617;
     color: #e2e8f0;
     overflow: hidden;
 }
 
-/* Neural Background Canvas */
 .neural-background {
     position: fixed;
     inset: 0;
-    pointer-events: none;
     opacity: 0.4;
     z-index: 0;
+    pointer-events: none;
 }
 
-/* ==================== MAIN MENU SCREEN ==================== */
+/* MAIN MENU */
 .neural-menu-container {
     display: flex;
     flex-direction: column;
@@ -50,12 +143,12 @@ html, body {
 .neural-subtitle {
     display: block;
     font-size: 4rem;
-    color: #3b82f6; /* blue-500 */
+    color: #3b82f6;
     margin-top: 0.5rem;
 }
 
 .neural-version {
-    color: #64748b; /* slate-500 */
+    color: #64748b;
     letter-spacing: 0.8em;
     font-size: 10px;
     font-weight: 900;
@@ -69,7 +162,6 @@ html, body {
     z-index: 10;
     padding: 1.25rem 3rem;
     font-size: 1.125rem;
-    font-family: 'Inter', sans-serif;
     font-weight: 600;
     color: #ffffff;
     background: #3b82f6;
@@ -87,11 +179,7 @@ html, body {
     transform: translateY(-2px);
 }
 
-.neural-btn:active {
-    transform: translateY(0);
-}
-
-/* ==================== SYLLABUS SELECT SCREEN ==================== */
+/* SYLLABUS GRID */
 .neural-syllabus-container {
     display: flex;
     flex-direction: column;
@@ -103,456 +191,126 @@ html, body {
     z-index: 10;
 }
 
-.neural-syllabus-title {
-    font-family: 'Orbitron', monospace;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 1rem;
-    letter-spacing: 0.15em;
-}
-
-.neural-syllabus-subtitle {
-    color: #64748b;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    font-weight: 900;
-    font-size: 10px;
-    margin-bottom: 5rem;
-}
-
 .neural-syllabi-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.5rem;
     max-width: 90rem;
     width: 100%;
-    z-index: 10;
 }
 
 .syllabus-card {
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 58, 138, 0.1) 100%);
     padding: 2.5rem;
     border-radius: 2.8rem;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.7s ease;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .syllabus-card:hover {
     border-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-1rem);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
 }
 
-.syllabus-card::after {
-    content: '';
-    position: absolute;
-    bottom: -5rem;
-    right: -5rem;
-    width: 16rem;
-    height: 16rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 50%;
-    filter: blur(80px);
-    transition: transform 1s ease;
-}
-
-.syllabus-card:hover::after {
-    transform: scale(1.5);
-}
-
-.syllabus-realm {
-    font-size: 10px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    color: #3b82f6;
-    margin-bottom: 1rem;
-    display: block;
-}
-
-.syllabus-card h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-    letter-spacing: -0.025em;
-}
-
-.syllabus-card p {
-    color: #94a3b8;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    margin-bottom: 3rem;
-    font-weight: 500;
-}
-
-.syllabus-card button {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    background: rgba(255, 255, 255, 0.05);
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.syllabus-card:hover button {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-}
-
-/* ==================== COMBAT SCREEN ==================== */
+/* COMBAT SCREEN */
 .neural-combat-container {
     position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
-.sprite-save-buttons {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    z-index: 50;
-    display: flex;
-    gap: 0.5rem;
-}
-
-.sprite-save-btn {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    color: rgba(255, 255, 255, 0.4);
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.5rem;
-    font-size: 9px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.sprite-save-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-}
-
-.neural-battlefield {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 3rem;
-    max-width: 112rem;
-    margin: 0 auto;
-    width: 100%;
-    z-index: 10;
-}
-
-.neural-character-container {
+.combat-hud-outer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
-    width: 33%;
+    justify-content: flex-start;
+    min-height: 60vh;
+    width: 100%;
+    z-index: 10;
+    padding-top: 4rem;
 }
 
-.neural-sprite-frame {
-    position: relative;
-    width: 20rem;
-    height: 20rem;
+.combat-cards-row {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: rgba(15, 23, 42, 0.4);
-    border-radius: 2.5rem;
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    padding: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-    transition: all 0.5s ease;
+    align-items: flex-end;
+    gap: 48px;
+    margin-bottom: 36px;
 }
 
-.player-frame {
-    border-color: rgba(59, 130, 246, 0.2);
-}
-
-.enemy-frame {
-    border-color: rgba(239, 68, 68, 0.2);
-}
-
-.neural-sprite {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2rem;
-    transition: all 0.5s ease;
-}
-
-.sprite-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(15, 23, 42, 0.6), transparent);
-    pointer-events: none;
-}
-
-/* Turn-based brightness */
-.player-frame.active .neural-sprite {
-    filter: brightness(1.1);
-}
-
-.player-frame:not(.active) .neural-sprite {
-    filter: brightness(0.5) grayscale(50%);
-}
-
-.enemy-frame.active .neural-sprite {
-    filter: brightness(1.1);
-}
-
-.enemy-frame:not(.active) .neural-sprite {
-    filter: brightness(0.5) grayscale(50%);
-}
-
-/* Hit Animation */
-@keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-10px); }
-    75% { transform: translateX(10px); }
-}
-
-.neural-sprite-frame.hit {
-    animation: shake 0.5s ease-in-out;
-}
-
-.neural-sprite-frame.hit::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(239, 68, 68, 0.3);
-    animation: pulse 0.5s ease-in-out;
-    z-index: 30;
-}
-
-@keyframes pulse {
-    0%, 100% { opacity: 0; }
-    50% { opacity: 1; }
-}
-
-/* HUD Panels */
-.neural-hud {
-    width: 100%;
-    max-width: 20rem;
-}
-
-.hud-label {
-    font-size: 10px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #64748b;
-    margin-bottom: 0.5rem;
+.card-container {
+    background: rgba(0, 40, 80, 0.7);
+    padding: 24px;
+    border-radius: 18px;
+    box-shadow: 0 0 24px #00eaff88;
+    min-width: 320px;
+    text-align: center;
 }
 
 .neural-progress-bar {
     width: 100%;
-    height: 1.5rem;
-    background: rgba(15, 23, 42, 0.6);
-    border-radius: 0.75rem;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    height: 12px;
+    background: #222;
+    border-radius: 6px;
+    margin-top: 8px;
 }
 
 .neural-progress-fill {
     height: 100%;
+    border-radius: 6px;
     transition: width 0.5s ease;
-    border-radius: 0.75rem;
 }
 
 .hp-fill {
-    background: linear-gradient(90deg, #ef4444, #dc2626);
+    background: #00ff99;
 }
 
 .cap-fill {
-    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    background: #00eaff;
 }
 
-.hud-value {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #e2e8f0;
-    margin-bottom: 1rem;
-}
-
-.enemy-name {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #f87171;
-    margin-top: 0.5rem;
-}
-
-/* Center Battle Log */
-.neural-center-panel {
+/* ACTION BAR */
+.combat-actions-row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 0 1rem;
-}
-
-.neural-match-title {
-    font-size: 4.5rem;
-    font-family: 'Orbitron', monospace;
-    font-weight: 900;
-    color: rgba(255, 255, 255, 0.05);
-    user-select: none;
-    letter-spacing: -0.05em;
-    text-transform: uppercase;
-}
-
-.neural-battle-log {
-    background: rgba(15, 23, 42, 0.4);
-    backdrop-filter: blur(60px);
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    width: 20rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
-.battle-log-header {
-    font-size: 10px;
-    color: #475569;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    margin-bottom: 1rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid #1e293b;
-    display: flex;
-    justify-content: space-between;
-}
-
-.live-sync {
-    color: rgba(59, 130, 246, 0.5);
-}
-
-.battle-log-content {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 0.75rem;
-    height: 10rem;
-    overflow: hidden;
-}
-
-.battle-log-entry {
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 1.4;
-    animation: slideInFromBottom 0.5s ease;
-}
-
-@keyframes slideInFromBottom {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.log-time {
-    opacity: 0.4;
-    margin-right: 0.5rem;
-}
-
-.log-success {
-    color: #34d399;
-}
-
-.log-danger {
-    color: #f87171;
-}
-
-.log-enemy {
-    color: #fb923c;
-}
-
-.log-info {
-    color: #94a3b8;
-}
-
-/* Control Bar */
-.neural-control-bar {
-    width: 100%;
-    background: rgba(2, 6, 23, 0.8);
-    backdrop-filter: blur(40px);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    z-index: 20;
+    gap: 48px;
+    margin-top: 2rem;
 }
 
 .neural-action-btn {
-    width: 12rem;
-    padding: 1rem;
-    font-size: 12px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    width: 200px;
+    height: 56px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
+    border-radius: 14px;
+    border: 2.5px solid;
+    background: #002a3a;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s cubic-bezier(.4, 2, .6, 1);
 }
 
-.primary-action {
-    background: #3b82f6;
-    color: #ffffff;
+.neural-action-btn#attack-btn {
+    color: #00eaff;
+    border-color: #00eaff;
+    box-shadow: 0 0 16px #00eaffcc;
 }
 
-.primary-action:hover:not(:disabled) {
-    background: #2563eb;
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
-    transform: translateY(-2px);
+.neural-action-btn#defend-btn {
+    color: #ffe066;
+    border-color: #ffe066;
+    box-shadow: 0 0 16px #ffe066cc;
 }
 
-.secondary-action {
-    background: rgba(59, 130, 246, 0.1);
-    color: #3b82f6;
-    border-color: rgba(59, 130, 246, 0.3);
+.neural-action-btn#skill-btn {
+    color: #fff;
+    border-color: #fff;
+    box-shadow: 0 0 16px #fff8;
 }
 
-.secondary-action:hover:not(:disabled) {
-    background: rgba(59, 130, 246, 0.2);
-    border-color: rgba(59, 130, 246, 0.5);
-}
-
-.recharge-action {
-    background: rgba(100, 116, 139, 0.1);
-    color: #cbd5e1;
-    border-color: rgba(100, 116, 139, 0.3);
-}
-
-.recharge-action:hover:not(:disabled) {
-    background: rgba(100, 116, 139, 0.2);
-    border-color: rgba(100, 116, 139, 0.5);
+.neural-action-btn:hover:not(:disabled) {
+    transform: scale(1.05);
 }
 
 .neural-action-btn:disabled {
@@ -560,45 +318,34 @@ html, body {
     cursor: not-allowed;
 }
 
-/* ==================== MODALS ==================== */
-.neural-modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 50;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 1rem;
-}
-
-.neural-modal.active {
-    display: flex;
-}
-
-.neural-modal-content {
-    background: #0f172a;
-    border: 1px solid rgba(59, 130, 246, 0.3);
-    padding: 3rem;
-    border-radius: 3rem;
-    max-width: 48rem;
+/* BATTLE LOG */
+.battle-log {
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    max-width: 700px;
     width: 100%;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
-    animation: zoomIn 0.3s ease;
+    margin: 32px auto 0;
+    height: 150px;
+    overflow-y: auto;
+    color: #cbd5e1;
 }
 
-@keyframes zoomIn {
+@keyframes slideInFromBottom {
     from {
         opacity: 0;
-        transform: scale(0.95);
+        transform: translateY(20px);
     }
+
     to {
         opacity: 1;
-        transform: scale(1);
+        transform: translateY(0);
     }
 }
 
+/* MODAL INTERNALS */
 .modal-label {
     font-size: 10px;
     color: #3b82f6;
@@ -609,131 +356,77 @@ html, body {
 }
 
 .quiz-question {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 3rem;
-    line-height: 1.4;
-    letter-spacing: -0.025em;
+    margin-bottom: 2rem;
 }
 
 .quiz-options-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
 
 .quiz-option-btn {
-    width: 100%;
-    text-align: left;
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    background: rgba(30, 41, 59, 0.4);
-    color: #cbd5e1;
-    font-size: 0.875rem;
-    font-weight: 500;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
     cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
+    transition: all 0.2s ease;
 }
 
-.quiz-option-btn:hover:not(:disabled) {
-    background: rgba(59, 130, 246, 0.9);
-    border-color: #3b82f6;
-    color: #ffffff;
+.quiz-option-btn:hover {
+    background: rgba(59, 130, 246, 0.8);
     transform: scale(1.02);
 }
 
-.quiz-option-btn:disabled {
+/* END GAME */
+#victory-screen,
+#defeat-screen {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(12px);
+    z-index: 200000;
+    pointer-events: none;
     opacity: 0;
-    transform: scale(0.9);
+    visibility: hidden;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
 }
 
-.option-letter {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 0.5rem;
-    background: #334155;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
-    font-size: 12px;
-    margin-right: 1rem;
-    flex-shrink: 0;
+#victory-screen.active,
+#defeat-screen.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
-.quiz-option-btn:hover .option-letter {
-    background: #ffffff;
-    color: #3b82f6;
-}
-
-.feedback-modal-content {
+.victory-container,
+.defeat-container {
     text-align: center;
+    transform: translateY(30px) scale(0.95);
+    transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.feedback-modal-content .modal-label {
-    font-size: 14px;
-    letter-spacing: 1em;
-    margin-bottom: 2.5rem;
+#victory-screen.active .victory-container,
+#defeat-screen.active .defeat-container {
+    transform: translateY(0) scale(1);
 }
 
-.feedback-modal-content .modal-label.correct {
-    color: #34d399;
-}
-
-.feedback-modal-content .modal-label.incorrect {
-    color: #f87171;
-}
-
-.feedback-message {
-    color: #cbd5e1;
-    font-size: 1.25rem;
-    margin-bottom: 3rem;
-    line-height: 1.6;
-    font-weight: 300;
-    font-style: italic;
-    padding: 0 1rem;
-}
-
-.continue-btn {
-    width: 100%;
-    padding: 1.25rem;
-    border-radius: 1.5rem;
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: 0.15em;
-}
-
-/* ==================== END GAME SCREENS ==================== */
-.neural-endgame-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    position: relative;
-    z-index: 10;
-}
-
-.neural-endgame-title {
-    font-family: 'Orbitron', monospace;
+.victory-container h2 {
+    font-family: 'Orbitron';
     font-size: 5rem;
-    font-weight: 900;
-    margin-bottom: 3rem;
-    letter-spacing: -0.05em;
-}
-
-.victory-title {
     color: #34d399;
-    filter: drop-shadow(0 0 20px rgba(52, 211, 153, 0.3));
 }
 
-.defeat-title {
+.defeat-container h2 {
+    font-family: 'Orbitron';
+    font-size: 5rem;
     color: #ef4444;
-    filter: drop-shadow(0 0 20px rgba(239, 68, 68, 0.3));
 }

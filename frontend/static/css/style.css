@@ -612,6 +612,37 @@ body {
     text-shadow: 0 0 10px #ff4444;
 }
 
+/* Feedback modal display override (JS sets display:flex inline) */
+#feedback-modal[style*="display: flex"] {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Correct answer feedback styling */
+.modal.good .modal-content,
+#feedback-modal.good .modal-content {
+    border-color: #00ff88;
+    box-shadow: 0 0 40px rgba(0, 255, 136, 0.5);
+}
+
+#feedback-modal.good #feedback-title {
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88;
+}
+
+/* Incorrect answer feedback styling */
+.modal.bad .modal-content,
+#feedback-modal.bad .modal-content {
+    border-color: #ff4444;
+    box-shadow: 0 0 40px rgba(255, 68, 68, 0.5);
+}
+
+#feedback-modal.bad #feedback-title {
+    color: #ff4444;
+    text-shadow: 0 0 10px #ff4444;
+}
+
 .feedback-message {
     color: #e0e0e0;
     margin: 15px 0;

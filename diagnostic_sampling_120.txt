@@ -1,0 +1,633 @@
+--- PHASE 1: DIAGNOSTIC SAMPLING (120 SAMPLES) ---
+Goal: Collect raw system behavior for ChatGPT scoring.
+
+Sample #1
+Question: Which part of a neuron sends signals away from the cell body?
+Options: ['Axon', 'Dendrite', 'Nucleus', 'Synapse', 'Myelin', 'Axon Terminal']
+Hint: "Connection Error: HTTPConnectionPool(host='127.0.0.1', port=5000): Read timed out. (read timeout=5)"
+--------------------------------------------------
+
+Sample #2
+Question: What is the term for the bending of light as it enters a new medium?
+Options: ['Refraction', 'Reflection', 'Diffraction', 'Polarization']
+Hint: "Why does a straw in a glass of water look broken at the surface?"
+--------------------------------------------------
+
+Sample #3
+Question: What is the energy of position referred to as?
+Options: ['Potential Energy', 'Kinetic Energy', 'Thermal Energy', 'Nuclear Energy']
+Hint: "The energy stored in an object due to its location in a field, like gravity."
+--------------------------------------------------
+
+Sample #4
+Question: What is the law that relates voltage, current, and resistance?
+Options: ["Ohm's Law", "Newton's Law", "Boyle's Law", "Pascal's Law"]
+Hint: "Consider the relationship where doubling the resistance halves the current at a constant voltage."
+--------------------------------------------------
+
+Sample #5
+Question: Solve for x: x ÷ 4 = 9
+Options: ['36', '32', '40', '13', '5', '45']
+Hint: "Reverse division by multiplying."
+--------------------------------------------------
+
+Sample #6
+Question: What type of energy is possessed by a moving object?
+Options: ['Kinetic Energy', 'Potential Energy', 'Thermal Energy', 'Chemical Energy']
+Hint: "Comes from the Greek word for 'motion'."
+--------------------------------------------------
+
+Sample #7
+Question: What is 100 - 37?
+Options: ['63', '60', '70', '57', '73', '65']
+Hint: "Try subtracting the 30 first, then remove the remaining 7."
+--------------------------------------------------
+
+Sample #8
+Question: What is the sum of 1/3 and 1/6?
+Options: ['1/2', '2/9', '1/4', '2/3']
+Hint: "Find a common denominator, such as 6, before adding the numerators."
+--------------------------------------------------
+
+Sample #9
+Question: Which type of blood cell carries oxygen?
+Options: ['Red Blood Cells', 'White Blood Cells', 'Platelets', 'Hemocytes', 'Phagocytes', 'Lymphocytes']
+Hint: "These cells contain iron-rich hemoglobin."
+--------------------------------------------------
+
+Sample #10
+Question: Which particle is responsible for electricity in wires?
+Options: ['Electron', 'Proton', 'Neutron', 'Photon']
+Hint: "The fundamental charge carrier in metallic conductors."
+--------------------------------------------------
+
+Sample #11
+Question: What is the unit of force in the SI system?
+Options: ['Newton', 'Joule', 'Watt', 'Volt']
+Hint: "This unit is defined as the amount of force needed to accelerate 1kg at 1m/s^2."
+--------------------------------------------------
+
+Sample #12
+Question: What molecule carries oxygen in red blood cells?
+Options: ['Hemoglobin', 'Myoglobin', 'Insulin', 'Glucose', 'ATP', 'DNA']
+Hint: "An iron-containing protein that gives blood its red color."
+--------------------------------------------------
+
+Sample #13
+Question: What is 15 + 27?
+Options: ['42', '40', '45', '38', '50', '35']
+Hint: "Basic addition."
+--------------------------------------------------
+
+Sample #14
+Question: What happens to the density of water when it turns to ice?
+Options: ['It decreases', 'It increases', 'It stays the same', 'It becomes infinite']
+Hint: "Reflect on why ice cubes float on the surface of a glass of water."
+--------------------------------------------------
+
+Sample #15
+Question: What is 8²?
+Options: ['64', '56', '72', '16', '80', '48']
+Hint: "Eight times eight."
+--------------------------------------------------
+
+Sample #16
+Question: Select all examples of fungi.
+Options: ['Mushroom', 'Yeast', 'Bread Mold', 'Algae', 'Bacteria', 'Plant']
+Hint: "Focus on organisms that decompose organic matter and reproduce via spores, often found in damp environments."
+--------------------------------------------------
+
+Sample #17
+Question: What type of symmetry does a starfish have?
+Options: ['Radial', 'Bilateral', 'Asymmetrical', 'Spherical', 'Linear', 'Cubic']
+Hint: "Arranged around a central point, like spokes on a wheel."
+--------------------------------------------------
+
+Sample #18
+Question: Which subatomic particle has a negative charge?
+Options: ['Electron', 'Proton', 'Neutron', 'Positron']
+Hint: "The particle that orbits the nucleus in specialized shells or regions."
+--------------------------------------------------
+
+Sample #19
+Question: Which nitrogenous base pairs with Adenine in DNA?
+Options: ['Thymine', 'Cytosine', 'Guanine', 'Uracil']
+Hint: "Think of the base that is replaced by Uracil in RNA."
+--------------------------------------------------
+
+Sample #20
+Question: Which process allows bacteria to exchange genetic material?
+Options: ['Conjugation', 'Mitosis', 'Meiosis', 'Binary Fission', 'Transpiration', 'Photosynthesis']
+Hint: "Requires direct physical contact between two bacterial cells to transfer DNA."
+--------------------------------------------------
+
+Sample #21
+Question: What is the sum of angles in a triangle?
+Options: ['180°', '90°', '360°', '270°', '120°', '200°']
+Hint: "The standard total for internal triangle angles."
+--------------------------------------------------
+
+Sample #22
+Question: What is the primary factor that determines the resistance of a wire?
+Options: ['Material, Length, and Cross-section', 'Color', 'Weight', 'Age']
+Hint: "Consider the physical dimensions and the nature of the conduction material."
+--------------------------------------------------
+
+Sample #23
+Question: What is the common name for Sodium Chloride?
+Options: ['Salt', 'Sugar', 'Baking Soda', 'Bleach']
+Hint: "A mineral substance essential for life, often found on your dinner table."
+--------------------------------------------------
+
+Sample #24
+Question: What is the fundamental unit of length in the SI system?
+Options: ['Meter', 'Mile', 'Light-year', 'Centimeter']
+Hint: "The base unit of distance, originally defined by a fraction of the Earth's circumference."
+--------------------------------------------------
+
+Sample #25
+Question: What lens is used to correct farsightedness?
+Options: ['Convex Lens', 'Concave Lens', 'Planar Lens', 'Bifocal Lens']
+Hint: "A lens that is thicker in the middle than at the edges (converging)."
+--------------------------------------------------
+
+Sample #26
+Question: What is 20% of 50?
+Options: ['10', '5', '15', '20', '8', '25']
+Hint: "Find one-fifth of the total."
+--------------------------------------------------
+
+Sample #27
+Question: What is the chemical symbol for Helium?
+Options: ['He', 'H', 'Li', 'Be']
+Hint: "A two-letter symbol derived from its name, common in balloons."
+--------------------------------------------------
+
+Sample #28
+Question: Solve for x: 2x + 5 = 13
+Options: ['4', '5', '6', '3', '2', '7']
+Hint: "Isolate x by subtracting 5 then dividing by 2."
+--------------------------------------------------
+
+Sample #29
+Question: What is the value of pi to two decimal places?
+Options: ['3.14', '3.16', '3.12', '3.18']
+Hint: "Think of the ratio of a circle's circumference to its diameter, starting with 3.1..."
+--------------------------------------------------
+
+Sample #30
+Question: Which are characteristics of mammals?
+Options: ['Hair or fur', 'Produce milk', 'Warm-blooded', 'Lay eggs exclusively', 'Cold-blooded', 'Have gills']
+Hint: "Consider warm-blooded vertebrates that have specialized glands to nourish their young."
+--------------------------------------------------
+
+Sample #31
+Question: What is the unit of electric current?
+Options: ['Ampere', 'Volt', 'Ohm', 'Watt']
+Hint: "The base SI unit for the flow of electric charge per second."
+--------------------------------------------------
+
+Sample #32
+Question: Which element is the primary component of steel?
+Options: ['Iron', 'Copper', 'Aluminum', 'Zinc']
+Hint: "The most common metal used in construction, often alloyed with carbon."
+--------------------------------------------------
+
+Sample #33
+Question: How many degrees are in a right angle?
+Options: ['90', '180', '45', '360']
+Hint: "Consider the angle formed by two perpendicular lines."
+--------------------------------------------------
+
+Sample #34
+Question: What is the speed of light in a vacuum (approx)?
+Options: ['300,000 km/s', '150,000 km/s', '500,000 km/s', '1,000,000 km/s']
+Hint: "Roughly 300,000 kilometers every single second."
+--------------------------------------------------
+
+Sample #35
+Question: What is the frequency of human hearing (range)?
+Options: ['20 Hz to 20,000 Hz', '0 Hz to 1,000 Hz', '100 Hz to 1,000,000 Hz', '50 Hz to 5,000 Hz']
+Hint: "The standard range of vibrations per second detectable by the human ear."
+--------------------------------------------------
+
+Sample #36
+Question: Which kingdom do ants belong to?
+Options: ['Animalia', 'Plantae', 'Fungi', 'Protista', 'Archaea', 'Bacteria']
+Hint: "They are multicellular, ingesting organisms that move voluntarily."
+--------------------------------------------------
+
+Sample #37
+Question: Which are factors of 12?
+Options: ['1', '2', '3', '4', '5', '6']
+Hint: "All whole numbers that divide evenly into the target value."
+--------------------------------------------------
+
+Sample #38
+Question: What is the volume of a cube with side length 4?
+Options: ['64', '16', '48', '12']
+Hint: "Calculate the side length multiplied by itself three times (s^3)."
+--------------------------------------------------
+
+Sample #39
+Question: Which element is known as the 'Building Block of Life'?
+Options: ['Carbon', 'Oxygen', 'Hydrogen', 'Nitrogen']
+Hint: "The element capable of forming four stable covalent bonds, essential for complex molecules."
+--------------------------------------------------
+
+Sample #40
+Question: What is the process by which cells divide to form two identical daughter cells?
+Options: ['Mitosis', 'Meiosis', 'Binary Fission', 'Cytokinesis', 'Budding', 'Fertilization']
+Hint: "Consider the type of division used for growth and tissue repair in multicellular organisms."
+--------------------------------------------------
+
+Sample #41
+Question: Which are even numbers?
+Options: ['2', '4', '6', '3', '5', '7']
+Hint: "Look for integers that can be divided into two equal whole groups without a remainder."
+--------------------------------------------------
+
+Sample #42
+Question: What is the area of a rectangle with length 6 and width 4?
+Options: ['24', '20', '28', '10', '30', '16']
+Hint: "Think about how many 1x1 unit squares would fit inside a 6 by 4 region."
+--------------------------------------------------
+
+Sample #43
+Question: Which hormone regulates blood sugar?
+Options: ['Insulin', 'Adrenaline', 'Thyroxine', 'Testosterone', 'Estrogen', 'Cortisol']
+Hint: "Produced by the pancreas, it helps cells absorb glucose."
+--------------------------------------------------
+
+Sample #44
+Question: What is 12 × 8?
+Options: ['96', '88', '104', '100', '92', '98']
+Hint: "Multiplication is repeated addition."
+--------------------------------------------------
+
+Sample #45
+Question: What is 15% of 200?
+Options: ['30', '15', '25', '45']
+Hint: "Find 10% first, then add half of that value to reach 15%."
+--------------------------------------------------
+
+Sample #46
+Question: Which organ in the human body filters blood?
+Options: ['Kidney', 'Liver', 'Heart', 'Lungs', 'Stomach', 'Brain']
+Hint: "These organs regulate blood pressure and remove metabolic waste by controlling water balance."
+--------------------------------------------------
+
+Sample #47
+Question: What is 15 × 3?
+Options: ['45', '40', '50', '48', '42', '35']
+Hint: "Repeated addition of 15."
+--------------------------------------------------
+
+Sample #48
+Question: What is 0.5 as a fraction?
+Options: ['1/2', '1/4', '2/3', '1/5', '3/4', '1/3']
+Hint: "If you divide a whole into two equal parts, what is the value of one of those parts?"
+--------------------------------------------------
+
+Sample #49
+Question: What is the area of a circle with radius 3? (Use pi = 3.14)
+Options: ['28.26', '18.84', '9.42', '25.12']
+Hint: "Apply the formula: Area = pi times the square of the radius."
+--------------------------------------------------
+
+Sample #50
+Question: What is the pH of pure water?
+Options: ['7', '0', '14', '5']
+Hint: "It is neither acidic nor basic, sitting exactly in the middle of the scale."
+--------------------------------------------------
+
+Sample #51
+Question: Who is considered the father of genetics?
+Options: ['Gregor Mendel', 'Charles Darwin', 'Louis Pasteur', 'Watson and Crick']
+Hint: "Consider the Augustinian friar who studied inheritance traits in pea plants."
+--------------------------------------------------
+
+Sample #52
+Question: What is the temperature at which water boils (in Celsius)?
+Options: ['100', '0', '32', '212']
+Hint: "The standard reference point for water transition at one atmosphere of pressure."
+--------------------------------------------------
+
+Sample #53
+Question: What is the square root of 144?
+Options: ['12', '14', '16', '10', '11', '13']
+Hint: "What number multiplied by itself equals 144?"
+--------------------------------------------------
+
+Sample #54
+Question: What is the formula for Sulfuric Acid?
+Options: ['H2SO4', 'HCl', 'HNO3', 'CH3COOH']
+Hint: "A strong mineral acid with two hydrogen atoms and a sulfate group."
+--------------------------------------------------
+
+Sample #55
+Question: What is the first law of thermodynamics?
+Options: ['Conservation of Energy', 'Entropy always increases', 'Absolute zero is unreachable', 'Every action has a reaction']
+Hint: "The principle stating that energy in an isolated system is constant."
+--------------------------------------------------
+
+Sample #56
+Question: What is the perimeter of a square with side length 5?
+Options: ['20', '25', '15', '10', '30', '5']
+Hint: "Add all four equal sides together."
+--------------------------------------------------
+
+Sample #57
+Question: What is 45 ÷ 5?
+Options: ['9', '8', '10', '7', '6', '11']
+Hint: "Inverse of 5 times what equals 45?"
+--------------------------------------------------
+
+Sample #58
+Question: What is the main gas responsible for global warming?
+Options: ['Carbon Dioxide', 'Oxygen', 'Nitrogen', 'Argon']
+Hint: "A gas produced by combustion and respiration, captured by plants."
+--------------------------------------------------
+
+Sample #59
+Question: Which organelles are involved in protein synthesis?
+Options: ['Ribosomes', 'Endoplasmic Reticulum', 'Golgi Apparatus', 'Mitochondria', 'Nucleus', 'Lysosomes']
+Hint: "Small structures that read RNA to assemble amino acids."
+--------------------------------------------------
+
+Sample #60
+Question: What describes the rate of work done?
+Options: ['Power', 'Force', 'Energy', 'Velocity']
+Hint: "The measure of energy transfer per unit of time."
+--------------------------------------------------
+
+Sample #61
+Question: What is the primary function of the large intestine?
+Options: ['Absorption of water', 'Digestion of protein', 'Storage of bile', 'Absorption of nutrients']
+Hint: "Look for the final stage of digestion where fluids are reclaimed before waste disposal."
+--------------------------------------------------
+
+Sample #62
+Question: What is the value of acceleration due to gravity on Earth (approx)?
+Options: ['9.8 m/s^2', '10 m/s^2', '1.6 m/s^2', '5 m/s^2']
+Hint: "The rate at which objects accelerate toward the ground in free fall (approx 9.8)."
+--------------------------------------------------
+
+Sample #63
+Question: What is the chemical symbol for Gold?
+Options: ['Au', 'Ag', 'Gd', 'Fe']
+Hint: "A two-letter symbol derived from its original Latin name."
+--------------------------------------------------
+
+Sample #64
+Question: What is the primary pigment in plant leaves?
+Options: ['Chlorophyll', 'Carotene', 'Melanin', 'Hemoglobin', 'Keratin', 'Myoglobin']
+Hint: "The green pigment vital for capturing light energy."
+--------------------------------------------------
+
+Sample #65
+Question: What is the value of 5! (5 factorial)?
+Options: ['120', '25', '60', '15']
+Hint: "Multiply 5 by 4, then by 3, by 2, and finally by 1."
+--------------------------------------------------
+
+Sample #66
+Question: What is the result of an acid reacting with a base?
+Options: ['Salt and Water', 'Sugar', 'Alcohol', 'Oxygen']
+Hint: "Think of a neutralization reaction producing two common inorganic compounds."
+--------------------------------------------------
+
+Sample #67
+Question: Which are macronutrients?
+Options: ['Proteins', 'Carbohydrates', 'Lipids', 'Vitamins', 'Minerals', 'Water']
+Hint: "The three main nutrients required in large amounts for energy and structure."
+--------------------------------------------------
+
+Sample #68
+Question: Which blood component is primarily responsible for clotting?
+Options: ['Platelets', 'Plasma', 'Leukocytes', 'Hemoglobin']
+Hint: "Focus on small, colorless cell fragments that clump together at injury sites."
+--------------------------------------------------
+
+Sample #69
+Question: What is the basic unit of life?
+Options: ['Cell', 'Atom', 'Molecule', 'Tissue', 'Organ', 'Organism']
+Hint: "What is the smallest level of biological organization that can perform all functions of life?"
+--------------------------------------------------
+
+Sample #70
+Question: Which are parts of the central nervous system?
+Options: ['Brain', 'Spinal Cord', 'Peripheral Nerves', 'Sensory Receptors']
+Hint: "This system consists of the main control center and the primary link to the rest of the body."
+--------------------------------------------------
+
+Sample #71
+Question: What is 18 ÷ 3?
+Options: ['6', '5', '7', '9', '4', '8']
+Hint: "Division basics."
+--------------------------------------------------
+
+Sample #72
+Question: What describes a material that allows electricity to flow easily?
+Options: ['Conductor', 'Insulator', 'Semiconductor', 'Superconductor']
+Hint: "Consider materials like copper or silver that have high free electron density."
+--------------------------------------------------
+
+Sample #73
+Question: What is the value of 10³?
+Options: ['1000', '100', '30', '10000', '500', '300']
+Hint: "Ten multiplied by itself three times."
+--------------------------------------------------
+
+Sample #74
+Question: What is 7 × 9?
+Options: ['63', '56', '70', '60', '72', '65']
+Hint: "Multiplication table fact."
+--------------------------------------------------
+
+Sample #75
+Question: What type of cell division produces gametes?
+Options: ['Meiosis', 'Mitosis', 'Binary Fission', 'Cytokinesis']
+Hint: "Consider a specialized form of division that results in four non-identical daughter cells."
+--------------------------------------------------
+
+Sample #76
+Question: What is the median of the set {2, 5, 8, 12, 15}?
+Options: ['8', '5', '12', '8.4']
+Hint: "Arrange the numbers in order and identify the middle value."
+--------------------------------------------------
+
+Sample #77
+Question: Which part of the plant is responsible for gas exchange?
+Options: ['Stomata', 'Roots', 'Xylem', 'Phloem']
+Hint: "Look for microscopic pores found on the under-surface of leaves."
+--------------------------------------------------
+
+Sample #78
+Question: What is the process of a solid turning directly into a gas?
+Options: ['Sublimation', 'Evaporation', 'Condensation', 'Melting']
+Hint: "Consider the transition that skips the liquid phase entirely."
+--------------------------------------------------
+
+Sample #79
+Question: What is the center of an atom called?
+Options: ['Nucleus', 'Electron', 'Proton', 'Neutron']
+Hint: "A dense core containing protons and neutrons."
+--------------------------------------------------
+
+Sample #80
+Question: Which force pulls objects toward the center of the Earth?
+Options: ['Gravity', 'Magnetism', 'Friction', 'Inertia']
+Hint: "Consider the physical interaction between two objects with mass, proportional to their product."
+--------------------------------------------------
+
+Sample #81
+Question: Which subatomic particle is found in the nucleus and is neutral?
+Options: ['Neutron', 'Proton', 'Electron', 'Quark']
+Hint: "The particle that provides stability to the nucleus without adding charge."
+--------------------------------------------------
+
+Sample #82
+Question: Which process do plants use to absorb water from soil?
+Options: ['Osmosis', 'Diffusion', 'Photosynthesis', 'Transpiration', 'Respiration', 'Fermentation']
+Hint: "Think about why wilting plants revive when given water to their roots."
+--------------------------------------------------
+
+Sample #83
+Question: Solve for x: 3x - 2 = 7
+Options: ['3', '2', '4', '1', '5', '6']
+Hint: "Add two then divide by the coefficient of x."
+--------------------------------------------------
+
+Sample #84
+Question: What is the most reactive metal on the periodic table?
+Options: ['Francium', 'Potassium', 'Lithium', 'Sodium']
+Hint: "A radioactive alkali metal found at the bottom of Group 1."
+--------------------------------------------------
+
+Sample #85
+Question: What is 9 + 6 × 2?
+Options: ['21', '30', '24', '18', '27', '15']
+Hint: "Follow PEMDAS/BODMAS rules."
+--------------------------------------------------
+
+Sample #86
+Question: Which biomolecule forms enzymes?
+Options: ['Proteins', 'Carbohydrates', 'Lipids', 'Nucleic Acids', 'Vitamins', 'Minerals']
+Hint: "Consider the complex folding of amino acid chains that create catalysts for chemical reactions."
+--------------------------------------------------
+
+Sample #87
+Question: Which gas is most abundant in Earth's atmosphere?
+Options: ['Nitrogen', 'Oxygen', 'Carbon Dioxide', 'Hydrogen']
+Hint: "It makes up about 78% of the air and is not oxygen."
+--------------------------------------------------
+
+Sample #88
+Question: What is the structural and functional unit of the kidney?
+Options: ['Nephron', 'Neuron', 'Alveoli', 'Capillary']
+Hint: "This microscopic structure performs the vital task of blood filtration."
+--------------------------------------------------
+
+Sample #89
+Question: What is photosynthesis?
+Options: ['Process where plants convert light to chemical energy', 'Process where animals digest food', 'Process where bacteria reproduce', 'Process where water evaporates', 'Process where cells divide', 'Process where organisms move']
+Hint: "How do autotrophs transform electromagnetic energy into chemical storage?"
+--------------------------------------------------
+
+Sample #90
+Question: What is the standard name for 'junk DNA' that doesn't code for proteins?
+Options: ['Non-coding DNA', 'Exons', 'Plasmids', 'Virions']
+Hint: "These sequences are transcribed but not translated into protein sequences."
+--------------------------------------------------
+
+Sample #91
+Question: Which blood cells fight infections?
+Options: ['White Blood Cells', 'Red Blood Cells', 'Platelets', 'Plasma', 'Lymph Nodes', 'Bone Marrow']
+Hint: "Think about the specialized 'soldiers' of the immune system, also known as leukocytes."
+--------------------------------------------------
+
+Sample #92
+Question: Which numbers are prime?
+Options: ['2', '3', '4', '5', '6', '7']
+Hint: "Look for numbers that cannot be broken down into any smaller whole factors other than one."
+--------------------------------------------------
+
+Sample #93
+Question: What is the force that opposes motion between two surfaces?
+Options: ['Friction', 'Inertia', 'Momentum', 'Tension']
+Hint: "The resistance encountered when one surface slides or rolls over another."
+--------------------------------------------------
+
+Sample #94
+Question: Which gas is used in light bulbs to prevent the filament from burning?
+Options: ['Argon', 'Oxygen', 'Hydrogen', 'Nitrogen']
+Hint: "Look for a noble gas that is more common and cheaper than Krypton."
+--------------------------------------------------
+
+Sample #95
+Question: Which macromolecule stores genetic information?
+Options: ['DNA', 'Protein', 'Carbohydrate', 'Lipid', 'RNA', 'Vitamin']
+Hint: "It contains the instructions for life and is often double-stranded."
+--------------------------------------------------
+
+Sample #96
+Question: What is the hardest natural substance on Earth?
+Options: ['Diamond', 'Gold', 'Iron', 'Quartz']
+Hint: "An allotrope of carbon with atoms arranged in a rigid crystal lattice."
+--------------------------------------------------
+
+Sample #97
+Question: What gas is produced when magnesium reacts with hydrochloric acid?
+Options: ['Hydrogen', 'Oxygen', 'Carbon Dioxide', 'Nitrogen']
+Hint: "A highly flammable gas that burns with a characteristic 'pop' sound."
+--------------------------------------------------
+
+Sample #98
+Question: Solve for x: 5x - 7 = 18
+Options: ['5', '4', '6', '3']
+Hint: "Add seven to both sides, then divide the result by the multiplier of x."
+--------------------------------------------------
+
+Sample #99
+Question: What is the atomic number of Carbon?
+Options: ['6', '12', '8', '14']
+Hint: "The number of protons found in this basic building block of organic life."
+--------------------------------------------------
+
+Sample #100
+Question: Which metal is liquid at room temperature?
+Options: ['Mercury', 'Silver', 'Gold', 'Copper']
+Hint: "A dense transition metal that, unlike most metals, lacks a strong metallic lattice at standard conditions."
+--------------------------------------------------
+
+Sample #101
+Question: Which colors are the primary colors of light?
+Options: ['Red, Green, Blue', 'Red, Yellow, Blue', 'Cyan, Magenta, Yellow', 'Orange, Green, Violet']
+Hint: "The three additive colors used in digital displays and television."
+--------------------------------------------------
+
+Sample #102
+Question: What is the boiling point of water in Kelvin?
+Options: ['373.15', '273.15', '100', '0']
+Hint: "Add 273.15 to the Celsius boiling point for the absolute scale equivalent."
+--------------------------------------------------
+
+Sample #103
+Question: What is the slope of a line passing through (1, 2) and (3, 6)?
+Options: ['2', '3', '1', '4']
+Hint: "Calculate the change in y divided by the change in x (rise over run)."
+--------------------------------------------------
+
+Sample #104
+Question: Which part of the electromagnetic spectrum has the longest wavelength?
+Options: ['Radio Waves', 'Gamma Rays', 'Visible Light', 'X-rays']
+Hint: "Low-frequency waves used for long-distance communication and broadcasting."
+--------------------------------------------------
+
+Sample #105
+Question: Which are prokaryotic organisms?
+Options: ['Bacteria', 'Archaea', 'Humans', 'Fungi', 'Amoeba', 'Viruses']
+Hint: "Focus on the most primitive cell types that lack internal compartments like a nucleus."
+--------------------------------------------------
+
