@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study Saga</title>
+<style>
+  :root {
+    --bg: #0b0e14;
+    --panel: #131826;
+    --panel-border: #232b3d;
+    --text: #e7ebf3;
+    --muted: #93a0b8;
+    --accent: #6bd6ff;
+    --accent-2: #ff6b9d;
+    --tier-hard: #ff6b6b;
+    --tier-medium: #ffd93d;
+    --tier-easy: #6bff6b;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f7fb;
+      --panel: #ffffff;
+      --panel-border: #e3e6ee;
+      --text: #1a1d29;
+      --muted: #565f77;
+      --accent: #0b6fa8;
+      --accent-2: #b8265f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b0e14; --panel: #131826; --panel-border: #232b3d;
+    --text: #e7ebf3; --muted: #93a0b8; --accent: #6bd6ff; --accent-2: #ff6b9d;
+  }
+  :root[data-theme="light"] {
+    --bg: #f6f7fb; --panel: #ffffff; --panel-border: #e3e6ee;
+    --text: #1a1d29; --muted: #565f77; --accent: #0b6fa8; --accent-2: #b8265f;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 16px;
+  }
+  .logo-row img {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25));
+  }
+  h1 {
+    font-size: 2.4rem;
+    margin: 0;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    color: var(--muted);
+    font-size: 1.1rem;
+    margin-top: 8px;
+  }
+  section {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 14px;
+    padding: 28px 30px;
+    margin-bottom: 24px;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+  .subjects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  .chip {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--bg);
+    border: 1px solid var(--panel-border);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  .tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 16px;
+  }
+  @media (max-width: 640px) {
+    .tiers { grid-template-columns: 1fr; }
+  }
+  .tier {
+    border-radius: 10px;
+    padding: 14px 16px;
+    border: 1px solid var(--panel-border);
+    background: var(--bg);
+  }
+  .tier b { display: block; margin-bottom: 6px; }
+  .tier.hard b { color: var(--tier-hard); }
+  .tier.medium b { color: var(--tier-medium); }
+  .tier.easy b { color: var(--tier-easy); }
+  .tier p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+  ul { padding-left: 20px; color: var(--muted); }
+  ul li { margin-bottom: 6px; }
+  .cta {
+    text-align: center;
+    margin-top: 32px;
+  }
+  .cta a {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 10px;
+    background: var(--accent);
+    color: #04121a;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo-row">
+      <img src="images/player-sprite.png" alt="Knowledge Keeper sprite">
+      <img src="images/enemy-sprite.png" alt="Misconception enemy sprite">
+    </div>
+    <h1>Study Saga</h1>
+    <p class="tagline">An educational combat game where Knowledge Keepers defeat Misconceptions with real academic knowledge.</p>
+  </header>
+
+  <section>
+    <h2>What it is</h2>
+    <p>Study Saga is a Flask-powered quiz game: players answer syllabus-based multiple-choice questions to defeat enemy "Misconceptions" in turn-based combat. Behind the scenes, a RAG-based hint pipeline generates tiered, pedagogically-designed hints for every question &mdash; without ever giving away the answer.</p>
+    <div class="subjects">
+      <span class="chip">Biology</span>
+      <span class="chip">Math</span>
+      <span class="chip">Chemistry</span>
+      <span class="chip">Physics</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tiered hint system</h2>
+    <p>Stuck on a question? Hints unlock progressively, from a challenging analogy down to a vivid, simple clue &mdash; scrubbed to never leak the answer.</p>
+    <div class="tiers">
+      <div class="tier hard">
+        <b>Hard</b>
+        <p>A detailed, domain-specific analogy that requires real understanding to connect back to the concept.</p>
+      </div>
+      <div class="tier medium">
+        <b>Medium</b>
+        <p>A concise, mechanism-based summary that narrows things down without stating the answer.</p>
+      </div>
+      <div class="tier easy">
+        <b>Easy</b>
+        <p>A single, vivid, highly descriptive clue &mdash; the last nudge before you're on your own.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How hints are made</h2>
+    <ul>
+      <li>Facts are extracted about the correct answer, with the answer itself redacted before the model ever writes a hint</li>
+      <li>Tiered hints are generated from those facts using domain-appropriate analogies (micro-level metaphors for cells/atoms, macro-level metaphors for ecosystems/physics)</li>
+      <li>Every hint is scrubbed for answer leakage &mdash; masking any slip-through in place rather than discarding the whole hint</li>
+      <li>Hints are audited against a calibrated quality rubric before shipping, with a 7/10 quality floor</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <a href="https://github.com/8GSean/study-saga">View the repository on GitHub</a>
+  </div>
+
+  <footer>
+    Study Saga &mdash; a Knowledge Keeper's best weapon is understanding.
+  </footer>
+</div>
+</body>
+</html>
