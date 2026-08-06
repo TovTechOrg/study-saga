@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Knowledge Keeper - Neural Intelligence</title>
+    <link rel="stylesheet" href="/static/css/style-neural.css?v=2">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        #main-menu,
+        #syllabus-screen,
+        #combat-screen,
+        #victory-screen,
+        #defeat-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #main-menu {
+            z-index: 1;
+        }
+
+        #syllabus-screen {
+            z-index: 2;
+        }
+
+        #combat-screen {
+            z-index: 3;
+        }
+
+        #victory-screen {
+            z-index: 4;
+        }
+
+        #defeat-screen {
+            z-index: 4;
+        }
+
+        .neural-recent {
+            margin-top: 12px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+        }
+
+        .neural-recent-title {
+            font-size: 14px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #9ad1ff;
+            margin-bottom: 6px;
+        }
+
+        .recent-list-entry {
+            font-size: 13px;
+            color: #e7f5ff;
+            margin: 2px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Neural Network Background Canvas -->
+    <canvas id="neuralCanvas" class="neural-background"></canvas>
+
+    <!-- MAIN MENU SCREEN -->
+    <div id="main-menu" data-screen="main_menu" style="display: block;">
+        <div class="neural-menu-container">
+            <h1 class="neural-title">
+                KNOWLEDGE<span class="neural-subtitle">KEEPER</span>
+            </h1>
+            <p class="neural-version">Neural Intelligence v2.5</p>
+            <!-- VERSION label removed -->
+            <button class="neural-btn" id="deploy-btn">
+                Deploy System
+            </button>
+            <!-- Start message removed -->
+        </div>
+    </div>
+
+    <!-- SYLLABUS SELECT SCREEN (hidden by default, shown after startGame) -->
+    <div id="syllabus-screen" data-screen="syllabus_select" style="display: none;">
+        <div class="neural-syllabus-container">
+            <h2 class="neural-title">Select a Realm to Sync</h2>
+            <div id="syllabi-grid" class="neural-syllabi-grid"></div>
+        </div>
+    </div>
+
+    <!-- COMBAT SCREEN (hidden by default, shown after selecting a syllabus) -->
+    <div id="combat-screen" data-screen="combat" style="display: none;">
+        <div class="combat-hud-outer">
+            <div class="combat-cards-row">
+                <!-- Player Card -->
+                <div class="card-container" id="player-card">
+                    <div class="hud-label">KnowledgeKeeper</div>
+                    <img id="player-sprite" src="/static/images/player-sprite.png" alt="Player" class="neural-sprite">
+                    <div class="player-info">
+                        <div class="hud-value">HP: <span id="player-hp">110/110</span></div>
+                        <div class="neural-progress-bar">
+                            <div id="player-hp-bar-inner" class="neural-progress-fill hp-fill" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="hud-value">CAP: <span id="player-cap">10/10</span></div>
+                        <div class="neural-progress-bar">
+                            <div id="player-cap-bar-inner" class="neural-progress-fill cap-fill" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enemy Card -->
+                <div class="card-container" id="enemy-card">
+                    <div class="hud-label" id="enemy-name">Enemy</div>
+                    <img id="enemy-sprite" src="/static/images/enemy-sprite.png" alt="Enemy" class="neural-sprite">
+                    <div class="enemy-info">
+                        <div class="hud-value">HP: <span id="enemy-hp">80/80</span></div>
+                        <div class="neural-progress-bar">
+                            <div id="enemy-hp-bar-inner" class="neural-progress-fill hp-fill" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="hud-value">Resolve: <span id="enemy-resolve">50/100</span></div>
+                        <div class="neural-progress-bar">
+                            <div id="enemy-resolve-bar-inner" class="neural-progress-fill resolve-fill" style="width: 50%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="combat-actions-row">
+                <button class="neural-action-btn" id="attack-btn">Attack</button>
+                <button class="neural-action-btn" id="defend-btn">Recharge (CAP)</button>
+                <button class="neural-action-btn" id="skill-btn">Use Ability</button>
+            </div>
+
+            <div id="hints-budget-bar" class="hints-budget-bar">
+                <span>Simple Hints: <b id="hints-simple-remaining">3</b></span>
+                <span>Deep Hints: <b id="hints-hard-remaining">1</b></span>
+                <span>Credits: <b id="hints-credits">0</b></span>
+            </div>
+        </div>
+
+        <div id="battle-log-content" class="battle-log"></div>
+
+        <!-- Standardized Neural Modals -->
+        <div id="feedback-modal" class="neural-modal">
+            <div class="neural-modal-content">
+                <div class="modal-label" id="feedback-title">Feedback</div>
+                <div class="feedback-message" id="feedback-message"></div>
+                <button id="close-feedback-btn" class="neural-btn">Continue</button>
+            </div>
+        </div>
+
+        <div id="quiz-modal" class="neural-modal">
+            <div class="neural-modal-content">
+                <div class="modal-label">Quiz Challenge</div>
+                <div id="quiz-question" class="quiz-question"></div>
+                <div id="quiz-options" class="quiz-options-grid"></div>
+                <button id="close-quiz-btn" class="neural-btn" style="margin-top: 2rem;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Victory Screen -->
+    <div id="victory-screen" data-screen="victory">
+        <div class="victory-container">
+            <h2>Victory!</h2>
+            <p>Congratulations, you have defeated the enemy!</p>
+            <div id="victory-results-list" class="level-results-list"></div>
+            <button class="neural-btn" onclick="backToMenu()">Return to Main Menu</button>
+        </div>
+    </div>
+
+    <!-- Defeat Screen -->
+    <div id="defeat-screen" data-screen="defeat">
+        <div class="defeat-container">
+            <h2>Defeat</h2>
+            <p>Better luck next time!</p>
+            <div id="defeat-results-list" class="level-results-list"></div>
+            <button class="neural-btn" onclick="backToMenu()">Return to Main Menu</button>
+        </div>
+    </div>
+
+
+    <script src="/static/js/script.js?v=3"></script>
+    <script src="/static/js/neural-bg.js?v=3"></script>
+    <script src="/static/js/game-simple.js?v=4"></script>
+</body>
+
+</html>
