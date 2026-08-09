@@ -2,46 +2,10 @@
     position: relative;
 }
 
-#quiz-modal {
-    position: fixed;
-    inset: 0;
-    z-index: 99999 !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(8px);
-    padding: 1.5rem;
-    pointer-events: none;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.4s ease, visibility 0.4s ease;
-}
-
-#quiz-modal.active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
-
-/* Quiz content transition */
-#quiz-modal .modal-content {
-    background: #0f172a !important;
-    padding: 3rem;
-    border-radius: 2.5rem;
-    max-width: 44rem;
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
-    transform: translateY(20px) scale(0.98);
-    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
-}
-
-#quiz-modal.active .modal-content {
-    transform: translateY(0) scale(1);
-}
-
-/* Feedback Modal (Standardized) */
+/* Modals (feedback + quiz both use .neural-modal/.neural-modal-content --
+   #quiz-modal previously also had a dead, differently-classed duplicate
+   rule set here targeting ".modal-content", which never matched the real
+   markup and has been removed). */
 .neural-modal {
     position: fixed;
     inset: 0;
@@ -66,11 +30,11 @@
 
 .neural-modal-content {
     background: #0f172a !important;
-    padding: 3rem;
+    padding: clamp(1.5rem, 4vw, 3rem);
     border-radius: 2.5rem;
     max-width: 40rem;
     width: 100%;
-    max-height: 85vh;
+    max-height: 85dvh;
     overflow-y: auto;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
@@ -108,7 +72,20 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: #020617;
     color: #e2e8f0;
-    overflow: hidden;
+    /* Horizontal overflow is always a bug (clipped or off-screen content);
+       vertical overflow is a deliberate escape hatch for high zoom / large
+       system text rather than a hidden clip -- see issue #2's own
+       accessibility note. */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Visible keyboard-focus ring on every interactive element, mouse users
+   unaffected (":focus-visible" only fires for keyboard/programmatic focus).
+   Nothing like this existed before -- the app had zero focus indicators. */
+:is(button, [tabindex], input, a, .syllabus-card):focus-visible {
+    outline: 3px solid #00eaff;
+    outline-offset: 3px;
 }
 
 .neural-background {
@@ -119,22 +96,69 @@ body {
     pointer-events: none;
 }
 
+/* PERSISTENT NAVIGATION (issue #7) */
+.game-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 3vw, 2rem);
+    padding-top: calc(env(safe-area-inset-top) + clamp(0.5rem, 2vw, 1rem));
+    background: rgba(2, 6, 23, 0.7);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.game-nav-home-btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #9ad1ff;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(154, 209, 255, 0.3);
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.game-nav-home-btn:hover {
+    background: rgba(154, 209, 255, 0.15);
+    border-color: #9ad1ff;
+}
+
+.game-nav-realm {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: clamp(0.75rem, 2vw, 0.95rem);
+    color: #9ad1ff;
+    opacity: 0.9;
+}
+
 /* MAIN MENU */
 .neural-menu-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100dvh;
     text-align: center;
     padding: 2rem;
+    padding-top: calc(env(safe-area-inset-top) + 2rem);
     position: relative;
     z-index: 10;
 }
 
 .neural-title {
     font-family: 'Orbitron', monospace;
-    font-size: 6rem;
+    font-size: clamp(2.5rem, 8vw, 6rem);
     font-weight: 900;
     color: #ffffff;
     margin-bottom: 1rem;
@@ -144,7 +168,7 @@ body {
 
 .neural-subtitle {
     display: block;
-    font-size: 4rem;
+    font-size: clamp(1.75rem, 5vw, 4rem);
     color: #3b82f6;
     margin-top: 0.5rem;
 }
@@ -155,7 +179,7 @@ body {
     font-size: 10px;
     font-weight: 900;
     text-transform: uppercase;
-    margin-bottom: 4rem;
+    margin-bottom: clamp(2rem, 6vw, 4rem);
     opacity: 0.5;
 }
 
@@ -181,22 +205,38 @@ body {
     transform: translateY(-2px);
 }
 
+.neural-btn:active {
+    transform: translateY(0);
+}
+
+.neural-btn-caption {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: #64748b;
+    letter-spacing: 0.03em;
+}
+
 /* SYLLABUS GRID */
 .neural-syllabus-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    padding: 5rem 2rem;
+    min-height: 100dvh;
+    padding: clamp(1.5rem, 5vw, 5rem) clamp(1rem, 4vw, 2rem);
+    padding-top: calc(4.5rem + env(safe-area-inset-top));
     position: relative;
     z-index: 10;
 }
 
+.neural-syllabus-container .neural-title {
+    margin-bottom: clamp(1.5rem, 4vw, 3rem);
+}
+
 .neural-syllabi-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: clamp(1rem, 3vw, 2.5rem);
     max-width: 90rem;
     width: 100%;
 }
@@ -204,21 +244,44 @@ body {
 .syllabus-card {
     cursor: pointer;
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 58, 138, 0.1) 100%);
-    padding: 2.5rem;
-    border-radius: 2.8rem;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border-radius: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all 0.7s ease;
+    transition: all 0.3s ease;
 }
 
-.syllabus-card:hover {
+.syllabus-card:hover,
+.syllabus-card:focus-visible {
     border-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-1rem);
+    transform: translateY(-0.5rem);
+}
+
+.syllabus-realm {
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+}
+
+.syllabus-card h3 {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    margin-bottom: 0.5rem;
+}
+
+.syllabus-card p {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 /* COMBAT SCREEN */
 .neural-combat-container {
     position: relative;
-    height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
 }
@@ -228,27 +291,69 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 60vh;
+    min-height: 60dvh;
     width: 100%;
     z-index: 10;
-    padding-top: 4rem;
+    padding: clamp(1rem, 3vw, 2rem);
+    padding-top: calc(4.5rem + env(safe-area-inset-top));
 }
 
 .combat-cards-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    gap: 48px;
-    margin-bottom: 36px;
+    gap: clamp(16px, 4vw, 48px);
+    margin-bottom: clamp(20px, 4vw, 36px);
 }
 
 .card-container {
     background: rgba(0, 40, 80, 0.7);
-    padding: 24px;
+    padding: clamp(14px, 3vw, 24px);
     border-radius: 18px;
     box-shadow: 0 0 24px #00eaff88;
-    min-width: 320px;
+    min-width: min(240px, 42vw);
+    max-width: 320px;
+    flex: 1 1 240px;
     text-align: center;
+}
+
+.neural-sprite {
+    max-width: 100%;
+    max-height: clamp(110px, 22vw, 220px);
+    object-fit: contain;
+    margin: 0 auto 0.75rem;
+    display: block;
+}
+
+#player-sprite {
+    filter: drop-shadow(0 0 18px #00ff99) drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+    background: radial-gradient(circle at center, rgba(0, 255, 153, 0.18), transparent 70%);
+}
+
+#enemy-sprite {
+    filter: drop-shadow(0 0 20px #ff5c7a) drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+    background: radial-gradient(circle at center, rgba(255, 92, 122, 0.2), transparent 70%);
+}
+
+.hud-label {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #e7f5ff;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    margin-bottom: 0.5rem;
+}
+
+.hud-value {
+    font-size: clamp(0.8rem, 1.8vw, 0.95rem);
+    color: #cbd5e1;
+    margin-top: 0.5rem;
+}
+
+.player-info,
+.enemy-info {
+    text-align: left;
 }
 
 .neural-progress-bar {
@@ -280,15 +385,19 @@ body {
 /* ACTION BAR */
 .combat-actions-row {
     display: flex;
-    gap: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(12px, 3vw, 48px);
     margin-top: 2rem;
 }
 
 .neural-action-btn {
-    width: 200px;
-    height: 56px;
+    min-width: clamp(110px, 26vw, 200px);
+    height: clamp(48px, 8vw, 56px);
+    padding: 0 1rem;
     font-family: 'Orbitron', sans-serif;
     font-weight: 800;
+    font-size: clamp(0.85rem, 2vw, 1rem);
     text-transform: uppercase;
     border-radius: 14px;
     border: 2.5px solid;
@@ -319,6 +428,11 @@ body {
     transform: scale(1.05);
 }
 
+.neural-action-btn:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+}
+
 .neural-action-btn:disabled {
     opacity: 0.3;
     cursor: not-allowed;
@@ -333,8 +447,8 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.05);
     max-width: 700px;
     width: 100%;
-    margin: 32px auto 0;
-    height: 150px;
+    margin: clamp(16px, 3vw, 32px) auto 0;
+    height: clamp(100px, 20vh, 150px);
     overflow-y: auto;
     color: #cbd5e1;
 }
@@ -362,20 +476,76 @@ body {
 }
 
 .quiz-question {
-    font-size: 1.5rem;
+    font-size: clamp(1.15rem, 3.5vw, 1.5rem);
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* KaTeX renders with its own default (black-on-transparent) text color --
+   force it to inherit so formulas stay readable on this dark theme. */
+.katex {
+    font-size: 1.05em;
+    color: inherit;
+}
+
+.hint-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .quiz-options-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
     gap: 15px;
+    margin-bottom: 1.5rem;
 }
 
-.quiz-option-btn {
-    padding: 1.25rem;
+.answer-btn {
+    min-height: 44px;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.answer-btn:hover:not(:disabled) {
+    background: rgba(59, 130, 246, 0.5);
+    transform: scale(1.02);
+}
+
+.answer-btn:disabled {
+    cursor: default;
+}
+
+.answer-btn.selected {
+    border-color: #3b82f6;
+    background: rgba(59, 130, 246, 0.6);
+}
+
+.answer-btn.correct {
+    border-color: #34d399;
+    background: rgba(52, 211, 153, 0.35);
+}
+
+.answer-btn.incorrect {
+    border-color: #ef4444;
+    background: rgba(239, 68, 68, 0.35);
+}
+
+.quiz-option-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 44px;
+    padding: 1rem 1.25rem;
     border-radius: 1rem;
     background: rgba(30, 41, 59, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -384,9 +554,21 @@ body {
     transition: all 0.2s ease;
 }
 
-.quiz-option-btn:hover {
-    background: rgba(59, 130, 246, 0.8);
-    transform: scale(1.02);
+.quiz-option-label:hover {
+    background: rgba(59, 130, 246, 0.35);
+}
+
+.quiz-option-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    accent-color: #3b82f6;
+    cursor: pointer;
+}
+
+.quiz-option-label:has(input:checked) {
+    border-color: #3b82f6;
+    background: rgba(59, 130, 246, 0.3);
 }
 
 /* END GAME */
@@ -404,6 +586,8 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.8s ease, visibility 0.8s ease;
+    padding: 1.5rem;
+    overflow-y: auto;
 }
 
 #victory-screen.active,
@@ -427,18 +611,20 @@ body {
 
 .victory-container h2 {
     font-family: 'Orbitron';
-    font-size: 5rem;
+    font-size: clamp(2.5rem, 8vw, 5rem);
     color: #34d399;
 }
 
 .defeat-container h2 {
     font-family: 'Orbitron';
-    font-size: 5rem;
+    font-size: clamp(2.5rem, 8vw, 5rem);
     color: #ef4444;
 }
+
 /* Hint budget bar (simple/hard hint allowance + credits) */
 .hints-budget-bar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
     margin-top: 0.75rem;
@@ -491,4 +677,27 @@ body {
 
 .level-result-entry.incorrect .result-icon {
     color: #ef4444;
+}
+
+/* Compact layout for short/narrow viewports (issue #2) */
+@media (max-width: 700px), (max-height: 700px) {
+    .neural-title {
+        font-size: clamp(1.75rem, 10vw, 3rem);
+    }
+
+    .combat-cards-row {
+        gap: 8px;
+    }
+
+    .neural-sprite {
+        max-height: 20dvh;
+    }
+
+    .combat-actions-row {
+        gap: 8px;
+    }
+
+    .combat-hud-outer {
+        padding-top: calc(3.5rem + env(safe-area-inset-top));
+    }
 }

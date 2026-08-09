@@ -63,7 +63,135 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    // Quiz modal's Close control was previously dead markup with no handler.
+    const closeQuizBtn = document.getElementById('close-quiz-btn');
+    if (closeQuizBtn) closeQuizBtn.addEventListener('click', closeQuizModal);
+
+    // Persistent nav (issue #7): Home always abandons progress, so confirm first.
+    const navHomeBtn = document.getElementById('game-nav-home-btn');
+    if (navHomeBtn) {
+        navHomeBtn.addEventListener('click', function () {
+            if (confirm('Return to the main menu? This will abandon your current progress.')) {
+                resetGame();
+            }
+        });
+    }
 });
+
+// ---------------------------------------------------------------------------
+// Persistent navigation bar (issue #7)
+// ---------------------------------------------------------------------------
+function showGameNav(realmText) {
+    const nav = document.getElementById('game-nav');
+    if (!nav) return;
+    nav.style.display = 'flex';
+    const realmEl = document.getElementById('game-nav-realm');
+    if (realmEl) realmEl.textContent = realmText || '';
+}
+
+function hideGameNav() {
+    const nav = document.getElementById('game-nav');
+    if (nav) nav.style.display = 'none';
+}
+
+// ---------------------------------------------------------------------------
+// Focus trap for modals (issue #5) -- nothing like this existed before;
+// used by both the quiz modal and the feedback modal.
+// ---------------------------------------------------------------------------
+function trapFocus(modalEl, onEscape) {
+    const focusable = Array.from(
+        modalEl.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+    ).filter(el => !el.disabled && el.offsetParent !== null);
+
+    function handleKeydown(e) {
+        if (e.key === 'Escape' && onEscape) {
+            e.preventDefault();
+            onEscape();
+            return;
+        }
+        if (e.key !== 'Tab' || focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+        }
+    }
+
+    modalEl.addEventListener('keydown', handleKeydown);
+    // Calling .focus() right after classList.add('active') is silently
+    // ignored -- confirmed via instrumentation that getComputedStyle(modal)
+    // still reports visibility:hidden even a full animation frame later,
+    // since the modal's opacity/visibility change is behind a CSS
+    // transition that hasn't resolved yet. Wait for the transition to
+    // actually finish (with a timeout fallback in case transitionend never
+    // fires) rather than guessing at a frame count.
+    if (focusable.length) {
+        let focused = false;
+        function focusFirst() {
+            if (focused) return;
+            focused = true;
+            focusable[0].focus();
+        }
+        modalEl.addEventListener('transitionend', focusFirst, { once: true });
+        setTimeout(focusFirst, 450);
+    }
+    return () => modalEl.removeEventListener('keydown', handleKeydown);
+}
+
+function deactivateModal(modal) {
+    modal.classList.remove('active');
+    if (modal._releaseFocusTrap) {
+        modal._releaseFocusTrap();
+        modal._releaseFocusTrap = null;
+    }
+    if (modal._previouslyFocused && typeof modal._previouslyFocused.focus === 'function') {
+        modal._previouslyFocused.focus();
+    }
+}
+
+function closeQuizModal() {
+    const modal = document.getElementById('quiz-modal');
+    if (modal) deactivateModal(modal);
+}
+
+// ---------------------------------------------------------------------------
+// Math notation normalizer + KaTeX render (issue #5). The question corpus
+// mixes plain-ASCII conventions (caret exponents, underscore subscripts,
+// slash fractions) -- this only converts clearly-recognizable patterns into
+// KaTeX's $...$ delimiters, left conservative on purpose since the corpus
+// wasn't authored with a renderer in mind and a wrong parse is worse than
+// leaving ambiguous text alone.
+// ---------------------------------------------------------------------------
+function escapeHtml(str) {
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+}
+
+function normalizeMathText(text) {
+    if (!text) return text;
+    let result = escapeHtml(text);
+    result = result.replace(/\b(\d{1,3})\/(\d{1,3})\b/g, (m, a, b) => `$\\frac{${a}}{${b}}$`);
+    result = result.replace(/([A-Za-z0-9])\^(-?\d+|[A-Za-z])/g, (m, base, exp) => `$${base}^{${exp}}$`);
+    result = result.replace(/([A-Za-z])_([A-Za-z0-9]+)/g, (m, base, sub) => `$${base}_{${sub}}$`);
+    return result;
+}
+
+function renderMathIn(el) {
+    if (window.renderMathInElement) {
+        try {
+            renderMathInElement(el, { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false });
+        } catch (e) {
+            console.warn('KaTeX render failed', e);
+        }
+    }
+}
 
 function setStatus(message) {
     const el = document.getElementById('test-output');
@@ -78,7 +206,7 @@ function handleInvalidSession(message) {
 
     // Close modal if open
     const modal = document.getElementById('quiz-modal');
-    if (modal) modal.classList.remove('active');
+    if (modal) deactivateModal(modal);
 
     // Hide all secondary screens
     ['syllabus-screen', 'combat-screen', 'victory-screen', 'defeat-screen'].forEach(id => {
@@ -91,6 +219,7 @@ function handleInvalidSession(message) {
     if (mainMenu) mainMenu.style.display = 'block';
     const deploy = document.getElementById('deploy-btn');
     if (deploy) deploy.disabled = false;
+    hideGameNav();
     setStatus('Session expired. Click Deploy System to relaunch.');
 }
 
@@ -117,13 +246,21 @@ async function startGame() {
             if (syllData.status === 'success') {
                 document.getElementById('main-menu').style.display = 'none';
                 document.getElementById('syllabus-screen').style.display = 'block';
+                showGameNav('');
                 const grid = document.getElementById('syllabi-grid');
                 grid.innerHTML = '';
                 syllData.syllabi.forEach(syllabus => {
                     const card = document.createElement('div');
                     card.className = 'syllabus-card';
                     card.dataset.syllabusId = syllabus.id;
-                    card.innerHTML = `<span class="syllabus-realm">${syllabus.name}</span><h3>${syllabus.name}</h3><p>${syllabus.description}</p>`;
+                    // Keyboard-operable (issue #3): this was a plain div with only
+                    // a click listener, unreachable by keyboard.
+                    card.setAttribute('tabindex', '0');
+                    card.setAttribute('role', 'button');
+                    card.setAttribute('aria-label', `${syllabus.name} realm -- ${syllabus.description}`);
+                    // Eyebrow now says "Realm" instead of repeating the syllabus
+                    // name a second time right above the <h3> (issue #4 bug).
+                    card.innerHTML = `<span class="syllabus-realm">Realm</span><h3>${syllabus.name}</h3><p>${syllabus.description}</p>`;
                     const button = document.createElement('button');
                     button.type = 'button';
                     button.textContent = 'Initialize Sync';
@@ -137,7 +274,17 @@ async function startGame() {
                         console.log('Card click handler for', syllabus.id);
                         selectSyllabus(syllabus.id);
                     });
+                    card.addEventListener('keydown', function (e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            selectSyllabus(syllabus.id);
+                        }
+                    });
+                    const caption = document.createElement('p');
+                    caption.className = 'neural-btn-caption';
+                    caption.textContent = "Begin this realm's challenges";
                     card.appendChild(button);
+                    card.appendChild(caption);
                     grid.appendChild(card);
                     console.log('Created button for:', syllabus.id);
                 });
@@ -213,6 +360,7 @@ async function selectSyllabus(id) {
             // "everything pushed left, log floating at top-right" layout bug.
             combatScreen.style.display = 'block';
             combatScreen.style.visibility = 'visible';
+            showGameNav(id.charAt(0).toUpperCase() + id.slice(1));
 
             // Force a reflow to ensure DOM updates
             void combatScreen.offsetHeight;
@@ -417,7 +565,8 @@ function openQuizModal(question, action) {
     // safe since we rebuild qEl/optsEl from scratch below regardless.
     optsEl.innerHTML = '';
     modal.classList.add('active');
-    qEl.textContent = question?.text || 'Answer the question to proceed.';
+    qEl.innerHTML = normalizeMathText(question?.text) || 'Answer the question to proceed.';
+    renderMathIn(qEl);
     optsEl.innerHTML = '';
     // Add hint box directly below question
     let hintBox = document.getElementById('hint-box');
@@ -516,10 +665,17 @@ function openQuizModal(question, action) {
             const btn = document.createElement('button');
             btn.className = 'answer-btn';
             btn.setAttribute('data-idx', idx);
-            btn.textContent = opt?.text || String(opt);
+            btn.innerHTML = normalizeMathText(opt?.text || String(opt));
             btn.addEventListener('click', function (e) {
                 e.stopPropagation();
                 e.preventDefault();
+                // Immediate visual feedback while the response is in flight
+                // (issue #5's "selected" state) -- correct/incorrect isn't
+                // shown here since the quiz modal hides as soon as the
+                // feedback modal takes over, so there's no visible moment
+                // to show those states meaningfully.
+                optsEl.querySelectorAll('.answer-btn').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
                 const idx = parseInt(btn.getAttribute('data-idx'));
                 submitQuizAnswer(action, idx, btn);
             });
@@ -529,13 +685,12 @@ function openQuizModal(question, action) {
         options.forEach((opt, idx) => {
             const label = document.createElement('label');
             label.className = 'quiz-option-label';
-            label.style.cssText = 'display: block; margin: 0.5rem 0; cursor: pointer;';
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
             checkbox.value = idx;
             checkbox.id = `quiz-opt-${idx}`;
             const span = document.createElement('span');
-            span.textContent = ' ' + (opt?.text || String(opt));
+            span.innerHTML = normalizeMathText(opt?.text || String(opt));
             label.appendChild(checkbox);
             label.appendChild(span);
             optsEl.appendChild(label);
@@ -550,6 +705,12 @@ function openQuizModal(question, action) {
         };
         optsEl.appendChild(submitBtn);
     }
+    renderMathIn(optsEl);
+
+    // Focus trap (issue #5): set up last, once every focusable control
+    // (hint buttons, answer options, close button) actually exists in the DOM.
+    modal._previouslyFocused = document.activeElement;
+    modal._releaseFocusTrap = trapFocus(modal, closeQuizModal);
 }
 
 async function submitQuizAnswer(action, answerIndex) {
@@ -598,7 +759,7 @@ async function submitQuizAnswer(action, answerIndex) {
             isCorrect = true;
         }
         // Hide quiz modal before showing feedback
-        if (modal) modal.classList.remove('active');
+        if (modal) closeQuizModal();
         showFeedbackModal({ message: feedbackMsg, correct: isCorrect }, () => {
             // After closing feedback, advance as needed
             if (data.outcome === 'victory') {
@@ -713,7 +874,7 @@ async function submitQuizAnswerMulti(action, answerIndices) {
             // classList.add('active') stops being able to show the modal at all for
             // the rest of the session, the instant a player answers ANY multi-select
             // question. This was the real cause of "Attack stops working."
-            if (modal) modal.classList.remove('active');
+            if (modal) closeQuizModal();
             showFeedbackModal({ message: feedbackMsg, correct: isCorrect }, () => {
                 if (data.outcome === 'victory') {
                     const combat = document.getElementById('combat-screen');
@@ -796,14 +957,19 @@ function showFeedbackModal(feedback, onClose) {
             if (titleEl) titleEl.textContent = 'Feedback';
         }
     }
+    function closeFeedbackModal() {
+        if (modal) deactivateModal(modal);
+        if (onClose) onClose();
+    }
+    if (modal) {
+        modal._previouslyFocused = document.activeElement;
+        modal._releaseFocusTrap = trapFocus(modal, closeFeedbackModal);
+    }
     // Remove any previous event listeners by cloning the node
     if (closeBtnEl) {
         const newBtn = closeBtnEl.cloneNode(true);
         closeBtnEl.parentNode.replaceChild(newBtn, closeBtnEl);
-        newBtn.addEventListener('click', function handleClose() {
-            if (modal) modal.classList.remove('active');
-            if (onClose) onClose();
-        });
+        newBtn.addEventListener('click', closeFeedbackModal);
     }
 }
 
@@ -845,11 +1011,12 @@ async function resetGame() {
             const log = document.getElementById('battle-log-content');
             if (log) log.innerHTML = '';
 
-            // Close any modals
+            // Close any modals (release any focus trap left attached if the
+            // player abandoned progress mid-quiz via the nav Home button)
             const quizModal = document.getElementById('quiz-modal');
-            if (quizModal) quizModal.classList.remove('active');
+            if (quizModal) deactivateModal(quizModal);
             const feedbackModal = document.getElementById('feedback-modal');
-            if (feedbackModal) feedbackModal.classList.remove('active');
+            if (feedbackModal) deactivateModal(feedbackModal);
 
             // Hide secondary screens and show main menu.
             // victory/defeat screens use the opacity/visibility + .active-class
@@ -868,6 +1035,7 @@ async function resetGame() {
             if (mainMenu) mainMenu.style.display = 'block';
             const deploy = document.getElementById('deploy-btn');
             if (deploy) deploy.disabled = false;
+            hideGameNav();
             setStatus('Session reset. Click Deploy System to start!');
         } else {
             alert(data.message || 'Reset failed');

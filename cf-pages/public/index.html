@@ -8,10 +8,13 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Knowledge Keeper - Neural Intelligence</title>
-    <link rel="stylesheet" href="/static/css/style-neural.css?v=2">
+    <link rel="stylesheet" href="/static/css/style-neural.css?v=3">
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
     <style>
         #main-menu,
         #syllabus-screen,
@@ -72,6 +75,12 @@
 <body>
     <!-- Neural Network Background Canvas -->
     <canvas id="neuralCanvas" class="neural-background"></canvas>
+
+    <!-- Persistent navigation, hidden on the main menu -->
+    <nav id="game-nav" class="game-nav" style="display: none;" aria-label="Game navigation">
+        <button type="button" id="game-nav-home-btn" class="game-nav-home-btn">Home</button>
+        <span id="game-nav-realm" class="game-nav-realm"></span>
+    </nav>
 
     <!-- MAIN MENU SCREEN -->
     <div id="main-menu" data-screen="main_menu" style="display: block;">
@@ -153,7 +162,7 @@
         <div id="battle-log-content" class="battle-log"></div>
 
         <!-- Standardized Neural Modals -->
-        <div id="feedback-modal" class="neural-modal">
+        <div id="feedback-modal" class="neural-modal" role="dialog" aria-modal="true" aria-labelledby="feedback-title">
             <div class="neural-modal-content">
                 <div class="modal-label" id="feedback-title">Feedback</div>
                 <div class="feedback-message" id="feedback-message"></div>
@@ -161,9 +170,9 @@
             </div>
         </div>
 
-        <div id="quiz-modal" class="neural-modal">
+        <div id="quiz-modal" class="neural-modal" role="dialog" aria-modal="true" aria-labelledby="quiz-modal-title">
             <div class="neural-modal-content">
-                <div class="modal-label">Quiz Challenge</div>
+                <div class="modal-label" id="quiz-modal-title">Quiz Challenge</div>
                 <div id="quiz-question" class="quiz-question"></div>
                 <div id="quiz-options" class="quiz-options-grid"></div>
                 <button id="close-quiz-btn" class="neural-btn" style="margin-top: 2rem;">Close</button>
@@ -192,9 +201,8 @@
     </div>
 
 
-    <script src="/static/js/script.js?v=3"></script>
     <script src="/static/js/neural-bg.js?v=3"></script>
-    <script src="/static/js/game-simple.js?v=4"></script>
+    <script src="/static/js/game-simple.js?v=5"></script>
 </body>
 
 </html>
