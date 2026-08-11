@@ -15,6 +15,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+    <script type="module">
+        // Zero-build site (no bundler) -- Firebase loaded via CDN ES modules,
+        // same pattern as KaTeX above. game-simple.js is a plain classic
+        // script, so the pieces it needs are exposed on window.
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+        import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged }
+            from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyARNeWhbHF6gWmNA683K3iB_fR6NJe9Sto",
+            authDomain: "study-saga-live.firebaseapp.com",
+            projectId: "study-saga-live",
+            storageBucket: "study-saga-live.firebasestorage.app",
+            messagingSenderId: "1615587429",
+            appId: "1:1615587429:web:1ee4cdbf05eeb7098abe8c",
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        window.studySagaSignIn = () => signInWithPopup(auth, new GoogleAuthProvider());
+        window.studySagaSignOut = () => auth.signOut();
+        onAuthStateChanged(auth, (user) => {
+            window.dispatchEvent(new CustomEvent('studysaga-auth-changed', { detail: { user } }));
+        });
+    </script>
     <style>
         #main-menu,
         #syllabus-screen,
@@ -93,7 +119,11 @@
             <button class="neural-btn" id="deploy-btn">
                 Deploy System
             </button>
-            <!-- Start message removed -->
+            <p class="neural-btn-caption">Start a new game</p>
+            <div id="auth-status" style="margin-top: 2rem;">
+                <button type="button" id="sign-in-btn" class="game-nav-home-btn">Sign in with Google</button>
+                <p class="neural-btn-caption" id="auth-status-caption">Sign in to save your progress across devices</p>
+            </div>
         </div>
     </div>
 

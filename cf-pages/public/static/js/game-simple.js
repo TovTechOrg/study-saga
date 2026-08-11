@@ -77,7 +77,79 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    const signInBtn = document.getElementById('sign-in-btn');
+    if (signInBtn) {
+        signInBtn.addEventListener('click', function () {
+            if (window.currentUser) {
+                window.studySagaSignOut();
+            } else if (window.studySagaSignIn) {
+                window.studySagaSignIn().catch((e) => {
+                    console.error('Sign-in failed:', e);
+                    alert('Sign-in failed: ' + e.message);
+                });
+            }
+        });
+    }
+
+    window.addEventListener('studysaga-auth-changed', function (e) {
+        handleAuthChanged(e.detail.user);
+    });
 });
+
+// ---------------------------------------------------------------------------
+// Firebase auth (optional sign-in for cross-device progress saves).
+// index.html's module script exposes studySagaSignIn/SignOut on window and
+// dispatches 'studysaga-auth-changed' on state changes -- game-simple.js is
+// a plain classic script, so it listens for that rather than importing the
+// SDK directly.
+// ---------------------------------------------------------------------------
+async function getIdToken() {
+    if (!window.currentUser) return null;
+    try {
+        return await window.currentUser.getIdToken();
+    } catch (e) {
+        console.error('Failed to get ID token:', e);
+        return null;
+    }
+}
+
+async function handleAuthChanged(user) {
+    window.currentUser = user;
+    const signInBtn = document.getElementById('sign-in-btn');
+    const caption = document.getElementById('auth-status-caption');
+    if (user) {
+        if (signInBtn) signInBtn.textContent = 'Sign out';
+        if (caption) caption.textContent = `Signed in as ${user.displayName || user.email}`;
+
+        // Check for a game already in progress on another device.
+        const idToken = await getIdToken();
+        try {
+            const res = await fetch('/api/auth-resume', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id_token: idToken }),
+            });
+            const data = await res.json();
+            if (data.status === 'resumed' && confirm('You have a game in progress. Resume it?')) {
+                window.gameId = data.game_id;
+                window.combatState = data.combat_state;
+                document.getElementById('main-menu').style.display = 'none';
+                const combatScreen = document.getElementById('combat-screen');
+                combatScreen.style.display = 'block';
+                combatScreen.style.visibility = 'visible';
+                showGameNav((data.combat_state.syllabus_id || '').charAt(0).toUpperCase() + (data.combat_state.syllabus_id || '').slice(1));
+                updateCombatHUD(data.combat_state);
+                updateHintsBar(data.hints);
+            }
+        } catch (e) {
+            console.error('auth-resume check failed:', e);
+        }
+    } else {
+        if (signInBtn) signInBtn.textContent = 'Sign in with Google';
+        if (caption) caption.textContent = 'Sign in to save your progress across devices';
+    }
+}
 
 // ---------------------------------------------------------------------------
 // Persistent navigation bar (issue #7)
@@ -234,7 +306,12 @@ async function startGame() {
     if (btn) btn.disabled = true;
     setStatus('Starting...');
     try {
-        const response = await fetch('/api/start-game', { method: 'POST', headers: { 'Content-Type': 'application/json' } });
+        const idToken = await getIdToken();
+        const response = await fetch('/api/start-game', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id_token: idToken }),
+        });
         const data = await response.json();
         console.log('Game started:', data);
         if (data.status === 'success' && data.game_id) {
