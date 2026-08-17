@@ -9,6 +9,7 @@
     <meta http-equiv="Expires" content="0">
     <title>Knowledge Keeper - Neural Intelligence</title>
     <link rel="stylesheet" href="/static/css/style-neural.css?v=3">
+    <link rel="stylesheet" href="/static/css/holo-card.css?v=1">
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -138,6 +139,8 @@
     <!-- COMBAT SCREEN (hidden by default, shown after selecting a syllabus) -->
     <div id="combat-screen" data-screen="combat" style="display: none;">
         <div class="combat-hud-outer">
+            <button type="button" id="holo-effects-toggle" class="holo-effects-toggle"
+                style="position: static; margin-bottom: 4px;" aria-label="Toggle card visual effects">Effects: On</button>
             <div class="combat-cards-row">
                 <!-- Player Card -->
                 <div class="card-container" id="player-card">
@@ -232,7 +235,18 @@
 
 
     <script src="/static/js/neural-bg.js?v=3"></script>
+    <script src="/static/js/holo-card.js?v=1"></script>
     <script src="/static/js/game-simple.js?v=5"></script>
+    <script>
+        // Wire up the holo cards once the DOM (including the player/enemy
+        // card elements, which exist from page load) is ready.
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!window.HoloCard) return;
+            window.HoloCard.init(document.getElementById('player-card'));
+            window.HoloCard.init(document.getElementById('enemy-card'), { opponent: true });
+            window.HoloCard.initLowEffectsToggle(document.getElementById('holo-effects-toggle'));
+        });
+    </script>
 </body>
 
 </html>

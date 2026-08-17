@@ -1030,6 +1030,19 @@ function showFeedbackModal(feedback, onClose) {
         if (isObject && typeof feedback.correct !== 'undefined') {
             modal.classList.add(feedback.correct ? 'good' : 'bad');
             if (titleEl) titleEl.textContent = feedback.correct ? '✅ Correct!' : '❌ Incorrect';
+            if (window.HoloCard) {
+                const playerCard = document.getElementById('player-card');
+                const enemyCard = document.getElementById('enemy-card');
+                if (feedback.correct) {
+                    window._holoStreak = (window._holoStreak || 0) + 1;
+                    window.HoloCard.pulse(playerCard);
+                    window.HoloCard.setIntensity(playerCard, window._holoStreak);
+                } else {
+                    window._holoStreak = 0;
+                    window.HoloCard.flash(enemyCard);
+                    window.HoloCard.setIntensity(playerCard, 0);
+                }
+            }
         } else {
             if (titleEl) titleEl.textContent = 'Feedback';
         }

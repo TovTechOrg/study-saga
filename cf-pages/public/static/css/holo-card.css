@@ -1,0 +1,131 @@
+/*
+ * Holographic character card effect (player/opponent combat cards).
+ *
+ * Inspired by the general "pointer-tracked color-dodge card" technique
+ * popularized by Simon Goellner's Pokemon Cards Holo effect
+ * (github.com/simeydotme/pokemon-cards-css, GPL-3.0). That repo's actual
+ * code is NOT used here -- it's GPL-3.0, which is incompatible with
+ * shipping as part of this closed commercial codebase without also
+ * GPL-licensing the surrounding work. Everything below is an original,
+ * independently-written implementation of the same general idea (pointer
+ * position -> CSS custom properties -> a shine layer and a glare layer
+ * composited with mix-blend-mode: color-dodge). Credited here for honesty
+ * about where the idea came from, not because of any code reuse.
+ *
+ * Public API (CSS custom properties set by holo-card.js on the .holo-card
+ * element): --holo-rx, --holo-ry (tilt in deg), --holo-mx, --holo-my
+ * (pointer position, 0-100%), --holo-intensity (0-1, raised by streaks).
+ */
+
+.holo-card {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 900px;
+    --holo-rx: 0deg;
+    --holo-ry: 0deg;
+    --holo-mx: 50%;
+    --holo-my: 50%;
+    --holo-intensity: 0.35;
+    transition: transform 120ms ease-out;
+    transform: rotateX(var(--holo-rx)) rotateY(var(--holo-ry));
+}
+
+.holo-card__shine,
+.holo-card__glare {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+    opacity: var(--holo-intensity);
+    mix-blend-mode: color-dodge;
+    transition: opacity 200ms ease-out;
+}
+
+/* Broad, soft rainbow sheen that follows the pointer. */
+.holo-card__shine {
+    background: conic-gradient(from 180deg at var(--holo-mx) var(--holo-my),
+        #ff5ecb, #ffd35e, #7dff9c, #5ecbff, #b45eff, #ff5ecb);
+    filter: blur(6px) saturate(1.4);
+}
+
+/* Tighter, brighter highlight -- the "glare" pinpoint. */
+.holo-card__glare {
+    background: radial-gradient(circle at var(--holo-mx) var(--holo-my),
+        rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.25) 22%, transparent 55%);
+}
+
+.holo-card--opponent {
+    transform-origin: center;
+}
+
+.holo-card--opponent .holo-card__shine,
+.holo-card--opponent .holo-card__glare {
+    opacity: calc(var(--holo-intensity) * 0.7);
+}
+
+/* Correct-answer reaction on the player card. */
+.holo-card.holo-pulse {
+    animation: holo-pulse-kf 480ms ease-out;
+}
+
+@keyframes holo-pulse-kf {
+    0% { transform: rotateX(var(--holo-rx)) rotateY(var(--holo-ry)) scale(1); }
+    35% { transform: rotateX(var(--holo-rx)) rotateY(var(--holo-ry)) scale(1.05); }
+    100% { transform: rotateX(var(--holo-rx)) rotateY(var(--holo-ry)) scale(1); }
+}
+
+/* Wrong-answer reaction on the opponent card. */
+.holo-card.holo-flash .holo-card__glare {
+    animation: holo-flash-kf 420ms ease-out;
+}
+
+@keyframes holo-flash-kf {
+    0% { background: radial-gradient(circle at var(--holo-mx) var(--holo-my), rgba(255, 90, 90, 0.95) 0%, rgba(255, 90, 90, 0.35) 30%, transparent 60%); }
+    100% { background: radial-gradient(circle at var(--holo-mx) var(--holo-my), rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.25) 22%, transparent 55%); }
+}
+
+/* Reduced motion: no tilt, no shine/glare animation, static card. */
+@media (prefers-reduced-motion: reduce) {
+    .holo-card {
+        transition: none;
+        transform: none !important;
+    }
+    .holo-card__shine,
+    .holo-card__glare {
+        display: none;
+    }
+    .holo-card.holo-pulse,
+    .holo-card.holo-flash .holo-card__glare {
+        animation: none;
+    }
+}
+
+/* Low-effects toggle (perf escape hatch for low-end mobile). */
+body.holo-effects-off .holo-card {
+    transition: none;
+    transform: none !important;
+}
+body.holo-effects-off .holo-card__shine,
+body.holo-effects-off .holo-card__glare {
+    display: none;
+}
+
+.holo-effects-toggle {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    z-index: 5;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.35);
+    color: #cfe8ff;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .holo-card__shine {
+        filter: blur(4px) saturate(1.2);
+    }
+}
