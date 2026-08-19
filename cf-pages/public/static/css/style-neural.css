@@ -216,6 +216,18 @@ body {
     letter-spacing: 0.03em;
 }
 
+.auth-error {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+    color: #fca5a5;
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    border-left: 3px solid #ef4444;
+    border-radius: 4px;
+}
+
 /* SYLLABUS GRID */
 .neural-syllabus-container {
     display: flex;

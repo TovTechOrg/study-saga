@@ -1,158 +1,113 @@
-# Game Menu Application
+# Study Saga
 
-A beautiful Flask-based game menu application with a modern UI design featuring a left sidebar menu and a clean white main content area.
+A browser-based study game: players pick a syllabus (Math, Biology, Chemistry, or Physics) and battle enemies by answering quiz questions. Wrong answers cost HP, correct answers deal damage and earn hint credits, and an AI hint pipeline can explain any question on request.
 
-## Features
+**Live:** https://study-saga.pages.dev — 100% Cloudflare (Pages + Pages Functions + KV/Firestore), no Python/Flask involved.
+**Landing page:** GitHub Pages, served from [`docs/`](docs/)
 
-- **Modern UI Design**: Clean, responsive interface with beautiful animations
-- **Left Sidebar Menu**: Three main options: Start Game, Options, and Cancel
-- **Interactive Buttons**: Hover effects, animations, and sound feedback
-- **Options Modal**: Configurable game settings with difficulty, sound, and volume controls
-- **API Integration**: RESTful backend endpoints for game functionality
-- **Responsive Design**: Works on desktop and mobile devices
+## Repo layout
 
-## Project Structure
+This repo contains the production app plus an older prototype and a content-authoring pipeline:
 
 ```
-TovTech/
-├── backend/
-│   ├── app.py              # Main Flask application
-│   └── requirements.txt    # Python dependencies
-├── frontend/
-│   ├── templates/
-│   │   └── index.html      # Main HTML template
-│   └── static/
-│       ├── css/
-│       │   └── style.css   # Styles and animations
-│       └── js/
-│           └── script.js   # JavaScript functionality
-└── README.md
+study-saga/
+├── cf-pages/          # ✅ Production app — deployed to Cloudflare Pages
+│   ├── functions/     #    Pages Functions (serverless API routes)
+│   │   ├── api/       #    start-game, start-combat, combat-action, get-hint,
+│   │   │               #    reset-game, auth-resume, syllabi
+│   │   └── _lib/       #    game.js (session/KV helpers), auth.js (Firebase
+│   │                    #    token verification), profile.js (Firestore),
+│   │                    #    data.json/config.json (question corpus)
+│   └── public/         #    Static frontend — index.html, game-simple.js,
+│                        #    holo-card.js/css, neural-bg.js, style-neural.css
+├── backend/           # Original Flask prototype + content pipeline
+│   ├── app.py         #    Local dev server (same game logic as cf-pages,
+│   │                   #    used for iterating before porting to Functions)
+│   ├── data.json       #    Master question corpus (mirrored into cf-pages)
+│   └── *.py, *.md      #    Hint-generation/audit/bakeoff scripts — see below
+├── frontend/          # Templates/static assets consumed by backend/app.py
+└── docs/              # Static GitHub Pages landing page
 ```
 
-## Installation
+The **cf-pages/** app is what's actually live at study-saga.pages.dev — it's the entire production stack, and it's JavaScript end to end (Pages Functions + vanilla JS frontend), not Python. **`backend/app.py`** is a Flask app kept around only as a local mirror for faster iteration on game logic before porting changes to Functions — it is never deployed. The rest of `backend/` is a large collection of one-off scripts used to build and QA the question/hint corpus (see [Content pipeline](#content-pipeline) below).
 
-### Prerequisites
+## Gameplay
 
-- Python 3.7 or higher
-- pip (Python package installer)
+- **Syllabus select → combat.** Each syllabus is a series of enemy encounters; each question is one "turn."
+- **Hint economy.** Every game starts with 3 Simple hints (reveals the easy-tier explanation) and 1 Deep hint (full multi-tier breakdown). Correct answers earn +1 credit, defeating an enemy earns +2; credits buy extra hints once the free budget runs out.
+- **Per-level results.** Victory/defeat screens show which questions were answered correctly vs. missed for that encounter.
+- **Holographic cards.** Player/opponent combat cards have a pointer-tracked holo-foil effect (`mix-blend-mode: color-dodge`), with device-tilt on mobile, reduced-motion support, and a low-effects toggle.
+- **Optional Google Sign-In.** Signing in links your active game to your Firebase account; signing in on another device offers to resume that in-progress combat. Guests are unaffected — auth is entirely opt-in.
+- **Accessible, responsive UI.** No horizontal overflow at mobile/tablet/desktop breakpoints, keyboard-navigable syllabus cards, a real focus trap + Escape-to-close on modals, and KaTeX-rendered math notation.
 
-### Setup Instructions
+## Running locally
 
-1. **Clone or navigate to the project directory**
-   ```bash
-   cd TovTech
-   ```
+### Production app (`cf-pages/`)
 
-2. **Install Python dependencies**
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   ```
+```bash
+cd cf-pages
+npm install
+npx wrangler pages dev public
+```
 
-3. **Run the Flask application**
-   ```bash
-   python app.py
-   ```
+Required bindings/secrets are listed under [Deployment](#deployment) below.
 
-4. **Open your browser**
-   Navigate to `http://localhost:5000`
+### Flask prototype (`backend/`)
 
-## Usage
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
 
-### Main Menu Options
+Open `http://localhost:5000`. Live hint generation needs `GEMINI_API_KEY`/`GROQ_API_KEY` in `backend/.env`; without them, only pre-generated hints from `data.json`/`final_corpus_gemini_hints.json` are served. This is a local-only dev mirror — it is never deployed anywhere.
 
-- **Start Game**: Initiates a new game session
-- **Options**: Opens a modal with game configuration settings
-- **Cancel**: Cancels the current game session
+## Deployment
 
-### Options Configuration
+The `study-saga` Cloudflare Pages project has **no Git integration** — it does not auto-build from this (or any) GitHub repo. Every deploy is a manual push of the built directory straight to Cloudflare's edge from a local machine:
 
-The options modal allows you to configure:
-- **Difficulty**: Easy, Medium, or Hard
-- **Sound**: Enable/disable sound effects
-- **Music Volume**: Adjust background music volume (0-100%)
-- **SFX Volume**: Adjust sound effects volume (0-100%)
+```bash
+cd cf-pages
+npx wrangler pages deploy public --project-name study-saga --branch main
+```
 
-## API Endpoints
+Build settings (there is no build step — `public/` is served as-is):
 
-### Backend Routes
+| Setting | Value |
+|---|---|
+| Framework preset | None |
+| Build command | *(none)* |
+| Build output directory | `public` |
+| Functions directory | `functions` (auto-detected, Pages Functions) |
+| Root directory | `cf-pages` |
+| Git integration | None — CLI-only deploys via `wrangler pages deploy` |
 
-- `GET /` - Serves the main game page
-- `POST /api/start-game` - Starts a new game
-- `GET /api/options` - Retrieves current game options
-- `POST /api/options` - Updates game options
-- `POST /api/cancel` - Cancels the current game
+### Google Sign-In domain allow-list
 
-## Technologies Used
+Firebase Auth (project `study-saga-live`) only allows sign-in from domains it's explicitly told about. **Whenever the deploy target changes** (new custom domain, new preview subdomain, moving to a different Cloudflare Pages project), two separate allow-lists need updating or Google Sign-In fails with `auth/unauthorized-domain`:
 
-- **Backend**: Flask, Flask-CORS
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Styling**: Custom CSS with animations and gradients
-- **Fonts**: Google Fonts (Orbitron)
+1. **Firebase Console → Authentication → Settings → Authorized domains** — add the new domain (e.g. `study-saga.pages.dev`). Note: Cloudflare Pages preview deploys use `*.study-saga.pages.dev` subdomains, which the apex entry does not cover — add specific preview domains as needed, or accept that sign-in only works on the production URL.
+2. **Google Cloud Console → APIs & Services → Credentials**, on the OAuth 2.0 Web client Firebase uses — add the domain to **Authorized JavaScript origins** (e.g. `https://study-saga.pages.dev`) and confirm **Authorized redirect URIs** includes `https://study-saga-live.firebaseapp.com/__/auth/handler`.
 
-## Features in Detail
+Both of these are console-only settings — there is nothing in this repo that can add a domain for you, and no CLI currently authenticated in this environment can either (`firebase login` credentials here are expired). Whoever has access to the `study-saga-live` Firebase/GCP project needs to make these two changes by hand.
 
-### UI/UX Features
-- Smooth hover animations on buttons
-- Glowing text effects
-- Shimmer animations on the sidebar
-- Modal popups with slide-in animations
-- Responsive design for mobile devices
-- Sound feedback on button clicks
+Required bindings/secrets (set in the Cloudflare Pages dashboard or `wrangler.toml`):
+- KV namespace `GAME_SESSIONS` — active game sessions
+- A Firebase project (`study-saga-live`) with Google Sign-In enabled, for optional auth
+- Firestore in that Firebase project, with security rules restricting each `user_profiles/{uid}` doc to its own token (rules are inlined as a comment in `functions/_lib/profile.js`)
 
-### Interactive Elements
-- Real-time volume slider updates
-- Loading states for buttons
-- Success/error notifications
-- Dynamic content updates
+Because deploys aren't tied to `git push`, the state of this repo's `main` branch on GitHub can lag behind what's actually live — check `npx wrangler pages deployment list --project-name study-saga` for the real deployment history rather than assuming the latest commit is what's served.
 
-## Customization
+## Content pipeline
 
-### Adding New Menu Options
-1. Add a new button in `frontend/templates/index.html`
-2. Style the button in `frontend/static/css/style.css`
-3. Add JavaScript functionality in `frontend/static/js/script.js`
-4. Create corresponding API endpoint in `backend/app.py`
+`backend/` doubles as the workspace for building and grading the question/hint corpus — generator bake-offs (Gemini vs. Groq vs. Gemma across Math/Biology/Chemistry/Physics), an LLM-judge comparison harness, difficulty classification, and audit scripts that catch things like glued-together text artifacts or mismatched answer keys. Results and intermediate corpora are checked in as `*_results.json`/`*_report.json` next to the scripts that produced them. This is R&D scaffolding, not part of the served app — treat scripts here as a lab notebook rather than a stable API.
 
-### Modifying Styles
-The application uses modern CSS features including:
-- CSS Grid and Flexbox for layout
-- CSS Custom Properties for theming
-- CSS Animations and Transitions
-- Backdrop filters for glass effects
+## Known gaps / roadmap
 
-## Browser Compatibility
-
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-
-## Development
-
-### Running in Development Mode
-The Flask application runs in debug mode by default, which provides:
-- Automatic reloading on code changes
-- Detailed error messages
-- Debug toolbar
-
-### File Structure for Development
-- Backend logic goes in `backend/app.py`
-- Frontend templates in `frontend/templates/`
-- Static assets (CSS, JS) in `frontend/static/`
+- **Points/gacha economy** (spend earned credits on upgrades — potions, attack-power boosts) is scoped but deferred; the hint-credit system above is the first slice of it.
+- **Chemistry hint quality** trails Biology/Physics in bake-off scoring (~14.5% of sampled hints score below the quality floor, vs. ~3-5% for the other two subjects) — root cause still open.
+- User profile storage is being moved from Cloudflare KV to Firestore (direct REST calls with the caller's own Firebase ID token, no Admin SDK) so profile data isn't tied to a single Cloudflare account.
 
 ## License
 
 This project is open source and available under the MIT License.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## Support
-
-For issues or questions, please create an issue in the repository or contact the development team.

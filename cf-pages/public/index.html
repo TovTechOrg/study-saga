@@ -21,8 +21,10 @@
         // same pattern as KaTeX above. game-simple.js is a plain classic
         // script, so the pieces it needs are exposed on window.
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
-        import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged }
-            from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+        import {
+            getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect,
+            getRedirectResult, onAuthStateChanged,
+        } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyARNeWhbHF6gWmNA683K3iB_fR6NJe9Sto",
@@ -35,11 +37,32 @@
 
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
+        const googleProvider = new GoogleAuthProvider();
 
-        window.studySagaSignIn = () => signInWithPopup(auth, new GoogleAuthProvider());
+        // Popups are blocked outright by some mobile browsers/in-app webviews
+        // (issue #8) -- fall back to a full-page redirect in that case. Any
+        // other failure (including auth/unauthorized-domain) is rethrown for
+        // game-simple.js to show inline instead of a native alert().
+        window.studySagaSignIn = async () => {
+            try {
+                await signInWithPopup(auth, googleProvider);
+            } catch (e) {
+                if (e.code === 'auth/popup-blocked' || e.code === 'auth/operation-not-supported-in-this-environment') {
+                    await signInWithRedirect(auth, googleProvider);
+                    return;
+                }
+                throw e;
+            }
+        };
         window.studySagaSignOut = () => auth.signOut();
         onAuthStateChanged(auth, (user) => {
             window.dispatchEvent(new CustomEvent('studysaga-auth-changed', { detail: { user } }));
+        });
+        // Surfaces errors from the signInWithRedirect fallback above -- that
+        // flow's result only arrives after the full-page round trip, so it
+        // can't reject a promise the way signInWithPopup does.
+        getRedirectResult(auth).catch((e) => {
+            window.dispatchEvent(new CustomEvent('studysaga-auth-error', { detail: { error: e } }));
         });
     </script>
     <style>
@@ -124,6 +147,7 @@
             <div id="auth-status" style="margin-top: 2rem;">
                 <button type="button" id="sign-in-btn" class="game-nav-home-btn">Sign in with Google</button>
                 <p class="neural-btn-caption" id="auth-status-caption">Sign in to save your progress across devices</p>
+                <p class="auth-error" id="auth-status-error" role="alert" style="display: none;"></p>
             </div>
         </div>
     </div>

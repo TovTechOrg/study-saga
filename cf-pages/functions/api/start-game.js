@@ -20,9 +20,9 @@ export async function onRequestPost({ request, env }) {
     const auth = await verifyFirebaseToken(payload.id_token);
     if (auth) {
         session.uid = auth.uid;
-        const profile = (await getProfile(env, auth.uid)) || freshProfile(auth.uid);
+        const profile = (await getProfile(payload.id_token, auth.uid)) || freshProfile(auth.uid);
         profile.active_game_id = gameId;
-        await putProfile(env, auth.uid, profile);
+        await putProfile(payload.id_token, auth.uid, profile);
     }
 
     await putSession(env, gameId, session);

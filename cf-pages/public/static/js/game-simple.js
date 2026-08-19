@@ -84,9 +84,10 @@ document.addEventListener('DOMContentLoaded', function () {
             if (window.currentUser) {
                 window.studySagaSignOut();
             } else if (window.studySagaSignIn) {
+                clearAuthError();
                 window.studySagaSignIn().catch((e) => {
                     console.error('Sign-in failed:', e);
-                    alert('Sign-in failed: ' + e.message);
+                    showAuthError(e);
                 });
             }
         });
@@ -95,7 +96,40 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('studysaga-auth-changed', function (e) {
         handleAuthChanged(e.detail.user);
     });
+    window.addEventListener('studysaga-auth-error', function (e) {
+        console.error('Sign-in failed:', e.detail.error);
+        showAuthError(e.detail.error);
+    });
 });
+
+// ---------------------------------------------------------------------------
+// Inline sign-in error display (issue #8) -- replaces alert() with a message
+// next to the sign-in button, styled to match the terminal theme. Firebase
+// error `.code` values are mapped to plain-language copy; anything
+// unrecognized falls back to a generic message rather than leaking the raw
+// Firebase error string to players.
+// ---------------------------------------------------------------------------
+const AUTH_ERROR_MESSAGES = {
+    'auth/unauthorized-domain': "Sign-in isn't available on this site yet. (This domain hasn't been approved for sign-in -- let us know.)",
+    'auth/popup-blocked': 'Your browser blocked the sign-in popup. Please allow popups for this site, or try again.',
+    'auth/popup-closed-by-user': 'Sign-in was cancelled.',
+    'auth/cancelled-popup-request': 'Sign-in was cancelled.',
+    'auth/network-request-failed': 'Network error -- check your connection and try again.',
+};
+
+function showAuthError(error) {
+    const el = document.getElementById('auth-status-error');
+    if (!el) return;
+    el.textContent = AUTH_ERROR_MESSAGES[error && error.code] || 'Sign-in failed. Please try again.';
+    el.style.display = 'block';
+}
+
+function clearAuthError() {
+    const el = document.getElementById('auth-status-error');
+    if (!el) return;
+    el.style.display = 'none';
+    el.textContent = '';
+}
 
 // ---------------------------------------------------------------------------
 // Firebase auth (optional sign-in for cross-device progress saves).
@@ -119,6 +153,7 @@ async function handleAuthChanged(user) {
     const signInBtn = document.getElementById('sign-in-btn');
     const caption = document.getElementById('auth-status-caption');
     if (user) {
+        clearAuthError();
         if (signInBtn) signInBtn.textContent = 'Sign out';
         if (caption) caption.textContent = `Signed in as ${user.displayName || user.email}`;
 

@@ -12,7 +12,7 @@ export async function onRequestPost({ request, env }) {
         return jsonResponse({ status: 'error', message: 'Invalid or missing sign-in' }, 401);
     }
 
-    const profile = await getProfile(env, auth.uid);
+    const profile = await getProfile(payload.id_token, auth.uid);
     if (!profile || !profile.active_game_id) {
         return jsonResponse({ status: 'no_active_game' });
     }
