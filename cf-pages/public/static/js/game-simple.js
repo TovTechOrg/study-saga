@@ -446,7 +446,14 @@ async function startGame() {
                     });
                     const caption = document.createElement('p');
                     caption.className = 'neural-btn-caption';
-                    caption.textContent = 'Choose a difficulty to begin this realm';
+                    // These are LEVELS of this syllabus's questions (how
+                    // advanced the content itself is), distinct from the
+                    // hint TIERS shown later inside a question -- calibrated
+                    // to: Easy = intro-level recall/definitions, Medium =
+                    // standard coursework depth (explaining a mechanism or
+                    // relationship), Hard = advanced/exam-level reasoning
+                    // (multi-step, edge cases, synthesis).
+                    caption.textContent = 'Level = how advanced this realm\'s questions are (Easy: intro-level, Medium: standard coursework, Hard: advanced/exam-level)';
                     card.appendChild(difficultyRow);
                     card.appendChild(caption);
                     grid.appendChild(card);
@@ -824,6 +831,7 @@ function openQuizModal(question, action) {
     }
 
     hintBox.innerHTML = `
+        <div style="font-size:0.75rem;color:#64748b;margin-bottom:6px;letter-spacing:0.02em;">Hint tiers for THIS question (not the realm's difficulty level) -- pick how much help you want:</div>
         <button id="request-easy-hint-btn" class="neural-btn difficulty-btn difficulty-easy" style="padding:6px 16px;font-size:0.9em;">Easy</button>
         <button id="request-medium-hint-btn" class="neural-btn difficulty-btn difficulty-medium" style="padding:6px 16px;font-size:0.9em;margin-left:8px;">Medium</button>
         <button id="request-hard-hint-btn" class="neural-btn difficulty-btn difficulty-hard" style="padding:6px 16px;font-size:0.9em;margin-left:8px;">Hard</button>
