@@ -740,81 +740,100 @@ function openQuizModal(question, action) {
     }
     // Sean's suggestion: don't auto-reveal hints -- the player must explicitly
     // request one. Only fetch from the backend once they click a button.
-    // Two separate hint tiers, each with its own per-game budget (see
-    // hints-budget-bar): Simple (easy tier only, 3/game) and Deep (all three
-    // tiers, 1/game). Correct answers earn credits that unlock more of either.
+    // Three distinct, independently-clickable buttons -- Easy/Medium/Hard --
+    // rather than a "Simple/Deep" pair with a progressive reveal inside Deep.
+    // Backend budget is unchanged: tier="simple" returns easy only (the
+    // cheap, 3/game budget); tier="hard" returns all three tiers in ONE call
+    // (the pricier, 1/game budget). Medium and Hard share that single deep
+    // fetch/budget-spend via a cached promise, so clicking both only costs
+    // one "deep hint" use, not two.
     const optionsArray = (question?.options || []).map(opt => opt.text || String(opt));
-    function requestHint(tier) {
-        hintBox.textContent = 'Loading hint...';
-        fetch('/api/get-hint', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ question: question?.text || '', options: optionsArray, game_id: window.gameId, tier })
-        })
-            .then(res => res.json())
+    const revealedTiers = {};
+    let deepFetchPromise = null;
+    const TIER_META = [
+        { key: 'easy', label: 'Easy', color: '#6bff6b' },
+        { key: 'medium', label: 'Medium', color: '#ffd93d' },
+        { key: 'hard', label: 'Hard', color: '#ff6b6b' },
+    ];
+
+    function parseHintPayload(hint) {
+        if (typeof hint === 'string') {
+            try { return JSON.parse(hint); } catch (e) { return null; }
+        }
+        return (typeof hint === 'object' && hint !== null) ? hint : null;
+    }
+
+    function renderRevealedTiers() {
+        let html = '';
+        for (const t of TIER_META) {
+            if (revealedTiers[t.key]) {
+                html += `<div style="margin-bottom:8px;"><b style="color:${t.color}">${t.label}:</b> ${revealedTiers[t.key]}</div>`;
+            }
+        }
+        let display = document.getElementById('hint-display');
+        if (!display) {
+            display = document.createElement('div');
+            display.id = 'hint-display';
+            display.style.marginTop = '8px';
+            hintBox.appendChild(display);
+        }
+        display.innerHTML = html;
+    }
+
+    function fetchDeepTiers() {
+        if (!deepFetchPromise) {
+            deepFetchPromise = fetch('/api/get-hint', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ question: question?.text || '', options: optionsArray, game_id: window.gameId, tier: 'hard' })
+            }).then(res => res.json());
+        }
+        return deepFetchPromise;
+    }
+
+    function revealTier(tierKey, btn) {
+        if (revealedTiers[tierKey]) return;
+        const request = tierKey === 'easy'
+            ? fetch('/api/get-hint', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ question: question?.text || '', options: optionsArray, game_id: window.gameId, tier: 'simple' })
+            }).then(res => res.json())
+            : fetchDeepTiers();
+
+        if (btn) btn.disabled = true;
+        request
             .then(data => {
                 updateHintsBar(data.hints);
                 if (data.status === 'blocked') {
-                    hintBox.textContent = data.message || 'No hints left.';
-                    return;
-                }
-                if (data.status === 'success') {
-                    let hint = data.hint;
-                    let parsed = null;
-                    try {
-                        if (typeof hint === 'string') {
-                            parsed = JSON.parse(hint);
-                        } else if (typeof hint === 'object' && hint !== null) {
-                            parsed = hint;
-                        }
-                    } catch (e) {
-                        parsed = null;
-                    }
-                    if (parsed && (parsed.hard || parsed.medium || parsed.easy)) {
-                        // Progressive reveal within whichever tiers this request unlocked
-                        const tiers = [];
-                        if (parsed.hard) tiers.push({ label: 'Hard', text: parsed.hard, color: '#ff6b6b' });
-                        if (parsed.medium) tiers.push({ label: 'Medium', text: parsed.medium, color: '#ffd93d' });
-                        if (parsed.easy) tiers.push({ label: 'Easy', text: parsed.easy, color: '#6bff6b' });
-
-                        let currentTier = 0;
-                        function renderHints() {
-                            let html = '';
-                            for (let i = 0; i <= currentTier && i < tiers.length; i++) {
-                                html += `<div style="margin-bottom:8px;"><b style="color:${tiers[i].color}">${tiers[i].label}:</b> ${tiers[i].text}</div>`;
-                            }
-                            if (currentTier < tiers.length - 1) {
-                                html += `<button id="reveal-next-hint" class="neural-btn" style="margin-top:6px;padding:6px 16px;font-size:0.9em;opacity:0.85;">Need More Help?</button>`;
-                            }
-                            hintBox.innerHTML = html;
-                            const revealBtn = document.getElementById('reveal-next-hint');
-                            if (revealBtn) {
-                                revealBtn.addEventListener('click', function () {
-                                    currentTier++;
-                                    renderHints();
-                                });
-                            }
-                        }
-                        renderHints();
-                    } else {
-                        hintBox.textContent = hint;
-                    }
+                    revealedTiers[tierKey] = data.message || 'No hints left.';
+                } else if (data.status === 'success') {
+                    const parsed = parseHintPayload(data.hint);
+                    revealedTiers[tierKey] = (parsed && parsed[tierKey]) || 'No hint available.';
                 } else {
-                    hintBox.textContent = 'No hint available.';
+                    revealedTiers[tierKey] = 'No hint available.';
+                    if (btn) btn.disabled = false;
                 }
+                renderRevealedTiers();
             })
-            .catch((err) => {
-                hintBox.textContent = 'No hint available.';
+            .catch(() => {
+                revealedTiers[tierKey] = 'No hint available.';
+                if (btn) btn.disabled = false;
+                renderRevealedTiers();
             });
     }
+
     hintBox.innerHTML = `
-        <button id="request-simple-hint-btn" class="neural-btn" style="padding:6px 16px;font-size:0.9em;opacity:0.85;">Simple Hint</button>
-        <button id="request-hard-hint-btn" class="neural-btn" style="padding:6px 16px;font-size:0.9em;opacity:0.85;margin-left:8px;">Deep Hint</button>
+        <button id="request-easy-hint-btn" class="neural-btn difficulty-btn difficulty-easy" style="padding:6px 16px;font-size:0.9em;">Easy</button>
+        <button id="request-medium-hint-btn" class="neural-btn difficulty-btn difficulty-medium" style="padding:6px 16px;font-size:0.9em;margin-left:8px;">Medium</button>
+        <button id="request-hard-hint-btn" class="neural-btn difficulty-btn difficulty-hard" style="padding:6px 16px;font-size:0.9em;margin-left:8px;">Hard</button>
     `;
-    const simpleBtn = document.getElementById('request-simple-hint-btn');
-    if (simpleBtn) simpleBtn.addEventListener('click', () => requestHint('simple'), { once: true });
+    const easyBtn = document.getElementById('request-easy-hint-btn');
+    if (easyBtn) easyBtn.addEventListener('click', () => revealTier('easy', easyBtn));
+    const mediumBtn = document.getElementById('request-medium-hint-btn');
+    if (mediumBtn) mediumBtn.addEventListener('click', () => revealTier('medium', mediumBtn));
     const hardBtn = document.getElementById('request-hard-hint-btn');
-    if (hardBtn) hardBtn.addEventListener('click', () => requestHint('hard'), { once: true });
+    if (hardBtn) hardBtn.addEventListener('click', () => revealTier('hard', hardBtn));
     const options = question?.options || [];
     const isMulti = question?.type === 'multiple_choice_multiple';
     if (!options.length) {
