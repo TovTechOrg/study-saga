@@ -455,7 +455,7 @@ async function startGame() {
                     // coursework, explaining a mechanism/relationship;
                     // Hard = AP-level/early-college rigor (multi-step
                     // reasoning, edge cases, synthesis).
-                    caption.textContent = 'Level: Easy = Gifted Leo Baeck (high school), Medium = Technion (undergrad), Hard = Technion (graduate)';
+                    caption.textContent = 'Level: Easy = Ramaz (high school), Medium = Cornell (college), Hard = graduate school';
                     card.appendChild(difficultyRow);
                     card.appendChild(caption);
                     grid.appendChild(card);
