@@ -448,14 +448,11 @@ async function startGame() {
                     caption.className = 'neural-btn-caption';
                     // These are LEVELS of this syllabus's questions (how
                     // advanced the content itself is), distinct from the
-                    // hint TIERS shown later inside a question. All three
-                    // stay within high-school scope -- this is NOT a
-                    // high-school-vs-college split. Easy = intro-level
-                    // recall/definitions; Medium = solid high-school
-                    // coursework, explaining a mechanism/relationship;
-                    // Hard = AP-level/early-college rigor (multi-step
-                    // reasoning, edge cases, synthesis).
-                    caption.textContent = 'Level: Easy = Ramaz (high school), Medium = Cornell (college), Hard = graduate school';
+                    // hint TIERS shown later inside a question. Internal
+                    // real-world calibration (not shown to players): Easy =
+                    // Ramaz (high school), Medium = Cornell (college),
+                    // Hard = graduate school.
+                    caption.textContent = "Choose a difficulty to begin this realm's challenges";
                     card.appendChild(difficultyRow);
                     card.appendChild(caption);
                     grid.appendChild(card);
