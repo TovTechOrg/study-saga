@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between elastic collisions and inelastic collisions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a perfectly 'elastic' collision:",
+    "options": [
+      {"text": "Both momentum and total kinetic energy are conserved", "isCorrect": true, "feedback": "Correct -- a perfectly elastic collision conserves both momentum (as all collisions do) and total kinetic energy, unlike an inelastic collision."},
+      {"text": "Momentum is conserved, but kinetic energy is not conserved (some is converted to other forms)", "isCorrect": false, "feedback": "That describes an INELASTIC collision, not an elastic one -- inelastic collisions conserve momentum but lose kinetic energy, while elastic collisions conserve both."},
+      {"text": "Neither momentum nor kinetic energy is conserved", "isCorrect": false, "feedback": "This isn't accurate -- momentum is ALWAYS conserved in a closed system's collision (elastic or inelastic); it's specifically kinetic energy conservation that distinguishes elastic from inelastic."},
+      {"text": "The two colliding objects always stick together afterward", "isCorrect": false, "feedback": "That describes a PERFECTLY INELASTIC collision, not an elastic one -- in an elastic collision, objects typically bounce apart rather than sticking together."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In an inelastic collision (like a car crash where vehicles crumple), momentum is still conserved, but kinetic energy is not. Where does the 'lost' kinetic energy actually go in this scenario, given that energy overall cannot be created or destroyed?",
+    "options": [
+      {"text": "The 'lost' kinetic energy isn't actually destroyed -- it's converted into other forms of energy, such as heat, sound, and the energy used to permanently deform the colliding objects (like crumpling metal), meaning total energy IS still conserved overall, just not specifically in the form of kinetic energy alone", "isCorrect": true, "feedback": "Correct -- this explanation of kinetic energy converting into heat, sound, and deformation energy (rather than being destroyed) correctly reconciles the loss of kinetic energy specifically with the broader, always-true law of total energy conservation."},
+      {"text": "The kinetic energy is actually genuinely destroyed and permanently lost from the universe in an inelastic collision", "isCorrect": false, "feedback": "This isn't accurate -- energy cannot be truly destroyed; the kinetic energy is specifically CONVERTED into other forms (heat, sound, deformation), not annihilated."},
+      {"text": "Total energy conservation actually does not apply to inelastic collisions, unlike elastic collisions", "isCorrect": false, "feedback": "This isn't accurate -- total energy conservation applies to ALL collisions (elastic or inelastic); it's specifically KINETIC energy alone that isn't conserved in an inelastic collision."},
+      {"text": "Momentum conservation and energy conversion in an inelastic collision have no actual connection to each other", "isCorrect": false, "feedback": "This isn't accurate, though they are somewhat independent principles -- momentum conservation applies regardless of energy form changes, but both are simultaneously true facts about the same inelastic collision event."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Momentum conservation applies to ALL collisions (elastic or inelastic) in a closed system, while kinetic energy conservation applies ONLY to elastic collisions. Explain the fundamental physical reason why momentum conservation is more universally applicable than kinetic energy conservation during a collision.",
+    "options": [
+      {"text": "Momentum conservation follows directly from Newton's third law (equal and opposite forces between colliding objects during any collision, regardless of what other energy transformations occur), making it a completely general principle for any closed-system collision, whereas kinetic energy conservation additionally requires that NO energy be converted into other forms (like heat, sound, or deformation) during the collision, a much more restrictive condition that most real collisions do not actually satisfy", "isCorrect": true, "feedback": "Correct -- this explanation distinguishing momentum conservation (following generally from Newton's third law) from the additional, more restrictive requirement for kinetic energy conservation (no energy conversion to other forms) correctly explains why momentum conservation is more universally applicable than kinetic energy conservation."},
+      {"text": "Kinetic energy conservation would actually also apply universally to all collisions, identical in scope to momentum conservation", "isCorrect": false, "feedback": "This isn't accurate -- kinetic energy conservation specifically applies ONLY to elastic collisions, a much more restrictive condition than momentum conservation, which applies to all closed-system collisions."},
+      {"text": "Momentum conservation actually depends on whether energy is converted to other forms during the collision, identical to kinetic energy conservation", "isCorrect": false, "feedback": "This isn't accurate -- momentum conservation holds regardless of whether energy converts to other forms, which is precisely what distinguishes it from the more restrictive kinetic energy conservation."},
+      {"text": "Newton's third law has no actual connection to explaining why momentum is conserved during a collision", "isCorrect": false, "feedback": "This isn't accurate -- Newton's third law IS DIRECTLY connected to and is the fundamental reason momentum conservation holds generally during collisions."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This collision category preserves both linear momentum and aggregate kinetic energy across the interaction.", "medium": "This is a collision where the objects bounce off each other and no energy is lost to things like heat or sound.", "easy": "This is a collision where objects bounce off each other and no energy is lost to heat or sound."},
+    "medium": {"hard": "Consider how energy transformation into heat, sound, and permanent deformation accounts for the apparent kinetic energy deficit while upholding the broader principle of total energy conservation.", "medium": "The missing kinetic energy didn't vanish, it just turned into other stuff like heat, noise, and the crumpling of metal, so overall energy is still accounted for.", "easy": "The missing kinetic energy turned into other things like heat, noise, and crumpled metal -- it's still accounted for overall."},
+    "hard": {"hard": "Consider how momentum conservation flows directly from the always-true equal-and-opposite force pairing of a collision, whereas kinetic energy conservation imposes the additional, often-unmet constraint of zero energy conversion to other forms.", "medium": "Momentum sticks around no matter what because of the basic push-back-equally rule between the two objects, but kinetic energy only sticks around if NONE of it turns into heat or sound or dents, which is a much stricter ask.", "easy": "Momentum sticks around because of the basic push-back-equally rule, but kinetic energy only sticks around if none of it turns into heat, sound, or dents."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of projectile range and launch angle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In projectile motion (ignoring air resistance), which launch angle typically gives the maximum horizontal range?",
+    "options": [
+      {"text": "45 degrees", "isCorrect": true, "feedback": "Correct -- for a given launch speed, 45 degrees provides the best balance between horizontal and vertical velocity components, maximizing range."},
+      {"text": "90 degrees", "isCorrect": false, "feedback": "A 90-degree (straight up) launch produces zero horizontal range, since all velocity is vertical."},
+      {"text": "0 degrees", "isCorrect": false, "feedback": "A 0-degree (perfectly horizontal) launch minimizes time in the air, which also limits horizontal range compared to an angled launch."},
+      {"text": "180 degrees", "isCorrect": false, "feedback": "This isn't a meaningful launch angle for typical projectile motion in this context."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does launching a projectile straight up (90 degrees) result in zero horizontal range, despite reaching a great height?",
+    "options": [
+      {"text": "All of the initial velocity is directed vertically, leaving no horizontal velocity component to carry the projectile sideways", "isCorrect": true, "feedback": "Correct -- horizontal range specifically depends on horizontal velocity, which is entirely absent in a purely vertical launch."},
+      {"text": "Gravity doesn't act on objects launched straight up", "isCorrect": false, "feedback": "Gravity absolutely still acts on a vertically launched object -- it's what eventually brings it back down to the same horizontal spot."},
+      {"text": "The projectile actually travels sideways just as much as it goes up", "isCorrect": false, "feedback": "With a purely vertical launch, there's no sideways (horizontal) motion at all -- the object goes straight up and comes straight back down."},
+      {"text": "Height and horizontal range are actually the exact same measurement", "isCorrect": false, "feedback": "These are distinct measurements -- height refers to vertical distance, while range refers to horizontal distance traveled."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two projectiles are launched at the same speed, one at 30 degrees and one at 60 degrees. Interestingly, they land at the same horizontal distance from the launch point. Why does this happen?",
+    "options": [
+      {"text": "30 and 60 degrees are complementary angles (summing to 90), and for any given launch speed, complementary launch angles produce identical horizontal ranges", "isCorrect": true, "feedback": "Correct -- this is a special mathematical property of projectile motion: any pair of complementary angles (like 30/60 or 20/70) will yield the same range for a given launch speed."},
+      {"text": "This is purely coincidental and has no underlying mathematical explanation", "isCorrect": false, "feedback": "This isn't coincidental -- it's a predictable, well-established mathematical property of projectile motion involving complementary angles."},
+      {"text": "Both projectiles must have actually been launched at exactly the same angle", "isCorrect": false, "feedback": "The scenario specifies genuinely different angles (30° and 60°) -- the equal range results from their complementary relationship, not from being secretly identical."},
+      {"text": "Air resistance is responsible for making the ranges equal", "isCorrect": false, "feedback": "This scenario assumes ideal projectile motion (typically without air resistance) -- the equal range comes from the mathematical relationship between complementary angles, not from air resistance effects."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This angle provides an optimal balance between the two velocity components governing horizontal distance and time aloft.", "medium": "This angle splits the launch speed evenly between going up and going sideways.", "easy": "This angle splits the launch speed evenly between up and sideways motion."},
+    "medium": {"hard": "Range depends specifically on the horizontal velocity component, which is determined by the launch angle's effect on splitting the initial velocity.", "medium": "Since the launch is straight up, there's no sideways push at all to carry it away from the launch point.", "easy": "Since the launch is straight up, there's no sideways push to carry it away from where it started."},
+    "hard": {"hard": "The horizontal range formula depends on the sine of twice the launch angle, and sin(2×30°) equals sin(2×60°), since sin(60°)=sin(120°) -- a mathematical consequence of angle complementarity.", "medium": "There's a special mathematical rule where any two angles that add up to 90 degrees will always give the exact same range at the same launch speed.", "easy": "There's a special rule where any two angles adding up to 90 degrees (like 30 and 60) give the same range."}
+  }
+}
+]

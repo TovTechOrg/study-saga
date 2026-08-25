@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of nuclear fission and fusion as energy sources",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is nuclear fission?",
+    "options": [
+      {"text": "The splitting of a large atomic nucleus into two or more smaller nuclei, releasing energy", "isCorrect": true, "feedback": "Correct -- fission is the process used in nuclear power plants and atomic bombs, releasing energy by splitting heavy nuclei like uranium."},
+      {"text": "The combining of two small atomic nuclei into a single larger nucleus", "isCorrect": false, "feedback": "That describes nuclear FUSION, the opposite process from fission, which specifically involves SPLITTING a nucleus, not combining nuclei."},
+      {"text": "The process of an atom losing an electron", "isCorrect": false, "feedback": "That describes ionization, a chemical/atomic-level process, not nuclear fission, which specifically involves changes to the ATOMIC NUCLEUS."},
+      {"text": "The complete disappearance of matter with no energy released", "isCorrect": false, "feedback": "Fission doesn't cause matter to simply disappear with no energy released -- it specifically releases significant ENERGY as a large nucleus splits into smaller pieces."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Nuclear fusion (combining light nuclei, like hydrogen, into heavier ones) powers the Sun and other stars, releasing enormous amounts of energy. Why does fusion require such extremely high temperatures and pressures to occur?",
+    "options": [
+      {"text": "Since atomic nuclei are all positively charged and naturally repel each other, extremely high temperatures/pressures are needed to force the nuclei close enough together to overcome this electrostatic repulsion and allow the strong nuclear force to bind them together", "isCorrect": true, "feedback": "Correct -- this need to overcome significant electrostatic repulsion between positively charged nuclei is precisely why fusion reactions require the extreme conditions found in stellar cores (or in specialized fusion reactor designs)."},
+      {"text": "High temperature and pressure actually have no real connection to whether fusion can occur", "isCorrect": false, "feedback": "This isn't accurate -- high temperature and pressure are ABSOLUTELY critical requirements for fusion, specifically needed to overcome the natural electrostatic repulsion between positively charged atomic nuclei."},
+      {"text": "Atomic nuclei actually naturally attract each other with no repulsive forces involved", "isCorrect": false, "feedback": "This isn't accurate -- atomic nuclei are positively charged and thus naturally REPEL each other (via electrostatic force) at most distances; extreme conditions are specifically needed to overcome this repulsion for fusion to occur."},
+      {"text": "Fusion actually occurs just as easily at room temperature and normal pressure", "isCorrect": false, "feedback": "This isn't accurate -- fusion specifically requires EXTREME temperature and pressure conditions (like those found in stellar cores) to occur, not typical room-temperature/pressure conditions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Both fission and fusion release energy according to Einstein's E=mc² by converting a small amount of mass into energy. However, fusion (combining light elements) generally releases more energy per unit mass than fission (splitting heavy elements). Why might this be the case, considering the concept of nuclear binding energy?",
+    "options": [
+      {"text": "The difference in binding energy per nucleon between very light elements and medium-mass elements (relevant to fusion) is generally larger than the difference between very heavy elements and medium-mass elements (relevant to fission), resulting in a greater mass-to-energy conversion for fusion reactions", "isCorrect": true, "feedback": "Correct -- this relationship, rooted in the specific shape of the nuclear binding energy curve (which peaks around iron), explains why fusion of light elements (moving further up this energy curve) tends to release more energy per unit mass than fission of heavy elements."},
+      {"text": "Fission actually always releases more total energy than fusion, contrary to what's being described", "isCorrect": false, "feedback": "This isn't accurate for energy released PER UNIT MASS -- fusion reactions generally release MORE energy per unit mass converted than fission reactions do, based on the specific shape of the nuclear binding energy curve."},
+      {"text": "Binding energy has no actual connection to explaining the different energy outputs of fission versus fusion", "isCorrect": false, "feedback": "This isn't accurate -- nuclear binding energy is actually THE central concept explaining WHY fission and fusion release different amounts of energy per unit mass converted."},
+      {"text": "Fission and fusion actually always release exactly identical amounts of energy per unit mass converted", "isCorrect": false, "feedback": "This isn't accurate -- fission and fusion reactions typically release DIFFERENT amounts of energy per unit mass, with fusion generally releasing MORE, based on their differing positions on the nuclear binding energy curve."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This nuclear process involves the disintegration of a heavy nuclide into lighter nuclear fragments, accompanied by energy liberation.", "medium": "This is when a big atomic nucleus breaks apart into smaller pieces, giving off energy.", "easy": "This is when a big atomic nucleus breaks apart, giving off energy."},
+    "medium": {"hard": "Consider how the mutual electrostatic repulsion between positively charged particles necessitates substantial kinetic energy input to achieve the close proximity required for the strong nuclear force to become dominant.", "medium": "Since nuclei all push away from each other (being positively charged), you need a LOT of energy and pressure to force them close enough together to actually fuse.", "easy": "Since nuclei all push away from each other, you need a lot of energy to force them close enough to fuse."},
+    "hard": {"hard": "Consider how the nuclear binding energy curve's characteristic shape (peaking near iron) results in a steeper energy gain when light nuclei fuse compared to when heavy nuclei split.", "medium": "Because of how the 'binding energy chart' for atoms is shaped, combining light atoms together tends to release a bigger relative energy jump than splitting heavy atoms apart.", "easy": "Because of how atomic binding energy works, combining light atoms releases a bigger energy jump than splitting heavy ones."}
+  }
+}
+]

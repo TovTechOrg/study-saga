@@ -1,0 +1,248 @@
+[
+{
+  "topic": "adding and subtracting integers (positive and negative numbers)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is -3 + 5?",
+    "options": [
+      {"text": "2", "isCorrect": true, "feedback": "Correct -- starting at -3 and moving 5 units up the number line lands on 2."},
+      {"text": "-8", "isCorrect": false, "feedback": "This adds the absolute values instead of accounting for the negative sign."},
+      {"text": "8", "isCorrect": false, "feedback": "This treats -3 as positive 3 instead of negative."},
+      {"text": "-2", "isCorrect": false, "feedback": "This has the correct digits but the wrong sign."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 4 - 7?",
+    "options": [
+      {"text": "-3", "isCorrect": true, "feedback": "Correct -- since 7 is larger than 4, the result is negative."},
+      {"text": "3", "isCorrect": false, "feedback": "This has the correct digit but the wrong sign."},
+      {"text": "-11", "isCorrect": false, "feedback": "This adds the numbers instead of subtracting."},
+      {"text": "11", "isCorrect": false, "feedback": "This adds the numbers instead of subtracting, and also has the wrong sign."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is -6 - (-9)?",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- subtracting a negative is the same as adding: -6 + 9 = 3."},
+      {"text": "-15", "isCorrect": false, "feedback": "This treats both signs as negative and adds them, rather than converting the double-negative to addition."},
+      {"text": "-3", "isCorrect": false, "feedback": "This has the correct digit but the wrong sign."},
+      {"text": "15", "isCorrect": false, "feedback": "This adds the absolute values instead of finding their difference."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Picture a number line and move to the right by the amount being added, starting from the negative position.", "medium": "Start at -3 on a number line and count up 5 spaces.", "easy": "Start at -3 and count up 5."},
+    "medium": {"hard": "When the number being subtracted is larger, the result will be negative -- find the difference and apply the sign.", "medium": "Since 7 is bigger than 4, the answer will be negative -- find the difference between them.", "easy": "Since you're taking away more than you have, the answer will be negative."},
+    "hard": {"hard": "Subtracting a negative number is equivalent to adding its positive counterpart -- rewrite the expression as addition first.", "medium": "Two negative signs next to each other turn into a plus sign -- rewrite this as -6 + 9.", "easy": "Subtracting a negative is the same as adding -- turn this into -6 + 9."}
+  }
+},
+{
+  "topic": "combining like terms (simplifying expressions)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Simplify: 3x + 5x",
+    "options": [
+      {"text": "8x", "isCorrect": true, "feedback": "Correct -- add the coefficients of matching terms: 3+5=8."},
+      {"text": "8x²", "isCorrect": false, "feedback": "Adding like terms doesn't change the exponent on the variable."},
+      {"text": "15x", "isCorrect": false, "feedback": "This multiplies the coefficients instead of adding them."},
+      {"text": "3x5x", "isCorrect": false, "feedback": "This isn't a valid simplified form -- like terms should be combined, not left side by side."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Simplify: 7y + 3 - 2y + 5",
+    "options": [
+      {"text": "5y + 8", "isCorrect": true, "feedback": "Correct -- combine the y-terms (7y-2y=5y) and the constants (3+5=8) separately."},
+      {"text": "5y + 2", "isCorrect": false, "feedback": "This doesn't correctly add the two constant terms together."},
+      {"text": "9y + 8", "isCorrect": false, "feedback": "This adds the y-coefficients instead of subtracting 2y from 7y."},
+      {"text": "10y", "isCorrect": false, "feedback": "This mixes constants into the y-term instead of keeping them separate."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Simplify: 4x² + 3x - x² + 2x - 6",
+    "options": [
+      {"text": "3x² + 5x - 6", "isCorrect": true, "feedback": "Correct -- combine x² terms (4x²-x²=3x²) and x terms (3x+2x=5x) separately, leaving the constant unchanged."},
+      {"text": "3x + 5x - 6", "isCorrect": false, "feedback": "This drops the exponent on the x² term, incorrectly treating it the same as the x term."},
+      {"text": "6x² - 6", "isCorrect": false, "feedback": "This drops the x-term entirely instead of combining it separately from the x² terms."},
+      {"text": "3x² + 5x + 6", "isCorrect": false, "feedback": "This has the wrong sign on the constant term."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Only combine terms that share the exact same variable and exponent.", "medium": "Add the numbers in front of the matching variable together.", "easy": "Add 3 and 5 together, keeping the x."},
+    "medium": {"hard": "Group the terms with the variable separately from the plain numbers, then combine each group.", "medium": "Combine the y-terms together, then combine the plain numbers together.", "easy": "Add the y-terms together, and separately add the plain numbers together."},
+    "hard": {"hard": "Only terms with matching variable AND matching exponent can be combined -- keep x², x, and constant terms in three separate groups.", "medium": "Combine the x² terms together, the x terms together, and leave the constant alone.", "easy": "Add the x² terms together, add the x terms together, and keep the -6 as is."}
+  }
+},
+{
+  "topic": "perimeter of polygons",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the perimeter of a rectangle with a length of 6 and a width of 4?",
+    "options": [
+      {"text": "20", "isCorrect": true, "feedback": "Correct -- perimeter is the sum of all sides: 6+6+4+4=20."},
+      {"text": "24", "isCorrect": false, "feedback": "This is the area (6×4), not the perimeter."},
+      {"text": "10", "isCorrect": false, "feedback": "This only adds one length and one width, missing the other two sides."},
+      {"text": "12", "isCorrect": false, "feedback": "This doesn't add all four sides correctly."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the perimeter of a square with a side length of 9?",
+    "options": [
+      {"text": "36", "isCorrect": true, "feedback": "Correct -- a square has 4 equal sides, so 9×4=36."},
+      {"text": "18", "isCorrect": false, "feedback": "This only accounts for 2 sides instead of all 4."},
+      {"text": "81", "isCorrect": false, "feedback": "This is the area (9×9), not the perimeter."},
+      {"text": "27", "isCorrect": false, "feedback": "This only accounts for 3 sides instead of all 4."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A triangle has sides of length 7, 10, and x. If the perimeter is 25, what is the value of x?",
+    "options": [
+      {"text": "8", "isCorrect": true, "feedback": "Correct -- 25 - 7 - 10 = 8."},
+      {"text": "17", "isCorrect": false, "feedback": "This doesn't correctly subtract both known sides from the total perimeter."},
+      {"text": "15", "isCorrect": false, "feedback": "This only subtracts one of the two known sides."},
+      {"text": "42", "isCorrect": false, "feedback": "This adds all the numbers together instead of solving for the missing side."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Add together the lengths of all the sides of the shape.", "medium": "Add up the length and width sides -- there are two of each.", "easy": "Add up all four sides: 6+6+4+4."},
+    "medium": {"hard": "Multiply one side's length by the total number of equal sides the shape has.", "medium": "Since all 4 sides are equal, multiply the side length by 4.", "easy": "Multiply 9 by 4, since a square has 4 equal sides."},
+    "hard": {"hard": "Subtract the sum of the known sides from the total perimeter to isolate the unknown side.", "medium": "Subtract both known side lengths from the total perimeter.", "easy": "Subtract 7 and 10 from 25 to find the missing side."}
+  }
+},
+{
+  "topic": "unit rate",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If a car travels 120 miles in 2 hours, what is its unit rate in miles per hour?",
+    "options": [
+      {"text": "60 miles per hour", "isCorrect": true, "feedback": "Correct -- divide 120 by 2 to find the rate per single hour."},
+      {"text": "240 miles per hour", "isCorrect": false, "feedback": "This multiplies instead of dividing."},
+      {"text": "120 miles per hour", "isCorrect": false, "feedback": "This ignores the 2-hour time period entirely."},
+      {"text": "2 miles per hour", "isCorrect": false, "feedback": "This divides time by distance instead of distance by time."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A store sells 5 apples for $2.50. What is the unit price per apple?",
+    "options": [
+      {"text": "$0.50", "isCorrect": true, "feedback": "Correct -- divide the total cost by the number of apples: 2.50÷5=0.50."},
+      {"text": "$5.00", "isCorrect": false, "feedback": "This doesn't match dividing the total price by the quantity."},
+      {"text": "$2.50", "isCorrect": false, "feedback": "This is the total price for 5 apples, not the price for just one."},
+      {"text": "$12.50", "isCorrect": false, "feedback": "This multiplies instead of dividing the total price by the quantity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Brand A sells 24 ounces of juice for $4.80. Brand B sells 16 ounces for $3.60. Which brand has the better unit price per ounce?",
+    "options": [
+      {"text": "Brand A, at $0.20 per ounce", "isCorrect": true, "feedback": "Correct -- Brand A: 4.80÷24=$0.20/oz; Brand B: 3.60÷16=$0.225/oz. Brand A is cheaper per ounce."},
+      {"text": "Brand B, at $0.20 per ounce", "isCorrect": false, "feedback": "Brand B's unit price is actually $0.225 per ounce, not $0.20 -- that's Brand A's rate."},
+      {"text": "They have the exact same unit price", "isCorrect": false, "feedback": "The two unit prices are different when calculated separately: $0.20 vs $0.225."},
+      {"text": "Brand B, because its total price is lower", "isCorrect": false, "feedback": "Total price alone doesn't determine the better deal -- comparing price per ounce shows Brand A is actually cheaper."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Divide the total quantity by the number of time units to find the amount for just one unit.", "medium": "Divide the total distance by the number of hours.", "easy": "Divide 120 by 2 to find the rate for just 1 hour."},
+    "medium": {"hard": "Divide the total cost by the total quantity to find the cost of just one item.", "medium": "Divide the total price by the number of apples.", "easy": "Divide 2.50 by 5 to find the price of one apple."},
+    "hard": {"hard": "Divide each brand's total price by its own ounce count separately, then compare the two resulting unit prices directly.", "medium": "Divide each price by its own ounce amount separately, then compare the two results.", "easy": "Divide 4.80 by 24 for Brand A, and 3.60 by 16 for Brand B, then compare."}
+  }
+},
+{
+  "topic": "scientific notation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 4,500 written in scientific notation?",
+    "options": [
+      {"text": "4.5 × 10³", "isCorrect": true, "feedback": "Correct -- moving the decimal point 3 places gives 4.5 × 10³."},
+      {"text": "45 × 10²", "isCorrect": false, "feedback": "The first number in scientific notation must be between 1 and 10, so 45 isn't valid here."},
+      {"text": "4.5 × 10²", "isCorrect": false, "feedback": "This uses the wrong power of 10 -- the decimal moved 3 places, not 2."},
+      {"text": "0.45 × 10⁴", "isCorrect": false, "feedback": "The first number in scientific notation must be at least 1, so 0.45 isn't valid here."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 0.0032 written in scientific notation?",
+    "options": [
+      {"text": "3.2 × 10⁻³", "isCorrect": true, "feedback": "Correct -- for numbers less than 1, the exponent is negative, counting how many places the decimal moved right."},
+      {"text": "3.2 × 10³", "isCorrect": false, "feedback": "This uses a positive exponent, but numbers smaller than 1 need a negative exponent."},
+      {"text": "32 × 10⁻⁴", "isCorrect": false, "feedback": "The first number in scientific notation must be between 1 and 10, so 32 isn't valid here."},
+      {"text": "3.2 × 10⁻²", "isCorrect": false, "feedback": "This has the wrong power of 10 -- the decimal moved 3 places, not 2."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is (2 × 10³) × (3 × 10⁵) in scientific notation?",
+    "options": [
+      {"text": "6 × 10⁸", "isCorrect": true, "feedback": "Correct -- multiply the coefficients (2×3=6) and add the exponents (3+5=8)."},
+      {"text": "6 × 10¹⁵", "isCorrect": false, "feedback": "This multiplies the exponents instead of adding them."},
+      {"text": "5 × 10⁸", "isCorrect": false, "feedback": "This adds the coefficients instead of multiplying them."},
+      {"text": "6 × 10²", "isCorrect": false, "feedback": "This subtracts the exponents instead of adding them."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Move the decimal point until only one nonzero digit remains before it, and count how many places you moved.", "medium": "Move the decimal point left until just one digit remains before it, then count how many spots you moved.", "easy": "Move the decimal left until there's one digit before it, then count how many places you moved."},
+    "medium": {"hard": "For numbers smaller than 1, the exponent becomes negative, reflecting how many places the decimal moved to the right.", "medium": "Since this number is less than 1, the exponent will be negative -- count how many places you moved the decimal right.", "easy": "Since the number is small, the exponent will be negative -- count how many spots you moved the decimal."},
+    "hard": {"hard": "When multiplying numbers in scientific notation, multiply the coefficients together and add the exponents together separately.", "medium": "Multiply 2 by 3, then add the two exponents together.", "easy": "Multiply 2 and 3, then add 3 and 5 together for the exponent."}
+  }
+},
+{
+  "topic": "converting improper fractions to mixed numbers",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 7/2 written as a mixed number?",
+    "options": [
+      {"text": "3 1/2", "isCorrect": true, "feedback": "Correct -- 7 divided by 2 is 3 with a remainder of 1, giving 3 1/2."},
+      {"text": "2 1/2", "isCorrect": false, "feedback": "This doesn't match 7 divided by 2 correctly."},
+      {"text": "3 1/7", "isCorrect": false, "feedback": "The fractional part should use the original denominator (2), not 7."},
+      {"text": "7 1/2", "isCorrect": false, "feedback": "This keeps the whole numerator instead of dividing it first."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 11/4 written as a mixed number?",
+    "options": [
+      {"text": "2 3/4", "isCorrect": true, "feedback": "Correct -- 11 divided by 4 is 2 with a remainder of 3, giving 2 3/4."},
+      {"text": "2 1/4", "isCorrect": false, "feedback": "This uses the wrong remainder -- 11 minus (2×4=8) is 3, not 1."},
+      {"text": "3 3/4", "isCorrect": false, "feedback": "This uses the wrong whole number -- 4 doesn't divide into 11 three full times."},
+      {"text": "11 1/4", "isCorrect": false, "feedback": "This doesn't divide the numerator by the denominator at all."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is 29/6 written as a mixed number in simplest form?",
+    "options": [
+      {"text": "4 5/6", "isCorrect": true, "feedback": "Correct -- 29 divided by 6 is 4 with a remainder of 5, giving 4 5/6."},
+      {"text": "4 4/6", "isCorrect": false, "feedback": "This uses the wrong remainder -- 29 minus (4×6=24) is 5, not 4."},
+      {"text": "5 5/6", "isCorrect": false, "feedback": "This uses the wrong whole number -- 6 doesn't divide into 29 five full times."},
+      {"text": "4 5/12", "isCorrect": false, "feedback": "The denominator should stay 6, matching the original fraction, not double to 12."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Divide the numerator by the denominator; the quotient becomes the whole number and the remainder becomes the new numerator.", "medium": "Figure out how many times 2 fits fully into 7, and what's left over.", "easy": "How many times does 2 go into 7, and what's left over?"},
+    "medium": {"hard": "Divide the numerator by the denominator; the quotient becomes the whole number and the remainder becomes the new numerator.", "medium": "Figure out how many times 4 fits fully into 11, and what's left over.", "easy": "How many times does 4 go into 11, and what's left over?"},
+    "hard": {"hard": "Divide the numerator by the denominator; the quotient becomes the whole number and the remainder becomes the new numerator over the same denominator.", "medium": "Figure out how many times 6 fits fully into 29, and what's left over.", "easy": "How many times does 6 go into 29, and what's left over?"}
+  }
+}
+]

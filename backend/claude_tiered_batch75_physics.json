@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the ideal gas law's kinetic molecular theory foundation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to kinetic molecular theory, what are gas particles generally assumed to be doing?",
+    "options": [
+      {"text": "Moving randomly and rapidly in constant motion, colliding with each other and their container's walls", "isCorrect": true, "feedback": "Correct -- kinetic molecular theory models gas particles as being in continuous, random motion, with their collisions responsible for phenomena like pressure."},
+      {"text": "Remaining perfectly still and motionless at all times", "isCorrect": false, "feedback": "This is essentially the opposite of kinetic molecular theory's core assumption -- gas particles are specifically modeled as being in CONSTANT, RAPID motion, not stationary."},
+      {"text": "Moving only in one single fixed direction, never changing course", "isCorrect": false, "feedback": "This isn't accurate -- gas particles are modeled as moving RANDOMLY in many different directions, not restricted to just one single fixed direction."},
+      {"text": "Attracting each other strongly at all times, forming permanent clusters", "isCorrect": false, "feedback": "In the IDEAL gas model, particles are actually assumed to have negligible attractive forces between them, not strong permanent attraction/clustering."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Kinetic molecular theory explains gas pressure as resulting from gas particles repeatedly colliding with a container's walls. Why does increasing a gas's temperature (increasing particle speed) typically increase the pressure it exerts on a fixed-volume container?",
+    "options": [
+      {"text": "Faster-moving particles collide with the container walls both more frequently and with greater force per collision, both factors that increase the overall pressure exerted on the walls", "isCorrect": true, "feedback": "Correct -- this direct connection between particle speed (kinetic energy) and both collision frequency and collision force is exactly how kinetic molecular theory explains temperature's effect on gas pressure."},
+      {"text": "Increasing temperature actually has no connection to particle speed or collision frequency", "isCorrect": false, "feedback": "This isn't accurate -- temperature is DIRECTLY connected to average particle speed/kinetic energy, which in turn directly affects collision frequency and force, and thus pressure."},
+      {"text": "Faster-moving particles would actually collide with the walls LESS frequently, not more", "isCorrect": false, "feedback": "This is backwards -- faster-moving particles actually collide with container walls MORE frequently (and with more force), not less, which is precisely why increased temperature increases pressure."},
+      {"text": "Gas pressure has no actual connection to the frequency or force of particle collisions with container walls", "isCorrect": false, "feedback": "This isn't accurate -- particle collision frequency and force against the container walls is PRECISELY the fundamental mechanism by which kinetic molecular theory explains the origin of gas pressure."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Real gases deviate somewhat from the 'ideal gas' behavior predicted by kinetic molecular theory, particularly at very high pressures or very low temperatures. Why might these specific conditions (high pressure, low temperature) cause noticeable deviations from ideal behavior?",
+    "options": [
+      {"text": "At high pressure, gas particles are forced much closer together (making their actual volume less negligible), and at low temperature, particles move more slowly (making previously negligible intermolecular attractive forces more significant), both of which violate key simplifying assumptions of the ideal gas model", "isCorrect": true, "feedback": "Correct -- this explanation directly connects the specific conditions (high pressure, low temperature) to violations of the ideal gas model's core simplifying assumptions (negligible particle volume and intermolecular forces), which is exactly why real gas behavior deviates from ideal predictions under these conditions."},
+      {"text": "Real gases actually never deviate from ideal gas behavior under any conditions whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- real gases DO show measurable deviations from ideal gas behavior, particularly under high pressure and low temperature conditions, which is precisely the well-documented phenomenon being explained here."},
+      {"text": "High pressure and low temperature conditions have no actual connection to the ideal gas model's underlying assumptions", "isCorrect": false, "feedback": "This isn't accurate -- these specific conditions are DIRECTLY connected to and responsible for violating key underlying assumptions (negligible particle volume, negligible intermolecular forces) of the ideal gas model."},
+      {"text": "The ideal gas model actually assumes gas particles have significant volume and strong intermolecular attractions", "isCorrect": false, "feedback": "This is backwards -- the IDEAL gas model specifically assumes NEGLIGIBLE particle volume and NEGLIGIBLE intermolecular attractions; it's precisely when these assumptions break down (at high pressure/low temperature) that real gas behavior deviates from ideal predictions."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This theoretical framework models gas particles as engaging in ceaseless, stochastic translational motion punctuated by frequent inter-particle and particle-wall collisions.", "medium": "Gas particles are imagined as constantly zipping around randomly and bumping into things.", "easy": "Gas particles are imagined as constantly zipping around and bumping into things."},
+    "medium": {"hard": "Consider how increased average kinetic energy translates into both a higher rate of wall impacts and a greater force delivered per individual impact.", "medium": "Faster particles hit the walls more often AND hit harder each time, both of which push the pressure up.", "easy": "Faster particles hit the walls more often and harder, pushing pressure up."},
+    "hard": {"hard": "Consider how compressing particles into a smaller effective volume and reducing their kinetic energy each separately undermine one of the two key simplifying assumptions underlying the ideal gas approximation.", "medium": "Squeezing particles close together makes their own size start to matter, and slowing them down makes the little attractive pulls between them start to matter too -- both break the 'ideal' assumptions.", "easy": "Squeezing particles close together and slowing them down both break the 'ideal' assumptions."}
+  }
+}
+]

@@ -1,0 +1,207 @@
+[
+{
+  "topic": "potential energy in springs (elastic potential energy)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What type of energy is stored in a stretched or compressed spring?",
+    "options": [
+      {"text": "Elastic potential energy", "isCorrect": true, "feedback": "Correct -- energy is stored in the spring due to its deformed shape, ready to be released."},
+      {"text": "Kinetic energy", "isCorrect": false, "feedback": "Kinetic energy requires motion -- a stretched but stationary spring isn't moving yet."},
+      {"text": "Nuclear energy", "isCorrect": false, "feedback": "Nuclear energy comes from the atom's nucleus, unrelated to a spring's stretched shape."},
+      {"text": "Thermal energy", "isCorrect": false, "feedback": "Thermal energy relates to temperature/heat, not the mechanical deformation of a spring."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What happens to a spring's stored elastic potential energy when it is released after being compressed?",
+    "options": [
+      {"text": "It converts into kinetic energy as the spring returns to its natural shape and moves", "isCorrect": true, "feedback": "Correct -- the stored energy transforms into motion energy as the spring releases."},
+      {"text": "It disappears completely", "isCorrect": false, "feedback": "Energy doesn't just disappear -- it transforms into another form, like motion (kinetic energy)."},
+      {"text": "It converts into nuclear energy", "isCorrect": false, "feedback": "This is an ordinary mechanical energy transformation, unrelated to nuclear processes."},
+      {"text": "It stays stored in the spring forever, unchanged", "isCorrect": false, "feedback": "Once released, the spring actively converts its stored energy into motion, not staying static."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A spring is stretched twice as far as before. According to Hooke's Law, what generally happens to the force needed to hold it at that stretch, and the potential energy stored?",
+    "options": [
+      {"text": "The force needed doubles, while the stored potential energy quadruples", "isCorrect": true, "feedback": "Correct -- force scales linearly with stretch distance, but elastic potential energy scales with the square of the stretch distance."},
+      {"text": "Both the force and the stored energy stay exactly the same", "isCorrect": false, "feedback": "Both actually increase substantially with more stretch -- they don't remain constant."},
+      {"text": "The force needed quadruples, while the stored energy doubles", "isCorrect": false, "feedback": "This reverses the actual relationship -- force scales linearly (doubles), while energy scales with the square (quadruples)."},
+      {"text": "Both the force and the stored energy are cut in half", "isCorrect": false, "feedback": "Increasing the stretch distance increases both quantities, it doesn't decrease them."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This form of energy is stored due to a temporary change in an object's shape, ready to spring back.", "medium": "This is energy stored because something has been squeezed or stretched out of its normal shape.", "easy": "This is the energy stored in a squished or stretched spring."},
+    "medium": {"hard": "As the spring returns to its natural length, its stored deformation energy transforms into the energy of motion.", "medium": "As the spring snaps back to its normal shape, that stored energy turns into movement.", "easy": "As the spring bounces back, its stored energy turns into motion."},
+    "hard": {"hard": "Hooke's Law states force is proportional to displacement (linear), while elastic potential energy is proportional to displacement squared (quadratic) -- so doubling displacement doubles force but quadruples energy.", "medium": "Force increases proportionally with stretch, but stored energy increases with the SQUARE of the stretch distance -- so doubling stretch quadruples the energy.", "easy": "Doubling the stretch doubles the force needed, but it actually quadruples the stored energy."}
+  }
+},
+{
+  "topic": "the difference between heat and temperature",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does temperature measure?",
+    "options": [
+      {"text": "The average kinetic energy of particles in a substance", "isCorrect": true, "feedback": "Correct -- temperature reflects how fast particles are moving on average."},
+      {"text": "The total amount of energy transferred between objects", "isCorrect": false, "feedback": "That describes heat, not temperature specifically."},
+      {"text": "The mass of an object", "isCorrect": false, "feedback": "Mass is a separate physical property, unrelated to temperature."},
+      {"text": "The color of an object", "isCorrect": false, "feedback": "Color is a separate visual property, not what temperature measures."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A small cup of boiling water and a large pot of boiling water are both at 100°C. Which one contains more total heat energy?",
+    "options": [
+      {"text": "The large pot, because it has more total mass/particles even at the same temperature", "isCorrect": true, "feedback": "Correct -- heat depends on the total amount of thermal energy, which scales with both temperature AND the amount of matter present."},
+      {"text": "The small cup, because it's easier to heat", "isCorrect": false, "feedback": "Ease of heating doesn't determine total heat content -- the larger pot, with more mass, contains more total thermal energy despite the same temperature."},
+      {"text": "They contain exactly the same amount of heat energy", "isCorrect": false, "feedback": "Even at the same temperature, more mass means more total particles carrying kinetic energy, so the larger pot actually holds more heat."},
+      {"text": "Neither contains any heat, since they're just water", "isCorrect": false, "feedback": "Any substance above absolute zero contains thermal (heat) energy -- both quantities of water here definitely contain heat."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can two objects be at the same temperature but contain very different amounts of total heat energy?",
+    "options": [
+      {"text": "Temperature reflects average particle energy, while total heat depends on that average multiplied by the total number of particles (related to mass) present", "isCorrect": true, "feedback": "Correct -- temperature is an intensive property (independent of amount), while heat is an extensive property (dependent on amount)."},
+      {"text": "Temperature and heat are actually always identical in every situation", "isCorrect": false, "feedback": "These are genuinely distinct physical quantities that can differ significantly even when temperature is the same."},
+      {"text": "Objects at the same temperature must always have the same mass", "isCorrect": false, "feedback": "Temperature doesn't determine mass at all -- two objects of very different masses can easily share the same temperature."},
+      {"text": "Heat only depends on an object's color, not its temperature", "isCorrect": false, "feedback": "Color doesn't determine total heat content -- mass and temperature together are what matter here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measurement reflects the typical speed/energy of individual particles, regardless of how many particles are present.", "medium": "This measures how fast the particles in a substance are moving on average.", "easy": "This measures how hot or cold something feels, based on particle motion."},
+    "medium": {"hard": "Total thermal energy scales with both the average particle energy AND the sheer quantity of particles present.", "medium": "More water means more total particles carrying that same average energy, adding up to more total heat.", "easy": "The bigger pot has way more water (and particles), so it holds more total heat overall."},
+    "hard": {"hard": "Temperature is an average (intensive) property independent of quantity, whereas heat is a total (extensive) quantity that depends directly on both average particle energy and total particle count.", "medium": "Temperature is about the average energy per particle, but heat is about the total energy added up across ALL the particles.", "easy": "Temperature is the average speed of particles, but heat is the total energy added up across all of them."}
+  }
+},
+{
+  "topic": "the relationship between mass, weight, and gravity on different planets",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the formula relating weight, mass, and gravitational acceleration?",
+    "options": [
+      {"text": "Weight = mass × gravitational acceleration", "isCorrect": true, "feedback": "Correct -- weight (a force) equals mass times the local acceleration due to gravity."},
+      {"text": "Weight = mass + gravitational acceleration", "isCorrect": false, "feedback": "Weight is calculated by multiplying, not adding, mass and gravitational acceleration."},
+      {"text": "Weight = mass ÷ gravitational acceleration", "isCorrect": false, "feedback": "This isn't the correct relationship -- weight involves multiplying, not dividing."},
+      {"text": "Weight = gravitational acceleration only, with no relation to mass", "isCorrect": false, "feedback": "Weight also depends directly on the object's mass, not gravity alone."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "An object has a mass of 10 kg. On Earth, gravity is about 9.8 m/s². What is the object's weight on Earth?",
+    "options": [
+      {"text": "98 N", "isCorrect": true, "feedback": "Correct -- weight = mass × gravity = 10×9.8=98."},
+      {"text": "19.8 N", "isCorrect": false, "feedback": "This adds the values instead of multiplying them."},
+      {"text": "10 N", "isCorrect": false, "feedback": "This ignores the gravitational acceleration value entirely."},
+      {"text": "0.98 N", "isCorrect": false, "feedback": "This divides instead of multiplying mass by gravity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The Moon's gravity is about 1/6th of Earth's. An astronaut has a mass of 72 kg. What would this astronaut weigh on the Moon, if their Earth weight is about 706 N?",
+    "options": [
+      {"text": "Approximately 118 N", "isCorrect": true, "feedback": "Correct -- since weight scales directly with gravity, dividing the Earth weight by 6 gives 706÷6≈118."},
+      {"text": "706 N (unchanged)", "isCorrect": false, "feedback": "Weight would change significantly on the Moon due to the much weaker gravity -- mass stays the same, but weight does not."},
+      {"text": "4,236 N", "isCorrect": false, "feedback": "This multiplies by 6 instead of dividing, giving the opposite (much higher) result."},
+      {"text": "72 N", "isCorrect": false, "feedback": "This just uses the mass value directly as though it were the Moon-weight, without applying the actual gravity ratio."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity results from multiplying an object's amount of matter by the local strength of gravitational pull.", "medium": "Multiply the object's mass by the local gravity value.", "easy": "Multiply mass by gravity to find weight."},
+    "medium": {"hard": "Multiply the mass value by the gravitational acceleration value.", "medium": "Multiply 10 by 9.8.", "easy": "Multiply 10 by 9.8."},
+    "hard": {"hard": "Since weight scales directly and proportionally with local gravitational strength, apply the same ratio (1/6) to the known Earth weight.", "medium": "Since the Moon's gravity is 1/6th of Earth's, divide the Earth weight by 6 to find the Moon weight.", "easy": "Divide 706 by 6 to find the weight on the Moon."}
+  }
+},
+{
+  "topic": "conduction, convection, and radiation compared",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which method of heat transfer involves the movement of a heated fluid (liquid or gas)?",
+    "options": [
+      {"text": "Convection", "isCorrect": true, "feedback": "Correct -- convection involves warm fluid rising and cooler fluid sinking, creating circulation."},
+      {"text": "Conduction", "isCorrect": false, "feedback": "Conduction is heat transfer through direct contact, not fluid movement."},
+      {"text": "Radiation", "isCorrect": false, "feedback": "Radiation is heat transfer via electromagnetic waves, not fluid movement."},
+      {"text": "Reflection", "isCorrect": false, "feedback": "Reflection describes light or waves bouncing off a surface, not a heat-transfer method involving fluid movement."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When you feel the warmth of a campfire from a few feet away, without touching it or standing in rising smoke, which heat transfer method is primarily responsible?",
+    "options": [
+      {"text": "Radiation", "isCorrect": true, "feedback": "Correct -- radiant heat travels through the air (and even a vacuum) as electromagnetic waves, without needing direct contact or fluid movement."},
+      {"text": "Conduction", "isCorrect": false, "feedback": "Conduction requires direct physical contact, which isn't happening here since you're standing a few feet away."},
+      {"text": "Convection", "isCorrect": false, "feedback": "Convection would specifically involve heated air rising and moving toward you, not the direct radiant warmth felt facing a fire."},
+      {"text": "Evaporation", "isCorrect": false, "feedback": "Evaporation is a phase-change process, not a primary method of heat transfer in this scenario."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A pot of water on a stove heats up through multiple methods simultaneously. Which combination correctly describes how heat reaches and moves through the water?",
+    "options": [
+      {"text": "Conduction transfers heat from the stove into the pot's bottom, then convection circulates that heat throughout the water", "isCorrect": true, "feedback": "Correct -- conduction handles the direct contact transfer from the burner to the pot, while the actual internal spreading of heat through the liquid happens via convection currents."},
+      {"text": "Only radiation is involved in heating the entire pot of water", "isCorrect": false, "feedback": "While the burner may radiate some heat, the primary methods at play here are conduction (into the pot) and convection (through the water)."},
+      {"text": "Only conduction is responsible for heating the entire pot of water", "isCorrect": false, "feedback": "Conduction alone explains heat entering the pot's metal, but the water itself distributes that heat mainly via convection currents, not conduction alone."},
+      {"text": "No heat transfer methods are actually involved -- the water heats itself spontaneously", "isCorrect": false, "feedback": "Heat doesn't spontaneously appear -- it's transferred from the stove through specific, well-understood mechanisms."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This heat-transfer method relies on warm fluid physically rising and cooler fluid sinking to circulate energy.", "medium": "This method involves warm liquid or gas rising while cooler parts sink, creating a circulating pattern.", "easy": "This is when warm liquid or gas rises and cooler parts sink, like in a pot of boiling water."},
+    "medium": {"hard": "This heat-transfer method travels as electromagnetic waves and doesn't require touching or a moving fluid medium.", "medium": "This type of heat travels through the air as waves, without you needing to touch anything.", "easy": "This is the type of heat transfer that can reach you through the air without touching anything."},
+    "hard": {"hard": "Heat enters the pot via direct contact (conduction) at the burner interface, then spreads through the liquid via circulating currents (convection) driven by density differences from uneven heating.", "medium": "Direct contact with the stove heats the pot itself, and then the water inside circulates that heat around as it warms and rises, then cools and sinks.", "easy": "The stove heats the pot by touching it, and then the water spreads that heat around by circulating as it warms up."}
+  }
+},
+{
+  "topic": "the difference between vector and scalar quantities",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a scalar quantity?",
+    "options": [
+      {"text": "A quantity that has only magnitude (size), with no direction", "isCorrect": true, "feedback": "Correct -- examples include mass, temperature, and distance, which are just numbers with units, no direction."},
+      {"text": "A quantity that has both magnitude and direction", "isCorrect": false, "feedback": "That describes a vector quantity, not a scalar."},
+      {"text": "A quantity that can only be negative", "isCorrect": false, "feedback": "Scalars aren't restricted to negative values -- many common scalars (like mass) are always positive."},
+      {"text": "A quantity measured only in degrees", "isCorrect": false, "feedback": "Scalars can be measured in many different units, not just degrees -- being a scalar is about lacking direction, not the specific unit."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a vector quantity?",
+    "options": [
+      {"text": "Velocity", "isCorrect": true, "feedback": "Correct -- velocity includes both speed (magnitude) and a specific direction."},
+      {"text": "Mass", "isCorrect": false, "feedback": "Mass is a scalar quantity -- it has magnitude only, no direction."},
+      {"text": "Temperature", "isCorrect": false, "feedback": "Temperature is a scalar quantity -- it has magnitude only, no direction."},
+      {"text": "Time", "isCorrect": false, "feedback": "Time is a scalar quantity -- it has magnitude only, no direction."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two forces of equal magnitude (10 N each) are applied to an object in exactly opposite directions. What is the resulting NET force, and why does this illustrate the importance of treating force as a vector?",
+    "options": [
+      {"text": "The net force is 0 N, because the vectors point in opposite directions and cancel out -- simply adding the magnitudes (20 N) would give the wrong answer", "isCorrect": true, "feedback": "Correct -- treating force as a vector (accounting for direction) is essential; ignoring direction and just adding magnitudes would incorrectly suggest a 20 N net force."},
+      {"text": "The net force is 20 N, found by simply adding the two magnitudes together", "isCorrect": false, "feedback": "This ignores direction entirely -- since the forces oppose each other, they should cancel, not add, when treated as vectors."},
+      {"text": "The net force cannot be determined without knowing the object's mass", "isCorrect": false, "feedback": "Net force can be determined directly from the vector combination of the applied forces -- mass isn't needed for this specific calculation."},
+      {"text": "The net force is always equal to whichever single force is larger", "isCorrect": false, "feedback": "Since both forces are equal in this scenario, and they oppose each other, the correct net force is zero, not simply the larger one (which doesn't even apply here since they're equal)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of quantity is fully described by a single numerical value and its associated unit.", "medium": "This type of value has a size but doesn't point in any particular direction.", "easy": "This is just a plain number with a unit, no direction, like temperature."},
+    "medium": {"hard": "This type of quantity requires both a numerical size AND a specific direction to be fully described.", "medium": "This quantity needs both a speed value and a direction to be fully described.", "easy": "This quantity needs both a speed AND a direction, unlike plain speed alone."},
+    "hard": {"hard": "Combining vectors requires accounting for their directions (often via addition/subtraction along an axis), not simply summing their magnitudes as if they were scalars.", "medium": "Since the two forces point in opposite directions, they cancel each other out rather than adding together like plain numbers would.", "easy": "Since the forces push in opposite directions, they cancel out to zero instead of adding up to 20."}
+  }
+}
+]

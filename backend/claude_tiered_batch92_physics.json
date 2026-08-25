@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between AC circuit impedance and simple DC resistance",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In an AC (alternating current) circuit, 'impedance' is a more general concept than simple DC resistance because it accounts for:",
+    "options": [
+      {"text": "Both resistance AND additional opposition to current flow from components like capacitors and inductors (reactance)", "isCorrect": true, "feedback": "Correct -- impedance combines standard resistance with reactance (from capacitive/inductive components), which specifically behave differently under changing/alternating current conditions."},
+      {"text": "Only the physical resistance of the wire itself, identical to DC resistance", "isCorrect": false, "feedback": "This isn't a complete description -- while impedance DOES include resistance, it specifically ALSO accounts for additional reactance effects (from capacitors/inductors) not present in the simpler DC resistance concept."},
+      {"text": "The exact color of the wire insulation used in the circuit", "isCorrect": false, "feedback": "Wire insulation color is a physical/cosmetic property, completely unrelated to the electrical concept of impedance."},
+      {"text": "Nothing different from simple resistance -- they are actually identical concepts", "isCorrect": false, "feedback": "This isn't accurate -- impedance is a MORE GENERAL, more complex concept than simple DC resistance, specifically incorporating additional reactance effects relevant to AC circuits."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Unlike simple resistance (which remains constant regardless of current direction/frequency), the reactance component of impedance specifically DEPENDS on the frequency of the alternating current. Why does this frequency-dependence make sense for components like capacitors and inductors?",
+    "options": [
+      {"text": "Capacitors and inductors specifically interact with the RATE OF CHANGE of current/voltage (not just their steady magnitude), so as AC frequency changes (changing how quickly current/voltage oscillate), the specific opposition these components provide to current flow changes correspondingly", "isCorrect": true, "feedback": "Correct -- this fundamental dependence on rate-of-change (rather than simply steady-state magnitude, as with basic resistance) is precisely why capacitive/inductive reactance specifically varies with AC frequency, unlike simple resistance."},
+      {"text": "Capacitors and inductors actually behave completely identically to simple resistors, with no frequency dependence at all", "isCorrect": false, "feedback": "This isn't accurate -- capacitors and inductors specifically DO exhibit frequency-DEPENDENT behavior (reactance), fundamentally DIFFERENT from simple resistors, which remain constant regardless of frequency."},
+      {"text": "Frequency has no actual connection to how capacitors or inductors interact with alternating current", "isCorrect": false, "feedback": "This isn't accurate -- frequency is DIRECTLY and centrally connected to and determines the specific reactance behavior of capacitors and inductors in an AC circuit."},
+      {"text": "Simple resistance also actually varies significantly with AC frequency, identical to reactance", "isCorrect": false, "feedback": "This isn't accurate -- simple RESISTANCE specifically remains relatively CONSTANT regardless of frequency, unlike REACTANCE (from capacitors/inductors), which specifically DOES vary with frequency -- this is precisely the key distinguishing difference."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Capacitive reactance DECREASES as frequency increases, while inductive reactance INCREASES as frequency increases -- these are opposite frequency-dependence patterns. Why might understanding this opposite behavior be particularly useful for designing certain frequency-selective circuits, like audio equipment filters (e.g., separating high-frequency treble from low-frequency bass signals)?",
+    "options": [
+      {"text": "By strategically combining capacitors and inductors (which respond oppositely to frequency changes), engineers can design circuits that selectively allow certain frequency ranges to pass through more easily than others, enabling practical applications like audio filters that specifically separate different frequency ranges (bass vs. treble) for different speaker components", "isCorrect": true, "feedback": "Correct -- this strategic exploitation of the OPPOSITE frequency-dependence behaviors of capacitive and inductive reactance is precisely the underlying principle behind many practical frequency-selective circuit designs, including audio crossover filters that direct different frequency ranges to appropriately matched speaker components."},
+      {"text": "Capacitive and inductive reactance actually both increase identically with frequency, with no opposite behavior at all", "isCorrect": false, "feedback": "This isn't accurate -- these two types of reactance specifically exhibit OPPOSITE frequency-dependence patterns (capacitive decreasing, inductive increasing with frequency), which is precisely the key characteristic being exploited in frequency-selective circuit design."},
+      {"text": "This opposite frequency-dependence behavior has no actual practical application in real-world circuit design", "isCorrect": false, "feedback": "This isn't accurate -- this specific opposite behavior HAS significant, well-established PRACTICAL applications, particularly in frequency-selective filter design (like audio crossover circuits) as described here."},
+      {"text": "Audio equipment filters actually cannot be designed using capacitors and inductors at all", "isCorrect": false, "feedback": "This isn't accurate -- audio equipment filters (like crossover circuits) ARE commonly and effectively designed using capacitors and inductors, specifically exploiting their opposite frequency-dependent reactance behaviors."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This comprehensive opposition-to-current-flow metric incorporates both traditional dissipative resistance and frequency-dependent reactive contributions.", "medium": "This is the bigger, more complete idea of resistance that also includes special effects from certain kinds of components.", "easy": "This is the bigger idea of resistance that also includes special effects from certain components."},
+    "medium": {"hard": "Consider how components whose behavior is governed by the derivative (rate of change) of current or voltage would naturally exhibit a response that scales with how rapidly that current or voltage is oscillating.", "medium": "These special components react to how QUICKLY the current is changing direction, so naturally, changing how fast that oscillation happens (frequency) changes their behavior too.", "easy": "These components react to how quickly current changes direction, so changing that speed (frequency) changes their behavior."},
+    "hard": {"hard": "Consider how pairing components with inversely related frequency-response behaviors enables engineers to construct circuits that preferentially pass or block specific frequency bands.", "medium": "Since one type of component gets 'easier to pass through' at high frequencies while the other gets 'harder to pass through,' combining them lets you build a filter that sorts high notes from low notes.", "easy": "Since one component type gets easier to pass at high frequencies while the other gets harder, combining them sorts high from low notes."}
+  }
+}
+]

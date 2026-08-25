@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of scientific notation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is correctly written in scientific notation?",
+    "options": [
+      {"text": "3.5 × 10⁴", "isCorrect": true, "feedback": "Correct -- scientific notation requires a number between 1 and 10 multiplied by a power of 10."},
+      {"text": "35 × 10³", "isCorrect": false, "feedback": "This isn't proper scientific notation, since 35 is not between 1 and 10 -- it should be rewritten as 3.5 × 10⁴."},
+      {"text": "0.35 × 10⁵", "isCorrect": false, "feedback": "This isn't proper scientific notation, since 0.35 is less than 1 -- it should be rewritten as 3.5 × 10⁴."},
+      {"text": "3.5 + 10⁴", "isCorrect": false, "feedback": "Scientific notation uses multiplication, not addition, between the coefficient and the power of 10."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Convert 45,000 into proper scientific notation.",
+    "options": [
+      {"text": "4.5 × 10⁴", "isCorrect": true, "feedback": "Correct -- moving the decimal point 4 places to get a number between 1 and 10 (4.5) means the exponent is 4."},
+      {"text": "45 × 10³", "isCorrect": false, "feedback": "This isn't proper scientific notation, since 45 isn't between 1 and 10."},
+      {"text": "4.5 × 10³", "isCorrect": false, "feedback": "This has the wrong exponent -- the decimal point needs to move 4 places (not 3) to convert 45,000 into 4.5."},
+      {"text": "0.45 × 10⁵", "isCorrect": false, "feedback": "This isn't proper scientific notation, since 0.45 is less than 1."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Multiply (2 × 10³) × (3 × 10⁵) and express the result in proper scientific notation.",
+    "options": [
+      {"text": "6 × 10⁸", "isCorrect": true, "feedback": "Correct -- multiply the coefficients (2×3=6) and add the exponents (3+5=8), giving 6 × 10⁸."},
+      {"text": "6 × 10¹⁵", "isCorrect": false, "feedback": "This incorrectly multiplies the exponents together instead of adding them, as scientific notation multiplication requires."},
+      {"text": "5 × 10⁸", "isCorrect": false, "feedback": "This doesn't correctly multiply the coefficients (2×3=6, not 5)."},
+      {"text": "6 × 10³", "isCorrect": false, "feedback": "This uses only one of the two exponents rather than correctly adding them together (3+5=8)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This format expresses a number as a coefficient strictly between 1 and 10, multiplied by an appropriate power of 10.", "medium": "This format requires a number between 1 and 10, times a power of 10.", "easy": "This format needs a number between 1 and 10, times a power of 10."},
+    "medium": {"hard": "Count exactly how many decimal places the decimal point must shift to yield a coefficient between 1 and 10 -- that count becomes the exponent.", "medium": "Move the decimal point until you get a number between 1 and 10, and count how many places you moved it.", "easy": "45,000 becomes 4.5 by moving the decimal 4 places, so the exponent is 4."},
+    "hard": {"hard": "Multiply the coefficient terms directly, and separately add the exponents of the powers of 10 together, then adjust if the resulting coefficient isn't between 1 and 10.", "medium": "Multiply 2 by 3 to get the new coefficient, and add the exponents 3 and 5 together for the new power.", "easy": "Multiply 2 times 3 to get 6, and add 3 plus 5 to get 8: 6 × 10⁸."}
+  }
+}
+]

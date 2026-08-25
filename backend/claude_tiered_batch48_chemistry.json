@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of isotopes and atomic mass",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What are isotopes?",
+    "options": [
+      {"text": "Atoms of the same element that have different numbers of neutrons", "isCorrect": true, "feedback": "Correct -- isotopes share the same number of protons (same element) but differ in neutron count, giving them different masses."},
+      {"text": "Atoms of different elements with the same number of protons", "isCorrect": false, "feedback": "Having the same number of protons actually DEFINES the same element -- isotopes are variants of the SAME element with different neutron counts."},
+      {"text": "Atoms that have different numbers of electrons but are otherwise identical", "isCorrect": false, "feedback": "Different electron counts (with the same proton count) would describe an ION, not an isotope -- isotopes specifically differ in neutron number."},
+      {"text": "Molecules made of two or more different elements", "isCorrect": false, "feedback": "That describes compounds, not isotopes -- isotopes are variants of a single element's atoms."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Carbon-12 and Carbon-14 are both isotopes of carbon. Given that carbon always has 6 protons, how do these two isotopes differ?",
+    "options": [
+      {"text": "Carbon-14 has 2 more neutrons than Carbon-12 (8 vs. 6), giving it a higher atomic mass", "isCorrect": true, "feedback": "Correct -- the mass number (12 or 14) reflects the total protons plus neutrons, so with 6 protons fixed, the difference in mass number (14-12=2) comes entirely from neutron count."},
+      {"text": "Carbon-14 has 2 more protons than Carbon-12", "isCorrect": false, "feedback": "This can't be true, since both are still carbon, defined by having exactly 6 protons -- the difference in mass number comes from neutrons, not protons."},
+      {"text": "Carbon-14 has 2 fewer electrons than Carbon-12", "isCorrect": false, "feedback": "Isotopes of the same neutral element have the same number of electrons -- the difference between these isotopes is specifically in neutron count, not electron count."},
+      {"text": "There is actually no real difference between Carbon-12 and Carbon-14", "isCorrect": false, "feedback": "There IS a real, meaningful difference -- specifically in neutron count and resulting atomic mass, even though both share the same number of protons."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The atomic mass listed on the periodic table for an element (like chlorine, listed as 35.45) is often not a whole number. Why does this happen, given that individual atoms have whole numbers of protons and neutrons?",
+    "options": [
+      {"text": "The periodic table value represents a weighted average of all naturally occurring isotopes' masses, based on their relative abundance, which produces a non-whole-number result even though individual isotopes have whole-number mass numbers", "isCorrect": true, "feedback": "Correct -- this weighted average calculation, accounting for the differing abundances of naturally occurring isotopes, is exactly why the periodic table's atomic mass often isn't a whole number, despite each individual atom having a whole-number mass."},
+      {"text": "The periodic table simply contains rounding errors for most elements", "isCorrect": false, "feedback": "This isn't a rounding error -- the non-whole-number value is a deliberate and accurate representation of the weighted average across naturally occurring isotopes."},
+      {"text": "Atoms themselves can have fractional numbers of protons or neutrons", "isCorrect": false, "feedback": "This isn't possible -- protons and neutrons always exist in whole numbers within an individual atom; the fractional atomic mass comes from averaging across different isotopes, not from any single atom having fractional particles."},
+      {"text": "This fractional value has no real explanation and is essentially arbitrary", "isCorrect": false, "feedback": "This is not arbitrary -- it has a precise, well-understood explanation rooted in weighted-average calculations across naturally occurring isotope abundances."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These are atomic variants sharing an identical proton count but differing in their neutron count.", "medium": "These are atoms of the same element with different numbers of neutrons.", "easy": "These are atoms of the same element with a different number of neutrons."},
+    "medium": {"hard": "Calculate the neutron count by subtracting the fixed proton number from each isotope's total mass number, then compare the results.", "medium": "Subtract 6 protons from each mass number (12 and 14) to find the neutron count for each isotope, then compare.", "easy": "Carbon-12 has 12-6=6 neutrons; Carbon-14 has 14-6=8 neutrons -- a difference of 2."},
+    "hard": {"hard": "Consider how averaging multiple discrete whole-number values, weighted by their relative frequency of occurrence, can produce a non-whole-number result.", "medium": "The listed number is actually an average of all the different natural versions (isotopes) of that element, weighted by how common each one is.", "easy": "The listed number is an average of all the natural isotope versions, weighted by how common each is."}
+  }
+}
+]

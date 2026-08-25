@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a molecule's shape affecting its properties (VSEPR basics)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does VSEPR theory help predict about a molecule?",
+    "options": [
+      {"text": "Its three-dimensional shape", "isCorrect": true, "feedback": "Correct -- VSEPR theory predicts molecular shape based on electron pair repulsion around a central atom."},
+      {"text": "Its exact color", "isCorrect": false, "feedback": "Color isn't what VSEPR theory predicts -- it's specifically about molecular geometry/shape."},
+      {"text": "Its melting point exactly", "isCorrect": false, "feedback": "While shape can influence melting point indirectly, VSEPR itself directly predicts shape, not melting point specifically."},
+      {"text": "Its radioactivity", "isCorrect": false, "feedback": "Radioactivity relates to nuclear stability, unrelated to VSEPR's focus on molecular shape."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "According to VSEPR theory, why do electron pairs around a central atom arrange themselves as far apart as possible?",
+    "options": [
+      {"text": "Because electron pairs repel each other (like charges), so they naturally position themselves to minimize this repulsion", "isCorrect": true, "feedback": "Correct -- this repulsion-minimizing arrangement is the core principle behind VSEPR theory."},
+      {"text": "Because electron pairs are strongly attracted to each other", "isCorrect": false, "feedback": "This is backwards -- like-charged electron pairs actually REPEL each other, which is exactly why they spread apart."},
+      {"text": "Because the central atom pushes them into a random arrangement", "isCorrect": false, "feedback": "The arrangement isn't random -- it specifically minimizes repulsion between the negatively charged electron pairs."},
+      {"text": "Electron pairs actually don't have any specific arrangement at all", "isCorrect": false, "feedback": "Electron pairs do adopt predictable arrangements based on minimizing repulsion, which is exactly what VSEPR theory describes and predicts."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Water (H₂O) has a bent molecular shape, not a straight line, even though it only has two hydrogen atoms attached to the central oxygen. Why does VSEPR theory predict this bent shape?",
+    "options": [
+      {"text": "Oxygen has two additional lone (non-bonding) electron pairs that also repel the bonding pairs, pushing the hydrogen atoms into a bent arrangement rather than a straight line", "isCorrect": true, "feedback": "Correct -- these lone pairs take up space and exert repulsive force just like bonding pairs, significantly affecting the final molecular shape."},
+      {"text": "Water molecules have no lone electron pairs at all", "isCorrect": false, "feedback": "Water's oxygen atom actually does have two lone pairs, and these are exactly what cause the bent shape according to VSEPR theory."},
+      {"text": "The bent shape is completely random with no underlying explanation", "isCorrect": false, "feedback": "The bent shape has a clear, predictable explanation rooted in VSEPR theory and the repulsion caused by oxygen's lone electron pairs."},
+      {"text": "Hydrogen atoms always repel each other strongly, regardless of the central atom", "isCorrect": false, "feedback": "The bent shape is primarily explained by the CENTRAL ATOM's lone pairs (oxygen's, in this case), not a general hydrogen-hydrogen repulsion effect."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This theory forecasts the overall spatial arrangement of atoms bonded to a central atom.", "medium": "This theory predicts what shape a molecule will take based on its electron arrangement.", "easy": "This theory predicts the 3D shape of a molecule."},
+    "medium": {"hard": "Since electron pairs carry the same type of charge, they push away from each other, seeking the most spread-out possible arrangement.", "medium": "Since electron pairs all have the same negative charge, they push each other as far apart as possible.", "easy": "Since electron pairs all have the same charge, they push each other apart."},
+    "hard": {"hard": "Lone pairs occupy space around the central atom and contribute to overall electron pair repulsion, just like bonding pairs, distorting what would otherwise be a linear or symmetric arrangement.", "medium": "Oxygen has two extra pairs of electrons not involved in bonding, and these still push the hydrogen atoms out of a straight line.", "easy": "Oxygen has two extra pairs of electrons that push the hydrogen atoms into a bent shape instead of a straight line."}
+  }
+}
+]

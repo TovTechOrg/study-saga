@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between empirical and molecular formulas",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does an empirical formula represent?",
+    "options": [
+      {"text": "The simplest whole-number ratio of atoms of each element in a compound", "isCorrect": true, "feedback": "Correct -- the empirical formula shows the smallest possible ratio, not necessarily the actual total number of atoms in a molecule."},
+      {"text": "The exact, actual total number of atoms of each element in a molecule", "isCorrect": false, "feedback": "That describes the MOLECULAR formula, not the empirical formula, which specifically shows only the SIMPLEST ratio, not necessarily the actual count."},
+      {"text": "The physical mass of a single molecule", "isCorrect": false, "feedback": "Molecular mass is a separate concept from empirical formula, which specifically concerns atomic ratios, not mass."},
+      {"text": "The specific 3D shape of a molecule", "isCorrect": false, "feedback": "3D molecular geometry is a different concept from empirical formula, which specifically concerns simplified atomic ratios, not spatial shape."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Glucose has the molecular formula C6H12O6. What is its corresponding empirical formula?",
+    "options": [
+      {"text": "CH2O", "isCorrect": true, "feedback": "Correct -- dividing each subscript in C6H12O6 by their greatest common factor (6) gives the simplest ratio: C1H2O1, written as CH2O."},
+      {"text": "C6H12O6", "isCorrect": false, "feedback": "This is actually the MOLECULAR formula (the exact atom count), not the simplified empirical formula, which requires reducing to the simplest ratio."},
+      {"text": "C3H6O3", "isCorrect": false, "feedback": "While this is a valid ratio reduction (dividing by 2), it's not the SIMPLEST possible ratio -- dividing by the full greatest common factor (6) gives CH2O instead."},
+      {"text": "CHO", "isCorrect": false, "feedback": "This doesn't correctly reflect the actual ratio present in C6H12O6 -- dividing all subscripts by 6 gives CH2O (with a 2 for hydrogen), not CHO."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A compound has an empirical formula of CH2 and a molar mass of 42 g/mol. Given that the empirical formula's mass is approximately 14 g/mol (12+2×1), what is the compound's actual molecular formula?",
+    "options": [
+      {"text": "C3H6", "isCorrect": true, "feedback": "Correct -- dividing the molecular mass by the empirical formula mass (42÷14=3) means the molecular formula is 3 times the empirical formula: (CH2)×3 = C3H6."},
+      {"text": "C2H4", "isCorrect": false, "feedback": "This would correspond to a molecular mass of 28 g/mol (2×14), not the given 42 g/mol -- recheck the division."},
+      {"text": "CH2", "isCorrect": false, "feedback": "This is just the empirical formula itself, but the actual molecular formula must account for the given higher molar mass of 42 g/mol, requiring a multiplier."},
+      {"text": "C4H8", "isCorrect": false, "feedback": "This would correspond to a molecular mass of 56 g/mol (4×14), not the given 42 g/mol -- recheck the division."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This formula type expresses the reduced integer ratio of constituent elements without necessarily reflecting the compound's true total atomic composition.", "medium": "This shows the simplest possible whole-number ratio between the different atoms in a compound.", "easy": "This shows the simplest whole-number ratio of atoms in a compound."},
+    "medium": {"hard": "Determine the greatest common factor shared among all the subscripts, then divide each subscript by that value.", "medium": "Find the biggest number that evenly divides all the subscripts (6, 12, 6), then divide each by that number.", "easy": "Divide each subscript by 6: C(6/6)H(12/6)O(6/6) = CH2O."},
+    "hard": {"hard": "Divide the given molecular mass by the calculated empirical formula mass to find the appropriate whole-number multiplier, then apply it to each subscript in the empirical formula.", "medium": "Divide the total molar mass (42) by the empirical formula's mass (14) to find the multiplier, then apply it to the empirical formula.", "easy": "Divide 42 by 14 to get 3, then multiply each subscript in CH2 by 3: C3H6."}
+  }
+}
+]

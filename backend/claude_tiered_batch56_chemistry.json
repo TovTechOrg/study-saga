@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of intermolecular forces (van der Waals, hydrogen bonding)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What are intermolecular forces?",
+    "options": [
+      {"text": "Attractive forces that exist BETWEEN separate molecules, not within a single molecule's own bonds", "isCorrect": true, "feedback": "Correct -- intermolecular forces are distinct from intramolecular (within-molecule) covalent or ionic bonds; they act between neighboring molecules."},
+      {"text": "The forces that hold atoms together within a single molecule", "isCorrect": false, "feedback": "That describes intramolecular (covalent/ionic) bonds, not intermolecular forces, which act BETWEEN separate molecules."},
+      {"text": "Forces that only exist in solid materials", "isCorrect": false, "feedback": "Intermolecular forces exist in all phases of matter (solid, liquid, gas), affecting properties like boiling point and viscosity, not just in solids."},
+      {"text": "The force of gravity acting on molecules", "isCorrect": false, "feedback": "Gravity is a separate, universal force unrelated to intermolecular forces, which are specifically electrical in nature (arising from charge distributions)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Water has an unusually high boiling point compared to other molecules of similar size, largely due to hydrogen bonding between water molecules. What makes hydrogen bonding a particularly strong type of intermolecular force?",
+    "options": [
+      {"text": "Hydrogen bonding occurs when hydrogen is bonded to a highly electronegative atom (like oxygen), creating a strong, specific attraction to a lone pair on a nearby electronegative atom in another molecule", "isCorrect": true, "feedback": "Correct -- this specific combination of a highly polarized H atom and a strongly attracted lone pair makes hydrogen bonds notably stronger than typical van der Waals forces, significantly affecting properties like water's boiling point."},
+      {"text": "Hydrogen bonding is actually the weakest type of intermolecular force possible", "isCorrect": false, "feedback": "This is backwards -- hydrogen bonding is actually one of the STRONGER types of intermolecular forces, notably stronger than typical van der Waals forces, which is exactly why it significantly raises water's boiling point."},
+      {"text": "Hydrogen bonding has no actual connection to a substance's physical properties like boiling point", "isCorrect": false, "feedback": "Hydrogen bonding has a very significant, well-documented effect on physical properties, particularly boiling point, as clearly illustrated by water's unusually high boiling point."},
+      {"text": "All intermolecular forces are exactly equally strong, with no meaningful differences between types", "isCorrect": false, "feedback": "This isn't accurate -- different types of intermolecular forces (like van der Waals vs. hydrogen bonding) have meaningfully different strengths, directly affecting properties like boiling and melting points."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Geckos can climb smooth vertical surfaces (like glass) using microscopic hair-like structures on their feet that rely on van der Waals forces, rather than any sticky substance. Why does this demonstrate that even a relatively 'weak' intermolecular force can produce a significant overall effect?",
+    "options": [
+      {"text": "While each individual van der Waals interaction is quite weak, the gecko's feet have millions of microscopic contact points, and these countless weak individual attractions collectively sum to create a strong overall adhesive force", "isCorrect": true, "feedback": "Correct -- this demonstrates a key principle: cumulative effects from an enormous number of individually weak interactions can produce substantial macroscopic forces, exactly as seen in gecko adhesion."},
+      {"text": "Van der Waals forces are actually extremely strong on an individual, single-interaction basis", "isCorrect": false, "feedback": "This isn't accurate -- van der Waals forces are indeed relatively weak on an individual basis; the gecko's adhesive strength comes specifically from the SHEER NUMBER of contact points working together, not individual force strength."},
+      {"text": "Geckos actually use a specialized sticky chemical substance, unrelated to van der Waals forces", "isCorrect": false, "feedback": "This isn't accurate -- gecko adhesion is a well-studied phenomenon specifically attributed to van der Waals forces acting across millions of microscopic structures, not a chemical adhesive substance."},
+      {"text": "This phenomenon has no connection to the general concept of cumulative intermolecular force effects", "isCorrect": false, "feedback": "This is actually a striking real-world illustration of exactly this concept -- how numerous weak individual intermolecular interactions can combine to produce a significant overall macroscopic effect."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These attractive interactions act specifically between distinct molecular entities, as opposed to the bonds holding atoms together within a single molecule.", "medium": "These are the attraction forces that happen BETWEEN different molecules, not within one molecule.", "easy": "These are attraction forces that happen between different molecules."},
+    "medium": {"hard": "Consider how the specific electronic arrangement of a strongly polarized hydrogen atom interacting with an electronegative lone pair creates an unusually strong point of attraction.", "medium": "A hydrogen atom stuck to a strongly electron-grabbing atom becomes especially attracted to another similar atom nearby.", "easy": "A hydrogen atom attached to oxygen becomes especially attracted to another oxygen nearby -- that's the strong bond."},
+    "hard": {"hard": "Consider how aggregating an enormous quantity of individually weak force contributions across a large number of contact points can yield a substantial cumulative macroscopic force.", "medium": "Even though each tiny attraction is weak on its own, having millions of them acting together adds up to a strong overall grip.", "easy": "Even though each tiny attraction is weak, having millions of them together adds up to a strong grip."}
+  }
+}
+]

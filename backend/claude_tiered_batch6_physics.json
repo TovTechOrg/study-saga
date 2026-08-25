@@ -1,0 +1,207 @@
+[
+{
+  "topic": "center of mass",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the center of mass of an object?",
+    "options": [
+      {"text": "The average location of all the mass in an object", "isCorrect": true, "feedback": "Correct -- the center of mass is the balance point where the object's mass is effectively concentrated."},
+      {"text": "The heaviest single point on the object", "isCorrect": false, "feedback": "Center of mass is about the overall balance point, not necessarily the single heaviest spot."},
+      {"text": "The exact geometric center of any shape, always", "isCorrect": false, "feedback": "For uneven mass distributions, the center of mass can be different from the simple geometric center."},
+      {"text": "The point where the object is most colorful", "isCorrect": false, "feedback": "Color has no bearing on the physics concept of center of mass."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A hammer has a heavy metal head and a long, light handle. Where is its center of mass most likely located?",
+    "options": [
+      {"text": "Closer to the heavy metal head", "isCorrect": true, "feedback": "Correct -- center of mass shifts toward the region with more concentrated mass."},
+      {"text": "Exactly in the middle of the handle's length", "isCorrect": false, "feedback": "Since the head is much heavier than the handle, the balance point shifts toward the head, not the handle's midpoint."},
+      {"text": "At the very tip of the handle, farthest from the head", "isCorrect": false, "feedback": "The heavier head pulls the center of mass toward itself, not away from it."},
+      {"text": "Outside the hammer entirely", "isCorrect": false, "feedback": "For a simple, solid object like this, the center of mass is located within the object itself."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can a tightrope walker balance more easily while holding a long pole horizontally?",
+    "options": [
+      {"text": "The pole helps keep the overall center of mass lower and more stable, and allows small adjustments to counteract tipping", "isCorrect": true, "feedback": "Correct -- the pole increases rotational inertia and helps shift the combined center of mass to maintain balance."},
+      {"text": "The pole eliminates gravity's effect on the walker", "isCorrect": false, "feedback": "Gravity still fully acts on the tightrope walker -- the pole helps manage balance, not eliminate gravity."},
+      {"text": "The pole makes the walker weigh less overall", "isCorrect": false, "feedback": "Adding a pole actually increases total weight -- the benefit is about balance and stability, not reducing weight."},
+      {"text": "The pole has no actual effect on balance", "isCorrect": false, "feedback": "The pole plays a real, well-understood role in improving balance and stability on the tightrope."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This point represents where an object's mass could be treated as concentrated for analyzing its overall motion.", "medium": "This is the single point where an object's mass is effectively balanced.", "easy": "This is the point where an object would balance perfectly if you tried to balance it on your finger."},
+    "medium": {"hard": "The balance point shifts toward wherever more mass is concentrated within the object.", "medium": "The balance point tends to be pulled toward the heavier part of an object.", "easy": "The heavy metal end pulls the balance point closer to itself."},
+    "hard": {"hard": "The pole extends the walker's effective mass distribution, increasing resistance to rotation and allowing fine adjustments that shift the combined center of mass back over the rope.", "medium": "The pole spreads out mass and lets the walker make small adjustments to keep their overall balance point right over the rope.", "easy": "The pole helps the walker make small adjustments to keep their balance point centered over the rope."}
+  }
+},
+{
+  "topic": "terminal velocity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is terminal velocity?",
+    "options": [
+      {"text": "The constant maximum speed a falling object reaches when air resistance balances gravity", "isCorrect": true, "feedback": "Correct -- once these two forces balance, the falling object stops accelerating and falls at a steady speed."},
+      {"text": "The speed of an object the instant it's dropped", "isCorrect": false, "feedback": "That would just be the initial speed (often zero), not terminal velocity."},
+      {"text": "The fastest possible speed anything can ever travel", "isCorrect": false, "feedback": "Terminal velocity is specific to a falling object in a particular fluid, not a universal speed limit."},
+      {"text": "The speed at which an object stops falling entirely", "isCorrect": false, "feedback": "The object is still falling at terminal velocity -- it just isn't speeding up anymore."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Once an object reaches terminal velocity, what is true about the net force acting on it?",
+    "options": [
+      {"text": "The net force is zero, since air resistance now equals gravity", "isCorrect": true, "feedback": "Correct -- balanced forces mean no further acceleration, keeping speed constant."},
+      {"text": "The net force is at its maximum", "isCorrect": false, "feedback": "Maximum net force would still be accelerating the object -- terminal velocity means forces have balanced out to zero net force."},
+      {"text": "Gravity has completely stopped acting on the object", "isCorrect": false, "feedback": "Gravity continues acting the whole time -- it's now balanced by an equal air resistance force, not eliminated."},
+      {"text": "Air resistance has dropped to zero", "isCorrect": false, "feedback": "Air resistance is actually at its strongest at terminal velocity, matching gravity's pull exactly."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A skydiver falls and eventually reaches terminal velocity. Then they open their parachute. What happens to their speed immediately after opening it, and why?",
+    "options": [
+      {"text": "Their speed decreases sharply, because the parachute dramatically increases air resistance, making it greater than gravity temporarily", "isCorrect": true, "feedback": "Correct -- the sudden increase in air resistance from the parachute exceeds gravity's pull, causing rapid deceleration until a new, slower terminal velocity is reached."},
+      {"text": "Their speed increases sharply", "isCorrect": false, "feedback": "The parachute dramatically increases air resistance, which slows the skydiver down, not speeds them up."},
+      {"text": "Their speed stays exactly the same", "isCorrect": false, "feedback": "The parachute significantly changes the balance of forces, causing a noticeable change in speed, not a constant one."},
+      {"text": "Gravity briefly stops acting on the skydiver", "isCorrect": false, "feedback": "Gravity continues acting throughout -- what changes is the much larger air resistance force from the parachute."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This describes the point where two opposing forces on a falling object become exactly equal.", "medium": "This is the top steady speed a falling object reaches once air resistance catches up to gravity.", "easy": "This is the fastest steady speed something reaches while falling through air."},
+    "medium": {"hard": "At this state, the upward and downward forces on the object cancel out exactly, resulting in zero net force.", "medium": "At this point, the upward push of air resistance exactly cancels gravity's downward pull.", "easy": "At this point, air resistance pushing up exactly balances gravity pulling down."},
+    "hard": {"hard": "The sudden large increase in air resistance temporarily exceeds gravity's pull, creating a net upward force that rapidly decelerates the skydiver until a new balance point (slower terminal velocity) is reached.", "medium": "The parachute suddenly creates a lot more air resistance than gravity can match, so the skydiver quickly slows down.", "easy": "The parachute creates so much more air resistance than gravity that the skydiver quickly slows down."}
+  }
+},
+{
+  "topic": "voltage (electric potential difference)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does voltage measure in an electrical circuit?",
+    "options": [
+      {"text": "The difference in electric potential energy between two points", "isCorrect": true, "feedback": "Correct -- voltage is essentially the 'push' that drives current through a circuit."},
+      {"text": "The total amount of charge stored in a battery", "isCorrect": false, "feedback": "That's closer to a description of capacity/charge, not voltage specifically."},
+      {"text": "The physical size of a wire", "isCorrect": false, "feedback": "Wire size relates to resistance and current capacity, not voltage directly."},
+      {"text": "The color of the electrical current", "isCorrect": false, "feedback": "Electric current doesn't have a color -- this isn't a meaningful description of voltage."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A 9V battery and a 1.5V battery are both connected to identical circuits. Which one will generally push more current through, assuming the same resistance?",
+    "options": [
+      {"text": "The 9V battery, since higher voltage drives more current through the same resistance", "isCorrect": true, "feedback": "Correct -- by Ohm's law (I=V/R), a higher voltage with the same resistance results in more current."},
+      {"text": "The 1.5V battery", "isCorrect": false, "feedback": "Lower voltage would drive less current through the same resistance, not more."},
+      {"text": "Both will push exactly the same current", "isCorrect": false, "feedback": "With different voltage values and the same resistance, the resulting current should differ."},
+      {"text": "Neither battery can push any current at all", "isCorrect": false, "feedback": "Both batteries can drive current through a completed circuit -- the difference is in how much current flows."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Voltage is often compared to water pressure in a pipe analogy. In this analogy, what does current correspond to, and what does resistance correspond to?",
+    "options": [
+      {"text": "Current corresponds to the flow rate of water; resistance corresponds to how narrow or obstructed the pipe is", "isCorrect": true, "feedback": "Correct -- higher pressure (voltage) with less pipe obstruction (resistance) results in a greater flow rate (current)."},
+      {"text": "Current corresponds to the water's temperature; resistance corresponds to the color of the pipe", "isCorrect": false, "feedback": "Temperature and color aren't meaningful analogies in this framework -- flow rate and pipe narrowness are the standard comparisons."},
+      {"text": "Current corresponds to the pipe's length; resistance corresponds to the water's taste", "isCorrect": false, "feedback": "These aren't the standard mappings used in the water-pressure analogy for electricity."},
+      {"text": "Current and resistance both correspond to the same thing: water pressure", "isCorrect": false, "feedback": "Current and resistance represent two distinct concepts in the analogy -- flow rate and pipe restriction, respectively -- not the same thing."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity represents the 'push' or potential energy difference that drives charge to move.", "medium": "This is the electrical 'push' that makes current flow through a circuit.", "easy": "This is what pushes electric current through a wire, like pressure pushes water through a pipe."},
+    "medium": {"hard": "According to Ohm's law, current is directly proportional to voltage when resistance is held constant.", "medium": "A bigger 'push' (higher voltage) results in more current flowing, if resistance stays the same.", "easy": "A bigger battery voltage pushes more current through, if the resistance is the same."},
+    "hard": {"hard": "In this analogy, pressure maps to voltage, flow rate maps to current, and pipe restriction/narrowness maps to resistance.", "medium": "Current is like how fast the water flows, and resistance is like how narrow or blocked the pipe is.", "easy": "Current is like the water's flow speed, and resistance is like how narrow the pipe is."}
+  }
+},
+{
+  "topic": "concave vs. convex mirrors",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What shape is a concave mirror?",
+    "options": [
+      {"text": "Curved inward, like the inside of a bowl", "isCorrect": true, "feedback": "Correct -- a concave mirror's reflective surface curves inward."},
+      {"text": "Curved outward, like the outside of a ball", "isCorrect": false, "feedback": "That describes a convex mirror, the opposite curvature."},
+      {"text": "Perfectly flat", "isCorrect": false, "feedback": "A flat mirror is neither concave nor convex -- it's a plane mirror."},
+      {"text": "Shaped like a cube", "isCorrect": false, "feedback": "Mirrors used for these optical effects are curved, not cube-shaped."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why are convex mirrors commonly used as side mirrors on cars?",
+    "options": [
+      {"text": "They provide a wider field of view, helping drivers see more of what's behind and beside them", "isCorrect": true, "feedback": "Correct -- convex mirrors spread out the reflected image, showing a broader area than a flat mirror would."},
+      {"text": "They make objects appear closer than they actually are", "isCorrect": false, "feedback": "Convex mirrors actually make objects appear farther away/smaller than they really are, which is the opposite effect (this is why they include a 'objects are closer than they appear' warning)."},
+      {"text": "They completely block glare from other headlights", "isCorrect": false, "feedback": "Glare reduction isn't the primary reason for using a convex shape -- their wide field of view is the key benefit."},
+      {"text": "They are cheaper to manufacture than flat mirrors", "isCorrect": false, "feedback": "Cost isn't the functional reason for choosing a convex shape -- the wider viewing angle is the practical benefit."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A concave mirror can form either a real, inverted image or a virtual, upright image, depending on conditions. What determines which type of image forms?",
+    "options": [
+      {"text": "Whether the object is placed farther than or closer than the mirror's focal point", "isCorrect": true, "feedback": "Correct -- objects beyond the focal point produce real, inverted images, while objects within the focal point produce virtual, upright, magnified images."},
+      {"text": "The color of the object being reflected", "isCorrect": false, "feedback": "Color doesn't determine the type of image formed -- object distance relative to the focal point does."},
+      {"text": "The time of day the mirror is used", "isCorrect": false, "feedback": "Time of day has no effect on the optical image-forming properties of a mirror."},
+      {"text": "Whether the mirror is being cleaned or not", "isCorrect": false, "feedback": "Cleanliness doesn't affect the fundamental optical behavior determining image type -- object distance from the focal point does."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This mirror's surface curves toward the direction the viewer is looking from.", "medium": "This mirror curves inward, like the inside of a spoon.", "easy": "This mirror curves inward, like the inside of a spoon."},
+    "medium": {"hard": "This mirror's outward curve spreads reflected light rays apart, effectively capturing a broader visual area in the same mirror size.", "medium": "This mirror's curve spreads out the reflection, letting the driver see a wider area behind the car.", "easy": "This mirror's curved shape lets drivers see a wider area behind the car."},
+    "hard": {"hard": "The critical dividing line is the mirror's focal point -- object position relative to that point determines whether light rays converge to form a real image or appear to diverge from behind the mirror as a virtual image.", "medium": "It depends on whether the object is farther away than or closer than a specific key distance from the mirror, called the focal point.", "easy": "It depends on whether the object is farther or closer than a specific distance from the mirror called the focal point."}
+  }
+},
+{
+  "topic": "torque (rotational force)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is torque?",
+    "options": [
+      {"text": "A force that causes an object to rotate around a pivot point", "isCorrect": true, "feedback": "Correct -- torque is the rotational equivalent of a regular pushing or pulling force."},
+      {"text": "The total distance an object travels", "isCorrect": false, "feedback": "Distance traveled is unrelated to torque, which is specifically about rotational force."},
+      {"text": "The temperature of a rotating object", "isCorrect": false, "feedback": "Temperature has no direct relationship to torque."},
+      {"text": "The color of a spinning wheel", "isCorrect": false, "feedback": "Color has no bearing on the physics concept of torque."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why is it easier to loosen a tight bolt using a longer wrench rather than a shorter one?",
+    "options": [
+      {"text": "A longer wrench increases the torque produced by the same applied force, since torque depends on distance from the pivot", "isCorrect": true, "feedback": "Correct -- torque equals force times the distance from the pivot point, so a longer wrench multiplies the effect of the same push."},
+      {"text": "A longer wrench makes the bolt physically smaller", "isCorrect": false, "feedback": "The wrench's length doesn't change the bolt's size -- it changes how much rotational force (torque) you can generate."},
+      {"text": "A longer wrench weighs less, making it easier to use", "isCorrect": false, "feedback": "Weight of the wrench isn't the reason for the mechanical advantage -- it's the increased leverage distance."},
+      {"text": "There is no actual advantage to using a longer wrench", "isCorrect": false, "feedback": "Using a longer wrench genuinely does provide more torque for the same applied force -- this is a well-established mechanical principle."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A force of 20 N is applied perpendicular to a wrench at a distance of 0.3 meters from the bolt. What is the resulting torque?",
+    "options": [
+      {"text": "6 N·m", "isCorrect": true, "feedback": "Correct -- torque equals force times distance: 20×0.3=6."},
+      {"text": "20.3 N·m", "isCorrect": false, "feedback": "This adds the values instead of multiplying force by distance."},
+      {"text": "66.7 N·m", "isCorrect": false, "feedback": "This divides instead of multiplying force by distance."},
+      {"text": "0.015 N·m", "isCorrect": false, "feedback": "This doesn't match multiplying 20 by 0.3 correctly."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity results from a force applied at some distance from a pivot point, causing rotation.", "medium": "This is the rotational push or twist you apply, like when turning a wrench or a doorknob.", "easy": "This is the twisting force you apply, like when you turn a wrench."},
+    "medium": {"hard": "This quantity depends on both the applied force AND the distance from the pivot at which it's applied.", "medium": "A wrench's length acts like a lever, multiplying the twisting effect of the same push.", "easy": "A longer wrench gives you more twisting power for the same amount of push."},
+    "hard": {"hard": "Multiply the applied force by the perpendicular distance from the pivot point to compute torque.", "medium": "Multiply the force value by the distance value.", "easy": "Multiply 20 by 0.3 to find the torque."}
+  }
+}
+]

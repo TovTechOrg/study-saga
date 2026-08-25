@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between endothermic and exothermic reactions using bond energy",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Breaking chemical bonds generally requires energy input, while forming new bonds generally releases energy. Which process describes an exothermic reaction overall?",
+    "options": [
+      {"text": "One where more energy is released forming new bonds than was required to break the original bonds", "isCorrect": true, "feedback": "Correct -- when bond-forming releases more energy than bond-breaking consumed, the reaction has a net release of energy (exothermic)."},
+      {"text": "One where breaking bonds releases energy, and forming bonds requires energy", "isCorrect": false, "feedback": "This has it backwards -- breaking bonds generally REQUIRES energy input, while forming bonds generally RELEASES energy, not the other way around."},
+      {"text": "One where no bonds are broken or formed at all", "isCorrect": false, "feedback": "A chemical reaction inherently involves breaking and forming bonds -- the exothermic/endothermic classification depends on the NET energy balance of that bond breaking/forming process."},
+      {"text": "One where exactly equal energy is used for breaking and forming bonds", "isCorrect": false, "feedback": "Equal energy amounts would result in NO net energy change (neither exothermic nor endothermic) -- an exothermic reaction specifically has MORE energy released than absorbed."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In an endothermic reaction, the products end up with higher potential energy (stored in their bonds) than the original reactants. Using the bond energy concept, why does this make sense?",
+    "options": [
+      {"text": "Since more energy was required to break the original reactant bonds than was released forming the new product bonds, the leftover 'unpaid' energy input must be stored as increased potential energy in the resulting product bonds", "isCorrect": true, "feedback": "Correct -- this energy accounting, where net energy absorbed during the reaction translates directly into higher potential energy stored within the product bonds, explains why endothermic reactions result in higher-energy products."},
+      {"text": "Endothermic reactions actually always result in products with LOWER potential energy than the reactants", "isCorrect": false, "feedback": "This is backwards -- endothermic reactions specifically result in products with HIGHER potential energy (since net energy was absorbed), not lower."},
+      {"text": "Bond energy has no actual connection to whether a reaction is classified as endothermic or exothermic", "isCorrect": false, "feedback": "Bond energy is actually THE fundamental basis for classifying reactions as endothermic or exothermic, based on the net energy balance between breaking and forming bonds."},
+      {"text": "The potential energy of products and reactants is always exactly identical, regardless of reaction type", "isCorrect": false, "feedback": "This isn't accurate -- product and reactant potential energy levels typically DIFFER, with the direction and magnitude of that difference determining whether a reaction is endothermic or exothermic."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Combustion reactions (like burning methane, CH4 + 2O2 → CO2 + 2H2O) are highly exothermic, releasing substantial energy. Using bond energy concepts, explain why this reaction releases so much net energy despite needing to break multiple strong bonds in the reactants first.",
+    "options": [
+      {"text": "The new bonds formed in the products (particularly the strong double bonds in CO2 and O-H bonds in water) are collectively even MORE stable (lower energy, releasing more energy upon formation) than the original reactant bonds were, resulting in a large net energy release overall", "isCorrect": true, "feedback": "Correct -- this significant energy advantage of the newly formed product bonds (compared to the energy required to break the original reactant bonds) is precisely why combustion reactions like this one are so strongly exothermic, despite requiring substantial initial bond-breaking energy."},
+      {"text": "No new bonds are actually formed in this reaction, only bonds are broken", "isCorrect": false, "feedback": "This isn't accurate -- combustion reactions definitely involve BOTH breaking the original reactant bonds AND forming new product bonds (in CO2 and H2O); it's the ENERGY DIFFERENCE between these two processes that determines the reaction's overall energy release."},
+      {"text": "The bonds broken in the reactants are actually much stronger (require more energy) than the bonds formed in the products", "isCorrect": false, "feedback": "This is backwards for this particular exothermic case -- if this were true, the reaction would actually be ENDOTHERMIC (net energy absorbed), not exothermic; the large net energy RELEASE specifically indicates the NEW bonds are more stable overall."},
+      {"text": "The large energy release has no actual connection to the specific bonds broken or formed in this reaction", "isCorrect": false, "feedback": "This is incorrect -- the large energy release is DIRECTLY and specifically explained by the bond energy difference between what's broken (reactant bonds) and what's formed (product bonds) in this particular reaction."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This reaction type occurs when the net energy released during bond formation exceeds the energy invested in bond dissociation.", "medium": "This is when making the new bonds gives off more energy than it took to break the old ones.", "easy": "This is when making the new bonds releases more energy than breaking the old ones took."},
+    "medium": {"hard": "Consider how a net energy DEFICIT in the bond-breaking versus bond-forming energy balance must be accounted for by an increase in the products' stored potential energy.", "medium": "If breaking the old bonds took more energy than was given back making the new ones, that extra energy has to end up stored somewhere -- in the new bonds themselves.", "easy": "If breaking old bonds took more energy than making new ones gave back, that extra energy gets stored in the new bonds."},
+    "hard": {"hard": "Compare the total bond energy required to break all reactant bonds against the total bond energy released forming all product bonds, focusing on the relative stability of the resulting products.", "medium": "Even though breaking the starting bonds takes real energy, forming the new, more stable bonds in the products gives back even MORE energy than that.", "easy": "Even though breaking the starting bonds takes energy, forming the new, more stable bonds gives back even more."}
+  }
+}
+]

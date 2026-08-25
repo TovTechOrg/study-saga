@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of vapor pressure and its relationship to boiling",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is vapor pressure?",
+    "options": [
+      {"text": "The pressure exerted by a substance's vapor when it's in equilibrium with its liquid form", "isCorrect": true, "feedback": "Correct -- vapor pressure reflects how readily a liquid evaporates at a given temperature."},
+      {"text": "The pressure needed to freeze a liquid", "isCorrect": false, "feedback": "Freezing point relates to a different phase transition -- vapor pressure specifically relates to the liquid-to-gas transition."},
+      {"text": "The weight of a container holding a gas", "isCorrect": false, "feedback": "Container weight is unrelated to vapor pressure, which is about the pressure exerted by evaporating molecules."},
+      {"text": "The pressure inside a solid object", "isCorrect": false, "feedback": "Vapor pressure specifically relates to liquids and their equilibrium vapor, not solids."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A liquid boils when its vapor pressure equals the surrounding atmospheric pressure. Why does water boil at a lower temperature at high altitude, where atmospheric pressure is lower?",
+    "options": [
+      {"text": "Since the surrounding atmospheric pressure is lower, water's vapor pressure reaches that lower threshold at a correspondingly lower temperature", "isCorrect": true, "feedback": "Correct -- since boiling occurs precisely when vapor pressure matches atmospheric pressure, a lower atmospheric pressure means this matching point is reached sooner (at a lower temperature)."},
+      {"text": "High altitude locations are always much colder, which directly causes this effect", "isCorrect": false, "feedback": "While high-altitude locations can be cold, the DIRECT reason for the lower boiling point is specifically the reduced atmospheric pressure, not ambient air temperature."},
+      {"text": "Water's vapor pressure has no actual connection to atmospheric pressure", "isCorrect": false, "feedback": "Water's vapor pressure reaching (or exceeding) the surrounding atmospheric pressure is PRECISELY the mechanism that defines the boiling point."},
+      {"text": "This phenomenon doesn't actually occur -- boiling point never changes with altitude", "isCorrect": false, "feedback": "This is a well-documented, real phenomenon -- boiling point does decrease at higher altitudes due to reduced atmospheric pressure."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A pressure cooker seals in steam, raising the internal pressure above normal atmospheric pressure. How does this explain why food cooks faster in a pressure cooker?",
+    "options": [
+      {"text": "Since boiling requires vapor pressure to match the surrounding pressure, the higher internal pressure requires water to reach a higher temperature before boiling, allowing food to cook at that higher temperature", "isCorrect": true, "feedback": "Correct -- this elevated boiling point (and thus higher cooking temperature) is exactly why pressure cookers can cook food significantly faster than at standard atmospheric pressure."},
+      {"text": "The higher pressure actually has no effect on the boiling point of water", "isCorrect": false, "feedback": "This is incorrect -- increased pressure specifically raises the boiling point, which is exactly the principle a pressure cooker relies on to cook food faster."},
+      {"text": "Pressure cookers work by lowering the water's boiling point significantly", "isCorrect": false, "feedback": "This is backwards -- pressure cookers actually RAISE the boiling point (by increasing pressure), not lower it, allowing for hotter cooking temperatures."},
+      {"text": "Pressure cookers cook food faster purely due to their metal construction, unrelated to pressure or boiling point", "isCorrect": false, "feedback": "The key mechanism is specifically the elevated pressure raising the boiling point (and thus cooking temperature), not simply the pot's material."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measures how strongly molecules at a liquid's surface tend to escape into the gas phase at a given temperature.", "medium": "This measures how much a liquid \"wants\" to evaporate into gas at a certain temperature.", "easy": "This measures how much a liquid wants to turn into gas at a certain temperature."},
+    "medium": {"hard": "Boiling occurs specifically at the temperature where vapor pressure rises to meet the ambient pressure -- a lower ambient pressure lowers that required temperature.", "medium": "Boiling happens once the liquid's vapor pressure catches up to the surrounding air pressure, and less air pressure means less catching up is needed.", "easy": "Boiling happens once the vapor pressure matches the surrounding air pressure, and there's less air pressure to match up high."},
+    "hard": {"hard": "Since the sealed higher pressure raises the temperature at which the water's vapor pressure will match it (delaying boiling), the water (and thus the food) can reach a higher temperature than the standard 100°C before boiling occurs.", "medium": "Since boiling requires matching the higher pressure inside the pot, the water has to get hotter than normal before it boils, cooking the food faster.", "easy": "Since boiling requires matching the higher pressure inside, the water gets hotter than normal before boiling, cooking food faster."}
+  }
+}
+]

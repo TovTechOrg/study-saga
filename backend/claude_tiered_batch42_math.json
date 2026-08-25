@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of factoring quadratic expressions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean to 'factor' a quadratic expression?",
+    "options": [
+      {"text": "To rewrite it as a product of two simpler expressions (usually two binomials)", "isCorrect": true, "feedback": "Correct -- factoring reverses the process of expanding/multiplying two binomials together."},
+      {"text": "To add two expressions together", "isCorrect": false, "feedback": "Factoring is about finding a PRODUCT (multiplication) form, not about addition."},
+      {"text": "To find the largest term in the expression", "isCorrect": false, "feedback": "Factoring restructures the entire expression into a product form -- it's not about identifying a single largest term."},
+      {"text": "To graph the expression on a coordinate plane", "isCorrect": false, "feedback": "Graphing is a separate visual representation -- factoring is an algebraic manipulation of the expression's form."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Factor the expression x² + 5x + 6.",
+    "options": [
+      {"text": "(x + 2)(x + 3)", "isCorrect": true, "feedback": "Correct -- expanding (x+2)(x+3) gives x² + 3x + 2x + 6 = x² + 5x + 6, matching the original expression."},
+      {"text": "(x + 1)(x + 6)", "isCorrect": false, "feedback": "Expanding this gives x² + 7x + 6, which doesn't match the original expression's middle term (5x)."},
+      {"text": "(x + 6)(x - 1)", "isCorrect": false, "feedback": "Expanding this gives x² + 5x - 6, which has the wrong sign on the constant term (should be +6, not -6)."},
+      {"text": "(x + 5)(x + 6)", "isCorrect": false, "feedback": "Expanding this gives x² + 11x + 30, which doesn't match the original expression at all."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Factor the expression 2x² + 7x + 3.",
+    "options": [
+      {"text": "(2x + 1)(x + 3)", "isCorrect": true, "feedback": "Correct -- expanding (2x+1)(x+3) gives 2x² + 6x + x + 3 = 2x² + 7x + 3, matching the original expression."},
+      {"text": "(2x + 3)(x + 1)", "isCorrect": false, "feedback": "Expanding this gives 2x² + 2x + 3x + 3 = 2x² + 5x + 3, which doesn't match the original middle term (7x)."},
+      {"text": "(x + 1)(x + 3)", "isCorrect": false, "feedback": "This ignores the leading coefficient of 2 on the x² term -- expanding gives only x² + 4x + 3, not matching the original expression at all."},
+      {"text": "(2x + 7)(x + 3)", "isCorrect": false, "feedback": "Expanding this doesn't correctly reproduce the original expression's terms."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process decomposes an expression into a multiplicative product of simpler component expressions.", "medium": "This means rewriting the expression as two things being multiplied together instead of added.", "easy": "This means rewriting it as two smaller expressions multiplied together."},
+    "medium": {"hard": "Identify two numbers whose product equals the constant term and whose sum equals the coefficient of the linear term.", "medium": "Find two numbers that multiply to 6 and add up to 5.", "easy": "Find two numbers that multiply to 6 and add to 5 -- those are 2 and 3."},
+    "hard": {"hard": "When the leading coefficient isn't 1, systematically test factor pairs of both the leading coefficient and the constant term to find a combination matching the middle term.", "medium": "Since the leading coefficient is 2, try different combinations of factors for 2 and for 3 until the middle term works out to 7x.", "easy": "Try (2x+1)(x+3) and check: does it expand to give 7x in the middle? Yes."}
+  }
+}
+]

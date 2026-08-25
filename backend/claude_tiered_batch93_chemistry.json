@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between exothermic combustion completeness (complete vs. incomplete)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Complete combustion of a hydrocarbon fuel (like methane) in the presence of sufficient oxygen produces:",
+    "options": [
+      {"text": "Carbon dioxide and water", "isCorrect": true, "feedback": "Correct -- with enough oxygen available, hydrocarbons fully oxidize into carbon dioxide (CO2) and water (H2O)."},
+      {"text": "Only pure carbon (soot) and hydrogen gas", "isCorrect": false, "feedback": "This describes an extreme case of INCOMPLETE combustion products, not the typical products of COMPLETE combustion, which specifically produces CO2 and water when sufficient oxygen is present."},
+      {"text": "Nothing at all -- combustion doesn't actually produce any new substances", "isCorrect": false, "feedback": "This isn't accurate -- combustion definitely DOES produce new substances (like CO2 and water in complete combustion), not nothing at all."},
+      {"text": "Pure oxygen gas and nitrogen gas", "isCorrect": false, "feedback": "This isn't accurate -- while atmospheric oxygen is a REACTANT in combustion, the actual PRODUCTS of complete hydrocarbon combustion are specifically carbon dioxide and water, not oxygen/nitrogen gas."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Incomplete combustion occurs when there is INSUFFICIENT oxygen available for the fuel to fully oxidize, producing carbon monoxide (CO) and/or solid carbon (soot) instead of exclusively carbon dioxide. Why does insufficient oxygen specifically lead to these different, less fully-oxidized products?",
+    "options": [
+      {"text": "Without enough oxygen molecules available to fully react with all the carbon atoms in the fuel, some carbon atoms only partially oxidize (forming CO, with just one oxygen atom, instead of CO2, with two), or don't oxidize at all (remaining as solid carbon/soot)", "isCorrect": true, "feedback": "Correct -- this direct connection between oxygen AVAILABILITY and the resulting DEGREE of carbon oxidation explains precisely why insufficient oxygen conditions produce these characteristic incomplete combustion products (CO and soot) instead of exclusively CO2."},
+      {"text": "Insufficient oxygen availability actually has no connection to which specific combustion products are formed", "isCorrect": false, "feedback": "This isn't accurate -- oxygen availability is DIRECTLY and centrally connected to and determines which SPECIFIC combustion products form (complete vs. incomplete combustion products)."},
+      {"text": "Carbon monoxide and soot would actually form even with abundant, sufficient oxygen available", "isCorrect": false, "feedback": "This isn't accurate -- with SUFFICIENT oxygen available, combustion would generally proceed to COMPLETION (forming primarily CO2), not producing significant CO or soot, which specifically form under INSUFFICIENT oxygen conditions."},
+      {"text": "The degree of carbon oxidation has no actual connection to which specific combustion products ultimately form", "isCorrect": false, "feedback": "This isn't accurate -- the DEGREE of carbon oxidation (fully to CO2, partially to CO, or not at all to soot) is DIRECTLY and specifically connected to and determines which combustion products form under given oxygen availability conditions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Carbon monoxide (CO) produced by incomplete combustion is notably dangerous to humans because it binds to hemoglobin in blood much more strongly than oxygen does, effectively blocking oxygen transport throughout the body. Given this, why is it particularly important to ensure adequate ventilation/oxygen supply when using fuel-burning appliances (like gas heaters) indoors?",
+    "options": [
+      {"text": "Insufficient oxygen supply in an enclosed space increases the likelihood of incomplete combustion occurring (producing dangerous CO), and since CO specifically and effectively displaces oxygen transport in blood, this creates a particularly hazardous combination where oxygen-poor combustion conditions produce a toxic gas that then further impairs the body's own oxygen-carrying capacity", "isCorrect": true, "feedback": "Correct -- this understanding of the connection between oxygen supply, incomplete combustion, and CO's specific toxicological mechanism explains precisely why proper ventilation is such a critical safety consideration for indoor fuel-burning appliances, to prevent this particularly dangerous combined hazard scenario."},
+      {"text": "Carbon monoxide production and oxygen supply adequacy actually have no real connection to each other", "isCorrect": false, "feedback": "This isn't accurate -- CO PRODUCTION is DIRECTLY and specifically connected to and increases under INSUFFICIENT oxygen supply conditions, which is precisely why ensuring adequate ventilation is such an important safety measure."},
+      {"text": "Carbon monoxide is actually completely harmless to humans, contrary to what's being described", "isCorrect": false, "feedback": "This isn't accurate -- carbon monoxide is actually QUITE DANGEROUS/TOXIC to humans, specifically due to its strong binding to hemoglobin, which is precisely why it's such a serious safety concern requiring proper ventilation precautions."},
+      {"text": "Adequate ventilation actually has no effect on whether complete or incomplete combustion occurs in fuel-burning appliances", "isCorrect": false, "feedback": "This isn't accurate -- adequate ventilation (ensuring sufficient oxygen supply) DIRECTLY affects whether combustion proceeds COMPLETELY (safer) or INCOMPLETELY (producing dangerous CO), which is precisely why proper ventilation is such an important safety consideration."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This oxidative process, when sufficiently supplied with molecular oxygen, fully converts hydrocarbon fuel into its maximally oxidized carbon and hydrogen products.", "medium": "When there's enough oxygen, burning fuel makes carbon dioxide and water as its main products.", "easy": "With enough oxygen, burning fuel makes carbon dioxide and water."},
+    "medium": {"hard": "Consider how a limited supply of oxidizing molecules relative to the available fuel carbon atoms would result in varying degrees of oxidation completion across those carbon atoms.", "medium": "If there just isn't enough oxygen to go around for every carbon atom to fully react, some end up only partially reacting (making CO) or not reacting at all (making soot).", "easy": "If there isn't enough oxygen for every carbon atom, some only partially react, making CO or soot instead."},
+    "hard": {"hard": "Consider how a scenario of oxygen depletion simultaneously increases the likelihood of toxic byproduct formation while that same byproduct further compounds the danger by directly impairing physiological oxygen delivery.", "medium": "Not enough air means more chance of making the dangerous CO gas, and that same gas then makes it even harder for your body to actually use whatever oxygen it does have.", "easy": "Not enough air means more chance of making dangerous CO, which then blocks your body's oxygen use."}
+  }
+}
+]

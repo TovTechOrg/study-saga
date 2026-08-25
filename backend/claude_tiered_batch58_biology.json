@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of RNA's role in protein synthesis (transcription and translation)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the general flow of genetic information described by the 'central dogma' of molecular biology?",
+    "options": [
+      {"text": "DNA → RNA → Protein", "isCorrect": true, "feedback": "Correct -- this describes transcription (DNA to RNA) followed by translation (RNA to protein), the standard flow of genetic information."},
+      {"text": "Protein → RNA → DNA", "isCorrect": false, "feedback": "This is backwards -- the standard flow of information moves from DNA to RNA to protein, not in reverse."},
+      {"text": "RNA → DNA → Protein", "isCorrect": false, "feedback": "This isn't the standard central dogma flow -- typically, DNA is transcribed into RNA first, not the other way around."},
+      {"text": "DNA → Protein → RNA", "isCorrect": false, "feedback": "This isn't the correct order -- RNA is the necessary intermediate step between DNA and protein synthesis, not the final step."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "During transcription, an enzyme reads a DNA sequence and builds a complementary messenger RNA (mRNA) strand. Why is this initial RNA copy necessary, rather than using DNA directly at the ribosome for protein synthesis?",
+    "options": [
+      {"text": "mRNA acts as a disposable, mobile 'working copy' of the genetic instructions that can travel from the nucleus (where DNA is protected) to the ribosome, without risking damage to the original, precious DNA template", "isCorrect": true, "feedback": "Correct -- this strategy of using an intermediate RNA messenger allows the original DNA to remain safely protected within the nucleus while still enabling protein synthesis to occur at ribosomes elsewhere in the cell."},
+      {"text": "DNA is actually perfectly capable of leaving the nucleus and traveling directly to the ribosome", "isCorrect": false, "feedback": "In eukaryotic cells, DNA typically remains within the nucleus -- it's specifically the mRNA copy that travels out to the ribosome, precisely because using DNA directly at the ribosome isn't the standard cellular process."},
+      {"text": "mRNA and DNA are actually identical molecules with no functional difference", "isCorrect": false, "feedback": "mRNA and DNA are chemically DIFFERENT molecules (different sugar backbone, uses uracil instead of thymine, typically single-stranded) serving different functional roles in this process."},
+      {"text": "This intermediate RNA step serves no actual functional purpose in the cell", "isCorrect": false, "feedback": "This intermediate step serves a very significant functional purpose -- protecting the original DNA while still allowing genetic information to reach the protein-synthesis machinery."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The genetic code is described as 'degenerate,' meaning multiple different three-letter mRNA codons can code for the same amino acid (e.g., both GAA and GAG code for glutamic acid). Why might this redundancy in the genetic code provide a biological advantage?",
+    "options": [
+      {"text": "This redundancy can help buffer against the effects of certain mutations, since a mutation changing one codon to another 'synonymous' codon (coding for the same amino acid) wouldn't actually change the resulting protein's structure", "isCorrect": true, "feedback": "Correct -- this built-in redundancy provides a degree of protection against the potentially harmful effects of certain point mutations, helping maintain protein structure and function despite some genetic variation."},
+      {"text": "This redundancy actually provides no biological advantage whatsoever", "isCorrect": false, "feedback": "This redundancy actually IS considered biologically advantageous, specifically by providing some protection against mutations that might otherwise disrupt protein structure."},
+      {"text": "Having multiple codons for the same amino acid always results in a different protein being made each time", "isCorrect": false, "feedback": "This is incorrect -- when different codons specify the SAME amino acid (synonymous codons), the resulting protein sequence is actually unaffected, not different each time."},
+      {"text": "This redundancy means the genetic code is fundamentally unreliable and inconsistent", "isCorrect": false, "feedback": "This isn't accurate -- the genetic code, despite having this redundancy, is remarkably consistent and reliable; the redundancy specifically serves a protective function against certain mutations."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This foundational principle describes the sequential transfer of genetic information from a stable storage molecule to an intermediate messenger to a final functional product.", "medium": "This describes the path genetic information takes: from DNA, to a messenger molecule, to a final protein.", "easy": "This describes the path from DNA, to a messenger molecule, to a final protein."},
+    "medium": {"hard": "Consider the practical benefit of using an expendable intermediate messenger molecule to relay genetic instructions to a distant cellular location, rather than risking transport of the original template.", "medium": "Using a disposable copy lets the cell keep the master DNA blueprint safe inside the nucleus while still getting instructions out to where proteins are built.", "easy": "Using a disposable copy keeps the master DNA blueprint safe while still getting instructions where they're needed."},
+    "hard": {"hard": "Consider how having multiple genetic 'spellings' for the same functional outcome could mitigate the impact of certain single-letter changes in the genetic sequence.", "medium": "If a mutation changes the genetic code slightly but it still 'spells' the same amino acid, the final protein doesn't actually change at all.", "easy": "If a mutation changes the code slightly but it still means the same amino acid, the protein doesn't change."}
+  }
+}
+]

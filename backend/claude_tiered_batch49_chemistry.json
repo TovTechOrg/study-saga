@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of covalent vs. ionic bonding",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a covalent bond?",
+    "options": [
+      {"text": "A bond formed when two atoms share electrons", "isCorrect": true, "feedback": "Correct -- covalent bonds involve atoms sharing electron pairs, typically between two nonmetal atoms."},
+      {"text": "A bond formed when one atom completely transfers an electron to another", "isCorrect": false, "feedback": "That describes an ionic bond, not a covalent bond, which specifically involves electron sharing rather than complete transfer."},
+      {"text": "A bond that only forms between two metal atoms", "isCorrect": false, "feedback": "Metal-to-metal bonding is typically described as metallic bonding, a distinct type from covalent bonding, which usually occurs between nonmetals."},
+      {"text": "A bond that involves no electrons at all", "isCorrect": false, "feedback": "Electron involvement (specifically sharing) is the defining feature of covalent bonds -- they are not electron-free interactions."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Sodium chloride (table salt, NaCl) forms through an ionic bond, where sodium transfers an electron to chlorine. Why does this electron transfer occur, given sodium and chlorine's different electronegativities?",
+    "options": [
+      {"text": "Chlorine's much higher electronegativity strongly attracts electrons, essentially pulling one completely away from the much less electronegative sodium, forming charged ions that attract each other", "isCorrect": true, "feedback": "Correct -- ionic bonds typically form when there's a large electronegativity difference between atoms, resulting in the more electronegative atom taking an electron entirely rather than sharing it."},
+      {"text": "Sodium and chlorine actually have identical electronegativities, which is why the bond forms", "isCorrect": false, "feedback": "This is incorrect -- it's precisely the LARGE DIFFERENCE in electronegativity between sodium and chlorine that drives complete electron transfer, forming an ionic bond, rather than sharing."},
+      {"text": "Electronegativity has no actual role in determining whether a bond is ionic or covalent", "isCorrect": false, "feedback": "Electronegativity difference is actually the key factor determining bond type -- large differences favor ionic bonding, while small differences favor covalent bonding."},
+      {"text": "Sodium is more electronegative than chlorine, which is why it gives up an electron", "isCorrect": false, "feedback": "This is backwards -- chlorine is actually MORE electronegative than sodium, which is exactly why chlorine attracts and takes the electron, not the other way around."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Bonding is often described as existing on a spectrum from purely covalent to purely ionic, rather than as two entirely separate categories. Why might a bond like that in HCl (hydrogen chloride) be considered 'polar covalent' rather than purely one type or the other?",
+    "options": [
+      {"text": "Because the electronegativity difference between H and Cl is significant enough to create unequal electron sharing (some ionic character) but not large enough to cause complete electron transfer (full ionic bonding), placing it in an intermediate position on the spectrum", "isCorrect": true, "feedback": "Correct -- this intermediate positioning reflects how electronegativity differences create a continuous spectrum of bond character, rather than a strict binary between fully covalent and fully ionic bonding."},
+      {"text": "HCl actually has absolutely no electronegativity difference between its atoms", "isCorrect": false, "feedback": "This isn't accurate -- there IS a meaningful electronegativity difference between H and Cl, which is exactly why the bond shows polar (partially ionic) character rather than being perfectly nonpolar covalent."},
+      {"text": "Bond type is always a strict binary choice between purely covalent or purely ionic, with no possible middle ground", "isCorrect": false, "feedback": "This isn't accurate -- bonding actually exists along a continuous spectrum based on electronegativity difference, allowing for intermediate 'polar covalent' bonds like this one."},
+      {"text": "The distinction between covalent and ionic bonding is entirely arbitrary and has no real chemical basis", "isCorrect": false, "feedback": "This distinction has a solid chemical basis, rooted specifically in the magnitude of electronegativity difference between bonded atoms, even though that difference exists along a continuous spectrum."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This bond type is characterized by electron pairs being mutually shared between two bonding atoms.", "medium": "This bond type is formed when two atoms share electrons with each other.", "easy": "This bond type is formed when two atoms share electrons."},
+    "medium": {"hard": "Consider how a substantial disparity in electron-attracting strength between two atoms can result in complete electron transfer rather than mutual sharing.", "medium": "Since chlorine pulls MUCH harder on electrons than sodium does, it essentially takes one completely away.", "easy": "Since chlorine pulls much harder on electrons than sodium, it takes one completely away."},
+    "hard": {"hard": "Consider bonding character as existing along a continuum determined by the magnitude of electronegativity difference, rather than as two mutually exclusive categories.", "medium": "The electronegativity difference here is enough to make sharing uneven, but not big enough for a full electron transfer like in a pure ionic bond.", "easy": "The electronegativity difference here makes sharing uneven, but not enough for a full electron transfer like in salt."}
+  }
+}
+]

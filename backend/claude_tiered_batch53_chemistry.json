@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of balancing chemical equations",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Why must chemical equations be balanced?",
+    "options": [
+      {"text": "To satisfy the law of conservation of mass, ensuring the same number of each atom type appears on both sides", "isCorrect": true, "feedback": "Correct -- matter cannot be created or destroyed in a chemical reaction, so atoms must balance between reactants and products."},
+      {"text": "To make the equation look more symmetrical and visually appealing", "isCorrect": false, "feedback": "Balancing isn't about aesthetics -- it's a fundamental requirement based on the law of conservation of mass."},
+      {"text": "To ensure the reaction happens faster", "isCorrect": false, "feedback": "Balancing an equation doesn't affect reaction rate/speed -- that's a separate kinetic concept from stoichiometric balance."},
+      {"text": "Balancing equations is optional and doesn't reflect anything about the actual reaction", "isCorrect": false, "feedback": "Balancing is not optional -- it's essential for accurately representing what actually happens during a chemical reaction, per conservation of mass."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Balance this equation: __H2 + __O2 → __H2O",
+    "options": [
+      {"text": "2H2 + O2 → 2H2O", "isCorrect": true, "feedback": "Correct -- this gives 4 H atoms and 2 O atoms on both sides, satisfying conservation of mass."},
+      {"text": "H2 + O2 → H2O", "isCorrect": false, "feedback": "This is unbalanced -- the left side has 2 oxygen atoms, but the right side has only 1 oxygen atom."},
+      {"text": "H2 + 2O2 → 2H2O", "isCorrect": false, "feedback": "This is unbalanced -- the left side has 4 oxygen atoms, but the right side has only 2 oxygen atoms."},
+      {"text": "2H2 + 2O2 → 2H2O", "isCorrect": false, "feedback": "This is unbalanced -- the left side has 4 oxygen atoms, but the right side has only 2 oxygen atoms."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Balance this equation: __C3H8 + __O2 → __CO2 + __H2O (combustion of propane)",
+    "options": [
+      {"text": "C3H8 + 5O2 → 3CO2 + 4H2O", "isCorrect": true, "feedback": "Correct -- checking atoms: 3 C = 3 C, 8 H = 8 H (4×2), and 10 O (5×2) = 10 O (3×2 + 4×1)."},
+      {"text": "C3H8 + 3O2 → 3CO2 + 4H2O", "isCorrect": false, "feedback": "This is unbalanced -- checking oxygen: left side has 6 O atoms, but the right side needs 10 O atoms (6 from CO2 + 4 from H2O)."},
+      {"text": "C3H8 + 5O2 → 3CO2 + 3H2O", "isCorrect": false, "feedback": "This is unbalanced -- checking hydrogen: left side has 8 H atoms, but the right side has only 6 H atoms (3×2)."},
+      {"text": "2C3H8 + 5O2 → 3CO2 + 4H2O", "isCorrect": false, "feedback": "This is unbalanced -- checking carbon: left side has 6 C atoms (2×3), but the right side has only 3 C atoms."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This physical law dictates that atoms are neither created nor destroyed during a chemical transformation, only rearranged.", "medium": "This rule says atoms can't just appear or disappear during a chemical reaction.", "easy": "This rule says atoms can't just appear or disappear during a reaction."},
+    "medium": {"hard": "Systematically count each element's atoms on both sides, adjusting coefficients until every element matches in total quantity.", "medium": "Count the hydrogen and oxygen atoms on each side, and adjust the numbers in front until they match up.", "easy": "Try putting a 2 in front of H2 and a 2 in front of H2O -- count the atoms to check if it balances."},
+    "hard": {"hard": "Balance elements systematically in a logical order (typically carbon, then hydrogen, then oxygen last), verifying atom counts match on both sides after each adjustment.", "medium": "Balance carbon first, then hydrogen, then count up the oxygen atoms needed on the left to match the right side total.", "easy": "Balance carbon (3), then hydrogen (8, needing 4 water), then count oxygen needed (10, meaning 5 O2)."}
+  }
+}
+]

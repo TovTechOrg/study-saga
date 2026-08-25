@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between a covalent bond and an ionic bond",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'covalent bond' forms when two atoms:",
+    "options": [
+      {"text": "Share a pair of electrons between them", "isCorrect": true, "feedback": "Correct -- covalent bonds form when two atoms share one or more pairs of electrons, typically between two nonmetal atoms."},
+      {"text": "Completely transfer electrons from one atom to the other", "isCorrect": false, "feedback": "That describes an IONIC bond, not covalent -- ionic bonds involve complete electron transfer, while covalent bonds involve electron SHARING instead."},
+      {"text": "Physically touch each other without any electron interaction at all", "isCorrect": false, "feedback": "This isn't accurate -- a covalent bond specifically involves ELECTRON interaction (sharing), not simply physical contact without electron involvement."},
+      {"text": "Repel each other and never actually bond together", "isCorrect": false, "feedback": "This isn't accurate -- a covalent bond specifically describes atoms bonding TOGETHER via shared electrons, not repelling apart."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Ionic bonds typically form between a metal and a nonmetal (like sodium and chlorine in NaCl), while covalent bonds typically form between two nonmetals (like two oxygen atoms in O2). Why does the difference in electronegativity between the bonding atoms explain this general pattern?",
+    "options": [
+      {"text": "Metals generally have low electronegativity (weakly attracting electrons) while nonmetals have high electronegativity (strongly attracting electrons), so when a metal bonds with a nonmetal, the large electronegativity difference causes the nonmetal to essentially pull the electron completely away, forming ions and an ionic bond, whereas two nonmetals have a much smaller electronegativity difference between them, making a more balanced electron-SHARING covalent bond more favorable instead", "isCorrect": true, "feedback": "Correct -- this explanation of electronegativity difference determining bond type (large difference favors ionic, small difference favors covalent) correctly explains the general metal-nonmetal versus nonmetal-nonmetal bonding pattern."},
+      {"text": "Electronegativity differences between bonding atoms actually have no real connection to determining whether a bond forms as ionic or covalent", "isCorrect": false, "feedback": "This isn't accurate -- electronegativity difference IS DIRECTLY connected to and is the primary factor determining whether a bond is ionic or covalent."},
+      {"text": "Metals would actually generally have HIGHER electronegativity than nonmetals, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- metals generally have LOWER electronegativity than nonmetals, not higher, which is precisely why they tend to lose (rather than attract) electrons in bonding."},
+      {"text": "Two nonmetals bonding together would actually typically form an ionic bond rather than a covalent one", "isCorrect": false, "feedback": "This isn't accurate -- two nonmetals bonding together typically form a COVALENT bond, not an ionic one, due to their relatively small electronegativity difference."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In reality, the ionic versus covalent classification represents two ends of a continuous spectrum rather than a strict either/or distinction -- many bonds are 'polar covalent,' involving unequal (but not complete) electron sharing due to a moderate electronegativity difference. Explain why understanding this spectrum, rather than a strict binary classification, better reflects the actual chemistry involved.",
+    "options": [
+      {"text": "Electronegativity difference exists along a continuous numerical scale rather than falling into just two discrete categories, so as electronegativity difference increases gradually from zero (pure covalent, equal sharing) through moderate values (polar covalent, unequal sharing) to very large values (ionic, essentially complete transfer), bond character correspondingly shifts gradually rather than switching abruptly at some single, sharp cutoff point", "isCorrect": true, "feedback": "Correct -- this explanation of a continuous electronegativity-difference scale producing a corresponding continuous spectrum of bond character (rather than a sharp binary switch) correctly reflects the more nuanced, accurate chemical understanding of bonding, beyond simplified introductory categories."},
+      {"text": "Bond character would actually always fall into a strict, sharply defined either/or category, with no meaningful intermediate possibilities like polar covalent bonds", "isCorrect": false, "feedback": "This isn't accurate -- bond character exists along a genuine SPECTRUM, with polar covalent bonds representing a real, meaningful intermediate category, not a strict either/or division."},
+      {"text": "Polar covalent bonds actually involve complete electron transfer, identical to a purely ionic bond", "isCorrect": false, "feedback": "This isn't accurate -- polar covalent bonds specifically involve UNEQUAL SHARING (not complete transfer), which is distinct from a purely ionic bond's essentially complete electron transfer."},
+      {"text": "Electronegativity difference has no actual connection to where a particular bond falls along the ionic-to-covalent spectrum", "isCorrect": false, "feedback": "This isn't accurate -- electronegativity difference IS DIRECTLY connected to and determines where a bond falls along this continuous spectrum."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This chemical bond type arises from the mutual sharing of an electron pair between two bonded atomic centers.", "medium": "This kind of bond happens when two atoms share a pair of electrons between them.", "easy": "This kind of bond happens when two atoms share a pair of electrons."},
+    "medium": {"hard": "Consider how the magnitude of electronegativity difference between two atoms determines whether electron distribution results in complete transfer versus more balanced sharing.", "medium": "When one atom pulls WAY harder on electrons than the other, it just takes one away entirely, but when both atoms pull about equally hard, they end up sharing instead.", "easy": "When one atom pulls much harder on electrons, it takes one away; when both pull about equally, they share instead."},
+    "hard": {"hard": "Consider how bond character tracks continuously with electronegativity difference along a numerical scale, rather than snapping discretely between two mutually exclusive categories.", "medium": "Since the pulling-power difference between atoms can be any amount, not just 'none' or 'total,' the type of bond you get actually slides smoothly along a scale instead of jumping suddenly from one category to another.", "easy": "Since the pulling-power difference can be any amount, the bond type slides along a scale instead of jumping between categories."}
+  }
+}
+]

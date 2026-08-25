@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the difference between a chemical reaction rate and reaction yield",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does reaction 'rate' measure?",
+    "options": [
+      {"text": "How quickly a reaction proceeds", "isCorrect": true, "feedback": "Correct -- reaction rate describes the speed at which reactants convert into products."},
+      {"text": "How much product is ultimately produced", "isCorrect": false, "feedback": "That describes yield, not rate -- rate is specifically about speed, not final quantity."},
+      {"text": "The color of the reaction mixture", "isCorrect": false, "feedback": "Color isn't what reaction rate measures -- it's specifically about the speed of the reaction."},
+      {"text": "The temperature at which a reaction must occur", "isCorrect": false, "feedback": "Temperature can influence rate, but rate itself specifically measures how fast the reaction proceeds, not a required temperature value."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A reaction can occur very quickly (high rate) but still produce very little final product (low yield). How is this possible?",
+    "options": [
+      {"text": "The reaction might reach equilibrium quickly, but if that equilibrium doesn't favor much product formation, the final yield could still end up low", "isCorrect": true, "feedback": "Correct -- rate and yield are fundamentally different properties: rate is about how FAST equilibrium (or completion) is reached, not necessarily how far it shifts toward products."},
+      {"text": "This scenario is actually impossible -- fast reactions always produce high yields", "isCorrect": false, "feedback": "This is actually a well-recognized possibility in chemistry -- reaction speed and final product yield are independent properties."},
+      {"text": "Rate and yield are actually the exact same measurement", "isCorrect": false, "feedback": "These are genuinely distinct concepts -- rate measures speed, while yield measures the ultimate amount of product formed."},
+      {"text": "A fast reaction rate always guarantees 100% yield", "isCorrect": false, "feedback": "A fast rate only indicates quick progress toward whatever the reaction's ultimate equilibrium point is -- it doesn't guarantee a high final yield."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In industrial chemistry, why might engineers sometimes choose reaction conditions that slightly LOWER the reaction rate in exchange for a higher overall yield?",
+    "options": [
+      {"text": "If maximizing yield is more economically valuable than speed for that particular process, engineers may prioritize conditions favoring more complete conversion of reactants, even if the reaction takes somewhat longer", "isCorrect": true, "feedback": "Correct -- rate and yield can sometimes trade off against each other, and the optimal industrial choice depends on which factor is more economically important for a given process."},
+      {"text": "Reaction rate and yield can never be traded off against each other in any real process", "isCorrect": false, "feedback": "This trade-off is actually a well-known and important consideration in real industrial chemical process design."},
+      {"text": "Lowering reaction rate always automatically increases yield as a universal rule", "isCorrect": false, "feedback": "This isn't a universal rule -- the relationship between rate and yield depends on the specific reaction and conditions involved, not a fixed guarantee."},
+      {"text": "Yield has no real economic importance in industrial chemistry", "isCorrect": false, "feedback": "Yield is actually often extremely economically important in industrial chemistry, since it directly affects how much usable product is obtained from raw materials."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity reflects the speed of a chemical transformation, not its final outcome.", "medium": "This measures how fast something happens, not how much ends up being made.", "easy": "This measures how fast a reaction happens."},
+    "medium": {"hard": "Rate describes how quickly a system approaches its eventual equilibrium or completion state, which is a separate consideration from where that equilibrium point actually lies.", "medium": "Getting to the finish line fast doesn't necessarily mean the finish line itself is favorable for making a lot of product.", "easy": "Getting there fast doesn't mean you end up with a lot of product once you're there."},
+    "hard": {"hard": "Since maximizing raw material conversion into product often has greater economic value than saving processing time, engineers may deliberately select conditions that favor completeness over speed.", "medium": "Sometimes getting more usable product out of the same raw materials is worth more money than finishing the reaction a bit faster.", "easy": "Sometimes getting more usable product is worth more than finishing the reaction a little faster."}
+  }
+}
+]

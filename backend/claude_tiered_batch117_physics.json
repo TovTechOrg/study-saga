@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between work done by a variable force vs. a constant force",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "For a CONSTANT force acting over a distance, work is calculated simply as:",
+    "options": [
+      {"text": "Force multiplied by distance (W=Fd)", "isCorrect": true, "feedback": "Correct -- for a constant force, this straightforward multiplication gives the total work done, since the force doesn't change throughout the motion."},
+      {"text": "Force divided by distance", "isCorrect": false, "feedback": "Division isn't the correct operation for calculating work -- work specifically requires MULTIPLYING force by distance, not dividing."},
+      {"text": "Force added to distance", "isCorrect": false, "feedback": "Addition isn't the correct operation for calculating work -- work specifically requires MULTIPLYING force by distance, not adding them together."},
+      {"text": "The square root of force times distance", "isCorrect": false, "feedback": "This isn't the correct formula -- work is simply the direct PRODUCT (multiplication) of force and distance, without any square root involved."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For a VARIABLE force (like a spring's force, which increases as it's stretched further), the simple W=Fd formula doesn't work directly, since F isn't a single constant value. Why is CALCULUS (specifically, integration) needed to correctly calculate work in this variable-force scenario?",
+    "options": [
+      {"text": "Since the force is CONTINUOUSLY CHANGING throughout the motion, integration allows the total distance to be conceptually divided into infinitely many tiny segments, where the force can be treated as APPROXIMATELY constant within each tiny segment, and then all these tiny work contributions are added together (integrated) to get the TOTAL work done across the entire varying-force motion", "isCorrect": true, "feedback": "Correct -- this calculus-based approach (treating a continuously varying quantity as approximately constant over infinitesimally small intervals, then summing/integrating across all those intervals) is a fundamental, powerful technique for correctly calculating quantities like work when a directly-multiplying simple formula doesn't apply due to changing conditions."},
+      {"text": "The simple W=Fd formula would actually still work perfectly fine even for a continuously variable force, with no need for calculus", "isCorrect": false, "feedback": "This isn't accurate -- the simple W=Fd formula SPECIFICALLY REQUIRES a CONSTANT force value -- for a VARYING force, this simple approach doesn't correctly apply, which is precisely why calculus/integration becomes necessary."},
+      {"text": "Calculus/integration has no actual connection to correctly calculating work for a variable force scenario", "isCorrect": false, "feedback": "This isn't accurate -- calculus/integration IS DIRECTLY and specifically the NECESSARY mathematical tool for correctly calculating work when force varies continuously throughout the motion."},
+      {"text": "A variable force would actually always do exactly zero total work, regardless of the specific motion involved", "isCorrect": false, "feedback": "This isn't accurate -- a variable force CAN do a meaningful, nonzero amount of TOTAL work (calculated via integration) -- it's simply that the SIMPLE constant-force formula doesn't directly apply to calculate that total."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For a spring with force F=kx (where x is displacement from equilibrium), the work done stretching it from x=0 to some distance x=d is W=½kd² (found via integration), NOT simply W=(kd)(d)=kd² (which would incorrectly apply the simple constant-force formula using the FINAL force value). Explain why using the FINAL force value in the simple formula overestimates the actual work done.",
+    "options": [
+      {"text": "Using the FINAL (maximum) force value throughout the ENTIRE simple calculation incorrectly assumes that MAXIMUM force was being applied for the WHOLE stretching distance, when in reality the spring's force STARTS at zero and only gradually INCREASES to that maximum value as stretching proceeds -- properly accounting for this GRADUAL increase (via integration) correctly yields exactly HALF of what the oversimplified 'final-force-throughout' calculation would incorrectly suggest", "isCorrect": true, "feedback": "Correct -- this careful, precise reasoning (recognizing that using a single, final force value throughout the entire motion significantly overestimates the true work done, when the actual force was building up GRADUALLY from zero) explains exactly why the calculus-based integration approach (giving the factor of ½) provides the mathematically CORRECT answer for this classic variable-force work calculation."},
+      {"text": "The oversimplified 'final-force-throughout' calculation and the correct integration-based calculation would actually give exactly the SAME numerical result", "isCorrect": false, "feedback": "This isn't accurate -- these two approaches give GENUINELY DIFFERENT numerical results (differing specifically by a factor of exactly 2), precisely because the oversimplified approach doesn't correctly account for the force's gradual increase."},
+      {"text": "The spring's force actually starts at its MAXIMUM value and decreases to zero as stretching proceeds, contrary to what's being described", "isCorrect": false, "feedback": "This is backwards -- a spring's force (F=kx) specifically STARTS AT ZERO (when x=0) and INCREASES as displacement increases, not the reverse."},
+      {"text": "This specific factor-of-one-half difference has no actual mathematical connection to how the spring's force gradually increases during stretching", "isCorrect": false, "feedback": "This isn't accurate -- this specific factor-of-one-half difference IS DIRECTLY and mathematically connected to and RESULTS FROM correctly integrating the LINEARLY increasing force (F=kx) over the stretching distance, rather than incorrectly using a single, constant final force value."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This calculation applies directly only when the applied force magnitude remains invariant across the entire displacement.", "medium": "Multiply the force by the distance, but only when the force doesn't change the whole way through.", "easy": "Multiply force by distance, but only when the force stays the same the whole way."},
+    "medium": {"hard": "Consider how partitioning the motion into infinitesimal segments over which the force is approximately constant, then summing those contributions, generalizes the constant-force work formula to continuously varying forces.", "medium": "Chop the whole stretch into tiny little pieces where the force is basically constant for just that tiny piece, then add up all those tiny bits of work together.", "easy": "Chop the stretch into tiny pieces where force is basically constant, then add up all those tiny bits of work."},
+    "hard": {"hard": "Consider how the force-versus-displacement relationship forms a triangular (not rectangular) area, whose total area is exactly half of the rectangle defined by the final force value across the full displacement.", "medium": "Since the force builds up gradually from zero instead of being at full strength the whole time, the true total work ends up being exactly half of what you'd get by just assuming full force the entire way.", "easy": "Since force builds up gradually instead of being at full strength the whole time, true work is half of the full-force estimate."}
+  }
+}
+]

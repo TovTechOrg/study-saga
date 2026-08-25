@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of compound interest",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What distinguishes compound interest from simple interest?",
+    "options": [
+      {"text": "Compound interest is calculated on both the original principal AND any previously earned interest", "isCorrect": true, "feedback": "Correct -- this 'interest on interest' effect is what makes compound interest grow faster than simple interest over time."},
+      {"text": "Compound interest is only calculated on the original principal amount", "isCorrect": false, "feedback": "That describes SIMPLE interest, not compound interest, which includes previously earned interest in later calculations."},
+      {"text": "Compound interest is always a fixed dollar amount every year", "isCorrect": false, "feedback": "Compound interest amounts actually grow each period since it's a percentage applied to a growing balance, not a fixed dollar amount."},
+      {"text": "Compound interest and simple interest are just two names for the identical calculation", "isCorrect": false, "feedback": "These are two genuinely different calculation methods -- compound interest includes interest-on-interest, while simple interest does not."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "You invest $1,000 at 10% annual compound interest. How much will you have after 2 years? (Formula: A = P(1+r)^t)",
+    "options": [
+      {"text": "$1,210", "isCorrect": true, "feedback": "Correct -- A = 1000(1.10)² = 1000(1.21) = $1,210."},
+      {"text": "$1,200", "isCorrect": false, "feedback": "This is what SIMPLE interest would give (1000 + 100 + 100), not compound interest, which also earns interest on the first year's interest."},
+      {"text": "$1,100", "isCorrect": false, "feedback": "This is the balance after only ONE year, not after two years of compounding."},
+      {"text": "$1,000", "isCorrect": false, "feedback": "This is just the original principal, without any interest applied at all."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two people each invest $1,000 for 3 years. Person A earns 10% simple interest annually; Person B earns 10% compound interest annually. Approximately how much MORE does Person B end up with compared to Person A?",
+    "options": [
+      {"text": "About $31 more ($1,331 vs. $1,300)", "isCorrect": true, "feedback": "Correct -- simple interest: 1000 + (100×3) = 1,300. Compound: 1000(1.10)³ = 1000(1.331) = 1,331. Difference: 1,331-1,300=31."},
+      {"text": "About $100 more", "isCorrect": false, "feedback": "This doesn't correctly result from calculating and comparing both the simple and compound interest totals over 3 years."},
+      {"text": "Exactly $0 more -- they would end up with the same amount", "isCorrect": false, "feedback": "Simple and compound interest produce genuinely different totals over multiple years (except in year 1) -- they wouldn't be equal after 3 years."},
+      {"text": "About $300 more", "isCorrect": false, "feedback": "This significantly overestimates the actual difference between the two calculated totals."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This calculation method incorporates previously accumulated interest into the base for subsequent interest calculations.", "medium": "This method calculates interest on your growing balance, not just your starting amount.", "easy": "This method calculates interest on your growing balance, not just your starting amount."},
+    "medium": {"hard": "Apply the compound interest formula directly, raising the growth factor to the power matching the number of compounding periods.", "medium": "Use A = P(1+r)^t, plugging in 1000 for P, 0.10 for r, and 2 for t.", "easy": "Calculate 1000 times 1.10 times 1.10 to get the final amount."},
+    "hard": {"hard": "Calculate each scenario's total using its respective formula (linear addition for simple, exponential growth for compound), then find the numerical difference.", "medium": "Calculate the simple interest total (1000 + 100 three times) and the compound interest total (1000×1.10×1.10×1.10), then subtract.", "easy": "Simple: 1000+300=1300. Compound: 1000×1.10×1.10×1.10=1331. Subtract to find the difference."}
+  }
+}
+]

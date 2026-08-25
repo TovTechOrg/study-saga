@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of taxonomy and biological classification hierarchy",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the purpose of biological taxonomy?",
+    "options": [
+      {"text": "To classify and organize living organisms into a structured hierarchy based on shared characteristics", "isCorrect": true, "feedback": "Correct -- taxonomy provides a systematic framework for naming and organizing the diversity of life based on evolutionary relationships and shared traits."},
+      {"text": "To determine which organisms are dangerous versus safe", "isCorrect": false, "feedback": "Danger/safety assessment is a different practical concern, not the primary purpose of taxonomy, which is specifically about systematic classification and naming."},
+      {"text": "To calculate the total population size of a species", "isCorrect": false, "feedback": "Population size calculation is a different area of study (population ecology), not the primary purpose of taxonomy, which is about classification and naming."},
+      {"text": "To track an individual organism's specific location", "isCorrect": false, "feedback": "Location tracking is unrelated to taxonomy's actual purpose, which is specifically about classifying and organizing organisms based on their characteristics."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The taxonomic hierarchy moves from very broad categories (like Kingdom) to very specific ones (like Species). Why does organizing classification this way, from broad to narrow, make biological sense?",
+    "options": [
+      {"text": "It reflects increasingly specific shared characteristics and closer evolutionary relationships as you move down the hierarchy, with organisms in the same narrow category (like Species) being more closely related than those only sharing a broad category (like Kingdom)", "isCorrect": true, "feedback": "Correct -- this hierarchical structure, from broad shared ancestry down to very specific close relationships, reflects the actual evolutionary relatedness patterns among different organisms."},
+      {"text": "This hierarchical structure is actually completely arbitrary, with no connection to organisms' actual biological relationships", "isCorrect": false, "feedback": "This isn't accurate -- this hierarchical structure specifically reflects genuine, meaningful differences in evolutionary relatedness and shared characteristics, not an arbitrary organizational scheme."},
+      {"text": "Organisms in the same broad category (like Kingdom) are actually MORE closely related than those in the same narrow category (like Species)", "isCorrect": false, "feedback": "This is backwards -- organisms sharing a narrower, more specific category (like Species) are actually MORE closely related than those only sharing a broader category (like Kingdom), not less."},
+      {"text": "The taxonomic hierarchy has no actual connection to organisms' evolutionary relationships", "isCorrect": false, "feedback": "This isn't accurate -- the taxonomic hierarchy is actually DIRECTLY connected to and reflects real evolutionary relationships and shared ancestry among different organisms."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Modern taxonomy increasingly incorporates genetic/molecular data (DNA sequence comparisons), sometimes leading to significant reclassification of organisms that were previously grouped based only on visible physical similarities. Why might genetic evidence sometimes reveal that visually similar organisms are actually less closely related than previously thought (or vice versa)?",
+    "options": [
+      {"text": "Physical similarities can sometimes arise independently in unrelated organisms through convergent evolution (similar environmental pressures producing similar adaptations), while genetic data provides more direct evidence of actual evolutionary ancestry and relatedness, sometimes revealing different relationship patterns than physical appearance alone would suggest", "isCorrect": true, "feedback": "Correct -- this potential discrepancy between physical similarity and genetic relatedness highlights why modern taxonomy has increasingly incorporated molecular evidence, providing a more direct and often more accurate assessment of true evolutionary relationships than physical appearance alone."},
+      {"text": "Genetic data and physical characteristics always perfectly agree with each other, with no possible discrepancies", "isCorrect": false, "feedback": "This isn't accurate -- there CAN be meaningful discrepancies between genetic relatedness and physical similarity (notably due to phenomena like convergent evolution), which is precisely why incorporating genetic data has sometimes led to taxonomic reclassifications."},
+      {"text": "Genetic data actually provides no additional useful information beyond what physical characteristics alone can reveal", "isCorrect": false, "feedback": "This isn't accurate -- genetic data can provide significant ADDITIONAL insight into true evolutionary relationships, sometimes revealing patterns that purely physical observation might miss or misinterpret."},
+      {"text": "Convergent evolution has no actual connection to why classification based on physical traits alone might sometimes be misleading", "isCorrect": false, "feedback": "Convergent evolution is actually DIRECTLY relevant here -- it's specifically the phenomenon that can cause unrelated organisms to develop similar physical traits independently, potentially misleading classification based on appearance alone."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This scientific discipline establishes a systematic, hierarchical framework for categorizing biological diversity based on shared derived characteristics.", "medium": "This is the science of sorting living things into organized groups based on what they have in common.", "easy": "This is the science of sorting living things into organized groups."},
+    "medium": {"hard": "Consider how progressively narrower classification categories correspond to progressively more recent shared common ancestry among the organisms grouped together.", "medium": "The more specific the category you share with another organism, the more recently you probably share a common ancestor with it.", "easy": "The more specific category you share with something, the more closely related you probably are."},
+    "hard": {"hard": "Consider how similar environmental selective pressures can independently produce similar physical adaptations in unrelated lineages, potentially creating a misleading impression of close relatedness based on appearance alone.", "medium": "Sometimes two totally unrelated animals end up looking similar just because they adapted to similar environments, not because they're actually closely related -- genetics can catch this.", "easy": "Sometimes unrelated animals look similar just because of similar environments, not because they're closely related -- genetics can catch this."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of arc length and sector area of a circle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The arc length of a circle refers to:",
+    "options": [
+      {"text": "The distance along a curved portion (arc) of the circle's circumference", "isCorrect": true, "feedback": "Correct -- arc length measures the curved distance between two points along a circle's edge, corresponding to a specific central angle."},
+      {"text": "The straight-line distance across the entire circle", "isCorrect": false, "feedback": "That describes the DIAMETER, not arc length, which specifically measures a CURVED distance along the circle's edge, not a straight line across it."},
+      {"text": "The total area enclosed within the circle", "isCorrect": false, "feedback": "That describes the circle's AREA, not arc length, which specifically measures a linear distance along the curved edge, not an enclosed area."},
+      {"text": "The exact center point of the circle", "isCorrect": false, "feedback": "Arc length doesn't refer to a specific point at all -- it's a distance measurement along a portion of the circle's curved boundary."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A circle has a radius of 10 cm. What is the arc length corresponding to a 90-degree central angle? (Use the formula: arc length = (angle/360) × 2πr, with π≈3.14)",
+    "options": [
+      {"text": "15.7 cm", "isCorrect": true, "feedback": "Correct -- (90/360)×2×3.14×10 = 0.25×62.8 = 15.7 cm."},
+      {"text": "62.8 cm", "isCorrect": false, "feedback": "This is the FULL circumference (2πr) of the circle, without applying the (90/360) fraction for just this specific arc portion."},
+      {"text": "31.4 cm", "isCorrect": false, "feedback": "This is HALF the circumference (corresponding to 180 degrees), not the correct arc length for a 90-degree angle."},
+      {"text": "10 cm", "isCorrect": false, "feedback": "This is just the radius value itself, not the correctly calculated arc length using the given formula."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A circular pizza has a radius of 12 inches. What is the AREA of a single slice (sector) that spans a 45-degree central angle? (Use: sector area = (angle/360) × πr², with π≈3.14)",
+    "options": [
+      {"text": "56.52 square inches", "isCorrect": true, "feedback": "Correct -- (45/360)×3.14×12² = 0.125×3.14×144 = 0.125×452.16 = 56.52 square inches."},
+      {"text": "452.16 square inches", "isCorrect": false, "feedback": "This is the area of the ENTIRE pizza (πr²), without applying the (45/360) fraction for just this specific slice."},
+      {"text": "113.04 square inches", "isCorrect": false, "feedback": "This would correspond to a 90-degree slice (1/4 of the pizza), not the specified 45-degree slice."},
+      {"text": "12 square inches", "isCorrect": false, "feedback": "This is just the radius value itself, not the correctly calculated sector area using the given formula."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measurement quantifies the curvilinear distance spanning a designated portion of a circle's outer boundary.", "medium": "This is the distance along a curved piece of the circle's outer edge.", "easy": "This is the distance along a curved piece of the circle's edge."},
+    "medium": {"hard": "Determine what fraction of the full circumference corresponds to the given central angle, then apply that fraction to the total circumference value.", "medium": "Figure out what fraction of the full circle 90 degrees represents (90/360), then apply that fraction to the total circumference.", "easy": "90/360 is 1/4. The full circumference is 62.8, so 1/4 of that is 15.7."},
+    "hard": {"hard": "Determine what fraction of the total circle area corresponds to the given central angle, then apply that fraction to the total circle area value.", "medium": "Figure out what fraction of the full circle 45 degrees represents (45/360), then apply that fraction to the total circle area.", "easy": "45/360 is 1/8. The full circle area is 452.16, so 1/8 of that is 56.52."}
+  }
+}
+]

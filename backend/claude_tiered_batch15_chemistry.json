@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the difference between a mixture's components retaining their properties vs. a compound",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a mixture of sand and salt, do the sand and salt keep their individual properties?",
+    "options": [
+      {"text": "Yes, each substance keeps its own individual properties", "isCorrect": true, "feedback": "Correct -- in a mixture, no new chemical bonds form, so each component retains its original properties."},
+      {"text": "No, they combine to form a completely new substance", "isCorrect": false, "feedback": "That would describe a compound, not a simple mixture -- in a mixture, nothing chemically new forms."},
+      {"text": "No, both substances disappear entirely", "isCorrect": false, "feedback": "Neither substance disappears -- they're both still physically present, just combined without chemical bonding."},
+      {"text": "Only the sand keeps its properties, not the salt", "isCorrect": false, "feedback": "Both substances retain their individual properties in a mixture -- neither one specifically loses its identity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why can salt be separated from a sand-salt mixture by adding water, while you can't separate the hydrogen and oxygen in water using a simple physical method like this?",
+    "options": [
+      {"text": "Salt and sand are simply physically mixed (no chemical bonds between them), while hydrogen and oxygen in water are chemically bonded together, requiring a chemical process to separate", "isCorrect": true, "feedback": "Correct -- this reflects the fundamental difference between a physical mixture and a true chemical compound."},
+      {"text": "Sand and salt are actually chemically bonded together", "isCorrect": false, "feedback": "Sand and salt in this mixture are NOT chemically bonded -- that's exactly why simple physical methods like dissolving can separate them."},
+      {"text": "Water doesn't actually contain hydrogen and oxygen", "isCorrect": false, "feedback": "Water's chemical formula (H₂O) confirms it does contain both hydrogen and oxygen, chemically bonded together."},
+      {"text": "There is no real difference between these two scenarios", "isCorrect": false, "feedback": "There's a fundamental, well-established difference: mixtures involve no chemical bonding, while compounds like water do."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Iron filings mixed with sulfur powder can be separated with a magnet, since iron is magnetic and sulfur isn't. But if this same mixture is heated, it forms iron sulfide (FeS), a genuine compound. Why can't a magnet separate the components after this heating step?",
+    "options": [
+      {"text": "Heating caused a chemical reaction that chemically bonded the iron and sulfur together, meaning the iron atoms are no longer freely magnetic individual particles but part of a new compound with entirely different properties", "isCorrect": true, "feedback": "Correct -- once chemically bonded into iron sulfide, the original magnetic property of pure iron is lost, since the compound as a whole has its own distinct properties."},
+      {"text": "The magnet simply isn't strong enough after heating", "isCorrect": false, "feedback": "Magnet strength isn't the issue -- the fundamental problem is that the iron has chemically transformed and is no longer present as free magnetic iron."},
+      {"text": "Heating destroys all matter involved, leaving nothing to separate", "isCorrect": false, "feedback": "The matter isn't destroyed -- it's chemically transformed into a new compound (iron sulfide) with its own distinct properties."},
+      {"text": "Iron sulfide is actually still just a physical mixture, identical to before heating", "isCorrect": false, "feedback": "Iron sulfide is a genuine chemical compound with new, distinct properties -- it's fundamentally different from the original simple physical mixture."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Since no chemical bonding occurs, each substance's original identity remains fully intact within the mixture.", "medium": "Since nothing new is chemically formed, each substance stays exactly as it was.", "easy": "Since they're not chemically combined, sand is still sand and salt is still salt."},
+    "medium": {"hard": "The key distinguishing factor is whether chemical bonds have formed between the components, which determines whether simple physical separation methods will work.", "medium": "Water's hydrogen and oxygen are stuck together chemically, unlike sand and salt which are just physically jumbled together.", "easy": "Water's hydrogen and oxygen are chemically stuck together, unlike sand and salt which are just mixed."},
+    "hard": {"hard": "The property of magnetism belongs specifically to free iron atoms/crystals -- once chemically bonded into a new compound, that original property is superseded by the compound's own distinct characteristics.", "medium": "Once the iron chemically combines with sulfur to form something new, it's not \"free\" iron anymore, so its magnetic property is gone.", "easy": "Once the iron combines with sulfur to make something new, it's not really \"iron\" anymore in the way a magnet would recognize."}
+  }
+}
+]

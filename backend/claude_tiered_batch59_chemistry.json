@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of half-life and radioactive decay",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'half-life' refer to in radioactive decay?",
+    "options": [
+      {"text": "The time required for half of a radioactive sample to decay into a different substance", "isCorrect": true, "feedback": "Correct -- half-life is a consistent, predictable time period unique to each radioactive isotope."},
+      {"text": "The total time it takes for an entire radioactive sample to completely disappear", "isCorrect": false, "feedback": "Half-life specifically refers to HALF the sample decaying, not the complete disappearance of the entire sample (which theoretically never fully reaches zero)."},
+      {"text": "Half of the total mass of any chemical substance, regardless of radioactivity", "isCorrect": false, "feedback": "Half-life specifically applies to RADIOACTIVE decay processes, not to mass calculations for non-radioactive substances."},
+      {"text": "The average lifespan of a living organism exposed to radiation", "isCorrect": false, "feedback": "Half-life is a physics/chemistry concept describing radioactive decay timing, not a biological concept about organism lifespan."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A radioactive isotope has a half-life of 10 years. If you start with 80 grams of this isotope, how much will remain after 30 years?",
+    "options": [
+      {"text": "10 grams", "isCorrect": true, "feedback": "Correct -- 30 years is 3 half-lives (30÷10=3): 80→40→20→10 grams."},
+      {"text": "20 grams", "isCorrect": false, "feedback": "This is the amount remaining after only 2 half-lives (20 years), not 3 half-lives (30 years)."},
+      {"text": "0 grams", "isCorrect": false, "feedback": "Radioactive decay is exponential, meaning the substance approaches but never mathematically reaches exactly zero after a finite number of half-lives."},
+      {"text": "40 grams", "isCorrect": false, "feedback": "This is the amount remaining after only 1 half-life (10 years), not after 3 half-lives (30 years)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Carbon-14 dating relies on the fact that living organisms maintain a constant ratio of Carbon-14 to Carbon-12, but this ratio changes after death as Carbon-14 decays at a known half-life rate. Why does this method become unreliable for dating extremely old samples (beyond roughly 50,000 years)?",
+    "options": [
+      {"text": "After many half-lives have passed, the remaining amount of Carbon-14 becomes so vanishingly small that it becomes extremely difficult to measure accurately, making age calculations increasingly unreliable", "isCorrect": true, "feedback": "Correct -- this practical measurement limitation, arising from the exponential decrease in remaining radioactive material over many half-lives, is precisely why carbon dating has a practical age limit beyond which it becomes unreliable."},
+      {"text": "Carbon-14 dating actually works equally well for samples of any age, with no upper limit", "isCorrect": false, "feedback": "This isn't accurate -- carbon dating does have a well-documented practical limit (around 50,000 years) due to the extremely small remaining Carbon-14 quantities becoming difficult to measure accurately."},
+      {"text": "Carbon-14 stops decaying entirely after a certain number of years have passed", "isCorrect": false, "feedback": "This isn't accurate -- radioactive decay continues indefinitely at the same consistent half-life rate; it's specifically the difficulty of measuring the vanishingly small REMAINING quantity that limits practical dating usefulness."},
+      {"text": "This limitation has nothing to do with the actual amount of Carbon-14 remaining in old samples", "isCorrect": false, "feedback": "This limitation is DIRECTLY related to the remaining Carbon-14 quantity -- after enough half-lives, so little remains that accurate measurement becomes practically very difficult."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This characteristic time interval represents the duration required for exactly half of a given radioactive quantity to undergo decay.", "medium": "This is the amount of time it takes for exactly half of a radioactive substance to break down.", "easy": "This is the time it takes for exactly half of a radioactive substance to break down."},
+    "medium": {"hard": "Determine how many complete half-life intervals fit within the total elapsed time, then apply that many successive halving operations to the initial quantity.", "medium": "Figure out how many 10-year periods fit into 30 years, then cut the amount in half that many times.", "easy": "30 years is 3 periods of 10 years, so cut 80 in half three times: 80,40,20,10."},
+    "hard": {"hard": "Consider the exponential nature of radioactive decay and how the absolute remaining quantity becomes measurement-limited after sufficient elapsed half-lives, regardless of the decay process itself continuing indefinitely.", "medium": "After enough time passes, there's just such a tiny amount of Carbon-14 left that it's really hard to measure it accurately anymore.", "easy": "After enough time passes, there's such a tiny amount left that it's hard to measure accurately."}
+  }
+}
+]

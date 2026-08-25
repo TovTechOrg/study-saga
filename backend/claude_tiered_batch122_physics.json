@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between series circuits and parallel circuits",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a 'series' circuit, the components are connected:",
+    "options": [
+      {"text": "Along a single path, one after another, so the same current flows through each", "isCorrect": true, "feedback": "Correct -- in a series circuit, components form a single continuous path, so the exact same current flows through every component in sequence."},
+      {"text": "Along multiple separate paths, so current can take different routes", "isCorrect": false, "feedback": "That describes a PARALLEL circuit, not series -- parallel circuits have multiple paths for current, while series circuits have just one single path."},
+      {"text": "Without forming any complete, closed loop at all", "isCorrect": false, "feedback": "This isn't accurate -- a series circuit still forms a complete, closed loop; it's specifically arranged as a single path along that loop, not an incomplete or open circuit."},
+      {"text": "In a way that always results in zero current flowing through the circuit", "isCorrect": false, "feedback": "This isn't accurate -- a properly functioning series circuit specifically DOES have current flowing through it, not zero current."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If one bulb burns out in a series circuit of multiple light bulbs, all the bulbs go dark, but if one bulb burns out in a parallel circuit of multiple bulbs, the other bulbs stay lit. Why does circuit topology (series vs. parallel) determine this dramatically different outcome?",
+    "options": [
+      {"text": "In a series circuit, since there's only ONE single path for current, a break anywhere along that path (like a burnt-out bulb) interrupts the entire loop, stopping current everywhere in the circuit, whereas in a parallel circuit, each bulb has its OWN independent path back to the source, so a break in one path doesn't affect current flow through the other independent paths", "isCorrect": true, "feedback": "Correct -- this explanation of single-path interruption (series) versus independent multiple paths (parallel) correctly explains why a single component failure has such different circuit-wide consequences depending on the circuit's topology."},
+      {"text": "A burnt-out bulb in a parallel circuit would actually also cause all the other bulbs to go dark, identical to a series circuit", "isCorrect": false, "feedback": "This isn't accurate -- in a parallel circuit, the OTHER bulbs specifically stay lit if one burns out, precisely because each bulb has its own independent path, unlike a series circuit."},
+      {"text": "Circuit topology (series versus parallel) has no actual connection to how a single component failure affects the rest of the circuit", "isCorrect": false, "feedback": "This isn't accurate -- circuit topology IS DIRECTLY connected to and explains this differing outcome upon component failure."},
+      {"text": "A series circuit would actually provide multiple independent paths for current, identical to a parallel circuit", "isCorrect": false, "feedback": "This isn't accurate -- a series circuit specifically provides only ONE single path for current, unlike a parallel circuit's multiple independent paths."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Adding more resistors in SERIES increases the circuit's total resistance, while adding more resistors in PARALLEL actually DECREASES the circuit's total resistance (counterintuitively, since you're adding more components). Explain the physical reasoning behind why parallel resistors specifically decrease overall resistance.",
+    "options": [
+      {"text": "Adding a resistor in parallel creates an ADDITIONAL independent path for current to flow through, effectively providing current with more total 'room' to pass through the circuit overall -- since resistance fundamentally measures opposition to current flow, and providing more alternative pathways makes it EASIER (not harder) for current to get through overall, the total effective resistance of the parallel combination decreases as more paths are added, even though each individual resistor still has its own unchanged resistance value", "isCorrect": true, "feedback": "Correct -- this explanation of parallel resistors providing additional current pathways (making overall current flow easier, thus decreasing effective resistance) correctly resolves this classic counterintuitive result, essential for correctly analyzing parallel circuit behavior."},
+      {"text": "Adding resistors in parallel would actually always increase the total resistance, identical to adding resistors in series", "isCorrect": false, "feedback": "This isn't accurate -- adding resistors in PARALLEL specifically DECREASES total resistance, the opposite of adding resistors in series, which increases total resistance."},
+      {"text": "The number of available current pathways has no actual connection to explaining why parallel resistors decrease total circuit resistance", "isCorrect": false, "feedback": "This isn't accurate -- the number of available pathways IS DIRECTLY connected to and explains why total resistance decreases as more parallel resistors are added."},
+      {"text": "Each individual resistor's resistance value actually changes when placed in a parallel configuration, which is why the total resistance decreases", "isCorrect": false, "feedback": "This isn't accurate -- each individual resistor's OWN resistance value remains completely unchanged in a parallel configuration; it's specifically the COMBINED total effective resistance that decreases, due to the added pathways."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This circuit topology arranges components sequentially along a singular continuous conductive pathway, mandating identical current throughout.", "medium": "This circuit hooks components up one after another along just one single path.", "easy": "This circuit hooks components up one after another along just one path."},
+    "medium": {"hard": "Consider how a single shared pathway propagates any interruption circuit-wide, whereas independently branching pathways confine a fault's effect to only the branch in which it occurs.", "medium": "With only one path, breaking it anywhere stops everything, but with several separate paths, breaking one just shuts down that one path while the rest keep working fine.", "easy": "With only one path, breaking it stops everything; with several separate paths, breaking one leaves the rest working."},
+    "hard": {"hard": "Consider how each additional parallel branch supplies current with an independent alternative route, collectively reducing the net opposition the combined pathways present to overall current flow.", "medium": "Every extra path you add in parallel gives current one more way to get through, and more ways through means the whole combination fights the current less overall, even though nothing changed about any single resistor.", "easy": "Every extra parallel path gives current one more way through, so the whole combination fights current less overall."}
+  }
+}
+]

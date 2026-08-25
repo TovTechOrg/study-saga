@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between genotype and phenotype",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An organism's 'phenotype' refers to:",
+    "options": [
+      {"text": "Its observable physical or biochemical traits, like eye color or height", "isCorrect": true, "feedback": "Correct -- phenotype describes the observable, expressed traits of an organism, resulting from both its genetic makeup and environmental influences."},
+      {"text": "Its exact genetic code, made up of specific DNA sequences", "isCorrect": false, "feedback": "That describes GENOTYPE, not phenotype -- genotype is the underlying genetic code, while phenotype is the observable trait that results from it."},
+      {"text": "The specific location where an organism lives", "isCorrect": false, "feedback": "This isn't accurate -- phenotype refers to an organism's observable TRAITS, not its geographic location or habitat."},
+      {"text": "The number of offspring an organism produces", "isCorrect": false, "feedback": "This isn't accurate -- phenotype describes observable traits (like eye color or height), not reproductive output, which is a separate biological measure."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two plants can have the exact SAME genotype for height, yet grow to different actual heights (different phenotypes) if one receives more sunlight and nutrients than the other. Why does this scenario illustrate that phenotype is not determined by genotype alone?",
+    "options": [
+      {"text": "Phenotype results from the INTERACTION between an organism's genotype and its environment, so even identical genetic instructions can be expressed differently depending on environmental conditions like sunlight, nutrients, or temperature, producing different observable outcomes despite identical starting genetic code", "isCorrect": true, "feedback": "Correct -- this genotype-environment interaction principle explains why phenotype cannot be fully predicted from genotype alone, a fundamental concept in genetics distinguishing genetic potential from actual realized traits."},
+      {"text": "Phenotype would actually be determined ENTIRELY by genotype, with environment playing no role at all in this scenario", "isCorrect": false, "feedback": "This isn't accurate -- this scenario specifically demonstrates that environment DOES play a significant role in determining phenotype, alongside genotype."},
+      {"text": "These two plants would actually necessarily have different genotypes, not identical ones, to explain their differing heights", "isCorrect": false, "feedback": "This isn't accurate -- the scenario specifically describes IDENTICAL genotypes producing different phenotypes due to environmental differences, not different underlying genotypes."},
+      {"text": "Environmental factors like sunlight and nutrients have no actual influence on how genetic instructions get expressed as observable traits", "isCorrect": false, "feedback": "This isn't accurate -- environmental factors DO have significant influence on how genetic instructions are expressed, which is precisely the point this scenario illustrates."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Identical twins share essentially identical genotypes, yet can develop noticeably different phenotypes over their lifetimes (different fingerprints, sometimes different disease susceptibility, subtle physical differences). Explain how this observation supports the broader principle that phenotype emerges from genotype-environment interaction rather than genotype alone.",
+    "options": [
+      {"text": "Since identical twins start with essentially identical genetic instructions, any phenotypic differences that develop between them CANNOT be explained by genotype (which is the same for both) and must instead arise from differing environmental exposures and experiences throughout development and life, providing strong real-world evidence that environment meaningfully shapes phenotype beyond what genotype alone would produce", "isCorrect": true, "feedback": "Correct -- this reasoning (holding genotype constant reveals environment's independent contribution) uses identical twins as a natural experiment demonstrating that phenotype genuinely depends on more than genotype alone, reinforcing the genotype-environment interaction principle."},
+      {"text": "Identical twins would actually always develop completely identical phenotypes in every respect, with no observable differences whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- identical twins CAN and DO develop some noticeable phenotypic differences over time, despite sharing essentially identical genotypes."},
+      {"text": "Any phenotypic differences between identical twins must actually be explained by hidden genetic differences between them, not by environment", "isCorrect": false, "feedback": "This isn't accurate -- since identical twins share essentially identical genotypes, their phenotypic differences are better explained by ENVIRONMENTAL factors, not hidden genetic differences."},
+      {"text": "This twin-based reasoning has no actual scientific value for understanding the relationship between genotype, environment, and phenotype", "isCorrect": false, "feedback": "This isn't accurate -- twin studies specifically HAVE significant scientific value, commonly used precisely to help disentangle genetic from environmental contributions to phenotype."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term denotes the observable morphological or biochemical characteristics an organism exhibits, as opposed to its underlying genetic constitution.", "medium": "This is the trait you can actually see or measure, like how tall someone is or what color their eyes are.", "easy": "This is the trait you can actually see, like height or eye color."},
+    "medium": {"hard": "Consider how identical genetic instructions can be differentially expressed depending on the surrounding environmental conditions encountered during development.", "medium": "Same genetic blueprint, but different amounts of sunlight and food lead to different actual results in how the plant turns out.", "easy": "Same genetic blueprint, but different sunlight and food lead to different actual results."},
+    "hard": {"hard": "Consider how holding genotype constant across twins isolates environmental variation as the explanatory factor for any resulting phenotypic divergence.", "medium": "Since twins start out with basically the same genetic code, any differences that show up later have to be coming from something in their different experiences, not from their genes.", "easy": "Since twins start with the same genetic code, differences that show up later come from their different experiences, not their genes."}
+  }
+}
+]

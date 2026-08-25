@@ -1,0 +1,248 @@
+[
+{
+  "topic": "solving two-step linear equations",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: 2x + 3 = 11",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- subtract 3 to get 2x=8, then divide by 2."},
+      {"text": "7", "isCorrect": false, "feedback": "This forgets to divide by 2 after subtracting 3."},
+      {"text": "5.5", "isCorrect": false, "feedback": "This divides before subtracting, in the wrong order."},
+      {"text": "14", "isCorrect": false, "feedback": "This adds 3 instead of subtracting it."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: 5x - 4 = 16",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- add 4 to get 5x=20, then divide by 5."},
+      {"text": "3", "isCorrect": false, "feedback": "This doesn't match dividing 20 by 5."},
+      {"text": "12", "isCorrect": false, "feedback": "This subtracts 4 instead of adding it first."},
+      {"text": "20", "isCorrect": false, "feedback": "This forgets to divide by 5 after adding 4."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: 3(x - 2) = 15",
+    "options": [
+      {"text": "7", "isCorrect": true, "feedback": "Correct -- divide by 3 to get x-2=5, then add 2."},
+      {"text": "5", "isCorrect": false, "feedback": "This is the value of (x-2), not x itself -- one more step is needed."},
+      {"text": "9", "isCorrect": false, "feedback": "This doesn't correctly reverse both the distribution and the subtraction."},
+      {"text": "17", "isCorrect": false, "feedback": "This adds 2 to 15 without first dividing by 3."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Undo the addition first, then undo the multiplication.", "medium": "Subtract 3 from both sides first, then divide by 2.", "easy": "First subtract 3 from 11, then divide by 2."},
+    "medium": {"hard": "Undo the subtraction first, then undo the multiplication.", "medium": "Add 4 to both sides first, then divide by 5.", "easy": "First add 4 to 16, then divide by 5."},
+    "hard": {"hard": "Undo the multiplication outside the parentheses first, then undo the subtraction inside.", "medium": "Divide both sides by 3 first, then add 2 to both sides.", "easy": "First divide 15 by 3, then add 2 to that result."}
+  }
+},
+{
+  "topic": "converting percentages to fractions and decimals",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 25% written as a decimal?",
+    "options": [
+      {"text": "0.25", "isCorrect": true, "feedback": "Correct -- divide the percent by 100 to get the decimal."},
+      {"text": "2.5", "isCorrect": false, "feedback": "This misplaces the decimal point by one position."},
+      {"text": "25.0", "isCorrect": false, "feedback": "This doesn't divide by 100 at all."},
+      {"text": "0.025", "isCorrect": false, "feedback": "This divides by 1000 instead of 100."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 40% written as a fraction in simplest form?",
+    "options": [
+      {"text": "2/5", "isCorrect": true, "feedback": "Correct -- 40/100 simplifies to 2/5."},
+      {"text": "4/10", "isCorrect": false, "feedback": "This is correct as a fraction of 40%, but it isn't fully simplified."},
+      {"text": "1/4", "isCorrect": false, "feedback": "This equals 25%, not 40%."},
+      {"text": "4/100", "isCorrect": false, "feedback": "This would represent 4%, not 40%."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A shirt originally costs $40 and is on sale for 15% off. What is the sale price?",
+    "options": [
+      {"text": "$34", "isCorrect": true, "feedback": "Correct -- 15% of 40 is 6, and 40-6=34."},
+      {"text": "$25", "isCorrect": false, "feedback": "This subtracts too much from the original price."},
+      {"text": "$46", "isCorrect": false, "feedback": "This adds the discount instead of subtracting it."},
+      {"text": "$36", "isCorrect": false, "feedback": "This doesn't match subtracting the correct 15% discount amount."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Move the decimal point two places to the left to convert from percent form.", "medium": "Divide the percentage number by 100.", "easy": "Divide 25 by 100 to get the decimal."},
+    "medium": {"hard": "Write the percent over 100, then reduce the fraction by dividing both parts by their greatest common factor.", "medium": "Write 40 over 100 as a fraction, then simplify it.", "easy": "Write 40/100, then simplify by dividing both numbers by 20."},
+    "hard": {"hard": "Calculate the discount amount as a percentage of the original price, then subtract that from the original price.", "medium": "Find 15% of 40 first, then subtract that amount from 40.", "easy": "Find 15% of 40 (that's 6), then subtract 6 from 40."}
+  }
+},
+{
+  "topic": "volume of a rectangular prism",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the formula for the volume of a rectangular prism?",
+    "options": [
+      {"text": "length × width × height", "isCorrect": true, "feedback": "Correct -- multiply all three dimensions together."},
+      {"text": "length + width + height", "isCorrect": false, "feedback": "Volume requires multiplying the dimensions, not adding them."},
+      {"text": "length × width", "isCorrect": false, "feedback": "This only gives area, missing the height dimension needed for volume."},
+      {"text": "2 × (length + width)", "isCorrect": false, "feedback": "This formula relates to perimeter of a rectangle, not volume of a 3D shape."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the volume of a box with length 5, width 3, and height 2?",
+    "options": [
+      {"text": "30", "isCorrect": true, "feedback": "Correct -- 5 × 3 × 2 = 30."},
+      {"text": "10", "isCorrect": false, "feedback": "This only multiplies two of the three dimensions."},
+      {"text": "15", "isCorrect": false, "feedback": "This is the result of 5 × 3 only, missing the height."},
+      {"text": "20", "isCorrect": false, "feedback": "This doesn't match multiplying all three given dimensions together."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A rectangular fish tank has a volume of 240 cubic inches. If its length is 10 inches and width is 6 inches, what is its height?",
+    "options": [
+      {"text": "4 inches", "isCorrect": true, "feedback": "Correct -- 240 ÷ (10×6) = 240÷60 = 4."},
+      {"text": "6 inches", "isCorrect": false, "feedback": "This doesn't match dividing 240 by the base area of 60."},
+      {"text": "24 inches", "isCorrect": false, "feedback": "This divides by only one dimension instead of the full base area."},
+      {"text": "40 inches", "isCorrect": false, "feedback": "This divides by 6 alone, not the combined base area of length times width."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "All three dimensions of the shape need to be combined using the same operation.", "medium": "Multiply all three dimensions -- length, width, and height -- together.", "easy": "Multiply the length, width, and height together."},
+    "medium": {"hard": "Multiply all three given dimensions together in one calculation.", "medium": "Multiply 5, 3, and 2 together.", "easy": "Multiply 5 times 3 times 2."},
+    "hard": {"hard": "Find the area of the base first by multiplying length and width, then divide the total volume by that base area to isolate height.", "medium": "Multiply length and width to get the base area, then divide the volume by that area.", "easy": "Multiply 10 by 6 to get 60, then divide 240 by 60."}
+  }
+},
+{
+  "topic": "sum of interior angles in a triangle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the sum of the interior angles of any triangle?",
+    "options": [
+      {"text": "180 degrees", "isCorrect": true, "feedback": "Correct -- the three interior angles of any triangle always add up to 180 degrees."},
+      {"text": "90 degrees", "isCorrect": false, "feedback": "90 degrees is a single right angle, not the sum of all three angles in a triangle."},
+      {"text": "360 degrees", "isCorrect": false, "feedback": "360 degrees is the sum of angles in a quadrilateral, not a triangle."},
+      {"text": "270 degrees", "isCorrect": false, "feedback": "This isn't the standard total for any triangle's interior angles."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A triangle has two angles measuring 50 degrees and 60 degrees. What is the measure of the third angle?",
+    "options": [
+      {"text": "70 degrees", "isCorrect": true, "feedback": "Correct -- 180 - 50 - 60 = 70."},
+      {"text": "110 degrees", "isCorrect": false, "feedback": "This doesn't match subtracting both given angles from 180."},
+      {"text": "60 degrees", "isCorrect": false, "feedback": "This repeats one of the given angles rather than solving for the missing one."},
+      {"text": "50 degrees", "isCorrect": false, "feedback": "This repeats one of the given angles rather than solving for the missing one."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In a triangle, one angle is twice as large as a second angle, and the third angle is 30 degrees. If the two unknown angles sum to 150 degrees, what is the larger of the two unknown angles?",
+    "options": [
+      {"text": "100 degrees", "isCorrect": true, "feedback": "Correct -- if the smaller angle is x, then x + 2x = 150, so x=50 and the larger angle is 100."},
+      {"text": "75 degrees", "isCorrect": false, "feedback": "This doesn't reflect the 2-to-1 ratio between the two unknown angles."},
+      {"text": "120 degrees", "isCorrect": false, "feedback": "This would make the total exceed 180 degrees when combined with the known angles."},
+      {"text": "50 degrees", "isCorrect": false, "feedback": "This is the smaller angle, not the larger one being asked for."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This total holds true regardless of the triangle's specific shape or size.", "medium": "This is a fixed total that never changes for any triangle.", "easy": "All three angles in a triangle always add up to this same number."},
+    "medium": {"hard": "Subtract both known angles from the fixed total that all triangle angles must sum to.", "medium": "Subtract 50 and 60 from 180.", "easy": "Subtract both given angles from 180 to find the missing one."},
+    "hard": {"hard": "Set up an equation where the smaller unknown angle is x and the larger is 2x, then solve x + 2x = 150.", "medium": "If the two unknown angles add to 150 and one is double the other, divide 150 by 3 to find the smaller one first.", "easy": "Divide 150 by 3 to find the smaller angle, then double it for the larger one."}
+  }
+},
+{
+  "topic": "greatest common factor (GCF)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the greatest common factor (GCF) of 8 and 12?",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- 4 is the largest number that divides evenly into both 8 and 12."},
+      {"text": "2", "isCorrect": false, "feedback": "2 divides both numbers, but it isn't the greatest common factor -- 4 also works."},
+      {"text": "24", "isCorrect": false, "feedback": "24 is the least common multiple, not the greatest common factor."},
+      {"text": "8", "isCorrect": false, "feedback": "8 doesn't divide evenly into 12, so it can't be a common factor."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the GCF of 18 and 24?",
+    "options": [
+      {"text": "6", "isCorrect": true, "feedback": "Correct -- 6 is the largest number dividing evenly into both 18 and 24."},
+      {"text": "3", "isCorrect": false, "feedback": "3 divides both numbers, but 6 is a larger common factor."},
+      {"text": "12", "isCorrect": false, "feedback": "12 divides 24 but not 18 evenly."},
+      {"text": "72", "isCorrect": false, "feedback": "72 is the least common multiple, not the greatest common factor."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A baker has 36 cookies and 48 brownies and wants to make identical gift boxes with no treats left over. What is the greatest number of boxes he can make?",
+    "options": [
+      {"text": "12", "isCorrect": true, "feedback": "Correct -- the GCF of 36 and 48 is 12, the most identical boxes possible with nothing left over."},
+      {"text": "6", "isCorrect": false, "feedback": "6 divides both numbers evenly, but 12 allows for more boxes while still using a common factor."},
+      {"text": "84", "isCorrect": false, "feedback": "This is the sum of the two quantities, not their greatest common factor."},
+      {"text": "144", "isCorrect": false, "feedback": "This is the least common multiple, not the greatest common factor."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "List the factors of both numbers and identify the largest one they share.", "medium": "Find the largest number that divides evenly into both numbers.", "easy": "Find the biggest number that divides evenly into both 8 and 12."},
+    "medium": {"hard": "List the factors of both numbers and identify the largest one they share.", "medium": "Find the largest number that divides evenly into both 18 and 24.", "easy": "Find the biggest number that divides evenly into both 18 and 24."},
+    "hard": {"hard": "The largest number of equal groups with nothing left over is found by taking the greatest common factor of the two quantities.", "medium": "Find the greatest common factor of 36 and 48 to determine the maximum number of identical boxes.", "easy": "Find the biggest number that divides evenly into both 36 and 48."}
+  }
+},
+{
+  "topic": "plotting points on a coordinate plane",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the coordinate pair (3, 5), which number tells you how far to move along the x-axis?",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- the first number in a coordinate pair is always the x-value."},
+      {"text": "5", "isCorrect": false, "feedback": "5 is the y-value, telling you the vertical position, not the horizontal one."},
+      {"text": "Both numbers equally", "isCorrect": false, "feedback": "Each number in the pair has a distinct, separate role -- one for x, one for y."},
+      {"text": "Neither number", "isCorrect": false, "feedback": "One of the two numbers does specifically represent the x-position."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A point is located at (-2, 4). In which quadrant of the coordinate plane does it lie?",
+    "options": [
+      {"text": "Quadrant II", "isCorrect": true, "feedback": "Correct -- negative x and positive y place a point in Quadrant II."},
+      {"text": "Quadrant I", "isCorrect": false, "feedback": "Quadrant I requires both x and y to be positive, but here x is negative."},
+      {"text": "Quadrant III", "isCorrect": false, "feedback": "Quadrant III requires both x and y to be negative, but here y is positive."},
+      {"text": "Quadrant IV", "isCorrect": false, "feedback": "Quadrant IV requires positive x and negative y, the opposite of this point."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Point A is at (1, 2) and point B is at (1, 7). What is the distance between them?",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- since the x-values match, the distance is just the difference in y-values: 7-2=5."},
+      {"text": "9", "isCorrect": false, "feedback": "This adds the y-values instead of finding their difference."},
+      {"text": "1", "isCorrect": false, "feedback": "This uses the shared x-value instead of the difference in y-values."},
+      {"text": "14", "isCorrect": false, "feedback": "This doesn't match the simple vertical distance between the two points."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "The order of the two numbers in a coordinate pair always follows the same convention.", "medium": "The first number in the pair always refers to horizontal movement.", "easy": "The first number in a coordinate pair always tells you the horizontal position."},
+    "medium": {"hard": "Determine the sign of each coordinate first, then match that combination to the correct quadrant.", "medium": "A negative x paired with a positive y places the point in a specific quadrant -- which one?", "easy": "Negative x and positive y together point to one specific quadrant."},
+    "hard": {"hard": "When two points share the same x-coordinate, the distance between them is simply the absolute difference of their y-coordinates.", "medium": "Since both points share the same x-value, just subtract the two y-values.", "easy": "Subtract the smaller y-value from the larger one."}
+  }
+}
+]

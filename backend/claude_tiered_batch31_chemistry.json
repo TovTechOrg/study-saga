@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a chemical reaction's reactants determining possible products",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a chemical reaction, what determines the elements that can appear in the products?",
+    "options": [
+      {"text": "The elements that were present in the reactants -- no new elements can be created in a normal chemical reaction", "isCorrect": true, "feedback": "Correct -- chemical reactions only rearrange existing atoms into new combinations; they don't create or destroy elements."},
+      {"text": "Any element the chemist wants can simply appear in the products", "isCorrect": false, "feedback": "This isn't correct -- ordinary chemical reactions can't introduce entirely new elements not already present in the reactants."},
+      {"text": "Products always contain completely different elements from the reactants", "isCorrect": false, "feedback": "This is incorrect -- products are made of the SAME elements originally present in the reactants, just rearranged into new combinations."},
+      {"text": "Only reactions involving oxygen can determine product elements", "isCorrect": false, "feedback": "This applies to all chemical reactions generally, not something unique to reactions specifically involving oxygen."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If a reaction starts with only carbon, hydrogen, and oxygen atoms, why is it impossible for one of the products to contain nitrogen?",
+    "options": [
+      {"text": "Chemical reactions cannot create new elements -- nitrogen atoms would have to already be present in the reactants for them to appear in a product", "isCorrect": true, "feedback": "Correct -- this reflects the fundamental principle of conservation of elements/mass in chemical reactions."},
+      {"text": "Nitrogen atoms can spontaneously appear during any chemical reaction", "isCorrect": false, "feedback": "This isn't possible under normal chemical reactions -- elements are conserved, not created, during typical chemistry."},
+      {"text": "This is actually possible and happens routinely in chemical reactions", "isCorrect": false, "feedback": "This is incorrect -- ordinary chemical reactions cannot create entirely new elements not present among the original reactants."},
+      {"text": "Nitrogen is a special element that follows completely different rules", "isCorrect": false, "feedback": "Nitrogen follows the same fundamental principle as every other element -- reactions can't create elements not already present in the reactants."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Nuclear reactions, unlike ordinary chemical reactions, CAN actually transform one element into a different element entirely. Why does this fundamental distinction exist between chemical and nuclear processes?",
+    "options": [
+      {"text": "Chemical reactions only involve rearranging electrons and bonds between atoms, while nuclear reactions involve changes within the atomic nucleus itself (protons/neutrons), which is what actually determines an element's identity", "isCorrect": true, "feedback": "Correct -- since an element's identity is defined by its number of protons, only a nuclear-level change (unlike ordinary electron-based chemical bonding) can transform one element into another."},
+      {"text": "There is actually no real distinction between chemical and nuclear reactions", "isCorrect": false, "feedback": "There is a very real, fundamental distinction -- chemical reactions involve electron rearrangement, while nuclear reactions involve changes to the nucleus itself, which is why only nuclear reactions can transmute elements."},
+      {"text": "Chemical reactions actually can transform elements just as easily as nuclear reactions", "isCorrect": false, "feedback": "This is incorrect -- ordinary chemical reactions cannot change one element into another; that specifically requires a nuclear-level process."},
+      {"text": "Nuclear reactions don't actually involve atoms at all", "isCorrect": false, "feedback": "Nuclear reactions definitely involve atoms -- specifically, changes occurring within their nuclei, which is the key distinguishing feature from ordinary chemical reactions."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Chemical reactions rearrange existing atomic building blocks rather than creating entirely new ones.", "medium": "A chemical reaction can only rearrange atoms that were already there to begin with.", "easy": "A chemical reaction can only rearrange the atoms that were already there."},
+    "medium": {"hard": "Consider the fundamental principle that chemical processes conserve the identity and quantity of every element present throughout the reaction.", "medium": "Since nitrogen wasn't part of the starting materials, there's no way for it to just show up in the products.", "easy": "Since nitrogen wasn't in the starting materials, it can't just show up in the products."},
+    "hard": {"hard": "An element's identity is defined specifically by its proton count, which chemical (electron-level) reactions cannot alter -- only nuclear-level processes affecting the proton count can transmute one element into another.", "medium": "Chemical reactions only mess with the outer electrons, but changing what element something IS requires actually changing its nucleus, which only nuclear reactions can do.", "easy": "Chemical reactions only mess with outer electrons, but changing what element something is requires changing its nucleus."}
+  }
+}
+]

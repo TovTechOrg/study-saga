@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between hydrophilic and hydrophobic molecules",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'hydrophilic' molecule is one that:",
+    "options": [
+      {"text": "Readily interacts with and dissolves well in water", "isCorrect": true, "feedback": "Correct -- hydrophilic ('water-loving') molecules typically have polar or charged regions that interact favorably with water's polar molecules."},
+      {"text": "Actively repels and does not mix well with water", "isCorrect": false, "feedback": "That describes a HYDROPHOBIC ('water-fearing') molecule, not a hydrophilic one, which specifically DOES interact well with water."},
+      {"text": "Cannot exist in the presence of any water at all", "isCorrect": false, "feedback": "This isn't accurate -- hydrophilic molecules specifically CAN and DO exist (and interact favorably) in the presence of water; this isn't a matter of existing or not existing."},
+      {"text": "Is always a solid at room temperature", "isCorrect": false, "feedback": "Physical state isn't the defining characteristic of hydrophilicity -- it specifically concerns how well a molecule interacts with/dissolves in water, not its state of matter."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Water is a polar molecule, meaning it has regions of partial positive and partial negative charge. Why does this polarity explain why hydrophilic (also polar or charged) molecules dissolve well in water, while hydrophobic (nonpolar) molecules do not?",
+    "options": [
+      {"text": "Polar/charged hydrophilic molecules can form favorable electrical attractions with water's own polar charge regions, while nonpolar hydrophobic molecules lack these charge regions, preventing similar favorable interactions with water's polar structure", "isCorrect": true, "feedback": "Correct -- this fundamental principle (that similarly polar/charged substances interact favorably, often summarized as 'like dissolves like') directly explains why hydrophilic and hydrophobic molecules behave so differently in water."},
+      {"text": "Water's polarity actually has no connection to whether a molecule is hydrophilic or hydrophobic", "isCorrect": false, "feedback": "This isn't accurate -- water's polarity is DIRECTLY and centrally connected to explaining why polar/charged (hydrophilic) molecules dissolve well in it, while nonpolar (hydrophobic) molecules do not."},
+      {"text": "Hydrophobic molecules actually also have their own charge regions, similar to water", "isCorrect": false, "feedback": "This isn't accurate -- hydrophobic molecules are specifically defined by their LACK of significant charge regions (nonpolar), which is precisely why they don't interact favorably with water's polar structure."},
+      {"text": "All molecules, regardless of polarity, actually dissolve equally well in water", "isCorrect": false, "feedback": "This isn't accurate -- molecules dissolve in water to VERY DIFFERENT degrees depending specifically on their polarity/charge characteristics, which is precisely the hydrophilic/hydrophobic distinction being described here."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Phospholipids, the main components of cell membranes, are 'amphipathic' molecules, meaning they have BOTH a hydrophilic head region and a hydrophobic tail region within the same molecule. In water, these molecules spontaneously arrange into a bilayer, with hydrophilic heads facing outward (toward water) and hydrophobic tails facing inward (away from water). Why does this specific arrangement make energetic/chemical sense?",
+    "options": [
+      {"text": "This arrangement allows the hydrophilic heads to favorably interact with the surrounding water on both sides, while simultaneously allowing the hydrophobic tails to avoid unfavorable interactions with water by clustering together in the membrane's water-free interior", "isCorrect": true, "feedback": "Correct -- this spontaneous self-arrangement, driven by simultaneously satisfying both the hydrophilic heads' favorable water interaction and the hydrophobic tails' avoidance of unfavorable water interaction, is precisely why phospholipids naturally form this specific, biologically crucial bilayer structure."},
+      {"text": "This arrangement actually creates unfavorable interactions for BOTH the hydrophilic and hydrophobic portions of the molecule", "isCorrect": false, "feedback": "This isn't accurate -- this specific arrangement actually creates FAVORABLE interactions for BOTH portions simultaneously (hydrophilic heads with water, hydrophobic tails avoiding water), which is precisely why it forms spontaneously."},
+      {"text": "Phospholipids would actually arrange identically whether or not they have both hydrophilic and hydrophobic regions", "isCorrect": false, "feedback": "This isn't accurate -- this specific bilayer arrangement is DIRECTLY dependent on and explained by phospholipids having BOTH types of regions (hydrophilic and hydrophobic) within the same molecule, not something that would occur regardless of amphipathic character."},
+      {"text": "This spontaneous arrangement has no actual connection to minimizing unfavorable hydrophobic-water interactions", "isCorrect": false, "feedback": "This isn't accurate -- minimizing unfavorable hydrophobic-water interactions (by clustering hydrophobic tails away from water) is PRECISELY one of the two key driving forces explaining this spontaneous bilayer arrangement."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This molecular characteristic denotes a favorable propensity for interaction with polar aqueous solvent molecules.", "medium": "This describes a molecule that mixes well and dissolves easily in water.", "easy": "This describes a molecule that mixes well with water."},
+    "medium": {"hard": "Apply the general chemical principle that molecules with similar polarity/charge characteristics tend to interact favorably with one another.", "medium": "Water's own charged regions can only really 'connect' well with other molecules that also have their own charged regions.", "easy": "Water's charged regions can only connect well with other molecules that also have charged regions."},
+    "hard": {"hard": "Consider how a molecular arrangement satisfying the distinct solvent-interaction preferences of two different regions within the same molecule simultaneously would represent an energetically favorable overall configuration.", "medium": "This special shape lets the water-loving part face outward toward water (happy) while the water-avoiding part hides inward away from water (also happy) -- both parts get what they want.", "easy": "This shape lets the water-loving part face outward and the water-avoiding part hide inward -- both parts get what they want."}
+  }
+}
+]

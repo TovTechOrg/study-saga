@@ -1,0 +1,84 @@
+[
+{
+  "topic": "solving basic word problems with multiple operations",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Sarah has 12 apples. She buys 8 more, then gives away 5. How many apples does she have now?",
+    "options": [
+      {"text": "15", "isCorrect": true, "feedback": "Correct -- 12+8=20, then 20-5=15."},
+      {"text": "25", "isCorrect": false, "feedback": "This doesn't correctly subtract the 5 given away."},
+      {"text": "9", "isCorrect": false, "feedback": "This doesn't correctly add the 8 bought first."},
+      {"text": "5", "isCorrect": false, "feedback": "This just repeats the number given away, not the final total."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A store has 240 items. They sell 3/4 of them, then restock 50 more. How many items are in the store now?",
+    "options": [
+      {"text": "110", "isCorrect": true, "feedback": "Correct -- 3/4 of 240 is 180 sold, leaving 60, then 60+50=110."},
+      {"text": "60", "isCorrect": false, "feedback": "This forgets to add the 50 restocked items."},
+      {"text": "230", "isCorrect": false, "feedback": "This doesn't correctly account for selling 3/4 of the items first."},
+      {"text": "290", "isCorrect": false, "feedback": "This doesn't correctly subtract the sold items before adding the restock."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A tank starts with 500 liters of water. Water drains out at 20 liters per minute for 10 minutes, then is refilled at 15 liters per minute for 8 minutes. How much water is in the tank at the end?",
+    "options": [
+      {"text": "420 liters", "isCorrect": true, "feedback": "Correct -- draining removes 20×10=200 liters (500-200=300), then refilling adds 15×8=120 liters (300+120=420)."},
+      {"text": "300 liters", "isCorrect": false, "feedback": "This forgets to add back the water from the refilling stage."},
+      {"text": "620 liters", "isCorrect": false, "feedback": "This doesn't correctly account for the initial draining stage."},
+      {"text": "380 liters", "isCorrect": false, "feedback": "This doesn't match correctly computing both the drain and refill amounts."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Work through each operation described, in the order they occur.", "medium": "First add the apples bought, then subtract the apples given away.", "easy": "First add 8 to 12, then subtract 5."},
+    "medium": {"hard": "Work through each operation described, in the order they occur.", "medium": "First find how many were sold, subtract that from the total, then add the restock.", "easy": "Find 3/4 of 240 (180), subtract from 240, then add 50."},
+    "hard": {"hard": "Calculate the total amount drained and the total amount refilled separately, then apply both changes to the starting amount in order.", "medium": "Multiply the drain rate by its time, subtract from the start; then multiply the refill rate by its time, and add.", "easy": "Subtract 200 (20×10) from 500, then add 120 (15×8)."}
+  }
+},
+{
+  "topic": "reading and interpreting a line graph",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "On a line graph showing temperature over time, what does a line sloping upward generally indicate?",
+    "options": [
+      {"text": "The temperature is increasing over time", "isCorrect": true, "feedback": "Correct -- an upward slope on a line graph shows the measured value is rising."},
+      {"text": "The temperature is decreasing over time", "isCorrect": false, "feedback": "A decreasing value would be shown by a downward-sloping line, not upward."},
+      {"text": "The temperature is staying exactly the same", "isCorrect": false, "feedback": "A constant value would be shown by a flat, horizontal line, not an upward slope."},
+      {"text": "There is no data available", "isCorrect": false, "feedback": "An upward slope actually represents clear data showing an increasing trend."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A line graph shows a company's sales rising from $10,000 in January to $25,000 in June. What was the overall increase in sales over this period?",
+    "options": [
+      {"text": "$15,000", "isCorrect": true, "feedback": "Correct -- 25,000-10,000=15,000."},
+      {"text": "$35,000", "isCorrect": false, "feedback": "This adds the two values instead of finding their difference."},
+      {"text": "$25,000", "isCorrect": false, "feedback": "This is just the final value, not the actual increase."},
+      {"text": "$2,500", "isCorrect": false, "feedback": "This doesn't match correctly subtracting the starting value from the ending value."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A line graph shows temperature readings that rise steeply from 9am-12pm, then rise much more gradually from 12pm-3pm. What does the CHANGE in steepness (slope) between these two periods indicate?",
+    "options": [
+      {"text": "The rate of temperature increase slowed down during the second period, even though temperature was still rising overall", "isCorrect": true, "feedback": "Correct -- a less steep (but still positive) slope indicates a slower rate of change, not a reversal in direction."},
+      {"text": "The temperature actually started decreasing during the second period", "isCorrect": false, "feedback": "Since the line is still sloping upward (just less steeply), the temperature is still increasing, not decreasing."},
+      {"text": "The graph must contain an error, since the slope shouldn't change", "isCorrect": false, "feedback": "A changing slope is a completely normal and meaningful feature of a graph -- it simply indicates a changing rate of increase, not an error."},
+      {"text": "The temperature was constant during the entire time from 9am to 3pm", "isCorrect": false, "feedback": "The line's continuously positive (though changing) slope shows temperature was still rising throughout, not staying constant."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This visual trend directly reflects the direction of change in the measured value.", "medium": "An upward-sloping line means the value is going up.", "easy": "A line going up means the value is increasing."},
+    "medium": {"hard": "Subtract the starting value from the ending value to find the total change.", "medium": "Subtract the January value from the June value.", "easy": "Subtract 10,000 from 25,000."},
+    "hard": {"hard": "The steepness of a line at any point reflects the instantaneous rate of change -- a less steep but still positive slope means the value is still increasing, just more slowly.", "medium": "A less steep upward line still means things are increasing, just not as quickly as before.", "easy": "A less steep upward line still means it's going up, just more slowly than before."}
+  }
+}
+]

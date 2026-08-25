@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between average velocity and instantaneous velocity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Average velocity is calculated as:",
+    "options": [
+      {"text": "Total displacement divided by total time elapsed", "isCorrect": true, "feedback": "Correct -- average velocity gives an overall summary rate of position change over an entire time interval, regardless of how speed varied within that interval."},
+      {"text": "The exact velocity at one single specific moment in time", "isCorrect": false, "feedback": "That describes INSTANTANEOUS velocity, not average velocity, which specifically considers total displacement over an ENTIRE time interval, not a single moment."},
+      {"text": "The maximum speed ever reached during the entire trip", "isCorrect": false, "feedback": "This describes a maximum/peak speed value, not average velocity, which specifically involves total displacement divided by total time, not simply the highest instantaneous value reached."},
+      {"text": "The total distance traveled multiplied by the total time elapsed", "isCorrect": false, "feedback": "This incorrectly uses multiplication -- average velocity specifically requires DIVIDING displacement by time, not multiplying these two quantities together."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A car's speedometer shows its speed continuously changing throughout a trip, sometimes going faster, sometimes slower. How does 'instantaneous velocity' relate to what a speedometer is actually showing you at any given moment?",
+    "options": [
+      {"text": "A speedometer reading essentially represents the car's instantaneous velocity (speed) at that exact specific moment, capturing the immediate rate of motion rather than any average over the whole trip", "isCorrect": true, "feedback": "Correct -- a speedometer is specifically designed to display the vehicle's velocity/speed at each individual instant, which is precisely the practical, everyday embodiment of the instantaneous velocity concept."},
+      {"text": "A speedometer actually only ever displays the car's calculated AVERAGE velocity for the entire trip", "isCorrect": false, "feedback": "This isn't accurate -- a speedometer specifically shows the car's INSTANTANEOUS velocity/speed at each given moment, continuously updating, rather than a single calculated average for the whole trip."},
+      {"text": "Instantaneous velocity has no actual connection to what a car's speedometer displays", "isCorrect": false, "feedback": "This isn't accurate -- instantaneous velocity is DIRECTLY and practically connected to and essentially represents exactly what a car's speedometer is designed to display at each given moment."},
+      {"text": "A speedometer's changing readings actually have no relationship to the concept of velocity at all", "isCorrect": false, "feedback": "This isn't accurate -- a speedometer's continuously changing readings are DIRECTLY related to and represent the concept of instantaneous velocity/speed, updating in real-time as the car's actual motion changes."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A car travels 100 km in 2 hours, but its speedometer shows varying speeds throughout the trip (sometimes 40 km/h, sometimes 80 km/h, etc.). The car's AVERAGE velocity for the trip is 50 km/h (100km/2hr), yet the speedometer likely never showed exactly '50 km/h' consistently, or perhaps not even at all at some points. Why isn't this actually a mathematical contradiction?",
+    "options": [
+      {"text": "Average velocity and instantaneous velocity are fundamentally different calculated quantities -- average velocity summarizes the ENTIRE trip's overall displacement/time ratio, while instantaneous velocity reflects specific individual moments, meaning the average value doesn't need to match any single instantaneous reading throughout the trip (though by the Mean Value Theorem, it must equal the instantaneous velocity at least once, assuming continuous motion)", "isCorrect": true, "feedback": "Correct -- this important distinction between these two different velocity concepts (overall trip summary vs. specific individual moments) resolves this apparent contradiction, showing that an average value doesn't need to precisely match any particular individual instantaneous reading throughout the described journey."},
+      {"text": "This scenario is actually mathematically impossible and could never occur in reality", "isCorrect": false, "feedback": "This isn't accurate -- this scenario is entirely realistic and mathematically consistent; average velocity and instantaneous velocity readings throughout a trip don't need to precisely match at every point, or even necessarily show that exact average value at all specific instants."},
+      {"text": "The car's speedometer must have actually been malfunctioning if it never showed exactly 50 km/h", "isCorrect": false, "feedback": "This isn't accurate -- there's no indication of speedometer malfunction here; it's entirely normal and expected for INSTANTANEOUS speed readings to vary throughout a trip without necessarily ever exactly matching the calculated AVERAGE velocity for the entire journey."},
+      {"text": "Average velocity and instantaneous velocity are actually always identical values throughout any given trip", "isCorrect": false, "feedback": "This isn't accurate -- these are GENUINELY DIFFERENT calculated quantities (one summarizing an entire interval, one reflecting single moments), and they don't need to be identical throughout a trip, which is precisely the point being illustrated by this scenario."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This calculated quantity represents the net displacement-to-time ratio spanning an entire specified temporal interval.", "medium": "This is calculated by taking the overall change in position and dividing by the overall time it took.", "easy": "This is the overall change in position divided by the overall time it took."},
+    "medium": {"hard": "Consider that instantaneous velocity, by definition, reflects the rate of motion at a single specific point in time, exactly matching what a continuously-updating speed display would show.", "medium": "The speedometer is basically giving you a live, constantly updating snapshot of your speed RIGHT NOW, not some overall summary number.", "easy": "The speedometer gives you a live snapshot of your speed right now, not an overall summary."},
+    "hard": {"hard": "Recognize that these represent two distinct mathematical constructs (interval-based average vs. point-based instantaneous value), meaning the calculated average need not correspond to any single instantaneous measurement throughout the interval.", "medium": "The 'average' number is just a summary for the WHOLE trip, while the speedometer numbers are just snapshots of individual moments -- they don't have to match up perfectly at any single point.", "easy": "The average is a summary for the whole trip, while the speedometer shows individual moments -- they don't have to match."}
+  }
+}
+]

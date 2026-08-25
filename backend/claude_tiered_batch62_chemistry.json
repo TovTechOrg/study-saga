@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between endothermic and exothermic phase changes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Is melting (solid to liquid) an endothermic or exothermic process?",
+    "options": [
+      {"text": "Endothermic -- it absorbs energy from the surroundings", "isCorrect": true, "feedback": "Correct -- melting requires energy input to overcome the forces holding a solid's rigid structure together."},
+      {"text": "Exothermic -- it releases energy to the surroundings", "isCorrect": false, "feedback": "Melting actually ABSORBS energy (endothermic), rather than releasing it -- the opposite process, freezing, is exothermic."},
+      {"text": "Neither -- melting involves no energy change at all", "isCorrect": false, "feedback": "Melting definitely involves an energy change -- specifically, it requires absorbing energy (endothermic) to break the solid's structural forces."},
+      {"text": "It depends entirely on the substance's color", "isCorrect": false, "feedback": "Color has no bearing on whether melting is endothermic or exothermic -- melting is universally endothermic across substances."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Freezing (liquid to solid) is the reverse process of melting. If melting absorbs energy, what does this tell you about freezing?",
+    "options": [
+      {"text": "Freezing must release energy (be exothermic), since it's the exact reverse of the energy-absorbing melting process", "isCorrect": true, "feedback": "Correct -- since freezing and melting are reverse processes, and melting absorbs energy, freezing must release that same amount of energy back to the surroundings."},
+      {"text": "Freezing must also absorb energy, just like melting does", "isCorrect": false, "feedback": "This isn't accurate -- since freezing is the REVERSE of melting, it must have the OPPOSITE energy characteristic, meaning it releases energy (exothermic) rather than absorbing it."},
+      {"text": "Freezing and melting have no actual relationship to each other in terms of energy", "isCorrect": false, "feedback": "These are directly related, REVERSE processes -- understanding one's energy characteristic (melting=endothermic) directly tells you the other's opposite characteristic (freezing=exothermic)."},
+      {"text": "Energy changes only apply to melting, not to freezing at all", "isCorrect": false, "feedback": "Freezing absolutely does involve an energy change too -- specifically, it releases energy (exothermic), just as melting absorbs it (endothermic)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Commercial hand warmers often use the exothermic crystallization (a type of freezing) of a supersaturated sodium acetate solution, triggered by clicking a small metal disc. Given what you know about freezing being exothermic, explain why this makes the packet feel warm.",
+    "options": [
+      {"text": "Clicking the disc triggers the sodium acetate solution to rapidly crystallize (transition from liquid to solid), and since this phase change is exothermic, it releases a significant burst of heat energy into the surrounding packet and your hands", "isCorrect": true, "feedback": "Correct -- this practical application directly demonstrates the exothermic nature of the liquid-to-solid phase transition, releasing stored energy as usable heat exactly when triggered by the mechanical disturbance from the disc."},
+      {"text": "The clicking disc itself generates heat through friction, unrelated to any phase change occurring in the solution", "isCorrect": false, "feedback": "While the disc's click mechanically triggers the reaction, the actual HEAT comes specifically from the exothermic crystallization (phase change) process itself, not from friction of the disc alone."},
+      {"text": "This warming effect actually has nothing to do with any phase change occurring in the solution", "isCorrect": false, "feedback": "This warming effect is DIRECTLY caused by the phase change (crystallization/freezing) occurring in the solution -- it's a textbook practical application of an exothermic phase transition."},
+      {"text": "Crystallization (freezing) is actually an endothermic process, which explains the warmth", "isCorrect": false, "feedback": "This is backwards -- crystallization/freezing is EXOTHERMIC (releasing heat), which is exactly what makes the hand warmer feel warm, not endothermic."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phase transition requires an input of thermal energy to overcome the intermolecular forces maintaining a rigid crystalline structure.", "medium": "This process needs energy put INTO it to happen -- it doesn't give off heat, it takes heat in.", "easy": "This process needs energy put into it -- it takes in heat rather than giving it off."},
+    "medium": {"hard": "Apply the principle that reversing a process also reverses the direction of its associated energy flow.", "medium": "If one direction (melting) takes in energy, the opposite direction (freezing) should release that same energy back out.", "easy": "If melting takes in energy, freezing (the opposite) should release energy instead."},
+    "hard": {"hard": "Apply the established principle that the liquid-to-solid phase transition (freezing/crystallization) inherently releases thermal energy to its surroundings.", "medium": "Since going from liquid to solid releases energy, triggering that change on purpose lets you capture that released energy as usable heat.", "easy": "Since going from liquid to solid releases energy, triggering that change gives off heat you can feel."}
+  }
+}
+]

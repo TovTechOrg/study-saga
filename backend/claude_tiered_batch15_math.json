@@ -1,0 +1,166 @@
+[
+{
+  "topic": "solving equations with variables on both sides",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: 3x = x + 8",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- subtract x from both sides to get 2x=8, then divide by 2."},
+      {"text": "8", "isCorrect": false, "feedback": "This doesn't correctly isolate x after moving terms."},
+      {"text": "2", "isCorrect": false, "feedback": "This doesn't match correctly solving 2x=8."},
+      {"text": "11", "isCorrect": false, "feedback": "This adds instead of subtracting x from both sides."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: 5x - 3 = 2x + 9",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- subtract 2x from both sides (3x-3=9), add 3 (3x=12), then divide by 3."},
+      {"text": "2", "isCorrect": false, "feedback": "This doesn't match correctly solving 3x=12."},
+      {"text": "6", "isCorrect": false, "feedback": "This doesn't correctly combine the x-terms and constants."},
+      {"text": "12", "isCorrect": false, "feedback": "This is the value of 3x, not x itself."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: 4(x - 2) = 2x + 6",
+    "options": [
+      {"text": "7", "isCorrect": true, "feedback": "Correct -- distribute to get 4x-8=2x+6, then 2x=14, so x=7."},
+      {"text": "2", "isCorrect": false, "feedback": "This doesn't correctly distribute the 4 before combining terms."},
+      {"text": "14", "isCorrect": false, "feedback": "This is the value of 2x, not x itself."},
+      {"text": "-1", "isCorrect": false, "feedback": "This doesn't correctly solve the equation after distributing."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Move all the variable terms to one side by using inverse operations, then isolate the variable.", "medium": "Subtract x from both sides first, then divide.", "easy": "Subtract x from both sides, then divide by 2."},
+    "medium": {"hard": "Move all the variable terms to one side and all constants to the other, then isolate the variable.", "medium": "Subtract 2x from both sides, then add 3 to both sides, then divide by 3.", "easy": "Get all the x's on one side and numbers on the other, then solve."},
+    "hard": {"hard": "Distribute any multiplication across parentheses first, then move all variable terms to one side and constants to the other.", "medium": "Distribute the 4 first, then move the x-terms to one side and numbers to the other.", "easy": "Distribute the 4 to get 4x-8=2x+6, then solve like a normal two-sided equation."}
+  }
+},
+{
+  "topic": "understanding and calculating unit conversions with rates",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A recipe requires 2 cups of flour per batch. How many cups are needed for 3 batches?",
+    "options": [
+      {"text": "6 cups", "isCorrect": true, "feedback": "Correct -- multiply the rate (2 cups/batch) by the number of batches: 2×3=6."},
+      {"text": "5 cups", "isCorrect": false, "feedback": "This adds instead of multiplying the rate by the number of batches."},
+      {"text": "2 cups", "isCorrect": false, "feedback": "This only accounts for 1 batch, not 3."},
+      {"text": "1.5 cups", "isCorrect": false, "feedback": "This divides instead of multiplying the rate by the number of batches."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A factory produces 150 items per hour. How many items does it produce in an 8-hour shift?",
+    "options": [
+      {"text": "1,200 items", "isCorrect": true, "feedback": "Correct -- multiply the hourly rate by the number of hours: 150×8=1,200."},
+      {"text": "158 items", "isCorrect": false, "feedback": "This adds the numbers instead of multiplying them."},
+      {"text": "1,050 items", "isCorrect": false, "feedback": "This doesn't match correctly multiplying 150 by 8."},
+      {"text": "18.75 items", "isCorrect": false, "feedback": "This divides instead of multiplying the rate by the number of hours."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A printer prints 45 pages per minute. At this rate, how many minutes will it take to print 900 pages?",
+    "options": [
+      {"text": "20 minutes", "isCorrect": true, "feedback": "Correct -- divide the total pages by the rate: 900÷45=20."},
+      {"text": "40,500 minutes", "isCorrect": false, "feedback": "This multiplies instead of dividing total pages by the rate."},
+      {"text": "855 minutes", "isCorrect": false, "feedback": "This subtracts instead of dividing total pages by the rate."},
+      {"text": "45 minutes", "isCorrect": false, "feedback": "This just repeats the rate value rather than solving for the time needed."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply the per-unit rate by the total number of units to scale it up.", "medium": "Multiply the per-batch amount by the number of batches.", "easy": "Multiply 2 by 3."},
+    "medium": {"hard": "Multiply the per-unit rate by the total number of units to scale it up.", "medium": "Multiply the hourly rate by the number of hours.", "easy": "Multiply 150 by 8."},
+    "hard": {"hard": "Divide the total quantity needed by the per-unit rate to find the required time.", "medium": "Divide the total pages by the pages-per-minute rate.", "easy": "Divide 900 by 45."}
+  }
+},
+{
+  "topic": "identifying corresponding parts of similar figures",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In two similar triangles, what is true about their corresponding angles?",
+    "options": [
+      {"text": "They are equal", "isCorrect": true, "feedback": "Correct -- similar figures always have equal corresponding angles."},
+      {"text": "They are always different", "isCorrect": false, "feedback": "Corresponding angles in similar figures are always equal, not different."},
+      {"text": "They always add up to 90 degrees", "isCorrect": false, "feedback": "This isn't a general rule for similar figures -- corresponding angles are simply equal to each other."},
+      {"text": "They have no relationship to each other", "isCorrect": false, "feedback": "There's a very specific relationship: corresponding angles in similar figures are always equal."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two similar rectangles have a scale factor of 3. If the smaller rectangle has sides of 4 and 6, what are the corresponding sides of the larger rectangle?",
+    "options": [
+      {"text": "12 and 18", "isCorrect": true, "feedback": "Correct -- multiply each side by the scale factor: 4×3=12, and 6×3=18."},
+      {"text": "7 and 9", "isCorrect": false, "feedback": "This adds 3 to each side instead of multiplying by the scale factor."},
+      {"text": "1.33 and 2", "isCorrect": false, "feedback": "This divides by 3 instead of multiplying by the scale factor."},
+      {"text": "4 and 6", "isCorrect": false, "feedback": "This just repeats the original sides without applying the scale factor at all."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two similar polygons have a scale factor of 2. If the smaller polygon has an area of 15 square units, what is the area of the larger polygon?",
+    "options": [
+      {"text": "60 square units", "isCorrect": true, "feedback": "Correct -- area scales with the SQUARE of the scale factor: 15×2²=15×4=60."},
+      {"text": "30 square units", "isCorrect": false, "feedback": "This only doubles the area, but area actually scales with the square of the linear scale factor, not the scale factor itself."},
+      {"text": "17 square units", "isCorrect": false, "feedback": "This just adds 2 to the area rather than correctly scaling it."},
+      {"text": "45 square units", "isCorrect": false, "feedback": "This doesn't match correctly squaring the scale factor before multiplying."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Similar figures preserve identical angle measures at each corresponding position.", "medium": "Similar shapes always keep the same angle measurements at matching corners.", "easy": "Matching angles in similar shapes are always exactly equal."},
+    "medium": {"hard": "Multiply each corresponding linear dimension by the given scale factor.", "medium": "Multiply each side length by 3.", "easy": "Multiply 4 by 3 and 6 by 3."},
+    "hard": {"hard": "Since area is a two-dimensional measurement, it scales with the square of the linear scale factor, not the scale factor itself.", "medium": "Square the scale factor first, then multiply by the original area.", "easy": "Square 2 to get 4, then multiply by 15."}
+  }
+},
+{
+  "topic": "solving word problems involving consecutive integers",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The sum of two consecutive integers is 15. If the smaller integer is x, which equation represents this?",
+    "options": [
+      {"text": "x + (x+1) = 15", "isCorrect": true, "feedback": "Correct -- consecutive integers differ by 1, so the next integer after x is (x+1)."},
+      {"text": "x + x = 15", "isCorrect": false, "feedback": "This ignores that consecutive integers differ by 1 -- it treats them as identical."},
+      {"text": "x - (x+1) = 15", "isCorrect": false, "feedback": "This subtracts the two integers instead of adding them, which doesn't represent their sum."},
+      {"text": "x + (x+2) = 15", "isCorrect": false, "feedback": "Adding 2 would represent consecutive EVEN or ODD integers, not simply consecutive integers, which differ by 1."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The sum of three consecutive integers is open ended: what expression represents the sum, if the smallest is x?",
+    "options": [
+      {"text": "x + (x+1) + (x+2)", "isCorrect": true, "feedback": "Correct -- three consecutive integers starting at x are x, x+1, and x+2."},
+      {"text": "x + x + x", "isCorrect": false, "feedback": "This treats all three integers as identical, ignoring that consecutive integers increase by 1 each time."},
+      {"text": "3x + 2", "isCorrect": false, "feedback": "This doesn't correctly add up the constant terms from x, (x+1), and (x+2)."},
+      {"text": "x + (x+2) + (x+4)", "isCorrect": false, "feedback": "This pattern (adding 2 each time) represents consecutive EVEN or ODD integers, not simple consecutive integers."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The sum of three consecutive even integers is 48. What is the smallest of the three integers?",
+    "options": [
+      {"text": "14", "isCorrect": true, "feedback": "Correct -- setting up x+(x+2)+(x+4)=48 gives 3x+6=48, so 3x=42, x=14."},
+      {"text": "16", "isCorrect": false, "feedback": "This doesn't match correctly solving 3x+6=48."},
+      {"text": "12", "isCorrect": false, "feedback": "This doesn't match the correct solution to the equation."},
+      {"text": "48", "isCorrect": false, "feedback": "This just repeats the total sum, not the smallest individual integer."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Each subsequent integer in the sequence increases by exactly 1 from the previous one.", "medium": "The next consecutive integer after x is just one more than x.", "easy": "The next integer after x is x+1."},
+    "medium": {"hard": "Each subsequent integer in the sequence increases by exactly 1 from the previous one.", "medium": "Each next integer is one more than the previous one.", "easy": "The integers are x, x+1, and x+2 -- add them together."},
+    "hard": {"hard": "Set up an equation representing the three consecutive even integers (increasing by 2 each time), combine like terms, then solve for x.", "medium": "Set up x+(x+2)+(x+4)=48, combine like terms, then solve for x.", "easy": "Add x, x+2, and x+4 together, set it equal to 48, then solve for x."}
+  }
+}
+]

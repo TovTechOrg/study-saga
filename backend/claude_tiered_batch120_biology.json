@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between obligate mutualism and facultative mutualism",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In an 'obligate mutualism,' the two species involved:",
+    "options": [
+      {"text": "Cannot survive (or reproduce successfully) without each other", "isCorrect": true, "feedback": "Correct -- obligate mutualism describes a relationship where both species have become so interdependent that neither can persist without the other."},
+      {"text": "Can each survive perfectly well independently, without needing the other species at all", "isCorrect": false, "feedback": "That describes FACULTATIVE mutualism, not obligate -- obligate mutualism specifically means the species CANNOT survive independently, unlike facultative mutualism's optional relationship."},
+      {"text": "Actively harm each other in the relationship", "isCorrect": false, "feedback": "This isn't accurate -- mutualism (obligate or facultative) specifically involves BOTH species BENEFITING from the relationship, not harming each other."},
+      {"text": "Have no actual biological relationship with each other at all", "isCorrect": false, "feedback": "This isn't accurate -- obligate mutualism specifically describes a very STRONG, essential biological relationship, not an absence of relationship."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "'Facultative mutualism,' by contrast, describes a relationship where both species benefit from interacting, but each can also survive independently if necessary. Why might this distinction matter for predicting how a species responds if its mutualistic partner suddenly became unavailable (through extinction, for example)?",
+    "options": [
+      {"text": "A species in an OBLIGATE mutualism would likely face severe consequences (potentially its own extinction) if its partner disappeared, since it cannot survive without that partner, while a species in a FACULTATIVE mutualism would likely persist (though perhaps less successfully) even without its partner", "isCorrect": true, "feedback": "Correct -- this distinction has significant conservation importance, helping ecologists predict cascading consequences from losing one species in a tightly-linked obligate relationship, compared to the lower risk in a facultative relationship."},
+      {"text": "This distinction between obligate and facultative mutualism has no actual practical importance for predicting species vulnerability", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has SIGNIFICANT practical importance, particularly for conservation biology and predicting ecological cascade effects."},
+      {"text": "A species in a facultative mutualism would actually face MORE severe consequences from partner loss than one in an obligate mutualism", "isCorrect": false, "feedback": "This is backwards -- a species in an OBLIGATE mutualism would face MORE severe consequences from partner loss, not one in a facultative relationship."},
+      {"text": "Species in obligate mutualisms would actually be completely unaffected by the loss of their specific mutualistic partner", "isCorrect": false, "feedback": "This isn't accurate -- species in OBLIGATE mutualisms would be significantly affected by partner loss, precisely because they cannot survive without that specific partner."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The fig-fig wasp relationship is a classic example of obligate mutualism -- figs rely entirely on specific wasp species for pollination, and those wasps rely entirely on figs to lay their eggs and complete their life cycle. Why does this DOUBLY dependent relationship (each species depending on the OTHER, not just one direction) make this pairing especially vulnerable to disruption compared to a one-sided dependency?",
+    "options": [
+      {"text": "Since BOTH species are simultaneously dependent on each other for essential life functions, a disruption affecting EITHER species (like habitat loss affecting the wasp, or disease affecting the fig) could cascade to threaten BOTH species together, unlike a one-sided dependency where only one species would be vulnerable to the other's decline", "isCorrect": true, "feedback": "Correct -- this mutual, bidirectional dependency creates a particularly fragile ecological linkage, since a threat to either partner ripples through to threaten the entire mutualistic pairing, illustrating why such tightly coupled obligate relationships are of particular conservation concern."},
+      {"text": "This doubly dependent relationship would actually be MORE resilient to disruption than a one-sided dependency, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- a doubly dependent relationship is generally considered MORE vulnerable (not more resilient) to disruption, since a threat to either partner can cascade to affect both."},
+      {"text": "Only the fig species would actually be affected if the wasp population declined, with no consequence for the wasp from fig decline", "isCorrect": false, "feedback": "This isn't accurate -- since the dependency runs in BOTH directions, a decline in EITHER species would affect the other, not just one direction of consequence."},
+      {"text": "This bidirectional dependency has no actual connection to the pairing's overall vulnerability to environmental disruption", "isCorrect": false, "feedback": "This isn't accurate -- this bidirectional dependency IS DIRECTLY connected to and explains the pairing's heightened vulnerability to disruption from either direction."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This mutualistic relationship type is characterized by reciprocal biological necessity, precluding independent viability for either participating species.", "medium": "This is when neither species can actually survive without the other one being around.", "easy": "This is when neither species can survive without the other."},
+    "medium": {"hard": "Consider how the capacity for independent survival, or lack thereof, differentially predicts each species' resilience to the sudden absence of its mutualistic partner.", "medium": "A species that NEEDS its partner to live is in big trouble if that partner vanishes, but a species that can get by on its own has a much better backup plan.", "easy": "A species that needs its partner is in trouble if that partner vanishes; one that can get by alone has a backup plan."},
+    "hard": {"hard": "Consider how reciprocal obligate dependency creates a bidirectional vulnerability pathway, such that a perturbation originating in either partner population propagates symmetrically to threaten the other.", "medium": "Since each one needs the other to survive, trouble for either the fig OR the wasp ends up being trouble for both of them together, not just one side.", "easy": "Since each needs the other, trouble for either the fig or the wasp becomes trouble for both."}
+  }
+}
+]

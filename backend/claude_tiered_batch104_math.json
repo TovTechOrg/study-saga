@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the converse, inverse, and contrapositive of a conditional statement",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "For the conditional statement 'If P, then Q,' the 'converse' statement is:",
+    "options": [
+      {"text": "If Q, then P", "isCorrect": true, "feedback": "Correct -- the converse simply swaps the positions of the hypothesis (P) and conclusion (Q) from the original statement."},
+      {"text": "If not P, then not Q", "isCorrect": false, "feedback": "That describes the INVERSE, not the converse -- the converse specifically SWAPS P and Q, while the inverse specifically NEGATES both P and Q (without swapping)."},
+      {"text": "If not Q, then not P", "isCorrect": false, "feedback": "That describes the CONTRAPOSITIVE, not the converse -- the contrapositive specifically swaps AND negates both P and Q together, while the converse only swaps them."},
+      {"text": "If P, then Q (identical to the original statement)", "isCorrect": false, "feedback": "This isn't accurate -- the converse is a DIFFERENT statement from the original (with P and Q positions swapped), not simply identical to the original unchanged statement."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The contrapositive of a conditional statement ('If not Q, then not P') is ALWAYS logically equivalent to the original statement ('If P, then Q') -- meaning if one is true, the other must also be true. However, the CONVERSE ('If Q, then P') is NOT always logically equivalent to the original. Why does this specific difference matter for logical reasoning?",
+    "options": [
+      {"text": "Since the contrapositive is GUARANTEED to have the same truth value as the original statement, you can always validly substitute one for the other in a logical argument, but since the converse is NOT guaranteed to have the same truth value, assuming a statement's converse is automatically true (just because the original statement is true) represents a common and significant logical error/fallacy", "isCorrect": true, "feedback": "Correct -- this crucial distinction (contrapositive: guaranteed logically equivalent; converse: NOT guaranteed equivalent) is fundamentally important for valid logical reasoning, helping identify and avoid the common logical fallacy of incorrectly assuming a statement's converse must be true simply because the original statement is true."},
+      {"text": "The converse and contrapositive are actually always logically equivalent to each other and to the original statement, with no meaningful difference", "isCorrect": false, "feedback": "This isn't accurate -- these are NOT always logically equivalent -- specifically, the CONTRAPOSITIVE is guaranteed equivalent to the original, but the CONVERSE is NOT guaranteed equivalent, which is precisely the important distinction being highlighted here."},
+      {"text": "This distinction between converse and contrapositive logical equivalence has no actual practical importance for valid reasoning", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has SIGNIFICANT practical importance for valid logical reasoning, specifically helping to identify and avoid a common, genuine logical fallacy (mistakenly assuming a converse statement's truth)."},
+      {"text": "The converse is actually always guaranteed to be logically equivalent, while the contrapositive is not", "isCorrect": false, "feedback": "This is backwards -- the CONTRAPOSITIVE is the one ALWAYS guaranteed to be logically equivalent to the original statement, while the CONVERSE is specifically the one that is NOT guaranteed to be equivalent."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Consider the true statement: 'If an animal is a dog, then it is a mammal.' Its converse would be: 'If an animal is a mammal, then it is a dog.' Explain, using this specific example, WHY the converse of a true conditional statement isn't necessarily also true, even though the original statement IS true.",
+    "options": [
+      {"text": "While it's true that EVERY dog is a mammal (confirming the original statement), NOT every mammal is specifically a dog (there are many other mammal types, like cats, whales, humans, etc.) -- this demonstrates that the original statement's TRUTH doesn't guarantee its converse's truth, since the original 'dog→mammal' relationship doesn't logically require the REVERSE 'mammal→dog' relationship to also hold", "isCorrect": true, "feedback": "Correct -- this concrete, intuitive example (dogs being a SUBSET of mammals, not identical to the entire mammal category) clearly illustrates WHY a true conditional statement's converse isn't automatically also true -- the original statement only establishes one particular DIRECTIONAL relationship, which doesn't inherently guarantee the same relationship holds in reverse."},
+      {"text": "The converse statement ('If mammal, then dog') would actually also be TRUE in this specific example, contrary to what's being suggested", "isCorrect": false, "feedback": "This isn't accurate -- the converse statement is CLEARLY FALSE in this example (since many mammals, like cats or whales, are NOT dogs), which is precisely the point being illustrated -- a true original statement doesn't guarantee a true converse."},
+      {"text": "This specific example has no actual connection to explaining the general logical principle about converse statements not necessarily being true", "isCorrect": false, "feedback": "This isn't accurate -- this specific, concrete example is DIRECTLY and effectively connected to and CLEARLY ILLUSTRATES the general logical principle being discussed, providing an intuitive, easy-to-understand demonstration of that abstract concept."},
+      {"text": "All dogs and all mammals are actually exactly the same, identical group of animals, with no distinction between them", "isCorrect": false, "feedback": "This isn't accurate -- dogs are specifically a SUBSET of the broader mammal category (all dogs ARE mammals, but NOT all mammals are dogs) -- this important distinction is precisely why the converse statement fails to be true in this example."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This logical transformation exchanges the positions of the antecedent and consequent clauses within the original conditional statement.", "medium": "This just swaps the order of the two parts of the original if-then statement.", "easy": "This just swaps the order of the two parts of the if-then statement."},
+    "medium": {"hard": "Consider which specific logical transformation preserves truth value under all circumstances (contrapositive) versus which one does not (converse), and how this distinction affects the validity of logical arguments.", "medium": "You can always safely trust that the contrapositive matches the original statement's truth, but you can't automatically trust that the converse does too -- assuming so is a common mistake.", "easy": "You can trust the contrapositive matches the original's truth, but not the converse -- assuming so is a mistake."},
+    "hard": {"hard": "Consider how a conditional statement establishing a subset relationship (dogs within mammals) does not logically necessitate the reverse containment relationship (mammals within dogs) also holding true.", "medium": "Just because every dog happens to be a mammal doesn't mean every mammal has to be a dog -- there's a whole lot of OTHER mammals out there too, like cats and whales.", "easy": "Just because every dog is a mammal doesn't mean every mammal is a dog -- there are other mammals too."}
+  }
+}
+]

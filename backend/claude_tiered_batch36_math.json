@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the slope-intercept form of a line",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the equation y = mx + b, what does 'b' represent?",
+    "options": [
+      {"text": "The y-intercept, where the line crosses the y-axis", "isCorrect": true, "feedback": "Correct -- 'b' is the value of y when x = 0, which is exactly where the line crosses the y-axis."},
+      {"text": "The slope of the line", "isCorrect": false, "feedback": "The slope is represented by 'm', not 'b'."},
+      {"text": "The x-intercept", "isCorrect": false, "feedback": "The x-intercept is where the line crosses the x-axis (y=0), which isn't what 'b' represents here."},
+      {"text": "The steepness of the curve", "isCorrect": false, "feedback": "Steepness is described by the slope 'm', not by 'b'."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A line has the equation y = 3x + 2. What is its slope and y-intercept?",
+    "options": [
+      {"text": "Slope = 3, y-intercept = 2", "isCorrect": true, "feedback": "Correct -- matching the equation to y = mx + b directly gives m = 3 and b = 2."},
+      {"text": "Slope = 2, y-intercept = 3", "isCorrect": false, "feedback": "This swaps the values -- the coefficient of x (3) is the slope, and the constant (2) is the y-intercept."},
+      {"text": "Slope = 3, y-intercept = 0", "isCorrect": false, "feedback": "The y-intercept isn't 0 here -- the constant term, 2, is the y-intercept."},
+      {"text": "Slope = 5, y-intercept = 2", "isCorrect": false, "feedback": "The slope isn't found by adding the coefficients -- it's simply the coefficient of x, which is 3."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A line passes through the point (2, 7) and has a slope of 3. What is the y-intercept (b) of this line, using y = mx + b?",
+    "options": [
+      {"text": "1", "isCorrect": true, "feedback": "Correct -- substituting: 7 = 3(2) + b, so 7 = 6 + b, giving b = 1."},
+      {"text": "13", "isCorrect": false, "feedback": "This results from incorrectly adding rather than subtracting 6 from 7 after computing 3×2."},
+      {"text": "3.5", "isCorrect": false, "feedback": "This doesn't correctly result from substituting the point and slope into the equation."},
+      {"text": "7", "isCorrect": false, "feedback": "This is the y-coordinate of the given point, not the actual y-intercept of the line."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value indicates where the line's graph intersects a specific vertical axis.", "medium": "This is the value of y when the line crosses the vertical axis (where x is 0).", "easy": "This is where the line crosses the up-down (y) axis."},
+    "medium": {"hard": "Match each term in the equation to its corresponding position in the standard slope-intercept form.", "medium": "Compare the equation to y = mx + b to see which number is 'm' and which is 'b'.", "easy": "The number next to x is the slope, and the number by itself is the y-intercept."},
+    "hard": {"hard": "Substitute the known x, y, and m values into y = mx + b, then isolate b algebraically.", "medium": "Plug in x=2, y=7, and m=3 into y = mx + b, then solve for b.", "easy": "Plug in the numbers: 7 = 3 times 2, plus b. Solve for b."}
+  }
+}
+]

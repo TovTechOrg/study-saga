@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of logarithms as the inverse of exponentiation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The expression log₂(8) = 3 asks the question:",
+    "options": [
+      {"text": "\"2 raised to what power equals 8?\"", "isCorrect": true, "feedback": "Correct -- a logarithm answers exactly this kind of question; since 2³=8, log₂(8)=3."},
+      {"text": "\"8 raised to what power equals 2?\"", "isCorrect": false, "feedback": "This reverses the base and the argument -- log₂(8) specifically asks what power of 2 (the base) gives 8, not the reverse."},
+      {"text": "\"What is 2 multiplied by 8?\"", "isCorrect": false, "feedback": "This describes simple multiplication, not the logarithm operation, which specifically concerns exponents."},
+      {"text": "\"What is 8 divided by 2?\"", "isCorrect": false, "feedback": "This describes simple division, not the logarithm operation, which specifically concerns exponents."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Evaluate log₃(81).",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- since 3⁴=81 (3×3×3×3=81), log₃(81)=4."},
+      {"text": "27", "isCorrect": false, "feedback": "This is 3³ (a related power of 3), but not the correct answer for log₃(81), which specifically requires finding the exponent that gives 81."},
+      {"text": "3", "isCorrect": false, "feedback": "This is just the base value itself, not the correctly calculated exponent needed to reach 81."},
+      {"text": "9", "isCorrect": false, "feedback": "9 is 3², which equals 9, not 81 -- this doesn't correctly answer what power of 3 gives 81."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: log₂(x) + log₂(4) = 5. (Use the logarithm rule: log(a)+log(b)=log(a×b))",
+    "options": [
+      {"text": "x = 8", "isCorrect": true, "feedback": "Correct -- combining logs: log₂(4x)=5, so 4x=2⁵=32, giving x=32/4=8."},
+      {"text": "x = 1", "isCorrect": false, "feedback": "This doesn't correctly apply the logarithm combination rule and subsequent algebraic steps to solve for x."},
+      {"text": "x = 32", "isCorrect": false, "feedback": "This is the value of 2⁵ (before dividing by 4), but the final step of dividing by 4 to isolate x still needs to be completed."},
+      {"text": "x = 20", "isCorrect": false, "feedback": "This doesn't correctly result from the full logarithmic equation-solving process."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This operation identifies the exponent to which a specified base must be raised to yield a given result value.", "medium": "This asks: what power do you need to raise the base number to, to get the other number?", "easy": "This asks what power you raise the base to, to get the other number."},
+    "medium": {"hard": "Determine the specific integer exponent applied to the given base that produces the target argument value.", "medium": "Figure out how many times you need to multiply 3 by itself to get 81.", "easy": "3×3×3×3=81, so the answer is 4."},
+    "hard": {"hard": "Apply the logarithm product rule to combine the two log terms into one, convert to exponential form, then solve the resulting linear equation for x.", "medium": "Combine the two logs into log₂(4x)=5, convert to 4x=2⁵, then solve for x.", "easy": "Combine to get 4x=32 (since 2⁵=32), then divide by 4 to get x=8."}
+  }
+}
+]

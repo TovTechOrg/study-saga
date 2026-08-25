@@ -1,0 +1,248 @@
+[
+{
+  "topic": "Boyle's Law (pressure and volume of gases)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to Boyle's Law, what happens to a gas's volume when its pressure increases (at constant temperature)?",
+    "options": [
+      {"text": "The volume decreases", "isCorrect": true, "feedback": "Correct -- pressure and volume have an inverse relationship at constant temperature."},
+      {"text": "The volume increases", "isCorrect": false, "feedback": "This is the opposite of Boyle's Law's inverse relationship -- higher pressure means smaller volume."},
+      {"text": "The volume stays exactly the same", "isCorrect": false, "feedback": "Boyle's Law specifically describes how volume changes with pressure -- it doesn't stay constant."},
+      {"text": "The gas disappears completely", "isCorrect": false, "feedback": "The gas doesn't vanish -- it's compressed into a smaller volume."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A gas occupies 4 liters at a pressure of 2 atm. If the pressure increases to 4 atm (temperature constant), what is the new volume?",
+    "options": [
+      {"text": "2 liters", "isCorrect": true, "feedback": "Correct -- using P1V1=P2V2: (2)(4)=(4)(V2), so V2=8/4=2."},
+      {"text": "8 liters", "isCorrect": false, "feedback": "This doesn't correctly apply the inverse relationship between pressure and volume."},
+      {"text": "4 liters", "isCorrect": false, "feedback": "This ignores that a pressure change should cause a volume change."},
+      {"text": "1 liter", "isCorrect": false, "feedback": "This doesn't match correctly solving P1V1=P2V2 with the given values."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A diver's lungs contain a fixed amount of air at the surface. As they dive deeper, water pressure increases significantly. According to Boyle's Law, what happens to the volume of air in a flexible container (like a balloon) taken underwater?",
+    "options": [
+      {"text": "The volume decreases as the balloon is compressed by increasing pressure", "isCorrect": true, "feedback": "Correct -- as external pressure rises with depth, the trapped gas is compressed into a smaller volume."},
+      {"text": "The volume increases as the balloon expands underwater", "isCorrect": false, "feedback": "Increasing pressure with depth causes compression (smaller volume), not expansion."},
+      {"text": "The volume remains completely unchanged regardless of depth", "isCorrect": false, "feedback": "Boyle's Law predicts a real, direct relationship between pressure and volume for a gas -- it shouldn't stay constant here."},
+      {"text": "The air inside turns into a liquid", "isCorrect": false, "feedback": "Simple pressure increases from diving depth compress the gas -- they don't cause it to liquefy under these conditions."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Pressure and volume move in opposite directions from each other when temperature stays fixed.", "medium": "As pressure goes up, volume goes down, and vice versa.", "easy": "Squeezing a gas harder (more pressure) makes it take up less space."},
+    "medium": {"hard": "Set the product of the initial pressure and volume equal to the product of the final pressure and volume, then solve for the unknown.", "medium": "Multiply 2 by 4, then divide that result by the new pressure of 4.", "easy": "Multiply 2 by 4 to get 8, then divide by 4 to find the new volume."},
+    "hard": {"hard": "As external pressure increases with depth, the fixed amount of gas trapped in a flexible container must occupy a smaller volume to satisfy the inverse pressure-volume relationship.", "medium": "As water pressure increases with depth, it squeezes the trapped air into a smaller and smaller space.", "easy": "As the diver goes deeper, the increasing water pressure squeezes the balloon smaller."}
+  }
+},
+{
+  "topic": "atomic mass number vs. atomic number",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does an element's atomic number represent?",
+    "options": [
+      {"text": "The number of protons in the nucleus", "isCorrect": true, "feedback": "Correct -- the atomic number uniquely identifies each element by its proton count."},
+      {"text": "The total number of protons and neutrons combined", "isCorrect": false, "feedback": "That describes the mass number, not the atomic number."},
+      {"text": "The number of electron shells", "isCorrect": false, "feedback": "Electron shell count relates to the element's period on the periodic table, not its atomic number."},
+      {"text": "The weight of the atom in grams", "isCorrect": false, "feedback": "Atomic number is a proton count, not a direct measurement of weight in grams."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "An atom has a mass number of 23 and an atomic number of 11. How many neutrons does it have?",
+    "options": [
+      {"text": "12", "isCorrect": true, "feedback": "Correct -- neutrons = mass number - atomic number = 23-11=12."},
+      {"text": "11", "isCorrect": false, "feedback": "This is the atomic number (proton count), not the neutron count."},
+      {"text": "23", "isCorrect": false, "feedback": "This is the mass number itself, not the neutron count alone."},
+      {"text": "34", "isCorrect": false, "feedback": "This adds the mass number and atomic number instead of subtracting them."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two atoms both have an atomic number of 6, but one has a mass number of 12 and the other has a mass number of 14. What is the relationship between these two atoms?",
+    "options": [
+      {"text": "They are isotopes of the same element (carbon), differing only in neutron count", "isCorrect": true, "feedback": "Correct -- same atomic number (protons) means the same element, but different mass numbers indicate different neutron counts, making them isotopes."},
+      {"text": "They are two completely different elements", "isCorrect": false, "feedback": "Since they share the same atomic number, they must be the same element, not different ones."},
+      {"text": "They have a different number of protons", "isCorrect": false, "feedback": "Since the atomic number (proton count) is identical for both, their proton counts must match exactly."},
+      {"text": "They have a different number of electrons in a neutral atom", "isCorrect": false, "feedback": "In neutral atoms, electron count matches proton count, which is the same for both here -- only neutron count differs."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This number uniquely defines which element an atom is.", "medium": "This is the number that identifies which specific element an atom belongs to.", "easy": "This number tells you which element an atom is."},
+    "medium": {"hard": "Subtract the atomic number (protons) from the mass number (protons + neutrons) to isolate the neutron count.", "medium": "Subtract 11 from 23 to find the number of neutrons.", "easy": "Subtract the atomic number from the mass number."},
+    "hard": {"hard": "Identical atomic numbers guarantee identical element identity and proton/electron counts; differing mass numbers with the same atomic number specifically indicate differing neutron counts -- the definition of isotopes.", "medium": "Since the atomic number (protons) matches for both, they're the same element -- the mass number difference just means different neutron counts.", "easy": "Since they have the same atomic number, they're the same element -- just with a different number of neutrons."}
+  }
+},
+{
+  "topic": "precipitation reactions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a precipitate in a chemical reaction?",
+    "options": [
+      {"text": "An insoluble solid that forms and settles out of a solution", "isCorrect": true, "feedback": "Correct -- precipitates form when two dissolved substances react to create a solid that won't stay dissolved."},
+      {"text": "A gas released during the reaction", "isCorrect": false, "feedback": "Gas release is a different sign of a reaction -- a precipitate specifically refers to a solid forming."},
+      {"text": "A liquid that evaporates quickly", "isCorrect": false, "feedback": "Precipitates are solids, not liquids or something related to evaporation."},
+      {"text": "The energy released as heat", "isCorrect": false, "feedback": "Heat release is a separate sign of a reaction (exothermic), unrelated to precipitate formation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When solutions of silver nitrate and sodium chloride are mixed, a white solid (silver chloride) forms and settles out. What type of evidence is this?",
+    "options": [
+      {"text": "Formation of a precipitate, indicating a chemical reaction occurred", "isCorrect": true, "feedback": "Correct -- the appearance of an insoluble solid from two clear solutions is a classic sign of a precipitation reaction."},
+      {"text": "A physical change with no new substance formed", "isCorrect": false, "feedback": "The formation of a new insoluble solid indicates a chemical change, not just a physical one."},
+      {"text": "Evidence that no reaction took place", "isCorrect": false, "feedback": "The appearance of a new solid is actually strong evidence that a reaction DID occur."},
+      {"text": "A color change caused by temperature", "isCorrect": false, "feedback": "This describes the formation of a solid substance, not simply a temperature-driven color shift."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do chemists use solubility rules to predict whether a precipitate will form when two ionic solutions are mixed?",
+    "options": [
+      {"text": "The rules indicate which combinations of ions form compounds that won't dissolve in water, helping predict the reaction's outcome", "isCorrect": true, "feedback": "Correct -- solubility rules are a practical shortcut for predicting which possible product, if any, will be insoluble and precipitate out."},
+      {"text": "The rules determine the exact temperature of the reaction", "isCorrect": false, "feedback": "Solubility rules are about predicting insolubility/precipitate formation, not directly about temperature."},
+      {"text": "The rules are only used for gases, not solids", "isCorrect": false, "feedback": "Solubility rules specifically address whether ionic solids will dissolve or precipitate, not gas behavior."},
+      {"text": "The rules eliminate the need to balance chemical equations", "isCorrect": false, "feedback": "Balancing equations is a separate, still-necessary step -- solubility rules only help predict which product might be insoluble."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This substance forms when two dissolved reactants combine to make something too insoluble to stay mixed.", "medium": "This is the solid that appears and settles when certain two solutions get mixed together.", "easy": "This is the solid that forms and sinks when you mix certain two liquids together."},
+    "medium": {"hard": "Look for the sign of reaction associated with the sudden appearance of an insoluble solid from two previously clear solutions.", "medium": "The appearance of a new solid from two clear liquids is a strong sign a real reaction happened.", "easy": "A new solid appearing out of two clear liquids is a strong sign of a real chemical reaction."},
+    "hard": {"hard": "These rules act as a reference for which specific ion combinations result in low-solubility compounds, letting chemists predict the reaction's solid product without running the experiment first.", "medium": "These rules let chemists guess ahead of time which ion pairs will form an insoluble solid when mixed.", "easy": "These rules help chemists guess ahead of time which mixed ions will form a solid that won't dissolve."}
+  }
+},
+{
+  "topic": "writing chemical formulas from ionic charges",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Sodium has a +1 charge and chlorine has a -1 charge. What is the correct formula for sodium chloride?",
+    "options": [
+      {"text": "NaCl", "isCorrect": true, "feedback": "Correct -- since the charges are equal and opposite, they combine in a simple 1:1 ratio."},
+      {"text": "Na₂Cl", "isCorrect": false, "feedback": "Since the charges already balance exactly (+1 and -1), no extra sodium is needed."},
+      {"text": "NaCl₂", "isCorrect": false, "feedback": "Since the charges already balance exactly (+1 and -1), no extra chlorine is needed."},
+      {"text": "Na₂Cl₂", "isCorrect": false, "feedback": "This unnecessarily doubles both elements when a simple 1:1 ratio already balances the charges."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Magnesium has a +2 charge and chlorine has a -1 charge. What is the correct formula for magnesium chloride?",
+    "options": [
+      {"text": "MgCl₂", "isCorrect": true, "feedback": "Correct -- it takes two -1 chlorine ions to balance one +2 magnesium ion."},
+      {"text": "MgCl", "isCorrect": false, "feedback": "One chlorine ion (-1) wouldn't fully balance magnesium's +2 charge."},
+      {"text": "Mg₂Cl", "isCorrect": false, "feedback": "This doesn't correctly balance the +2 and -1 charges -- it overcounts magnesium instead of chlorine."},
+      {"text": "Mg₂Cl₂", "isCorrect": false, "feedback": "While the charges would balance, this isn't the simplest whole-number ratio -- MgCl₂ is the correct reduced form."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Aluminum has a +3 charge and oxygen has a -2 charge. What is the correct formula for aluminum oxide?",
+    "options": [
+      {"text": "Al₂O₃", "isCorrect": true, "feedback": "Correct -- crossing the charges gives 2 aluminum (from oxygen's 2) and 3 oxygen (from aluminum's 3), balancing total charge at +6 and -6."},
+      {"text": "AlO", "isCorrect": false, "feedback": "A simple 1:1 ratio doesn't balance +3 and -2 charges evenly."},
+      {"text": "Al₃O₂", "isCorrect": false, "feedback": "This has the subscripts reversed from the correct cross-multiplication result."},
+      {"text": "AlO₃", "isCorrect": false, "feedback": "This doesn't correctly balance the total positive and negative charge."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "When the magnitudes of the charges already match exactly, only one of each ion is needed.", "medium": "Since +1 and -1 already cancel out evenly, use just one of each.", "easy": "Since the charges are +1 and -1, they already balance with one of each."},
+    "medium": {"hard": "Use the magnitude of one ion's charge as the subscript for the other ion, to balance total positive and negative charge.", "medium": "Since magnesium is +2 and chlorine is -1, you need two chlorines to balance one magnesium.", "easy": "Since magnesium is +2 and chlorine is -1, use two chlorines for every one magnesium."},
+    "hard": {"hard": "Cross-multiply the magnitude of each ion's charge to use as the other ion's subscript, then simplify to the smallest whole-number ratio if possible.", "medium": "Use oxygen's charge magnitude (2) as aluminum's subscript, and aluminum's charge magnitude (3) as oxygen's subscript.", "easy": "Use the number 2 for aluminum and the number 3 for oxygen, crossing over their charge values."}
+  }
+},
+{
+  "topic": "the activity series of metals",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the activity series of metals rank?",
+    "options": [
+      {"text": "How reactive different metals are compared to one another", "isCorrect": true, "feedback": "Correct -- the activity series orders metals from most to least reactive."},
+      {"text": "How colorful different metals appear", "isCorrect": false, "feedback": "Color isn't what the activity series measures -- it's specifically about chemical reactivity."},
+      {"text": "How expensive different metals are", "isCorrect": false, "feedback": "Cost isn't a chemical property ranked by the activity series."},
+      {"text": "How magnetic different metals are", "isCorrect": false, "feedback": "Magnetism is a separate property from the chemical reactivity ranked in the activity series."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a single replacement reaction, a metal can only displace another metal from a compound if it is:",
+    "options": [
+      {"text": "More reactive than the metal it's displacing", "isCorrect": true, "feedback": "Correct -- a more reactive metal will \"kick out\" a less reactive one from a compound."},
+      {"text": "Less reactive than the metal it's displacing", "isCorrect": false, "feedback": "A less reactive metal generally cannot displace a more reactive one -- it works the other way around."},
+      {"text": "The exact same reactivity as the metal it's displacing", "isCorrect": false, "feedback": "Equal reactivity wouldn't reliably favor one metal displacing the other."},
+      {"text": "Radioactive", "isCorrect": false, "feedback": "Radioactivity isn't related to a metal's position in the activity series or its ability to displace another metal."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Zinc can displace copper from copper sulfate solution, but copper cannot displace zinc from zinc sulfate solution. What does this indicate about their relative positions on the activity series?",
+    "options": [
+      {"text": "Zinc is more reactive than copper", "isCorrect": true, "feedback": "Correct -- only a more reactive metal can displace a less reactive one, confirming zinc ranks above copper in reactivity."},
+      {"text": "Copper is more reactive than zinc", "isCorrect": false, "feedback": "This is backwards -- since zinc successfully displaces copper (and not vice versa), zinc must be the more reactive metal."},
+      {"text": "Zinc and copper are equally reactive", "isCorrect": false, "feedback": "If they were equally reactive, neither would reliably displace the other -- but zinc clearly can displace copper."},
+      {"text": "This reaction reveals nothing about their relative reactivity", "isCorrect": false, "feedback": "This is actually a direct, standard way to experimentally determine relative reactivity between two metals."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This ranking predicts which metal will chemically \"win\" when competing in a displacement reaction.", "medium": "This ranking tells you which metals react more easily than others.", "easy": "This list ranks metals by how easily they react."},
+    "medium": {"hard": "Displacement only proceeds in the direction from higher to lower position on the reactivity ranking.", "medium": "The displacing metal needs to rank higher on the reactivity list than the metal being displaced.", "easy": "The metal doing the displacing needs to be MORE reactive than the one it's replacing."},
+    "hard": {"hard": "Since displacement only occurs from a more reactive metal toward a less reactive one, the one-directional success of this reaction directly establishes their relative ranking.", "medium": "Since zinc can push copper out but not the reverse, zinc must rank higher on the reactivity list.", "easy": "Since zinc can push copper out of its compound but copper can't do the same to zinc, zinc must be more reactive."}
+  }
+},
+{
+  "topic": "specific heat capacity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does specific heat capacity measure?",
+    "options": [
+      {"text": "How much energy is needed to raise the temperature of a substance", "isCorrect": true, "feedback": "Correct -- specific heat capacity describes how resistant a substance is to temperature change per unit of mass."},
+      {"text": "The color a substance turns when heated", "isCorrect": false, "feedback": "Color change isn't what specific heat capacity measures -- it's about energy needed for temperature change."},
+      {"text": "How much a substance weighs", "isCorrect": false, "feedback": "Weight/mass is a separate property from specific heat capacity."},
+      {"text": "How quickly a substance dissolves in water", "isCorrect": false, "feedback": "Solubility is unrelated to specific heat capacity, which is about temperature change and energy."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Water has a notably high specific heat capacity compared to most metals. What does this mean in practice?",
+    "options": [
+      {"text": "Water takes more energy to heat up (or cool down) by the same amount compared to metals", "isCorrect": true, "feedback": "Correct -- this is why water heats up and cools down more slowly than metal, a property useful for regulating temperature."},
+      {"text": "Water heats up much faster than metals", "isCorrect": false, "feedback": "A high specific heat capacity actually means water heats up MORE SLOWLY, not faster, than substances with lower specific heat capacity."},
+      {"text": "Water cannot be heated at all", "isCorrect": false, "feedback": "Water can definitely be heated -- it just requires more energy per degree of temperature change than many other materials."},
+      {"text": "Water and metals heat up at exactly the same rate", "isCorrect": false, "feedback": "Their different specific heat capacities mean they actually heat up at noticeably different rates given the same energy input."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Coastal areas often have milder temperature swings than inland areas at the same latitude. How does water's high specific heat capacity help explain this?",
+    "options": [
+      {"text": "Large bodies of water absorb and release heat slowly, moderating nearby air temperatures throughout the day and across seasons", "isCorrect": true, "feedback": "Correct -- water's resistance to rapid temperature change helps keep coastal climates more stable than inland areas far from large water bodies."},
+      {"text": "Water near the coast blocks all sunlight from reaching the land", "isCorrect": false, "feedback": "This isn't related to specific heat capacity -- the key factor is water's slow, steady heat absorption and release."},
+      {"text": "Coastal areas simply receive less sunlight overall", "isCorrect": false, "feedback": "Sunlight amount isn't the key factor here -- it's water's ability to buffer temperature swings due to its high specific heat capacity."},
+      {"text": "Ocean water is always colder than air, which cancels out temperature changes", "isCorrect": false, "feedback": "This isn't the correct mechanism -- it's water's slow heating/cooling rate (due to high specific heat capacity) that moderates temperature, not simply being cold."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property reflects how resistant a substance is to changing temperature for a given amount of added energy.", "medium": "This measures how much energy it takes to warm up a certain amount of a substance.", "easy": "This measures how much energy it takes to heat something up."},
+    "medium": {"hard": "A higher value means more energy input is required per degree of temperature change, resulting in slower heating and cooling.", "medium": "It takes a lot more energy to change water's temperature compared to changing a metal's temperature by the same amount.", "easy": "It takes a lot more energy to heat up water than to heat up the same amount of metal."},
+    "hard": {"hard": "Water's high specific heat capacity means it can absorb or release large amounts of thermal energy with only small temperature changes, acting as a thermal buffer for nearby land.", "medium": "Since water resists changing temperature quickly, nearby land stays more temperature-stable throughout the day and year.", "easy": "Since water resists changing temperature quickly, it keeps nearby land from getting too hot or too cold."}
+  }
+}
+]

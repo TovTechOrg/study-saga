@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a fossil and what it reveals about the past",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a fossil?",
+    "options": [
+      {"text": "Preserved remains or traces of an organism from the distant past", "isCorrect": true, "feedback": "Correct -- fossils can include bones, shells, imprints, or even footprints preserved over long periods of time."},
+      {"text": "A living organism found today", "isCorrect": false, "feedback": "Fossils specifically refer to preserved remains from long ago, not living organisms today."},
+      {"text": "A type of rock with no biological origin at all", "isCorrect": false, "feedback": "While fossils can become mineralized like rock, their defining feature is their biological origin as remains/traces of past life."},
+      {"text": "A modern photograph of an animal", "isCorrect": false, "feedback": "A fossil is a naturally preserved physical remnant, not a photograph."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why are fossils important evidence for studying evolution?",
+    "options": [
+      {"text": "They provide a physical record of organisms that lived long ago, showing how life forms have changed over time", "isCorrect": true, "feedback": "Correct -- the fossil record helps scientists trace evolutionary changes and relationships between ancient and modern species."},
+      {"text": "Fossils prove that no organisms have ever changed over time", "isCorrect": false, "feedback": "This is backwards -- the fossil record actually provides strong evidence FOR gradual change (evolution) over time, not against it."},
+      {"text": "Fossils are only useful for telling the exact temperature of ancient Earth", "isCorrect": false, "feedback": "While fossils can offer some environmental clues, their primary significance for evolution is tracking how organisms and their traits have changed over time."},
+      {"text": "Fossils have no scientific value at all", "isCorrect": false, "feedback": "Fossils are actually one of the most significant and widely used forms of evidence for studying evolutionary history."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Paleontologists often find fossils arranged in distinct layers (strata) of rock, with older fossils typically found in deeper layers. How does this layering pattern support the study of evolutionary change over time?",
+    "options": [
+      {"text": "It provides a chronological framework, allowing scientists to compare organism traits across different time periods and observe how species have gradually changed or been replaced over successive eras", "isCorrect": true, "feedback": "Correct -- this stratigraphic principle (deeper = older) allows researchers to establish a reliable timeline for tracking evolutionary changes across different geological time periods."},
+      {"text": "Rock layers have no actual connection to the age of the fossils found within them", "isCorrect": false, "feedback": "Rock layer depth is actually a well-established, reliable indicator of relative fossil age -- deeper layers generally correspond to older time periods."},
+      {"text": "All fossils, regardless of the rock layer they're found in, are exactly the same age", "isCorrect": false, "feedback": "Fossils found in different rock layers typically represent significantly different time periods -- they are NOT all the same age."},
+      {"text": "This layering pattern is purely random with no useful scientific information", "isCorrect": false, "feedback": "This layering pattern is actually a fundamental, reliable tool (stratigraphy) that provides crucial chronological information for studying evolutionary history."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is direct physical evidence of a once-living organism, preserved through natural processes over vast timescales.", "medium": "This is the preserved remains of something that lived a very long time ago.", "easy": "This is the preserved remains of an ancient plant or animal."},
+    "medium": {"hard": "This physical record allows direct comparison of organism structures across vast stretches of geological time.", "medium": "These preserved remains let scientists directly compare ancient life forms to modern ones.", "easy": "These preserved remains let scientists compare ancient life to life today."},
+    "hard": {"hard": "The principle of superposition (deeper layers formed earlier) provides a reliable relative dating framework, letting researchers correlate fossil traits with specific time periods to trace evolutionary trends.", "medium": "Since deeper rock layers are generally older, finding different fossils at different depths lets scientists build a timeline of how life changed.", "easy": "Since deeper layers are older, finding different fossils at different depths shows how life changed over time."}
+  }
+}
+]

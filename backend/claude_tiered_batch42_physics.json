@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of electrical resistance and Ohm's law",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to Ohm's law (V = IR), what happens to current (I) if resistance (R) increases while voltage (V) stays the same?",
+    "options": [
+      {"text": "Current decreases", "isCorrect": true, "feedback": "Correct -- rearranging to I = V/R shows current is inversely proportional to resistance at constant voltage."},
+      {"text": "Current increases", "isCorrect": false, "feedback": "This is backwards -- at constant voltage, increasing resistance actually DECREASES current, not increases it."},
+      {"text": "Current stays exactly the same", "isCorrect": false, "feedback": "Since I = V/R, changing R while V is fixed necessarily changes I -- it won't stay the same."},
+      {"text": "Voltage will automatically decrease to compensate", "isCorrect": false, "feedback": "The scenario specifies voltage stays the same -- it's current that changes in response to a change in resistance."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A circuit has a voltage of 12V and a resistance of 4Ω. Using Ohm's law (V = IR), what is the current flowing through the circuit?",
+    "options": [
+      {"text": "3 amps", "isCorrect": true, "feedback": "Correct -- rearranging to I = V/R gives I = 12/4 = 3 amps."},
+      {"text": "48 amps", "isCorrect": false, "feedback": "This results from multiplying V and R together, rather than dividing V by R as Ohm's law requires to solve for current."},
+      {"text": "8 amps", "isCorrect": false, "feedback": "This doesn't correctly result from dividing 12 by 4."},
+      {"text": "16 amps", "isCorrect": false, "feedback": "This doesn't correctly result from applying I = V/R to these values."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A circuit maintains a constant voltage of 12V. If the resistance is doubled from 4Ω to 8Ω, how does the power dissipated (P = VI) change?",
+    "options": [
+      {"text": "Power is halved, since current is halved (12/8 = 1.5A vs original 3A) while voltage stays the same, and power is directly proportional to current at constant voltage", "isCorrect": true, "feedback": "Correct -- original power = 12×3 = 36W; new power = 12×1.5 = 18W, exactly half, matching how P = VI scales directly with the halved current at fixed voltage."},
+      {"text": "Power stays exactly the same, since voltage didn't change", "isCorrect": false, "feedback": "Power depends on BOTH voltage and current (P=VI) -- since current changes when resistance changes (at fixed voltage), power changes too, even though voltage alone stayed constant."},
+      {"text": "Power doubles, since resistance doubled", "isCorrect": false, "feedback": "This doesn't correctly follow the P=VI relationship at constant voltage -- since current actually decreases (not increases) as resistance rises, power decreases, not doubles."},
+      {"text": "Power becomes four times as large", "isCorrect": false, "feedback": "This doesn't match the actual calculation -- power is halved (not quadrupled) when resistance doubles at constant voltage, since current is inversely proportional to resistance."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Consider the inverse relationship between current and resistance implied by rearranging V = IR to solve for I.", "medium": "Rearrange the formula to I = V/R -- with V staying fixed, what happens to I if R gets bigger?", "easy": "If R gets bigger while V stays the same, I (current) gets smaller."},
+    "medium": {"hard": "Rearrange V = IR algebraically to isolate the current variable, then substitute the given values.", "medium": "Rearrange the equation to I = V/R, then plug in 12 for V and 4 for R.", "easy": "Divide 12 by 4 to find the current."},
+    "hard": {"hard": "First determine the new current using I = V/R with the doubled resistance, then compute power (P = VI) for both scenarios and compare.", "medium": "First find the new current with the doubled resistance (12/8), then calculate power (voltage times current) for both cases and compare.", "easy": "New current is 12/8 = 1.5A. Compare power (12×1.5) to the original power (12×3)."}
+  }
+}
+]

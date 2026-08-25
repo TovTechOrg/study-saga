@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of terminal velocity and skydiving",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What happens to a skydiver's acceleration once they reach terminal velocity?",
+    "options": [
+      {"text": "It becomes zero -- they stop speeding up and fall at a constant speed", "isCorrect": true, "feedback": "Correct -- at terminal velocity, air resistance exactly balances gravity, resulting in zero net acceleration."},
+      {"text": "It continues increasing rapidly", "isCorrect": false, "feedback": "At terminal velocity, the skydiver has actually stopped accelerating -- their speed becomes constant."},
+      {"text": "It becomes negative, and they start moving upward", "isCorrect": false, "feedback": "The skydiver still continues falling downward at a constant speed -- they don't start moving upward."},
+      {"text": "It becomes infinite", "isCorrect": false, "feedback": "Acceleration at terminal velocity is zero, not infinite -- the forces are balanced, resulting in constant, unchanging speed."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A skydiver in a spread-eagle position falls slower than the same skydiver in a streamlined, head-first dive position. Why?",
+    "options": [
+      {"text": "The spread-eagle position increases air resistance by exposing more surface area, lowering the terminal velocity at which the forces balance", "isCorrect": true, "feedback": "Correct -- more surface area facing the airflow means more air resistance, which balances gravity at a lower falling speed."},
+      {"text": "The spread-eagle position makes the skydiver heavier", "isCorrect": false, "feedback": "Body position doesn't change actual weight/mass -- what changes is the amount of air resistance encountered."},
+      {"text": "Air resistance has no effect on falling speed in either position", "isCorrect": false, "feedback": "Air resistance is precisely what's responsible for the difference in falling speed between these two body positions."},
+      {"text": "The streamlined position somehow reduces gravity's pull", "isCorrect": false, "feedback": "Gravity's pull remains constant regardless of body position -- what changes between positions is the amount of air resistance encountered."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A skydiver opens their parachute while already falling at terminal velocity for their spread-eagle body position. Why does the parachute cause such a dramatic and immediate deceleration, rather than a gradual one?",
+    "options": [
+      {"text": "The parachute suddenly and drastically increases air resistance far beyond what's needed to balance gravity at the current speed, creating a large net upward force that rapidly slows the skydiver", "isCorrect": true, "feedback": "Correct -- this sudden imbalance (air resistance now far exceeding gravity) is exactly what produces the sharp, immediate deceleration felt when a parachute opens."},
+      {"text": "The parachute eliminates gravity's effect on the skydiver entirely", "isCorrect": false, "feedback": "Gravity continues to act on the skydiver throughout -- the parachute dramatically increases air resistance, which is what causes the deceleration, not gravity disappearing."},
+      {"text": "The parachute has no real effect on the forces acting on the skydiver", "isCorrect": false, "feedback": "The parachute has a very significant, immediate effect, dramatically increasing air resistance and causing rapid deceleration."},
+      {"text": "The skydiver's weight suddenly decreases significantly when the parachute opens", "isCorrect": false, "feedback": "Actual weight doesn't change when a parachute opens -- what changes dramatically is the air resistance force acting against that weight."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "At this point, the upward and downward forces on the falling object have reached perfect balance.", "medium": "At this point, air resistance has grown to exactly match gravity's pull.", "easy": "At this point, air resistance exactly balances gravity, so speed stops changing."},
+    "medium": {"hard": "A larger surface area facing the oncoming air increases the resisting force at any given speed, requiring a lower speed to reach the balance point.", "medium": "Spreading out increases how much air resistance pushes back, so the balance point (terminal velocity) happens at a slower speed.", "easy": "Spreading out increases air resistance, so the balance point happens at a slower falling speed."},
+    "hard": {"hard": "The sudden large increase in surface area (and thus air resistance) creates a net force vastly exceeding gravity, producing a correspondingly large and immediate deceleration until a new, much slower terminal velocity is reached.", "medium": "The huge parachute suddenly creates way more air resistance than gravity can match, causing a big, sudden slow-down.", "easy": "The huge parachute suddenly creates way more air resistance than gravity, causing a big, sudden slow-down."}
+  }
+}
+]

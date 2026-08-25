@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between exothermic combustion and cellular respiration",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Both burning wood (combustion) and cellular respiration in living organisms involve reacting a fuel source with oxygen. What do these two processes have in common?",
+    "options": [
+      {"text": "Both are exothermic reactions that release energy, ultimately producing carbon dioxide and water as products (when the fuel is an organic/carbon-based substance)", "isCorrect": true, "feedback": "Correct -- despite occurring through very different mechanisms, both combustion and cellular respiration share this fundamental exothermic, oxygen-consuming, CO2/water-producing chemical pattern."},
+      {"text": "Both processes actually absorb energy rather than release it", "isCorrect": false, "feedback": "This isn't accurate -- BOTH combustion and cellular respiration are EXOTHERMIC processes, releasing energy, not absorbing it."},
+      {"text": "Neither process actually involves oxygen at all", "isCorrect": false, "feedback": "This isn't accurate -- BOTH processes specifically DO involve oxygen as a key reactant, which is precisely the similarity being highlighted here."},
+      {"text": "These two processes have no meaningful similarities whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- despite occurring through different mechanisms, these processes DO share meaningful chemical similarities, specifically regarding their exothermic nature and general reactant/product pattern."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "While both combustion and cellular respiration release energy from fuel via oxidation, burning wood releases its energy very rapidly as heat and light, while cellular respiration releases its energy much more gradually, in a controlled, step-by-step manner. Why is this difference in RATE of energy release biologically significant?",
+    "options": [
+      {"text": "Cells need to capture and use energy in a controlled, gradual manner (via molecules like ATP) to avoid potentially damaging the cell with a rapid, uncontrolled release of heat, unlike the rapid, uncontrolled energy release seen in combustion", "isCorrect": true, "feedback": "Correct -- this controlled, gradual energy release, achieved through multiple enzymatic steps in cellular respiration, allows living cells to safely and efficiently harness chemical energy without the destructive, rapid heat release characteristic of combustion."},
+      {"text": "This difference in energy release rate has no actual biological significance for living cells", "isCorrect": false, "feedback": "This isn't accurate -- this difference is actually HIGHLY biologically significant, since cells specifically require a controlled, gradual energy release process to avoid cellular damage that rapid combustion-like release would cause."},
+      {"text": "Cellular respiration actually releases energy just as rapidly and uncontrolled as combustion does", "isCorrect": false, "feedback": "This isn't accurate -- cellular respiration is specifically characterized by a much more GRADUAL, controlled, step-by-step energy release process, quite different from combustion's rapid, uncontrolled release."},
+      {"text": "Combustion would actually be a perfectly safe and effective way for cells to harness chemical energy", "isCorrect": false, "feedback": "This isn't accurate -- combustion's rapid, uncontrolled energy release (as heat/light) would actually be quite damaging or destructive if it occurred within a living cell, which is precisely why cells rely on the much more controlled process of cellular respiration instead."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Cellular respiration captures roughly 30-40% of glucose's chemical energy as usable ATP, with the rest released as heat, while combustion releases essentially all of a fuel's chemical energy as heat/light with no usable energy 'storage' step. Why might this difference in energy capture efficiency reflect the fundamentally different purposes of these two processes?",
+    "options": [
+      {"text": "Cellular respiration is specifically evolved to CAPTURE and STORE a significant portion of released energy in a biologically usable form (ATP) for the cell's ongoing functional needs, while combustion is simply an uncontrolled chemical reaction with no biological mechanism for capturing energy in a usable, storable form", "isCorrect": true, "feedback": "Correct -- this fundamental difference in purpose (biological energy capture and utilization vs. simple uncontrolled energy release) explains why cellular respiration, despite being less than 100% 'efficient' at capturing energy, represents a remarkably sophisticated biological process compared to simple combustion."},
+      {"text": "Combustion actually captures energy in a usable, storable form, just like cellular respiration does", "isCorrect": false, "feedback": "This isn't accurate -- combustion specifically does NOT capture energy in any storable, biologically usable form -- it simply releases essentially all the energy as heat and light, unlike cellular respiration's ATP-capturing mechanism."},
+      {"text": "This efficiency difference has no actual connection to the different fundamental purposes of these two processes", "isCorrect": false, "feedback": "This isn't accurate -- this efficiency difference is DIRECTLY connected to and reflects the fundamentally different purposes of these two processes (biological energy capture and use vs. simple uncontrolled energy release)."},
+      {"text": "Cellular respiration is actually considered less useful than combustion, since it doesn't capture 100% of the available energy", "isCorrect": false, "feedback": "This isn't accurate -- cellular respiration's ability to capture even a substantial PORTION of energy in a usable, storable form (ATP) makes it far more biologically useful for a living cell than combustion's complete but unusable energy release."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Consider the common thermodynamic classification and shared reactant/product pattern connecting these two seemingly distinct oxidative processes.", "medium": "Both of these processes give off energy and both need oxygen to happen.", "easy": "Both processes give off energy and both need oxygen to happen."},
+    "medium": {"hard": "Consider how a rapid, uncontrolled release of thermal energy within a living cell's delicate internal environment could cause significant structural or functional damage.", "medium": "If a cell released all its energy super fast like a fire, it would probably just cook and destroy itself instead of being useful.", "easy": "If a cell released energy super fast like a fire, it would just damage itself instead of being useful."},
+    "hard": {"hard": "Consider how the presence (or absence) of a biological mechanism for capturing and storing released energy in a usable molecular form reflects a fundamentally different underlying purpose for each process.", "medium": "Cells specifically evolved a way to grab onto some of that released energy and save it for later use, which fire just doesn't do at all.", "easy": "Cells evolved a way to grab some of that released energy and save it for later, which fire doesn't do."}
+  }
+}
+]

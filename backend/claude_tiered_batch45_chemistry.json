@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of oxidation and reduction (redox reactions)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a redox reaction, what happens during 'oxidation'?",
+    "options": [
+      {"text": "A substance loses electrons", "isCorrect": true, "feedback": "Correct -- oxidation specifically refers to the loss of electrons by a substance (remember: OIL = Oxidation Is Loss)."},
+      {"text": "A substance gains electrons", "isCorrect": false, "feedback": "That describes reduction, the opposite of oxidation (remember: RIG = Reduction Is Gain)."},
+      {"text": "A substance gains protons", "isCorrect": false, "feedback": "Redox reactions concern electron transfer, not proton transfer -- proton transfer is central to acid-base reactions instead."},
+      {"text": "A substance's mass increases significantly", "isCorrect": false, "feedback": "Oxidation is defined by electron loss, not by any significant mass change of the substance."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In the reaction Zn + Cu²⁺ → Zn²⁺ + Cu, zinc metal loses two electrons to become Zn²⁺, while Cu²⁺ gains two electrons to become copper metal. Which substance is oxidized, and which is reduced?",
+    "options": [
+      {"text": "Zinc is oxidized (loses electrons); Cu²⁺ is reduced (gains electrons)", "isCorrect": true, "feedback": "Correct -- zinc loses electrons (oxidation) while copper ions gain those electrons (reduction), making this a classic redox reaction."},
+      {"text": "Zinc is reduced; Cu²⁺ is oxidized", "isCorrect": false, "feedback": "This has the roles reversed -- zinc LOSES electrons (oxidation), while Cu²⁺ GAINS electrons (reduction), not the other way around."},
+      {"text": "Both substances are oxidized simultaneously", "isCorrect": false, "feedback": "In any redox reaction, oxidation and reduction always occur together as a pair -- one substance can't be oxidized without another being reduced."},
+      {"text": "Neither substance undergoes any electron transfer in this reaction", "isCorrect": false, "feedback": "This reaction is a textbook example specifically involving electron transfer -- zinc loses electrons while copper ions gain them."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In this same reaction (Zn + Cu²⁺ → Zn²⁺ + Cu), zinc is called the 'reducing agent.' Why is the substance that gets oxidized called the reducing agent, rather than the 'oxidizing agent'?",
+    "options": [
+      {"text": "Because zinc's own oxidation (losing electrons) is what CAUSES the reduction of the other substance (Cu²⁺), so it acts as the agent enabling that reduction", "isCorrect": true, "feedback": "Correct -- naming conventions in redox reactions are based on what a substance CAUSES to happen to the other reactant, not what happens to itself, which is why the oxidized substance is termed the reducing agent."},
+      {"text": "This naming convention is simply an arbitrary error in chemistry terminology", "isCorrect": false, "feedback": "This is not an error -- it's a deliberate, standard convention based on what effect each substance has on the OTHER reactant, not on itself."},
+      {"text": "Zinc is actually the one being reduced in this reaction, not oxidized", "isCorrect": false, "feedback": "Zinc is definitely being OXIDIZED (losing electrons) in this reaction -- its role as 'reducing agent' refers to what it does to the other substance, not what happens to itself."},
+      {"text": "The terms 'oxidizing agent' and 'reducing agent' are actually interchangeable and mean the same thing", "isCorrect": false, "feedback": "These terms are NOT interchangeable -- a reducing agent gets oxidized while causing reduction in another substance, and an oxidizing agent gets reduced while causing oxidation in another substance."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This half-reaction involves a substance relinquishing negatively charged electron particles.", "medium": "This is when a substance loses electrons during a reaction.", "easy": "This is when a substance loses electrons."},
+    "medium": {"hard": "Track the direction of electron movement for each substance individually to determine which one is losing versus gaining electrons.", "medium": "Zinc goes from neutral to Zn²⁺ (losing electrons), while copper ions go from Cu²⁺ to neutral copper (gaining electrons).", "easy": "Zinc loses electrons to become Zn²⁺, so zinc is oxidized. Copper gains those electrons, so it's reduced."},
+    "hard": {"hard": "Naming conventions for these agent terms describe the EFFECT a substance has on its reaction partner, not the change happening to the substance itself.", "medium": "Zinc's own electron loss is exactly what allows copper to gain electrons and become reduced -- so zinc 'causes' the reduction.", "easy": "Zinc losing its own electrons is exactly what lets copper gain electrons and get reduced."}
+  }
+}
+]

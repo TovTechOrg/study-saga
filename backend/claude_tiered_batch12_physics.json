@@ -1,0 +1,207 @@
+[
+{
+  "topic": "the relationship between frequency and period of a wave",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the 'period' of a wave?",
+    "options": [
+      {"text": "The time it takes to complete one full wave cycle", "isCorrect": true, "feedback": "Correct -- period measures the duration of a single complete oscillation."},
+      {"text": "The distance between two wave crests", "isCorrect": false, "feedback": "That describes wavelength, not period."},
+      {"text": "The height of the wave", "isCorrect": false, "feedback": "That describes amplitude, not period."},
+      {"text": "The number of waves passing a point per second", "isCorrect": false, "feedback": "That describes frequency, not period."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A wave has a frequency of 5 Hz. What is its period? (Formula: T = 1/f)",
+    "options": [
+      {"text": "0.2 seconds", "isCorrect": true, "feedback": "Correct -- period equals 1 divided by frequency: 1/5=0.2."},
+      {"text": "5 seconds", "isCorrect": false, "feedback": "This just repeats the frequency value rather than taking its reciprocal."},
+      {"text": "10 seconds", "isCorrect": false, "feedback": "This doesn't match correctly taking the reciprocal of 5."},
+      {"text": "50 seconds", "isCorrect": false, "feedback": "This doesn't match correctly computing 1 divided by 5."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A wave has a period of 0.02 seconds. What is its frequency? (Formula: f = 1/T)",
+    "options": [
+      {"text": "50 Hz", "isCorrect": true, "feedback": "Correct -- frequency equals 1 divided by period: 1/0.02=50."},
+      {"text": "0.02 Hz", "isCorrect": false, "feedback": "This just repeats the period value instead of taking its reciprocal."},
+      {"text": "20 Hz", "isCorrect": false, "feedback": "This doesn't match correctly computing 1 divided by 0.02."},
+      {"text": "2 Hz", "isCorrect": false, "feedback": "This doesn't match correctly computing the reciprocal of 0.02."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measures the duration of a single, complete repeating cycle of the wave's motion.", "medium": "This is how long one complete wave cycle takes to happen.", "easy": "This is how long one full wave cycle takes."},
+    "medium": {"hard": "Take the reciprocal (1 divided by) of the frequency value to find the period.", "medium": "Divide 1 by the frequency value.", "easy": "Divide 1 by 5."},
+    "hard": {"hard": "Take the reciprocal (1 divided by) of the period value to find the frequency.", "medium": "Divide 1 by the period value.", "easy": "Divide 1 by 0.02."}
+  }
+},
+{
+  "topic": "the photoelectric effect (basic concept)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the photoelectric effect?",
+    "options": [
+      {"text": "The emission of electrons from a material when light shines on it", "isCorrect": true, "feedback": "Correct -- certain materials release electrons when struck by light of sufficient energy."},
+      {"text": "The bending of light through a prism", "isCorrect": false, "feedback": "That describes refraction/dispersion, a different optical phenomenon."},
+      {"text": "The reflection of light off a mirror", "isCorrect": false, "feedback": "That describes simple reflection, unrelated to electron emission."},
+      {"text": "The heating of a material by sunlight", "isCorrect": false, "feedback": "Simple heating is a thermal effect, distinct from the photoelectric effect's electron emission."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In the photoelectric effect, increasing the brightness (intensity) of light without changing its frequency does what?",
+    "options": [
+      {"text": "Increases the number of electrons emitted, but not their individual energy", "isCorrect": true, "feedback": "Correct -- more photons (brighter light) means more electrons can be knocked loose, but each photon's energy (tied to frequency) stays the same."},
+      {"text": "Increases the energy of each individual emitted electron", "isCorrect": false, "feedback": "Individual electron energy depends on light FREQUENCY, not intensity/brightness -- this was a key discovery supporting quantum theory."},
+      {"text": "Has no effect on the photoelectric effect at all", "isCorrect": false, "feedback": "Brighter light does have an effect -- specifically, it increases the NUMBER of electrons emitted."},
+      {"text": "Always stops the photoelectric effect from happening", "isCorrect": false, "feedback": "Brighter light doesn't stop the effect -- as long as the frequency is sufficient, it actually increases the number of electrons emitted."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The photoelectric effect showed that light below a certain 'threshold frequency' cannot eject electrons, no matter how intense that light is. Why was this finding significant for the development of quantum theory?",
+    "options": [
+      {"text": "It showed that light behaves like discrete packets (photons) with energy tied to frequency, not intensity, contradicting earlier wave-only models of light", "isCorrect": true, "feedback": "Correct -- this discovery, explained by Einstein, was crucial evidence for the particle-like nature of light and helped establish quantum theory."},
+      {"text": "It proved that light doesn't actually exist", "isCorrect": false, "feedback": "This finding was about the specific behavior of light, not a disproof of light's existence."},
+      {"text": "It showed that intensity is the only factor that matters for electron emission", "isCorrect": false, "feedback": "This is the opposite of the actual finding -- frequency, not just intensity, turned out to be the critical factor determining whether emission occurs at all."},
+      {"text": "It had no real connection to the development of quantum theory", "isCorrect": false, "feedback": "This was actually one of the pivotal experiments supporting the development of quantum theory, particularly the concept of light quanta (photons)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phenomenon reveals a direct interaction between light and negatively charged particles on a material's surface.", "medium": "This is when shining light on certain materials knocks tiny charged particles loose from them.", "easy": "This is when light shining on something knocks electrons loose."},
+    "medium": {"hard": "Individual photon energy is determined by frequency alone, while a higher intensity simply means more photons arriving per second.", "medium": "More light means more individual light packets hitting the material, but each packet's energy still depends on the light's color/frequency.", "easy": "Brighter light means more electrons pop out, but doesn't make each one pop out with more energy."},
+    "hard": {"hard": "This threshold-frequency dependence was inexplicable under classical wave theory (where any sufficiently intense light should eventually work) but made perfect sense if light is quantized into photons whose individual energy depends on frequency.", "medium": "This showed that light doesn't act like a smooth, continuous wave in this situation -- it acts more like individual packets with a fixed energy tied to their frequency.", "easy": "This showed light acts like a bunch of individual energy packets, not just a smooth wave, which was a big deal for physics."}
+  }
+},
+{
+  "topic": "the difference between a real image and a virtual image",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a real image?",
+    "options": [
+      {"text": "An image formed where light rays actually converge and can be projected onto a screen", "isCorrect": true, "feedback": "Correct -- a real image can be captured on a screen because light physically meets at that point."},
+      {"text": "An image that only exists in your imagination", "isCorrect": false, "feedback": "This describes something completely different -- a real image is a genuine optical phenomenon where light physically converges."},
+      {"text": "An image that can never be seen by human eyes", "isCorrect": false, "feedback": "Real images are absolutely visible -- that's part of what defines them, along with being projectable onto a screen."},
+      {"text": "An image formed by a flat mirror only", "isCorrect": false, "feedback": "Flat mirrors typically form virtual images, not real ones -- real images usually come from curved mirrors or lenses under specific conditions."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When you look at yourself in a flat bathroom mirror, what type of image do you see?",
+    "options": [
+      {"text": "A virtual image, since the light rays only appear to come from behind the mirror but don't actually converge there", "isCorrect": true, "feedback": "Correct -- flat mirrors always produce virtual images that can't be projected onto a screen."},
+      {"text": "A real image, since you can clearly see it", "isCorrect": false, "feedback": "Being visible doesn't automatically make it a real image -- flat mirror reflections are specifically virtual, even though clearly seen."},
+      {"text": "No image at all", "isCorrect": false, "feedback": "A clear image is definitely formed -- it's specifically classified as a virtual image, not the absence of an image."},
+      {"text": "A three-dimensional hologram", "isCorrect": false, "feedback": "A standard mirror reflection is a virtual image, not a hologram, which is a different and more complex optical technology."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A movie theater projector creates an image on a screen, while looking into a magnifying glass held close to an object creates an enlarged image you can see but can't project. What type of image does each represent, and why?",
+    "options": [
+      {"text": "The projector creates a real image (light actually converges on the screen); the close-up magnifying glass creates a virtual image (light only appears to diverge from behind the lens)", "isCorrect": true, "feedback": "Correct -- whether light rays truly converge (real, projectable) or only appear to originate from a point (virtual, not projectable) is the key distinguishing factor."},
+      {"text": "Both examples create the exact same type of image", "isCorrect": false, "feedback": "These are actually two different types of images, distinguished by whether the light rays truly converge or only appear to."},
+      {"text": "The projector creates a virtual image, and the magnifying glass creates a real image", "isCorrect": false, "feedback": "This has the classifications reversed -- a projected image is real, while a close-up magnifying glass image is virtual."},
+      {"text": "Neither example involves any type of image formation at all", "isCorrect": false, "feedback": "Both scenarios clearly involve genuine image formation -- they just differ in whether the image is real or virtual."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of image can be physically captured on a surface because light rays truly meet at that location.", "medium": "This is an image you could actually catch on a screen or piece of paper, since light physically meets there.", "easy": "This is an image you could actually catch on a screen, like a movie projected on a wall."},
+    "medium": {"hard": "This type of image forms where light rays only APPEAR to originate from, without physically converging there.", "medium": "This type of image only seems to be located somewhere (like behind the mirror), but light doesn't actually gather there.", "easy": "This image only seems to be behind the mirror -- light doesn't actually gather back there."},
+    "hard": {"hard": "The defining test is whether light rays physically converge at the image location (real, capturable on a screen) or merely appear to diverge from a location without actually meeting there (virtual, not capturable).", "medium": "Ask whether the light rays are actually meeting at that spot (real) or just seem to be coming from that spot without truly meeting there (virtual).", "easy": "Ask if the light is really gathering there (real image) or just seems to be coming from there (virtual image)."}
+  }
+},
+{
+  "topic": "the law of reflection",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to the law of reflection, how does the angle of incidence compare to the angle of reflection?",
+    "options": [
+      {"text": "They are always equal", "isCorrect": true, "feedback": "Correct -- the angle at which light hits a surface always equals the angle at which it bounces off."},
+      {"text": "The angle of reflection is always twice the angle of incidence", "isCorrect": false, "feedback": "This isn't the actual relationship -- the two angles are always equal, not double."},
+      {"text": "The angle of reflection is always half the angle of incidence", "isCorrect": false, "feedback": "This isn't the actual relationship -- the two angles are always equal, not half."},
+      {"text": "There is no consistent relationship between the two angles", "isCorrect": false, "feedback": "There is a very consistent, well-established relationship: the two angles are always equal."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A light ray hits a flat mirror at an angle of 30 degrees from the normal (an imaginary line perpendicular to the surface). At what angle does it reflect?",
+    "options": [
+      {"text": "30 degrees from the normal", "isCorrect": true, "feedback": "Correct -- the law of reflection states the reflected angle always equals the incident angle."},
+      {"text": "60 degrees from the normal", "isCorrect": false, "feedback": "This doesn't match the equal-angle rule of reflection."},
+      {"text": "15 degrees from the normal", "isCorrect": false, "feedback": "This doesn't match the equal-angle rule of reflection."},
+      {"text": "90 degrees from the normal", "isCorrect": false, "feedback": "This doesn't match the equal-angle rule of reflection."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does a rough, bumpy surface (like paper) scatter light in many directions, while a smooth surface (like a mirror) reflects light in one clear direction, even though both technically follow the law of reflection?",
+    "options": [
+      {"text": "On a rough surface, the tiny individual surfaces (microscopically) are angled randomly, so each follows the law of reflection locally, but the overall combined result scatters in many directions", "isCorrect": true, "feedback": "Correct -- the law of reflection still applies at each microscopic point, but the surface's irregular texture causes the overall reflected light to scatter rather than stay organized."},
+      {"text": "Rough surfaces don't actually follow the law of reflection at all", "isCorrect": false, "feedback": "The law of reflection still applies at the microscopic level on rough surfaces -- it's the irregular surface angles that cause the overall scattering effect."},
+      {"text": "Smooth surfaces absorb all the light instead of reflecting it", "isCorrect": false, "feedback": "Smooth surfaces like mirrors reflect light very effectively -- that's exactly why they can form clear images."},
+      {"text": "This has nothing to do with the surface texture at all", "isCorrect": false, "feedback": "Surface texture (smooth vs. rough) is precisely the key factor explaining this difference in reflected light behavior."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These two angles are measured from the same reference line and always match in value.", "medium": "The angle light comes in at always matches the angle it bounces off at.", "easy": "The angle light hits a mirror at always equals the angle it bounces off at."},
+    "medium": {"hard": "Apply the equal-angle rule directly using the given incoming angle.", "medium": "Since the two angles are always equal, the reflected angle matches the incoming angle exactly.", "easy": "Since the angles are always equal, the answer is also 30 degrees."},
+    "hard": {"hard": "At a microscopic scale, each tiny facet of a rough surface still obeys the equal-angle law individually, but since these facets are randomly oriented, the aggregate effect is diffuse scattering rather than a single, organized reflected beam.", "medium": "Each tiny bump on the rough surface still reflects light at an equal angle, but since the bumps point every which way, the light ends up scattered all over.", "easy": "Each tiny bump on the paper still reflects light evenly, but since the bumps point every which way, the light scatters instead of bouncing off neatly."}
+  }
+},
+{
+  "topic": "the relationship between amplitude and energy of a wave",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the amplitude of a wave generally relate to?",
+    "options": [
+      {"text": "The energy the wave carries", "isCorrect": true, "feedback": "Correct -- a larger amplitude generally means the wave carries more energy."},
+      {"text": "The wave's color only", "isCorrect": false, "feedback": "Color relates more to frequency/wavelength for light waves, not directly to amplitude."},
+      {"text": "The wave's exact location in space", "isCorrect": false, "feedback": "Amplitude describes wave height/intensity, not a specific location."},
+      {"text": "The temperature of the surrounding medium", "isCorrect": false, "feedback": "Amplitude is a property of the wave itself, not directly a measure of ambient temperature."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A loud sound and a quiet sound have the same pitch (frequency). What is different between them?",
+    "options": [
+      {"text": "The loud sound has a greater amplitude, carrying more energy", "isCorrect": true, "feedback": "Correct -- loudness corresponds to amplitude, while pitch corresponds to frequency -- two separate wave properties."},
+      {"text": "The loud sound has a higher frequency", "isCorrect": false, "feedback": "Since both sounds share the same pitch, their frequencies are the same -- loudness relates to amplitude instead."},
+      {"text": "The loud sound travels at a different speed", "isCorrect": false, "feedback": "Sound speed through a given medium doesn't change based on loudness -- amplitude, not speed, is what differs here."},
+      {"text": "There is no real difference between them", "isCorrect": false, "feedback": "There's a clear difference in amplitude (and therefore energy), even though the pitch (frequency) is the same."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For many types of waves, energy is proportional to the SQUARE of the amplitude. If a wave's amplitude doubles, what happens to its energy?",
+    "options": [
+      {"text": "The energy quadruples (increases by a factor of 4)", "isCorrect": true, "feedback": "Correct -- since energy scales with amplitude squared, doubling amplitude (2²=4) quadruples the energy."},
+      {"text": "The energy also just doubles", "isCorrect": false, "feedback": "This would be true if energy scaled linearly with amplitude, but since it scales with the SQUARE of amplitude, doubling amplitude actually quadruples the energy."},
+      {"text": "The energy stays exactly the same", "isCorrect": false, "feedback": "Increasing amplitude does increase energy -- and due to the squared relationship, quite significantly."},
+      {"text": "The energy is cut in half", "isCorrect": false, "feedback": "Increasing (not decreasing) amplitude should increase, not decrease, the wave's energy."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property describes the maximum displacement of the wave from its resting position, tied directly to how much energy it carries.", "medium": "This is how tall or intense the wave is, which relates to how much energy it's carrying.", "easy": "A bigger, taller wave usually carries more energy."},
+    "medium": {"hard": "Loudness is governed by wave amplitude, an entirely separate property from pitch, which is governed by frequency.", "medium": "Loudness comes from a different wave property (amplitude) than pitch does (frequency).", "easy": "Loudness depends on the size (amplitude) of the sound wave, not its pitch."},
+    "hard": {"hard": "Apply the squared relationship directly: square the amplitude multiplication factor to find the resulting energy multiplication factor.", "medium": "Square the number 2 (the amplitude multiplier) to find how much the energy increases.", "easy": "Square the number 2 to get 4 -- that's how much the energy increases."}
+  }
+}
+]

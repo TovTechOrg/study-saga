@@ -1,0 +1,84 @@
+[
+{
+  "topic": "the concept of relative motion (frames of reference)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If you're sitting on a moving train and toss a ball straight up, does it land back in your hand?",
+    "options": [
+      {"text": "Yes, because the ball shares the train's forward motion along with you", "isCorrect": true, "feedback": "Correct -- relative to you and the train, the ball only moves up and down, since it was already moving forward at the train's speed."},
+      {"text": "No, the ball flies backward and hits the back of the train", "isCorrect": false, "feedback": "This would only happen if the train suddenly changed speed -- moving at a constant velocity, the ball keeps pace with the train."},
+      {"text": "No, the ball flies out the window immediately", "isCorrect": false, "feedback": "The ball doesn't fly outward -- it moves along with the train's constant motion, landing back in your hand."},
+      {"text": "It depends on the color of the ball", "isCorrect": false, "feedback": "Color has no bearing on the ball's motion relative to the moving train."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two cars travel in the same direction: Car A at 60 mph and Car B at 50 mph. What is Car A's speed relative to Car B?",
+    "options": [
+      {"text": "10 mph", "isCorrect": true, "feedback": "Correct -- subtract the speeds since they're moving in the same direction: 60-50=10."},
+      {"text": "110 mph", "isCorrect": false, "feedback": "Adding the speeds would be correct if they were moving toward each other, not in the same direction."},
+      {"text": "60 mph", "isCorrect": false, "feedback": "This just repeats Car A's absolute speed, not its speed relative to Car B."},
+      {"text": "50 mph", "isCorrect": false, "feedback": "This just repeats Car B's absolute speed, not the relative speed between the two."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two trains approach each other on parallel tracks, one at 70 mph and the other at 50 mph. What is their speed relative to each other?",
+    "options": [
+      {"text": "120 mph", "isCorrect": true, "feedback": "Correct -- when moving toward each other, add the speeds: 70+50=120."},
+      {"text": "20 mph", "isCorrect": false, "feedback": "Subtracting would be correct if they were moving in the SAME direction, not toward each other."},
+      {"text": "70 mph", "isCorrect": false, "feedback": "This just repeats one train's absolute speed, not the combined relative speed."},
+      {"text": "3,500 mph", "isCorrect": false, "feedback": "This multiplies the speeds instead of adding them."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Consider the ball's motion relative to the moving reference frame it's already part of.", "medium": "Since the ball is already moving forward with the train, it doesn't need to \"catch up\" to anything.", "easy": "Since you and the ball are both already moving with the train, it just goes straight up and down for you."},
+    "medium": {"hard": "For objects moving in the same direction, subtract their speeds to find their relative speed.", "medium": "Subtract the slower speed from the faster speed.", "easy": "Subtract 50 from 60."},
+    "hard": {"hard": "For objects moving toward each other, add their speeds to find their relative closing speed.", "medium": "Add the two speeds together since they're moving toward each other.", "easy": "Add 70 and 50 together."}
+  }
+},
+{
+  "topic": "the concept of a black hole's escape velocity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What makes a black hole unique compared to other massive objects like stars?",
+    "options": [
+      {"text": "Its escape velocity exceeds the speed of light, meaning not even light can escape it", "isCorrect": true, "feedback": "Correct -- this is precisely what makes a black hole \"black\" -- no light can escape to reach an outside observer."},
+      {"text": "It has absolutely no gravity at all", "isCorrect": false, "feedback": "Black holes actually have extremely strong gravity -- that's precisely why their escape velocity is so incredibly high."},
+      {"text": "It is the coldest object in the universe", "isCorrect": false, "feedback": "Temperature isn't the defining characteristic of a black hole -- its extreme gravitational pull (and resulting escape velocity) is."},
+      {"text": "It is made of a completely different type of matter than stars", "isCorrect": false, "feedback": "Black holes typically form from the collapsed matter of massive stars -- the defining difference is their extreme density and resulting gravity, not being an exotic new matter type."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does a black hole have such an extremely high escape velocity compared to a normal star of similar mass?",
+    "options": [
+      {"text": "A black hole's mass is compressed into an extremely small volume, making its gravitational pull far more concentrated at any given distance from its center", "isCorrect": true, "feedback": "Correct -- this extreme density means you can get much closer to all that mass, experiencing much stronger gravity than a spread-out star of the same mass would produce."},
+      {"text": "A black hole actually has less mass than a typical star", "isCorrect": false, "feedback": "Black holes often form from stars with substantial mass, and their mass isn't necessarily less -- it's their extreme compactness that drives the intense gravity."},
+      {"text": "Escape velocity has nothing to do with mass or density at all", "isCorrect": false, "feedback": "Escape velocity is very much determined by both mass and how compactly that mass is arranged (which affects how close you can get to it)."},
+      {"text": "Black holes are actually much larger in physical size than stars", "isCorrect": false, "feedback": "Black holes are actually incredibly compact and small for their mass -- this compactness, not large size, is what drives their intense gravity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The boundary around a black hole beyond which nothing can escape is called the 'event horizon.' Why is this boundary specifically defined by escape velocity reaching the speed of light, rather than some other threshold?",
+    "options": [
+      {"text": "Since nothing (including light) is known to travel faster than the speed of light, once escape velocity at a given point exceeds that speed, nothing at that point or closer can ever escape", "isCorrect": true, "feedback": "Correct -- the speed of light represents the universal speed limit, making it the natural threshold defining the absolute point of no return."},
+      {"text": "The speed of light was arbitrarily chosen with no real physical significance", "isCorrect": false, "feedback": "The speed of light is specifically significant because it represents the ultimate speed limit for anything in the universe, making it the natural threshold for this boundary."},
+      {"text": "Light is actually able to escape from within the event horizon", "isCorrect": false, "feedback": "This is incorrect -- by definition, the event horizon is precisely the boundary beyond which not even light can escape."},
+      {"text": "The event horizon's location is completely random and unrelated to escape velocity", "isCorrect": false, "feedback": "The event horizon's location is specifically and precisely defined by where the escape velocity equals the speed of light -- it isn't random at all."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This object's gravity is so intense that not even the fastest possible signal can break free of it.", "medium": "This object's gravity is so strong that not even light can get away from it.", "easy": "This object's gravity is so strong that not even light can escape it."},
+    "medium": {"hard": "Gravitational strength at a given location depends on how much mass is packed within that radius -- extreme compactness allows for extreme proximity to a large amount of mass.", "medium": "All that mass being squeezed into such a tiny space means you can get much closer to it, feeling much stronger gravity than usual.", "easy": "All that mass being squeezed into such a tiny space creates much stronger gravity than a spread-out star."},
+    "hard": {"hard": "Since the speed of light is the universal maximum speed for any object or signal, a region where required escape speed exceeds it represents an absolute, physically unbreakable barrier to escape.", "medium": "Since nothing can go faster than light, once you'd need to go faster than that just to escape, there's truly no way out.", "easy": "Since nothing can go faster than light, once you'd need to go faster than light to escape, there's truly no way out."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the difference between a solvent's polarity and solubility (like dissolves like)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The rule 'like dissolves like' suggests that polar solvents (like water) tend to dissolve what kind of solutes best?",
+    "options": [
+      {"text": "Other polar substances", "isCorrect": true, "feedback": "Correct -- polar solvents generally dissolve other polar or ionic substances well."},
+      {"text": "Only nonpolar substances", "isCorrect": false, "feedback": "Nonpolar substances generally dissolve poorly in polar solvents like water -- that's the opposite of this rule."},
+      {"text": "Only metals in solid form", "isCorrect": false, "feedback": "Solid metal dissolution isn't what this general solubility rule is describing."},
+      {"text": "Nothing at all -- polar solvents dissolve nothing", "isCorrect": false, "feedback": "Polar solvents like water are actually excellent at dissolving many substances, particularly other polar or ionic ones."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Oil (nonpolar) doesn't mix well with water (polar). What does this demonstrate about the 'like dissolves like' principle?",
+    "options": [
+      {"text": "Substances with different polarities (one polar, one nonpolar) tend to not mix or dissolve well together", "isCorrect": true, "feedback": "Correct -- this mismatch in polarity is exactly why oil and water famously separate rather than mix."},
+      {"text": "Oil and water should actually mix perfectly according to this rule", "isCorrect": false, "feedback": "This is backwards -- the rule specifically predicts that mismatched polarities (like oil and water) WON'T mix well."},
+      {"text": "This principle doesn't apply to liquids at all", "isCorrect": false, "feedback": "This principle applies broadly to solubility, including liquid-liquid mixing scenarios like oil and water."},
+      {"text": "Oil has no polarity classification at all", "isCorrect": false, "feedback": "Oil is specifically classified as nonpolar -- that classification is exactly what explains its poor mixing with polar water."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Soap can help mix oil and water together because soap molecules have both a polar (hydrophilic) end and a nonpolar (hydrophobic) end. How does this dual structure allow soap to bridge the two substances?",
+    "options": [
+      {"text": "The nonpolar end of soap molecules surrounds oil droplets while the polar end interacts with water, effectively linking the two otherwise incompatible substances together", "isCorrect": true, "feedback": "Correct -- this dual-affinity structure is exactly what allows soap to act as an emulsifier, letting oil and water mix in a stable way."},
+      {"text": "Soap actually removes all polarity from both oil and water", "isCorrect": false, "feedback": "Soap doesn't eliminate polarity from either substance -- its own dual-ended structure is what bridges the two, not by altering their inherent properties."},
+      {"text": "Soap molecules are entirely nonpolar, just like oil", "isCorrect": false, "feedback": "Soap molecules specifically have BOTH a polar and a nonpolar end -- that dual nature is exactly what gives it its bridging ability."},
+      {"text": "This has nothing to do with polarity at all", "isCorrect": false, "feedback": "This effect is entirely explained by soap's dual-polarity molecular structure, directly relevant to the like-dissolves-like principle."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Substances sharing a similar charge-distribution pattern tend to interact and blend most effectively.", "medium": "Substances with a similar type of charge distribution tend to mix well together.", "easy": "Similar types of substances tend to mix well together."},
+    "medium": {"hard": "Consider whether these two substances share the same or different type of charge distribution across their molecules.", "medium": "Water is polar and oil is nonpolar -- think about whether \"like dissolves like\" predicts they'd mix or not.", "easy": "Since oil and water are different types (nonpolar vs polar), think about whether they'd mix well."},
+    "hard": {"hard": "Soap's amphiphilic structure (having both hydrophilic and hydrophobic regions) lets one end associate with each of the two otherwise-incompatible substances, forming a stable connecting bridge.", "medium": "One end of the soap molecule likes to stick to oil, and the other end likes to stick to water, connecting the two together.", "easy": "One end of the soap molecule sticks to oil, and the other end sticks to water, connecting the two."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of an adaptation as a result of natural selection",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a biological adaptation?",
+    "options": [
+      {"text": "An inherited trait that helps an organism survive and reproduce in its environment", "isCorrect": true, "feedback": "Correct -- adaptations arise over generations through natural selection favoring helpful traits."},
+      {"text": "A trait an individual organism develops during its own lifetime through practice", "isCorrect": false, "feedback": "That describes a learned skill or acquired characteristic, not a genetically inherited adaptation shaped by natural selection."},
+      {"text": "A random trait with no connection to survival at all", "isCorrect": false, "feedback": "Adaptations specifically DO relate to improved survival or reproduction -- they aren't just any random trait."},
+      {"text": "A trait found only in plants, never animals", "isCorrect": false, "feedback": "Adaptations occur in both plants and animals (and all other living things), not exclusively in plants."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A cactus has thick, waxy skin and spines instead of broad leaves. How do these features function as adaptations to its desert environment?",
+    "options": [
+      {"text": "The waxy skin reduces water loss, and spines (reduced leaf surface) further minimize water loss while also deterring animals from eating the plant", "isCorrect": true, "feedback": "Correct -- both features specifically help the cactus conserve scarce water and avoid being eaten, both key challenges in a desert environment."},
+      {"text": "These features have no actual survival benefit for the cactus", "isCorrect": false, "feedback": "These features actually provide clear, well-documented survival benefits specifically suited to a dry desert environment."},
+      {"text": "These features exist only for decoration, with no functional purpose", "isCorrect": false, "feedback": "These features serve real functional purposes (water conservation, defense), not merely decorative ones."},
+      {"text": "These features would work equally well in a rainforest environment", "isCorrect": false, "feedback": "These particular adaptations are specifically suited to arid, water-scarce conditions -- broad leaves would likely be more advantageous in a wet rainforest."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Adaptations arise through natural selection acting on random genetic variation, not through an organism intentionally developing a trait it needs. How would this process explain the evolution of camouflage coloring in a prey species?",
+    "options": [
+      {"text": "Random genetic variation would occasionally produce individuals with coloring that blended in better with their surroundings, and these individuals would tend to survive predation and reproduce more, gradually increasing the camouflage trait's frequency in the population", "isCorrect": true, "feedback": "Correct -- this describes natural selection acting on pre-existing random variation, not an organism purposefully choosing to develop camouflage."},
+      {"text": "The prey species consciously decided it needed camouflage and grew it deliberately", "isCorrect": false, "feedback": "This describes an intentional, need-based development, which contradicts how natural selection actually works on random, pre-existing variation."},
+      {"text": "All individuals in the species developed identical camouflage simultaneously through sheer coincidence", "isCorrect": false, "feedback": "Natural selection acts gradually on random variation ALREADY PRESENT in some individuals -- it doesn't cause simultaneous identical changes across an entire population at once."},
+      {"text": "Camouflage coloring has no connection to natural selection or survival advantage", "isCorrect": false, "feedback": "Camouflage coloring is actually a classic, well-documented example specifically resulting from natural selection favoring a survival advantage."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of trait is passed down genetically and specifically improves an organism's fitness within its environment.", "medium": "This is a trait passed down through genes that helps an organism do better in its surroundings.", "easy": "This is a trait that helps an animal or plant survive better where it lives."},
+    "medium": {"hard": "Consider each feature's specific role in reducing moisture loss and physically deterring herbivores in an arid, resource-scarce setting.", "medium": "Think about what problems a desert plant faces (not enough water, hungry animals) and how each feature might help with one of those.", "easy": "Think about the two big problems desert plants face: not enough water, and animals wanting to eat them."},
+    "hard": {"hard": "This illustrates the core mechanism of natural selection: pre-existing random variation is filtered by differential survival and reproduction, gradually shifting population-wide trait frequencies over generations, without any conscious intent involved.", "medium": "Some individuals just happened to already have better camouflage by chance, and those individuals survived and had more babies, spreading that trait over time.", "easy": "Some individuals just happened to already have better camouflage, and they survived and had more babies, spreading that trait over time."}
+  }
+}
+]

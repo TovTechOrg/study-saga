@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between ideal and real gas deviations at low temperature",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Real gases most closely approximate 'ideal gas' behavior (as predicted by the ideal gas law) under which general conditions?",
+    "options": [
+      {"text": "High temperature and low pressure", "isCorrect": true, "feedback": "Correct -- under these conditions, gas particles are far apart and moving fast, making intermolecular forces and particle volume relatively negligible, closely matching the ideal gas model's assumptions."},
+      {"text": "Low temperature and high pressure", "isCorrect": false, "feedback": "This is backwards -- LOW temperature and HIGH pressure conditions are specifically when real gases DEVIATE MOST from ideal behavior, not when they most closely approximate it."},
+      {"text": "Real gases actually never approximate ideal gas behavior under any conditions", "isCorrect": false, "feedback": "This isn't accurate -- real gases DO closely approximate ideal behavior under certain specific conditions (high temperature, low pressure), not never."},
+      {"text": "Temperature and pressure have no actual connection to how closely a real gas approximates ideal behavior", "isCorrect": false, "feedback": "This isn't accurate -- temperature and pressure conditions are DIRECTLY and significantly connected to determining how closely a real gas's behavior approximates the ideal gas model."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "At very LOW temperatures, real gas particles move much more slowly than at higher temperatures. Why does this slower particle motion specifically make previously negligible intermolecular attractive forces become MORE significant, causing greater deviation from ideal gas behavior?",
+    "options": [
+      {"text": "At high speeds (high temperature), particles' kinetic energy easily overcomes weak intermolecular attractions, but as particles slow down (low temperature), these same attractive forces have proportionally more influence on particle motion/trajectory, since there's less kinetic energy available to overcome them", "isCorrect": true, "feedback": "Correct -- this relationship between particle kinetic energy (tied to temperature) and the relative significance of intermolecular attractive forces is precisely why low temperatures cause greater deviation from the ideal gas model's assumption of negligible intermolecular forces."},
+      {"text": "Intermolecular attractive forces actually become WEAKER (not stronger in relative significance) at lower temperatures", "isCorrect": false, "feedback": "This isn't accurate -- while the ABSOLUTE strength of intermolecular forces themselves doesn't necessarily change dramatically with temperature, their RELATIVE INFLUENCE on particle motion becomes MORE significant at lower temperatures (less kinetic energy to overcome them), not less significant."},
+      {"text": "Particle speed has no actual connection to the relative significance of intermolecular attractive forces", "isCorrect": false, "feedback": "This isn't accurate -- particle speed (directly tied to temperature) is DIRECTLY connected to and determines the relative significance of intermolecular attractive forces on overall particle behavior."},
+      {"text": "Real gases actually deviate LESS from ideal behavior at low temperatures, not more", "isCorrect": false, "feedback": "This is backwards -- real gases actually deviate MORE (not less) from ideal gas behavior specifically at LOW temperatures, precisely due to the increased relative significance of intermolecular attractive forces under these conditions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "As a real gas is cooled to sufficiently low temperatures (and/or compressed to sufficiently high pressures), it will eventually condense into a liquid -- a phase transition the IDEAL gas model doesn't account for at all (since ideal gas particles are assumed to have negligible volume and no intermolecular attraction, theoretically never condensing). Why does this eventual liquid phase transition represent perhaps the most extreme, definitive example of real gas behavior diverging from ideal gas predictions?",
+    "options": [
+      {"text": "While the ideal gas model can still provide reasonably close APPROXIMATIONS under certain limited conditions (like high temperature/low pressure), the ideal model fundamentally CANNOT predict or account for a phase transition (like condensation to liquid) at all, representing a complete qualitative breakdown of the model's core underlying assumptions, not merely a quantitative approximation error", "isCorrect": true, "feedback": "Correct -- this recognition (that real gas condensation represents a fundamental QUALITATIVE limitation of the ideal gas model, not simply a quantitative approximation inaccuracy) highlights an important boundary regarding where and how the useful but ultimately simplified ideal gas model breaks down entirely for real substances."},
+      {"text": "The ideal gas model actually successfully predicts and accounts for gas condensation into liquid under appropriate conditions", "isCorrect": false, "feedback": "This isn't accurate -- the IDEAL gas model specifically CANNOT predict or account for condensation into a liquid phase at all, since its foundational assumptions (negligible particle volume, no intermolecular attraction) are fundamentally incompatible with liquid formation."},
+      {"text": "Real gases actually never undergo condensation into a liquid phase under any temperature or pressure conditions", "isCorrect": false, "feedback": "This isn't accurate -- real gases absolutely CAN and DO undergo condensation into a liquid phase under sufficiently low temperature and/or high pressure conditions, which is a very real, well-documented phenomenon."},
+      {"text": "This phase transition limitation has no actual connection to the fundamental underlying assumptions of the ideal gas model", "isCorrect": false, "feedback": "This isn't accurate -- this phase transition limitation is DIRECTLY and fundamentally connected to and stems specifically from the core underlying assumptions (negligible particle volume, no intermolecular attraction) built into the ideal gas model."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Real gas behavior most closely approximates theoretical ideal predictions under conditions of maximized particle kinetic energy and minimized particle density.", "medium": "Real gases act most like the 'perfect' theoretical model when they're hot and spread out.", "easy": "Real gases act most like the theoretical model when hot and spread out."},
+    "medium": {"hard": "Consider how the ratio of average kinetic energy to intermolecular attractive potential energy shifts as temperature (and thus particle speed) decreases.", "medium": "When particles are zooming around fast, they barely notice the weak pulls between them, but when they slow way down, those same pulls start to matter a lot more.", "easy": "When particles slow way down, the weak pulls between them start to matter a lot more."},
+    "hard": {"hard": "Consider the distinction between a model providing increasingly inaccurate but still qualitatively similar numerical predictions versus a model being fundamentally incapable of describing an entirely different physical phenomenon (a phase transition) altogether.", "medium": "The simple gas model isn't just a little bit off at that point -- it completely can't explain the liquid forming at all, since its whole setup assumes that could never happen.", "easy": "The simple gas model can't explain liquid forming at all, since its whole setup assumes that could never happen."}
+  }
+}
+]

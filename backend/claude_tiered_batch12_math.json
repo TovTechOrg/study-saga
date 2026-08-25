@@ -1,0 +1,207 @@
+[
+{
+  "topic": "finding the missing angle in a quadrilateral",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the sum of the interior angles of any quadrilateral?",
+    "options": [
+      {"text": "360 degrees", "isCorrect": true, "feedback": "Correct -- all four interior angles of any quadrilateral always add up to 360 degrees."},
+      {"text": "180 degrees", "isCorrect": false, "feedback": "180 degrees is the sum for a triangle, not a quadrilateral."},
+      {"text": "90 degrees", "isCorrect": false, "feedback": "90 degrees is a single right angle, far less than the total for a whole quadrilateral."},
+      {"text": "720 degrees", "isCorrect": false, "feedback": "This is double the correct total for a quadrilateral."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A quadrilateral has three angles measuring 80, 95, and 100 degrees. What is the fourth angle?",
+    "options": [
+      {"text": "85 degrees", "isCorrect": true, "feedback": "Correct -- 360-80-95-100=85."},
+      {"text": "95 degrees", "isCorrect": false, "feedback": "This just repeats one of the given angles instead of solving for the missing one."},
+      {"text": "275 degrees", "isCorrect": false, "feedback": "This is the sum of the three given angles, not the value of the fourth angle."},
+      {"text": "80 degrees", "isCorrect": false, "feedback": "This just repeats one of the given angles instead of solving for the missing one."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A quadrilateral has angles in the ratio 2:3:4:3. What is the measure of the largest angle?",
+    "options": [
+      {"text": "120 degrees", "isCorrect": true, "feedback": "Correct -- the ratio parts sum to 12, so each part is 360÷12=30, and the largest ratio number (4) gives 4×30=120."},
+      {"text": "90 degrees", "isCorrect": false, "feedback": "This doesn't match correctly applying the 2:3:4:3 ratio to a total of 360."},
+      {"text": "60 degrees", "isCorrect": false, "feedback": "This is the value of one \"part\" doubled, not the actual largest angle."},
+      {"text": "180 degrees", "isCorrect": false, "feedback": "This overstates the largest angle -- it doesn't correctly divide 360 by the total ratio parts."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This total holds true regardless of the specific quadrilateral's shape or size.", "medium": "This is a fixed total that never changes for any four-sided shape.", "easy": "All four angles in a quadrilateral always add up to this same number."},
+    "medium": {"hard": "Subtract all three known angles from the fixed total that all quadrilateral angles must sum to.", "medium": "Subtract 80, 95, and 100 from 360.", "easy": "Subtract all three given angles from 360 to find the missing one."},
+    "hard": {"hard": "Divide the total by the sum of the ratio parts to find the value of one part, then multiply by the largest ratio number.", "medium": "Add 2+3+4+3 to get 12 parts, divide 360 by 12, then multiply by 4 for the largest angle.", "easy": "Divide 360 by 12 (the sum of the ratio numbers) to get 30, then multiply by 4."}
+  }
+},
+{
+  "topic": "converting units of time",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "How many minutes are in 2 hours?",
+    "options": [
+      {"text": "120", "isCorrect": true, "feedback": "Correct -- there are 60 minutes in an hour, so 2×60=120."},
+      {"text": "60", "isCorrect": false, "feedback": "This is the number of minutes in just 1 hour, not 2."},
+      {"text": "12", "isCorrect": false, "feedback": "This is far too small -- it doesn't correctly multiply hours by 60."},
+      {"text": "200", "isCorrect": false, "feedback": "This doesn't match correctly multiplying 2 by 60."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How many seconds are in 5 minutes?",
+    "options": [
+      {"text": "300", "isCorrect": true, "feedback": "Correct -- there are 60 seconds in a minute, so 5×60=300."},
+      {"text": "50", "isCorrect": false, "feedback": "This doesn't correctly multiply 5 by 60."},
+      {"text": "500", "isCorrect": false, "feedback": "This doesn't match correctly multiplying 5 by 60."},
+      {"text": "60", "isCorrect": false, "feedback": "This is the number of seconds in just 1 minute, not 5."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A movie is 2 hours and 15 minutes long. How many total minutes is that?",
+    "options": [
+      {"text": "135 minutes", "isCorrect": true, "feedback": "Correct -- 2 hours is 120 minutes, plus the additional 15 minutes gives 135."},
+      {"text": "215 minutes", "isCorrect": false, "feedback": "This incorrectly treats the '2' and '15' as if they were just concatenated rather than converted and added."},
+      {"text": "120 minutes", "isCorrect": false, "feedback": "This forgets to add the extra 15 minutes."},
+      {"text": "150 minutes", "isCorrect": false, "feedback": "This doesn't match correctly converting 2 hours to 120 minutes before adding 15."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply the number of hours by the fixed number of minutes in each hour.", "medium": "Multiply the number of hours by 60.", "easy": "Multiply 2 by 60."},
+    "medium": {"hard": "Multiply the number of minutes by the fixed number of seconds in each minute.", "medium": "Multiply the number of minutes by 60.", "easy": "Multiply 5 by 60."},
+    "hard": {"hard": "Convert the hour portion into minutes first, then add any remaining minutes to that converted value.", "medium": "Convert 2 hours into minutes (120), then add the extra 15 minutes.", "easy": "Multiply 2 by 60 to get 120, then add 15."}
+  }
+},
+{
+  "topic": "finding the perimeter and area of composite shapes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A composite shape is made by combining what?",
+    "options": [
+      {"text": "Two or more simple shapes joined together", "isCorrect": true, "feedback": "Correct -- a composite shape combines simpler shapes like rectangles and triangles into one larger figure."},
+      {"text": "A single perfect circle only", "isCorrect": false, "feedback": "A composite shape involves combining multiple shapes, not just a single circle."},
+      {"text": "Only straight lines with no enclosed area", "isCorrect": false, "feedback": "A composite shape is an enclosed 2D figure made of combined simple shapes, not just disconnected lines."},
+      {"text": "A shape that has no area or perimeter at all", "isCorrect": false, "feedback": "Composite shapes definitely have both a calculable area and perimeter, like any other 2D figure."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A shape is made of a rectangle (6 by 4) with a triangle (base 6, height 3) attached on top. What is the total area?",
+    "options": [
+      {"text": "33 square units", "isCorrect": true, "feedback": "Correct -- rectangle area (6×4=24) plus triangle area (½×6×3=9) gives 24+9=33."},
+      {"text": "24 square units", "isCorrect": false, "feedback": "This only includes the rectangle's area, forgetting to add the triangle's area."},
+      {"text": "42 square units", "isCorrect": false, "feedback": "This doesn't correctly compute and add both individual shape areas."},
+      {"text": "18 square units", "isCorrect": false, "feedback": "This only includes the triangle's area doubled, forgetting the rectangle entirely."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An L-shaped room is formed by a 10×8 rectangle with a 4×3 rectangular corner cut out of it. What is the remaining area?",
+    "options": [
+      {"text": "68 square units", "isCorrect": true, "feedback": "Correct -- the full rectangle (10×8=80) minus the cut-out corner (4×3=12) gives 80-12=68."},
+      {"text": "80 square units", "isCorrect": false, "feedback": "This ignores the cut-out corner entirely."},
+      {"text": "92 square units", "isCorrect": false, "feedback": "This adds the cut-out area instead of subtracting it."},
+      {"text": "12 square units", "isCorrect": false, "feedback": "This is only the area of the cut-out piece, not the remaining L-shaped area."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of figure results from joining multiple basic geometric shapes into one combined figure.", "medium": "This shape is built by combining simpler shapes, like a rectangle and a triangle together.", "easy": "This is a shape made by joining simple shapes together, like a house shape made of a square and triangle."},
+    "medium": {"hard": "Calculate the area of each individual simple shape separately, then add those areas together.", "medium": "Find the rectangle's area and the triangle's area separately, then add them.", "easy": "Multiply 6 by 4 for the rectangle, find the triangle area separately, then add them together."},
+    "hard": {"hard": "Calculate the area of the full outer shape, then subtract the area of the missing cut-out piece.", "medium": "Find the area of the full rectangle, then subtract the area of the cut-out corner.", "easy": "Multiply 10 by 8, then subtract 4 times 3."}
+  }
+},
+{
+  "topic": "identifying prime and composite numbers",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a prime number?",
+    "options": [
+      {"text": "A number greater than 1 with exactly two factors: 1 and itself", "isCorrect": true, "feedback": "Correct -- prime numbers like 2, 3, 5, and 7 cannot be evenly divided by any other whole number."},
+      {"text": "Any even number", "isCorrect": false, "feedback": "Most even numbers (besides 2) are NOT prime, since they can be divided by 2 as well as 1 and themselves."},
+      {"text": "A number that can be divided evenly by many different numbers", "isCorrect": false, "feedback": "That describes a composite number, the opposite of prime."},
+      {"text": "Any number ending in 1, 3, 7, or 9", "isCorrect": false, "feedback": "Ending digit alone doesn't determine primality -- for example, 9 and 21 end in these digits but aren't prime."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following numbers is prime?",
+    "options": [
+      {"text": "17", "isCorrect": true, "feedback": "Correct -- 17 can only be evenly divided by 1 and 17."},
+      {"text": "15", "isCorrect": false, "feedback": "15 can be divided evenly by 3 and 5, in addition to 1 and 15, making it composite."},
+      {"text": "21", "isCorrect": false, "feedback": "21 can be divided evenly by 3 and 7, in addition to 1 and 21, making it composite."},
+      {"text": "9", "isCorrect": false, "feedback": "9 can be divided evenly by 3, in addition to 1 and 9, making it composite."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is the number 1 not considered a prime number, even though its only factor is itself?",
+    "options": [
+      {"text": "The definition of a prime number requires exactly TWO distinct factors (1 and itself), but 1 only has one factor total", "isCorrect": true, "feedback": "Correct -- since 1's only factor is itself (1=1), it fails to meet the \"exactly two distinct factors\" requirement that defines primes."},
+      {"text": "1 is actually considered a prime number in modern mathematics", "isCorrect": false, "feedback": "By mathematical convention, 1 is specifically excluded from being classified as prime."},
+      {"text": "1 is too large a number to be considered prime", "isCorrect": false, "feedback": "Size isn't the reason -- it's specifically about how many distinct factors the number has."},
+      {"text": "There is no real mathematical reason -- it's just an arbitrary rule", "isCorrect": false, "feedback": "There's a specific, principled mathematical reason: primes are defined by having exactly two distinct factors, which 1 doesn't satisfy."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of number cannot be evenly divided by anything except 1 and its own value.", "medium": "This type of number can't be evenly divided by anything except 1 and itself.", "easy": "This number can only be divided evenly by 1 and itself."},
+    "medium": {"hard": "Check whether any number other than 1 and the number itself divides evenly into it.", "medium": "Check each option to see if any smaller number besides 1 divides evenly into it.", "easy": "Check if 17 can be divided evenly by anything besides 1 and 17."},
+    "hard": {"hard": "Primality specifically requires exactly two DISTINCT factors -- since 1's only factor is itself, it has just one distinct factor, not two.", "medium": "Being prime means having exactly two different factors, but 1 only really has one factor (itself), not two.", "easy": "Being prime needs exactly two different factors, but 1 only has one -- itself."}
+  }
+},
+{
+  "topic": "exponential growth (basic doubling patterns)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A population of bacteria doubles every hour, starting at 10. How many bacteria are there after 1 hour?",
+    "options": [
+      {"text": "20", "isCorrect": true, "feedback": "Correct -- doubling 10 gives 20."},
+      {"text": "11", "isCorrect": false, "feedback": "This just adds 1, not doubling the population."},
+      {"text": "100", "isCorrect": false, "feedback": "This multiplies by 10 instead of doubling."},
+      {"text": "10", "isCorrect": false, "feedback": "This shows no growth at all, but the population is supposed to double."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A population of bacteria doubles every hour, starting at 10. How many bacteria are there after 3 hours?",
+    "options": [
+      {"text": "80", "isCorrect": true, "feedback": "Correct -- 10→20→40→80, doubling each hour for 3 hours."},
+      {"text": "40", "isCorrect": false, "feedback": "This only accounts for 2 hours of doubling, not 3."},
+      {"text": "30", "isCorrect": false, "feedback": "This just adds 10 three times, rather than doubling repeatedly."},
+      {"text": "60", "isCorrect": false, "feedback": "This doesn't match correctly doubling three separate times."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A population starts at 5 and doubles every hour. Using the formula P = P₀ × 2ⁿ, what is the population after 5 hours?",
+    "options": [
+      {"text": "160", "isCorrect": true, "feedback": "Correct -- 5×2⁵=5×32=160."},
+      {"text": "50", "isCorrect": false, "feedback": "This doesn't correctly apply the exponential doubling formula."},
+      {"text": "25", "isCorrect": false, "feedback": "This just multiplies 5 by 5 rather than applying the doubling exponent correctly."},
+      {"text": "80", "isCorrect": false, "feedback": "This only accounts for 4 hours of doubling, not 5."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply the starting value by 2 for each time period that passes.", "medium": "Multiply the starting number by 2 once.", "easy": "Double 10 to get the answer."},
+    "medium": {"hard": "Multiply the starting value by 2 repeatedly, once for each hour that passes.", "medium": "Double the population three separate times in a row.", "easy": "Double 10, then double that result, then double it once more."},
+    "hard": {"hard": "Raise 2 to the power equal to the number of doubling periods, then multiply by the initial starting value.", "medium": "Calculate 2 to the 5th power, then multiply that by the starting value of 5.", "easy": "Calculate 2×2×2×2×2 (which is 32), then multiply by 5."}
+  }
+}
+]

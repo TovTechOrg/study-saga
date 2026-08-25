@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between longitudinal and transverse wave energy transport",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Both transverse and longitudinal waves are capable of transporting:",
+    "options": [
+      {"text": "Energy, without necessarily transporting the actual medium/matter itself along with it", "isCorrect": true, "feedback": "Correct -- both wave types transfer energy through a medium via particle oscillation, without the particles themselves undergoing net long-distance travel alongside the wave."},
+      {"text": "Physical matter, which permanently travels along with the wave from start to end", "isCorrect": false, "feedback": "This isn't accurate -- waves specifically transport ENERGY through a medium's oscillating particles, without those particles themselves undergoing net permanent long-distance transport alongside the wave."},
+      {"text": "Nothing at all -- waves don't actually transport anything meaningful", "isCorrect": false, "feedback": "This isn't accurate -- waves DO transport something meaningful and significant: ENERGY, even without transporting the actual matter/medium itself long-distance."},
+      {"text": "Only electrical charge, and nothing else", "isCorrect": false, "feedback": "This isn't accurate -- while some specific WAVE types (like electromagnetic waves) involve electric/magnetic fields, the general, broader concept of wave energy transport isn't specifically or exclusively about electrical charge."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When a wave passes through a medium (like a water wave passing a floating cork, or a sound wave passing through air), individual particles of that medium oscillate around a fixed average position, rather than traveling along with the wave to its final destination. Why does this particle behavior (oscillating in place, not traveling with the wave) make sense, given that waves are specifically understood as ENERGY transport mechanisms, not matter transport mechanisms?",
+    "options": [
+      {"text": "Since a wave's fundamental purpose/mechanism is to transfer ENERGY from one location to another (through the medium's particles interacting with and influencing their neighbors), the individual particles themselves only need to oscillate/vibrate in place (passing that energy along to adjacent particles) rather than needing to physically travel the wave's entire distance themselves", "isCorrect": true, "feedback": "Correct -- this important conceptual distinction (energy transport via a relay-like mechanism of local particle oscillation, rather than bulk matter transport) is fundamental to correctly understanding how waves actually work, explaining why a floating cork bobs up and down in place rather than being carried along by a passing water wave."},
+      {"text": "Individual medium particles actually DO travel the wave's entire distance alongside the energy being transported", "isCorrect": false, "feedback": "This isn't accurate -- individual particles specifically OSCILLATE IN PLACE (around a fixed average position), rather than traveling the wave's ENTIRE distance -- this is precisely the key distinguishing characteristic of how waves transport energy without bulk matter transport."},
+      {"text": "This particle oscillation behavior has no actual connection to the fundamental understanding of waves as energy transport mechanisms", "isCorrect": false, "feedback": "This isn't accurate -- this particle oscillation behavior is DIRECTLY and centrally connected to and is precisely CONSISTENT WITH the fundamental understanding of waves as energy (not matter) transport mechanisms."},
+      {"text": "Waves are actually fundamentally about transporting matter, not energy, contrary to what's being described", "isCorrect": false, "feedback": "This is backwards -- waves are fundamentally understood as ENERGY transport mechanisms (not primarily matter transport mechanisms), which is precisely why individual medium particles oscillate in place rather than traveling along with the wave."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A tsunami (a very long-wavelength ocean wave) can travel across an entire ocean basin, transporting enormous energy over thousands of kilometers, yet the actual water molecules at any given point still only oscillate locally (in a roughly circular/elliptical pattern for water waves), not traveling the wave's entire journey. Why is understanding this distinction (energy travels far; individual water molecules don't) particularly important for correctly understanding a tsunami's actual danger/destructive mechanism upon reaching shore?",
+    "options": [
+      {"text": "Since it's specifically the wave's transported ENERGY (not the same water molecules that started at the wave's origin point) that ultimately arrives at the shore, correctly understanding a tsunami's danger requires focusing on how that transported ENERGY manifests as a destructive surge/force upon reaching shallow coastal water (where wave behavior changes dramatically), rather than mistakenly picturing the SAME specific water physically traveling the entire ocean-crossing distance", "isCorrect": true, "feedback": "Correct -- this important conceptual clarification (energy transport vs. matter transport) is directly relevant for accurately understanding the actual physical mechanism behind a tsunami's destructive power upon reaching shore, correcting a common intuitive misconception about how these massive, dangerous waves actually work."},
+      {"text": "Tsunamis actually work by having the SAME specific water molecules travel the entire ocean-crossing distance from origin to shore", "isCorrect": false, "feedback": "This isn't accurate -- like other waves, tsunamis specifically transport ENERGY across the ocean, with individual water molecules only oscillating LOCALLY, not literally traveling the entire ocean-crossing distance themselves."},
+      {"text": "This energy-vs-matter transport distinction has no actual relevance for understanding a tsunami's real-world danger or destructive mechanism", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has SIGNIFICANT relevance for correctly and accurately understanding a tsunami's actual destructive mechanism, which specifically involves transported ENERGY manifesting as a dangerous surge upon reaching shallow coastal water, not simply the arrival of specific traveled water molecules."},
+      {"text": "Tsunamis are actually fundamentally different from all other types of waves, with no shared underlying wave energy-transport principles", "isCorrect": false, "feedback": "This isn't accurate -- tsunamis, despite their enormous scale and destructive power, still fundamentally operate according to the SAME basic wave energy-transport principles (energy travels; individual medium particles oscillate locally) as other, more everyday wave phenomena."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Wave propagation fundamentally constitutes an energy-relay mechanism through medium oscillation, decoupled from any requirement for bulk material displacement.", "medium": "Waves carry energy from place to place, but they don't necessarily carry the actual stuff (matter) itself along with them.", "easy": "Waves carry energy from place to place without carrying the actual matter along with them."},
+    "medium": {"hard": "Consider how a wave's defining energy-transport function can be fully accomplished through localized particle-to-particle energy relay, without requiring any individual particle to undergo net long-range displacement.", "medium": "Think of it like a stadium wave -- each person just stands up and sits back down in their own seat, but the 'wave' itself visibly travels all the way around the stadium.", "easy": "Think of a stadium wave -- each person stays in their seat, but the wave itself travels around."},
+    "hard": {"hard": "Consider how correctly attributing the tsunami's destructive capability to transported energy (rather than the specific traveled water mass) reframes understanding of the actual physical mechanism producing coastal destruction upon arrival.", "medium": "It's not that the exact same water from way out in the ocean smashes into the shore -- it's that the huge amount of ENERGY that traveled all that way finally gets unleashed as a destructive surge once it reaches shallow water near land.", "easy": "It's not the exact same water traveling that far -- it's the huge energy that traveled, unleashed as a surge near shore."}
+  }
+}
+]

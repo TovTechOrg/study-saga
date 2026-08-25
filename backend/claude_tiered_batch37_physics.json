@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a transformer changing voltage using electromagnetism",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main function of an electrical transformer?",
+    "options": [
+      {"text": "To change (step up or step down) the voltage of an alternating current", "isCorrect": true, "feedback": "Correct -- transformers use electromagnetic induction to increase or decrease AC voltage."},
+      {"text": "To convert AC to DC power", "isCorrect": false, "feedback": "That's the job of a rectifier, not a transformer -- transformers specifically adjust voltage levels of AC power."},
+      {"text": "To store electrical energy for later use", "isCorrect": false, "feedback": "Energy storage is the role of something like a battery or capacitor, not a transformer's primary function."},
+      {"text": "To generate electricity from scratch", "isCorrect": false, "feedback": "Transformers don't generate new electricity -- they modify the voltage of existing electrical current."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do power companies use transformers to increase voltage to very high levels for long-distance electricity transmission, then decrease it again before it reaches homes?",
+    "options": [
+      {"text": "Higher voltage (with correspondingly lower current) reduces energy lost as heat during transmission over long distances, improving overall efficiency", "isCorrect": true, "feedback": "Correct -- since power loss depends on current squared, transmitting at high voltage/low current significantly reduces wasted energy, even though the voltage must later be stepped back down for safe home use."},
+      {"text": "Higher voltage makes electricity travel through wires more slowly", "isCorrect": false, "feedback": "Voltage level doesn't primarily affect the speed of electrical signal transmission in this context -- the key benefit is reduced energy loss during transmission."},
+      {"text": "This voltage adjustment has no real practical benefit", "isCorrect": false, "feedback": "This is actually a critically important and widely used practice specifically for improving the efficiency of long-distance electrical transmission."},
+      {"text": "High voltage is used purely because it looks impressive on power lines", "isCorrect": false, "feedback": "This isn't about appearance -- it's a genuine engineering strategy for minimizing energy loss during transmission."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A transformer works by using a changing magnetic field in one coil to induce a voltage in a separate, nearby coil, without any direct electrical connection between them. Why does this design specifically require alternating current (AC), and not direct current (DC)?",
+    "options": [
+      {"text": "The induction process requires a continuously CHANGING magnetic field, which only a continuously varying AC current can produce -- a steady DC current would create a constant, unchanging magnetic field, generating no induced voltage", "isCorrect": true, "feedback": "Correct -- electromagnetic induction specifically depends on change over time, which is why transformers work with AC but not with steady DC current."},
+      {"text": "Transformers actually work equally well with both AC and DC power", "isCorrect": false, "feedback": "This is incorrect -- transformers specifically require AC power because of the need for a continuously changing magnetic field, which DC alone cannot provide."},
+      {"text": "DC current is too dangerous to use in any transformer", "isCorrect": false, "feedback": "Safety isn't the reason -- the fundamental issue is that DC produces a constant (non-changing) magnetic field, which cannot induce a voltage through this mechanism."},
+      {"text": "This has nothing to do with magnetic fields or induction at all", "isCorrect": false, "feedback": "This is actually entirely explained by the physics of electromagnetic induction, which specifically requires a changing magnetic field."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This device relies on electromagnetic induction between two separate coils to adjust electrical voltage levels.", "medium": "This device changes how strong the electrical \"push\" (voltage) is in a power line.", "easy": "This device changes how strong the electrical push (voltage) is."},
+    "medium": {"hard": "Power loss during transmission scales with the square of the current, so higher voltage (and correspondingly lower current for the same power) dramatically reduces resistive heating losses in the wires.", "medium": "Sending power at higher voltage but lower current wastes a lot less energy as heat along the long wires.", "easy": "Sending power at higher voltage wastes a lot less energy as heat along the long wires."},
+    "hard": {"hard": "Electromagnetic induction is fundamentally based on the RATE OF CHANGE of a magnetic field -- a constant DC current produces a static field with zero rate of change, generating no induced EMF in the neighboring coil.", "medium": "Making a voltage appear in the second coil requires the magnetic field to keep changing, which only happens with the constantly varying AC current, not steady DC.", "easy": "The magnetic field has to keep changing to make this work, and only AC current does that, not steady DC."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between speed and velocity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What key element distinguishes velocity from speed?",
+    "options": [
+      {"text": "Velocity includes direction, while speed is only a magnitude (how fast, without direction)", "isCorrect": true, "feedback": "Correct -- speed is a scalar quantity (magnitude only), while velocity is a vector quantity (magnitude AND direction)."},
+      {"text": "Speed includes direction, while velocity does not", "isCorrect": false, "feedback": "This is backwards -- VELOCITY is the one that includes direction; speed is direction-independent, just a magnitude."},
+      {"text": "Speed and velocity are always exactly identical, with no distinction", "isCorrect": false, "feedback": "These are genuinely distinct physical quantities -- velocity specifically includes directional information that speed does not."},
+      {"text": "Velocity can only be measured for objects at rest", "isCorrect": false, "feedback": "Velocity is specifically relevant to MOVING objects (it describes their rate and direction of motion), not objects at rest."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A car drives around a circular track at a perfectly constant speed of 60 mph. Is its velocity also constant throughout the drive?",
+    "options": [
+      {"text": "No, since the car's direction is continuously changing as it goes around the circular track, its velocity is also continuously changing, even though its speed remains constant", "isCorrect": true, "feedback": "Correct -- since velocity is a vector requiring both magnitude AND direction, a constantly changing direction (as on a circular path) means velocity is NOT constant, even if speed (magnitude alone) is."},
+      {"text": "Yes, since speed is constant, velocity must also be exactly constant", "isCorrect": false, "feedback": "This confuses speed with velocity -- while SPEED (magnitude) is constant here, VELOCITY (which includes direction) is actually continuously changing due to the changing direction around the circular path."},
+      {"text": "Velocity has no actual connection to an object's direction of motion", "isCorrect": false, "feedback": "This is incorrect -- velocity is FUNDAMENTALLY defined to include directional information, which is exactly why it changes on a circular path even with constant speed."},
+      {"text": "This scenario is impossible -- an object cannot maintain constant speed while changing direction", "isCorrect": false, "feedback": "This scenario is entirely possible and common -- objects can maintain constant SPEED (magnitude) while continuously changing DIRECTION, as in circular motion."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An object moving in a perfect circle at constant speed has a constantly changing velocity (due to changing direction), which means it must be experiencing acceleration (since acceleration is the rate of change of velocity). Given that its speed never changes, in what direction must this acceleration be pointing?",
+    "options": [
+      {"text": "Toward the center of the circle (centripetal acceleration), since this is the direction that changes the object's direction of motion without affecting its speed", "isCorrect": true, "feedback": "Correct -- this centripetal (center-pointing) acceleration is exactly what continuously redirects the object's velocity vector to maintain circular motion, without altering the magnitude (speed) of that velocity."},
+      {"text": "In the exact same direction as the object's current velocity (tangential direction)", "isCorrect": false, "feedback": "Acceleration in the same direction as velocity would actually change the object's SPEED (making it go faster), which contradicts the scenario's constant speed condition -- centripetal (center-pointing) acceleration is needed instead."},
+      {"text": "There is actually no acceleration occurring in this scenario at all", "isCorrect": false, "feedback": "This isn't accurate -- since velocity IS changing (due to continuously changing direction), there MUST be some acceleration present, even though speed itself remains constant."},
+      {"text": "Directly away from the center of the circle", "isCorrect": false, "feedback": "This is backwards -- the acceleration needed to maintain circular motion (without changing speed) points TOWARD the center of the circle, not away from it."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This vector quantity requires specification of both a magnitude component and a directional component to be fully defined.", "medium": "This measurement needs both a number AND a direction to describe it fully.", "easy": "This measurement needs both a number and a direction."},
+    "medium": {"hard": "Recall that velocity, as a vector quantity, changes whenever EITHER its magnitude OR its direction changes -- consider which of these is happening here.", "medium": "Even if the car's speed number never changes, its direction is constantly changing as it goes around the curve.", "easy": "Even if the speed number stays the same, the direction keeps changing around the curve."},
+    "hard": {"hard": "Consider the direction of acceleration required to continuously redirect a velocity vector's orientation while leaving its magnitude completely unaffected.", "medium": "The push needs to be sideways (toward the middle of the circle) to turn the direction without speeding up or slowing down the object.", "easy": "The push needs to point toward the middle of the circle to turn the direction without changing the speed."}
+  }
+}
+]

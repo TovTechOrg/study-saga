@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of chemical vs. physical changes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is an example of a chemical change?",
+    "options": [
+      {"text": "Burning a piece of paper, producing ash and smoke", "isCorrect": true, "feedback": "Correct -- burning creates entirely new substances (ash, smoke, gases) through a chemical reaction, which is not reversible by simple physical means."},
+      {"text": "Melting an ice cube into liquid water", "isCorrect": false, "feedback": "This is a PHYSICAL change -- the water molecules themselves don't change chemically, and the process is easily reversible by freezing."},
+      {"text": "Tearing a piece of paper into smaller pieces", "isCorrect": false, "feedback": "This is a physical change -- the paper's chemical composition remains the same; only its physical size/shape has changed."},
+      {"text": "Dissolving sugar in water", "isCorrect": false, "feedback": "This is generally considered a physical change -- the sugar molecules remain chemically the same, and the process can be reversed by evaporating the water."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is a key indicator that distinguishes a chemical change from a physical change?",
+    "options": [
+      {"text": "A chemical change produces one or more new substances with different chemical properties than the original materials", "isCorrect": true, "feedback": "Correct -- the formation of genuinely new substances (with different properties) is the hallmark distinguishing feature of a chemical change."},
+      {"text": "A physical change always involves a change in temperature, while chemical changes never do", "isCorrect": false, "feedback": "This isn't an accurate distinguishing rule -- BOTH physical changes (like melting) and chemical changes (like combustion) can involve temperature changes."},
+      {"text": "A chemical change is always instantly and easily reversible", "isCorrect": false, "feedback": "This is backwards -- physical changes (like melting/freezing) are generally MORE easily reversible, while chemical changes typically are NOT easily reversed."},
+      {"text": "There is actually no meaningful distinction between chemical and physical changes", "isCorrect": false, "feedback": "There IS a meaningful, well-established distinction -- specifically whether new substances with different chemical properties are formed (chemical) or not (physical)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Dissolving table salt (NaCl) in water is generally classified as a physical change, even though the salt separates into individual sodium and chloride ions. Why is this still considered physical rather than chemical, given that the salt's ionic structure is disrupted?",
+    "options": [
+      {"text": "Because no new chemical substance is actually formed -- the sodium and chloride ions retain their original chemical identity, and the salt can be fully recovered (in its original form) simply by evaporating the water", "isCorrect": true, "feedback": "Correct -- since the fundamental chemical identities of sodium and chloride remain unchanged (no new substance forms), and the original salt can be recovered through a purely physical process (evaporation), this qualifies as a physical, not chemical, change."},
+      {"text": "This is actually incorrectly classified -- dissolving salt in water should be considered a chemical change", "isCorrect": false, "feedback": "This is not a misclassification -- dissolving salt is a well-established, standard example of a physical change specifically because no new chemical substance is formed and it's readily reversible."},
+      {"text": "The sodium and chloride ions actually become entirely new chemical elements once dissolved", "isCorrect": false, "feedback": "This isn't accurate -- sodium and chloride ions RETAIN their original elemental identity when dissolved; they don't transform into different elements or new substances."},
+      {"text": "Reversibility has no actual relevance to distinguishing chemical from physical changes", "isCorrect": false, "feedback": "Reversibility, while not a perfectly absolute rule for every case, is actually a commonly used and relevant indicator supporting this classification, alongside the more fundamental criterion of whether a new substance forms."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This category of transformation involves the fundamental molecular structure being altered, resulting in a substance with genuinely different properties.", "medium": "This is a change that actually creates a brand new substance with different properties.", "easy": "This is a change that creates a brand new substance with different properties."},
+    "medium": {"hard": "Consider whether the resulting material after the change has fundamentally different chemical properties compared to what existed beforehand.", "medium": "Ask yourself: did a genuinely NEW substance with different properties get created, or is it still the same substance in a different form?", "easy": "Ask: did a genuinely new substance get created, or is it the same stuff in a different form?"},
+    "hard": {"hard": "Evaluate whether the constituent chemical species retain their original identity and whether the original material can be recovered through purely physical means.", "medium": "The sodium and chlorine are still themselves, just separated -- and you can get the original salt back just by letting the water evaporate.", "easy": "The sodium and chlorine are still themselves, just separated -- you can get the salt back by evaporating the water."}
+  }
+}
+]

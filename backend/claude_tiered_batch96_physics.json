@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between real and apparent weight (weightlessness in free fall)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Apparent weight' refers to:",
+    "options": [
+      {"text": "The force you actually FEEL (like from a scale or support surface pushing back on you), which can differ from your true gravitational weight", "isCorrect": true, "feedback": "Correct -- apparent weight is what a scale would register, which can be more, less, or even zero, depending on acceleration, unlike true gravitational weight, which stays constant."},
+      {"text": "The exact same thing as true gravitational weight, with absolutely no possible difference", "isCorrect": false, "feedback": "This isn't accurate -- apparent weight and true gravitational weight CAN differ significantly (like during acceleration or free fall), which is precisely the important distinction being highlighted here."},
+      {"text": "A measurement that has no connection to any physical forces at all", "isCorrect": false, "feedback": "This isn't accurate -- apparent weight is DIRECTLY connected to and represents an actual physical FORCE (the normal/support force you feel), not something disconnected from physical forces."},
+      {"text": "Only relevant for objects that are completely motionless", "isCorrect": false, "feedback": "This isn't accurate -- apparent weight is particularly relevant and interesting specifically when objects ARE accelerating (like in an elevator or free fall), not just when motionless."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When an elevator accelerates upward, passengers momentarily feel heavier (increased apparent weight) than their normal, resting weight. Why does upward acceleration specifically cause this INCREASED apparent weight sensation, even though the passenger's actual gravitational weight (mass × gravity) hasn't changed at all?",
+    "options": [
+      {"text": "To accelerate the passenger upward (in addition to just supporting against gravity), the floor must push up with an ADDITIONAL force beyond what's needed merely to counteract gravity alone, and this total increased upward support force is what the passenger actually feels/perceives as their apparent weight", "isCorrect": true, "feedback": "Correct -- this need for ADDITIONAL supporting force (beyond simple gravity-counteracting support) to actually produce the upward acceleration is precisely why passengers experience this temporary increased apparent weight sensation during upward acceleration, despite their true gravitational weight remaining completely unchanged."},
+      {"text": "The passenger's actual gravitational weight (mass times gravity) genuinely increases during upward acceleration", "isCorrect": false, "feedback": "This isn't accurate -- the passenger's TRUE gravitational weight (mass × gravity) does NOT actually change during acceleration; it's specifically their APPARENT weight (the felt supporting force) that temporarily increases, not the true underlying gravitational weight value."},
+      {"text": "This increased apparent weight sensation has no actual connection to the physics of the elevator's upward acceleration", "isCorrect": false, "feedback": "This isn't accurate -- this increased apparent weight sensation is DIRECTLY and specifically connected to and caused BY the physics requirement of needing additional supporting force to produce the elevator's actual upward acceleration."},
+      {"text": "Upward acceleration would actually cause DECREASED (not increased) apparent weight, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- upward acceleration specifically causes INCREASED apparent weight (not decreased), since additional supporting force beyond simple gravity-counteracting is needed to produce that upward acceleration."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Astronauts in orbit experience 'weightlessness' (zero apparent weight) because they, along with their spacecraft, are in continuous free-fall around Earth. Given that Earth's actual gravitational pull is still quite significant at typical orbital altitudes (nearly as strong as at the surface), why does this continuous free-fall condition specifically result in ZERO apparent weight, rather than just REDUCED apparent weight?",
+    "options": [
+      {"text": "Since both the astronaut and their surrounding spacecraft are accelerating due to gravity at EXACTLY the same rate (in continuous free-fall together), there is no relative force/pressure between the astronaut and any supporting surface (like a floor) -- unlike normal standing, where the ground must push back against gravity's pull, in free fall there's nothing pushing back at all, resulting in truly ZERO apparent weight", "isCorrect": true, "feedback": "Correct -- this recognition (that the astronaut and spacecraft are accelerating together at an identical rate in continuous free-fall, eliminating any relative supporting force) precisely explains why this specific condition results in TRUE zero apparent weight, rather than merely some reduced value."},
+      {"text": "Earth's gravity actually doesn't exist at all at typical orbital altitudes, explaining the zero apparent weight", "isCorrect": false, "feedback": "This isn't accurate -- Earth's gravity is still quite SIGNIFICANT at orbital altitudes (nearly as strong as at the surface); the zero apparent weight specifically results from the CONTINUOUS FREE-FALL condition (astronaut and spacecraft accelerating together), not from an absence of gravity."},
+      {"text": "Astronauts in orbit would actually experience significantly REDUCED but still clearly non-zero apparent weight, not truly zero", "isCorrect": false, "feedback": "This isn't accurate -- astronauts in continuous free-fall orbit specifically experience essentially TRUE ZERO apparent weight (not merely reduced), precisely because there's no relative supporting force between them and their surrounding spacecraft."},
+      {"text": "This zero apparent weight phenomenon has no actual connection to the specific physics of continuous free-fall motion", "isCorrect": false, "feedback": "This isn't accurate -- this zero apparent weight phenomenon is DIRECTLY and specifically connected to and explained by the particular physics of CONTINUOUS FREE-FALL motion (astronaut and spacecraft accelerating together with no relative supporting force)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This perceived force corresponds to the normal (support) force experienced by an object, which may diverge from its invariant gravitational weight under acceleration.", "medium": "This is the force you actually feel pushing back on you, which isn't always the same as your true weight from gravity.", "easy": "This is the force you actually feel, which isn't always the same as your true gravity-based weight."},
+    "medium": {"hard": "Consider the additional supporting force requirement (beyond simple gravity-counteracting) necessary specifically to produce net upward acceleration, according to Newton's second law.", "medium": "To actually speed the person up going upward (not just hold them steady), the floor has to push even harder than it normally would, and that extra push is what feels like extra weight.", "easy": "To speed the person up going upward, the floor has to push even harder, which feels like extra weight."},
+    "hard": {"hard": "Consider how identical acceleration rates between the astronaut and their immediate surroundings (spacecraft) eliminate any relative contact force that would otherwise register as apparent weight.", "medium": "Since the astronaut and the whole spacecraft around them are falling at the exact same rate together, there's nothing left to actually push or press against the astronaut at all.", "easy": "Since the astronaut and spacecraft are falling together at the same rate, nothing is left to push against the astronaut."}
+  }
+}
+]

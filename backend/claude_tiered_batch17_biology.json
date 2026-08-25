@@ -1,0 +1,207 @@
+[
+{
+  "topic": "the function of red blood cells",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main function of red blood cells?",
+    "options": [
+      {"text": "Carrying oxygen throughout the body", "isCorrect": true, "feedback": "Correct -- red blood cells use hemoglobin to transport oxygen from the lungs to body tissues."},
+      {"text": "Fighting off infections", "isCorrect": false, "feedback": "That's the role of white blood cells, not red blood cells."},
+      {"text": "Helping blood clot", "isCorrect": false, "feedback": "That's primarily the role of platelets, not red blood cells."},
+      {"text": "Digesting food", "isCorrect": false, "feedback": "Digestion is handled by the digestive system, unrelated to red blood cell function."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What protein within red blood cells is responsible for binding to and carrying oxygen?",
+    "options": [
+      {"text": "Hemoglobin", "isCorrect": true, "feedback": "Correct -- hemoglobin contains iron, which binds oxygen molecules for transport."},
+      {"text": "Insulin", "isCorrect": false, "feedback": "Insulin regulates blood sugar -- it isn't involved in oxygen transport."},
+      {"text": "Collagen", "isCorrect": false, "feedback": "Collagen is a structural protein found in connective tissue, unrelated to oxygen transport."},
+      {"text": "Keratin", "isCorrect": false, "feedback": "Keratin is found in hair and nails, unrelated to oxygen transport in blood."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Red blood cells lack a nucleus in their mature form, unlike most other cells in the body. Why might this actually be beneficial for their specific function?",
+    "options": [
+      {"text": "Removing the nucleus frees up more internal space for hemoglobin, allowing the cell to carry more oxygen", "isCorrect": true, "feedback": "Correct -- this trade-off maximizes the cell's oxygen-carrying capacity, since it doesn't need to perform typical cell functions requiring a nucleus."},
+      {"text": "This has no benefit at all and is simply a random mutation", "isCorrect": false, "feedback": "This is actually understood as a functional adaptation that maximizes the cell's specialized oxygen-carrying role, not a random occurrence."},
+      {"text": "Removing the nucleus makes the cell live forever", "isCorrect": false, "feedback": "In fact, lacking a nucleus means red blood cells CAN'T repair or replicate themselves, giving them a limited lifespan (around 120 days), not immortality."},
+      {"text": "The nucleus was never present in these cells at any stage", "isCorrect": false, "feedback": "Red blood cells actually do have a nucleus early in their development, but they expel it as they mature -- it isn't simply absent from the start."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This cell type is specialized for transporting a specific vital gas throughout the circulatory system.", "medium": "These cells carry a gas your body needs to survive throughout your bloodstream.", "easy": "These cells carry oxygen around your body."},
+    "medium": {"hard": "This iron-containing protein is what actually binds to and releases oxygen molecules as blood circulates.", "medium": "This protein, containing iron, is what actually grabs onto oxygen molecules.", "easy": "This iron-containing protein grabs onto oxygen for the ride."},
+    "hard": {"hard": "Sacrificing the nucleus (and the cell functions it enables) trades away replication ability in exchange for maximized internal volume dedicated to oxygen-carrying hemoglobin.", "medium": "Without a nucleus taking up space, there's more room inside the cell for the oxygen-carrying protein.", "easy": "Without a nucleus taking up space, there's more room inside for the oxygen-carrying stuff."}
+  }
+},
+{
+  "topic": "the concept of limiting factors in population growth",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a limiting factor in population growth?",
+    "options": [
+      {"text": "Something that restricts how large a population can grow", "isCorrect": true, "feedback": "Correct -- limiting factors like food, water, or space can cap population size."},
+      {"text": "Something that always increases a population's size", "isCorrect": false, "feedback": "A limiting factor restricts growth, it doesn't promote unlimited increase."},
+      {"text": "A factor that only affects plants, never animals", "isCorrect": false, "feedback": "Limiting factors affect populations of any species, not just plants."},
+      {"text": "A factor that has nothing to do with population size", "isCorrect": false, "feedback": "By definition, a limiting factor is directly connected to constraining population size."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following would most likely act as a limiting factor for a deer population in a forest?",
+    "options": [
+      {"text": "Availability of food (vegetation)", "isCorrect": true, "feedback": "Correct -- limited food supply directly restricts how many deer the forest can sustainably support."},
+      {"text": "The number of birds in a nearby wetland", "isCorrect": false, "feedback": "Unrelated bird populations in a different habitat wouldn't typically directly limit the deer population."},
+      {"text": "The color of the forest's leaves in autumn", "isCorrect": false, "feedback": "Leaf color is a seasonal aesthetic change, not a factor that directly restricts population size."},
+      {"text": "The deer's ability to make sounds", "isCorrect": false, "feedback": "Sound-making ability isn't a resource constraint and wouldn't typically limit population growth."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Limiting factors are sometimes divided into 'density-dependent' (like disease or competition, which intensify as population grows) and 'density-independent' (like natural disasters, which affect populations regardless of size). Why is this distinction useful?",
+    "options": [
+      {"text": "It helps predict how a factor's impact might change as a population grows or shrinks, which matters for understanding and managing population dynamics", "isCorrect": true, "feedback": "Correct -- density-dependent factors become more significant as crowding increases, while density-independent factors strike with similar severity regardless of population size."},
+      {"text": "It has no practical use in studying ecosystems", "isCorrect": false, "feedback": "This distinction is actually widely used in ecology to understand and predict population dynamics."},
+      {"text": "Density-dependent factors only affect large populations, never small ones", "isCorrect": false, "feedback": "Density-dependent factors can still affect small populations -- they just tend to have a proportionally larger IMPACT as population density increases."},
+      {"text": "Density-independent factors only occur in winter", "isCorrect": false, "feedback": "Density-independent factors like natural disasters can occur at any time of year -- the classification is about population-size relevance, not season."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is a constraint on the resources or conditions available to sustain more individuals in a population.", "medium": "This is something that puts a cap on how big a group of animals can get.", "easy": "This is something that stops a group of animals from growing too big."},
+    "medium": {"hard": "Consider which resource is essential for survival and would become scarce as more deer compete for it.", "medium": "Consider what deer actually need to survive that could run short if there are too many of them.", "easy": "Think about what deer eat, and what happens if there isn't enough of it."},
+    "hard": {"hard": "This classification distinguishes factors whose severity scales with population crowding from those that strike with roughly equal force regardless of population size, aiding predictive ecological modeling.", "medium": "It helps scientists predict whether a threat will get worse as the population grows bigger, or if it'll hit just as hard no matter the population size.", "easy": "It helps scientists tell whether a threat gets worse with more animals, or hits just as hard no matter how many there are."}
+  }
+},
+{
+  "topic": "the structure of a virus",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the outer protective covering of a virus called?",
+    "options": [
+      {"text": "Capsid", "isCorrect": true, "feedback": "Correct -- the capsid is the protein shell that surrounds and protects a virus's genetic material."},
+      {"text": "Cell wall", "isCorrect": false, "feedback": "Cell walls are found in plant/bacterial cells -- viruses have a capsid, not a cell wall."},
+      {"text": "Cytoplasm", "isCorrect": false, "feedback": "Cytoplasm is the internal fluid found in living cells -- viruses lack cytoplasm entirely."},
+      {"text": "Mitochondria", "isCorrect": false, "feedback": "Mitochondria are cell organelles found in living cells -- viruses don't have organelles."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What type of genetic material can a virus contain?",
+    "options": [
+      {"text": "Either DNA or RNA, depending on the type of virus", "isCorrect": true, "feedback": "Correct -- unlike most cells (which use DNA), viruses can use either DNA or RNA as their genetic material."},
+      {"text": "Only proteins, with no genetic material at all", "isCorrect": false, "feedback": "Viruses do contain genetic material (DNA or RNA), which is essential for them to hijack a host cell's machinery."},
+      {"text": "Only carbohydrates", "isCorrect": false, "feedback": "Carbohydrates aren't the genetic material of viruses -- DNA or RNA serves that role."},
+      {"text": "A virus never contains any genetic material", "isCorrect": false, "feedback": "Genetic material (DNA or RNA) is a defining, essential component of every virus."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some viruses, like the flu virus, have an additional outer layer called an 'envelope,' derived from the host cell's membrane. Why might this envelope make a virus more vulnerable to substances like soap?",
+    "options": [
+      {"text": "Soap can dissolve the fatty (lipid) envelope, destroying the virus's structural integrity and rendering it non-infectious", "isCorrect": true, "feedback": "Correct -- this is exactly why soap and water is so effective against many enveloped viruses -- it physically breaks apart the fragile lipid coating."},
+      {"text": "The envelope makes the virus completely immune to soap", "isCorrect": false, "feedback": "This is backwards -- the lipid envelope is actually a vulnerability that soap effectively exploits and destroys."},
+      {"text": "Soap has no effect on any type of virus", "isCorrect": false, "feedback": "Soap is particularly effective against enveloped viruses specifically because of its ability to break down that fatty outer layer."},
+      {"text": "The envelope is made of the same material as the capsid, so it isn't a separate vulnerability", "isCorrect": false, "feedback": "The envelope (lipid-based, from the host membrane) and the capsid (protein-based) are made of different materials, and the lipid envelope is specifically vulnerable to soap in a way the capsid alone might not be."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This structure forms a protective shell made of protein subunits surrounding the virus's core.", "medium": "This is the protein coat that wraps around and protects a virus's genetic material.", "easy": "This is the protective shell that surrounds a virus."},
+    "medium": {"hard": "Viruses can use either of the two major types of nucleic acid molecules found in biology to store their genetic instructions.", "medium": "Viruses can use one of two different types of genetic material, unlike most living cells which stick to one.", "easy": "Viruses can use either of the two types of genetic material found in living things."},
+    "hard": {"hard": "The lipid-based envelope is chemically similar to soap's target (fats), so soap molecules disrupt and dissolve this outer layer, physically compromising the virus's structure.", "medium": "Soap is really good at breaking apart fatty layers, and this extra viral coating happens to be made of fat.", "easy": "Soap is really good at breaking apart fat, and this extra covering on the virus is made of fat."}
+  }
+},
+{
+  "topic": "the role of decomposers vs. scavengers",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a scavenger?",
+    "options": [
+      {"text": "An animal that feeds on the remains of dead organisms", "isCorrect": true, "feedback": "Correct -- vultures are a classic example of scavengers, eating carcasses other animals have left behind."},
+      {"text": "An animal that only eats plants", "isCorrect": false, "feedback": "That describes an herbivore, not specifically a scavenger."},
+      {"text": "An organism that makes its own food through photosynthesis", "isCorrect": false, "feedback": "That describes a producer (like a plant), not a scavenger."},
+      {"text": "A microscopic organism that breaks down matter chemically", "isCorrect": false, "feedback": "That's closer to describing a decomposer (like bacteria or fungi), which works differently from a scavenger."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the key difference between a scavenger and a decomposer?",
+    "options": [
+      {"text": "Scavengers are typically visible animals that physically eat dead matter, while decomposers are often microorganisms that chemically break it down", "isCorrect": true, "feedback": "Correct -- both consume dead organic material, but through very different mechanisms and at different scales."},
+      {"text": "There is no real difference -- they're the exact same thing", "isCorrect": false, "feedback": "These are actually distinct ecological roles, differing in method and typical organism type."},
+      {"text": "Scavengers only eat plants, while decomposers only eat animals", "isCorrect": false, "feedback": "Both scavengers and decomposers can consume both plant and animal remains -- this isn't the actual distinguishing feature."},
+      {"text": "Decomposers are always larger than scavengers", "isCorrect": false, "feedback": "This is backwards -- decomposers (like bacteria and fungi) are typically much smaller/microscopic compared to visible scavenger animals."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In many ecosystems, scavengers and decomposers work in a kind of sequence on a dead animal's remains. How might this sequential process typically unfold?",
+    "options": [
+      {"text": "Scavengers often consume the bulk of the soft tissue first, and decomposers (fungi, bacteria) then break down what remains, including tougher material, into simpler nutrients", "isCorrect": true, "feedback": "Correct -- this division of labor efficiently recycles nutrients back into the ecosystem, with larger scavengers handling bulk consumption before microorganisms complete the breakdown."},
+      {"text": "Decomposers always finish their job before any scavenger arrives", "isCorrect": false, "feedback": "In most ecosystems, larger scavengers often reach a carcass and begin consuming it before microscopic decomposers have fully broken it down."},
+      {"text": "Scavengers and decomposers never interact with the same dead organism", "isCorrect": false, "feedback": "In many real ecosystems, both scavengers and decomposers commonly act on the same carcass, often in sequence."},
+      {"text": "This sequential process has no real ecological benefit", "isCorrect": false, "feedback": "This division of labor is actually quite efficient for recycling nutrients back into the ecosystem relatively quickly."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This organism physically consumes the remains of an organism that has already died.", "medium": "This animal eats what's left of something that's already dead.", "easy": "This animal eats the leftovers of something that's already dead, like a vulture."},
+    "medium": {"hard": "One category consists of visible, whole-organism consumers; the other consists of microscopic organisms that chemically dismantle matter.", "medium": "One works by physically eating chunks of the dead body; the other works by chemically dissolving it bit by bit.", "easy": "One is a visible animal eating chunks; the other is tiny organisms breaking it down chemically."},
+    "hard": {"hard": "The larger, visible consumers typically handle the bulk removal of soft tissue quickly, while the microorganisms complete the more thorough, chemical-level breakdown afterward.", "medium": "Bigger animals usually eat the easy, soft parts first, and then tiny organisms finish breaking down whatever tougher bits are left.", "easy": "Bigger animals eat the soft parts first, then tiny organisms finish breaking down what's left."}
+  }
+},
+{
+  "topic": "the difference between an autotroph and a heterotroph",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is an autotroph?",
+    "options": [
+      {"text": "An organism that produces its own food, usually through photosynthesis", "isCorrect": true, "feedback": "Correct -- plants are the most common example of autotrophs."},
+      {"text": "An organism that must eat other organisms for food", "isCorrect": false, "feedback": "That describes a heterotroph, the opposite of an autotroph."},
+      {"text": "An organism that never needs any energy at all", "isCorrect": false, "feedback": "All living organisms need energy -- autotrophs simply produce their own rather than consuming other organisms."},
+      {"text": "An organism found only in the ocean", "isCorrect": false, "feedback": "Autotrophs exist in many environments, not exclusively the ocean."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a heterotroph?",
+    "options": [
+      {"text": "A lion", "isCorrect": true, "feedback": "Correct -- lions must eat other animals to obtain energy, making them heterotrophs."},
+      {"text": "A tree", "isCorrect": false, "feedback": "Trees make their own food via photosynthesis, making them autotrophs, not heterotrophs."},
+      {"text": "Grass", "isCorrect": false, "feedback": "Grass makes its own food via photosynthesis, making it an autotroph, not a heterotroph."},
+      {"text": "Algae", "isCorrect": false, "feedback": "Algae typically make their own food via photosynthesis, making them autotrophs, not heterotrophs."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some organisms, like certain bacteria near deep-sea hydrothermal vents, are autotrophs that don't rely on sunlight at all. How do they produce their own food without photosynthesis?",
+    "options": [
+      {"text": "Through chemosynthesis, using chemical energy from compounds like hydrogen sulfide instead of light energy to produce food", "isCorrect": true, "feedback": "Correct -- chemosynthesis is an alternative food-production process that doesn't require sunlight, vital for ecosystems in permanently dark deep-sea environments."},
+      {"text": "They actually don't produce any food at all, contradicting the definition of autotroph", "isCorrect": false, "feedback": "These bacteria genuinely do produce their own food, just through chemosynthesis instead of photosynthesis -- they still fit the autotroph definition."},
+      {"text": "They secretly rely on tiny amounts of sunlight that reach the deep ocean floor", "isCorrect": false, "feedback": "Sunlight doesn't reach these extreme ocean depths at all -- these organisms use an entirely different, light-independent process."},
+      {"text": "They absorb energy directly from other nearby autotrophs", "isCorrect": false, "feedback": "This would actually make them heterotrophs (consuming from others), not autotrophs -- chemosynthesis lets them produce their OWN food independently."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of organism generates its own nutritional energy source internally, rather than consuming other organisms.", "medium": "This organism makes its own food, usually using sunlight.", "easy": "This organism makes its own food, like a plant does."},
+    "medium": {"hard": "This organism must obtain its energy by consuming other organisms rather than producing its own food.", "medium": "This animal has to hunt and eat other living things to get energy.", "easy": "This animal has to eat other animals to survive."},
+    "hard": {"hard": "This process uses the oxidation of inorganic chemical compounds as an energy source to synthesize organic molecules, functioning as a light-independent parallel to photosynthesis.", "medium": "Instead of using light for energy like plants, these organisms use energy from certain chemicals in their environment.", "easy": "Instead of using sunlight like plants, these organisms use energy from chemicals around them instead."}
+  }
+}
+]

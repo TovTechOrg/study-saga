@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between innate and learned animal behaviors",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is an 'innate' behavior?",
+    "options": [
+      {"text": "A behavior that is instinctive and present from birth, without needing to be learned", "isCorrect": true, "feedback": "Correct -- innate behaviors are genetically programmed and appear consistently across a species without requiring individual learning experience."},
+      {"text": "A behavior that must be taught by a parent or through practice", "isCorrect": false, "feedback": "That describes a LEARNED behavior, not an innate one, which specifically appears WITHOUT needing to be taught."},
+      {"text": "A behavior that only appears in elderly animals", "isCorrect": false, "feedback": "Age isn't the defining factor of innate behaviors -- they're specifically present from BIRTH (or very early development), not exclusively in older animals."},
+      {"text": "A behavior that varies dramatically between every individual of a species", "isCorrect": false, "feedback": "Innate behaviors are actually notably CONSISTENT across individuals of the same species, since they're genetically programmed rather than individually learned/varied."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A newly-hatched sea turtle instinctively crawls toward the ocean immediately after hatching, without any parental guidance or prior experience. A dog, however, must be trained through repeated practice to learn tricks like 'sit' or 'roll over.' Why do these two examples represent different categories of behavior?",
+    "options": [
+      {"text": "The turtle's behavior is innate (genetically programmed, requiring no learning), while the dog's trick behavior is learned (acquired through experience and repeated training)", "isCorrect": true, "feedback": "Correct -- this distinction between behaviors that emerge automatically from genetic programming versus those requiring individual experience and training is the fundamental basis for classifying behaviors as innate versus learned."},
+      {"text": "Both of these behaviors are actually identical examples of the exact same behavior category", "isCorrect": false, "feedback": "This isn't accurate -- these represent two genuinely DIFFERENT behavior categories: the turtle's behavior is innate, while the dog's trick behavior is specifically learned through training."},
+      {"text": "The turtle's behavior is actually learned, while the dog's trick behavior is innate", "isCorrect": false, "feedback": "This has it backwards -- the turtle's ocean-crawling behavior is INNATE (present without learning), while the dog's specific trick behavior is LEARNED (requiring training/practice)."},
+      {"text": "This distinction between behavior types has no actual scientific basis or usefulness", "isCorrect": false, "feedback": "This isn't accurate -- the innate versus learned behavior distinction is a well-established, scientifically useful framework in animal behavior studies (ethology)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some behaviors, like bird song in certain species, involve a combination of both innate and learned components -- young birds may have an innate predisposition to learn song, but the SPECIFIC song they ultimately produce is shaped by listening to and learning from adult birds during a critical developmental period. Why is this combined perspective important for accurately understanding animal behavior?",
+    "options": [
+      {"text": "It shows that the innate/learned distinction isn't always a strict either/or classification -- some complex behaviors can involve an innate underlying framework or predisposition that gets specifically shaped and refined through individual learning experience", "isCorrect": true, "feedback": "Correct -- this more nuanced understanding, recognizing that behaviors can involve BOTH innate and learned components working together, provides a more complete and accurate picture of animal behavior than a strict either/or categorization would allow."},
+      {"text": "This combined perspective actually proves that all animal behaviors are purely innate, with no learning involved at all", "isCorrect": false, "feedback": "This isn't accurate -- this example specifically demonstrates the OPPOSITE point: that learning CAN play a significant role even in behaviors with an innate component, not that everything is purely innate."},
+      {"text": "This combined perspective actually proves that all animal behaviors are purely learned, with no innate component at all", "isCorrect": false, "feedback": "This isn't accurate -- this example specifically demonstrates that an INNATE predisposition can coexist with learned refinement, not that everything is purely learned with no innate basis."},
+      {"text": "Bird song learning has no actual connection to the broader innate versus learned behavior framework", "isCorrect": false, "feedback": "This isn't accurate -- bird song learning is actually a classic, well-studied example specifically illustrating the more nuanced INTERACTION between innate and learned components within the broader behavioral framework."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This behavioral category is genetically encoded and manifests reliably without requiring individual experiential acquisition.", "medium": "This is a behavior an animal is just born already knowing how to do, without needing to learn it.", "easy": "This is a behavior an animal is just born knowing how to do."},
+    "medium": {"hard": "Determine whether each described behavior emerges automatically without prior experience, or specifically requires individual practice and exposure to develop.", "medium": "One behavior just happens automatically with no practice needed, while the other only comes after repeated training and practice.", "easy": "One behavior happens automatically with no practice, the other needs training and practice."},
+    "hard": {"hard": "Consider how a genetically-based predisposition toward a general behavioral capacity could still require environmental input (like exposure to a model) to achieve its final, specific expressed form.", "medium": "It's like birds are born with a built-in urge to learn a song, but they still need to actually hear another bird singing to learn the specific tune.", "easy": "Birds are born with a built-in urge to learn song, but still need to hear another bird to learn the specific tune."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between exothermic bond formation energy and lattice energy",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Lattice energy' specifically refers to the energy released when:",
+    "options": [
+      {"text": "Gaseous ions come together to form a solid ionic crystal lattice", "isCorrect": true, "feedback": "Correct -- lattice energy measures the strong attractive energy released as oppositely charged gaseous ions assemble into a stable, ordered crystal structure."},
+      {"text": "A solid crystal completely breaks apart into individual gaseous ions", "isCorrect": false, "feedback": "That describes the REVERSE process -- lattice energy itself specifically concerns FORMING the lattice, not breaking it apart."},
+      {"text": "Two covalent molecules react chemically with each other", "isCorrect": false, "feedback": "This isn't accurate -- lattice energy specifically concerns IONIC crystal formation from gaseous ions, not covalent molecule reactions."},
+      {"text": "A substance simply changes color", "isCorrect": false, "feedback": "Color change is unrelated to lattice energy, which specifically concerns the energy released during ionic crystal lattice formation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Lattice energy is typically LARGER for ions with SMALLER ionic radii and HIGHER ionic charges. Why does this relationship make sense, based on the physics of electrostatic attraction between charged particles?",
+    "options": [
+      {"text": "Since electrostatic attraction increases with higher charge and decreases with greater distance, ions with smaller radii (closer together) and higher charges (stronger attraction) naturally produce stronger overall electrostatic attraction, releasing more energy forming the stable lattice", "isCorrect": true, "feedback": "Correct -- this direct application of Coulomb's law (force scales with charge, inversely with distance) explains why smaller, more highly charged ions produce larger lattice energies."},
+      {"text": "Ionic radius and charge actually have no real connection to lattice energy magnitude", "isCorrect": false, "feedback": "This isn't accurate -- these factors ARE DIRECTLY connected to and determine lattice energy magnitude, based on basic electrostatic principles."},
+      {"text": "LARGER ionic radii would actually produce LARGER lattice energies", "isCorrect": false, "feedback": "This is backwards -- SMALLER ionic radii produce LARGER lattice energies, since electrostatic attraction strengthens as distance decreases."},
+      {"text": "Ionic charge magnitude has no actual effect on electrostatic attraction strength between ions", "isCorrect": false, "feedback": "This isn't accurate -- ionic charge DIRECTLY affects attraction strength (higher charge means stronger attraction), one of the two key factors determining lattice energy."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Lattice energy generally cannot be measured directly, but is instead calculated indirectly using the Born-Haber cycle, which sums a series of other measurable energy values (like ionization energy, electron affinity, sublimation energy) to indirectly determine the lattice energy via Hess's Law. Why does this indirect calculation approach represent good scientific practice, rather than being a limitation?",
+    "options": [
+      {"text": "Since certain quantities (like lattice energy) can be experimentally difficult or impossible to measure directly, using Hess's Law to combine several OTHER independently measurable energy quantities into an indirect calculation is a valid, rigorous scientific technique -- it leverages the principle that total energy change is path-independent, allowing scientists to determine an otherwise hard-to-measure value through a cleverly constructed combination of easier, verifiable measurements", "isCorrect": true, "feedback": "Correct -- this application of Hess's Law (energy change being path-independent, allowing indirect determination via a combination of measurable steps) represents a valuable and rigorous general scientific strategy, extending well beyond lattice energy calculations to many other situations where a quantity of interest is difficult to measure directly."},
+      {"text": "This indirect calculation approach actually indicates that lattice energy values obtained this way are unreliable or scientifically invalid", "isCorrect": false, "feedback": "This isn't accurate -- values obtained via the Born-Haber cycle are considered SCIENTIFICALLY VALID and reliable, precisely because Hess's Law provides a rigorous theoretical basis for this indirect calculation method."},
+      {"text": "Lattice energy could actually always be measured just as easily and directly as any other simple energy quantity", "isCorrect": false, "feedback": "This isn't accurate -- lattice energy specifically CANNOT typically be measured directly, which is precisely why the indirect Born-Haber cycle approach is needed in the first place."},
+      {"text": "Hess's Law has no actual connection to justifying why this indirect calculation method for lattice energy is scientifically valid", "isCorrect": false, "feedback": "This isn't accurate -- Hess's Law IS DIRECTLY and specifically the theoretical foundation justifying why this indirect calculation approach is valid and reliable."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This thermodynamic quantity represents the energy liberated as gaseous cations and anions coalesce into an ordered crystalline solid.", "medium": "This is the energy given off when separate charged particles come together to form a solid crystal.", "easy": "This is the energy given off when charged particles come together to form a solid crystal."},
+    "medium": {"hard": "Apply Coulomb's law's direct proportionality to charge product and inverse proportionality to separation distance to predict how each factor independently influences attraction strength.", "medium": "Closer charges and bigger charges both pull harder on each other, so smaller and more highly charged ions stick together with more force, releasing more energy.", "easy": "Closer and bigger charges pull harder on each other, releasing more energy when they combine."},
+    "hard": {"hard": "Consider how the path-independence of total energy change, as formalized by Hess's Law, permits indirect determination of an unmeasurable quantity via a cycle of independently verifiable energy steps.", "medium": "Since you can't directly measure this one particular energy value, scientists cleverly add up a bunch of OTHER values they CAN measure, and the math works out to reveal the hidden value.", "easy": "Since you can't measure this value directly, scientists add up other measurable values, and the math reveals the hidden value."}
+  }
+}
+]

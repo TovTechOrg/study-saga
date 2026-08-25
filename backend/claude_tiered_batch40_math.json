@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the area and circumference of a circle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which formula correctly calculates the circumference of a circle, given radius r?",
+    "options": [
+      {"text": "C = 2πr", "isCorrect": true, "feedback": "Correct -- circumference is the distance around the circle, calculated as 2π times the radius."},
+      {"text": "C = πr²", "isCorrect": false, "feedback": "This is actually the formula for AREA, not circumference."},
+      {"text": "C = πr", "isCorrect": false, "feedback": "This is missing the factor of 2 needed for the correct circumference formula."},
+      {"text": "C = 2r", "isCorrect": false, "feedback": "This is the formula for a circle's diameter, not its circumference."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A circle has a radius of 5 cm. What is its area? (Use A = πr², and leave your answer in terms of π)",
+    "options": [
+      {"text": "25π cm²", "isCorrect": true, "feedback": "Correct -- A = π(5)² = π(25) = 25π cm²."},
+      {"text": "10π cm²", "isCorrect": false, "feedback": "This looks like it uses the circumference formula (2πr) pattern rather than correctly squaring the radius for area."},
+      {"text": "5π cm²", "isCorrect": false, "feedback": "This doesn't correctly square the radius as the area formula requires."},
+      {"text": "50π cm²", "isCorrect": false, "feedback": "This doesn't correctly result from squaring 5 (which gives 25, not 50)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A circular garden has a circumference of 31.4 meters. Using C = 2πr (with π ≈ 3.14), what is the garden's approximate area?",
+    "options": [
+      {"text": "78.5 square meters", "isCorrect": true, "feedback": "Correct -- solving 31.4 = 2(3.14)r gives r = 5, then A = 3.14(5)² = 3.14(25) = 78.5 square meters."},
+      {"text": "31.4 square meters", "isCorrect": false, "feedback": "This is just the given circumference value, not the correctly calculated area."},
+      {"text": "15.7 square meters", "isCorrect": false, "feedback": "This doesn't correctly result from first finding the radius and then applying the area formula."},
+      {"text": "157 square meters", "isCorrect": false, "feedback": "This doesn't correctly result from the two-step process of finding radius from circumference, then computing area."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measurement represents the total distance traversed along the circle's outer boundary.", "medium": "This is the distance all the way around the outside edge of the circle.", "easy": "This is the distance all the way around the circle."},
+    "medium": {"hard": "Substitute the given radius directly into the area formula, ensuring the radius term is properly squared.", "medium": "Plug 5 into A = πr², making sure to square the 5 first.", "easy": "Square the 5 (5×5=25), then put π in front: 25π."},
+    "hard": {"hard": "First solve the circumference formula for radius using the given circumference value, then substitute that radius into the area formula.", "medium": "First use C=2πr to find the radius, then plug that radius into the area formula A=πr².", "easy": "First find r from 31.4=2(3.14)r (r=5), then find area using A=3.14×5×5."}
+  }
+}
+]

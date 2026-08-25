@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between kinetic and thermodynamic reaction control",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In chemistry, a reaction's 'thermodynamic product' refers to the product that is:",
+    "options": [
+      {"text": "The most stable (lowest energy) product possible from that reaction", "isCorrect": true, "feedback": "Correct -- the thermodynamic product represents the most energetically stable outcome, though it may take longer to form."},
+      {"text": "The product that forms the fastest, regardless of its stability", "isCorrect": false, "feedback": "That describes the KINETIC product, not the thermodynamic product, which specifically refers to the most STABLE (not necessarily fastest-forming) product."},
+      {"text": "A product that never actually forms under any conditions", "isCorrect": false, "feedback": "This isn't accurate -- the thermodynamic product DOES form under appropriate conditions; it's specifically defined as the most stable possible outcome, not something that never forms."},
+      {"text": "The product with the highest possible energy content", "isCorrect": false, "feedback": "This is backwards -- the thermodynamic product specifically has the LOWEST energy (most stable), not the highest energy content."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Some reactions can produce different products depending on reaction conditions: the 'kinetic product' (forms fastest, via a lower activation energy pathway, but may be less stable) versus the 'thermodynamic product' (more stable, but requires overcoming a higher activation energy barrier to form). Why might running a reaction at a LOWER temperature tend to favor formation of the kinetic product?",
+    "options": [
+      {"text": "At lower temperatures, there's less available thermal energy for molecules to overcome higher activation energy barriers, making the more easily accessible (lower activation energy) kinetic pathway relatively more favored, even though the resulting product might be less thermodynamically stable", "isCorrect": true, "feedback": "Correct -- this temperature-dependent preference for the more kinetically accessible pathway, especially when there's insufficient thermal energy to reach the higher-barrier thermodynamic pathway, is precisely why lower temperatures often favor kinetic product formation."},
+      {"text": "Lower temperatures actually always favor thermodynamic product formation, not kinetic product formation", "isCorrect": false, "feedback": "This is backwards -- LOWER temperatures generally favor the KINETIC product (easier, lower-barrier pathway), while HIGHER temperatures (with more available thermal energy) can favor the THERMODYNAMIC product by overcoming its higher activation barrier."},
+      {"text": "Reaction temperature has no actual connection to which specific product (kinetic vs. thermodynamic) tends to form preferentially", "isCorrect": false, "feedback": "This isn't accurate -- reaction TEMPERATURE has a very DIRECT and significant connection to which product pathway (kinetic vs. thermodynamic) is more likely to be favored under given conditions."},
+      {"text": "The kinetic and thermodynamic products are actually always identical, with no meaningful difference between them", "isCorrect": false, "feedback": "This isn't accurate -- in reactions where this distinction applies, the kinetic and thermodynamic products are genuinely DIFFERENT chemical species, which is precisely why the reaction conditions (like temperature) can influence which one predominates."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If a reaction initially forms the kinetic product (at lower temperature) but is later heated for an extended period, it may eventually convert into the more stable thermodynamic product, even though it didn't form that way initially. Why does this observation make sense in terms of reaction energetics?",
+    "options": [
+      {"text": "Providing additional thermal energy (via extended heating) can give enough energy for the KINETIC product itself to overcome an activation energy barrier and convert into the more stable THERMODYNAMIC product, since the thermodynamic product represents a genuinely lower-energy, more stable end state that the system will naturally tend toward given sufficient energy and time", "isCorrect": true, "feedback": "Correct -- this phenomenon (kinetic product eventually converting to the thermodynamic product upon extended heating) illustrates how the initially-formed, less stable kinetic product can still convert to the ultimately more stable thermodynamic product, given enough energy input to overcome the necessary conversion barrier over time."},
+      {"text": "This conversion phenomenon is actually impossible according to established chemical principles", "isCorrect": false, "feedback": "This isn't accurate -- this kinetic-to-thermodynamic product conversion phenomenon is a well-documented, real chemical occurrence, entirely consistent with established principles of reaction energetics and thermodynamics."},
+      {"text": "The kinetic product is actually always MORE stable than the thermodynamic product, contrary to their naming", "isCorrect": false, "feedback": "This is backwards and contrary to their very definitions -- the THERMODYNAMIC product is by definition the MORE stable one, while the KINETIC product is typically LESS stable (just faster/easier to initially form)."},
+      {"text": "Additional heating has no actual connection to whether a kinetic product might eventually convert into a thermodynamic product", "isCorrect": false, "feedback": "This isn't accurate -- additional heating (providing more thermal energy over time) is DIRECTLY connected to and can specifically enable this kind of kinetic-to-thermodynamic product conversion process."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This designated product represents the reaction outcome possessing the minimal Gibbs free energy among all thermodynamically accessible possibilities.", "medium": "This is the product that ends up being the most stable, lowest-energy option overall.", "easy": "This is the product that ends up being the most stable option overall."},
+    "medium": {"hard": "Consider how available thermal energy relative to each pathway's specific activation energy requirement determines which reaction route is more accessible under given temperature conditions.", "medium": "With less heat energy available, molecules can only really make it over the SMALLER energy hump, not the bigger one needed for the more stable product.", "easy": "With less heat energy available, molecules can only get over the smaller energy hump, not the bigger one."},
+    "hard": {"hard": "Consider how sustained thermal energy input over time can eventually provide sufficient activation energy for an initially-formed, less stable product to convert into the ultimately more stable, lower-energy alternative.", "medium": "Given enough extra heat and time, even the 'easier' product that formed first can eventually get pushed over the bigger energy hump to become the more stable final product.", "easy": "Given enough extra heat and time, the easier product that formed first can eventually convert to the more stable one."}
+  }
+}
+]

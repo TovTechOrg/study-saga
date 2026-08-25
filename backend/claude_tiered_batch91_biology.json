@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between obligate and facultative anaerobes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An 'obligate anaerobe' is an organism that:",
+    "options": [
+      {"text": "Cannot survive in the presence of oxygen and can only live in oxygen-free environments", "isCorrect": true, "feedback": "Correct -- obligate anaerobes are actually harmed or killed by oxygen exposure, requiring strictly oxygen-free conditions to survive."},
+      {"text": "Requires oxygen at all times and cannot survive without it", "isCorrect": false, "feedback": "That describes an OBLIGATE AEROBE, not an obligate anaerobe, which specifically CANNOT survive WITH oxygen present."},
+      {"text": "Can switch freely between using oxygen or not, depending on availability", "isCorrect": false, "feedback": "That describes a FACULTATIVE anaerobe, not an obligate one -- obligate anaerobes specifically CANNOT tolerate oxygen at all, with no flexibility."},
+      {"text": "Never actually needs any form of energy to survive", "isCorrect": false, "feedback": "This isn't accurate -- obligate anaerobes DO need energy (obtained through anaerobic processes) to survive; they simply cannot tolerate OXYGEN specifically, not energy in general."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A 'facultative anaerobe' can survive and grow using EITHER aerobic respiration (with oxygen) or anaerobic processes (without oxygen), switching between these methods depending on the oxygen availability in its environment. Why might this metabolic flexibility provide a significant survival advantage compared to being strictly obligate (either aerobic or anaerobic only)?",
+    "options": [
+      {"text": "This flexibility allows facultative anaerobes to successfully survive and thrive across a much WIDER RANGE of environmental oxygen conditions than an obligate organism (restricted to only ONE specific oxygen condition) could tolerate", "isCorrect": true, "feedback": "Correct -- this metabolic flexibility, allowing successful survival regardless of whether oxygen happens to be present or absent, provides facultative anaerobes with a broader ecological niche and adaptability compared to more metabolically restricted obligate organisms."},
+      {"text": "Facultative anaerobes actually have NO survival advantage compared to obligate organisms, despite their metabolic flexibility", "isCorrect": false, "feedback": "This isn't accurate -- this metabolic FLEXIBILITY (using either aerobic or anaerobic processes) DOES provide a genuine, significant survival advantage across VARYING environmental oxygen conditions, compared to more restricted obligate organisms."},
+      {"text": "This metabolic flexibility has no actual connection to an organism's ability to survive varying environmental conditions", "isCorrect": false, "feedback": "This isn't accurate -- this metabolic flexibility is DIRECTLY connected to and specifically enables successful survival across a WIDER RANGE of varying environmental oxygen conditions."},
+      {"text": "Obligate organisms (either aerobic or anaerobic) can actually tolerate the exact same range of oxygen conditions as facultative organisms", "isCorrect": false, "feedback": "This isn't accurate -- OBLIGATE organisms are specifically RESTRICTED to just ONE type of oxygen condition (either requiring or being harmed by it), unlike facultative organisms, which can tolerate BOTH conditions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Despite their flexibility, facultative anaerobes generally generate significantly MORE energy (ATP) per glucose molecule when using aerobic respiration compared to when using anaerobic processes. Given this, why might a facultative anaerobe still 'choose' (via appropriate cellular/enzymatic regulation) to preferentially use aerobic respiration whenever oxygen IS actually available, rather than defaulting to anaerobic processes regardless?",
+    "options": [
+      {"text": "Since aerobic respiration is significantly more energy-efficient (yielding more ATP per glucose) than anaerobic processes, an organism capable of choosing would generally benefit from preferentially using the more efficient aerobic pathway whenever the necessary oxygen is actually available, reserving the less efficient anaerobic pathway specifically for situations when oxygen is absent", "isCorrect": true, "feedback": "Correct -- this preference for the more energy-efficient aerobic pathway (when possible) reflects a sensible evolutionary/physiological strategy, maximizing energy extraction efficiency from available glucose whenever environmental conditions (oxygen availability) permit it."},
+      {"text": "Anaerobic processes are actually significantly MORE energy-efficient than aerobic respiration, contrary to what's described", "isCorrect": false, "feedback": "This isn't accurate -- AEROBIC respiration is specifically MORE energy-efficient (yields more ATP per glucose) than anaerobic processes, not the reverse, which is precisely why organisms would generally prefer it when oxygen is available."},
+      {"text": "Facultative anaerobes actually have no preference at all between these two metabolic pathways, using them completely randomly", "isCorrect": false, "feedback": "This isn't accurate -- facultative anaerobes typically DO show a regulated PREFERENCE for the more efficient aerobic pathway when oxygen is available, rather than randomly alternating between pathways with no logical basis."},
+      {"text": "Energy efficiency has no actual connection to which metabolic pathway a facultative anaerobe would preferentially use", "isCorrect": false, "feedback": "This isn't accurate -- energy efficiency considerations are DIRECTLY and logically connected to explaining why a facultative anaerobe would generally prefer the more efficient aerobic pathway whenever oxygen is actually available."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This organism classification is characterized by an absolute physiological intolerance to molecular oxygen exposure.", "medium": "This kind of organism can only survive in places with absolutely no oxygen at all.", "easy": "This kind of organism can only survive where there's no oxygen at all."},
+    "medium": {"hard": "Consider how possessing multiple viable metabolic pathways expands the range of environmental conditions under which successful survival remains possible, compared to being restricted to just one.", "medium": "Being able to use either method means these organisms can survive in more DIFFERENT kinds of places, whether oxygen is there or not.", "easy": "Being able to use either method means these organisms can survive in more places."},
+    "hard": {"hard": "Consider how an organism capable of selecting between metabolic pathways would generally benefit from prioritizing the pathway offering greater energy yield whenever the necessary conditions for that pathway are actually met.", "medium": "Since one method gets a LOT more energy out of the same food, it makes sense to use that better method whenever you actually can (when oxygen's available).", "easy": "Since aerobic respiration gets more energy from the same food, it makes sense to use it whenever possible."}
+  }
+}
+]

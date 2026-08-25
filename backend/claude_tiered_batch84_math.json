@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between permutations and factorial notation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 5! (5 factorial) equal?",
+    "options": [
+      {"text": "120 (5×4×3×2×1)", "isCorrect": true, "feedback": "Correct -- factorial notation means multiplying that number by every positive integer smaller than it, down to 1."},
+      {"text": "5", "isCorrect": false, "feedback": "This is just the number itself, without correctly applying the factorial operation (multiplying by all smaller positive integers)."},
+      {"text": "25 (5×5)", "isCorrect": false, "feedback": "This incorrectly squares the number, rather than correctly applying factorial notation (multiplying by ALL smaller positive integers down to 1)."},
+      {"text": "15 (5+4+3+2+1)", "isCorrect": false, "feedback": "This incorrectly ADDS the numbers together, rather than correctly MULTIPLYING them, as factorial notation requires."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Simplify the expression: 7!/5!",
+    "options": [
+      {"text": "42", "isCorrect": true, "feedback": "Correct -- 7!/5! = (7×6×5×4×3×2×1)/(5×4×3×2×1), and since 5! appears in both, it cancels out, leaving 7×6=42."},
+      {"text": "1.4", "isCorrect": false, "feedback": "This doesn't correctly simplify the factorial expression -- most of the terms in 7! and 5! actually cancel out, leaving just 7×6, not a decimal result."},
+      {"text": "5,040", "isCorrect": false, "feedback": "This is the value of 7! alone (without dividing by 5!), not the correctly simplified expression 7!/5!."},
+      {"text": "2", "isCorrect": false, "feedback": "This doesn't correctly result from simplifying 7!/5! -- most terms cancel, leaving 7×6=42, not simply the difference between 7 and 5."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The permutation formula P(n,r)=n!/(n-r)! can be understood as directly counting the number of ways to arrange r items chosen from n total items, in order. Explain why this formula effectively 'cancels out' the unnecessary factorial terms, using P(8,3) as an example.",
+    "options": [
+      {"text": "P(8,3)=8!/(8-3)!=8!/5!=(8×7×6×5!)/5!=8×7×6=336, since the (n-r)! term in the denominator (5! here) cancels with the corresponding tail-end portion of the n! term in the numerator, leaving only the first r factors of n! (which represent the r sequential, decreasing choices being made)", "isCorrect": true, "feedback": "Correct -- this algebraic cancellation elegantly reflects the actual counting logic: choosing the 1st of 3 items from 8 options, then the 2nd from the remaining 7, then the 3rd from the remaining 6, exactly matching 8×7×6."},
+      {"text": "This formula actually doesn't involve any factorial cancellation at all", "isCorrect": false, "feedback": "This isn't accurate -- this formula SPECIFICALLY relies on factorial cancellation (the (n-r)! denominator canceling with the corresponding tail portion of n! in the numerator) to arrive at its simplified final calculation."},
+      {"text": "P(8,3) should actually equal 8!/3!, not 8!/(8-3)!", "isCorrect": false, "feedback": "This isn't accurate -- the permutation formula specifically uses (n-r)! in the denominator, which for P(8,3) means 8!/5! (since 8-3=5), not 8!/3!."},
+      {"text": "The cancellation in this formula has no actual connection to the underlying sequential counting logic for permutations", "isCorrect": false, "feedback": "This isn't accurate -- the cancellation DIRECTLY and elegantly reflects the underlying sequential counting logic (successive choices from a shrinking pool of remaining options), which is precisely why the formula works as intended."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This notation denotes the cumulative product of all positive integers not exceeding the specified value.", "medium": "This means multiplying the number by every whole number smaller than it, all the way down to 1.", "easy": "This means multiplying the number by every smaller whole number down to 1."},
+    "medium": {"hard": "Recognize that the smaller factorial term in the denominator shares a common factor with the larger factorial term in the numerator, allowing for direct algebraic cancellation.", "medium": "Notice that 5! is completely contained within 7!, so most of the terms will cancel out, leaving just 7×6.", "easy": "5! cancels out of both, leaving just 7×6=42."},
+    "hard": {"hard": "Expand the numerator factorial explicitly to reveal the shared (n-r)! factor with the denominator, demonstrating the algebraic cancellation that isolates the first r sequential factors.", "medium": "Write out 8! as 8×7×6×5!, then notice the 5! in the numerator and denominator cancel completely, leaving just 8×7×6.", "easy": "Write 8! as 8×7×6×5!, then cancel the 5!, leaving 8×7×6=336."}
+  }
+}
+]

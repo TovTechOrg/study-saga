@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of set theory notation (union, intersection, complement)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The union of two sets (A∪B) includes:",
+    "options": [
+      {"text": "All elements that are in A, in B, or in both", "isCorrect": true, "feedback": "Correct -- union combines all elements from both sets, without duplication, into one comprehensive combined set."},
+      {"text": "Only the elements that are in BOTH A and B simultaneously", "isCorrect": false, "feedback": "That describes the INTERSECTION (A∩B), not the union, which specifically includes elements from EITHER set (or both), not exclusively shared elements."},
+      {"text": "Only the elements that are in A but definitely NOT in B", "isCorrect": false, "feedback": "That describes a set DIFFERENCE (A-B), not the union, which specifically includes elements from BOTH sets combined, not exclusively one set's unique elements."},
+      {"text": "An empty set with absolutely no elements at all", "isCorrect": false, "feedback": "This isn't accurate -- the union specifically COMBINES elements from both sets (unless both original sets happen to be empty), not necessarily an empty result."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Set A = {1,2,3,4} and Set B = {3,4,5,6}. What is A∩B (the intersection of A and B)?",
+    "options": [
+      {"text": "{3,4}", "isCorrect": true, "feedback": "Correct -- intersection includes only the elements present in BOTH sets, and 3 and 4 are the only values appearing in both A and B."},
+      {"text": "{1,2,3,4,5,6}", "isCorrect": false, "feedback": "This is actually the UNION (A∪B) of these sets, not the intersection, which specifically includes only the SHARED elements, not all combined elements."},
+      {"text": "{1,2}", "isCorrect": false, "feedback": "These elements are only in set A, not in BOTH sets -- intersection specifically requires elements present in both A AND B."},
+      {"text": "{5,6}", "isCorrect": false, "feedback": "These elements are only in set B, not in BOTH sets -- intersection specifically requires elements present in both A AND B, which are 3 and 4."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In a survey of 100 people, 60 like coffee, 45 like tea, and 25 like both coffee AND tea. Using the inclusion-exclusion principle (|A∪B|=|A|+|B|-|A∩B|), how many people like coffee OR tea (or both)?",
+    "options": [
+      {"text": "80 people", "isCorrect": true, "feedback": "Correct -- |A∪B|=60+45-25=80. Subtracting the 25 who like both prevents double-counting them, since they were already included in both the 60 and the 45 counts."},
+      {"text": "105 people", "isCorrect": false, "feedback": "This simply adds 60+45 without correctly subtracting the 25 overlap, resulting in double-counting the people who like both."},
+      {"text": "25 people", "isCorrect": false, "feedback": "This is just the intersection value (people who like both), not the correctly calculated UNION (people who like coffee, tea, or both)."},
+      {"text": "35 people", "isCorrect": false, "feedback": "This doesn't correctly apply the inclusion-exclusion formula -- recheck by properly adding 60+45 and then subtracting 25."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This set operation aggregates all distinct elements present in either constituent set, without regard to shared membership.", "medium": "This combines everything from both groups together into one bigger group.", "easy": "This combines everything from both groups into one bigger group."},
+    "medium": {"hard": "Identify only the elements common to both specified sets, excluding elements unique to either individual set.", "medium": "Look for the numbers that show up in BOTH lists at the same time.", "easy": "Look for the numbers that show up in both lists: 3 and 4."},
+    "hard": {"hard": "Apply the inclusion-exclusion principle by summing the individual set sizes and subtracting the overlap to avoid double-counting shared members.", "medium": "Add the coffee lovers and tea lovers together, then subtract the overlap (people who like both) since they were counted twice.", "easy": "Add 60+45=105, then subtract the 25 who were counted twice: 105-25=80."}
+  }
+}
+]

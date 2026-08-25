@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between torque and force",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Torque' specifically measures a force's tendency to:",
+    "options": [
+      {"text": "Cause rotation around a pivot point or axis", "isCorrect": true, "feedback": "Correct -- torque specifically measures a force's rotational effect around a pivot or axis, unlike force alone, which just describes a straight-line push or pull."},
+      {"text": "Cause straight-line (linear) acceleration of an object", "isCorrect": false, "feedback": "That describes plain FORCE (via Newton's second law), not torque specifically -- torque concerns ROTATIONAL effect, while force alone concerns straight-line acceleration."},
+      {"text": "Change an object's temperature", "isCorrect": false, "feedback": "This isn't accurate -- torque concerns rotational motion, entirely unrelated to temperature change, which is a thermal, not mechanical, property."},
+      {"text": "Prevent any motion from occurring at all", "isCorrect": false, "feedback": "This isn't accurate -- torque specifically describes a rotational EFFECT (tendency to cause or resist rotation), not simply preventing all motion outright."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Applying the exact same force to a wrench produces a LARGER torque (and is easier to loosen a bolt) when applied farther from the pivot point (at the end of a long wrench handle) compared to applying it closer to the pivot. Why does the distance from the pivot point (called the 'lever arm') affect the resulting torque, even though the force itself hasn't changed?",
+    "options": [
+      {"text": "Torque is specifically calculated as the product of the applied force AND the distance from the pivot point (the lever arm) at which that force is applied -- since torque depends directly on this distance, applying the identical force at a GREATER distance from the pivot mathematically produces a LARGER torque value, which is precisely why using a longer wrench handle makes it easier to loosen a stuck bolt with the same amount of applied force", "isCorrect": true, "feedback": "Correct -- this explanation of torque as the direct product of force and lever-arm distance correctly explains why increasing distance from the pivot increases torque even without changing the force itself, a widely applied practical principle (like using a longer wrench for more leverage)."},
+      {"text": "Torque would actually be completely independent of the distance from the pivot point, depending only on the force applied", "isCorrect": false, "feedback": "This isn't accurate -- torque specifically DEPENDS DIRECTLY on distance from the pivot (the lever arm), not just on the force alone; this dependence is precisely why lever-arm length matters so much."},
+      {"text": "Applying force closer to the pivot point would actually produce a LARGER torque than applying it farther away, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- applying the SAME force FARTHER from the pivot produces a LARGER torque, not applying it closer, which is precisely why a longer wrench handle provides more leverage."},
+      {"text": "The lever arm distance has no actual mathematical connection to determining the resulting torque value", "isCorrect": false, "feedback": "This isn't accurate -- the lever arm distance IS DIRECTLY and mathematically connected to torque, since torque is calculated as the product of force and this distance."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Torque depends not just on the magnitude of the applied force and the distance from the pivot, but also on the ANGLE at which the force is applied relative to the lever arm -- a force applied perpendicular (at exactly 90 degrees) to the lever arm produces maximum torque, while a force applied directly along the length of the lever arm (parallel, 0 degrees) produces ZERO torque. Explain the physical/geometric reasoning behind why the angle of force application matters this much.",
+    "options": [
+      {"text": "Only the COMPONENT of the applied force that acts perpendicular to the lever arm actually contributes to rotation -- a force applied at an angle can be mathematically broken down into a perpendicular component (which causes rotation) and a parallel component (which acts along the lever arm's length and produces no rotational effect at all) -- when the force is applied fully perpendicular, 100% of it contributes to torque (maximum), but when applied fully parallel, none of it has any perpendicular component, so it contributes zero torque, despite the force itself being nonzero", "isCorrect": true, "feedback": "Correct -- this explanation of decomposing an angled force into perpendicular (rotation-causing) and parallel (non-rotational) components correctly explains why torque depends so critically on the angle of force application, a key refinement beyond the simpler force-times-distance torque formula."},
+      {"text": "The angle at which a force is applied relative to the lever arm would actually have no real effect on the resulting torque value", "isCorrect": false, "feedback": "This isn't accurate -- the angle of force application DOES significantly affect torque, ranging from maximum torque (perpendicular) to zero torque (parallel), for the exact same force magnitude and lever-arm length."},
+      {"text": "A force applied parallel to the lever arm would actually produce the MAXIMUM possible torque, while perpendicular application would produce zero torque", "isCorrect": false, "feedback": "This is backwards -- PERPENDICULAR force application produces MAXIMUM torque, while PARALLEL application produces ZERO torque, the opposite of what's stated here."},
+      {"text": "Force component decomposition (breaking a force into perpendicular and parallel parts) has no actual connection to explaining why torque depends on the angle of force application", "isCorrect": false, "feedback": "This isn't accurate -- force component decomposition IS DIRECTLY connected to and correctly explains why only the perpendicular component of an applied force contributes to torque."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This mechanical quantity quantifies a force's efficacy in inducing angular acceleration about a designated pivot axis.", "medium": "This measures how much a force makes something spin around a pivot point.", "easy": "This measures how much a force makes something spin around a pivot point."},
+    "medium": {"hard": "Consider how torque is mathematically defined as the product of applied force magnitude and the perpendicular lever-arm distance, such that increasing distance proportionally scales the resulting torque.", "medium": "Torque is basically force multiplied by how far out from the pivot you're pushing, so pushing the same amount farther out along the handle gives you a bigger number.", "easy": "Torque is force multiplied by how far out from the pivot you're pushing, so pushing farther out gives a bigger torque."},
+    "hard": {"hard": "Consider how an applied force decomposes into perpendicular and parallel components relative to the lever arm, with only the perpendicular component contributing to the rotational torque effect.", "medium": "Only the part of the push that's actually aimed sideways-across the handle does anything to spin it, so a push aimed straight along the handle's length does nothing to make it turn, even though it's still a real push.", "easy": "Only the part of the push aimed sideways across the handle spins it; a push aimed straight along the handle does nothing to turn it."}
+  }
+}
+]

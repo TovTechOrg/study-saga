@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between physical states of matter at the particle-energy level",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Compared to particles in a solid, particles in a gas have:",
+    "options": [
+      {"text": "Much greater average kinetic energy and much more freedom of movement", "isCorrect": true, "feedback": "Correct -- gas particles move rapidly and independently, with far more kinetic energy and freedom compared to the tightly-bound, vibrating particles of a solid."},
+      {"text": "Much less average kinetic energy and much less freedom of movement", "isCorrect": false, "feedback": "This is backwards -- gas particles have SIGNIFICANTLY MORE kinetic energy and freedom of movement compared to solid particles, not less."},
+      {"text": "Exactly the same kinetic energy and freedom of movement as solid particles", "isCorrect": false, "feedback": "This isn't accurate -- gas and solid particles have DRAMATICALLY DIFFERENT kinetic energy levels and freedom of movement, not identical amounts."},
+      {"text": "No kinetic energy at all, remaining perfectly still", "isCorrect": false, "feedback": "This isn't accurate -- gas particles specifically have HIGH kinetic energy and are in CONSTANT, rapid motion, not perfectly still with zero kinetic energy."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "As a substance transitions from solid to liquid to gas, the intermolecular forces holding its particles together become progressively LESS able to overcome the particles' increasing kinetic energy. Why does this specific balance between kinetic energy and intermolecular forces determine which state of matter a substance exists in?",
+    "options": [
+      {"text": "When intermolecular forces DOMINATE over particle kinetic energy, particles remain fixed in place (solid); when these two factors are more BALANCED, particles can move past each other while still remaining loosely associated (liquid); and when kinetic energy DOMINATES over intermolecular forces, particles move independently, mostly overcoming those attractive forces (gas) -- the specific STATE of matter reflects which of these two competing factors currently has the upper hand", "isCorrect": true, "feedback": "Correct -- this understanding of states of matter as reflecting a genuine COMPETITION/BALANCE between particle kinetic energy (promoting movement/freedom) and intermolecular attractive forces (promoting fixed structure) is a foundational concept for correctly understanding why and how substances exist in different physical states under different conditions."},
+      {"text": "Intermolecular forces and particle kinetic energy actually have no real connection to determining a substance's physical state", "isCorrect": false, "feedback": "This isn't accurate -- these two factors ARE DIRECTLY and centrally connected to and DETERMINE which physical state a substance exists in, based on their relative balance/dominance."},
+      {"text": "Intermolecular forces would actually need to be STRONGEST in the gas state, not the solid state, for this explanation to make sense", "isCorrect": false, "feedback": "This is backwards -- intermolecular forces are relatively STRONGEST (relative to kinetic energy) in the SOLID state (holding particles fixed), and relatively WEAKEST (relative to kinetic energy) in the GAS state, not the reverse."},
+      {"text": "Particle kinetic energy actually remains completely constant across all three states of matter, with no meaningful variation", "isCorrect": false, "feedback": "This isn't accurate -- particle kinetic energy VARIES SIGNIFICANTLY across the three states (generally increasing from solid to liquid to gas), which is precisely part of what determines the resulting physical state."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "At a substance's exact melting point, both solid and liquid phases can coexist stably together (like ice and water at 0°C). Using the kinetic energy vs. intermolecular force framework, explain why this specific temperature represents a genuine 'balance point' between these two competing factors.",
+    "options": [
+      {"text": "At exactly the melting point, the AVERAGE particle kinetic energy is precisely at the threshold where it's JUST BARELY sufficient to overcome the intermolecular forces for SOME particles (allowing localized melting into liquid) while SIMULTANEOUSLY still being insufficient to overcome those same forces for OTHER particles (remaining as solid) -- this delicate, genuine energy balance is precisely why both phases can coexist stably together at this specific transition temperature", "isCorrect": true, "feedback": "Correct -- this deeper understanding of the melting point as representing a genuine STATISTICAL/ENERGETIC balance point (rather than a single sharp, instantaneous switch), where the competing kinetic energy and intermolecular force factors are precisely matched on average, correctly explains why stable phase coexistence is specifically possible at this particular characteristic temperature."},
+      {"text": "At the melting point, intermolecular forces actually completely disappear entirely, explaining the coexistence of both phases", "isCorrect": false, "feedback": "This isn't accurate -- intermolecular forces do NOT completely disappear at the melting point -- they remain PARTIALLY effective, creating the genuine BALANCE with kinetic energy that allows stable phase coexistence, not a complete absence of these forces."},
+      {"text": "This phase coexistence phenomenon has no actual connection to the balance between particle kinetic energy and intermolecular forces", "isCorrect": false, "feedback": "This isn't accurate -- this phenomenon IS DIRECTLY and specifically connected to and EXPLAINED BY this exact balance between kinetic energy and intermolecular forces at this particular characteristic temperature."},
+      {"text": "All particles in the substance actually have IDENTICAL kinetic energy at any given temperature, including at the melting point", "isCorrect": false, "feedback": "This isn't accurate -- particles actually have a DISTRIBUTION of different kinetic energies at any given temperature (not identical values), which is precisely why SOME particles can have enough energy to melt while OTHERS don't, at the same shared melting point temperature."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This state possesses substantially elevated translational kinetic energy and minimal constraint on particle mobility relative to a solid.", "medium": "Gas particles zoom around much more freely and with much more energy than particles locked in a solid.", "easy": "Gas particles zoom around much more freely and with much more energy than solid particles."},
+    "medium": {"hard": "Consider how the relative dominance of kinetic energy versus intermolecular attraction across a spectrum determines the resulting degree of particle mobility and structural order.", "medium": "Whichever of the two forces -- particles wanting to move around, or particles being pulled together -- wins out determines whether you get a solid, liquid, or gas.", "easy": "Whichever force wins -- particles moving around or particles being pulled together -- determines the state."},
+    "hard": {"hard": "Consider how a distribution of individual particle kinetic energies around a shared average value allows some particles to exceed the intermolecular force threshold while others remain below it at the same macroscopic temperature.", "medium": "Not every particle has exactly the same amount of energy even at the same temperature -- some have just enough to break free and become liquid, while others don't quite have enough yet.", "easy": "Not every particle has exactly the same energy -- some have enough to become liquid, others don't yet."}
+  }
+}
+]

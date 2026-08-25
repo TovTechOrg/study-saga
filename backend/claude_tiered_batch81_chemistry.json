@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between exothermic and endothermic phase transitions at the particle level",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of these phase changes is exothermic (releases energy)?",
+    "options": [
+      {"text": "Condensation (gas to liquid)", "isCorrect": true, "feedback": "Correct -- as gas particles slow down and form a liquid, they release energy into their surroundings."},
+      {"text": "Melting (solid to liquid)", "isCorrect": false, "feedback": "Melting is ENDOTHERMIC (absorbs energy), not exothermic -- it requires energy input to break the solid's rigid structure."},
+      {"text": "Boiling/vaporization (liquid to gas)", "isCorrect": false, "feedback": "Boiling is ENDOTHERMIC (absorbs energy), not exothermic -- it requires energy input to overcome the liquid's intermolecular attractions."},
+      {"text": "Sublimation (solid to gas)", "isCorrect": false, "feedback": "Sublimation is ENDOTHERMIC (absorbs energy), not exothermic -- it requires significant energy input to go directly from solid to gas."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "At the particle level, why is condensation (gas to liquid) considered exothermic, releasing energy into the surroundings?",
+    "options": [
+      {"text": "As gas particles slow down and come closer together to form a liquid, they lose kinetic energy and form new, more stable intermolecular attractions, releasing the associated energy as heat", "isCorrect": true, "feedback": "Correct -- this transition from a higher-energy, more disordered gas state to a lower-energy, more ordered liquid state necessarily releases the energy difference into the surroundings."},
+      {"text": "Condensation actually requires significant energy input to occur, making it endothermic instead", "isCorrect": false, "feedback": "This isn't accurate -- condensation is specifically EXOTHERMIC (releases energy), not endothermic; it's the REVERSE process (evaporation/boiling) that requires energy input."},
+      {"text": "Particle energy has no actual connection to whether a phase change releases or absorbs energy", "isCorrect": false, "feedback": "This isn't accurate -- particle-level kinetic energy and intermolecular attraction changes are PRECISELY what determine whether a phase change is exothermic or endothermic."},
+      {"text": "Gas particles actually gain kinetic energy and move faster during condensation", "isCorrect": false, "feedback": "This is backwards -- during condensation, particles LOSE kinetic energy and slow down (transitioning from a more energetic gas state to a less energetic liquid state), not gain energy."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The energy released during condensation (or absorbed during boiling) for a given substance is called its 'latent heat of vaporization,' and this value is typically quite large compared to the energy needed for smaller temperature changes within a single phase. Why does this large latent heat value make water-based cooling systems (like sweating or steam-based industrial cooling) particularly effective?",
+    "options": [
+      {"text": "Because evaporating even a relatively small amount of water absorbs a disproportionately large amount of heat energy from the surrounding area (due to water's high latent heat of vaporization), providing significant cooling effectiveness relative to the amount of water actually used", "isCorrect": true, "feedback": "Correct -- this large latent heat value is precisely why phase-change-based cooling systems (like sweating, which relies on evaporative cooling) can be remarkably effective at removing heat, using relatively modest amounts of water in the process."},
+      {"text": "Water's latent heat of vaporization is actually quite small compared to other common substances", "isCorrect": false, "feedback": "This isn't accurate -- water actually has a NOTABLY HIGH latent heat of vaporization compared to many other common substances, which is precisely why it's so effective for cooling applications."},
+      {"text": "This large latent heat value has no actual connection to why evaporative cooling systems work effectively", "isCorrect": false, "feedback": "This isn't accurate -- this large latent heat value is DIRECTLY and centrally connected to explaining why evaporative cooling (like sweating) can be such an effective heat-removal mechanism."},
+      {"text": "Cooling effectiveness in these systems has no actual connection to the specific phase change occurring in the water", "isCorrect": false, "feedback": "This isn't accurate -- the effectiveness of these cooling systems is DIRECTLY and specifically connected to the phase change (liquid to gas evaporation) occurring in the water, which is precisely what absorbs the significant heat energy."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This particular phase transition involves particles transitioning from a disordered, energetic gaseous state to a more ordered, lower-energy liquid state.", "medium": "This is the change from gas back into liquid, like water vapor turning into dew.", "easy": "This is the change from gas back into liquid, like water vapor turning into dew."},
+    "medium": {"hard": "Consider the direction of kinetic energy change and intermolecular bond formation as particles transition from a higher-energy, disordered state to a lower-energy, more ordered state.", "medium": "As gas particles slow down and get closer together to become liquid, that lost motion energy has to go somewhere -- it gets released as heat.", "easy": "As gas particles slow down to become liquid, that lost energy gets released as heat."},
+    "hard": {"hard": "Consider how a large per-unit-mass energy requirement for phase transition translates into substantial heat absorption capacity even when relatively modest quantities of the substance undergo that transition.", "medium": "Since it takes SO much energy to turn even a little bit of water into vapor, that evaporating water can soak up a whole lot of heat from its surroundings.", "easy": "Since it takes so much energy to evaporate even a little water, that process can soak up a lot of heat."}
+  }
+}
+]

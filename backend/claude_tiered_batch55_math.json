@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of absolute value and its applications",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the absolute value of a number represent?",
+    "options": [
+      {"text": "The distance of that number from zero on the number line, always expressed as non-negative", "isCorrect": true, "feedback": "Correct -- absolute value strips away the sign, representing pure magnitude/distance from zero, always as a non-negative number."},
+      {"text": "The number itself, unchanged", "isCorrect": false, "feedback": "Absolute value can change a negative number's sign -- for example, |-5| = 5, not -5, so it's not always simply 'unchanged.'"},
+      {"text": "Always exactly half of the original number", "isCorrect": false, "feedback": "Absolute value doesn't halve a number -- it represents the number's distance from zero, keeping the same magnitude but removing any negative sign."},
+      {"text": "A number that is always negative", "isCorrect": false, "feedback": "Absolute value is always NON-NEGATIVE (zero or positive), never negative."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Evaluate: |-8| + |3|",
+    "options": [
+      {"text": "11", "isCorrect": true, "feedback": "Correct -- |-8|=8 and |3|=3, so 8+3=11."},
+      {"text": "-5", "isCorrect": false, "feedback": "This doesn't correctly apply absolute value to -8 first (which should become positive 8) before adding."},
+      {"text": "5", "isCorrect": false, "feedback": "This looks like it might have subtracted instead of added the two absolute values together."},
+      {"text": "-11", "isCorrect": false, "feedback": "The final answer should be positive, since it's a sum of two non-negative absolute values."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: |x - 5| = 3",
+    "options": [
+      {"text": "x = 8 or x = 2", "isCorrect": true, "feedback": "Correct -- absolute value equations have two cases: x-5=3 (giving x=8) OR x-5=-3 (giving x=2)."},
+      {"text": "x = 8 only", "isCorrect": false, "feedback": "This misses the second valid solution -- absolute value equations of this form typically have TWO solutions, not just one."},
+      {"text": "x = -8 or x = -2", "isCorrect": false, "feedback": "This has the wrong signs -- solving both cases (x-5=3 and x-5=-3) correctly gives x=8 and x=2, not their negatives."},
+      {"text": "x = 3 only", "isCorrect": false, "feedback": "This doesn't correctly solve the absolute value equation using both possible cases."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value represents the non-negative magnitude of a quantity's displacement from the origin point, independent of directional sign.", "medium": "This tells you how far a number is from zero, ignoring whether it's positive or negative.", "easy": "This tells you how far a number is from zero, ignoring its sign."},
+    "medium": {"hard": "Convert each term to its non-negative magnitude before performing any subsequent arithmetic operations.", "medium": "First turn -8 into positive 8, and 3 stays 3, then add them.", "easy": "Turn -8 into 8, then add 3: 8+3=11."},
+    "hard": {"hard": "Split the absolute value equation into its two possible cases (the expression equals the positive value, or equals its negative), then solve each resulting linear equation separately.", "medium": "Set up two separate equations: x-5=3 and x-5=-3, then solve each one for x.", "easy": "Solve x-5=3 (giving x=8) and x-5=-3 (giving x=2)."}
+  }
+}
+]

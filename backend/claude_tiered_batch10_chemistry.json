@@ -1,0 +1,248 @@
+[
+{
+  "topic": "weak vs. strong acids",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What distinguishes a strong acid from a weak acid?",
+    "options": [
+      {"text": "A strong acid fully dissociates (breaks apart) into ions in water, while a weak acid only partially dissociates", "isCorrect": true, "feedback": "Correct -- strength refers to the degree of ionization, not necessarily concentration."},
+      {"text": "A strong acid has a higher pH than a weak acid", "isCorrect": false, "feedback": "Strong acids actually tend to have LOWER pH than weak acids at the same concentration, not higher."},
+      {"text": "A strong acid is always more concentrated than a weak acid", "isCorrect": false, "feedback": "Strength (dissociation) and concentration are actually two separate properties -- you can have a dilute strong acid or a concentrated weak acid."},
+      {"text": "A strong acid is always more dangerous to touch", "isCorrect": false, "feedback": "Danger level depends on multiple factors, but the chemical definition of 'strong' specifically refers to dissociation, not general safety."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Hydrochloric acid (HCl) is considered a strong acid. What does this mean about its behavior in water?",
+    "options": [
+      {"text": "It almost completely breaks apart into H⁺ and Cl⁻ ions in solution", "isCorrect": true, "feedback": "Correct -- this near-complete ionization is exactly what defines it as a strong acid."},
+      {"text": "It doesn't dissolve in water at all", "isCorrect": false, "feedback": "HCl actually dissolves and ionizes very readily in water -- that's central to its identity as a strong acid."},
+      {"text": "It only partially breaks apart into ions", "isCorrect": false, "feedback": "That describes a weak acid's behavior, not a strong acid like HCl."},
+      {"text": "It turns into a solid immediately upon contact with water", "isCorrect": false, "feedback": "HCl doesn't solidify in water -- it stays dissolved and ionizes almost completely."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Acetic acid (found in vinegar) is a weak acid, yet a concentrated sample of it can still be more corrosive than a very dilute sample of a strong acid. Why doesn't 'weak' always mean 'harmless'?",
+    "options": [
+      {"text": "Acid strength refers to the percentage of molecules that ionize, not the total quantity of acid present -- a highly concentrated weak acid can still deliver a large total amount of H⁺ ions", "isCorrect": true, "feedback": "Correct -- strength and concentration are independent properties, so a concentrated weak acid can still be quite hazardous."},
+      {"text": "The terms 'weak' and 'strong' actually refer to concentration, not ionization behavior", "isCorrect": false, "feedback": "This mixes up the two properties -- strength specifically refers to the degree of ionization, while concentration is a separate measure of how much acid is dissolved."},
+      {"text": "Weak acids are actually always more dangerous than strong acids in every case", "isCorrect": false, "feedback": "This is an overgeneralization -- the actual hazard depends on both concentration AND strength together, not a fixed ranking."},
+      {"text": "This scenario is actually impossible in real chemistry", "isCorrect": false, "feedback": "This scenario is entirely possible and well-documented -- concentration and acid strength are independent factors."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This classification is based on the extent to which the acid molecules separate into charged particles in solution.", "medium": "This describes how completely the acid molecules break apart into ions when dissolved in water.", "easy": "This describes whether the acid breaks apart completely or only partly in water."},
+    "medium": {"hard": "A strong acid ionizes nearly completely, releasing almost all of its available hydrogen ions into solution.", "medium": "Being a strong acid means nearly all of its molecules split apart into ions once in water.", "easy": "Being a strong acid means it almost completely splits apart into ions in water."},
+    "hard": {"hard": "Total acidic hazard depends on both the ionization fraction (strength) and the total moles of acid present (concentration) -- a high concentration can compensate for a lower ionization percentage.", "medium": "Even if only a fraction of the molecules ionize, having a LOT of those molecules to begin with can still produce a large total amount of acid.", "easy": "Even if only some of it breaks apart, having a whole lot of it to begin with can still make a lot of acid overall."}
+  }
+},
+{
+  "topic": "electrolysis basics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is electrolysis?",
+    "options": [
+      {"text": "Using electrical energy to force a non-spontaneous chemical reaction to occur", "isCorrect": true, "feedback": "Correct -- electrolysis uses an external power source to drive reactions that wouldn't happen naturally on their own."},
+      {"text": "The natural breakdown of a substance over time without any energy input", "isCorrect": false, "feedback": "Electrolysis specifically requires an external electrical energy source -- it isn't a spontaneous natural process."},
+      {"text": "The process of measuring a substance's electrical conductivity", "isCorrect": false, "feedback": "That describes a conductivity test, not electrolysis, which actually drives a chemical change."},
+      {"text": "A method for cooling chemical reactions", "isCorrect": false, "feedback": "Electrolysis is about using electricity to drive a reaction, not specifically about temperature control."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In the electrolysis of water, what two products are formed?",
+    "options": [
+      {"text": "Hydrogen gas and oxygen gas", "isCorrect": true, "feedback": "Correct -- electrical energy splits water molecules into their two component gases."},
+      {"text": "Salt and water", "isCorrect": false, "feedback": "Electrolysis of water doesn't produce salt -- it splits water into hydrogen and oxygen gases."},
+      {"text": "Carbon dioxide and water", "isCorrect": false, "feedback": "These aren't the products of electrolyzing water -- that reaction splits water into hydrogen and oxygen."},
+      {"text": "Only water vapor", "isCorrect": false, "feedback": "Electrolysis actually breaks water down into two distinct new gaseous products, not simply vaporizing it."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does the electrolysis of water require an external power source, unlike a spontaneous reaction like combustion?",
+    "options": [
+      {"text": "Splitting water into hydrogen and oxygen is energetically unfavorable, requiring energy input to proceed, unlike combustion which releases energy", "isCorrect": true, "feedback": "Correct -- electrolysis reverses a naturally favorable reaction (the formation of water), so it requires an energy investment to force it to occur."},
+      {"text": "Water doesn't actually contain any hydrogen or oxygen to begin with", "isCorrect": false, "feedback": "Water is chemically composed of hydrogen and oxygen (H₂O) -- electrolysis simply separates these already-present elements."},
+      {"text": "Electrolysis and combustion are actually the exact same type of reaction", "isCorrect": false, "feedback": "These are fundamentally different processes -- one requires energy input (electrolysis), while the other releases energy (combustion)."},
+      {"text": "There is no real difference in energy requirements between these two reactions", "isCorrect": false, "feedback": "There's a clear and fundamental difference: electrolysis requires an energy input, while combustion releases energy."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process uses an external power source to force a chemical change that wouldn't happen naturally.", "medium": "This process uses electricity to make a chemical reaction happen that wouldn't happen on its own.", "easy": "This process uses electricity to break a substance apart into new substances."},
+    "medium": {"hard": "This reaction produces the same two elemental gases that originally combined to form the starting compound.", "medium": "Water is made of two elements combined together -- electrolysis splits it back into those two gases.", "easy": "Water is made of two gases combined -- electrolysis splits it back into those two gases."},
+    "hard": {"hard": "Since forming water from hydrogen and oxygen releases energy, the reverse process (splitting water) requires an equivalent energy investment to proceed against the natural thermodynamic tendency.", "medium": "Since making water in the first place releases energy, breaking it back apart requires putting that energy back in.", "easy": "Since making water releases energy, breaking it back apart requires putting energy back in."}
+  }
+},
+{
+  "topic": "the octet rule",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the octet rule generally describe?",
+    "options": [
+      {"text": "Atoms tend to bond in ways that give them 8 electrons in their outermost shell", "isCorrect": true, "feedback": "Correct -- having a full outer shell of 8 electrons (like noble gases) is a particularly stable configuration."},
+      {"text": "Atoms always have exactly 8 protons", "isCorrect": false, "feedback": "The octet rule is about outer-shell electrons, not a fixed proton count for all atoms."},
+      {"text": "All molecules contain exactly 8 atoms", "isCorrect": false, "feedback": "The octet rule concerns electron count around a single atom, not the total number of atoms in a molecule."},
+      {"text": "Atoms can only form 8 bonds maximum", "isCorrect": false, "feedback": "This isn't what the octet rule states -- it's specifically about the outer electron shell reaching a count of 8."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do atoms tend to follow the octet rule when forming bonds?",
+    "options": [
+      {"text": "Having 8 valence electrons mimics the highly stable electron configuration of noble gases", "isCorrect": true, "feedback": "Correct -- noble gases are especially unreactive because they already have a full outer shell, and other atoms 'aim' for this same stability."},
+      {"text": "8 is simply a random, arbitrary number with no particular significance", "isCorrect": false, "feedback": "This isn't arbitrary -- it directly reflects the stable electron shell structure seen in the noble gases."},
+      {"text": "Atoms are legally required to have 8 electrons", "isCorrect": false, "feedback": "This is a natural chemical tendency rooted in stability, not any kind of external rule or law."},
+      {"text": "Because all elements naturally have exactly 8 electrons to begin with", "isCorrect": false, "feedback": "Elements have varying total electron counts -- the octet rule is about the OUTER shell specifically reaching 8, which often requires gaining, losing, or sharing electrons."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Hydrogen atoms are stable with only 2 electrons in their outer shell, not 8. Why doesn't hydrogen follow the standard octet rule?",
+    "options": [
+      {"text": "Hydrogen's single shell can only hold a maximum of 2 electrons, so it follows a 'duet rule' instead of the octet rule", "isCorrect": true, "feedback": "Correct -- since hydrogen only has one electron shell (with a 2-electron capacity), it reaches its own stable configuration at 2, not 8."},
+      {"text": "Hydrogen is not actually a real element", "isCorrect": false, "feedback": "Hydrogen is a genuine element -- it simply has a different, smaller maximum capacity for its single electron shell."},
+      {"text": "Hydrogen atoms never form any chemical bonds", "isCorrect": false, "feedback": "Hydrogen forms bonds very readily (e.g., in H₂O or H₂) -- it just reaches stability with 2 electrons, not 8."},
+      {"text": "This is simply an exception with no underlying scientific explanation", "isCorrect": false, "feedback": "There is a clear structural reason: hydrogen's single electron shell has a maximum capacity of only 2 electrons."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This principle is inspired by the especially stable electron arrangement found in a specific unreactive group of elements.", "medium": "This rule is based on the electron arrangement of the very unreactive noble gases.", "easy": "This rule is based on the stable electron setup found in noble gases like neon."},
+    "medium": {"hard": "This target configuration mirrors the electron shell arrangement of the noble gases, which are famously stable and unreactive.", "medium": "Atoms 'want' to have the same stable electron setup that unreactive noble gases naturally have.", "easy": "Atoms want to copy the same stable setup that noble gases naturally have."},
+    "hard": {"hard": "The capacity of an atom's innermost (and in hydrogen's case, only) electron shell is fixed at 2, which caps hydrogen's stable configuration well below the standard octet.", "medium": "Hydrogen only has one small electron shell that maxes out at 2 electrons, so it can never reach 8 in the first place.", "easy": "Hydrogen only has room for 2 electrons total in its one shell, so it can never reach 8."}
+  }
+},
+{
+  "topic": "isotopic notation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the isotope notation Carbon-14, what does the number 14 represent?",
+    "options": [
+      {"text": "The mass number (protons + neutrons)", "isCorrect": true, "feedback": "Correct -- the number following the element name in isotope notation is the mass number."},
+      {"text": "The number of protons only", "isCorrect": false, "feedback": "The number of protons for carbon is always 6 -- 14 represents the total mass number instead."},
+      {"text": "The number of electrons only", "isCorrect": false, "feedback": "Electron count isn't what this number represents -- it's the total mass number (protons + neutrons)."},
+      {"text": "The atomic charge", "isCorrect": false, "feedback": "This number represents mass, not electrical charge."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Carbon-12 and Carbon-14 are both isotopes of carbon. What is the same between them, and what is different?",
+    "options": [
+      {"text": "They have the same number of protons, but a different number of neutrons", "isCorrect": true, "feedback": "Correct -- isotopes of the same element always share proton count but differ in neutron count."},
+      {"text": "They have a different number of protons, but the same number of neutrons", "isCorrect": false, "feedback": "This is backwards -- isotopes of the same element must share the SAME proton count, with neutron count being what varies."},
+      {"text": "They have the same number of protons and the same number of neutrons", "isCorrect": false, "feedback": "If both were identical in both counts, they wouldn't be considered different isotopes at all."},
+      {"text": "They are different elements entirely", "isCorrect": false, "feedback": "Since they share the same number of protons (6), they are both still carbon -- just different isotopes of it."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Uranium-235 has 92 protons. How many neutrons does it have, and how would you write this using the shorthand notation with the atomic number as a subscript?",
+    "options": [
+      {"text": "143 neutrons; written as ₉₂U-235 or ²³⁵₉₂U", "isCorrect": true, "feedback": "Correct -- 235-92=143 neutrons, and isotope notation typically shows the mass number and atomic number alongside the element symbol."},
+      {"text": "235 neutrons; written as U-92", "isCorrect": false, "feedback": "This confuses the mass number with the neutron count, and reverses which number goes where in the notation."},
+      {"text": "92 neutrons; written as U-235-92", "isCorrect": false, "feedback": "This incorrectly assumes neutron count equals proton count, and uses a non-standard notation format."},
+      {"text": "327 neutrons; written as U-327", "isCorrect": false, "feedback": "This incorrectly adds instead of subtracting to find the neutron count."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This number reflects the combined weight-contributing particles in the atom's nucleus.", "medium": "This number represents protons and neutrons added together.", "easy": "This number is protons plus neutrons combined."},
+    "medium": {"hard": "Element identity is fixed by proton count alone; isotopes of that element vary specifically in their neutron count.", "medium": "Since they're both still carbon, their proton count must be identical -- only their neutron count differs.", "easy": "Since they're both carbon, they have the same number of protons -- just a different number of neutrons."},
+    "hard": {"hard": "Subtract the atomic number (protons) from the mass number to find neutron count, then follow standard isotope notation conventions for symbol placement.", "medium": "Subtract 92 from 235 to find the neutrons, then use the standard format showing mass number and atomic number.", "easy": "Subtract 92 from 235 to find the neutrons."}
+  }
+},
+{
+  "topic": "organic vs. inorganic compounds",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What defines an organic compound?",
+    "options": [
+      {"text": "It contains carbon, typically bonded to hydrogen", "isCorrect": true, "feedback": "Correct -- organic chemistry is centered on carbon-based compounds, especially those with C-H bonds."},
+      {"text": "It was grown on an organic farm", "isCorrect": false, "feedback": "This is a common everyday use of the word 'organic,' but the chemistry definition is specifically about carbon-hydrogen based molecular structure."},
+      {"text": "It contains no carbon at all", "isCorrect": false, "feedback": "This is backwards -- organic compounds are specifically defined by containing carbon, not by lacking it."},
+      {"text": "It is always a solid at room temperature", "isCorrect": false, "feedback": "Physical state isn't what defines an organic compound -- carbon-based structure is."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is an example of an inorganic compound?",
+    "options": [
+      {"text": "Table salt (NaCl)", "isCorrect": true, "feedback": "Correct -- table salt doesn't contain carbon, making it inorganic."},
+      {"text": "Glucose (C₆H₁₂O₆)", "isCorrect": false, "feedback": "Glucose contains carbon bonded to hydrogen, making it an organic compound."},
+      {"text": "Methane (CH₄)", "isCorrect": false, "feedback": "Methane is a classic example of a simple organic compound, built around carbon."},
+      {"text": "Ethanol (C₂H₅OH)", "isCorrect": false, "feedback": "Ethanol contains carbon bonded to hydrogen, making it an organic compound."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Carbon dioxide (CO₂) contains carbon, yet it is traditionally classified as an inorganic compound. Why is this a notable exception?",
+    "options": [
+      {"text": "Historically, organic chemistry became defined around carbon compounds with C-H bonds (associated with living things), and a few simple carbon compounds like CO₂ were classified separately as exceptions", "isCorrect": true, "feedback": "Correct -- the organic/inorganic distinction has historical roots and a few carbon-containing compounds (like CO₂ and carbonates) are conventionally grouped as inorganic despite containing carbon."},
+      {"text": "Carbon dioxide doesn't actually contain any carbon atoms", "isCorrect": false, "feedback": "Carbon dioxide's chemical formula (CO₂) clearly shows it does contain a carbon atom."},
+      {"text": "This classification is a modern mistake that all chemists agree should change immediately", "isCorrect": false, "feedback": "This is a long-standing, widely accepted convention in chemistry, not a scientific error."},
+      {"text": "Inorganic compounds can never contain carbon by strict definition", "isCorrect": false, "feedback": "This isn't strictly true -- CO₂ and a few other simple carbon-containing compounds are established, well-known exceptions to this general pattern."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This category of compound is fundamentally centered on a specific element commonly found in living organisms.", "medium": "This category of compound typically contains this specific element, often found in living things.", "easy": "This category of compound contains carbon, an element found in living things."},
+    "medium": {"hard": "Look for the option that lacks the carbon-hydrogen structural backbone typical of organic compounds.", "medium": "Look for the compound that doesn't have carbon bonded to hydrogen.", "easy": "Look for the one option that doesn't contain carbon and hydrogen bonded together."},
+    "hard": {"hard": "The organic/inorganic divide originated historically around carbon-hydrogen bonding associated with life processes, leaving a handful of simple carbon compounds conventionally grouped with inorganic substances as recognized exceptions.", "medium": "The dividing line was set up a long time ago based on carbon bonded to hydrogen, and a few simple carbon compounds like this one ended up as historical exceptions.", "easy": "This is just a long-standing historical exception to the general carbon-based rule."}
+  }
+},
+{
+  "topic": "bond energy and thermochemistry",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is bond energy?",
+    "options": [
+      {"text": "The amount of energy needed to break a chemical bond", "isCorrect": true, "feedback": "Correct -- bond energy measures the strength of a chemical bond in terms of energy."},
+      {"text": "The energy stored in a battery", "isCorrect": false, "feedback": "That's a different, unrelated type of stored energy, not bond energy."},
+      {"text": "The energy released when a substance melts", "isCorrect": false, "feedback": "That describes latent heat of fusion, a physical process, not chemical bond energy specifically."},
+      {"text": "The weight of a molecule", "isCorrect": false, "feedback": "Weight/mass is a separate property from bond energy."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a chemical reaction, is breaking bonds in the reactants generally an energy-absorbing or energy-releasing step?",
+    "options": [
+      {"text": "Energy-absorbing (endothermic)", "isCorrect": true, "feedback": "Correct -- breaking bonds always requires an input of energy, regardless of whether the overall reaction is exothermic or endothermic."},
+      {"text": "Energy-releasing (exothermic)", "isCorrect": false, "feedback": "Breaking bonds specifically requires energy input -- it's forming NEW bonds that releases energy."},
+      {"text": "Neither -- no energy change occurs when bonds break", "isCorrect": false, "feedback": "Breaking any chemical bond does require energy input -- this is a fundamental principle of bond energy."},
+      {"text": "It depends only on the color of the reactants", "isCorrect": false, "feedback": "Color has no bearing on whether breaking bonds absorbs or releases energy -- breaking bonds always absorbs energy."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can an overall chemical reaction be exothermic (release net energy) even though breaking the reactants' bonds requires an energy input?",
+    "options": [
+      {"text": "If the energy released when forming the new product bonds is greater than the energy needed to break the original bonds, the overall reaction releases net energy", "isCorrect": true, "feedback": "Correct -- the net energy change is the difference between energy absorbed (breaking bonds) and energy released (forming bonds)."},
+      {"text": "Breaking bonds never actually requires any energy", "isCorrect": false, "feedback": "Breaking bonds always requires energy input -- what matters for the overall reaction is the balance against the energy released when new bonds form."},
+      {"text": "The reaction must not actually be forming any new bonds", "isCorrect": false, "feedback": "Products always involve new bond arrangements -- it's the energy comparison between breaking old bonds and forming new ones that determines the overall energy change."},
+      {"text": "Exothermic reactions don't follow the normal rules of bond energy", "isCorrect": false, "feedback": "Exothermic reactions absolutely follow the same bond-energy principles -- they just have a favorable energy balance where more energy is released forming bonds than was needed to break them."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity reflects the strength of the connection holding two atoms together in a molecule.", "medium": "This measures how much energy is needed to pull apart a chemical bond.", "easy": "This is the energy needed to break apart a chemical bond."},
+    "medium": {"hard": "Consider that pulling apart connected structures always requires an investment of energy, regardless of what happens afterward.", "medium": "Separating anything that's bonded together generally takes energy, similar to pulling apart magnets.", "easy": "Pulling things apart generally takes energy, just like pulling magnets apart."},
+    "hard": {"hard": "The overall energy change of a reaction is the net difference between the energy absorbed breaking old bonds and the energy released forming new ones -- a large enough release from new bond formation can outweigh the initial input.", "medium": "If forming the new bonds in the products releases more energy than it took to break the old bonds, the whole reaction ends up releasing energy overall.", "easy": "If making the new bonds releases more energy than breaking the old ones took, the whole reaction ends up releasing energy."}
+  }
+}
+]

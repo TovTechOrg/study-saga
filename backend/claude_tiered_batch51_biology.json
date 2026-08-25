@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of DNA replication being semi-conservative",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean that DNA replication is 'semi-conservative'?",
+    "options": [
+      {"text": "Each new DNA molecule consists of one original (parent) strand and one newly synthesized strand", "isCorrect": true, "feedback": "Correct -- this semi-conservative model means each daughter DNA molecule retains half of the original genetic material, paired with a newly made strand."},
+      {"text": "The entire original DNA molecule is completely preserved without any new synthesis", "isCorrect": false, "feedback": "That would describe a 'conservative' model (which was disproven) -- semi-conservative replication involves creating new strands, not fully preserving the original molecule intact."},
+      {"text": "Both resulting DNA molecules are made entirely of newly synthesized material", "isCorrect": false, "feedback": "That would describe a 'dispersive' model -- semi-conservative replication specifically means each new molecule retains ONE original strand paired with one new strand."},
+      {"text": "DNA replication doesn't actually produce any new molecules", "isCorrect": false, "feedback": "DNA replication specifically DOES produce new DNA molecules -- semi-conservative replication describes exactly how those new molecules are structured (one old strand + one new strand)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "During DNA replication, the double helix unwinds, and each original strand serves as a template for building a new complementary strand. Why is this templating process crucial for ensuring accurate replication?",
+    "options": [
+      {"text": "Because complementary base pairing rules (A-T, G-C) ensure that each new strand is built with the exact sequence needed to precisely match the original genetic information", "isCorrect": true, "feedback": "Correct -- this templating mechanism, relying on strict base-pairing rules, is fundamental to accurately copying and preserving genetic information across generations of cells."},
+      {"text": "The templating process actually introduces random errors intentionally into the new DNA sequence", "isCorrect": false, "feedback": "The templating process is designed for ACCURACY, not intentional randomization -- base-pairing rules ensure precise copying of genetic information."},
+      {"text": "Templating has no actual connection to how accurately DNA gets copied", "isCorrect": false, "feedback": "Templating is precisely the mechanism responsible for accurate DNA copying -- it ensures new strands match the original sequence through base-pairing rules."},
+      {"text": "New DNA strands are built completely independently, without any reference to the original strand's sequence", "isCorrect": false, "feedback": "This isn't accurate -- new strands are built specifically USING the original strand as a template, following base-pairing rules to ensure sequence accuracy."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The Meselson-Stahl experiment used a clever technique with different nitrogen isotopes to definitively prove that DNA replication is semi-conservative, rather than conservative or dispersive. Why was distinguishing between these three possible models scientifically important?",
+    "options": [
+      {"text": "Because each model made distinctly different, testable predictions about the composition of resulting DNA molecules, and confirming the correct model was essential for accurately understanding the actual molecular mechanism of heredity and genetic transmission", "isCorrect": true, "feedback": "Correct -- resolving this question was a foundational achievement in molecular biology, providing critical, definitive insight into precisely how genetic information is physically copied and passed on during cell division."},
+      {"text": "All three models actually make identical, indistinguishable predictions about DNA composition", "isCorrect": false, "feedback": "This isn't accurate -- the three models (conservative, semi-conservative, dispersive) predicted genuinely DIFFERENT patterns of nitrogen isotope distribution, which is precisely what allowed this experiment to distinguish between them."},
+      {"text": "This distinction has no real importance to understanding genetics or heredity", "isCorrect": false, "feedback": "This distinction was actually foundational to molecular biology -- understanding exactly HOW DNA replicates was crucial for understanding the physical basis of heredity."},
+      {"text": "The experiment actually failed to distinguish between the three competing models", "isCorrect": false, "feedback": "This experiment is historically significant precisely because it successfully and definitively distinguished between the three models, conclusively supporting the semi-conservative model."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This replication model describes each daughter molecule retaining exactly one strand from the original parental molecule.", "medium": "This means each new DNA molecule has one old strand and one brand new strand.", "easy": "This means each new DNA has one old strand and one new strand."},
+    "medium": {"hard": "Consider how strict complementary base-pairing rules constrain what sequence can legitimately be added opposite each template strand.", "medium": "Since A always pairs with T, and G always pairs with C, the original strand basically dictates exactly what the new strand must look like.", "easy": "Since A always pairs with T and G always pairs with C, the old strand tells the new strand exactly what to be."},
+    "hard": {"hard": "Consider how confirming the actual physical mechanism of replication was necessary to validate broader theoretical models of genetic inheritance and molecular biology.", "medium": "Knowing exactly HOW DNA copies itself was a huge missing piece needed to fully understand how genetic traits get passed down accurately.", "easy": "Knowing exactly how DNA copies itself was a huge missing piece for understanding genetics."}
+  }
+}
+]

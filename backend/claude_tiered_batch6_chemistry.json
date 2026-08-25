@@ -1,0 +1,248 @@
+[
+{
+  "topic": "molecular vs. empirical formulas",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does a molecular formula show?",
+    "options": [
+      {"text": "The exact number of each type of atom in one molecule", "isCorrect": true, "feedback": "Correct -- a molecular formula like C₆H₁₂O₆ gives the actual atom counts in a molecule."},
+      {"text": "Only the simplest whole-number ratio of atoms", "isCorrect": false, "feedback": "That describes an empirical formula, not a molecular formula."},
+      {"text": "The color of the compound", "isCorrect": false, "feedback": "Color isn't conveyed by a molecular formula -- it shows atom composition."},
+      {"text": "The temperature at which the compound melts", "isCorrect": false, "feedback": "Melting point isn't part of a molecular formula -- it shows atom composition."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Glucose has the molecular formula C₆H₁₂O₆. What is its empirical formula?",
+    "options": [
+      {"text": "CH₂O", "isCorrect": true, "feedback": "Correct -- dividing each subscript by their greatest common factor (6) gives the simplest ratio, CH₂O."},
+      {"text": "C₆H₁₂O₆", "isCorrect": false, "feedback": "This is the molecular formula itself, not simplified to the smallest ratio."},
+      {"text": "C₃H₆O₃", "isCorrect": false, "feedback": "This divides by 2 instead of by the full greatest common factor of 6."},
+      {"text": "CH₆O", "isCorrect": false, "feedback": "This doesn't divide all three subscripts by the same consistent factor."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two different compounds, acetylene (C₂H₂) and benzene (C₆H₆), share the same empirical formula. What does this tell you?",
+    "options": [
+      {"text": "They have the same simplest atom ratio, but different actual molecular structures and sizes", "isCorrect": true, "feedback": "Correct -- both simplify to CH, but they are genuinely different molecules with different molecular formulas and properties."},
+      {"text": "They are actually the exact same compound", "isCorrect": false, "feedback": "Despite sharing an empirical formula, they have different molecular formulas and very different properties -- they are not the same compound."},
+      {"text": "They must have the same molecular formula too", "isCorrect": false, "feedback": "Their molecular formulas are different (C₂H₂ vs C₆H₆) even though the simplified empirical ratio happens to match."},
+      {"text": "One of the formulas must be incorrect", "isCorrect": false, "feedback": "Both formulas can be correct -- different molecules can coincidentally share the same simplified ratio of atoms."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of formula reflects the true, complete count of atoms actually present in the molecule.", "medium": "This formula tells you exactly how many of each atom are really in the molecule.", "easy": "This formula shows the real, exact number of atoms in a molecule."},
+    "medium": {"hard": "Divide every subscript in the molecular formula by their shared greatest common factor to reach the simplest ratio.", "medium": "Divide 6, 12, and 6 all by the same number to get the simplest ratio.", "easy": "Divide all three numbers (6, 12, 6) by 6 to simplify."},
+    "hard": {"hard": "Multiple distinct molecular formulas can reduce to the same simplified ratio -- matching empirical formulas don't imply matching molecular structure, size, or identity.", "medium": "Even though the simplified ratios match, the actual molecules can be totally different sizes and structures.", "easy": "Even with the same simplified ratio, these can still be two completely different molecules."}
+  }
+},
+{
+  "topic": "electronegativity basics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does electronegativity measure?",
+    "options": [
+      {"text": "How strongly an atom attracts shared electrons in a bond", "isCorrect": true, "feedback": "Correct -- electronegativity reflects an atom's pull on bonding electrons."},
+      {"text": "How much an atom weighs", "isCorrect": false, "feedback": "Atomic mass measures weight -- electronegativity is about electron attraction, a different property."},
+      {"text": "How many protons an atom has total", "isCorrect": false, "feedback": "That's the atomic number -- electronegativity is a related but distinct concept about bonding behavior."},
+      {"text": "How radioactive an atom is", "isCorrect": false, "feedback": "Radioactivity relates to unstable nuclei, unrelated to electronegativity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a bond between two atoms with very different electronegativities, what type of bond is likely to form?",
+    "options": [
+      {"text": "A polar covalent or ionic bond, since electrons are pulled unevenly or fully transferred", "isCorrect": true, "feedback": "Correct -- a large electronegativity difference leads to uneven sharing or full electron transfer."},
+      {"text": "A perfectly nonpolar covalent bond", "isCorrect": false, "feedback": "Nonpolar covalent bonds form when electronegativities are similar or equal, not very different."},
+      {"text": "No bond will form at all", "isCorrect": false, "feedback": "A large electronegativity difference doesn't prevent bonding -- it actually favors ionic bond formation."},
+      {"text": "A metallic bond", "isCorrect": false, "feedback": "Metallic bonding occurs between metal atoms sharing a 'sea' of electrons, which isn't primarily determined by electronegativity difference in this way."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Water (H₂O) is a polar molecule partly because oxygen is much more electronegative than hydrogen. What effect does this have on the shared electrons in the O-H bonds?",
+    "options": [
+      {"text": "The electrons spend more time near the oxygen atom, giving it a partial negative charge", "isCorrect": true, "feedback": "Correct -- oxygen's stronger pull on the shared electrons creates an uneven charge distribution across the molecule."},
+      {"text": "The electrons spend equal time near both atoms", "isCorrect": false, "feedback": "Equal sharing would describe a nonpolar bond, but the significant electronegativity difference here causes uneven sharing."},
+      {"text": "The electrons transfer completely to hydrogen", "isCorrect": false, "feedback": "This describes ionic bonding -- but O-H bonds are still covalent (shared), just unevenly, not fully transferred to hydrogen (and to the less electronegative atom, which would be unusual)."},
+      {"text": "The electronegativity difference has no effect on charge distribution", "isCorrect": false, "feedback": "This difference is precisely what causes water's uneven, polar charge distribution."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property reflects an atom's pulling power over electrons involved in a chemical bond.", "medium": "This measures how much an atom 'wants' to hold onto shared electrons in a bond.", "easy": "This measures how strongly an atom pulls on electrons it shares with another atom."},
+    "medium": {"hard": "A large gap in electron-pulling strength between two atoms leads to either lopsided sharing or complete transfer of electrons.", "medium": "When one atom pulls much harder on electrons than the other, the bond becomes either unevenly shared or fully transferred.", "easy": "When one atom pulls electrons much more strongly, the bond becomes either uneven or a full transfer, not equal sharing."},
+    "hard": {"hard": "The more electronegative atom pulls the shared electron density toward itself, creating a slight negative charge there and a corresponding slight positive charge on the other atom.", "medium": "Since oxygen pulls harder on the shared electrons, it ends up with a slightly negative charge while hydrogen ends up slightly positive.", "easy": "Since oxygen pulls the shared electrons closer to itself, it ends up slightly negative while hydrogen ends up slightly positive."}
+  }
+},
+{
+  "topic": "metallic bonding",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What type of bonding holds metal atoms together in a solid metal?",
+    "options": [
+      {"text": "Metallic bonding", "isCorrect": true, "feedback": "Correct -- metallic bonding involves a 'sea' of shared electrons among many metal atoms."},
+      {"text": "Ionic bonding", "isCorrect": false, "feedback": "Ionic bonding typically occurs between a metal and a nonmetal, not between metal atoms and each other."},
+      {"text": "Hydrogen bonding", "isCorrect": false, "feedback": "Hydrogen bonding is a weaker attraction relevant to molecules like water, not the bonding between metal atoms."},
+      {"text": "No bonding at all -- metal atoms simply touch", "isCorrect": false, "feedback": "Metal atoms are genuinely bonded together through shared, mobile electrons, not just physically touching."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the 'electron sea' model used to describe in metallic bonding?",
+    "options": [
+      {"text": "Valence electrons that are shared freely among all the metal atoms, not tied to any one atom", "isCorrect": true, "feedback": "Correct -- this pool of mobile electrons is why metals conduct electricity and heat so well."},
+      {"text": "Water molecules trapped inside a piece of metal", "isCorrect": false, "feedback": "This model describes electrons, not actual water -- 'sea' is a metaphor for how freely the electrons move."},
+      {"text": "Protons floating freely between metal atoms", "isCorrect": false, "feedback": "It's electrons, not protons, that move freely in this model -- protons stay fixed within their nuclei."},
+      {"text": "A literal ocean surrounding metal deposits underground", "isCorrect": false, "feedback": "This is a conceptual/metaphorical model about electron behavior, not a literal body of water."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why are metals generally malleable (able to be hammered into sheets) without shattering?",
+    "options": [
+      {"text": "The freely moving electrons allow metal atoms to slide past each other while the bonding holds them together", "isCorrect": true, "feedback": "Correct -- unlike rigid ionic bonds, the flexible electron sea allows metal atom layers to shift without breaking the overall structure."},
+      {"text": "Metal atoms have no bonds between them at all", "isCorrect": false, "feedback": "Metal atoms are definitely bonded -- it's the flexible nature of that bonding that allows shaping without breaking."},
+      {"text": "Metals are always heated before being shaped", "isCorrect": false, "feedback": "While heat can help, the fundamental reason metals CAN be shaped this way relates to their bonding structure, not just temperature."},
+      {"text": "Metal atoms are unusually small compared to other atoms", "isCorrect": false, "feedback": "Atomic size isn't the reason for malleability -- it's the mobile electron sea allowing atoms to shift without breaking bonds."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of bonding is unique to metals and involves electrons that aren't tied to any single atom.", "medium": "This is the specific kind of bonding found between atoms of the same metal.", "easy": "This is the type of bonding that holds a solid piece of metal together."},
+    "medium": {"hard": "This model describes a shared, delocalized pool of the outermost electrons surrounding all the fixed metal atom cores.", "medium": "This describes electrons that move freely around all the metal atoms instead of staying with just one.", "easy": "This describes electrons that move freely around, not stuck to just one atom."},
+    "hard": {"hard": "Because the bonding electrons aren't localized to specific atom pairs, the metal atom cores can shift position relative to each other without disrupting the overall bonding network.", "medium": "Since the electrons aren't tied to specific atoms, the metal atoms can shift around each other without breaking apart.", "easy": "Since the electrons can move freely, the metal atoms can slide past each other without the whole thing breaking."}
+  }
+},
+{
+  "topic": "dilution basics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What happens to the concentration of a solution when you add more solvent (like water) without adding more solute?",
+    "options": [
+      {"text": "The concentration decreases", "isCorrect": true, "feedback": "Correct -- diluting a solution with more solvent spreads the same amount of solute over a larger volume, lowering concentration."},
+      {"text": "The concentration increases", "isCorrect": false, "feedback": "Adding more solvent spreads the solute out more, which lowers concentration, not raises it."},
+      {"text": "The concentration stays exactly the same", "isCorrect": false, "feedback": "Adding solvent without adding solute changes the ratio between them, which changes concentration."},
+      {"text": "The solute disappears completely", "isCorrect": false, "feedback": "The solute is still present in the solution -- it's just more spread out, not gone."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If you have 100 mL of a solution and add 100 mL more of pure water, what happens to the total volume and the amount of solute?",
+    "options": [
+      {"text": "The total volume doubles, but the amount of solute stays the same", "isCorrect": true, "feedback": "Correct -- dilution doesn't add or remove solute, it just increases the total volume it's spread through."},
+      {"text": "Both the volume and the amount of solute double", "isCorrect": false, "feedback": "Only the solvent (water) was added -- no additional solute was introduced, so solute amount stays the same."},
+      {"text": "The total volume stays the same, but the solute amount doubles", "isCorrect": false, "feedback": "Adding 100 mL of water definitely increases the total volume -- it doesn't add solute."},
+      {"text": "Neither the volume nor the solute amount changes", "isCorrect": false, "feedback": "Adding water does increase the total volume, even though it leaves the solute amount unchanged."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "You have 50 mL of a solution with a concentration of 4 mol/L. If you dilute it to a total volume of 200 mL, what is the new concentration?",
+    "options": [
+      {"text": "1 mol/L", "isCorrect": true, "feedback": "Correct -- using C1V1=C2V2: (4)(50)=(C2)(200), so C2=200/200=1."},
+      {"text": "4 mol/L", "isCorrect": false, "feedback": "This ignores that the volume increased, which should lower the concentration."},
+      {"text": "16 mol/L", "isCorrect": false, "feedback": "This increases rather than decreases the concentration, the opposite of what dilution does."},
+      {"text": "0.5 mol/L", "isCorrect": false, "feedback": "This doesn't match correctly applying the dilution equation with the given values."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Adding more of the dissolving liquid spreads the same dissolved amount over more total space.", "medium": "The same amount of dissolved stuff is now spread across more liquid.", "easy": "Adding more water spreads out the same amount of dissolved stuff, making it weaker."},
+    "medium": {"hard": "Only solvent was added in this scenario -- track which quantity (volume or solute amount) that specifically affects.", "medium": "Adding pure water increases the total liquid volume, but doesn't add any more of the dissolved substance.", "easy": "Adding water makes the total amount of liquid bigger, but doesn't add more of the dissolved stuff."},
+    "hard": {"hard": "Use the dilution equation (concentration × volume stays constant) to solve for the new concentration after the volume change.", "medium": "Multiply the original concentration by the original volume, then divide by the new total volume.", "easy": "Multiply 4 by 50, then divide that result by 200."}
+  }
+},
+{
+  "topic": "homogeneous vs. heterogeneous mixtures",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a homogeneous mixture?",
+    "options": [
+      {"text": "A mixture that looks uniform throughout, with no visibly different parts", "isCorrect": true, "feedback": "Correct -- salt water is a classic example, appearing the same throughout."},
+      {"text": "A mixture with clearly visible different parts or layers", "isCorrect": false, "feedback": "That describes a heterogeneous mixture, the opposite of homogeneous."},
+      {"text": "A mixture that is chemically bonded together", "isCorrect": false, "feedback": "Mixtures (homogeneous or not) aren't chemically bonded -- that would make them a compound instead."},
+      {"text": "A mixture that only contains one single element", "isCorrect": false, "feedback": "A homogeneous mixture can contain multiple different substances -- what matters is how uniformly they're blended."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is an example of a heterogeneous mixture?",
+    "options": [
+      {"text": "A salad with visibly separate vegetables", "isCorrect": true, "feedback": "Correct -- you can clearly see and separate the distinct ingredients in a salad."},
+      {"text": "Salt fully dissolved in water", "isCorrect": false, "feedback": "Fully dissolved salt water looks uniform throughout, making it a homogeneous mixture."},
+      {"text": "Air (a mixture of gases)", "isCorrect": false, "feedback": "Air is actually a homogeneous mixture -- the gases are evenly blended throughout."},
+      {"text": "Sugar completely dissolved in tea", "isCorrect": false, "feedback": "Fully dissolved sugar in tea looks uniform, making this a homogeneous mixture."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Muddy water, if left to sit, eventually separates into a layer of sediment at the bottom and clearer water on top. What does this indicate about muddy water as a mixture?",
+    "options": [
+      {"text": "It is a heterogeneous mixture, since its components can settle out and aren't evenly distributed", "isCorrect": true, "feedback": "Correct -- the ability of the components to separate and settle shows they weren't uniformly mixed throughout, which is the hallmark of a heterogeneous mixture."},
+      {"text": "It is a homogeneous mixture, since it initially looked uniform", "isCorrect": false, "feedback": "Initial appearance can be misleading -- true homogeneous mixtures don't naturally separate into distinct layers like this."},
+      {"text": "It is a pure compound", "isCorrect": false, "feedback": "A pure compound wouldn't separate into distinct visible layers -- this is a physical mixture, not a chemically bonded compound."},
+      {"text": "It is not a mixture at all", "isCorrect": false, "feedback": "Muddy water is indeed a mixture of dirt particles and water -- it just happens to be heterogeneous."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This mixture type shows no visibly distinct regions -- everything blends together evenly.", "medium": "Everything in this type of mixture is spread out evenly, with no visible chunks or layers.", "easy": "This mixture looks the same all the way through, like salt water."},
+    "medium": {"hard": "Look for the option where distinct components remain visibly separate and could be physically picked apart.", "medium": "Look for the mixture where you can clearly see and separate its different parts.", "easy": "Look for the mixture where you can clearly see and pick out its different parts."},
+    "hard": {"hard": "Settling and separation over time reveals that the components were never truly, uniformly distributed at the microscopic level -- a defining trait of heterogeneous mixtures.", "medium": "The fact that it separates on its own shows the parts weren't actually evenly blended to begin with.", "easy": "Since it separates into layers over time, the parts weren't evenly mixed to begin with."}
+  }
+},
+{
+  "topic": "chemical reactions vs. nuclear reactions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the key difference between a chemical reaction and a nuclear reaction?",
+    "options": [
+      {"text": "A chemical reaction involves electrons, while a nuclear reaction involves changes in the nucleus itself", "isCorrect": true, "feedback": "Correct -- chemical reactions rearrange electron bonds, while nuclear reactions change protons/neutrons in the nucleus."},
+      {"text": "There is no real difference between them", "isCorrect": false, "feedback": "These are fundamentally different processes occurring at very different scales within the atom."},
+      {"text": "A nuclear reaction only happens in liquids", "isCorrect": false, "feedback": "Nuclear reactions aren't restricted to a particular state of matter -- the key difference is what part of the atom is involved."},
+      {"text": "A chemical reaction always releases far more energy than a nuclear reaction", "isCorrect": false, "feedback": "This is backwards -- nuclear reactions typically release vastly more energy than chemical reactions."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a nuclear reaction, what can happen to the identity of an element?",
+    "options": [
+      {"text": "It can change into a completely different element", "isCorrect": true, "feedback": "Correct -- since nuclear reactions can change the number of protons, the element's identity itself can transform."},
+      {"text": "It always stays the exact same element, no matter what", "isCorrect": false, "feedback": "Nuclear reactions can alter the number of protons, which can actually change what element it is."},
+      {"text": "It turns into a different state of matter only, not a new element", "isCorrect": false, "feedback": "Nuclear reactions can fundamentally change the element itself, not just its physical state."},
+      {"text": "It becomes electrically neutral only", "isCorrect": false, "feedback": "Charge neutrality isn't the defining outcome here -- the potential change in elemental identity is the key point."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do nuclear reactions typically release vastly more energy than chemical reactions of similar mass?",
+    "options": [
+      {"text": "Nuclear reactions involve the extremely strong forces holding the nucleus together, while chemical reactions only involve weaker electron interactions", "isCorrect": true, "feedback": "Correct -- the forces binding protons and neutrons in the nucleus are far stronger than the electromagnetic forces involved in chemical bonding."},
+      {"text": "Nuclear reactions always involve much larger amounts of starting material", "isCorrect": false, "feedback": "The huge energy difference isn't primarily about quantity of material -- it's about the fundamentally stronger forces involved in the nucleus."},
+      {"text": "Chemical reactions actually release more energy, but it's harder to measure", "isCorrect": false, "feedback": "This has it backwards -- nuclear reactions genuinely release far more energy per unit mass than chemical reactions."},
+      {"text": "Nuclear reactions always happen at much colder temperatures", "isCorrect": false, "feedback": "Temperature conditions aren't what explains the energy difference -- it's the type of force being tapped into (nuclear vs. electron-level)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One process rearranges outer particles; the other alters the dense, central core of the atom.", "medium": "One of these processes only involves the outer electrons; the other involves the atom's core.", "easy": "One process changes the electrons around an atom; the other changes the atom's actual core."},
+    "medium": {"hard": "Since the core particle count (protons) can shift during this type of reaction, the fundamental identity of the atom itself can change.", "medium": "Since this type of reaction can change the number of protons, it can turn one element into a totally different one.", "easy": "This type of reaction can actually turn one element into a completely different element."},
+    "hard": {"hard": "The force binding the nucleus together is fundamentally much stronger than the electromagnetic forces governing chemical bonds, so disrupting it releases proportionally far more energy.", "medium": "The forces holding the nucleus together are much stronger than the forces involved in chemical bonds, so breaking them releases much more energy.", "easy": "The force holding an atom's core together is much stronger than the force in chemical bonds, so nuclear reactions release way more energy."}
+  }
+}
+]

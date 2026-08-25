@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the discriminant in the quadratic formula",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the quadratic formula, the 'discriminant' refers to the expression:",
+    "options": [
+      {"text": "b²-4ac", "isCorrect": true, "feedback": "Correct -- the discriminant is the expression under the square root sign in the quadratic formula, and its value determines the nature of the equation's roots."},
+      {"text": "-b/2a", "isCorrect": false, "feedback": "This expression relates to finding the x-coordinate of a parabola's vertex, not the discriminant, which is specifically b²-4ac."},
+      {"text": "a+b+c", "isCorrect": false, "feedback": "This is just a simple sum of the coefficients, not the discriminant, which is specifically the expression b²-4ac."},
+      {"text": "2a", "isCorrect": false, "feedback": "This is just the denominator portion of the quadratic formula, not the discriminant, which is specifically the expression b²-4ac found under the square root."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If a quadratic equation's discriminant (b²-4ac) is POSITIVE, what does this indicate about the equation's solutions (roots)?",
+    "options": [
+      {"text": "The equation has two distinct real solutions", "isCorrect": true, "feedback": "Correct -- a positive discriminant means the square root portion of the quadratic formula yields a real, nonzero value, producing two different real roots (one from +√, one from -√)."},
+      {"text": "The equation has exactly one repeated real solution", "isCorrect": false, "feedback": "That describes a discriminant of exactly ZERO, not a positive one -- a positive discriminant specifically gives TWO distinct real solutions."},
+      {"text": "The equation has no real solutions at all (only complex/imaginary ones)", "isCorrect": false, "feedback": "That describes a NEGATIVE discriminant, not a positive one -- a positive discriminant specifically indicates two distinct REAL solutions exist."},
+      {"text": "The discriminant's sign has no actual connection to the nature of the equation's solutions", "isCorrect": false, "feedback": "This isn't accurate -- the discriminant's sign is DIRECTLY and specifically connected to determining exactly how many real (or complex) solutions a quadratic equation has."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A quadratic equation is given as 2x²+kx+8=0, where k is an unknown constant. For what value(s) of k would this equation have exactly ONE repeated real solution (discriminant = 0)?",
+    "options": [
+      {"text": "k = 8 or k = -8", "isCorrect": true, "feedback": "Correct -- setting discriminant to 0: k²-4(2)(8)=0, so k²-64=0, k²=64, giving k=8 or k=-8."},
+      {"text": "k = 4 only", "isCorrect": false, "feedback": "This doesn't correctly solve the equation k²-64=0 -- checking: 4²-64=16-64=-48, which is not 0."},
+      {"text": "k = 64", "isCorrect": false, "feedback": "This is the value of k² needed (before taking the square root), not the actual solved value(s) of k itself."},
+      {"text": "k = 0 only", "isCorrect": false, "feedback": "Checking k=0: 0²-4(2)(8)=-64, which is not 0, so this doesn't satisfy the required discriminant=0 condition."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value, found within the radical of the quadratic formula, is computed from the equation's coefficients as the square of the linear coefficient minus four times the product of the leading and constant coefficients.", "medium": "This is the specific part of the quadratic formula found under the square root sign.", "easy": "This is the part of the formula found under the square root sign: b²-4ac."},
+    "medium": {"hard": "Consider what a positive value under a square root operation implies about the existence and multiplicity of resulting real number outputs.", "medium": "A positive number under a square root gives you a real, nonzero result, which creates two different answers (one plus, one minus).", "easy": "A positive number under a square root gives two different real answers."},
+    "hard": {"hard": "Set the discriminant expression equal to zero using the given coefficients, then solve the resulting equation for the unknown coefficient k.", "medium": "Set k²-4(2)(8) equal to 0, simplify to k²=64, then solve for k (remembering both positive and negative roots).", "easy": "Set k²-64=0, so k²=64, giving k=8 or k=-8."}
+  }
+}
+]

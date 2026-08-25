@@ -1,0 +1,84 @@
+[
+{
+  "topic": "the concept of a chemical equation being 'balanced' representing conservation of atoms",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Why must a chemical equation be balanced?",
+    "options": [
+      {"text": "To show that atoms are neither created nor destroyed during the reaction", "isCorrect": true, "feedback": "Correct -- balancing reflects the fundamental law of conservation of mass at the atomic level."},
+      {"text": "To make the equation look neater", "isCorrect": false, "feedback": "Balancing isn't about appearance -- it's about accurately representing the conservation of matter."},
+      {"text": "To make the reaction happen faster", "isCorrect": false, "feedback": "Balancing an equation on paper doesn't affect the actual reaction speed -- that's influenced by factors like temperature and catalysts."},
+      {"text": "It isn't actually necessary for most reactions", "isCorrect": false, "feedback": "Balancing is a required, fundamental step for accurately representing any real chemical reaction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In the unbalanced equation Fe + O₂ → Fe₂O₃, why is this equation not yet balanced?",
+    "options": [
+      {"text": "The number of iron and oxygen atoms differs between the reactant and product sides", "isCorrect": true, "feedback": "Correct -- counting atoms on each side reveals a mismatch, meaning coefficients are needed to balance it."},
+      {"text": "The equation actually is already perfectly balanced", "isCorrect": false, "feedback": "Counting atoms carefully shows this equation is NOT balanced as written -- coefficients are needed."},
+      {"text": "Iron and oxygen can't react with each other at all", "isCorrect": false, "feedback": "Iron and oxygen do react (forming rust, Fe₂O₃) -- the issue here is specifically about balancing atom counts, not whether they can react."},
+      {"text": "The equation has too many arrows", "isCorrect": false, "feedback": "There's only one arrow here, which is standard -- the actual issue is with atom counts on each side, not the number of arrows."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "When balancing a chemical equation, why are you only allowed to change the coefficients (numbers in front of formulas) and never the subscripts (numbers within a formula)?",
+    "options": [
+      {"text": "Changing a subscript would alter the actual chemical identity of the substance, creating a completely different compound rather than just adjusting quantity", "isCorrect": true, "feedback": "Correct -- coefficients scale the QUANTITY of a substance, while subscripts define the substance's fundamental composition/identity."},
+      {"text": "Changing subscripts is actually allowed and commonly done when balancing", "isCorrect": false, "feedback": "Changing subscripts is NOT allowed in proper balancing -- doing so would incorrectly change the identity of the substance itself."},
+      {"text": "Coefficients and subscripts mean exactly the same thing", "isCorrect": false, "feedback": "These are fundamentally different -- coefficients indicate quantity of molecules, while subscripts indicate atom composition within a single molecule."},
+      {"text": "There is no actual rule about this in chemistry", "isCorrect": false, "feedback": "This is actually a fundamental, strictly enforced rule in properly balancing chemical equations."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This principle ensures that matter is conserved throughout a chemical transformation.", "medium": "This ensures no atoms mysteriously appear or disappear during the reaction.", "easy": "This makes sure no atoms just disappear or appear out of nowhere."},
+    "medium": {"hard": "Count each type of atom present on the reactant side and compare it to the count on the product side.", "medium": "Count the iron atoms and oxygen atoms on each side separately and compare them.", "easy": "Count the iron atoms and oxygen atoms on each side -- they don't match yet."},
+    "hard": {"hard": "Subscripts are fixed by the actual bonding structure and identity of a specific compound, while coefficients simply indicate how many separate molecules of that unchanged compound are present.", "medium": "Changing a subscript would actually turn the substance into a completely different chemical, not just change how much of it there is.", "easy": "Changing a subscript would turn the substance into a totally different chemical, not just more or less of the same one."}
+  }
+},
+{
+  "topic": "the concept of density as mass per unit volume for identifying substances",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If two objects have the same volume but different masses, which one has greater density?",
+    "options": [
+      {"text": "The one with greater mass", "isCorrect": true, "feedback": "Correct -- since density = mass/volume, and volume is the same for both, more mass means higher density."},
+      {"text": "The one with less mass", "isCorrect": false, "feedback": "This is backwards -- with equal volume, MORE mass means higher density, not less."},
+      {"text": "They must have equal density, since their volumes are equal", "isCorrect": false, "feedback": "Equal volume doesn't guarantee equal density if their masses are different -- density depends on both mass and volume together."},
+      {"text": "Density cannot be determined from mass and volume", "isCorrect": false, "feedback": "Density is defined specifically as mass divided by volume -- it absolutely can be determined from these two values."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A scientist finds an unknown metal sample with a mass of 39 grams and a volume of 5 cm³. Referencing known densities (aluminum ≈2.7 g/cm³, iron ≈7.9 g/cm³, gold ≈19.3 g/cm³), which metal does this sample most likely match?",
+    "options": [
+      {"text": "Iron, since the sample's density (39÷5=7.8 g/cm³) is very close to iron's known density", "isCorrect": true, "feedback": "Correct -- comparing calculated density to known reference values is a standard way to help identify an unknown substance."},
+      {"text": "Aluminum, since the sample is a metal", "isCorrect": false, "feedback": "Simply being a metal doesn't determine which specific metal it is -- the calculated density (7.8 g/cm³) is far closer to iron's than aluminum's."},
+      {"text": "Gold, since gold is a well-known metal", "isCorrect": false, "feedback": "Being well-known isn't relevant -- the calculated density (7.8 g/cm³) is far closer to iron's density than gold's much higher density."},
+      {"text": "It's impossible to identify the metal from this information", "isCorrect": false, "feedback": "Mass and volume are exactly the information needed to calculate density and compare it against known reference values."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two samples of the same pure substance, one large and one small, are compared. What would you expect to be true about their densities, and why?",
+    "options": [
+      {"text": "Their densities should be equal, because density is an intensive property that doesn't depend on the amount of substance present", "isCorrect": true, "feedback": "Correct -- unlike mass or volume alone (extensive properties), density remains constant for a given pure substance regardless of sample size."},
+      {"text": "The larger sample will always have a higher density", "isCorrect": false, "feedback": "Density doesn't scale with sample size for the same pure substance -- it should remain constant."},
+      {"text": "The smaller sample will always have a higher density", "isCorrect": false, "feedback": "Density doesn't scale with sample size for the same pure substance -- it should remain constant, not favor the smaller piece."},
+      {"text": "Density cannot be compared between samples of different sizes", "isCorrect": false, "feedback": "Density is precisely a property designed to allow meaningful comparison between samples of ANY size, since it's normalized per unit volume."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Density scales directly with the amount of mass packed into a given, fixed volume.", "medium": "With the same amount of space, having more \"stuff\" packed in means higher density.", "easy": "With the same size, having more mass packed in means it's more dense."},
+    "medium": {"hard": "Divide the sample's mass by its volume, then compare the result to the known density values for each candidate metal.", "medium": "Divide 39 by 5 to find the sample's density, then compare it to the listed known densities.", "easy": "Divide 39 by 5 to get 7.8, then see which metal's density that's closest to."},
+    "hard": {"hard": "As an intensive property, density is defined per unit volume/mass and is therefore independent of the total quantity of a pure, uniform substance present.", "medium": "Since it's the exact same substance, doubling or halving the amount doesn't change how tightly packed its mass is for any given size.", "easy": "Since it's the same substance, a bigger or smaller piece should still weigh the same amount for its size."}
+  }
+}
+]

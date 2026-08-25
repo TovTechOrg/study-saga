@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a lever's mechanical advantage calculation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'mechanical advantage' describe for a simple machine like a lever?",
+    "options": [
+      {"text": "How much the machine multiplies the input force", "isCorrect": true, "feedback": "Correct -- mechanical advantage tells you how much easier a machine makes a task by amplifying the applied force."},
+      {"text": "How much the machine weighs", "isCorrect": false, "feedback": "Weight is a separate physical property, unrelated to mechanical advantage."},
+      {"text": "How fast the machine can move", "isCorrect": false, "feedback": "Speed is a different characteristic -- mechanical advantage specifically relates to force amplification."},
+      {"text": "How colorful the machine is", "isCorrect": false, "feedback": "Color has no relevance to a machine's mechanical advantage."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A lever has an effort arm (distance from fulcrum to where force is applied) of 6 meters and a load arm (distance from fulcrum to the load) of 2 meters. What is its mechanical advantage?",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- mechanical advantage for a lever equals effort arm ÷ load arm: 6÷2=3."},
+      {"text": "12", "isCorrect": false, "feedback": "This multiplies instead of dividing the two arm lengths."},
+      {"text": "4", "isCorrect": false, "feedback": "This adds the two arm lengths instead of dividing them."},
+      {"text": "8", "isCorrect": false, "feedback": "This doesn't match correctly dividing 6 by 2."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A lever has a mechanical advantage of 5. If 40 N of effort force is applied, how much load force can it lift, and how does this relate to the trade-off in distance moved?",
+    "options": [
+      {"text": "200 N of load can be lifted, but the effort side must move 5 times farther than the load side moves, since mechanical advantage doesn't create free energy", "isCorrect": true, "feedback": "Correct -- force is multiplied by 5 (40×5=200), but this comes with the trade-off of needing to move the effort arm proportionally farther, conserving overall energy/work."},
+      {"text": "200 N of load can be lifted, with no trade-off in distance at all", "isCorrect": false, "feedback": "There's always a trade-off with simple machines -- gaining mechanical advantage in force always requires moving the effort side a proportionally greater distance."},
+      {"text": "8 N of load can be lifted", "isCorrect": false, "feedback": "This divides instead of multiplying the effort force by the mechanical advantage."},
+      {"text": "45 N of load can be lifted", "isCorrect": false, "feedback": "This adds instead of multiplying the effort force by the mechanical advantage."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value represents the ratio by which a machine amplifies an applied input force.", "medium": "This shows how many times stronger the output force is compared to the input force.", "easy": "This shows how much a machine multiplies the force you put in."},
+    "medium": {"hard": "Divide the effort arm's length by the load arm's length to find the mechanical advantage.", "medium": "Divide 6 by 2.", "easy": "Divide 6 by 2."},
+    "hard": {"hard": "Multiply the effort force by the mechanical advantage to find the load force, while recognizing that simple machines trade force for distance to conserve total work.", "medium": "Multiply 40 by 5 to find the load force, and remember that the effort side has to move farther to make up for the force gain.", "easy": "Multiply 40 by 5 to get the load force -- but the effort side has to move farther to make up for it."}
+  }
+}
+]

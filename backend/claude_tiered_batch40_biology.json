@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of homeostasis and negative feedback loops",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is homeostasis?",
+    "options": [
+      {"text": "The maintenance of a stable internal environment within an organism", "isCorrect": true, "feedback": "Correct -- homeostasis keeps internal conditions like temperature and pH within a stable, healthy range."},
+      {"text": "The process by which organisms reproduce", "isCorrect": false, "feedback": "Reproduction is a separate biological process, not what homeostasis refers to."},
+      {"text": "The process of an organism growing larger over time", "isCorrect": false, "feedback": "Growth is a different biological process -- homeostasis specifically refers to maintaining internal stability."},
+      {"text": "The breakdown of food into usable energy", "isCorrect": false, "feedback": "That describes metabolism/digestion, not homeostasis."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When body temperature rises above normal, the body sweats to cool down; once temperature returns to normal, sweating stops. What kind of feedback mechanism is this?",
+    "options": [
+      {"text": "A negative feedback loop, since the response counteracts the initial change to bring the system back toward its normal set point", "isCorrect": true, "feedback": "Correct -- negative feedback loops work specifically by counteracting a change, pushing the system back toward equilibrium."},
+      {"text": "A positive feedback loop, since the response amplifies the initial change", "isCorrect": false, "feedback": "This would be true if sweating caused temperature to rise even further -- but here, the response counteracts the initial rise, making it negative feedback."},
+      {"text": "This has nothing to do with feedback mechanisms at all", "isCorrect": false, "feedback": "This is actually a textbook example specifically illustrating a negative feedback loop."},
+      {"text": "A neutral feedback loop with no directional effect", "isCorrect": false, "feedback": "This response has a clear directional effect -- countering the temperature rise -- so it isn't neutral."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Childbirth contractions are often cited as an example of positive (not negative) feedback: contractions stretch the cervix, which triggers hormone release that intensifies contractions further, continuing until birth occurs. Why doesn't this process fit the negative feedback model?",
+    "options": [
+      {"text": "Because the response (increased hormone release) amplifies the original stimulus (contractions) rather than counteracting it, driving the system further from its starting state until an endpoint (birth) is reached", "isCorrect": true, "feedback": "Correct -- unlike negative feedback (which restores a stable set point), positive feedback escalates a process toward a specific endpoint, exactly as seen in childbirth."},
+      {"text": "Because childbirth doesn't actually involve any hormones or physiological feedback at all", "isCorrect": false, "feedback": "Childbirth very much involves hormonal feedback (notably oxytocin) -- the key point is that it's a positive, not negative, feedback pattern."},
+      {"text": "Because negative feedback loops always involve hormones, while positive feedback loops never do", "isCorrect": false, "feedback": "Both negative and positive feedback loops can involve hormones -- the distinguishing feature is whether the response counteracts or amplifies the original change, not hormone involvement."},
+      {"text": "Because this process actually does perfectly fit the negative feedback model", "isCorrect": false, "feedback": "This process does NOT fit the negative feedback model -- it fits the positive feedback model, since the response amplifies rather than counteracts the original stimulus."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This describes an organism's ability to regulate and stabilize its internal conditions despite external changes.", "medium": "This is the body keeping its internal conditions steady, like temperature or pH.", "easy": "This is the body keeping things like temperature steady inside."},
+    "medium": {"hard": "Consider whether the physiological response works to counteract or reinforce the initial deviation from the normal set point.", "medium": "Think about whether sweating pushes body temperature back toward normal, or further away from normal.", "easy": "Sweating cools you down, bringing your temperature back toward normal -- that's the key clue."},
+    "hard": {"hard": "Distinguish between a response that restores equilibrium (negative feedback) versus one that escalates a process toward a defined endpoint (positive feedback).", "medium": "Negative feedback pushes things back to normal, but this contraction cycle keeps building up more and more until birth happens -- that's amplification, not restoration.", "easy": "Negative feedback pushes things back to normal, but here the contractions just keep building up more and more -- that's the opposite."}
+  }
+}
+]

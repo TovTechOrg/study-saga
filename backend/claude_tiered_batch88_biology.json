@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between competitive exclusion and niche partitioning",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The 'competitive exclusion principle' states that:",
+    "options": [
+      {"text": "Two species competing for the exact same limited resource/niche cannot indefinitely coexist -- one will eventually outcompete and exclude the other", "isCorrect": true, "feedback": "Correct -- this principle predicts that complete niche overlap between two competing species is generally unstable over the long term, typically resulting in one species' local exclusion."},
+      {"text": "All species in an ecosystem can always coexist peacefully, regardless of resource overlap", "isCorrect": false, "feedback": "This is essentially the opposite of the competitive exclusion principle, which specifically predicts that species with IDENTICAL resource needs generally CANNOT indefinitely coexist."},
+      {"text": "Competition between species never actually occurs in nature", "isCorrect": false, "feedback": "This isn't accurate -- competition between species is a well-documented, common ecological phenomenon; the competitive exclusion principle specifically describes one particular predicted OUTCOME of such competition."},
+      {"text": "Species that compete for resources will always merge into a single new species", "isCorrect": false, "feedback": "This isn't accurate -- competitive exclusion specifically predicts one species being excluded (outcompeted), not the two species MERGING into a single new species."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "'Niche partitioning' describes a situation where two similar species, which might otherwise compete directly, instead evolve to use slightly different resources or specialize in different ways (like feeding at different times or heights), allowing them to coexist. How does niche partitioning relate to avoiding the competitive exclusion principle's predicted outcome?",
+    "options": [
+      {"text": "By evolving to reduce the degree of niche overlap between the two species (rather than competing for identical resources), niche partitioning allows both species to persist long-term by reducing direct competition, thereby avoiding the complete exclusion that the competitive exclusion principle would predict for perfectly overlapping niches", "isCorrect": true, "feedback": "Correct -- niche partitioning represents a common evolutionary outcome/adaptation that allows similar species to coexist stably, specifically by reducing niche overlap and thus avoiding the fate predicted for species with completely identical resource requirements."},
+      {"text": "Niche partitioning actually has no connection to avoiding the competitive exclusion principle's predicted outcome", "isCorrect": false, "feedback": "This isn't accurate -- niche partitioning is DIRECTLY connected to and represents a specific evolutionary MECHANISM for avoiding the competitive exclusion outcome, by reducing niche overlap between similar species."},
+      {"text": "Niche partitioning actually increases the degree of niche overlap between two competing species", "isCorrect": false, "feedback": "This is backwards -- niche partitioning specifically DECREASES (not increases) niche overlap between species, which is precisely the mechanism allowing them to coexist rather than one excluding the other."},
+      {"text": "The competitive exclusion principle and niche partitioning are actually completely unrelated ecological concepts", "isCorrect": false, "feedback": "This isn't accurate -- these are actually CLOSELY RELATED concepts; niche partitioning specifically represents one common way species can avoid the fate predicted by the competitive exclusion principle."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Several species of warblers (small birds) were famously observed feeding in the same spruce trees, seemingly using the same general resource (insects on the tree), yet each species was found to specifically forage in different specific parts of the tree (like the top, middle, or outer branches). Why did this detailed observation provide important evidence specifically supporting niche partitioning, rather than contradicting the competitive exclusion principle?",
+    "options": [
+      {"text": "Even though these species appeared to share the SAME general resource at first glance (insects in the same tree), the detailed observation revealed they actually occupied subtly DIFFERENT specific niches (different foraging locations within the tree), demonstrating niche partitioning rather than true complete niche overlap, which is precisely why competitive exclusion didn't occur between them", "isCorrect": true, "feedback": "Correct -- this classic ecological study (MacArthur's warblers) is a celebrated example specifically illustrating how seemingly similar species can actually coexist through subtle niche partitioning, providing supporting evidence for (rather than contradicting) the underlying logic of the competitive exclusion principle."},
+      {"text": "This observation actually proves that the competitive exclusion principle is completely wrong and doesn't apply in real ecosystems", "isCorrect": false, "feedback": "This isn't accurate -- this observation doesn't disprove the principle; rather, it demonstrates HOW species can avoid triggering competitive exclusion specifically through niche partitioning (occupying subtly different niches), which is consistent with (not contradictory to) the underlying ecological logic."},
+      {"text": "This observation shows that all warbler species were actually competing for and using the EXACT same specific niche with no differences at all", "isCorrect": false, "feedback": "This isn't accurate -- the KEY finding was specifically that these species occupied DIFFERENT specific niches (foraging locations) DESPITE superficially appearing similar, not that they used identical niches."},
+      {"text": "This detailed observation has no actual connection to either the competitive exclusion principle or niche partitioning concepts", "isCorrect": false, "feedback": "This isn't accurate -- this is actually a classic, celebrated real-world example DIRECTLY and specifically illustrating and connecting to BOTH of these related ecological concepts."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This ecological principle predicts the long-term instability of coexistence between species possessing perfectly identical resource utilization patterns.", "medium": "This rule says two species that want the exact same thing can't both stick around forever -- one eventually wins out.", "easy": "This rule says two species wanting the exact same thing can't both stick around forever."},
+    "medium": {"hard": "Consider how evolutionary specialization reducing resource overlap directly addresses the underlying competitive pressure that would otherwise lead to one species' exclusion.", "medium": "If two similar species start specializing in slightly different things instead of fighting over the exact same stuff, they can both keep living in the same area without one wiping out the other.", "easy": "If similar species specialize in slightly different things instead of the exact same stuff, they can both survive together."},
+    "hard": {"hard": "Consider how apparent superficial resource similarity can mask genuine underlying niche differentiation, which is precisely what determines whether competitive exclusion is actually triggered.", "medium": "Even though it looked like all the birds were doing the same thing in the same tree, looking closer showed each one actually had its own specific spot, which is exactly why they could all live together.", "easy": "Even though the birds looked like they were doing the same thing, each one actually had its own specific spot."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between diffusion and osmosis",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is diffusion?",
+    "options": [
+      {"text": "The movement of particles from an area of higher concentration to an area of lower concentration", "isCorrect": true, "feedback": "Correct -- diffusion is a passive process where particles naturally spread out to equalize concentration differences over time."},
+      {"text": "The movement of particles from lower to higher concentration", "isCorrect": false, "feedback": "This is backwards -- diffusion specifically moves particles from HIGHER to LOWER concentration, not the other way around (that would require active transport, using energy)."},
+      {"text": "A process that requires significant energy input from the cell", "isCorrect": false, "feedback": "Diffusion is actually a PASSIVE process, requiring no cellular energy input -- it's driven simply by the natural random motion of particles."},
+      {"text": "The complete stopping of all particle movement", "isCorrect": false, "feedback": "Diffusion specifically involves ONGOING particle movement (down a concentration gradient), not a complete stopping of movement."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Osmosis is often described as a 'special case' of diffusion. What specifically makes osmosis a distinct, more specific type of diffusion, rather than just diffusion in general?",
+    "options": [
+      {"text": "Osmosis specifically refers to the diffusion of WATER molecules across a selectively permeable membrane, rather than diffusion of any general type of particle/solute", "isCorrect": true, "feedback": "Correct -- while diffusion broadly describes ANY particle moving down its concentration gradient, osmosis specifically narrows this to water movement across a semi-permeable membrane."},
+      {"text": "Osmosis actually describes the diffusion of solid particles only, never liquids", "isCorrect": false, "feedback": "This isn't accurate -- osmosis specifically concerns the movement of WATER (a liquid), not solid particles."},
+      {"text": "There is actually no meaningful distinction between osmosis and general diffusion", "isCorrect": false, "feedback": "There IS a meaningful distinction -- osmosis is specifically a more narrowly defined case of diffusion, focused specifically on water movement across a selectively permeable membrane."},
+      {"text": "Osmosis requires significant energy input, unlike general diffusion", "isCorrect": false, "feedback": "This isn't accurate -- like general diffusion, osmosis is also a PASSIVE process requiring no cellular energy input; the key distinguishing feature is specifically about WHAT is moving (water) and WHERE (across a membrane), not energy requirements."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A cell placed in a solution with a very high solute concentration (compared to the cell's interior) will lose water via osmosis, potentially shrinking (a process called plasmolysis in plant cells). Meanwhile, a scent (like perfume) diffuses through a room via simple diffusion, without requiring any membrane at all. Why is understanding this distinction between membrane-dependent osmosis and general diffusion important in cell biology?",
+    "options": [
+      {"text": "Recognizing that osmosis specifically requires a selectively permeable membrane (unlike general diffusion, which can occur even without any membrane) helps explain cellular phenomena specifically related to controlled water balance across a cell's boundary, which is critical for understanding cell survival and function in different environments", "isCorrect": true, "feedback": "Correct -- this distinction is fundamental to understanding numerous important cellular biology concepts, particularly regarding how cells actively manage their water balance and survival across different external environments via their selectively permeable membranes."},
+      {"text": "This distinction has no actual practical importance for understanding cellular biology or function", "isCorrect": false, "feedback": "This isn't accurate -- this distinction is actually QUITE important for understanding numerous critical cellular biology concepts, particularly cell survival and water balance regulation."},
+      {"text": "General diffusion (like perfume spreading) actually also requires a selectively permeable membrane, just like osmosis", "isCorrect": false, "feedback": "This isn't accurate -- general diffusion (like a scent spreading through a room) does NOT require any membrane at all, unlike osmosis, which specifically requires a selectively permeable membrane."},
+      {"text": "Osmosis and general diffusion are actually identical processes with no meaningful practical differences in cell biology", "isCorrect": false, "feedback": "This isn't accurate -- these are genuinely DIFFERENT processes (regarding membrane requirement and the specific substance moving), which is precisely why understanding their distinction matters for accurately explaining cellular phenomena."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This passive transport phenomenon describes net particle migration driven by a concentration gradient, without any energy expenditure.", "medium": "This is when particles naturally spread out from where there's a lot of them to where there's less.", "easy": "This is when particles naturally spread from where there's more to where there's less."},
+    "medium": {"hard": "Consider what specific substance and specific structural requirement (membrane) narrows the broader diffusion concept into this more specialized case.", "medium": "Osmosis is specifically about WATER moving through a special kind of barrier, not just any particle moving anywhere.", "easy": "Osmosis is specifically about water moving through a special membrane, not just any particle anywhere."},
+    "hard": {"hard": "Consider how the presence or absence of a required selectively permeable membrane fundamentally distinguishes these two related but distinct transport phenomena in terms of their biological application.", "medium": "Since a cell's membrane control over water movement (osmosis) is different from stuff just spreading out anywhere (diffusion), understanding that difference helps explain how cells manage staying healthy in different environments.", "easy": "Since cells specifically control water movement through their membrane, understanding that difference helps explain how cells stay healthy."}
+  }
+}
+]

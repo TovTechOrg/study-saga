@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between nuclear fission and nuclear fusion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Nuclear fission' releases energy by:",
+    "options": [
+      {"text": "Splitting a large, heavy atomic nucleus into two smaller nuclei", "isCorrect": true, "feedback": "Correct -- nuclear fission releases energy specifically by splitting a large, heavy nucleus (like uranium) into two smaller nuclei, used in current nuclear power plants."},
+      {"text": "Combining two small, light atomic nuclei into one larger nucleus", "isCorrect": false, "feedback": "That describes NUCLEAR FUSION, not fission -- fusion combines small nuclei into a larger one, while fission splits a large nucleus into smaller ones."},
+      {"text": "Chemically reacting two different elements together", "isCorrect": false, "feedback": "This isn't accurate -- nuclear fission is a NUCLEAR process (involving the atomic nucleus itself), not a chemical reaction (which involves only electron interactions between atoms)."},
+      {"text": "Cooling a substance down to extremely low temperatures", "isCorrect": false, "feedback": "This isn't accurate -- nuclear fission concerns splitting an atomic nucleus to release energy, entirely unrelated to cooling a substance's temperature."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Both fission and fusion release enormous amounts of energy, despite being essentially opposite nuclear processes (splitting versus combining nuclei). Why can both of these seemingly opposite processes release energy, rather than one process releasing energy and its opposite requiring energy input?",
+    "options": [
+      {"text": "Nuclear binding energy per nucleon (a measure of how tightly bound a nucleus is) is not a simple, monotonic function across all elements -- it increases from light elements up to a peak around iron/nickel, then decreases again for heavier elements, meaning BOTH splitting a very heavy nucleus (fission, moving it toward the more tightly-bound middle) AND combining very light nuclei (fusion, also moving toward the more tightly-bound middle) can result in more tightly bound (lower energy) end products, releasing the difference in energy in both cases", "isCorrect": true, "feedback": "Correct -- this explanation of the binding-energy-per-nucleon curve (peaking near iron, lower at both light and heavy extremes) correctly explains why both fission of heavy elements and fusion of light elements can release energy, despite being seemingly opposite processes, a foundational nuclear physics concept."},
+      {"text": "Only one of these two processes (either fission or fusion) would actually be capable of releasing energy, with the other always requiring energy input instead", "isCorrect": false, "feedback": "This isn't accurate -- BOTH fission (of heavy nuclei) and fusion (of light nuclei) CAN release energy, precisely because of how binding energy per nucleon varies across the periodic table."},
+      {"text": "Binding energy per nucleon has no actual connection to explaining why both fission and fusion can release energy under the right conditions", "isCorrect": false, "feedback": "This isn't accurate -- binding energy per nucleon IS DIRECTLY connected to and is precisely the concept explaining why both processes can release energy."},
+      {"text": "Binding energy per nucleon would actually increase steadily and continuously across the entire periodic table with no peak at all", "isCorrect": false, "feedback": "This isn't accurate -- binding energy per nucleon specifically PEAKS around iron/nickel and decreases for both lighter and heavier elements, rather than increasing continuously across the whole periodic table."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Fusing light elements together (like hydrogen into helium, as occurs in the Sun) releases energy only up to a certain point on the periodic table (around iron), beyond which further fusion of heavier elements would actually REQUIRE energy input rather than releasing it. Explain why iron represents this specific turning point.",
+    "options": [
+      {"text": "Iron (and nearby elements like nickel) sits at the PEAK of the binding-energy-per-nucleon curve, meaning it is the most tightly bound nucleus per nucleon possible -- fusing elements lighter than iron moves toward this peak (increasing binding energy per nucleon, releasing the difference as energy), but fusing elements at or beyond iron would move AWAY from this peak (decreasing binding energy per nucleon), which would require energy input rather than releasing it, explaining why stellar fusion processes naturally stop producing net energy once they reach iron", "isCorrect": true, "feedback": "Correct -- this explanation of iron representing the peak of nuclear stability (maximum binding energy per nucleon) correctly explains why fusion beyond iron becomes energetically unfavorable, a key concept explaining why stars can no longer sustain fusion-based energy production once their core becomes primarily iron."},
+      {"text": "Fusing elements beyond iron would actually continue to release even MORE energy than fusing lighter elements, with no fundamental turning point at all", "isCorrect": false, "feedback": "This isn't accurate -- fusing elements BEYOND iron specifically REQUIRES energy input rather than releasing it, precisely because iron represents the peak of nuclear binding stability."},
+      {"text": "Iron's position on the binding-energy-per-nucleon curve has no actual connection to explaining why fusion beyond iron requires energy input rather than releasing it", "isCorrect": false, "feedback": "This isn't accurate -- iron's position at the peak of this curve IS DIRECTLY connected to and is precisely why fusion beyond iron becomes energetically unfavorable."},
+      {"text": "Binding energy per nucleon would actually be at its LOWEST point (not highest) for iron and nearby elements, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- iron and nearby elements represent the HIGHEST (peak) binding energy per nucleon, not the lowest, which is precisely why they represent the turning point for energetically favorable fusion."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This nuclear process liberates energy through the fragmentation of a massive atomic nucleus into constituent smaller nuclei.", "medium": "This is when a big atomic nucleus gets split apart into two smaller pieces, releasing energy.", "easy": "This is when a big atomic nucleus splits into two smaller pieces, releasing energy."},
+    "medium": {"hard": "Consider how the non-monotonic binding-energy-per-nucleon curve, peaking near iron, permits both directions of nuclear rearrangement (heavy splitting apart, light combining together) to move toward that peak and release energy.", "medium": "How tightly bound a nucleus is doesn't just keep going up as elements get bigger, it actually peaks around iron, so both splitting really big atoms and combining really small ones can move toward that peak and release energy.", "easy": "How tightly bound a nucleus is peaks around iron, so both splitting big atoms and combining small ones can release energy."},
+    "hard": {"hard": "Consider how iron's position at the apex of the binding-energy-per-nucleon curve means any further fusion beyond it necessarily moves toward looser binding, demanding energy input rather than yielding a release.", "medium": "Iron sits right at the top of the tightest-binding curve, so once fusion reaches iron, going any further would actually mean making a LESS tightly bound nucleus, which costs energy instead of releasing it.", "easy": "Iron sits at the top of the tightest-binding curve, so fusing beyond it would cost energy instead of releasing it."}
+  }
+}
+]

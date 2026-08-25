@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of viruses and whether they are considered 'alive'",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Why do many biologists debate whether viruses should be classified as 'living' organisms?",
+    "options": [
+      {"text": "Viruses cannot reproduce or carry out metabolic processes on their own, without hijacking a host cell's machinery", "isCorrect": true, "feedback": "Correct -- this dependency on a host cell for essential life processes (like reproduction) is central to why viruses occupy an ambiguous position in discussions of what counts as 'alive.'"},
+      {"text": "Viruses are actually much larger than any known living cell", "isCorrect": false, "feedback": "This isn't accurate -- viruses are typically much SMALLER than living cells, not larger; this size difference isn't actually the primary reason for the living/non-living debate."},
+      {"text": "Viruses are made entirely of minerals, with no biological material at all", "isCorrect": false, "feedback": "This isn't accurate -- viruses ARE made of biological materials (like genetic material and proteins), not minerals; this isn't the basis for the living/non-living debate."},
+      {"text": "There is actually no scientific debate at all about whether viruses are alive", "isCorrect": false, "feedback": "This isn't accurate -- this is actually a well-known, ongoing scientific and philosophical debate specifically because viruses have some but not all typically-defined characteristics of life."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Living organisms are generally characterized by traits like the ability to reproduce independently, carry out metabolism, and respond to their environment. Viruses have genetic material (DNA or RNA) and can evolve, but cannot reproduce or metabolize without a host cell. Why does this partial overlap with typical 'life' criteria make classification particularly challenging?",
+    "options": [
+      {"text": "Since viruses exhibit SOME (like genetic material and evolution) but not ALL (like independent reproduction/metabolism) typically-required characteristics of life, they fall into an ambiguous middle ground that doesn't fit neatly into either the 'living' or clearly 'non-living' category", "isCorrect": true, "feedback": "Correct -- this partial overlap with standard biological life criteria is exactly why viruses present such a genuinely challenging edge case for biological classification, highlighting the sometimes-blurry boundaries of scientific categories."},
+      {"text": "Viruses actually meet ALL standard criteria for being considered fully alive, with no ambiguity whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- viruses specifically LACK certain typically-required life characteristics (like independent metabolism/reproduction), which is precisely why their classification remains genuinely debated, not clear-cut."},
+      {"text": "Viruses actually meet NONE of the standard criteria typically associated with living organisms", "isCorrect": false, "feedback": "This isn't accurate -- viruses DO exhibit SOME typically life-associated characteristics (like genetic material and the capacity to evolve), which is precisely why the classification debate exists, rather than a clear-cut 'non-living' categorization."},
+      {"text": "This classification challenge has no actual connection to which specific biological characteristics viruses do or don't possess", "isCorrect": false, "feedback": "This isn't accurate -- this classification challenge is DIRECTLY connected to and driven by the SPECIFIC characteristics viruses do and don't possess relative to standard biological life criteria."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some scientists argue that since the definition of 'life' itself is a human-constructed category (not an inherent natural boundary), debating whether viruses are 'truly alive' may be somewhat of a semantic question rather than a purely scientific one. Why might this perspective be a valuable way to think about the virus classification debate?",
+    "options": [
+      {"text": "It suggests that the underlying, objectively measurable biological facts about viruses (their structure, behavior, replication mechanism) are well-understood and not in dispute, while the DEBATE itself largely centers on how we choose to define and apply a human-created conceptual category ('life') to an entity that doesn't fit neatly into pre-existing definitions", "isCorrect": true, "feedback": "Correct -- this perspective helpfully highlights that many scientific classification debates, including this one, often hinge on how we define and apply human-constructed categories to complex natural phenomena, rather than on any genuine disagreement about the underlying observable facts themselves."},
+      {"text": "This perspective actually suggests that nothing meaningful can be learned from studying viruses at all", "isCorrect": false, "feedback": "This isn't accurate -- this perspective doesn't diminish the scientific value of studying viruses at all; it simply reframes the SPECIFIC 'alive or not' debate as partly definitional/semantic, rather than suggesting viruses themselves are unimportant to study."},
+      {"text": "This perspective proves that viruses are definitively, unambiguously alive after all", "isCorrect": false, "feedback": "This isn't accurate -- this perspective doesn't resolve the debate in either direction; it specifically reframes the debate as partly about DEFINITIONAL categories, not as providing a definitive scientific answer favoring 'alive.'"},
+      {"text": "The definition of 'life' has no actual connection to how scientists think about or discuss viruses", "isCorrect": false, "feedback": "This isn't accurate -- the definition of 'life' is DIRECTLY central to and connected with the entire virus classification debate being discussed here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This debate centers on whether an entity dependent entirely on a host organism's cellular machinery for reproduction should be classified within a standard biological life framework.", "medium": "This debate is about whether something that can't reproduce or do its own life processes without a host counts as truly alive.", "easy": "This debate is about whether something that needs a host to reproduce counts as truly alive."},
+    "medium": {"hard": "Consider how possessing a subset of, but not all, standard defining characteristics complicates fitting an entity into an established binary categorical system.", "medium": "Having SOME but not ALL of the usual 'checklist' items for being alive is exactly why this is such a tricky case to classify one way or the other.", "easy": "Having some but not all of the usual 'alive' checklist items makes this a tricky case to classify."},
+    "hard": {"hard": "Consider how separating agreed-upon empirical observations from the conceptual, definitional framework used to categorize those observations can reframe an apparent scientific disagreement as partly a matter of definitional convention.", "medium": "Everyone actually agrees on WHAT viruses do and how they work -- the disagreement is really just about whether our human-made category of 'alive' should include them or not.", "easy": "Everyone agrees on what viruses actually do -- the disagreement is just about whether to call that 'alive.'"}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a species' biological classification hierarchy",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In biological classification, what is the smallest, most specific grouping typically used?",
+    "options": [
+      {"text": "Species", "isCorrect": true, "feedback": "Correct -- species is the most specific classification level, representing a single distinct type of organism."},
+      {"text": "Kingdom", "isCorrect": false, "feedback": "Kingdom is actually one of the broadest, most general classification levels, not the most specific."},
+      {"text": "Domain", "isCorrect": false, "feedback": "Domain is the broadest classification level of all, not the most specific."},
+      {"text": "Phylum", "isCorrect": false, "feedback": "Phylum is a fairly broad classification level, well above the more specific species level."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Humans are classified as Homo sapiens. What do these two parts of the scientific name represent?",
+    "options": [
+      {"text": "Genus (Homo) and species (sapiens)", "isCorrect": true, "feedback": "Correct -- this two-part naming system (binomial nomenclature) always gives the genus first, then the specific species."},
+      {"text": "Kingdom and phylum", "isCorrect": false, "feedback": "Kingdom and phylum are much broader classification levels, not what's represented in this two-part scientific name."},
+      {"text": "Family and order", "isCorrect": false, "feedback": "Family and order are different, broader classification levels than what's specifically shown in a two-part species name."},
+      {"text": "Two completely unrelated random words", "isCorrect": false, "feedback": "These aren't random -- they specifically represent the genus and species classification levels in standardized scientific naming."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is a standardized, hierarchical classification system (like Kingdom, Phylum, Class, Order, Family, Genus, Species) useful for biologists worldwide, beyond just organizing species?",
+    "options": [
+      {"text": "It provides a universal, unambiguous naming and grouping system that reflects evolutionary relationships, allowing scientists across different languages and countries to communicate precisely about the same organisms", "isCorrect": true, "feedback": "Correct -- this standardized system avoids confusion from different common names across languages/regions, while also reflecting genuine evolutionary relatedness between organisms."},
+      {"text": "This classification system has no real scientific or practical value", "isCorrect": false, "feedback": "This system actually has significant practical and scientific value, especially for clear international communication and understanding evolutionary relationships."},
+      {"text": "This system is purely arbitrary, with no connection to how organisms are actually related", "isCorrect": false, "feedback": "Modern biological classification specifically aims to reflect genuine evolutionary relationships between organisms, not arbitrary groupings."},
+      {"text": "Only professional scientists are ever allowed to use or reference this classification system", "isCorrect": false, "feedback": "This classification system is openly used and referenced by anyone interested in biology, not restricted exclusively to professional scientists."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This level represents the finest, most precise distinction within the classification hierarchy.", "medium": "This is the most specific, narrowest category in the classification system.", "easy": "This is the smallest, most specific group in the classification system."},
+    "medium": {"hard": "The two-part scientific name always follows the same specific hierarchical pattern in a fixed order.", "medium": "The first word is always the broader category, and the second word narrows it down further.", "easy": "The first word is the broader group, and the second word narrows it down to the specific species."},
+    "hard": {"hard": "A standardized, internationally recognized system eliminates ambiguity from region-specific common names while embedding genuine evolutionary relationship information within its hierarchical structure.", "medium": "Since common names for animals differ between languages and regions, having one universal scientific naming system avoids confusion worldwide.", "easy": "Since common names differ between languages, having one universal scientific naming system avoids confusion worldwide."}
+  }
+}
+]

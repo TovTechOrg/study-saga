@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of gene expression and how cells specialize",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Nearly every cell in your body contains the same complete set of DNA, yet a skin cell looks and behaves very differently from a nerve cell. What best explains this?",
+    "options": [
+      {"text": "Different genes are turned on or off (expressed differently) in each cell type, even though the underlying DNA is the same", "isCorrect": true, "feedback": "Correct -- this is the concept of gene expression, where only a subset of genes are active in any given specialized cell type."},
+      {"text": "Skin cells and nerve cells actually contain completely different DNA", "isCorrect": false, "feedback": "Nearly all cells in the body contain the same complete DNA -- the difference lies in which genes are actively expressed, not different DNA content."},
+      {"text": "This difference is entirely random with no biological explanation", "isCorrect": false, "feedback": "This is actually a well-understood, deliberately regulated process (gene expression/regulation), not a random occurrence."},
+      {"text": "Only skin cells actually contain real DNA", "isCorrect": false, "feedback": "All cells (with rare exceptions like mature red blood cells) contain a full set of DNA, not just skin cells."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean for a gene to be 'expressed' in a cell?",
+    "options": [
+      {"text": "The gene is actively being used to produce its corresponding protein", "isCorrect": true, "feedback": "Correct -- gene expression refers to the process of a gene's information being used to make a functional product, usually a protein."},
+      {"text": "The gene has been permanently deleted from the cell's DNA", "isCorrect": false, "feedback": "Expression doesn't involve deleting a gene -- it refers to a gene being actively used, not removed."},
+      {"text": "The gene is present but never used at all", "isCorrect": false, "feedback": "This describes the opposite of expression -- an expressed gene is one that IS actively being used."},
+      {"text": "The gene has mutated into a different gene", "isCorrect": false, "feedback": "Expression and mutation are separate concepts -- expression is about USING a gene's existing information, not changing it."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "During early development, a single fertilized egg cell divides and its descendant cells eventually specialize into vastly different cell types (nerve, muscle, skin, etc.), despite all carrying identical DNA. What must be happening for this specialization to occur?",
+    "options": [
+      {"text": "As cells divide, different regulatory signals and gene expression patterns get established in different cell lineages, permanently or semi-permanently switching different sets of genes on or off", "isCorrect": true, "feedback": "Correct -- this process, called cellular differentiation, relies on establishing distinct, stable gene expression patterns in different cell lineages, not on changing the underlying DNA itself."},
+      {"text": "Each cell type actually develops its own unique DNA sequence over time", "isCorrect": false, "feedback": "The DNA sequence itself typically remains the same across nearly all cell types -- differentiation happens through differential gene expression, not changing DNA sequence."},
+      {"text": "Cell specialization happens completely randomly with no regulatory mechanism involved", "isCorrect": false, "feedback": "Cell differentiation is actually a highly regulated, carefully controlled biological process, not a random occurrence."},
+      {"text": "Only some cells actually receive a complete copy of the original DNA", "isCorrect": false, "feedback": "Nearly all cells receive a full, complete copy of the DNA during normal cell division -- specialization comes from differential gene expression, not incomplete DNA inheritance."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Consider that identical genetic blueprints can produce different outcomes depending on which instructions are actively being read.", "medium": "Think about how the same instruction manual could be used differently depending on which pages get read.", "easy": "Think about how different cells might just be using different parts of the same instruction manual."},
+    "medium": {"hard": "This term describes a gene's information being actively transcribed and translated into a functional product.", "medium": "This describes a gene actually being used to make something, like a protein.", "easy": "This describes a gene actually being turned on and used to make something."},
+    "hard": {"hard": "Differentiation is driven by establishing lineage-specific, heritable patterns of gene activation and silencing, rather than by any change to the DNA sequence itself.", "medium": "As cells divide and develop, different sets of genes get permanently switched on or off in different cell lines, even though the DNA itself doesn't change.", "easy": "As cells develop, different genes get turned on or off in different cell types, even though the DNA itself stays the same."}
+  }
+}
+]

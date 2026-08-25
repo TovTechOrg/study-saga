@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of Le Chatelier's principle and equilibrium shifts",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does Le Chatelier's principle describe?",
+    "options": [
+      {"text": "How a system at equilibrium shifts to counteract a change imposed on it", "isCorrect": true, "feedback": "Correct -- the system responds by shifting the reaction to partially offset whatever disturbance was introduced."},
+      {"text": "How to calculate the exact rate of a chemical reaction", "isCorrect": false, "feedback": "Reaction rate calculations are a different topic -- Le Chatelier's principle is about how equilibrium position responds to disturbances."},
+      {"text": "How atoms bond together to form molecules", "isCorrect": false, "feedback": "Bonding theory is a separate topic from Le Chatelier's principle, which concerns equilibrium shifts."},
+      {"text": "How to determine the mass of a compound", "isCorrect": false, "feedback": "Mass calculations (stoichiometry) are unrelated to Le Chatelier's principle."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For the reaction N2 + 3H2 ⇌ 2NH3, if more N2 gas is added to the system at equilibrium, which direction will the equilibrium shift?",
+    "options": [
+      {"text": "Forward (toward NH3), to partially consume the added N2 and reduce the disturbance", "isCorrect": true, "feedback": "Correct -- adding a reactant shifts equilibrium toward the products, consuming some of the added substance to counteract the change."},
+      {"text": "Backward (toward N2 and H2), moving further away from equilibrium", "isCorrect": false, "feedback": "This is backwards -- adding a reactant shifts equilibrium FORWARD (toward products), not backward, in an attempt to counteract the added substance."},
+      {"text": "The equilibrium won't shift at all, since adding reactant has no effect", "isCorrect": false, "feedback": "Adding a reactant does have a real effect according to Le Chatelier's principle -- it shifts the equilibrium forward toward products."},
+      {"text": "The reaction will completely stop occurring", "isCorrect": false, "feedback": "The reaction doesn't stop -- it continues, just with a shift in the equilibrium position toward producing more product."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For the same reaction (N2 + 3H2 ⇌ 2NH3, which is exothermic in the forward direction), why would increasing the temperature actually shift the equilibrium AWAY from NH3 production, even though heating usually speeds up reactions?",
+    "options": [
+      {"text": "Because the system treats added heat like an extra 'product' of an exothermic reaction, so it shifts backward (favoring the endothermic reverse reaction) to absorb the excess heat", "isCorrect": true, "feedback": "Correct -- for exothermic reactions, increasing temperature shifts equilibrium toward the reactants (favoring the heat-absorbing reverse direction), even though the raw reaction RATE for both directions increases."},
+      {"text": "Temperature actually has no effect on chemical equilibrium position, only on reaction rate", "isCorrect": false, "feedback": "Temperature very much affects equilibrium POSITION for reactions involving heat (exothermic/endothermic), not just reaction rate."},
+      {"text": "Since heating always speeds up a reaction, it must always shift equilibrium toward the products, regardless of the reaction's heat effects", "isCorrect": false, "feedback": "This conflates reaction rate with equilibrium position -- for an EXOTHERMIC reaction specifically, increased temperature actually shifts equilibrium toward reactants, not products."},
+      {"text": "This reaction doesn't actually reach any equilibrium state at any temperature", "isCorrect": false, "feedback": "This reaction, like many reversible reactions, does reach an equilibrium state -- temperature changes shift WHERE that equilibrium lies, not whether it's reached."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This principle addresses how a system in dynamic balance responds to counteract externally imposed disturbances.", "medium": "This describes how a balanced reaction shifts to fight back against a change made to it.", "easy": "This describes how a balanced reaction shifts to fight back against a change."},
+    "medium": {"hard": "Consider which direction would partially consume the newly added substance, restoring some balance to the system.", "medium": "Adding more of a starting ingredient pushes the reaction to make more of the other side, using up some of what was added.", "easy": "Adding more N2 pushes the reaction to make more NH3, using up some of the extra N2."},
+    "hard": {"hard": "Treat heat as if it were a reactant or product depending on the reaction's thermal nature, then apply the same disturbance-counteracting logic used for concentration changes.", "medium": "Since this reaction releases heat going forward, adding more heat pushes the reaction backward, to use up that extra heat.", "easy": "Since this reaction releases heat going forward, adding more heat pushes the reaction backward instead."}
+  }
+}
+]

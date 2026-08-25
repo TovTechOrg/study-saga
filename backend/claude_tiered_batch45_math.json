@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the order of operations (PEMDAS)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to the standard order of operations (PEMDAS), which operation should generally be performed first in an expression?",
+    "options": [
+      {"text": "Operations inside Parentheses", "isCorrect": true, "feedback": "Correct -- Parentheses come first in PEMDAS (Parentheses, Exponents, Multiplication/Division, Addition/Subtraction)."},
+      {"text": "Addition", "isCorrect": false, "feedback": "Addition comes last in PEMDAS, after parentheses, exponents, and multiplication/division."},
+      {"text": "Subtraction", "isCorrect": false, "feedback": "Subtraction comes last in PEMDAS, tied with addition, after other operations are completed."},
+      {"text": "Multiplication", "isCorrect": false, "feedback": "Multiplication comes after parentheses and exponents in PEMDAS, not first."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Evaluate: 3 + 4 × 2",
+    "options": [
+      {"text": "11", "isCorrect": true, "feedback": "Correct -- multiplication happens before addition: 4×2=8, then 3+8=11."},
+      {"text": "14", "isCorrect": false, "feedback": "This results from adding 3+4 first, then multiplying by 2, which violates the correct order of operations."},
+      {"text": "9", "isCorrect": false, "feedback": "This doesn't correctly result from applying the order of operations to this expression."},
+      {"text": "24", "isCorrect": false, "feedback": "This doesn't correctly result from applying multiplication before addition here."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Evaluate: (5 + 3)² ÷ 4 - 2",
+    "options": [
+      {"text": "14", "isCorrect": true, "feedback": "Correct -- parentheses first: (5+3)=8; then exponent: 8²=64; then division: 64÷4=16; then subtraction: 16-2=14."},
+      {"text": "62", "isCorrect": false, "feedback": "This doesn't correctly follow the full order: parentheses, then exponent, then division, then subtraction."},
+      {"text": "16", "isCorrect": false, "feedback": "This is the result right after the division step (64÷4=16), but the final subtraction step (-2) still needs to be applied."},
+      {"text": "30", "isCorrect": false, "feedback": "This doesn't correctly result from applying all four operations in the correct order."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This convention specifies grouped sub-expressions, enclosed by a certain symbol, must be resolved before any operations that reference the group's collective result.", "medium": "This step involves solving whatever is grouped together first, before doing anything else.", "easy": "This step means solving whatever is inside the parentheses first."},
+    "medium": {"hard": "Apply the multiplication operation to its adjacent terms before proceeding to the addition operation, per standard precedence rules.", "medium": "Do the multiplication part (4×2) before doing the addition part.", "easy": "Multiply 4 by 2 first to get 8, then add 3 to get 11."},
+    "hard": {"hard": "Work through each PEMDAS stage sequentially: resolve the parenthetical group, apply the exponent, perform the division, then complete the subtraction.", "medium": "Work through it step by step: parentheses first, then the exponent, then division, then subtraction.", "easy": "Step by step: (5+3)=8, then 8²=64, then 64÷4=16, then 16-2=14."}
+  }
+}
+]

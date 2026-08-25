@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of genetic dominance and recessive alleles",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If an allele is 'dominant,' what does that mean?",
+    "options": [
+      {"text": "Its trait will be expressed even if only one copy of that allele is present", "isCorrect": true, "feedback": "Correct -- a dominant allele masks the effect of a recessive allele when paired together (heterozygous)."},
+      {"text": "It is always the more common allele in a population", "isCorrect": false, "feedback": "Dominance refers to how an allele's trait is expressed in a heterozygous pairing, not its frequency in the overall population."},
+      {"text": "It can only be expressed if two copies are present", "isCorrect": false, "feedback": "That describes a RECESSIVE allele, not a dominant one -- dominant alleles are expressed even with just one copy."},
+      {"text": "It causes a genetic disease every time", "isCorrect": false, "feedback": "Dominant alleles aren't necessarily harmful or disease-causing -- dominance simply refers to expression pattern, not health effect."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In pea plants, purple flower color (P) is dominant over white flower color (p). A plant with genotype Pp (heterozygous) will have which flower color?",
+    "options": [
+      {"text": "Purple, since the dominant P allele masks the recessive p allele", "isCorrect": true, "feedback": "Correct -- with one dominant and one recessive allele, the dominant trait (purple) is what's visibly expressed."},
+      {"text": "White, since the recessive allele is still present", "isCorrect": false, "feedback": "The mere presence of a recessive allele doesn't cause its trait to show -- with a dominant allele also present, the dominant trait (purple) is expressed instead."},
+      {"text": "A blend of purple and white, like light purple", "isCorrect": false, "feedback": "Classic Mendelian dominance doesn't produce a blended color -- the dominant allele's trait (purple) is fully expressed, not mixed with the recessive trait."},
+      {"text": "It's impossible to predict the flower color from this genotype", "isCorrect": false, "feedback": "This genotype's phenotype is actually quite predictable using standard dominance rules -- Pp results in purple flowers."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two heterozygous (Pp) pea plants are crossed. Using a Punnett square, what fraction of their offspring would be expected to have white flowers (genotype pp)?",
+    "options": [
+      {"text": "1/4 (25%)", "isCorrect": true, "feedback": "Correct -- the Punnett square for Pp × Pp gives genotype ratios of 1 PP : 2 Pp : 1 pp, meaning 1 out of 4 offspring (25%) would be pp (white)."},
+      {"text": "1/2 (50%)", "isCorrect": false, "feedback": "This doesn't match the actual Punnett square outcome for a Pp × Pp cross, which gives a 1:2:1 genotype ratio, with only 1/4 being pp."},
+      {"text": "3/4 (75%)", "isCorrect": false, "feedback": "This is actually the fraction expected to show the PURPLE phenotype (PP + Pp combined), not the white (pp) phenotype."},
+      {"text": "0% -- no offspring could have white flowers", "isCorrect": false, "feedback": "Since both parents carry a recessive p allele, there IS a nonzero chance of pp offspring appearing -- specifically 1/4 of the offspring."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This describes an allele whose associated trait manifests phenotypically even in a heterozygous genetic combination.", "medium": "This kind of allele shows up in the organism's traits even if there's only one copy of it.", "easy": "This kind of allele shows up even with just one copy of it."},
+    "medium": {"hard": "Determine which allele's trait is visibly expressed when one dominant and one recessive allele are both present together.", "medium": "With one dominant (P) and one recessive (p) allele together, which trait actually shows up?", "easy": "With one purple allele and one white allele together, purple wins since it's dominant."},
+    "hard": {"hard": "Construct a 2x2 Punnett square crossing Pp with Pp, then count how many of the four resulting genotype combinations are homozygous recessive.", "medium": "Draw out all four possible combinations of P and p from each parent, then count how many end up as pp.", "easy": "Out of the 4 possible combinations (PP, Pp, Pp, pp), only 1 is pp -- that's 1 out of 4."}
+  }
+}
+]

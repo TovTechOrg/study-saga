@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the relationship between charge, current, and time",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Electric current is defined as:",
+    "options": [
+      {"text": "The rate at which electric charge flows past a given point per unit of time", "isCorrect": true, "feedback": "Correct -- current (I) = charge (Q) / time (t), measuring how much charge passes a point each second."},
+      {"text": "The total amount of charge stored in a battery, regardless of time", "isCorrect": false, "feedback": "This describes total stored charge (like battery capacity), not current, which specifically measures the RATE of charge flow over time."},
+      {"text": "The physical distance electrons travel through a wire", "isCorrect": false, "feedback": "Distance traveled isn't what current measures -- current specifically concerns the RATE of charge flow, not distance."},
+      {"text": "The voltage across a circuit component", "isCorrect": false, "feedback": "Voltage is a separate electrical quantity from current -- current specifically measures the rate of charge flow, not voltage (electric potential difference)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A wire carries a current of 4 amps for 10 seconds. Using I = Q/t (rearranged to Q = I×t), how much total electric charge passed through the wire?",
+    "options": [
+      {"text": "40 Coulombs", "isCorrect": true, "feedback": "Correct -- Q = I × t = 4 × 10 = 40 Coulombs."},
+      {"text": "2.5 Coulombs", "isCorrect": false, "feedback": "This results from dividing 10 by 4 instead of correctly multiplying current by time."},
+      {"text": "14 Coulombs", "isCorrect": false, "feedback": "This results from adding 4+10 instead of correctly multiplying current by time."},
+      {"text": "4 Coulombs", "isCorrect": false, "feedback": "This is just the current value alone, without multiplying by the given time duration."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A capacitor is charged by a constant current of 2 amps for 5 seconds, then discharged completely over just 1 second. What is the average current during the discharge phase, assuming the same total charge is released?",
+    "options": [
+      {"text": "10 amps", "isCorrect": true, "feedback": "Correct -- charging: Q=I×t=2×5=10 Coulombs total charge. Discharging that same charge over 1 second: I=Q/t=10/1=10 amps."},
+      {"text": "2 amps", "isCorrect": false, "feedback": "This is just the original charging current, but the discharge occurs over a much SHORTER time (1 second vs 5 seconds), requiring a higher average current to release the same total charge."},
+      {"text": "5 amps", "isCorrect": false, "feedback": "This doesn't correctly calculate the total charge first, then properly divide by the new discharge time."},
+      {"text": "50 amps", "isCorrect": false, "feedback": "This doesn't correctly compute the total stored charge (10 Coulombs) before dividing by the 1-second discharge time."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity represents charge flow rate, quantifying the amount of charge traversing a cross-section per unit temporal interval.", "medium": "This measures how much electric charge moves past a point every second.", "easy": "This measures how much electric charge moves past a point every second."},
+    "medium": {"hard": "Rearrange the current definition algebraically to isolate charge, then substitute the given current and time values.", "medium": "Multiply the current value by the time value to find the total charge.", "easy": "Multiply 4 by 10 to get 40 Coulombs."},
+    "hard": {"hard": "First calculate the total charge accumulated during the charging phase, then apply that same charge value to the discharge phase's shorter time duration to find the new average current.", "medium": "First find the total charge stored during charging (current times time), then divide that same charge by the shorter discharge time.", "easy": "Charging: 2×5=10 Coulombs total. Discharging: 10÷1=10 amps."}
+  }
+}
+]

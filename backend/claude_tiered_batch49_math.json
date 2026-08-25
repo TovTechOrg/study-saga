@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the vertex form of a parabola",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the vertex form of a parabola, y = a(x-h)² + k, what does the point (h, k) represent?",
+    "options": [
+      {"text": "The vertex (the highest or lowest point) of the parabola", "isCorrect": true, "feedback": "Correct -- vertex form directly reveals the parabola's turning point at coordinates (h, k)."},
+      {"text": "A random point that lies anywhere on the parabola", "isCorrect": false, "feedback": "(h,k) is specifically the VERTEX -- the parabola's unique turning point, not just any random point on the curve."},
+      {"text": "The x-intercepts of the parabola", "isCorrect": false, "feedback": "X-intercepts are where the parabola crosses the x-axis (y=0), which is a different concept from the vertex point."},
+      {"text": "The slope of the parabola at its steepest point", "isCorrect": false, "feedback": "Slope is a different concept -- (h,k) specifically identifies the vertex location, not a slope value."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A parabola is given by y = 2(x-3)² + 5. What is the vertex of this parabola?",
+    "options": [
+      {"text": "(3, 5)", "isCorrect": true, "feedback": "Correct -- comparing to y=a(x-h)²+k, h=3 and k=5, giving vertex (3,5)."},
+      {"text": "(-3, 5)", "isCorrect": false, "feedback": "This incorrectly keeps the negative sign from the formula -- since the form is (x-h), and we have (x-3), h is positive 3, not negative."},
+      {"text": "(2, 5)", "isCorrect": false, "feedback": "This mistakes the leading coefficient 'a' (which is 2) for the h-value, but a doesn't determine vertex location, only shape."},
+      {"text": "(5, 3)", "isCorrect": false, "feedback": "This swaps the h and k values -- the correct vertex is (3,5), not (5,3)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Convert the standard form equation y = x² - 6x + 5 into vertex form by completing the square. What is the resulting vertex form?",
+    "options": [
+      {"text": "y = (x-3)² - 4", "isCorrect": true, "feedback": "Correct -- completing the square: x²-6x+5 = (x²-6x+9)-9+5 = (x-3)²-4."},
+      {"text": "y = (x-6)² + 5", "isCorrect": false, "feedback": "This doesn't correctly complete the square -- it just uses the original coefficients without properly working through the process."},
+      {"text": "y = (x-3)² + 5", "isCorrect": false, "feedback": "This correctly identifies (x-3)² but doesn't correctly adjust the constant term after completing the square."},
+      {"text": "y = (x+3)² - 4", "isCorrect": false, "feedback": "This has the wrong sign on the 3 -- since the original has -6x, the correct term is (x-3)², not (x+3)²."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This coordinate pair identifies the parabola's single turning point, where its direction of curvature changes.", "medium": "This is the exact point where the parabola turns around, from going up to going down (or vice versa).", "easy": "This is the point where the parabola turns around."},
+    "medium": {"hard": "Match the given equation's terms directly against the general vertex form structure to identify h and k.", "medium": "Compare y=2(x-3)²+5 to y=a(x-h)²+k -- what are h and k here?", "easy": "The h value is 3 (from x-3) and the k value is 5, so the vertex is (3,5)."},
+    "hard": {"hard": "Complete the square by adding and subtracting the squared half-coefficient of the linear term, then simplify the resulting expression.", "medium": "Take half of -6 (which is -3), square it (9), add and subtract 9 within the expression, then simplify.", "easy": "Half of -6 is -3, squared is 9. Add and subtract 9: x²-6x+9-9+5 = (x-3)²-4."}
+  }
+}
+]

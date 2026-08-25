@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between transverse and longitudinal waves",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a transverse wave, how does the particle vibration relate to the wave's direction of travel?",
+    "options": [
+      {"text": "Particles vibrate perpendicular (at a right angle) to the direction the wave travels", "isCorrect": true, "feedback": "Correct -- transverse waves, like light waves or waves on a string, have particle motion perpendicular to the wave's propagation direction."},
+      {"text": "Particles vibrate parallel to (in the same line as) the wave's direction of travel", "isCorrect": false, "feedback": "That describes a LONGITUDINAL wave, not a transverse wave, which specifically has PERPENDICULAR particle vibration."},
+      {"text": "Particles don't actually move at all in a transverse wave", "isCorrect": false, "feedback": "This isn't accurate -- particles DO move (vibrate) in a transverse wave; they specifically move perpendicular to the wave's travel direction, not remain stationary."},
+      {"text": "Particle motion has no defined relationship to wave direction in transverse waves", "isCorrect": false, "feedback": "This isn't accurate -- there IS a specific, defined relationship (perpendicular) between particle motion and wave direction that specifically characterizes transverse waves."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Light waves are transverse waves, while sound waves are longitudinal waves. Given this distinction, why can light waves (but not sound waves) be 'polarized' (restricted to vibrate in only one specific plane)?",
+    "options": [
+      {"text": "Since transverse wave vibration occurs perpendicular to the direction of travel, there are multiple possible perpendicular vibration planes/orientations that can be selectively filtered (polarized), while longitudinal waves only vibrate along the single line of travel, offering no such alternate orientations to filter", "isCorrect": true, "feedback": "Correct -- this fundamental structural difference (multiple possible perpendicular vibration planes for transverse waves vs. only one vibration line for longitudinal waves) is precisely why only transverse waves like light can undergo polarization."},
+      {"text": "Sound waves can actually also be polarized, just like light waves", "isCorrect": false, "feedback": "This isn't accurate -- sound waves, being LONGITUDINAL, cannot be polarized in the same way transverse waves can; polarization specifically relies on the multiple perpendicular vibration planes unique to transverse waves."},
+      {"text": "Polarization has no actual connection to whether a wave is transverse or longitudinal", "isCorrect": false, "feedback": "This isn't accurate -- polarization is DIRECTLY connected to and specifically dependent on a wave being transverse (having multiple perpendicular vibration plane options), which longitudinal waves simply don't have."},
+      {"text": "Light waves are actually longitudinal, not transverse, contrary to standard physics classification", "isCorrect": false, "feedback": "This isn't accurate -- light waves are specifically classified as TRANSVERSE waves (electromagnetic waves with perpendicular electric/magnetic field oscillations), not longitudinal."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Polarized sunglasses work by only allowing light waves vibrating in one specific plane (typically vertical) to pass through, blocking horizontally-polarized light (like glare reflected off horizontal surfaces such as water or roads). Why does this selective filtering specifically require light's transverse wave nature to function as intended?",
+    "options": [
+      {"text": "Since transverse light waves can vibrate in many different possible perpendicular planes/orientations (unlike a hypothetical longitudinal light wave, which would only vibrate along one line), a polarizing filter can selectively allow only ONE of those many possible perpendicular orientations through while blocking others, specifically reducing unwanted glare", "isCorrect": true, "feedback": "Correct -- this direct practical application (polarized sunglasses) elegantly demonstrates how light's transverse wave nature, with its multiple possible perpendicular vibration orientations, is precisely what makes selective polarization filtering possible and effective for real-world glare reduction."},
+      {"text": "This filtering technology would actually work exactly as well even if light were a longitudinal wave instead of transverse", "isCorrect": false, "feedback": "This isn't accurate -- polarizing filters specifically rely on selecting among MULTIPLE possible perpendicular vibration planes, an option that simply wouldn't exist for a longitudinal wave (which only vibrates along one line of travel)."},
+      {"text": "Polarized sunglasses actually work through a completely different mechanism, unrelated to light's wave nature at all", "isCorrect": false, "feedback": "This isn't accurate -- polarized sunglasses work SPECIFICALLY by exploiting light's transverse wave nature (its multiple possible perpendicular vibration planes), not through some unrelated mechanism."},
+      {"text": "Glare reduction through polarization has no actual connection to whether light is classified as transverse or longitudinal", "isCorrect": false, "feedback": "This isn't accurate -- glare reduction through polarization is DIRECTLY and specifically dependent on light's transverse wave classification, which uniquely enables this particular selective filtering mechanism."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This wave category exhibits oscillatory particle displacement occurring orthogonally relative to its overall propagation vector.", "medium": "In this wave type, the particles wiggle side-to-side or up-and-down, not along the same line the wave is traveling.", "easy": "In this wave type, particles wiggle sideways, not along the same line the wave travels."},
+    "medium": {"hard": "Consider how the geometric freedom of perpendicular vibration in transverse waves creates multiple selectable orientation options, unlike the single-axis constraint inherent to longitudinal wave vibration.", "medium": "Since a sideways-wiggling wave can wiggle in lots of different sideways directions, you can filter for just one of those directions -- but a back-and-forth wave only has one direction to begin with.", "easy": "Since a sideways-wiggling wave can wiggle many ways, you can filter for just one -- a back-and-forth wave only has one direction."},
+    "hard": {"hard": "Consider how a polarizing filter's function of selecting among multiple possible perpendicular orientations fundamentally depends on those multiple orientation options actually existing in the first place.", "medium": "The sunglasses can only block glare by picking one direction out of many possible sideways wiggle directions -- something that's only possible because light wiggles sideways in the first place.", "easy": "The sunglasses can only block glare by picking one out of many possible sideways wiggle directions."}
+  }
+}
+]

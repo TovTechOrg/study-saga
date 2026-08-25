@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the lymphatic system's role in immunity and fluid balance",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is one primary function of the lymphatic system?",
+    "options": [
+      {"text": "To help fight infection and return excess fluid from body tissues back to the bloodstream", "isCorrect": true, "feedback": "Correct -- the lymphatic system plays key roles in both immune defense and maintaining proper fluid balance in the body."},
+      {"text": "To pump blood throughout the entire body", "isCorrect": false, "feedback": "That's the primary function of the circulatory system (specifically the heart), not the lymphatic system, which serves different roles."},
+      {"text": "To digest and absorb nutrients from food", "isCorrect": false, "feedback": "That's primarily the function of the digestive system, not the lymphatic system, which specifically handles fluid balance and immune functions."},
+      {"text": "To control the body's breathing rate", "isCorrect": false, "feedback": "That's controlled by the respiratory and nervous systems, not the lymphatic system, which is focused on fluid balance and immunity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Lymph nodes, found throughout the lymphatic system, filter lymph fluid and contain immune cells that can detect and respond to pathogens. Why do lymph nodes sometimes swell noticeably when you're fighting an infection?",
+    "options": [
+      {"text": "Immune cells within the lymph nodes actively multiply and mobilize in response to detecting pathogens, causing the temporary swelling as the body ramps up its immune response", "isCorrect": true, "feedback": "Correct -- this swelling is actually a visible sign that your immune system is actively working, with immune cells proliferating within the lymph nodes to fight off the detected infection."},
+      {"text": "Lymph node swelling is completely unrelated to any immune response occurring in the body", "isCorrect": false, "feedback": "This isn't accurate -- lymph node swelling is DIRECTLY related to an active immune response, specifically reflecting immune cell activity fighting off a detected infection."},
+      {"text": "Swollen lymph nodes always indicate a serious, life-threatening illness", "isCorrect": false, "feedback": "This isn't accurate -- lymph node swelling is actually a very common, generally benign sign of the immune system actively responding to a routine infection, not necessarily indicating anything life-threatening."},
+      {"text": "Lymph nodes swell randomly, with no connection to detecting or responding to pathogens", "isCorrect": false, "feedback": "This isn't accurate -- lymph node swelling is specifically and directly connected to detecting and actively responding to pathogens, not a random occurrence."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Unlike the circulatory system, which has the heart as a central pump, the lymphatic system has no dedicated central pump; instead, lymph fluid moves largely through the contraction of surrounding skeletal muscles during normal body movement. Why might prolonged immobility (like extended bed rest) potentially lead to fluid buildup (edema) in some cases?",
+    "options": [
+      {"text": "Without regular muscle contractions from movement, lymph fluid isn't effectively pushed through the lymphatic vessels, potentially causing fluid to accumulate in tissues rather than being properly drained and returned to the bloodstream", "isCorrect": true, "feedback": "Correct -- this dependency on muscular movement (rather than a dedicated central pump) for lymph fluid circulation is exactly why prolonged immobility can sometimes contribute to fluid retention and swelling issues."},
+      {"text": "The lymphatic system actually has its own dedicated pump, just like the heart in the circulatory system", "isCorrect": false, "feedback": "This isn't accurate -- the lymphatic system specifically LACKS a dedicated central pump like the heart, relying instead on surrounding muscle movement to help propel lymph fluid."},
+      {"text": "Movement has no actual connection to how lymph fluid moves through the body", "isCorrect": false, "feedback": "Movement is actually CENTRAL to how lymph fluid circulates, given the lymphatic system's lack of a dedicated pump -- this is precisely why immobility can affect fluid movement."},
+      {"text": "Prolonged immobility has no real effect on lymphatic fluid circulation or potential fluid buildup", "isCorrect": false, "feedback": "This isn't accurate -- prolonged immobility CAN have a real, documented effect on lymphatic circulation, potentially contributing to fluid buildup issues, due to reduced muscle-driven lymph movement."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This organ network is centrally involved in both host defense against pathogens and regulation of interstitial fluid volume.", "medium": "This system helps fight germs and also helps move extra fluid back into the blood.", "easy": "This system helps fight germs and moves extra fluid back into the blood."},
+    "medium": {"hard": "Consider what physiological process within the lymph nodes would visibly manifest as increased size during an active immune response.", "medium": "The immune cells inside are working hard and multiplying to fight the infection, which is what makes the node get bigger temporarily.", "easy": "The immune cells inside are working hard and multiplying, which makes the node get bigger."},
+    "hard": {"hard": "Consider the mechanical dependency of lymphatic fluid movement on external muscular contraction, given the system's lack of an intrinsic central pumping organ.", "medium": "Since there's no heart-like pump for this fluid, it really needs your muscles moving around regularly to help push it along properly.", "easy": "Since there's no heart-like pump for this fluid, it needs your muscles moving to help push it along."}
+  }
+}
+]

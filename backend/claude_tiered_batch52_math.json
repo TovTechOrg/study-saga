@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the volume of 3D solids (prisms and cylinders)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The volume of a rectangular prism is found using which formula?",
+    "options": [
+      {"text": "V = length × width × height", "isCorrect": true, "feedback": "Correct -- multiplying all three dimensions gives the total three-dimensional space occupied by the prism."},
+      {"text": "V = length + width + height", "isCorrect": false, "feedback": "Volume requires MULTIPLICATION of the three dimensions, not addition."},
+      {"text": "V = length × width", "isCorrect": false, "feedback": "This formula only calculates AREA (a 2D measurement), missing the height dimension needed for volume (a 3D measurement)."},
+      {"text": "V = 2 × (length + width + height)", "isCorrect": false, "feedback": "This isn't the correct volume formula -- volume specifically requires multiplying all three dimensions together, not this combination."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A rectangular box has a length of 5 cm, width of 3 cm, and height of 4 cm. What is its volume?",
+    "options": [
+      {"text": "60 cm³", "isCorrect": true, "feedback": "Correct -- V = 5 × 3 × 4 = 60 cm³."},
+      {"text": "12 cm³", "isCorrect": false, "feedback": "This doesn't correctly multiply all three dimensions together -- check the full calculation."},
+      {"text": "15 cm³", "isCorrect": false, "feedback": "This is only the product of length and width (5×3=15), missing the height dimension."},
+      {"text": "20 cm³", "isCorrect": false, "feedback": "This is only the product of width and height (3×4=12) plus some, but doesn't correctly represent the full three-dimensional calculation."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A cylindrical water tank has a radius of 3 meters and a height of 10 meters. Using V = πr²h (with π ≈ 3.14), what is its approximate volume?",
+    "options": [
+      {"text": "282.6 cubic meters", "isCorrect": true, "feedback": "Correct -- V = 3.14 × 3² × 10 = 3.14 × 9 × 10 = 282.6 cubic meters."},
+      {"text": "94.2 cubic meters", "isCorrect": false, "feedback": "This doesn't correctly square the radius before multiplying by height and π -- check the calculation steps."},
+      {"text": "188.4 cubic meters", "isCorrect": false, "feedback": "This doesn't correctly result from the full formula calculation using the given radius and height."},
+      {"text": "30 cubic meters", "isCorrect": false, "feedback": "This significantly underestimates the volume -- it doesn't correctly incorporate the squared radius term and π."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This calculation requires the product of all three orthogonal spatial dimensions defining the rectangular solid.", "medium": "Multiply all three measurements of the box together: how long, how wide, and how tall.", "easy": "Multiply the length, width, and height all together."},
+    "medium": {"hard": "Substitute all three given dimensions directly into the volume formula and compute the product.", "medium": "Multiply 5 times 3 times 4 together.", "easy": "Multiply 5 times 3 to get 15, then multiply by 4 to get 60."},
+    "hard": {"hard": "Substitute the given radius and height into the cylindrical volume formula, ensuring the radius is squared before multiplying by π and the height.", "medium": "Square the radius (3×3=9), multiply by π (3.14), then multiply by the height (10).", "easy": "Square 3 to get 9, multiply by 3.14 to get 28.26, then multiply by 10."}
+  }
+}
+]

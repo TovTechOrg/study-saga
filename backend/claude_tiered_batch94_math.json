@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the change of base formula for logarithms",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The change of base formula for logarithms allows you to:",
+    "options": [
+      {"text": "Rewrite a logarithm in a different base, using logarithms of a more convenient base (like base 10 or base e)", "isCorrect": true, "feedback": "Correct -- this formula (log_b(x) = log(x)/log(b)) is especially useful for calculating logarithms with unusual bases using a standard calculator, which typically only has base-10 or base-e functions built in."},
+      {"text": "Change the actual numerical value that a logarithm represents", "isCorrect": false, "feedback": "This isn't accurate -- the change of base formula doesn't change the underlying VALUE, just the specific mathematical FORM/base used to express and calculate that same value."},
+      {"text": "Convert a logarithm into a completely different, unrelated mathematical operation entirely", "isCorrect": false, "feedback": "This isn't accurate -- the formula specifically converts a logarithm's BASE for calculation convenience, not into some entirely different, unrelated type of operation."},
+      {"text": "Eliminate the need for logarithms entirely, replacing them with basic arithmetic operations", "isCorrect": false, "feedback": "This isn't accurate -- the change of base formula still fundamentally involves LOGARITHM calculations (just in a different, more convenient base), not eliminating the concept of logarithms altogether."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Using the change of base formula (log_b(x) = log(x)/log(b), using base 10), calculate log₅(125). (log10(125)≈2.097, log10(5)≈0.699)",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- 2.097/0.699≈3, which makes sense since 5³=125, confirming log₅(125)=3."},
+      {"text": "2.097", "isCorrect": false, "feedback": "This is just the value of log10(125) alone, without completing the full change-of-base calculation by dividing by log10(5)."},
+      {"text": "0.699", "isCorrect": false, "feedback": "This is just the value of log10(5) alone, not the correctly calculated final result of the full change-of-base formula."},
+      {"text": "1.398", "isCorrect": false, "feedback": "This doesn't correctly result from dividing 2.097 by 0.699 -- recheck the division calculation."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is the change of base formula mathematically valid -- in other words, why does log_b(x) genuinely equal log(x)/log(b) for ANY valid base, rather than this just being an arbitrary computational trick?",
+    "options": [
+      {"text": "This equality can be rigorously derived directly from fundamental logarithm properties (specifically, by taking the logarithm of both sides of the defining equation b^(log_b(x))=x, then applying the power rule for logarithms), confirming it's a genuine, provable mathematical identity, not merely an arbitrary computational convenience", "isCorrect": true, "feedback": "Correct -- this formula's validity is rigorously grounded in fundamental logarithm properties and can be formally derived, confirming its status as a true mathematical identity, applicable for legitimate conversion between valid logarithm bases, not simply an ad-hoc calculation trick."},
+      {"text": "This formula is actually just an approximation that happens to work reasonably well, without any real underlying mathematical justification", "isCorrect": false, "feedback": "This isn't accurate -- this formula is actually a RIGOROUSLY PROVABLE mathematical identity, not merely an approximation or ad-hoc trick lacking genuine underlying justification."},
+      {"text": "This formula only actually works for specific, special base values, not for logarithms in general", "isCorrect": false, "feedback": "This isn't accurate -- this formula is GENERALLY VALID for converting between virtually any legitimate logarithm bases, not restricted to only certain special specific base values."},
+      {"text": "This mathematical relationship has no actual connection to fundamental logarithm properties like the power rule", "isCorrect": false, "feedback": "This isn't accurate -- this relationship is DIRECTLY and specifically derivable from and connected to fundamental logarithm properties (like the power rule), which is precisely the basis for its rigorous mathematical validity."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This algebraic identity permits conversion between arbitrary logarithmic bases via a ratio of logarithms computed in any single common reference base.", "medium": "This lets you rewrite a hard-to-calculate logarithm using an easier base your calculator already knows.", "easy": "This lets you rewrite a logarithm using an easier base your calculator knows."},
+    "medium": {"hard": "Compute the base-10 logarithm of the argument, then divide by the base-10 logarithm of the original base, per the change of base formula.", "medium": "Divide log10(125) by log10(5) using the given approximate values.", "easy": "Divide 2.097 by 0.699 to get approximately 3."},
+    "hard": {"hard": "Start from the fundamental definition of a logarithm, apply the logarithm operation to both sides of that defining equation, then use the power rule to isolate and derive the change of base relationship.", "medium": "You can actually prove this formula is true using the basic definition of what a logarithm even means, plus one of the standard logarithm rules.", "easy": "You can prove this formula using the basic definition of a logarithm plus a standard logarithm rule."}
+  }
+}
+]

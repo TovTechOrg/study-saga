@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between R and K reproductive strategies",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Species using an 'r-strategy' (like many insects or fish) typically:",
+    "options": [
+      {"text": "Produce large numbers of offspring with minimal parental care for each individual", "isCorrect": true, "feedback": "Correct -- r-strategists prioritize quantity of offspring over individual investment, relying on sheer numbers for some to survive."},
+      {"text": "Produce very few offspring but invest heavily in caring for each one", "isCorrect": false, "feedback": "That describes a 'K-strategy' (like elephants or humans), not an r-strategy, which specifically emphasizes high offspring QUANTITY over intensive individual care."},
+      {"text": "Never reproduce at all under any circumstances", "isCorrect": false, "feedback": "This isn't accurate -- r-strategist species DO reproduce, specifically producing large NUMBERS of offspring, just with minimal individual parental investment."},
+      {"text": "Live for hundreds of years on average", "isCorrect": false, "feedback": "Lifespan isn't the defining characteristic distinguishing r-strategy from K-strategy -- the KEY distinction is specifically about offspring QUANTITY vs. individual parental investment."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "K-strategist species (like elephants, which have few offspring but invest heavily in each one's care and survival) tend to thrive in stable environments with limited resources near carrying capacity. Why might this reproductive strategy be particularly well-suited to such stable conditions?",
+    "options": [
+      {"text": "In a stable, resource-limited environment, investing heavily in fewer offspring (increasing each one's individual survival odds) is more effective than producing many offspring that might not find sufficient resources to survive in an already resource-limited setting", "isCorrect": true, "feedback": "Correct -- this strategic tradeoff, prioritizing offspring quality/survival probability over sheer quantity, makes particular ecological sense in stable environments where resource competition is already significant."},
+      {"text": "K-strategist species would actually thrive equally well by producing enormous numbers of offspring instead", "isCorrect": false, "feedback": "This isn't accurate -- in a STABLE, resource-limited environment, producing enormous NUMBERS of offspring (r-strategy) would actually likely be LESS effective, since limited resources couldn't support many surviving individuals as well as they could support fewer, well-invested offspring."},
+      {"text": "This reproductive strategy has no actual connection to environmental stability or resource availability", "isCorrect": false, "feedback": "This isn't accurate -- this reproductive strategy is actually DIRECTLY connected to and particularly well-suited for stable, resource-limited environmental conditions."},
+      {"text": "Environmental stability actually has no effect on which reproductive strategy tends to be more successful", "isCorrect": false, "feedback": "This isn't accurate -- environmental stability (and associated resource availability patterns) DOES have a significant, well-documented effect on which reproductive strategy (r vs. K) tends to be more evolutionarily successful in a given context."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "R-strategist species tend to thrive particularly well in unstable or unpredictable environments (like areas prone to frequent disturbance), while K-strategists tend to do better in stable environments. Why might an r-strategy's emphasis on producing MANY offspring quickly provide a particular survival advantage in an unpredictable, frequently-disturbed environment?",
+    "options": [
+      {"text": "In an unpredictable environment where a disturbance event might unexpectedly kill many individuals regardless of their overall fitness/care level, producing a large NUMBER of offspring quickly increases the statistical likelihood that at least SOME offspring will survive any given random disturbance event, compared to investing heavily in just a few offspring that could all be lost simultaneously", "isCorrect": true, "feedback": "Correct -- this statistical survival advantage of high offspring numbers under unpredictable disturbance conditions helps explain why r-strategy reproduction tends to be favored in unstable environments, compared to K-strategy's vulnerability to catastrophically losing its few, heavily-invested offspring."},
+      {"text": "Unpredictable, unstable environments would actually always favor K-strategist species instead of r-strategist species", "isCorrect": false, "feedback": "This is backwards -- UNSTABLE, unpredictable environments actually tend to favor R-strategist species (due to their high offspring numbers providing a statistical survival buffer), not K-strategist species."},
+      {"text": "Environmental unpredictability has no actual connection to which reproductive strategy tends to be more successful", "isCorrect": false, "feedback": "This isn't accurate -- environmental unpredictability/instability DOES have a significant, well-documented connection to which reproductive strategy (particularly favoring r-strategy) tends to be more evolutionarily successful in that specific context."},
+      {"text": "Having many offspring provides absolutely no statistical survival advantage in any type of unpredictable environment scenario", "isCorrect": false, "feedback": "This isn't accurate -- having MANY offspring specifically DOES provide a meaningful statistical survival advantage in unpredictable environments, precisely because it increases the odds that at least some offspring will survive random disturbance events."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This reproductive approach prioritizes numerical offspring output over individual parental investment per offspring.", "medium": "This strategy focuses on having TONS of babies, but not spending much time or energy caring for each one individually.", "easy": "This strategy focuses on having tons of babies, without much individual care for each."},
+    "medium": {"hard": "Consider how allocating resources toward fewer, well-supported offspring could increase survival probability specifically in a resource-constrained setting where competition is already significant.", "medium": "In a place where resources are already tight, putting a lot of care into just a few babies gives each one a much better shot at actually surviving.", "easy": "In a place with tight resources, putting care into a few babies gives each a much better shot at surviving."},
+    "hard": {"hard": "Consider how a statistical 'safety in numbers' approach could buffer against the risk of losing an entire reproductive investment to a single unpredictable catastrophic event.", "medium": "If a random disaster could wipe out your babies no matter how well cared for they are, having TONS of babies means at least some are still likely to survive by pure chance.", "easy": "If a random disaster could wipe out babies regardless of care, having tons of babies means some are still likely to survive."}
+  }
+}
+]

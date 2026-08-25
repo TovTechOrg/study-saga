@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between an endothermic reaction and a spontaneous reaction",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An 'endothermic' reaction is one that:",
+    "options": [
+      {"text": "Absorbs heat energy from its surroundings", "isCorrect": true, "feedback": "Correct -- endothermic reactions absorb heat from the surroundings, causing the surroundings to feel cooler."},
+      {"text": "Always occurs spontaneously without any external input required", "isCorrect": false, "feedback": "This isn't accurate -- whether a reaction is spontaneous is a SEPARATE property from whether it's endothermic; some endothermic reactions are spontaneous, and some are not."},
+      {"text": "Releases heat energy into its surroundings", "isCorrect": false, "feedback": "That describes an EXOTHERMIC reaction, not endothermic -- endothermic reactions specifically ABSORB heat, the opposite of releasing it."},
+      {"text": "Never involves any change in temperature whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- endothermic reactions specifically DO involve a temperature-related energy change (absorbing heat), not an absence of thermal change."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Some endothermic reactions (like dissolving certain salts, or the reaction in a cold pack) occur spontaneously even though they absorb heat, which might seem counterintuitive if you assume only heat-releasing reactions can happen on their own. Why can an endothermic reaction still be spontaneous?",
+    "options": [
+      {"text": "Spontaneity depends on the overall change in Gibbs free energy, which accounts for BOTH the enthalpy (heat) change AND the entropy (disorder) change -- if a reaction significantly increases entropy (disorder), that increase can outweigh an unfavorable (positive) enthalpy change, making the overall reaction spontaneous even though it absorbs heat", "isCorrect": true, "feedback": "Correct -- this explanation correctly identifies that entropy increases can compensate for endothermic enthalpy changes, together determining overall spontaneity via Gibbs free energy, rather than enthalpy change alone determining spontaneity."},
+      {"text": "Endothermic reactions would actually never be capable of occurring spontaneously under any circumstances", "isCorrect": false, "feedback": "This isn't accurate -- some endothermic reactions CAN occur spontaneously, specifically when a favorable entropy increase outweighs the unfavorable heat absorption."},
+      {"text": "Spontaneity is actually determined solely by whether a reaction is endothermic or exothermic, with no other factors involved", "isCorrect": false, "feedback": "This isn't accurate -- spontaneity depends on BOTH enthalpy AND entropy changes together (via Gibbs free energy), not on the enthalpy classification (endothermic/exothermic) alone."},
+      {"text": "Entropy changes have no actual role in determining whether a chemical reaction occurs spontaneously", "isCorrect": false, "feedback": "This isn't accurate -- entropy changes DO play a significant role in determining spontaneity, alongside enthalpy changes, together forming the Gibbs free energy calculation."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The Gibbs free energy equation, deltaG = deltaH - TdeltaS, shows that temperature (T) directly influences whether a reaction with a positive (unfavorable) enthalpy change can still become spontaneous (negative deltaG) at high enough temperatures, provided entropy change (deltaS) is also positive. Explain the mathematical reasoning behind why increasing temperature can shift such a reaction toward spontaneity.",
+    "options": [
+      {"text": "Since the TdeltaS term is subtracted from deltaH, and deltaS is positive in this case, increasing T makes the TdeltaS term larger and larger, eventually causing the overall subtraction (deltaH - TdeltaS) to become negative even if deltaH itself is positive, meaning a sufficiently high temperature can make an endothermic, entropy-increasing reaction spontaneous, even though it would not be spontaneous at a lower temperature", "isCorrect": true, "feedback": "Correct -- this explanation of how the temperature-dependent TdeltaS term can eventually outweigh a positive deltaH at sufficiently high temperature correctly explains why certain endothermic reactions specifically become spontaneous only above a threshold temperature."},
+      {"text": "Temperature would actually have no mathematical effect at all on the calculated value of deltaG in the Gibbs free energy equation", "isCorrect": false, "feedback": "This isn't accurate -- temperature DIRECTLY affects the calculated deltaG value, since it multiplies the entropy term in the equation."},
+      {"text": "Increasing temperature would actually always make a reaction with positive deltaH LESS likely to become spontaneous, not more likely", "isCorrect": false, "feedback": "This is backwards, at least when deltaS is positive -- in that specific case, increasing temperature makes the reaction MORE likely to become spontaneous, not less."},
+      {"text": "The sign of the entropy change (deltaS) has no actual bearing on how temperature influences the overall spontaneity of a reaction", "isCorrect": false, "feedback": "This isn't accurate -- the SIGN of deltaS DIRECTLY determines how increasing temperature influences spontaneity (favorably if deltaS is positive, unfavorably if deltaS is negative)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This class of reaction is characterized by net thermal energy uptake from its surrounding environment during the process.", "medium": "This kind of reaction pulls heat energy in from its surroundings as it happens.", "easy": "This kind of reaction pulls heat energy in from its surroundings."},
+    "medium": {"hard": "Consider how the entropy contribution to Gibbs free energy can offset an unfavorable enthalpy contribution, since spontaneity depends on their combined net effect rather than enthalpy in isolation.", "medium": "Whether something happens on its own depends on BOTH the heat change AND how much messier/more spread out things get, and a big enough increase in messiness can make up for needing to absorb heat.", "easy": "Whether something happens on its own depends on both the heat change and the disorder change together."},
+    "hard": {"hard": "Consider how the temperature-scaled entropy term grows without bound as T increases, eventually overtaking a fixed positive enthalpy term in the subtraction and flipping the overall sign negative.", "medium": "As temperature climbs, the part of the equation tied to disorder gets multiplied by a bigger and bigger number, and eventually it outweighs the fixed heat-absorption penalty, flipping the whole thing spontaneous.", "easy": "As temperature climbs, the disorder part of the equation grows and can eventually outweigh the heat-absorption penalty."}
+  }
+}
+]

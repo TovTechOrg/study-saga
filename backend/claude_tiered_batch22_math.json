@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of like terms in algebra",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a 'like term' to 3x?",
+    "options": [
+      {"text": "7x", "isCorrect": true, "feedback": "Correct -- both terms have the same variable (x) raised to the same power (1), making them like terms."},
+      {"text": "3x²", "isCorrect": false, "feedback": "This has a different exponent (x² vs x), so it isn't a like term to 3x."},
+      {"text": "3y", "isCorrect": false, "feedback": "This has a different variable (y instead of x), so it isn't a like term to 3x."},
+      {"text": "3", "isCorrect": false, "feedback": "This is a constant with no variable at all, so it isn't a like term to 3x."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In the expression 5x + 3y - 2x + 7y, which terms can be combined together?",
+    "options": [
+      {"text": "5x with -2x, and 3y with 7y", "isCorrect": true, "feedback": "Correct -- only terms with matching variables can be combined: the x-terms together, and the y-terms together."},
+      {"text": "5x with 3y", "isCorrect": false, "feedback": "These have different variables (x and y), so they cannot be combined as like terms."},
+      {"text": "All four terms can be combined into one single term", "isCorrect": false, "feedback": "Only terms sharing the same variable can be combined -- x-terms and y-terms must be kept separate."},
+      {"text": "None of the terms can be combined", "isCorrect": false, "feedback": "There are matching like terms present here (the two x-terms and the two y-terms) that can indeed be combined."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Simplify: 4x² + 3xy - 2x² + 5xy - y²",
+    "options": [
+      {"text": "2x² + 8xy - y²", "isCorrect": true, "feedback": "Correct -- combine the x² terms (4x²-2x²=2x²) and the xy terms (3xy+5xy=8xy) separately, leaving the y² term alone since nothing else matches it."},
+      {"text": "2x² + 8xy + y²", "isCorrect": false, "feedback": "This has the wrong sign on the y² term."},
+      {"text": "6x² + 8xy - y²", "isCorrect": false, "feedback": "This incorrectly adds the two x² terms instead of subtracting."},
+      {"text": "2x + 8xy - y²", "isCorrect": false, "feedback": "This incorrectly drops the exponent on the combined x² term."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Only terms that share both the same variable AND the same exponent can be considered alike.", "medium": "Look for a term with the exact same variable and power.", "easy": "Look for another term with just an x, like 3x has."},
+    "medium": {"hard": "Group each term by its specific variable before combining, keeping different variables entirely separate.", "medium": "Group the x-terms together and the y-terms together separately.", "easy": "Add the two x-terms together, and separately add the two y-terms together."},
+    "hard": {"hard": "Only combine terms that match in both variable type AND exponent -- treat x², xy, and y² as three entirely distinct term categories.", "medium": "Combine the x² terms together, combine the xy terms together, and leave the y² term as is since nothing else matches it.", "easy": "Combine the x² terms, combine the xy terms, and leave the y² term alone."}
+  }
+}
+]

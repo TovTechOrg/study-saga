@@ -1,0 +1,248 @@
+[
+{
+  "topic": "gravity and free fall",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What force pulls objects toward the ground?",
+    "options": [
+      {"text": "Gravity", "isCorrect": true, "feedback": "Correct -- gravity pulls objects with mass toward each other, and toward Earth's center."},
+      {"text": "Magnetism", "isCorrect": false, "feedback": "Magnetism only affects magnetic materials, not all falling objects."},
+      {"text": "Friction", "isCorrect": false, "feedback": "Friction opposes motion between surfaces, it doesn't pull objects downward."},
+      {"text": "Air pressure", "isCorrect": false, "feedback": "Air pressure can affect falling objects slightly, but it isn't the main force pulling them down."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Ignoring air resistance, how do a heavy ball and a light ball fall when dropped from the same height at the same time?",
+    "options": [
+      {"text": "They fall at the same rate and land at the same time", "isCorrect": true, "feedback": "Correct -- without air resistance, gravity accelerates all objects at the same rate regardless of mass."},
+      {"text": "The heavy ball falls much faster", "isCorrect": false, "feedback": "Without air resistance, mass doesn't affect the rate of free fall."},
+      {"text": "The light ball falls much faster", "isCorrect": false, "feedback": "Without air resistance, mass doesn't affect the rate of free fall."},
+      {"text": "Neither ball falls at all", "isCorrect": false, "feedback": "Gravity acts on both objects, so both will fall."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A feather and a hammer are dropped together in a vacuum chamber with no air. What happens?",
+    "options": [
+      {"text": "They hit the ground at the same time, since air resistance is eliminated", "isCorrect": true, "feedback": "Correct -- with no air resistance, gravity alone determines fall rate, which is the same for all masses."},
+      {"text": "The hammer hits first because it's heavier", "isCorrect": false, "feedback": "This would be true with air resistance, but in a vacuum, mass doesn't affect fall rate."},
+      {"text": "The feather hits first because it's lighter", "isCorrect": false, "feedback": "Lighter objects don't fall faster -- without air resistance, both fall at the same rate."},
+      {"text": "Neither object falls in a vacuum", "isCorrect": false, "feedback": "Gravity still acts in a vacuum -- only air resistance is removed, not gravity itself."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This force acts between any two masses, pulling them toward each other.", "medium": "This is the invisible pull that brings falling objects back down to Earth.", "easy": "This is the force that makes things fall down instead of floating away."},
+    "medium": {"hard": "In the absence of air resistance, the acceleration due to gravity is the same for every object, regardless of how much mass it has.", "medium": "Without air slowing things down, gravity speeds up every object equally, no matter its weight.", "easy": "Without air slowing them down, heavy and light objects actually fall at the same speed."},
+    "hard": {"hard": "This scenario removes the one variable (air resistance) that normally makes lighter, less aerodynamic objects fall slower -- without it, gravity's acceleration is identical for all masses.", "medium": "Removing air resistance means the only remaining force is gravity, which affects every object the same way regardless of weight.", "easy": "With no air to slow the feather down, both objects fall at exactly the same rate."}
+  }
+},
+{
+  "topic": "simple machines: pulleys",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main purpose of a pulley?",
+    "options": [
+      {"text": "To change the direction of a force, making it easier to lift objects", "isCorrect": true, "feedback": "Correct -- a pulley lets you pull down to lift something up, and can reduce the effort needed."},
+      {"text": "To generate electricity", "isCorrect": false, "feedback": "Generating electricity is not the function of a basic pulley system."},
+      {"text": "To measure the weight of an object", "isCorrect": false, "feedback": "A pulley helps move objects, it isn't a weight-measuring tool like a scale."},
+      {"text": "To convert heat into motion", "isCorrect": false, "feedback": "A pulley works through mechanical force, not heat conversion."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does a system of multiple pulleys generally affect the effort force needed to lift a load?",
+    "options": [
+      {"text": "It reduces the effort force needed, though you must pull a longer distance", "isCorrect": true, "feedback": "Correct -- more pulleys distribute the load's weight across multiple rope segments, reducing effort at the cost of pulling further."},
+      {"text": "It always requires more effort force than lifting directly", "isCorrect": false, "feedback": "The whole benefit of adding pulleys is typically to reduce the effort force required, not increase it."},
+      {"text": "It has no effect on the effort force at all", "isCorrect": false, "feedback": "Adding pulleys does change the mechanical advantage, directly affecting the effort needed."},
+      {"text": "It eliminates the need for any force entirely", "isCorrect": false, "feedback": "Some force is still needed -- pulleys reduce the required effort, they don't eliminate it."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A pulley system has a mechanical advantage of 4. If a load weighs 200 N, approximately how much effort force is needed to lift it (ignoring friction)?",
+    "options": [
+      {"text": "50 N", "isCorrect": true, "feedback": "Correct -- effort = load ÷ mechanical advantage = 200÷4 = 50."},
+      {"text": "800 N", "isCorrect": false, "feedback": "This multiplies instead of dividing the load by the mechanical advantage."},
+      {"text": "200 N", "isCorrect": false, "feedback": "This ignores the mechanical advantage entirely."},
+      {"text": "4 N", "isCorrect": false, "feedback": "This doesn't correctly relate the mechanical advantage to the load weight."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This device redirects the line of applied force, often turning a downward pull into an upward lift.", "medium": "This lets you pull down on a rope to lift something up instead of lifting it directly.", "easy": "This lets you pull a rope down to lift something up."},
+    "medium": {"hard": "Spreading the load's weight across more rope segments reduces the force needed on any single segment, at the cost of needing to pull more rope through.", "medium": "More pulleys share the load's weight across more rope sections, making each pull easier but longer.", "easy": "More pulleys make lifting easier, but you have to pull more rope to do it."},
+    "hard": {"hard": "Divide the load's weight by the mechanical advantage to find the reduced effort force required.", "medium": "Divide the load weight by the mechanical advantage number.", "easy": "Divide 200 by 4 to find the effort force needed."}
+  }
+},
+{
+  "topic": "static electricity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Static electricity is caused by the buildup of what on an object's surface?",
+    "options": [
+      {"text": "Electric charge", "isCorrect": true, "feedback": "Correct -- static electricity comes from an imbalance of electric charge, usually from electrons moving between surfaces."},
+      {"text": "Water molecules", "isCorrect": false, "feedback": "Water isn't what causes static electricity -- in fact, humidity often reduces static buildup."},
+      {"text": "Heat energy", "isCorrect": false, "feedback": "Static electricity results from charge imbalance, not from heat."},
+      {"text": "Sound waves", "isCorrect": false, "feedback": "Sound waves are unrelated to the buildup of static electric charge."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When you rub a balloon on your hair, electrons transfer from your hair to the balloon. What happens next?",
+    "options": [
+      {"text": "The balloon becomes negatively charged and can stick to a wall", "isCorrect": true, "feedback": "Correct -- gaining extra electrons gives the balloon a negative charge, which can attract it to neutral surfaces."},
+      {"text": "The balloon becomes positively charged", "isCorrect": false, "feedback": "Gaining electrons makes the balloon negatively charged, not positively."},
+      {"text": "Nothing happens, since electrons don't affect charge", "isCorrect": false, "feedback": "Electron transfer is exactly what creates a charge imbalance and static effects."},
+      {"text": "The hair becomes negatively charged instead", "isCorrect": false, "feedback": "Since the hair lost electrons, it becomes positively charged, not negatively."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does a charged balloon eventually stop sticking to a wall over time?",
+    "options": [
+      {"text": "The excess charge gradually leaks away into the air or surroundings", "isCorrect": true, "feedback": "Correct -- static charge dissipates over time as it slowly transfers to the surrounding air or other objects."},
+      {"text": "The wall becomes magnetic and repels the balloon", "isCorrect": false, "feedback": "Walls don't become magnetic in this scenario -- this is an electric charge phenomenon, not magnetism."},
+      {"text": "The balloon's mass increases over time", "isCorrect": false, "feedback": "The balloon's mass doesn't change -- what changes is its electric charge, which slowly dissipates."},
+      {"text": "Gravity becomes stronger after a few minutes", "isCorrect": false, "feedback": "Gravity's strength doesn't change over such short time periods -- charge simply leaks away."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phenomenon results from an imbalance between positive and negative particles on a surface.", "medium": "This happens when negatively charged particles build up unevenly on a surface.", "easy": "This is caused by an uneven amount of electric charge building up somewhere."},
+    "medium": {"hard": "Whichever object gains extra negatively charged particles ends up with a negative overall charge.", "medium": "The object that gains extra electrons ends up with a negative charge.", "easy": "The balloon gained electrons, so figure out what charge that gives it."},
+    "hard": {"hard": "Static charge isn't permanent -- it gradually neutralizes as excess electrons find a path to redistribute into the environment.", "medium": "Over time, the extra charge slowly moves off the balloon and into the air around it.", "easy": "The extra charge slowly drains away into the air over time."}
+  }
+},
+{
+  "topic": "the electromagnetic spectrum",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a type of electromagnetic wave?",
+    "options": [
+      {"text": "X-rays", "isCorrect": true, "feedback": "Correct -- X-rays are a form of electromagnetic radiation used in medical imaging."},
+      {"text": "Sound waves", "isCorrect": false, "feedback": "Sound waves are mechanical waves that need a medium, unlike electromagnetic waves."},
+      {"text": "Ocean waves", "isCorrect": false, "feedback": "Ocean waves are physical waves in water, not electromagnetic radiation."},
+      {"text": "Seismic waves", "isCorrect": false, "feedback": "Seismic waves travel through the earth during events like earthquakes, and are not electromagnetic."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following correctly orders these electromagnetic waves from lowest to highest energy?",
+    "options": [
+      {"text": "Radio waves, visible light, gamma rays", "isCorrect": true, "feedback": "Correct -- radio waves have the lowest energy/frequency, and gamma rays have the highest, with visible light in between."},
+      {"text": "Gamma rays, visible light, radio waves", "isCorrect": false, "feedback": "This lists them from highest to lowest energy, the reverse of what was asked."},
+      {"text": "Visible light, radio waves, gamma rays", "isCorrect": false, "feedback": "Radio waves actually have lower energy than visible light, not higher."},
+      {"text": "Gamma rays, radio waves, visible light", "isCorrect": false, "feedback": "This doesn't follow a consistent increasing or decreasing energy order."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why are gamma rays more dangerous to living tissue than radio waves?",
+    "options": [
+      {"text": "Gamma rays carry much more energy per photon, which can damage cells and DNA", "isCorrect": true, "feedback": "Correct -- higher-frequency electromagnetic waves carry more energy, making high-energy radiation like gamma rays capable of causing biological damage."},
+      {"text": "Gamma rays travel slower than radio waves", "isCorrect": false, "feedback": "All electromagnetic waves, including gamma rays and radio waves, travel at the same speed (the speed of light) in a vacuum."},
+      {"text": "Gamma rays are heavier than radio waves", "isCorrect": false, "feedback": "Electromagnetic waves don't have mass in this sense -- their danger relates to energy, not weight."},
+      {"text": "Gamma rays are a completely different kind of wave, unrelated to radio waves", "isCorrect": false, "feedback": "Both are part of the same electromagnetic spectrum -- they differ in energy/frequency, not in fundamental type."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This wave type has a very short wavelength and is used to see through soft tissue in medical settings.", "medium": "This type of wave can pass through skin, letting doctors see bones in medical images.", "easy": "This is the type of wave used in medical imaging to see bones."},
+    "medium": {"hard": "Arrange the waves by increasing frequency, which corresponds directly to increasing energy.", "medium": "Order them from the lowest-frequency, lowest-energy wave to the highest.", "easy": "Start with the wave used for radio broadcasts, end with the highest-energy wave type."},
+    "hard": {"hard": "Energy per photon increases with frequency across the electromagnetic spectrum, and gamma rays sit at the highest-frequency, highest-energy end, capable of ionizing and damaging molecules.", "medium": "Gamma rays carry a lot more energy in each individual wave packet, which is what makes them harmful to cells.", "easy": "Gamma rays simply carry a lot more energy than radio waves, which is what makes them harmful."}
+  }
+},
+{
+  "topic": "work (force applied over a distance)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In physics, what is the formula for work?",
+    "options": [
+      {"text": "Work = Force × Distance", "isCorrect": true, "feedback": "Correct -- work is done when a force moves an object over a distance."},
+      {"text": "Work = Force + Distance", "isCorrect": false, "feedback": "Work is calculated by multiplying, not adding, force and distance."},
+      {"text": "Work = Force ÷ Distance", "isCorrect": false, "feedback": "This isn't the correct relationship -- work involves multiplying force and distance."},
+      {"text": "Work = Mass × Distance", "isCorrect": false, "feedback": "Work depends on force, not directly on mass alone."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How much work is done when a force of 10 N moves an object 5 meters?",
+    "options": [
+      {"text": "50 joules", "isCorrect": true, "feedback": "Correct -- 10 × 5 = 50 joules of work."},
+      {"text": "15 joules", "isCorrect": false, "feedback": "This adds the values instead of multiplying them."},
+      {"text": "2 joules", "isCorrect": false, "feedback": "This divides instead of multiplying the force and distance."},
+      {"text": "10 joules", "isCorrect": false, "feedback": "This ignores the distance factor entirely."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A person pushes hard against a heavy wall, but the wall doesn't move at all. According to the physics definition of work, how much work was done on the wall?",
+    "options": [
+      {"text": "Zero, because there was no displacement", "isCorrect": true, "feedback": "Correct -- since the wall didn't move at all, no work was done on it, regardless of how much force or effort was applied."},
+      {"text": "A large amount, since a lot of force and effort was used", "isCorrect": false, "feedback": "Physical effort alone doesn't count as work in this formal sense -- displacement is required."},
+      {"text": "A small but nonzero amount, proportional to how tired the person got", "isCorrect": false, "feedback": "Fatigue isn't part of the physics definition of work -- only force and actual displacement matter."},
+      {"text": "It cannot be determined without knowing the wall's mass", "isCorrect": false, "feedback": "The wall's mass isn't needed here -- since there's no movement, work is simply zero regardless of mass."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity combines how hard you push with how far the object actually moves.", "medium": "Multiply the amount of force by how far the object moves.", "easy": "Multiply force by distance to get work."},
+    "medium": {"hard": "Multiply the force value by the distance value to compute the work done.", "medium": "Multiply 10 by 5 to find the work.", "easy": "Multiply the force and the distance together."},
+    "hard": {"hard": "The physics definition of work requires actual displacement of the object -- effort or force alone, without any resulting movement, produces zero work by definition.", "medium": "If the object doesn't move any distance at all, no work is done, no matter how much force was applied.", "easy": "Since the wall doesn't move at all, the distance is zero, so the work done is also zero."}
+  }
+},
+{
+  "topic": "convex vs. concave lenses",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What shape is a convex lens?",
+    "options": [
+      {"text": "Thicker in the middle than at the edges", "isCorrect": true, "feedback": "Correct -- a convex lens bulges outward, thicker in the center."},
+      {"text": "Thicker at the edges than in the middle", "isCorrect": false, "feedback": "This describes a concave lens, the opposite shape."},
+      {"text": "Perfectly flat all the way across", "isCorrect": false, "feedback": "A flat piece of glass isn't classified as either a convex or concave lens."},
+      {"text": "Shaped like a perfect cube", "isCorrect": false, "feedback": "Lenses are curved, not cube-shaped."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What does a convex lens typically do to light rays passing through it?",
+    "options": [
+      {"text": "Converges (focuses) the light rays toward a point", "isCorrect": true, "feedback": "Correct -- convex lenses bend light inward, bringing rays together at a focal point."},
+      {"text": "Diverges (spreads out) the light rays", "isCorrect": false, "feedback": "Spreading light out is what a concave lens does, not a convex one."},
+      {"text": "Completely blocks all light", "isCorrect": false, "feedback": "A lens transmits and bends light, it doesn't block it entirely."},
+      {"text": "Reflects all light back the way it came", "isCorrect": false, "feedback": "Lenses refract (bend) light as it passes through, rather than reflecting it back."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which type of lens is typically used to correct nearsightedness (difficulty seeing distant objects)?",
+    "options": [
+      {"text": "Concave lens", "isCorrect": true, "feedback": "Correct -- concave lenses diverge light before it enters the eye, correcting how nearsighted eyes over-focus light."},
+      {"text": "Convex lens", "isCorrect": false, "feedback": "Convex lenses are generally used to correct farsightedness, not nearsightedness."},
+      {"text": "A flat piece of glass", "isCorrect": false, "feedback": "Flat glass doesn't bend light in a way that corrects vision problems."},
+      {"text": "No lens is needed for this condition", "isCorrect": false, "feedback": "Nearsightedness is a real, correctable vision condition that specifically benefits from a particular lens shape."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This lens bulges outward, with its greatest thickness right at its center.", "medium": "This lens is fatter in the center than around its edges.", "easy": "This lens is fatter in the middle than at its edges."},
+    "medium": {"hard": "This lens shape bends parallel light rays inward so they meet at a single focal point.", "medium": "This type of lens bends light rays inward to meet at a point.", "easy": "This lens bends light rays together to a single point."},
+    "hard": {"hard": "This lens shape spreads incoming light rays apart before they reach the eye, compensating for an eye that focuses images too early.", "medium": "This lens spreads light out slightly before it enters the eye, which helps with seeing distant objects clearly.", "easy": "This lens spreads light out a bit, which helps someone see far-away things more clearly."}
+  }
+}
+]

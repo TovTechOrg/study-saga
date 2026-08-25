@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between instantaneous acceleration and average acceleration",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Average acceleration is calculated as:",
+    "options": [
+      {"text": "The total change in velocity divided by the total time elapsed", "isCorrect": true, "feedback": "Correct -- average acceleration summarizes the overall velocity change over an entire time interval, regardless of how acceleration varied within that interval."},
+      {"text": "The exact acceleration at one single specific moment in time", "isCorrect": false, "feedback": "That describes INSTANTANEOUS acceleration, not average acceleration, which specifically considers the ENTIRE time interval, not a single moment."},
+      {"text": "The total distance traveled divided by total time", "isCorrect": false, "feedback": "That describes average SPEED/velocity, not average ACCELERATION, which specifically concerns CHANGE IN VELOCITY over time, not distance over time."},
+      {"text": "A value that is always exactly zero for any moving object", "isCorrect": false, "feedback": "This isn't accurate -- average acceleration can be NONZERO (whenever velocity actually changes over the time interval), not always zero."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A car accelerates unevenly (sometimes speeding up quickly, sometimes more gradually) over a 10-second interval, going from 0 to 30 m/s overall. Its AVERAGE acceleration over this interval is 3 m/s², yet the car's speedometer-implied acceleration likely never held steady at exactly this value throughout. Why isn't this a contradiction?",
+    "options": [
+      {"text": "Average acceleration specifically summarizes the OVERALL velocity change across the ENTIRE time interval, while instantaneous acceleration reflects the SPECIFIC rate of change at individual moments -- these are DIFFERENT calculated quantities, and the average value doesn't need to match any single instantaneous reading throughout the interval", "isCorrect": true, "feedback": "Correct -- this distinction between an interval-based AVERAGE and a moment-based INSTANTANEOUS value (analogous to the similar distinction between average and instantaneous velocity) resolves this apparent contradiction, showing these are simply different, complementary ways of describing an object's motion."},
+      {"text": "This scenario is actually mathematically impossible and could never occur for any real accelerating object", "isCorrect": false, "feedback": "This isn't accurate -- this scenario is entirely realistic; instantaneous acceleration readings varying throughout an interval, while still producing a specific calculated average, is a completely normal and expected occurrence."},
+      {"text": "Average acceleration and instantaneous acceleration actually must always be identical values throughout any given time interval", "isCorrect": false, "feedback": "This isn't accurate -- these are GENUINELY DIFFERENT calculated quantities (one describing an entire interval, one describing single moments), and they don't need to be identical throughout that interval."},
+      {"text": "This distinction between average and instantaneous acceleration has no actual connection to how acceleration is measured or calculated in physics", "isCorrect": false, "feedback": "This isn't accurate -- this distinction is DIRECTLY and fundamentally connected to how physicists precisely define and calculate these two related but distinct quantities."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For an object undergoing CONSTANT acceleration (like free fall, ignoring air resistance), the average acceleration over ANY time interval exactly equals the instantaneous acceleration at EVERY moment within that interval. Why does this special equality specifically hold true only for constant acceleration, and not for the unevenly-accelerating car example above?",
+    "options": [
+      {"text": "When acceleration is truly CONSTANT (unchanging throughout the interval), the instantaneous acceleration value is the SAME at every single moment, so naturally the average of all those IDENTICAL values also equals that SAME constant value -- but when acceleration VARIES over time (as in the uneven car example), the average must summarize a whole RANGE of different instantaneous values, meaning it generally won't match any single one of them exactly at every moment", "isCorrect": true, "feedback": "Correct -- this recognition (that constant acceleration is a SPECIAL CASE where instantaneous and average values coincide everywhere, precisely because there's no variation to average over) clarifies why this convenient equality specifically breaks down for the more general, variable-acceleration scenario like the unevenly-accelerating car."},
+      {"text": "This special equality would actually also hold true for the unevenly-accelerating car example, with no meaningful difference from constant acceleration", "isCorrect": false, "feedback": "This isn't accurate -- this equality SPECIFICALLY requires constant (unchanging) acceleration -- it does NOT hold in the same way for the unevenly-accelerating car, where acceleration varies throughout the interval."},
+      {"text": "Constant acceleration and average acceleration are actually completely unrelated concepts, with no meaningful mathematical connection", "isCorrect": false, "feedback": "This isn't accurate -- these concepts ARE DIRECTLY mathematically related, specifically in the special case of constant acceleration, where the average and instantaneous values coincide exactly."},
+      {"text": "This equality has no actual connection to whether acceleration remains constant or varies throughout the given time interval", "isCorrect": false, "feedback": "This isn't accurate -- this equality IS DIRECTLY and specifically connected to and DEPENDS ENTIRELY ON whether acceleration remains constant (equality holds) or varies (equality generally fails) throughout the interval."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This calculated quantity represents the net velocity-change-to-time ratio spanning an entire specified temporal interval.", "medium": "This is calculated by taking the overall change in speed and dividing by the overall time it took.", "easy": "This is the overall change in speed divided by the overall time it took."},
+    "medium": {"hard": "Consider that instantaneous acceleration reflects the rate of change at a single specific point in time, distinct from a summary value computed over an entire interval.", "medium": "The 'average' number is just a summary for the WHOLE interval, while the actual acceleration at each specific instant can be higher or lower than that summary value.", "easy": "The average is just a summary for the whole interval, while each instant's actual acceleration can differ."},
+    "hard": {"hard": "Consider how an unchanging instantaneous value trivially equals its own average, whereas a fluctuating value only produces a summary average that need not match any single instant.", "medium": "If the acceleration never changes at all, then every single moment already IS that same value, so of course the average matches every moment too -- but if it's bouncing around, the average is just a blend that might not match any one moment.", "easy": "If acceleration never changes, every moment already matches the average -- but if it varies, the average is just a blend."}
+  }
+}
+]

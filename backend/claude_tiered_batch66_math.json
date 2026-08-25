@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of matrix addition and scalar multiplication",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "To add two matrices together, what must be true about their dimensions?",
+    "options": [
+      {"text": "They must have exactly the same dimensions (same number of rows and columns)", "isCorrect": true, "feedback": "Correct -- matrix addition requires matching dimensions, since corresponding elements are added position by position."},
+      {"text": "They can have any dimensions at all, with no restrictions", "isCorrect": false, "feedback": "This isn't accurate -- matrix addition specifically REQUIRES matching dimensions between the two matrices; mismatched dimensions cannot be added."},
+      {"text": "One matrix must have exactly twice as many rows as the other", "isCorrect": false, "feedback": "This isn't the requirement -- matrix addition specifically requires IDENTICAL dimensions, not a doubling relationship."},
+      {"text": "The matrices must contain only positive numbers", "isCorrect": false, "feedback": "The sign of the numbers isn't relevant to whether matrices can be added -- matching DIMENSIONS is the actual requirement."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Add these two matrices: [[1,2],[3,4]] + [[5,6],[7,8]]",
+    "options": [
+      {"text": "[[6,8],[10,12]]", "isCorrect": true, "feedback": "Correct -- add each corresponding position: 1+5=6, 2+6=8, 3+7=10, 4+8=12."},
+      {"text": "[[5,12],[21,32]]", "isCorrect": false, "feedback": "This appears to have multiplied corresponding elements instead of adding them."},
+      {"text": "[[6,8],[8,12]]", "isCorrect": false, "feedback": "This has a small error in one position -- check that 3+7 correctly equals 10, not 8."},
+      {"text": "[[1,2,5,6],[3,4,7,8]]", "isCorrect": false, "feedback": "This combines the matrices side by side rather than correctly adding corresponding elements together."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Calculate: 3 × [[2,-1],[0,4]] + [[1,1],[2,-3]]  (Apply scalar multiplication first, then matrix addition)",
+    "options": [
+      {"text": "[[7,-2],[2,9]]", "isCorrect": true, "feedback": "Correct -- first, 3×[[2,-1],[0,4]]=[[6,-3],[0,12]]. Then add [[1,1],[2,-3]]: [[6+1,-3+1],[0+2,12-3]]=[[7,-2],[2,9]]."},
+      {"text": "[[9,0],[2,13]]", "isCorrect": false, "feedback": "This doesn't correctly apply the scalar multiplication step before adding -- recheck the order of operations."},
+      {"text": "[[6,-3],[0,12]]", "isCorrect": false, "feedback": "This is only the result after scalar multiplication, but the second matrix still needs to be added to this result."},
+      {"text": "[[3,-3],[6,-9]]", "isCorrect": false, "feedback": "This only applies the scalar multiplication to the second matrix instead of the first one specified."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This operation requires structural congruence between the two operand matrices, specifically matching row and column counts.", "medium": "Both matrices need to be exactly the same size and shape to combine them this way.", "easy": "Both matrices need to be exactly the same size and shape."},
+    "medium": {"hard": "Perform elementwise addition, combining each value with its positionally corresponding value in the other matrix.", "medium": "Add the number in each position of the first matrix to the number in that same position of the second matrix.", "easy": "Add matching positions: 1+5, 2+6, 3+7, 4+8."},
+    "hard": {"hard": "First distribute the scalar across every element of its designated matrix, then perform standard elementwise addition with the second matrix.", "medium": "First multiply every number in the first matrix by 3, then add the corresponding numbers from the second matrix.", "easy": "Multiply every number in the first matrix by 3, then add the second matrix's numbers position by position."}
+  }
+}
+]

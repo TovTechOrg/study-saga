@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of gene expression regulation (why cells with identical DNA look and function differently)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'gene expression' refer to?",
+    "options": [
+      {"text": "The process by which information in a gene is used to create a functional product, like a protein", "isCorrect": true, "feedback": "Correct -- gene expression involves turning a gene's stored genetic information into an actual functional product through transcription and translation."},
+      {"text": "The process of a gene being permanently deleted from a cell's DNA", "isCorrect": false, "feedback": "Gene deletion is a different, much less common event -- gene EXPRESSION specifically refers to a gene being actively USED to produce a functional product, not deleted."},
+      {"text": "The physical location of a gene within a chromosome", "isCorrect": false, "feedback": "That describes a gene's LOCUS (location), a different concept from gene expression, which concerns whether/how a gene's information is actively used."},
+      {"text": "The exact number of genes present in an organism's genome", "isCorrect": false, "feedback": "Total gene count is a separate concept from gene expression, which specifically concerns whether individual genes are being actively used to produce functional products."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Nearly every cell in your body contains the exact same complete set of DNA, yet skin cells, muscle cells, and nerve cells look and function very differently. How does gene expression regulation explain this significant diversity despite identical genetic content?",
+    "options": [
+      {"text": "Different cell types selectively express (turn 'on') different specific subsets of genes from the same complete genome, while keeping other genes turned 'off,' resulting in distinct sets of proteins and thus distinct cellular structures/functions", "isCorrect": true, "feedback": "Correct -- this selective gene expression, rather than having different DNA content altogether, is precisely why genetically identical cells can develop into such vastly different, specialized cell types."},
+      {"text": "Different cell types actually contain completely different DNA content from each other", "isCorrect": false, "feedback": "This isn't accurate -- nearly all cells in an organism DO contain the same complete DNA; it's specifically DIFFERENTIAL GENE EXPRESSION (which genes are turned on/off), not different DNA content, that explains cellular diversity."},
+      {"text": "Gene expression regulation has no actual connection to explaining cellular diversity", "isCorrect": false, "feedback": "Gene expression regulation is actually THE central explanation for this phenomenon -- it's precisely how genetically identical cells can develop such vastly different specialized functions."},
+      {"text": "All genes are always expressed identically and simultaneously in every single cell type", "isCorrect": false, "feedback": "This isn't accurate -- different cell types specifically express DIFFERENT subsets of genes (not all genes identically), which is exactly the basis for cellular specialization and diversity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Epigenetic modifications (like DNA methylation) can influence which genes are expressed without actually changing the underlying DNA sequence itself, and some of these modifications can potentially be influenced by environmental factors and even passed to offspring in certain cases. Why does this add an important layer of complexity beyond simply considering an organism's basic DNA sequence?",
+    "options": [
+      {"text": "It suggests that an organism's traits and characteristics can be influenced not just by its fixed genetic sequence (genotype), but also by additional, potentially environmentally-influenced regulatory layers controlling how and when that genetic information gets actually expressed", "isCorrect": true, "feedback": "Correct -- this recognition that gene expression regulation can be influenced by external factors, beyond the fixed underlying DNA sequence alone, represents an important and relatively more recently appreciated layer of biological complexity in genetics."},
+      {"text": "Epigenetic modifications actually directly change the underlying DNA sequence itself", "isCorrect": false, "feedback": "This isn't accurate -- epigenetic modifications specifically do NOT change the underlying DNA SEQUENCE itself; they affect gene EXPRESSION (whether/how genes are used) through other mechanisms, like chemical tags on the DNA."},
+      {"text": "This concept has no actual connection to how genes are expressed in an organism", "isCorrect": false, "feedback": "This concept is actually DIRECTLY connected to and central to understanding gene expression -- epigenetics specifically concerns additional regulatory influences on gene expression beyond the base DNA sequence."},
+      {"text": "Environmental factors have no actual potential to influence any aspect of gene expression", "isCorrect": false, "feedback": "This isn't accurate -- environmental factors CAN potentially influence epigenetic modifications, which in turn can influence gene expression patterns, representing a significant area of ongoing biological research."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process encompasses the mechanisms by which encoded genetic information is transcribed and translated into a functional cellular product.", "medium": "This is when a gene's instructions actually get used to build something, like a protein.", "easy": "This is when a gene's instructions actually get used to build a protein."},
+    "medium": {"hard": "Consider how selectively activating or silencing specific portions of an otherwise identical genetic blueprint could generate substantially different functional cellular outcomes.", "medium": "Even with the exact same full instruction manual (DNA), different cells only actually 'read' and use certain specific pages of it.", "easy": "Even with the same full instruction manual, different cells only use certain specific pages of it."},
+    "hard": {"hard": "Consider how regulatory mechanisms operating 'on top of' the fixed genetic sequence can introduce an additional, potentially externally-influenced dimension to how traits ultimately manifest.", "medium": "It's like there's an extra layer of control switches on top of the basic DNA code, and things from the environment might be able to flip some of those switches.", "easy": "There's an extra layer of control switches on top of the DNA code, and the environment might flip some of them."}
+  }
+}
+]

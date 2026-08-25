@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of torque and rotational equilibrium",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is torque?",
+    "options": [
+      {"text": "A rotational force that causes (or tends to cause) an object to rotate around an axis", "isCorrect": true, "feedback": "Correct -- torque is the rotational analog of force, dependent on both the applied force and the distance from the pivot point (lever arm)."},
+      {"text": "A force that always moves an object in a straight line", "isCorrect": false, "feedback": "That describes linear (translational) force, not torque, which specifically produces rotational motion, not straight-line motion."},
+      {"text": "The total mass of a rotating object", "isCorrect": false, "feedback": "Mass is a separate physical quantity from torque, which concerns the rotational effect of an applied force."},
+      {"text": "The speed at which an object spins", "isCorrect": false, "feedback": "That describes angular velocity, a different concept from torque, which is the rotational FORCE causing spinning, not the spin speed itself."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When using a wrench to loosen a tight bolt, why is it generally easier to loosen the bolt by pushing at the far end of the wrench handle, rather than close to the bolt itself?",
+    "options": [
+      {"text": "Since torque = force × distance from the pivot, pushing farther from the bolt (pivot point) produces more torque for the same applied force", "isCorrect": true, "feedback": "Correct -- this direct relationship between lever arm distance and resulting torque is exactly why applying force farther from the pivot point makes it easier to loosen a tight bolt."},
+      {"text": "Pushing closer to the bolt would actually produce more torque than pushing farther away", "isCorrect": false, "feedback": "This is backwards -- since torque increases with greater distance from the pivot point, pushing FARTHER away (not closer) produces more torque for the same applied force."},
+      {"text": "The distance from the pivot point has no actual effect on the resulting torque", "isCorrect": false, "feedback": "Distance from the pivot is actually a CRITICAL factor in torque calculation -- greater distance directly increases torque for the same applied force."},
+      {"text": "Wrench length has no practical effect on how easily a bolt can be loosened", "isCorrect": false, "feedback": "Wrench length (lever arm distance) has a very significant practical effect -- longer wrenches make loosening bolts easier by increasing the resulting torque for the same applied force."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A seesaw is balanced when the torques from each side are equal and opposite (rotational equilibrium). A 40 kg child sits 2 meters from the pivot. Where must a 20 kg child sit on the opposite side to balance the seesaw?",
+    "options": [
+      {"text": "4 meters from the pivot", "isCorrect": true, "feedback": "Correct -- for balance, torque1 = torque2, so 40×2 = 20×d, giving d = 80/20 = 4 meters."},
+      {"text": "2 meters from the pivot", "isCorrect": false, "feedback": "At equal distances, the lighter child's torque (20×2=40) wouldn't match the heavier child's torque (40×2=80) -- this wouldn't balance."},
+      {"text": "1 meter from the pivot", "isCorrect": false, "feedback": "This doesn't correctly solve the torque balance equation -- check by calculating 20×1=20, which doesn't equal the heavier child's torque of 80."},
+      {"text": "8 meters from the pivot", "isCorrect": false, "feedback": "This overshoots the correct balance point -- checking 20×8=160, which is too large compared to the heavier child's torque of 80."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This rotational analog of linear force depends jointly on the magnitude of the applied force and its perpendicular distance from the axis of rotation.", "medium": "This is the twisting force that makes something want to spin around a point.", "easy": "This is the twisting force that makes something want to spin."},
+    "medium": {"hard": "Recall that torque scales directly with the perpendicular distance from the pivot point at which the force is applied, for a fixed force magnitude.", "medium": "Torque depends on both how hard you push AND how far from the pivot you're pushing -- farther means more torque for the same push.", "easy": "Torque depends on both how hard you push and how far from the pivot -- farther away means more torque."},
+    "hard": {"hard": "Set the two torque expressions (mass times distance for each side) equal to each other, then solve algebraically for the unknown distance.", "medium": "Set 40 times 2 equal to 20 times the unknown distance, then solve for that distance.", "easy": "Set 40×2 equal to 20×d, giving 80=20d, so d=4 meters."}
+  }
+}
+]

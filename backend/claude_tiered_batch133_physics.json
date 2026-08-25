@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between AC (alternating current) and DC (direct current)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Direct current' (DC) flows:",
+    "options": [
+      {"text": "Consistently in one single direction", "isCorrect": true, "feedback": "Correct -- DC flows steadily in one direction only, like current from a battery, unlike AC, which periodically reverses direction."},
+      {"text": "Periodically reversing direction back and forth", "isCorrect": false, "feedback": "That describes ALTERNATING current (AC), not direct current -- AC periodically reverses direction, while DC flows consistently in just one direction."},
+      {"text": "Only through insulating materials, never through conductors", "isCorrect": false, "feedback": "This isn't accurate -- current (DC or AC) specifically flows through CONDUCTORS, not insulators; this description doesn't relate to the actual DC/AC distinction."},
+      {"text": "In a completely random and unpredictable pattern with no consistent direction at all", "isCorrect": false, "feedback": "This isn't accurate -- DC specifically flows in a CONSISTENT, single direction, not a random, unpredictable pattern."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Household electrical outlets typically supply AC (which periodically reverses direction, e.g., 60 times per second in the US), while a standard battery supplies DC (constant one-directional current). Why is AC specifically preferred for long-distance electrical power transmission from power plants to homes, over DC?",
+    "options": [
+      {"text": "AC voltage can be easily and efficiently stepped up (increased) or stepped down (decreased) using transformers, allowing power to be transmitted at very high voltage (and correspondingly lower current, reducing energy loss to resistance) over long distances, then stepped back down to safer, usable voltage levels near homes -- DC voltage is considerably more difficult to efficiently step up or down using this same transformer technology, making AC the historically preferred and still dominant choice for long-distance power transmission", "isCorrect": true, "feedback": "Correct -- this explanation of AC's transformer compatibility (enabling efficient high-voltage transmission with reduced resistive losses) correctly explains the historical and continuing preference for AC in power grid transmission over long distances."},
+      {"text": "DC would actually be just as easy to step up or down in voltage as AC, using the exact same transformer technology", "isCorrect": false, "feedback": "This isn't accurate -- DC is considerably MORE DIFFICULT to step up or down using standard transformer technology, which specifically relies on the changing magnetic field produced by AC's periodic reversal."},
+      {"text": "Voltage transformation has no actual connection to explaining why AC is preferred over DC for long-distance power transmission", "isCorrect": false, "feedback": "This isn't accurate -- voltage transformation capability IS DIRECTLY connected to and is the primary historical reason AC is preferred for long-distance power transmission."},
+      {"text": "Transmitting power at higher voltage would actually increase energy loss during transmission, rather than decreasing it", "isCorrect": false, "feedback": "This is backwards -- transmitting power at HIGHER voltage (and correspondingly lower current) DECREASES resistive energy loss during transmission, not increases it, which is precisely why high-voltage AC transmission is advantageous."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Transformers work by using a changing (AC) current in one coil to induce a changing magnetic field, which in turn induces a corresponding current in a nearby second coil (electromagnetic induction) -- a mechanism that fundamentally requires a continuously CHANGING current/magnetic field to function. Explain precisely why this requirement is what makes transformers incompatible with simple DC current.",
+    "options": [
+      {"text": "Electromagnetic induction (the principle transformers rely on) specifically requires a CHANGING magnetic field to induce a current in a nearby coil -- since a steady DC current produces a magnetic field that is constant (unchanging) over time, feeding DC into a simple transformer's primary coil produces no changing magnetic field and therefore induces no meaningful, continuous current in the secondary coil, unlike AC, whose continuously changing current inherently produces the continuously changing magnetic field this mechanism requires", "isCorrect": true, "feedback": "Correct -- this explanation grounding transformer incompatibility with DC in the fundamental requirement of electromagnetic induction (needing a changing magnetic field) correctly explains this key technical distinction, foundational to understanding why AC became the standard for transformer-based power grids."},
+      {"text": "A steady DC current would actually also produce a continuously changing magnetic field, making it just as compatible with simple transformers as AC", "isCorrect": false, "feedback": "This isn't accurate -- a steady DC current produces a CONSTANT (unchanging) magnetic field, not a changing one, which is precisely why it's incompatible with simple transformer technology."},
+      {"text": "Electromagnetic induction has no actual connection to explaining why transformers require a changing current or magnetic field to function", "isCorrect": false, "feedback": "This isn't accurate -- electromagnetic induction IS DIRECTLY and fundamentally the principle explaining why transformers specifically require a changing current/magnetic field to function."},
+      {"text": "AC current would actually produce a constant, unchanging magnetic field, identical to DC current, making both equally compatible with transformers", "isCorrect": false, "feedback": "This isn't accurate -- AC current specifically produces a CONTINUOUSLY CHANGING magnetic field (due to its periodic reversal), unlike DC's constant field, which is precisely why AC, not DC, works well with simple transformers."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This current type maintains a unidirectional charge flow, exhibiting no periodic reversal in its direction of propagation.", "medium": "This kind of electric current always flows in the same single direction.", "easy": "This kind of electric current always flows in the same single direction."},
+    "medium": {"hard": "Consider how the periodic waveform of alternating current uniquely enables efficient transformer-based voltage step-up and step-down via the changing magnetic fields it inherently produces.", "medium": "AC's constantly changing direction happens to be exactly what lets special equipment called transformers boost the voltage way up for long trips over power lines and then bring it back down safely.", "easy": "AC's constantly changing direction is exactly what lets transformers boost voltage for long power-line trips and bring it back down safely."},
+    "hard": {"hard": "Consider how a transformer's inductive mechanism depends entirely on a time-varying magnetic flux, a condition satisfied by AC's periodic reversal but structurally absent from a temporally constant DC field.", "medium": "Transformers only work because the magnetic field they create keeps changing over and over, and a steady DC current just makes one magnetic field that never changes, so there's nothing for the transformer to grab onto.", "easy": "Transformers only work because the magnetic field keeps changing, and steady DC just makes one field that never changes."}
+  }
+}
+]

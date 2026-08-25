@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of hormonal regulation of blood sugar (insulin and glucagon)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main function of insulin?",
+    "options": [
+      {"text": "To lower blood sugar levels by helping cells absorb glucose from the blood", "isCorrect": true, "feedback": "Correct -- insulin, released by the pancreas, signals cells to take in glucose, reducing blood sugar levels when they're too high."},
+      {"text": "To raise blood sugar levels by releasing stored glucose into the blood", "isCorrect": false, "feedback": "That describes glucagon's function, essentially the opposite hormone to insulin, which specifically LOWERS blood sugar."},
+      {"text": "To digest proteins in the stomach", "isCorrect": false, "feedback": "Protein digestion is handled by digestive enzymes, unrelated to insulin's specific role in blood sugar regulation."},
+      {"text": "To regulate body temperature", "isCorrect": false, "feedback": "Temperature regulation is handled by different physiological mechanisms, unrelated to insulin's specific role in blood sugar management."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Insulin and glucagon work as a pair of opposing hormones to keep blood sugar levels within a healthy range -- insulin lowers blood sugar when it's too high, while glucagon raises it when it's too low. Why is this dual, opposing-hormone system beneficial for maintaining stable blood sugar?",
+    "options": [
+      {"text": "Having two opposing hormones allows the body to precisely correct blood sugar levels in EITHER direction (too high or too low), providing more effective fine-tuned regulation than a single, one-directional hormone could achieve", "isCorrect": true, "feedback": "Correct -- this dual, opposing-hormone system exemplifies a broader biological principle of using paired regulatory mechanisms to maintain stable internal conditions (homeostasis) despite fluctuating external inputs (like food intake)."},
+      {"text": "Insulin and glucagon actually always work in exactly the same direction, never opposing each other", "isCorrect": false, "feedback": "This isn't accurate -- insulin and glucagon specifically work in OPPOSITE directions (lowering vs. raising blood sugar), which is precisely the basis for this effective dual regulatory system."},
+      {"text": "This dual-hormone system provides no actual advantage over having just a single blood-sugar-regulating hormone", "isCorrect": false, "feedback": "This isn't accurate -- having two opposing hormones provides a significant regulatory advantage, allowing correction in BOTH directions, rather than being limited to just one direction of correction."},
+      {"text": "Glucagon and insulin are actually produced by completely different, unrelated organs with no connection to each other's function", "isCorrect": false, "feedback": "This isn't accurate -- while these are indeed distinct hormones, they're specifically produced by different cell types within the SAME organ (the pancreas), working together in a closely coordinated regulatory system."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In Type 1 diabetes, the pancreas produces little to no insulin due to autoimmune destruction of insulin-producing cells, requiring external insulin injections. In Type 2 diabetes, the body typically still produces insulin, but cells become resistant to its effects. Why does understanding this key difference matter for how each condition is typically treated?",
+    "options": [
+      {"text": "Since Type 1 involves an actual insulin DEFICIENCY, direct insulin replacement is essential, while Type 2 (involving insulin RESISTANCE rather than deficiency) can sometimes be initially managed through approaches that improve the body's sensitivity to its own existing insulin, like lifestyle changes or certain medications", "isCorrect": true, "feedback": "Correct -- this fundamental difference in underlying mechanism (absolute deficiency vs. resistance) directly explains why treatment approaches for these two conditions, despite both being called 'diabetes,' can differ significantly, at least initially."},
+      {"text": "Type 1 and Type 2 diabetes actually have identical underlying causes and require identical treatment approaches", "isCorrect": false, "feedback": "This isn't accurate -- these two conditions have genuinely DIFFERENT underlying mechanisms (absolute insulin deficiency vs. insulin resistance), which is precisely why their typical treatment approaches can differ."},
+      {"text": "Type 2 diabetes patients also produce absolutely zero insulin, identical to Type 1 patients", "isCorrect": false, "feedback": "This isn't accurate -- Type 2 diabetes patients typically DO still produce insulin (at least initially); their issue is specifically CELLULAR RESISTANCE to that insulin's effects, unlike Type 1's near-total absence of insulin production."},
+      {"text": "This mechanistic difference has no actual bearing on how these two conditions are approached medically", "isCorrect": false, "feedback": "This mechanistic difference has a very SIGNIFICANT bearing on typical treatment approaches, particularly regarding whether direct insulin replacement or insulin-sensitivity-improving strategies are emphasized."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This pancreatic hormone facilitates cellular glucose uptake, thereby reducing circulating blood glucose concentration.", "medium": "This hormone helps your cells soak up sugar from the blood, lowering blood sugar levels.", "easy": "This hormone helps cells soak up sugar from the blood, lowering blood sugar."},
+    "medium": {"hard": "Consider how having a bidirectional regulatory mechanism (able to push a variable both up and down) provides more precise control than a unidirectional one.", "medium": "Having one hormone push blood sugar down and another push it up means the body can correct things whichever way they go wrong.", "easy": "Having one hormone push sugar down and another push it up means the body can correct either problem."},
+    "hard": {"hard": "Consider how a treatment strategy targeting an actual hormone SHORTAGE would necessarily differ from one targeting a cellular RESPONSIVENESS problem to a hormone that's still present.", "medium": "If your body just isn't making insulin, you need to get it from an outside source; but if your body has trouble responding to insulin it's already making, other approaches might help first.", "easy": "If your body isn't making insulin, you need it from outside; if your body isn't responding well to insulin it's making, other approaches might help."}
+  }
+}
+]

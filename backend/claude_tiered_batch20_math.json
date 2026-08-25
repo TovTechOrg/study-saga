@@ -1,0 +1,84 @@
+[
+{
+  "topic": "understanding scale drawings and maps",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A map has a scale of 1 inch = 10 miles. If two towns are 3 inches apart on the map, how far apart are they in real life?",
+    "options": [
+      {"text": "30 miles", "isCorrect": true, "feedback": "Correct -- multiply the map distance by the scale factor: 3×10=30."},
+      {"text": "13 miles", "isCorrect": false, "feedback": "This adds instead of multiplying the map distance by the scale factor."},
+      {"text": "3.33 miles", "isCorrect": false, "feedback": "This divides instead of multiplying the map distance by the scale factor."},
+      {"text": "10 miles", "isCorrect": false, "feedback": "This just repeats the scale value rather than applying it to the given map distance."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A scale drawing of a room uses a scale of 1 cm = 2 meters. If the actual room is 10 meters long, how long should the drawing be?",
+    "options": [
+      {"text": "5 cm", "isCorrect": true, "feedback": "Correct -- divide the real length by the scale factor: 10÷2=5."},
+      {"text": "20 cm", "isCorrect": false, "feedback": "This multiplies instead of dividing the real length by the scale factor."},
+      {"text": "12 cm", "isCorrect": false, "feedback": "This adds instead of dividing the real length by the scale factor."},
+      {"text": "2 cm", "isCorrect": false, "feedback": "This just repeats the scale value rather than applying it to the given real length."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A blueprint uses a scale of 1:50 (1 unit on paper equals 50 units in real life). If a wall measures 8 cm on the blueprint, and a door on that same wall measures 1.5 m in real life, how long should the door appear on the blueprint (in cm)?",
+    "options": [
+      {"text": "3 cm", "isCorrect": true, "feedback": "Correct -- convert 1.5 m to 150 cm, then divide by the scale factor: 150÷50=3."},
+      {"text": "75 cm", "isCorrect": false, "feedback": "This multiplies instead of dividing the real measurement by the scale factor."},
+      {"text": "1.5 cm", "isCorrect": false, "feedback": "This forgets to convert meters to centimeters before applying the scale factor."},
+      {"text": "0.03 cm", "isCorrect": false, "feedback": "This doesn't correctly convert units before dividing by the scale factor."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply the drawn distance by the real-world value that one drawn unit represents.", "medium": "Multiply the map distance by the scale factor.", "easy": "Multiply 3 by 10."},
+    "medium": {"hard": "Divide the real-world distance by the real-world value that one drawn unit represents.", "medium": "Divide the real length by the scale factor.", "easy": "Divide 10 by 2."},
+    "hard": {"hard": "Convert all measurements to the same unit first, then divide the real-world measurement by the scale factor to find the corresponding drawn length.", "medium": "Convert 1.5 meters to centimeters first, then divide by 50.", "easy": "Convert 1.5 m to 150 cm, then divide by 50."}
+  }
+},
+{
+  "topic": "understanding the concept of a variable's coefficient",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the expression 7x, what is the coefficient?",
+    "options": [
+      {"text": "7", "isCorrect": true, "feedback": "Correct -- the coefficient is the number multiplying the variable."},
+      {"text": "x", "isCorrect": false, "feedback": "x is the variable itself, not the coefficient."},
+      {"text": "There is no coefficient", "isCorrect": false, "feedback": "There is a clear coefficient here -- the number 7 multiplying x."},
+      {"text": "1", "isCorrect": false, "feedback": "This would be the coefficient if the expression were simply 'x' alone, not 7x."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In the expression -4y + 9, what is the coefficient of y?",
+    "options": [
+      {"text": "-4", "isCorrect": true, "feedback": "Correct -- the coefficient includes the negative sign directly in front of the variable."},
+      {"text": "4", "isCorrect": false, "feedback": "This forgets to include the negative sign, which is part of the coefficient."},
+      {"text": "9", "isCorrect": false, "feedback": "9 is the constant term, not the coefficient of y."},
+      {"text": "-4y", "isCorrect": false, "feedback": "This includes the variable itself -- the coefficient alone is just the numerical part, -4."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In the expression 3x² - 5x + 2, what are the coefficients of each term with a variable, in order?",
+    "options": [
+      {"text": "3 (for x²) and -5 (for x)", "isCorrect": true, "feedback": "Correct -- each term's coefficient is the number directly multiplying its variable part, including the sign."},
+      {"text": "3 and 5", "isCorrect": false, "feedback": "This forgets to include the negative sign on the second coefficient."},
+      {"text": "3, -5, and 2", "isCorrect": false, "feedback": "2 is the constant term (no variable attached), not a coefficient."},
+      {"text": "x² and x", "isCorrect": false, "feedback": "These are the variable parts themselves, not their numerical coefficients."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the numerical multiplier directly attached to a variable term.", "medium": "This is the number that's multiplied by the variable.", "easy": "This is the number right in front of the variable."},
+    "medium": {"hard": "Always include any negative sign immediately preceding the variable as part of the coefficient itself.", "medium": "Don't forget to include the negative sign as part of the coefficient.", "easy": "Include the minus sign as part of the coefficient -- it's -4, not just 4."},
+    "hard": {"hard": "Identify the numerical multiplier (including sign) attached to each distinct variable term, excluding any standalone constant.", "medium": "Look at the number attached to each variable term separately, keeping the correct sign for each.", "easy": "Look at the number in front of x² and the number in front of x, keeping their signs."}
+  }
+}
+]

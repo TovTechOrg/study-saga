@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between permutations and combinations",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "When the ORDER of selected items matters (like ranking 1st, 2nd, 3rd place), you should use:",
+    "options": [
+      {"text": "Permutations", "isCorrect": true, "feedback": "Correct -- permutations count arrangements where order matters, exactly matching a ranking scenario like 1st/2nd/3rd place."},
+      {"text": "Combinations", "isCorrect": false, "feedback": "This isn't right -- combinations are used when order does NOT matter, but ranking scenarios specifically require order, calling for permutations instead."},
+      {"text": "Neither permutations nor combinations apply to this kind of counting problem", "isCorrect": false, "feedback": "This isn't accurate -- this is precisely the kind of problem permutations are designed to solve, since order matters here."},
+      {"text": "Addition of the total number of items involved", "isCorrect": false, "feedback": "Simple addition doesn't account for the number of ways to arrange items in order -- that's what permutations are specifically for."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Choosing 3 people from a group of 10 to form a committee (with no distinct roles) uses combinations, while choosing 3 people from that same group to fill President, Vice President, and Secretary uses permutations. Why does the SAME group of people produce a LARGER count for the second scenario?",
+    "options": [
+      {"text": "In the committee scenario, each unique group of 3 people counts only once regardless of arrangement, but in the officer scenario, the same 3 people arranged in different role orders (who is President vs. Secretary) count as distinct outcomes, multiplying the total by the number of ways to arrange those 3 people in roles", "isCorrect": true, "feedback": "Correct -- since assigning specific roles introduces meaningful order, each combination of 3 people expands into multiple distinct permutations, explaining why the officer-selection count is larger."},
+      {"text": "Both scenarios would actually produce the exact same total count, since the same 10-person group is involved", "isCorrect": false, "feedback": "This isn't accurate -- the counts DIFFER specifically because the officer scenario cares about order (who holds which role), while the committee scenario doesn't."},
+      {"text": "The committee scenario would actually produce a LARGER count than the officer scenario", "isCorrect": false, "feedback": "This is backwards -- the officer scenario (permutations) produces a LARGER count than the committee scenario (combinations), since it distinguishes role assignments."},
+      {"text": "Whether roles are assigned or not has no actual effect on the resulting count of possible outcomes", "isCorrect": false, "feedback": "This isn't accurate -- whether roles are assigned DIRECTLY affects the count, since assigning roles introduces order that multiplies the number of distinct outcomes."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The permutation formula P(n,r) = n!/(n-r)! and the combination formula C(n,r) = n!/(r!(n-r)!) differ only by an extra factor of r! in the combination formula's denominator. Explain why dividing by r! specifically converts a permutation count into a combination count.",
+    "options": [
+      {"text": "Each unique combination of r items can be arranged internally in r! different orders, all of which are counted as SEPARATE outcomes in the permutation count -- dividing by r! removes this internal-order duplication, collapsing all r! orderings of the same r items down into a single counted combination", "isCorrect": true, "feedback": "Correct -- this explanation of r! as the number of internal reorderings per group correctly justifies why dividing the permutation count by r! yields the combination count, directly connecting the two formulas."},
+      {"text": "Dividing by r! actually has no meaningful mathematical relationship connecting permutations to combinations", "isCorrect": false, "feedback": "This isn't accurate -- dividing by r! is PRECISELY the mathematical operation that converts a permutation count into a combination count, by removing internal-order duplication."},
+      {"text": "r! specifically represents the total number of items in the original set, not the number of ways to arrange the selected items", "isCorrect": false, "feedback": "This isn't accurate -- r! represents the number of ways to arrange the r SELECTED items internally, not the total set size (which is n)."},
+      {"text": "Combinations would actually produce a LARGER count than permutations for the same n and r, since dividing by r! increases the value", "isCorrect": false, "feedback": "This is backwards -- dividing by r! (a number greater than or equal to 1) REDUCES the count, so combinations are always less than or equal to permutations for the same n and r."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This counting concept applies specifically when the sequential arrangement of selected elements is a distinguishing factor between outcomes.", "medium": "Use this when the order you pick things in actually changes the result, like who comes in first versus second.", "easy": "Use this when the order you pick things in changes the result, like first versus second place."},
+    "medium": {"hard": "Consider how assigning distinct roles to selected members introduces an internal ordering factor absent when members are selected as an undifferentiated group.", "medium": "When people get different jobs, swapping who has which job creates a brand new outcome, but in a plain group, swapping people around doesn't create anything new.", "easy": "When people get different jobs, swapping who has which job creates a new outcome; in a plain group it doesn't."},
+    "hard": {"hard": "Consider how the r! internal arrangements of any fixed subset of r elements are all collapsed into a single counted outcome once order is disregarded.", "medium": "Every single group of people picked could be lined up in a bunch of different orders, and dividing by r! is just squashing all those different orderings of the SAME group back down into one count.", "easy": "Every group could be lined up in different orders, and dividing by r! squashes those orderings back into one count."}
+  }
+}
+]

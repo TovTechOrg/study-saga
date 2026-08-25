@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of vectors and vector addition",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What distinguishes a vector quantity from a scalar quantity?",
+    "options": [
+      {"text": "A vector has both magnitude and direction, while a scalar has only magnitude", "isCorrect": true, "feedback": "Correct -- vectors (like velocity or force) require both a size and a direction to be fully described, unlike scalars (like temperature or mass), which need only a magnitude."},
+      {"text": "A scalar has both magnitude and direction, while a vector has only magnitude", "isCorrect": false, "feedback": "This has it backwards -- VECTORS require both magnitude and direction, while SCALARS require only magnitude."},
+      {"text": "Vectors and scalars are actually identical, with no meaningful distinction", "isCorrect": false, "feedback": "These are genuinely distinct types of quantities -- vectors specifically require directional information, while scalars do not."},
+      {"text": "A vector can only ever have a magnitude of exactly 1", "isCorrect": false, "feedback": "This isn't accurate -- a vector's magnitude can be any value, not restricted to exactly 1; the defining feature of a vector is having BOTH magnitude AND direction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two vectors point in exactly the same direction: Vector A has magnitude 5, and Vector B has magnitude 3. What is the magnitude of their sum (A+B)?",
+    "options": [
+      {"text": "8", "isCorrect": true, "feedback": "Correct -- since both vectors point in the same direction, their magnitudes simply add together: 5+3=8."},
+      {"text": "2", "isCorrect": false, "feedback": "This would be the result of SUBTRACTING the magnitudes (5-3), not adding them, which is what's needed when vectors point in the same direction."},
+      {"text": "15", "isCorrect": false, "feedback": "This results from multiplying the magnitudes together (5×3), rather than correctly adding them since they point in the same direction."},
+      {"text": "1.67", "isCorrect": false, "feedback": "This results from dividing the magnitudes, rather than correctly adding them since they point in the same direction."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two vectors are perpendicular to each other: Vector A has magnitude 3, and Vector B has magnitude 4. Using the Pythagorean theorem (since perpendicular vectors form a right angle), what is the magnitude of their resultant sum vector?",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- treating the vectors as legs of a right triangle: √(3²+4²)=√(9+16)=√25=5."},
+      {"text": "7", "isCorrect": false, "feedback": "This is simply adding the two magnitudes directly (3+4), which is only correct for vectors pointing in the exact SAME direction, not perpendicular ones."},
+      {"text": "1", "isCorrect": false, "feedback": "This results from subtracting the magnitudes (4-3), which isn't the correct approach for finding the resultant of perpendicular vectors."},
+      {"text": "12", "isCorrect": false, "feedback": "This results from multiplying the magnitudes together (3×4), rather than correctly applying the Pythagorean theorem for perpendicular vector addition."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity classification requires specification of both a scalar magnitude component and an associated directional component.", "medium": "This kind of measurement needs both a size AND a direction to be fully described.", "easy": "This kind of measurement needs both a size and a direction."},
+    "medium": {"hard": "When combining vectors oriented along an identical direction, their magnitudes combine through simple scalar addition.", "medium": "Since both vectors point the exact same way, you can just add their sizes together directly.", "easy": "Since both point the same way, just add 5 and 3 to get 8."},
+    "hard": {"hard": "Model the two perpendicular vector magnitudes as the legs of a right triangle, then apply the Pythagorean theorem to determine the hypotenuse (resultant magnitude).", "medium": "Treat the two vector magnitudes like the two legs of a right triangle, then use a²+b²=c² to find the resultant.", "easy": "Use the Pythagorean theorem: √(3²+4²)=√25=5."}
+  }
+}
+]

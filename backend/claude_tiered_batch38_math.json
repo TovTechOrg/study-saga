@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of exponential growth vs. linear growth",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which best describes exponential growth?",
+    "options": [
+      {"text": "A quantity that increases by a constant multiplying factor (like doubling) over equal time periods", "isCorrect": true, "feedback": "Correct -- exponential growth compounds by a fixed ratio each period, unlike linear growth's fixed additive amount."},
+      {"text": "A quantity that increases by the same fixed amount each time period", "isCorrect": false, "feedback": "That describes linear growth, not exponential growth."},
+      {"text": "A quantity that stays constant over time", "isCorrect": false, "feedback": "A constant quantity shows no growth at all, so this doesn't describe exponential growth."},
+      {"text": "A quantity that decreases at a constant rate", "isCorrect": false, "feedback": "This describes a form of decay/decrease, not the increasing pattern of exponential growth."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A savings account earns compound interest, doubling in value every 10 years. If it starts at $1,000, how much will it be worth after 30 years?",
+    "options": [
+      {"text": "$8,000", "isCorrect": true, "feedback": "Correct -- doubling three times (30÷10=3 periods): 1,000 → 2,000 → 4,000 → 8,000."},
+      {"text": "$4,000", "isCorrect": false, "feedback": "This reflects only two doublings, but 30 years at a 10-year doubling period requires three doublings."},
+      {"text": "$3,000", "isCorrect": false, "feedback": "This looks like simple (linear) tripling of the initial amount, not compound doubling, which grows exponentially."},
+      {"text": "$10,000", "isCorrect": false, "feedback": "This doesn't correctly result from doubling $1,000 three times."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two investments both start at $1,000. Investment A grows linearly, adding $500 per year. Investment B grows exponentially, doubling every 3 years. After 9 years, which investment is worth more, and roughly by how much?",
+    "options": [
+      {"text": "Investment B, since it reaches $8,000 (three doublings) vs. Investment A's $5,500, a difference of about $2,500", "isCorrect": true, "feedback": "Correct -- A: 1,000 + 500×9 = 5,500. B: 1,000 doubled 3 times (9÷3) = 8,000. Exponential growth eventually overtakes linear growth, even if it starts slower."},
+      {"text": "Investment A, since adding a fixed dollar amount each year always outpaces doubling over any time frame", "isCorrect": false, "feedback": "This isn't generally true -- while linear growth might lead early on, exponential (compounding) growth eventually overtakes it, as shown by the actual 9-year totals here."},
+      {"text": "Both investments would be exactly equal after 9 years", "isCorrect": false, "feedback": "Calculating both values (5,500 vs 8,000) shows they are not equal at this point in time."},
+      {"text": "There's no way to compare linear and exponential growth patterns", "isCorrect": false, "feedback": "These growth patterns can absolutely be directly compared numerically at any given time point, as done here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This growth pattern involves repeated multiplication by a constant factor over equal intervals, rather than a fixed additive increase.", "medium": "This is when something keeps multiplying by the same amount, like doubling, over and over.", "easy": "This is when something keeps doubling (or multiplying) over and over."},
+    "medium": {"hard": "Determine how many complete doubling periods fit within the total time span, then apply that many multiplications to the starting value.", "medium": "Figure out how many times the value doubles in 30 years, given it doubles every 10 years.", "easy": "30 years divided by 10 years means it doubles 3 times: 1,000, 2,000, 4,000, 8,000."},
+    "hard": {"hard": "Calculate each investment's value separately using its respective growth model (additive vs. multiplicative), then directly compare the two resulting totals.", "medium": "Calculate A using repeated addition of $500 per year, and B using repeated doubling every 3 years, then compare.", "easy": "For A: add 500 nine times to 1,000. For B: double 1,000 three times. Compare the results."}
+  }
+}
+]

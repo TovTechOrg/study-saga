@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between static friction limits and kinetic friction constants",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The MAXIMUM static friction force (before an object starts sliding) is calculated using:",
+    "options": [
+      {"text": "The coefficient of static friction multiplied by the normal force", "isCorrect": true, "feedback": "Correct -- maximum static friction = μs × Normal Force, representing the largest force static friction can exert before an object begins to slide."},
+      {"text": "The object's total mass multiplied by its exact velocity", "isCorrect": false, "feedback": "This describes momentum (mass × velocity), an unrelated calculation from static friction force, which specifically uses the coefficient of static friction and normal force."},
+      {"text": "The object's exact temperature multiplied by its surface area", "isCorrect": false, "feedback": "This isn't a standard physics relationship at all -- static friction force specifically depends on the coefficient of static friction and the normal force, not temperature/surface area in this way."},
+      {"text": "A completely random, unpredictable value with no calculable formula", "isCorrect": false, "feedback": "This isn't accurate -- maximum static friction force has a very definite, PREDICTABLE calculation formula (μs × Normal Force), not a random, uncalculable value."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The coefficient of static friction (μs) is typically slightly LARGER than the coefficient of kinetic friction (μk) for the same two surfaces. Why does this relationship make physical sense, in terms of what's happening at the microscopic level between the two contacting surfaces?",
+    "options": [
+      {"text": "When two surfaces are stationary relative to each other (static), their microscopic surface irregularities have more time to settle into closer, more interlocking contact points, creating stronger resistance to the START of sliding motion, compared to when the surfaces are ALREADY sliding (kinetic), where these microscopic contact points have less time to fully interlock before being disrupted again", "isCorrect": true, "feedback": "Correct -- this microscopic explanation (more complete interlocking during stationary contact vs. constantly disrupted, less complete contact during active sliding) helps explain why it typically takes more force to START an object sliding (overcoming static friction) than to KEEP it sliding once already in motion (overcoming kinetic friction)."},
+      {"text": "Kinetic friction coefficients are actually always LARGER than static friction coefficients, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- STATIC friction coefficients are typically SLIGHTLY LARGER (not smaller) than kinetic friction coefficients for the same surface pair, not the reverse."},
+      {"text": "This relationship between static and kinetic friction coefficients has no actual microscopic physical explanation", "isCorrect": false, "feedback": "This isn't accurate -- this relationship DOES have a reasonably well-understood microscopic physical explanation, related to the degree of surface interlocking possible during stationary contact versus active sliding."},
+      {"text": "Static and kinetic friction coefficients are actually always exactly identical for any given pair of surfaces", "isCorrect": false, "feedback": "This isn't accurate -- these coefficients are typically SLIGHTLY DIFFERENT (static usually somewhat larger) for the same surface pair, not identical values."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If you push on a heavy box with a force LESS than the maximum static friction force, the box remains stationary, and the actual static friction force exactly MATCHES your applied push force (not the maximum possible value). Why does static friction behave this way -- adjusting its actual value to match the applied force (up to its maximum), rather than always exerting its full maximum possible force?",
+    "options": [
+      {"text": "Since the box remains in equilibrium (not accelerating) as long as your push is below the maximum static friction threshold, the actual static friction force must exactly equal and oppose your applied push force to maintain that zero-net-force equilibrium condition -- it doesn't need to (and doesn't) exert more force than necessary to keep the box stationary", "isCorrect": true, "feedback": "Correct -- this understanding (static friction is a variable, self-adjusting force up to its maximum limit, precisely matching whatever opposing force is needed to maintain equilibrium) is an important, sometimes counterintuitive aspect of how static friction actually behaves in real physical situations, unlike a simplistic view of friction always being at some fixed maximum value."},
+      {"text": "Static friction actually always exerts its full maximum possible force at all times, regardless of the applied push force", "isCorrect": false, "feedback": "This isn't accurate -- static friction specifically ADJUSTS its actual force value to match whatever is needed to maintain equilibrium (up to its maximum limit), rather than always being at its absolute maximum value regardless of the applied force."},
+      {"text": "This self-adjusting behavior of static friction has no actual connection to maintaining the box's equilibrium/stationary state", "isCorrect": false, "feedback": "This isn't accurate -- this self-adjusting behavior is DIRECTLY and specifically connected to and is precisely REQUIRED to maintain the box's equilibrium (zero net force, remaining stationary) condition."},
+      {"text": "The box would actually start moving immediately with any applied push force, regardless of the static friction maximum value", "isCorrect": false, "feedback": "This isn't accurate -- the box specifically remains STATIONARY as long as the applied push force stays BELOW the maximum static friction threshold, not immediately moving with any applied force."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This threshold value is derived from the product of the static friction coefficient and the perpendicular contact force between surfaces.", "medium": "Multiply a special surface-roughness number by how hard the surfaces are being pressed together.", "easy": "Multiply the friction coefficient by the normal (pressing) force."},
+    "medium": {"hard": "Consider how the duration of continuous, undisturbed surface contact affects the degree to which microscopic surface irregularities can settle into closer mutual engagement.", "medium": "When things sit still together, their bumpy microscopic surfaces get more snugly locked together than when they're already sliding and constantly getting bumped apart.", "easy": "When things sit still, their bumpy surfaces lock together more than when already sliding."},
+    "hard": {"hard": "Apply Newton's first law (zero net force for a stationary object) to deduce that the opposing static friction force must precisely balance the applied force, rather than remaining fixed at some predetermined maximum value.", "medium": "Since the box isn't moving, the pushing force and the friction force pushing back must be perfectly equal and canceling out -- friction just does exactly what's needed, not more.", "easy": "Since the box isn't moving, friction exactly matches your push -- it does just what's needed, not more."}
+  }
+}
+]

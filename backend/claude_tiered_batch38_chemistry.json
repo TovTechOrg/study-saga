@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a chemical reaction's activation energy barrier requiring initial input",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Even though burning wood releases a lot of energy overall (exothermic), why doesn't a piece of wood spontaneously burst into flame at room temperature?",
+    "options": [
+      {"text": "The reaction still requires an initial input of activation energy (like a spark or match) to get started, even though it releases more energy afterward", "isCorrect": true, "feedback": "Correct -- even highly exothermic reactions typically need some initial energy input to overcome the activation energy barrier before they can proceed."},
+      {"text": "Wood doesn't actually contain any stored chemical energy", "isCorrect": false, "feedback": "Wood does contain significant stored chemical energy -- that's exactly why it releases so much energy when burned."},
+      {"text": "Burning wood is actually not an exothermic process", "isCorrect": false, "feedback": "Burning wood is a classic example of a strongly exothermic reaction, releasing significant heat and light energy."},
+      {"text": "This has nothing to do with activation energy", "isCorrect": false, "feedback": "This is actually a textbook example specifically illustrating the necessity of activation energy, even for reactions that ultimately release net energy."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does blowing gently on a small flame sometimes make it grow, while blowing very hard can extinguish it?",
+    "options": [
+      {"text": "Gentle blowing supplies more oxygen to sustain combustion, while a strong gust can remove heat and disrupt the reaction faster than it can be sustained", "isCorrect": true, "feedback": "Correct -- this reflects a balance between supplying necessary oxygen (helping combustion) and removing heat/disrupting the reaction zone (hindering combustion), depending on the intensity of the airflow."},
+      {"text": "Blowing air has no actual effect on a flame in either case", "isCorrect": false, "feedback": "Blowing air clearly has real, observable effects on a flame -- either helping or hindering combustion, depending on intensity."},
+      {"text": "A gentle breeze always extinguishes flames, while strong wind always makes them grow", "isCorrect": false, "feedback": "This has the general pattern backwards from typical observation -- gentle airflow often helps sustain a small flame with more oxygen, while a strong gust can blow away the necessary heat and extinguish it."},
+      {"text": "This phenomenon is completely unrelated to any chemistry concepts", "isCorrect": false, "feedback": "This is actually directly related to combustion chemistry, involving the balance between oxygen supply and heat/reactant availability needed to sustain the reaction."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A candle flame can be blown out, but a well-established forest fire is extremely difficult to extinguish just by blowing air on it. Why does scale matter so much for this outcome?",
+    "options": [
+      {"text": "A candle's small flame has a limited heat reserve that can be disrupted or dispersed easily, while a large fire has generated a massive, self-sustaining heat reservoir that easily overcomes any localized disruption from wind, and can even be fed more oxygen by that wind", "isCorrect": true, "feedback": "Correct -- the sheer scale of heat and fuel involved in a large fire makes it far more resistant to simple disruption than a small, easily destabilized flame."},
+      {"text": "Forest fires actually don't involve any chemical combustion process at all", "isCorrect": false, "feedback": "Forest fires are absolutely combustion reactions -- just occurring at a vastly larger and more self-sustaining scale than a simple candle flame."},
+      {"text": "The size of a fire has no actual effect on how easily it can be extinguished", "isCorrect": false, "feedback": "Fire size very much affects how difficult it is to extinguish -- larger fires are generally much more self-sustaining and resistant to simple disruption."},
+      {"text": "Candles and forest fires burn using completely different chemical elements", "isCorrect": false, "feedback": "Both involve fundamentally similar combustion chemistry (fuel + oxygen + heat) -- the key difference explaining this scenario is simply the scale of heat and fuel involved, not different underlying chemistry."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Even reactions that ultimately release substantial energy typically require some initial energy investment to overcome a starting barrier.", "medium": "Even though burning releases a lot of energy, getting it started still needs some initial energy input.", "easy": "Even though burning releases energy, getting it started still needs a spark or match first."},
+    "medium": {"hard": "Consider the competing effects of supplying combustion-sustaining oxygen versus physically disrupting or cooling the reactive region.", "medium": "A little air can feed the flame more oxygen, but too much air can blow away the heat needed to keep the fire going.", "easy": "A little air can feed the flame more oxygen, but too much air can blow away the heat keeping it going."},
+    "hard": {"hard": "The total accumulated thermal energy and fuel supply in a large-scale fire vastly exceeds what a simple gust of air can disrupt, unlike the comparatively fragile, small-scale energy balance of a single candle flame.", "medium": "A big fire has built up so much heat and has so much fuel available that a little wind just can't overcome it, unlike a tiny, fragile candle flame.", "easy": "A big fire has built up so much heat that a little wind just can't put it out, unlike a tiny candle flame."}
+  }
+}
+]

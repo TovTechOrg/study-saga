@@ -1,0 +1,43 @@
+[
+{
+  "topic": "solving for the missing term in a ratio table",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A ratio table shows 2:3 is equivalent to 4:x. What is x?",
+    "options": [
+      {"text": "6", "isCorrect": true, "feedback": "Correct -- since 4 is double 2, x must also be double 3, giving 6."},
+      {"text": "5", "isCorrect": false, "feedback": "This doesn't preserve the same ratio as 2:3."},
+      {"text": "8", "isCorrect": false, "feedback": "This doesn't match correctly scaling 3 by the same factor used to get from 2 to 4."},
+      {"text": "3", "isCorrect": false, "feedback": "This just repeats the original value, without scaling it to match the new ratio."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A ratio table shows 3:7 is equivalent to x:35. What is x?",
+    "options": [
+      {"text": "15", "isCorrect": true, "feedback": "Correct -- since 35 is 5 times 7, x must also be 5 times 3, giving 15."},
+      {"text": "31", "isCorrect": false, "feedback": "This doesn't preserve the same ratio as 3:7."},
+      {"text": "5", "isCorrect": false, "feedback": "This is the scale factor itself, not the actual value of x."},
+      {"text": "39", "isCorrect": false, "feedback": "This doesn't match correctly scaling 3 by the same factor used to get from 7 to 35."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A recipe ratio table shows: 2 cups flour : 3 eggs : 1 cup sugar. If a baker uses 10 cups of flour, how many eggs and cups of sugar are needed (maintaining the same ratio)?",
+    "options": [
+      {"text": "15 eggs and 5 cups of sugar", "isCorrect": true, "feedback": "Correct -- since 10 cups of flour is 5 times the original 2, both other quantities scale by 5: 3×5=15 eggs, 1×5=5 cups sugar."},
+      {"text": "13 eggs and 6 cups of sugar", "isCorrect": false, "feedback": "This doesn't consistently scale all quantities by the same factor."},
+      {"text": "3 eggs and 1 cup of sugar", "isCorrect": false, "feedback": "This just repeats the original values without scaling them at all."},
+      {"text": "30 eggs and 10 cups of sugar", "isCorrect": false, "feedback": "This doubles the correct scaled amounts, using a scale factor of 10 instead of 5."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Determine the scaling factor between the two known corresponding values, then apply that same factor elsewhere.", "medium": "Figure out what number 2 was multiplied by to get 4, then do the same to 3.", "easy": "Since 2 became 4 (doubled), double 3 as well."},
+    "medium": {"hard": "Determine the scaling factor between the two known corresponding values, then apply that same factor elsewhere.", "medium": "Figure out what number 7 was multiplied by to get 35, then do the same to 3.", "easy": "Since 7 became 35 (times 5), multiply 3 by 5 as well."},
+    "hard": {"hard": "Determine the scaling factor from the known quantity, then apply that identical factor to every other quantity in the ratio.", "medium": "Figure out the scale factor from flour (2 to 10), then apply that same factor to both eggs and sugar.", "easy": "Since flour went from 2 to 10 (times 5), multiply both eggs and sugar by 5 too."}
+  }
+}
+]

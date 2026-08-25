@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of a function's rate of change from a table",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A table shows: x=1,y=2; x=2,y=4; x=3,y=6. What is the rate of change (how much y changes for each increase of 1 in x)?",
+    "options": [
+      {"text": "2", "isCorrect": true, "feedback": "Correct -- each time x increases by 1, y increases by 2."},
+      {"text": "1", "isCorrect": false, "feedback": "This doesn't match the actual pattern -- y increases by 2, not 1, for each unit increase in x."},
+      {"text": "4", "isCorrect": false, "feedback": "This is just one of the y-values, not the actual rate of change."},
+      {"text": "6", "isCorrect": false, "feedback": "This is just one of the y-values, not the actual rate of change."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A table shows: x=0,y=5; x=2,y=11; x=4,y=17. What is the rate of change of y with respect to x?",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- the change in y (6) divided by the change in x (2) gives 6÷2=3 for each interval."},
+      {"text": "6", "isCorrect": false, "feedback": "This is the change in y alone, without dividing by the change in x (2)."},
+      {"text": "2", "isCorrect": false, "feedback": "This is just the change in x, not the actual rate of change of y relative to x."},
+      {"text": "1.5", "isCorrect": false, "feedback": "This doesn't match correctly dividing the change in y by the change in x."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A table shows: x=1,y=3; x=3,y=11; x=6,y=23. Is this relationship linear (constant rate of change)? Show why or why not.",
+    "options": [
+      {"text": "Yes, it is linear -- the rate of change is consistently 4 between each pair of points", "isCorrect": true, "feedback": "Correct -- (11-3)/(3-1)=8/2=4, and (23-11)/(6-3)=12/3=4 -- since the rate matches both times, this is a linear relationship."},
+      {"text": "No, it is not linear, since the x-values aren't evenly spaced", "isCorrect": false, "feedback": "Uneven spacing of x-values doesn't by itself indicate non-linearity -- what matters is whether the calculated rate of change stays CONSTANT, which it does here."},
+      {"text": "Yes, it is linear, but the rate of change cannot be determined", "isCorrect": false, "feedback": "The rate of change actually CAN be calculated here, and it turns out to be a consistent 4."},
+      {"text": "No, it is not linear, because the y-values are all different", "isCorrect": false, "feedback": "Different y-values don't indicate non-linearity -- what determines linearity is whether the RATE of change between points stays constant, which it does here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Compare how much the output changes for each single-unit increase in the input.", "medium": "See how much y increases each time x increases by 1.", "easy": "See how much y increases by, each time x goes up by 1."},
+    "medium": {"hard": "Divide the change in y-values by the corresponding change in x-values.", "medium": "Divide the difference in y (6) by the difference in x (2).", "easy": "Subtract 5 from 11 to get 6, then divide by 2."},
+    "hard": {"hard": "Calculate the rate of change between multiple different pairs of points, and check whether that rate remains exactly the same each time.", "medium": "Calculate the rate of change between the first two points, then between the last two points, and see if they match.", "easy": "Find the rate of change for each pair of points and see if they're the same number both times."}
+  }
+}
+]

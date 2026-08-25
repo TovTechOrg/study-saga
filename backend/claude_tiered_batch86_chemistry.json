@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between exothermic dissolving and the enthalpy of solution",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The 'enthalpy of solution' refers to:",
+    "options": [
+      {"text": "The overall heat change (released or absorbed) that occurs when a solute dissolves in a solvent", "isCorrect": true, "feedback": "Correct -- enthalpy of solution quantifies the net energy change specifically associated with the dissolution process."},
+      {"text": "The exact volume of solvent needed to dissolve a substance completely", "isCorrect": false, "feedback": "Volume needed is a separate concept from enthalpy of solution, which specifically concerns the HEAT CHANGE (energy), not volume requirements."},
+      {"text": "The specific color a solution turns after dissolving a substance", "isCorrect": false, "feedback": "Color change is an unrelated visual property -- enthalpy of solution specifically concerns the thermal ENERGY change during dissolution."},
+      {"text": "The exact time it takes for a substance to completely dissolve", "isCorrect": false, "feedback": "Dissolution time is a kinetic (rate-related) concept, separate from enthalpy of solution, which specifically concerns the thermodynamic ENERGY change during dissolution."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The overall enthalpy of solution depends on the balance between the energy required to separate solute particles from each other (lattice energy, endothermic) and the energy released when solute particles form new interactions with solvent molecules (hydration/solvation energy, exothermic). Why must BOTH of these energy components be considered to accurately predict a substance's overall dissolution behavior?",
+    "options": [
+      {"text": "Since the overall (NET) enthalpy of solution depends on which of these two competing energy processes is larger in magnitude, considering only ONE of them in isolation would give an incomplete and potentially incorrect picture of whether the overall dissolution process will be exothermic or endothermic", "isCorrect": true, "feedback": "Correct -- this necessary consideration of BOTH competing energy components (lattice energy and solvation energy) together is precisely why accurately predicting a substance's overall dissolution thermal behavior requires this more complete energy balance analysis, rather than considering either factor alone."},
+      {"text": "Only the lattice energy component actually matters for determining overall dissolution behavior", "isCorrect": false, "feedback": "This isn't accurate -- BOTH the lattice energy AND the solvation/hydration energy components are actually necessary considerations for accurately predicting overall dissolution behavior, not just one alone."},
+      {"text": "Only the solvation/hydration energy component actually matters for determining overall dissolution behavior", "isCorrect": false, "feedback": "This isn't accurate -- BOTH energy components (lattice energy AND solvation energy) are actually necessary considerations together, not just the solvation component alone."},
+      {"text": "These two energy components have no actual connection to predicting whether a dissolution process will be exothermic or endothermic overall", "isCorrect": false, "feedback": "This isn't accurate -- these two energy components are DIRECTLY and centrally connected to determining the overall exothermic/endothermic nature of a dissolution process, based on their relative magnitudes."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some ionic compounds dissolve in water even though the process is significantly endothermic overall (absorbing net energy), seemingly making the process energetically 'unfavorable.' Given that dissolution still occurs spontaneously in these cases, what does this suggest about the COMPLETE thermodynamic picture beyond just enthalpy (heat) considerations alone?",
+    "options": [
+      {"text": "Spontaneity in chemical/physical processes depends on BOTH enthalpy (heat) changes AND entropy (disorder) changes together (via the Gibbs free energy equation), meaning a process can still occur spontaneously even if endothermic, provided there's a sufficiently large accompanying increase in entropy (disorder) to favor spontaneity overall", "isCorrect": true, "feedback": "Correct -- this recognition that spontaneity depends on the COMBINED consideration of both enthalpy AND entropy changes (not enthalpy alone) explains why certain endothermic dissolution processes can still occur spontaneously, provided sufficient entropy increase accompanies them."},
+      {"text": "This scenario is actually impossible -- endothermic processes could never occur spontaneously under any circumstances", "isCorrect": false, "feedback": "This isn't accurate -- endothermic dissolution processes occurring spontaneously is actually a well-documented, real chemical phenomenon, precisely because spontaneity depends on more than just enthalpy considerations alone (entropy also plays a crucial role)."},
+      {"text": "Enthalpy is actually the ONLY factor that determines whether a process will occur spontaneously", "isCorrect": false, "feedback": "This isn't accurate -- enthalpy is only ONE of the factors determining spontaneity; ENTROPY (disorder) is also a crucial complementary factor, together determining overall spontaneity via the Gibbs free energy relationship."},
+      {"text": "Entropy has no actual connection to explaining why certain endothermic processes can still occur spontaneously", "isCorrect": false, "feedback": "This isn't accurate -- entropy is actually DIRECTLY and centrally connected to explaining this phenomenon, since a sufficiently large entropy increase can make an overall process spontaneous even when it's endothermic."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This thermodynamic quantity represents the net heat exchanged with the surroundings during the dissolution process.", "medium": "This is the total heat given off or absorbed when something dissolves.", "easy": "This is the total heat given off or absorbed when something dissolves."},
+    "medium": {"hard": "Consider how the NET outcome of two opposing energy processes (one requiring energy input, one releasing energy) depends specifically on their relative magnitudes compared against each other.", "medium": "It's like a tug-of-war between the energy needed to pull the solid apart and the energy released when the parts bond with water -- you need to know both sides to know who 'wins.'", "easy": "It's a tug-of-war between energy needed to pull the solid apart and energy released bonding with water."},
+    "hard": {"hard": "Consider how incorporating entropy alongside enthalpy within the Gibbs free energy framework provides a more complete thermodynamic criterion for predicting process spontaneity, beyond enthalpy considerations in isolation.", "medium": "Even if a process absorbs energy overall, it can still happen naturally if it also creates enough extra 'randomness' or disorder to make up for that energy cost.", "easy": "Even if a process absorbs energy, it can still happen if it creates enough extra disorder to make up for it."}
+  }
+}
+]

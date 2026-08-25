@@ -1,0 +1,207 @@
+[
+{
+  "topic": "the Pythagorean theorem converse (identifying right triangles)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If a triangle's three sides satisfy a² + b² = c², what type of triangle must it be?",
+    "options": [
+      {"text": "A right triangle", "isCorrect": true, "feedback": "Correct -- this relationship is only true for right triangles."},
+      {"text": "An equilateral triangle", "isCorrect": false, "feedback": "Equilateral triangles have all equal sides and angles, which isn't guaranteed by this equation."},
+      {"text": "An obtuse triangle", "isCorrect": false, "feedback": "Obtuse triangles don't satisfy this exact equation -- their longest side squared is actually greater than the sum of the other two squared."},
+      {"text": "A triangle with no sides at all", "isCorrect": false, "feedback": "This equation confirms a specific type of triangle exists, not that no triangle exists."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A triangle has sides of 5, 12, and 13. Is this a right triangle?",
+    "options": [
+      {"text": "Yes, because 5²+12²=13² (25+144=169)", "isCorrect": true, "feedback": "Correct -- since the Pythagorean relationship holds true, this must be a right triangle."},
+      {"text": "No, because the sides don't form a valid triangle", "isCorrect": false, "feedback": "These sides do form a valid triangle -- in fact, they satisfy the exact right-triangle relationship."},
+      {"text": "Yes, because all three sides are different lengths", "isCorrect": false, "feedback": "Having three different side lengths alone doesn't guarantee a right triangle -- the specific Pythagorean relationship must hold."},
+      {"text": "No, because 5+12 does not equal 13", "isCorrect": false, "feedback": "Simple addition of sides isn't the right test -- the Pythagorean relationship uses squares, not simple addition."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A triangle has sides of 7, 8, and 10. Is this triangle a right triangle?",
+    "options": [
+      {"text": "No, because 7²+8²=113, which does not equal 10²=100", "isCorrect": true, "feedback": "Correct -- since the sums don't match, this triangle does not satisfy the Pythagorean relationship and isn't a right triangle."},
+      {"text": "Yes, because 7+8 is greater than 10", "isCorrect": false, "feedback": "This only confirms the sides can form SOME triangle (triangle inequality) -- it doesn't test for a right angle specifically."},
+      {"text": "Yes, because all sides are whole numbers", "isCorrect": false, "feedback": "Being whole numbers doesn't determine whether a triangle is a right triangle -- the Pythagorean relationship must specifically hold."},
+      {"text": "No, because the triangle is too large", "isCorrect": false, "feedback": "Size isn't the deciding factor -- whether the squared side relationship holds true is what matters."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This special relationship between squared side lengths only holds true for one particular kind of triangle.", "medium": "This equation is the defining relationship for one very specific triangle type.", "easy": "This equation only works for right triangles."},
+    "medium": {"hard": "Square the two shorter sides, add them together, and compare that sum to the square of the longest side.", "medium": "Square 5 and 12, add them together, then compare to 13 squared.", "easy": "Square 5 and 12, add them, and see if it equals 13 squared (169)."},
+    "hard": {"hard": "Square the two shorter sides, add them together, and compare that sum to the square of the longest side to test for a right angle.", "medium": "Square 7 and 8, add them together, then compare to 10 squared (100).", "easy": "Square 7 and 8, add them (113), and compare to 10 squared (100) -- they don't match."}
+  }
+},
+{
+  "topic": "converting between mixed numbers and decimals",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 2 1/2 written as a decimal?",
+    "options": [
+      {"text": "2.5", "isCorrect": true, "feedback": "Correct -- the fractional part 1/2 equals 0.5, added to the whole number 2."},
+      {"text": "2.12", "isCorrect": false, "feedback": "This doesn't correctly convert the fraction 1/2 into its decimal form."},
+      {"text": "1.2", "isCorrect": false, "feedback": "This doesn't correctly represent the whole number 2 plus the fraction."},
+      {"text": "21.2", "isCorrect": false, "feedback": "This misplaces the decimal point entirely."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 3 3/4 written as a decimal?",
+    "options": [
+      {"text": "3.75", "isCorrect": true, "feedback": "Correct -- 3/4 equals 0.75, added to the whole number 3."},
+      {"text": "3.34", "isCorrect": false, "feedback": "This doesn't correctly convert 3/4 into its decimal form."},
+      {"text": "3.43", "isCorrect": false, "feedback": "This swaps the digits rather than correctly converting the fraction."},
+      {"text": "0.75", "isCorrect": false, "feedback": "This forgets to include the whole number 3."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is 5 2/3 written as a decimal, rounded to the nearest hundredth?",
+    "options": [
+      {"text": "5.67", "isCorrect": true, "feedback": "Correct -- 2/3 is approximately 0.667, which rounds to 0.67, added to 5."},
+      {"text": "5.23", "isCorrect": false, "feedback": "This doesn't correctly convert 2/3 into a decimal."},
+      {"text": "5.66", "isCorrect": false, "feedback": "This rounds down instead of up at the hundredths place, since the next digit (6) rounds it up to 7."},
+      {"text": "2.67", "isCorrect": false, "feedback": "This forgets to include the whole number 5."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Convert the fractional part to a decimal, then add it to the whole number part.", "medium": "Convert 1/2 to a decimal, then add it to 2.", "easy": "Half of something as a decimal is 0.5 -- add that to 2."},
+    "medium": {"hard": "Convert the fractional part to a decimal, then add it to the whole number part.", "medium": "Divide 3 by 4 to convert the fraction, then add it to 3.", "easy": "Three-fourths as a decimal is 0.75 -- add that to 3."},
+    "hard": {"hard": "Divide the fraction's numerator by its denominator, round the resulting decimal appropriately, then add it to the whole number part.", "medium": "Divide 2 by 3 to get a repeating decimal, round it to the hundredths place, then add it to 5.", "easy": "Divide 2 by 3 to get about 0.667, round to 0.67, then add 5."}
+  }
+},
+{
+  "topic": "finding the mode in a frequency table",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A survey shows 3 people like red, 7 like blue, and 2 like green. What is the mode of this data?",
+    "options": [
+      {"text": "Blue", "isCorrect": true, "feedback": "Correct -- blue has the highest frequency (7), making it the mode."},
+      {"text": "Red", "isCorrect": false, "feedback": "Red only has a frequency of 3, less than blue's 7."},
+      {"text": "Green", "isCorrect": false, "feedback": "Green only has a frequency of 2, the lowest of the three."},
+      {"text": "12", "isCorrect": false, "feedback": "This is the total number of people surveyed, not the mode (most frequent category)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a class, test scores show: 70 (4 students), 80 (6 students), 90 (6 students), 100 (2 students). What can you say about the mode?",
+    "options": [
+      {"text": "There are two modes: 80 and 90, since both have the highest frequency of 6", "isCorrect": true, "feedback": "Correct -- when two values are tied for the highest frequency, the data set is called bimodal, with two modes."},
+      {"text": "The mode is 100, since it's the highest score", "isCorrect": false, "feedback": "The mode is about frequency (how often a value appears), not the numerical value itself -- 100 only appears twice."},
+      {"text": "The mode is 70, since it's the lowest score", "isCorrect": false, "feedback": "The mode is about frequency, not the lowest value -- 70 only appears 4 times, fewer than 80 or 90."},
+      {"text": "There is no mode in this data set", "isCorrect": false, "feedback": "There actually are two tied modes here (80 and 90), not zero."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A data set has every single value appearing exactly once (no repeats at all). What can be said about its mode?",
+    "options": [
+      {"text": "The data set has no mode, since no value repeats more often than any other", "isCorrect": true, "feedback": "Correct -- mode requires at least one value to occur more frequently than others; with no repeats, there's no clear \"most common\" value."},
+      {"text": "The mode is the largest number in the set", "isCorrect": false, "feedback": "Mode isn't about the largest value -- it's about the most frequently occurring value, which doesn't exist here since nothing repeats."},
+      {"text": "The mode is the smallest number in the set", "isCorrect": false, "feedback": "Mode isn't about the smallest value -- it's about frequency, which is equal (1) for every value here."},
+      {"text": "Every single number in the set is automatically a mode", "isCorrect": false, "feedback": "By convention, if no value repeats more than any other, the data set is typically described as having no mode at all."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measure identifies the category or value occurring with the greatest frequency.", "medium": "This is the value or category that appears the most often.", "easy": "This is the color that the most people chose."},
+    "medium": {"hard": "When multiple values tie for the highest frequency count, all of them qualify as modes simultaneously.", "medium": "When two scores tie for showing up the most, both of them count as modes.", "easy": "Since both 80 and 90 show up 6 times each, they're tied for the mode."},
+    "hard": {"hard": "The mode requires a value to appear MORE frequently than the others; uniform single occurrence across all values means no value stands out as most frequent.", "medium": "Since every value appears the same number of times (once), none of them stands out as more frequent than the rest.", "easy": "Since every value shows up just once, none of them is more common than any other."}
+  }
+},
+{
+  "topic": "calculating simple probability of a compound event with a spinner and coin",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A coin is flipped once. What is the probability of getting tails?",
+    "options": [
+      {"text": "1/2", "isCorrect": true, "feedback": "Correct -- there are two equally likely outcomes, and tails is one of them."},
+      {"text": "1/4", "isCorrect": false, "feedback": "A coin only has two sides, not four possible outcomes."},
+      {"text": "1", "isCorrect": false, "feedback": "This would mean tails is guaranteed, which isn't true."},
+      {"text": "0", "isCorrect": false, "feedback": "This would mean tails is impossible, which isn't true."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A spinner has 4 equal sections numbered 1-4. What is the probability of spinning an even number?",
+    "options": [
+      {"text": "1/2", "isCorrect": true, "feedback": "Correct -- 2 out of 4 numbers (2 and 4) are even, giving 2/4=1/2."},
+      {"text": "1/4", "isCorrect": false, "feedback": "This undercounts the even numbers -- there are two (2 and 4), not one."},
+      {"text": "2/4", "isCorrect": false, "feedback": "This is technically correct before simplifying, but should be reduced to 1/2."},
+      {"text": "3/4", "isCorrect": false, "feedback": "This overcounts the even numbers on the spinner -- there are only 2 out of 4."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A coin is flipped and a 4-section spinner (numbered 1-4) is spun. What is the probability of getting heads AND spinning an even number?",
+    "options": [
+      {"text": "1/4", "isCorrect": true, "feedback": "Correct -- multiply the individual probabilities: 1/2 (heads) × 1/2 (even number) = 1/4."},
+      {"text": "1/2", "isCorrect": false, "feedback": "This only reflects one of the two individual events, not their combined probability."},
+      {"text": "1/8", "isCorrect": false, "feedback": "This doesn't match correctly multiplying 1/2 by 1/2."},
+      {"text": "3/4", "isCorrect": false, "feedback": "This doesn't correctly compute the combined probability of both independent events."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "There are only two equally likely outcomes for a coin flip.", "medium": "Out of two equally likely outcomes, count how many are tails.", "easy": "A coin has two sides -- what's the chance of one specific side?"},
+    "medium": {"hard": "Count the favorable outcomes (even numbers) out of the total equally likely outcomes.", "medium": "Count how many of the 4 numbers are even, then put that over 4.", "easy": "Two of the four numbers (2 and 4) are even -- put that over 4."},
+    "hard": {"hard": "For two independent events happening together, multiply their individual probabilities.", "medium": "Multiply the probability of heads by the probability of spinning an even number.", "easy": "Multiply 1/2 by 1/2 to get the combined probability."}
+  }
+},
+{
+  "topic": "identifying proportional relationships in tables",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A table shows: when x=1, y=3; when x=2, y=6; when x=3, y=9. Is this relationship proportional?",
+    "options": [
+      {"text": "Yes, because y is always 3 times x", "isCorrect": true, "feedback": "Correct -- a constant ratio between y and x (here, always 3) indicates a proportional relationship."},
+      {"text": "No, because x and y are different numbers", "isCorrect": false, "feedback": "x and y being different numbers doesn't rule out proportionality -- what matters is whether their ratio stays constant."},
+      {"text": "No, because the numbers keep increasing", "isCorrect": false, "feedback": "Increasing values don't rule out proportionality -- what matters is whether the ratio between them stays the same."},
+      {"text": "Yes, because all the numbers are odd", "isCorrect": false, "feedback": "Whether numbers are odd or even has nothing to do with proportionality -- the constant ratio is what matters."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A table shows: when x=2, y=5; when x=4, y=9; when x=6, y=13. Is this relationship proportional?",
+    "options": [
+      {"text": "No, because the ratio of y to x is not constant (5/2 ≠ 9/4)", "isCorrect": true, "feedback": "Correct -- proportional relationships require a constant ratio between corresponding values, which isn't the case here."},
+      {"text": "Yes, because y increases as x increases", "isCorrect": false, "feedback": "Both values increasing together isn't enough -- the ratio between them must stay exactly constant for true proportionality."},
+      {"text": "Yes, because the numbers are all whole numbers", "isCorrect": false, "feedback": "Being whole numbers doesn't determine proportionality -- a constant ratio is required."},
+      {"text": "No, because x and y start with different numbers", "isCorrect": false, "feedback": "Starting values being different doesn't determine proportionality -- what matters is whether the ratio stays constant across all points."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A relationship is represented by the equation y = 4x + 2. Is this a proportional relationship? Why or why not?",
+    "options": [
+      {"text": "No, because it has a y-intercept of 2, meaning y isn't zero when x is zero", "isCorrect": true, "feedback": "Correct -- true proportional relationships must pass through the origin (0,0), meaning y=0 when x=0, which fails here."},
+      {"text": "Yes, because it includes an x term with a coefficient", "isCorrect": false, "feedback": "Having an x term alone doesn't guarantee proportionality -- the equation must also have no constant added (a y-intercept of 0)."},
+      {"text": "Yes, because the equation is linear", "isCorrect": false, "feedback": "Being a straight line (linear) is necessary but not sufficient -- it must also pass through the origin to be truly proportional."},
+      {"text": "No, because the coefficient 4 is too large", "isCorrect": false, "feedback": "The size of the coefficient doesn't determine proportionality -- the presence of a nonzero y-intercept does."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "A proportional relationship maintains one single, unchanging ratio between the two variables throughout.", "medium": "Check whether dividing y by x gives the same number every single time.", "easy": "Divide each y by its matching x -- if you always get the same number, it's proportional."},
+    "medium": {"hard": "Calculate the ratio of y to x for each pair of values and check whether they all match exactly.", "medium": "Divide each y-value by its matching x-value and compare the results.", "easy": "Divide 5 by 2, then 9 by 4 -- do you get the same number both times?"},
+    "hard": {"hard": "A proportional relationship must be expressible as y=kx with no added constant, meaning it always passes through the point (0,0).", "medium": "For a relationship to be truly proportional, it needs to pass through the point where both x and y are zero.", "easy": "Check what happens when x is 0 -- for a proportional relationship, y should also be 0 there."}
+  }
+}
+]

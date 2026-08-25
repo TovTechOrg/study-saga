@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between center of mass and center of gravity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The 'center of mass' of an object refers to:",
+    "options": [
+      {"text": "The average position of all the mass making up that object", "isCorrect": true, "feedback": "Correct -- the center of mass represents the balance point where an object's total mass can be considered concentrated for many physics calculations."},
+      {"text": "The exact physical center point of an object's outer shape, regardless of mass distribution", "isCorrect": false, "feedback": "This isn't necessarily accurate -- for objects with UNEVEN mass distribution, the center of mass can be at a different location than the simple geometric center of the shape."},
+      {"text": "The heaviest single point within an object", "isCorrect": false, "feedback": "This isn't an accurate description -- center of mass represents an AVERAGE/BALANCE position of mass distribution, not necessarily corresponding to a single 'heaviest point.'"},
+      {"text": "A measurement of an object's total weight", "isCorrect": false, "feedback": "Total weight is a separate concept from center of mass, which specifically concerns the balance POINT/LOCATION of mass distribution, not a total weight measurement."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In most everyday situations on Earth's surface, 'center of mass' and 'center of gravity' refer to essentially the same point for a given object. Why might these two concepts actually differ (even if slightly) for a very large object experiencing a non-uniform gravitational field?",
+    "options": [
+      {"text": "Center of mass depends purely on how an object's MASS is distributed, while center of gravity specifically depends on how the force of GRAVITY (which can vary slightly across different parts of a very large object in a non-uniform field) acts on that distributed mass, meaning these two points can differ if gravitational strength isn't perfectly uniform across the object", "isCorrect": true, "feedback": "Correct -- this distinction, while negligible for most everyday-sized objects on Earth (where gravity is essentially uniform), becomes conceptually and potentially practically relevant for very large objects or significantly non-uniform gravitational fields (like near extremely massive astronomical bodies)."},
+      {"text": "Center of mass and center of gravity are actually always mathematically completely identical concepts, with absolutely no possible distinction", "isCorrect": false, "feedback": "This isn't accurate -- while these two points ARE essentially identical for most everyday situations (uniform gravity), they CAN technically differ under specific extreme conditions (very large objects, significantly non-uniform gravitational fields)."},
+      {"text": "Center of gravity depends purely on mass distribution, while center of mass depends on gravitational field variation", "isCorrect": false, "feedback": "This has it backwards -- CENTER OF MASS depends purely on mass distribution, while CENTER OF GRAVITY specifically depends on how gravity (which can vary) acts on that mass distribution, not the reverse."},
+      {"text": "Gravitational field variation has no actual connection to any potential difference between these two concepts", "isCorrect": false, "feedback": "This isn't accurate -- gravitational field variation (non-uniformity) is DIRECTLY and specifically connected to and is precisely the reason these two concepts CAN technically differ under certain extreme conditions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For balancing/stability purposes (like determining whether a tall, oddly-shaped object will tip over), physicists specifically use the CENTER OF GRAVITY (not simply center of mass) as the relevant reference point. Why does this specific choice make sense, especially considering the practical scenarios where these two points might theoretically differ?",
+    "options": [
+      {"text": "Since stability/tipping analysis fundamentally depends on how GRAVITY specifically acts on and pulls at the object (creating potential torque around a pivot point), the center of gravity (which accounts for gravity's actual influence pattern) is the conceptually and practically correct reference point, even though for typical everyday objects on Earth, this coincides with the center of mass anyway", "isCorrect": true, "feedback": "Correct -- this deliberate conceptual choice (using center of gravity specifically for stability analysis) reflects the underlying physics correctly, even though in the vast majority of everyday practical situations, this distinction has negligible practical consequence since center of mass and center of gravity essentially coincide under uniform gravity conditions."},
+      {"text": "Physicists actually always use center of MASS (never center of gravity) for analyzing balance and stability", "isCorrect": false, "feedback": "This isn't accurate -- physicists specifically and conceptually use CENTER OF GRAVITY (not simply center of mass) for stability/balance analysis, precisely because stability fundamentally concerns how GRAVITY acts on the object."},
+      {"text": "This specific conceptual choice has no actual connection to how gravity fundamentally influences object stability and tipping behavior", "isCorrect": false, "feedback": "This isn't accurate -- this specific conceptual choice (center of gravity) is DIRECTLY and fundamentally connected to correctly analyzing how gravity influences object stability and potential tipping behavior."},
+      {"text": "Center of gravity and center of mass would actually always give completely different, contradictory stability predictions", "isCorrect": false, "feedback": "This isn't accurate -- for the vast majority of everyday objects (under essentially uniform gravity), these two points COINCIDE, giving essentially IDENTICAL (not contradictory) practical stability predictions in typical situations."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This point represents the mass-weighted average spatial location of all constituent particles composing an object.", "medium": "This is like the 'balance point' of an object, based purely on how heavy each part of it is.", "easy": "This is like the balance point of an object, based on how heavy each part is."},
+    "medium": {"hard": "Consider how a spatially varying gravitational field strength across an object's extent could cause the gravity-weighted balance point to differ subtly from the purely mass-weighted balance point.", "medium": "One point is about where the 'stuff' (mass) is balanced, and the other is about where gravity's actual PULL is balanced -- these could differ slightly if gravity isn't perfectly even everywhere on the object.", "easy": "One point is about where mass is balanced, the other is about where gravity's pull is balanced -- usually the same, but not always."},
+    "hard": {"hard": "Consider how correctly modeling gravitational torque for tipping/stability analysis requires specifically accounting for the actual distributed gravitational force pattern, rather than mass distribution alone.", "medium": "Since tipping over is really about how gravity pulls and creates a turning force, it makes sense to use the point that's specifically about gravity's pull, not just about where the mass happens to be.", "easy": "Since tipping is about gravity's pull, it makes sense to use the point that's specifically about gravity, not just mass."}
+  }
+}
+]

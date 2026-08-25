@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the ideal mechanical advantage of simple machines",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'mechanical advantage' describe for a simple machine (like a lever or pulley)?",
+    "options": [
+      {"text": "How much a machine multiplies the input force needed to accomplish a task", "isCorrect": true, "feedback": "Correct -- mechanical advantage describes the ratio by which a simple machine amplifies an applied input force."},
+      {"text": "How much a machine reduces the total amount of work required overall", "isCorrect": false, "feedback": "Simple machines don't reduce the TOTAL work required (ignoring friction) -- they trade force for distance, but mechanical advantage specifically describes FORCE amplification, not overall work reduction."},
+      {"text": "The physical weight of the machine itself", "isCorrect": false, "feedback": "The machine's own weight isn't what mechanical advantage measures -- it specifically describes the machine's force-multiplying capability."},
+      {"text": "How quickly a machine can complete a task", "isCorrect": false, "feedback": "Speed of task completion isn't what mechanical advantage measures -- it specifically concerns the ratio of output force to input force."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A lever allows a person to lift a heavy rock using less applied force than lifting it directly, but the person must push their end of the lever through a much larger distance to lift the rock the same height. Why does this force-distance tradeoff occur?",
+    "options": [
+      {"text": "Since simple machines (ignoring friction) don't actually reduce total work (work=force×distance), any decrease in required input FORCE must be compensated by a proportional increase in the input DISTANCE needed to accomplish the same amount of work", "isCorrect": true, "feedback": "Correct -- this fundamental force-distance tradeoff (conserving total work) is a defining characteristic of how simple machines like levers provide mechanical advantage, without violating the principle of energy/work conservation."},
+      {"text": "This lever actually violates the principle of conservation of energy", "isCorrect": false, "feedback": "This isn't accurate -- this scenario doesn't violate energy conservation at all; it specifically demonstrates HOW a lever trades reduced force for increased distance while keeping total work (and thus energy) conserved."},
+      {"text": "Using a lever actually requires MORE total work than lifting the rock directly", "isCorrect": false, "feedback": "This isn't accurate -- ignoring friction, a lever requires approximately the SAME total work as lifting directly; it simply redistributes that work between force and distance factors, not increasing the total work required."},
+      {"text": "Force and distance have no actual mathematical relationship in this scenario", "isCorrect": false, "feedback": "Force and distance ARE directly mathematically related here (through the constant total work required), which is precisely the basis for this fundamental force-distance tradeoff in simple machines."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A pulley system with an ideal mechanical advantage of 4 means the input force needed is theoretically 1/4 of the output force. In reality, however, some additional input force is always needed beyond this theoretical value, due to friction in the pulley's moving parts. How does this practical consideration affect the pulley's actual (versus ideal) mechanical advantage?",
+    "options": [
+      {"text": "The actual mechanical advantage will always be somewhat LESS than the ideal (theoretical) value, since some of the input force is 'wasted' overcoming friction rather than contributing to lifting the actual output load", "isCorrect": true, "feedback": "Correct -- this distinction between ideal (frictionless, theoretical) and actual (real-world, friction-affected) mechanical advantage is an important practical consideration in analyzing how real simple machines perform compared to their theoretical maximum efficiency."},
+      {"text": "Friction actually has no effect on a pulley system's real-world mechanical advantage", "isCorrect": false, "feedback": "This isn't accurate -- friction DOES have a real, measurable effect on a pulley's ACTUAL mechanical advantage, causing it to fall short of the theoretical IDEAL value."},
+      {"text": "The actual mechanical advantage would always be GREATER than the ideal theoretical value due to friction", "isCorrect": false, "feedback": "This is backwards -- friction specifically REDUCES actual mechanical advantage below the ideal theoretical value, not increases it beyond that ideal."},
+      {"text": "Ideal and actual mechanical advantage are always exactly identical in any real-world pulley system", "isCorrect": false, "feedback": "This isn't accurate -- in REAL-WORLD systems, friction and other inefficiencies typically cause actual mechanical advantage to be somewhat LESS than the theoretical ideal value, not identical to it."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity represents the ratio by which a simple machine amplifies an applied input force relative to the resulting output force.", "medium": "This tells you how much a machine multiplies the force you put into it.", "easy": "This tells you how much a machine multiplies the force you put in."},
+    "medium": {"hard": "Recall that total work (force times distance) remains approximately constant for an ideal simple machine, meaning any force reduction must be offset by a corresponding distance increase.", "medium": "Using less force but moving your end farther keeps the total amount of 'work' about the same either way.", "easy": "Using less force but moving farther keeps the total work about the same either way."},
+    "hard": {"hard": "Consider how energy lost to friction represents input force that fails to contribute toward the useful output force, thereby reducing the realized mechanical advantage below its theoretical maximum.", "medium": "Since some of your pushing effort gets 'eaten up' by friction instead of actually lifting the load, the real advantage ends up being a bit less than the perfect theoretical number.", "easy": "Since some pushing effort gets 'eaten up' by friction, the real advantage ends up a bit less than the perfect number."}
+  }
+}
+]

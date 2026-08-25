@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between conductors and insulators",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An electrical 'conductor' (like copper metal) allows electric charge to:",
+    "options": [
+      {"text": "Flow through it relatively freely", "isCorrect": true, "feedback": "Correct -- conductors have loosely bound outer electrons that can move relatively freely, allowing electric charge to flow through them easily."},
+      {"text": "Remain fixed in place, unable to move through the material", "isCorrect": false, "feedback": "That describes an INSULATOR, not a conductor -- insulators resist charge flow, while conductors specifically allow charge to move relatively freely."},
+      {"text": "Instantly disappear from existence upon contact with the material", "isCorrect": false, "feedback": "This isn't accurate -- electric charge is conserved and doesn't disappear; a conductor simply allows charge to MOVE through it, not vanish."},
+      {"text": "Only flow when the material is cooled to near absolute zero temperature", "isCorrect": false, "feedback": "This isn't accurate -- ordinary conductors allow charge flow at normal room temperatures; near-absolute-zero behavior relates to superconductivity, a distinct and more specialized phenomenon."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Metals are good electrical conductors because their outer electrons are only loosely bound to individual atoms and can move relatively freely throughout the material, while insulators have electrons tightly bound to their individual atoms. Why does this difference in electron binding directly explain differing conductivity?",
+    "options": [
+      {"text": "Electric current fundamentally requires charge (electrons) to be able to MOVE through a material in response to an applied electric field -- since a conductor's loosely bound electrons can move relatively freely between atoms, they readily respond to an applied field and flow as current, but an insulator's tightly bound electrons cannot break free from their individual atoms, preventing any significant sustained current flow", "isCorrect": true, "feedback": "Correct -- this explanation of electron mobility (loosely bound and free to move in conductors, versus tightly bound and immobile in insulators) directly and correctly connects atomic-level electron binding to the macroscopic property of electrical conductivity."},
+      {"text": "Electron binding strength within atoms actually has no real connection to a material's electrical conductivity", "isCorrect": false, "feedback": "This isn't accurate -- electron binding strength IS DIRECTLY connected to and is the fundamental atomic-level explanation for a material's electrical conductivity."},
+      {"text": "Insulators would actually have more loosely bound electrons than conductors, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- conductors have MORE loosely bound electrons than insulators, not the reverse, which is precisely why conductors allow current flow more readily."},
+      {"text": "Both conductors and insulators would actually have identical electron mobility, with no meaningful difference between them", "isCorrect": false, "feedback": "This isn't accurate -- conductors and insulators DIFFER SIGNIFICANTLY in electron mobility, which is precisely the underlying reason for their vastly different conductivity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Semiconductors (like silicon) have electrical conductivity intermediate between conductors and insulators, and crucially, their conductivity can be dramatically increased by adding small amounts of specific impurity atoms (a process called 'doping'). Explain why this doping process specifically increases conductivity in terms of the number of available charge carriers.",
+    "options": [
+      {"text": "A pure semiconductor has relatively few electrons free to move and conduct current, since most electrons are involved in stable bonds within the crystal structure, but introducing specific impurity atoms (doping) adds either extra loosely-bound electrons or creates 'holes' (missing electrons) that can effectively also carry charge, substantially increasing the total number of available charge carriers and therefore dramatically increasing the material's overall conductivity", "isCorrect": true, "feedback": "Correct -- this explanation of doping increasing the number of available charge carriers (extra electrons or holes) correctly explains why this process dramatically boosts semiconductor conductivity, a foundational principle underlying all modern semiconductor electronics like transistors and computer chips."},
+      {"text": "Doping a semiconductor would actually decrease its conductivity, rather than increasing it", "isCorrect": false, "feedback": "This is backwards -- doping specifically INCREASES a semiconductor's conductivity (often dramatically), not decreases it, by adding available charge carriers."},
+      {"text": "The number of available charge carriers has no actual connection to explaining a material's overall electrical conductivity", "isCorrect": false, "feedback": "This isn't accurate -- the number of available charge carriers IS DIRECTLY connected to and is fundamentally what determines a material's electrical conductivity."},
+      {"text": "A pure, undoped semiconductor would actually have just as many available charge carriers as a doped semiconductor", "isCorrect": false, "feedback": "This isn't accurate -- a pure, undoped semiconductor has SIGNIFICANTLY FEWER available charge carriers than a doped one, which is precisely why doping so dramatically increases conductivity."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This category of material permits comparatively unimpeded translational motion of charge carriers throughout its structure.", "medium": "This is a material that lets electric charge move through it pretty easily.", "easy": "This is a material that lets electric charge move through it easily."},
+    "medium": {"hard": "Consider how the degree of electron mobility, dictated by how tightly electrons are bound to their parent atoms, directly governs a material's capacity to sustain current flow under an applied field.", "medium": "Loose electrons that can wander around easily can carry current when pushed by an electric field, but electrons stuck tight to their own atom just can't break free to do that.", "easy": "Loose electrons that can wander around can carry current when pushed; electrons stuck tight to their atom can't."},
+    "hard": {"hard": "Consider how introducing dopant atoms supplies additional mobile charge carriers, either surplus electrons or electron-deficient holes, thereby substantially augmenting the material's net conductive capacity.", "medium": "Adding in special impurity atoms gives the material either extra spare electrons or empty 'holes' that can also carry charge around, so suddenly there's a lot more stuff available to carry current than before.", "easy": "Adding special impurity atoms gives the material extra electrons or 'holes' that can carry charge, so conductivity goes up a lot."}
+  }
+}
+]

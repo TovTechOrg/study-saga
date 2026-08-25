@@ -1,0 +1,166 @@
+[
+{
+  "topic": "the difference between concentration and amount of solute",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'concentration' describe about a solution?",
+    "options": [
+      {"text": "How much solute is dissolved relative to the amount of solvent (or total solution)", "isCorrect": true, "feedback": "Correct -- concentration is a ratio, not just a raw amount."},
+      {"text": "The total weight of the solution", "isCorrect": false, "feedback": "Total weight alone doesn't capture the relative amount of solute -- that's what concentration specifically measures."},
+      {"text": "The color of the solution only", "isCorrect": false, "feedback": "While concentration can sometimes correlate with color intensity, concentration itself is a defined ratio, not simply a color."},
+      {"text": "The temperature of the solution", "isCorrect": false, "feedback": "Temperature is a separate property from concentration."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Solution A has 10g of salt in 100mL of water. Solution B has 10g of salt in 500mL of water. Which solution is more concentrated?",
+    "options": [
+      {"text": "Solution A, because it has the same amount of salt in less water", "isCorrect": true, "feedback": "Correct -- with the same solute amount but less solvent, Solution A has a higher salt-to-water ratio."},
+      {"text": "Solution B, because it has more total volume", "isCorrect": false, "feedback": "More total volume with the same solute amount actually makes the solution LESS concentrated, not more."},
+      {"text": "They are equally concentrated, since they have the same amount of salt", "isCorrect": false, "feedback": "Having the same amount of solute doesn't mean equal concentration -- the different volumes make their ratios different."},
+      {"text": "It's impossible to know without more information", "isCorrect": false, "feedback": "Enough information is given to directly compare their salt-to-water ratios."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two solutions both contain 20g of sugar, but Solution X has a higher concentration than Solution Y. What must be true about their volumes?",
+    "options": [
+      {"text": "Solution X has a smaller total volume than Solution Y", "isCorrect": true, "feedback": "Correct -- with the same amount of solute, a smaller volume results in a higher concentration."},
+      {"text": "Solution X has a larger total volume than Solution Y", "isCorrect": false, "feedback": "A larger volume with the same solute amount would actually result in a LOWER concentration, not higher."},
+      {"text": "Both solutions must have exactly the same volume", "isCorrect": false, "feedback": "If the volumes were identical with the same solute amount, the concentrations would be identical too, not different."},
+      {"text": "Volume has no effect on concentration at all", "isCorrect": false, "feedback": "Volume is a critical part of the concentration ratio -- it directly affects how concentrated a solution is."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value expresses a ratio between the dissolved substance and the total solution or solvent amount.", "medium": "This describes how much dissolved stuff there is compared to the amount of liquid.", "easy": "This describes how much dissolved stuff is packed into a certain amount of liquid."},
+    "medium": {"hard": "Compare the solute-to-solvent ratio for each solution, factoring in both the solute amount and the volume.", "medium": "Since both have the same salt, the one with less water will have a stronger, more concentrated ratio.", "easy": "Since both have the same amount of salt, the one with LESS water is more concentrated."},
+    "hard": {"hard": "Since concentration is solute amount divided by volume, and solute amounts are equal here, a higher concentration necessarily implies a smaller volume.", "medium": "Since they have the same amount of sugar, the more concentrated one must have less liquid overall.", "easy": "Since they have the same sugar amount, the more concentrated one must have less liquid."}
+  }
+},
+{
+  "topic": "the periodic table: alkaline earth metals",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Where are the alkaline earth metals located on the periodic table?",
+    "options": [
+      {"text": "Group 2 (the second column)", "isCorrect": true, "feedback": "Correct -- elements like magnesium and calcium make up Group 2, the alkaline earth metals."},
+      {"text": "Group 1 (the first column)", "isCorrect": false, "feedback": "Group 1 contains the alkali metals, a different group from the alkaline earth metals."},
+      {"text": "Group 18 (the last column)", "isCorrect": false, "feedback": "Group 18 contains the noble gases, unrelated to the alkaline earth metals."},
+      {"text": "Group 17", "isCorrect": false, "feedback": "Group 17 contains the halogens, a completely different group from the alkaline earth metals."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How reactive are alkaline earth metals compared to the alkali metals in Group 1?",
+    "options": [
+      {"text": "Generally less reactive than alkali metals, though still fairly reactive compared to many other elements", "isCorrect": true, "feedback": "Correct -- alkaline earth metals (Group 2) are reactive but generally less so than the highly reactive alkali metals (Group 1)."},
+      {"text": "Far more reactive than alkali metals", "isCorrect": false, "feedback": "This is backwards -- Group 1 alkali metals are generally more reactive than Group 2 alkaline earth metals."},
+      {"text": "Completely unreactive, like noble gases", "isCorrect": false, "feedback": "Alkaline earth metals are still fairly reactive -- they're not inert like the noble gases."},
+      {"text": "Exactly as reactive as alkali metals, with no difference", "isCorrect": false, "feedback": "There is a genuine, well-documented difference in reactivity between these two groups."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Alkaline earth metals have 2 valence electrons, while alkali metals have only 1. How does this help explain why alkali metals are generally more reactive?",
+    "options": [
+      {"text": "It's generally easier for an atom to lose just 1 electron than 2, so alkali metals react and lose their single valence electron more readily", "isCorrect": true, "feedback": "Correct -- losing fewer electrons to achieve a stable configuration is typically an easier, faster process, contributing to alkali metals' higher reactivity."},
+      {"text": "Having 2 valence electrons makes an atom heavier and therefore less reactive automatically", "isCorrect": false, "feedback": "Weight isn't the direct explanation here -- it's specifically about how many electrons must be lost to reach a stable configuration."},
+      {"text": "Valence electron count has no real connection to reactivity", "isCorrect": false, "feedback": "Valence electron count is actually a core factor in determining an element's chemical reactivity."},
+      {"text": "Alkaline earth metals actually have zero valence electrons", "isCorrect": false, "feedback": "Alkaline earth metals specifically have 2 valence electrons, not zero -- that's a defining feature of Group 2."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This group sits in the second column of the periodic table, right next to the most reactive metals.", "medium": "This group is right next to the most reactive metals, in the second column.", "easy": "This group is the second column of the periodic table."},
+    "medium": {"hard": "Compare the ease of losing a single outer electron versus losing two to reach a stable configuration.", "medium": "Losing just one electron is generally easier for an atom than losing two.", "easy": "Metals that only need to lose one electron tend to react more easily than ones needing to lose two."},
+    "hard": {"hard": "Ionization requires energy, and removing a single electron generally requires less cumulative energy than removing two sequentially, favoring faster/easier reactions for single-valence-electron atoms.", "medium": "It generally takes less energy and effort for an atom to give up just one electron compared to giving up two.", "easy": "It's generally easier for an atom to give away just one electron than to give away two."}
+  }
+},
+{
+  "topic": "the difference between a physical mixture and a solution",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Is a solution (like salt dissolved in water) considered a type of mixture?",
+    "options": [
+      {"text": "Yes, a solution is a specific type of homogeneous mixture", "isCorrect": true, "feedback": "Correct -- a solution is a mixture where the components are evenly and completely dissolved together."},
+      {"text": "No, a solution is a type of pure element", "isCorrect": false, "feedback": "A solution contains at least two different substances (solute and solvent), so it isn't a pure element."},
+      {"text": "No, a solution is a type of compound", "isCorrect": false, "feedback": "A solution's components aren't chemically bonded together, so it isn't classified as a compound."},
+      {"text": "Solutions and mixtures are completely unrelated concepts", "isCorrect": false, "feedback": "Solutions are actually a specific, common example within the broader mixture category."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Sand mixed with water (which settles if left alone) is a mixture, but not a true solution. Why?",
+    "options": [
+      {"text": "The sand doesn't actually dissolve -- it just gets suspended and eventually settles, unlike a truly dissolved solute", "isCorrect": true, "feedback": "Correct -- true solutions involve the solute breaking down at a molecular level and staying evenly dispersed, unlike sand's simple physical suspension."},
+      {"text": "Sand and water are actually chemically bonded together", "isCorrect": false, "feedback": "Sand and water aren't chemically bonded in this mixture -- they remain physically separate substances, which is part of why it's not a true solution."},
+      {"text": "This mixture doesn't actually contain any water", "isCorrect": false, "feedback": "Water is clearly present in this mixture -- the issue is that the sand doesn't dissolve into it."},
+      {"text": "There is no real difference between this and a true solution", "isCorrect": false, "feedback": "There's a clear, defining difference: true solutions involve complete dissolving, while this sand-water mixture does not."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Muddy water can be separated by simple filtration, but salt water cannot be separated this way. What does this reveal about the difference between these two mixtures at a molecular level?",
+    "options": [
+      {"text": "In muddy water, the dirt particles are large and simply suspended, while in salt water, the salt has broken down into much smaller, individual ions/molecules that pass through a filter along with the water", "isCorrect": true, "feedback": "Correct -- true dissolving happens at the molecular/ionic level, making the solute far too small to be physically filtered out, unlike larger suspended particles."},
+      {"text": "Salt water doesn't actually contain any dissolved salt at all", "isCorrect": false, "feedback": "Salt water genuinely contains dissolved salt -- it's precisely because the salt has broken down so completely (into ions) that it passes through a filter."},
+      {"text": "Muddy water and salt water are chemically identical", "isCorrect": false, "feedback": "These are quite different at a molecular level -- one involves large suspended solid particles, the other involves fully dissolved ions."},
+      {"text": "Filtration works equally well on both types of mixtures", "isCorrect": false, "feedback": "Filtration specifically fails to separate a true solution like salt water, unlike its effectiveness on a suspension like muddy water."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "A solution is one specific category nested under the broader classification covering combined, non-chemically-bonded substances.", "medium": "A solution fits under a broader category that includes many combined substances that aren't chemically bonded.", "easy": "A solution is a specific type of mixture where things are evenly blended."},
+    "medium": {"hard": "True dissolving breaks a substance down to an individual molecular/ionic level, unlike simple physical suspension of intact particles.", "medium": "The sand stays as tiny solid chunks floating around, rather than actually breaking down and merging with the water at a tiny scale.", "easy": "The sand doesn't really dissolve -- it just floats around as tiny solid bits."},
+    "hard": {"hard": "Filter pores are large enough to catch bulky suspended particles but far too large to catch individual dissolved ions, which pass through freely alongside the water molecules.", "medium": "The dirt particles are big enough to get physically caught by a filter, but dissolved salt has broken down so small it just passes right through with the water.", "easy": "The dirt particles are big enough to get caught by a filter, but dissolved salt is broken down so small it just flows right through."}
+  }
+},
+{
+  "topic": "the difference between an exothermic reaction and combustion specifically",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Is combustion (burning) generally an exothermic or endothermic process?",
+    "options": [
+      {"text": "Exothermic -- it releases significant heat and light energy", "isCorrect": true, "feedback": "Correct -- combustion reactions release energy, which is why fire feels hot and produces light."},
+      {"text": "Endothermic -- it absorbs heat", "isCorrect": false, "feedback": "Combustion is a classic example of a strongly exothermic reaction, releasing (not absorbing) large amounts of energy."},
+      {"text": "Neither -- no energy change occurs during combustion", "isCorrect": false, "feedback": "Combustion involves a very significant release of energy, both as heat and often light."},
+      {"text": "It depends entirely on the color of the flame", "isCorrect": false, "feedback": "Flame color relates to which elements are burning, not whether the reaction is releasing or absorbing energy overall."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Is every exothermic reaction an example of combustion?",
+    "options": [
+      {"text": "No -- combustion is just one specific type of exothermic reaction; many other exothermic reactions don't involve burning or oxygen at all", "isCorrect": true, "feedback": "Correct -- for example, an exothermic neutralization reaction (acid + base) releases heat but isn't combustion."},
+      {"text": "Yes -- all exothermic reactions are technically combustion", "isCorrect": false, "feedback": "This overgeneralizes -- many exothermic reactions (like acid-base neutralization) release heat without involving combustion at all."},
+      {"text": "No -- combustion reactions are actually never exothermic", "isCorrect": false, "feedback": "Combustion IS a type of exothermic reaction -- what's incorrect is treating all exothermic reactions as combustion specifically."},
+      {"text": "Combustion and exothermic reactions are completely unrelated categories", "isCorrect": false, "feedback": "They are related -- combustion is specifically a subset (a particular type) within the broader exothermic reaction category."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Rusting (iron reacting slowly with oxygen) is technically an exothermic reaction, just like combustion. Why doesn't rusting feel hot to the touch, unlike a fire?",
+    "options": [
+      {"text": "Rusting releases the same type of energy as combustion, but over a much, much longer time period, so the rate of heat release per second is far too small to notice", "isCorrect": true, "feedback": "Correct -- the total energy can be similar in kind, but reaction RATE matters enormously for how noticeable the heat output is."},
+      {"text": "Rusting doesn't actually release any energy at all", "isCorrect": false, "feedback": "Rusting is genuinely exothermic and does release energy -- it's just spread out over a much longer timeframe than combustion."},
+      {"text": "Rusting only happens at extremely cold temperatures", "isCorrect": false, "feedback": "Rusting isn't restricted to cold temperatures -- the key issue is the slow RATE of the reaction, not the temperature at which it occurs."},
+      {"text": "Iron is somehow immune to releasing heat under any circumstances", "isCorrect": false, "feedback": "Iron reacting with oxygen (rusting) does release heat -- iron isn't immune to this, it just happens very gradually."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This category of reaction sends energy outward into its surroundings, often as noticeable heat or light.", "medium": "This is a reaction that gives off energy, often as heat and sometimes light too.", "easy": "This reaction gives off heat and light, like a burning flame."},
+    "medium": {"hard": "Consider other well-known reaction types that release heat without involving oxygen combustion, such as certain acid-base reactions.", "medium": "Think of a reaction that clearly releases heat but definitely isn't burning, like mixing certain acids and bases.", "easy": "Think about whether ALL heat-releasing reactions have to involve fire and burning."},
+    "hard": {"hard": "The total energy released can be comparable, but spreading that same release across a vastly longer time period dramatically reduces the instantaneous rate of heat output, making it undetectable by touch.", "medium": "The same total amount of energy gets released, but so slowly over such a long time that you can't really feel it happening moment to moment.", "easy": "The same kind of energy gets released, just so slowly over such a long time that you can't feel it."}
+  }
+}
+]

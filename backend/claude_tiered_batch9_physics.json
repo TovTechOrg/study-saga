@@ -1,0 +1,207 @@
+[
+{
+  "topic": "nuclear fission vs. fusion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is nuclear fission?",
+    "options": [
+      {"text": "The splitting of a large atomic nucleus into smaller nuclei", "isCorrect": true, "feedback": "Correct -- fission breaks a heavy nucleus (like uranium) apart, releasing energy."},
+      {"text": "The joining of two small nuclei into one larger nucleus", "isCorrect": false, "feedback": "That describes fusion, the opposite process of fission."},
+      {"text": "The process of an atom losing an electron", "isCorrect": false, "feedback": "That describes ionization, a chemical-level process, not nuclear fission."},
+      {"text": "The process of a substance melting", "isCorrect": false, "feedback": "Melting is a physical state change, unrelated to nuclear fission."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is nuclear fusion, and where does it occur naturally on a massive scale?",
+    "options": [
+      {"text": "The joining of small nuclei into a larger one, occurring naturally in stars like the Sun", "isCorrect": true, "feedback": "Correct -- fusion of hydrogen into helium is the process powering the Sun and other stars."},
+      {"text": "The splitting of large nuclei, occurring naturally in ordinary rocks", "isCorrect": false, "feedback": "This describes fission, not fusion, and fission isn't a large-scale natural process in ordinary rocks."},
+      {"text": "The joining of nuclei, occurring naturally in ice", "isCorrect": false, "feedback": "Fusion requires extreme temperatures and pressures found in stars, not conditions found in ordinary ice."},
+      {"text": "A process that only happens in laboratories, never in nature", "isCorrect": false, "feedback": "Fusion is actually the dominant natural energy source powering stars throughout the universe."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Both fission and fusion release large amounts of energy, but why is fusion generally considered a potentially cleaner energy source than fission for power generation?",
+    "options": [
+      {"text": "Fusion typically produces far less long-lived radioactive waste than fission", "isCorrect": true, "feedback": "Correct -- fission byproducts often remain radioactive for a very long time, whereas fusion's primary products are generally much less hazardous long-term."},
+      {"text": "Fusion doesn't release any energy at all", "isCorrect": false, "feedback": "Fusion actually releases a tremendous amount of energy, even more per reaction than typical fission reactions."},
+      {"text": "Fission doesn't require any radioactive material to begin with", "isCorrect": false, "feedback": "Fission specifically requires radioactive heavy elements like uranium, unlike this claim."},
+      {"text": "Fusion reactions are easier to control and have already been fully commercialized for decades", "isCorrect": false, "feedback": "Fusion is actually notoriously difficult to sustain and control, and commercial fusion power isn't yet fully achieved -- this isn't the reason it's considered cleaner."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process breaks a heavy atomic nucleus apart into lighter pieces, releasing energy in the process.", "medium": "This is when a large atomic nucleus gets split into smaller pieces.", "easy": "This is when a big atomic nucleus splits into smaller pieces."},
+    "medium": {"hard": "Under extreme temperature and pressure conditions found in stellar cores, light nuclei can overcome repulsion to combine into heavier ones.", "medium": "Under the extreme heat and pressure inside stars, small atomic nuclei can smash together and combine.", "easy": "Inside stars, small atomic nuclei get smashed together under extreme heat and pressure."},
+    "hard": {"hard": "Fission of heavy elements tends to produce unstable daughter isotopes that remain radioactive for extended periods, while fusion's typical byproducts (like helium) are much less hazardous in comparison.", "medium": "The leftover material from splitting atoms tends to stay dangerously radioactive for a very long time, unlike what's left over from fusing atoms together.", "easy": "The leftover material from splitting atoms stays dangerous for a really long time, unlike the leftovers from fusing atoms."}
+  }
+},
+{
+  "topic": "gravity and orbital motion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What force keeps planets orbiting around the Sun?",
+    "options": [
+      {"text": "Gravity", "isCorrect": true, "feedback": "Correct -- the Sun's gravitational pull continuously bends the planets' paths into orbits."},
+      {"text": "Magnetism", "isCorrect": false, "feedback": "Magnetism isn't the force responsible for planetary orbits -- gravity is."},
+      {"text": "Friction", "isCorrect": false, "feedback": "Friction requires surfaces rubbing together, which doesn't apply to planets orbiting in the vacuum of space."},
+      {"text": "Air pressure", "isCorrect": false, "feedback": "There's essentially no air in space to exert pressure -- gravity alone keeps planets in orbit."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why don't orbiting planets simply fall straight into the Sun, given that gravity is constantly pulling them inward?",
+    "options": [
+      {"text": "Their forward (sideways) velocity continuously carries them past the Sun, resulting in a curved orbital path instead of a straight fall", "isCorrect": true, "feedback": "Correct -- orbit is essentially a perpetual 'falling' that's balanced by enough sideways motion to keep missing the object being orbited."},
+      {"text": "The Sun's gravity actually pushes planets away, not pulls them in", "isCorrect": false, "feedback": "Gravity is fundamentally an attractive force, always pulling objects together, not pushing them apart."},
+      {"text": "There is no real gravitational force acting on the planets", "isCorrect": false, "feedback": "Gravity is very much acting on the planets -- it's precisely what curves their paths into orbits."},
+      {"text": "Planets are too heavy for gravity to have any effect", "isCorrect": false, "feedback": "Gravity's effect actually scales with mass in a way that keeps working regardless of how large or small the orbiting object is."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do planets farther from the Sun (like Neptune) take much longer to complete one orbit than planets closer to the Sun (like Mercury)?",
+    "options": [
+      {"text": "Farther planets travel a much larger orbital distance AND experience weaker gravitational pull, both of which result in slower orbital speeds and longer periods", "isCorrect": true, "feedback": "Correct -- both the greater distance to travel and the Sun's weaker gravitational influence at that distance combine to significantly lengthen the orbital period."},
+      {"text": "Farther planets are simply much heavier than closer ones", "isCorrect": false, "feedback": "Planet mass isn't the primary factor determining orbital period -- distance from the Sun and gravitational strength at that distance are far more significant."},
+      {"text": "Farther planets have stronger gravity pulling them around faster", "isCorrect": false, "feedback": "This is backwards -- gravitational pull from the Sun actually weakens with increasing distance, contributing to slower orbital motion."},
+      {"text": "There is no real difference in orbital time between near and far planets", "isCorrect": false, "feedback": "There's a dramatic, well-documented difference in orbital periods based on distance from the Sun -- this isn't a myth."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This universal force of attraction acts between any two masses, curving their relative motion.", "medium": "This is the invisible pulling force between any two massive objects, like the Sun and planets.", "easy": "This is the same force that makes things fall to the ground on Earth."},
+    "medium": {"hard": "An orbit results from a delicate balance between an object's sideways momentum and the constant inward pull of gravity, causing a continuous curved 'fall' rather than a direct collision.", "medium": "The planet is moving sideways fast enough that as gravity pulls it in, it just keeps missing the Sun, tracing a curved path instead.", "easy": "The planet is moving sideways fast enough that gravity just curves its path instead of pulling it straight in."},
+    "hard": {"hard": "Kepler's laws show that both the larger circumference of the orbital path and the weaker gravitational acceleration at greater distances contribute to a longer period for outer planets.", "medium": "Farther planets have a much longer path to travel around the Sun, and the Sun's pull on them is also weaker out there, both slowing things down.", "easy": "Farther planets have a much longer path to travel, and the Sun's pull is weaker way out there, so it takes longer."}
+  }
+},
+{
+  "topic": "wheel and axle (simple machine)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a wheel and axle, as a simple machine?",
+    "options": [
+      {"text": "A wheel attached to a rod (axle) that rotate together to make moving objects easier", "isCorrect": true, "feedback": "Correct -- a doorknob and a steering wheel are both examples of this simple machine."},
+      {"text": "A flat surface used to slide objects up", "isCorrect": false, "feedback": "That describes an inclined plane, a different type of simple machine."},
+      {"text": "A rope looped around a wheel to lift objects", "isCorrect": false, "feedback": "That describes a pulley, a different type of simple machine."},
+      {"text": "A rigid bar that pivots around a fixed point", "isCorrect": false, "feedback": "That describes a lever, a different type of simple machine."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does turning a large steering wheel require less force than turning a small one to produce the same turning effect on the axle?",
+    "options": [
+      {"text": "The larger wheel provides more leverage (distance from the center), increasing the mechanical advantage", "isCorrect": true, "feedback": "Correct -- a bigger wheel radius means the same force applied at the edge produces more torque on the connected axle."},
+      {"text": "A larger wheel weighs less than a small one", "isCorrect": false, "feedback": "Wheel size doesn't necessarily correlate with weight in this way -- the mechanical advantage comes from the larger radius, not reduced weight."},
+      {"text": "A larger wheel has no actual connection to the axle", "isCorrect": false, "feedback": "The wheel and axle are mechanically connected and rotate together -- that connection is exactly how the mechanical advantage is transmitted."},
+      {"text": "There is no real difference in force needed between wheel sizes", "isCorrect": false, "feedback": "Wheel size genuinely affects the mechanical advantage and the force needed to achieve the same turning effect."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A large wheel with a radius of 20 cm is attached to a small axle with a radius of 4 cm. What is the mechanical advantage of this wheel and axle system?",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- mechanical advantage equals the wheel's radius divided by the axle's radius: 20÷4=5."},
+      {"text": "16", "isCorrect": false, "feedback": "This subtracts the radii instead of dividing them."},
+      {"text": "24", "isCorrect": false, "feedback": "This adds the radii instead of dividing them."},
+      {"text": "80", "isCorrect": false, "feedback": "This multiplies the radii instead of dividing them."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This simple machine pairs a large circular component with a smaller connected rod, rotating together as one unit.", "medium": "Think of a doorknob -- a bigger part you turn, connected to a smaller rod inside.", "easy": "A doorknob is a common example of this simple machine."},
+    "medium": {"hard": "A greater radius at the point of applied force multiplies the resulting torque delivered to the connected, smaller-radius axle.", "medium": "Applying force farther from the center (a bigger wheel) creates more turning power on the smaller axle.", "easy": "Pushing on a bigger wheel, farther from the center, gives you more turning power."},
+    "hard": {"hard": "Divide the radius of the larger wheel by the radius of the smaller axle to find the mechanical advantage.", "medium": "Divide the wheel's radius by the axle's radius.", "easy": "Divide 20 by 4."}
+  }
+},
+{
+  "topic": "sound intensity and decibels",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What unit is commonly used to measure the loudness (intensity) of sound?",
+    "options": [
+      {"text": "Decibels", "isCorrect": true, "feedback": "Correct -- decibels (dB) measure sound intensity/loudness."},
+      {"text": "Meters", "isCorrect": false, "feedback": "Meters measure distance or length, not sound loudness."},
+      {"text": "Kilograms", "isCorrect": false, "feedback": "Kilograms measure mass, not sound loudness."},
+      {"text": "Degrees", "isCorrect": false, "feedback": "Degrees typically measure temperature or angles, not sound loudness."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the key difference between pitch and loudness (intensity) of a sound?",
+    "options": [
+      {"text": "Pitch relates to frequency (how high or low a sound is), while loudness relates to intensity/amplitude (how strong the sound is)", "isCorrect": true, "feedback": "Correct -- these are two distinct properties of a sound wave, describing different aspects of how we perceive it."},
+      {"text": "Pitch and loudness are exactly the same thing", "isCorrect": false, "feedback": "These are genuinely distinct properties, even though both relate to characteristics of sound."},
+      {"text": "Pitch measures how loud a sound is, while loudness measures how high or low it is", "isCorrect": false, "feedback": "This has the definitions swapped -- pitch is about high/low tone (frequency), loudness is about volume/intensity."},
+      {"text": "Loudness only applies to music, not everyday sounds", "isCorrect": false, "feedback": "Loudness applies to any sound at all, not just music specifically."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The decibel scale is logarithmic, meaning each 10 dB increase represents roughly a 10-fold increase in sound intensity. Why is a logarithmic scale used for measuring sound instead of a simple linear one?",
+    "options": [
+      {"text": "Human hearing can detect an enormous range of sound intensities, and a logarithmic scale makes this vast range more manageable to represent with smaller numbers", "isCorrect": true, "feedback": "Correct -- without a logarithmic scale, representing the full range of audible sound intensity would require using extremely large, unwieldy numbers."},
+      {"text": "It makes the numbers bigger and harder to understand on purpose", "isCorrect": false, "feedback": "The logarithmic scale is actually meant to make an otherwise unwieldy range of numbers more manageable, not intentionally confusing."},
+      {"text": "It has nothing to do with how human ears actually perceive sound", "isCorrect": false, "feedback": "The logarithmic decibel scale was specifically designed to roughly match how human ears perceive relative loudness."},
+      {"text": "Sound doesn't actually vary much in intensity, so any scale would work the same", "isCorrect": false, "feedback": "Sound intensity actually varies enormously, from a whisper to a jet engine -- this vast range is exactly why a logarithmic scale is useful."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This unit expresses sound intensity on a scale where large jumps represent proportionally larger real-world increases.", "medium": "This unit measures how loud a sound actually is.", "easy": "This is the unit used to measure how loud sounds are."},
+    "medium": {"hard": "One property relates to how frequently the sound wave oscillates; the other relates to the amount of energy/amplitude carried by the wave.", "medium": "One property is about how high or low a sound seems; the other is about how strong or soft it seems.", "easy": "Pitch is about how high or low a sound is; loudness is about how strong it is."},
+    "hard": {"hard": "Since audible sound intensity spans many orders of magnitude, a logarithmic scale compresses that huge range into a much more practical and manageable set of numbers.", "medium": "Since sounds can range from extremely quiet to extremely intense, using powers of ten keeps the numbers from getting impossibly huge.", "easy": "Since sounds range from very quiet to super loud, this special scale keeps the numbers from getting way too big."}
+  }
+},
+{
+  "topic": "total internal reflection",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is total internal reflection?",
+    "options": [
+      {"text": "When light traveling within a denser medium reflects entirely off a boundary instead of passing through", "isCorrect": true, "feedback": "Correct -- under the right conditions, light can be completely reflected back rather than refracting out."},
+      {"text": "When light is completely absorbed by a material", "isCorrect": false, "feedback": "Absorption means the light energy is taken in, not reflected -- total internal reflection is about bouncing all the light back."},
+      {"text": "When a mirror breaks into pieces", "isCorrect": false, "feedback": "This isn't related to mirror breakage -- it's an optical phenomenon involving light behavior at a boundary."},
+      {"text": "When light travels in a perfectly straight line forever", "isCorrect": false, "feedback": "This isn't what total internal reflection describes -- it specifically involves light reflecting off an internal boundary."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Total internal reflection is the key principle behind which common technology?",
+    "options": [
+      {"text": "Fiber optic cables", "isCorrect": true, "feedback": "Correct -- light bounces repeatedly inside the fiber via total internal reflection, allowing data to travel long distances with minimal loss."},
+      {"text": "Ordinary incandescent light bulbs", "isCorrect": false, "feedback": "Light bulbs work by heating a filament to produce light, unrelated to total internal reflection."},
+      {"text": "Battery-powered flashlights", "isCorrect": false, "feedback": "Flashlights simply emit light outward -- they don't rely on the principle of total internal reflection."},
+      {"text": "Solar panels", "isCorrect": false, "feedback": "Solar panels convert light into electricity via the photovoltaic effect, unrelated to total internal reflection."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For total internal reflection to occur, light must be traveling from a denser medium toward a less dense one, AND the angle of incidence must exceed a specific 'critical angle.' Why does this angle condition matter?",
+    "options": [
+      {"text": "Below the critical angle, some light still refracts (exits) the boundary; only above it does ALL the light reflect back internally", "isCorrect": true, "feedback": "Correct -- the critical angle marks the specific threshold beyond which refraction becomes impossible and 100% of the light reflects internally."},
+      {"text": "The critical angle has no real effect on whether light reflects or refracts", "isCorrect": false, "feedback": "The critical angle is precisely the threshold that determines whether total internal reflection occurs -- it's central to the phenomenon."},
+      {"text": "Below the critical angle, light disappears completely", "isCorrect": false, "feedback": "Below the critical angle, light doesn't disappear -- it partially refracts (exits) and partially reflects, rather than being fully retained inside."},
+      {"text": "The critical angle only matters for colored light, not white light", "isCorrect": false, "feedback": "The critical angle concept applies generally to light behavior at a boundary, not specifically tied to color."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phenomenon occurs when light striking a boundary from within a material cannot escape and bounces back entirely instead.", "medium": "This happens when light hitting a boundary from inside a material bounces all the way back instead of escaping.", "easy": "This is when light bounces completely back inside a material instead of escaping out."},
+    "medium": {"hard": "This technology relies on light continuously reflecting internally along a thin, flexible strand to carry signals over long distances.", "medium": "This thin cable carries light (and data) over long distances by bouncing the light internally along its length.", "easy": "This thin glass or plastic cable carries light signals for things like internet data."},
+    "hard": {"hard": "The critical angle is the specific incidence angle at which refraction becomes mathematically impossible (per Snell's Law), so beyond it, 100% of the light must reflect rather than partially exit.", "medium": "Once the light hits at a steep enough angle, it simply can't bend out anymore and has to bounce all the way back instead.", "easy": "Once the light hits at just the right steep angle, it can't escape anymore and bounces all the way back."}
+  }
+}
+]

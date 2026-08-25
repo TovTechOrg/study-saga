@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a chemical formula unit for ionic compounds",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Ionic compounds like NaCl don't exist as individual molecules but rather as a repeating crystal lattice. What is the term for the simplest ratio of ions in such a compound?",
+    "options": [
+      {"text": "Formula unit", "isCorrect": true, "feedback": "Correct -- a formula unit represents the simplest whole-number ratio of ions in an ionic compound's crystal structure."},
+      {"text": "Molecule", "isCorrect": false, "feedback": "The term 'molecule' technically applies to covalently bonded, discrete units -- ionic compounds use 'formula unit' instead, since they form extended lattices."},
+      {"text": "Atom", "isCorrect": false, "feedback": "An atom is a single basic unit of an element, not the specific ratio-based unit used for ionic compounds."},
+      {"text": "Isotope", "isCorrect": false, "feedback": "Isotope refers to atoms of the same element with different neutron counts, unrelated to describing ionic compound ratios."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why is it inaccurate to refer to a 'molecule' of table salt (NaCl)?",
+    "options": [
+      {"text": "NaCl exists as a continuous 3D crystal lattice of alternating ions, not as discrete, separate molecular units", "isCorrect": true, "feedback": "Correct -- unlike covalent molecules (like H₂O), ionic compounds form extended repeating structures rather than individual bonded units."},
+      {"text": "NaCl doesn't actually contain any real chemical bonds", "isCorrect": false, "feedback": "NaCl does contain real ionic bonds -- the issue is specifically about the extended lattice structure, not an absence of bonding altogether."},
+      {"text": "NaCl is actually a mixture, not a compound at all", "isCorrect": false, "feedback": "NaCl is genuinely a chemical compound (with a fixed, bonded ratio of elements) -- it's just structured as a lattice rather than discrete molecules."},
+      {"text": "This terminology distinction doesn't actually matter in chemistry", "isCorrect": false, "feedback": "This distinction (molecule vs. formula unit) is actually a meaningful and standard part of accurate chemical terminology."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Since NaCl doesn't exist as discrete molecules, why do chemists still write its formula as \"NaCl\" (a 1:1 ratio) rather than describing the entire crystal structure?",
+    "options": [
+      {"text": "The formula \"NaCl\" represents the simplest whole-number ratio of ions throughout the entire crystal, which is sufficient to describe the compound's composition without needing to describe every ion in the lattice", "isCorrect": true, "feedback": "Correct -- since the ratio remains constant throughout the entire crystal (however large), this simplified formula unit efficiently and accurately represents the compound's overall composition."},
+      {"text": "The formula \"NaCl\" is actually incorrect and chemists have simply never bothered to fix it", "isCorrect": false, "feedback": "This formula is actually correct and standard -- it properly represents the compound's fixed ionic ratio, which is all that's needed to describe its composition."},
+      {"text": "Every crystal of table salt contains exactly one sodium atom and one chlorine atom, nothing more", "isCorrect": false, "feedback": "A real crystal contains an enormous number of ions -- the formula represents their RATIO (1:1), not a literal count of just two atoms total."},
+      {"text": "This formula only applies to a single, specific grain of salt and nothing larger", "isCorrect": false, "feedback": "This formula ratio applies consistently to any amount of NaCl, from a single unit cell up to an entire visible crystal, not just one specific tiny grain."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term describes the smallest repeating ratio representing an ionic compound's composition.", "medium": "This term describes the simplest ratio of ions that make up the compound.", "easy": "This is the name for the simplest ratio of ions in a compound like salt."},
+    "medium": {"hard": "Consider the fundamental structural difference between discrete covalently-bonded units and an extended, repeating ionic lattice.", "medium": "Salt is actually a huge repeating pattern of ions, not separate individual units like a water molecule.", "easy": "Salt isn't made of separate little units -- it's one big repeating pattern of ions."},
+    "hard": {"hard": "Since the ionic ratio remains invariant throughout the entire lattice regardless of crystal size, the simplified formula unit efficiently captures the compound's essential compositional information.", "medium": "Since the same 1:1 ratio holds true no matter how big the crystal is, that simple ratio is really all you need to describe it.", "easy": "Since the same 1-to-1 ratio holds true no matter how big the crystal is, that's really all you need to know."}
+  }
+}
+]

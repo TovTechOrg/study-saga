@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of Newton's first law and seatbelts",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Why do passengers in a car lurch forward when the car suddenly stops?",
+    "options": [
+      {"text": "Their bodies tend to keep moving forward due to inertia, even though the car has stopped", "isCorrect": true, "feedback": "Correct -- this is a direct real-world example of Newton's first law (objects in motion tend to stay in motion unless acted upon)."},
+      {"text": "The car pushes them forward on purpose", "isCorrect": false, "feedback": "The car isn't pushing passengers forward -- it's the passenger's own inertia keeping them moving forward as the car stops."},
+      {"text": "Gravity suddenly increases during braking", "isCorrect": false, "feedback": "Gravity's strength doesn't change during braking -- this forward motion is explained by inertia, not a change in gravity."},
+      {"text": "This has nothing to do with physics", "isCorrect": false, "feedback": "This is actually a classic, direct demonstration of Newton's first law of motion (inertia)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does a seatbelt help protect a passenger during a sudden stop, based on Newton's first law?",
+    "options": [
+      {"text": "The seatbelt applies a force to the passenger's body, helping to stop their forward motion along with the car, rather than letting inertia carry them forward uncontrollably", "isCorrect": true, "feedback": "Correct -- without a seatbelt, a passenger's inertia would carry them forward into the dashboard or windshield; the seatbelt provides the necessary force to prevent this."},
+      {"text": "A seatbelt eliminates the passenger's inertia entirely", "isCorrect": false, "feedback": "Inertia is a fundamental property of matter and can't be \"eliminated\" -- the seatbelt instead provides a controlled force to counteract the effects of that inertia."},
+      {"text": "A seatbelt has no real function related to physics", "isCorrect": false, "feedback": "A seatbelt's protective function is directly and specifically explained by physics principles, particularly Newton's first law (inertia)."},
+      {"text": "A seatbelt makes the passenger's body heavier", "isCorrect": false, "feedback": "A seatbelt doesn't change a passenger's mass/weight -- it applies a restraining force to counteract their forward inertia during a sudden stop."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Airbags are often used alongside seatbelts to further protect passengers. How does an airbag's function relate to the concept of impulse (force × time) in addition to Newton's first law?",
+    "options": [
+      {"text": "The airbag extends the time over which the passenger's forward momentum is stopped, reducing the peak force experienced compared to an abrupt stop against a hard surface like the steering wheel", "isCorrect": true, "feedback": "Correct -- this combines both concepts: inertia explains WHY the passenger keeps moving forward, while the impulse-momentum relationship explains HOW the airbag reduces injury by extending stopping time."},
+      {"text": "Airbags actually eliminate the effects of inertia completely", "isCorrect": false, "feedback": "Inertia isn't eliminated -- the passenger's forward momentum still needs to be stopped; the airbag simply makes that stopping process gentler by extending the time involved."},
+      {"text": "Airbags have no connection to the concept of impulse at all", "isCorrect": false, "feedback": "Airbags are actually a classic, direct real-world application of the impulse-momentum relationship in physics."},
+      {"text": "Airbags work by increasing the force experienced during a crash", "isCorrect": false, "feedback": "Airbags specifically work to DECREASE the peak force experienced, by extending the time over which the passenger's momentum change occurs."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This effect reflects a moving object's natural tendency to continue in its state of motion unless something acts on it.", "medium": "Passengers keep moving because of the same principle that keeps any moving object going unless something stops it.", "easy": "Passengers keep moving forward because of inertia, the tendency to keep doing what you were already doing."},
+    "medium": {"hard": "Consider what specifically provides the necessary counteracting force to actually change the passenger's forward momentum along with the car.", "medium": "Something needs to actually apply a force to stop the passenger's forward motion along with the car -- that's the seatbelt's job.", "easy": "The seatbelt provides the force needed to stop the passenger along with the car."},
+    "hard": {"hard": "Since impulse (force × time) equals the momentum change, and that momentum change is fixed, extending the collision time via the airbag proportionally reduces the average force experienced.", "medium": "By spreading out the stopping process over a bit more time, the airbag reduces how hard the stopping force hits the passenger at any one moment.", "easy": "By spreading out the stopping process over more time, the airbag makes the stopping force less intense."}
+  }
+}
+]

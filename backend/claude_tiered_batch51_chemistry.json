@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of molarity as a measure of solution concentration",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does molarity measure?",
+    "options": [
+      {"text": "The number of moles of solute dissolved per liter of solution", "isCorrect": true, "feedback": "Correct -- molarity (M) = moles of solute / liters of solution, a standard way to express concentration."},
+      {"text": "The total mass of a solution in grams", "isCorrect": false, "feedback": "Total mass is a different measurement -- molarity specifically relates moles of solute to solution volume."},
+      {"text": "The temperature at which a solution boils", "isCorrect": false, "feedback": "Boiling point is an unrelated property to molarity, which concerns solute concentration."},
+      {"text": "The number of atoms in a single molecule", "isCorrect": false, "feedback": "Molarity concerns solution concentration, not the atomic composition of an individual molecule."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "You dissolve 2 moles of NaCl in enough water to make 4 liters of solution. What is the molarity of this solution?",
+    "options": [
+      {"text": "0.5 M", "isCorrect": true, "feedback": "Correct -- molarity = moles/liters = 2/4 = 0.5 M."},
+      {"text": "2 M", "isCorrect": false, "feedback": "This is just the number of moles alone, without dividing by the solution's volume in liters."},
+      {"text": "8 M", "isCorrect": false, "feedback": "This results from multiplying moles by liters instead of dividing moles by liters."},
+      {"text": "4 M", "isCorrect": false, "feedback": "This is just the volume in liters alone, without properly dividing the moles by that volume."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "You have 500 mL of a 2 M NaCl solution. How many grams of NaCl are dissolved in it? (NaCl has a molar mass of approximately 58.5 g/mol)",
+    "options": [
+      {"text": "58.5 grams", "isCorrect": true, "feedback": "Correct -- first find moles: 2 M × 0.5 L = 1 mole. Then convert to grams: 1 mole × 58.5 g/mol = 58.5 grams."},
+      {"text": "117 grams", "isCorrect": false, "feedback": "This doesn't correctly account for converting 500 mL to 0.5 L before calculating moles."},
+      {"text": "29.25 grams", "isCorrect": false, "feedback": "This doesn't correctly result from the full two-step calculation (finding moles, then converting to grams)."},
+      {"text": "2 grams", "isCorrect": false, "feedback": "This is just the molarity value itself, not the actual calculated mass in grams."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This concentration metric expresses the quantity of dissolved solute (in moles) relative to the total volume of solution (in liters).", "medium": "This measures how many moles of a substance are dissolved in each liter of solution.", "easy": "This measures how many moles are dissolved in each liter of solution."},
+    "medium": {"hard": "Apply the molarity formula directly, dividing the given moles of solute by the given volume in liters.", "medium": "Divide the number of moles (2) by the number of liters (4).", "easy": "Divide 2 by 4 to get 0.5 M."},
+    "hard": {"hard": "First convert volume to liters and calculate moles using the molarity formula, then convert that mole quantity to mass using the molar mass.", "medium": "First convert 500 mL to 0.5 L, multiply by molarity to get moles, then multiply moles by the molar mass (58.5) to get grams.", "easy": "500 mL is 0.5 L. Multiply 0.5 by 2 to get 1 mole, then multiply by 58.5 to get grams."}
+  }
+}
+]

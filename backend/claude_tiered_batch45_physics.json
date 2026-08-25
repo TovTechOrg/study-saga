@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of density and buoyancy (why objects float or sink)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An object will float in water if its overall density is:",
+    "options": [
+      {"text": "Less than the density of water", "isCorrect": true, "feedback": "Correct -- an object less dense than the fluid it's placed in will float, while a denser object will sink."},
+      {"text": "Greater than the density of water", "isCorrect": false, "feedback": "An object denser than water will actually sink, not float."},
+      {"text": "Exactly zero", "isCorrect": false, "feedback": "Zero density isn't a realistic or necessary condition for floating -- the object just needs to be LESS dense than the surrounding fluid."},
+      {"text": "Density has no connection to whether an object floats or sinks", "isCorrect": false, "feedback": "Density relative to the fluid is precisely the key factor determining whether an object floats or sinks."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A large steel ship floats on water, even though steel itself is much denser than water. How is this possible?",
+    "options": [
+      {"text": "The ship's hollow shape displaces a large volume of water, giving the ship's overall (average) density (including the air-filled space inside) lower than water's density", "isCorrect": true, "feedback": "Correct -- it's the ship's overall average density (accounting for its hollow, air-filled shape), not the density of the solid steel material alone, that determines whether it floats."},
+      {"text": "Steel is actually less dense than water", "isCorrect": false, "feedback": "Steel itself IS significantly denser than water -- what allows the ship to float is its hollow shape lowering its overall average density below water's density."},
+      {"text": "Ships float purely due to their engines actively pushing them upward", "isCorrect": false, "feedback": "Engines provide propulsion for movement, not the buoyant force that keeps the ship afloat -- that comes from the ship's shape and overall density relative to water."},
+      {"text": "The density of water changes to match the ship's density", "isCorrect": false, "feedback": "Water's density doesn't change to accommodate objects -- it's the ship's overall shape and resulting average density that determines whether it floats."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If that same steel ship developed a hull breach and began filling with water, why would it eventually sink, even though the amount of steel in the ship hasn't changed at all?",
+    "options": [
+      {"text": "As water fills the hollow interior, it replaces the air, increasing the ship's overall average density until it exceeds the density of the surrounding water, causing it to sink", "isCorrect": true, "feedback": "Correct -- since flooding progressively increases the ship's overall average density (as air is replaced by heavier water), the ship eventually becomes denser than the water around it and sinks."},
+      {"text": "The steel itself becomes denser as water enters the ship", "isCorrect": false, "feedback": "The solid steel material's own density doesn't change -- it's the ship's OVERALL average density (including its interior contents) that increases as water replaces air inside."},
+      {"text": "Sinking in this scenario has nothing to do with density at all", "isCorrect": false, "feedback": "This scenario is fundamentally about density -- specifically, how flooding increases the ship's overall average density until it exceeds water's density, causing it to sink."},
+      {"text": "The ship would continue floating normally regardless of how much water enters it", "isCorrect": false, "feedback": "This isn't accurate -- as sufficient water enters and increases the ship's overall density beyond that of water, it will indeed sink."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This physical property, representing mass per unit volume, must be less than that of the surrounding fluid for buoyant floating to occur.", "medium": "For something to float, its mass squeezed into its size (density) has to be less than water's.", "easy": "For something to float, it has to be less dense than water."},
+    "medium": {"hard": "Distinguish between the density of the solid material itself and the OVERALL average density of the entire hollow structure, including any enclosed air space.", "medium": "It's not about the density of the steel alone -- it's about the density of the whole ship, including all the empty air space inside.", "easy": "It's about the density of the WHOLE ship, including the empty air space inside, not just the steel."},
+    "hard": {"hard": "Consider how progressively replacing a low-density substance (air) with a higher-density substance (water) inside a fixed volume changes that volume's overall average density over time.", "medium": "As water replaces the air inside the ship, the ship's overall density (mass divided by size) keeps climbing higher and higher.", "easy": "As water replaces the air inside, the ship's overall density keeps climbing until it's too dense to float."}
+  }
+}
+]

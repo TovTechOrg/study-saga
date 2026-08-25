@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between a function and a general relation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "For a relation to qualify as a 'function,' each input value must:",
+    "options": [
+      {"text": "Correspond to exactly one output value", "isCorrect": true, "feedback": "Correct -- the defining property of a function is that each input maps to exactly one output, unlike a general relation, which allows an input to map to multiple outputs."},
+      {"text": "Correspond to multiple different output values", "isCorrect": false, "feedback": "This describes a general relation that is NOT a function -- a true function specifically requires exactly ONE output per input, not multiple."},
+      {"text": "Be a negative number", "isCorrect": false, "feedback": "Whether an input is negative or positive has no bearing on whether a relation qualifies as a function -- the defining property is one output per input."},
+      {"text": "Equal its corresponding output value exactly", "isCorrect": false, "feedback": "Inputs and outputs don't need to be equal to each other for something to be a function -- the requirement is simply exactly one output per input, not equality between them."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The 'vertical line test' (if any vertical line crosses a graph more than once, it's not a function) is a graphical shortcut for checking the function definition. Why does this specific visual test correctly correspond to the formal 'one output per input' definition of a function?",
+    "options": [
+      {"text": "A vertical line represents a single fixed input (x) value, so if that vertical line intersects the graph at more than one point, it means that same single input value corresponds to more than one output (y) value on the graph, directly violating the 'exactly one output per input' requirement", "isCorrect": true, "feedback": "Correct -- this connects the geometric test directly to the formal definition, since a vertical line's multiple intersections literally represent multiple outputs for one fixed input."},
+      {"text": "The vertical line test actually has no real mathematical connection to the formal definition of a function", "isCorrect": false, "feedback": "This isn't accurate -- the vertical line test IS DIRECTLY connected to and derived from the formal 'one output per input' definition of a function."},
+      {"text": "A vertical line crossing a graph multiple times would actually still be consistent with the relation being a valid function", "isCorrect": false, "feedback": "This isn't accurate -- multiple intersections with a vertical line specifically INDICATE a violation of the function definition, not consistency with it."},
+      {"text": "A HORIZONTAL line crossing a graph multiple times is what actually indicates a relation is not a function, not a vertical line", "isCorrect": false, "feedback": "This isn't accurate -- it's specifically a VERTICAL line whose multiple intersections indicate a violation of the function definition (multiple outputs for one input), not a horizontal line."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The equation x = y^2 (a sideways parabola) fails the vertical line test and is not a function of x, yet the related equation y = x^2 (an upright parabola) IS a function of x. Explain why swapping which variable is treated as the input changes whether this specific relationship qualifies as a function.",
+    "options": [
+      {"text": "In y = x^2, each x-input produces exactly one squared output y, satisfying the function definition, but in x = y^2, a single x-input (except x=0) corresponds to TWO different y-values (positive and negative square roots), violating the 'one output per input' requirement -- the same underlying relationship between the two variables can be a function in one input/output direction while failing to be a function in the reversed direction", "isCorrect": true, "feedback": "Correct -- this explanation clarifies that 'being a function' depends specifically on which variable is designated as the input, and the same curve/relationship can satisfy the function definition in one direction while violating it in the other, an important nuance in understanding inverse relationships."},
+      {"text": "Both equations would actually qualify equally as functions of x, with no meaningful difference between them", "isCorrect": false, "feedback": "This isn't accurate -- these two equations genuinely DIFFER in whether they qualify as a function of x, precisely because of how many y-values correspond to each x-value."},
+      {"text": "x = y^2 would actually satisfy the function definition just as well as y = x^2 does", "isCorrect": false, "feedback": "This isn't accurate -- x = y^2 specifically FAILS the function-of-x definition, since most x-values correspond to two different y-values, unlike y = x^2."},
+      {"text": "Which variable is designated as input versus output has no actual bearing on whether a relationship qualifies as a function", "isCorrect": false, "feedback": "This isn't accurate -- which variable is designated as the input DIRECTLY determines whether the relationship satisfies the function definition, as this exact example demonstrates."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This mathematical mapping requires that each element of the domain be associated with a unique, singular element of the codomain.", "medium": "Every input has to lead to just one single output, never more than one.", "easy": "Every input has to lead to just one output, never more than one."},
+    "medium": {"hard": "Consider how a fixed x-coordinate corresponds geometrically to a vertical line, such that multiple intersection points directly represent multiple associated y-values.", "medium": "A straight up-and-down line marks one single x-value, so if it touches the graph more than once, that one x-value is somehow tied to more than one y-value, which breaks the rule.", "easy": "A vertical line marks one x-value, so touching the graph twice means that x-value has two y-values, breaking the rule."},
+    "hard": {"hard": "Consider how reversing the designated input variable changes which axis's fixed-value lines must be checked for multiple intersections, altering the outcome of the function test.", "medium": "Since flipping which letter is the 'input' changes which direction you're checking for repeats, the exact same curve can pass the test one way and fail it the other way.", "easy": "Flipping which letter is the input changes which direction you check, so the same curve can pass one way and fail the other."}
+  }
+}
+]

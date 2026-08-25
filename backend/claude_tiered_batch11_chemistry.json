@@ -1,0 +1,166 @@
+[
+{
+  "topic": "the difference between a solute and a solvent in everyday examples",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a cup of sweetened coffee, what is the sugar acting as?",
+    "options": [
+      {"text": "The solute", "isCorrect": true, "feedback": "Correct -- the sugar is the substance being dissolved into the coffee."},
+      {"text": "The solvent", "isCorrect": false, "feedback": "The coffee (liquid) is the solvent -- it's the substance doing the dissolving."},
+      {"text": "The precipitate", "isCorrect": false, "feedback": "A precipitate is an insoluble solid that forms, not a dissolved sugar."},
+      {"text": "The catalyst", "isCorrect": false, "feedback": "A catalyst speeds up a reaction without dissolving -- that's not the sugar's role here."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a solution of carbon dioxide dissolved in soda water, which substance is the solvent?",
+    "options": [
+      {"text": "Water", "isCorrect": true, "feedback": "Correct -- water is present in the largest amount and does the dissolving of the carbon dioxide gas."},
+      {"text": "Carbon dioxide", "isCorrect": false, "feedback": "Carbon dioxide is the solute here, being dissolved into the water, not the solvent."},
+      {"text": "Sugar", "isCorrect": false, "feedback": "Sugar isn't part of this specific example -- the question is about carbon dioxide and water."},
+      {"text": "The soda can", "isCorrect": false, "feedback": "The can is just a container, not a chemical component of the solution."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In alloys like brass (made of copper and zinc), which metal is typically considered the solvent, and why?",
+    "options": [
+      {"text": "Copper, because it's present in the greater proportion, with zinc dissolved throughout it", "isCorrect": true, "feedback": "Correct -- in solid solutions like alloys, the component present in the larger amount is generally considered the solvent."},
+      {"text": "Zinc, because it's a shinier metal", "isCorrect": false, "feedback": "Shininess isn't the criterion for identifying the solvent -- relative proportion is."},
+      {"text": "Neither metal, because solid mixtures cannot have a solvent or solute", "isCorrect": false, "feedback": "Solid solutions like metal alloys can indeed be described using solute/solvent terminology, based on relative proportions."},
+      {"text": "Both metals equally, since alloys always have a 50/50 ratio", "isCorrect": false, "feedback": "Alloys don't have to be a 50/50 mix -- brass typically has more copper than zinc, which is why copper is considered the solvent."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the substance present in a smaller amount that gets dissolved into the larger substance.", "medium": "This is the substance being dissolved, not the one doing the dissolving.", "easy": "This is the ingredient that gets dissolved into the coffee."},
+    "medium": {"hard": "This substance is present in greater quantity and does the dissolving of the other component.", "medium": "This is the substance present in the larger amount that does the dissolving.", "easy": "This is the liquid that the gas gets dissolved into."},
+    "hard": {"hard": "In solid solutions, the substance present in greater quantity, into which the other is uniformly dispersed, is conventionally labeled the solvent.", "medium": "The metal present in the larger amount is usually considered the one doing the \"dissolving\" of the other.", "easy": "The metal that makes up most of the mixture is usually considered the solvent."}
+  }
+},
+{
+  "topic": "the difference between exothermic and endothermic reactions in daily life",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A chemical hand warmer gets hot when activated. Is this an exothermic or endothermic reaction?",
+    "options": [
+      {"text": "Exothermic -- it releases heat energy", "isCorrect": true, "feedback": "Correct -- the reaction inside the hand warmer releases energy as heat, warming your hands."},
+      {"text": "Endothermic -- it absorbs heat energy", "isCorrect": false, "feedback": "Since the hand warmer releases heat (getting hot), this is exothermic, not endothermic."},
+      {"text": "Neither -- no chemical reaction is occurring", "isCorrect": false, "feedback": "A real chemical reaction is occurring inside the hand warmer to release the observed heat."},
+      {"text": "Both at the same time equally", "isCorrect": false, "feedback": "The clear, net effect here is heat release, making it exothermic, not a balanced mix of both."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "An instant cold pack gets cold when activated, due to a chemical reaction inside. What type of reaction is this?",
+    "options": [
+      {"text": "Endothermic -- it absorbs heat from its surroundings", "isCorrect": true, "feedback": "Correct -- the reaction pulls heat energy from its surroundings, making the pack (and your skin) feel cold."},
+      {"text": "Exothermic -- it releases heat to its surroundings", "isCorrect": false, "feedback": "Since the pack gets cold (absorbing heat from surroundings), this is endothermic, not exothermic."},
+      {"text": "Neither -- cold packs don't involve any chemical reaction", "isCorrect": false, "feedback": "A real chemical reaction (often dissolving a salt) inside the pack is what causes the endothermic cooling effect."},
+      {"text": "Combustion", "isCorrect": false, "feedback": "Combustion involves burning and releasing heat -- the opposite of what's happening in a cold pack."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Both baking a cake and burning wood are exothermic overall, yet baking requires continuous heat input from an oven while combustion, once started, sustains itself. How can baking be exothermic if it needs constant added heat?",
+    "options": [
+      {"text": "Baking involves multiple different chemical and physical changes -- some individual steps may be endothermic (needing oven heat) while others release heat, but the classification refers to specific reactions, not necessarily the whole process needing no external heat", "isCorrect": true, "feedback": "Correct -- classifying an entire complex process like baking requires distinguishing between simply reaching a needed activation/reaction temperature versus the net energy change of the specific reactions themselves, which can be a mix of both types."},
+      {"text": "Baking is not actually exothermic at all, and this was a false premise", "isCorrect": false, "feedback": "Certain reactions within baking (like caramelization or Maillard browning) are indeed exothermic once initiated, even though the whole process also requires continuous external heat to proceed."},
+      {"text": "Combustion never requires an initial heat source to get started", "isCorrect": false, "feedback": "Combustion actually does require an initial heat source (activation energy) to get started, even though it becomes self-sustaining afterward."},
+      {"text": "There is no meaningful difference between these two processes", "isCorrect": false, "feedback": "There is a meaningful distinction in whether a reaction, once started, can sustain itself without continued external energy input."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of reaction sends energy outward into the surrounding environment.", "medium": "This is a reaction that gives off heat, making things around it feel warmer.", "easy": "This reaction gives off heat, which is why the warmer feels hot."},
+    "medium": {"hard": "This type of reaction pulls energy inward from its surroundings.", "medium": "This is a reaction that pulls in heat, making things around it feel cooler.", "easy": "This reaction pulls in heat, which is why the pack feels cold."},
+    "hard": {"hard": "Distinguish between the energy needed to initiate/sustain a reaction (activation energy or ongoing heat source) and the net energy change of the reaction itself -- a process can require external heat while its underlying chemistry still releases energy overall.", "medium": "Some parts of a complicated process like baking might need heat to get going, while other parts of the chemistry happening still release their own heat.", "easy": "Some parts of baking need outside heat to start, but the actual chemical changes happening can still be giving off their own heat too."}
+  }
+},
+{
+  "topic": "the pH scale and common substances (extended)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Where does bleach typically fall on the pH scale?",
+    "options": [
+      {"text": "Basic (pH above 7)", "isCorrect": true, "feedback": "Correct -- household bleach is a strongly basic (alkaline) substance."},
+      {"text": "Acidic (pH below 7)", "isCorrect": false, "feedback": "Bleach is actually basic, not acidic."},
+      {"text": "Exactly neutral (pH of 7)", "isCorrect": false, "feedback": "Bleach is notably basic, not neutral like pure water."},
+      {"text": "It has no measurable pH", "isCorrect": false, "feedback": "Bleach, like most aqueous solutions, does have a measurable pH -- and it's notably basic."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Mixing an acid and a base together in the right proportions results in what type of reaction?",
+    "options": [
+      {"text": "A neutralization reaction, often producing a salt and water", "isCorrect": true, "feedback": "Correct -- combining an acid and base can cancel out their acidic/basic properties, forming a neutral salt and water."},
+      {"text": "A combustion reaction", "isCorrect": false, "feedback": "Combustion specifically involves burning with oxygen -- that's not what happens when acids and bases combine."},
+      {"text": "A radioactive decay reaction", "isCorrect": false, "feedback": "Radioactive decay involves nuclear changes, unrelated to a simple acid-base neutralization."},
+      {"text": "No reaction occurs at all", "isCorrect": false, "feedback": "Acids and bases do react together -- this is a well-known and common type of chemical reaction."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Antacid tablets are used to relieve stomach discomfort caused by excess stomach acid. Based on the chemistry of acids and bases, why would an antacid be formulated as a base?",
+    "options": [
+      {"text": "A base can neutralize excess stomach acid, raising the pH back toward a more comfortable level", "isCorrect": true, "feedback": "Correct -- antacids work by chemically neutralizing some of the excess acid, reducing the irritation it causes."},
+      {"text": "A base would make the stomach acid even more acidic", "isCorrect": false, "feedback": "This is the opposite of how neutralization works -- a base specifically counteracts and reduces acidity, not increases it."},
+      {"text": "Bases have no chemical effect on acids at all", "isCorrect": false, "feedback": "Bases specifically react with and neutralize acids -- that's the entire basis for how antacids function."},
+      {"text": "The color of the antacid tablet is what relieves the discomfort", "isCorrect": false, "feedback": "Color has no chemical effect -- it's the antacid's basic chemistry that neutralizes the acid, providing relief."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This household chemical falls on the opposite end of the pH scale from something like lemon juice.", "medium": "This household chemical is on the opposite side of the pH scale from something sour, like lemon juice.", "easy": "Bleach is the opposite of sour things like lemon juice on the pH scale."},
+    "medium": {"hard": "This type of reaction combines an acid and a base to cancel out their characteristic properties.", "medium": "This is the reaction where an acid and base combine and \"cancel out\" each other's properties.", "easy": "This is when an acid and a base combine and cancel each other out."},
+    "hard": {"hard": "By reacting with and consuming excess H⁺ ions, a base directly counteracts the source of the acidic irritation, shifting the local pH toward neutral.", "medium": "A base reacts with the extra stomach acid, essentially canceling some of it out and easing the discomfort.", "easy": "A base cancels out some of the extra stomach acid, which helps ease the discomfort."}
+  }
+},
+{
+  "topic": "chemical changes in cooking",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "When bread dough is baked and turns into bread, is this generally a physical or chemical change?",
+    "options": [
+      {"text": "A chemical change, since new substances form that can't easily revert back", "isCorrect": true, "feedback": "Correct -- baking triggers chemical reactions (like the Maillard reaction and protein changes) that permanently transform the dough."},
+      {"text": "A physical change, since the dough just changes shape", "isCorrect": false, "feedback": "Baking involves much more than a shape change -- new chemical substances (and flavors, textures) are permanently created."},
+      {"text": "Neither -- nothing actually changes during baking", "isCorrect": false, "feedback": "A significant, irreversible transformation clearly occurs during baking."},
+      {"text": "A nuclear change", "isCorrect": false, "feedback": "Nuclear changes involve the atom's nucleus -- baking is a much more ordinary chemical process, not nuclear."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why can't you simply \"unbake\" a cake back into raw batter?",
+    "options": [
+      {"text": "Baking causes irreversible chemical changes (like protein denaturation and browning reactions) that can't simply be undone", "isCorrect": true, "feedback": "Correct -- unlike many physical changes (like melting ice), these chemical transformations permanently alter the substance."},
+      {"text": "The cake becomes a completely different physical shape only", "isCorrect": false, "feedback": "Shape change alone (a physical change) could theoretically be reversed -- the real reason involves permanent chemical transformations."},
+      {"text": "Cakes contain no chemicals at all", "isCorrect": false, "feedback": "Cake batter and finished cake are entirely made of chemical substances -- baking transforms them via real chemical reactions."},
+      {"text": "It actually IS possible to unbake a cake with the right equipment", "isCorrect": false, "feedback": "The chemical transformations from baking (like protein denaturation) are genuinely irreversible with ordinary equipment, unlike some simple physical changes."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The browning of a seared steak (the Maillard reaction) creates new flavors and colors. Why is this classified as a chemical change rather than a physical one?",
+    "options": [
+      {"text": "The reaction between amino acids and sugars at high heat produces entirely new chemical compounds responsible for the flavor and color, which weren't present before", "isCorrect": true, "feedback": "Correct -- the appearance of new substances with different properties (flavor, color, aroma compounds) is the hallmark of a chemical change."},
+      {"text": "The steak simply gets smaller in size, which is why it's chemical", "isCorrect": false, "feedback": "Size reduction alone would just be a physical change -- the real reason this is chemical is the formation of entirely new flavor/color compounds."},
+      {"text": "Heat alone always indicates a chemical change is happening", "isCorrect": false, "feedback": "Heat can cause physical changes too (like melting) -- what specifically makes this a chemical change is the formation of genuinely new substances."},
+      {"text": "This is actually a physical change, since it can be reversed by cooling the steak back down", "isCorrect": false, "feedback": "The Maillard reaction's new flavor/color compounds don't revert back to the original state on cooling -- this permanence indicates a real chemical change."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This category of change results in the formation of entirely new substances, unable to simply revert to their original form.", "medium": "This type of change creates entirely new substances that can't easily go back to how they started.", "easy": "This is a change that creates something totally new that you can't easily undo."},
+    "medium": {"hard": "Consider whether the transformation involves permanent molecular rearrangement rather than a simply reversible physical process.", "medium": "Think about whether the change involves the molecules themselves rearranging into something new, or just a physical shape change.", "easy": "Think about whether baking just changes the shape, or actually creates something new inside."},
+    "hard": {"hard": "The key indicator of a chemical change is the emergence of substances with genuinely different chemical identities and properties (new flavor/aroma/color molecules) that weren't present in the raw ingredients.", "medium": "Since totally new flavor and color molecules are being created that weren't there before, this counts as a real chemical transformation.", "easy": "Since brand new flavor and color molecules are being made that weren't there before, this is a real chemical change."}
+  }
+}
+]

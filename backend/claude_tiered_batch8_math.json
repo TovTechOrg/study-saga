@@ -1,0 +1,248 @@
+[
+{
+  "topic": "adding and subtracting decimals",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 3.5 + 2.25?",
+    "options": [
+      {"text": "5.75", "isCorrect": true, "feedback": "Correct -- lining up the decimal points, 3.50+2.25=5.75."},
+      {"text": "5.25", "isCorrect": false, "feedback": "This doesn't match correctly adding both decimal values."},
+      {"text": "6.75", "isCorrect": false, "feedback": "This overstates the correct sum."},
+      {"text": "5.60", "isCorrect": false, "feedback": "This doesn't match correctly aligning and adding the decimal places."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 7.8 - 3.45?",
+    "options": [
+      {"text": "4.35", "isCorrect": true, "feedback": "Correct -- aligning decimals, 7.80-3.45=4.35."},
+      {"text": "4.45", "isCorrect": false, "feedback": "This doesn't match correctly subtracting the aligned decimal values."},
+      {"text": "3.35", "isCorrect": false, "feedback": "This understates the correct difference."},
+      {"text": "5.35", "isCorrect": false, "feedback": "This overstates the correct difference."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is 12.07 - 4.638?",
+    "options": [
+      {"text": "7.432", "isCorrect": true, "feedback": "Correct -- aligning decimals (12.070-4.638), the result is 7.432."},
+      {"text": "7.568", "isCorrect": false, "feedback": "This doesn't match correctly aligning and subtracting all decimal places."},
+      {"text": "8.432", "isCorrect": false, "feedback": "This overstates the correct difference."},
+      {"text": "7.442", "isCorrect": false, "feedback": "This is close but doesn't match the precisely correct subtraction result."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Line up the decimal points before combining the two numbers.", "medium": "Line up the decimal points, then add as usual.", "easy": "Line up the decimal points, then add 3.50 and 2.25."},
+    "medium": {"hard": "Line up the decimal points before performing the subtraction.", "medium": "Line up the decimal points, then subtract as usual.", "easy": "Line up the decimal points, then subtract 3.45 from 7.80."},
+    "hard": {"hard": "Line up the decimal points, adding trailing zeros as needed, before performing the subtraction.", "medium": "Rewrite 12.07 as 12.070 to match the number of decimal places, then subtract.", "easy": "Add a zero to make 12.070, then subtract 4.638."}
+  }
+},
+{
+  "topic": "finding the range of a data set",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the range of the data set: 4, 9, 2, 7?",
+    "options": [
+      {"text": "7", "isCorrect": true, "feedback": "Correct -- range is the highest value minus the lowest value: 9-2=7."},
+      {"text": "9", "isCorrect": false, "feedback": "This is just the highest value, not the range."},
+      {"text": "2", "isCorrect": false, "feedback": "This is just the lowest value, not the range."},
+      {"text": "22", "isCorrect": false, "feedback": "This adds all the numbers together instead of finding the range."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the range of the data set: 15, 3, 22, 8, 11?",
+    "options": [
+      {"text": "19", "isCorrect": true, "feedback": "Correct -- 22 (highest) minus 3 (lowest) equals 19."},
+      {"text": "22", "isCorrect": false, "feedback": "This is just the highest value, not the range."},
+      {"text": "3", "isCorrect": false, "feedback": "This is just the lowest value, not the range."},
+      {"text": "59", "isCorrect": false, "feedback": "This adds all the numbers together instead of finding the range."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A data set has a range of 25 and a minimum value of 10. What is the maximum value?",
+    "options": [
+      {"text": "35", "isCorrect": true, "feedback": "Correct -- since range = max - min, max = range + min = 25+10=35."},
+      {"text": "15", "isCorrect": false, "feedback": "This subtracts instead of adding the range to the minimum."},
+      {"text": "25", "isCorrect": false, "feedback": "This just repeats the range value rather than solving for the actual maximum."},
+      {"text": "250", "isCorrect": false, "feedback": "This multiplies instead of adding the range and minimum."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Subtract the smallest value in the set from the largest value.", "medium": "Subtract the smallest number from the largest number.", "easy": "Subtract 2 from 9 to find the range."},
+    "medium": {"hard": "Subtract the smallest value in the set from the largest value.", "medium": "Subtract the smallest number from the largest number.", "easy": "Subtract 3 from 22 to find the range."},
+    "hard": {"hard": "Rearrange the range formula (max - min = range) to solve for the maximum value.", "medium": "Add the range to the minimum value to find the maximum.", "easy": "Add 25 and 10 together to find the maximum value."}
+  }
+},
+{
+  "topic": "converting between metric units of length",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "How many centimeters are in 1 meter?",
+    "options": [
+      {"text": "100", "isCorrect": true, "feedback": "Correct -- there are 100 centimeters in 1 meter."},
+      {"text": "10", "isCorrect": false, "feedback": "10 centimeters would only be a tenth of a meter, not a full meter."},
+      {"text": "1,000", "isCorrect": false, "feedback": "1,000 centimeters would be 10 meters, not 1."},
+      {"text": "1", "isCorrect": false, "feedback": "1 centimeter is far smaller than a full meter."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How many meters are in 3.5 kilometers?",
+    "options": [
+      {"text": "3,500", "isCorrect": true, "feedback": "Correct -- since 1 kilometer equals 1,000 meters, 3.5×1,000=3,500."},
+      {"text": "350", "isCorrect": false, "feedback": "This is off by a factor of 10 from the correct conversion."},
+      {"text": "35", "isCorrect": false, "feedback": "This is off by a factor of 100 from the correct conversion."},
+      {"text": "3.5", "isCorrect": false, "feedback": "This doesn't convert kilometers to meters at all."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A room is 450 centimeters wide. How many meters is that?",
+    "options": [
+      {"text": "4.5 meters", "isCorrect": true, "feedback": "Correct -- dividing by 100 (since 100 cm = 1 m) gives 450÷100=4.5."},
+      {"text": "45 meters", "isCorrect": false, "feedback": "This is off by a factor of 10 from the correct conversion."},
+      {"text": "0.45 meters", "isCorrect": false, "feedback": "This is off by a factor of 10 in the other direction from the correct conversion."},
+      {"text": "450 meters", "isCorrect": false, "feedback": "This doesn't convert centimeters to meters at all."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This metric prefix means one-hundredth of the base unit.", "medium": "There are 100 of this smaller unit in each meter.", "easy": "There are 100 centimeters in every meter."},
+    "medium": {"hard": "Multiply by 1,000 to convert from the larger metric unit to the smaller one.", "medium": "Multiply 3.5 by 1,000 to convert kilometers to meters.", "easy": "Multiply 3.5 by 1,000."},
+    "hard": {"hard": "Divide by 100 to convert from the smaller metric unit to the larger one.", "medium": "Divide 450 by 100 to convert centimeters to meters.", "easy": "Divide 450 by 100."}
+  }
+},
+{
+  "topic": "finding the area of a trapezoid",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the formula for the area of a trapezoid?",
+    "options": [
+      {"text": "½ × (base1 + base2) × height", "isCorrect": true, "feedback": "Correct -- this formula averages the two parallel bases and multiplies by height."},
+      {"text": "base × height", "isCorrect": false, "feedback": "This formula is for a parallelogram/rectangle, not a trapezoid with two different base lengths."},
+      {"text": "base1 × base2 × height", "isCorrect": false, "feedback": "This isn't the correct trapezoid area formula -- it should involve adding the bases, then halving, not multiplying them together."},
+      {"text": "½ × base × height", "isCorrect": false, "feedback": "This is the formula for a triangle's area, not a trapezoid's, which has two different base lengths."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A trapezoid has bases of 6 and 10, and a height of 4. What is its area?",
+    "options": [
+      {"text": "32", "isCorrect": true, "feedback": "Correct -- ½×(6+10)×4 = ½×16×4 = 32."},
+      {"text": "40", "isCorrect": false, "feedback": "This forgets to take half of the combined base sum before multiplying by height."},
+      {"text": "20", "isCorrect": false, "feedback": "This doesn't correctly combine both base lengths before applying the formula."},
+      {"text": "64", "isCorrect": false, "feedback": "This doubles the correct area instead of taking half."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A trapezoid has an area of 45 and a height of 6. If one base is 7, what is the length of the other base?",
+    "options": [
+      {"text": "8", "isCorrect": true, "feedback": "Correct -- 45=½×(7+b)×6, so 45=3×(7+b), 15=7+b, b=8."},
+      {"text": "15", "isCorrect": false, "feedback": "This is the sum of both bases, not the missing base alone."},
+      {"text": "38", "isCorrect": false, "feedback": "This doesn't correctly reverse the area formula."},
+      {"text": "5", "isCorrect": false, "feedback": "This doesn't match correctly solving the trapezoid area equation for the missing base."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This formula treats the two parallel sides as needing to be averaged before multiplying by the perpendicular height.", "medium": "Add the two bases together, take half, then multiply by the height.", "easy": "Add the two bases, cut that in half, then multiply by the height."},
+    "medium": {"hard": "Add the two bases, take half of that sum, then multiply by the height.", "medium": "Add 6 and 10 to get 16, take half to get 8, then multiply by 4.", "easy": "Add 6 and 10, take half, then multiply by 4."},
+    "hard": {"hard": "Reverse the area formula step by step: divide by height, double the result, then subtract the known base.", "medium": "Divide 45 by 6, double that, then subtract 7 to find the missing base.", "easy": "Divide 45 by 6 to get 7.5, double it to get 15, then subtract 7."}
+  }
+},
+{
+  "topic": "translating word phrases into algebraic expressions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which expression represents \"a number increased by 7\"?",
+    "options": [
+      {"text": "x + 7", "isCorrect": true, "feedback": "Correct -- \"increased by\" means addition."},
+      {"text": "x - 7", "isCorrect": false, "feedback": "This represents \"decreased by,\" the opposite operation."},
+      {"text": "7x", "isCorrect": false, "feedback": "This represents multiplication, not \"increased by.\""},
+      {"text": "x ÷ 7", "isCorrect": false, "feedback": "This represents division, not \"increased by.\""}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which expression represents \"5 less than twice a number\"?",
+    "options": [
+      {"text": "2x - 5", "isCorrect": true, "feedback": "Correct -- \"twice a number\" is 2x, and \"5 less than\" that means subtracting 5 from it."},
+      {"text": "5 - 2x", "isCorrect": false, "feedback": "This reverses the order -- \"5 less than\" means subtracting 5 FROM the number, not the other way around."},
+      {"text": "2(x - 5)", "isCorrect": false, "feedback": "This subtracts 5 before doubling, but the phrase means to double first, then subtract 5."},
+      {"text": "2x + 5", "isCorrect": false, "feedback": "This adds 5 instead of subtracting it as \"less than\" requires."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which expression represents \"the sum of a number and 4, divided by 3\"?",
+    "options": [
+      {"text": "(x + 4) / 3", "isCorrect": true, "feedback": "Correct -- the sum must be calculated first (in parentheses) before dividing by 3."},
+      {"text": "x + 4 / 3", "isCorrect": false, "feedback": "Without parentheses, this would divide only the 4 by 3 first, not the whole sum."},
+      {"text": "x / 3 + 4", "isCorrect": false, "feedback": "This divides x by 3 first and then adds 4, rather than dividing the full sum by 3."},
+      {"text": "3 / (x + 4)", "isCorrect": false, "feedback": "This flips the division the wrong way -- it should be the sum divided BY 3, not 3 divided by the sum."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phrase implies a specific one of the four basic math operations.", "medium": "\"Increased by\" always points to one specific basic operation.", "easy": "\"Increased by\" means you should add."},
+    "medium": {"hard": "Handle \"twice a number\" first, then apply the \"less than\" phrase as subtraction from that result.", "medium": "Double the number first, then subtract 5 from that result.", "easy": "Double x first, then subtract 5."},
+    "hard": {"hard": "Group the addition inside parentheses first, since the entire sum must be divided by 3, not just part of it.", "medium": "Put x+4 inside parentheses so the whole sum gets divided by 3.", "easy": "Add x and 4 first, then divide that whole result by 3."}
+  }
+},
+{
+  "topic": "finding a percentage of a number",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 10% of 50?",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- 10% of 50 is 0.10×50=5."},
+      {"text": "10", "isCorrect": false, "feedback": "This just repeats the percentage number rather than calculating 10% of 50."},
+      {"text": "50", "isCorrect": false, "feedback": "This just repeats the original number rather than calculating a percentage of it."},
+      {"text": "500", "isCorrect": false, "feedback": "This multiplies 50 by 10 instead of by 0.10."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 35% of 80?",
+    "options": [
+      {"text": "28", "isCorrect": true, "feedback": "Correct -- 0.35×80=28."},
+      {"text": "35", "isCorrect": false, "feedback": "This just repeats the percentage number rather than calculating 35% of 80."},
+      {"text": "45", "isCorrect": false, "feedback": "This subtracts instead of multiplying to find the percentage."},
+      {"text": "2,800", "isCorrect": false, "feedback": "This multiplies 80 by 35 instead of by 0.35."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A student scored 42 out of 60 points on a test. What percentage did they score?",
+    "options": [
+      {"text": "70%", "isCorrect": true, "feedback": "Correct -- 42÷60=0.70, which is 70%."},
+      {"text": "42%", "isCorrect": false, "feedback": "This just uses the raw score as the percentage, ignoring the total possible points."},
+      {"text": "60%", "isCorrect": false, "feedback": "This just uses the total possible points as the percentage, ignoring the actual score."},
+      {"text": "18%", "isCorrect": false, "feedback": "This doesn't match correctly dividing 42 by 60."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Convert the percentage to a decimal, then multiply by the given number.", "medium": "Convert 10% to 0.10, then multiply by 50.", "easy": "Multiply 50 by 0.10."},
+    "medium": {"hard": "Convert the percentage to a decimal, then multiply by the given number.", "medium": "Convert 35% to 0.35, then multiply by 80.", "easy": "Multiply 80 by 0.35."},
+    "hard": {"hard": "Divide the part by the whole, then convert the resulting decimal into a percentage.", "medium": "Divide 42 by 60, then convert the decimal result into a percentage.", "easy": "Divide 42 by 60 to get a decimal, then turn it into a percent."}
+  }
+}
+]

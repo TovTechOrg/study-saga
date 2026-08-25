@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between an exothermic phase change and an endothermic phase change",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Condensation (gas turning into liquid) is:",
+    "options": [
+      {"text": "Exothermic, releasing heat energy into the surroundings", "isCorrect": true, "feedback": "Correct -- condensation releases heat as gas molecules slow down and form the more ordered liquid state, making it an exothermic phase change."},
+      {"text": "Endothermic, absorbing heat energy from the surroundings", "isCorrect": false, "feedback": "This is backwards -- condensation is specifically EXOTHERMIC (releasing heat), not endothermic, since gas molecules release energy as they form a more ordered liquid."},
+      {"text": "Neither exothermic nor endothermic, involving no heat change at all", "isCorrect": false, "feedback": "This isn't accurate -- condensation DOES involve a genuine, measurable heat change (specifically release), not zero energy change."},
+      {"text": "A chemical reaction rather than a physical phase change", "isCorrect": false, "feedback": "This isn't accurate -- condensation is specifically a PHYSICAL phase change (gas to liquid), not a chemical reaction forming a new substance."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Melting (solid to liquid) and freezing (liquid to solid) are opposite phase changes involving the exact same substance and the exact same amount of energy, just in opposite directions (melting absorbs heat, freezing releases the identical amount). Why must these two energy amounts be exactly equal in magnitude?",
+    "options": [
+      {"text": "Since melting and freezing are the exact reverse of each other (converting between the identical two phases of the identical substance), the energy required to break the intermolecular forces holding the solid's ordered structure together (during melting) must be identical to the energy released when those same intermolecular forces reform during freezing, as required by the fundamental conservation of energy", "isCorrect": true, "feedback": "Correct -- this explanation grounded in energy conservation for exactly reversed processes correctly explains why melting and freezing involve identical energy magnitudes, just in opposite directions (absorbed versus released)."},
+      {"text": "Melting and freezing would actually involve completely different, unrelated amounts of energy, despite being reverse processes of each other", "isCorrect": false, "feedback": "This isn't accurate -- melting and freezing specifically involve the IDENTICAL amount of energy (just in opposite directions), precisely because they are exact reverse processes of each other."},
+      {"text": "This equal-and-opposite energy relationship between melting and freezing has no actual connection to the conservation of energy", "isCorrect": false, "feedback": "This isn't accurate -- this relationship IS DIRECTLY connected to and required by the fundamental principle of energy conservation for reverse processes."},
+      {"text": "Freezing would actually absorb heat energy, identical to melting, rather than releasing it", "isCorrect": false, "feedback": "This isn't accurate -- freezing specifically RELEASES heat energy (being exothermic), the opposite of melting's heat absorption (endothermic), even though the magnitude is identical."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "During a phase change (like water boiling at exactly 100°C), the temperature of the substance remains completely constant even while heat continues to be added, until the phase change is fully complete. Explain, in terms of what's physically happening to the energy being added, why temperature does not rise during this process.",
+    "options": [
+      {"text": "During a phase change, all the added heat energy is being used specifically to break (or form) the intermolecular forces holding molecules together in their current phase, rather than to increase the average kinetic energy of the molecules (which is what temperature actually measures) -- since temperature only reflects average kinetic energy, and none of the added energy during this specific period is going toward increasing kinetic energy, the temperature remains constant until the phase change fully completes", "isCorrect": true, "feedback": "Correct -- this explanation distinguishing energy that changes intermolecular bonding (during phase change) from energy that increases kinetic energy/temperature correctly explains the characteristic temperature plateau observed during a phase change, an important concept in thermodynamics and heating/cooling curves."},
+      {"text": "Temperature would actually continue rising steadily throughout the entire phase change process, contrary to what's described", "isCorrect": false, "feedback": "This isn't accurate -- temperature specifically remains CONSTANT (a plateau) throughout the phase change, not continuing to rise, until the phase change is fully complete."},
+      {"text": "Added heat energy during a phase change has no actual connection to intermolecular forces between the molecules", "isCorrect": false, "feedback": "This isn't accurate -- added heat energy during a phase change IS DIRECTLY going toward breaking or forming intermolecular forces, which is precisely why temperature doesn't rise during this period."},
+      {"text": "Temperature actually measures the total intermolecular potential energy of a substance, not its average molecular kinetic energy", "isCorrect": false, "feedback": "This isn't accurate -- temperature specifically measures average molecular KINETIC energy, not intermolecular potential energy, which is precisely why phase-change energy (going into potential energy) doesn't raise temperature."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This particular gas-to-liquid phase transition is accompanied by net thermal energy release into the surrounding environment.", "medium": "This is when a gas turns into a liquid and gives off heat while doing it.", "easy": "This is when a gas turns into a liquid and gives off heat while doing it."},
+    "medium": {"hard": "Consider how the energy required to disrupt an ordered intermolecular arrangement must precisely equal the energy released when that same arrangement subsequently reforms, per conservation of energy.", "medium": "Since these two processes are just the same thing happening backwards, the energy it takes to pull the molecules apart has to exactly match the energy given off when they come back together.", "easy": "Since these two processes are the same thing happening backwards, the energy to pull molecules apart matches the energy released putting them back together."},
+    "hard": {"hard": "Consider how added energy during a phase transition is channeled into disrupting intermolecular bonding rather than increasing average molecular kinetic energy, which is what temperature specifically tracks.", "medium": "All the extra heat going in is being spent breaking apart the bonds holding the molecules together, not speeding the molecules up, and since temperature is really just about how fast molecules move, it doesn't budge.", "easy": "The extra heat is being spent breaking bonds, not speeding molecules up, so temperature doesn't budge."}
+  }
+}
+]

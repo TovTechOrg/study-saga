@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the derivative as an instantaneous rate of change",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the derivative of a function represent, in basic terms?",
+    "options": [
+      {"text": "The instantaneous rate of change (or slope) of the function at a specific point", "isCorrect": true, "feedback": "Correct -- the derivative captures how quickly a function's output is changing at any exact single point, unlike an average rate of change over an interval."},
+      {"text": "The total area underneath a function's graph", "isCorrect": false, "feedback": "That describes an INTEGRAL, not a derivative -- derivatives concern instantaneous RATE OF CHANGE (slope), not accumulated area."},
+      {"text": "The exact value of the function at x=0 only", "isCorrect": false, "feedback": "This isn't what a derivative represents -- a derivative describes the function's rate of change, and can be evaluated at ANY point, not exclusively at x=0."},
+      {"text": "The maximum possible value a function can ever reach", "isCorrect": false, "feedback": "While derivatives can HELP find maximum values (where the derivative equals zero), the derivative itself specifically represents rate of change, not the maximum value directly."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For the function f(x) = x², the derivative is f'(x) = 2x. What is the instantaneous rate of change (slope) of this function at x = 3?",
+    "options": [
+      {"text": "6", "isCorrect": true, "feedback": "Correct -- substituting x=3 into the derivative f'(x)=2x gives f'(3)=2(3)=6."},
+      {"text": "9", "isCorrect": false, "feedback": "This is the value of the ORIGINAL function f(3)=3²=9, not the value of the derivative f'(3), which represents the slope."},
+      {"text": "3", "isCorrect": false, "feedback": "This is just the x-value itself, not the correctly calculated derivative value at that point."},
+      {"text": "2", "isCorrect": false, "feedback": "This is just the coefficient from the derivative formula, without actually substituting and multiplying by the given x-value of 3."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A ball's height over time is given by h(t) = -5t² + 20t (in meters, with t in seconds). Using the derivative h'(t) = -10t + 20 (representing vertical velocity), at what time t does the ball reach its maximum height (where velocity equals zero)?",
+    "options": [
+      {"text": "t = 2 seconds", "isCorrect": true, "feedback": "Correct -- setting h'(t)=0: -10t+20=0, so 10t=20, giving t=2 seconds."},
+      {"text": "t = 20 seconds", "isCorrect": false, "feedback": "This doesn't correctly solve the equation -10t+20=0 for t."},
+      {"text": "t = 0 seconds", "isCorrect": false, "feedback": "At t=0, the derivative h'(0)=20, not 0, meaning velocity is NOT zero at this point (this is actually the ball's initial launch)."},
+      {"text": "t = 10 seconds", "isCorrect": false, "feedback": "This doesn't correctly result from solving -10t+20=0 for the variable t."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This mathematical construct quantifies the precise, localized rate of variation of a function's output relative to its input at a single point.", "medium": "This tells you exactly how fast a function is changing at one specific spot, not just on average.", "easy": "This tells you how fast a function is changing at one specific spot."},
+    "medium": {"hard": "Substitute the given x-value directly into the derivative expression to evaluate the instantaneous slope at that specific point.", "medium": "Plug 3 into the derivative formula 2x to find the slope at that point.", "easy": "Plug 3 into 2x to get 6."},
+    "hard": {"hard": "Set the derivative expression (representing velocity) equal to zero, then solve the resulting equation algebraically for the time variable.", "medium": "Set -10t+20 equal to 0, then solve for t.", "easy": "Set -10t+20=0. Add 10t to both sides: 20=10t. Divide by 10: t=2."}
+  }
+}
+]

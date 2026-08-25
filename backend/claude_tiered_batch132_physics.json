@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between free-fall and terminal velocity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An object has reached 'terminal velocity' when:",
+    "options": [
+      {"text": "Air resistance has increased enough to exactly balance gravity, so the object falls at a constant speed", "isCorrect": true, "feedback": "Correct -- terminal velocity occurs when upward air resistance force exactly balances downward gravitational force, resulting in zero net force and constant falling speed."},
+      {"text": "The object is accelerating continuously with no air resistance acting on it at all", "isCorrect": false, "feedback": "That describes true FREE FALL (in a vacuum, with no air resistance), not terminal velocity -- terminal velocity specifically involves air resistance balancing gravity, resulting in constant speed rather than continuous acceleration."},
+      {"text": "The object has come to a complete stop, with zero velocity", "isCorrect": false, "feedback": "This isn't accurate -- terminal velocity specifically refers to a constant, NONZERO falling speed, not the object coming to a complete stop."},
+      {"text": "Gravity has completely stopped acting on the object", "isCorrect": false, "feedback": "This isn't accurate -- gravity continues acting on the object throughout terminal velocity; it's specifically balanced by an equal and opposite air resistance force, not eliminated."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "As a skydiver falls, air resistance increases with increasing speed, until eventually it becomes large enough to exactly balance gravity, at which point the skydiver stops accelerating and falls at a constant terminal velocity. Why does air resistance specifically increase as falling speed increases?",
+    "options": [
+      {"text": "Air resistance (drag force) generally increases with the SQUARE of an object's speed through the air -- as the skydiver falls faster and faster, the air resistance force grows correspondingly larger, until it eventually grows large enough to exactly equal the constant downward gravitational force, at which point the net force becomes zero and the skydiver stops accelerating, settling into constant-speed terminal velocity", "isCorrect": true, "feedback": "Correct -- this explanation of speed-dependent air resistance growing until it balances the constant gravitational force correctly explains why a falling object naturally approaches a stable terminal velocity rather than accelerating indefinitely."},
+      {"text": "Air resistance would actually remain constant regardless of the skydiver's falling speed, never increasing as speed increases", "isCorrect": false, "feedback": "This isn't accurate -- air resistance specifically INCREASES as falling speed increases (roughly with the square of speed), which is precisely why terminal velocity is eventually reached."},
+      {"text": "Gravitational force on the skydiver would actually increase as their falling speed increases, which is why terminal velocity is reached", "isCorrect": false, "feedback": "This isn't accurate -- gravitational force on the skydiver remains essentially CONSTANT throughout the fall; it's specifically the increasing AIR RESISTANCE that eventually balances this constant gravity, not a changing gravitational force."},
+      {"text": "The relationship between falling speed and air resistance has no actual connection to explaining why terminal velocity is eventually reached", "isCorrect": false, "feedback": "This isn't accurate -- this relationship IS DIRECTLY connected to and is precisely the reason terminal velocity is eventually reached during a fall."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A skydiver falling in a spread-eagle position (increasing surface area facing the air) reaches a LOWER terminal velocity than the same skydiver falling head-first in a streamlined position (minimizing surface area). Explain the physical reasoning connecting body position, air resistance, and the resulting terminal velocity value.",
+    "options": [
+      {"text": "Increasing the body's surface area facing the oncoming air increases the air resistance force experienced at any given falling speed, meaning the spread-eagle skydiver's air resistance reaches the level needed to balance gravity at a LOWER falling speed compared to the streamlined position (which has less surface area and therefore less air resistance at the same speed, requiring a HIGHER speed to generate enough air resistance to balance gravity) -- this is precisely why body position/surface area directly determines the specific terminal velocity value reached", "isCorrect": true, "feedback": "Correct -- this explanation of surface-area-dependent air resistance directly determining the specific speed at which air resistance balances gravity correctly explains why body position significantly affects a skydiver's terminal velocity, a principle skydivers actively use to control their descent."},
+      {"text": "Body position and surface area would actually have no real effect on a skydiver's terminal velocity, which should be identical regardless of position", "isCorrect": false, "feedback": "This isn't accurate -- body position/surface area DOES significantly affect terminal velocity, with a spread-eagle position producing a lower terminal velocity than a streamlined position, precisely due to differing air resistance."},
+      {"text": "A streamlined, head-first position would actually produce a LOWER terminal velocity than a spread-eagle position, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- a streamlined position (less surface area, less air resistance) produces a HIGHER terminal velocity, not lower, compared to the spread-eagle position."},
+      {"text": "Surface area facing the oncoming air has no actual connection to the magnitude of air resistance force experienced by a falling object", "isCorrect": false, "feedback": "This isn't accurate -- surface area facing the air IS DIRECTLY connected to and is a key factor determining the magnitude of air resistance force experienced."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This kinematic state is achieved once the upward drag force attains parity with the downward gravitational force, yielding zero net force and unchanging descent speed.", "medium": "This is when air resistance has grown strong enough to cancel out gravity, so the falling object stops speeding up.", "easy": "This is when air resistance grows strong enough to cancel gravity, so the falling object stops speeding up."},
+    "medium": {"hard": "Consider how drag force scaling with the square of velocity produces an ever-growing opposing force that eventually equals the constant gravitational pull, halting further acceleration.", "medium": "The faster you fall, the harder the air pushes back against you, and eventually that push gets strong enough to completely match gravity's pull, so you stop speeding up.", "easy": "The faster you fall, the harder the air pushes back, and eventually that push matches gravity, so you stop speeding up."},
+    "hard": {"hard": "Consider how a larger frontal surface area generates greater drag at any given speed, so the equilibrium point between drag and gravity is reached at a correspondingly lower falling speed.", "medium": "Spreading your body out means the air pushes back on you harder even at a slower speed, so you hit the balance point with gravity sooner, at a lower top speed, than if you were tucked in tight.", "easy": "Spreading your body out means the air pushes back harder even at a slower speed, so you hit balance with gravity at a lower top speed."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of electronegativity and bond polarity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does electronegativity measure?",
+    "options": [
+      {"text": "An atom's tendency to attract shared electrons in a chemical bond", "isCorrect": true, "feedback": "Correct -- electronegativity describes how strongly an atom pulls bonding electrons toward itself."},
+      {"text": "The total number of electrons in an atom", "isCorrect": false, "feedback": "Total electron count is a separate property from electronegativity, which is about attraction strength for shared electrons."},
+      {"text": "The mass of an atom's nucleus", "isCorrect": false, "feedback": "Nuclear mass is unrelated to electronegativity, which concerns electron attraction in bonds."},
+      {"text": "The physical size of an atom", "isCorrect": false, "feedback": "Atomic size is a related but distinct property -- electronegativity specifically measures electron-attracting ability in bonds."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In an H-Cl bond, chlorine is significantly more electronegative than hydrogen. What effect does this have on the bond?",
+    "options": [
+      {"text": "The bond becomes polar, with the shared electrons spending more time near chlorine, giving it a partial negative charge and hydrogen a partial positive charge", "isCorrect": true, "feedback": "Correct -- this uneven electron sharing due to the electronegativity difference is exactly what creates bond polarity."},
+      {"text": "The bond becomes perfectly nonpolar, with electrons shared completely equally", "isCorrect": false, "feedback": "A significant electronegativity difference actually causes UNEQUAL sharing, making the bond polar, not nonpolar."},
+      {"text": "Hydrogen ends up with a partial negative charge, and chlorine ends up partially positive", "isCorrect": false, "feedback": "This is backwards -- since chlorine is MORE electronegative, it pulls electrons toward itself, becoming partially negative, while hydrogen becomes partially positive."},
+      {"text": "Electronegativity differences have no actual effect on bond character", "isCorrect": false, "feedback": "Electronegativity differences are precisely what determine whether a bond is polar or nonpolar."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Carbon dioxide (CO2) has polar C=O bonds, yet the overall molecule is nonpolar. How can a molecule with polar bonds still be a nonpolar molecule overall?",
+    "options": [
+      {"text": "Because CO2's linear, symmetric shape causes the two equal but opposite bond dipoles to cancel each other out, resulting in no net molecular dipole", "isCorrect": true, "feedback": "Correct -- molecular polarity depends on both bond polarity AND molecular geometry; symmetric arrangements can cause individual bond dipoles to cancel out."},
+      {"text": "The C=O bonds in CO2 are not actually polar at all", "isCorrect": false, "feedback": "The C=O bonds ARE genuinely polar due to the electronegativity difference between carbon and oxygen -- the molecule's overall nonpolarity comes from its symmetric shape, not from nonpolar bonds."},
+      {"text": "Molecular polarity depends only on bond polarity and never on molecular shape", "isCorrect": false, "feedback": "This is incorrect -- molecular shape plays a critical role alongside bond polarity in determining overall molecular polarity, as seen in CO2's case."},
+      {"text": "CO2 is actually a polar molecule, not nonpolar", "isCorrect": false, "feedback": "CO2 is a well-established example of a nonpolar molecule, despite containing individually polar bonds, due to its symmetric linear geometry."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property quantifies how strongly an atom's nucleus draws bonding electron density toward itself.", "medium": "This measures how strongly an atom pulls on the electrons it's sharing in a bond.", "easy": "This measures how strongly an atom pulls on shared electrons."},
+    "medium": {"hard": "A significant difference in electron-attracting strength between bonded atoms results in an uneven distribution of shared electron density.", "medium": "Since chlorine pulls harder on the shared electrons, they spend more time near chlorine, giving it a slight negative charge.", "easy": "Since chlorine pulls harder on the shared electrons, it ends up slightly negative and hydrogen slightly positive."},
+    "hard": {"hard": "Consider how the vector sum of individual bond dipole moments is affected by the molecule's overall symmetric geometry.", "medium": "Think about how the molecule's straight, symmetric shape might cause the two pulling directions to cancel each other out.", "easy": "The molecule's straight, symmetric shape lets the two pulls cancel each other out."}
+  }
+}
+]

@@ -1,0 +1,248 @@
+[
+{
+  "topic": "simplifying square roots",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the square root of 16?",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- 4×4=16."},
+      {"text": "8", "isCorrect": false, "feedback": "8×8 equals 64, not 16."},
+      {"text": "6", "isCorrect": false, "feedback": "6×6 equals 36, not 16."},
+      {"text": "32", "isCorrect": false, "feedback": "This is double 16, not its square root."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is √50 simplified?",
+    "options": [
+      {"text": "5√2", "isCorrect": true, "feedback": "Correct -- 50=25×2, and √25=5, so √50=5√2."},
+      {"text": "25√2", "isCorrect": false, "feedback": "This doesn't correctly take the square root of the perfect-square factor (25)."},
+      {"text": "10√5", "isCorrect": false, "feedback": "This doesn't correctly factor 50 into a perfect square times a remaining factor."},
+      {"text": "2√5", "isCorrect": false, "feedback": "This doesn't match factoring out the largest perfect square (25) from 50."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is √72 simplified?",
+    "options": [
+      {"text": "6√2", "isCorrect": true, "feedback": "Correct -- 72=36×2, and √36=6, so √72=6√2."},
+      {"text": "36√2", "isCorrect": false, "feedback": "This doesn't correctly take the square root of the perfect-square factor (36)."},
+      {"text": "8√9", "isCorrect": false, "feedback": "This doesn't factor out the LARGEST perfect square from 72."},
+      {"text": "3√8", "isCorrect": false, "feedback": "This doesn't factor out the largest possible perfect square from 72."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Find the number that, multiplied by itself, gives this value.", "medium": "Find a number that, when multiplied by itself, equals 16.", "easy": "What number times itself equals 16?"},
+    "medium": {"hard": "Find the largest perfect square that divides evenly into the number, then take its square root out front.", "medium": "Break 50 into 25 times 2, then take the square root of the 25 part.", "easy": "50 is 25 times 2 -- take the square root of 25 and leave the 2 under the root."},
+    "hard": {"hard": "Identify the LARGEST perfect square factor of the number, take its root out front, and leave the remaining factor under the radical.", "medium": "Break 72 into 36 times 2, then take the square root of the 36 part.", "easy": "72 is 36 times 2 -- take the square root of 36 and leave the 2 under the root."}
+  }
+},
+{
+  "topic": "similar triangles and proportional sides",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean for two triangles to be 'similar'?",
+    "options": [
+      {"text": "They have the same shape but not necessarily the same size", "isCorrect": true, "feedback": "Correct -- similar triangles have matching angles and proportional sides, but can differ in overall size."},
+      {"text": "They are exactly identical in every way, including size", "isCorrect": false, "feedback": "That describes congruent triangles, not merely similar ones."},
+      {"text": "They both have a right angle", "isCorrect": false, "feedback": "Similarity isn't specifically about having a right angle -- it's about matching angles and proportional sides overall."},
+      {"text": "They have completely different angle measures", "isCorrect": false, "feedback": "Similar triangles actually have the SAME corresponding angle measures, not different ones."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two similar triangles have a scale factor of 2. If a side on the smaller triangle is 5, what is the corresponding side on the larger triangle?",
+    "options": [
+      {"text": "10", "isCorrect": true, "feedback": "Correct -- multiply the smaller side by the scale factor: 5×2=10."},
+      {"text": "2.5", "isCorrect": false, "feedback": "This divides instead of multiplying by the scale factor."},
+      {"text": "7", "isCorrect": false, "feedback": "This adds the scale factor instead of multiplying by it."},
+      {"text": "25", "isCorrect": false, "feedback": "This squares the value instead of simply multiplying by the scale factor."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Triangle A has sides 3, 4, and 5. Triangle B is similar to Triangle A, and its shortest side is 9. What is the length of Triangle B's longest side?",
+    "options": [
+      {"text": "15", "isCorrect": true, "feedback": "Correct -- the scale factor is 9÷3=3, so the longest side is 5×3=15."},
+      {"text": "12", "isCorrect": false, "feedback": "This doesn't correctly apply the scale factor of 3 to the longest side of 5."},
+      {"text": "9", "isCorrect": false, "feedback": "This repeats the given side instead of scaling the longest side."},
+      {"text": "20", "isCorrect": false, "feedback": "This doesn't match multiplying 5 by the correct scale factor of 3."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These triangles share identical angle measures but can differ in overall scale.", "medium": "These triangles have the same angles, just scaled up or down in size.", "easy": "Similar triangles look the same but can be different sizes."},
+    "medium": {"hard": "Multiply the known side length by the given scale factor to find its counterpart.", "medium": "Multiply 5 by the scale factor of 2.", "easy": "Multiply 5 by 2 to find the larger triangle's side."},
+    "hard": {"hard": "First determine the scale factor by comparing corresponding known sides, then apply that same factor to the side you need to find.", "medium": "Find the scale factor by dividing 9 by 3, then multiply 5 by that scale factor.", "easy": "Divide 9 by 3 to get the scale factor, then multiply 5 by that number."}
+  }
+},
+{
+  "topic": "simple interest",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the formula for simple interest?",
+    "options": [
+      {"text": "Interest = Principal × Rate × Time", "isCorrect": true, "feedback": "Correct -- simple interest is calculated by multiplying the principal, the interest rate, and the time period."},
+      {"text": "Interest = Principal + Rate + Time", "isCorrect": false, "feedback": "Simple interest is calculated by multiplying these values, not adding them."},
+      {"text": "Interest = Principal ÷ Rate", "isCorrect": false, "feedback": "This formula is missing the time factor and uses the wrong operation."},
+      {"text": "Interest = Rate × Time only", "isCorrect": false, "feedback": "This formula is missing the principal amount, which is essential to the calculation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How much simple interest is earned on a $500 principal at a 4% annual rate over 2 years?",
+    "options": [
+      {"text": "$40", "isCorrect": true, "feedback": "Correct -- 500 × 0.04 × 2 = 40."},
+      {"text": "$20", "isCorrect": false, "feedback": "This only accounts for 1 year instead of 2."},
+      {"text": "$4", "isCorrect": false, "feedback": "This doesn't correctly apply the percentage rate to the principal."},
+      {"text": "$400", "isCorrect": false, "feedback": "This overstates the rate as though it were 40% rather than 4%."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An investment earns $150 in simple interest over 3 years at a 5% annual rate. What was the original principal amount?",
+    "options": [
+      {"text": "$1,000", "isCorrect": true, "feedback": "Correct -- 150 ÷ (0.05×3) = 150÷0.15 = 1,000."},
+      {"text": "$500", "isCorrect": false, "feedback": "This doesn't match dividing 150 by the combined rate-and-time factor of 0.15."},
+      {"text": "$3,000", "isCorrect": false, "feedback": "This overstates the principal needed to generate $150 at this rate and time."},
+      {"text": "$150", "isCorrect": false, "feedback": "This just repeats the interest amount rather than solving for the principal."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This calculation combines the starting amount, the yearly percentage, and the number of years all together.", "medium": "Multiply the starting amount by the rate and by the number of years.", "easy": "Multiply the principal, the rate, and the time together."},
+    "medium": {"hard": "Convert the percentage rate to a decimal, then multiply by both the principal and the time.", "medium": "Multiply 500 by 0.04, then multiply that result by 2.", "easy": "Multiply 500 by 0.04 by 2."},
+    "hard": {"hard": "Rearrange the simple interest formula to isolate the principal: divide the interest by the product of rate and time.", "medium": "Multiply the rate (as a decimal) by the time, then divide the interest by that result.", "easy": "Divide 150 by the result of 0.05 times 3."}
+  }
+},
+{
+  "topic": "absolute value",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the absolute value of -7?",
+    "options": [
+      {"text": "7", "isCorrect": true, "feedback": "Correct -- absolute value represents distance from zero, always as a positive number."},
+      {"text": "-7", "isCorrect": false, "feedback": "Absolute value is always non-negative, so the negative sign should be removed."},
+      {"text": "0", "isCorrect": false, "feedback": "The absolute value of -7 isn't zero -- it's the distance -7 is from zero, which is 7."},
+      {"text": "14", "isCorrect": false, "feedback": "This doubles the value instead of just removing the negative sign."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is |5 - 9|?",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- 5-9=-4, and the absolute value of -4 is 4."},
+      {"text": "-4", "isCorrect": false, "feedback": "Absolute value bars remove the negative sign, so the answer can't be negative."},
+      {"text": "14", "isCorrect": false, "feedback": "This adds the numbers instead of subtracting them first."},
+      {"text": "-14", "isCorrect": false, "feedback": "This doesn't correctly perform the subtraction inside the absolute value bars."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is |3 - 8| - |2 - 6|?",
+    "options": [
+      {"text": "1", "isCorrect": true, "feedback": "Correct -- |3-8|=5 and |2-6|=4, so 5-4=1."},
+      {"text": "9", "isCorrect": false, "feedback": "This adds the two absolute values instead of subtracting them."},
+      {"text": "-1", "isCorrect": false, "feedback": "Since 5 is larger than 4, the result should be positive, not negative."},
+      {"text": "-9", "isCorrect": false, "feedback": "This doesn't correctly compute both absolute values before combining them."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value always represents a distance, which can never be negative.", "medium": "This represents how far a number is from zero, always given as a positive amount.", "easy": "This is just the number without its negative sign."},
+    "medium": {"hard": "Perform the subtraction first, then remove any negative sign from the result.", "medium": "Subtract 9 from 5 first, then take the absolute value of that result.", "easy": "First find 5 minus 9, then remove the negative sign from the answer."},
+    "hard": {"hard": "Evaluate each absolute value expression completely and separately first, then perform the final subtraction between the two results.", "medium": "Solve each absolute value separately first, then subtract the second result from the first.", "easy": "Find |3-8| first, then find |2-6|, then subtract the second from the first."}
+  }
+},
+{
+  "topic": "least common multiple (LCM)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the least common multiple (LCM) of 4 and 6?",
+    "options": [
+      {"text": "12", "isCorrect": true, "feedback": "Correct -- 12 is the smallest number that both 4 and 6 divide into evenly."},
+      {"text": "24", "isCorrect": false, "feedback": "24 is a common multiple, but it isn't the LEAST one -- 12 is smaller and still works."},
+      {"text": "2", "isCorrect": false, "feedback": "2 is the greatest common factor, not the least common multiple."},
+      {"text": "10", "isCorrect": false, "feedback": "10 isn't evenly divisible by both 4 and 6."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the LCM of 5 and 8?",
+    "options": [
+      {"text": "40", "isCorrect": true, "feedback": "Correct -- 40 is the smallest number divisible evenly by both 5 and 8."},
+      {"text": "13", "isCorrect": false, "feedback": "This just adds the two numbers together, which isn't how LCM works."},
+      {"text": "1", "isCorrect": false, "feedback": "This is the greatest common factor, not the least common multiple."},
+      {"text": "80", "isCorrect": false, "feedback": "80 is a common multiple, but it isn't the smallest one -- 40 also works."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two flashing lights blink every 6 seconds and every 8 seconds, respectively, starting at the same moment. After how many seconds will they blink together again?",
+    "options": [
+      {"text": "24 seconds", "isCorrect": true, "feedback": "Correct -- 24 is the LCM of 6 and 8, the first time both cycles align again."},
+      {"text": "48 seconds", "isCorrect": false, "feedback": "48 is a common multiple, but it isn't the FIRST time they align -- 24 comes sooner."},
+      {"text": "14 seconds", "isCorrect": false, "feedback": "This simply adds the two numbers, which doesn't find when both cycles align."},
+      {"text": "2 seconds", "isCorrect": false, "feedback": "This is the greatest common factor, not the least common multiple needed here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "List out multiples of each number until you find the smallest one they share.", "medium": "Find the smallest number that both 4 and 6 can divide into evenly.", "easy": "List multiples of 4 and 6 until you find the smallest one they share."},
+    "medium": {"hard": "List out multiples of each number until you find the smallest one they share.", "medium": "Find the smallest number that both 5 and 8 can divide into evenly.", "easy": "List multiples of 5 and 8 until you find the smallest one they share."},
+    "hard": {"hard": "The lights will align again at a time equal to the least common multiple of their two individual blink intervals.", "medium": "Find the least common multiple of 6 and 8 to determine when both lights blink together again.", "easy": "Find the smallest number that both 6 and 8 divide into evenly."}
+  }
+},
+{
+  "topic": "solving systems of equations by substitution",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the system y = x + 2 and y = 5, what is the value of x?",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- substitute y=5 into the first equation: 5=x+2, so x=3."},
+      {"text": "5", "isCorrect": false, "feedback": "This is the value of y, not x."},
+      {"text": "7", "isCorrect": false, "feedback": "This adds instead of subtracting 2 from 5."},
+      {"text": "2", "isCorrect": false, "feedback": "This just repeats a number from the equation rather than solving for x."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Solve the system: y = 2x and x + y = 9. What is the value of x?",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- substitute y=2x into the second equation: x+2x=9, so 3x=9, x=3."},
+      {"text": "9", "isCorrect": false, "feedback": "This just repeats a number from the equation rather than solving for x."},
+      {"text": "6", "isCorrect": false, "feedback": "This is the value of y (2×3), not x."},
+      {"text": "4.5", "isCorrect": false, "feedback": "This doesn't correctly account for substituting y=2x before solving."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Solve the system: y = x - 1 and 2x + y = 14. What is the value of y?",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- substitute to get 2x+(x-1)=14, so 3x=15, x=5, and y=5-1=4."},
+      {"text": "5", "isCorrect": false, "feedback": "This is the value of x, not y."},
+      {"text": "14", "isCorrect": false, "feedback": "This just repeats a number from the equation rather than solving the system."},
+      {"text": "3", "isCorrect": false, "feedback": "This doesn't match correctly solving the substituted equation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Replace the shared variable with its known value from the other equation, then solve.", "medium": "Since y=5, replace y in the first equation and solve for x.", "easy": "Replace y with 5 in the equation y=x+2, then solve for x."},
+    "medium": {"hard": "Substitute the expression for y directly into the second equation, then solve for the remaining variable.", "medium": "Replace y with 2x in the second equation, then solve for x.", "easy": "Replace y with 2x in x+y=9, then solve for x."},
+    "hard": {"hard": "Substitute the expression for y into the other equation, solve for x first, then use that value to find y.", "medium": "Replace y with (x-1) in the second equation, solve for x, then use that to find y.", "easy": "Replace y with (x-1), solve for x first, then plug x back in to find y."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between first-order and second-order reaction kinetics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a 'first-order' reaction, the reaction rate depends on:",
+    "options": [
+      {"text": "The concentration of a single reactant, raised to the first power (rate proportional to [A]¹)", "isCorrect": true, "feedback": "Correct -- first-order reactions have a rate directly proportional to just one reactant's concentration, meaning doubling that concentration doubles the reaction rate."},
+      {"text": "The concentration of a reactant raised to the second power (rate proportional to [A]²)", "isCorrect": false, "feedback": "That describes a SECOND-ORDER reaction (in terms of that single reactant), not first-order, which specifically involves concentration raised to the FIRST power, not squared."},
+      {"text": "Absolutely no reactant concentrations at all", "isCorrect": false, "feedback": "This isn't accurate -- first-order reactions DO depend on a reactant's concentration (specifically, proportionally, to the first power) -- this isn't a concentration-independent scenario."},
+      {"text": "Only the reaction's temperature, with no connection to concentration at all", "isCorrect": false, "feedback": "While temperature DOES affect reaction rate generally (via the rate constant), reaction ORDER (like 'first-order') specifically describes the CONCENTRATION dependence relationship, not simply temperature dependence alone."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a first-order reaction, DOUBLING the reactant's concentration DOUBLES the reaction rate. In a SECOND-order reaction (rate proportional to [A]²), doubling that same reactant's concentration QUADRUPLES the reaction rate instead. Why does this significant difference make mathematical sense, based on each reaction order's specific rate law?",
+    "options": [
+      {"text": "Since rate is proportional to [A]¹ for first-order (so doubling [A] simply doubles the rate: 2¹=2), but rate is proportional to [A]² for second-order (so doubling [A] means squaring that doubling effect: 2²=4, quadrupling the rate), this direct mathematical consequence of the DIFFERENT EXPONENTS in each rate law precisely explains why doubling concentration produces such different resulting rate change magnitudes for these two reaction orders", "isCorrect": true, "feedback": "Correct -- this direct mathematical relationship (exponent value directly determining how concentration changes translate into rate changes) is fundamental to correctly understanding and predicting reaction kinetics behavior for different reaction orders."},
+      {"text": "First-order and second-order reactions would actually always show identical rate change patterns when concentration is doubled", "isCorrect": false, "feedback": "This isn't accurate -- these two reaction orders show GENUINELY DIFFERENT rate change patterns when concentration is doubled (2x for first-order, 4x for second-order), precisely due to their different mathematical exponents in the respective rate laws."},
+      {"text": "This difference in rate change patterns has no actual connection to the specific mathematical exponent used in each reaction order's rate law", "isCorrect": false, "feedback": "This isn't accurate -- this difference IS DIRECTLY and specifically connected to and EXPLAINED BY the different exponent values (1 vs. 2) used in each reaction order's respective rate law equation."},
+      {"text": "Doubling concentration in a second-order reaction would actually only double the rate, identical to a first-order reaction", "isCorrect": false, "feedback": "This isn't accurate -- doubling concentration in a SECOND-order reaction specifically QUADRUPLES (not merely doubles) the rate, precisely due to the squared relationship (2²=4) in that reaction order's specific rate law."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Determining a reaction's actual kinetic ORDER (whether it's zero-order, first-order, second-order, etc.) generally requires ACTUAL EXPERIMENTAL DATA/measurement, rather than simply being predictable directly from the reaction's balanced chemical equation alone. Why is this specifically true -- in other words, why can't you reliably determine reaction order just by looking at the STOICHIOMETRIC COEFFICIENTS in a balanced equation?",
+    "options": [
+      {"text": "Reaction order specifically reflects the actual, sometimes complex MECHANISM (the detailed step-by-step pathway) by which a reaction actually proceeds at the molecular level, which can be considerably more complicated than what the simple overall balanced equation (showing only the net starting materials and final products) directly reveals -- therefore, reaction order must be determined EXPERIMENTALLY (by actually measuring how rate changes with concentration) rather than simply assumed from stoichiometric coefficients alone", "isCorrect": true, "feedback": "Correct -- this important distinction (between a reaction's overall balanced equation, which shows only net stoichiometry, and its actual underlying mechanism, which determines true kinetic behavior) explains why experimental kinetics studies are specifically necessary to properly determine reaction order, rather than relying on the potentially misleading assumption that stoichiometric coefficients directly dictate kinetic order."},
+      {"text": "Reaction order can actually always be reliably and directly determined just from a reaction's balanced stoichiometric equation, without requiring any experimental data at all", "isCorrect": false, "feedback": "This isn't accurate -- reaction order generally CANNOT be reliably determined from stoichiometry alone; it specifically requires ACTUAL EXPERIMENTAL DATA/measurement, precisely because it reflects the underlying reaction mechanism, which the simple balanced equation doesn't necessarily reveal."},
+      {"text": "A reaction's underlying mechanism has no actual connection to its experimentally observed kinetic order", "isCorrect": false, "feedback": "This isn't accurate -- a reaction's underlying MECHANISM IS DIRECTLY and fundamentally connected to and DETERMINES its actual experimentally observed kinetic order, which is precisely why mechanism (not simply the overall balanced equation) is the true determinant of reaction order."},
+      {"text": "This need for experimental determination of reaction order has no actual practical significance for chemistry research or industrial process design", "isCorrect": false, "feedback": "This isn't accurate -- this need for experimental kinetic determination has SIGNIFICANT practical significance for both chemistry research (understanding reaction mechanisms) and industrial process design (optimizing reaction conditions and rates)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This kinetic classification indicates that reaction velocity scales linearly (to the first power) with a single reactant's concentration.", "medium": "This kind of reaction speeds up in direct proportion to how much of one specific ingredient you have.", "easy": "This kind of reaction speeds up directly with how much of one ingredient you have."},
+    "medium": {"hard": "Apply each reaction order's specific exponent to the concentration-doubling scenario to calculate the resulting proportional rate change for that order.", "medium": "For first-order, just double the number (2¹=2); for second-order, square that doubling (2²=4).", "easy": "For first-order it's 2¹=2 (doubled); for second-order it's 2²=4 (quadrupled)."},
+    "hard": {"hard": "Consider how the true rate-determining step within a multi-step reaction mechanism, rather than the simplified net stoichiometric equation, actually governs the empirically observed kinetic order.", "medium": "The balanced equation only shows you the starting ingredients and final products, but the actual step-by-step 'behind the scenes' process the reaction goes through is what really determines its speed pattern -- and you can't see those hidden steps just from the equation.", "easy": "The balanced equation shows ingredients and products, but the actual step-by-step process determines speed, and you can't see that from the equation."}
+  }
+}
+]

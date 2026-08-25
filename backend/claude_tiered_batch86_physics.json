@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between mass and inertia",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Inertia refers to an object's tendency to:",
+    "options": [
+      {"text": "Resist changes to its current state of motion (whether at rest or moving)", "isCorrect": true, "feedback": "Correct -- inertia is the natural resistance an object has to having its velocity changed, whether that means starting to move, stopping, or changing direction."},
+      {"text": "Always accelerate on its own, without any external force", "isCorrect": false, "feedback": "This is essentially the opposite of inertia -- inertia specifically describes RESISTANCE to changes in motion, not a tendency to spontaneously accelerate."},
+      {"text": "Immediately stop moving the instant a force is removed", "isCorrect": false, "feedback": "This isn't accurate -- inertia specifically means an object tends to CONTINUE its current state of motion (including continuing to move) even after a force is removed, not immediately stop."},
+      {"text": "Change its own mass spontaneously over time", "isCorrect": false, "feedback": "Inertia doesn't concern spontaneous mass change -- it specifically concerns resistance to changes in an object's state of MOTION."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Mass and inertia are closely related concepts, but they aren't identical -- mass is technically the MEASURE (quantification) of an object's inertia. Why is this distinction (mass as a measurable quantity vs. inertia as a general physical property/tendency) meaningful?",
+    "options": [
+      {"text": "Inertia describes the general qualitative PHENOMENON of resisting motion changes, while mass provides the specific QUANTITATIVE measurement (in kilograms, for example) of exactly how much inertia a particular object actually has", "isCorrect": true, "feedback": "Correct -- this distinction between a general physical property/tendency (inertia) and its specific numerical measurement (mass) is a subtle but conceptually important distinction in physics."},
+      {"text": "Mass and inertia are actually completely unrelated concepts with no meaningful connection", "isCorrect": false, "feedback": "This isn't accurate -- these concepts ARE closely and directly related; mass IS specifically the quantitative measure of an object's inertia, not an unrelated separate concept."},
+      {"text": "Inertia is actually the quantitative measurement, while mass is the general qualitative concept", "isCorrect": false, "feedback": "This has it backwards -- MASS is specifically the quantitative MEASUREMENT of an object's INERTIA (the more general qualitative concept/tendency), not the reverse."},
+      {"text": "This distinction has no actual conceptual importance or meaning in physics", "isCorrect": false, "feedback": "This isn't accurate -- this distinction, while subtle, has genuine conceptual importance for precisely understanding how these two closely related terms are properly and specifically defined in physics."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In Einstein's general relativity, the 'equivalence principle' notes that an object's inertial mass (resistance to acceleration, from F=ma) and its gravitational mass (determining gravitational force experienced, from F=mg) appear to be precisely equal, even though they conceptually arise from seemingly different physical contexts. Why was this observed equivalence considered such a profound and significant clue for Einstein's theory?",
+    "options": [
+      {"text": "The fact that these two conceptually distinct types of mass (one relating to general resistance to acceleration, the other relating specifically to gravitational interaction) are experimentally found to be precisely equal suggested a deeper, more fundamental underlying connection between inertia and gravity than classical physics alone had previously explained, ultimately motivating Einstein's revolutionary geometric reconceptualization of gravity", "isCorrect": true, "feedback": "Correct -- this profound and experimentally verified equivalence between inertial and gravitational mass was one of the crucial theoretical clues that led Einstein toward developing his groundbreaking general theory of relativity, fundamentally reconceptualizing gravity as spacetime curvature rather than a conventional force."},
+      {"text": "Inertial mass and gravitational mass are actually always measurably different from each other, contrary to what's described", "isCorrect": false, "feedback": "This isn't accurate -- extensive precise experimental testing has consistently shown these two types of mass to be equal (or extremely close to equal) to a very high degree of precision, not measurably different."},
+      {"text": "This observed equivalence has no actual connection to the development of Einstein's theory of general relativity", "isCorrect": false, "feedback": "This isn't accurate -- this observed equivalence was actually DIRECTLY and centrally connected to and influential in motivating Einstein's development of general relativity, not an unrelated coincidental observation."},
+      {"text": "Classical (pre-Einstein) physics had already fully and completely explained why these two types of mass must be equal", "isCorrect": false, "feedback": "This isn't accurate -- classical physics generally treated this equivalence as an unexplained empirical observation/coincidence, without a deeper theoretical explanation, which is precisely why Einstein's subsequent theoretical explanation (via general relativity) was considered so significant."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This intrinsic property describes an object's inherent opposition to any alteration in its existing kinematic state.", "medium": "This is an object's natural tendency to just keep doing whatever it's already doing (moving or staying still).", "easy": "This is an object's tendency to keep doing whatever it's already doing."},
+    "medium": {"hard": "Consider the distinction between a general physical tendency/phenomenon and the specific standardized numerical value used to quantify that same underlying tendency.", "medium": "Inertia is the general IDEA of resisting motion change, while mass is the actual NUMBER (like in kilograms) that tells you how much of that resistance a specific object has.", "easy": "Inertia is the general idea, while mass is the actual number that measures it."},
+    "hard": {"hard": "Consider how an unexplained but precisely verified numerical equivalence between two conceptually distinct physical quantities could serve as compelling evidence pointing toward a deeper, previously unrecognized underlying theoretical connection.", "medium": "The fact that these two different-sounding kinds of 'mass' turned out to be exactly the same number was a big hint that gravity and motion-resistance might be more deeply connected than anyone previously realized.", "easy": "These two different-sounding kinds of mass being exactly equal was a big hint that gravity and motion might be deeply connected."}
+  }
+}
+]

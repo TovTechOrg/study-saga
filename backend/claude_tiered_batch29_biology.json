@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a species' geographic range and distribution",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a species' geographic range?",
+    "options": [
+      {"text": "The total area across which a species naturally lives", "isCorrect": true, "feedback": "Correct -- geographic range describes the full extent of a species' natural habitat distribution."},
+      {"text": "The exact number of individuals in a species", "isCorrect": false, "feedback": "That describes population size, not geographic range."},
+      {"text": "The average lifespan of a species", "isCorrect": false, "feedback": "Lifespan is a completely different biological measurement, unrelated to geographic range."},
+      {"text": "The colors an organism can display", "isCorrect": false, "feedback": "Coloration is unrelated to the concept of geographic range, which is about spatial distribution."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A species is described as 'endemic' to a specific island. What does this mean?",
+    "options": [
+      {"text": "The species is found naturally only in that specific location and nowhere else", "isCorrect": true, "feedback": "Correct -- endemic species have a very restricted natural geographic range, often tied to unique isolated environments like islands."},
+      {"text": "The species is found absolutely everywhere on Earth", "isCorrect": false, "feedback": "This is nearly the opposite of endemic -- endemic species have a very LIMITED, specific range, not a global one."},
+      {"text": "The species is extinct everywhere, including that island", "isCorrect": false, "feedback": "Endemic describes a living species' restricted natural range -- it doesn't mean the species is extinct."},
+      {"text": "The species was recently introduced to that island by humans", "isCorrect": false, "feedback": "Endemic species arose naturally in that location -- this term doesn't describe a human-introduced (invasive) species."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Endemic species, often found on isolated islands, are frequently more vulnerable to extinction than widely distributed species. Why might a restricted geographic range increase extinction risk?",
+    "options": [
+      {"text": "A single localized event (disease outbreak, habitat destruction, invasive species) could affect the species' entire population at once, since there's no other separate population elsewhere to serve as a backup", "isCorrect": true, "feedback": "Correct -- widely distributed species have a kind of built-in insurance against localized threats, which endemic species lack due to their limited range."},
+      {"text": "Endemic species are always physically weaker than widely distributed species", "isCorrect": false, "feedback": "Physical strength isn't the relevant factor here -- it's specifically about the geographic vulnerability of having no separate backup populations elsewhere."},
+      {"text": "Geographic range has no actual connection to extinction risk", "isCorrect": false, "feedback": "Geographic range is actually a well-documented, significant factor influencing a species' vulnerability to extinction."},
+      {"text": "Endemic species always have larger population sizes, which somehow increases risk", "isCorrect": false, "feedback": "Endemic species often actually have SMALLER population sizes due to their restricted range, not larger ones -- and it's the restricted geographic range itself that's the key vulnerability."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This describes the total geographic extent over which a species is naturally distributed.", "medium": "This is the total area where a species can naturally be found living.", "easy": "This is all the places where a species naturally lives."},
+    "medium": {"hard": "This term describes a species whose natural distribution is restricted to one specific, often isolated, geographic area.", "medium": "This describes a species that's only naturally found in one specific place, nowhere else in the world.", "easy": "This describes a species that's only found in one specific place in the whole world."},
+    "hard": {"hard": "Without geographically separated populations, a single localized catastrophic event has the potential to impact the species' entire existing population simultaneously, unlike a species spread across multiple independent regions.", "medium": "If something bad happens in that one small area, there's no other population somewhere else to keep the species going.", "easy": "If something bad happens in that one small area, there's no other population elsewhere to keep the species going."}
+  }
+}
+]

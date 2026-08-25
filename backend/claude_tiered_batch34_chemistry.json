@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a solution's boiling point elevation from dissolved solutes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Compared to pure water, does salt water generally boil at a higher or lower temperature?",
+    "options": [
+      {"text": "Higher", "isCorrect": true, "feedback": "Correct -- dissolved salt raises the boiling point above that of pure water, a phenomenon called boiling point elevation."},
+      {"text": "Lower", "isCorrect": false, "feedback": "This is backwards -- dissolved salt actually raises the boiling point, not lowers it."},
+      {"text": "Exactly the same temperature", "isCorrect": false, "feedback": "Dissolved salt does have a measurable effect, raising the boiling point above that of pure water."},
+      {"text": "Salt water doesn't boil at all", "isCorrect": false, "feedback": "Salt water absolutely can and does boil -- just at a slightly higher temperature than pure water."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does adding salt to water raise its boiling point?",
+    "options": [
+      {"text": "The dissolved salt particles interfere with water molecules escaping into vapor, requiring more energy (higher temperature) to reach boiling", "isCorrect": true, "feedback": "Correct -- dissolved particles disrupt the process of water molecules leaving the liquid phase, requiring additional thermal energy to compensate."},
+      {"text": "Salt directly makes the water molecules move faster", "isCorrect": false, "feedback": "The effect isn't about directly speeding up water molecules -- it's about the dissolved particles interfering with the vaporization process itself."},
+      {"text": "Salt has no actual effect on water's boiling point", "isCorrect": false, "feedback": "Salt does have a measurable, real effect on boiling point, specifically raising it -- this is well-documented chemistry (boiling point elevation)."},
+      {"text": "Salt actually cools the water down, which is why it takes longer to boil", "isCorrect": false, "feedback": "The higher boiling point isn't due to net cooling -- it's due to the dissolved particles' interference with the phase-change (vaporization) process itself."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Boiling point elevation depends on the NUMBER of dissolved particles, not necessarily their specific chemical identity. Why would adding the same molar amount of sugar versus salt to water have different effects on boiling point elevation?",
+    "options": [
+      {"text": "Salt (like NaCl) dissociates into two separate ions (Na⁺ and Cl⁻) in water, effectively doubling the number of dissolved particles compared to the same molar amount of sugar, which doesn't dissociate at all", "isCorrect": true, "feedback": "Correct -- since boiling point elevation depends on total particle count, salt's dissociation into two ions produces roughly double the effect of a non-dissociating solute like sugar at the same molarity."},
+      {"text": "Sugar and salt would have the exact same effect on boiling point, since they're added in the same molar amount", "isCorrect": false, "feedback": "This isn't correct -- salt's ionic dissociation into two separate particles per formula unit gives it roughly double the boiling-point-elevating effect compared to sugar at the same molarity."},
+      {"text": "Sugar always has a stronger effect on boiling point than salt", "isCorrect": false, "feedback": "This is backwards -- salt's dissociation into multiple ions typically gives it a STRONGER effect per mole than a non-dissociating solute like sugar."},
+      {"text": "This effect has nothing to do with the number of dissolved particles", "isCorrect": false, "feedback": "This effect is actually directly and fundamentally tied to the total number of dissolved particles in solution, which is precisely why dissociation matters."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Consider whether dissolving something in a liquid typically raises or lowers the temperature needed for it to boil.", "medium": "Think about whether adding something dissolved usually makes it easier or harder for the liquid to boil.", "easy": "Adding salt makes it a little harder for the water to boil, needing more heat."},
+    "medium": {"hard": "Dissolved particles occupy space at the liquid's surface, physically hindering the escape of solvent molecules into the vapor phase.", "medium": "The dissolved salt particles get in the way of water molecules trying to escape into steam.", "easy": "The dissolved salt particles get in the way of water molecules trying to turn into steam."},
+    "hard": {"hard": "Boiling point elevation is a colligative property dependent on total solute particle concentration -- ionic compounds that dissociate into multiple ions per formula unit produce a proportionally larger effect than non-dissociating molecular solutes at equal molarity.", "medium": "Salt splits apart into two separate charged pieces once dissolved, so it actually creates twice as many dissolved \"things\" as the same amount of sugar, which stays as one piece.", "easy": "Salt splits into two separate pieces in water, so it creates twice as many dissolved bits as the same amount of sugar."}
+  }
+}
+]

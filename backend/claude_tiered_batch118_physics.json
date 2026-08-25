@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between kinetic friction and rolling friction",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Rolling friction (like a ball or wheel rolling on a surface) is generally:",
+    "options": [
+      {"text": "Much smaller in magnitude than sliding (kinetic) friction, for the same surfaces and normal force", "isCorrect": true, "feedback": "Correct -- rolling friction is typically significantly less than sliding friction, which is precisely why wheels are so useful for reducing energy loss during movement."},
+      {"text": "Much larger in magnitude than sliding (kinetic) friction, for the same surfaces and normal force", "isCorrect": false, "feedback": "This is backwards -- rolling friction is specifically SMALLER (not larger) than sliding friction, which is precisely why rolling motion is generally more efficient than sliding."},
+      {"text": "Exactly equal in magnitude to sliding (kinetic) friction in every case", "isCorrect": false, "feedback": "This isn't accurate -- rolling friction and sliding friction are GENERALLY DIFFERENT in magnitude (rolling being smaller), not equal to each other."},
+      {"text": "Completely nonexistent, with zero friction force at all", "isCorrect": false, "feedback": "This isn't accurate -- rolling friction, while SMALLER than sliding friction, is still a real, nonzero force, not completely absent."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why is rolling friction generally so much SMALLER than sliding friction, in terms of what's physically happening at the contact point between the rolling object and the surface?",
+    "options": [
+      {"text": "In rolling motion, the contact point between the wheel/ball and surface is momentarily stationary relative to that surface (no sliding/scraping at that instant), unlike sliding motion, where the two surfaces continuously move/scrape against each other", "isCorrect": true, "feedback": "Correct -- this key physical distinction (momentarily stationary contact point in rolling vs. continuously sliding contact) explains why rolling motion generally experiences significantly less frictional resistance."},
+      {"text": "The contact point in rolling motion actually also continuously slides/scrapes against the surface, identical to sliding friction", "isCorrect": false, "feedback": "This isn't accurate -- in true rolling motion (without slipping), the contact point is specifically momentarily stationary relative to the surface, unlike sliding friction's continuous relative motion."},
+      {"text": "This difference in contact-point behavior has no actual connection to explaining why rolling friction is smaller than sliding friction", "isCorrect": false, "feedback": "This isn't accurate -- this difference IS DIRECTLY connected to and EXPLAINS why rolling friction is generally much smaller than sliding friction."},
+      {"text": "Rolling friction would actually be identical in magnitude to sliding friction if the contact point behavior were properly considered", "isCorrect": false, "feedback": "This isn't accurate -- properly considering contact-point behavior specifically EXPLAINS why these two friction types have genuinely different (not identical) magnitudes."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Rolling friction, though small, isn't actually zero -- it primarily arises from slight deformation of the wheel and/or surface at the contact point (rather than from sliding). Why does this deformation-based mechanism explain why rolling friction increases for softer materials (like a soft tire on pavement) compared to harder materials (like a steel wheel on a steel rail)?",
+    "options": [
+      {"text": "Softer materials deform MORE significantly under the same applied load/weight, creating a larger contact area and requiring more energy to continuously deform and 'un-deform' the material as it rolls -- this greater deformation energy loss is precisely why rolling friction is generally higher for softer materials than for harder, less-deforming materials like steel", "isCorrect": true, "feedback": "Correct -- this deformation-based explanation of rolling friction's origin (rather than sliding, as in kinetic friction) correctly explains why material stiffness/hardness significantly affects rolling friction magnitude, which is precisely why steel-wheel-on-steel-rail systems (like trains) achieve remarkably low rolling friction compared to rubber tires on pavement."},
+      {"text": "Material softness/hardness actually has no real connection to the resulting magnitude of rolling friction experienced", "isCorrect": false, "feedback": "This isn't accurate -- material softness/hardness IS DIRECTLY connected to and significantly affects rolling friction magnitude, via the deformation mechanism being described."},
+      {"text": "Softer materials would actually experience LESS rolling friction than harder materials, contrary to what's being described", "isCorrect": false, "feedback": "This is backwards -- softer materials (deforming more) generally experience MORE (not less) rolling friction compared to harder, less-deforming materials like steel."},
+      {"text": "Rolling friction is actually caused by the exact same sliding mechanism as kinetic friction, not by material deformation", "isCorrect": false, "feedback": "This isn't accurate -- rolling friction is specifically caused primarily by material DEFORMATION at the contact point, a fundamentally different mechanism from the SLIDING that causes kinetic friction."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This resistive force arising during rolling motion is characteristically an order of magnitude smaller than its sliding counterpart under equivalent normal loading conditions.", "medium": "This kind of friction from rolling is usually a lot weaker than the friction from something sliding.", "easy": "Rolling friction is usually a lot weaker than sliding friction."},
+    "medium": {"hard": "Consider how the absence of relative tangential velocity at the instantaneous point of contact during pure rolling eliminates the continuous surface abrasion characteristic of sliding friction.", "medium": "The exact spot touching the ground isn't actually sliding around at that instant during rolling, unlike sliding where surfaces are constantly scraping against each other.", "easy": "The spot touching the ground isn't sliding during rolling, unlike sliding friction's constant scraping."},
+    "hard": {"hard": "Consider how greater material compliance under load increases the energy dissipated through repeated cycles of contact-zone deformation and recovery as the object rolls forward.", "medium": "A squishier material gets squished more with each roll, and squishing and un-squishing it over and over wastes more energy than a stiff material that barely bends at all.", "easy": "A squishier material gets squished more with each roll, wasting more energy than a stiff material."}
+  }
+}
+]

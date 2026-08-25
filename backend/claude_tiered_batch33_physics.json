@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a circuit breaker's function based on current",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main purpose of a circuit breaker in household wiring?",
+    "options": [
+      {"text": "To automatically stop the flow of current if it becomes dangerously high, preventing fires or damage", "isCorrect": true, "feedback": "Correct -- circuit breakers act as a safety mechanism, cutting off current when it exceeds a safe threshold."},
+      {"text": "To increase the voltage supplied to a house", "isCorrect": false, "feedback": "Voltage increase isn't the function of a circuit breaker -- its role is a protective one, related to current safety limits."},
+      {"text": "To make appliances run faster", "isCorrect": false, "feedback": "Circuit breakers don't affect appliance speed -- they're a safety device for interrupting excessive current."},
+      {"text": "To store electrical energy for later use", "isCorrect": false, "feedback": "Energy storage is the role of something like a battery, not a circuit breaker, which is a safety switch."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why might a circuit breaker \"trip\" (shut off) when too many appliances are plugged into the same circuit at once?",
+    "options": [
+      {"text": "Too many appliances drawing power simultaneously can push the total current beyond the circuit's safe rated limit, triggering the breaker to prevent overheating", "isCorrect": true, "feedback": "Correct -- circuit breakers are specifically designed to detect and respond to this kind of dangerous current overload."},
+      {"text": "Circuit breakers trip completely randomly, unrelated to how many appliances are plugged in", "isCorrect": false, "feedback": "This isn't random -- circuit breakers trip specifically in response to detecting excessive current, often caused by too many devices drawing power at once."},
+      {"text": "Plugging in more appliances always decreases the total current flowing", "isCorrect": false, "feedback": "This is backwards -- more appliances drawing power typically INCREASES the total current on that circuit, not decreases it."},
+      {"text": "This has nothing to do with electrical current at all", "isCorrect": false, "feedback": "This is actually directly and specifically related to current levels exceeding a circuit's safe capacity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is it dangerous to simply replace a household circuit breaker with one rated for a much higher current, just to stop it from tripping?",
+    "options": [
+      {"text": "The house wiring itself is only rated to safely handle a certain maximum current -- allowing higher current to flow without tripping could overheat the wires, posing a serious fire risk", "isCorrect": true, "feedback": "Correct -- the circuit breaker's rating is specifically matched to the wiring's safe capacity; bypassing this protection with an oversized breaker removes an essential safety margin."},
+      {"text": "This would actually make the electrical system completely safer", "isCorrect": false, "feedback": "This is dangerous, not safer -- it removes a critical safety mechanism designed to prevent wiring from carrying more current than it can safely handle."},
+      {"text": "Circuit breaker ratings have no real connection to household wire safety", "isCorrect": false, "feedback": "Circuit breaker ratings are actually specifically chosen and matched to the safe current capacity of the household wiring they protect."},
+      {"text": "A higher-rated breaker would use less electricity overall", "isCorrect": false, "feedback": "The breaker rating relates to a maximum SAFETY THRESHOLD, not to how much electricity is actually consumed by appliances."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This safety device monitors current flow and interrupts the circuit if it becomes hazardously excessive.", "medium": "This device automatically shuts off the flow of electricity if something becomes unsafe.", "easy": "This device automatically shuts off electricity if something becomes unsafe."},
+    "medium": {"hard": "Multiple simultaneous current draws from different devices add up along a shared circuit, potentially exceeding its rated capacity.", "medium": "Each device plugged in adds to the total electrical demand flowing through that one circuit.", "easy": "Each device plugged in adds more electrical demand on that one circuit."},
+    "hard": {"hard": "Wiring has an inherent physical current-carrying capacity beyond which resistive heating becomes hazardous; the breaker's rating exists specifically to trip before this wiring limit is exceeded.", "medium": "The actual wires in the walls can only safely handle so much current before getting dangerously hot, and the breaker is there to stop that from happening.", "easy": "The actual wires in the walls can only safely handle so much current before getting dangerously hot."}
+  }
+}
+]

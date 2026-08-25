@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of pressure and its dependence on force and area",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Pressure is defined as:",
+    "options": [
+      {"text": "Force applied per unit of area", "isCorrect": true, "feedback": "Correct -- pressure = force / area, describing how concentrated a force is over a given surface."},
+      {"text": "The total force applied to an object, regardless of area", "isCorrect": false, "feedback": "This describes force alone, not pressure -- pressure specifically accounts for the AREA over which that force is applied."},
+      {"text": "The speed at which an object moves", "isCorrect": false, "feedback": "Speed is an unrelated physical quantity from pressure, which specifically relates force to the area it's applied over."},
+      {"text": "The total mass of an object", "isCorrect": false, "feedback": "Mass is a separate physical property from pressure, which specifically depends on force and area, not mass alone."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A snowshoe allows a person to walk on top of soft snow without sinking in, unlike wearing regular boots with the same body weight. How does the concept of pressure explain this?",
+    "options": [
+      {"text": "Since pressure = force/area, the snowshoe's much larger surface area spreads the same body weight (force) over more area, resulting in significantly LESS pressure on any given point of snow", "isCorrect": true, "feedback": "Correct -- this direct relationship between reduced pressure and increased surface area (for the same total force/weight) is exactly why snowshoes prevent sinking into soft snow."},
+      {"text": "Snowshoes actually apply MORE pressure to the snow than regular boots would", "isCorrect": false, "feedback": "This is backwards -- snowshoes' larger surface area results in LESS pressure (not more) for the same body weight, which is precisely why they prevent sinking."},
+      {"text": "The person's weight actually decreases when wearing snowshoes", "isCorrect": false, "feedback": "The person's actual weight (force) doesn't change by wearing snowshoes -- what changes is the AREA over which that weight is distributed, thus changing the resulting pressure."},
+      {"text": "Surface area has no actual connection to how much pressure is exerted on the snow", "isCorrect": false, "feedback": "Surface area is actually a CRITICAL factor in the pressure calculation -- larger area directly results in lower pressure for the same applied force, exactly as demonstrated by snowshoes."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A sharp knife cuts through material more easily than a dull knife, even when the same force is applied by the person using it. How does the concept of pressure explain why a sharper blade (with a much smaller contact area at its edge) is more effective at cutting?",
+    "options": [
+      {"text": "Since pressure = force/area, concentrating the same applied force onto the knife's much smaller sharp-edge contact area results in dramatically higher pressure at that point, making it easier to cut through the material's fibers/structure", "isCorrect": true, "feedback": "Correct -- this practical, everyday example vividly demonstrates how reducing contact area (for a given applied force) dramatically increases the resulting pressure, which is exactly why sharper blades cut more effectively than dull ones."},
+      {"text": "A sharper knife actually applies LESS pressure than a dull knife for the same applied force", "isCorrect": false, "feedback": "This is backwards -- a sharper knife's smaller contact area results in dramatically MORE pressure (not less) for the same applied force, which is precisely why it cuts more effectively."},
+      {"text": "The sharpness of a blade has no actual connection to the pressure it exerts on a material", "isCorrect": false, "feedback": "Blade sharpness is DIRECTLY connected to pressure -- a sharper edge concentrates force onto a smaller area, significantly increasing the resulting pressure and cutting effectiveness."},
+      {"text": "A dull knife would actually cut just as effectively as a sharp knife if the same force is applied", "isCorrect": false, "feedback": "This isn't accurate -- a dull knife's LARGER contact area results in significantly LOWER pressure for the same applied force, making it noticeably less effective at cutting than a sharp knife."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity represents the concentration of an applied force distributed across a given contact surface area.", "medium": "This tells you how spread out (or concentrated) a force is over a certain surface.", "easy": "This tells you how spread out or concentrated a force is over a surface."},
+    "medium": {"hard": "Recall that pressure scales inversely with contact area for a fixed applied force, meaning a larger area reduces the resulting pressure.", "medium": "Spreading the same weight over a much bigger area (like a snowshoe) means less pressure at any single point.", "easy": "Spreading the same weight over a bigger area means less pressure pushing down at any one spot."},
+    "hard": {"hard": "Recall that pressure scales inversely with contact area for a fixed applied force, meaning a smaller area dramatically increases the resulting pressure at that point.", "medium": "Squeezing the same force down into a much smaller edge (like a sharp blade) creates a lot more pressure right at that thin edge.", "easy": "Squeezing the same force into a much smaller edge creates a lot more pressure right there."}
+  }
+}
+]

@@ -1,0 +1,248 @@
+[
+{
+  "topic": "slope-intercept form of a line",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the equation y = mx + b, what does 'b' represent?",
+    "options": [
+      {"text": "The y-intercept, where the line crosses the y-axis", "isCorrect": true, "feedback": "Correct -- 'b' is the value of y when x=0."},
+      {"text": "The slope of the line", "isCorrect": false, "feedback": "That's what 'm' represents, not 'b'."},
+      {"text": "The x-intercept", "isCorrect": false, "feedback": "'b' specifically represents the y-intercept, not where the line crosses the x-axis."},
+      {"text": "The length of the line", "isCorrect": false, "feedback": "Lines are considered infinite in this context -- 'b' is a specific point value, not a length."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the slope and y-intercept of the line y = 3x - 4?",
+    "options": [
+      {"text": "Slope = 3, y-intercept = -4", "isCorrect": true, "feedback": "Correct -- comparing to y=mx+b, m=3 and b=-4."},
+      {"text": "Slope = -4, y-intercept = 3", "isCorrect": false, "feedback": "This swaps the slope and y-intercept values."},
+      {"text": "Slope = 3, y-intercept = 4", "isCorrect": false, "feedback": "This has the wrong sign on the y-intercept."},
+      {"text": "Slope = -3, y-intercept = -4", "isCorrect": false, "feedback": "This has the wrong sign on the slope."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A line passes through the point (0, 5) and has a slope of -2. What is its equation in slope-intercept form?",
+    "options": [
+      {"text": "y = -2x + 5", "isCorrect": true, "feedback": "Correct -- since the point (0,5) is the y-intercept, b=5, and m=-2."},
+      {"text": "y = 5x - 2", "isCorrect": false, "feedback": "This swaps the slope and y-intercept values."},
+      {"text": "y = 2x + 5", "isCorrect": false, "feedback": "This has the wrong sign on the slope."},
+      {"text": "y = -2x - 5", "isCorrect": false, "feedback": "This has the wrong sign on the y-intercept."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value indicates the point where the line crosses the vertical axis, when the horizontal value is zero.", "medium": "This is the value of y when x equals 0.", "easy": "This is where the line crosses the y-axis."},
+    "medium": {"hard": "Match each part of the equation to its corresponding position in the standard y=mx+b form.", "medium": "The number multiplying x is the slope; the number added or subtracted at the end is the y-intercept.", "easy": "The number in front of x is the slope; the number at the end is the y-intercept."},
+    "hard": {"hard": "A point with an x-coordinate of 0 directly gives the y-intercept value needed for the equation.", "medium": "Since the point has an x-value of 0, its y-value is directly the y-intercept.", "easy": "Since x is 0 at that point, 5 is directly the y-intercept -- just plug in the slope too."}
+  }
+},
+{
+  "topic": "function notation basics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If f(x) = x + 3, what is f(2)?",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- substitute 2 for x: 2+3=5."},
+      {"text": "2", "isCorrect": false, "feedback": "This just repeats the input value rather than applying the function."},
+      {"text": "3", "isCorrect": false, "feedback": "This just repeats part of the function rather than substituting x=2."},
+      {"text": "23", "isCorrect": false, "feedback": "This concatenates the digits rather than performing the addition."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If f(x) = 2x² - 1, what is f(3)?",
+    "options": [
+      {"text": "17", "isCorrect": true, "feedback": "Correct -- 2(3²)-1=2(9)-1=18-1=17."},
+      {"text": "35", "isCorrect": false, "feedback": "This doesn't correctly apply the squaring before multiplying and subtracting."},
+      {"text": "5", "isCorrect": false, "feedback": "This doesn't match correctly evaluating 2(3²)-1."},
+      {"text": "8", "isCorrect": false, "feedback": "This doesn't match correctly squaring 3 before continuing the calculation."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If f(x) = x² + 2x and f(a) = 15, which value of 'a' makes this true (assuming a is positive)?",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- f(3)=3²+2(3)=9+6=15."},
+      {"text": "5", "isCorrect": false, "feedback": "f(5)=25+10=35, not 15."},
+      {"text": "15", "isCorrect": false, "feedback": "This just repeats the output value rather than solving for the input."},
+      {"text": "7", "isCorrect": false, "feedback": "f(7)=49+14=63, not 15."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Replace the variable inside the function with the given input value, then evaluate.", "medium": "Substitute 2 in place of x in the function.", "easy": "Replace x with 2, then add 3."},
+    "medium": {"hard": "Substitute the value for x, apply the exponent first, then complete the remaining operations in order.", "medium": "Substitute 3 for x, square it first, then multiply by 2, then subtract 1.", "easy": "Square 3 first, multiply by 2, then subtract 1."},
+    "hard": {"hard": "Try plugging in small positive whole numbers for 'a' and check which one produces the target output value.", "medium": "Try testing a=3 in the function to see if it produces 15.", "easy": "Try plugging in 3 for a and see if you get 15."}
+  }
+},
+{
+  "topic": "domain and range of simple functions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the 'domain' of a function refer to?",
+    "options": [
+      {"text": "All the possible input (x) values for the function", "isCorrect": true, "feedback": "Correct -- the domain is the complete set of valid inputs."},
+      {"text": "All the possible output (y) values for the function", "isCorrect": false, "feedback": "That describes the range, not the domain."},
+      {"text": "The slope of the function's graph", "isCorrect": false, "feedback": "Slope is a separate concept from domain."},
+      {"text": "The single highest point on the graph", "isCorrect": false, "feedback": "That describes a maximum point, not the domain."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For the function f(x) = 1/x, why is x = 0 excluded from the domain?",
+    "options": [
+      {"text": "Because dividing by zero is undefined in mathematics", "isCorrect": true, "feedback": "Correct -- any function involving division must exclude input values that would create a zero denominator."},
+      {"text": "Because 0 is not considered a real number", "isCorrect": false, "feedback": "Zero is indeed a real number -- the issue is specifically about division by zero being undefined."},
+      {"text": "Because the function's graph would become a straight line", "isCorrect": false, "feedback": "The issue isn't about graph shape -- it's specifically that division by zero has no defined value."},
+      {"text": "There is no actual reason -- x=0 could be included just fine", "isCorrect": false, "feedback": "There is a definite, well-established mathematical reason: division by zero is undefined."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For the function f(x) = √x (square root of x), what is the domain, assuming only real number outputs are allowed?",
+    "options": [
+      {"text": "x ≥ 0", "isCorrect": true, "feedback": "Correct -- taking the square root of a negative number doesn't produce a real number, so only non-negative x values are valid."},
+      {"text": "All real numbers", "isCorrect": false, "feedback": "Negative x values would produce non-real (imaginary) results, so not all real numbers work here."},
+      {"text": "x > 0 only, excluding zero", "isCorrect": false, "feedback": "Zero is actually a valid input, since √0=0 is a real number."},
+      {"text": "x ≤ 0", "isCorrect": false, "feedback": "This is backwards -- negative x values are exactly the ones that don't work for a real square root."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This set describes every valid value that can be plugged into the function.", "medium": "This is the complete set of numbers you're allowed to put into the function.", "easy": "This is every value you're allowed to plug in for x."},
+    "medium": {"hard": "Consider what mathematically happens if you try to divide any number by zero.", "medium": "Think about what happens mathematically when you try to divide by zero.", "easy": "You can never divide any number by zero -- it just doesn't work."},
+    "hard": {"hard": "Consider which values of x produce a non-negative number under the square root, since negative numbers don't have real square roots.", "medium": "Only non-negative numbers have real square roots, so think about which x values keep things non-negative.", "easy": "Only zero and positive numbers have real square roots -- negative numbers don't work."}
+  }
+},
+{
+  "topic": "estimating sums by rounding",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Estimate 38 + 52 by rounding each number to the nearest ten first.",
+    "options": [
+      {"text": "90", "isCorrect": true, "feedback": "Correct -- 38 rounds to 40, and 52 rounds to 50, so 40+50=90."},
+      {"text": "80", "isCorrect": false, "feedback": "This doesn't match rounding both numbers correctly before adding."},
+      {"text": "100", "isCorrect": false, "feedback": "This overestimates the rounded sum."},
+      {"text": "91", "isCorrect": false, "feedback": "This is the exact sum, not the rounded estimate."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Estimate 147 + 285 by rounding each number to the nearest hundred first.",
+    "options": [
+      {"text": "400", "isCorrect": true, "feedback": "Correct -- 147 rounds to 100, and 285 rounds to 300, so 100+300=400."},
+      {"text": "300", "isCorrect": false, "feedback": "This doesn't match correctly rounding both numbers to the nearest hundred."},
+      {"text": "500", "isCorrect": false, "feedback": "This overestimates the rounded sum."},
+      {"text": "432", "isCorrect": false, "feedback": "This is the exact sum, not the rounded estimate."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A shopper estimates the cost of 3 items priced at $19.75, $8.20, and $32.90 by rounding each to the nearest dollar. What is their estimated total?",
+    "options": [
+      {"text": "$61", "isCorrect": true, "feedback": "Correct -- rounding gives 20+8+33=61."},
+      {"text": "$60", "isCorrect": false, "feedback": "This doesn't match correctly rounding all three prices before adding."},
+      {"text": "$60.85", "isCorrect": false, "feedback": "This is the exact total, not the rounded estimate."},
+      {"text": "$62", "isCorrect": false, "feedback": "This doesn't match correctly rounding each individual price first."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Round each value to the specified place value first, then combine the rounded results.", "medium": "Round 38 and 52 each to the nearest ten, then add.", "easy": "Round 38 to 40 and 52 to 50, then add them."},
+    "medium": {"hard": "Round each value to the specified place value first, then combine the rounded results.", "medium": "Round 147 and 285 each to the nearest hundred, then add.", "easy": "Round 147 to 100 and 285 to 300, then add them."},
+    "hard": {"hard": "Round each individual value to the nearest whole unit first, then add all the rounded values together.", "medium": "Round each price to the nearest dollar first, then add all three together.", "easy": "Round each price to the nearest dollar (20, 8, 33), then add them up."}
+  }
+},
+{
+  "topic": "multiplying a polynomial by a monomial",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 3(x + 5)?",
+    "options": [
+      {"text": "3x + 15", "isCorrect": true, "feedback": "Correct -- distribute the 3 to both terms inside the parentheses: 3×x=3x, and 3×5=15."},
+      {"text": "3x + 5", "isCorrect": false, "feedback": "This forgets to multiply the 3 by the 5 as well."},
+      {"text": "8x", "isCorrect": false, "feedback": "This incorrectly adds 3 and 5 together instead of distributing."},
+      {"text": "3x + 8", "isCorrect": false, "feedback": "This doesn't correctly multiply 3 by 5."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 2x(x + 4)?",
+    "options": [
+      {"text": "2x² + 8x", "isCorrect": true, "feedback": "Correct -- distribute 2x to both terms: 2x×x=2x², and 2x×4=8x."},
+      {"text": "2x² + 4x", "isCorrect": false, "feedback": "This doesn't correctly multiply 2x by the 4."},
+      {"text": "2x + 8x", "isCorrect": false, "feedback": "This forgets to keep the squared term from multiplying x by x."},
+      {"text": "6x²", "isCorrect": false, "feedback": "This incorrectly adds the terms inside the parentheses before multiplying, instead of distributing properly."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is -3x(2x² - 5x + 4)?",
+    "options": [
+      {"text": "-6x³ + 15x² - 12x", "isCorrect": true, "feedback": "Correct -- distribute -3x to each term: -3x×2x²=-6x³, -3x×(-5x)=15x², -3x×4=-12x."},
+      {"text": "-6x³ - 15x² - 12x", "isCorrect": false, "feedback": "This has the wrong sign on the middle term -- multiplying two negatives should give a positive."},
+      {"text": "-6x² + 15x - 12", "isCorrect": false, "feedback": "This doesn't correctly track the exponents when multiplying by x."},
+      {"text": "6x³ - 15x² + 12x", "isCorrect": false, "feedback": "This has the wrong overall sign pattern for a negative monomial multiplier."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply the outside term by each and every term inside the parentheses separately.", "medium": "Multiply the 3 by both the x and the 5 separately.", "easy": "Multiply 3 by x, and separately multiply 3 by 5."},
+    "medium": {"hard": "Multiply the outside term by each and every term inside the parentheses separately, keeping track of exponents.", "medium": "Multiply 2x by x, and separately multiply 2x by 4.", "easy": "Multiply 2x by x, and multiply 2x by 4."},
+    "hard": {"hard": "Multiply the outside term by each and every term inside the parentheses, carefully tracking both exponents and signs.", "medium": "Multiply -3x by each of the three terms inside, watching the signs carefully.", "easy": "Multiply -3x by 2x², by -5x, and by 4 separately, watching the signs."}
+  }
+},
+{
+  "topic": "distance-rate-time word problems",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A car travels at a constant speed of 50 mph for 3 hours. How far does it travel?",
+    "options": [
+      {"text": "150 miles", "isCorrect": true, "feedback": "Correct -- distance = rate × time = 50×3=150."},
+      {"text": "53 miles", "isCorrect": false, "feedback": "This adds the numbers instead of multiplying them."},
+      {"text": "50 miles", "isCorrect": false, "feedback": "This ignores the 3-hour travel time entirely."},
+      {"text": "16.7 miles", "isCorrect": false, "feedback": "This divides instead of multiplying rate by time."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A cyclist travels 60 miles in 4 hours. What was their average speed?",
+    "options": [
+      {"text": "15 mph", "isCorrect": true, "feedback": "Correct -- rate = distance ÷ time = 60÷4=15."},
+      {"text": "240 mph", "isCorrect": false, "feedback": "This multiplies instead of dividing distance by time."},
+      {"text": "64 mph", "isCorrect": false, "feedback": "This adds the numbers instead of dividing them."},
+      {"text": "56 mph", "isCorrect": false, "feedback": "This subtracts the numbers instead of dividing them."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two trains start 300 miles apart and travel toward each other, one at 60 mph and the other at 40 mph. How long will it take for them to meet?",
+    "options": [
+      {"text": "3 hours", "isCorrect": true, "feedback": "Correct -- their combined closing speed is 60+40=100 mph, so time=300÷100=3."},
+      {"text": "5 hours", "isCorrect": false, "feedback": "This doesn't correctly combine both trains' speeds before dividing."},
+      {"text": "7.5 hours", "isCorrect": false, "feedback": "This uses only one train's speed instead of their combined closing speed."},
+      {"text": "1.5 hours", "isCorrect": false, "feedback": "This doesn't match correctly dividing 300 by the combined speed of 100."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply the constant rate by the total time traveled.", "medium": "Multiply the speed by the number of hours traveled.", "easy": "Multiply 50 by 3."},
+    "medium": {"hard": "Divide the total distance covered by the total time it took.", "medium": "Divide the distance by the time.", "easy": "Divide 60 by 4."},
+    "hard": {"hard": "Add both speeds together to find how quickly the gap between them closes, then divide the total distance by that combined rate.", "medium": "Add the two speeds together to find how fast the distance between them shrinks, then divide 300 by that total.", "easy": "Add 60 and 40 to get 100, then divide 300 by 100."}
+  }
+}
+]

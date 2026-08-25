@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of symbiotic relationships (mutualism, commensalism, parasitism)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a mutualistic relationship, how do the two involved species typically benefit?",
+    "options": [
+      {"text": "Both species benefit from the relationship", "isCorrect": true, "feedback": "Correct -- mutualism specifically describes a relationship where both participating species gain some advantage."},
+      {"text": "Only one species benefits, while the other is harmed", "isCorrect": false, "feedback": "That describes parasitism, not mutualism, which specifically requires BOTH species to benefit."},
+      {"text": "Neither species benefits or is harmed in any way", "isCorrect": false, "feedback": "That would describe neutralism, a different (and much rarer) type of interaction than mutualism, which specifically involves mutual benefit."},
+      {"text": "One species benefits while the other is completely unaffected", "isCorrect": false, "feedback": "That describes commensalism, not mutualism, which requires benefit to BOTH species involved."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Clownfish live among sea anemones, gaining protection from predators (since anemone stings don't harm them), while anemones may benefit from nutrients in clownfish waste and protection from certain anemone-eating fish. What type of symbiotic relationship does this best represent?",
+    "options": [
+      {"text": "Mutualism, since both the clownfish and the anemone gain benefits from the relationship", "isCorrect": true, "feedback": "Correct -- since both species derive tangible benefits (protection, nutrients) from this relationship, it fits the definition of mutualism."},
+      {"text": "Parasitism, since the clownfish is harming the anemone", "isCorrect": false, "feedback": "This isn't accurate -- the anemone isn't being harmed; it also receives benefits, which is why this is classified as mutualism, not parasitism."},
+      {"text": "Commensalism, since only the clownfish benefits and the anemone is unaffected", "isCorrect": false, "feedback": "This isn't quite accurate -- the anemone DOES receive benefits too (nutrients, protection from certain fish), making this mutualism rather than commensalism."},
+      {"text": "This relationship doesn't fit any recognized category of symbiosis", "isCorrect": false, "feedback": "This is actually a classic, well-known example specifically categorized as mutualism, fitting neatly into a recognized symbiotic relationship type."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some symbiotic relationships can shift between categories depending on environmental conditions or specific circumstances -- for example, a relationship that's typically mutualistic might become parasitic if one partner starts taking more than it gives back. Why is this contextual flexibility scientifically important to recognize?",
+    "options": [
+      {"text": "Because it shows that these ecological categories aren't always fixed, absolute labels but can represent a dynamic balance that may shift based on factors like resource availability or environmental stress, complicating the way scientists classify and study these relationships", "isCorrect": true, "feedback": "Correct -- recognizing this potential fluidity between mutualism, commensalism, and parasitism reflects a more nuanced, ecologically accurate understanding of these complex relationships, rather than a strictly binary classification system."},
+      {"text": "This flexibility never actually occurs in real ecological relationships", "isCorrect": false, "feedback": "This is inaccurate -- there are well-documented real-world cases where symbiotic relationships shift between categories based on changing circumstances, making this flexibility a genuine ecological phenomenon."},
+      {"text": "Symbiotic relationship categories are always completely fixed and can never change under any circumstances", "isCorrect": false, "feedback": "This isn't accurate -- some symbiotic relationships CAN and DO shift between categories under different conditions, which is exactly why recognizing this flexibility matters scientifically."},
+      {"text": "This complexity has no actual bearing on how scientists study or understand ecological relationships", "isCorrect": false, "feedback": "This complexity is actually quite significant for accurate ecological study -- it highlights the need for nuanced, context-sensitive analysis rather than rigid, oversimplified categorization."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This interaction type is characterized by reciprocal advantageous outcomes accruing to both participating organisms.", "medium": "This is when both living things involved in the relationship come out ahead.", "easy": "This is when both living things involved come out ahead."},
+    "medium": {"hard": "Determine whether each species involved receives a tangible advantage from the interaction, which would classify the relationship as mutually beneficial.", "medium": "Check if BOTH the fish and the anemone actually get something helpful out of living together.", "easy": "Both the fish and the anemone get something helpful, so it's a win-win (mutualism)."},
+    "hard": {"hard": "Consider how ecological classifications, while useful, may represent points along a dynamic spectrum rather than permanently fixed categorical boundaries.", "medium": "Sometimes a relationship that usually helps both sides can shift if conditions change and one side starts taking more than it gives.", "easy": "Sometimes a helpful relationship can shift if conditions change and one side starts taking more."}
+  }
+}
+]

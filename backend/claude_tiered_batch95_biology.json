@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between density-dependent and density-independent limiting factors",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'density-dependent' limiting factor is one whose impact on a population:",
+    "options": [
+      {"text": "Becomes more significant/intense as the population's density (crowding) increases", "isCorrect": true, "feedback": "Correct -- density-dependent factors (like disease spread or resource competition) have effects that scale with how crowded a population becomes."},
+      {"text": "Stays exactly the same, regardless of the population's density", "isCorrect": false, "feedback": "That describes a DENSITY-INDEPENDENT factor, not a density-dependent one, which specifically has an effect that CHANGES based on population density/crowding."},
+      {"text": "Only ever affects populations with extremely low density", "isCorrect": false, "feedback": "This isn't accurate -- density-dependent factors specifically become MORE significant at HIGHER (not lower) population density, due to increased crowding-related effects."},
+      {"text": "Has no actual connection to population size or crowding at all", "isCorrect": false, "feedback": "This isn't accurate -- density-dependent factors are SPECIFICALLY AND DIRECTLY connected to and defined by their relationship to population density/crowding."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A natural disaster like a wildfire or severe storm is typically considered a 'density-independent' limiting factor, since it can kill organisms regardless of how crowded or sparse the population happens to be. Why does this characteristic (unrelated to population density) distinguish it from factors like disease or food competition?",
+    "options": [
+      {"text": "Unlike disease spread or resource competition (which specifically intensify with increased crowding/density), a wildfire's destructive impact doesn't depend on how many organisms are present or how crowded they are -- it can affect a sparse population just as severely as a dense one", "isCorrect": true, "feedback": "Correct -- this key distinguishing characteristic (impact independent of population density) is precisely why events like wildfires, unlike disease or competition, are classified as density-INDEPENDENT limiting factors."},
+      {"text": "Wildfires and severe storms actually only affect very DENSE (crowded) populations, never sparse ones", "isCorrect": false, "feedback": "This isn't accurate -- density-independent factors like wildfires specifically affect populations REGARDLESS of their density/crowding level, which is precisely the defining characteristic distinguishing them from density-DEPENDENT factors."},
+      {"text": "This distinction has no actual connection to whether a factor's impact depends on population crowding", "isCorrect": false, "feedback": "This isn't accurate -- this distinction is DIRECTLY and centrally connected to and specifically defined by whether or not a given factor's impact depends on population density/crowding."},
+      {"text": "Disease and food competition are actually also density-independent factors, identical to wildfires", "isCorrect": false, "feedback": "This isn't accurate -- disease and food competition are specifically classified as DENSITY-DEPENDENT factors (their impact intensifies with crowding), unlike wildfires, which are density-INDEPENDENT."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Density-dependent factors are often considered particularly important for explaining how populations naturally regulate themselves toward a stable carrying capacity over time, while density-independent factors, though impactful, don't provide this same self-regulating function. Why might this specific self-regulating characteristic be unique to density-DEPENDENT factors?",
+    "options": [
+      {"text": "Since density-dependent factors specifically intensify as population size/crowding increases (and relax as population decreases), they create a natural negative feedback loop that tends to push population size back toward a stable equilibrium (carrying capacity), unlike density-independent factors, whose impact remains constant regardless of population size and thus doesn't provide this same size-correcting feedback mechanism", "isCorrect": true, "feedback": "Correct -- this recognition of density-dependent factors' unique negative-feedback-like regulatory characteristic (specifically responding to and correcting population size deviations) is exactly what explains their particular importance for understanding long-term population stability around a carrying capacity, unlike density-independent factors' population-size-agnostic impact."},
+      {"text": "Density-independent factors actually also provide this same self-regulating feedback function, identical to density-dependent factors", "isCorrect": false, "feedback": "This isn't accurate -- density-INDEPENDENT factors specifically do NOT provide this same self-regulating feedback function, precisely because their impact doesn't scale with (respond to) population size/density, unlike density-dependent factors."},
+      {"text": "This self-regulating characteristic has no actual connection to whether a factor's impact scales with population density", "isCorrect": false, "feedback": "This isn't accurate -- this self-regulating characteristic is DIRECTLY and fundamentally connected to and explained by whether a factor's impact specifically SCALES with (responds to) population density, which is precisely the defining feature of density-dependent factors."},
+      {"text": "Neither density-dependent nor density-independent factors actually have any connection to overall population regulation", "isCorrect": false, "feedback": "This isn't accurate -- density-DEPENDENT factors specifically DO have an important connection to population self-regulation (via this negative-feedback-like mechanism), even though density-independent factors don't provide this same specific regulatory function."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This limiting factor category exhibits an intensifying impact that scales proportionally with increasing population crowding.", "medium": "This kind of limiting factor gets worse the more crowded a population gets.", "easy": "This kind of limiting factor gets worse the more crowded a population gets."},
+    "medium": {"hard": "Consider whether the factor's destructive impact specifically requires or scales with a certain level of population crowding, versus affecting individuals regardless of how many others are nearby.", "medium": "A wildfire burns just as badly whether there are tons of animals around or just a few -- it doesn't care how crowded things are, unlike disease spreading through a packed population.", "easy": "A wildfire burns the same whether animals are crowded or sparse, unlike disease spreading through crowds."},
+    "hard": {"hard": "Consider how a factor whose intensity automatically increases with population size (and decreases with population decline) inherently creates a self-correcting mechanism pulling population size back toward equilibrium.", "medium": "Since these factors naturally get stronger when there's too many individuals and weaker when there's too few, they naturally nudge the population back toward a healthy, steady number over time.", "easy": "Since these factors get stronger with crowding and weaker without it, they naturally nudge population back to a steady number."}
+  }
+}
+]

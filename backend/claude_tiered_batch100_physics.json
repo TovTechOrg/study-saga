@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between average power and peak power",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Peak power' refers to:",
+    "options": [
+      {"text": "The maximum power output achieved at any single instant during an activity/process", "isCorrect": true, "feedback": "Correct -- peak power captures the highest momentary power level reached, which may only occur briefly, unlike average power's overall summary."},
+      {"text": "The power output averaged consistently over an entire time period", "isCorrect": false, "feedback": "That describes AVERAGE power, not peak power, which specifically captures the single HIGHEST momentary value, not an overall time-averaged value."},
+      {"text": "The exact power level maintained constantly with absolutely no variation", "isCorrect": false, "feedback": "This isn't accurate -- peak power specifically refers to the maximum value reached at some point, not necessarily a constant, unvarying level maintained throughout an entire activity."},
+      {"text": "A measurement that has no actual connection to power output at all", "isCorrect": false, "feedback": "This isn't accurate -- peak power is DIRECTLY and specifically a measurement OF power output, just capturing its maximum momentary value rather than an average."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A sprinter's power output varies significantly throughout a 100m race, starting explosively high, then gradually declining somewhat as fatigue sets in. Why might both 'peak power' AND 'average power' be useful, complementary measurements for evaluating this sprinter's overall athletic performance?",
+    "options": [
+      {"text": "Peak power specifically captures the sprinter's maximum explosive capability (important for initial acceleration), while average power reflects their OVERALL sustained power output/efficiency across the entire race distance, together providing a more complete performance picture than either single measurement alone", "isCorrect": true, "feedback": "Correct -- this recognition that these two DIFFERENT measurements capture DIFFERENT complementary aspects of athletic performance (momentary maximum capability vs. overall sustained output) explains why sports scientists/coaches often find value in tracking BOTH metrics, rather than relying on just one alone."},
+      {"text": "Peak power and average power actually always provide exactly the SAME information about an athlete's performance", "isCorrect": false, "feedback": "This isn't accurate -- these are GENUINELY DIFFERENT measurements capturing DIFFERENT aspects of performance (momentary maximum vs. overall average), which is precisely why both can provide valuable, complementary (not redundant) information."},
+      {"text": "Only peak power actually provides any useful information about athletic performance; average power is completely irrelevant", "isCorrect": false, "feedback": "This isn't accurate -- BOTH measurements provide genuinely useful, complementary information -- average power specifically reflects overall SUSTAINED performance/efficiency, which peak power alone cannot capture."},
+      {"text": "This distinction between peak and average power has no actual practical relevance for evaluating athletic performance", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has SIGNIFICANT practical relevance for sports science and athletic performance evaluation, which is precisely why both metrics are commonly tracked and analyzed together."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An electrical device's power rating might specify both an 'average power' rating (for continuous, sustained operation) and a separate, HIGHER 'peak power' rating (for brief, momentary bursts of higher performance). Why is it important for engineers designing this device's components (like wiring or cooling systems) to account for BOTH ratings, rather than just designing for the average power value alone?",
+    "options": [
+      {"text": "While components need to handle the SUSTAINED average power level without overheating/failing over TIME, they must ALSO be able to safely handle the higher, though brief, PEAK power surges without immediate damage/failure, meaning designing for average power alone would risk component failure during those higher-intensity peak power moments", "isCorrect": true, "feedback": "Correct -- this necessary consideration of BOTH sustained average operation AND brief peak power surges is a critical engineering consideration for ensuring a device's components can safely handle its FULL range of actual operating conditions, not just its average, typical operating level."},
+      {"text": "Peak power surges actually never place any additional stress on electrical components, compared to average power alone", "isCorrect": false, "feedback": "This isn't accurate -- peak power surges CAN place SIGNIFICANT additional stress on components (even if only briefly), which is precisely why engineers need to specifically account for and design around this higher peak value, not just the average."},
+      {"text": "Designing components solely for the average power rating would actually be perfectly sufficient and safe for handling all operating conditions", "isCorrect": false, "feedback": "This isn't accurate -- designing SOLELY for average power could risk component failure/damage during the higher-intensity PEAK power moments, which is precisely why engineers must ALSO specifically account for the peak power rating, not average alone."},
+      {"text": "This distinction between average and peak power ratings has no actual practical engineering significance for component design", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has SIGNIFICANT practical engineering significance, directly informing component design decisions (wiring gauge, cooling capacity, etc.) to safely handle the device's full range of actual operating conditions."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This metric captures the single highest instantaneous power output value attained during an observed interval.", "medium": "This is the single highest power level reached at any one moment.", "easy": "This is the single highest power level reached at any moment."},
+    "medium": {"hard": "Consider how one metric captures a brief, momentary capability while the other reflects sustained performance across the entire duration, together offering a more complete characterization.", "medium": "One number tells you about their best single burst of power, and the other tells you about how well they kept up power output across the WHOLE race.", "easy": "One number is their best single burst; the other is how well they sustained power across the whole race."},
+    "hard": {"hard": "Consider how components must be engineered to withstand both continuous thermal/electrical loads over time and brief but potentially damaging higher-magnitude transient loads.", "medium": "The wires and cooling parts need to handle the normal, everyday power level without a problem, but they ALSO need to survive short, more intense bursts without getting fried.", "easy": "Components need to handle normal power levels without a problem, but also survive short, more intense bursts."}
+  }
+}
+]

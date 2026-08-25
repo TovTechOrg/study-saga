@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between electrolysis and galvanic cell reactions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a 'galvanic cell' (like a standard battery), a spontaneous chemical reaction:",
+    "options": [
+      {"text": "Generates electrical energy that can be used to power external devices", "isCorrect": true, "feedback": "Correct -- galvanic cells convert stored chemical potential energy into usable electrical energy, powering devices through a spontaneous redox reaction."},
+      {"text": "Requires a continuous, external electrical energy source to keep occurring", "isCorrect": false, "feedback": "That describes ELECTROLYSIS, not a galvanic cell -- a galvanic cell's reaction is specifically SPONTANEOUS, generating (not requiring/consuming) electrical energy."},
+      {"text": "Has absolutely no connection to any electrical current or energy at all", "isCorrect": false, "feedback": "This isn't accurate -- a galvanic cell's entire purpose IS to generate usable ELECTRICAL energy/current from its internal spontaneous chemical reaction."},
+      {"text": "Only occurs when there is no chemical reaction taking place", "isCorrect": false, "feedback": "This isn't accurate -- a galvanic cell's electrical energy generation is SPECIFICALLY DEPENDENT on and DRIVEN BY an actively occurring spontaneous chemical (redox) reaction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Electrolysis, by contrast, uses an EXTERNAL electrical energy source to force a NON-spontaneous chemical reaction to occur (like splitting water into hydrogen and oxygen gas). Why does understanding spontaneity (from thermodynamics) help explain this fundamental difference between galvanic cells and electrolysis?",
+    "options": [
+      {"text": "A galvanic cell harnesses a reaction that would occur naturally/spontaneously on its own (releasing usable energy in the process), while electrolysis specifically requires providing EXTERNAL energy input specifically to force a reaction that would NOT occur naturally on its own (since it's thermodynamically non-spontaneous/unfavorable without that external energy push)", "isCorrect": true, "feedback": "Correct -- this direct connection between the underlying reaction's SPONTANEITY (or lack thereof) and whether the cell GENERATES or REQUIRES external electrical energy explains the fundamental distinction between these two related but functionally opposite types of electrochemical cells."},
+      {"text": "Both galvanic cells and electrolysis actually involve exactly the same type of spontaneous chemical reactions, with no meaningful thermodynamic difference", "isCorrect": false, "feedback": "This isn't accurate -- these two processes specifically involve DIFFERENT reaction spontaneity characteristics (galvanic: spontaneous; electrolysis: non-spontaneous, requiring external energy), which is precisely the key thermodynamic distinction between them."},
+      {"text": "Electrolysis actually also generates usable electrical energy, identical to a galvanic cell", "isCorrect": false, "feedback": "This is backwards -- electrolysis specifically REQUIRES/CONSUMES external electrical energy input (to force a non-spontaneous reaction), rather than GENERATING usable electrical energy like a galvanic cell does."},
+      {"text": "Reaction spontaneity has no actual connection to explaining the fundamental difference between these two types of electrochemical processes", "isCorrect": false, "feedback": "This isn't accurate -- reaction spontaneity IS DIRECTLY and centrally connected to and EXPLAINS the fundamental functional difference between galvanic cells (spontaneous, energy-generating) and electrolysis (non-spontaneous, energy-requiring)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Rechargeable batteries cleverly utilize BOTH galvanic cell behavior (during normal use/discharge, providing power) AND electrolysis-like behavior (during charging, when external electrical energy forces the reaction to run in REVERSE, restoring the battery's original chemical composition). Why does this dual capability require the SAME battery to be reversible between these two seemingly opposite electrochemical processes?",
+    "options": [
+      {"text": "For a battery to be genuinely RECHARGEABLE, its underlying chemical reaction must be capable of running in BOTH directions -- spontaneously FORWARD (galvanic behavior, releasing energy during normal use) and, when driven by an external charging energy source, BACKWARD (electrolysis-like behavior, restoring the original reactants) -- meaning the same fundamental redox reaction must be reversible in principle for this dual-mode capability to actually work", "isCorrect": true, "feedback": "Correct -- this recognition (that rechargeable batteries specifically rely on a REVERSIBLE underlying chemical reaction, capable of running spontaneously forward for power generation and being externally forced backward for recharging) elegantly connects the seemingly distinct concepts of galvanic cells and electrolysis as two directions of the SAME underlying reversible electrochemical process."},
+      {"text": "Rechargeable batteries actually only ever exhibit galvanic cell behavior, never any electrolysis-like behavior", "isCorrect": false, "feedback": "This isn't accurate -- rechargeable batteries SPECIFICALLY exhibit BOTH behaviors at different times (galvanic during use/discharge, electrolysis-like during charging), which is precisely the clever dual capability being described here."},
+      {"text": "This dual capability has no actual connection to the underlying chemical reaction needing to be reversible", "isCorrect": false, "feedback": "This isn't accurate -- this dual capability IS DIRECTLY and fundamentally connected to and REQUIRES the underlying chemical reaction to be REVERSIBLE, which is precisely the key requirement enabling a battery to be genuinely rechargeable."},
+      {"text": "Non-rechargeable batteries could actually also be charged and reused indefinitely, identical to rechargeable batteries", "isCorrect": false, "feedback": "This isn't accurate -- NON-rechargeable batteries specifically use chemical reactions that are NOT practically reversible (or not efficiently/safely so), which is precisely WHY they cannot be effectively recharged, unlike rechargeable batteries' specifically reversible reactions."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This electrochemical device harnesses a thermodynamically favorable redox process to generate usable electromotive force.", "medium": "This is a device that turns a chemical reaction that happens naturally into usable electricity.", "easy": "This turns a natural chemical reaction into usable electricity."},
+    "medium": {"hard": "Consider how the direction of energy flow (generated versus consumed) directly correlates with whether the underlying chemical process would occur naturally on its own or requires forced external input.", "medium": "A galvanic cell's reaction WANTS to happen on its own and gives off energy as it does; electrolysis forces a reaction that does NOT want to happen on its own, using outside energy to push it.", "easy": "A galvanic reaction wants to happen and gives off energy; electrolysis forces a reaction that doesn't want to happen."},
+    "hard": {"hard": "Consider how enabling both spontaneous forward operation and externally-driven reverse operation within the same electrochemical system necessitates that the underlying redox couple be chemically reversible under the appropriate driving conditions.", "medium": "For a battery to be rechargeable, the same basic chemical reaction needs to be able to run forward on its own (making power) AND be pushed backward by a charger (restoring the battery) -- it's really just one reversible reaction working both ways.", "easy": "For a battery to recharge, the same reaction needs to run forward for power and backward when charging."}
+  }
+}
+]

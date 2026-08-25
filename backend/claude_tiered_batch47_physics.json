@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the Doppler effect for sound waves",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the Doppler effect?",
+    "options": [
+      {"text": "The change in perceived frequency (pitch) of a wave due to relative motion between the source and the observer", "isCorrect": true, "feedback": "Correct -- the Doppler effect describes how motion between a wave source and observer changes the perceived frequency of that wave."},
+      {"text": "The complete absorption of sound waves by an object", "isCorrect": false, "feedback": "That describes sound absorption, an unrelated phenomenon from the Doppler effect, which concerns frequency shifts due to relative motion."},
+      {"text": "The bouncing of sound waves off a surface", "isCorrect": false, "feedback": "That describes echo/reflection, a different phenomenon from the Doppler effect."},
+      {"text": "The speed at which sound travels through air", "isCorrect": false, "feedback": "The speed of sound is a separate physical constant, not what the Doppler effect specifically describes."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "As an ambulance with its siren blaring approaches you, then passes and moves away, why does the siren's pitch sound higher while approaching and lower while moving away?",
+    "options": [
+      {"text": "While approaching, sound waves are compressed (higher frequency) reaching you sooner than they would from a stationary source; while moving away, they're stretched out (lower frequency)", "isCorrect": true, "feedback": "Correct -- this compression and stretching of the sound wave pattern due to the source's motion relative to you is exactly what causes the perceived pitch shift."},
+      {"text": "The siren itself actually changes its true frequency as the ambulance drives", "isCorrect": false, "feedback": "The siren's actual emitted frequency stays constant -- what changes is the PERCEIVED frequency due to the relative motion between the source and the listener."},
+      {"text": "This pitch change is purely imaginary and not an actual physical phenomenon", "isCorrect": false, "feedback": "This is a very real, measurable physical phenomenon (the Doppler effect), not merely an imagined perception."},
+      {"text": "The pitch change happens because the ambulance is getting louder, not because of any frequency shift", "isCorrect": false, "feedback": "Loudness (amplitude) is a separate property from pitch (frequency) -- the actual pitch shift described here comes specifically from the Doppler effect's frequency compression/stretching."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Astronomers use the Doppler effect (applied to light waves) to determine whether distant galaxies are moving toward or away from Earth, based on 'redshift' or 'blueshift' of their light. How does this represent an application of the same principle as the ambulance siren example?",
+    "options": [
+      {"text": "Just as relative motion shifts a sound wave's perceived frequency (pitch), relative motion between a light source and observer shifts the perceived frequency (color) of light, with objects moving away showing a shift toward lower frequencies (redshift) and those approaching showing a shift toward higher frequencies (blueshift)", "isCorrect": true, "feedback": "Correct -- the Doppler effect applies broadly to any wave phenomenon (including light), which is precisely why astronomers can use color shifts in light to infer the relative motion of distant celestial objects."},
+      {"text": "This has no actual connection to the Doppler effect -- it's a completely separate, unrelated astronomical phenomenon", "isCorrect": false, "feedback": "This is actually a direct, well-established application of the Doppler effect principle, just applied to light waves instead of sound waves."},
+      {"text": "Redshift and blueshift only occur due to light waves fundamentally lacking the properties needed to exhibit true Doppler shifting", "isCorrect": false, "feedback": "Light waves absolutely CAN exhibit Doppler shifting -- redshift and blueshift are direct real-world manifestations of the Doppler effect applied to light."},
+      {"text": "Sound and light waves behave in fundamentally incompatible ways, so the same principle can never apply to both", "isCorrect": false, "feedback": "While sound and light have different physical natures (mechanical vs. electromagnetic waves), the Doppler effect principle of frequency shift due to relative motion applies conceptually to both types of waves."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phenomenon describes an observer-perceived frequency shift arising specifically from relative motion between a wave's source and the observer.", "medium": "This is when a sound's pitch seems to change because the source is moving toward or away from you.", "easy": "This is when a sound's pitch seems to change because it's moving toward or away from you."},
+    "medium": {"hard": "Consider how the relative motion of the source compresses or stretches the spacing between successive wave crests reaching the stationary observer.", "medium": "When the ambulance moves toward you, the sound waves get squished together, raising the pitch; moving away, they get stretched out, lowering it.", "easy": "Moving toward you squishes the sound waves together (higher pitch); moving away stretches them out (lower pitch)."},
+    "hard": {"hard": "Recognize that the underlying wave mechanics of frequency shift due to relative motion apply universally across different wave types, including both sound and electromagnetic (light) waves.", "medium": "The same 'squishing and stretching' idea from sound waves also applies to light waves, just showing up as color shifts instead of pitch shifts.", "easy": "The same squishing and stretching idea from sound also applies to light, showing up as color shifts instead of pitch shifts."}
+  }
+}
+]

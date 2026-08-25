@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between a solenoid's magnetic field and a bar magnet's magnetic field",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A solenoid (a coil of wire) produces a magnetic field specifically when:",
+    "options": [
+      {"text": "An electric current flows through the coiled wire", "isCorrect": true, "feedback": "Correct -- a solenoid produces a magnetic field specifically because electric current flowing through its coiled wire generates a magnetic field via electromagnetism."},
+      {"text": "It is heated to a very high temperature", "isCorrect": false, "feedback": "This isn't accurate -- a solenoid's magnetic field specifically depends on electric CURRENT flowing through it, not on temperature."},
+      {"text": "It is placed near a strong source of light", "isCorrect": false, "feedback": "This isn't accurate -- a solenoid's magnetic field depends on electric current flow, not on exposure to light."},
+      {"text": "A permanent magnet is glued directly onto its surface", "isCorrect": false, "feedback": "This isn't accurate -- a solenoid generates its OWN magnetic field through current flow; it doesn't require an external permanent magnet attached to it to function."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A solenoid's magnetic field can be turned on or off (or even reversed) simply by controlling the electric current flowing through it, while a bar magnet's (permanent magnet's) magnetic field exists continuously and cannot be easily switched off. Why does this fundamental difference in the SOURCE of each magnetic field explain this contrast in controllability?",
+    "options": [
+      {"text": "A solenoid's magnetic field originates specifically from an externally supplied, controllable electric current, so turning that current on, off, or reversing its direction directly and immediately controls the resulting magnetic field, but a bar magnet's field originates from the permanently aligned magnetic domains within its internal atomic structure, which persist continuously without any external current needing to be supplied or removed", "isCorrect": true, "feedback": "Correct -- this explanation distinguishing a solenoid's externally-controlled, current-dependent field from a bar magnet's internally fixed, domain-based field correctly explains why solenoids offer switchable control while permanent magnets do not."},
+      {"text": "A bar magnet's magnetic field would actually also depend on an external electric current, identical to a solenoid", "isCorrect": false, "feedback": "This isn't accurate -- a bar magnet's field specifically comes from its INTERNAL atomic structure (aligned magnetic domains), not from any external electric current, unlike a solenoid."},
+      {"text": "The source of a magnetic field (external current versus internal atomic alignment) has no actual connection to explaining why one type of magnet is more easily controllable than the other", "isCorrect": false, "feedback": "This isn't accurate -- the SOURCE of each magnetic field IS DIRECTLY connected to and explains this key difference in controllability between solenoids and bar magnets."},
+      {"text": "A solenoid's magnetic field would actually persist continuously even without any electric current flowing through it, identical to a bar magnet", "isCorrect": false, "feedback": "This isn't accurate -- a solenoid's magnetic field specifically REQUIRES a flowing current to exist; it does not persist on its own without current, unlike a bar magnet's field."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Despite arising from very different underlying sources (externally supplied current in a solenoid versus internally aligned atomic magnetic domains in a bar magnet), a solenoid's external magnetic field pattern closely resembles that of a bar magnet, with distinct north and south poles. Explain why these two very different physical sources can produce such similar overall magnetic field patterns.",
+    "options": [
+      {"text": "At the most fundamental level, ALL magnetic fields (regardless of their specific source) are ultimately produced by moving electric charge -- in a solenoid, this is the macroscopic flow of current through the coiled wire, while in a bar magnet, this is the aggregate effect of countless microscopic electron motions (spin and orbital motion) within its aligned atomic domains -- since both scenarios ultimately involve organized, moving charge circulating in a similar loop-like pattern, they naturally produce very similar overall external magnetic field shapes", "isCorrect": true, "feedback": "Correct -- this explanation tracing both magnetic field sources back to the same fundamental origin (moving electric charge, whether macroscopic current or microscopic electron motion) correctly explains why solenoids and bar magnets, despite different immediate causes, produce such similar overall field patterns, a unifying insight in electromagnetism."},
+      {"text": "Solenoids and bar magnets would actually produce completely different, unrelated magnetic field patterns, with no meaningful similarity between them", "isCorrect": false, "feedback": "This isn't accurate -- solenoids and bar magnets specifically DO produce very SIMILAR overall external field patterns (both with distinct north/south poles), despite their different immediate sources."},
+      {"text": "Moving electric charge has no actual connection to explaining the underlying origin of magnetic fields in either solenoids or bar magnets", "isCorrect": false, "feedback": "This isn't accurate -- moving electric charge IS DIRECTLY and fundamentally connected to the origin of magnetic fields in BOTH solenoids (macroscopic current) and bar magnets (microscopic electron motion)."},
+      {"text": "A bar magnet's magnetic field would actually arise from a source completely unrelated to any form of moving electric charge, unlike a solenoid's field", "isCorrect": false, "feedback": "This isn't accurate -- a bar magnet's field ALSO ultimately arises from moving electric charge, specifically the microscopic motion (spin and orbital motion) of electrons within its aligned atomic domains, similar in fundamental origin to a solenoid's field."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This coiled conductive apparatus generates a magnetic field contingent upon the passage of electric current through its windings.", "medium": "This coil of wire creates a magnetic field only when electricity is actually flowing through it.", "easy": "This coil of wire creates a magnetic field only when electricity flows through it."},
+    "medium": {"hard": "Consider how an externally supplied, adjustable current source permits direct on/off/reversal control, in contrast to a field arising from permanently fixed internal atomic alignment requiring no external supply.", "medium": "Since the solenoid's magnetism comes from electricity you're feeding it, you can just turn that electricity off or flip it around, but a bar magnet's magnetism comes from its own fixed inner structure that just stays that way.", "easy": "Since the solenoid's magnetism comes from electricity you control, you can turn it off; a bar magnet's magnetism comes from its own fixed structure."},
+    "hard": {"hard": "Consider how both a macroscopic current loop and the aggregate microscopic electron motion within aligned atomic domains reduce to the same underlying phenomenon of circulating moving charge, hence yielding analogous external field geometries.", "medium": "Deep down, both kinds of magnets are really just moving electric charge, one is charge flowing through a wire on a big scale, the other is countless tiny electrons all lined up and spinning the same way inside the metal, so they end up looking similar from the outside.", "easy": "Deep down, both are really just moving electric charge, whether it's flowing through a wire or countless tiny electrons spinning together inside metal."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between exothermic dissolution of ionic and molecular compounds",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "When an ionic compound dissolves in water, the process specifically involves:",
+    "options": [
+      {"text": "The ionic bonds breaking apart, releasing individual charged ions that then interact with water molecules", "isCorrect": true, "feedback": "Correct -- dissolution of an ionic compound involves separating its constituent ions, which then become surrounded and stabilized by water molecules (hydration)."},
+      {"text": "The compound instantly transforming into a completely different element", "isCorrect": false, "feedback": "This isn't accurate -- dissolution doesn't create a NEW element; it simply separates the EXISTING ions from their solid crystal structure into solution, without changing their fundamental elemental identity."},
+      {"text": "No actual physical or chemical process occurring at all", "isCorrect": false, "feedback": "This isn't accurate -- dissolution DOES involve a genuine physical/chemical process, specifically the separation of ionic bonds and subsequent ion-water interactions."},
+      {"text": "The water molecules themselves breaking apart into individual hydrogen and oxygen atoms", "isCorrect": false, "feedback": "This isn't accurate -- standard dissolution doesn't break apart water's own molecular structure; it specifically involves the DISSOLVING SUBSTANCE's ions separating and interacting with intact water molecules."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Molecular (covalent) compounds, when they dissolve in water, generally do NOT dissociate into charged ions the way ionic compounds do (though there are some exceptions, like certain acids). Why does this fundamental structural difference (ionic vs. covalent bonding) explain this difference in dissolution behavior?",
+    "options": [
+      {"text": "Since molecular compounds are held together by covalent bonds (shared electrons between neutral atoms, not by attraction between pre-existing charged ions), dissolving them in water typically doesn't create separate charged particles -- the molecule generally stays intact as a whole neutral unit, unlike an ionic compound's pre-existing separate ions", "isCorrect": true, "feedback": "Correct -- this fundamental structural distinction (pre-existing separate ions in ionic compounds vs. a single neutral molecular unit in covalent compounds) directly explains why these two compound types generally behave so differently upon dissolution in water."},
+      {"text": "Molecular compounds actually also always fully dissociate into ions when dissolved in water, identical to ionic compounds", "isCorrect": false, "feedback": "This isn't accurate -- MOST molecular compounds specifically do NOT dissociate into ions upon dissolving (generally staying as intact neutral molecules), unlike ionic compounds, which specifically DO dissociate into their constituent ions."},
+      {"text": "This difference in dissolution behavior has no actual connection to the fundamental bonding type (ionic vs. covalent) of the compound", "isCorrect": false, "feedback": "This isn't accurate -- this difference in dissolution behavior is DIRECTLY and fundamentally connected to and explained by the underlying bonding TYPE (ionic vs. covalent) of the specific compound."},
+      {"text": "Ionic compounds actually don't dissociate into ions when dissolved, contrary to what's being described", "isCorrect": false, "feedback": "This isn't accurate -- ionic compounds SPECIFICALLY DO dissociate into their constituent ions when dissolved in water, which is precisely the key distinguishing behavior being contrasted with molecular compounds here."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Solutions of dissolved ionic compounds conduct electricity well (since they contain free-moving charged ions), while solutions of most dissolved molecular compounds (like sugar in water) do NOT conduct electricity well. Using your understanding of why these two compound types behave differently upon dissolution, explain this electrical conductivity difference.",
+    "options": [
+      {"text": "Electrical conductivity in solution specifically requires the presence of freely-moving CHARGED particles (ions) to carry electric current -- since ionic compounds dissociate into these free ions upon dissolving (unlike most molecular compounds, which typically remain as neutral, uncharged molecular units), only ionic solutions provide the necessary charge carriers for good electrical conductivity", "isCorrect": true, "feedback": "Correct -- this direct connection between a compound's dissolution behavior (producing free ions vs. remaining as neutral molecules) and the resulting solution's electrical conductivity is a classic, practical demonstration of how fundamental bonding type differences manifest in observable, testable physical properties."},
+      {"text": "Electrical conductivity in solution actually has no connection to whether free-moving charged ions are present", "isCorrect": false, "feedback": "This isn't accurate -- electrical conductivity in solution is DIRECTLY and fundamentally connected to and REQUIRES the presence of free-moving charged particles (ions), which is precisely why ionic solutions conduct well while most molecular solutions do not."},
+      {"text": "Molecular compound solutions (like sugar water) actually conduct electricity just as well as ionic compound solutions", "isCorrect": false, "feedback": "This isn't accurate -- most molecular compound solutions (like sugar dissolved in water) specifically do NOT conduct electricity well, unlike ionic compound solutions, precisely because they lack the necessary free-moving charged ions."},
+      {"text": "This electrical conductivity difference has no actual connection to the underlying difference in dissolution behavior between these two compound types", "isCorrect": false, "feedback": "This isn't accurate -- this electrical conductivity difference is DIRECTLY and specifically connected to and EXPLAINED BY the underlying difference in dissolution behavior (ion dissociation vs. remaining neutral) between these two compound types."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process involves the disruption of electrostatic lattice interactions, liberating discrete charged species into the surrounding aqueous medium.", "medium": "The solid's charged particles break apart from each other and get surrounded by water molecules.", "easy": "The solid's charged particles break apart and get surrounded by water."},
+    "medium": {"hard": "Consider whether the bonding mechanism holding the compound together involves pre-existing separate charged entities or a shared-electron arrangement between neutral atoms forming a single cohesive unit.", "medium": "Ionic compounds are basically already made of separate charged pieces stuck together, while molecular compounds are more like one single, whole, neutral unit that tends to stay together.", "easy": "Ionic compounds are made of separate charged pieces; molecular compounds tend to stay together as one whole unit."},
+    "hard": {"hard": "Trace the causal chain from bonding type, to dissolution behavior (ion release vs. molecular integrity), to the resulting availability (or absence) of mobile charge carriers needed for electrical conduction.", "medium": "You need actual free-floating charged particles to carry electricity through a liquid, and only the ionic compound's dissolving process actually creates those.", "easy": "You need free-floating charged particles to carry electricity, and only ionic compounds create those when dissolving."}
+  }
+}
+]

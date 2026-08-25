@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the Pythagorean theorem",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The Pythagorean theorem applies to which type of triangle?",
+    "options": [
+      {"text": "A right triangle (one with a 90-degree angle)", "isCorrect": true, "feedback": "Correct -- the Pythagorean theorem specifically relates the sides of a right triangle."},
+      {"text": "Any triangle, regardless of its angles", "isCorrect": false, "feedback": "The theorem specifically requires a right angle -- it doesn't hold for triangles without a 90-degree angle."},
+      {"text": "Only equilateral triangles", "isCorrect": false, "feedback": "Equilateral triangles (all 60-degree angles) don't have a right angle, so the standard theorem doesn't apply to them."},
+      {"text": "Only triangles with no equal sides", "isCorrect": false, "feedback": "Side-length equality isn't the relevant condition -- having a 90-degree angle is what's required."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A right triangle has legs of length 3 and 4. Using a² + b² = c², what is the length of the hypotenuse?",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- 3² + 4² = 9 + 16 = 25, and the square root of 25 is 5."},
+      {"text": "7", "isCorrect": false, "feedback": "This would result from simply adding the two leg lengths (3+4), not correctly applying the Pythagorean theorem."},
+      {"text": "25", "isCorrect": false, "feedback": "This is the sum of the squares (a² + b²) before taking the square root -- the final hypotenuse length requires that last step."},
+      {"text": "12", "isCorrect": false, "feedback": "This doesn't correctly result from applying a² + b² = c² to these leg lengths."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A ladder leans against a wall, reaching 12 feet up the wall. The base of the ladder is 5 feet from the wall. How long is the ladder?",
+    "options": [
+      {"text": "13 feet", "isCorrect": true, "feedback": "Correct -- 5² + 12² = 25 + 144 = 169, and the square root of 169 is 13."},
+      {"text": "17 feet", "isCorrect": false, "feedback": "This would result from simply adding 5 and 12 rather than correctly applying the Pythagorean theorem."},
+      {"text": "169 feet", "isCorrect": false, "feedback": "This is the sum of the squares (5² + 12²) before taking the square root -- the final answer requires that last step."},
+      {"text": "7 feet", "isCorrect": false, "feedback": "This doesn't correctly result from applying a² + b² = c² to these measurements."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This theorem applies specifically to triangles containing one angle of exactly 90 degrees.", "medium": "This rule applies to triangles that have one perfect square-corner angle.", "easy": "This rule works for triangles with one perfect square-corner angle."},
+    "medium": {"hard": "Square each leg length, sum the results, then take the square root of that sum to find the hypotenuse.", "medium": "Square 3 and 4, add those results together, then take the square root of the total.", "easy": "Square 3, square 4, add them, then find the square root."},
+    "hard": {"hard": "Treat the wall height and ground distance as the two legs of a right triangle, then apply a² + b² = c² to solve for the hypotenuse (the ladder itself).", "medium": "The wall height and ground distance are the two legs -- square each, add them, then take the square root.", "easy": "Square 5, square 12, add them together, then find the square root."}
+  }
+}
+]

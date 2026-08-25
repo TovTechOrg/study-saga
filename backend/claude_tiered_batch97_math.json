@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of parametric equations for motion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Parametric equations describe a curve/motion using:",
+    "options": [
+      {"text": "Both x and y as separate functions of a third variable, typically called a parameter (often t, for time)", "isCorrect": true, "feedback": "Correct -- parametric equations (like x=f(t), y=g(t)) let both coordinates depend on a shared parameter, often representing time, which is especially useful for describing motion."},
+      {"text": "Only a single equation directly relating x and y to each other, with no other variable", "isCorrect": false, "feedback": "That describes a standard (non-parametric) equation, not a parametric one, which specifically uses a THIRD variable (parameter) to define both x and y separately."},
+      {"text": "A method that cannot represent any kind of motion or curve at all", "isCorrect": false, "feedback": "This is essentially the opposite of parametric equations' actual purpose -- they're specifically well-suited for representing motion and curves, particularly ones that a simple y=f(x) equation cannot easily describe."},
+      {"text": "Only whole numbers, never any variables at all", "isCorrect": false, "feedback": "This isn't accurate -- parametric equations specifically use VARIABLES (x, y, and the parameter, often t), not simply whole numbers alone."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The parametric equations x=3t and y=t²+1 describe a particle's position over time t. What is the particle's position (x,y) at t=2?",
+    "options": [
+      {"text": "(6, 5)", "isCorrect": true, "feedback": "Correct -- x=3(2)=6, and y=(2)²+1=4+1=5, giving the position (6,5)."},
+      {"text": "(2, 2)", "isCorrect": false, "feedback": "This doesn't correctly apply either equation to the given t value -- recheck by substituting t=2 into both x=3t and y=t²+1 separately."},
+      {"text": "(6, 4)", "isCorrect": false, "feedback": "This correctly calculates x=6, but incorrectly calculates y (forgetting to add the +1 after squaring t)."},
+      {"text": "(3, 1)", "isCorrect": false, "feedback": "This doesn't correctly substitute t=2 into either equation -- these values don't correctly result from the given parametric equations at t=2."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why are parametric equations particularly useful for describing certain curves/motions (like a circle, or complex looping paths) that CANNOT be easily represented by a single, standard y=f(x) equation?",
+    "options": [
+      {"text": "A standard y=f(x) equation requires each x-value to correspond to exactly ONE y-value (passing the 'vertical line test'), but many useful curves (like circles, which have two y-values for most x-values, or paths that cross themselves) violate this restriction -- parametric equations avoid this limitation entirely by defining x and y INDEPENDENTLY through a shared third parameter, rather than requiring a direct functional relationship between x and y themselves", "isCorrect": true, "feedback": "Correct -- this fundamental flexibility advantage (avoiding the strict one-y-value-per-x-value requirement of standard functions) is precisely why parametric equations are so valuable and widely used for describing complex curves and motions that standard y=f(x) functional notation simply cannot adequately represent."},
+      {"text": "Standard y=f(x) equations can actually represent every possible type of curve or motion path equally well, with no limitations", "isCorrect": false, "feedback": "This isn't accurate -- standard y=f(x) equations DO have significant limitations (specifically the vertical line test/one-y-value-per-x requirement), which is precisely why parametric equations offer valuable additional flexibility for certain types of curves."},
+      {"text": "Parametric equations actually cannot represent circles or other curved, looping paths at all", "isCorrect": false, "feedback": "This isn't accurate -- parametric equations are actually PARTICULARLY well-suited for representing circles and other complex looping/curved paths, precisely because of their flexibility advantage over standard y=f(x) notation."},
+      {"text": "This flexibility advantage of parametric equations has no actual connection to the specific mathematical limitations of standard y=f(x) functions", "isCorrect": false, "feedback": "This isn't accurate -- this flexibility advantage is DIRECTLY and specifically connected to and exists precisely BECAUSE OF the mathematical limitations (vertical line test restriction) inherent in standard y=f(x) function notation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This representation defines each coordinate dimension as an independent function of a shared auxiliary variable, commonly denoting temporal progression.", "medium": "Both the x and y positions are each calculated separately based on some third variable, like time.", "easy": "Both x and y positions are calculated separately based on a third variable, like time."},
+    "medium": {"hard": "Independently evaluate each parametric expression by substituting the specified parameter value into its respective defining function.", "medium": "Plug t=2 into the x equation to find x, then plug t=2 into the y equation separately to find y.", "easy": "x=3(2)=6. y=(2)²+1=5. Position is (6,5)."},
+    "hard": {"hard": "Consider how decoupling the x and y coordinates into independent functions of a shared parameter circumvents the single-valued function requirement imposed by the vertical line test on standard Cartesian equations.", "medium": "Regular equations need each x to match up with just ONE y value, but shapes like circles need TWO y values for most x values -- parametric equations get around this by handling x and y totally separately.", "easy": "Regular equations need one y per x, but circles need two -- parametric equations handle x and y separately to get around this."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between exons and introns in gene structure",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In eukaryotic genes, 'exons' refer to the sequences that:",
+    "options": [
+      {"text": "Are ultimately included in the final, mature mRNA and code for the actual protein", "isCorrect": true, "feedback": "Correct -- exons are the coding sequences that remain in the mRNA after processing and are translated into the actual protein."},
+      {"text": "Are removed from the mRNA before translation and don't code for the final protein", "isCorrect": false, "feedback": "That describes INTRONS, not exons -- exons are specifically the sequences that ARE retained and coded into the final protein."},
+      {"text": "Exist only within bacterial (prokaryotic) genes, never in eukaryotic ones", "isCorrect": false, "feedback": "This isn't accurate -- exons (along with introns) are specifically characteristic of EUKARYOTIC gene structure, not bacterial/prokaryotic genes, which generally lack this exon-intron structure."},
+      {"text": "Represent errors or mistakes in the DNA sequence", "isCorrect": false, "feedback": "Exons aren't errors -- they're the normal, functional coding portions of a gene that are specifically retained for protein synthesis."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "During RNA processing (splicing), introns are removed from the initial RNA transcript, and the remaining exons are joined together to form the mature mRNA. Why is this splicing step a necessary part of eukaryotic gene expression?",
+    "options": [
+      {"text": "Since eukaryotic genes contain intron sequences that DON'T code for the final protein, these must specifically be removed so that only the actual protein-coding exon sequences remain, ensuring the mRNA accurately reflects the intended final protein sequence", "isCorrect": true, "feedback": "Correct -- this splicing process is essential for producing an mRNA that accurately encodes the intended protein, since including the non-coding intron sequences would corrupt the resulting protein sequence."},
+      {"text": "Splicing is actually an entirely unnecessary, optional step in eukaryotic gene expression", "isCorrect": false, "feedback": "This isn't accurate -- splicing is actually a NECESSARY, standard step in eukaryotic gene expression, specifically required to remove non-coding introns before proper protein synthesis can occur."},
+      {"text": "Introns actually also code for functional protein sequences, just like exons do", "isCorrect": false, "feedback": "This isn't accurate -- introns specifically do NOT code for the final protein sequence (that's the defining characteristic of EXONS); introns must be removed precisely because they don't contribute to the intended protein-coding sequence."},
+      {"text": "This splicing process has no actual connection to ensuring accurate protein synthesis", "isCorrect": false, "feedback": "This isn't accurate -- splicing is DIRECTLY and centrally connected to ensuring accurate protein synthesis, by removing non-coding introns before the mRNA is translated."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Alternative splicing allows a single gene (with multiple exons) to produce different mature mRNA molecules (and thus different protein variants) by including or excluding different combinations of exons during the splicing process. Why does this phenomenon significantly expand the potential protein diversity an organism can produce, beyond what its total gene count alone might suggest?",
+    "options": [
+      {"text": "Since a single gene can generate multiple distinct protein variants through different exon combinations, the total number of possible proteins an organism can produce can be substantially GREATER than its total number of individual genes, allowing for much greater biological complexity than gene count alone would predict", "isCorrect": true, "feedback": "Correct -- this remarkable capability (alternative splicing generating multiple protein variants from a single gene) helps explain how organisms, including humans, can achieve significant biological complexity despite having a comparatively modest total gene count relative to that complexity."},
+      {"text": "Alternative splicing actually always produces the exact same single protein variant every single time, with no variation", "isCorrect": false, "feedback": "This isn't accurate -- alternative splicing SPECIFICALLY produces DIFFERENT protein variants (by including/excluding different exon combinations), not always the identical single outcome."},
+      {"text": "This phenomenon has no actual connection to explaining an organism's overall potential protein diversity", "isCorrect": false, "feedback": "This isn't accurate -- alternative splicing is DIRECTLY and significantly connected to expanding an organism's overall protein diversity potential, beyond what a simple gene count alone would suggest."},
+      {"text": "The total number of genes an organism has always exactly matches ITS total possible number of different proteins", "isCorrect": false, "feedback": "This isn't accurate -- due to phenomena like alternative splicing, an organism's total POSSIBLE PROTEIN diversity can actually significantly EXCEED its total gene count, rather than matching it exactly one-to-one."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These retained sequence segments constitute the protein-coding regions preserved within the mature, processed messenger RNA transcript.", "medium": "These are the parts of the gene that actually end up in the final message used to build the protein.", "easy": "These are the parts of the gene that actually end up building the protein."},
+    "medium": {"hard": "Consider what would happen to the resulting protein sequence if the non-coding intron sequences were mistakenly left in place within the final processed mRNA.", "medium": "If the non-coding parts weren't cut out, they'd mess up the actual protein-building instructions, so they have to be removed first.", "easy": "If the non-coding parts weren't cut out, they'd mess up the protein-building instructions."},
+    "hard": {"hard": "Consider how combinatorially varying which coding segments are retained during processing could generate a substantially larger set of final protein products than the number of originating genes alone would suggest.", "medium": "If one gene can be 'mixed and matched' in different ways to make several different final proteins, then you can end up with way more different proteins than you have actual genes.", "easy": "If one gene can be mixed and matched to make different proteins, you get more proteins than genes."}
+  }
+}
+]

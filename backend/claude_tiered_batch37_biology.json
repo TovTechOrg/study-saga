@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of cellular respiration's overall equation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What are the main reactants (starting materials) needed for aerobic cellular respiration?",
+    "options": [
+      {"text": "Glucose and oxygen", "isCorrect": true, "feedback": "Correct -- cells break down glucose using oxygen to release usable energy (ATP)."},
+      {"text": "Carbon dioxide and water", "isCorrect": false, "feedback": "These are actually the PRODUCTS of cellular respiration, not the starting reactants."},
+      {"text": "Nitrogen and hydrogen", "isCorrect": false, "feedback": "These aren't the primary reactants involved in the standard cellular respiration equation."},
+      {"text": "Sunlight and chlorophyll", "isCorrect": false, "feedback": "These are associated with photosynthesis, not cellular respiration."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What are the main products of aerobic cellular respiration?",
+    "options": [
+      {"text": "Carbon dioxide, water, and usable energy (ATP)", "isCorrect": true, "feedback": "Correct -- breaking down glucose with oxygen releases these waste products along with usable cellular energy."},
+      {"text": "Glucose and oxygen", "isCorrect": false, "feedback": "These are the STARTING materials (reactants) for cellular respiration, not the products."},
+      {"text": "Only oxygen, with nothing else produced", "isCorrect": false, "feedback": "Oxygen is actually a REACTANT (consumed), not a product -- carbon dioxide, water, and ATP are the products."},
+      {"text": "Chlorophyll and sunlight", "isCorrect": false, "feedback": "These relate to photosynthesis, not the products of cellular respiration."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Notice that the overall equation for cellular respiration (glucose + oxygen → carbon dioxide + water + energy) is essentially the REVERSE of the overall photosynthesis equation. Why does this relationship make ecological sense?",
+    "options": [
+      {"text": "Photosynthesis captures and stores solar energy as glucose, while cellular respiration releases that stored energy for use -- together, these complementary processes cycle matter and energy through ecosystems", "isCorrect": true, "feedback": "Correct -- this reciprocal relationship is fundamental to how energy flows through living systems, with plants (and other producers) capturing energy that consumers (and the plants themselves) later release through respiration."},
+      {"text": "This is purely coincidental with no ecological significance", "isCorrect": false, "feedback": "This relationship is actually a fundamental, significant aspect of how energy and matter cycle through ecosystems -- not mere coincidence."},
+      {"text": "Photosynthesis and cellular respiration are actually the exact same process", "isCorrect": false, "feedback": "These are genuinely distinct (essentially opposite) processes -- one builds glucose using energy input, the other breaks glucose down releasing energy."},
+      {"text": "Only plants perform cellular respiration, while only animals perform photosynthesis", "isCorrect": false, "feedback": "This is incorrect -- both plants AND animals (and most other organisms) perform cellular respiration, while photosynthesis is specific to plants and certain other organisms (not animals)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These are the starting materials the cell breaks down to release usable energy.", "medium": "One is the sugar molecule broken down, and the other is the gas needed to break it down.", "easy": "One is the sugar the cell breaks down, the other is the gas it needs to do that."},
+    "medium": {"hard": "These are the leftover byproducts generated once the starting sugar has been fully broken down using oxygen.", "medium": "Think about what's left over after the sugar has been broken down, plus the usable energy released.", "easy": "Think about what's left over after breaking down sugar, plus the energy that gets released."},
+    "hard": {"hard": "This reciprocal relationship reflects the fundamental biological energy cycle: producers capture and store solar energy chemically, while respiration (in producers and consumers alike) releases that stored energy for cellular work.", "medium": "One process captures energy from the sun and stores it in sugar, and the other process breaks that sugar down again to release the energy for use.", "easy": "One process captures energy from the sun and stores it in sugar, and the other releases that energy again for use."}
+  }
+}
+]

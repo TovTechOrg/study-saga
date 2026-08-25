@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of precipitation reactions and solubility rules",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a precipitation reaction?",
+    "options": [
+      {"text": "A reaction where two dissolved ionic compounds combine to form an insoluble solid that separates from the solution", "isCorrect": true, "feedback": "Correct -- the insoluble solid formed is called a precipitate, which visibly separates from the remaining solution."},
+      {"text": "A reaction that only occurs during rainy weather", "isCorrect": false, "feedback": "This confuses chemical 'precipitation' with weather-related precipitation (rain) -- they are unrelated concepts despite sharing a name."},
+      {"text": "A reaction where a solid completely dissolves into a liquid", "isCorrect": false, "feedback": "This describes DISSOLVING, essentially the opposite of a precipitation reaction, which forms a solid FROM a solution."},
+      {"text": "A reaction that only occurs at extremely high temperatures", "isCorrect": false, "feedback": "Precipitation reactions aren't specifically tied to high temperatures -- they can occur at room temperature when appropriate ions combine to form an insoluble compound."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When solutions of silver nitrate (AgNO3) and sodium chloride (NaCl) are mixed, a white solid (silver chloride, AgCl) forms and settles out. How do solubility rules help predict this outcome before actually performing the experiment?",
+    "options": [
+      {"text": "Solubility rules indicate that silver chloride (AgCl) is generally insoluble in water, so when silver and chloride ions come together in solution, they're predicted to form a solid precipitate rather than remaining dissolved", "isCorrect": true, "feedback": "Correct -- these empirically established solubility rules allow chemists to predict, in advance, which ionic combinations will form precipitates versus which will remain fully dissolved in solution."},
+      {"text": "Solubility rules actually have no predictive value for determining precipitation reactions", "isCorrect": false, "feedback": "This isn't accurate -- solubility rules are specifically useful tools for PREDICTING whether a particular combination of ions will form a precipitate or remain dissolved."},
+      {"text": "All silver compounds are always completely soluble in water, with no exceptions", "isCorrect": false, "feedback": "This isn't accurate -- while some silver compounds are soluble, silver chloride specifically is known to be INSOLUBLE, which is precisely why it precipitates out in this reaction."},
+      {"text": "This reaction outcome could not have been predicted using any chemical principles, only by direct observation", "isCorrect": false, "feedback": "This outcome COULD be predicted in advance using established solubility rules, without needing to rely solely on direct experimental observation after the fact."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In a 'net ionic equation' for a precipitation reaction, only the ions that actually participate in forming the precipitate are shown, while 'spectator ions' (that remain dissolved and unchanged) are omitted. Why is this simplified representation considered chemically more informative than the full molecular equation?",
+    "options": [
+      {"text": "It specifically highlights the actual chemical change occurring (the ions combining to form the solid precipitate), rather than including ions that don't participate in any meaningful transformation and remain in solution exactly as they started", "isCorrect": true, "feedback": "Correct -- by removing spectator ions that don't undergo any actual change, the net ionic equation more precisely and efficiently represents the true underlying chemical transformation taking place."},
+      {"text": "Spectator ions are actually just as chemically important as the ions that form the precipitate", "isCorrect": false, "feedback": "This isn't accurate for THIS PURPOSE -- while spectator ions are present, they specifically don't undergo any chemical change in this reaction, which is exactly why they're excluded from a net ionic equation focused on the actual transformation."},
+      {"text": "Net ionic equations are actually less accurate than full molecular equations for describing precipitation reactions", "isCorrect": false, "feedback": "This isn't accurate -- net ionic equations are considered MORE precisely informative for highlighting the actual chemical change, not less accurate, since they focus specifically on the reacting species."},
+      {"text": "There is actually no meaningful difference between a full molecular equation and a net ionic equation", "isCorrect": false, "feedback": "There IS a meaningful difference -- the net ionic equation specifically omits non-reacting spectator ions, providing a clearer, more focused representation of the actual chemical transformation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This chemical process yields an insoluble solid product resulting from the combination of ions previously dissolved in separate aqueous solutions.", "medium": "This is when mixing two dissolved substances creates a solid that falls out of the liquid.", "easy": "This is when mixing two dissolved substances creates a solid that falls out."},
+    "medium": {"hard": "Reference established solubility guidelines to determine in advance whether a specific combination of cation and anion will remain dissolved or form an insoluble compound.", "medium": "Chemists have a set of rules that tell them ahead of time which combinations of ions will form a solid and which will stay dissolved.", "easy": "Chemists have rules that tell them which ion combinations form a solid and which stay dissolved."},
+    "hard": {"hard": "Consider which chemical species actually undergo a transformation (forming a new substance) versus which remain chemically unchanged throughout the entire process.", "medium": "The ions that actually come together to make the new solid are the real story -- the ions that just sit there unchanged aren't really part of what happened.", "easy": "The ions that actually form the new solid are the real story -- the ones that stay unchanged aren't."}
+  }
+}
+]

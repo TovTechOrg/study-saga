@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the photoelectric effect and light's particle nature",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the photoelectric effect?",
+    "options": [
+      {"text": "The emission of electrons from a material's surface when light shines on it", "isCorrect": true, "feedback": "Correct -- this phenomenon demonstrated that light can behave like discrete particles (photons) capable of knocking electrons loose from a material."},
+      {"text": "The bending of light as it passes through glass", "isCorrect": false, "feedback": "That describes refraction, an unrelated optical phenomenon from the photoelectric effect, which involves electron emission."},
+      {"text": "The complete absorption of all light by a black object", "isCorrect": false, "feedback": "This describes basic light absorption, not specifically the photoelectric effect, which involves electron EMISSION triggered by that absorbed light."},
+      {"text": "The reflection of light off a mirror", "isCorrect": false, "feedback": "That describes simple reflection, unrelated to the photoelectric effect, which specifically involves electrons being emitted from a material's surface."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In the photoelectric effect, increasing the INTENSITY (brightness) of light doesn't increase the maximum kinetic energy of emitted electrons, but increasing the FREQUENCY of light does. Why was this surprising finding significant for physics?",
+    "options": [
+      {"text": "It contradicted classical wave theory's prediction (that higher intensity alone should increase electron energy), instead supporting Einstein's idea that light consists of discrete energy packets (photons) whose energy depends specifically on frequency, not amplitude/intensity", "isCorrect": true, "feedback": "Correct -- this finding was one of the pivotal pieces of evidence supporting the emerging quantum theory of light, fundamentally changing physicists' understanding of light's nature."},
+      {"text": "This finding actually perfectly matched what classical wave theory of light had already predicted", "isCorrect": false, "feedback": "This isn't accurate -- this finding actually CONTRADICTED classical wave theory's predictions, which is precisely why it was considered such a significant and surprising discovery."},
+      {"text": "Light intensity and frequency are actually the exact same physical property", "isCorrect": false, "feedback": "These are distinct physical properties -- intensity relates to the AMOUNT of light energy (brightness), while frequency relates to the light's WAVELENGTH/color, and this experiment specifically distinguished their different effects."},
+      {"text": "This finding has no actual significance for understanding the fundamental nature of light", "isCorrect": false, "feedback": "This finding was actually HIGHLY significant, providing crucial supporting evidence for the revolutionary idea that light has particle-like (quantized) properties, alongside its known wave behavior."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Below a certain minimum threshold frequency (specific to each material), NO electrons are emitted at all, regardless of how intense (bright) the light is. How does the photon (particle) model of light explain this threshold behavior, which classical wave theory struggled to account for?",
+    "options": [
+      {"text": "Since each individual photon must carry enough energy (proportional to its frequency) to overcome the material's specific binding energy holding electrons in place, photons below the threshold frequency simply don't carry sufficient individual energy to eject an electron, no matter how many such photons (intensity) are present", "isCorrect": true, "feedback": "Correct -- this photon-based explanation, where each individual light quantum must independently carry sufficient energy, elegantly accounts for the threshold frequency phenomenon in a way that classical continuous wave theory could not adequately explain."},
+      {"text": "Classical wave theory actually explains this threshold behavior perfectly well, without needing any particle-based model", "isCorrect": false, "feedback": "This isn't accurate -- classical wave theory actually STRUGGLED significantly to explain this specific threshold behavior, which is precisely why the photon (particle) model was needed to properly account for it."},
+      {"text": "This threshold frequency phenomenon has no actual connection to the energy carried by individual light photons", "isCorrect": false, "feedback": "This threshold phenomenon is DIRECTLY explained by considering the energy carried by INDIVIDUAL photons (proportional to frequency), which is central to the photon model's explanation."},
+      {"text": "Sufficiently high light intensity alone, regardless of frequency, would always eventually overcome this threshold", "isCorrect": false, "feedback": "This isn't accurate -- no matter how intense (bright) below-threshold-frequency light is made, it will NOT cause electron emission, since each individual photon simply lacks sufficient energy regardless of how many photons are present."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This observed phenomenon involves the liberation of electrons from a material's surface upon exposure to incident electromagnetic radiation.", "medium": "This is when shining light on certain materials causes electrons to pop out of them.", "easy": "This is when shining light on certain materials causes electrons to pop out."},
+    "medium": {"hard": "Consider how attributing energy to individual discrete light quanta (rather than a continuous wave) naturally explains why frequency, not brightness, determines individual electron energy.", "medium": "If light comes in individual energy packets, then it makes sense that each packet's own energy (tied to frequency) determines how energetic each ejected electron is.", "easy": "If light comes in individual packets, each packet's own energy (tied to frequency) determines the electron's energy."},
+    "hard": {"hard": "Apply the concept that each photon's energy must individually exceed a material-specific binding energy threshold, independent of how many photons (intensity) are present.", "medium": "Each little packet of light needs enough of its OWN energy to knock an electron loose -- having tons of weak packets doesn't help if none of them individually have enough.", "easy": "Each light packet needs enough of its own energy to knock an electron loose -- lots of weak packets don't help."}
+  }
+}
+]

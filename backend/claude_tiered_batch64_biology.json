@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of genetic mutations and their varying effects",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a genetic mutation?",
+    "options": [
+      {"text": "A change in an organism's DNA sequence", "isCorrect": true, "feedback": "Correct -- mutations are alterations to the genetic code, which can range from a single altered base pair to larger structural changes."},
+      {"text": "The process of a cell dividing into two identical cells", "isCorrect": false, "feedback": "That describes mitosis (cell division), an unrelated process from a mutation, which is specifically a CHANGE in DNA sequence."},
+      {"text": "A type of protein that regulates gene expression", "isCorrect": false, "feedback": "That describes a transcription factor, a different biological concept from a mutation, which is a change to the genetic sequence itself."},
+      {"text": "The complete destruction of an organism's entire genome", "isCorrect": false, "feedback": "A mutation is typically a much smaller-scale CHANGE to DNA, not complete destruction of the entire genome."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Not all mutations have the same effect -- some are harmful, some are neutral (no noticeable effect), and some are even beneficial. What primarily determines whether a specific mutation falls into one of these categories?",
+    "options": [
+      {"text": "Whether the mutation disrupts, has no effect on, or improves the function of the resulting protein (or gene expression) in a way that impacts the organism's survival or reproduction", "isCorrect": true, "feedback": "Correct -- a mutation's ultimate classification depends specifically on its functional consequence, particularly regarding how it affects an organism's fitness (survival and reproductive success)."},
+      {"text": "All mutations are always harmful, with no exceptions", "isCorrect": false, "feedback": "This isn't accurate -- while many mutations are indeed harmful or neutral, some mutations CAN be beneficial, providing an organism with an advantageous trait."},
+      {"text": "The category of a mutation is entirely random and has no connection to its functional effect", "isCorrect": false, "feedback": "This isn't accurate -- while WHICH mutations occur may be random, their CATEGORIZATION (harmful/neutral/beneficial) is specifically determined by their actual functional consequences, not randomness in classification."},
+      {"text": "Only mutations affecting reproductive cells can ever be classified into these three categories", "isCorrect": false, "feedback": "This isn't accurate -- mutations in any cell type can be classified based on their functional impact, not exclusively those in reproductive cells (though only reproductive cell mutations get passed to offspring)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A mutation that causes sickle cell anemia (a serious blood disorder) also provides some resistance to malaria in individuals who carry just one copy of the mutated gene (heterozygous carriers). Why does this example illustrate the complexity of classifying a mutation as purely 'harmful' or 'beneficial'?",
+    "options": [
+      {"text": "The overall impact of a mutation can depend heavily on environmental context (like malaria prevalence) and genetic context (like whether one or two copies are inherited), meaning a single mutation can have both harmful and beneficial effects simultaneously, depending on circumstances", "isCorrect": true, "feedback": "Correct -- this example vividly illustrates how the classification of a mutation as simply 'good' or 'bad' can be overly simplistic, since its actual net effect often depends on specific environmental and genetic contexts."},
+      {"text": "This mutation is actually purely harmful in every possible context, with no beneficial aspect whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- this specific mutation provides a well-documented beneficial effect (malaria resistance) in certain contexts (heterozygous carriers), despite also causing significant harm (sickle cell disease) in other contexts (homozygous individuals)."},
+      {"text": "This mutation is actually purely beneficial in every possible context, with no harmful aspect at all", "isCorrect": false, "feedback": "This isn't accurate -- this mutation causes serious harm (sickle cell disease) specifically in homozygous individuals, even though it can provide a benefit (malaria resistance) in heterozygous carriers."},
+      {"text": "Environmental factors like disease prevalence have no actual connection to whether a mutation is considered beneficial or harmful", "isCorrect": false, "feedback": "This isn't accurate -- environmental factors (like local malaria prevalence) can DIRECTLY affect whether a given mutation's overall impact leans more beneficial or harmful in a given population."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This alteration represents a modification to an organism's underlying genetic sequence, potentially altering encoded protein function.", "medium": "This is a change to an organism's genetic instructions (DNA).", "easy": "This is a change to an organism's DNA instructions."},
+    "medium": {"hard": "Consider how the resulting protein's altered function (or lack of change) translates into a measurable effect on an organism's overall fitness.", "medium": "It comes down to whether the resulting change actually helps, hurts, or does nothing noticeable to how well the organism survives and reproduces.", "easy": "It comes down to whether the change helps, hurts, or does nothing to the organism."},
+    "hard": {"hard": "Consider how genetic zygosity (heterozygous vs. homozygous) and environmental pressures (like disease prevalence) can interact to produce genuinely mixed, context-dependent fitness outcomes from a single mutation.", "medium": "Depending on whether you have one or two copies, and whether malaria is a big threat where you live, this same mutation can be either helpful or harmful.", "easy": "Depending on how many copies you have, and where you live, this same mutation can be helpful or harmful."}
+  }
+}
+]

@@ -1,0 +1,207 @@
+[
+{
+  "topic": "osmosis (water movement across membranes)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is osmosis?",
+    "options": [
+      {"text": "The movement of water across a membrane from an area of high water concentration to low", "isCorrect": true, "feedback": "Correct -- osmosis moves water to balance concentration on both sides of a membrane."},
+      {"text": "The movement of sugar molecules only", "isCorrect": false, "feedback": "Osmosis specifically refers to water movement, not sugar or other solutes."},
+      {"text": "The breakdown of food in the stomach", "isCorrect": false, "feedback": "That describes digestion, an entirely different process."},
+      {"text": "The process of cell division", "isCorrect": false, "feedback": "Cell division is mitosis or meiosis, unrelated to water movement across membranes."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If a plant cell is placed in very salty water, what will likely happen to it?",
+    "options": [
+      {"text": "Water will leave the cell, causing it to shrink", "isCorrect": true, "feedback": "Correct -- water moves out toward the higher salt concentration outside, causing the cell to lose water."},
+      {"text": "Water will rush into the cell, causing it to swell and burst", "isCorrect": false, "feedback": "This would happen in very fresh (low-salt) water, not salty water."},
+      {"text": "Nothing will happen to the cell at all", "isCorrect": false, "feedback": "A significant concentration difference like this will cause water movement, not no change."},
+      {"text": "The cell will start photosynthesizing faster", "isCorrect": false, "feedback": "Salt concentration affects water balance, not photosynthesis rate directly."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two solutions are separated by a membrane permeable only to water. Solution A has a higher solute concentration than Solution B. In which direction will water move?",
+    "options": [
+      {"text": "From Solution B into Solution A", "isCorrect": true, "feedback": "Correct -- water moves toward the solution with more dissolved solute (lower water concentration) to balance things out."},
+      {"text": "From Solution A into Solution B", "isCorrect": false, "feedback": "This is the reverse of the actual direction -- water moves toward the higher-solute side, not away from it."},
+      {"text": "Water won't move in either direction", "isCorrect": false, "feedback": "A concentration difference across a water-permeable membrane will cause net water movement."},
+      {"text": "Water moves equally in both directions with no net change", "isCorrect": false, "feedback": "While water molecules move both ways, there is a net flow toward the higher-solute solution until balance is reached."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process specifically involves water molecules crossing a selectively permeable barrier.", "medium": "This is when water moves through a membrane to even out concentration on both sides.", "easy": "This is when water moves through a membrane from where there's more water to where there's less."},
+    "medium": {"hard": "Water will move toward the side with the higher concentration of dissolved particles, leaving the cell in this scenario.", "medium": "Water moves toward the saltier side, which means it will leave the cell.", "easy": "Water tends to move out of the cell and into the saltier water outside."},
+    "hard": {"hard": "Water flows toward the solution with the greater solute concentration (and thus lower water concentration) in an effort to equalize concentrations on both sides.", "medium": "Water always moves toward the side with more dissolved solute, since that side effectively has less water.", "easy": "Water moves toward the side that has more dissolved stuff in it -- that's Solution A."}
+  }
+},
+{
+  "topic": "dominant and recessive alleles",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If a dominant allele and a recessive allele are both present, which trait is usually expressed?",
+    "options": [
+      {"text": "The dominant trait", "isCorrect": true, "feedback": "Correct -- a dominant allele masks the effect of a recessive one when both are present."},
+      {"text": "The recessive trait", "isCorrect": false, "feedback": "The recessive trait is masked when a dominant allele is present."},
+      {"text": "Both traits blend together equally", "isCorrect": false, "feedback": "Simple dominant/recessive inheritance doesn't blend traits -- the dominant one is expressed."},
+      {"text": "Neither trait is expressed", "isCorrect": false, "feedback": "One of the two alleles is always expressed in this simple inheritance pattern -- specifically the dominant one."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For a recessive trait to be physically expressed in an organism, what must be true of its alleles?",
+    "options": [
+      {"text": "Both alleles must be the recessive version", "isCorrect": true, "feedback": "Correct -- a recessive trait only shows up when there's no dominant allele present to mask it."},
+      {"text": "Only one allele needs to be recessive", "isCorrect": false, "feedback": "A single recessive allele paired with a dominant one would be masked -- both must be recessive."},
+      {"text": "Both alleles must be dominant", "isCorrect": false, "feedback": "Two dominant alleles would express the dominant trait, not the recessive one."},
+      {"text": "The organism must have no alleles for that trait", "isCorrect": false, "feedback": "Organisms always have two alleles for a given trait (one from each parent) -- the trait isn't simply absent."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two parents who are both heterozygous (carrying one dominant and one recessive allele) for a trait have a child. What is the probability the child shows the recessive trait?",
+    "options": [
+      {"text": "25%", "isCorrect": true, "feedback": "Correct -- a Punnett square cross of two heterozygous parents gives a 1-in-4 chance of the recessive-recessive combination."},
+      {"text": "50%", "isCorrect": false, "feedback": "50% would be the chance of being heterozygous like the parents, not the chance of showing the recessive trait."},
+      {"text": "75%", "isCorrect": false, "feedback": "75% is actually the chance the child shows the DOMINANT trait, not the recessive one."},
+      {"text": "100%", "isCorrect": false, "feedback": "Since both parents carry a dominant allele too, the recessive trait isn't guaranteed to appear."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of allele's effect shows up even when only one copy is present alongside a different version.", "medium": "This is the version of a gene that gets expressed whenever it's present, even alongside a different version.", "easy": "This is the stronger version of a gene that shows up whenever it's present."},
+    "medium": {"hard": "This weaker version of a gene is hidden by a dominant allele, only showing itself when no dominant version is around.", "medium": "This weaker gene version only shows up when there's no dominant allele hiding it.", "easy": "The weaker gene version only shows up when both copies are the weaker version."},
+    "hard": {"hard": "Cross the two heterozygous genotypes in a Punnett square -- one out of the four resulting combinations pairs two recessive alleles together.", "medium": "Draw out a Punnett square for two heterozygous parents -- count how many of the four boxes show two recessive alleles.", "easy": "In a Punnett square for two heterozygous parents, only 1 of the 4 boxes has two recessive alleles."}
+  }
+},
+{
+  "topic": "the nitrogen cycle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the nitrogen cycle?",
+    "options": [
+      {"text": "The natural process by which nitrogen moves between the atmosphere, soil, and living things", "isCorrect": true, "feedback": "Correct -- the nitrogen cycle describes nitrogen's movement through ecosystems."},
+      {"text": "The process of plants absorbing sunlight", "isCorrect": false, "feedback": "That describes part of photosynthesis, not the nitrogen cycle."},
+      {"text": "The way water evaporates and falls as rain", "isCorrect": false, "feedback": "That describes the water cycle, a different natural cycle."},
+      {"text": "The breakdown of rocks over time", "isCorrect": false, "feedback": "That describes weathering, unrelated to the nitrogen cycle."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What role do nitrogen-fixing bacteria play in the nitrogen cycle?",
+    "options": [
+      {"text": "They convert atmospheric nitrogen gas into a form plants can use", "isCorrect": true, "feedback": "Correct -- most plants can't use nitrogen gas directly, so these bacteria convert it into usable compounds."},
+      {"text": "They convert oxygen into nitrogen gas", "isCorrect": false, "feedback": "These bacteria work with nitrogen gas, not converting oxygen into it."},
+      {"text": "They release nitrogen gas from decomposing bodies", "isCorrect": false, "feedback": "That's closer to the role of decomposers, not nitrogen-fixing bacteria specifically."},
+      {"text": "They allow plants to absorb sunlight more efficiently", "isCorrect": false, "feedback": "Sunlight absorption relates to photosynthesis, not nitrogen fixation."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can't most plants use the abundant nitrogen gas (N₂) that makes up about 78% of Earth's atmosphere directly?",
+    "options": [
+      {"text": "The triple bond holding N₂ together is very stable and hard for plants to break", "isCorrect": true, "feedback": "Correct -- nitrogen gas's strong triple bond requires specialized bacteria (or lightning/industrial processes) to break it into usable forms."},
+      {"text": "Plants have no need for nitrogen at all", "isCorrect": false, "feedback": "Plants actually need nitrogen for proteins and other essential molecules -- they just can't access the gas form directly."},
+      {"text": "Nitrogen gas is toxic to all plant roots", "isCorrect": false, "feedback": "Nitrogen gas isn't toxic -- plants simply lack the biological mechanism to break its strong bond directly."},
+      {"text": "Nitrogen gas only exists deep underground, out of reach of roots", "isCorrect": false, "feedback": "Nitrogen gas is actually abundant in the atmosphere above ground, not confined underground."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This describes the movement of one essential element between air, ground, and organisms.", "medium": "This describes how one particular element moves between the air, the soil, and living organisms.", "easy": "This is the natural cycle describing how nitrogen moves through nature."},
+    "medium": {"hard": "These organisms perform the crucial chemical conversion that unlocks atmospheric nitrogen for biological use.", "medium": "These bacteria transform nitrogen from the air into a form that plant roots can actually absorb.", "easy": "These bacteria change nitrogen from the air into a form plants can actually use."},
+    "hard": {"hard": "The two nitrogen atoms in N₂ are joined by an unusually strong triple covalent bond, requiring significant energy or specialized enzymes to break apart.", "medium": "The two nitrogen atoms in the gas are bonded together extremely tightly, and only certain bacteria have the tools to break that bond.", "easy": "The nitrogen atoms in the gas are stuck together very tightly, and only special bacteria can break them apart."}
+  }
+},
+{
+  "topic": "types of biomes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which biome is characterized by extremely low precipitation and sparse vegetation?",
+    "options": [
+      {"text": "Desert", "isCorrect": true, "feedback": "Correct -- deserts receive very little rainfall and support only specially adapted plants."},
+      {"text": "Rainforest", "isCorrect": false, "feedback": "Rainforests receive very high amounts of rainfall, the opposite of a desert."},
+      {"text": "Tundra", "isCorrect": false, "feedback": "Tundra is defined more by extreme cold than by low precipitation specifically."},
+      {"text": "Wetland", "isCorrect": false, "feedback": "Wetlands are saturated with water, the opposite of a dry desert environment."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which biome is known for its permanently frozen layer of subsoil called permafrost?",
+    "options": [
+      {"text": "Tundra", "isCorrect": true, "feedback": "Correct -- tundra biomes have a permafrost layer that stays frozen year-round."},
+      {"text": "Tropical rainforest", "isCorrect": false, "feedback": "Rainforests are warm and humid, without any permanently frozen soil."},
+      {"text": "Grassland", "isCorrect": false, "feedback": "Grasslands don't have a permanently frozen subsoil layer."},
+      {"text": "Desert", "isCorrect": false, "feedback": "Deserts are defined by dryness, not by permanently frozen ground."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A biome has high year-round rainfall, warm temperatures, and the greatest biodiversity of any land biome. Which biome is this most likely describing?",
+    "options": [
+      {"text": "Tropical rainforest", "isCorrect": true, "feedback": "Correct -- tropical rainforests combine consistent warmth and heavy rainfall to support the richest biodiversity on land."},
+      {"text": "Taiga (boreal forest)", "isCorrect": false, "feedback": "Taiga has cold winters and lower biodiversity compared to tropical rainforests."},
+      {"text": "Desert", "isCorrect": false, "feedback": "Deserts have very low rainfall, the opposite of this description."},
+      {"text": "Tundra", "isCorrect": false, "feedback": "Tundra is cold with low biodiversity, not warm and rich in species."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This environment supports only plants adapted to conserve water due to minimal rainfall.", "medium": "This dry environment gets very little rain all year long.", "easy": "This is the very dry biome that gets hardly any rain."},
+    "medium": {"hard": "This cold biome's ground stays frozen at depth even when the surface briefly thaws in summer.", "medium": "This cold biome has ground that stays frozen deep down, even in summer.", "easy": "This cold biome has ground that never fully thaws, even in summer."},
+    "hard": {"hard": "Consistent warmth combined with abundant year-round rainfall creates ideal conditions for the highest species diversity among terrestrial biomes.", "medium": "Warm temperatures plus heavy rain year-round create the richest variety of life among land biomes.", "easy": "Warm and rainy all year round, with more types of plants and animals than anywhere else on land."}
+  }
+},
+{
+  "topic": "kidney function (excretory system)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main function of the kidneys?",
+    "options": [
+      {"text": "Filtering waste products out of the blood", "isCorrect": true, "feedback": "Correct -- kidneys remove waste and excess substances from the blood to form urine."},
+      {"text": "Pumping blood throughout the body", "isCorrect": false, "feedback": "That's the heart's job, not the kidneys'."},
+      {"text": "Breaking down food in the stomach", "isCorrect": false, "feedback": "Food breakdown happens in the digestive system, not the kidneys."},
+      {"text": "Producing sound for speech", "isCorrect": false, "feedback": "Sound production involves the vocal cords, unrelated to kidney function."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What waste product do the kidneys filter out that comes from protein breakdown?",
+    "options": [
+      {"text": "Urea", "isCorrect": true, "feedback": "Correct -- urea is a nitrogen-containing waste product from protein breakdown, filtered by the kidneys into urine."},
+      {"text": "Glucose", "isCorrect": false, "feedback": "Glucose is generally reabsorbed by the kidneys, not treated as a waste product to remove."},
+      {"text": "Oxygen", "isCorrect": false, "feedback": "Oxygen is a needed gas the body uses, not a waste product filtered by the kidneys."},
+      {"text": "Calcium", "isCorrect": false, "feedback": "Calcium is an important mineral the body regulates, not primarily a waste product from protein breakdown."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which structure within the kidney is primarily responsible for filtering blood to begin forming urine?",
+    "options": [
+      {"text": "Nephron", "isCorrect": true, "feedback": "Correct -- nephrons are the kidney's microscopic filtering units where blood filtration and urine formation begin."},
+      {"text": "Bladder", "isCorrect": false, "feedback": "The bladder stores urine after it's already been formed -- it doesn't do the filtering itself."},
+      {"text": "Ureter", "isCorrect": false, "feedback": "The ureter is a tube that carries urine from the kidney to the bladder, not a filtering structure."},
+      {"text": "Esophagus", "isCorrect": false, "feedback": "The esophagus is part of the digestive system, entirely unrelated to kidney filtration."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This organ's job is to clean the blood, similar to how a filter cleans water.", "medium": "This organ removes unwanted substances from the blood to make urine.", "easy": "This organ cleans your blood and helps make urine."},
+    "medium": {"hard": "This nitrogen-based waste molecule forms specifically when the body processes protein and needs to remove leftover nitrogen.", "medium": "This waste product forms from breaking down proteins and needs to be removed from blood.", "easy": "This is the waste product from digesting protein that ends up in urine."},
+    "hard": {"hard": "This is the kidney's basic functional and filtering unit, present by the thousands in each kidney, where blood pressure forces fluid out for initial filtration.", "medium": "This tiny structure inside the kidney is where the actual blood filtering happens, not the storage or tube structures nearby.", "easy": "This tiny structure inside the kidney does the actual filtering job, not the tubes or storage parts."}
+  }
+}
+]

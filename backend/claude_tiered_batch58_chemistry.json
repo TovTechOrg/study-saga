@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the mole and Avogadro's number",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a 'mole' in chemistry?",
+    "options": [
+      {"text": "A unit representing a specific, fixed number of particles (approximately 6.022 × 10²³)", "isCorrect": true, "feedback": "Correct -- a mole is a counting unit, analogous to how 'a dozen' represents 12 items, but for a much larger, fixed quantity of particles."},
+      {"text": "A unit of mass equal to exactly one gram", "isCorrect": false, "feedback": "A mole isn't a fixed mass unit -- it's a counting unit for particles; the MASS of one mole varies depending on the specific substance."},
+      {"text": "A type of chemical bond", "isCorrect": false, "feedback": "A mole is a counting unit for quantity of substance, not a type of chemical bond."},
+      {"text": "A unit of volume equal to exactly one liter", "isCorrect": false, "feedback": "A mole isn't defined as a specific volume -- it's a counting unit for particles, and volume varies by substance and conditions."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why is Avogadro's number (6.022 × 10²³) specifically useful for chemists working with atoms and molecules?",
+    "options": [
+      {"text": "It provides a practical bridge between the microscopic scale of individual atoms/molecules and the macroscopic scale of measurable masses in the lab (grams)", "isCorrect": true, "feedback": "Correct -- this number connects the atomic mass unit scale (used for individual atoms) to grams (used for lab-scale measurements), making it foundational to quantitative chemistry."},
+      {"text": "It is simply an arbitrary, randomly chosen number with no real significance", "isCorrect": false, "feedback": "This isn't accurate -- Avogadro's number has a very specific, deliberate significance: it's precisely defined to connect atomic-scale mass units to gram-scale measurements."},
+      {"text": "It only applies to noble gases and no other elements", "isCorrect": false, "feedback": "Avogadro's number applies universally to any substance/particle type, not exclusively to noble gases."},
+      {"text": "It represents the total number of elements in the periodic table", "isCorrect": false, "feedback": "This isn't accurate -- Avogadro's number represents a fixed quantity of particles (like atoms or molecules) in a mole, unrelated to the total count of known elements."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The molar mass of an element (in grams per mole) is numerically equal to that element's atomic mass (in atomic mass units) as listed on the periodic table. Why does this numerical equivalence exist, even though grams and atomic mass units are very different scale units?",
+    "options": [
+      {"text": "Avogadro's number is specifically defined so that the mass of exactly one mole of any substance (in grams) numerically matches that substance's atomic/molecular mass (in atomic mass units), creating a convenient bridge between these two different measurement scales", "isCorrect": true, "feedback": "Correct -- this deliberate definitional relationship between Avogadro's number and atomic mass units is precisely why chemists can conveniently convert between measurable lab quantities (grams) and countable particle quantities (moles), using the periodic table's atomic mass values directly."},
+      {"text": "This numerical equivalence is actually just a random coincidence with no underlying explanation", "isCorrect": false, "feedback": "This is not a coincidence -- it's a deliberate, foundational definitional relationship built into how Avogadro's number and atomic mass units are defined relative to each other."},
+      {"text": "Atomic mass units and grams are actually identical units, just called by different names", "isCorrect": false, "feedback": "These are NOT identical units -- they operate on vastly different scales; the numerical equivalence comes specifically from Avogadro's number's deliberate definition, not from the units themselves being the same."},
+      {"text": "This numerical relationship only holds true for hydrogen and no other elements", "isCorrect": false, "feedback": "This numerical relationship (atomic mass in amu = molar mass in g/mol) holds true universally for ALL elements and compounds, not just hydrogen."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This unit denotes a precisely defined, fixed quantity of elementary entities, analogous to how 'dozen' denotes twelve items.", "medium": "This is a counting unit, like 'dozen,' but for a much, much bigger number of tiny particles.", "easy": "This is a counting unit, like 'dozen,' but for a huge number of tiny particles."},
+    "medium": {"hard": "Consider how this specific number allows chemists to convert between individually uncountable atomic-scale quantities and measurable, weighable laboratory-scale quantities.", "medium": "This number lets chemists connect the tiny world of individual atoms to the amounts they can actually measure on a scale in grams.", "easy": "This number lets chemists connect individual atoms to amounts they can actually measure in grams."},
+    "hard": {"hard": "Consider how the specific numerical value of Avogadro's number was intentionally chosen to create this direct correspondence between atomic mass units and grams.", "medium": "Avogadro's number was specifically chosen so that the atomic mass number and the gram measurement for one mole always match up perfectly.", "easy": "Avogadro's number was chosen so the atomic mass number and the gram measurement always match up."}
+  }
+}
+]

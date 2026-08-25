@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of wave interference (constructive and destructive)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is constructive interference?",
+    "options": [
+      {"text": "When two waves overlap and combine to form a wave with greater amplitude", "isCorrect": true, "feedback": "Correct -- constructive interference occurs when waves are in phase, with their crests (and troughs) aligning to reinforce each other."},
+      {"text": "When two waves overlap and completely cancel each other out", "isCorrect": false, "feedback": "That describes destructive interference, not constructive interference."},
+      {"text": "When a wave bounces off a surface", "isCorrect": false, "feedback": "That describes reflection, an entirely different wave phenomenon from interference."},
+      {"text": "When a wave changes direction passing through a new medium", "isCorrect": false, "feedback": "That describes refraction, a different wave phenomenon from interference."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two identical sound waves overlap perfectly out of phase (crest meets trough). What type of interference occurs, and what is the result?",
+    "options": [
+      {"text": "Destructive interference, resulting in a reduced amplitude (or complete cancellation if the waves have equal magnitude)", "isCorrect": true, "feedback": "Correct -- when a crest meets a trough, the waves' displacements work against each other, reducing or canceling the resulting amplitude."},
+      {"text": "Constructive interference, resulting in an amplified wave", "isCorrect": false, "feedback": "This is backwards -- crest meeting trough (out-of-phase) causes DESTRUCTIVE interference, reducing amplitude, not amplifying it."},
+      {"text": "No interference occurs at all in this scenario", "isCorrect": false, "feedback": "Interference definitely occurs whenever two waves overlap -- here specifically, it's destructive interference due to the out-of-phase alignment."},
+      {"text": "The waves would simply pass through each other completely unaffected", "isCorrect": false, "feedback": "While waves do eventually continue on unaffected after passing through the overlap region, WHILE they overlap, they genuinely interfere (here, destructively), affecting the combined amplitude in that region."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Noise-cancelling headphones use destructive interference to reduce unwanted ambient sound. How do they achieve this?",
+    "options": [
+      {"text": "They detect incoming ambient sound waves and generate a new sound wave that is precisely out of phase (inverted) with them, so the two waves destructively interfere and cancel out", "isCorrect": true, "feedback": "Correct -- by generating an inverted (180° out of phase) copy of the ambient noise, the headphones create the exact conditions for destructive interference, canceling the unwanted sound."},
+      {"text": "They physically block all sound waves using solid material, unrelated to interference", "isCorrect": false, "feedback": "While padding does block some sound, the ACTIVE noise cancellation feature specifically relies on generating a destructively-interfering sound wave, not just physical blocking."},
+      {"text": "They amplify ambient sound to make it more noticeable and easier to ignore", "isCorrect": false, "feedback": "This is the opposite of noise cancellation's goal -- the headphones aim to CANCEL ambient sound via destructive interference, not amplify it."},
+      {"text": "They use constructive interference to double the volume of ambient noise", "isCorrect": false, "feedback": "This is backwards -- noise-cancelling technology specifically uses DESTRUCTIVE interference to reduce (not double) unwanted ambient sound."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phenomenon occurs when overlapping waves align in phase, reinforcing each other's displacement.", "medium": "This happens when two waves line up crest-to-crest, making a bigger combined wave.", "easy": "This happens when two waves line up crest-to-crest, making a bigger wave."},
+    "medium": {"hard": "Consider what happens when a wave's positive displacement (crest) overlaps with another wave's negative displacement (trough) at the same point.", "medium": "When a high point of one wave meets a low point of another, they work against each other, not with each other.", "easy": "When a high point of one wave meets a low point of another, they cancel out, not add up."},
+    "hard": {"hard": "Generating a wave that is a phase-inverted mirror image of the unwanted wave allows their displacements to sum to (approximately) zero at every point.", "medium": "The headphones create a sound wave that's the exact opposite (inverted) of the noise, so when they combine, they cancel each other out.", "easy": "The headphones create a sound wave that's the exact opposite of the noise, so the two cancel out."}
+  }
+}
+]

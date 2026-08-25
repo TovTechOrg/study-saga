@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of sampling methods and sampling bias in statistics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'random sample' is specifically designed so that:",
+    "options": [
+      {"text": "Every member of the population has an equal (or known) chance of being selected", "isCorrect": true, "feedback": "Correct -- true random sampling gives every individual in the population a fair, known chance of selection, helping ensure the sample represents the broader population accurately."},
+      {"text": "Only the researcher's friends and family are included in the sample", "isCorrect": false, "feedback": "This describes a biased 'convenience sample,' not a proper random sample, which specifically requires EQUAL/KNOWN selection chances for the ENTIRE population, not just personally convenient individuals."},
+      {"text": "The sample size must always be exactly 100 people", "isCorrect": false, "feedback": "Random sampling doesn't require any specific fixed sample size like 100 -- it specifically requires EQUAL/KNOWN selection probability, regardless of the actual chosen sample size."},
+      {"text": "The results are guaranteed to be 100% perfectly accurate every single time", "isCorrect": false, "feedback": "This isn't accurate -- while random sampling helps minimize BIAS, it doesn't guarantee perfect accuracy every time (some random variation/sampling error is still possible), just improved representativeness compared to biased sampling methods."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A researcher wants to learn about the opinions of ALL adult city residents, but only surveys people leaving a specific expensive downtown gym. Why does this specific sampling approach likely introduce significant 'sampling bias,' making the results potentially unrepresentative of the entire city population?",
+    "options": [
+      {"text": "Since people who go to an expensive downtown gym likely differ systematically from the general adult population in various relevant ways (like income level, health consciousness, or geographic location), this sample likely OVER-represents certain population subgroups while UNDER-representing (or completely missing) others, skewing the results away from the true broader population's opinions", "isCorrect": true, "feedback": "Correct -- this recognition that a non-random, convenience-based sampling location can inadvertently create a sample that systematically differs from and misrepresents the true target population is precisely the core concept underlying sampling bias, and why such biased sampling methods can produce unreliable, unrepresentative results."},
+      {"text": "This specific sampling approach would actually still produce a perfectly representative sample of the entire city's adult population", "isCorrect": false, "feedback": "This isn't accurate -- this specific approach (surveying only at an expensive downtown gym) is a classic example that would likely produce a SIGNIFICANTLY BIASED, non-representative sample, not a perfectly representative one."},
+      {"text": "Sampling location/method has no actual connection to whether a resulting sample accurately represents the broader target population", "isCorrect": false, "feedback": "This isn't accurate -- sampling location/method is DIRECTLY and critically connected to and can SIGNIFICANTLY affect whether a resulting sample accurately represents (or fails to represent) the broader target population."},
+      {"text": "All adult city residents are actually completely identical to each other in every relevant characteristic, making sampling location irrelevant", "isCorrect": false, "feedback": "This isn't accurate -- adult city residents actually VARY significantly in relevant characteristics (income, habits, location, etc.), which is precisely WHY sampling LOCATION/method can introduce meaningful bias if it doesn't adequately represent that full underlying diversity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Even with a properly designed random sampling METHOD, if the sample SIZE is too small, results can still be unreliable due to random sampling variability (chance fluctuations), even without any systematic bias being present. Why is it important to distinguish this 'small sample size' issue from the separate 'sampling bias' issue discussed above, even though both can lead to inaccurate results?",
+    "options": [
+      {"text": "Sampling BIAS results from a systematically flawed sampling METHOD (which no amount of additional sampling can fix, since the underlying selection process itself is skewed), while small sample SIZE issues stem from insufficient random variability being averaged out (which CAN be addressed simply by increasing the sample size, without needing to change the fundamentally sound underlying random sampling method itself)", "isCorrect": true, "feedback": "Correct -- this important distinction (a fundamentally flawed METHOD vs. simply insufficient sample SIZE) matters because the appropriate SOLUTION differs significantly: fixing biased sampling requires changing the flawed selection METHOD itself, while fixing small-sample-size issues simply requires collecting MORE data using that same (otherwise sound) random method."},
+      {"text": "These two issues (sampling bias vs. small sample size) are actually identical problems with identical solutions", "isCorrect": false, "feedback": "This isn't accurate -- these are GENUINELY DIFFERENT underlying problems (flawed selection method vs. insufficient data quantity) requiring DIFFERENT specific solutions (fixing the method vs. simply collecting more data), not identical problems with identical solutions."},
+      {"text": "Increasing sample size would actually also fix genuine sampling bias issues, just like it fixes small-sample-size issues", "isCorrect": false, "feedback": "This isn't accurate -- increasing sample size does NOT fix genuine sampling BIAS (a flawed selection method remains flawed regardless of how many more people you incorrectly sample); it specifically only helps address random-variability issues from an otherwise properly designed random sampling method."},
+      {"text": "This distinction has no actual practical importance for correctly diagnosing and addressing problems with survey/study results", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has SIGNIFICANT practical importance for correctly diagnosing the ACTUAL underlying problem with a given study's results and applying the appropriately matched solution (fixing method vs. increasing sample size)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This selection methodology requires uniform, non-preferential selection probability across the entirety of the target population.", "medium": "Everyone in the whole group being studied needs a fair, equal shot at being picked for the sample.", "easy": "Everyone in the group needs a fair, equal shot at being picked."},
+    "medium": {"hard": "Consider how selecting a sample location or method inherently favoring certain population subgroups over others distorts the resulting sample's representativeness of the true overall population.", "medium": "People at a fancy gym probably aren't a good stand-in for EVERYONE in the city -- they're likely richer or more health-focused than the average resident.", "easy": "People at a fancy gym probably aren't a good stand-in for everyone in the city."},
+    "hard": {"hard": "Consider how a flawed selection mechanism systematically distorts sample composition regardless of quantity collected, whereas insufficient sample size merely reflects unaveraged random noise that diminishes with additional data collection.", "medium": "A broken sampling METHOD stays broken no matter how many more people you ask, but a properly random method that's just too SMALL can be fixed simply by asking more people.", "easy": "A broken sampling method stays broken no matter how many more people you ask, but too small a sample can be fixed by asking more people."}
+  }
+}
+]

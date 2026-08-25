@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of significant figures in measurement (math context)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "How many significant figures are in the measurement 4.20?",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- the 4, the 2, and the trailing zero after the decimal all count as significant."},
+      {"text": "2", "isCorrect": false, "feedback": "This misses counting the trailing zero after the decimal point, which is significant here."},
+      {"text": "1", "isCorrect": false, "feedback": "This drastically undercounts -- all three digits shown are significant in this measurement."},
+      {"text": "4", "isCorrect": false, "feedback": "This overcounts -- there are only three digits total in this measurement."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How many significant figures are in the measurement 0.0450?",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- leading zeros don't count, but the 4, 5, and trailing zero all do, giving 3 significant figures."},
+      {"text": "5", "isCorrect": false, "feedback": "This incorrectly counts the leading zeros, which are never significant."},
+      {"text": "2", "isCorrect": false, "feedback": "This misses counting the significant trailing zero after the 5."},
+      {"text": "4", "isCorrect": false, "feedback": "This overcounts by including a zero that shouldn't be counted."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "When multiplying or dividing measurements, the result should be rounded to match the LEAST number of significant figures among the original values. If you multiply 4.2 (2 sig figs) by 3.14159 (6 sig figs), how many significant figures should the final answer have?",
+    "options": [
+      {"text": "2", "isCorrect": true, "feedback": "Correct -- the result is limited by the LEAST precise measurement involved, which has only 2 significant figures."},
+      {"text": "6", "isCorrect": false, "feedback": "This uses the MOST significant figures among the values, but the rule requires using the LEAST, not the most."},
+      {"text": "8", "isCorrect": false, "feedback": "This adds the two significant figure counts together, which isn't how this rounding rule works."},
+      {"text": "4", "isCorrect": false, "feedback": "This doesn't match either of the original significant figure counts correctly applied to this rule."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "All non-zero digits are significant, along with certain zeros depending on their position.", "medium": "All non-zero digits count, and so does a trailing zero after a decimal point.", "easy": "Count the 4, the 2, and the trailing zero -- all three count here."},
+    "medium": {"hard": "Leading zeros (before the first nonzero digit) never count as significant, but trailing zeros after a decimal point generally do.", "medium": "Skip the leading zeros, but count the 4, 5, and the trailing zero.", "easy": "Skip the leading zeros, then count 4, 5, and 0 -- that's 3."},
+    "hard": {"hard": "Identify the measurement with the fewest significant figures among all values involved in the multiplication, and use that count for the final rounded answer.", "medium": "Compare the significant figure counts of both numbers, and use the smaller of the two.", "easy": "4.2 only has 2 significant figures, so the answer should also have just 2."}
+  }
+}
+]

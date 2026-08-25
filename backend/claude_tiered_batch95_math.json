@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the law of cosines for non-right triangles",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The Law of Cosines (c²=a²+b²-2ab·cos(C)) is a generalization of which more familiar theorem?",
+    "options": [
+      {"text": "The Pythagorean theorem", "isCorrect": true, "feedback": "Correct -- when angle C is exactly 90 degrees, cos(90°)=0, and the Law of Cosines simplifies exactly to c²=a²+b², the familiar Pythagorean theorem."},
+      {"text": "The quadratic formula", "isCorrect": false, "feedback": "The quadratic formula is used for solving quadratic equations, an unrelated mathematical tool from the Law of Cosines, which specifically extends the Pythagorean theorem to non-right triangles."},
+      {"text": "The distributive property", "isCorrect": false, "feedback": "The distributive property is a basic algebraic rule, unrelated to the specific geometric generalization that the Law of Cosines represents."},
+      {"text": "The binomial theorem", "isCorrect": false, "feedback": "The binomial theorem concerns expanding powers of binomial expressions, an unrelated mathematical concept from the Law of Cosines' specific geometric application."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A triangle has sides a=7, b=10, and the included angle C=60°. Using the Law of Cosines (c²=a²+b²-2ab·cos(C), with cos(60°)=0.5), find the length of side c.",
+    "options": [
+      {"text": "c=√79≈8.89", "isCorrect": true, "feedback": "Correct -- c²=7²+10²-2(7)(10)(0.5)=49+100-70=79, so c=√79≈8.89."},
+      {"text": "c=√149", "isCorrect": false, "feedback": "This doesn't correctly subtract the 2ab·cos(C) term (70) from the sum of squares (149) -- check the full calculation."},
+      {"text": "c=17", "isCorrect": false, "feedback": "This is simply adding sides a and b together (7+10=17), not correctly applying the Law of Cosines formula."},
+      {"text": "c=√29", "isCorrect": false, "feedback": "This doesn't correctly result from applying the full Law of Cosines formula with these given values."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Unlike the Law of Sines (which can sometimes produce an 'ambiguous case' with two possible triangle solutions), the Law of Cosines used in this direct form (solving for a side given two sides and the INCLUDED angle) always produces exactly ONE unique solution. Why does this particular application of the Law of Cosines avoid the ambiguity issue that can arise with the Law of Sines?",
+    "options": [
+      {"text": "Since this specific application directly calculates c² (a squared length, which must be positive) using known values (two sides and their genuinely included, unambiguous angle), there's only one valid positive square root solution for c, unlike the Law of Sines scenario, which can involve solving for an angle where the sine function's mathematical properties allow two different valid angle solutions", "isCorrect": true, "feedback": "Correct -- this fundamental difference in what's being solved for (a uniquely-determined squared length vs. a potentially ambiguous angle from the sine function's properties) explains why this particular Law of Cosines application avoids the specific ambiguous-case issue that can arise in certain Law of Sines applications."},
+      {"text": "The Law of Cosines actually also produces the same ambiguous multiple-solution issue as the Law of Sines", "isCorrect": false, "feedback": "This isn't accurate -- this specific application of the Law of Cosines (solving for a side using two sides and the included angle) does NOT produce this same ambiguity issue, unlike certain specific applications of the Law of Sines."},
+      {"text": "This lack of ambiguity has no actual connection to the specific mathematical properties of the values being solved for", "isCorrect": false, "feedback": "This isn't accurate -- this lack of ambiguity IS DIRECTLY and specifically connected to and explained by the particular mathematical properties of solving for a squared length (unique positive solution) versus solving for an angle via the sine function (which can have multiple valid solutions)."},
+      {"text": "The Law of Sines and Law of Cosines are actually mathematically identical formulas, just written differently", "isCorrect": false, "feedback": "This isn't accurate -- these are GENUINELY DIFFERENT mathematical formulas/relationships, each with their own specific applications and potential considerations (like this particular ambiguity issue), not simply different notations for the identical relationship."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This trigonometric relationship reduces precisely to the classical right-triangle side relationship when the included angle equals ninety degrees.", "medium": "When the angle in this formula is exactly a right angle, it turns into a much more familiar geometry rule.", "easy": "When the angle is exactly 90 degrees, this formula becomes the Pythagorean theorem."},
+    "medium": {"hard": "Substitute the given side lengths and cosine value directly into the Law of Cosines formula, then simplify algebraically before taking the square root.", "medium": "Plug 7, 10, and 0.5 into the formula, square the sides, multiply the last term, then subtract and take the square root.", "easy": "49+100-70=79, then take the square root of 79."},
+    "hard": {"hard": "Consider how solving directly for a squared positive length yields a unique determination, in contrast to solving for an angle via an inverse trigonometric function that may correspond to two distinct valid angle values.", "medium": "Finding a side length this way only ever gives one sensible positive answer, but finding an ANGLE using sine can sometimes give two different angles that both technically work.", "easy": "Finding a side length this way gives one answer, but finding an angle using sine can sometimes give two answers."}
+  }
+}
+]

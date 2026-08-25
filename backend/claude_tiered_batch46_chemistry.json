@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the ideal gas law relating pressure, volume, and temperature",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The ideal gas law is written as PV = nRT. What does the 'V' represent?",
+    "options": [
+      {"text": "Volume of the gas", "isCorrect": true, "feedback": "Correct -- V represents the volume occupied by the gas."},
+      {"text": "Velocity of the gas particles", "isCorrect": false, "feedback": "Velocity isn't a direct variable in this equation -- V specifically stands for volume here."},
+      {"text": "The number of moles of gas", "isCorrect": false, "feedback": "That's represented by 'n' in the equation, not 'V'."},
+      {"text": "The temperature of the gas", "isCorrect": false, "feedback": "That's represented by 'T' in the equation, not 'V'."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "According to the ideal gas law (PV = nRT), if the number of moles (n) and temperature (T) stay constant, what happens to pressure (P) if volume (V) decreases?",
+    "options": [
+      {"text": "Pressure increases", "isCorrect": true, "feedback": "Correct -- since PV must equal the constant nRT, decreasing V requires P to increase proportionally to maintain that balance (this is also known as Boyle's Law)."},
+      {"text": "Pressure decreases", "isCorrect": false, "feedback": "This is backwards -- with nRT held constant, DECREASING volume actually requires pressure to INCREASE, not decrease, to keep PV constant."},
+      {"text": "Pressure stays exactly the same", "isCorrect": false, "feedback": "Since PV must remain equal to the constant nRT, changing V without changing P would break that equality -- pressure must adjust."},
+      {"text": "Pressure becomes zero", "isCorrect": false, "feedback": "Pressure doesn't drop to zero -- it increases as volume decreases, following the inverse relationship described by the ideal gas law."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A sealed rigid container holds gas at a fixed volume. If you heat the gas, increasing its temperature, what happens to the pressure inside the container, and why might this be dangerous?",
+    "options": [
+      {"text": "Pressure increases proportionally with temperature (since volume can't change in a rigid container), and if pressure rises too high, it could exceed the container's structural strength and cause it to rupture", "isCorrect": true, "feedback": "Correct -- since V and n are fixed, PV=nRT shows P must rise directly with T, which is exactly why sealed containers exposed to heat (like aerosol cans in fire) pose a real explosion risk."},
+      {"text": "Pressure stays exactly the same regardless of temperature, since the container is rigid", "isCorrect": false, "feedback": "This is incorrect -- with volume fixed, increasing temperature necessarily increases pressure, according to the ideal gas law relationship."},
+      {"text": "Pressure decreases as temperature increases in a sealed rigid container", "isCorrect": false, "feedback": "This is backwards -- with volume held constant, increasing temperature causes pressure to INCREASE, not decrease."},
+      {"text": "There is no real danger, since gas pressure cannot damage a rigid container", "isCorrect": false, "feedback": "This is actually a real and significant danger -- sealed containers can rupture or explode if internal pressure builds up too high due to heating, which is why aerosol cans warn against exposure to heat."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This variable quantifies the three-dimensional space occupied by the gas sample.", "medium": "This is how much space the gas takes up.", "easy": "This is how much space the gas takes up."},
+    "medium": {"hard": "Since the product of pressure and volume must remain proportional to the constant nRT term, consider how a decrease in one factor must be compensated by the other.", "medium": "Since n and T aren't changing, P times V has to stay the same -- so if V goes down, P must go up.", "easy": "If V goes down and the other side of the equation stays the same, P must go up to balance it."},
+    "hard": {"hard": "With volume and moles fixed, isolate the direct proportional relationship between pressure and temperature implied by the ideal gas law equation.", "medium": "Since the container's volume can't change, and n stays the same, increasing T directly forces P to increase too.", "easy": "Since the container's volume can't change, heating the gas directly increases the pressure inside."}
+  }
+}
+]

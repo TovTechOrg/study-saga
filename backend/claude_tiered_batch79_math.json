@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of interpreting slope as rate of change in real-world contexts",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "On a graph showing distance traveled (y-axis) versus time (x-axis), what does the slope of the line represent?",
+    "options": [
+      {"text": "Speed (rate of distance change per unit of time)", "isCorrect": true, "feedback": "Correct -- slope on a distance-time graph specifically represents how quickly distance changes per unit of time, which is exactly the definition of speed."},
+      {"text": "The total distance traveled overall", "isCorrect": false, "feedback": "Total distance would be represented by the y-value at a specific point, not by the slope itself, which specifically represents the RATE of change."},
+      {"text": "The exact starting time of the trip", "isCorrect": false, "feedback": "Starting time is represented by the x-intercept (or a specific starting point), not by the slope, which represents the rate of change (speed)."},
+      {"text": "The color of the line on the graph", "isCorrect": false, "feedback": "Line color is a stylistic/visual choice and has no mathematical relationship to slope, which specifically represents rate of change."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A graph shows the cost of a phone plan based on data used, with cost (y-axis) plotted against data in GB (x-axis). If the line has a slope of 10, what does this slope value specifically mean in this real-world context?",
+    "options": [
+      {"text": "The cost increases by $10 for every additional 1 GB of data used", "isCorrect": true, "feedback": "Correct -- slope represents the rate of change of y (cost, in dollars) per unit change in x (data, in GB), so a slope of 10 means $10 per GB."},
+      {"text": "The total cost is always exactly $10, regardless of data used", "isCorrect": false, "feedback": "This describes a constant value, not a slope -- a slope of 10 specifically indicates a RATE of $10 increase per GB, not a fixed total cost."},
+      {"text": "10 GB of data costs nothing at all", "isCorrect": false, "feedback": "This doesn't correctly interpret what slope represents -- slope indicates the RATE of cost increase per GB, not a specific free data allowance."},
+      {"text": "The phone plan includes exactly 10 GB of data for free", "isCorrect": false, "feedback": "This isn't what slope indicates -- slope specifically represents the cost RATE per GB ($10/GB), not a specific free data allotment."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A graph shows a car's distance from home over time. The slope is positive and constant for the first hour, then becomes zero for 30 minutes, then negative for the next hour. What does this sequence of slope changes describe about the car's journey?",
+    "options": [
+      {"text": "The car traveled away from home at a constant speed for 1 hour, then stopped/parked for 30 minutes, then traveled back toward home at a constant speed for 1 hour", "isCorrect": true, "feedback": "Correct -- positive slope indicates increasing distance (moving away), zero slope indicates no distance change (stationary), and negative slope indicates decreasing distance (returning), precisely matching this described sequence."},
+      {"text": "The car actually traveled at increasing speed throughout the entire described journey", "isCorrect": false, "feedback": "This isn't accurate -- CONSTANT (not increasing) slope during each phase indicates constant speed during each segment, not continuously increasing speed throughout."},
+      {"text": "The car remained parked at home the entire time, with the graph showing measurement errors", "isCorrect": false, "feedback": "This isn't accurate -- the changing (positive, then zero, then negative) slope pattern specifically indicates actual MOVEMENT (away from home, then stopped, then back toward home), not simply staying parked the whole time with errors."},
+      {"text": "Slope has no actual connection to interpreting the car's movement or speed in this scenario", "isCorrect": false, "feedback": "This isn't accurate -- slope is PRECISELY the key tool for interpreting the car's movement pattern (direction and relative speed) throughout this described journey."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "In this graphical context, slope quantifies the rate of positional displacement per unit of elapsed temporal interval.", "medium": "The steepness of the line tells you how fast the distance is changing over time.", "easy": "The steepness of the line tells you how fast distance changes over time."},
+    "medium": {"hard": "Interpret the slope value as the rate of change of the dependent variable (cost) per single unit increase in the independent variable (data usage).", "medium": "A slope of 10 means for every 1 unit increase in GB, the cost value goes up by 10.", "easy": "A slope of 10 means for every 1 GB, the cost goes up by $10."},
+    "hard": {"hard": "Interpret each slope sign and magnitude segment as indicating direction of movement (positive=away, zero=stationary, negative=toward) relative to the reference point (home).", "medium": "Positive slope means moving away, flat (zero) slope means staying put, and negative slope means moving back -- match each phase of the graph to that pattern.", "easy": "Positive slope means moving away, flat slope means staying put, negative slope means moving back."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the structure and function of neurons",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the primary function of a neuron?",
+    "options": [
+      {"text": "To transmit electrical and chemical signals throughout the nervous system", "isCorrect": true, "feedback": "Correct -- neurons are specialized cells that carry information as electrical impulses and chemical signals between different parts of the body."},
+      {"text": "To produce hormones for the endocrine system", "isCorrect": false, "feedback": "Hormone production is primarily handled by endocrine glands, not neurons, which specifically transmit nerve signals."},
+      {"text": "To store energy in the form of fat", "isCorrect": false, "feedback": "That describes adipose (fat) cells, not neurons, which are specialized for signal transmission, not energy storage."},
+      {"text": "To break down food during digestion", "isCorrect": false, "feedback": "Digestion is handled by specialized digestive cells and enzymes, unrelated to a neuron's signal-transmission function."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A neuron has long, branch-like extensions called dendrites that receive signals, and a single long extension called an axon that sends signals onward. Why might this specialized shape be well-suited to a neuron's function?",
+    "options": [
+      {"text": "The many dendrites allow a neuron to receive input from numerous other neurons simultaneously, while the single axon allows for a directed, efficient transmission of the resulting signal to a specific target", "isCorrect": true, "feedback": "Correct -- this structural specialization (many inputs converging, one directed output) reflects how neurons integrate diverse incoming information and then transmit a coordinated signal onward."},
+      {"text": "This branching shape has no actual functional purpose related to signal transmission", "isCorrect": false, "feedback": "This shape is highly functionally significant -- it's specifically structured to receive multiple inputs (dendrites) and send a directed output (axon), well matched to a neuron's signaling role."},
+      {"text": "Dendrites send signals, while axons receive them", "isCorrect": false, "feedback": "This is backwards -- dendrites RECEIVE incoming signals, while the axon SENDS the outgoing signal, not the other way around."},
+      {"text": "All parts of a neuron are functionally identical and interchangeable", "isCorrect": false, "feedback": "Neuron components are actually highly specialized and NOT interchangeable -- dendrites and axons perform distinctly different roles in signal reception versus transmission."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some neurons have a fatty insulating layer called the myelin sheath wrapped around their axon, with small gaps (nodes of Ranvier) at intervals. Why does this arrangement allow for much faster signal transmission compared to an unmyelinated axon?",
+    "options": [
+      {"text": "The electrical signal effectively 'jumps' from one node of Ranvier to the next (saltatory conduction), rather than needing to travel continuously along the entire axon length, significantly speeding up transmission", "isCorrect": true, "feedback": "Correct -- this saltatory conduction mechanism, enabled by the myelin sheath's insulating gaps, is precisely why myelinated neurons can transmit signals dramatically faster than unmyelinated ones."},
+      {"text": "The myelin sheath actually slows down signal transmission significantly compared to unmyelinated axons", "isCorrect": false, "feedback": "This is backwards -- myelin sheaths significantly SPEED UP signal transmission (via saltatory conduction), rather than slowing it down."},
+      {"text": "Myelin sheaths have no actual effect on the speed of neural signal transmission", "isCorrect": false, "feedback": "Myelin sheaths have a very significant, well-documented effect on signal transmission speed, enabling much faster conduction via the jumping mechanism between nodes."},
+      {"text": "The signal must travel through the myelin sheath itself at every single point along the axon", "isCorrect": false, "feedback": "This is inaccurate -- the signal specifically SKIPS along by jumping between the exposed nodes of Ranvier, rather than traveling continuously through the myelin-covered sections."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This specialized cell type is optimized for the rapid conduction of bioelectric impulses across the body's communication network.", "medium": "This special cell carries messages (as electrical signals) around the body.", "easy": "This special cell carries messages around the body as electrical signals."},
+    "medium": {"hard": "Consider how a structure with many receiving branches converging into a single transmitting pathway reflects an information-integration-then-transmission functional design.", "medium": "Having lots of receiving branches lets the neuron gather info from many sources, then send one clear signal onward through its single output branch.", "easy": "Having lots of receiving branches lets the neuron gather info from many sources before sending one signal onward."},
+    "hard": {"hard": "Consider how insulating segments interspersed with exposed conduction points allow the electrical impulse to effectively skip long stretches of the axon rather than traveling continuously.", "medium": "The signal can basically hop from gap to gap along the axon instead of crawling along the whole length bit by bit.", "easy": "The signal can hop from gap to gap along the axon instead of crawling the whole length."}
+  }
+}
+]

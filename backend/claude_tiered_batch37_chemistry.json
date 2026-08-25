@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a titration to determine unknown concentration",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the general purpose of a titration in chemistry?",
+    "options": [
+      {"text": "To determine the unknown concentration of a solution by reacting it with a solution of known concentration", "isCorrect": true, "feedback": "Correct -- titration uses a precisely measured reaction to calculate an unknown concentration."},
+      {"text": "To measure the temperature of a solution", "isCorrect": false, "feedback": "Temperature measurement isn't the primary purpose of titration -- it's specifically for determining concentration."},
+      {"text": "To change the color of a solution permanently", "isCorrect": false, "feedback": "While titrations often use color-changing indicators, the actual PURPOSE is determining concentration, not just changing color."},
+      {"text": "To create a new element", "isCorrect": false, "feedback": "Titration is an analytical technique for concentration determination, not a method for creating new elements."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "During an acid-base titration, what does the 'endpoint' (often signaled by an indicator's color change) represent?",
+    "options": [
+      {"text": "The point at which the acid and base have reacted in stoichiometrically equivalent amounts", "isCorrect": true, "feedback": "Correct -- this endpoint approximates the true equivalence point, providing the data needed to calculate the unknown concentration."},
+      {"text": "The point at which the experiment must be completely restarted", "isCorrect": false, "feedback": "The endpoint isn't a restart signal -- it's the crucial measurement point used to calculate the unknown concentration."},
+      {"text": "The moment the solution reaches its boiling point", "isCorrect": false, "feedback": "The endpoint relates to the chemical reaction reaching stoichiometric completion, not a temperature-related boiling event."},
+      {"text": "The point where all the color disappears completely and permanently", "isCorrect": false, "feedback": "The endpoint is defined by a specific color CHANGE (often to a new color), not necessarily a total absence of color."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In a titration, 25 mL of an unknown-concentration acid is exactly neutralized by 40 mL of a 0.5 M base solution (assuming a 1:1 reaction ratio). What is the concentration of the acid? (Using M1V1 = M2V2)",
+    "options": [
+      {"text": "0.8 M", "isCorrect": true, "feedback": "Correct -- (M_acid)(25)=(0.5)(40), so M_acid=20/25=0.8."},
+      {"text": "0.3125 M", "isCorrect": false, "feedback": "This doesn't match correctly solving the M1V1=M2V2 relationship for the acid's concentration."},
+      {"text": "0.5 M", "isCorrect": false, "feedback": "This just repeats the base's concentration, without correctly accounting for the different volumes used."},
+      {"text": "1.25 M", "isCorrect": false, "feedback": "This doesn't match correctly setting up and solving the titration equation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This technique uses a precisely controlled reaction to work backward and calculate an unknown quantity.", "medium": "This process uses a known solution to help figure out an unknown solution's strength.", "easy": "This process figures out how strong an unknown solution is by reacting it with a known one."},
+    "medium": {"hard": "This is the observed signal (often a color change) used to approximate the true stoichiometric equivalence point of the reaction.", "medium": "This is the moment the indicator changes color, signaling the reaction has reached the right proportions.", "easy": "This is when the indicator changes color, showing the reaction is basically complete."},
+    "hard": {"hard": "Set up the equation relating molarity and volume for both solutions, then solve algebraically for the unknown concentration.", "medium": "Multiply the base's concentration by its volume, then divide by the acid's volume.", "easy": "Multiply 0.5 by 40 to get 20, then divide by 25."}
+  }
+}
+]

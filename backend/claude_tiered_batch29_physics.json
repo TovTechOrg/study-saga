@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of specific heat capacity affecting cooking and climate",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'specific heat capacity' generally describe about a substance?",
+    "options": [
+      {"text": "How much energy is needed to raise the temperature of a specific amount of that substance", "isCorrect": true, "feedback": "Correct -- specific heat capacity is a measure of a substance's resistance to temperature change per unit mass."},
+      {"text": "How much the substance weighs", "isCorrect": false, "feedback": "Weight/mass is a separate physical property, unrelated to specific heat capacity."},
+      {"text": "How quickly a substance dissolves in water", "isCorrect": false, "feedback": "Solubility is a different property, unrelated to specific heat capacity, which is about energy needed for temperature change."},
+      {"text": "The color a substance turns when heated", "isCorrect": false, "feedback": "Color change isn't what specific heat capacity measures -- it's specifically about energy required for temperature change."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A metal pan heats up much faster than the food (often mostly water) cooking in it. What does this suggest about the specific heat capacities of metal versus water?",
+    "options": [
+      {"text": "Metal generally has a much lower specific heat capacity than water, so it requires less energy to heat up by the same amount", "isCorrect": true, "feedback": "Correct -- this is exactly why metal cookware heats quickly while the food (with its water content) takes longer to reach the same temperature."},
+      {"text": "Metal has a much higher specific heat capacity than water", "isCorrect": false, "feedback": "This is backwards -- metal's LOWER specific heat capacity is precisely why it heats up faster than water for the same energy input."},
+      {"text": "Metal and water actually have identical specific heat capacities", "isCorrect": false, "feedback": "There's a significant, well-documented difference between metal's and water's specific heat capacities, which explains their different heating rates."},
+      {"text": "Specific heat capacity has nothing to do with how fast something heats up", "isCorrect": false, "feedback": "Specific heat capacity is actually directly and fundamentally related to how quickly a substance's temperature rises for a given energy input."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Coastal cities often experience milder seasonal temperature swings than inland cities at similar latitudes. How does water's high specific heat capacity, combined with large-scale water currents and air circulation, help explain this climate pattern?",
+    "options": [
+      {"text": "The large body of water absorbs and stores heat slowly in summer and releases it slowly in winter, moderating the temperature of the air that then circulates over nearby coastal land", "isCorrect": true, "feedback": "Correct -- this thermal buffering effect from large water bodies is a well-documented reason coastal climates tend to be milder and less variable than inland climates."},
+      {"text": "Coastal cities simply receive more sunlight overall than inland cities", "isCorrect": false, "feedback": "Sunlight amount isn't the primary explanation here -- it's specifically water's slow, steady heat absorption/release (due to high specific heat capacity) that moderates coastal temperatures."},
+      {"text": "This pattern has nothing to do with specific heat capacity", "isCorrect": false, "feedback": "This is actually a classic, well-documented real-world application of water's high specific heat capacity influencing regional climate."},
+      {"text": "Inland cities are always closer to the equator, explaining the difference", "isCorrect": false, "feedback": "This comparison specifically controls for similar latitude -- the climate difference is explained by proximity to a large body of water, not latitude."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property indicates how resistant a substance is to changing temperature for a given amount of added energy.", "medium": "This measures how much energy it takes to change a substance's temperature.", "easy": "This measures how much energy it takes to heat something up."},
+    "medium": {"hard": "A lower specific heat capacity means less energy is required to achieve the same temperature increase, resulting in faster heating.", "medium": "It takes a lot less energy to heat up metal than to heat up the same amount of water.", "easy": "It takes a lot less energy to heat up metal than to heat up water."},
+    "hard": {"hard": "Water's high specific heat capacity allows large water bodies to act as thermal reservoirs, absorbing excess heat in warm periods and releasing it in cool periods, moderating nearby air temperatures via ongoing atmospheric circulation.", "medium": "The ocean soaks up heat slowly in summer and lets it out slowly in winter, keeping nearby land from getting too hot or too cold.", "easy": "The ocean soaks up heat slowly and releases it slowly, keeping nearby land's temperature more steady."}
+  }
+}
+]

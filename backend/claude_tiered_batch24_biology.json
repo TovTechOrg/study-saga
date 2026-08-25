@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of an ecological niche",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is an ecological niche?",
+    "options": [
+      {"text": "The specific role and way of life an organism has within its ecosystem, including what it eats and where it lives", "isCorrect": true, "feedback": "Correct -- a niche encompasses an organism's full functional role, not just its physical location."},
+      {"text": "The exact physical location where an organism lives, and nothing else", "isCorrect": false, "feedback": "That describes just the habitat, which is only part of the broader niche concept -- niche also includes diet, behavior, and role in the ecosystem."},
+      {"text": "The total number of individuals in a population", "isCorrect": false, "feedback": "Population size is a separate concept from an organism's ecological niche (its role and habits)."},
+      {"text": "The physical appearance of an organism", "isCorrect": false, "feedback": "Physical appearance is unrelated to the concept of an ecological niche, which is about functional role in an ecosystem."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two different species of birds eat different-sized insects and nest at different heights in the same tree. What does this scenario illustrate?",
+    "options": [
+      {"text": "Niche differentiation -- the two species avoid direct competition by occupying slightly different ecological niches within the same habitat", "isCorrect": true, "feedback": "Correct -- this specialization allows multiple species to coexist in the same general area without directly competing for identical resources."},
+      {"text": "Both birds occupy the exact same ecological niche", "isCorrect": false, "feedback": "Since they differ in diet and nesting height, they actually occupy DIFFERENT niches, despite sharing the same general habitat (tree)."},
+      {"text": "One species must be about to go extinct", "isCorrect": false, "feedback": "This scenario doesn't indicate impending extinction -- it actually shows a stable coexistence strategy through niche differentiation."},
+      {"text": "This has nothing to do with ecological niches", "isCorrect": false, "feedback": "This is actually a classic, textbook example specifically illustrating the concept of niche differentiation."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The competitive exclusion principle states that two species cannot indefinitely occupy the exact same ecological niche in the same habitat. Why would this lead to niche differentiation over evolutionary time when similar species overlap significantly?",
+    "options": [
+      {"text": "Intense competition for identical resources would favor individuals with slight variations allowing them to use different resources, gradually leading the competing species to specialize into distinct niches", "isCorrect": true, "feedback": "Correct -- this evolutionary pressure to reduce direct competition is a key driver of niche differentiation observed in many ecosystems."},
+      {"text": "The two species would simply merge into a single species over time", "isCorrect": false, "feedback": "Competitive exclusion doesn't lead to species merging -- it leads to competitive exclusion (one species declining) or niche differentiation (specializing to reduce competition)."},
+      {"text": "This principle has never been observed to actually occur in nature", "isCorrect": false, "feedback": "Niche differentiation resulting from competitive pressure is a well-documented, observed phenomenon in numerous real ecosystems."},
+      {"text": "Competition for resources has no connection to evolutionary change at all", "isCorrect": false, "feedback": "Resource competition is actually a significant and well-established selective pressure that can drive evolutionary changes like niche differentiation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This concept encompasses an organism's complete functional relationship with its environment, beyond just physical location.", "medium": "This describes everything about how an organism lives, not just where it lives.", "easy": "This describes an organism's whole way of living, not just where it lives."},
+    "medium": {"hard": "Consider how differing specific resource use (diet, nesting height) allows for coexistence despite occupying an overlapping general habitat.", "medium": "Since they eat different things and nest at different heights, they're not really competing directly with each other.", "easy": "Since they eat different foods and nest at different heights, they're not really competing with each other."},
+    "hard": {"hard": "Natural selection would favor individual variations that reduce direct resource overlap, progressively driving formerly overlapping competitors toward increasingly distinct, specialized niches.", "medium": "Since competing too directly is bad for both species, natural selection favors any small differences that let them use slightly different resources instead.", "easy": "Since competing directly is bad for both species, small differences that let them use different resources tend to get favored over time."}
+  }
+}
+]

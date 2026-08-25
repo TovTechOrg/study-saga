@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a normal force",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the 'normal force'?",
+    "options": [
+      {"text": "The support force a surface exerts perpendicular to itself, pushing back against an object resting on it", "isCorrect": true, "feedback": "Correct -- when a book rests on a table, the table pushes back up on the book with a normal force."},
+      {"text": "A force that only exists in normal, everyday weather", "isCorrect": false, "feedback": "\"Normal\" here refers to being perpendicular (at a right angle) to a surface, not to typical/usual weather."},
+      {"text": "The force of gravity pulling an object down", "isCorrect": false, "feedback": "That's weight/gravity, a completely different force from the normal force."},
+      {"text": "The friction between two surfaces", "isCorrect": false, "feedback": "Friction is a separate force, acting parallel to a surface, unlike the normal force, which acts perpendicular to it."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A 10 kg box rests motionless on a flat table. If gravity pulls the box down with about 98 N of force, what is the magnitude of the normal force from the table?",
+    "options": [
+      {"text": "98 N", "isCorrect": true, "feedback": "Correct -- since the box isn't accelerating, the normal force must exactly balance gravity's downward pull."},
+      {"text": "0 N", "isCorrect": false, "feedback": "If there were no normal force, the box would fall through the table -- there must be an equal, opposing force."},
+      {"text": "196 N", "isCorrect": false, "feedback": "This doubles the force unnecessarily -- the normal force only needs to balance gravity exactly, not exceed it."},
+      {"text": "49 N", "isCorrect": false, "feedback": "This is only half of what's needed to balance gravity's pull -- the box would still be accelerating downward if this were true."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A box sits on a ramp inclined at an angle. Compared to the box's full weight, is the normal force on an inclined surface generally greater than, less than, or equal to the box's weight?",
+    "options": [
+      {"text": "Less than the box's full weight, since only the component of weight perpendicular to the ramp's surface is balanced by the normal force", "isCorrect": true, "feedback": "Correct -- on an incline, gravity's force splits into components; the normal force only counteracts the perpendicular component, which is less than the total weight."},
+      {"text": "Always exactly equal to the box's full weight, just like on a flat surface", "isCorrect": false, "feedback": "This is only true on a perfectly flat, horizontal surface -- on an incline, the normal force is less than full weight due to gravity's components."},
+      {"text": "Always greater than the box's full weight", "isCorrect": false, "feedback": "The normal force on an incline is actually less than the full weight, not greater, since it only balances part of gravity's effect."},
+      {"text": "Zero, regardless of the incline's angle", "isCorrect": false, "feedback": "The normal force isn't zero as long as the box is resting on the surface -- it's just less than the full weight on an incline."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This force acts at a right angle to the surface an object rests upon, providing support.", "medium": "This is the pushing-back force a surface exerts on an object resting on it.", "easy": "This is the force a table pushes back up on something sitting on it."},
+    "medium": {"hard": "Since the box isn't accelerating, the net force must be zero, meaning the normal force must exactly cancel gravity's pull.", "medium": "Since the box isn't moving, the upward and downward forces on it must be perfectly balanced.", "easy": "Since the box just sits there, the normal force must exactly match gravity's pull of 98 N."},
+    "hard": {"hard": "On an incline, gravity's force vector decomposes into components parallel and perpendicular to the surface; the normal force balances only the perpendicular component, which is less than the total gravitational force.", "medium": "On a slanted surface, only part of gravity's pull acts straight into the ramp -- the normal force only needs to balance that smaller part.", "easy": "On a slanted surface, gravity's pull splits up, so the normal force only has to balance part of it, not all of it."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of keystone species in an ecosystem",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a 'keystone species'?",
+    "options": [
+      {"text": "A species that has a disproportionately large effect on its ecosystem relative to its abundance", "isCorrect": true, "feedback": "Correct -- keystone species play a critical structural role in maintaining their ecosystem's balance, despite sometimes having a relatively small population."},
+      {"text": "The most numerous species in an ecosystem", "isCorrect": false, "feedback": "A keystone species isn't defined by having the largest population -- it's defined by its OUTSIZED ecological IMPACT relative to its abundance, which can even be a relatively rare species."},
+      {"text": "A species that has no real effect on its ecosystem at all", "isCorrect": false, "feedback": "This is essentially the opposite of a keystone species, which specifically has a SIGNIFICANT, often critical, effect on its ecosystem."},
+      {"text": "A species that is always the largest physical size in its ecosystem", "isCorrect": false, "feedback": "Physical size isn't the defining characteristic of a keystone species -- its defining feature is its outsized ECOLOGICAL IMPACT, regardless of physical size."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Sea otters are considered a keystone species in kelp forest ecosystems because they prey on sea urchins, which would otherwise overgraze and destroy kelp forests if left unchecked. What would likely happen to this ecosystem if sea otters were removed?",
+    "options": [
+      {"text": "Sea urchin populations would likely explode without their main predator, leading to overgrazing and potential collapse of the kelp forest ecosystem", "isCorrect": true, "feedback": "Correct -- this cascading effect (predator removal leading to prey overpopulation and subsequent habitat destruction) is a classic example illustrating why keystone species have such outsized ecological importance."},
+      {"text": "The kelp forest ecosystem would remain completely unaffected by the otters' removal", "isCorrect": false, "feedback": "This isn't accurate -- removing a keystone species like sea otters would likely trigger significant, cascading ecological changes, not leave the ecosystem unaffected."},
+      {"text": "Sea urchin populations would actually decrease if sea otters were removed", "isCorrect": false, "feedback": "This is backwards -- without their main predator (otters), sea urchin populations would likely INCREASE (not decrease), leading to overgrazing of kelp."},
+      {"text": "Sea otters have no actual predator-prey relationship with sea urchins", "isCorrect": false, "feedback": "This isn't accurate -- sea otters DO have a significant predator-prey relationship with sea urchins, which is precisely the basis for their keystone species status in this ecosystem."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The removal of wolves from Yellowstone National Park in the early 20th century led to a dramatic increase in elk populations, which in turn overgrazed young trees along riverbanks, affecting beaver populations and even river channel structure. When wolves were later reintroduced, many of these effects reversed. What does this example illustrate about ecosystem interconnectedness?",
+    "options": [
+      {"text": "The presence or absence of a single keystone species (like wolves) can trigger a cascading series of effects (a 'trophic cascade') throughout multiple, seemingly unrelated levels of an ecosystem, extending well beyond simple predator-prey dynamics", "isCorrect": true, "feedback": "Correct -- this famous real-world example vividly demonstrates how a keystone species' influence can ripple outward through an ecosystem's food web, affecting vegetation, other animal populations, and even physical landscape features in complex, interconnected ways."},
+      {"text": "Wolves actually have no real ecological connection to elk, trees, or river systems", "isCorrect": false, "feedback": "This isn't accurate -- this famous case study specifically demonstrates a well-documented, significant ecological connection linking wolves to elk populations, vegetation, and even river system structure."},
+      {"text": "Removing or reintroducing a single species from an ecosystem never has any measurable effects on other, unrelated species", "isCorrect": false, "feedback": "This isn't accurate -- this example specifically demonstrates the OPPOSITE: that removing or reintroducing even a single species CAN have significant, measurable, and far-reaching ecological effects on seemingly unrelated species and even physical landscape features."},
+      {"text": "This example shows that ecosystems function as a collection of completely independent, unconnected components", "isCorrect": false, "feedback": "This isn't accurate -- this example specifically illustrates the OPPOSITE: that ecosystems function as deeply INTERCONNECTED systems, where changes in one component can significantly affect many others."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This ecological role designation applies to an organism whose removal would trigger substantial structural or functional change within its ecosystem, independent of its own population size.", "medium": "This is a species whose presence has a really big impact on its whole ecosystem, even if there aren't that many of them.", "easy": "This is a species that has a really big impact on its ecosystem, even in small numbers."},
+    "medium": {"hard": "Consider the predator-prey population dynamics that would unfold if a top predator controlling herbivore population size were suddenly removed from the system.", "medium": "Without otters around to eat them, urchins would multiply out of control and eat up all the kelp.", "easy": "Without otters to eat them, urchins would multiply and eat up all the kelp."},
+    "hard": {"hard": "Consider how the ecological influence of a single species can propagate through multiple interconnected trophic levels, extending beyond direct predator-prey interactions into vegetation, other species, and physical habitat features.", "medium": "Removing just one type of animal can set off a whole chain reaction affecting plants, other animals, and even the shape of rivers.", "easy": "Removing just one animal can set off a chain reaction affecting plants, other animals, and even rivers."}
+  }
+}
+]

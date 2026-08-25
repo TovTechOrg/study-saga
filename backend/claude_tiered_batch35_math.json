@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of combinations vs. permutations",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In choosing a 3-person committee from a group, does the ORDER in which people are chosen matter?",
+    "options": [
+      {"text": "No, since a committee is the same group regardless of the order people were picked", "isCorrect": true, "feedback": "Correct -- this makes it a combination problem, where order doesn't matter."},
+      {"text": "Yes, order always matters when selecting groups of people", "isCorrect": false, "feedback": "For a committee (an unordered group), the order of selection doesn't change the final group -- this is a combination, not a permutation."},
+      {"text": "It depends on the day of the week", "isCorrect": false, "feedback": "This isn't relevant -- whether order matters depends on the nature of the selection (unordered group vs. ordered sequence), not the day."},
+      {"text": "Order only matters if there are exactly 3 people", "isCorrect": false, "feedback": "The number of people selected doesn't determine whether order matters -- it's about whether the selection represents an unordered group or an ordered sequence."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Choosing a President, Vice President, and Secretary from a group of candidates is an example of what type of counting problem?",
+    "options": [
+      {"text": "A permutation, since the specific role (order) assigned to each chosen person matters", "isCorrect": true, "feedback": "Correct -- since each position is distinct (President ≠ Secretary), the specific arrangement/order matters here, making this a permutation."},
+      {"text": "A combination, since order doesn't matter", "isCorrect": false, "feedback": "This is incorrect -- since each role is distinct and specific, WHO gets WHICH role matters, making this a permutation, not a combination."},
+      {"text": "Neither a permutation nor a combination", "isCorrect": false, "feedback": "This scenario fits squarely into one of these two categories -- specifically, it's a permutation, since the order/role assignment matters."},
+      {"text": "This cannot be classified as a counting problem", "isCorrect": false, "feedback": "This is definitely a standard, classifiable counting problem -- specifically a permutation problem."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "From a group of 5 people, how many different ways can you choose an unordered group of 2 people (a combination)? (Formula: C(n,r) = n!/(r!(n-r)!))",
+    "options": [
+      {"text": "10", "isCorrect": true, "feedback": "Correct -- C(5,2) = 5!/(2!×3!) = (5×4)/(2×1) = 10."},
+      {"text": "20", "isCorrect": false, "feedback": "This is the PERMUTATION count (where order matters), not the combination count."},
+      {"text": "5", "isCorrect": false, "feedback": "This doesn't match correctly applying the combination formula for choosing 2 from 5."},
+      {"text": "25", "isCorrect": false, "feedback": "This doesn't match correctly computing the combination formula's result."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Consider whether swapping the order of selection would result in a functionally different outcome.", "medium": "Think about whether picking the same 3 people in a different order creates a different committee.", "easy": "Picking the same 3 people in any order still makes the same committee."},
+    "medium": {"hard": "Determine whether swapping which person holds which specific role would create a functionally different outcome.", "medium": "Since each role (President, VP, Secretary) is different, swapping who holds which role creates a different outcome.", "easy": "Since each role is different, who gets which job actually matters here."},
+    "hard": {"hard": "Apply the combination formula, dividing the total permutations by the number of ways to arrange the chosen group internally (since order doesn't matter here).", "medium": "Use the combination formula: 5!/(2!×3!), simplifying step by step.", "easy": "Multiply 5 by 4, then divide by 2 (since 2!=2)."}
+  }
+}
+]

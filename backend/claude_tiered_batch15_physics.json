@@ -1,0 +1,84 @@
+[
+{
+  "topic": "the difference between static and current electricity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main difference between static electricity and current electricity?",
+    "options": [
+      {"text": "Static electricity involves stationary (non-flowing) charge, while current electricity involves charge that is actively flowing", "isCorrect": true, "feedback": "Correct -- static charge builds up in one place, while current flows continuously through a conductor."},
+      {"text": "Static electricity is always more powerful than current electricity", "isCorrect": false, "feedback": "Power level isn't the defining difference -- the key distinction is whether charge is moving (current) or stationary (static)."},
+      {"text": "Current electricity can only happen outdoors", "isCorrect": false, "feedback": "Current electricity is common in all sorts of settings, including indoors (like household wiring) -- location isn't the distinguishing feature."},
+      {"text": "There is no real difference between them", "isCorrect": false, "feedback": "These are genuinely distinct phenomena, differing specifically in whether charge is moving or stationary."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Rubbing a balloon on your hair and having it stick to a wall is an example of which type of electricity?",
+    "options": [
+      {"text": "Static electricity", "isCorrect": true, "feedback": "Correct -- the charge built up on the balloon stays in place (static) rather than flowing through a circuit."},
+      {"text": "Current electricity", "isCorrect": false, "feedback": "This scenario doesn't involve charge flowing through a circuit -- it's charge remaining in place, which is static electricity."},
+      {"text": "Alternating current specifically", "isCorrect": false, "feedback": "Alternating current is a type of flowing current electricity, unrelated to this static charge-buildup example."},
+      {"text": "Nuclear electricity", "isCorrect": false, "feedback": "\"Nuclear electricity\" isn't a standard category matching this scenario -- this is a clear example of static electricity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A lightning bolt is essentially a massive, sudden discharge of built-up static electricity between a cloud and the ground. Why does this event actually involve a brief but powerful CURRENT, even though it originates from static charge?",
+    "options": [
+      {"text": "Once the built-up static charge finds a conductive path (like ionized air), it rapidly flows from one point to another, and any flowing charge is, by definition, a current", "isCorrect": true, "feedback": "Correct -- static electricity describes charge buildup, but once that charge actually moves/discharges, it becomes a current, even if only briefly."},
+      {"text": "Lightning has nothing to do with electricity at all", "isCorrect": false, "feedback": "Lightning is fundamentally an electrical phenomenon -- it's the dramatic result of a massive static charge buildup discharging."},
+      {"text": "Static and current electricity are actually the exact same phenomenon in all cases", "isCorrect": false, "feedback": "They're generally distinct (charge at rest vs. charge in motion), but this example shows how one can rapidly transition into the other."},
+      {"text": "The current in lightning is not actually a form of electricity", "isCorrect": false, "feedback": "The current in lightning is absolutely a genuine, if very brief and powerful, form of electric current."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One category describes charge that remains stationary; the other describes charge actively in motion.", "medium": "One type is about charge staying put; the other is about charge actively moving.", "easy": "One type is about charge sitting still; the other is about charge flowing, like in a wire."},
+    "medium": {"hard": "The charge here builds up and stays put on the balloon's surface, rather than flowing through any circuit.", "medium": "The charge on the balloon just sits there, it doesn't flow anywhere like it would in a wire.", "easy": "The charge on the balloon just sits there instead of flowing through a wire."},
+    "hard": {"hard": "The defining feature of current is charge in motion -- once static charge discharges through a conductive path, it becomes, by definition, a (very brief, very powerful) current.", "medium": "Once all that built-up charge suddenly finds a path and rushes through the air, that rushing charge is technically a current.", "easy": "Once all that built-up charge suddenly rushes through the air, that moving charge counts as a current."}
+  }
+},
+{
+  "topic": "the concept of half-life applied to physics (radioactive decay rate)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'half-life' measure in the context of a radioactive substance?",
+    "options": [
+      {"text": "The time it takes for half of the radioactive atoms in a sample to decay", "isCorrect": true, "feedback": "Correct -- half-life is a fixed, predictable measure of decay rate for a given radioactive isotope."},
+      {"text": "The total amount of time an element can exist", "isCorrect": false, "feedback": "Half-life describes a specific 50% decay point, not the total possible existence time."},
+      {"text": "Half of an atom's total mass", "isCorrect": false, "feedback": "Half-life is a measure of time, not a direct measure of an atom's mass."},
+      {"text": "The temperature at which a substance becomes radioactive", "isCorrect": false, "feedback": "Half-life isn't related to a temperature threshold -- it's specifically about the rate of radioactive decay over time."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A radioactive isotope has a half-life of 100 years. Does the half-life change if you start with a larger sample size?",
+    "options": [
+      {"text": "No, half-life is a fixed property of the isotope and stays the same regardless of sample size", "isCorrect": true, "feedback": "Correct -- half-life is an intrinsic property of the specific radioactive isotope, independent of how much of it you have."},
+      {"text": "Yes, a larger sample always has a longer half-life", "isCorrect": false, "feedback": "Half-life doesn't scale with sample size -- it's a fixed, intrinsic property of the isotope itself."},
+      {"text": "Yes, a larger sample always has a shorter half-life", "isCorrect": false, "feedback": "Half-life doesn't scale with sample size in this way either -- it remains constant regardless of quantity."},
+      {"text": "Half-life doesn't apply to large samples at all", "isCorrect": false, "feedback": "Half-life applies consistently to samples of any size -- it's simply the constant decay rate for the isotope."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Radioactive decay is described as a random process at the level of individual atoms (you can't predict when any single atom will decay), yet half-life allows very precise predictions for large samples. How can both of these statements be true at once?",
+    "options": [
+      {"text": "While individual atomic decay is random and unpredictable, statistical patterns emerge reliably when averaged across the enormous number of atoms in a real sample, similar to how individual coin flips are random but large-scale flip patterns are predictable", "isCorrect": true, "feedback": "Correct -- this is a classic example of how randomness at a small scale can still produce very reliable, predictable patterns at a large statistical scale."},
+      {"text": "Radioactive decay is actually not random at all, contradicting the premise", "isCorrect": false, "feedback": "Individual atomic decay genuinely is random and unpredictable -- the key insight is that large-scale statistical patterns can still emerge reliably from this individual randomness."},
+      {"text": "Half-life predictions are actually just rough guesses with no real accuracy", "isCorrect": false, "feedback": "Half-life predictions for large samples are actually remarkably accurate and reliable, precisely due to statistical principles applying to huge numbers of atoms."},
+      {"text": "This is a contradiction in physics that scientists haven't resolved", "isCorrect": false, "feedback": "This isn't an unresolved contradiction -- it's a well-understood statistical principle where individual randomness and large-scale predictability coexist perfectly well."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measures a fixed time duration corresponding to exactly 50% of a radioactive quantity transforming.", "medium": "This is the time it takes for exactly half of a radioactive sample to break down.", "easy": "This is how long it takes for half of a radioactive substance to decay."},
+    "medium": {"hard": "This decay rate is a fundamental, statistically-derived property specific to the isotope's nuclear structure, unrelated to the quantity present.", "medium": "This rate is a built-in property of the specific type of atom, not something that depends on how much you have.", "easy": "This is a fixed property of the type of atom, no matter how much of it you have."},
+    "hard": {"hard": "With an enormous number of atoms (on the order of billions of trillions even in small samples), the law of large numbers ensures that individually random decay events average out into a highly predictable overall decay curve.", "medium": "With SO many atoms in even a tiny sample, the randomness of each individual atom averages out into a very reliable overall pattern.", "easy": "With so many atoms involved, all that individual randomness still averages out into a really reliable overall pattern."}
+  }
+}
+]

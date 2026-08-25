@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of imaginary and complex numbers",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The imaginary unit 'i' is defined as:",
+    "options": [
+      {"text": "The square root of -1", "isCorrect": true, "feedback": "Correct -- i is specifically defined so that i²=-1, allowing mathematicians to work with square roots of negative numbers."},
+      {"text": "The square root of 1", "isCorrect": false, "feedback": "The square root of 1 is simply 1 (a real number) -- 'i' specifically represents the square root of NEGATIVE 1, a fundamentally different concept."},
+      {"text": "A number that equals exactly 0", "isCorrect": false, "feedback": "This isn't accurate -- 'i' is specifically defined as the square root of -1, not as equal to 0."},
+      {"text": "The largest possible real number", "isCorrect": false, "feedback": "This isn't accurate -- 'i' is specifically an IMAGINARY number (not a real number at all), defined as the square root of -1, not related to real number magnitude."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Simplify: √(-16)",
+    "options": [
+      {"text": "4i", "isCorrect": true, "feedback": "Correct -- √(-16) = √(16 × -1) = √16 × √(-1) = 4 × i = 4i."},
+      {"text": "-4", "isCorrect": false, "feedback": "This doesn't correctly incorporate the imaginary unit 'i' -- the square root of a negative number requires representing it with 'i', not just a negative real number."},
+      {"text": "16i", "isCorrect": false, "feedback": "This doesn't correctly take the square root of 16 first (which is 4) before combining with 'i'."},
+      {"text": "4", "isCorrect": false, "feedback": "This is just √16 without correctly accounting for the negative sign, which specifically requires the imaginary unit 'i' in the final answer."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A complex number has the form a+bi, combining a real part (a) and an imaginary part (bi). Add these two complex numbers: (3+4i) + (2-7i)",
+    "options": [
+      {"text": "5-3i", "isCorrect": true, "feedback": "Correct -- add the real parts together (3+2=5) and the imaginary parts together (4i+(-7i)=-3i), giving 5-3i."},
+      {"text": "5+11i", "isCorrect": false, "feedback": "This incorrectly adds the imaginary coefficients as if both were positive (4+7=11), rather than correctly accounting for the negative sign on 7i (4-7=-3)."},
+      {"text": "1-3i", "isCorrect": false, "feedback": "This doesn't correctly add the real number parts together (3+2 should equal 5, not 1)."},
+      {"text": "6-28i", "isCorrect": false, "feedback": "This results from multiplying the parts together rather than correctly adding them separately for each component (real and imaginary)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This foundational mathematical construct satisfies the defining property of squaring to negative unity.", "medium": "This special number, when squared, gives you -1.", "easy": "This special number, when squared, gives you -1."},
+    "medium": {"hard": "Factor the negative radicand into a product of a perfect square and -1, then apply the definition of the imaginary unit to the negative factor.", "medium": "Split -16 into 16 times -1, take the square root of each part separately, then combine.", "easy": "√16 is 4, and √(-1) is i, so the answer is 4i."},
+    "hard": {"hard": "Combine complex numbers by separately summing their respective real and imaginary components.", "medium": "Add the real number parts together, and separately add the imaginary number parts together.", "easy": "Add 3+2=5 for the real part, and 4+(-7)=-3 for the imaginary part: 5-3i."}
+  }
+}
+]

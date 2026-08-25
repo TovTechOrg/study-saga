@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a chemical formula representing a compound's composition by mass",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What can a chemical formula, like H₂O, tell you about a compound?",
+    "options": [
+      {"text": "The types and relative numbers of atoms that make up the compound", "isCorrect": true, "feedback": "Correct -- H₂O tells you the compound contains hydrogen and oxygen atoms in a 2:1 ratio."},
+      {"text": "The exact color of the compound", "isCorrect": false, "feedback": "A chemical formula doesn't directly indicate color -- it specifically indicates atomic composition."},
+      {"text": "The price of the compound", "isCorrect": false, "feedback": "Cost isn't information conveyed by a chemical formula -- it's about atomic composition, not economics."},
+      {"text": "The exact date the compound was discovered", "isCorrect": false, "feedback": "Discovery date isn't part of what a chemical formula communicates -- it's strictly about atomic composition."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Using approximate atomic masses (H≈1, O≈16), what is the approximate molar mass of water (H₂O)?",
+    "options": [
+      {"text": "18", "isCorrect": true, "feedback": "Correct -- 2 hydrogens (2×1=2) plus 1 oxygen (16) gives 2+16=18."},
+      {"text": "17", "isCorrect": false, "feedback": "This doesn't correctly account for BOTH hydrogen atoms in the formula."},
+      {"text": "32", "isCorrect": false, "feedback": "This doesn't match correctly adding the masses of 2 hydrogens and 1 oxygen."},
+      {"text": "3", "isCorrect": false, "feedback": "This just adds the atom COUNT (2+1=3), not their actual masses."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Using approximate atomic masses (C≈12, H≈1, O≈16), what percentage of glucose's (C₆H₁₂O₆) total molar mass comes from oxygen? (Total molar mass of glucose ≈ 180)",
+    "options": [
+      {"text": "About 53%", "isCorrect": true, "feedback": "Correct -- oxygen contributes 6×16=96 to the total mass of 180, and 96÷180≈0.533, or about 53%."},
+      {"text": "About 16%", "isCorrect": false, "feedback": "This just uses a single oxygen atom's mass as a percentage, without accounting for all 6 oxygen atoms."},
+      {"text": "About 33%", "isCorrect": false, "feedback": "This doesn't match correctly dividing the total oxygen mass (96) by the total molar mass (180)."},
+      {"text": "About 96%", "isCorrect": false, "feedback": "This uses the oxygen mass total (96) as though it were already a percentage, without dividing by 180."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This notation encodes both the identity and the relative quantity of each type of atom present.", "medium": "This tells you which atoms are present and in what ratio.", "easy": "This tells you which atoms are in the compound and how many of each."},
+    "medium": {"hard": "Multiply each atom's mass by how many of that atom are present, then add all the totals together.", "medium": "Multiply hydrogen's mass by 2, then add oxygen's mass.", "easy": "Multiply 1 by 2 (for two hydrogens), then add 16 for the oxygen."},
+    "hard": {"hard": "Calculate the total mass contributed by all oxygen atoms in the formula, then divide by the compound's total molar mass and convert to a percentage.", "medium": "Multiply oxygen's mass (16) by how many oxygens are in the formula (6), then divide by the total molar mass (180).", "easy": "Multiply 16 by 6 to get 96, then divide by 180."}
+  }
+}
+]

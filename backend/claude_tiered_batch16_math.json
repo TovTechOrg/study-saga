@@ -1,0 +1,125 @@
+[
+{
+  "topic": "identifying the constant of proportionality",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the equation y = 7x, what is the constant of proportionality?",
+    "options": [
+      {"text": "7", "isCorrect": true, "feedback": "Correct -- in y=kx, the constant k (here, 7) is the constant of proportionality."},
+      {"text": "x", "isCorrect": false, "feedback": "x is a variable, not the constant of proportionality."},
+      {"text": "y", "isCorrect": false, "feedback": "y is a variable, not the constant of proportionality."},
+      {"text": "0", "isCorrect": false, "feedback": "This isn't the coefficient shown in the equation -- the constant here is 7."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A table shows that when x=3, y=15, and when x=5, y=25. What is the constant of proportionality?",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- dividing y by x in either pair gives the same result: 15/3=5, and 25/5=5."},
+      {"text": "3", "isCorrect": false, "feedback": "This is just one of the x-values, not the actual constant ratio between x and y."},
+      {"text": "10", "isCorrect": false, "feedback": "This doesn't match correctly dividing y by x."},
+      {"text": "15", "isCorrect": false, "feedback": "This is just one of the y-values, not the actual constant ratio."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A recipe uses a proportional relationship between cups of flour (x) and cups of sugar (y). If 4 cups of flour requires 1.5 cups of sugar, what is the constant of proportionality (sugar per flour), and how much sugar is needed for 10 cups of flour?",
+    "options": [
+      {"text": "Constant is 0.375; 3.75 cups of sugar needed for 10 cups of flour", "isCorrect": true, "feedback": "Correct -- 1.5÷4=0.375, and 0.375×10=3.75."},
+      {"text": "Constant is 2.67; 26.7 cups of sugar needed", "isCorrect": false, "feedback": "This inverts the ratio (flour per sugar) instead of finding sugar per flour."},
+      {"text": "Constant is 1.5; 15 cups of sugar needed", "isCorrect": false, "feedback": "This just uses the raw sugar amount rather than correctly dividing by the flour amount first."},
+      {"text": "Constant is 4; 40 cups of sugar needed", "isCorrect": false, "feedback": "This just uses the raw flour amount rather than correctly computing the sugar-to-flour ratio."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the fixed multiplier connecting the two variables in a direct proportion.", "medium": "This is the number that x gets multiplied by to produce y.", "easy": "This is the number multiplying x in the equation."},
+    "medium": {"hard": "Divide any y-value by its corresponding x-value to find the constant ratio.", "medium": "Divide 15 by 3, or 25 by 5 -- you should get the same answer both times.", "easy": "Divide 15 by 3 to find the constant."},
+    "hard": {"hard": "Divide the given y-value by its corresponding x-value to find the constant, then multiply that constant by the new x-value.", "medium": "Divide 1.5 by 4 to find the constant, then multiply that by 10.", "easy": "Divide 1.5 by 4 to get 0.375, then multiply by 10."}
+  }
+},
+{
+  "topic": "solving for a variable in a formula (literal equations)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Solve the formula A = lw for w (isolate w).",
+    "options": [
+      {"text": "w = A/l", "isCorrect": true, "feedback": "Correct -- divide both sides by l to isolate w."},
+      {"text": "w = A - l", "isCorrect": false, "feedback": "This uses subtraction, but the original formula uses multiplication, so division is needed to isolate w."},
+      {"text": "w = A × l", "isCorrect": false, "feedback": "This multiplies instead of dividing, which would undo the relationship incorrectly."},
+      {"text": "w = l/A", "isCorrect": false, "feedback": "This has the division flipped the wrong way around."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Solve the formula P = 2l + 2w for l (isolate l).",
+    "options": [
+      {"text": "l = (P - 2w)/2", "isCorrect": true, "feedback": "Correct -- subtract 2w from both sides, then divide everything by 2."},
+      {"text": "l = P - 2w", "isCorrect": false, "feedback": "This forgets to divide by 2 after subtracting 2w."},
+      {"text": "l = (P + 2w)/2", "isCorrect": false, "feedback": "This adds instead of subtracting 2w, the wrong operation to isolate l."},
+      {"text": "l = P/2 + w", "isCorrect": false, "feedback": "This has the wrong sign on w -- it should be subtracted, not added, when isolating l."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Solve the formula for the volume of a cylinder, V = πr²h, for h (isolate h).",
+    "options": [
+      {"text": "h = V/(πr²)", "isCorrect": true, "feedback": "Correct -- divide both sides by πr² to isolate h."},
+      {"text": "h = V - πr²", "isCorrect": false, "feedback": "This uses subtraction, but the original formula uses multiplication, so division is needed to isolate h."},
+      {"text": "h = Vπr²", "isCorrect": false, "feedback": "This multiplies instead of dividing, the wrong operation to isolate h."},
+      {"text": "h = πr²/V", "isCorrect": false, "feedback": "This has the division flipped the wrong way around."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Perform the inverse operation of multiplication to isolate the desired variable.", "medium": "Divide both sides by l.", "easy": "Divide A by l."},
+    "medium": {"hard": "Move the term without the target variable to the other side first, then isolate the target variable through division.", "medium": "Subtract 2w from both sides, then divide everything by 2.", "easy": "Subtract 2w from P, then divide the result by 2."},
+    "hard": {"hard": "Perform the inverse operation of multiplication to isolate the desired variable.", "medium": "Divide both sides by πr².", "easy": "Divide V by πr²."}
+  }
+},
+{
+  "topic": "understanding compound events and the multiplication rule of probability",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If two independent events each have a probability of 1/2, what is the probability both happen?",
+    "options": [
+      {"text": "1/4", "isCorrect": true, "feedback": "Correct -- multiply the two probabilities: 1/2 × 1/2 = 1/4."},
+      {"text": "1/2", "isCorrect": false, "feedback": "This only reflects the probability of one event, not both happening together."},
+      {"text": "1", "isCorrect": false, "feedback": "This would mean both events are guaranteed, which isn't the case here."},
+      {"text": "2/2", "isCorrect": false, "feedback": "This adds the two probabilities' numerators, which isn't how combined independent probabilities work."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A bag has 5 red marbles and 5 blue marbles. If you draw one marble, replace it, then draw again, what is the probability of drawing red both times?",
+    "options": [
+      {"text": "1/4", "isCorrect": true, "feedback": "Correct -- each draw has a 1/2 chance of red, and since you replace it, the draws are independent: 1/2 × 1/2 = 1/4."},
+      {"text": "1/2", "isCorrect": false, "feedback": "This only reflects the probability of drawing red once, not twice in a row."},
+      {"text": "1/10", "isCorrect": false, "feedback": "This doesn't correctly apply the multiplication rule for two independent draws."},
+      {"text": "1", "isCorrect": false, "feedback": "This would mean drawing red twice is guaranteed, which isn't the case."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A bag has 4 red marbles and 6 blue marbles (10 total). If you draw one marble WITHOUT replacing it, then draw a second, what is the probability both are red?",
+    "options": [
+      {"text": "2/15", "isCorrect": true, "feedback": "Correct -- first draw: 4/10; second draw (one red already removed): 3/9. Multiplying: (4/10)×(3/9)=12/90=2/15."},
+      {"text": "4/25", "isCorrect": false, "feedback": "This incorrectly treats the draws as independent (with replacement), rather than accounting for the marble not being replaced."},
+      {"text": "1/9", "isCorrect": false, "feedback": "This doesn't correctly multiply both draw probabilities together."},
+      {"text": "7/10", "isCorrect": false, "feedback": "This doesn't correctly represent the combined probability of drawing two reds in a row."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "For two independent events, multiply their individual probabilities together.", "medium": "Multiply the two individual probabilities together.", "easy": "Multiply 1/2 by 1/2."},
+    "medium": {"hard": "Since the marble is replaced, each draw has the same probability, and the two draws are independent -- multiply them together.", "medium": "Since the marble is put back, both draws have the same 1/2 chance -- multiply them.", "easy": "Multiply 1/2 by 1/2, since the marble gets put back each time."},
+    "hard": {"hard": "Since the marble isn't replaced, the second draw's probability changes based on the first draw's outcome -- multiply the two changing probabilities together.", "medium": "Find the probability of the first draw, then find the probability of the second draw given one red is already gone, then multiply.", "easy": "Multiply 4/10 by 3/9, since one red marble is already gone for the second draw."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between exothermic dilution and exothermic acid mixing safety",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The standard safety rule for diluting concentrated acid with water is to always:",
+    "options": [
+      {"text": "Add the acid slowly to the water, never the reverse", "isCorrect": true, "feedback": "Correct -- this 'acid to water' rule helps ensure the large volume of water can safely absorb the significant heat released, minimizing dangerous splashing/boiling."},
+      {"text": "Add the water slowly to the concentrated acid instead", "isCorrect": false, "feedback": "This is backwards and specifically DANGEROUS -- the correct, safe procedure is to add ACID TO WATER (not water to acid), precisely to avoid a hazardous, violent, localized heat/splashing reaction."},
+      {"text": "Mix the two substances as quickly as possible, all at once", "isCorrect": false, "feedback": "This isn't the correct safety procedure -- the acid should be added SLOWLY (not all at once quickly), to allow the heat released to be safely absorbed/dissipated gradually."},
+      {"text": "Never combine acid and water under any circumstances", "isCorrect": false, "feedback": "This isn't accurate -- acid CAN be safely diluted with water, PROVIDED the correct specific procedure (adding acid slowly to water) is properly followed."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Diluting concentrated acid is a significantly EXOTHERMIC process. Explain why adding acid SLOWLY to a LARGE volume of water (rather than the reverse) specifically helps manage this released heat SAFELY.",
+    "options": [
+      {"text": "Adding acid slowly to a large volume of water lets the heat from each small addition be immediately absorbed/dispersed throughout that large water volume (high heat capacity), preventing localized overheating/boiling that could cause violent splattering of corrosive acid", "isCorrect": true, "feedback": "Correct -- this procedure leverages water's HIGH HEAT CAPACITY and LARGE VOLUME to safely absorb the heat released, preventing the dangerous localized boiling/splattering that could otherwise occur."},
+      {"text": "This procedure actually has no real connection to safely managing the heat released during acid dilution", "isCorrect": false, "feedback": "This isn't accurate -- this procedure IS specifically designed to manage the heat release, which is precisely why it's the established safety protocol."},
+      {"text": "Adding water to concentrated acid instead would actually be equally safe", "isCorrect": false, "feedback": "This isn't accurate -- adding water TO acid is DANGEROUS, since the small water volume can rapidly boil from the localized heat, causing violent splattering."},
+      {"text": "Acid dilution is actually endothermic, not exothermic, making this safety concern unnecessary", "isCorrect": false, "feedback": "This isn't accurate -- acid dilution IS significantly exothermic, which is precisely why this safety procedure exists in the first place."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does adding a small amount of water TO concentrated acid (the dangerous, incorrect order) pose a much greater splattering risk than adding acid to a large volume of water?",
+    "options": [
+      {"text": "The small added water portion sits on top of and is surrounded by concentrated acid, so the localized heat release rapidly boils that small water volume before it can mix/dilute, and the resulting steam can violently eject droplets of concentrated acid outward", "isCorrect": true, "feedback": "Correct -- this localized, small-volume boiling mechanism explains why the wrong order creates a genuine, serious splattering hazard, unlike the safe method where heat is dispersed across a large water volume."},
+      {"text": "There is actually no meaningful difference in risk between the two different mixing orders", "isCorrect": false, "feedback": "This isn't accurate -- these two orders present GENUINELY DIFFERENT risk levels, which is precisely why one specific order is mandated as the safety standard."},
+      {"text": "Concentrated acid actually has a lower heat capacity than water, which is irrelevant to this specific splattering risk", "isCorrect": false, "feedback": "This isn't the key factor here -- the key issue is the SMALL VOLUME of water added being rapidly overwhelmed by localized heat, not simply a heat capacity comparison."},
+      {"text": "Steam production during this mixing process has no actual connection to the resulting splattering hazard", "isCorrect": false, "feedback": "This isn't accurate -- rapid steam production from the small, quickly-boiling water volume is DIRECTLY connected to and is precisely the mechanism causing the dangerous splattering."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This protocol mandates introducing the concentrated reagent incrementally into the bulk aqueous diluent.", "medium": "Always add the strong acid slowly into the water, not the other way around.", "easy": "Always add acid slowly into water, not the other way around."},
+    "medium": {"hard": "Consider how distributing heat release across a large thermal reservoir prevents localized temperature spikes that could otherwise trigger rapid, violent vaporization.", "medium": "A big pool of water can soak up the heat from a little bit of added acid without getting dangerously hot in any one spot.", "easy": "A big pool of water can soak up heat from added acid without getting dangerously hot in one spot."},
+    "hard": {"hard": "Consider how a small, thermally isolated water volume surrounded by concentrated acid lacks the thermal buffering capacity to absorb the localized heat release without reaching its boiling point rapidly.", "medium": "That tiny bit of water gets trapped and overwhelmed by all the acid's heat, boiling almost instantly and blasting acid droplets outward.", "easy": "That tiny bit of water gets overwhelmed by heat, boiling instantly and blasting acid droplets outward."}
+  }
+}
+]

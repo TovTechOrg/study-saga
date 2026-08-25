@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of convergent evolution",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is convergent evolution?",
+    "options": [
+      {"text": "When unrelated species independently evolve similar traits due to similar environmental pressures", "isCorrect": true, "feedback": "Correct -- dolphins (mammals) and sharks (fish) evolving similar streamlined bodies is a classic example."},
+      {"text": "When two closely related species evolve to look completely different from each other", "isCorrect": false, "feedback": "This describes divergent evolution, essentially the opposite of convergent evolution."},
+      {"text": "When a species stops evolving entirely", "isCorrect": false, "feedback": "Convergent evolution is about SPECIES ACTIVELY EVOLVING toward similar traits, not about evolution stopping."},
+      {"text": "When species interbreed to create a hybrid", "isCorrect": false, "feedback": "Hybridization is a different biological process, unrelated to the independent evolution of similar traits described by convergent evolution."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Dolphins (mammals) and sharks (fish) are not closely related, yet both have similar streamlined, fin-equipped body shapes. What best explains this similarity?",
+    "options": [
+      {"text": "Both independently evolved similar body shapes because they faced similar environmental pressures (efficient swimming in water)", "isCorrect": true, "feedback": "Correct -- this is convergent evolution, where unrelated species evolve similar solutions to similar environmental challenges."},
+      {"text": "Dolphins and sharks actually share a very recent common ancestor", "isCorrect": false, "feedback": "Dolphins and sharks are actually quite distantly related (mammal vs. fish) -- their similarity comes from convergent evolution, not recent shared ancestry."},
+      {"text": "This similarity is purely coincidental with no environmental explanation", "isCorrect": false, "feedback": "This is actually a well-documented case with a clear environmental explanation (similar aquatic pressures), not mere coincidence."},
+      {"text": "One species directly copied the other's traits", "isCorrect": false, "feedback": "Species don't consciously \"copy\" traits from each other -- each independently evolved similar features through natural selection responding to similar environmental demands."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Convergent evolution (independently evolved similar traits) can sometimes be mistaken for homology (traits inherited from a shared ancestor). What type of scientific evidence would help distinguish between these two possibilities?",
+    "options": [
+      {"text": "Comparing the underlying genetic and developmental pathways -- convergent traits often arise through different genetic mechanisms, while true homologous traits typically share similar underlying genetic origins", "isCorrect": true, "feedback": "Correct -- while the surface-level trait might look similar, deeper genetic and developmental analysis can reveal whether the trait arose independently (convergent) or from shared ancestry (homologous)."},
+      {"text": "There is no reliable way to ever distinguish between these two possibilities", "isCorrect": false, "feedback": "Scientists actually do have reliable methods (genetic and developmental comparisons) for distinguishing between convergent and homologous traits."},
+      {"text": "Simply looking at the outward appearance of the trait is always sufficient to tell them apart", "isCorrect": false, "feedback": "This is actually the OPPOSITE of true -- surface appearance alone is often what makes convergent traits initially LOOK deceptively like true homologous ones, requiring deeper analysis to distinguish."},
+      {"text": "Convergent traits and homologous traits are actually always genetically identical", "isCorrect": false, "feedback": "This is incorrect -- convergent traits often arise through different genetic pathways, which is precisely one of the key distinguishing clues scientists look for."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process results in unrelated organisms arriving at similar solutions to comparable ecological challenges through separate evolutionary paths.", "medium": "This describes different animals independently ending up with similar features because they face similar challenges.", "easy": "This is when different animals end up looking similar because they face similar challenges."},
+    "medium": {"hard": "Consider that similar environmental demands (efficient movement through water) can independently favor similar structural solutions in unrelated lineages.", "medium": "Both live in water and need to swim efficiently, so both ended up evolving a similar streamlined body shape on their own.", "easy": "Both live in water and need to swim well, so both evolved similar body shapes on their own."},
+    "hard": {"hard": "Investigating whether the same or different genes and developmental processes underlie the trait's formation can reveal whether it originated from a shared ancestral genetic toolkit or arose independently through separate evolutionary routes.", "medium": "Looking at the actual genes and developmental process behind the trait can reveal whether it came from a shared ancestor or developed completely separately.", "easy": "Looking at the actual genes behind the trait can reveal whether it came from a shared ancestor or developed separately."}
+  }
+}
+]

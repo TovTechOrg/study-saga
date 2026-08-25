@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between mitosis and meiosis in chromosome number outcome",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Mitosis produces two daughter cells with a chromosome number that is:",
+    "options": [
+      {"text": "The same as the original parent cell", "isCorrect": true, "feedback": "Correct -- mitosis maintains the same chromosome number (and genetic content) as the original cell, producing genetically identical daughter cells."},
+      {"text": "Exactly half of the original parent cell's chromosome number", "isCorrect": false, "feedback": "That describes MEIOSIS, not mitosis -- mitosis specifically maintains the SAME chromosome number, while meiosis specifically REDUCES it by half."},
+      {"text": "Always exactly double the original parent cell's chromosome number", "isCorrect": false, "feedback": "This isn't accurate -- mitosis specifically maintains the SAME chromosome number as the original cell, not doubling it in the resulting daughter cells."},
+      {"text": "Completely random, with no consistent relationship to the parent cell", "isCorrect": false, "feedback": "This isn't accurate -- mitosis follows a very PREDICTABLE, consistent pattern (same chromosome number as parent), not a random outcome."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Meiosis, by contrast, produces four daughter cells (gametes) each with HALF the chromosome number of the original parent cell. Why is this specific chromosome REDUCTION during meiosis essential for sexual reproduction to work properly?",
+    "options": [
+      {"text": "Since sexual reproduction involves COMBINING genetic material from two parent gametes (sperm and egg) during fertilization, each gamete must contribute only HALF the normal chromosome number so that the resulting fertilized offspring ends up with the CORRECT, full chromosome number (not double the normal amount), maintaining consistent chromosome number across generations", "isCorrect": true, "feedback": "Correct -- this essential 'chromosome number halving' function of meiosis is precisely why it's necessary for sexual reproduction -- without this reduction step, chromosome number would DOUBLE with each generation, a biologically unsustainable pattern that meiosis specifically prevents."},
+      {"text": "This chromosome reduction during meiosis actually has no real connection to how sexual reproduction functions properly", "isCorrect": false, "feedback": "This isn't accurate -- this chromosome reduction is DIRECTLY and ESSENTIALLY connected to and REQUIRED FOR proper sexual reproduction function, specifically preventing chromosome number from doubling each generation."},
+      {"text": "If gametes had the FULL chromosome number (not reduced), sexual reproduction would actually still work perfectly fine", "isCorrect": false, "feedback": "This isn't accurate -- if gametes retained the FULL (unreduced) chromosome number, fertilization would result in OFFSPRING WITH DOUBLE the normal chromosome number, an unsustainable pattern that would compound with each successive generation, causing serious problems."},
+      {"text": "Chromosome number has no actual biological significance for successful sexual reproduction or offspring development", "isCorrect": false, "feedback": "This isn't accurate -- chromosome number has SIGNIFICANT biological importance for successful reproduction and normal offspring development, which is precisely why meiosis's chromosome-halving function is so essential."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Errors during meiosis (like 'nondisjunction,' where chromosomes fail to separate properly) can result in gametes with an ABNORMAL chromosome number (either too many or too few), which can lead to conditions like Down syndrome (an extra copy of chromosome 21) if such an abnormal gamete is involved in fertilization. Why does understanding meiosis's NORMAL chromosome-halving mechanism specifically help explain how and why such genetic conditions can arise?",
+    "options": [
+      {"text": "Understanding that meiosis NORMALLY involves a precise, carefully coordinated process of chromosome separation (ensuring each resulting gamete gets exactly the correct half-number of chromosomes) helps clarify that conditions like Down syndrome specifically arise from a DISRUPTION/ERROR in this normally precise separation process, resulting in a specific gamete receiving an ABNORMAL chromosome number that then gets combined with a normal gamete during fertilization, producing this abnormal, disease-associated chromosome count", "isCorrect": true, "feedback": "Correct -- this understanding of meiosis's normal precise mechanism (and how specific ERRORS/deviations from that normal process can occur) provides essential foundational context for correctly and thoroughly understanding the genetic origin of conditions like Down syndrome, directly connecting normal cellular biology to specific real-world genetic disease/condition outcomes."},
+      {"text": "Down syndrome and similar chromosomal conditions actually have no connection whatsoever to errors occurring during the meiosis process", "isCorrect": false, "feedback": "This isn't accurate -- these conditions ARE DIRECTLY connected to and specifically ARISE FROM errors (like nondisjunction) occurring during the meiosis process, not from some entirely separate origin."},
+      {"text": "Meiosis normally always produces gametes with random, unpredictable chromosome numbers, with no consistent expected pattern", "isCorrect": false, "feedback": "This isn't accurate -- meiosis NORMALLY produces gametes with a very PRECISE, PREDICTABLE (halved) chromosome number; it's specifically ERRORS/deviations from this normal precise process that produce the abnormal chromosome counts associated with certain genetic conditions."},
+      {"text": "This understanding of meiosis's normal mechanism has no actual practical relevance for understanding real-world genetic conditions", "isCorrect": false, "feedback": "This isn't accurate -- this understanding has SIGNIFICANT practical relevance, directly informing genetic counseling, prenatal testing, and broader medical/scientific understanding of how and why certain chromosomal conditions specifically arise."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This cellular division process yields daughter cells possessing chromosome complements genetically equivalent to the originating progenitor cell.", "medium": "This process makes new cells that have the exact same number of chromosomes as the original cell.", "easy": "This process makes new cells with the same chromosome number as the original."},
+    "medium": {"hard": "Consider what would happen to total chromosome number across successive generations if gametes retained the full, unreduced chromosome count prior to the combining event of fertilization.", "medium": "If both the egg and sperm kept the FULL number of chromosomes, then combining them would create offspring with DOUBLE the normal amount, and that doubling would just keep compounding generation after generation.", "easy": "If gametes kept the full chromosome count, offspring would end up with double the normal amount."},
+    "hard": {"hard": "Consider how framing chromosomal disorders as deviations from an otherwise precisely regulated normal separation process provides a mechanistic explanatory framework connecting cellular-level errors to observable genetic conditions.", "medium": "Knowing exactly how meiosis is SUPPOSED to correctly split up chromosomes helps you understand that something like Down syndrome happens specifically when that normal splitting process goes wrong in one particular way.", "easy": "Knowing how meiosis is supposed to split chromosomes helps explain how Down syndrome happens when that process goes wrong."}
+  }
+}
+]

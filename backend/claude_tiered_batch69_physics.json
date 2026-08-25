@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the Doppler effect applied to redshift and the expanding universe",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In astronomy, 'redshift' refers to what observation about light from distant galaxies?",
+    "options": [
+      {"text": "The light's wavelength appears stretched (shifted toward the red end of the spectrum)", "isCorrect": true, "feedback": "Correct -- redshift indicates that light waves have been stretched to longer wavelengths, typically due to the source moving away from the observer."},
+      {"text": "The light's wavelength appears compressed (shifted toward blue)", "isCorrect": false, "feedback": "That describes 'blueshift,' the opposite phenomenon, indicating an object moving TOWARD the observer, not away."},
+      {"text": "The light completely disappears and becomes undetectable", "isCorrect": false, "feedback": "Redshift doesn't mean the light disappears -- it specifically means the light's WAVELENGTH shifts (stretches), while remaining detectable."},
+      {"text": "The light suddenly becomes much brighter", "isCorrect": false, "feedback": "Redshift specifically concerns a wavelength SHIFT, not necessarily brightness changes -- these are different, largely independent observational properties."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Astronomers observe that nearly all distant galaxies show redshifted light, and more distant galaxies generally show GREATER redshift. Using the Doppler effect principle, what does this observation suggest?",
+    "options": [
+      {"text": "Distant galaxies are generally moving away from us, and more distant galaxies are moving away at even faster speeds, consistent with an expanding universe", "isCorrect": true, "feedback": "Correct -- this observed relationship between distance and redshift (Hubble's Law) provided crucial early evidence supporting the theory that the universe is expanding."},
+      {"text": "This observation suggests distant galaxies are actually moving TOWARD us at increasing speeds", "isCorrect": false, "feedback": "This is backwards -- REDSHIFT (not blueshift) specifically indicates galaxies moving AWAY from us, not toward us, consistent with cosmic expansion."},
+      {"text": "This observation has no actual connection to galaxy movement or the universe's expansion", "isCorrect": false, "feedback": "This isn't accurate -- this observation is DIRECTLY connected to and provides crucial evidence for galaxy movement patterns and the broader theory of universal expansion."},
+      {"text": "All galaxies actually show the exact same amount of redshift, regardless of their distance", "isCorrect": false, "feedback": "This isn't accurate -- the KEY observation is specifically that redshift amount correlates with distance (more distant galaxies show greater redshift), not a uniform redshift value."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Cosmological redshift (from the universe's overall expansion) is technically distinct from a simple Doppler redshift caused by an object physically moving through space, even though both produce a similar wavelength-stretching effect. Why is this distinction scientifically meaningful, rather than just a technicality?",
+    "options": [
+      {"text": "Cosmological redshift results from the actual stretching of SPACE ITSELF as the universe expands (carrying light's wavelength with it), rather than the light source physically moving through a static, unchanging space, representing a fundamentally different underlying physical mechanism", "isCorrect": true, "feedback": "Correct -- this important conceptual distinction, between an object moving through space (traditional Doppler effect) versus space itself expanding (cosmological redshift), is central to modern cosmological theory and our understanding of the universe's large-scale structure and evolution."},
+      {"text": "These two phenomena are actually completely identical in every physical way, with no meaningful theoretical distinction", "isCorrect": false, "feedback": "This isn't accurate -- while both produce similar OBSERVATIONAL effects (wavelength stretching), they represent genuinely different underlying physical mechanisms (object movement vs. space itself expanding), which is scientifically significant."},
+      {"text": "Cosmological redshift has no actual connection to the broader theory of the universe's expansion", "isCorrect": false, "feedback": "This isn't accurate -- cosmological redshift is DIRECTLY and centrally connected to the theory of cosmic expansion -- it's actually one of the key pieces of observational evidence supporting that very theory."},
+      {"text": "This distinction is purely a naming convention with absolutely no underlying physical significance", "isCorrect": false, "feedback": "This isn't accurate -- this distinction reflects a genuinely different underlying PHYSICAL MECHANISM (space expansion vs. object movement through static space), not merely an arbitrary naming choice."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This observed spectral phenomenon indicates an increase in a light wave's characteristic wavelength relative to its emitted value.", "medium": "This is when light from something gets stretched out, shifting it toward the red end of the color spectrum.", "easy": "This is when light gets stretched out, shifting it toward red."},
+    "medium": {"hard": "Apply the same directional logic used for sound's Doppler effect (stretching indicates increasing separation) to interpret what increasing redshift with distance implies about relative galaxy motion.", "medium": "If light gets stretched (redshifted) like a sound getting lower-pitched as something moves away, that pattern suggests galaxies are moving away from us.", "easy": "If light gets stretched like a sound moving away, that suggests galaxies are moving away from us."},
+    "hard": {"hard": "Consider how attributing the wavelength stretch to the expansion of the intervening spatial medium itself, rather than to relative motion within a fixed spatial background, changes the fundamental physical interpretation of the phenomenon.", "medium": "It's not that galaxies are necessarily zooming through space like a car -- it's more like the space between us and them is actually stretching out over time.", "easy": "It's not that galaxies are zooming through space -- the space between us and them is actually stretching."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a symbiotic relationship: parasitism",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a parasitic relationship, how does the parasite generally affect its host?",
+    "options": [
+      {"text": "It harms the host while benefiting itself", "isCorrect": true, "feedback": "Correct -- parasitism is defined by one organism benefiting at the direct expense of another."},
+      {"text": "It helps the host while also benefiting itself", "isCorrect": false, "feedback": "That describes mutualism, not parasitism, which specifically involves harm to the host."},
+      {"text": "It has no effect on the host at all", "isCorrect": false, "feedback": "That describes commensalism, not parasitism, which specifically involves the host being harmed."},
+      {"text": "It always kills the host immediately", "isCorrect": false, "feedback": "While some parasites can be very harmful, many parasitic relationships are actually more subtle and don't necessarily result in immediate host death."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A tapeworm lives inside an animal's intestines, absorbing nutrients from the food the animal eats, without providing any benefit back. What type of symbiotic relationship is this?",
+    "options": [
+      {"text": "Parasitism", "isCorrect": true, "feedback": "Correct -- the tapeworm (parasite) benefits at the direct expense of the host animal, which loses nutrients."},
+      {"text": "Mutualism", "isCorrect": false, "feedback": "Mutualism requires BOTH organisms to benefit -- here, only the tapeworm benefits, while the host is harmed."},
+      {"text": "Commensalism", "isCorrect": false, "feedback": "Commensalism involves one organism benefiting with NO effect on the other -- here, the host is actually harmed by nutrient loss."},
+      {"text": "Competition", "isCorrect": false, "feedback": "Competition involves two organisms vying for the same limited resource -- this scenario describes one organism directly living off and harming another."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some parasites evolve to avoid killing their host quickly, even though the host serves as their source of nutrients. Why might this be an evolutionarily favorable strategy for a parasite?",
+    "options": [
+      {"text": "A parasite that keeps its host alive longer has more time to reproduce and potentially spread to new hosts, compared to one that kills its host (and its own habitat/resource) too quickly", "isCorrect": true, "feedback": "Correct -- this reflects a common evolutionary pressure favoring a more sustainable, less immediately lethal parasitic strategy, sometimes described as a trend toward reduced virulence over time."},
+      {"text": "Parasites always benefit more from killing their host as quickly as possible", "isCorrect": false, "feedback": "This is often not true evolutionarily -- killing the host too quickly can actually limit the parasite's own reproductive opportunity and spread."},
+      {"text": "Parasites have no evolutionary pressures acting on them at all", "isCorrect": false, "feedback": "Parasites are absolutely subject to evolutionary pressures, including selection favoring strategies that don't eliminate their own resource (the host) too quickly."},
+      {"text": "This has nothing to do with the parasite's own reproductive success", "isCorrect": false, "feedback": "This strategy is actually directly tied to maximizing the parasite's own reproductive success and opportunity to spread to new hosts."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "In this relationship, one organism gains at a cost specifically borne by the other.", "medium": "One organism benefits, while the other one is actually harmed.", "easy": "One organism benefits while hurting the other one."},
+    "medium": {"hard": "Determine whether both organisms benefit, only one benefits with harm to the other, or one benefits with no effect on the other.", "medium": "The tapeworm benefits, but the host is actually losing something (nutrients) -- that specific pattern matches one type of relationship.", "easy": "The tapeworm benefits, but the host loses nutrients -- that's the parasitic pattern."},
+    "hard": {"hard": "Prolonging host survival extends the parasite's own window for reproduction and transmission, making excessive virulence potentially self-defeating from an evolutionary fitness perspective.", "medium": "If the host survives longer, the parasite gets more time to reproduce and spread to new hosts before its current home is gone.", "easy": "If the host survives longer, the parasite gets more time to reproduce and spread before its home is gone."}
+  }
+}
+]

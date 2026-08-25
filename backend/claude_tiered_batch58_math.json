@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of linear inequalities and their graphs",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "When graphing the inequality x > 3 on a number line, what type of circle/dot is used at the point 3?",
+    "options": [
+      {"text": "An open (unfilled) circle, since 3 itself is not included in the solution", "isCorrect": true, "feedback": "Correct -- since the inequality is strictly greater than (not greater than or equal to), the boundary point 3 itself is excluded, shown with an open circle."},
+      {"text": "A closed (filled) circle, since 3 itself is included in the solution", "isCorrect": false, "feedback": "This would be correct for x ≥ 3 (greater than OR equal to), but for strict inequality (x > 3), an open circle is used since 3 is excluded."},
+      {"text": "No circle or dot is used at all for inequalities", "isCorrect": false, "feedback": "A circle (open or closed, depending on the inequality type) IS specifically used to mark the boundary point when graphing inequalities."},
+      {"text": "A square shape is used instead of a circle", "isCorrect": false, "feedback": "Standard inequality graphing convention uses circles (open or filled), not squares, to mark the boundary point."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Solve the inequality: 2x + 3 < 11",
+    "options": [
+      {"text": "x < 4", "isCorrect": true, "feedback": "Correct -- subtract 3 from both sides (2x < 8), then divide both sides by 2 (x < 4)."},
+      {"text": "x < 7", "isCorrect": false, "feedback": "This doesn't correctly divide by 2 after subtracting 3 from both sides."},
+      {"text": "x < 8", "isCorrect": false, "feedback": "This is the result right after subtracting 3, but the inequality still needs to be divided by 2 to fully isolate x."},
+      {"text": "x < 5.5", "isCorrect": false, "feedback": "This doesn't correctly result from the two-step process of subtracting 3, then dividing by 2."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Solve the inequality: -3x + 6 ≥ 15. Remember to flip the inequality sign when dividing by a negative number.",
+    "options": [
+      {"text": "x ≤ -3", "isCorrect": true, "feedback": "Correct -- subtract 6 from both sides (-3x ≥ 9), then divide by -3 AND flip the inequality sign (x ≤ -3)."},
+      {"text": "x ≥ -3", "isCorrect": false, "feedback": "This forgets to flip the inequality sign when dividing both sides by the negative number -3."},
+      {"text": "x ≤ -7", "isCorrect": false, "feedback": "This doesn't correctly subtract 6 from 15 (15-6=9, not giving -7 after dividing by -3)."},
+      {"text": "x ≥ 3", "isCorrect": false, "feedback": "This has both an incorrect sign flip direction and doesn't correctly compute the resulting value."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This notation convention distinguishes whether the boundary value itself satisfies a strict versus an inclusive inequality condition.", "medium": "An open circle means that exact number isn't included, while a filled circle means it is.", "easy": "An open circle means that number isn't included in the answer."},
+    "medium": {"hard": "Apply standard equation-solving steps (isolate the variable through inverse operations) exactly as you would for an equation, since neither step here involves a negative multiplier.", "medium": "Subtract 3 from both sides first, then divide both sides by 2.", "easy": "Subtract 3 from both sides: 2x<8. Divide by 2: x<4."},
+    "hard": {"hard": "Remember the critical rule: dividing (or multiplying) both sides of an inequality by a NEGATIVE number requires flipping the direction of the inequality sign.", "medium": "Subtract 6 first, then divide by -3 -- but remember, dividing by a negative number flips the inequality sign.", "easy": "Subtract 6: -3x≥9. Divide by -3 and FLIP the sign: x≤-3."}
+  }
+}
+]

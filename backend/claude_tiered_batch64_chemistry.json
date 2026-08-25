@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of electron configuration and valence electrons",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What are valence electrons?",
+    "options": [
+      {"text": "The electrons in an atom's outermost energy shell, involved in chemical bonding", "isCorrect": true, "feedback": "Correct -- valence electrons are the outermost electrons that participate in forming chemical bonds with other atoms."},
+      {"text": "The electrons closest to the atom's nucleus", "isCorrect": false, "feedback": "That describes CORE electrons, not valence electrons, which are specifically in the OUTERMOST shell."},
+      {"text": "All of the electrons in an atom combined", "isCorrect": false, "feedback": "Valence electrons refer specifically to the OUTERMOST shell's electrons, not the total combined electron count of the entire atom."},
+      {"text": "Electrons found only in the atom's nucleus", "isCorrect": false, "feedback": "Electrons are not found in the nucleus at all (that's where protons and neutrons reside) -- electrons orbit the nucleus in shells."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Sodium (Na) has an electron configuration ending in 3s¹, meaning it has just 1 valence electron in its outermost shell. Why does this configuration make sodium highly reactive?",
+    "options": [
+      {"text": "With just 1 valence electron, sodium can easily lose that single electron to achieve a more stable, complete outer shell configuration (like the nearest noble gas), making it highly prone to reacting with other elements", "isCorrect": true, "feedback": "Correct -- this drive toward achieving a stable, complete outer electron shell (often 8 electrons, per the 'octet rule') is a fundamental principle explaining much of an element's chemical reactivity, particularly for elements with just 1-2 valence electrons like sodium."},
+      {"text": "Having only 1 valence electron actually makes sodium completely unreactive and stable", "isCorrect": false, "feedback": "This is backwards -- having just 1 valence electron actually makes sodium HIGHLY reactive (not unreactive), since it can easily lose that electron to achieve a stable configuration."},
+      {"text": "Valence electron count has no actual connection to an element's chemical reactivity", "isCorrect": false, "feedback": "Valence electron count is actually a PRIMARY factor determining an element's chemical reactivity and bonding behavior, directly explaining patterns like sodium's high reactivity."},
+      {"text": "Sodium's reactivity is determined entirely by its neutron count, unrelated to valence electrons", "isCorrect": false, "feedback": "This isn't accurate -- neutron count primarily affects isotope mass, not chemical reactivity; chemical reactivity is specifically driven by VALENCE ELECTRON configuration, as in sodium's case."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The noble gases (like neon and argon) have completely filled valence electron shells (typically 8 valence electrons, satisfying the 'octet rule') and are famously unreactive. How does this observation directly support the broader theory that valence electron configuration drives chemical reactivity?",
+    "options": [
+      {"text": "Since noble gases already possess a stable, complete outer shell configuration, they have no strong 'drive' to gain, lose, or share electrons through bonding, providing a clear contrast to highly reactive elements (like sodium) that are actively seeking a similarly stable configuration", "isCorrect": true, "feedback": "Correct -- this stark contrast between the noble gases' stability (from complete valence shells) and other elements' reactivity (from incomplete valence shells actively seeking stability) provides compelling supporting evidence for the central role of valence electron configuration in determining chemical behavior."},
+      {"text": "Noble gases are actually highly reactive, contrary to their well-established reputation", "isCorrect": false, "feedback": "This isn't accurate -- noble gases are famously and consistently UNREACTIVE under normal conditions, which is precisely the well-documented observation that supports this theory about valence electron configuration."},
+      {"text": "This observation about noble gases has no actual connection to the broader theory of valence electron-driven reactivity", "isCorrect": false, "feedback": "This observation is DIRECTLY connected to and highly supportive of the broader theory -- it's actually one of the most classic and compelling pieces of evidence for how valence electron configuration governs reactivity."},
+      {"text": "Valence electron shell completeness has no actual bearing on whether an element tends to be reactive or unreactive", "isCorrect": false, "feedback": "This isn't accurate -- valence shell completeness (or incompleteness) has a very direct, well-established bearing on an element's reactivity, exactly as demonstrated by the noble gases' notable unreactivity."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These outermost-shell electrons primarily determine an atom's capacity for interatomic chemical bonding interactions.", "medium": "These are the electrons in the outside layer of an atom that get involved in bonding with other atoms.", "easy": "These are the outer-layer electrons that get involved in bonding with other atoms."},
+    "medium": {"hard": "Consider how proximity to achieving a complete, stable outer electron shell configuration influences an atom's tendency to participate in bond-forming reactions.", "medium": "Having just one extra electron in the outer shell means it's pretty easy for the atom to just get rid of it and become more stable.", "easy": "Having just one extra outer electron makes it easy for the atom to lose it and become stable."},
+    "hard": {"hard": "Consider how the presence (or absence) of an already-complete outer electron shell correlates directly with an element's observed lack of (or tendency toward) chemical reactivity.", "medium": "Since these elements already have a perfectly full, stable outer shell, they just don't need to bond with anything else to feel 'complete.'", "easy": "Since these elements already have a full, stable outer shell, they don't need to bond with anything else."}
+  }
+}
+]

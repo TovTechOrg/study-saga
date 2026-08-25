@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between theoretical and experimental probability",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Theoretical probability' is calculated based on:",
+    "options": [
+      {"text": "Mathematical reasoning about all equally likely possible outcomes, without actually performing the experiment", "isCorrect": true, "feedback": "Correct -- theoretical probability is calculated in advance using logical/mathematical analysis (like counting favorable outcomes divided by total possible outcomes), not from actual experimental trials."},
+      {"text": "The actual observed results from repeatedly performing a real experiment/trial", "isCorrect": false, "feedback": "That describes EXPERIMENTAL probability, not theoretical probability, which is specifically calculated through MATHEMATICAL REASONING, not from actual observed trial results."},
+      {"text": "A random guess with no mathematical basis whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- theoretical probability is based on RIGOROUS MATHEMATICAL REASONING (analyzing possible outcomes), not a random, baseless guess."},
+      {"text": "Only what happens in the very first trial of an experiment", "isCorrect": false, "feedback": "This isn't accurate -- theoretical probability doesn't rely on any actual TRIAL AT ALL (first or otherwise) -- it's calculated in advance through mathematical reasoning about possible outcomes."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The theoretical probability of flipping a fair coin and getting heads is exactly 0.5 (50%). If you actually flip a coin 10 times and get heads 7 times (70%), does this necessarily mean the coin is unfair/biased?",
+    "options": [
+      {"text": "Not necessarily -- experimental probability from a SMALL number of trials can reasonably deviate from theoretical probability due to normal random chance/variation, without indicating the coin is actually biased", "isCorrect": true, "feedback": "Correct -- with a relatively small number of trials (like just 10 flips), getting a result somewhat different from the theoretical probability is a completely NORMAL, expected occurrence due to random chance/variation, not necessarily evidence of an actually biased coin."},
+      {"text": "Yes, this result DEFINITIVELY proves the coin must be significantly biased/unfair", "isCorrect": false, "feedback": "This isn't accurate -- with such a SMALL number of trials (just 10 flips), this kind of deviation from the theoretical 50% is quite common due to normal random variation alone, and does NOT definitively prove the coin is actually biased."},
+      {"text": "Theoretical and experimental probability actually must always match each other exactly, with no possible deviation", "isCorrect": false, "feedback": "This isn't accurate -- these two types of probability CAN and OFTEN DO show some deviation from each other, especially with smaller sample sizes, due to normal random chance/variation -- exact matching isn't a strict requirement."},
+      {"text": "This scenario has no actual connection to understanding the relationship between theoretical and experimental probability", "isCorrect": false, "feedback": "This isn't accurate -- this scenario is DIRECTLY and specifically connected to and serves as a useful illustration of the important RELATIONSHIP (and expected potential deviation) between theoretical and experimental probability, particularly with limited trial numbers."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The 'law of large numbers' states that as the number of trials in an experiment INCREASES, the experimental probability tends to get progressively CLOSER to the theoretical probability. Why does this specific mathematical principle provide a meaningful, practical way to actually test whether a coin might be genuinely biased, despite normal random variation always being present in any individual trial?",
+    "options": [
+      {"text": "While a SMALL number of trials can show significant, perfectly normal random deviation from theoretical probability (making bias difficult to detect reliably), performing a VERY LARGE number of trials should cause any TRUE, GENUINE underlying bias to become increasingly apparent/detectable (since the experimental result should reliably converge toward the ACTUAL true probability, whatever that specific value happens to be for that specific coin) -- essentially averaging out and overwhelming the normal random noise, revealing genuine bias if it truly exists", "isCorrect": true, "feedback": "Correct -- this practical application of the law of large numbers (increasing sample size to distinguish genuine, persistent effects from random, normal statistical noise) is a sophisticated and fundamentally important concept in statistics, widely applied for reliably testing hypotheses (like coin fairness) across science, quality control, and numerous other practical, real-world fields."},
+      {"text": "The law of large numbers actually states that MORE trials would make experimental probability move FARTHER AWAY from theoretical probability, not closer", "isCorrect": false, "feedback": "This is backwards -- the law of large numbers specifically states that MORE trials cause experimental probability to move CLOSER to (converge toward) theoretical/true probability, not farther away."},
+      {"text": "This principle has no actual practical application for testing whether something like a coin might be genuinely biased", "isCorrect": false, "feedback": "This isn't accurate -- this principle has SIGNIFICANT practical application for exactly this kind of hypothesis testing (like testing coin fairness), forming a fundamental basis for statistical inference methods used broadly across science and other practical, real-world fields."},
+      {"text": "A small number of trials would actually be equally reliable as a large number of trials for detecting genuine bias", "isCorrect": false, "feedback": "This isn't accurate -- a LARGE number of trials is generally considered SIGNIFICANTLY MORE RELIABLE than a small number for detecting genuine, persistent bias, precisely because it helps average out/overwhelm normal random variation/noise that could otherwise obscure a true underlying effect in smaller samples."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This probability metric is derived through combinatorial or proportional analysis of the complete outcome space, independent of empirical trial data.", "medium": "This is figured out just by thinking it through with math, without actually doing the experiment for real.", "easy": "This is figured out with math, without actually doing the experiment."},
+    "medium": {"hard": "Consider how a limited number of independent random trials can produce a sample proportion that deviates noticeably from the true underlying probability purely due to expected statistical sampling variability.", "medium": "With just a few flips, it's totally normal for the results to bounce around a bit and not land exactly on 50/50, just by pure random luck -- that doesn't mean the coin is rigged.", "easy": "With just a few flips, results can bounce around from 50/50 just by random luck -- that doesn't mean it's rigged."},
+    "hard": {"hard": "Consider how increasing sample size systematically reduces the relative influence of random sampling variability, allowing a true, persistent underlying probability (bias) to become statistically distinguishable from mere chance fluctuation.", "medium": "The more times you flip the coin, the less those random ups-and-downs matter overall, so if the coin really IS unfair, that true unfairness will eventually show through clearly instead of getting lost in the noise.", "easy": "The more times you flip, the less random noise matters, so a truly unfair coin's bias will eventually show through."}
+  }
+}
+]

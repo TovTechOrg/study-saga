@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a wave's medium affecting its speed",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Does sound generally travel faster through air or through water?",
+    "options": [
+      {"text": "Water", "isCorrect": true, "feedback": "Correct -- sound travels roughly four times faster through water than through air, due to water's denser, more tightly packed particles."},
+      {"text": "Air", "isCorrect": false, "feedback": "This is backwards -- sound actually travels significantly faster through water than through air."},
+      {"text": "Sound travels at exactly the same speed in both", "isCorrect": false, "feedback": "There's a significant, well-documented difference in sound speed between these two mediums."},
+      {"text": "Sound cannot travel through water at all", "isCorrect": false, "feedback": "Sound definitely can travel through water -- in fact, it travels notably faster there than through air."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does sound generally travel faster through solids than through liquids or gases?",
+    "options": [
+      {"text": "Particles in a solid are packed much closer together, allowing vibrations to transfer between neighboring particles more quickly", "isCorrect": true, "feedback": "Correct -- this tighter particle spacing in solids enables faster transmission of the vibrational energy that makes up a sound wave."},
+      {"text": "Solids don't actually allow sound to travel through them at all", "isCorrect": false, "feedback": "Sound absolutely can travel through solids -- in fact, it typically travels FASTER through solids than through liquids or gases."},
+      {"text": "Solids are always colder than liquids or gases", "isCorrect": false, "feedback": "Temperature isn't the key factor here -- it's specifically the closer packing of particles in solids that speeds up sound transmission."},
+      {"text": "This has nothing to do with the arrangement of particles", "isCorrect": false, "feedback": "This is actually directly and specifically explained by the arrangement (particle spacing) within the medium."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Unlike sound, light actually travels FASTER through a vacuum (or air) than through a denser medium like water or glass. Why does light's behavior with respect to medium density seem to contradict the pattern seen with sound?",
+    "options": [
+      {"text": "Sound and light propagate through fundamentally different mechanisms -- sound requires physical particle-to-particle transmission (favored by density), while light's electromagnetic wave interacts with a medium's electrons in a way that actually slows it down in denser materials", "isCorrect": true, "feedback": "Correct -- these are two fundamentally different physical phenomena, and generalizing sound's density-speed relationship to light leads to an incorrect prediction, since light slows down (not speeds up) in denser optical media."},
+      {"text": "This is actually not true -- light behaves exactly like sound in this regard", "isCorrect": false, "feedback": "This is factually incorrect -- light and sound have OPPOSITE relationships with medium density regarding speed, a well-established distinction in physics."},
+      {"text": "Light doesn't actually have a measurable speed at all", "isCorrect": false, "feedback": "Light does have a very precisely measured speed, which varies depending on the medium it's traveling through."},
+      {"text": "Sound and light are actually the exact same type of physical phenomenon", "isCorrect": false, "feedback": "Sound (a mechanical wave requiring a medium) and light (an electromagnetic wave that can travel through a vacuum) are fundamentally different types of phenomena, which is exactly why their relationship with medium density differs."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Consider which medium has more tightly packed particles available to pass vibrational energy along more efficiently.", "medium": "Water's particles are packed more tightly together than air's, which helps sound move through faster.", "easy": "Water's particles are packed more tightly than air's, helping sound move faster."},
+    "medium": {"hard": "Closer particle spacing allows vibrational energy to transfer from particle to neighboring particle more rapidly and efficiently.", "medium": "In a solid, particles are packed much closer together, so vibrations pass between them more quickly.", "easy": "In a solid, particles are packed tightly together, so vibrations pass between them faster."},
+    "hard": {"hard": "Sound is a mechanical wave relying on particle collisions (favored by tighter packing), while light is an electromagnetic wave whose interaction with a medium's charged particles (electrons) actually impedes its passage, following an entirely separate physical principle.", "medium": "Sound and light work in totally different ways -- sound needs particles bumping into each other, but light gets slowed down by interacting with the material's electrons instead.", "easy": "Sound and light work totally differently -- sound needs particles bumping together, while light gets slowed down interacting with a material's atoms in a different way."}
+  }
+}
+]

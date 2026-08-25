@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of translations, reflections, and rotations (geometric transformations)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'translation' in geometry refers to:",
+    "options": [
+      {"text": "Sliding a shape to a new position without rotating, resizing, or flipping it", "isCorrect": true, "feedback": "Correct -- a translation moves every point of a figure the same distance in the same direction, preserving its size, shape, and orientation."},
+      {"text": "Flipping a shape over a line, creating a mirror image", "isCorrect": false, "feedback": "That describes a REFLECTION, not a translation, which specifically involves sliding without flipping."},
+      {"text": "Turning a shape around a fixed point", "isCorrect": false, "feedback": "That describes a ROTATION, not a translation, which specifically involves sliding without turning."},
+      {"text": "Making a shape larger or smaller", "isCorrect": false, "feedback": "That describes a DILATION (resizing), not a translation, which specifically preserves the shape's original size."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A point at coordinates (3, 5) is reflected over the x-axis. What are its new coordinates?",
+    "options": [
+      {"text": "(3, -5)", "isCorrect": true, "feedback": "Correct -- reflecting over the x-axis keeps the x-coordinate the same but flips the sign of the y-coordinate."},
+      {"text": "(-3, 5)", "isCorrect": false, "feedback": "This would be correct for a reflection over the Y-axis, not the x-axis -- reflecting over the x-axis flips the y-coordinate's sign, not the x-coordinate's."},
+      {"text": "(-3, -5)", "isCorrect": false, "feedback": "This flips BOTH coordinates' signs, which would describe a 180-degree rotation about the origin, not a simple reflection over the x-axis."},
+      {"text": "(5, 3)", "isCorrect": false, "feedback": "This swaps the coordinates entirely, which doesn't correctly describe a reflection over the x-axis."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A point at (4, 2) is rotated 90 degrees counterclockwise around the origin. Using the rule (x,y) → (-y,x) for this specific rotation, what are the new coordinates?",
+    "options": [
+      {"text": "(-2, 4)", "isCorrect": true, "feedback": "Correct -- applying the rule (x,y)→(-y,x) to (4,2): the new x-coordinate is -2 (negative of original y), and the new y-coordinate is 4 (original x)."},
+      {"text": "(2, -4)", "isCorrect": false, "feedback": "This applies the rule in reverse order (y,-x) instead of the correct (-y,x) transformation rule."},
+      {"text": "(-4, -2)", "isCorrect": false, "feedback": "This would result from a 180-degree rotation, not the specified 90-degree counterclockwise rotation."},
+      {"text": "(4, -2)", "isCorrect": false, "feedback": "This only flips the y-coordinate's sign without correctly swapping the x and y positions as the rotation rule requires."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This transformation preserves a figure's orientation, size, and shape while repositioning every point by an identical directional displacement.", "medium": "This just moves a shape to a new spot without changing its size or flipping it around.", "easy": "This just slides a shape to a new spot without flipping or resizing it."},
+    "medium": {"hard": "Recall the specific coordinate transformation rule associated with reflecting a point across the horizontal axis.", "medium": "Reflecting over the x-axis keeps the first number the same but flips the sign of the second number.", "easy": "Keep the 3 the same, but flip the 5 to -5: (3,-5)."},
+    "hard": {"hard": "Substitute the point's coordinates directly into the given transformation rule, carefully tracking which value becomes negative and which positions swap.", "medium": "Apply the rule (x,y) becomes (-y,x): take the negative of 2 for the new first number, and keep 4 as the new second number.", "easy": "Negative of 2 is -2 (new x), and 4 stays as the new y: (-2,4)."}
+  }
+}
+]

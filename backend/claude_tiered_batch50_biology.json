@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the immune system's memory (why vaccines work)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the basic purpose of a vaccine?",
+    "options": [
+      {"text": "To train the immune system to recognize a specific pathogen without causing full-blown disease", "isCorrect": true, "feedback": "Correct -- vaccines expose the immune system to a harmless version or piece of a pathogen, prompting it to build defenses in advance."},
+      {"text": "To immediately cure an active infection", "isCorrect": false, "feedback": "Vaccines are primarily preventive, given BEFORE infection to build immunity -- they aren't typically used to cure an already-active infection."},
+      {"text": "To permanently weaken the immune system", "isCorrect": false, "feedback": "Vaccines are designed to STRENGTHEN the immune system's preparedness against specific pathogens, not weaken it."},
+      {"text": "To kill all bacteria and viruses in the body at once", "isCorrect": false, "feedback": "Vaccines target a specific pathogen for immune recognition -- they don't broadly kill all bacteria and viruses in the body."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "After the immune system fights off a pathogen (either from a real infection or a vaccine), some immune cells become 'memory cells' that persist long-term. How do these memory cells provide future protection?",
+    "options": [
+      {"text": "They allow the immune system to recognize and respond to that same pathogen much faster and more strongly if encountered again", "isCorrect": true, "feedback": "Correct -- this immunological memory is exactly why previously encountered (or vaccinated against) pathogens trigger a much quicker, stronger immune response upon re-exposure."},
+      {"text": "They physically prevent that pathogen from ever entering the body again", "isCorrect": false, "feedback": "Memory cells don't act as a physical barrier -- they enable a faster, stronger immune RESPONSE once the pathogen does enter, rather than preventing entry itself."},
+      {"text": "They have no actual effect on future immune responses", "isCorrect": false, "feedback": "Memory cells have a very significant effect -- they're the entire basis for long-term immunity, enabling faster and stronger responses upon re-exposure."},
+      {"text": "They cause the immune system to become weaker each time it encounters the same pathogen", "isCorrect": false, "feedback": "This is backwards -- memory cells make the immune response STRONGER and faster upon re-exposure, not weaker."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some diseases, like the flu, require a new vaccine each year, while others (like measles) can be prevented with long-lasting immunity from just one or two vaccine doses. What's a key biological reason for this difference?",
+    "options": [
+      {"text": "Flu viruses undergo frequent genetic mutation ('antigenic drift'), changing their surface proteins enough that the immune system's memory cells from a prior vaccine no longer recognize the new viral variant effectively", "isCorrect": true, "feedback": "Correct -- since immune memory is highly specific to particular molecular features of a pathogen, rapidly mutating viruses like influenza can effectively 'escape' recognition by previously formed memory cells, unlike more genetically stable viruses like measles."},
+      {"text": "The flu virus doesn't actually trigger any immune memory response at all", "isCorrect": false, "feedback": "The flu virus does trigger immune memory -- the issue is that the virus itself mutates significantly, meaning that memory becomes less effective against new viral variants over time."},
+      {"text": "Measles vaccines actually need to be given every year too, just like flu vaccines", "isCorrect": false, "feedback": "This isn't accurate -- measles vaccination typically provides very long-lasting immunity with just one or two doses, unlike the flu vaccine, which needs annual updates."},
+      {"text": "This difference has nothing to do with how much each virus mutates over time", "isCorrect": false, "feedback": "Viral mutation rate is actually the key factor explaining this difference -- rapidly mutating viruses like influenza require more frequent vaccine updates than more stable viruses like measles."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This medical intervention exposes the immune system to a controlled representation of a pathogen to elicit a protective adaptive response.", "medium": "This is a shot that teaches your immune system to recognize a germ before you actually get sick from it.", "easy": "This is a shot that teaches your immune system to recognize a germ before you get sick."},
+    "medium": {"hard": "Consider how having previously 'seen' a specific pathogen allows for a faster, more targeted immune response upon subsequent encounters.", "medium": "These special cells remember the germ, so next time it shows up, the body can fight it off much quicker.", "easy": "These special cells remember the germ, so the body can fight it off much quicker next time."},
+    "hard": {"hard": "Consider how the degree of genetic stability (or instability) of a pathogen over time affects whether previously formed immune memory remains effective against future encounters.", "medium": "The flu virus changes its appearance a lot over time, so old immune memory doesn't recognize the newer versions as well.", "easy": "The flu virus changes a lot over time, so old immune memory doesn't recognize newer versions as well."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between phenotypic variation caused by genetics vs. environment",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Identical twins share 100% of their DNA. If they show slightly different heights as adults, this difference is most likely due to:",
+    "options": [
+      {"text": "Environmental factors (like nutrition or health during development)", "isCorrect": true, "feedback": "Correct -- since identical twins share identical genes, any observed phenotypic differences between them must stem from environmental factors, not genetic differences."},
+      {"text": "Differences in their genetic code (DNA sequence)", "isCorrect": false, "feedback": "This isn't accurate -- identical twins share IDENTICAL DNA, so genetic differences CANNOT explain any phenotypic differences between them -- environmental factors must be responsible instead."},
+      {"text": "Random chance with no identifiable cause whatsoever", "isCorrect": false, "feedback": "While some variation might seem hard to fully pin down, DIFFERENCES between identical twins are generally attributable to identifiable ENVIRONMENTAL factors, not pure unexplainable randomness."},
+      {"text": "This scenario is actually impossible and could never occur in reality", "isCorrect": false, "feedback": "This isn't accurate -- height differences between identical twins ARE a real, commonly observed phenomenon, specifically explained by environmental factors despite their identical genetics."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Studies comparing identical twins (100% shared DNA) to fraternal twins (about 50% shared DNA) raised in similar environments help researchers estimate how much a trait's variation is due to GENETIC versus ENVIRONMENTAL factors. Why is this comparison design useful?",
+    "options": [
+      {"text": "Since identical twins share ALL their genes while fraternal twins share only ABOUT HALF, and both types typically share similar environments, if identical twins show MUCH GREATER similarity for a trait than fraternal twins, that difference can be attributed to greater genetic similarity, helping estimate genetics' relative contribution", "isCorrect": true, "feedback": "Correct -- this classic twin-study design leverages the differing genetic relatedness between identical and fraternal twins (while controlling for similarly shared environments) to help disentangle genetic versus environmental contributions to trait variation."},
+      {"text": "This twin-comparison design actually provides no useful information for distinguishing genetic from environmental influences", "isCorrect": false, "feedback": "This isn't accurate -- this design provides GENUINELY USEFUL information, which is precisely why it's such a widely used, foundational approach in genetics research."},
+      {"text": "Identical and fraternal twins actually share exactly the same percentage of genetic material", "isCorrect": false, "feedback": "This isn't accurate -- identical twins share 100% of their DNA, while fraternal twins share only about 50% -- this genuine difference is precisely what makes the comparison meaningful."},
+      {"text": "Environmental similarity between twins raised together has no actual relevance to this research design", "isCorrect": false, "feedback": "This isn't accurate -- environmental similarity IS important to control for, since it helps isolate genetic relatedness as the key varying factor between the two twin types."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Twin studies estimate a trait's 'heritability' (the proportion of trait variation attributable to genetic differences WITHIN a specific studied population). Why is it a common but important misconception to interpret a high heritability estimate (like 80%) as meaning 'this trait is 80% caused by genes, in general, for any individual'?",
+    "options": [
+      {"text": "Heritability specifically describes the proportion of VARIATION BETWEEN INDIVIDUALS in a particular population attributable to genetic differences, NOT the degree to which genes determine a trait within any single individual -- a high heritability estimate can still coexist with substantial environmental influence on the trait overall, and heritability estimates can even change if the environmental variation within that population changes", "isCorrect": true, "feedback": "Correct -- this important, commonly misunderstood distinction (population-level variance explanation vs. individual-level causal determination) is crucial for correctly interpreting heritability estimates from twin studies and avoiding a very common, significant misinterpretation of what these statistics actually mean."},
+      {"text": "A heritability estimate of 80% actually does correctly mean that 80% of an individual's specific trait value is directly caused by their genes", "isCorrect": false, "feedback": "This isn't accurate -- this is precisely the COMMON MISCONCEPTION being described -- heritability is a population-level VARIANCE statistic, not a statement about individual-level causation."},
+      {"text": "Heritability estimates would actually remain completely fixed and unchanging, regardless of any changes in a population's environmental variation", "isCorrect": false, "feedback": "This isn't accurate -- heritability estimates CAN actually change if the environmental variation within the studied population changes, since heritability is specifically a RELATIVE measure comparing genetic to environmental variance sources."},
+      {"text": "This distinction between population-level variance and individual-level causation has no actual practical importance for correctly interpreting twin study results", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has SIGNIFICANT practical importance for correctly interpreting heritability estimates and avoiding a very common, genuinely consequential misinterpretation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Since genotype is held constant between monozygotic twins, any observed phenotypic divergence must originate from differential environmental exposure.", "medium": "Since their genes are identical, any difference between them must come from something in their environment instead.", "easy": "Since their genes are identical, any difference must come from their environment."},
+    "medium": {"hard": "Consider how holding environmental similarity roughly constant across both twin types isolates differing genetic relatedness as the explanatory variable for any differing degree of trait similarity observed.", "medium": "If twins who share ALL their genes end up much more alike than twins who share only HALF their genes, that extra similarity points to genes being a big part of the story.", "easy": "If twins sharing all their genes are much more alike than twins sharing half, that points to genes mattering."},
+    "hard": {"hard": "Consider how a variance-partitioning statistic computed across a population sample does not translate into a proportional causal attribution applicable to any single individual's trait expression.", "medium": "Heritability is really about comparing DIFFERENCES between people in a group, not about how much of any one single person's trait comes from their genes specifically.", "easy": "Heritability compares differences between people in a group, not how much of one person's trait comes from genes."}
+  }
+}
+]

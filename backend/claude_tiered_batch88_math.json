@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the pigeonhole principle in combinatorics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The pigeonhole principle states that if you have more items than containers, then:",
+    "options": [
+      {"text": "At least one container must hold more than one item", "isCorrect": true, "feedback": "Correct -- this simple but powerful principle guarantees at least one 'overloaded' container whenever items outnumber containers."},
+      {"text": "Every container must hold exactly the same number of items", "isCorrect": false, "feedback": "This isn't what the principle guarantees -- it only guarantees that AT LEAST ONE container has more than one item, not that all containers have equal amounts."},
+      {"text": "Some containers must remain completely empty", "isCorrect": false, "feedback": "This isn't necessarily guaranteed by the pigeonhole principle -- it specifically only guarantees that at least one container is 'overloaded' (has more than one item), not that others must be empty."},
+      {"text": "It is impossible to distribute the items among the containers at all", "isCorrect": false, "feedback": "This isn't accurate -- distribution IS possible; the pigeonhole principle specifically guarantees a certain OUTCOME of that distribution (at least one overloaded container), not that distribution itself is impossible."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a room of 13 people, why must at least two people share the same birth MONTH (ignoring year), according to the pigeonhole principle?",
+    "options": [
+      {"text": "Since there are only 12 possible birth months (containers) but 13 people (items), at least one month must contain 2 or more people", "isCorrect": true, "feedback": "Correct -- with 13 items (people) needing to fit into only 12 containers (months), the pigeonhole principle guarantees at least one month must be shared by at least two people."},
+      {"text": "This is actually just a coincidence with no real mathematical guarantee behind it", "isCorrect": false, "feedback": "This isn't accurate -- this IS mathematically guaranteed by the pigeonhole principle, not merely coincidental, given that there are more people (13) than available months (12)."},
+      {"text": "This would only be true if there were exactly 12 people, not 13", "isCorrect": false, "feedback": "This isn't accurate -- the guarantee specifically requires MORE items than containers (13 people > 12 months), which is precisely why 13 (not exactly 12) people guarantees this outcome."},
+      {"text": "The number of possible birth months has no actual connection to this guarantee", "isCorrect": false, "feedback": "This isn't accurate -- the number of possible birth months (12, serving as the 'containers') is DIRECTLY and centrally connected to and is precisely why this specific guarantee holds when there are 13 people."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A more advanced ('generalized') version of the pigeonhole principle states that if you distribute N items into K containers, at least one container must hold AT LEAST ⌈N/K⌉ items (the ceiling/rounded-up value of N divided by K). Using this generalized version, if 50 students are distributed among 8 classrooms, what is the minimum number of students guaranteed to be in at least one classroom?",
+    "options": [
+      {"text": "7 students (since 50/8=6.25, rounded up to 7)", "isCorrect": true, "feedback": "Correct -- since 50÷8=6.25, and we must round UP (ceiling function) for this guarantee, at least one classroom must contain at least 7 students."},
+      {"text": "6 students", "isCorrect": false, "feedback": "This doesn't correctly apply the CEILING (round-up) function required by the generalized pigeonhole principle -- simply rounding down (or truncating) 6.25 to 6 isn't mathematically correct for this guarantee."},
+      {"text": "50 students", "isCorrect": false, "feedback": "This is just the total number of students, not the correctly calculated minimum guaranteed number in any single classroom based on the generalized principle."},
+      {"text": "8 students", "isCorrect": false, "feedback": "This is just the total number of classrooms, not the correctly calculated minimum guaranteed number of students in any single classroom."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This principle guarantees that distributing a set exceeding a given container count necessitates at least one container accommodating multiple set elements.", "medium": "If you have more things than boxes to put them in, at least one box has to end up with more than one thing.", "easy": "If you have more things than boxes, at least one box ends up with more than one thing."},
+    "medium": {"hard": "Compare the total item count against the total available distinct container count to determine whether the basic pigeonhole guarantee applies.", "medium": "Count how many possible months there are (12) versus how many people there are (13) -- since people outnumber months, someone has to share.", "easy": "There are 12 months but 13 people, so at least two people must share a month."},
+    "hard": {"hard": "Apply the generalized pigeonhole formula by dividing the total item count by the total container count, then round the result up to the nearest whole number.", "medium": "Divide 50 by 8 to get 6.25, then round UP to the next whole number since you can't have a fraction of a student.", "easy": "50 divided by 8 is 6.25, rounded up to 7."}
+  }
+}
+]

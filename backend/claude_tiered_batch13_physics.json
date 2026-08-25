@@ -1,0 +1,125 @@
+[
+{
+  "topic": "the relationship between mass and inertia",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is inertia?",
+    "options": [
+      {"text": "An object's resistance to a change in its motion", "isCorrect": true, "feedback": "Correct -- inertia describes how much an object 'resists' speeding up, slowing down, or changing direction."},
+      {"text": "The speed an object is traveling at", "isCorrect": false, "feedback": "That describes velocity, not inertia."},
+      {"text": "The force of gravity on an object", "isCorrect": false, "feedback": "That describes weight, a specific force, not the general concept of inertia."},
+      {"text": "The color of a moving object", "isCorrect": false, "feedback": "Color has no bearing on the physics concept of inertia."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Between a bowling ball and a tennis ball, which has more inertia?",
+    "options": [
+      {"text": "The bowling ball, because it has more mass", "isCorrect": true, "feedback": "Correct -- inertia is directly related to mass, so the more massive bowling ball has greater inertia."},
+      {"text": "The tennis ball, because it's smaller", "isCorrect": false, "feedback": "Smaller size doesn't mean less inertia if we're comparing to a much more massive object -- mass, not size alone, determines inertia."},
+      {"text": "They have exactly the same inertia", "isCorrect": false, "feedback": "Since their masses are very different, their inertia is different too, not equal."},
+      {"text": "Neither object has any inertia at all", "isCorrect": false, "feedback": "All objects with mass have inertia -- both of these balls definitely have some."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is it much harder to change the direction of a fully loaded truck than an empty shopping cart, even if both are moving at the same speed?",
+    "options": [
+      {"text": "The truck has significantly more mass, giving it greater inertia and thus more resistance to any change in its motion", "isCorrect": true, "feedback": "Correct -- greater mass means greater inertia, requiring more force to change the object's velocity or direction."},
+      {"text": "The truck is traveling faster than the shopping cart", "isCorrect": false, "feedback": "The scenario specifies they're moving at the same speed, so speed isn't the differentiating factor here -- mass is."},
+      {"text": "The shopping cart has more inertia due to its wheels", "isCorrect": false, "feedback": "Wheels don't determine inertia -- mass does, and the truck has far more mass than the cart."},
+      {"text": "There is no real difference in how hard it is to redirect them", "isCorrect": false, "feedback": "There's a very real, significant difference due to the large disparity in mass between a loaded truck and an empty cart."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property reflects how strongly an object resists any change to its current state of motion.", "medium": "This is how much an object \"wants\" to keep doing what it's already doing.", "easy": "This is how much something resists having its motion changed."},
+    "medium": {"hard": "This resistance to motion change scales directly with how much matter (mass) the object contains.", "medium": "More mass means more resistance to having its motion changed.", "easy": "The heavier ball has more resistance to having its motion changed."},
+    "hard": {"hard": "Since inertia scales directly with mass, and the truck vastly outweighs the cart, a proportionally much larger force is required to alter the truck's velocity or direction.", "medium": "Since the truck weighs so much more, it takes a lot more force to change its direction compared to the much lighter cart.", "easy": "Since the truck weighs so much more, it takes a lot more force to turn it compared to the light cart."}
+  }
+},
+{
+  "topic": "the electromagnetic spectrum: infrared and ultraviolet",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which type of electromagnetic wave is commonly associated with the heat you feel from a warm object?",
+    "options": [
+      {"text": "Infrared radiation", "isCorrect": true, "feedback": "Correct -- infrared radiation is closely associated with heat, which is why thermal cameras detect it."},
+      {"text": "Radio waves", "isCorrect": false, "feedback": "Radio waves are used for broadcasting signals, not primarily associated with the sensation of heat."},
+      {"text": "Gamma rays", "isCorrect": false, "feedback": "Gamma rays are extremely high-energy waves used in medical/industrial applications, not typically associated with everyday warmth sensation."},
+      {"text": "Visible light only", "isCorrect": false, "feedback": "While visible light can carry some heat, infrared radiation is specifically and primarily associated with heat sensation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why is ultraviolet (UV) radiation from the sun a concern for skin health?",
+    "options": [
+      {"text": "UV radiation carries enough energy to damage skin cells and DNA, potentially causing sunburn or increasing cancer risk over time", "isCorrect": true, "feedback": "Correct -- UV's higher energy (compared to visible light) makes it capable of causing this kind of biological damage."},
+      {"text": "UV radiation is actually harmless and has no effect on skin", "isCorrect": false, "feedback": "UV radiation is a well-documented cause of sunburn and increased skin cancer risk with excessive exposure."},
+      {"text": "UV radiation only affects clothing, not skin directly", "isCorrect": false, "feedback": "UV radiation directly affects exposed skin -- clothing can offer some protection, but skin protection is the primary health concern."},
+      {"text": "UV radiation is a type of sound wave, not related to skin health", "isCorrect": false, "feedback": "UV radiation is an electromagnetic wave, not a sound wave, and it does have well-documented effects on skin."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Infrared cameras can detect warm objects (like people) in complete darkness, without any visible light present. How is this possible?",
+    "options": [
+      {"text": "Warm objects naturally emit infrared radiation due to their heat, and this radiation doesn't require visible light to exist or be detected", "isCorrect": true, "feedback": "Correct -- infrared radiation is emitted by objects based on their temperature, independent of whether visible light is present in the environment."},
+      {"text": "Infrared cameras actually create their own visible light to illuminate the scene", "isCorrect": false, "feedback": "Infrared cameras detect radiation the object itself emits due to heat -- they don't rely on producing visible light to see."},
+      {"text": "Warm objects don't actually emit any radiation of their own", "isCorrect": false, "feedback": "Warm objects genuinely emit infrared radiation as a direct consequence of their thermal energy -- this is exactly the basis for infrared camera technology."},
+      {"text": "This technology only works in bright daylight, not darkness", "isCorrect": false, "feedback": "Infrared cameras specifically excel in darkness, precisely because they detect heat-based infrared emission rather than relying on visible light."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of electromagnetic wave has a lower frequency than visible light and is closely tied to thermal energy.", "medium": "This wave type is closely linked to the warmth given off by objects.", "easy": "This wave type is closely linked to heat."},
+    "medium": {"hard": "This wave type carries more energy than visible light, enough to potentially disrupt biological molecules like DNA.", "medium": "This type of light carries enough energy to potentially harm living cells with too much exposure.", "easy": "This type of light from the sun can burn skin with too much exposure."},
+    "hard": {"hard": "All objects above absolute zero emit thermal (infrared) radiation proportional to their temperature, entirely independent of the presence or absence of visible light in the surrounding environment.", "medium": "Any warm object naturally gives off this type of radiation just from having heat, whether or not there's any visible light around.", "easy": "Warm objects naturally give off this radiation just from having heat, even in total darkness."}
+  }
+},
+{
+  "topic": "the difference between AC and DC electric current",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'DC' stand for in electrical current?",
+    "options": [
+      {"text": "Direct current", "isCorrect": true, "feedback": "Correct -- DC current flows steadily in one direction only."},
+      {"text": "Dual current", "isCorrect": false, "feedback": "This isn't what the DC abbreviation actually stands for."},
+      {"text": "Digital current", "isCorrect": false, "feedback": "This isn't what the DC abbreviation actually stands for."},
+      {"text": "Delayed current", "isCorrect": false, "feedback": "This isn't what the DC abbreviation actually stands for."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the key difference between AC (alternating current) and DC (direct current)?",
+    "options": [
+      {"text": "AC periodically reverses direction, while DC flows steadily in one direction only", "isCorrect": true, "feedback": "Correct -- this reversing behavior is exactly what \"alternating\" refers to in AC."},
+      {"text": "AC only works in batteries, while DC only works in wall outlets", "isCorrect": false, "feedback": "This is actually backwards from typical usage -- batteries commonly provide DC, while wall outlets in most countries provide AC."},
+      {"text": "There is no real difference between AC and DC", "isCorrect": false, "feedback": "These are genuinely distinct types of electrical current, differing in whether the flow direction changes over time."},
+      {"text": "AC only flows through water, while DC only flows through metal", "isCorrect": false, "feedback": "Both AC and DC can flow through the same types of conductive materials -- the distinction isn't about the medium, but the current's directional behavior."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Household electrical outlets typically supply AC power, while most portable electronics (like phones) run internally on DC power. Why does this mismatch require a power adapter/charger?",
+    "options": [
+      {"text": "The adapter converts the alternating current from the outlet into the steady direct current that the device's internal circuitry actually needs", "isCorrect": true, "feedback": "Correct -- this AC-to-DC conversion is a core function of most electronic chargers and power adapters."},
+      {"text": "The adapter simply makes the electricity travel faster", "isCorrect": false, "feedback": "Speed of electrical flow isn't the adapter's main function -- converting between current types (AC to DC) is."},
+      {"text": "There is actually no real difference between the outlet's power and the device's needs", "isCorrect": false, "feedback": "There IS a real, functional mismatch (AC vs DC) that specifically necessitates a conversion device."},
+      {"text": "The adapter's only job is to change the electricity's color", "isCorrect": false, "feedback": "Electricity doesn't have a visible color in this sense -- the adapter's real job is converting between AC and DC current types."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term describes current that flows consistently in a single direction over time.", "medium": "This is current that flows in just one steady direction.", "easy": "This is the type of current that flows in just one direction."},
+    "medium": {"hard": "One current type periodically switches directions over time; the other maintains constant directional flow.", "medium": "One type of current keeps switching back and forth; the other just flows one steady way.", "easy": "One type keeps switching direction back and forth; the other just flows one way."},
+    "hard": {"hard": "The adapter contains circuitry (a rectifier) that transforms the periodically reversing input current into the steady, one-directional output current the device's components require.", "medium": "The charger has to change the back-and-forth power from the wall into the steady one-directional power the phone's insides actually need.", "easy": "The charger changes the back-and-forth wall power into the steady power the phone's insides need."}
+  }
+}
+]

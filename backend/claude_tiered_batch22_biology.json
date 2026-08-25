@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a species' carrying capacity vs. actual population size",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What generally happens when a population size is well below the environment's carrying capacity?",
+    "options": [
+      {"text": "The population tends to grow, since resources are plentiful relative to the number of individuals", "isCorrect": true, "feedback": "Correct -- with abundant resources available, births typically exceed deaths, allowing the population to increase."},
+      {"text": "The population immediately crashes to zero", "isCorrect": false, "feedback": "Being below carrying capacity generally supports growth, not collapse -- resources are relatively abundant in this scenario."},
+      {"text": "The population stays exactly the same size forever", "isCorrect": false, "feedback": "With abundant resources relative to population size, growth is the more typical expected trend, not a static population."},
+      {"text": "The carrying capacity itself decreases", "isCorrect": false, "feedback": "Carrying capacity is set by the environment's resources, not directly changed by the population being below it."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A population graph often shows an 'S-shaped' (logistic) growth curve. What does the flattening of the curve at the top represent?",
+    "options": [
+      {"text": "The population approaching the environment's carrying capacity, where growth slows as resources become limited", "isCorrect": true, "feedback": "Correct -- this leveling off reflects the population reaching a sustainable balance with available resources."},
+      {"text": "The population growing infinitely without any limit", "isCorrect": false, "feedback": "An S-shaped curve specifically shows growth SLOWING and leveling off, the opposite of infinite, unchecked growth."},
+      {"text": "The complete extinction of the population", "isCorrect": false, "feedback": "A flattening curve represents population stabilization near carrying capacity, not a decline toward extinction."},
+      {"text": "A sudden, random event with no biological explanation", "isCorrect": false, "feedback": "This flattening has a clear biological explanation: resource limitation as the population approaches carrying capacity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Sometimes a population temporarily overshoots its carrying capacity before crashing back down, rather than smoothly leveling off. Why might this overshoot-and-crash pattern occur instead of a smooth approach to carrying capacity?",
+    "options": [
+      {"text": "There can be a time delay between resource depletion and its effects on birth/death rates, causing the population to keep growing briefly even as resources are already becoming insufficient", "isCorrect": true, "feedback": "Correct -- this lag effect means the population doesn't immediately \"know\" resources are running out, leading to a temporary overshoot before the correction (crash) occurs."},
+      {"text": "Carrying capacity doesn't actually exist in real ecosystems", "isCorrect": false, "feedback": "Carrying capacity is a real, well-documented ecological concept -- this overshoot pattern is actually a known variation in how populations approach it."},
+      {"text": "This pattern only happens in laboratory settings, never in nature", "isCorrect": false, "feedback": "Overshoot-and-crash population dynamics have actually been observed in various real natural populations, not just lab settings."},
+      {"text": "The population's carrying capacity randomly increases and then decreases for no reason", "isCorrect": false, "feedback": "The explanation isn't a random change in carrying capacity -- it's a time-delay effect in how the population responds to approaching resource limits."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "With ample resources relative to population size, conditions favor increased reproduction and survival.", "medium": "With plenty of resources still available, more individuals tend to survive and reproduce.", "easy": "With plenty of resources still available, the population tends to grow."},
+    "medium": {"hard": "This leveling reflects the population reaching a balance point where resource availability caps further sustained growth.", "medium": "This shows the population settling into a stable size that the environment can actually support long-term.", "easy": "This shows the population leveling off at the biggest size the environment can support."},
+    "hard": {"hard": "A delay between when resources actually become scarce and when that scarcity measurably affects birth and death rates allows population momentum to carry growth past the sustainable limit before a correction occurs.", "medium": "There's often a delay before the population actually \"feels\" the effects of running low on resources, so it keeps growing a bit too long before crashing back down.", "easy": "There's often a delay before the population notices resources are running low, so it keeps growing a bit too long before crashing."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between activation energy and reaction spontaneity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Activation energy refers to:",
+    "options": [
+      {"text": "The minimum energy needed for a reaction to actually begin/proceed", "isCorrect": true, "feedback": "Correct -- activation energy represents the energy barrier that reactant particles must overcome before a reaction can actually start occurring."},
+      {"text": "The total energy released by a completed reaction", "isCorrect": false, "feedback": "That describes the reaction's overall energy change/release (related to enthalpy), not activation energy, which specifically concerns the initial energy BARRIER needed to START the reaction."},
+      {"text": "The exact temperature at which a substance boils", "isCorrect": false, "feedback": "Boiling point is an unrelated physical property from activation energy, which specifically concerns the energy threshold needed to initiate a chemical reaction."},
+      {"text": "A measurement of a reaction's final products' mass", "isCorrect": false, "feedback": "Product mass is unrelated to activation energy, which specifically concerns the initial energy barrier needed to start a reaction, not final product measurements."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A reaction can be thermodynamically spontaneous (energetically favorable overall, negative ΔG) while STILL requiring a significant activation energy input to actually get started (like how paper burning is spontaneous but doesn't ignite on its own without a spark/flame). Why is it important to understand that these are two SEPARATE considerations, not the same thing?",
+    "options": [
+      {"text": "Spontaneity (thermodynamics) tells you whether a reaction is energetically favorable OVERALL once it occurs, while activation energy (kinetics) tells you about the initial energy barrier that must be overcome to actually START that reaction -- a reaction can be favorable in the end (spontaneous) while still needing that initial 'push' to begin", "isCorrect": true, "feedback": "Correct -- this important distinction between thermodynamic favorability (WILL it eventually happen, energetically) and kinetic accessibility (CAN it easily get started) explains many everyday observations, like stable but spontaneously-combustible materials (such as paper) not spontaneously combusting without an initial energy input like a spark."},
+      {"text": "Spontaneity and activation energy are actually exactly the same concept, just described using different terminology", "isCorrect": false, "feedback": "This isn't accurate -- these are GENUINELY DIFFERENT concepts (overall energetic favorability vs. initial energy barrier to starting), which is precisely why a reaction can be spontaneous overall while still requiring significant activation energy to actually begin."},
+      {"text": "A reaction with high activation energy could actually never be considered thermodynamically spontaneous", "isCorrect": false, "feedback": "This isn't accurate -- a reaction CAN have BOTH high activation energy (hard to start) AND overall spontaneity (favorable once started) simultaneously, which is precisely the important point being illustrated by examples like paper burning."},
+      {"text": "This distinction between spontaneity and activation energy has no actual real-world practical relevance or examples", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has SIGNIFICANT real-world practical relevance, explaining many common observations (like why spontaneously-combustible materials don't just spontaneously combust without an initial energy trigger)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Catalysts specifically lower a reaction's activation energy (making it easier/faster to start) WITHOUT changing the reaction's overall thermodynamic spontaneity/energy change (ΔG remains the same). Why is it significant that catalysts affect ONLY the kinetic (activation energy) aspect, and NOT the thermodynamic (spontaneity) aspect of a reaction?",
+    "options": [
+      {"text": "This demonstrates that catalysts specifically influence HOW QUICKLY/EASILY a reaction can proceed (kinetics) without altering WHETHER that reaction is fundamentally energetically favorable overall (thermodynamics) -- catalysts cannot make a genuinely non-spontaneous (thermodynamically unfavorable) reaction suddenly become spontaneous; they can only help spontaneous reactions (which might otherwise be kinetically very slow) actually proceed at a practically useful rate", "isCorrect": true, "feedback": "Correct -- this important limitation/clarification (catalysts affect rate/accessibility, not fundamental thermodynamic favorability) is crucial for correctly understanding what catalysts can and cannot actually accomplish, distinguishing their kinetic role from the separate, unchangeable thermodynamic nature of a given reaction."},
+      {"text": "Catalysts actually DO change a reaction's fundamental thermodynamic spontaneity/energy change, contrary to what's being described", "isCorrect": false, "feedback": "This isn't accurate -- catalysts specifically do NOT change a reaction's fundamental thermodynamic ΔG/spontaneity; they SPECIFICALLY and ONLY affect the kinetic activation energy barrier, leaving the underlying thermodynamics completely unchanged."},
+      {"text": "This kinetics-only limitation of catalysts has no actual practical significance for understanding chemistry or catalyst applications", "isCorrect": false, "feedback": "This isn't accurate -- this limitation has SIGNIFICANT practical significance, particularly for correctly understanding that catalysts cannot make impossible (non-spontaneous) reactions suddenly become possible/favorable -- they can only speed up reactions that were ALREADY thermodynamically favorable to begin with."},
+      {"text": "Catalysts can actually make ANY reaction (spontaneous or not) proceed, regardless of that reaction's underlying thermodynamic favorability", "isCorrect": false, "feedback": "This isn't accurate -- catalysts specifically CANNOT make a fundamentally non-spontaneous (thermodynamically unfavorable) reaction proceed; they can only help speed up/facilitate reactions that are ALREADY thermodynamically favorable (spontaneous) to begin with."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity represents the minimum energy threshold that must be surmounted to initiate a given chemical transformation.", "medium": "This is the minimum amount of energy needed to actually get a reaction going.", "easy": "This is the minimum energy needed to get a reaction going."},
+    "medium": {"hard": "Distinguish between a thermodynamic assessment of overall energetic favorability across the entire reaction versus a kinetic assessment of the initial energy hurdle required just to begin that reaction.", "medium": "One idea is about whether the reaction is a 'good deal' energy-wise overall, and the other is about how hard it is to actually get that reaction started in the first place.", "easy": "One is about whether the reaction is a good energy deal overall; the other is about how hard it is to start."},
+    "hard": {"hard": "Consider how a mechanism specifically targeting the kinetic pathway (activation energy) leaves the fundamental thermodynamic energy difference between reactants and products entirely unaffected.", "medium": "Catalysts just help a reaction that was ALREADY going to happen eventually get started faster -- they can't magically make an energetically impossible reaction suddenly become possible.", "easy": "Catalysts help a reaction that was already going to happen start faster -- they can't make an impossible reaction possible."}
+  }
+}
+]

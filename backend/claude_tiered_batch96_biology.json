@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between structural and regulatory genes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'structural gene' typically codes for:",
+    "options": [
+      {"text": "A protein that performs a specific structural or functional role in the cell (like an enzyme or structural protein)", "isCorrect": true, "feedback": "Correct -- structural genes encode the actual functional proteins that carry out the cell's various activities, as opposed to genes that regulate other genes' expression."},
+      {"text": "A protein that specifically controls whether OTHER genes are turned on or off", "isCorrect": false, "feedback": "That describes a REGULATORY gene, not a structural gene -- structural genes specifically code for FUNCTIONAL proteins themselves, not proteins that control other genes."},
+      {"text": "Nothing at all -- structural genes don't actually code for any protein", "isCorrect": false, "feedback": "This isn't accurate -- structural genes DO code for actual functional proteins; that's precisely their defining characteristic."},
+      {"text": "Only genes found in the mitochondria, never in the nucleus", "isCorrect": false, "feedback": "This isn't accurate -- structural genes can be found in various cellular locations (including the nucleus), not exclusively in mitochondria."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Regulatory genes code for proteins (like transcription factors) that specifically control whether structural genes are turned on ('expressed') or off. Why is this regulatory control function important for a cell's overall efficient operation?",
+    "options": [
+      {"text": "Since not every protein/gene product is needed at all times (or in every cell type), regulatory genes allow cells to selectively activate only the specific structural genes actually needed for current conditions/cell type, conserving cellular resources and enabling appropriate, specialized cellular responses", "isCorrect": true, "feedback": "Correct -- this selective, context-dependent gene activation capability, made possible by regulatory genes/proteins, is essential for cellular efficiency and enables the vast functional diversity seen among different specialized cell types, despite sharing identical DNA."},
+      {"text": "Regulatory genes actually have no real functional importance for cellular operation", "isCorrect": false, "feedback": "This isn't accurate -- regulatory genes have HIGHLY significant functional importance, specifically enabling selective, context-appropriate gene expression control, which is essential for efficient and specialized cellular function."},
+      {"text": "All structural genes are actually always turned on/expressed at all times, making regulation unnecessary", "isCorrect": false, "feedback": "This isn't accurate -- NOT all structural genes are needed/expressed at all times; selective regulation (turning genes on/off as needed) is precisely why regulatory genes are so functionally important."},
+      {"text": "This regulatory control function has no actual connection to cellular efficiency or specialization", "isCorrect": false, "feedback": "This isn't accurate -- this regulatory control function is DIRECTLY and centrally connected to and enables both cellular efficiency (avoiding unnecessary protein production) and cellular specialization (different cell types expressing different genes)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A mutation in a regulatory gene can potentially have a much more widespread/significant effect on an organism than a mutation in a single structural gene, since a regulatory gene may control the expression of MULTIPLE different structural genes simultaneously. Why does this broader, more indirect connection (regulatory genes affecting many other genes) explain this greater potential mutational impact?",
+    "options": [
+      {"text": "Since a single regulatory gene mutation could potentially disrupt the proper activation/deactivation of MANY different downstream structural genes it normally controls, the resulting effects could cascade across multiple different cellular processes/proteins simultaneously, unlike a mutation in a single structural gene, which would typically only directly affect that ONE specific protein's function", "isCorrect": true, "feedback": "Correct -- this potential for a single regulatory mutation to have widespread, cascading effects across multiple downstream structural genes (rather than affecting just one protein directly) explains why regulatory gene mutations can sometimes have particularly significant and far-reaching consequences for an organism."},
+      {"text": "A mutation in a regulatory gene would actually only ever affect that single regulatory gene itself, with no broader downstream effects", "isCorrect": false, "feedback": "This isn't accurate -- a regulatory gene mutation CAN have significant BROADER downstream effects, specifically because it may control multiple OTHER structural genes, unlike this description suggesting an isolated, non-cascading effect."},
+      {"text": "Structural gene mutations actually always have MORE widespread effects than regulatory gene mutations", "isCorrect": false, "feedback": "This is generally backwards -- REGULATORY gene mutations often have the POTENTIAL for more WIDESPREAD effects (due to controlling multiple downstream genes), compared to a typical single structural gene mutation, which usually affects just one specific protein."},
+      {"text": "This broader potential impact has no actual connection to a regulatory gene's function of controlling multiple other genes", "isCorrect": false, "feedback": "This isn't accurate -- this broader potential impact is DIRECTLY and specifically connected to and explained by a regulatory gene's characteristic function of controlling the expression of MULTIPLE other downstream structural genes."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This gene classification encodes a polypeptide product that directly performs a specific cellular structural or enzymatic function.", "medium": "This kind of gene makes the actual protein that does a specific job in the cell.", "easy": "This kind of gene makes the actual protein that does a specific job."},
+    "medium": {"hard": "Consider how selectively controlling which genes are active allows a cell to conserve resources by producing only the specific proteins relevant to its current needs or specialized identity.", "medium": "Being able to turn specific genes on or off as needed means the cell doesn't waste energy making proteins it doesn't currently need.", "easy": "Being able to turn genes on or off means cells don't waste energy on proteins they don't need."},
+    "hard": {"hard": "Consider the difference between a mutation directly impairing a single functional protein versus a mutation disrupting a control mechanism governing the expression of numerous other functional proteins simultaneously.", "medium": "Breaking the one 'switch' that controls a bunch of different genes can mess up ALL of those genes at once, unlike breaking just one single gene, which only messes up that one thing.", "easy": "Breaking one switch that controls many genes messes up all of them, unlike breaking just one single gene."}
+  }
+}
+]

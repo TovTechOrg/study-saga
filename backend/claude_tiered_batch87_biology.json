@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between autotrophs and heterotrophs",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An 'autotroph' is an organism that:",
+    "options": [
+      {"text": "Produces its own food using energy from sunlight or chemicals", "isCorrect": true, "feedback": "Correct -- autotrophs (like plants, algae, and some bacteria) synthesize their own organic food molecules, typically via photosynthesis or chemosynthesis."},
+      {"text": "Must consume other organisms to obtain food", "isCorrect": false, "feedback": "That describes a HETEROTROPH, not an autotroph, which specifically PRODUCES its own food rather than consuming other organisms."},
+      {"text": "Cannot survive under any circumstances", "isCorrect": false, "feedback": "This isn't accurate -- autotrophs are a very successful, widespread category of organisms (including all plants), definitely capable of surviving and thriving."},
+      {"text": "Only exists in laboratory settings, never in nature", "isCorrect": false, "feedback": "This isn't accurate -- autotrophs are extremely common in nature (plants, algae, many bacteria), not confined to laboratory settings."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Heterotrophs, unlike autotrophs, cannot produce their own food and must consume other organisms (or organic matter) to obtain energy and nutrients. Why does this fundamental difference create an essential ecological dependency between these two organism categories?",
+    "options": [
+      {"text": "Since heterotrophs cannot produce their own food, they are fundamentally dependent (directly or indirectly) on autotrophs, which serve as the primary energy-capturing base of virtually all food chains/webs, initially converting sunlight/chemical energy into a usable organic form", "isCorrect": true, "feedback": "Correct -- this fundamental dependency relationship, with autotrophs serving as the essential base for capturing usable energy that then flows through food webs to heterotrophs, is a cornerstone concept in ecology."},
+      {"text": "Heterotrophs actually have no ecological dependency on autotrophs whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- heterotrophs have a FUNDAMENTAL, essential ecological dependency on autotrophs (directly or indirectly), since autotrophs serve as the primary initial energy source for virtually all food chains/webs."},
+      {"text": "Autotrophs are actually the ones dependent on heterotrophs for their basic survival needs", "isCorrect": false, "feedback": "This is generally backwards -- while some ecological interactions exist between them, the FUNDAMENTAL dependency for basic food/energy needs runs from heterotrophs TO autotrophs, not the reverse."},
+      {"text": "This fundamental difference has no actual connection to broader ecological food chain/web structures", "isCorrect": false, "feedback": "This isn't accurate -- this fundamental difference (autotroph vs. heterotroph) is DIRECTLY and centrally connected to and foundational for understanding broader ecological food chain/web structures."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some organisms, called 'mixotrophs,' can switch between autotrophic and heterotrophic modes of obtaining energy/nutrients, depending on environmental conditions (like light availability). Why might this flexible dual-strategy capability provide a significant survival advantage in certain variable or unpredictable environments?",
+    "options": [
+      {"text": "Mixotrophs can utilize photosynthesis (autotrophic mode) when sufficient light is available, but can switch to consuming other organic matter (heterotrophic mode) when light is scarce or otherwise insufficient, providing greater overall survival flexibility compared to organisms strictly limited to just one single nutritional strategy", "isCorrect": true, "feedback": "Correct -- this flexible dual-capability strategy allows mixotrophic organisms to adapt their nutritional approach based on which resource (light vs. available organic matter) happens to be more accessible in a given environmental context, providing a meaningful survival advantage in variable conditions."},
+      {"text": "Mixotrophs are actually LESS successful at surviving compared to organisms with only ONE fixed nutritional strategy", "isCorrect": false, "feedback": "This isn't accurate -- mixotrophs' flexible dual-strategy capability actually provides them with a MEANINGFUL SURVIVAL ADVANTAGE (not a disadvantage) in variable environmental conditions, compared to organisms limited to just one fixed strategy."},
+      {"text": "This flexible dual-strategy capability provides no actual advantage in any environmental conditions whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- this flexible capability actually provides a SIGNIFICANT advantage specifically in VARIABLE or UNPREDICTABLE environmental conditions, allowing adaptable resource utilization strategy switching."},
+      {"text": "Mixotrophs can only ever use ONE of these two nutritional strategies, never actually switching between them", "isCorrect": false, "feedback": "This isn't accurate -- mixotrophs are SPECIFICALLY DEFINED by their ability to SWITCH between BOTH nutritional strategies depending on conditions, not being restricted to just one fixed approach."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This organism category synthesizes its own organic nutrients through the conversion of external energy sources like light or inorganic chemical reactions.", "medium": "This is a living thing that makes its own food using sunlight or chemicals, rather than eating other things.", "easy": "This is a living thing that makes its own food using sunlight or chemicals."},
+    "medium": {"hard": "Consider how organisms lacking the capacity for independent food production must necessarily rely, directly or through intermediate steps, on organisms that DO possess that capacity.", "medium": "Since these organisms can't make their own food, they have to eat things that either make their own food, or eat something else that did.", "easy": "Since these organisms can't make their own food, they have to eat something that can (or ate something that could)."},
+    "hard": {"hard": "Consider how possessing multiple viable resource-acquisition pathways allows an organism to adaptively respond to fluctuating availability of any single specific resource type.", "medium": "Being able to switch strategies means these organisms have a backup plan if their main food source (like sunlight) isn't available for a while.", "easy": "Being able to switch strategies gives these organisms a backup plan if sunlight isn't available."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of buoyant force and floating objects at equilibrium",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "For a floating object at rest, how does the buoyant force compare to the object's weight?",
+    "options": [
+      {"text": "They are equal in magnitude", "isCorrect": true, "feedback": "Correct -- a floating object is in equilibrium, meaning the upward buoyant force exactly balances the downward weight."},
+      {"text": "The buoyant force is always much greater than the weight", "isCorrect": false, "feedback": "If buoyant force were greater, the object would accelerate upward out of the water, not float steadily -- at rest, they're equal."},
+      {"text": "The buoyant force is always much less than the weight", "isCorrect": false, "feedback": "If buoyant force were less, the object would sink, not float -- at a steady floating position, they're balanced."},
+      {"text": "There is no buoyant force acting on a floating object", "isCorrect": false, "feedback": "A floating object definitely experiences a real buoyant force -- it's exactly what's holding the object up against gravity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A boat floats partially submerged in water. If cargo is added to the boat, what typically happens to how deep it sits in the water?",
+    "options": [
+      {"text": "The boat sits lower in the water, displacing more water to generate the additional buoyant force needed to support the added weight", "isCorrect": true, "feedback": "Correct -- the boat must displace more water (sit deeper) to increase the buoyant force enough to balance the new, heavier total weight."},
+      {"text": "The boat rises higher out of the water", "isCorrect": false, "feedback": "Adding weight requires MORE buoyant force, which means displacing MORE water -- the boat sits lower, not higher."},
+      {"text": "The boat's depth in the water doesn't change at all", "isCorrect": false, "feedback": "Since the total weight increased, the boat needs to displace more water (sit deeper) to generate the additional buoyant force required."},
+      {"text": "The boat immediately sinks regardless of how much cargo is added", "isCorrect": false, "feedback": "As long as the boat can still displace enough water to match its new total weight, it will continue floating, just sitting lower -- it won't necessarily sink outright."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A ship can carry a certain maximum amount of cargo before it would need to displace more water than its hull volume allows, at which point it would sink. What does this maximum loading limit fundamentally depend on?",
+    "options": [
+      {"text": "The ship's total hull volume and the density of the water it's floating in, which together determine the maximum possible buoyant force available", "isCorrect": true, "feedback": "Correct -- once the ship's hull has displaced its maximum possible volume of water, it cannot generate any additional buoyant force, setting a hard limit on total weight it can support."},
+      {"text": "The color of the ship's hull", "isCorrect": false, "feedback": "Hull color has no bearing on buoyant force or maximum loading capacity."},
+      {"text": "The number of passengers on board, regardless of their combined weight", "isCorrect": false, "feedback": "It's specifically the total WEIGHT that matters for buoyancy calculations, not simply the number of people, regardless of their combined mass."},
+      {"text": "This limit doesn't actually exist -- ships can hypothetically carry unlimited cargo", "isCorrect": false, "feedback": "There is a very real physical limit, directly tied to the ship's maximum possible water displacement (hull volume) and water density."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "For an object in vertical equilibrium while floating, the net force must be exactly zero.", "medium": "Since the object isn't sinking or rising, the forces on it must be perfectly balanced.", "easy": "Since the object just floats steadily, the two forces must be perfectly equal."},
+    "medium": {"hard": "More weight requires more buoyant force to balance it, and buoyant force increases only by displacing a greater volume of water.", "medium": "More weight needs more upward push, and the only way to get more push is to push more water out of the way.", "easy": "More weight needs more buoyant force, so the boat has to push more water out of the way by sitting deeper."},
+    "hard": {"hard": "Maximum buoyant force is capped by the maximum volume of water the hull can possibly displace, combined with the water's density -- beyond this, no further buoyant force is available to support additional weight.", "medium": "Once the ship's hull has displaced as much water as it possibly can, there's no more upward push available to support any more weight.", "easy": "Once the ship's hull has pushed away as much water as it possibly can, there's no more upward push left for more weight."}
+  }
+}
+]

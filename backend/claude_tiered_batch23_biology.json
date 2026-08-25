@@ -1,0 +1,84 @@
+[
+{
+  "topic": "the process of transcription and translation (protein synthesis overview)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the general purpose of protein synthesis in a cell?",
+    "options": [
+      {"text": "To build proteins based on genetic instructions from DNA", "isCorrect": true, "feedback": "Correct -- protein synthesis converts genetic information into functional proteins the cell needs."},
+      {"text": "To break down old proteins for energy", "isCorrect": false, "feedback": "That describes protein breakdown/catabolism, the opposite of protein synthesis (building new proteins)."},
+      {"text": "To store genetic information permanently", "isCorrect": false, "feedback": "Genetic information storage is DNA's role -- protein synthesis is about USING that information to build proteins."},
+      {"text": "To transport oxygen throughout the body", "isCorrect": false, "feedback": "Oxygen transport is a specific job of certain proteins (like hemoglobin), but it isn't the general purpose of protein synthesis itself."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the basic difference between transcription and translation in protein synthesis?",
+    "options": [
+      {"text": "Transcription copies DNA's code into mRNA, while translation uses that mRNA code to actually build a protein", "isCorrect": true, "feedback": "Correct -- these are two distinct, sequential steps in the overall process of protein synthesis."},
+      {"text": "Transcription and translation are two names for the exact same process", "isCorrect": false, "feedback": "These are genuinely distinct steps -- transcription creates mRNA, while translation reads that mRNA to build a protein."},
+      {"text": "Translation happens first, then transcription", "isCorrect": false, "feedback": "This is backwards -- transcription (creating mRNA from DNA) happens BEFORE translation (building the protein from mRNA)."},
+      {"text": "Transcription builds proteins directly from DNA, skipping RNA entirely", "isCorrect": false, "feedback": "Transcription specifically creates an RNA copy first -- proteins aren't built directly from DNA without this RNA intermediate step."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why might it be advantageous for a cell to use an intermediate molecule (mRNA) to carry genetic instructions from the DNA (in the nucleus) to the ribosomes (where proteins are made), rather than sending the DNA itself?",
+    "options": [
+      {"text": "Using a disposable copy (mRNA) protects the original, irreplaceable DNA from damage or errors during the protein-building process, and allows multiple copies to be made for efficient, simultaneous protein production", "isCorrect": true, "feedback": "Correct -- this intermediary step adds both a layer of protection for the master genetic copy and greater production efficiency and regulatory control."},
+      {"text": "There is no actual benefit to using mRNA as an intermediate", "isCorrect": false, "feedback": "This system provides real, meaningful benefits: protecting the original DNA and enabling more efficient, regulated protein production."},
+      {"text": "DNA is actually too small to be used directly, so mRNA is needed only because DNA doesn't physically exist in cells", "isCorrect": false, "feedback": "Size isn't the actual issue, and DNA absolutely does exist in cells -- the mRNA intermediate exists for protective and regulatory reasons, not because DNA can't be found."},
+      {"text": "Ribosomes are physically incapable of interacting with any type of nucleic acid", "isCorrect": false, "feedback": "Ribosomes very much interact with a nucleic acid -- specifically mRNA -- during translation, so this isn't the reason for the intermediary step."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process converts stored hereditary information into functional cellular machinery.", "medium": "This process turns genetic instructions into an actual working protein.", "easy": "This process builds proteins using the instructions found in DNA."},
+    "medium": {"hard": "One step creates a temporary working copy of the genetic message; the other step reads that copy to assemble the actual protein.", "medium": "One step copies the DNA's message into a temporary form; the other step actually builds the protein from that message.", "easy": "One step copies DNA's message into a temporary form (mRNA); the other step uses that copy to build the protein."},
+    "hard": {"hard": "A disposable intermediate protects the master genetic template from repeated handling/damage risk, while also enabling multiple simultaneous copies for parallel, regulatable protein production.", "medium": "Making a temporary copy protects the precious original DNA from getting damaged, and lets the cell make lots of protein at once from multiple copies.", "easy": "Making a temporary copy protects the original DNA from damage, and lets the cell make protein faster using multiple copies."}
+  }
+},
+{
+  "topic": "the concept of a mutation and its potential effects",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a mutation?",
+    "options": [
+      {"text": "A change in an organism's DNA sequence", "isCorrect": true, "feedback": "Correct -- mutations are alterations to the genetic code, which can arise from various causes."},
+      {"text": "A change in an organism's diet", "isCorrect": false, "feedback": "Diet change is a behavioral/environmental factor, unrelated to the genetic definition of mutation."},
+      {"text": "The process of an organism reproducing", "isCorrect": false, "feedback": "Reproduction is a separate biological process -- mutation specifically refers to a change in DNA sequence."},
+      {"text": "The process of cell division", "isCorrect": false, "feedback": "Cell division (mitosis/meiosis) is a different process -- mutations can occur during it, but they aren't the same thing."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Are all mutations harmful to an organism?",
+    "options": [
+      {"text": "No, mutations can be harmful, neutral, or even beneficial depending on their effect", "isCorrect": true, "feedback": "Correct -- while some mutations can cause problems, others have no noticeable effect, and some can even provide an advantage."},
+      {"text": "Yes, all mutations are always harmful", "isCorrect": false, "feedback": "This is an overgeneralization -- many mutations are neutral, and some can even be beneficial for an organism's survival."},
+      {"text": "No, all mutations are always beneficial", "isCorrect": false, "feedback": "This is also an overgeneralization -- some mutations are indeed harmful, causing various problems for an organism."},
+      {"text": "Mutations have no effect on organisms whatsoever", "isCorrect": false, "feedback": "Mutations definitely CAN have effects (positive, negative, or neutral) -- they aren't universally inconsequential."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Beneficial mutations are relatively rare compared to neutral or harmful ones, yet they are crucial for evolution by natural selection. Why does their rarity not prevent evolution from occurring?",
+    "options": [
+      {"text": "Given enough individuals and generations, even rare beneficial mutations will eventually arise and can then spread through a population if they provide a survival or reproductive advantage", "isCorrect": true, "feedback": "Correct -- over long timescales and large populations, even low-probability beneficial mutations accumulate and can be strongly favored by natural selection."},
+      {"text": "Evolution actually doesn't require any mutations to occur at all", "isCorrect": false, "feedback": "Mutations are actually a fundamental source of the genetic variation that natural selection acts upon -- they are essential to the evolutionary process."},
+      {"text": "Beneficial mutations are actually just as common as harmful ones, contradicting the premise", "isCorrect": false, "feedback": "Beneficial mutations are indeed generally considered rarer than neutral or harmful ones -- but this rarity doesn't prevent evolution over sufficient time and population size."},
+      {"text": "Rare mutations can never actually spread through a whole population", "isCorrect": false, "feedback": "Beneficial mutations, even if initially rare, absolutely CAN spread through a population over generations if they confer a survival/reproductive advantage."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term refers to an alteration in the hereditary genetic material passed between generations.", "medium": "This is a change in the genetic instructions found in DNA.", "easy": "This is a change in an organism's DNA."},
+    "medium": {"hard": "Consider the range of possible outcomes a genetic change could have, rather than assuming a single fixed outcome for all mutations.", "medium": "Think about whether every single genetic change would always cause the same type of outcome.", "easy": "Think about whether every genetic change would always be good or always be bad."},
+    "hard": {"hard": "With vast numbers of individuals and reproductive events across many generations, even low-probability beneficial mutations will periodically occur and, once favored by selection, can increase in frequency over time.", "medium": "With so many individuals and so many generations passing, even rare helpful mutations eventually show up and can spread if they help survival.", "easy": "With so many individuals and generations, even rare helpful mutations eventually show up and can spread if they help survival."}
+  }
+}
+]

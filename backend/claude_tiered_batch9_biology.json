@@ -1,0 +1,207 @@
+[
+{
+  "topic": "vaccination and immunity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does a vaccine typically help the body do?",
+    "options": [
+      {"text": "Build immunity to a disease without getting sick from the full disease first", "isCorrect": true, "feedback": "Correct -- vaccines train the immune system to recognize a pathogen safely."},
+      {"text": "Immediately cure any existing infection", "isCorrect": false, "feedback": "Vaccines are mainly preventive, given before infection, not typically a cure for an existing illness."},
+      {"text": "Replace the need for white blood cells", "isCorrect": false, "feedback": "Vaccines work WITH the immune system, including white blood cells, not as a replacement for them."},
+      {"text": "Permanently remove all pathogens from the environment", "isCorrect": false, "feedback": "Vaccines protect the vaccinated individual -- they don't remove pathogens from the surrounding environment."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How do vaccines typically train the immune system?",
+    "options": [
+      {"text": "By exposing it to a weakened, inactivated, or partial form of a pathogen", "isCorrect": true, "feedback": "Correct -- this safely teaches the immune system to recognize the real pathogen later."},
+      {"text": "By removing all bacteria from the body permanently", "isCorrect": false, "feedback": "Vaccines don't eliminate all bacteria -- many bacteria are harmless or beneficial and unaffected by a specific vaccine."},
+      {"text": "By increasing body temperature to kill germs directly", "isCorrect": false, "feedback": "A vaccine's mechanism is about training immune recognition, not directly raising body temperature to kill pathogens."},
+      {"text": "By replacing red blood cells with immune cells", "isCorrect": false, "feedback": "Vaccines work with the existing immune system components, not by replacing red blood cells."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do some vaccines require a follow-up 'booster shot' months or years after the first dose?",
+    "options": [
+      {"text": "To strengthen and prolong immune memory, since antibody levels and memory cell activity can decline over time", "isCorrect": true, "feedback": "Correct -- booster shots re-expose the immune system to maintain strong, lasting protection."},
+      {"text": "Because the first shot had no effect on the immune system at all", "isCorrect": false, "feedback": "The first dose does build initial immunity -- the booster reinforces and extends that protection rather than starting from zero."},
+      {"text": "To completely change which disease the vaccine protects against", "isCorrect": false, "feedback": "A booster targets the same disease as the original vaccine, reinforcing existing protection rather than switching targets."},
+      {"text": "Because the immune system is completely destroyed after the first dose", "isCorrect": false, "feedback": "The immune system isn't destroyed by a vaccine -- protection may simply weaken somewhat over time, warranting reinforcement."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This medical tool prepares the body's defenses in advance, before a real infection occurs.", "medium": "This helps your body learn to fight a specific germ before you actually catch it.", "easy": "This helps your body learn to fight off a disease before you actually get sick."},
+    "medium": {"hard": "The immune system learns to recognize specific markers on the pathogen using a safe, non-disease-causing version or piece of it.", "medium": "The immune system studies a safe, weakened, or partial version of the germ to learn to recognize it.", "easy": "Your immune system studies a safe, weakened version of the germ to learn what it looks like."},
+    "hard": {"hard": "Immune memory (antibody levels, memory cell populations) can wane over time, so re-exposure via a booster refreshes and extends that protective response.", "medium": "The immune system's memory of the germ can fade a bit over time, so the booster helps refresh and strengthen that memory.", "easy": "Your immune system's memory of the germ can fade a little over time, so the booster helps refresh it."}
+  }
+},
+{
+  "topic": "natural selection",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is natural selection?",
+    "options": [
+      {"text": "The process by which organisms with helpful traits are more likely to survive and reproduce", "isCorrect": true, "feedback": "Correct -- natural selection favors traits that improve survival and reproductive success in a given environment."},
+      {"text": "The process of humans choosing which animals to breed", "isCorrect": false, "feedback": "That describes selective/artificial breeding, a human-driven process, not natural selection."},
+      {"text": "The process of an organism changing its traits on purpose during its lifetime", "isCorrect": false, "feedback": "Natural selection acts on inherited traits across generations, not traits an individual consciously changes."},
+      {"text": "The random mixing of two unrelated species", "isCorrect": false, "feedback": "This doesn't describe natural selection -- it's about differential survival and reproduction based on traits."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a population of moths, darker moths are better camouflaged against dark tree bark and avoid predators more often than lighter moths. Over many generations, what would natural selection predict?",
+    "options": [
+      {"text": "The population will gradually have more dark moths, since they survive and reproduce more", "isCorrect": true, "feedback": "Correct -- traits that improve survival tend to become more common in the population over generations."},
+      {"text": "The population will have equal numbers of light and dark moths forever", "isCorrect": false, "feedback": "If dark moths consistently survive better, their proportion should increase over time, not stay balanced."},
+      {"text": "All the moths will instantly turn dark within one generation", "isCorrect": false, "feedback": "Natural selection is a gradual, multi-generational process, not an instant change within individuals."},
+      {"text": "The lighter moths will develop dark camouflage during their own lifetimes", "isCorrect": false, "feedback": "Individual organisms don't change their own inherited traits during their lifetime -- selection acts across generations."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following best describes a common misconception about natural selection that the theory does NOT actually claim?",
+    "options": [
+      {"text": "That organisms can choose to evolve a trait because they need it", "isCorrect": true, "feedback": "Correct -- natural selection acts on existing random genetic variation, not on traits an organism intentionally develops out of need."},
+      {"text": "That traits improving survival tend to become more common over generations", "isCorrect": false, "feedback": "This IS an accurate part of the theory, not a misconception."},
+      {"text": "That variation among individuals in a population is necessary for selection to act on", "isCorrect": false, "feedback": "This IS an accurate requirement of the theory, not a misconception."},
+      {"text": "That environmental pressures influence which traits are favored", "isCorrect": false, "feedback": "This IS an accurate part of the theory, not a misconception."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process favors inherited traits that boost an organism's chances of surviving and passing genes onward.", "medium": "This is when the best-suited traits for an environment become more common because those organisms survive better.", "easy": "This is when organisms with helpful traits survive and have more babies than others."},
+    "medium": {"hard": "Track which trait provides a survival advantage, and predict that its frequency in the population will rise across successive generations.", "medium": "The traits that help organisms survive tend to get passed on more, so they become more common over time.", "easy": "Since dark moths survive better, there should be more dark moths in future generations."},
+    "hard": {"hard": "Natural selection acts on pre-existing, randomly arising variation -- it does not involve organisms purposefully acquiring a trait because they perceive a need for it.", "medium": "The theory doesn't say organisms can just decide to grow a trait they need -- the variation has to already exist randomly first.", "easy": "The theory doesn't say animals can just choose to grow a new trait because they need it."}
+  }
+},
+{
+  "topic": "sequence of organs in the digestive system",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which organ does food enter first in the digestive system?",
+    "options": [
+      {"text": "Mouth", "isCorrect": true, "feedback": "Correct -- digestion begins in the mouth with chewing and saliva."},
+      {"text": "Stomach", "isCorrect": false, "feedback": "The stomach comes after the mouth and esophagus, not first."},
+      {"text": "Small intestine", "isCorrect": false, "feedback": "The small intestine comes much later in the digestive sequence, after the stomach."},
+      {"text": "Large intestine", "isCorrect": false, "feedback": "The large intestine is near the end of the digestive sequence, not the beginning."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "After food leaves the stomach, which organ does it enter next?",
+    "options": [
+      {"text": "Small intestine", "isCorrect": true, "feedback": "Correct -- partially digested food (chyme) moves from the stomach into the small intestine next."},
+      {"text": "Mouth", "isCorrect": false, "feedback": "Food doesn't travel backward to the mouth after reaching the stomach."},
+      {"text": "Esophagus", "isCorrect": false, "feedback": "The esophagus is the tube food passes through BEFORE reaching the stomach, not after."},
+      {"text": "Large intestine", "isCorrect": false, "feedback": "The large intestine comes after the small intestine, not directly after the stomach."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following correctly lists the digestive organs in the order food passes through them?",
+    "options": [
+      {"text": "Mouth → esophagus → stomach → small intestine → large intestine", "isCorrect": true, "feedback": "Correct -- this is the accurate path food takes through the digestive system."},
+      {"text": "Mouth → stomach → esophagus → large intestine → small intestine", "isCorrect": false, "feedback": "This incorrectly places the esophagus after the stomach, and swaps the order of the intestines."},
+      {"text": "Esophagus → mouth → small intestine → stomach → large intestine", "isCorrect": false, "feedback": "This starts with the esophagus before the mouth, which is backwards."},
+      {"text": "Mouth → esophagus → small intestine → stomach → large intestine", "isCorrect": false, "feedback": "This incorrectly places the small intestine before the stomach."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is where mechanical breakdown by teeth and the first digestive enzyme both begin.", "medium": "This is the very start of the digestive tract, where chewing happens.", "easy": "This is where you first put food in and start chewing."},
+    "medium": {"hard": "This next organ is where most chemical digestion and nutrient absorption actually take place.", "medium": "This long, coiled organ is where most nutrients get absorbed after the stomach.", "easy": "This is the long tube where most nutrients get absorbed after the stomach."},
+    "hard": {"hard": "Trace the physical path food travels: through the throat tube, into the acidic pouch, then into the long absorptive tube, finishing in the shorter final tube.", "medium": "Follow the path: throat tube first, then the acid pouch, then the long absorbing tube, then the shorter final tube.", "easy": "Follow the path: swallowing tube, then stomach, then the long intestine, then the shorter one."}
+  }
+},
+{
+  "topic": "types of muscle tissue",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which type of muscle is under your voluntary control, like the muscles you use to lift your arm?",
+    "options": [
+      {"text": "Skeletal muscle", "isCorrect": true, "feedback": "Correct -- skeletal muscles are attached to bones and are voluntarily controlled."},
+      {"text": "Cardiac muscle", "isCorrect": false, "feedback": "Cardiac muscle (the heart) works involuntarily, without conscious control."},
+      {"text": "Smooth muscle", "isCorrect": false, "feedback": "Smooth muscle, found in organs like the intestines, also works involuntarily."},
+      {"text": "Nerve tissue", "isCorrect": false, "feedback": "Nerve tissue transmits signals -- it isn't a type of muscle tissue at all."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which type of muscle is found only in the heart?",
+    "options": [
+      {"text": "Cardiac muscle", "isCorrect": true, "feedback": "Correct -- cardiac muscle is a unique muscle type found exclusively in the heart."},
+      {"text": "Skeletal muscle", "isCorrect": false, "feedback": "Skeletal muscle is found attached to bones throughout the body, not specifically in the heart."},
+      {"text": "Smooth muscle", "isCorrect": false, "feedback": "Smooth muscle is found in organs like intestines and blood vessels, not specifically defining the heart."},
+      {"text": "Epithelial tissue", "isCorrect": false, "feedback": "Epithelial tissue forms linings and coverings -- it isn't a type of muscle tissue."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which TWO types of muscle tissue function involuntarily, without conscious control?",
+    "options": [
+      {"text": "Cardiac muscle", "isCorrect": true, "feedback": "Correct -- the heart beats automatically without conscious effort."},
+      {"text": "Smooth muscle", "isCorrect": true, "feedback": "Correct -- smooth muscle in organs like the stomach and intestines works automatically."},
+      {"text": "Skeletal muscle", "isCorrect": false, "feedback": "Skeletal muscle is under voluntary control, unlike the other two types."},
+      {"text": "Nerve tissue", "isCorrect": false, "feedback": "Nerve tissue isn't a muscle type at all -- it transmits electrical signals instead."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This muscle type is attached to the skeleton and moves the body according to conscious decisions.", "medium": "This is the type of muscle you consciously control to move your body parts.", "easy": "This is the muscle type you control on purpose, like when you lift your arm."},
+    "medium": {"hard": "This muscle type has a unique, self-triggering rhythm and is found in only one specific organ.", "medium": "This muscle is found in only one organ, and it beats on its own without you thinking about it.", "easy": "This muscle type is only found in one organ -- the one that pumps blood."},
+    "hard": {"hard": "Two of these four types work automatically without conscious direction -- one powers a specific organ's rhythmic contraction, the other lines the walls of internal organs.", "medium": "Two of these work automatically, without you thinking about them -- one is in the heart, the other lines organs like the intestines.", "easy": "Two of these work automatically without you thinking about them -- the heart muscle and the muscle around organs like intestines."}
+  }
+},
+{
+  "topic": "functions of the skeletal system",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a main function of the skeletal system?",
+    "options": [
+      {"text": "Providing structural support for the body", "isCorrect": true, "feedback": "Correct -- bones form the body's framework, giving it shape and support."},
+      {"text": "Digesting food", "isCorrect": false, "feedback": "Digestion is handled by the digestive system, not the skeletal system."},
+      {"text": "Pumping blood throughout the body", "isCorrect": false, "feedback": "That's the heart's job, part of the circulatory system, not the skeletal system."},
+      {"text": "Producing sound waves for hearing", "isCorrect": false, "feedback": "Hearing involves the ears and nervous system, not primarily the skeleton."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Besides support, what is another important function of bones?",
+    "options": [
+      {"text": "Protecting internal organs, like the skull protecting the brain", "isCorrect": true, "feedback": "Correct -- many bones form protective structures around vital, delicate organs."},
+      {"text": "Producing digestive enzymes", "isCorrect": false, "feedback": "Digestive enzymes come from organs like the pancreas and stomach, not bones."},
+      {"text": "Regulating body temperature directly", "isCorrect": false, "feedback": "Temperature regulation is mainly handled by the skin and circulatory system, not bones."},
+      {"text": "Filtering waste from the blood", "isCorrect": false, "feedback": "That's the kidneys' job, part of the excretory system, not the skeletal system."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Beyond support and protection, bones also play a role in which of the following processes?",
+    "options": [
+      {"text": "Producing blood cells within bone marrow", "isCorrect": true, "feedback": "Correct -- red bone marrow inside certain bones produces red blood cells, white blood cells, and platelets."},
+      {"text": "Producing insulin to regulate blood sugar", "isCorrect": false, "feedback": "Insulin is produced by the pancreas, not by bones."},
+      {"text": "Breaking down toxins in the liver", "isCorrect": false, "feedback": "Toxin breakdown is a liver function, unrelated to bone tissue."},
+      {"text": "Absorbing oxygen from inhaled air", "isCorrect": false, "feedback": "Oxygen absorption happens in the lungs, not in bones."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This function relates to the body's overall framework, giving it a definite form.", "medium": "This is what allows your body to stand upright and hold its shape.", "easy": "Bones give your body its shape and hold it up."},
+    "medium": {"hard": "Certain bones form rigid, enclosing structures specifically around fragile, essential organs.", "medium": "Hard bones surround and shield certain soft, delicate organs from damage.", "easy": "Bones act like a helmet or shield to protect organs like the brain."},
+    "hard": {"hard": "This process occurs in the soft tissue found inside certain bones, generating the cellular components that circulate throughout the bloodstream.", "medium": "Inside some bones is a soft tissue that actually manufactures new blood cells.", "easy": "Inside certain bones is a soft tissue that makes new blood cells."}
+  }
+}
+]

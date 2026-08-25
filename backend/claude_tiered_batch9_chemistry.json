@@ -1,0 +1,248 @@
+[
+{
+  "topic": "accuracy vs. precision in measurement",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'accuracy' mean in scientific measurement?",
+    "options": [
+      {"text": "How close a measurement is to the true or accepted value", "isCorrect": true, "feedback": "Correct -- an accurate measurement is close to the actual, correct value."},
+      {"text": "How many times you repeat a measurement", "isCorrect": false, "feedback": "Repetition count relates to gathering data, not the definition of accuracy itself."},
+      {"text": "How expensive the measuring equipment is", "isCorrect": false, "feedback": "Equipment cost isn't what determines accuracy -- closeness to the true value is."},
+      {"text": "How quickly a measurement can be taken", "isCorrect": false, "feedback": "Speed of measurement isn't related to the concept of accuracy."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A set of measurements are all very close to each other, but far from the true value. What does this describe?",
+    "options": [
+      {"text": "Precise but not accurate", "isCorrect": true, "feedback": "Correct -- precision refers to consistency between measurements, regardless of whether they're actually correct."},
+      {"text": "Accurate but not precise", "isCorrect": false, "feedback": "This is backwards -- being consistently close together (regardless of correctness) describes precision, not accuracy."},
+      {"text": "Both accurate and precise", "isCorrect": false, "feedback": "Since the measurements are far from the true value, they can't be considered accurate, even though they're precise."},
+      {"text": "Neither accurate nor precise", "isCorrect": false, "feedback": "The measurements ARE precise (consistent with each other), even though they aren't accurate."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is it possible for a set of measurements to be precise but not accurate, using a scale as an example?",
+    "options": [
+      {"text": "A scale could be consistently miscalibrated, giving the same (wrong) reading every time", "isCorrect": true, "feedback": "Correct -- a systematic error, like a miscalibrated scale, produces consistent (precise) results that are all off from the true value (inaccurate)."},
+      {"text": "This situation is actually impossible in real measurements", "isCorrect": false, "feedback": "This is a well-documented, common measurement scenario, not an impossibility."},
+      {"text": "Precise measurements are always automatically accurate", "isCorrect": false, "feedback": "Precision and accuracy are independent qualities -- consistent results can still all be systematically wrong."},
+      {"text": "The measurer must have made a different random mistake every single time", "isCorrect": false, "feedback": "Random, different mistakes each time would actually reduce precision (consistency), not preserve it -- a systematic, consistent error explains this scenario better."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quality reflects how near a result is to the actual correct answer.", "medium": "This describes how close your answer is to the real, correct value.", "easy": "This is how close a measurement is to the real, correct answer."},
+    "medium": {"hard": "One term describes closeness to the true value; the other describes consistency among repeated measurements, regardless of correctness.", "medium": "Being close together each time, even if wrong, describes one specific measurement quality.", "easy": "Being consistent every time, even if wrong, is called being precise."},
+    "hard": {"hard": "A consistent systematic error (like incorrect calibration) reliably shifts every reading by the same amount, preserving precision (consistency) while destroying accuracy (correctness).", "medium": "If a scale is set up wrong from the start, it'll give the same wrong number every time -- consistent, but consistently incorrect.", "easy": "If a scale is broken in a consistent way, it gives the same wrong answer every time -- consistent, but wrong."}
+  }
+},
+{
+  "topic": "significant figures",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What are significant figures used for in a measurement?",
+    "options": [
+      {"text": "Indicating how precisely a value was measured", "isCorrect": true, "feedback": "Correct -- significant figures communicate the certainty/precision behind a reported number."},
+      {"text": "Showing the color of the substance measured", "isCorrect": false, "feedback": "Significant figures relate to numerical precision, not color."},
+      {"text": "Indicating the temperature of the room", "isCorrect": false, "feedback": "Significant figures aren't tied to room temperature -- they reflect measurement precision."},
+      {"text": "Showing how much the equipment costs", "isCorrect": false, "feedback": "Equipment cost isn't related to the concept of significant figures."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How many significant figures are in the measurement 0.0450?",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- leading zeros don't count, but the trailing zero after the decimal does, giving 4, 5, and 0 as significant."},
+      {"text": "5", "isCorrect": false, "feedback": "This counts the leading zeros, which aren't significant."},
+      {"text": "2", "isCorrect": false, "feedback": "This misses counting the significant trailing zero after the decimal point."},
+      {"text": "4", "isCorrect": false, "feedback": "This overcounts by including a zero that shouldn't be counted."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does a measurement of 12.0 mL imply greater precision than a measurement of 12 mL, even though they represent the same approximate quantity?",
+    "options": [
+      {"text": "The trailing zero after the decimal point signals the measurement was made to the tenths place, implying more precise instrumentation", "isCorrect": true, "feedback": "Correct -- writing 12.0 communicates confidence down to the tenths digit, while 12 alone leaves that precision ambiguous."},
+      {"text": "12.0 mL is actually a larger volume than 12 mL", "isCorrect": false, "feedback": "These represent the same actual volume -- the difference is only in the implied precision of measurement, not the quantity itself."},
+      {"text": "There is no real difference in meaning between the two", "isCorrect": false, "feedback": "In scientific notation conventions, the trailing zero specifically conveys additional precision information."},
+      {"text": "12 mL was measured using a more advanced instrument", "isCorrect": false, "feedback": "This has it backwards -- the version WITH the decimal (12.0) is the one implying more precise instrumentation, not the whole number alone."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This convention communicates how confidently precise a recorded numerical value is.", "medium": "This tells you how carefully or precisely a measurement was actually taken.", "easy": "This shows how precisely a number was actually measured."},
+    "medium": {"hard": "Leading zeros before the first nonzero digit are never significant, but zeros appearing after the decimal point, following other digits, generally are.", "medium": "Zeros at the very beginning don't count, but zeros after the decimal point following other digits usually do.", "easy": "The leading zeros don't count, but the last zero after the decimal does -- count 4, 5, and 0."},
+    "hard": {"hard": "A trailing zero written explicitly after a decimal point is a deliberate signal of measured precision to that decimal place, distinguishing it from an implied, less-precise whole number.", "medium": "Writing the extra zero after the decimal point tells you the measurement was actually taken carefully down to that level of detail.", "easy": "Writing the extra .0 tells you the measurement was actually checked down to that level of detail."}
+  }
+},
+{
+  "topic": "Charles's Law (temperature and volume of gases)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to Charles's Law, what happens to a gas's volume when its temperature increases (at constant pressure)?",
+    "options": [
+      {"text": "The volume increases", "isCorrect": true, "feedback": "Correct -- temperature and volume have a direct relationship at constant pressure."},
+      {"text": "The volume decreases", "isCorrect": false, "feedback": "This is the opposite of Charles's Law's direct relationship -- higher temperature means larger volume."},
+      {"text": "The volume stays exactly the same", "isCorrect": false, "feedback": "Charles's Law specifically describes how volume changes with temperature -- it doesn't stay constant."},
+      {"text": "The gas turns into a liquid", "isCorrect": false, "feedback": "Simple heating under normal conditions causes expansion, not necessarily a state change to liquid."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A balloon is placed in a hot car and expands as the temperature rises. If the balloon isn't perfectly rigid, why does this expansion happen?",
+    "options": [
+      {"text": "The gas molecules inside move faster and spread further apart as temperature increases, at roughly constant pressure", "isCorrect": true, "feedback": "Correct -- increased molecular motion pushes the flexible balloon walls outward, increasing volume."},
+      {"text": "The rubber material itself chemically changes and grows", "isCorrect": false, "feedback": "The rubber material doesn't fundamentally change -- it's the gas inside expanding that stretches the balloon."},
+      {"text": "Cold air from outside enters and pushes the balloon out", "isCorrect": false, "feedback": "This scenario involves the car getting hot, not cold air entering -- the expansion is due to internal gas heating."},
+      {"text": "The balloon loses mass, making it larger", "isCorrect": false, "feedback": "Losing mass wouldn't cause expansion -- the balloon expands because the trapped gas's volume increases with temperature."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A gas occupies 2 liters at 300 K. If the temperature increases to 450 K (at constant pressure), what is the new volume? (Use V1/T1 = V2/T2)",
+    "options": [
+      {"text": "3 liters", "isCorrect": true, "feedback": "Correct -- (2/300)=(V2/450), so V2=(2×450)/300=3."},
+      {"text": "2.5 liters", "isCorrect": false, "feedback": "This doesn't match correctly solving the proportional relationship."},
+      {"text": "1.5 liters", "isCorrect": false, "feedback": "This decreases instead of increasing the volume, contrary to Charles's Law's direct relationship."},
+      {"text": "4.5 liters", "isCorrect": false, "feedback": "This overstates the correct proportional increase."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Temperature and volume move in the SAME direction as each other, unlike the inverse relationship in Boyle's Law.", "medium": "As temperature goes up, volume goes up too, if pressure stays the same.", "easy": "Heating a gas usually makes it expand and take up more space."},
+    "medium": {"hard": "Higher temperature increases the average kinetic energy and speed of gas particles, causing them to occupy more space when free to expand.", "medium": "The gas particles move faster and spread out more as they heat up, pushing the flexible balloon outward.", "easy": "As the gas inside heats up, its particles spread out more, pushing the balloon bigger."},
+    "hard": {"hard": "Set up the ratio of volume to temperature as equal before and after the change, then solve for the unknown volume.", "medium": "Multiply 2 by 450, then divide by 300 to find the new volume.", "easy": "Multiply 2 by 450, then divide by 300."}
+  }
+},
+{
+  "topic": "activation energy and reaction energy diagrams",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is activation energy?",
+    "options": [
+      {"text": "The minimum energy needed to start a chemical reaction", "isCorrect": true, "feedback": "Correct -- reactants need to reach this energy threshold before a reaction can proceed."},
+      {"text": "The total energy released by a reaction", "isCorrect": false, "feedback": "That describes the overall energy change of the reaction, not specifically the activation energy needed to start it."},
+      {"text": "The energy needed to freeze a substance", "isCorrect": false, "feedback": "Freezing relates to a physical state change, not the chemical concept of activation energy."},
+      {"text": "The weight of the reactants", "isCorrect": false, "feedback": "Weight/mass is unrelated to the energy concept of activation energy."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "On a reaction energy diagram, what does the peak (highest point) of the curve represent?",
+    "options": [
+      {"text": "The transition state, where the energy is at its maximum during the reaction", "isCorrect": true, "feedback": "Correct -- this peak represents the highest-energy, most unstable arrangement as reactants become products."},
+      {"text": "The starting energy of the reactants", "isCorrect": false, "feedback": "That's shown at the beginning of the curve, not at its peak."},
+      {"text": "The final energy of the products", "isCorrect": false, "feedback": "That's shown at the end of the curve, not at its peak."},
+      {"text": "The temperature of the room during the reaction", "isCorrect": false, "feedback": "Room temperature isn't represented on this type of energy diagram -- it tracks reaction progress versus energy."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A catalyst is added to a reaction. How does this change the reaction's energy diagram?",
+    "options": [
+      {"text": "It lowers the height of the activation energy peak, without changing the starting or ending energy levels", "isCorrect": true, "feedback": "Correct -- catalysts provide an alternate pathway with a lower energy barrier, but don't change the overall energy released or absorbed."},
+      {"text": "It raises the activation energy peak", "isCorrect": false, "feedback": "Catalysts specifically LOWER the activation energy barrier, making the reaction easier, not harder."},
+      {"text": "It changes the final energy level of the products", "isCorrect": false, "feedback": "A catalyst doesn't change the overall energy difference between reactants and products -- only the pathway/barrier height."},
+      {"text": "It has no effect on the energy diagram at all", "isCorrect": false, "feedback": "A catalyst does visibly change the diagram by lowering the activation energy peak."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This threshold must be overcome before reactants can successfully transform into products.", "medium": "This is the energy \"barrier\" that needs to be crossed to get a reaction going.", "easy": "This is the minimum energy needed to kick-start a reaction."},
+    "medium": {"hard": "This highest point corresponds to a temporary, high-energy, unstable molecular arrangement partway through bond breaking/forming.", "medium": "This is the point of highest energy the reacting molecules pass through partway through the reaction.", "easy": "This is the highest point the energy reaches partway through the reaction."},
+    "hard": {"hard": "A catalyst opens an alternate reaction pathway with a reduced energy barrier, without altering the thermodynamic energy difference between reactants and products.", "medium": "A catalyst makes it easier to reach the peak of the energy diagram, without changing where the reaction starts or ends energy-wise.", "easy": "A catalyst just makes the peak of the energy diagram lower and easier to reach."}
+  }
+},
+{
+  "topic": "sublimation and deposition",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is sublimation?",
+    "options": [
+      {"text": "A solid changing directly into a gas, without becoming a liquid first", "isCorrect": true, "feedback": "Correct -- dry ice (solid CO₂) is a classic example of sublimation."},
+      {"text": "A gas changing directly into a solid", "isCorrect": false, "feedback": "That's the reverse process, called deposition, not sublimation."},
+      {"text": "A liquid changing into a gas", "isCorrect": false, "feedback": "That's evaporation, a different process from sublimation."},
+      {"text": "A solid changing into a liquid", "isCorrect": false, "feedback": "That's melting, a different process from sublimation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is deposition, in terms of state changes?",
+    "options": [
+      {"text": "A gas changing directly into a solid, without becoming a liquid first", "isCorrect": true, "feedback": "Correct -- deposition is the reverse of sublimation, like frost forming directly from water vapor."},
+      {"text": "A solid changing directly into a gas", "isCorrect": false, "feedback": "That's sublimation, the reverse process of deposition."},
+      {"text": "A liquid freezing into a solid", "isCorrect": false, "feedback": "That's freezing, a different process from deposition."},
+      {"text": "A gas condensing into a liquid", "isCorrect": false, "feedback": "That's condensation, a different process from deposition."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Frost sometimes forms directly on a cold window on a humid night, without any visible liquid water appearing first. Which process does this best illustrate?",
+    "options": [
+      {"text": "Deposition -- water vapor in the air converts directly into solid ice on the cold surface", "isCorrect": true, "feedback": "Correct -- when water vapor contacts a surface cold enough, it can skip the liquid phase entirely and form solid ice crystals directly."},
+      {"text": "Sublimation -- ice on the window turns directly into vapor", "isCorrect": false, "feedback": "This scenario describes vapor turning INTO solid frost, the opposite direction from sublimation."},
+      {"text": "Melting -- solid ice turns into liquid water", "isCorrect": false, "feedback": "No ice-to-liquid transition is occurring here -- frost is forming directly from vapor, not melting."},
+      {"text": "Boiling -- liquid water rapidly turns into vapor", "isCorrect": false, "feedback": "Boiling requires a liquid, but no liquid water is involved in this direct vapor-to-solid frost formation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process skips the intermediate liquid state entirely, going straight from rigid to diffuse.", "medium": "This is when something goes straight from solid to gas, skipping the liquid stage.", "easy": "This is when a solid turns straight into gas, skipping being a liquid."},
+    "medium": {"hard": "This process skips the intermediate liquid state entirely, going straight from diffuse to rigid.", "medium": "This is when something goes straight from gas to solid, skipping the liquid stage.", "easy": "This is when a gas turns straight into a solid, skipping being a liquid."},
+    "hard": {"hard": "Water vapor molecules losing enough energy upon contact with a sufficiently cold surface can crystallize directly into solid ice, bypassing the liquid phase.", "medium": "The water vapor in the air is cooling down so fast on the cold glass that it turns straight into ice crystals, skipping the liquid stage.", "easy": "The water vapor in the air turns straight into ice on the cold glass, without ever being a liquid first."}
+  }
+},
+{
+  "topic": "saturated, unsaturated, and supersaturated solutions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a saturated solution?",
+    "options": [
+      {"text": "A solution that has dissolved the maximum amount of solute possible at that temperature", "isCorrect": true, "feedback": "Correct -- a saturated solution is at its dissolving limit under the current conditions."},
+      {"text": "A solution with no solute dissolved at all", "isCorrect": false, "feedback": "That would just be pure solvent, not a saturated solution."},
+      {"text": "A solution that has been boiled", "isCorrect": false, "feedback": "Boiling isn't what defines saturation -- the amount of dissolved solute relative to the maximum possible does."},
+      {"text": "A solution that is always colored", "isCorrect": false, "feedback": "Color isn't relevant to whether a solution is saturated -- some saturated solutions could be colorless."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is an unsaturated solution?",
+    "options": [
+      {"text": "A solution that can still dissolve more solute at that temperature", "isCorrect": true, "feedback": "Correct -- an unsaturated solution hasn't yet reached its maximum dissolving capacity."},
+      {"text": "A solution that has already dissolved the maximum amount of solute possible", "isCorrect": false, "feedback": "That describes a saturated solution, not an unsaturated one."},
+      {"text": "A solution containing more solute than it should be able to hold", "isCorrect": false, "feedback": "That describes a supersaturated solution, not an unsaturated one."},
+      {"text": "A solution with absolutely no water in it", "isCorrect": false, "feedback": "Water content alone doesn't define saturation status -- it's about how much solute has dissolved relative to the maximum."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A supersaturated sugar solution is created by dissolving sugar in very hot water, then carefully cooling it without disturbance. Why is this solution unstable?",
+    "options": [
+      {"text": "It contains more dissolved sugar than the solution could normally hold at that (now cooler) temperature, making it prone to sudden crystallization if disturbed", "isCorrect": true, "feedback": "Correct -- supersaturation is achieved by exceeding the normal solubility limit through careful cooling, but the excess solute can rapidly crystallize out if triggered by a disturbance."},
+      {"text": "It actually contains no dissolved sugar at all", "isCorrect": false, "feedback": "A supersaturated solution has MORE dissolved sugar than normal, not none at all."},
+      {"text": "It is chemically identical to pure water", "isCorrect": false, "feedback": "It contains a significant amount of dissolved sugar, making it very different from pure water."},
+      {"text": "The sugar has permanently changed into a new chemical substance", "isCorrect": false, "feedback": "The sugar is still ordinary sugar -- it's just dissolved in an unusually high, unstable amount for that temperature."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This solution has reached the ceiling of what it can hold under the current conditions.", "medium": "This solution can't dissolve any more solute at that temperature.", "easy": "This solution is completely \"full\" and can't dissolve any more."},
+    "medium": {"hard": "This type of solution hasn't yet reached its maximum solute-holding capacity for that temperature.", "medium": "This solution still has room to dissolve more solute before reaching its limit.", "easy": "This solution still has room to dissolve more -- it's not \"full\" yet."},
+    "hard": {"hard": "Solubility generally decreases as a solution cools, so a solution that dissolved solute at high temperature and was cooled without disturbance can end up holding more solute than the cooler temperature would normally allow, creating an unstable, easily-triggered excess.", "medium": "Since solubility usually drops as things cool, this solution ends up holding onto more sugar than it normally could at the cooler temperature -- until something triggers it to suddenly crystallize.", "easy": "This solution is holding onto more sugar than it normally could at that cooler temperature, so it's ready to suddenly turn solid if disturbed."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between a linear and a quadratic model for data",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A data set that shows a constant rate of change (the same increase for every equal step) is best modeled by:",
+    "options": [
+      {"text": "A linear function", "isCorrect": true, "feedback": "Correct -- linear functions have a constant rate of change (slope), matching data that increases/decreases by the same fixed amount for each equal step."},
+      {"text": "A quadratic function", "isCorrect": false, "feedback": "Quadratic functions have a CHANGING rate of change, not a constant one -- data with a truly CONSTANT rate of change is better modeled by a LINEAR function."},
+      {"text": "No mathematical function could ever model this type of data", "isCorrect": false, "feedback": "This isn't accurate -- data with a constant rate of change is PRECISELY the type of pattern that a LINEAR function is specifically well-suited to model."},
+      {"text": "Only a graph with no equation at all could represent this data", "isCorrect": false, "feedback": "This isn't accurate -- this type of data CAN be represented by a specific mathematical EQUATION (a linear function), not exclusively by a graph without any corresponding equation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A ball is thrown upward, and its height is measured at equal time intervals, showing INCREASING height differences at first, then DECREASING height differences later (before eventually coming back down). Why does this specific PATTERN of changing rate of change suggest a QUADRATIC (not linear) model is more appropriate for this data?",
+    "options": [
+      {"text": "Since the ball's height change RATE ITSELF is changing over time (not constant), this rules out a simple LINEAR model (which specifically requires a CONSTANT rate of change) -- the specific pattern of the rate of change ITSELF changing in a smooth, gradual, and predictable way (related to gravity's constant acceleration effect) is precisely the kind of pattern a QUADRATIC model is well-suited to capture", "isCorrect": true, "feedback": "Correct -- this recognition that the RATE OF CHANGE itself is changing (rather than remaining constant, as a linear model would require) correctly points toward a quadratic model as the more appropriate choice, which makes physical sense given that this exact scenario describes physical projectile motion under constant gravitational acceleration."},
+      {"text": "A linear model would actually be equally well-suited to represent this type of changing-rate data, just as well as a quadratic model", "isCorrect": false, "feedback": "This isn't accurate -- a LINEAR model SPECIFICALLY requires a CONSTANT rate of change, which is NOT what's described in this scenario (the rate of change is itself CHANGING) -- a QUADRATIC model is specifically better suited for this type of changing-rate pattern."},
+      {"text": "This changing rate-of-change pattern has no actual connection to determining which specific type of mathematical model (linear vs. quadratic) is most appropriate", "isCorrect": false, "feedback": "This isn't accurate -- this changing rate-of-change pattern IS DIRECTLY and specifically connected to and is PRECISELY THE KEY INDICATOR determining that a QUADRATIC (not linear) model is the more appropriate choice for this particular data pattern."},
+      {"text": "This ball height data actually shows a perfectly constant rate of change throughout, making a linear model the correct choice instead", "isCorrect": false, "feedback": "This isn't accurate -- the described data specifically shows a CHANGING rate of change (increasing, then decreasing differences), not a constant rate, which is precisely why a quadratic (not linear) model is the more appropriate choice here."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For a quadratic model fit to data, examining the SECOND differences (the differences between consecutive first differences) reveals whether they are roughly CONSTANT. Why does a constant second difference specifically confirm that a quadratic (rather than some higher-degree) model is the appropriate choice for that data?",
+    "options": [
+      {"text": "For any true quadratic function, taking first differences produces a LINEAR pattern (constant rate of change of that first difference), and taking a SECOND round of differences (differences of those first differences) removes that remaining linear trend entirely, leaving a CONSTANT value -- observing this specific constant second-difference pattern in real data is a strong practical indicator that a quadratic model (degree 2) is appropriate, since a cubic or higher-degree model would instead require additional rounds of differencing before reaching a constant value", "isCorrect": true, "feedback": "Correct -- this method of examining successive difference patterns (first differences, then second differences) to identify the appropriate polynomial degree is a practical, well-established technique in data analysis, directly connecting the mathematical structure of polynomial functions to observable patterns in real, equally-spaced data."},
+      {"text": "A constant second difference would actually indicate that a LINEAR model, not a quadratic one, is the more appropriate choice", "isCorrect": false, "feedback": "This isn't accurate -- a constant FIRST difference (not second) would indicate a linear model -- a constant SECOND difference specifically indicates a QUADRATIC model is appropriate."},
+      {"text": "This second-difference method has no actual mathematical connection to identifying the appropriate polynomial degree for modeling data", "isCorrect": false, "feedback": "This isn't accurate -- this method IS DIRECTLY and mathematically connected to and is a VALID, PRACTICAL TECHNIQUE for identifying the appropriate polynomial degree (quadratic, in this case) for modeling equally-spaced data."},
+      {"text": "A cubic (degree 3) model would actually also show constant second differences, identical to a quadratic model", "isCorrect": false, "feedback": "This isn't accurate -- a cubic model would require THIRD differences (not second) to become constant -- its second differences would still show a linear (non-constant) pattern, distinguishing it from a true quadratic model."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This model type is characterized by an invariant first-order rate of change across equal input intervals.", "medium": "Use this type of model when the data goes up (or down) by the exact same amount each time.", "easy": "Use this model when data goes up by the same amount each time."},
+    "medium": {"hard": "Consider how a non-constant rate of change across successive intervals rules out a constant-slope model, pointing instead toward a model whose own rate of change varies systematically.", "medium": "Since the height gaps between measurements aren't staying the same (they go up, then come back down), that rules out the simple constant-rate linear model.", "easy": "Since the height gaps aren't staying the same, that rules out the simple constant-rate linear model."},
+    "hard": {"hard": "Consider how repeated differencing of a polynomial sequence reduces its effective degree by one with each pass, so a degree-2 polynomial requires exactly two differencing rounds to reach a constant value.", "medium": "Taking the differences once turns a quadratic pattern into a straight-line pattern, and taking differences a SECOND time flattens that straight line out into one constant number -- exactly two rounds for a quadratic.", "easy": "Taking differences twice flattens a quadratic pattern into one constant number."}
+  }
+}
+]

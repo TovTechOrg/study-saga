@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of z-scores and standardized normal distribution",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A z-score tells you:",
+    "options": [
+      {"text": "How many standard deviations a specific data point is from the mean", "isCorrect": true, "feedback": "Correct -- z-scores standardize data by expressing each value's distance from the mean in units of standard deviation, allowing comparison across different data sets."},
+      {"text": "The exact raw value of a specific data point", "isCorrect": false, "feedback": "A z-score isn't simply the raw value -- it specifically represents a STANDARDIZED measure (distance from mean, in standard deviation units), not the original raw number itself."},
+      {"text": "The total number of data points in a data set", "isCorrect": false, "feedback": "Sample size (count of data points) is a different concept entirely from a z-score, which specifically measures an individual data point's standardized position relative to the mean."},
+      {"text": "The exact mean value of an entire data set", "isCorrect": false, "feedback": "A z-score isn't the mean itself -- it specifically measures how far a particular INDIVIDUAL data point is from that mean, in standard deviation units."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A data set has a mean of 70 and a standard deviation of 5. Using the formula z=(x-mean)/standard deviation, what is the z-score for a data point of x=80?",
+    "options": [
+      {"text": "2", "isCorrect": true, "feedback": "Correct -- z=(80-70)/5 = 10/5 = 2, meaning this data point is 2 standard deviations above the mean."},
+      {"text": "10", "isCorrect": false, "feedback": "This is just the numerator (80-70=10) without completing the full calculation by dividing by the standard deviation (5)."},
+      {"text": "0.5", "isCorrect": false, "feedback": "This doesn't correctly result from dividing 10 by 5 -- double check the calculation."},
+      {"text": "75", "isCorrect": false, "feedback": "This looks like it might be averaging the two given values, rather than correctly applying the z-score formula."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Z-scores are particularly useful for comparing data points from DIFFERENT data sets (with different means/standard deviations) on a standardized, common scale. A student scores 85 on Test A (mean=75, SD=5) and 180 on Test B (mean=150, SD=20). Using z-scores, which test result represents a relatively BETTER performance, and why?",
+    "options": [
+      {"text": "Test A, since its z-score is 2.0 ((85-75)/5), compared to Test B's z-score of 1.5 ((180-150)/20), meaning the Test A score is relatively FARTHER above its own test's average (in standard deviation units) than the Test B score is above its average", "isCorrect": true, "feedback": "Correct -- despite Test B's raw score (180) being numerically much higher than Test A's raw score (85), converting both to standardized z-scores reveals that the Test A performance was actually relatively STRONGER (2.0 SD above its mean) compared to the Test B performance (only 1.5 SD above its mean)."},
+      {"text": "Test B, simply because its raw numerical score (180) is higher than Test A's raw score (85)", "isCorrect": false, "feedback": "This isn't accurate -- directly comparing RAW scores from different tests (with different means/scales) is misleading; the correctly calculated z-scores actually reveal that Test A represents the relatively STRONGER performance, despite its lower raw score."},
+      {"text": "Both test performances are actually exactly equal in relative strength", "isCorrect": false, "feedback": "This isn't accurate -- calculating the actual z-scores (2.0 for Test A vs. 1.5 for Test B) shows these are NOT equal; Test A actually represents the relatively stronger performance."},
+      {"text": "It's actually impossible to meaningfully compare these two different test results in any way", "isCorrect": false, "feedback": "This isn't accurate -- z-scores specifically ENABLE meaningful comparison between different data sets/tests (with different scales), which is precisely the useful purpose they serve in this exact scenario."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This standardized metric quantifies a specific observation's deviation from the distribution's mean, expressed in units of standard deviation.", "medium": "This number tells you how far away a specific value is from the average, measured in special standardized units.", "easy": "This tells you how far a value is from the average, in standardized units."},
+    "medium": {"hard": "Substitute the given data point, mean, and standard deviation values directly into the z-score formula.", "medium": "Subtract the mean from the data point, then divide that result by the standard deviation.", "easy": "Subtract 70 from 80 to get 10, then divide by 5 to get 2."},
+    "hard": {"hard": "Calculate the standardized z-score for each test result separately, then compare these two standardized values directly, rather than comparing the original raw scores.", "medium": "Calculate the z-score for each test separately using the formula, then see which one is actually higher.", "easy": "Test A: (85-75)/5=2.0. Test B: (180-150)/20=1.5. Test A's z-score is higher."}
+  }
+}
+]

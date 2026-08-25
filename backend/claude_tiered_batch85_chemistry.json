@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between concentrated and dilute solutions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'concentrated' solution contains:",
+    "options": [
+      {"text": "A relatively large amount of solute dissolved per unit volume of solution", "isCorrect": true, "feedback": "Correct -- concentrated solutions have a high ratio of solute to solvent, though this is distinct from being fully 'saturated.'"},
+      {"text": "A relatively small amount of solute dissolved per unit volume of solution", "isCorrect": false, "feedback": "That describes a DILUTE solution, not a concentrated one, which specifically has a relatively LARGE amount of dissolved solute."},
+      {"text": "Absolutely no solute dissolved in it at all", "isCorrect": false, "feedback": "That would describe pure solvent (with zero solute), not a concentrated solution, which specifically contains a substantial amount of dissolved solute."},
+      {"text": "Only solid particles that haven't dissolved at all", "isCorrect": false, "feedback": "This describes undissolved solid, not a solution at all -- a concentrated SOLUTION specifically involves a large amount of solute that HAS successfully dissolved."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A concentrated solution is not necessarily the same as a saturated solution. Why might a concentrated solution still technically be classified as 'unsaturated' in some cases?",
+    "options": [
+      {"text": "Even a solution with a relatively high solute concentration might still be capable of dissolving even MORE solute before reaching that particular solute's maximum solubility limit (saturation point) at that specific temperature", "isCorrect": true, "feedback": "Correct -- 'concentrated' is a relative, comparative term (having a lot of dissolved solute), while 'saturated' specifically refers to reaching a substance's ABSOLUTE maximum dissolving capacity at a given temperature -- these aren't automatically the same condition."},
+      {"text": "A concentrated solution is actually always identical to and interchangeable with a saturated solution", "isCorrect": false, "feedback": "This isn't accurate -- these are actually DIFFERENT concepts; 'concentrated' is a relative comparison, while 'saturated' refers to reaching an absolute maximum dissolving capacity, and a solution can be concentrated without being saturated."},
+      {"text": "Saturation point has no actual connection to how 'concentrated' a solution might be described as being", "isCorrect": false, "feedback": "This isn't accurate -- saturation point IS related to concentration in the sense that a saturated solution IS highly concentrated (at its maximum), but 'concentrated' more generally doesn't necessarily mean a solution has reached that specific maximum saturation threshold."},
+      {"text": "A solution can never actually be described as both 'concentrated' and 'unsaturated' simultaneously", "isCorrect": false, "feedback": "This isn't accurate -- a solution absolutely CAN be both relatively concentrated (having a lot of dissolved solute) while still being technically unsaturated (still capable of dissolving more), which is precisely the point being illustrated here."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Laboratory stock solutions are often prepared in highly concentrated form and then diluted (by adding solvent) to create working solutions of the specific desired concentration for a given experiment. Using the dilution formula (C1V1=C2V2), if 50 mL of a 4 M stock solution is diluted to a final volume of 200 mL, what is the new concentration?",
+    "options": [
+      {"text": "1 M", "isCorrect": true, "feedback": "Correct -- using C1V1=C2V2: (4)(50)=C2(200), so 200=200×C2, giving C2=1 M."},
+      {"text": "4 M", "isCorrect": false, "feedback": "This is just the original stock concentration, without accounting for the dilution effect of increasing volume from 50 mL to 200 mL."},
+      {"text": "16 M", "isCorrect": false, "feedback": "This doesn't correctly apply the dilution formula -- diluting (increasing volume) should DECREASE concentration, not increase it to a higher value."},
+      {"text": "0.5 M", "isCorrect": false, "feedback": "This doesn't correctly result from solving the dilution equation (4)(50)=C2(200) for C2."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This descriptor characterizes a solution possessing a comparatively substantial solute-to-solvent ratio, without necessarily indicating maximum dissolution capacity.", "medium": "This means there's a lot of the dissolved substance packed into the solution.", "easy": "This means there's a lot of dissolved stuff in the solution."},
+    "medium": {"hard": "Distinguish between a relative descriptive comparison (concentrated) and an absolute, temperature-specific dissolving capacity threshold (saturation point).", "medium": "Being 'concentrated' just means having a lot dissolved, but 'saturated' means it's hit the ABSOLUTE max it could possibly hold -- those aren't automatically the same thing.", "easy": "Being concentrated just means having a lot dissolved -- saturated means it's hit the absolute max possible."},
+    "hard": {"hard": "Substitute the given initial concentration and volume, along with the final volume, into the dilution equation, then solve algebraically for the unknown final concentration.", "medium": "Plug the numbers into C1V1=C2V2: (4)(50)=C2(200), then solve for C2.", "easy": "4 times 50 is 200. Divide 200 by 200 (the new volume) to get C2=1."}
+  }
+}
+]

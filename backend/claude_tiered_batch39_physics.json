@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of terminal velocity and air resistance",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is terminal velocity?",
+    "options": [
+      {"text": "The maximum constant speed a falling object reaches when air resistance balances gravity", "isCorrect": true, "feedback": "Correct -- once these two forces balance, the object stops accelerating and falls at a constant speed."},
+      {"text": "The speed at which an object hits the ground", "isCorrect": false, "feedback": "Impact speed depends on the situation and isn't specifically what terminal velocity refers to -- it's about reaching a maximum constant falling speed."},
+      {"text": "The initial speed of a falling object", "isCorrect": false, "feedback": "Terminal velocity refers to the object's final, maximum steady speed, not its starting speed."},
+      {"text": "The speed of sound", "isCorrect": false, "feedback": "The speed of sound is an unrelated physical constant, not connected to terminal velocity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A skydiver falls faster and faster after jumping, but eventually stops accelerating and falls at a constant speed. Why does this happen?",
+    "options": [
+      {"text": "As speed increases, air resistance increases too, until it becomes equal in strength to gravity, resulting in zero net force and constant velocity", "isCorrect": true, "feedback": "Correct -- this balance of forces (gravity down, air resistance up) is exactly what produces terminal velocity."},
+      {"text": "Gravity actually stops acting on the skydiver after a certain point", "isCorrect": false, "feedback": "Gravity continues acting throughout the fall -- it's the increasing air resistance that eventually balances it out, not gravity disappearing."},
+      {"text": "The skydiver's mass decreases as they fall, reducing the force of gravity", "isCorrect": false, "feedback": "Mass doesn't change during a fall -- terminal velocity results from air resistance increasing to match the (constant) force of gravity."},
+      {"text": "Air resistance has no actual connection to a skydiver's falling speed", "isCorrect": false, "feedback": "Air resistance is precisely the force responsible for eventually balancing gravity and producing a constant falling speed."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A skydiver falling face-down reaches a certain terminal velocity. If they then reorient into a head-down 'dive' position (reducing their cross-sectional area facing the airflow), how would their new terminal velocity compare, and why?",
+    "options": [
+      {"text": "It would be higher, since reducing cross-sectional area lowers air resistance at any given speed, requiring a greater speed before air resistance again balances gravity", "isCorrect": true, "feedback": "Correct -- since air resistance depends heavily on the object's cross-sectional area facing the airflow, reducing that area means the diver must fall faster before reaching the new force balance."},
+      {"text": "It would be lower, since a head-down position always increases air resistance", "isCorrect": false, "feedback": "This is backwards -- reducing cross-sectional area (as in a head-down dive) actually DECREASES air resistance at a given speed, leading to a HIGHER terminal velocity, not lower."},
+      {"text": "It would remain exactly the same, since body orientation has no effect on terminal velocity", "isCorrect": false, "feedback": "Body orientation significantly affects cross-sectional area and thus air resistance, which directly changes the terminal velocity -- it would not stay the same."},
+      {"text": "Terminal velocity is a fixed constant that never changes for any object", "isCorrect": false, "feedback": "Terminal velocity actually varies significantly based on factors like shape, orientation, and mass -- it is not a fixed universal constant."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the constant speed reached once two opposing forces acting on a falling object reach equilibrium.", "medium": "This is the top constant speed a falling object reaches once air resistance balances gravity.", "easy": "This is the top steady speed something reaches while falling."},
+    "medium": {"hard": "As velocity increases, drag force grows correspondingly, until it exactly opposes and cancels out the constant gravitational force.", "medium": "As the skydiver speeds up, the air pushing back gets stronger, until it's finally as strong as gravity pulling down.", "easy": "As the skydiver speeds up, the air pushing back gets stronger until it matches gravity pulling down."},
+    "hard": {"hard": "Since drag force scales with cross-sectional area, reducing that area shifts the speed at which drag force again matches the (unchanged) gravitational force, upward.", "medium": "With less body area facing the air, there's less resistance at any given speed, so the diver has to go faster before resistance catches up to gravity again.", "easy": "With less body area facing the air, there's less resistance, so the diver has to go faster before it balances gravity."}
+  }
+}
+]

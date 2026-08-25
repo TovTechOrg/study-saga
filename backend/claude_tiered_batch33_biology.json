@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a species' reproductive strategy: r-selected vs. K-selected",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An organism that produces huge numbers of offspring with little parental care (like many insects or fish) is often described as which reproductive strategy?",
+    "options": [
+      {"text": "r-selected", "isCorrect": true, "feedback": "Correct -- r-selected species prioritize producing many offspring quickly, accepting high individual offspring mortality."},
+      {"text": "K-selected", "isCorrect": false, "feedback": "K-selected species typically have FEWER offspring with MORE parental investment -- the opposite of this description."},
+      {"text": "Asexual reproduction", "isCorrect": false, "feedback": "This describes a reproduction METHOD (no mate needed), not the r/K reproductive strategy spectrum, which is about offspring quantity/investment."},
+      {"text": "Vegetative reproduction", "isCorrect": false, "feedback": "This describes a specific plant reproduction method, not the general r/K strategy classification."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Elephants typically have very few offspring over their lifetime, but invest enormous parental care and resources into each one. What reproductive strategy does this represent?",
+    "options": [
+      {"text": "K-selected", "isCorrect": true, "feedback": "Correct -- K-selected species prioritize quality and survival of fewer offspring through significant parental investment."},
+      {"text": "r-selected", "isCorrect": false, "feedback": "r-selected species typically have MANY offspring with LITTLE individual investment -- the opposite of the elephant example."},
+      {"text": "Parasitic reproduction", "isCorrect": false, "feedback": "This isn't a standard reproductive strategy classification -- the relevant spectrum here is r-selected versus K-selected."},
+      {"text": "Binary fission", "isCorrect": false, "feedback": "Binary fission is a specific asexual reproduction method (mainly in bacteria), unrelated to the elephant's reproductive strategy described here."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why might an r-selected strategy (many offspring, little individual investment) be advantageous in an unpredictable or frequently disturbed environment, while a K-selected strategy might be better suited to a stable environment?",
+    "options": [
+      {"text": "In unpredictable environments, producing many offspring increases the odds that at least some survive random disasters, while in stable environments, investing heavily in fewer, more competitive offspring pays off since survival is more predictable", "isCorrect": true, "feedback": "Correct -- this reflects a fundamental evolutionary trade-off between offspring quantity and quality, each suited to different environmental stability conditions."},
+      {"text": "Environmental stability has no actual connection to which reproductive strategy is favored", "isCorrect": false, "feedback": "Environmental stability/predictability is actually a key factor in understanding why different species evolve toward different points along the r/K strategy spectrum."},
+      {"text": "r-selected species always outcompete K-selected species in every possible environment", "isCorrect": false, "feedback": "Neither strategy is universally superior -- each strategy tends to be favored under different specific environmental conditions."},
+      {"text": "K-selected species always produce more total offspring than r-selected species", "isCorrect": false, "feedback": "This is backwards -- r-selected species are specifically defined by producing MORE total offspring than K-selected species, which produce fewer, more heavily invested-in offspring."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This strategy favors sheer offspring quantity as a hedge against high individual mortality.", "medium": "This strategy favors having tons of babies, even if most won't survive.", "easy": "This strategy favors having tons of babies, even though most won't survive."},
+    "medium": {"hard": "This strategy favors investing heavily in a small number of offspring to maximize each one's individual chances of survival.", "medium": "This strategy favors having just a few babies but taking really good care of each one.", "easy": "This strategy favors having just a few babies but taking great care of each one."},
+    "hard": {"hard": "In unpredictable conditions, high offspring numbers provide a statistical buffer against random loss; in stable conditions, competitive fitness (built through parental investment) becomes the more decisive survival factor.", "medium": "When things are unpredictable, having lots of babies means some will probably survive no matter what happens; when things are stable, it pays off more to make sure your few babies are really strong and prepared.", "easy": "When things are unpredictable, having lots of babies means some will probably survive; when things are stable, a few strong, well-cared-for babies do better."}
+  }
+}
+]

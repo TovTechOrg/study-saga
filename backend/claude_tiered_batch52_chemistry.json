@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the periodic table's organization by atomic number and groups",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Elements in the periodic table are primarily arranged in order of increasing:",
+    "options": [
+      {"text": "Atomic number (number of protons)", "isCorrect": true, "feedback": "Correct -- the modern periodic table is organized by increasing atomic number, which uniquely identifies each element."},
+      {"text": "Atomic mass only, with no other consideration", "isCorrect": false, "feedback": "While atomic mass generally correlates with atomic number, the table's ORGANIZING principle is specifically atomic number, which occasionally differs in strict ordering from pure mass."},
+      {"text": "Alphabetical order of element names", "isCorrect": false, "feedback": "The periodic table isn't arranged alphabetically -- its fundamental organizing principle is atomic number."},
+      {"text": "The year each element was discovered", "isCorrect": false, "feedback": "Discovery date isn't the organizing principle of the periodic table -- it's specifically ordered by atomic number."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Elements in the same vertical column (group) of the periodic table, like the noble gases or alkali metals, tend to share similar chemical properties. Why is this the case?",
+    "options": [
+      {"text": "Elements in the same group typically have the same number of valence (outermost) electrons, which largely determines an element's chemical bonding behavior", "isCorrect": true, "feedback": "Correct -- valence electron configuration is the primary driver of chemical reactivity and bonding patterns, which is why elements sharing the same valence electron count (same group) show similar chemical behavior."},
+      {"text": "Elements in the same group always have identical atomic masses", "isCorrect": false, "feedback": "This isn't accurate -- elements in the same group have DIFFERENT atomic masses (increasing down the group); their similarity comes from matching valence electron configurations, not mass."},
+      {"text": "Group placement has no actual connection to an element's chemical properties", "isCorrect": false, "feedback": "Group placement is actually strongly connected to chemical properties, specifically through shared valence electron configurations."},
+      {"text": "Elements in the same group are all radioactive isotopes of one another", "isCorrect": false, "feedback": "Elements in a group are distinct elements (different atomic numbers), not isotopes of the same element -- their similarity comes from shared valence electron patterns, not being isotopic variants."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Mendeleev's original periodic table (1869) famously left gaps for undiscovered elements and successfully predicted properties of elements like germanium before they were even found. Why was this predictive power such compelling evidence for the validity of his periodic organization?",
+    "options": [
+      {"text": "Because accurately predicting the properties of yet-undiscovered elements, based purely on their expected position within his organizational pattern, demonstrated that the underlying periodic pattern reflected a genuine, fundamental aspect of atomic structure, not just superficial coincidence", "isCorrect": true, "feedback": "Correct -- this remarkable predictive success is a hallmark example in the history of science of how a robust organizing theory can generate specific, falsifiable, and ultimately confirmed predictions, lending strong support to its underlying validity."},
+      {"text": "Mendeleev's predictions actually all turned out to be completely wrong", "isCorrect": false, "feedback": "This isn't accurate -- Mendeleev's predictions about undiscovered elements' properties (like germanium's) were famously and remarkably accurate, which is exactly why this was such compelling scientific evidence."},
+      {"text": "This predictive success had nothing to do with validating the periodic table's underlying organizational principle", "isCorrect": false, "feedback": "This predictive success is actually a central piece of evidence FOR the validity of the periodic table's organizing principle, showing it reflected real underlying patterns in atomic structure."},
+      {"text": "Mendeleev organized his table completely randomly, with no real underlying pattern at all", "isCorrect": false, "feedback": "Mendeleev's table was organized specifically around recurring (periodic) patterns in elemental properties -- it was this genuine underlying pattern that enabled his successful predictions, not randomness."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This numerical identifier corresponds directly to the count of positively charged subatomic particles within an atom's nucleus.", "medium": "This number tells you how many protons an atom has.", "easy": "This number tells you how many protons an atom has."},
+    "medium": {"hard": "Consider how the number of electrons in an atom's outermost shell governs its typical bonding and reactivity patterns.", "medium": "Elements in the same column usually have the same number of electrons in their outer shell, which drives how they react.", "easy": "Elements in the same column usually have the same number of outer electrons, which drives how they react."},
+    "hard": {"hard": "Consider how a theory's ability to generate specific, later-confirmed predictions serves as strong scientific validation of the underlying pattern it describes.", "medium": "Correctly guessing properties of elements that hadn't even been found yet showed his pattern was really capturing something true about atoms.", "easy": "Correctly guessing properties of elements not yet found showed his pattern was really true."}
+  }
+}
+]

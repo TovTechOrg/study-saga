@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between arithmetic mean and weighted average",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a 'weighted average,' different values in the data set:",
+    "options": [
+      {"text": "Contribute unequally to the final average, based on their assigned importance/weight", "isCorrect": true, "feedback": "Correct -- a weighted average specifically assigns different importance levels (weights) to different values, unlike a simple arithmetic mean, which treats every value equally."},
+      {"text": "All contribute exactly equally to the final average, with no differences in importance", "isCorrect": false, "feedback": "That describes a simple, standard ARITHMETIC MEAN, not a weighted average, which specifically assigns UNEQUAL importance/weights to different values."},
+      {"text": "Are completely ignored in the final average calculation", "isCorrect": false, "feedback": "This isn't accurate -- ALL values ARE included and contribute to a weighted average calculation, just with DIFFERENT relative importance/weight, not being ignored altogether."},
+      {"text": "Must always be exactly the same numerical value as each other", "isCorrect": false, "feedback": "This isn't accurate -- weighted average calculations work with DIFFERENT (not necessarily identical) values, applying different WEIGHTS to those different values."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A student's final course grade is calculated as: 20% homework average (85), 30% midterm exam (78), 50% final exam (92). Using the weighted average formula, calculate the student's overall final grade.",
+    "options": [
+      {"text": "86.4 (calculated as 0.20×85 + 0.30×78 + 0.50×92)", "isCorrect": true, "feedback": "Correct -- (0.20×85)+(0.30×78)+(0.50×92) = 17+23.4+46 = 86.4."},
+      {"text": "85 (simply the highest weighted individual component alone)", "isCorrect": false, "feedback": "This is just one individual component value, not the correctly calculated overall weighted average incorporating ALL THREE components and their respective weights."},
+      {"text": "85 (simple, unweighted average of the three scores: (85+78+92)/3)", "isCorrect": false, "feedback": "This incorrectly calculates a SIMPLE, unweighted average (treating all three components equally), rather than correctly applying the specified different WEIGHTS (20%, 30%, 50%) to each component."},
+      {"text": "255 (simply the sum of the three raw scores)", "isCorrect": false, "feedback": "This is just the raw SUM of the three scores, without correctly applying the specified weight PERCENTAGES to each individual component."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A company calculates its 'average' employee salary using a simple ARITHMETIC MEAN (adding all salaries, dividing by employee count). Critics argue this specific method can be misleading if the company has a few extremely high-paid executives alongside many lower-paid employees, and suggest a 'weighted' or alternative measure (like median) might give a more representative picture. Why might the simple arithmetic mean specifically be considered potentially misleading in this particular scenario?",
+    "options": [
+      {"text": "Since a simple arithmetic mean gives EQUAL mathematical weight to every individual salary value (regardless of how many employees actually earn near that specific amount), a small number of EXTREMELY HIGH executive salaries can disproportionately PULL UP the calculated average, resulting in a reported 'average' salary that doesn't accurately represent what the TYPICAL, most common employee actually earns", "isCorrect": true, "feedback": "Correct -- this recognition (that a simple arithmetic mean can be significantly skewed by a small number of extreme outlier values) is precisely why measures like the median (or various weighted approaches specifically accounting for the actual employee distribution) are sometimes preferred for providing a more genuinely REPRESENTATIVE picture of typical values, particularly in situations involving significant income/value disparities like this."},
+      {"text": "A simple arithmetic mean would actually always accurately represent the TYPICAL employee's salary in any situation, with no possible distortion", "isCorrect": false, "feedback": "This isn't accurate -- a simple arithmetic mean CAN be significantly DISTORTED/skewed by extreme outlier values (like a few very high executive salaries), which is precisely the concern being raised in this specific scenario."},
+      {"text": "This concern about potentially misleading averages has no actual connection to how extreme outlier values can specifically affect a simple arithmetic mean calculation", "isCorrect": false, "feedback": "This isn't accurate -- this concern IS DIRECTLY and specifically connected to and driven BY the well-established mathematical property that a simple arithmetic mean CAN be significantly skewed by even a small number of extreme outlier values."},
+      {"text": "The median would actually be equally susceptible to this same specific type of outlier-based distortion as the simple arithmetic mean", "isCorrect": false, "feedback": "This isn't accurate -- the MEDIAN is generally considered significantly LESS susceptible to outlier-based distortion (compared to the arithmetic mean), which is precisely why it's sometimes suggested as a more representative alternative in situations involving extreme value disparities."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This averaging methodology assigns differential proportional significance to constituent values based on a predetermined importance coefficient.", "medium": "Some numbers count for more than others when figuring out this type of average.", "easy": "Some numbers count for more than others in this type of average."},
+    "medium": {"hard": "Multiply each individual score by its corresponding weight (expressed as a decimal), then sum all of these weighted products together.", "medium": "Multiply each score by its percentage weight (as a decimal), then add up all three results.", "easy": "Multiply 85×0.20, 78×0.30, and 92×0.50, then add the three results together."},
+    "hard": {"hard": "Consider how the equal per-value weighting inherent in a simple arithmetic mean allows a small number of extreme values to exert disproportionate influence on the overall calculated result, unlike position-based measures.", "medium": "Since the simple average treats every single salary as equally important no matter how common or rare it is, just a couple of huge executive paychecks can drag the reported 'average' way higher than what most workers actually make.", "easy": "Since simple average treats every salary equally, a couple huge paychecks can drag it higher than what most workers make."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a spectator ion in a chemical reaction",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a spectator ion?",
+    "options": [
+      {"text": "An ion that is present in a reaction but doesn't actually participate in the chemical change", "isCorrect": true, "feedback": "Correct -- spectator ions remain unchanged and are present on both sides of the full ionic equation."},
+      {"text": "An ion that directly causes the reaction to happen", "isCorrect": false, "feedback": "That describes an ion actively participating in the reaction, the opposite of a spectator ion."},
+      {"text": "An ion found only in solid compounds", "isCorrect": false, "feedback": "Spectator ions are typically found in solution, not specifically restricted to solid compounds."},
+      {"text": "An ion that doesn't actually exist in real chemistry", "isCorrect": false, "feedback": "Spectator ions are real, genuinely present ions -- they just don't undergo any chemical change during the specific reaction being observed."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In the reaction AgNO₃ + NaCl → AgCl + NaNO₃, which ions are the spectator ions?",
+    "options": [
+      {"text": "Na⁺ and NO₃⁻", "isCorrect": true, "feedback": "Correct -- these ions remain unchanged and dissolved throughout, while Ag⁺ and Cl⁻ combine to form the solid precipitate AgCl."},
+      {"text": "Ag⁺ and Cl⁻", "isCorrect": false, "feedback": "These ions actually DO participate in the reaction, combining to form the solid AgCl precipitate -- they aren't spectators."},
+      {"text": "All four ions are spectator ions", "isCorrect": false, "feedback": "Only two of the four ions (Na⁺ and NO₃⁻) remain unchanged -- the other two actively combine to form a new solid."},
+      {"text": "None of the ions are spectator ions", "isCorrect": false, "feedback": "There ARE spectator ions in this reaction -- specifically Na⁺ and NO₃⁻, which don't participate in forming the precipitate."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is it useful for chemists to write a 'net ionic equation' that excludes spectator ions, rather than always writing the full molecular equation?",
+    "options": [
+      {"text": "It focuses attention on the actual chemical change occurring, without the visual clutter of ions that remain unchanged and uninvolved", "isCorrect": true, "feedback": "Correct -- net ionic equations simplify analysis by highlighting only the meaningful transformation, making the essential chemistry clearer."},
+      {"text": "It makes the equation chemically incorrect on purpose", "isCorrect": false, "feedback": "A net ionic equation is still fully chemically accurate -- it simply omits parts that don't change, without introducing any error."},
+      {"text": "Spectator ions are actually dangerous and must be removed from all written equations", "isCorrect": false, "feedback": "Spectator ions aren't dangerous -- they're just chemically uninvolved in the specific reaction being highlighted, which is why they're excluded from the net equation for clarity."},
+      {"text": "This is purely an arbitrary stylistic preference with no practical benefit", "isCorrect": false, "feedback": "This is actually a practically useful convention that helps chemists focus specifically on the meaningful part of a reaction, not just an arbitrary style choice."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of ion remains chemically unchanged throughout the reaction, appearing identically on both sides.", "medium": "This ion is present but doesn't actually change during the reaction.", "easy": "This ion just watches the reaction happen without actually changing."},
+    "medium": {"hard": "Identify which ions end up in the same dissolved form on both sides of the equation, versus which ions combine to form the new solid product.", "medium": "Look for the ions that appear unchanged on both sides of the equation, remaining dissolved throughout.", "easy": "Look for the ions that stay dissolved and unchanged the whole time, not the ones forming the new solid."},
+    "hard": {"hard": "Removing chemically inert spectator ions isolates and highlights only the specific ions and bonds genuinely involved in the transformation, streamlining analysis of the actual chemistry occurring.", "medium": "Leaving out the ions that don't actually do anything makes it much easier to see what's really happening in the reaction.", "easy": "Leaving out the ions that don't do anything makes it easier to see what's really happening."}
+  }
+}
+]

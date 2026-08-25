@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of exothermic and endothermic reactions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What happens in an exothermic reaction?",
+    "options": [
+      {"text": "Energy (usually heat) is released into the surroundings", "isCorrect": true, "feedback": "Correct -- exothermic reactions release net energy, often felt as the surroundings getting warmer."},
+      {"text": "Energy is absorbed from the surroundings", "isCorrect": false, "feedback": "That describes an endothermic reaction, the opposite of exothermic, which specifically releases energy."},
+      {"text": "No energy change occurs at all", "isCorrect": false, "feedback": "Exothermic reactions specifically involve a net release of energy -- this isn't a zero-energy-change process."},
+      {"text": "The reaction always produces light but never heat", "isCorrect": false, "feedback": "While some exothermic reactions do produce light, the defining feature is net energy release (often as heat), not light specifically."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When you dissolve certain instant cold packs' chemicals in water, the pack feels cold to the touch. What type of reaction is occurring, and why does it feel cold?",
+    "options": [
+      {"text": "An endothermic reaction, which absorbs heat energy FROM its surroundings (including your hand), making the surroundings feel colder", "isCorrect": true, "feedback": "Correct -- since the reaction pulls in thermal energy from its surroundings to proceed, the immediate surroundings (like your hand) lose heat and feel colder."},
+      {"text": "An exothermic reaction, which releases heat and causes the cold feeling", "isCorrect": false, "feedback": "This is backwards -- if heat were being RELEASED (exothermic), the pack would feel warm, not cold; the cold sensation specifically indicates heat being ABSORBED (endothermic)."},
+      {"text": "This has nothing to do with heat energy at all", "isCorrect": false, "feedback": "This scenario is fundamentally about heat energy transfer -- specifically, an endothermic reaction absorbing heat from its surroundings."},
+      {"text": "The chemicals are simply cold to begin with, and no chemical reaction is actually occurring", "isCorrect": false, "feedback": "A genuine chemical reaction IS occurring here (typically dissolving a salt like ammonium nitrate), and it's specifically endothermic, absorbing heat as it proceeds."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A reaction can be exothermic overall (releasing net energy) while still requiring an initial energy input (activation energy) to get started. How can both of these things be true simultaneously?",
+    "options": [
+      {"text": "Activation energy is a temporary energy investment needed to initiate the reaction, while the overall exothermic classification refers to the NET energy difference between the total energy released and the total energy absorbed across the entire reaction process", "isCorrect": true, "feedback": "Correct -- distinguishing between the initial energy barrier (activation energy) and the overall net energy balance of the complete reaction explains how a reaction can require some upfront energy input while still being classified as exothermic overall."},
+      {"text": "These two facts are actually contradictory, so a reaction can never be both", "isCorrect": false, "feedback": "This is actually a very common and consistent phenomenon (like combustion) -- reactions frequently need initial activation energy input while still being net exothermic overall."},
+      {"text": "Exothermic reactions never require any activation energy input at all", "isCorrect": false, "feedback": "This isn't accurate -- many exothermic reactions still require an initial activation energy input to get started, even though they release more net energy afterward."},
+      {"text": "Activation energy and the overall exothermic/endothermic classification are actually the exact same quantity", "isCorrect": false, "feedback": "These are distinct concepts -- activation energy is the initial energy barrier to overcome, while exothermic/endothermic classification refers to the reaction's overall net energy change."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This reaction type is characterized by a net release of thermal energy into its immediate surroundings.", "medium": "This is a reaction that gives off heat energy into its surroundings.", "easy": "This is a reaction that gives off heat into its surroundings."},
+    "medium": {"hard": "Consider the direction of net thermal energy transfer between the reacting chemicals and the immediately surrounding environment.", "medium": "If your hand feels cold, that means heat energy is moving FROM your hand INTO the reaction, not the other way around.", "easy": "If your hand feels cold, heat is moving from your hand into the reaction, not out of it."},
+    "hard": {"hard": "Separate the concept of an initial energy barrier required to start a reaction from the concept of the reaction's overall net energy balance from start to finish.", "medium": "Getting the reaction started might need a little energy input, but the reaction as a whole still ends up releasing more energy overall than it used.", "easy": "Starting the reaction might need a little energy, but overall it still releases more energy than it used."}
+  }
+}
+]

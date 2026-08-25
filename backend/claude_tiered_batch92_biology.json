@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between complete and incomplete metamorphosis in insects",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Insects undergoing 'complete metamorphosis' (like butterflies) pass through which distinct life stages?",
+    "options": [
+      {"text": "Egg, larva, pupa, and adult", "isCorrect": true, "feedback": "Correct -- complete metamorphosis involves four distinct stages, with the larva and adult looking dramatically different from each other, connected by a transformative pupal stage."},
+      {"text": "Egg, nymph, and adult only", "isCorrect": false, "feedback": "That describes INCOMPLETE metamorphosis (like in grasshoppers), not complete metamorphosis, which specifically includes a distinct larval AND pupal stage, not a nymph stage."},
+      {"text": "Only a single continuous adult stage, with no earlier life stages", "isCorrect": false, "feedback": "This isn't accurate -- complete metamorphosis specifically involves MULTIPLE distinct life stages (egg, larva, pupa, adult), not just a single continuous adult stage."},
+      {"text": "Egg and adult stages only, with nothing in between", "isCorrect": false, "feedback": "This isn't accurate -- complete metamorphosis specifically includes intermediate LARVAL and PUPAL stages between the egg and adult stages, not simply egg-to-adult with nothing between."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In incomplete metamorphosis (like grasshoppers), the nymph stage generally resembles a smaller, simpler version of the adult, gradually growing and developing adult features through successive molts. Why does this differ significantly from complete metamorphosis's larval stage (like a caterpillar), which typically looks nothing like the eventual adult form?",
+    "options": [
+      {"text": "Incomplete metamorphosis involves GRADUAL, continuous development toward the adult form across the nymph stages, while complete metamorphosis involves a DRAMATIC transformation (via the specialized pupal stage) between a larval form specifically adapted for one purpose (feeding/growth) and an adult form adapted for a different purpose (reproduction/dispersal)", "isCorrect": true, "feedback": "Correct -- this fundamental difference (gradual resemblance-based development vs. dramatic pupal-stage transformation) is precisely what distinguishes these two major insect developmental strategies from each other."},
+      {"text": "Nymphs in incomplete metamorphosis actually look completely different from the adult form, just like caterpillars do", "isCorrect": false, "feedback": "This isn't accurate -- nymphs in incomplete metamorphosis specifically DO resemble a simpler version of the adult form, which is precisely the key distinguishing characteristic differentiating incomplete from complete metamorphosis."},
+      {"text": "This difference in developmental pattern has no actual connection to distinguishing complete from incomplete metamorphosis", "isCorrect": false, "feedback": "This isn't accurate -- this difference in developmental PATTERN (gradual resemblance vs. dramatic transformation) is DIRECTLY and centrally connected to and is precisely what defines the distinction between these two metamorphosis types."},
+      {"text": "Complete metamorphosis actually doesn't involve any significant transformation between life stages at all", "isCorrect": false, "feedback": "This isn't accurate -- complete metamorphosis is SPECIFICALLY DEFINED by involving a very DRAMATIC transformation (via the pupal stage) between the larval and adult forms, not an absence of significant transformation."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "One proposed evolutionary advantage of complete metamorphosis is that it allows the larval and adult stages to occupy very different ecological niches (different food sources, habitats, etc.), reducing direct competition for resources between the two life stages of the SAME species. Why might this niche separation represent a significant evolutionary advantage, especially compared to incomplete metamorphosis (where nymphs and adults often share similar niches/resources)?",
+    "options": [
+      {"text": "By having larvae and adults use DIFFERENT resources/habitats, a single species can more fully exploit resources across multiple ecological niches without different life stages of the SAME organism competing against each other for the identical limited resources, potentially increasing overall reproductive success and resource utilization efficiency", "isCorrect": true, "feedback": "Correct -- this niche partitioning WITHIN a single species' own life cycle (avoiding self-competition between developmental stages) represents a compelling potential evolutionary advantage that has been proposed to help explain the evolutionary success and widespread prevalence of complete metamorphosis among insects."},
+      {"text": "Having larvae and adults compete directly with EACH OTHER for the exact same resources would actually be evolutionarily advantageous", "isCorrect": false, "feedback": "This isn't accurate -- having different life stages of the SAME species compete directly against each other for identical resources would generally be evolutionarily DISADVANTAGEOUS (wasteful self-competition), not advantageous, which is precisely why niche separation is considered beneficial."},
+      {"text": "This niche separation advantage has no actual connection to explaining the evolutionary success of complete metamorphosis", "isCorrect": false, "feedback": "This isn't accurate -- this niche separation advantage is actually DIRECTLY and specifically connected to and proposed as an important explanation for the evolutionary success and widespread occurrence of complete metamorphosis in insects."},
+      {"text": "Incomplete metamorphosis species actually also completely separate their nymph and adult ecological niches, identical to complete metamorphosis species", "isCorrect": false, "feedback": "This isn't accurate -- incomplete metamorphosis species (like grasshoppers) typically have nymphs and adults sharing SIMILAR niches/resources, unlike complete metamorphosis species, which specifically achieve this niche SEPARATION between life stages."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This developmental pathway encompasses four morphologically distinct life-cycle phases connected by a dramatic transformative intermediate stage.", "medium": "This growth pattern has four totally different-looking stages, including a special 'cocoon-like' in-between stage.", "easy": "This growth pattern has four different stages, including a special cocoon-like stage."},
+    "medium": {"hard": "Consider the distinction between a developmental process involving progressive resemblance-based growth versus one involving a specialized transformative stage bridging two functionally distinct body forms.", "medium": "One kind of baby insect basically just grows up looking more and more like a mini adult, while the other kind goes through a totally different-looking stage before suddenly transforming into the adult.", "easy": "One baby insect grows up looking more like a mini adult; the other transforms completely through a different-looking stage."},
+    "hard": {"hard": "Consider how partitioning ecological resource use between different life stages of the same organism could reduce intraspecific competition and thereby increase the overall resource-exploitation efficiency of that species as a whole.", "medium": "If the baby and adult versions of the same bug aren't fighting over the exact same food and space, the whole species can actually use MORE different resources overall without competing against itself.", "easy": "If baby and adult bugs use different resources, the whole species can use more resources without competing with itself."}
+  }
+}
+]

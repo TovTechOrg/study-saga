@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of Newton's first law of motion (inertia)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Newton's first law of motion states that an object at rest will:",
+    "options": [
+      {"text": "Stay at rest unless acted upon by an unbalanced external force", "isCorrect": true, "feedback": "Correct -- this is the law of inertia, describing an object's natural tendency to resist changes to its state of motion."},
+      {"text": "Automatically start moving on its own after some time", "isCorrect": false, "feedback": "This contradicts Newton's first law -- an object at rest stays at rest UNLESS an external force acts on it; it doesn't spontaneously start moving on its own."},
+      {"text": "Immediately begin accelerating at a constant rate", "isCorrect": false, "feedback": "This isn't accurate -- an object at rest requires an external force to begin moving at all; it doesn't spontaneously accelerate without one."},
+      {"text": "Always move toward the nearest large object", "isCorrect": false, "feedback": "This isn't what Newton's first law describes -- while gravity can attract objects, the LAW OF INERTIA specifically states an object at rest stays at rest without an external force, not that it moves toward large objects."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When a car suddenly brakes hard, passengers without seatbelts tend to continue moving forward, even though the car itself has stopped. How does Newton's first law explain this phenomenon?",
+    "options": [
+      {"text": "The passengers' bodies, due to inertia, tend to continue moving at their original velocity unless an external force (like a seatbelt) acts on them to slow them down along with the car", "isCorrect": true, "feedback": "Correct -- this everyday, sometimes dangerous, real-world scenario is a classic illustration of inertia in action, demonstrating why seatbelts are specifically needed to provide that necessary external stopping force."},
+      {"text": "The passengers are actually being pushed forward by some mysterious external force", "isCorrect": false, "feedback": "This isn't accurate -- there's no forward-pushing force involved; the passengers simply continue moving due to their own INERTIA (their tendency to maintain their original motion) unless something stops them."},
+      {"text": "This phenomenon has no actual connection to Newton's first law of motion", "isCorrect": false, "feedback": "This is actually a very direct, classic, real-world illustration of Newton's first law (inertia) in action."},
+      {"text": "The car's braking somehow directly causes the passengers to accelerate forward", "isCorrect": false, "feedback": "This isn't accurate -- the car's braking doesn't cause forward acceleration; rather, the passengers simply CONTINUE their existing forward motion (inertia) while the car itself decelerates around them."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A tablecloth can sometimes be quickly yanked out from under dishes on a table, leaving the dishes relatively undisturbed in their original position (a classic physics demonstration). Why does this trick rely specifically on the PRINCIPLE of inertia, and why is speed of the pull so critical to its success?",
+    "options": [
+      {"text": "The dishes' inertia causes them to resist a sudden change in their state of rest, and if the tablecloth is pulled quickly enough, the brief friction force between cloth and dishes isn't sustained long enough to significantly move the dishes before the cloth is already gone", "isCorrect": true, "feedback": "Correct -- this demonstration cleverly exploits the dishes' inertia (resistance to sudden changes in motion) combined with the very brief duration of frictional contact when the cloth is pulled extremely quickly, minimizing the net impulse transferred to the dishes."},
+      {"text": "The dishes actually have no inertia at all in this scenario", "isCorrect": false, "feedback": "This isn't accurate -- the dishes' inertia is PRECISELY what's being demonstrated and exploited in this classic trick; without inertia, this demonstration wouldn't work at all."},
+      {"text": "Pulling the tablecloth slowly would actually work just as well as pulling it quickly", "isCorrect": false, "feedback": "This isn't accurate -- pulling SLOWLY would actually give friction more time to act on the dishes, dragging them along with the cloth, which is precisely why a fast pull is specifically required for this trick to succeed."},
+      {"text": "This demonstration has no actual connection to the principle of inertia", "isCorrect": false, "feedback": "This is actually a classic, well-known demonstration SPECIFICALLY illustrating the principle of inertia in a visually striking way."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This principle describes an object's inherent resistance to any alteration in its existing state of rest or uniform motion.", "medium": "Objects that aren't moving tend to just stay put unless something pushes or pulls on them.", "easy": "Objects that aren't moving tend to stay put unless something pushes them."},
+    "medium": {"hard": "Consider how an object's own resistance to a change in motion (inertia) explains its continued movement even as the vehicle carrying it suddenly decelerates.", "medium": "The passengers' bodies just want to keep moving forward at the same speed, even though the car itself has suddenly slowed down.", "easy": "The passengers' bodies just want to keep moving forward, even though the car suddenly stopped."},
+    "hard": {"hard": "Consider how minimizing the TIME duration of the frictional force's action (via rapid pulling) limits the total impulse (and thus velocity change) transferred to the resting dishes.", "medium": "Pulling super fast means the cloth barely has any time to drag the dishes along with it before it's already out from under them.", "easy": "Pulling super fast means the cloth barely has time to drag the dishes before it's already gone."}
+  }
+}
+]

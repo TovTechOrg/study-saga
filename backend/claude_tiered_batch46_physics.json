@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the relationship between mass, weight, and gravity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the key difference between mass and weight?",
+    "options": [
+      {"text": "Mass is the amount of matter in an object (constant), while weight is the force of gravity acting on that mass (can vary)", "isCorrect": true, "feedback": "Correct -- mass stays the same everywhere, but weight depends on the local strength of gravity acting on that mass."},
+      {"text": "Mass and weight are always exactly the same thing, with no distinction", "isCorrect": false, "feedback": "These are genuinely distinct physical quantities -- mass is constant matter content, while weight is the gravitational force on that mass, which can change."},
+      {"text": "Weight is the amount of matter in an object, while mass is a force", "isCorrect": false, "feedback": "This has the definitions reversed -- MASS is the amount of matter, and WEIGHT is the force of gravity acting on it."},
+      {"text": "Mass is measured in units of force, while weight is measured in units of matter", "isCorrect": false, "feedback": "This also has it backwards -- mass is measured in units like kilograms (matter), while weight is measured in units of force like newtons."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "An astronaut has the same mass on the Moon as on Earth, but weighs about 1/6 as much on the Moon. Why does this happen?",
+    "options": [
+      {"text": "The Moon's gravity is weaker than Earth's, so it exerts less gravitational force on the same amount of mass, resulting in lower weight despite unchanged mass", "isCorrect": true, "feedback": "Correct -- since weight = mass × local gravitational acceleration, and the Moon's gravity is about 1/6 of Earth's, the astronaut's weight decreases proportionally while mass remains unchanged."},
+      {"text": "The astronaut actually loses physical matter (mass) while traveling to the Moon", "isCorrect": false, "feedback": "The astronaut's mass (amount of matter) doesn't change during travel -- what changes is the local gravitational force acting on that unchanged mass."},
+      {"text": "Weight and mass are unrelated to gravity in any way", "isCorrect": false, "feedback": "Weight is DIRECTLY related to and dependent on gravity -- specifically, weight equals mass multiplied by local gravitational acceleration."},
+      {"text": "The Moon's gravity is actually stronger than Earth's, causing higher weight there", "isCorrect": false, "feedback": "This is backwards -- the Moon's gravity is weaker (about 1/6th) than Earth's, resulting in LOWER weight, not higher, for the same mass."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An astronaut in orbit around Earth experiences 'weightlessness' (appearing to float), even though Earth's gravity at that altitude is still quite strong (nearly as strong as at the surface). How can this apparent contradiction be explained?",
+    "options": [
+      {"text": "The astronaut and their spacecraft are both in continuous free-fall around the Earth, so there's no supporting force pushing back against gravity, creating the sensation of weightlessness despite gravity still acting on them", "isCorrect": true, "feedback": "Correct -- true weightlessness in orbit results from continuous free-fall (accelerating toward Earth while also moving forward fast enough to continually 'miss' it), not from an actual absence of gravitational force."},
+      {"text": "Gravity actually doesn't exist at all in orbital altitudes", "isCorrect": false, "feedback": "Gravity is still very much present and significant at orbital altitudes -- what creates the sensation of weightlessness is continuous free-fall, not an absence of gravity."},
+      {"text": "The astronaut's mass becomes zero once they reach orbit", "isCorrect": false, "feedback": "Mass doesn't become zero in orbit -- the astronaut's mass remains constant; what changes is the absence of a supporting force against the continuous free-fall motion."},
+      {"text": "Spacecraft have special anti-gravity technology that cancels out Earth's gravitational pull", "isCorrect": false, "feedback": "No such anti-gravity technology exists or is needed -- weightlessness in orbit is fully explained by the physics of continuous free-fall, not gravity cancellation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One of these quantities represents intrinsic matter content, while the other represents a gravitational force dependent on location.", "medium": "One of these is a fixed amount of 'stuff,' and the other depends on how strong gravity is pulling on that stuff.", "easy": "One is a fixed amount of 'stuff,' and the other depends on how strong gravity is pulling on it."},
+    "medium": {"hard": "Apply the relationship weight = mass × gravitational acceleration, considering how a change in only the gravitational acceleration term affects the resulting weight.", "medium": "Since weight equals mass times gravity, and the Moon's gravity is weaker, the resulting weight number is smaller too.", "easy": "Since weight depends on gravity, and the Moon's gravity is weaker, the astronaut's weight is smaller there."},
+    "hard": {"hard": "Consider the distinction between the presence of a gravitational force and the sensation of weight, which specifically arises from a supporting force resisting that gravitational pull.", "medium": "The astronaut IS being pulled by gravity, but since they're constantly falling (along with their ship) with nothing pushing back, they feel weightless.", "easy": "The astronaut is constantly falling along with their ship, so there's nothing pushing back to make them feel weight."}
+  }
+}
+]

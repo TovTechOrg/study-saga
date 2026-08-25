@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of relativistic time dilation (basic introduction)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to Einstein's theory of special relativity, what happens to time for an object moving at very high speeds (close to the speed of light), as observed from a stationary reference point?",
+    "options": [
+      {"text": "Time appears to pass more slowly for the fast-moving object, compared to the stationary observer", "isCorrect": true, "feedback": "Correct -- this phenomenon, called time dilation, means that clocks moving at very high relative speeds run measurably slower compared to stationary clocks."},
+      {"text": "Time appears to pass more quickly for the fast-moving object", "isCorrect": false, "feedback": "This is backwards -- special relativity actually predicts that time passes MORE SLOWLY (not more quickly) for objects moving at very high relative speeds, as observed from a stationary viewpoint."},
+      {"text": "Time is completely unaffected by an object's speed", "isCorrect": false, "feedback": "This isn't accurate according to special relativity -- time IS measurably affected by relative speed, becoming a well-documented and experimentally verified phenomenon called time dilation."},
+      {"text": "This effect only applies to objects that are completely motionless", "isCorrect": false, "feedback": "This is backwards -- time dilation specifically applies to objects in relative MOTION (particularly at very high speeds), not to motionless objects."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Astronauts on the International Space Station (ISS), traveling at high orbital speeds, experience a very tiny amount of time dilation compared to people on Earth, meaning their clocks run very slightly slower. Why is this effect only barely measurable, requiring extremely precise atomic clocks to detect, rather than being obviously noticeable?",
+    "options": [
+      {"text": "Significant time dilation effects only become noticeable at speeds that are a substantial fraction of the speed of light, and even the ISS's fast orbital speed is still extremely small compared to light speed, resulting in only an extremely tiny dilation effect", "isCorrect": true, "feedback": "Correct -- this dependency on how close an object's speed is to the speed of light explains why everyday and even typical spacecraft speeds produce only minuscule, though still real and measurable, time dilation effects."},
+      {"text": "Time dilation actually doesn't occur at all for objects moving at ISS orbital speeds", "isCorrect": false, "feedback": "This isn't accurate -- time dilation DOES occur even at ISS orbital speeds, just to an extremely tiny, though still real and precisely measurable, degree, given how far that speed is from the speed of light."},
+      {"text": "The ISS actually travels at a speed very close to the speed of light", "isCorrect": false, "feedback": "This isn't accurate -- while fast by everyday standards, the ISS's orbital speed is still a very tiny fraction of the speed of light, which is precisely why its time dilation effect is so minuscule."},
+      {"text": "This effect has no actual connection to how close an object's speed is to the speed of light", "isCorrect": false, "feedback": "This effect is DIRECTLY and fundamentally connected to how close an object's speed is to the speed of light -- this relationship is central to understanding why the magnitude of time dilation varies so dramatically across different speeds."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "GPS satellites experience TWO competing relativistic effects: special relativity causes their clocks to run slightly slower (due to their orbital speed), while general relativity causes their clocks to run slightly faster (due to being farther from Earth's gravity, which also affects time). Why is it critical for GPS system engineers to account for BOTH effects, rather than just one?",
+    "options": [
+      {"text": "Since these two effects act in opposite directions and don't fully cancel each other out, ignoring either effect would result in an accumulating clock error over time, which would translate into significant, real-world position calculation errors for GPS users on Earth", "isCorrect": true, "feedback": "Correct -- this practical engineering necessity, accounting for BOTH competing relativistic effects with high precision, is a striking real-world example of how abstract relativistic physics has concrete, essential applications in modern technology."},
+      {"text": "These two relativistic effects actually perfectly cancel each other out, so no correction is needed at all", "isCorrect": false, "feedback": "This isn't accurate -- while these effects DO partially offset each other, they don't perfectly cancel out, meaning REAL correction for the net remaining effect is still necessary for accurate GPS functioning."},
+      {"text": "Only one of these two relativistic effects actually exists in reality; the other one is purely theoretical with no real impact", "isCorrect": false, "feedback": "This isn't accurate -- BOTH the special relativistic (speed-based) and general relativistic (gravity-based) time effects are real, experimentally confirmed phenomena that measurably affect GPS satellite clocks."},
+      {"text": "GPS satellites are actually completely unaffected by any relativistic time effects", "isCorrect": false, "feedback": "This isn't accurate -- GPS satellites are SIGNIFICANTLY affected by relativistic time effects, which is precisely why accounting for them is such a critical, well-documented engineering consideration for accurate GPS functioning."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This relativistic phenomenon describes the differential rate of elapsed proper time experienced by observers in relative motion.", "medium": "Moving really, really fast can actually make time itself run a little slower for you, compared to someone standing still.", "easy": "Moving really fast can make time run a little slower for you compared to someone standing still."},
+    "medium": {"hard": "Recall that the magnitude of relativistic time dilation scales dramatically with how close an object's velocity approaches the speed of light, becoming negligible at everyday and typical orbital speeds.", "medium": "This effect only gets really noticeable when something is moving super close to the speed of light, and even fast orbiting satellites are nowhere near that fast.", "easy": "This effect only gets really noticeable near the speed of light, and satellites are nowhere near that fast."},
+    "hard": {"hard": "Consider how failing to account for the NET combined effect of two opposing but non-canceling relativistic corrections would result in a systematic, accumulating timing error with real practical consequences.", "medium": "Since the two effects push the clock in opposite directions but by different amounts, you still need to correct for whatever difference is left over, or the GPS positions would slowly drift off.", "easy": "Since the two effects don't perfectly cancel out, you still need to correct for the leftover difference, or GPS would drift off."}
+  }
+}
+]

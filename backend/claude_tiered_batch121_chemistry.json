@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between an Arrhenius acid/base and a Bronsted-Lowry acid/base",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The Bronsted-Lowry definition describes an acid as a substance that:",
+    "options": [
+      {"text": "Donates a proton (H+) to another substance", "isCorrect": true, "feedback": "Correct -- the Bronsted-Lowry definition specifically defines an acid as a proton (H+) donor, a broader definition than the Arrhenius model."},
+      {"text": "Produces hydroxide ions (OH-) when dissolved in water", "isCorrect": false, "feedback": "That's the ARRHENIUS definition of a base, not the Bronsted-Lowry definition of an acid -- Bronsted-Lowry acids specifically DONATE protons, unrelated to hydroxide production."},
+      {"text": "Never reacts with any base under any circumstances", "isCorrect": false, "feedback": "This isn't accurate -- acids specifically DO react with bases (that's the basis of neutralization reactions), not something that never occurs."},
+      {"text": "Must always be dissolved in water to be classified as an acid", "isCorrect": false, "feedback": "This isn't accurate -- the Bronsted-Lowry definition doesn't require water specifically, since it's based on proton donation, which can occur in other solvents too."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The Arrhenius definition requires that acids/bases be dissolved in WATER (producing H+ or OH- ions), while the Bronsted-Lowry definition is based purely on proton transfer and doesn't require water at all. Why does this make the Bronsted-Lowry definition BROADER (able to classify more substances as acids/bases) than the Arrhenius definition?",
+    "options": [
+      {"text": "Since the Bronsted-Lowry definition only requires proton donation/acceptance between any two substances, it can classify acid-base behavior occurring in non-aqueous solvents or even in the gas phase, situations the water-dependent Arrhenius definition simply cannot account for, since Arrhenius specifically requires the reaction to occur in an aqueous (water-based) solution", "isCorrect": true, "feedback": "Correct -- this explanation of removing the water-dependency requirement correctly explains why the Bronsted-Lowry definition applies to a wider range of chemical situations than the more restrictive Arrhenius definition."},
+      {"text": "The Arrhenius definition would actually apply to a WIDER range of situations than the Bronsted-Lowry definition, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- the Bronsted-Lowry definition is generally considered BROADER (applying to more situations) than the more restrictive, water-dependent Arrhenius definition."},
+      {"text": "Both definitions would actually apply to the exact same identical range of chemical situations, with no meaningful difference in scope", "isCorrect": false, "feedback": "This isn't accurate -- these two definitions DIFFER MEANINGFULLY in scope, with Bronsted-Lowry applying more broadly than the water-dependent Arrhenius definition."},
+      {"text": "Whether water is required for the reaction has no actual bearing on how broadly each acid-base definition can be applied", "isCorrect": false, "feedback": "This isn't accurate -- whether water is required DIRECTLY determines the scope/breadth of each definition, which is precisely why Bronsted-Lowry is considered broader."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Ammonia (NH3) acts as a Bronsted-Lowry base (accepting a proton to form NH4+) even though it contains no hydroxide ions and cannot be classified as an Arrhenius base in the traditional sense. Explain why this example specifically demonstrates a key limitation of the Arrhenius definition that the Bronsted-Lowry definition overcomes.",
+    "options": [
+      {"text": "The Arrhenius definition specifically requires a base to produce hydroxide ions (OH-) directly, but ammonia's basic behavior comes from ACCEPTING a proton rather than releasing OH- ions directly from its own structure -- the Bronsted-Lowry definition, focused instead on proton acceptance, correctly captures ammonia's basic behavior in a way the stricter, hydroxide-focused Arrhenius definition cannot", "isCorrect": true, "feedback": "Correct -- this explanation of why ammonia fits the proton-acceptance framework of Bronsted-Lowry but not the hydroxide-production framework of Arrhenius correctly identifies a specific, concrete limitation of the Arrhenius model that motivated the broader Bronsted-Lowry definition."},
+      {"text": "Ammonia would actually satisfy the Arrhenius definition of a base just as well as it satisfies the Bronsted-Lowry definition", "isCorrect": false, "feedback": "This isn't accurate -- ammonia does NOT directly produce hydroxide ions from its own structure, so it does not straightforwardly satisfy the traditional Arrhenius definition of a base."},
+      {"text": "This ammonia example has no actual relevance to comparing the scope or limitations of the Arrhenius versus Bronsted-Lowry definitions", "isCorrect": false, "feedback": "This isn't accurate -- this example is SPECIFICALLY relevant and commonly used to illustrate the key limitation of the Arrhenius definition that the Bronsted-Lowry definition addresses."},
+      {"text": "Ammonia's basic behavior actually comes from releasing hydroxide ions directly, matching the Arrhenius definition rather than the Bronsted-Lowry definition", "isCorrect": false, "feedback": "This isn't accurate -- ammonia's basic behavior comes from ACCEPTING a proton (matching Bronsted-Lowry), not from directly releasing hydroxide ions from its own molecular structure."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This definitional framework characterizes an acid by its capacity to transfer a proton to a receptive chemical species.", "medium": "This kind of acid is defined as something that gives away a hydrogen ion to something else.", "easy": "This kind of acid is defined as something that gives away a hydrogen ion to something else."},
+    "medium": {"hard": "Consider how removing a water-solvent requirement expands the range of chemical contexts (non-aqueous, gas-phase) in which acid-base behavior can be classified.", "medium": "Since one definition doesn't care whether water is even involved, it can label way more chemical situations as acid-base reactions than the one that insists on water.", "easy": "Since one definition doesn't require water, it can label more situations as acid-base reactions than the one that does."},
+    "hard": {"hard": "Consider how ammonia's mechanism of basicity (accepting a proton) aligns with a proton-transfer framework but fails to satisfy a hydroxide-production-based framework.", "medium": "Ammonia acts basic by grabbing onto a hydrogen ion, not by shooting out hydroxide ions itself, so it fits the definition based on grabbing but not the one based on releasing.", "easy": "Ammonia acts basic by grabbing a hydrogen ion, not by releasing hydroxide ions, so it fits one definition but not the other."}
+  }
+}
+]

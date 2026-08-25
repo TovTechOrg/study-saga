@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between homologous structures and analogous structures",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Homologous structures' (like a human arm and a bat wing) are similar because they:",
+    "options": [
+      {"text": "Share a common evolutionary ancestor, even though they may now serve different functions", "isCorrect": true, "feedback": "Correct -- homologous structures share underlying anatomical similarity due to common evolutionary ancestry, even when their current functions differ (grasping vs. flying)."},
+      {"text": "Evolved completely independently to serve the same function, without any shared ancestry", "isCorrect": false, "feedback": "That describes ANALOGOUS structures, not homologous -- homologous structures specifically share common ancestry, while analogous structures arise independently."},
+      {"text": "Are found only within a single individual organism's body", "isCorrect": false, "feedback": "This isn't accurate -- homologous structures are compared ACROSS different species, not found solely within one individual's body."},
+      {"text": "Have no biological or evolutionary connection to each other whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- homologous structures specifically DO have a biological/evolutionary connection (shared common ancestry), which is the entire point of the term."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A bird's wing and a butterfly's wing are 'analogous' structures (similar function, independently evolved), while a bird's wing and a bat's wing are 'homologous' (shared ancestry). Why is comparing UNDERLYING BONE STRUCTURE (rather than just outward appearance or function) the key way scientists distinguish these two categories?",
+    "options": [
+      {"text": "Structures with shared evolutionary ancestry retain similar underlying skeletal arrangements (like the same basic bone pattern) even as outward appearance and function diverge, while independently evolved structures serving a similar function often achieve that function using completely different underlying anatomy (bones vs. no bones at all), so comparing deep structure reveals true ancestry better than surface-level similarity can", "isCorrect": true, "feedback": "Correct -- this explanation of why deep anatomical/structural comparison (rather than surface appearance) is the more reliable method for distinguishing homology from analogy reflects a fundamental principle in comparative anatomy and evolutionary biology."},
+      {"text": "Outward appearance and function would actually be more reliable than underlying bone structure for distinguishing homologous from analogous structures", "isCorrect": false, "feedback": "This is backwards -- underlying structural similarity is generally considered MORE reliable than surface appearance or function for correctly identifying true evolutionary homology."},
+      {"text": "Bird wings and bat wings would actually have completely different underlying bone arrangements, unlike what true homology would require", "isCorrect": false, "feedback": "This isn't accurate -- bird and bat wings actually SHARE a similar underlying bone arrangement (the same basic forelimb bones), which is precisely why they're classified as homologous."},
+      {"text": "This distinction between deep structure and surface function has no actual role in how scientists identify homologous versus analogous structures", "isCorrect": false, "feedback": "This isn't accurate -- this distinction IS DIRECTLY central to how scientists correctly identify and classify homologous versus analogous structures."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The presence of homologous structures across diverse species is considered strong evidence for evolution from a common ancestor, since it would be an extraordinary coincidence for unrelated organisms to independently develop identical underlying skeletal blueprints. Why does this 'shared blueprint' argument represent particularly compelling scientific evidence?",
+    "options": [
+      {"text": "If species had evolved completely independently from unrelated ancestors, there would be no fundamental biological REASON for them to share a nearly identical underlying skeletal arrangement -- the fact that such a specific, detailed shared blueprint DOES exist across diverse species performing very different functions strongly suggests it was inherited from a shared ancestor rather than arising by coincidence", "isCorrect": true, "feedback": "Correct -- this reasoning (an unlikely coincidence versus a shared inherited explanation) reflects the core logical structure of using homology as evidence for common descent, a foundational argument in evolutionary biology."},
+      {"text": "This shared blueprint argument actually provides no meaningful scientific evidence supporting the theory of evolution from a common ancestor", "isCorrect": false, "feedback": "This isn't accurate -- this argument is considered SIGNIFICANT and compelling evidence supporting common descent, one of the classic lines of evidence in evolutionary biology."},
+      {"text": "Independent, unrelated evolutionary origins would actually be the MORE likely explanation for such a detailed shared skeletal blueprint", "isCorrect": false, "feedback": "This is backwards -- a shared common ancestor is considered the FAR MORE likely and scientifically supported explanation for such a detailed, specific shared blueprint, not independent origins."},
+      {"text": "The specific level of detail in the shared blueprint has no actual bearing on how compelling this evidence is for common ancestry", "isCorrect": false, "feedback": "This isn't accurate -- the LEVEL OF DETAIL in the shared blueprint is precisely what makes this evidence compelling, since highly detailed coincidental similarity would be extraordinarily unlikely without shared ancestry."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These anatomical features exhibit structural correspondence attributable to descent from a shared evolutionary progenitor, irrespective of current functional divergence.", "medium": "These are body parts that are similar because they came from the same ancestor, even if they're used differently now.", "easy": "These are body parts that are similar because they came from the same ancestor, even if used differently now."},
+    "medium": {"hard": "Consider how inherited skeletal architecture persists across divergent lineages despite functional divergence, whereas convergently evolved structures achieve similar function through unrelated underlying anatomy.", "medium": "Related creatures keep the same basic bone layout even after it gets used for different jobs, but unrelated creatures solving the same problem often build it out of totally different stuff.", "easy": "Related creatures keep the same bone layout even for different jobs; unrelated creatures solve the same problem with different stuff."},
+    "hard": {"hard": "Consider how the improbability of convergent lineages independently arriving at an identical detailed skeletal blueprint favors inheritance from a common ancestor as the parsimonious explanation.", "medium": "It would be a wild coincidence for totally unrelated creatures to just happen to build the exact same detailed skeleton by accident, so sharing one is much better explained by having the same ancestor.", "easy": "It would be a huge coincidence for unrelated creatures to build the same detailed skeleton by accident, so sharing one points to a common ancestor."}
+  }
+}
+]

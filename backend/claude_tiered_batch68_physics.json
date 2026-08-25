@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of angular momentum and its conservation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Angular momentum depends on which factors for a rotating object?",
+    "options": [
+      {"text": "The object's rotational speed and how its mass is distributed relative to the axis of rotation", "isCorrect": true, "feedback": "Correct -- angular momentum combines an object's moment of inertia (mass distribution) with its angular velocity (rotational speed)."},
+      {"text": "Only the object's color", "isCorrect": false, "feedback": "Color has no bearing on angular momentum, which specifically depends on mass distribution and rotational speed."},
+      {"text": "Only the object's temperature", "isCorrect": false, "feedback": "Temperature isn't a factor in angular momentum calculations -- mass distribution and rotational speed are the relevant factors."},
+      {"text": "Only the object's exact color and smell", "isCorrect": false, "feedback": "Neither color nor smell are physical factors relevant to angular momentum, which depends on mass distribution and rotational speed."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A figure skater spinning with arms extended pulls their arms in close to their body, and their spin rate dramatically increases. How does conservation of angular momentum explain this speed increase?",
+    "options": [
+      {"text": "Pulling the arms in reduces the skater's moment of inertia (mass distribution), so their rotational speed must increase proportionally to keep the total angular momentum constant", "isCorrect": true, "feedback": "Correct -- since angular momentum (moment of inertia × angular velocity) is conserved when no external torque acts on the skater, decreasing moment of inertia necessarily requires increasing angular velocity to compensate."},
+      {"text": "The skater's total angular momentum actually increases when they pull their arms in", "isCorrect": false, "feedback": "This isn't accurate -- angular momentum remains CONSTANT (conserved) throughout this maneuver; it's specifically the DISTRIBUTION between moment of inertia and angular velocity that changes, not the total angular momentum."},
+      {"text": "Pulling the arms in has no actual connection to the skater's spin rate", "isCorrect": false, "feedback": "This isn't accurate -- pulling the arms in is DIRECTLY connected to and responsible for the skater's dramatic increase in spin rate, via the conservation of angular momentum principle."},
+      {"text": "The skater's moment of inertia actually increases when they pull their arms in closer", "isCorrect": false, "feedback": "This is backwards -- pulling the arms CLOSER to the body actually DECREASES (not increases) the skater's moment of inertia, which is precisely why their spin rate must increase to conserve angular momentum."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A diver performing a somersault in mid-air tucks their body into a tight ball to spin faster, then extends back out to slow their rotation before entering the water. Since there's no external torque acting on the diver while airborne (ignoring air resistance), why does this tucking and extending strategy work to control spin rate without violating any physical laws?",
+    "options": [
+      {"text": "The diver's total angular momentum remains constant throughout the entire dive (since no external torque acts on them mid-air), so deliberately changing their body's moment of inertia (via tucking/extending) directly and predictably changes their angular velocity in the opposite direction, allowing precise spin control", "isCorrect": true, "feedback": "Correct -- this practical athletic application elegantly demonstrates conservation of angular momentum in action, showing how an athlete can strategically manipulate their own body's mass distribution to control rotational speed without needing any external rotational force once already airborne."},
+      {"text": "This diving technique actually violates the conservation of angular momentum principle", "isCorrect": false, "feedback": "This isn't accurate -- this diving technique doesn't violate conservation of angular momentum at all; it's actually a textbook demonstration of that very principle in practical action."},
+      {"text": "The diver's total angular momentum changes significantly throughout the dive due to their body movements", "isCorrect": false, "feedback": "This isn't accurate -- the diver's TOTAL angular momentum actually remains CONSTANT throughout the airborne dive (absent external torque); it's specifically the DISTRIBUTION between moment of inertia and angular velocity that intentionally changes."},
+      {"text": "Tucking and extending the body has no actual effect on the diver's moment of inertia", "isCorrect": false, "feedback": "This isn't accurate -- tucking and extending the body DOES have a very significant, deliberate effect on the diver's moment of inertia, which is precisely the mechanism being exploited to control spin rate."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This rotational quantity is the product of an object's moment of inertia and its angular velocity about a given rotation axis.", "medium": "This depends on how fast something spins AND how its weight is spread out around the spinning point.", "easy": "This depends on how fast something spins and how its weight is spread out."},
+    "medium": {"hard": "Recall that angular momentum (moment of inertia times angular velocity) stays constant absent external torque, so a decrease in one factor necessitates a proportional increase in the other.", "medium": "Since the total spin amount has to stay the same, pulling the arms in close (making mass distribution smaller) forces the spin speed to go up.", "easy": "Pulling the arms in close makes the mass distribution smaller, forcing the spin speed to go up."},
+    "hard": {"hard": "Apply conservation of angular momentum to explain how deliberately altering body shape (and thus moment of inertia) mid-flight predictably and controllably adjusts angular velocity without any external rotational input.", "medium": "Since nothing outside is twisting the diver while they're in the air, changing their own body shape is the only way to speed up or slow down their spin -- and it works because of this conservation rule.", "easy": "Since nothing outside is twisting the diver in the air, changing body shape is the only way to speed up or slow their spin."}
+  }
+}
+]

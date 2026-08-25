@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between exothermic and endothermic bond formation vs. bond breaking",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Breaking a chemical bond generally:",
+    "options": [
+      {"text": "Requires an input of energy (is endothermic)", "isCorrect": true, "feedback": "Correct -- energy must be supplied to overcome the attractive forces holding atoms together in a bond, making bond-breaking an endothermic process."},
+      {"text": "Releases energy (is exothermic)", "isCorrect": false, "feedback": "This is backwards -- breaking a bond generally REQUIRES energy input (endothermic); it's specifically FORMING a new bond that generally RELEASES energy (exothermic)."},
+      {"text": "Never involves any energy change at all", "isCorrect": false, "feedback": "This isn't accurate -- breaking a chemical bond DOES involve a real energy change; specifically, it requires an energy INPUT (endothermic process)."},
+      {"text": "Only occurs at absolute zero temperature", "isCorrect": false, "feedback": "This isn't accurate -- bond breaking can occur across a wide range of temperatures, not exclusively at absolute zero (which would actually minimize molecular motion/energy)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Whether an overall chemical reaction is exothermic or endothermic depends on comparing the total energy required to break all the reactants' bonds against the total energy released forming all the products' bonds. Why is this NET comparison (rather than considering just one side alone) necessary for correctly classifying a reaction's overall energy change?",
+    "options": [
+      {"text": "Since every chemical reaction involves BOTH breaking existing bonds (requiring energy) AND forming new bonds (releasing energy), the reaction's OVERALL classification (exothermic or endothermic) depends specifically on which of these two energy quantities is LARGER, not on considering just one process in isolation", "isCorrect": true, "feedback": "Correct -- this necessary net energy comparison (bonds broken vs. bonds formed) is exactly why simply knowing that 'bonds are being broken' or 'bonds are being formed' alone isn't sufficient to determine a reaction's overall exothermic/endothermic classification."},
+      {"text": "Only the energy required to break the reactants' bonds actually matters for classifying a reaction's overall energy change", "isCorrect": false, "feedback": "This isn't accurate -- BOTH the bond-breaking energy AND the bond-forming energy must be considered TOGETHER (compared against each other) to correctly determine a reaction's overall energy classification, not just one factor in isolation."},
+      {"text": "Only the energy released forming the products' bonds actually matters for classifying a reaction's overall energy change", "isCorrect": false, "feedback": "This isn't accurate -- BOTH the bond-forming energy AND the bond-breaking energy must be considered TOGETHER, not just the bond-forming energy in isolation."},
+      {"text": "This net energy comparison has no actual connection to correctly classifying a reaction's overall energy change", "isCorrect": false, "feedback": "This isn't accurate -- this net energy comparison (breaking vs. forming) is DIRECTLY and centrally connected to and necessary for correctly classifying any given reaction's overall exothermic/endothermic nature."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A particular reaction breaks bonds requiring 500 kJ of energy input, while forming new bonds that release 650 kJ of energy. Based on this net energy comparison, is this reaction exothermic or endothermic, and what is the approximate net energy change?",
+    "options": [
+      {"text": "Exothermic, releasing a net 150 kJ overall (650 kJ released - 500 kJ absorbed = 150 kJ net release)", "isCorrect": true, "feedback": "Correct -- since MORE energy is released forming new bonds (650 kJ) than was required breaking the original bonds (500 kJ), the reaction has a net energy RELEASE of 150 kJ, making it exothermic overall."},
+      {"text": "Endothermic, absorbing a net 150 kJ overall", "isCorrect": false, "feedback": "This is backwards -- since MORE energy is released (650 kJ) than absorbed (500 kJ), the reaction has a net energy RELEASE (exothermic), not a net absorption (endothermic)."},
+      {"text": "Exothermic, releasing a net 1,150 kJ overall", "isCorrect": false, "feedback": "This incorrectly ADDS the two energy values together (500+650), rather than correctly finding their DIFFERENCE (650-500) to determine the actual net energy change."},
+      {"text": "This reaction actually has no net energy change at all (perfectly balanced)", "isCorrect": false, "feedback": "This isn't accurate -- the two energy values given (500 kJ and 650 kJ) are NOT equal, meaning there IS a genuine net energy change (specifically, a 150 kJ net release), not a perfectly balanced zero-change scenario."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process necessitates energy absorption to overcome the attractive interatomic forces maintaining the bonded configuration.", "medium": "This process needs energy put INTO it -- it takes energy in rather than giving it off.", "easy": "This process needs energy put into it."},
+    "medium": {"hard": "Recognize that the overall thermodynamic classification requires subtracting the bond-breaking energy cost from the bond-forming energy release to determine the net directional energy flow.", "medium": "You have to compare BOTH numbers -- how much energy it took to break things apart AND how much energy came out making new things -- to see which one 'wins.'", "easy": "You have to compare both numbers -- energy used breaking things and energy released making new things."},
+    "hard": {"hard": "Subtract the total bond-breaking energy requirement from the total bond-forming energy release to determine both the direction and magnitude of the net energy change.", "medium": "Subtract 500 (energy used) from 650 (energy released) to find the net amount, and since more was released than used, it's exothermic.", "easy": "650 minus 500 equals 150. Since more was released than used, it's exothermic."}
+  }
+}
+]

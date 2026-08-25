@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between a sequence's convergence and divergence",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A sequence is said to 'converge' if, as you go further and further along the sequence, the terms:",
+    "options": [
+      {"text": "Get closer and closer to a specific, single finite value (the limit)", "isCorrect": true, "feedback": "Correct -- a convergent sequence has terms that approach a specific, well-defined finite number as you progress further and further through the sequence."},
+      {"text": "Get progressively larger and larger, without any upper bound", "isCorrect": false, "feedback": "That describes a DIVERGENT sequence (specifically, one diverging toward infinity), not a convergent one, which specifically approaches a FINITE limit value, not growing unboundedly."},
+      {"text": "Alternate randomly between completely different values with no discernible pattern", "isCorrect": false, "feedback": "This describes one type of DIVERGENT behavior (oscillating without settling), not convergence, which specifically requires terms to settle toward one SPECIFIC finite value."},
+      {"text": "Always remain exactly, precisely constant from the very first term onward", "isCorrect": false, "feedback": "This isn't the general definition of convergence -- while a CONSTANT sequence technically does converge (trivially, to itself), convergence more generally allows terms to gradually APPROACH a limit, not necessarily starting out already exactly at that value."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Does the sequence defined by a_n = 1/n (i.e., 1, 1/2, 1/3, 1/4, ...) converge or diverge, and if it converges, what specific value does it converge to?",
+    "options": [
+      {"text": "Converges to 0", "isCorrect": true, "feedback": "Correct -- as n gets larger and larger (approaching infinity), 1/n gets progressively smaller and smaller, approaching arbitrarily close to (though never exactly reaching) 0."},
+      {"text": "Diverges to infinity", "isCorrect": false, "feedback": "This is backwards -- this specific sequence's terms actually get SMALLER (not larger) as n increases, converging toward 0, not diverging toward infinity."},
+      {"text": "Converges to 1", "isCorrect": false, "feedback": "1 is only the FIRST term of the sequence (when n=1), not the value the sequence actually APPROACHES/converges to as n increases toward infinity -- that limiting value is specifically 0."},
+      {"text": "This sequence's behavior cannot actually be determined at all", "isCorrect": false, "feedback": "This isn't accurate -- this sequence's convergence behavior CAN definitely be determined -- it clearly and demonstrably converges to the specific value 0 as n approaches infinity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The sequence defined by a_n = (-1)^n (i.e., -1, 1, -1, 1, ...) neither converges to a single value NOR diverges to positive or negative infinity -- it's a specific type of 'divergent' sequence sometimes called 'oscillating.' Explain WHY this specific sequence fails to satisfy the formal definition of convergence, even though its terms remain BOUNDED (never growing infinitely large in magnitude).",
+    "options": [
+      {"text": "Convergence formally REQUIRES that the sequence's terms get ARBITRARILY CLOSE TO AND STAY CLOSE TO one SPECIFIC, single value as n increases -- since this sequence perpetually ALTERNATES between exactly -1 and +1 (never actually settling down toward or staying near just ONE of these two values), it fails this crucial 'settling toward a single value' requirement, making it divergent DESPITE remaining bounded (never growing infinitely large)", "isCorrect": true, "feedback": "Correct -- this example (bounded but oscillating, thus divergent) importantly illustrates that 'divergence' more broadly encompasses ANY failure to converge toward a single specific value, which includes but is NOT LIMITED TO simply 'growing infinitely large' -- oscillating behavior WITHOUT settling toward one specific value is ALSO a distinct, valid form of divergence, providing a valuable, nuanced refinement to a purely intuitive, oversimplified notion of divergence as merely 'becoming unboundedly large.'"},
+      {"text": "This specific sequence actually DOES properly converge, despite appearances, since its terms never grow infinitely large in magnitude", "isCorrect": false, "feedback": "This isn't accurate -- REMAINING BOUNDED (not growing infinitely large) is NOT SUFFICIENT for convergence -- the sequence must ALSO settle toward one SPECIFIC value, which this particular oscillating sequence specifically fails to do, despite indeed remaining bounded."},
+      {"text": "Divergence actually always specifically means a sequence's terms must grow infinitely large in magnitude, with no other possible form of divergence existing", "isCorrect": false, "feedback": "This isn't accurate -- divergence is a BROADER concept than just 'growing infinitely large' -- it specifically encompasses ANY failure to converge to one single specific value, which INCLUDES oscillating behavior like this particular example, not exclusively unbounded growth."},
+      {"text": "This specific example has no actual connection to helping refine or clarify the general formal definition of sequence convergence/divergence", "isCorrect": false, "feedback": "This isn't accurate -- this specific example IS DIRECTLY and valuably connected to and HELPS REFINE/clarify a more complete, nuanced understanding of the general formal definition of convergence/divergence, beyond an oversimplified intuitive notion."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This sequential property requires that terms progressively approach and remain arbitrarily proximate to a singular, well-defined limiting numerical value.", "medium": "The numbers in the sequence keep getting closer and closer to one specific target number.", "easy": "The numbers keep getting closer and closer to one specific target number."},
+    "medium": {"hard": "Evaluate the limiting behavior of the reciprocal function as its denominator variable increases without bound toward infinity.", "medium": "As you plug in bigger and bigger numbers for n, figure out what number 1/n gets closer and closer to.", "easy": "As n gets bigger, 1/n gets smaller and smaller, approaching 0."},
+    "hard": {"hard": "Consider how the formal epsilon-based definition of convergence requires eventual, permanent proximity to a single fixed value, a condition violated by perpetual alternation between two distinct values regardless of boundedness.", "medium": "Since this sequence just keeps flip-flopping forever between -1 and +1, and never actually settles down near just ONE of those numbers permanently, it technically doesn't count as 'converging,' even though it never blows up to infinity either.", "easy": "Since this sequence keeps flip-flopping and never settles near one number, it doesn't count as converging."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between real images and virtual images in optics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'real image' formed by a lens or mirror is one where:",
+    "options": [
+      {"text": "Light rays actually converge and physically meet at the image location, allowing it to be projected onto a screen", "isCorrect": true, "feedback": "Correct -- a real image forms where light rays actually physically converge, which is why real images can be captured and displayed on a screen, like in a movie projector."},
+      {"text": "Light rays only appear to diverge FROM the image location, without physically meeting there", "isCorrect": false, "feedback": "That describes a VIRTUAL image, not a real one -- virtual images involve light rays that only appear to originate from a point, without actually converging there."},
+      {"text": "No light rays are involved in forming the image at all", "isCorrect": false, "feedback": "This isn't accurate -- forming any image (real or virtual) fundamentally requires light rays; the distinction is specifically whether those rays actually converge (real) or only appear to (virtual)."},
+      {"text": "The image can only be seen by looking directly into the mirror or lens, never projected", "isCorrect": false, "feedback": "This isn't accurate -- a real image specifically CAN be projected onto a screen, unlike a virtual image, which cannot be projected this way."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A plane (flat) mirror always produces a virtual image (like your reflection), which cannot be projected onto a screen, while a movie projector's lens produces a real image that CAN be projected onto a screen. Why does the difference in whether light rays physically converge explain this projectability difference?",
+    "options": [
+      {"text": "A screen can only display an image where light rays are actually physically present and converging at that specific location -- since a real image involves light rays truly converging there, placing a screen at that location captures and displays the image, but a virtual image's light rays only appear to diverge from behind the mirror/lens without ever actually being present there, so no screen placed at that apparent location could ever capture anything", "isCorrect": true, "feedback": "Correct -- this explanation of physical light convergence (required for a screen to display an image) versus merely apparent divergence (with no actual light present) correctly explains why only real images, not virtual images, can be projected onto a screen."},
+      {"text": "A virtual image would actually also be capable of being projected onto a screen, identical to a real image", "isCorrect": false, "feedback": "This isn't accurate -- a virtual image specifically CANNOT be projected onto a screen, unlike a real image, precisely because no light rays are physically present at the virtual image's apparent location."},
+      {"text": "Whether light rays physically converge at a location has no actual connection to whether an image can be projected onto a screen there", "isCorrect": false, "feedback": "This isn't accurate -- whether light rays physically converge IS DIRECTLY connected to and determines whether an image can be projected onto a screen at that location."},
+      {"text": "A plane mirror would actually produce a real image, not a virtual one, contrary to what's described", "isCorrect": false, "feedback": "This isn't accurate -- a plane mirror specifically produces a VIRTUAL image (like your reflection appearing to be behind the mirror surface), not a real one."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A converging (convex) lens can produce EITHER a real image or a virtual image, depending specifically on whether the object is placed farther than or closer than the lens's focal length. Explain the ray-geometry reasoning behind why this specific object-distance threshold determines which image type forms.",
+    "options": [
+      {"text": "When an object is placed beyond the focal length, light rays passing through the converging lens are bent enough to actually cross and converge at a real point on the far side, forming a real image there, but when the object is placed closer than the focal length, the lens cannot bend the diverging rays enough to make them actually cross -- they instead continue diverging on the far side, only appearing to trace back to a virtual point behind the object when extended backward, producing a virtual (magnified) image instead", "isCorrect": true, "feedback": "Correct -- this explanation of how object placement relative to the focal length determines whether refracted rays actually converge (real image) or merely appear to diverge from a point (virtual image) correctly explains this well-known lens behavior, foundational to understanding devices like magnifying glasses and cameras."},
+      {"text": "A converging lens would actually always produce the exact same image type (either always real or always virtual), regardless of object distance from the lens", "isCorrect": false, "feedback": "This isn't accurate -- a converging lens can produce EITHER image type specifically depending on object distance relative to the focal length, not always the same type regardless of distance."},
+      {"text": "Object distance relative to the lens's focal length has no actual connection to determining whether a real or virtual image forms", "isCorrect": false, "feedback": "This isn't accurate -- object distance relative to focal length IS DIRECTLY connected to and is precisely what determines whether a real or virtual image forms with a converging lens."},
+      {"text": "Placing the object closer than the focal length would actually produce a real image, while placing it farther away would produce a virtual image", "isCorrect": false, "feedback": "This is backwards -- placing the object FARTHER than the focal length produces a REAL image, while placing it CLOSER produces a VIRTUAL image, the opposite of what's stated here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This image classification denotes a locus where refracted or reflected luminous rays undergo genuine spatial convergence, enabling projection onto an intercepting surface.", "medium": "This is the kind of image where light rays actually physically meet up at one spot, so you could catch it on a screen.", "easy": "This is an image where light rays actually meet at one spot, so you could catch it on a screen."},
+    "medium": {"hard": "Consider how a screen requires the physical presence of converging light at its surface to render an image, a condition satisfied only where rays truly cross rather than merely appearing to originate.", "medium": "A screen can only show you light that's actually THERE hitting it, and with a virtual image, no light is actually gathering behind the mirror, it just looks that way to your eyes.", "easy": "A screen can only show light that's actually there, and with a virtual image, no light is actually gathering at that spot."},
+    "hard": {"hard": "Consider how sufficient ray bending beyond the focal length forces genuine convergence on the far side, whereas insufficient bending within the focal length leaves rays diverging, only appearing to originate from a virtual point upon backward extension.", "medium": "Put the object far enough away and the lens bends the light enough to actually cross over and meet on the other side, but put it too close and the light just keeps spreading apart, only seeming to come from a point behind it.", "easy": "Put the object far enough away and the light actually crosses over; put it too close and the light just keeps spreading apart instead."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of conditional probability",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Conditional probability, written P(A|B), describes:",
+    "options": [
+      {"text": "The probability of event A happening, given that event B has already occurred", "isCorrect": true, "feedback": "Correct -- conditional probability calculates a probability specifically within the context that some other related event is already known to have happened."},
+      {"text": "The probability of two completely unrelated events happening at the exact same time", "isCorrect": false, "feedback": "This doesn't correctly describe conditional probability, which specifically involves one event's probability being calculated GIVEN that another event has already occurred, not just two unrelated simultaneous events."},
+      {"text": "The probability of event A happening, completely ignoring any information about event B", "isCorrect": false, "feedback": "This describes an UNCONDITIONAL (or simple) probability, not conditional probability, which specifically INCORPORATES known information about event B."},
+      {"text": "A measurement that has nothing to do with actual probability calculations", "isCorrect": false, "feedback": "This isn't accurate -- conditional probability IS a legitimate, standard type of probability calculation, specifically incorporating additional known conditions."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a class of 30 students, 18 play soccer, and of those 18 soccer players, 12 also play basketball. What is the probability that a randomly selected STUDENT WHO PLAYS SOCCER also plays basketball (P(basketball|soccer))?",
+    "options": [
+      {"text": "12/18 (or 2/3)", "isCorrect": true, "feedback": "Correct -- since we're specifically considering only students who already play soccer (18 total), the relevant fraction is 12 (playing both) out of that 18, giving 12/18=2/3."},
+      {"text": "12/30", "isCorrect": false, "feedback": "This uses the total class size (30) as the denominator, but conditional probability specifically requires using only the SOCCER-PLAYING subgroup (18) as the relevant denominator."},
+      {"text": "18/30", "isCorrect": false, "feedback": "This is just the overall probability of playing soccer (regardless of basketball), not the CONDITIONAL probability of playing basketball GIVEN that someone already plays soccer."},
+      {"text": "6/18", "isCorrect": false, "feedback": "This doesn't correctly use the given numbers -- specifically, it should be 12 (not 6) students playing both sports, out of the 18 soccer players."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A medical test for a certain disease is 95% accurate (correctly identifies both those WITH and WITHOUT the disease 95% of the time). The disease itself is quite rare, affecting only 1% of the population. If someone tests POSITIVE, why is the actual probability that they truly have the disease (P(disease|positive test)) much LOWER than the test's stated 95% accuracy might intuitively suggest?",
+    "options": [
+      {"text": "Because the disease is so rare, the number of FALSE positives (healthy people incorrectly testing positive, since even 5% of the large healthy population is a substantial number) can actually outnumber the TRUE positives (actually sick people correctly testing positive from the small infected population), significantly lowering the actual probability of truly having the disease given a positive result", "isCorrect": true, "feedback": "Correct -- this counterintuitive result, a real-world application of Bayes' theorem, demonstrates why base disease rarity must be carefully considered alongside test accuracy when actually interpreting positive test results, especially for rare conditions."},
+      {"text": "The actual probability of having the disease given a positive test result would actually be much HIGHER than 95%, not lower", "isCorrect": false, "feedback": "This is backwards -- due to the disease's rarity, the actual conditional probability is typically LOWER (sometimes much lower) than the test's stated accuracy rate, not higher."},
+      {"text": "Test accuracy has no actual connection to the true probability of having a disease given a positive result", "isCorrect": false, "feedback": "This isn't accurate -- test accuracy IS relevant, but it must be considered ALONGSIDE the disease's base rarity rate to correctly calculate the true conditional probability, not considered in isolation."},
+      {"text": "This scenario is actually mathematically impossible -- a 95% accurate test must always give a 95% probability of having the disease if positive", "isCorrect": false, "feedback": "This isn't accurate -- this scenario is a well-established, mathematically sound result (related to Bayes' theorem) precisely demonstrating why disease rarity significantly affects the true predictive value of even a highly accurate test."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This calculation restricts the sample space to only those outcomes consistent with a specified prior occurrence before determining the target event's likelihood.", "medium": "This is figuring out the chances of something happening, but only looking at cases where something else already happened first.", "easy": "This is figuring out the chances of something, but only looking at cases where something else already happened."},
+    "medium": {"hard": "Restrict your consideration to only the subgroup already satisfying the given condition, then calculate the proportion within that subgroup meeting the target criterion.", "medium": "Since we already know they play soccer, only look at the soccer players (18) as your total, then see how many of THOSE also play basketball (12).", "easy": "Since we know they play soccer, use 18 as the total, and 12 as those who also play basketball: 12/18."},
+    "hard": {"hard": "Consider how applying the test's accuracy rate to both the large healthy population (generating false positives) and the small diseased population (generating true positives) can result in false positives outnumbering true positives when the underlying condition is sufficiently rare.", "medium": "Since almost everyone doesn't have the disease, even a small percentage of WRONG positive results from all those healthy people can end up being a bigger group than the correctly identified sick people.", "easy": "Since almost everyone doesn't have the disease, even a small percentage of wrong results from healthy people can outnumber the correctly identified sick people."}
+  }
+}
+]

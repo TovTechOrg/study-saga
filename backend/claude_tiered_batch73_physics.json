@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of blackbody radiation and Planck's quantum hypothesis",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An object is heated and begins to visibly glow, changing color from dull red to orange to white as temperature increases. What does this describe?",
+    "options": [
+      {"text": "Blackbody radiation, where an object emits light across a spectrum based on its temperature", "isCorrect": true, "feedback": "Correct -- this thermal radiation phenomenon, where hotter objects emit more energetic (shorter wavelength) light, is called blackbody radiation."},
+      {"text": "The photoelectric effect", "isCorrect": false, "feedback": "That's a different phenomenon, specifically involving electrons being ejected from a material by incoming light, not an object's own temperature-based light emission."},
+      {"text": "Nuclear fission", "isCorrect": false, "feedback": "Nuclear fission involves splitting atomic nuclei, an entirely different and unrelated phenomenon from an object's temperature-dependent light emission."},
+      {"text": "The Doppler effect", "isCorrect": false, "feedback": "The Doppler effect concerns frequency shifts due to relative motion, a different phenomenon from an object's temperature-dependent color/light emission."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Classical physics predicted that a heated blackbody should emit increasingly intense radiation at ever-shorter wavelengths (higher frequencies) without limit, a problematic prediction known as the 'ultraviolet catastrophe.' Why was this classical prediction considered a serious problem?",
+    "options": [
+      {"text": "This prediction contradicted actual experimental observations, which showed that radiation intensity actually peaks at a certain wavelength and then decreases at even shorter wavelengths, rather than increasing without limit", "isCorrect": true, "feedback": "Correct -- this stark mismatch between classical theoretical predictions and actual experimental observations represented a significant, well-recognized crisis in classical physics, ultimately motivating the development of quantum theory."},
+      {"text": "This classical prediction actually perfectly matched what was observed experimentally", "isCorrect": false, "feedback": "This isn't accurate -- this classical prediction DID NOT match experimental observations, which is precisely why it was considered such a serious, unresolved problem (the 'ultraviolet catastrophe') for classical physics."},
+      {"text": "This problem had no actual connection to the eventual development of quantum theory", "isCorrect": false, "feedback": "This isn't accurate -- resolving this specific problem was DIRECTLY connected to and a major motivating factor in the development of quantum theory, particularly Planck's quantum hypothesis."},
+      {"text": "Classical physics actually never made any specific predictions about blackbody radiation at all", "isCorrect": false, "feedback": "This isn't accurate -- classical physics DID make a specific, well-defined prediction about blackbody radiation, which is precisely why its failure to match observations was considered such a significant problem."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Max Planck resolved the ultraviolet catastrophe by proposing that energy could only be emitted or absorbed in discrete, fixed-size packets ('quanta') rather than in a continuous range, as classical physics assumed. Why did this revolutionary assumption successfully explain the actual observed pattern of blackbody radiation?",
+    "options": [
+      {"text": "By requiring higher-frequency radiation to be emitted in larger discrete energy packets, Planck's hypothesis made it statistically much less likely for a heated object to have enough concentrated energy to emit very high-frequency (short-wavelength) radiation, naturally explaining why intensity decreases at very short wavelengths instead of increasing indefinitely", "isCorrect": true, "feedback": "Correct -- this ingenious quantization concept, later foundational to all of quantum mechanics, elegantly resolved a major crisis in classical physics by correctly predicting the actual observed shape of the blackbody radiation spectrum, unlike the flawed classical continuous-energy assumption."},
+      {"text": "Planck's quantum hypothesis actually failed to correctly explain the observed blackbody radiation pattern", "isCorrect": false, "feedback": "This isn't accurate -- Planck's quantum hypothesis SUCCESSFULLY explained the observed blackbody radiation pattern, resolving the ultraviolet catastrophe, which is precisely why it's considered such a landmark achievement in physics history."},
+      {"text": "This hypothesis has no actual connection to explaining why radiation intensity behaves as observed at different wavelengths", "isCorrect": false, "feedback": "This isn't accurate -- this hypothesis is DIRECTLY and specifically connected to correctly explaining the observed wavelength-dependent radiation intensity pattern, resolving the previous classical physics discrepancy."},
+      {"text": "Planck's hypothesis actually confirmed that energy is always continuous and infinitely divisible, just as classical physics originally assumed", "isCorrect": false, "feedback": "This is backwards -- Planck's hypothesis specifically proposed that energy comes in DISCRETE, quantized packets, directly CONTRADICTING (not confirming) the classical assumption of continuous, infinitely divisible energy."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phenomenon describes the characteristic electromagnetic emission spectrum of an idealized thermal emitter as a function of its temperature.", "medium": "This is when a hot object glows and changes color as it gets even hotter.", "easy": "This is when a hot object glows and changes color as it heats up."},
+    "medium": {"hard": "Consider the discrepancy between a theoretical model predicting unbounded increase and actual experimental measurements showing a distinct peak followed by a decline.", "medium": "The old theory said radiation should just keep getting stronger and stronger at shorter wavelengths forever, but that's not what experiments actually showed.", "easy": "The old theory said radiation should keep getting stronger forever, but experiments showed otherwise."},
+    "hard": {"hard": "Consider how requiring progressively larger discrete energy units for higher-frequency emission would statistically suppress the likelihood of that emission occurring, given a fixed available thermal energy budget.", "medium": "Since high-frequency light needs bigger energy 'chunks' to be emitted, and those big chunks are harder to come by, less high-frequency light actually gets emitted than the old theory predicted.", "easy": "Since high-frequency light needs bigger energy chunks, and those are harder to come by, less gets emitted than the old theory predicted."}
+  }
+}
+]

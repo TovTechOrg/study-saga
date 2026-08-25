@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of a coordinate plane reflection",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If point (3, 5) is reflected over the x-axis, what is the new point?",
+    "options": [
+      {"text": "(3, -5)", "isCorrect": true, "feedback": "Correct -- reflecting over the x-axis flips the sign of the y-coordinate, keeping x the same."},
+      {"text": "(-3, 5)", "isCorrect": false, "feedback": "This flips the x-coordinate instead of the y-coordinate, which would be a reflection over the y-axis instead."},
+      {"text": "(-3, -5)", "isCorrect": false, "feedback": "This flips both coordinates, which would represent a reflection through the origin, not just over the x-axis."},
+      {"text": "(5, 3)", "isCorrect": false, "feedback": "This swaps the coordinates entirely, which isn't how a simple reflection over the x-axis works."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If point (-4, 6) is reflected over the y-axis, what is the new point?",
+    "options": [
+      {"text": "(4, 6)", "isCorrect": true, "feedback": "Correct -- reflecting over the y-axis flips the sign of the x-coordinate, keeping y the same."},
+      {"text": "(-4, -6)", "isCorrect": false, "feedback": "This flips the y-coordinate instead of the x-coordinate, which would be a reflection over the x-axis instead."},
+      {"text": "(4, -6)", "isCorrect": false, "feedback": "This flips both coordinates, which would represent a reflection through the origin, not just over the y-axis."},
+      {"text": "(6, -4)", "isCorrect": false, "feedback": "This swaps the coordinates entirely, which isn't how a simple reflection over the y-axis works."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A point (2, -7) is reflected over the x-axis, and then that new point is reflected over the y-axis. What is the final resulting point?",
+    "options": [
+      {"text": "(-2, 7)", "isCorrect": true, "feedback": "Correct -- first reflecting over the x-axis gives (2, 7), then reflecting that over the y-axis gives (-2, 7)."},
+      {"text": "(2, 7)", "isCorrect": false, "feedback": "This only performs the first reflection (over the x-axis), forgetting the second reflection over the y-axis."},
+      {"text": "(-2, -7)", "isCorrect": false, "feedback": "This only performs the second reflection correctly on the ORIGINAL point, without first applying the x-axis reflection."},
+      {"text": "(7, -2)", "isCorrect": false, "feedback": "This swaps the coordinates entirely, which isn't the result of these two sequential reflections."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This transformation flips the sign of just one coordinate, corresponding to the axis of reflection.", "medium": "Flip the sign of the y-coordinate, but keep the x-coordinate the same.", "easy": "Keep the 3, but change 5 to -5."},
+    "medium": {"hard": "This transformation flips the sign of just one coordinate, corresponding to the axis of reflection.", "medium": "Flip the sign of the x-coordinate, but keep the y-coordinate the same.", "easy": "Keep the 6, but change -4 to 4."},
+    "hard": {"hard": "Apply each reflection transformation one at a time, in the given order, updating the point after each individual step.", "medium": "First flip the y-coordinate's sign, then take that new point and flip its x-coordinate's sign.", "easy": "First change -7 to 7, then change that 2 to -2."}
+  }
+}
+]

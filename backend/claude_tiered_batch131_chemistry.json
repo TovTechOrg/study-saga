@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between a catalyst and a reaction intermediate",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'catalyst' in a chemical reaction is a substance that:",
+    "options": [
+      {"text": "Speeds up the reaction without being permanently consumed", "isCorrect": true, "feedback": "Correct -- a catalyst increases reaction rate by providing an alternative pathway with lower activation energy, and it's regenerated at the end, not permanently consumed."},
+      {"text": "Is produced during the reaction and then consumed later in the same reaction sequence", "isCorrect": false, "feedback": "That describes a REACTION INTERMEDIATE, not a catalyst -- a catalyst is present from the start and regenerated at the end, while an intermediate is formed and then consumed within the reaction."},
+      {"text": "Slows down the rate of the chemical reaction", "isCorrect": false, "feedback": "This isn't accurate -- a catalyst specifically SPEEDS UP a reaction; a substance that slows a reaction down is called an inhibitor instead."},
+      {"text": "Becomes permanently part of the final product molecule", "isCorrect": false, "feedback": "This isn't accurate -- a catalyst is specifically REGENERATED at the end of the reaction, not permanently incorporated into the final product."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Both catalysts and reaction intermediates appear somewhere within a reaction's overall mechanism (its sequence of individual steps), but a catalyst appears as a REACTANT in an early step and then as a PRODUCT in a later step, while an intermediate appears in the opposite order (as a product first, then a reactant later). Why does this specific ordering distinguish the two?",
+    "options": [
+      {"text": "A catalyst is added at the beginning of the reaction (consumed as a reactant in an early step) and then regenerated later (produced again in a subsequent step), ending up unchanged overall, while an intermediate is instead CREATED partway through the reaction (as a product of an early step) and then consumed later (as a reactant in a subsequent step), meaning it never existed among the original starting materials at all", "isCorrect": true, "feedback": "Correct -- this explanation of the specific reactant/product ordering within the mechanism correctly distinguishes a catalyst (present from the start, regenerated at the end) from an intermediate (created partway through, then consumed), a key mechanistic distinction in reaction kinetics."},
+      {"text": "Catalysts and reaction intermediates would actually appear in the exact same order within a reaction mechanism, with no meaningful distinction between them", "isCorrect": false, "feedback": "This isn't accurate -- catalysts and intermediates appear in OPPOSITE orders within the reaction mechanism, which is precisely the distinguishing feature between them."},
+      {"text": "A reaction intermediate is actually present among the original starting materials before the reaction begins, identical to a catalyst", "isCorrect": false, "feedback": "This isn't accurate -- a reaction intermediate is specifically CREATED partway through the reaction, unlike a catalyst, which IS present among the original starting materials from the beginning."},
+      {"text": "The specific ordering of reactant and product roles within a mechanism has no actual connection to distinguishing catalysts from intermediates", "isCorrect": false, "feedback": "This isn't accurate -- this specific ordering IS DIRECTLY connected to and is precisely how catalysts and intermediates are mechanistically distinguished from each other."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A catalyst lowers a reaction's overall activation energy by providing an alternative reaction pathway (mechanism) with lower-energy transition states, even though it doesn't change the overall thermodynamics (deltaG) of the reaction. Explain why a catalyst can dramatically speed up a reaction without changing whether the reaction is thermodynamically favorable overall.",
+    "options": [
+      {"text": "Reaction RATE is governed by kinetics (specifically, the activation energy barrier that must be overcome), while whether a reaction is thermodynamically favorable is governed by the overall energy difference between reactants and products (deltaG), which depends only on the starting and ending states, not on the specific pathway taken between them -- since a catalyst only changes the PATHWAY (lowering the activation energy barrier along the way) without changing the reactants' or products' actual energy levels, it speeds up the reaction without altering its overall thermodynamic favorability", "isCorrect": true, "feedback": "Correct -- this explanation correctly distinguishes kinetics (pathway-dependent, affected by catalysts) from thermodynamics (dependent only on start/end states, unaffected by catalysts), a fundamental distinction in understanding how catalysis works without altering a reaction's fundamental favorability."},
+      {"text": "A catalyst would actually change the overall thermodynamic favorability (deltaG) of a reaction, in addition to speeding up its rate", "isCorrect": false, "feedback": "This isn't accurate -- a catalyst specifically does NOT change deltaG or overall thermodynamic favorability; it only affects the reaction's rate (kinetics), not its thermodynamics."},
+      {"text": "Reaction rate and thermodynamic favorability are actually determined by the exact same underlying factors, with no meaningful distinction between them", "isCorrect": false, "feedback": "This isn't accurate -- reaction rate (kinetics) and thermodynamic favorability are GENUINELY DIFFERENT concepts governed by different factors, which is precisely why a catalyst can affect one without affecting the other."},
+      {"text": "The specific reaction pathway taken has no actual connection to a reaction's activation energy or overall rate", "isCorrect": false, "feedback": "This isn't accurate -- the specific reaction pathway IS DIRECTLY connected to and determines the activation energy (and therefore the rate), which is precisely how a catalyst works."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This chemical agent accelerates reaction kinetics through provision of an alternative mechanistic pathway, emerging from the process chemically unaltered.", "medium": "This is a substance that makes a reaction go faster without getting used up itself.", "easy": "This is a substance that makes a reaction go faster without getting used up."},
+    "medium": {"hard": "Consider how the temporal ordering of a species' reactant versus product role within the stepwise mechanism reveals whether it was present from the start or generated mid-reaction.", "medium": "A catalyst starts out being used up early on but then gets made again later, ending up unchanged, while an intermediate gets CREATED partway through and then gets used up after that.", "easy": "A catalyst gets used early but remade later; an intermediate gets created partway through and then used up."},
+    "hard": {"hard": "Consider how kinetics depends on the activation-energy barrier along the chosen pathway, whereas thermodynamic favorability depends only on the fixed energy difference between initial and final states, independent of path.", "medium": "How fast something happens depends on the specific route taken, but whether it's worth happening at all only depends on where you start and where you end up, not the route, so a catalyst changing the route doesn't change that.", "easy": "Speed depends on the route taken, but favorability only depends on start and end points, so a catalyst changing the route doesn't change that."}
+  }
+}
+]

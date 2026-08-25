@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between physical adsorption and chemical adsorption",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'adsorption' refer to in chemistry?",
+    "options": [
+      {"text": "Particles (like gas molecules) sticking to the SURFACE of another material", "isCorrect": true, "feedback": "Correct -- adsorption specifically refers to a surface phenomenon, distinct from absorption, which involves particles being taken up INTO a material's bulk."},
+      {"text": "Particles being completely absorbed into the interior/bulk of another material", "isCorrect": false, "feedback": "That describes ABSORPTION (a different, though similarly-named process), not adsorption, which specifically concerns particles adhering to a SURFACE."},
+      {"text": "The complete destruction of a substance's molecular structure", "isCorrect": false, "feedback": "Adsorption doesn't destroy molecular structure -- it specifically describes particles adhering to a surface, not molecular breakdown."},
+      {"text": "A process that only occurs at extremely low temperatures", "isCorrect": false, "feedback": "Adsorption can occur across a range of temperatures -- this isn't the defining characteristic of the process, which specifically concerns surface adhesion."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Physical adsorption (physisorption) involves weak van der Waals forces holding particles to a surface, while chemical adsorption (chemisorption) involves the formation of actual chemical bonds between the particle and surface. Why does this distinction typically result in chemisorption being much harder to reverse than physisorption?",
+    "options": [
+      {"text": "Since chemisorption involves genuine chemical bond formation (generally much stronger than weak van der Waals forces), breaking these bonds to reverse the adsorption process requires significantly more energy than simply overcoming the comparatively weak forces involved in physisorption", "isCorrect": true, "feedback": "Correct -- this fundamental difference in bonding strength (weak intermolecular forces vs. actual chemical bonds) directly explains why chemisorption is generally much more difficult to reverse than physisorption."},
+      {"text": "Chemisorption and physisorption actually involve identically strong attachment forces, with no meaningful difference in reversibility", "isCorrect": false, "feedback": "This isn't accurate -- these two adsorption types involve GENUINELY DIFFERENT attachment force strengths (weak van der Waals vs. actual chemical bonds), which directly explains their different reversibility characteristics."},
+      {"text": "Physisorption is actually harder to reverse than chemisorption, contrary to what's being described", "isCorrect": false, "feedback": "This is backwards -- PHYSISORPTION (weak van der Waals forces) is generally EASIER to reverse than CHEMISORPTION (actual chemical bonds), not the other way around."},
+      {"text": "The type of bonding force involved has no actual connection to how easily an adsorption process can be reversed", "isCorrect": false, "feedback": "This isn't accurate -- the specific TYPE of bonding force involved (weak intermolecular vs. actual chemical bonds) is DIRECTLY connected to and explains the different reversibility characteristics of these two adsorption types."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Catalytic converters rely on chemisorption of pollutant gas molecules onto a catalyst's surface as a necessary first step before the actual chemical conversion reaction can occur. Why might the STRONGER bonding characteristic of chemisorption (compared to physisorption) actually be advantageous for this particular catalytic application, despite generally being harder to reverse?",
+    "options": [
+      {"text": "The stronger chemical bonding of chemisorption holds the pollutant molecules securely and in a specific favorable orientation on the catalyst's surface long enough, and with sufficient molecular interaction, for the desired chemical conversion reaction to actually take place, unlike the weaker, more transient physisorption interaction", "isCorrect": true, "feedback": "Correct -- this stronger, more specific bonding interaction characteristic of chemisorption is precisely why it's often necessary (despite being harder to reverse) for enabling the specific chemical transformations that catalysts are designed to facilitate."},
+      {"text": "Chemisorption's stronger bonding actually provides no particular advantage for catalytic applications like this", "isCorrect": false, "feedback": "This isn't accurate -- chemisorption's STRONGER, more specific bonding interaction is actually quite ADVANTAGEOUS and often NECESSARY for enabling effective catalytic conversion reactions to occur."},
+      {"text": "Catalytic converters actually rely exclusively on physisorption, not chemisorption, for their functioning", "isCorrect": false, "feedback": "This isn't accurate -- catalytic converters specifically rely on CHEMISORPTION (not physisorption alone) as a necessary step for enabling the desired chemical conversion reactions to occur effectively."},
+      {"text": "The strength of the bonding interaction has no actual connection to whether a chemical conversion reaction can successfully occur on a catalyst's surface", "isCorrect": false, "feedback": "This isn't accurate -- bonding interaction strength is DIRECTLY connected to and important for enabling successful chemical conversion reactions to occur, which is precisely why chemisorption (not weaker physisorption alone) is typically necessary for effective catalysis."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This surface phenomenon involves particles adhering to an external boundary rather than penetrating into the material's internal structure.", "medium": "This is when particles stick to the OUTSIDE surface of something, rather than going inside it.", "easy": "This is when particles stick to the outside surface of something."},
+    "medium": {"hard": "Compare the relative bond dissociation energy required to overcome weak intermolecular attractive forces versus that required to break genuine covalent or ionic chemical bonds.", "medium": "Since actual chemical bonds are generally a lot stronger than the weak, loose attractions in physisorption, it takes a lot more energy to break them apart again.", "easy": "Since chemical bonds are stronger than the weak attractions in physisorption, it takes more energy to break them."},
+    "hard": {"hard": "Consider how a stronger, more specific bonding interaction could provide both the necessary molecular proximity and orientation stability required for a subsequent chemical transformation to proceed successfully.", "medium": "Holding the pollutant molecule really firmly and in just the right position on the catalyst gives the actual chemical reaction enough time and stability to actually happen.", "easy": "Holding the molecule firmly in the right position gives the actual reaction enough time to happen."}
+  }
+}
+]
