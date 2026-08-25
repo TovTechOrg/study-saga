@@ -7,6 +7,46 @@ function showFeedbackModal(feedback, onClose) {
     if (onClose) onClose();
 }
 
+// Comic-caption-style battle log entries (Epic #11 / issues #18, #19): one
+// shared helper so every turn outcome -- attack, ability, recharge, and
+// in-combat errors -- renders the same narrated way instead of some paths
+// using plain text divs and others falling through to a bare alert(). Tone
+// is inferred from the message text itself (backend already writes
+// narrated strings like "X grows emboldened..."), not from separate flags,
+// so this stays a pure presentation layer -- no combat-numbers change.
+function addBattleLogEntry(message, { isCorrect } = {}) {
+    const log = document.getElementById('battle-log-content');
+    if (!log || !message) return;
+
+    let tone = 'system';
+    let burst = null;
+    if (/^correct!/i.test(message)) {
+        tone = 'correct';
+    } else if (/^incorrect\./i.test(message)) {
+        tone = 'incorrect';
+    } else if (typeof isCorrect === 'boolean') {
+        tone = isCorrect ? 'correct' : 'incorrect';
+    }
+    if (/emboldened/i.test(message)) {
+        tone = 'crit';
+        burst = 'Heavy Hit';
+    } else if (/hesitates/i.test(message)) {
+        tone = 'falter';
+        burst = 'Falters';
+    }
+
+    const entry = document.createElement('div');
+    entry.className = `battle-log-entry tone-${tone}`;
+    if (burst) {
+        const burstEl = document.createElement('span');
+        burstEl.className = `battle-log-burst ${tone}`;
+        burstEl.textContent = burst;
+        entry.appendChild(burstEl);
+    }
+    entry.appendChild(document.createTextNode(message));
+    log.prepend(entry);
+}
+
 // Consolidated game logic from inline script in index.html
 // All functions and event handlers are now in this file
 
@@ -608,12 +648,7 @@ async function performAction(action) {
                 updateCombatHUD(data.combat_state);
             }
             updateHintsBar(data.hints);
-            const log = document.getElementById('battle-log-content');
-            (data.messages || []).forEach(msg => {
-                const entry = document.createElement('div');
-                entry.textContent = msg;
-                if (log) log.prepend(entry);
-            });
+            (data.messages || []).forEach(msg => addBattleLogEntry(msg, { isCorrect: data.is_correct }));
             pushRecentMessages(data.messages || []);
 
             if (data.outcome === 'victory') {
@@ -637,11 +672,11 @@ async function performAction(action) {
                 }
             }
         } else {
-            alert(data.message || 'Action failed');
+            addBattleLogEntry(data.message || 'Action failed.');
         }
     } catch (e) {
         console.error('combat-action error:', e);
-        alert('Error: ' + e.message);
+        addBattleLogEntry('Error: ' + e.message);
     } finally {
         // Re-enable buttons unless game ended
         const victoryVisible = document.getElementById('victory-screen')?.style.display === 'flex';
@@ -853,14 +888,6 @@ async function submitQuizAnswer(action, answerIndex) {
         }
         updateHintsBar(data.hints);
         console.log('[DEBUG] submitQuizAnswer called');
-        // ...existing code...
-        // Always show feedback modal after answer submission
-        let feedbackMsg = "Answer submitted! Await further results or check the game log for more info.";
-        if (data.messages && data.messages.length > 0) {
-            feedbackMsg = data.messages[0];
-        } else if (data.message) {
-            feedbackMsg = data.message;
-        }
         // Determine correctness if possible
         let isCorrect = false;
         if (typeof data.correct !== 'undefined') {
@@ -869,6 +896,18 @@ async function submitQuizAnswer(action, answerIndex) {
             isCorrect = data.is_correct;
         } else if (typeof data.status !== 'undefined' && data.status === 'correct') {
             isCorrect = true;
+        }
+        // issue #18: this single-select path (the most common one) never
+        // wrote anything to the battle log -- the multi-select path did.
+        // Same treatment as the other two combat-action response sites.
+        (data.messages || []).forEach(msg => addBattleLogEntry(msg, { isCorrect }));
+        pushRecentMessages(data.messages || []);
+        // Always show feedback modal after answer submission
+        let feedbackMsg = "Answer submitted! Await further results or check the game log for more info.";
+        if (data.messages && data.messages.length > 0) {
+            feedbackMsg = data.messages[0];
+        } else if (data.message) {
+            feedbackMsg = data.message;
         }
         // Hide quiz modal before showing feedback
         if (modal) closeQuizModal();
@@ -903,13 +942,13 @@ async function submitQuizAnswer(action, answerIndex) {
             }
         });
         if (data.status === 'error') {
-            alert(data.message || 'Action failed');
+            addBattleLogEntry(data.message || 'Action failed.');
         } else if (!(data.combat_state || data.status === 'question' || data.status === 'error')) {
             console.warn('[DEBUG] Unexpected backend response:', data);
         }
     } catch (e) {
         console.error('submitQuizAnswer error:', e);
-        alert('Error: ' + e.message);
+        addBattleLogEntry('Error: ' + e.message);
     } finally {
         const victoryVisible = document.getElementById('victory-screen')?.style.display === 'flex';
         const defeatVisible = document.getElementById('defeat-screen')?.style.display === 'flex';
@@ -959,16 +998,11 @@ async function submitQuizAnswerMulti(action, answerIndices) {
         }
         updateHintsBar(data.hints);
 
-        const log = document.getElementById('battle-log-content');
-        (data.messages || []).forEach(msg => {
-            const entry = document.createElement('div');
-            entry.textContent = msg;
-            if (log) log.prepend(entry);
-        });
+        (data.messages || []).forEach(msg => addBattleLogEntry(msg, { isCorrect }));
         pushRecentMessages(data.messages || []);
 
         if (data.status === 'error') {
-            alert(data.message || 'Action failed');
+            addBattleLogEntry(data.message || 'Action failed.');
         } else {
             // Always show feedback modal with correct/incorrect styling
             let feedbackMsg = "Answer submitted! Await further results or check the game log for more info.";
@@ -1013,7 +1047,7 @@ async function submitQuizAnswerMulti(action, answerIndices) {
         }
     } catch (e) {
         console.error('submitQuizAnswerMulti error:', e);
-        alert('Error: ' + e.message);
+        addBattleLogEntry('Error: ' + e.message);
     } finally {
         const victoryVisible = document.getElementById('victory-screen')?.style.display === 'flex';
         const defeatVisible = document.getElementById('defeat-screen')?.style.display === 'flex';
