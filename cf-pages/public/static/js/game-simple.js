@@ -82,7 +82,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.preventDefault();
                 e.stopPropagation();
                 console.log('Delegated click for syllabus (card):', card.dataset.syllabusId);
-                selectSyllabus(card.dataset.syllabusId);
+                // Clicking the card body itself (not a specific difficulty
+                // button) has no difficulty to read -- default to medium.
+                selectSyllabus(card.dataset.syllabusId, 'medium');
             }
         });
     }
@@ -413,32 +415,42 @@ async function startGame() {
                     // Eyebrow now says "Realm" instead of repeating the syllabus
                     // name a second time right above the <h3> (issue #4 bug).
                     card.innerHTML = `<span class="syllabus-realm">Realm</span><h3>${syllabus.name}</h3><p>${syllabus.description}</p>`;
-                    const button = document.createElement('button');
-                    button.type = 'button';
-                    button.textContent = 'Initialize Sync';
-                    button.dataset.syllabusId = syllabus.id;
-                    button.setAttribute('data-syllabus-id', syllabus.id);
-                    console.log('Binding click to syllabus', syllabus.id, 'selectSyllabus type:', typeof selectSyllabus);
-                    button.addEventListener('click', onSyllabusClick);
+                    // Difficulty is chosen once here, before combat starts, and
+                    // locked in for the whole battle (not a per-turn toggle) --
+                    // three buttons instead of one "Initialize Sync" button.
+                    const difficultyRow = document.createElement('div');
+                    difficultyRow.className = 'syllabus-difficulty-picker';
+                    ['easy', 'medium', 'hard'].forEach(diff => {
+                        const button = document.createElement('button');
+                        button.type = 'button';
+                        button.className = `difficulty-btn difficulty-${diff}`;
+                        button.textContent = diff.charAt(0).toUpperCase() + diff.slice(1);
+                        button.dataset.syllabusId = syllabus.id;
+                        button.dataset.difficulty = diff;
+                        button.setAttribute('data-syllabus-id', syllabus.id);
+                        button.setAttribute('aria-label', `${syllabus.name}, ${diff} difficulty`);
+                        button.addEventListener('click', onSyllabusClick);
+                        difficultyRow.appendChild(button);
+                    });
                     card.addEventListener('click', function (e) {
-                        // If the button is clicked, let its handler run
+                        // If a difficulty button was clicked, let its own handler run
                         if (e.target.closest('button')) return;
-                        console.log('Card click handler for', syllabus.id);
-                        selectSyllabus(syllabus.id);
+                        console.log('Card click handler for', syllabus.id, '-- defaulting to medium');
+                        selectSyllabus(syllabus.id, 'medium');
                     });
                     card.addEventListener('keydown', function (e) {
                         if (e.key === 'Enter' || e.key === ' ') {
                             e.preventDefault();
-                            selectSyllabus(syllabus.id);
+                            selectSyllabus(syllabus.id, 'medium');
                         }
                     });
                     const caption = document.createElement('p');
                     caption.className = 'neural-btn-caption';
-                    caption.textContent = "Begin this realm's challenges";
-                    card.appendChild(button);
+                    caption.textContent = 'Choose a difficulty to begin this realm';
+                    card.appendChild(difficultyRow);
                     card.appendChild(caption);
                     grid.appendChild(card);
-                    console.log('Created button for:', syllabus.id);
+                    console.log('Created difficulty buttons for:', syllabus.id);
                 });
                 setStatus('Select a realm to sync');
             } else {
@@ -460,16 +472,18 @@ async function startGame() {
 
 function onSyllabusClick(e) {
     const id = e.currentTarget.dataset.syllabusId;
+    const difficulty = e.currentTarget.dataset.difficulty || 'medium';
     if (!id) {
-        console.warn('Initialize Sync clicked but no syllabus id found');
+        console.warn('Difficulty button clicked but no syllabus id found');
         return;
     }
-    console.log('Initialize Sync clicked for', id);
-    selectSyllabus(id);
+    console.log('Difficulty button clicked:', id, difficulty);
+    selectSyllabus(id, difficulty);
 }
 
-async function selectSyllabus(id) {
-    console.log('=== selectSyllabus called for:', id);
+async function selectSyllabus(id, difficulty) {
+    difficulty = ['easy', 'medium', 'hard'].includes(difficulty) ? difficulty : 'medium';
+    console.log('=== selectSyllabus called for:', id, 'difficulty:', difficulty);
     if (window.__startingCombat) {
         console.log('Combat start already in progress');
         return;
@@ -489,7 +503,7 @@ async function selectSyllabus(id) {
         const response = await fetch('/api/start-combat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ game_id: window.gameId, syllabus_id: id, enemy_id: 'misconception_golem' })
+            body: JSON.stringify({ game_id: window.gameId, syllabus_id: id, enemy_id: 'misconception_golem', difficulty })
         });
         console.log('Response status:', response.status);
         const data = await response.json();
@@ -512,7 +526,8 @@ async function selectSyllabus(id) {
             // "everything pushed left, log floating at top-right" layout bug.
             combatScreen.style.display = 'block';
             combatScreen.style.visibility = 'visible';
-            showGameNav(id.charAt(0).toUpperCase() + id.slice(1));
+            const difficultyLabel = difficulty.charAt(0).toUpperCase() + difficulty.slice(1);
+            showGameNav(`${id.charAt(0).toUpperCase() + id.slice(1)} · ${difficultyLabel}`);
 
             // Force a reflow to ensure DOM updates
             void combatScreen.offsetHeight;

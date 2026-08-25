@@ -290,6 +290,51 @@ body {
     margin-bottom: 1.25rem;
 }
 
+/* Difficulty picker (chosen once per realm-entry, locked for the battle) --
+   colors match the existing hint-tier convention used elsewhere (easy =
+   green, medium = yellow, hard = red) for a consistent visual language. */
+.syllabus-difficulty-picker {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.difficulty-btn {
+    flex: 1;
+    min-height: 44px;
+    padding: 0.6rem 0.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(15, 23, 42, 0.5);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.difficulty-btn.difficulty-easy {
+    color: #6bff6b;
+    border-color: rgba(107, 255, 107, 0.3);
+}
+
+.difficulty-btn.difficulty-medium {
+    color: #ffd93d;
+    border-color: rgba(255, 217, 61, 0.3);
+}
+
+.difficulty-btn.difficulty-hard {
+    color: #ff6b6b;
+    border-color: rgba(255, 107, 107, 0.3);
+}
+
+.difficulty-btn:hover,
+.difficulty-btn:focus-visible {
+    transform: translateY(-0.15rem);
+    background: rgba(30, 41, 59, 0.7);
+}
+
 /* COMBAT SCREEN */
 .neural-combat-container {
     position: relative;

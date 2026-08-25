@@ -39,7 +39,7 @@ export async function onRequestPost({ request, env }) {
         const baseDamage = spec.damage;
 
         if ((player.current_cap || 0) < cost) {
-            const combatState = { player, enemy, syllabus_id: session.syllabus_id || null };
+            const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium' };
             return jsonResponse({
                 status: 'error',
                 message: 'Not enough CAP',
@@ -176,7 +176,7 @@ export async function onRequestPost({ request, env }) {
                     question: { text: nextQuestion.text || '', options: sanitizedOpts, type: nextQuestionType },
                     game_id: gameId,
                     is_correct: isCorrect,
-                    combat_state: { player, enemy, syllabus_id: session.syllabus_id || null },
+                    combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium' },
                     hints: hintsSummary(session.hints),
                     messages,
                     outcome,
@@ -199,7 +199,7 @@ export async function onRequestPost({ request, env }) {
                 status: 'question',
                 question: { text: question.text || '', options: sanitizedOpts, type: questionType },
                 game_id: gameId,
-                combat_state: { player, enemy, syllabus_id: session.syllabus_id || null },
+                combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium' },
                 hints: hintsSummary(session.hints),
             }, 200);
         }
@@ -215,7 +215,7 @@ export async function onRequestPost({ request, env }) {
 
     await putSession(env, gameId, session);
 
-    const combatState = { player, enemy, syllabus_id: session.syllabus_id || null };
+    const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium' };
 
     return jsonResponse({
         status: 'success',
