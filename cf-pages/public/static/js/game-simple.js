@@ -139,6 +139,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    const profilePanelBtn = document.getElementById('profile-panel-btn');
+    if (profilePanelBtn) profilePanelBtn.addEventListener('click', openProfileModal);
+    const closeProfileBtn = document.getElementById('close-profile-btn');
+    if (closeProfileBtn) closeProfileBtn.addEventListener('click', closeProfileModal);
+
     const navHelpBtn = document.getElementById('game-nav-help-btn');
     if (navHelpBtn) navHelpBtn.addEventListener('click', openHowToPlayModal);
     const closeHowToPlayBtn = document.getElementById('close-how-to-play-btn');
@@ -255,6 +260,11 @@ async function handleAuthChanged(user) {
         clearAuthError();
         if (signInBtn) signInBtn.textContent = 'Sign out';
         if (caption) caption.textContent = `Signed in as ${user.displayName || user.email}`;
+
+        // One-time guest-profile merge (issue #22) -- no-ops if there's
+        // nothing to merge (loadGuestProfile never ran, or a prior merge
+        // already cleared it).
+        mergeGuestProfileOnSignIn();
 
         // Check for a game already in progress on another device.
         const idToken = await getIdToken();
@@ -391,6 +401,239 @@ function openHowToPlayModal() {
 function closeHowToPlayModal() {
     const modal = document.getElementById('how-to-play-modal');
     if (modal) deactivateModal(modal);
+}
+
+// Fetches (and for signed-in players, syncs) the current profile and renders
+// it into the panel -- guests read straight from localStorage, signed-in
+// players hit /api/sync-profile so a second device shows the same lifetime
+// totals per issue #22's acceptance criteria.
+async function openProfileModal() {
+    const modal = document.getElementById('profile-modal');
+    const body = document.getElementById('profile-modal-body');
+    if (!modal || !body) return;
+
+    body.innerHTML = '<p>Loading...</p>';
+    modal.classList.add('active');
+    modal._previouslyFocused = document.activeElement;
+    modal._releaseFocusTrap = trapFocus(modal, closeProfileModal);
+
+    let profile;
+    if (window.currentUser) {
+        const idToken = await getIdToken();
+        try {
+            const res = await fetch('/api/sync-profile', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id_token: idToken }),
+            });
+            const data = await res.json();
+            profile = data.status === 'success' ? data.profile : freshProfile();
+        } catch (e) {
+            console.error('Profile fetch failed:', e);
+            profile = null;
+        }
+    } else {
+        profile = loadGuestProfile();
+    }
+    renderProfilePanel(body, profile);
+}
+
+function closeProfileModal() {
+    const modal = document.getElementById('profile-modal');
+    if (modal) deactivateModal(modal);
+}
+
+function renderProfilePanel(container, profile) {
+    if (!profile) {
+        container.innerHTML = '<p>Could not load your profile right now. Please try again.</p>';
+        return;
+    }
+    const totals = profile.totals || { runs: 0, questions_answered: 0, questions_correct: 0 };
+    const overallAccuracy = totals.questions_answered > 0
+        ? Math.round((totals.questions_correct / totals.questions_answered) * 100)
+        : 0;
+
+    const realmEntries = Object.entries(profile.realms || {});
+    const realmRows = realmEntries.length
+        ? realmEntries.map(([realm, r]) => {
+            const acc = r.questions_answered > 0 ? Math.round((r.questions_correct / r.questions_answered) * 100) : 0;
+            return `<tr><td>${escapeHtml(realm)}</td><td>${r.best_score || 0}</td><td>${acc}%</td><td>${r.runs || 0}</td></tr>`;
+        }).join('')
+        : '<tr><td colspan="4">No runs yet</td></tr>';
+
+    const recentRuns = profile.recent_runs || [];
+    const recentRunsHtml = recentRuns.length
+        ? recentRuns.map((r) => {
+            const date = r.finished_at ? new Date(r.finished_at).toLocaleDateString() : '';
+            const pct = Math.round((r.accuracy || 0) * 100);
+            return `
+                <div class="profile-run-entry outcome-${escapeHtml(r.outcome || '')}">
+                    <span class="profile-run-realm">${escapeHtml(r.realm || '')}</span>
+                    <span>Score ${r.score || 0}</span>
+                    <span>${pct}%</span>
+                    <span>${escapeHtml(date)}</span>
+                </div>
+            `;
+        }).join('')
+        : '<p>No runs yet -- play a realm to start your record.</p>';
+
+    container.innerHTML = `
+        <div class="profile-summary-stats">
+            <span>Lifetime XP: <b>${profile.lifetime_xp || 0}</b></span>
+            <span>XP Balance: <b>${profile.xp_balance || 0}</b></span>
+            <span>Total Runs: <b>${totals.runs || 0}</b></span>
+            <span>Overall Accuracy: <b>${overallAccuracy}%</b></span>
+        </div>
+        <h4 class="profile-section-heading">Per-Realm Records</h4>
+        <table class="profile-realms-table">
+            <thead><tr><th>Realm</th><th>Best Score</th><th>Accuracy</th><th>Runs</th></tr></thead>
+            <tbody>${realmRows}</tbody>
+        </table>
+        <h4 class="profile-section-heading">Recent Runs</h4>
+        <div class="profile-recent-runs">${recentRunsHtml}</div>
+    `;
+}
+
+// ---------------------------------------------------------------------------
+// Persistent player profile (issue #22). Signed-in players get this written
+// server-side (combat-action.js, at run end, from its own session state);
+// guests accumulate the identical shape here in localStorage so the profile
+// panel works either way. freshProfile()/applyRunToProfile() below are a
+// deliberate line-for-line mirror of cf-pages/functions/_lib/profile.js --
+// there's no shared module system between Pages Functions and this
+// unbundled classic script, so keeping the two in sync is a by-hand
+// obligation, not something the platform enforces. If you change one,
+// change the other.
+// ---------------------------------------------------------------------------
+const PROFILE_STORAGE_KEY = 'studysaga_guest_profile';
+const RECENT_RUNS_MAX = 10;
+
+function freshRealmRecord() {
+    return { best_score: 0, runs: 0, questions_correct: 0, questions_answered: 0, best_streak: 0 };
+}
+
+function freshProfile() {
+    return {
+        lifetime_xp: 0,
+        xp_balance: 0,
+        totals: { runs: 0, questions_answered: 0, questions_correct: 0 },
+        realms: {},
+        recent_runs: [],
+    };
+}
+
+function applyRunToProfile(profile, run) {
+    profile.lifetime_xp = (profile.lifetime_xp || 0) + (run.xp_earned || 0);
+    profile.xp_balance = (profile.xp_balance || 0) + (run.xp_earned || 0);
+
+    profile.totals = profile.totals || { runs: 0, questions_answered: 0, questions_correct: 0 };
+    profile.totals.runs = (profile.totals.runs || 0) + 1;
+    profile.totals.questions_answered = (profile.totals.questions_answered || 0) + (run.total_questions || 0);
+    profile.totals.questions_correct = (profile.totals.questions_correct || 0) + (run.correct_count || 0);
+
+    profile.realms = profile.realms || {};
+    const realmKey = run.realm || 'unknown';
+    const realm = profile.realms[realmKey] || freshRealmRecord();
+    realm.best_score = Math.max(realm.best_score || 0, run.score || 0);
+    realm.runs = (realm.runs || 0) + 1;
+    realm.questions_correct = (realm.questions_correct || 0) + (run.correct_count || 0);
+    realm.questions_answered = (realm.questions_answered || 0) + (run.total_questions || 0);
+    realm.best_streak = Math.max(realm.best_streak || 0, run.best_streak || 0);
+    profile.realms[realmKey] = realm;
+
+    profile.recent_runs = [
+        {
+            realm: realmKey,
+            score: run.score || 0,
+            accuracy: run.accuracy || 0,
+            xp_earned: run.xp_earned || 0,
+            outcome: run.outcome,
+            finished_at: run.finished_at,
+        },
+        ...(profile.recent_runs || []),
+    ].slice(0, RECENT_RUNS_MAX);
+
+    return profile;
+}
+
+// Same defensive try/catch pattern as hasSeenTutorial()/holo-card.js --
+// private browsing or storage-disabled must not throw, and a guest whose
+// profile can't persist just doesn't get one this session rather than
+// crashing the run-summary screen.
+function loadGuestProfile() {
+    try {
+        const raw = localStorage.getItem(PROFILE_STORAGE_KEY);
+        return raw ? JSON.parse(raw) : freshProfile();
+    } catch (e) {
+        return freshProfile();
+    }
+}
+
+function saveGuestProfile(profile) {
+    try {
+        localStorage.setItem(PROFILE_STORAGE_KEY, JSON.stringify(profile));
+    } catch (e) {
+        // Nothing to do -- see loadGuestProfile().
+    }
+}
+
+function clearGuestProfile() {
+    try {
+        localStorage.removeItem(PROFILE_STORAGE_KEY);
+    } catch (e) {
+        // Nothing to do.
+    }
+}
+
+// Called once per finished run (issue #22's "write once, at run end") for
+// guests only -- signed-in players get the equivalent write server-side, and
+// doing both would double-count if a sign-in happened mid-session.
+function recordGuestRun(realm, outcome, summary) {
+    if (window.currentUser || !summary) return;
+    const profile = loadGuestProfile();
+    applyRunToProfile(profile, {
+        realm: realm || 'unknown',
+        score: summary.score,
+        accuracy: summary.accuracy,
+        correct_count: summary.correct_count,
+        total_questions: summary.total_questions,
+        best_streak: summary.best_streak,
+        xp_earned: summary.xp_earned,
+        outcome,
+        finished_at: new Date().toISOString(),
+    });
+    saveGuestProfile(profile);
+}
+
+// Merges a guest's local history into their account exactly once, right
+// after sign-in -- mirrors mergeProfiles() in profile.js server-side (sums
+// totals, takes the max of bests) so a week of guest play isn't overwritten
+// by a brand-new account. Clears the local copy only once the server
+// confirms the merge was saved, so a network failure leaves it intact to
+// retry on the next sign-in instead of silently losing it.
+async function mergeGuestProfileOnSignIn() {
+    const idToken = await getIdToken();
+    if (!idToken) return;
+    let localProfile = null;
+    try {
+        const raw = localStorage.getItem(PROFILE_STORAGE_KEY);
+        localProfile = raw ? JSON.parse(raw) : null;
+    } catch (e) {
+        localProfile = null;
+    }
+    if (!localProfile || !(localProfile.totals?.runs > 0)) return;
+
+    try {
+        const res = await fetch('/api/sync-profile', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id_token: idToken, local_profile: localProfile }),
+        });
+        const data = await res.json();
+        if (data.status === 'success') clearGuestProfile();
+    } catch (e) {
+        console.error('Profile merge failed:', e);
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -1118,6 +1361,7 @@ function handleRunOutcome(outcome, data) {
 
     renderRunSummary(outcome, data.run_summary);
     renderLevelResults(`${outcome}-results-list`, data.level_results);
+    recordGuestRun(window.combatState?.syllabus_id, outcome, data.run_summary);
 
     if (combat) combat.classList.remove('active');
     screen.classList.add('active');
@@ -1170,10 +1414,14 @@ async function performAction(action) {
             return;
         }
 
+        // id_token (issue #22) lets combat-action.js write the persistent
+        // profile at run end for signed-in players -- undefined for guests,
+        // who accumulate the same data client-side instead.
+        const idToken = await getIdToken();
         const response = await fetch('/api/combat-action', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ game_id: window.gameId, action })
+            body: JSON.stringify({ game_id: window.gameId, action, id_token: idToken })
         });
         const data = await response.json();
         console.log('combat-action result:', data);
@@ -1410,10 +1658,11 @@ async function submitQuizAnswer(action, answerIndex) {
     buttons.forEach(b => b.disabled = true);
 
     try {
+        const idToken = await getIdToken();
         const response = await fetch('/api/combat-action', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ game_id: window.gameId, action, answer_index: answerIndex })
+            body: JSON.stringify({ game_id: window.gameId, action, answer_index: answerIndex, id_token: idToken })
         });
         const data = await response.json();
 
@@ -1486,10 +1735,11 @@ async function submitQuizAnswerMulti(action, answerIndices) {
     buttons.forEach(b => b.disabled = true);
 
     try {
+        const idToken = await getIdToken();
         const response = await fetch('/api/combat-action', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ game_id: window.gameId, action, answer_indices: answerIndices })
+            body: JSON.stringify({ game_id: window.gameId, action, answer_indices: answerIndices, id_token: idToken })
         });
         const data = await response.json();
         console.log('combat-action graded multi result:', data);

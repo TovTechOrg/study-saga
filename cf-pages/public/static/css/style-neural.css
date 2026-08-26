@@ -917,6 +917,73 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* Profile / track record panel (issue #22) */
+.profile-modal-body {
+    text-align: left;
+}
+
+.profile-summary-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    color: #9ad1ff;
+    margin-bottom: 1rem;
+}
+
+.profile-summary-stats b {
+    color: #e7f5ff;
+}
+
+.profile-section-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #9ad1ff;
+    margin: 1.25rem 0 0.5rem;
+}
+
+.profile-realms-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.profile-realms-table th,
+.profile-realms-table td {
+    text-align: left;
+    padding: 0.35rem 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.profile-realms-table th {
+    color: #9ad1ff;
+    font-weight: 600;
+}
+
+.profile-recent-runs {
+    max-height: 12rem;
+    overflow-y: auto;
+}
+
+.profile-run-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    padding: 0.35rem 0;
+    font-size: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.profile-run-entry.outcome-victory .profile-run-realm {
+    color: #34d399;
+}
+
+.profile-run-entry.outcome-defeat .profile-run-realm {
+    color: #ef4444;
+}
+
 /* KaTeX renders with its own default (black-on-transparent) text color --
    force it to inherit so formulas stay readable on this dark theme. */
 .katex {

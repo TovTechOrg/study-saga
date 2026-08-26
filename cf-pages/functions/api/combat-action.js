@@ -1,4 +1,6 @@
 import { jsonResponse, findSyllabus, getSession, putSession, shuffle, freshHints, hintsSummary, ACTIONS, actionCosts, scoreForAnswer, VICTORY_BONUS, hpRemainingBonus } from '../_lib/game.js';
+import { verifyFirebaseToken } from '../_lib/auth.js';
+import { getProfile, putProfile, freshProfile, applyRunToProfile } from '../_lib/profile.js';
 
 function optText(opt) {
     return typeof opt === 'object' && opt !== null ? opt.text : String(opt);
@@ -272,6 +274,38 @@ export async function onRequestPost({ request, env }) {
             hints_used: (session.hints.simple_used || 0) + (session.hints.hard_used || 0),
             hp_remaining: outcome === 'victory' ? (player.current_hp || 0) : 0,
         };
+
+        // Persistent profile (issue #22): written exactly once, here, at run
+        // end -- not per answer, which would be a Firestore write per
+        // question per player for no benefit. XP/score always come from
+        // runSummary (this session's own server-computed state), never from
+        // the request body, so a client can't post an arbitrary XP total.
+        // Guests (no session.uid) accumulate the same data client-side in
+        // localStorage instead -- see applyRunToProfile's mirror in
+        // game-simple.js.
+        if (session.uid && payload.id_token) {
+            try {
+                const auth = await verifyFirebaseToken(payload.id_token);
+                if (auth && auth.uid === session.uid) {
+                    const profile = (await getProfile(payload.id_token, auth.uid)) || freshProfile(auth.uid);
+                    applyRunToProfile(profile, {
+                        realm: session.syllabus_id || 'unknown',
+                        score: runSummary.score,
+                        accuracy: runSummary.accuracy,
+                        correct_count: runSummary.correct_count,
+                        total_questions: runSummary.total_questions,
+                        best_streak: runSummary.best_streak,
+                        xp_earned: runSummary.xp_earned,
+                        outcome,
+                        finished_at: new Date().toISOString(),
+                    });
+                    await putProfile(payload.id_token, auth.uid, profile);
+                }
+            } catch (e) {
+                // A Firestore write failure must not break the run's own
+                // response -- the player still sees their summary either way.
+            }
+        }
     }
 
     return jsonResponse({
