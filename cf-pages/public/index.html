@@ -183,10 +183,25 @@
             </div>
 
             <div class="combat-actions-row">
-                <button class="neural-action-btn" id="attack-btn">Attack</button>
-                <button class="neural-action-btn" id="defend-btn">Recharge (CAP)</button>
-                <button class="neural-action-btn" id="skill-btn">Use Ability</button>
+                <button class="neural-action-btn" id="attack-btn" aria-describedby="attack-btn-desc">
+                    <span class="action-btn-label">Attack</span>
+                    <span class="action-btn-cost" aria-hidden="true" id="attack-btn-cost">3 CAP · 15 dmg</span>
+                </button>
+                <button class="neural-action-btn" id="defend-btn" aria-describedby="defend-btn-desc">
+                    <span class="action-btn-label">Recharge</span>
+                    <span class="action-btn-cost" aria-hidden="true" id="defend-btn-cost">free · +5 CAP</span>
+                </button>
+                <button class="neural-action-btn" id="skill-btn" aria-describedby="skill-btn-desc">
+                    <span class="action-btn-label">Use Ability</span>
+                    <span class="action-btn-cost" aria-hidden="true" id="skill-btn-cost">5 CAP · 25 dmg</span>
+                </button>
             </div>
+            <span id="attack-btn-desc" class="sr-only">Costs 3 CAP, deals 15 damage</span>
+            <span id="defend-btn-desc" class="sr-only">Free, restores 5 CAP</span>
+            <span id="skill-btn-desc" class="sr-only">Costs 5 CAP, deals 25 damage</span>
+
+            <p id="action-afford-reason" class="action-afford-reason" role="status" aria-live="polite"></p>
+            <p class="cap-disclaimer">A wrong answer still costs CAP -- the risk is in answering, not just in missing.</p>
 
             <div id="hints-budget-bar" class="hints-budget-bar">
                 <span>Simple Hints: <b id="hints-simple-remaining">3</b></span>

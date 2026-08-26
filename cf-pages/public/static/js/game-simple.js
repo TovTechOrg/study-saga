@@ -597,20 +597,30 @@ function updateCombatHUD(state) {
     document.getElementById('enemy-resolve').textContent = `${resolve}/${maxResolve}`;
     document.getElementById('enemy-resolve-bar-inner').style.width = `${(resolve / maxResolve) * 100}%`;
 
+    // Action costs come from the server (issue #15) so the client never
+    // hardcodes a copy of the rules that could drift -- see actionCosts()
+    // in cf-pages/functions/_lib/game.js. Cached on window so call sites
+    // that don't have a fresh combat_state handy (the idle nudge) can still
+    // read the real numbers instead of re-guessing them.
+    window.actionCosts = state.action_costs || window.actionCosts || DEFAULT_ACTION_COSTS;
+    updateActionButtonCosts(window.actionCosts);
+
     // Update button states based on CAP
     const cap = state.player.current_cap;
+    const attackCost = window.actionCosts.attack.cost;
+    const abilityCost = window.actionCosts.ability.cost;
     const btnAttack = document.getElementById('attack-btn');
     const btnSkill = document.getElementById('skill-btn');
     const btnDefend = document.getElementById('defend-btn');
 
     if (btnAttack) {
-        const canAfford = cap >= 3;
+        const canAfford = cap >= attackCost;
         btnAttack.disabled = !canAfford;
         btnAttack.style.opacity = canAfford ? '1' : '0.5';
         btnAttack.style.cursor = canAfford ? 'pointer' : 'not-allowed';
     }
     if (btnSkill) {
-        const canAfford = cap >= 5;
+        const canAfford = cap >= abilityCost;
         btnSkill.disabled = !canAfford;
         btnSkill.style.opacity = canAfford ? '1' : '0.5';
         btnSkill.style.cursor = canAfford ? 'pointer' : 'not-allowed';
@@ -621,7 +631,39 @@ function updateCombatHUD(state) {
         btnDefend.style.cursor = 'pointer';
     }
 
+    // Disabled-state reason (issue #15): explain why, not just that.
+    const reasonEl = document.getElementById('action-afford-reason');
+    if (reasonEl) {
+        reasonEl.textContent = cap < attackCost ? 'Not enough CAP -- Recharge to continue.' : '';
+    }
+
     resetIdleNudgeTimer();
+}
+
+// Fallback only used before any server response carrying real action_costs
+// has arrived -- the combat buttons aren't interactive before that anyway.
+// Kept in sync with ACTIONS in cf-pages/functions/_lib/game.js.
+const DEFAULT_ACTION_COSTS = {
+    attack: { cost: 3, damage: 15 },
+    ability: { cost: 5, damage: 25 },
+    recharge: { gain: 5 },
+};
+
+function updateActionButtonCosts(costs) {
+    const attackCostEl = document.getElementById('attack-btn-cost');
+    const attackDescEl = document.getElementById('attack-btn-desc');
+    if (attackCostEl) attackCostEl.textContent = `${costs.attack.cost} CAP · ${costs.attack.damage} dmg`;
+    if (attackDescEl) attackDescEl.textContent = `Costs ${costs.attack.cost} CAP, deals ${costs.attack.damage} damage`;
+
+    const skillCostEl = document.getElementById('skill-btn-cost');
+    const skillDescEl = document.getElementById('skill-btn-desc');
+    if (skillCostEl) skillCostEl.textContent = `${costs.ability.cost} CAP · ${costs.ability.damage} dmg`;
+    if (skillDescEl) skillDescEl.textContent = `Costs ${costs.ability.cost} CAP, deals ${costs.ability.damage} damage`;
+
+    const defendCostEl = document.getElementById('defend-btn-cost');
+    const defendDescEl = document.getElementById('defend-btn-desc');
+    if (defendCostEl) defendCostEl.textContent = `free · +${costs.recharge.gain} CAP`;
+    if (defendDescEl) defendDescEl.textContent = `Free, restores ${costs.recharge.gain} CAP`;
 }
 
 // ---------------------------------------------------------------------------
@@ -646,11 +688,13 @@ function pickIdleNudgeTarget() {
     if (document.querySelector('.neural-modal.active')) return null;
 
     const cap = window.combatState?.player?.current_cap ?? 0;
-    // CAP >= 3 covers both the ">= 5" and "3-4" rows -- Attack is affordable
-    // either way and is the cheapest way to make progress. Below 3, Attack
-    // and Ability are both disabled, so nudging either would point at a
-    // dead button; Recharge is the only legal action.
-    const targetId = cap >= 3 ? 'attack-btn' : 'defend-btn';
+    const attackCost = (window.actionCosts || DEFAULT_ACTION_COSTS).attack.cost;
+    // CAP >= attackCost covers both the ">= 5" and "3-4" rows from the issue
+    // table -- Attack is affordable either way and is the cheapest way to
+    // make progress. Below that, Attack and Ability are both disabled, so
+    // nudging either would point at a dead button; Recharge is the only
+    // legal action.
+    const targetId = cap >= attackCost ? 'attack-btn' : 'defend-btn';
     return document.getElementById(targetId);
 }
 

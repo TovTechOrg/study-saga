@@ -75,6 +75,24 @@ export function hintsSummary(hints) {
     };
 }
 
+// Single source of truth for action costs/effects (issue #15) -- combat-
+// action.js enforces these numbers server-side, and every endpoint that
+// returns combat state includes them via actionCosts() so the client never
+// hardcodes a copy that could drift from the rules.
+export const ACTIONS = {
+    attack: { cost: 3, damage: 15, label: 'Strike' },
+    ability: { cost: 5, damage: 25, label: 'Simplify' },
+    recharge: { gain: 5, label: 'Recharge' },
+};
+
+export function actionCosts() {
+    return {
+        attack: { cost: ACTIONS.attack.cost, damage: ACTIONS.attack.damage },
+        ability: { cost: ACTIONS.ability.cost, damage: ACTIONS.ability.damage },
+        recharge: { gain: ACTIONS.recharge.gain },
+    };
+}
+
 export function shuffle(array) {
     const arr = array.slice();
     for (let i = arr.length - 1; i > 0; i--) {

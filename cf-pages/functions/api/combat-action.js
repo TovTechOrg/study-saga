@@ -1,10 +1,4 @@
-import { jsonResponse, findSyllabus, getSession, putSession, shuffle, freshHints, hintsSummary } from '../_lib/game.js';
-
-const ACTIONS = {
-    attack: { cost: 3, damage: 15, label: 'Strike' },
-    ability: { cost: 5, damage: 25, label: 'Simplify' },
-    recharge: { gain: 5, label: 'Recharge' },
-};
+import { jsonResponse, findSyllabus, getSession, putSession, shuffle, freshHints, hintsSummary, ACTIONS, actionCosts } from '../_lib/game.js';
 
 function optText(opt) {
     return typeof opt === 'object' && opt !== null ? opt.text : String(opt);
@@ -39,7 +33,7 @@ export async function onRequestPost({ request, env }) {
         const baseDamage = spec.damage;
 
         if ((player.current_cap || 0) < cost) {
-            const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium' };
+            const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts() };
             return jsonResponse({
                 status: 'error',
                 message: 'Not enough CAP -- Recharge to continue.',
@@ -176,7 +170,7 @@ export async function onRequestPost({ request, env }) {
                     question: { text: nextQuestion.text || '', options: sanitizedOpts, type: nextQuestionType },
                     game_id: gameId,
                     is_correct: isCorrect,
-                    combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium' },
+                    combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts() },
                     hints: hintsSummary(session.hints),
                     messages,
                     outcome,
@@ -199,7 +193,7 @@ export async function onRequestPost({ request, env }) {
                 status: 'question',
                 question: { text: question.text || '', options: sanitizedOpts, type: questionType },
                 game_id: gameId,
-                combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium' },
+                combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts() },
                 hints: hintsSummary(session.hints),
             }, 200);
         }
@@ -215,7 +209,7 @@ export async function onRequestPost({ request, env }) {
 
     await putSession(env, gameId, session);
 
-    const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium' };
+    const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts() };
 
     return jsonResponse({
         status: 'success',

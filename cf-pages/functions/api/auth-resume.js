@@ -1,4 +1,4 @@
-import { jsonResponse, getSession, hintsSummary } from '../_lib/game.js';
+import { jsonResponse, getSession, hintsSummary, actionCosts } from '../_lib/game.js';
 import { verifyFirebaseToken } from '../_lib/auth.js';
 import { getProfile } from '../_lib/profile.js';
 
@@ -29,6 +29,7 @@ export async function onRequestPost({ request, env }) {
             player: session.player,
             enemy: session.enemy,
             syllabus_id: session.syllabus_id || null,
+            action_costs: actionCosts(),
         },
         hints: hintsSummary(session.hints),
     });

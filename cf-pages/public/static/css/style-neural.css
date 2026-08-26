@@ -449,9 +449,14 @@ body {
 }
 
 .neural-action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
     min-width: clamp(110px, 26vw, 200px);
-    height: clamp(48px, 8vw, 56px);
-    padding: 0 1rem;
+    min-height: clamp(48px, 8vw, 56px);
+    padding: 0.5rem 1rem;
     font-family: 'Orbitron', sans-serif;
     font-weight: 800;
     font-size: clamp(0.85rem, 2vw, 1rem);
@@ -461,6 +466,34 @@ body {
     background: #002a3a;
     cursor: pointer;
     transition: all 0.2s cubic-bezier(.4, 2, .6, 1);
+}
+
+.action-btn-label {
+    line-height: 1.1;
+}
+
+.action-btn-cost {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    font-size: clamp(0.65rem, 1.6vw, 0.75rem);
+    opacity: 0.75;
+    letter-spacing: 0.02em;
+}
+
+.action-afford-reason {
+    min-height: 1.2em;
+    margin: 0.5rem auto 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #ff8080;
+}
+
+.cap-disclaimer {
+    margin: 0.35rem auto 0;
+    text-align: center;
+    font-size: 0.75rem;
+    opacity: 0.6;
 }
 
 .neural-action-btn#attack-btn {

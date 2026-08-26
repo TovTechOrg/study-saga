@@ -9,6 +9,7 @@ import {
     getSession,
     putSession,
     shuffle,
+    actionCosts,
 } from '../_lib/game.js';
 
 export async function onRequestPost({ request, env }) {
@@ -60,6 +61,7 @@ export async function onRequestPost({ request, env }) {
             enemy: session.enemy,
             syllabus_id: syllabusId,
             difficulty,
+            action_costs: actionCosts(),
         },
         hints: hintsSummary(session.hints),
     });
