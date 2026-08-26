@@ -1,12 +1,3 @@
-// Placeholder: the real showFeedbackModal is defined further below.
-// This stub prevents errors if called before the real one is ready.
-function showFeedbackModal(feedback, onClose) {
-    // Will be overridden by the real definition below.
-    const msg = typeof feedback === 'string' ? feedback : (feedback.message || '');
-    alert(msg);
-    if (onClose) onClose();
-}
-
 // Comic-caption-style battle log entries (Epic #11 / issues #18, #19): one
 // shared helper so every turn outcome -- attack, ability, recharge, and
 // in-combat errors -- renders the same narrated way instead of some paths
@@ -620,19 +611,6 @@ function renderLevelResults(containerId, results) {
     `).join('');
 }
 
-function pushRecentMessages(messages) {
-    const list = document.getElementById('recent-results-list');
-    if (!list || !messages) return;
-    const entries = Array.from(messages).map(msg => {
-        const div = document.createElement('div');
-        div.className = 'recent-list-entry';
-        div.textContent = msg;
-        return div;
-    });
-    entries.reverse().forEach(entry => list.prepend(entry));
-    while (list.children.length > 6) list.removeChild(list.lastChild);
-}
-
 // Combat action handler wired to backend
 async function performAction(action) {
     console.log('Action clicked:', action);
@@ -660,7 +638,6 @@ async function performAction(action) {
 
         if (data.status === 'question') {
             // Show quiz modal and wait for user answer
-            console.log('[DEBUG] performAction received data:', data);
             openQuizModal(data.question, action);
             return; // keep buttons disabled until answer resolves
         } else if (data.status === 'success') {
@@ -670,7 +647,6 @@ async function performAction(action) {
             }
             updateHintsBar(data.hints);
             (data.messages || []).forEach(msg => addBattleLogEntry(msg, { isCorrect: data.is_correct }));
-            pushRecentMessages(data.messages || []);
 
             if (data.outcome === 'victory') {
                 const combat = document.getElementById('combat-screen');
@@ -713,8 +689,6 @@ async function performAction(action) {
 }
 
 function openQuizModal(question, action) {
-    console.log('[DEBUG] openQuizModal called with:', question, action);
-    console.log('[DEBUG] Full question object:', question);
     console.log('Opening quiz for action:', action, 'question:', question);
     console.log('Question type:', question?.type, 'isMulti check:', question?.type === 'multiple_choice_multiple');
     // Prevent duplicate modals
@@ -908,14 +882,12 @@ async function submitQuizAnswer(action, answerIndex) {
     buttons.forEach(b => b.disabled = true);
 
     try {
-        console.log('[DEBUG] Sending quiz answer to backend:', { game_id: window.gameId, action, answer_index: answerIndex });
         const response = await fetch('/api/combat-action', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ game_id: window.gameId, action, answer_index: answerIndex })
         });
         const data = await response.json();
-        console.log('[DEBUG] combat-action graded result:', data);
 
         if ((data.message || '').toLowerCase().includes('invalid game session')) {
             handleInvalidSession(data.message);
@@ -928,7 +900,6 @@ async function submitQuizAnswer(action, answerIndex) {
             updateCombatHUD(data.combat_state);
         }
         updateHintsBar(data.hints);
-        console.log('[DEBUG] submitQuizAnswer called');
         // Determine correctness if possible
         let isCorrect = false;
         if (typeof data.correct !== 'undefined') {
@@ -942,7 +913,6 @@ async function submitQuizAnswer(action, answerIndex) {
         // wrote anything to the battle log -- the multi-select path did.
         // Same treatment as the other two combat-action response sites.
         (data.messages || []).forEach(msg => addBattleLogEntry(msg, { isCorrect }));
-        pushRecentMessages(data.messages || []);
         // Always show feedback modal after answer submission
         let feedbackMsg = "Answer submitted! Await further results or check the game log for more info.";
         if (data.messages && data.messages.length > 0) {
@@ -985,7 +955,6 @@ async function submitQuizAnswer(action, answerIndex) {
         if (data.status === 'error') {
             addBattleLogEntry(data.message || 'Action failed.');
         } else if (!(data.combat_state || data.status === 'question' || data.status === 'error')) {
-            console.warn('[DEBUG] Unexpected backend response:', data);
         }
     } catch (e) {
         console.error('submitQuizAnswer error:', e);
@@ -1040,7 +1009,6 @@ async function submitQuizAnswerMulti(action, answerIndices) {
         updateHintsBar(data.hints);
 
         (data.messages || []).forEach(msg => addBattleLogEntry(msg, { isCorrect }));
-        pushRecentMessages(data.messages || []);
 
         if (data.status === 'error') {
             addBattleLogEntry(data.message || 'Action failed.');
@@ -1103,7 +1071,6 @@ async function submitQuizAnswerMulti(action, answerIndices) {
 }
 // Show feedback modal with message, then call callback after close
 function showFeedbackModal(feedback, onClose) {
-    console.log('[DEBUG] showFeedbackModal called with:', feedback);
     let modal = document.getElementById('feedback-modal');
     if (!modal) {
         // Create modal if missing
