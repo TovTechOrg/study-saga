@@ -121,7 +121,25 @@
         <div class="neural-modal-content">
             <div class="modal-label" id="how-to-play-title">How to Play</div>
             <div id="how-to-play-body" class="how-to-play-body"></div>
-            <button id="close-how-to-play-btn" class="neural-btn" style="margin-top: 2rem;">Close</button>
+            <button id="replay-tutorial-btn" class="neural-btn" style="margin-top: 1.5rem;">Replay Tutorial</button>
+            <button id="close-how-to-play-btn" class="neural-btn" style="margin-top: 1rem;">Close</button>
+        </div>
+    </div>
+
+    <!-- First-run coach-mark tutorial (issue #16). Steps come from
+         TUTORIAL_STEPS in game-simple.js; content text doubles as the
+         accessible description since the highlight alone isn't a signal. -->
+    <div id="tutorial-overlay" class="tutorial-overlay" role="dialog" aria-modal="true" aria-labelledby="tutorial-step-text">
+        <div id="tutorial-highlight" class="tutorial-highlight" aria-hidden="true"></div>
+        <div id="tutorial-tooltip" class="tutorial-tooltip">
+            <p id="tutorial-step-text" class="tutorial-step-text"></p>
+            <div class="tutorial-tooltip-actions">
+                <!-- Next comes first in DOM order so trapFocus()'s auto-focus-first-
+                     focusable lands on Next (so Enter advances), not Skip; the
+                     "order" below keeps Skip appearing first visually anyway. -->
+                <button type="button" id="tutorial-next-btn" class="neural-btn">Next</button>
+                <button type="button" id="tutorial-skip-btn" class="tutorial-skip-btn">Skip tutorial</button>
+            </div>
         </div>
     </div>
 

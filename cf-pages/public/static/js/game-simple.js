@@ -143,6 +143,29 @@ document.addEventListener('DOMContentLoaded', function () {
     if (navHelpBtn) navHelpBtn.addEventListener('click', openHowToPlayModal);
     const closeHowToPlayBtn = document.getElementById('close-how-to-play-btn');
     if (closeHowToPlayBtn) closeHowToPlayBtn.addEventListener('click', closeHowToPlayModal);
+    const replayTutorialBtn = document.getElementById('replay-tutorial-btn');
+    if (replayTutorialBtn) {
+        replayTutorialBtn.addEventListener('click', function () {
+            closeHowToPlayModal();
+            startTutorial();
+        });
+    }
+
+    // Advance on a click anywhere in the tutorial overlay (issue #16: "advances
+    // on click or Enter"), except the Skip/Next buttons, which already handle
+    // their own click below -- without this guard, a click on either would
+    // bubble up here too and double-advance.
+    const tutorialOverlay = document.getElementById('tutorial-overlay');
+    const tutorialNextBtn = document.getElementById('tutorial-next-btn');
+    const tutorialSkipBtn = document.getElementById('tutorial-skip-btn');
+    if (tutorialNextBtn) tutorialNextBtn.addEventListener('click', advanceTutorial);
+    if (tutorialSkipBtn) tutorialSkipBtn.addEventListener('click', skipTutorial);
+    if (tutorialOverlay) {
+        tutorialOverlay.addEventListener('click', function (e) {
+            if (e.target === tutorialNextBtn || e.target === tutorialSkipBtn) return;
+            advanceTutorial();
+        });
+    }
 
     const signInBtn = document.getElementById('sign-in-btn');
     if (signInBtn) {
@@ -245,6 +268,7 @@ async function handleAuthChanged(user) {
                 showGameNav((data.combat_state.syllabus_id || '').charAt(0).toUpperCase() + (data.combat_state.syllabus_id || '').slice(1));
                 updateCombatHUD(data.combat_state);
                 updateHintsBar(data.hints);
+                if (!hasSeenTutorial()) startTutorial();
             }
         } catch (e) {
             console.error('auth-resume check failed:', e);
@@ -357,6 +381,141 @@ function openHowToPlayModal() {
 function closeHowToPlayModal() {
     const modal = document.getElementById('how-to-play-modal');
     if (modal) deactivateModal(modal);
+}
+
+// ---------------------------------------------------------------------------
+// First-run coach-mark tutorial (issue #16). Points at the real combat UI
+// (no sandbox battle, no fake state) -- the overlay sits visually on top of
+// the real buttons and captures every click itself, so nothing underneath
+// it is ever actually pressed while a step is showing.
+// ---------------------------------------------------------------------------
+const TUTORIAL_STORAGE_KEY = 'studysaga_tutorial_seen';
+
+function hasSeenTutorial() {
+    // Same defensive pattern as holo-card.js's localStorage use: private
+    // browsing / storage-disabled must not throw, and is treated as
+    // "not seen" -- the tutorial may reappear next session, which the issue
+    // explicitly allows rather than requiring persistence at any cost.
+    try {
+        return localStorage.getItem(TUTORIAL_STORAGE_KEY) === '1';
+    } catch (e) {
+        return false;
+    }
+}
+
+function markTutorialSeen() {
+    try {
+        localStorage.setItem(TUTORIAL_STORAGE_KEY, '1');
+    } catch (e) {
+        // Nothing to do -- see hasSeenTutorial().
+    }
+}
+
+// One array drives both the highlight target and the copy, so wording
+// changes never require touching positioning logic. The closing step
+// re-highlights Attack rather than pointing at nothing, so the spotlight
+// dimming (see .tutorial-highlight's box-shadow) never has to fully vanish
+// mid-tutorial only to reappear differently.
+const TUTORIAL_STEPS = [
+    { selector: '#player-card', text: 'This is you. HP is how much confusion you can absorb before the run ends.' },
+    { selector: '#player-cap-bar-inner', text: 'CAP is your action budget. Every attack spends it.' },
+    { selector: '#attack-btn', text: 'Attack costs 3 CAP and opens a question. Answer correctly to deal 15 damage -- answer wrong and the CAP is spent anyway.' },
+    { selector: '#defend-btn', text: 'Out of CAP? Recharge is free: +5 CAP, no question, and the enemy does not counterattack.' },
+    { selector: '#enemy-resolve-bar-inner', text: "Resolve is the enemy's confidence. Right answers push it down and weaken its counterattacks; wrong answers feed it." },
+    { selector: '#attack-btn', text: 'Your turn -- press Attack.', final: true },
+];
+
+let tutorialStepIndex = 0;
+let tutorialResizeHandler = null;
+
+function isTutorialActive() {
+    const overlay = document.getElementById('tutorial-overlay');
+    return !!overlay && overlay.classList.contains('active');
+}
+
+function startTutorial() {
+    const overlay = document.getElementById('tutorial-overlay');
+    if (!overlay) return;
+    tutorialStepIndex = 0;
+    overlay.classList.add('active');
+    overlay._previouslyFocused = document.activeElement;
+    overlay._releaseFocusTrap = trapFocus(overlay, skipTutorial);
+    tutorialResizeHandler = () => renderTutorialStep();
+    window.addEventListener('resize', tutorialResizeHandler);
+    renderTutorialStep();
+}
+
+function renderTutorialStep() {
+    const highlight = document.getElementById('tutorial-highlight');
+    const textEl = document.getElementById('tutorial-step-text');
+    const nextBtn = document.getElementById('tutorial-next-btn');
+    const step = TUTORIAL_STEPS[tutorialStepIndex];
+    if (!highlight || !textEl || !nextBtn || !step) return;
+
+    textEl.textContent = step.text;
+    nextBtn.textContent = step.final ? 'Got it' : 'Next';
+    positionTutorialStep(step);
+}
+
+// Derives the highlight box (and which side the tooltip sits on) from the
+// target's real, current layout rather than hardcoding coordinates -- at
+// narrow widths the combat cards stack, so a fixed side would eventually
+// point at empty space.
+function positionTutorialStep(step) {
+    const target = document.querySelector(step.selector);
+    const highlight = document.getElementById('tutorial-highlight');
+    const tooltip = document.getElementById('tutorial-tooltip');
+    if (!target || !highlight || !tooltip) return;
+
+    const rect = target.getBoundingClientRect();
+    const pad = 6;
+    highlight.style.top = `${rect.top - pad}px`;
+    highlight.style.left = `${rect.left - pad}px`;
+    highlight.style.width = `${rect.width + pad * 2}px`;
+    highlight.style.height = `${rect.height + pad * 2}px`;
+
+    const spaceBelow = window.innerHeight - rect.bottom;
+    const spaceAbove = rect.top;
+    const placeBelow = spaceBelow >= spaceAbove;
+    tooltip.style.top = placeBelow ? `${rect.bottom + 12}px` : '';
+    tooltip.style.bottom = placeBelow ? '' : `${window.innerHeight - rect.top + 12}px`;
+
+    const tooltipWidth = tooltip.offsetWidth || 280;
+    let left = rect.left + rect.width / 2 - tooltipWidth / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - tooltipWidth - 12));
+    tooltip.style.left = `${left}px`;
+}
+
+function advanceTutorial() {
+    if (tutorialStepIndex >= TUTORIAL_STEPS.length - 1) {
+        finishTutorial();
+        return;
+    }
+    tutorialStepIndex += 1;
+    renderTutorialStep();
+}
+
+function finishTutorial() {
+    markTutorialSeen();
+    closeTutorialOverlay();
+}
+
+function skipTutorial() {
+    markTutorialSeen();
+    closeTutorialOverlay();
+}
+
+function closeTutorialOverlay() {
+    const overlay = document.getElementById('tutorial-overlay');
+    if (overlay) deactivateModal(overlay);
+    if (tutorialResizeHandler) {
+        window.removeEventListener('resize', tutorialResizeHandler);
+        tutorialResizeHandler = null;
+    }
+    // Hand control back with the idle nudge armed fresh from now, not from
+    // whenever combat originally loaded (which may have already elapsed
+    // while the tutorial was showing).
+    resetIdleNudgeTimer();
 }
 
 function deactivateModal(modal) {
@@ -616,6 +775,7 @@ async function selectSyllabus(id, difficulty) {
             window._lastResolve = undefined;
             updateCombatHUD(data.combat_state);
             updateHintsBar(data.hints);
+            if (!hasSeenTutorial()) startTutorial();
             console.log('Combat screen display:', window.getComputedStyle(combatScreen).display);
             console.log('Combat screen is now visible');
         } else {
@@ -781,6 +941,7 @@ function pickIdleNudgeTarget() {
     if (!combatScreen || combatScreen.style.display !== 'block') return null;
     // The player's attention belongs to the open modal, not the action row.
     if (document.querySelector('.neural-modal.active')) return null;
+    if (isTutorialActive()) return null;
 
     const cap = window.combatState?.player?.current_cap ?? 0;
     const attackCost = (window.actionCosts || DEFAULT_ACTION_COSTS).attack.cost;
