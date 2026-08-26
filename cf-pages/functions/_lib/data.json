@@ -28267,7 +28267,7 @@
           "_hints_v2": true
         },
         {
-          "type": "multiple_choice_single",
+          "type": "multiple_choice_multiple",
           "text": "Which of the following integers is a factor of 24?",
           "options": [
             {
@@ -28427,7 +28427,7 @@
           "_hints_v2": true
         },
         {
-          "type": "multiple_choice_single",
+          "type": "multiple_choice_multiple",
           "text": "In a Venn diagram with two overlapping sets, what does the overlapping region represent?",
           "options": [
             {
@@ -31578,8 +31578,8 @@
           "options": [
             {
               "text": "y = x + 1",
-              "isCorrect": false,
-              "feedback": "Wrong! My algebraic armor will protect me from your incorrect answer!"
+              "isCorrect": true,
+              "feedback": "Oh no, your algebra skills have solved my equation of doom!"
             },
             {
               "text": "y = x + 2",
@@ -31595,21 +31595,6 @@
               "text": "y = x + 1.5",
               "isCorrect": false,
               "feedback": "Foolish hero! Your answer is close, but my plan remains unsolved!"
-            },
-            {
-              "text": "y = x + 0.5 is not among the options, but y = x + 1 is a common slope so",
-              "isCorrect": false,
-              "feedback": "Ha! Your mistake will be the equation that unlocks my next evil scheme!"
-            },
-            {
-              "text": "y = x - 1 is not among the options, the correct answer would be y = x + 1",
-              "isCorrect": true,
-              "feedback": "Oh no, your algebra skills have solved my equation of doom!"
-            },
-            {
-              "text": "correct answer y = x + 1",
-              "isCorrect": true,
-              "feedback": "Oh no, your algebra skills have solved my equation of doom!"
             }
           ],
           "hints": {
