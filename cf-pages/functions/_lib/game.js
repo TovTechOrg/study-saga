@@ -13,13 +13,18 @@ export function jsonResponse(obj, status = 200) {
     });
 }
 
-export function freshPlayer(existingScore) {
+// effectiveStats (issue #23) is optional so every existing caller that
+// doesn't know about upgrades yet (or has none purchased) keeps working
+// unchanged with base config values.
+export function freshPlayer(existingScore, effectiveStats) {
     const keeperCfg = CONFIG.players.default_kk;
+    const maxHp = effectiveStats?.max_hp ?? keeperCfg.max_hp;
+    const maxCap = effectiveStats?.max_cap ?? keeperCfg.max_cap;
     return {
-        current_hp: keeperCfg.max_hp,
-        max_hp: keeperCfg.max_hp,
-        current_cap: keeperCfg.max_cap,
-        max_cap: keeperCfg.max_cap,
+        current_hp: maxHp,
+        max_hp: maxHp,
+        current_cap: maxCap,
+        max_cap: maxCap,
         score: existingScore || 0,
     };
 }
@@ -67,10 +72,15 @@ export function freshHints() {
     return { simple_used: 0, hard_used: 0, credits: 0 };
 }
 
-export function hintsSummary(hints) {
+// effectiveStats (issue #23) overrides the per-run hint budget when the
+// player has Extra/Deep Insight upgrades -- SIMPLE_HINT_MAX/HARD_HINT_MAX
+// stay as the base-config fallback for sessions with no upgrades resolved.
+export function hintsSummary(hints, effectiveStats) {
+    const simpleMax = effectiveStats?.simple_hint_max ?? SIMPLE_HINT_MAX;
+    const hardMax = effectiveStats?.hard_hint_max ?? HARD_HINT_MAX;
     return {
-        simple_remaining: Math.max(0, SIMPLE_HINT_MAX - hints.simple_used),
-        hard_remaining: Math.max(0, HARD_HINT_MAX - hints.hard_used),
+        simple_remaining: Math.max(0, simpleMax - hints.simple_used),
+        hard_remaining: Math.max(0, hardMax - hints.hard_used),
         credits: hints.credits,
     };
 }
@@ -85,11 +95,69 @@ export const ACTIONS = {
     recharge: { gain: 5, label: 'Recharge' },
 };
 
-export function actionCosts() {
+// effectiveStats (issue #23) overrides damage/gain when the player has
+// relevant upgrades -- CAP costs are never upgraded (only damage output and
+// recharge amount are in the catalogue), so those always come from ACTIONS.
+export function actionCosts(effectiveStats) {
     return {
-        attack: { cost: ACTIONS.attack.cost, damage: ACTIONS.attack.damage },
+        attack: { cost: ACTIONS.attack.cost, damage: effectiveStats?.attack_damage ?? ACTIONS.attack.damage },
         ability: { cost: ACTIONS.ability.cost, damage: ACTIONS.ability.damage },
-        recharge: { gain: ACTIONS.recharge.gain },
+        recharge: { gain: effectiveStats?.recharge_gain ?? ACTIONS.recharge.gain },
+    };
+}
+
+// Permanent upgrade catalogue (issue #23) -- deterministic, no randomness:
+// the cost and effect printed on a card is exactly what buying it gives.
+// Keys are stored as purchased levels in profile.upgrades = { [key]: level }.
+export const UPGRADE_CATALOG = {
+    neural_capacity: { name: 'Neural Capacity', description: '+1 max CAP per level', stat: 'max_cap', perLevel: 1, maxLevel: 5, costs: [200, 400, 800, 1600, 3200] },
+    resilience: { name: 'Resilience', description: '+10 max HP per level', stat: 'max_hp', perLevel: 10, maxLevel: 5, costs: [150, 300, 600, 1200, 2400] },
+    efficient_recall: { name: 'Efficient Recall', description: 'Recharge restores +1 CAP per level', stat: 'recharge_gain', perLevel: 1, maxLevel: 3, costs: [300, 900, 2700] },
+    extra_insight: { name: 'Extra Insight', description: '+1 Simple hint per run, per level', stat: 'simple_hint_max', perLevel: 1, maxLevel: 3, costs: [250, 750, 2250] },
+    deep_insight: { name: 'Deep Insight', description: '+1 Deep hint per run, per level', stat: 'hard_hint_max', perLevel: 1, maxLevel: 2, costs: [1000, 3000] },
+    focused_strike: { name: 'Focused Strike', description: '+2 Attack damage per level', stat: 'attack_damage', perLevel: 2, maxLevel: 5, costs: [200, 400, 800, 1600, 3200] },
+};
+
+// Balance target (issue #23): the catalogue's 6 upgrades sum to 23 possible
+// levels; capping total *purchased* levels at 12 means a player can reach at
+// most roughly half of any single upgrade's ceiling, and can never
+// simultaneously max every category -- Medium should stay a real fight and
+// Hard should stay losable rather than a fully-upgraded player trivializing
+// every realm. This is a conservative placeholder tuned by inspection, not
+// playtest data (#9's real per-tier enemy scaling doesn't exist yet, which
+// is the other half of this issue's balance ask) -- revisit both once #9
+// ships and real play data exists.
+export const MAX_TOTAL_UPGRADE_LEVELS = 12;
+
+export function totalUpgradeLevels(upgrades) {
+    return Object.values(upgrades || {}).reduce((sum, lvl) => sum + (lvl || 0), 0);
+}
+
+// Null (not 0) when already maxed, so callers can distinguish "next level
+// costs 0" (never true here) from "there is no next level."
+export function costForNextLevel(upgradeKey, currentLevel) {
+    const upgrade = UPGRADE_CATALOG[upgradeKey];
+    if (!upgrade || currentLevel >= upgrade.maxLevel) return null;
+    return upgrade.costs[currentLevel];
+}
+
+// Resolves a player's purchased upgrade levels into the actual numbers the
+// session should use -- computed once at start-combat time and threaded
+// through the session as session.effective_stats, rather than combat-
+// action.js/get-hint.js reading module-level constants at each use site
+// (the real architectural work this issue asks for: those tunables become
+// per-session once upgrades exist).
+export function effectiveStats(upgrades) {
+    upgrades = upgrades || {};
+    const base = CONFIG.players.default_kk;
+    const levelOf = (key) => Math.min(upgrades[key] || 0, UPGRADE_CATALOG[key].maxLevel);
+    return {
+        max_hp: base.max_hp + levelOf('resilience') * UPGRADE_CATALOG.resilience.perLevel,
+        max_cap: base.max_cap + levelOf('neural_capacity') * UPGRADE_CATALOG.neural_capacity.perLevel,
+        recharge_gain: ACTIONS.recharge.gain + levelOf('efficient_recall') * UPGRADE_CATALOG.efficient_recall.perLevel,
+        attack_damage: ACTIONS.attack.damage + levelOf('focused_strike') * UPGRADE_CATALOG.focused_strike.perLevel,
+        simple_hint_max: SIMPLE_HINT_MAX + levelOf('extra_insight') * UPGRADE_CATALOG.extra_insight.perLevel,
+        hard_hint_max: HARD_HINT_MAX + levelOf('deep_insight') * UPGRADE_CATALOG.deep_insight.perLevel,
     };
 }
 

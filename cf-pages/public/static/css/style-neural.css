@@ -373,6 +373,62 @@ body {
     margin-bottom: 1.25rem;
 }
 
+/* Upgrade shop (issue #23) -- deliberately matches .syllabus-card/
+   .neural-syllabi-grid above so it reads as part of the same product. */
+.upgrade-shop-balance {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    color: #9ad1ff;
+    margin-bottom: 1rem;
+}
+
+.upgrade-shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.upgrade-card {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 58, 138, 0.1) 100%);
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: left;
+}
+
+.upgrade-card h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.35rem;
+    color: #e7f5ff;
+}
+
+.upgrade-card p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+}
+
+.upgrade-card .upgrade-level {
+    font-size: 0.8rem;
+    color: #9ad1ff;
+    margin-bottom: 0.5rem;
+}
+
+.upgrade-card .upgrade-buy-btn {
+    width: 100%;
+    min-height: 44px;
+}
+
+.upgrade-card .upgrade-buy-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.upgrade-card.maxed .upgrade-buy-btn {
+    opacity: 0.6;
+}
+
 /* Difficulty picker (chosen once per realm-entry, locked for the battle) --
    colors match the existing hint-tier convention used elsewhere (easy =
    green, medium = yellow, hard = red) for a consistent visual language. */

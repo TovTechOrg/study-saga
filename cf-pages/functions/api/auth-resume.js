@@ -32,7 +32,7 @@ export async function onRequestPost({ request, env }) {
             action_costs: actionCosts(),
             streak: session.streak || 0,
         },
-        hints: hintsSummary(session.hints),
+        hints: hintsSummary(session.hints, session.effective_stats),
         score: session.player?.score || 0,
         score_delta: 0,
         streak: session.streak || 0,

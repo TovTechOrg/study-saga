@@ -144,6 +144,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeProfileBtn = document.getElementById('close-profile-btn');
     if (closeProfileBtn) closeProfileBtn.addEventListener('click', closeProfileModal);
 
+    // Upgrade shop (issue #23): reachable from the main menu and both
+    // run-summary screens.
+    ['upgrade-shop-btn', 'victory-upgrade-shop-btn', 'defeat-upgrade-shop-btn'].forEach((id) => {
+        const btn = document.getElementById(id);
+        if (btn) btn.addEventListener('click', openUpgradeShopModal);
+    });
+    const closeUpgradeShopBtn = document.getElementById('close-upgrade-shop-btn');
+    if (closeUpgradeShopBtn) closeUpgradeShopBtn.addEventListener('click', closeUpgradeShopModal);
+    const upgradeShopGrid = document.getElementById('upgrade-shop-grid');
+    if (upgradeShopGrid) upgradeShopGrid.addEventListener('click', handleUpgradeBuyClick);
+
     const navHelpBtn = document.getElementById('game-nav-help-btn');
     if (navHelpBtn) navHelpBtn.addEventListener('click', openHowToPlayModal);
     const closeHowToPlayBtn = document.getElementById('close-how-to-play-btn');
@@ -495,6 +506,125 @@ function renderProfilePanel(container, profile) {
 }
 
 // ---------------------------------------------------------------------------
+// Upgrade shop (issue #23). Permanent, deterministic upgrades bought with
+// XP -- reachable from the main menu and from both run-summary screens.
+// Purchases are validated server-side for signed-in players (/api/buy-
+// upgrade) and against the guest's own localStorage balance for guests
+// (buyUpgradeGuest, defined with the profile helpers above) -- same trust
+// model split as the rest of the profile system.
+// ---------------------------------------------------------------------------
+async function openUpgradeShopModal() {
+    const modal = document.getElementById('upgrade-shop-modal');
+    if (!modal) return;
+    modal.classList.add('active');
+    modal._previouslyFocused = document.activeElement;
+    modal._releaseFocusTrap = trapFocus(modal, closeUpgradeShopModal);
+    await refreshUpgradeShop();
+}
+
+function closeUpgradeShopModal() {
+    const modal = document.getElementById('upgrade-shop-modal');
+    if (modal) deactivateModal(modal);
+}
+
+async function fetchCurrentProfile() {
+    if (window.currentUser) {
+        const idToken = await getIdToken();
+        try {
+            const res = await fetch('/api/sync-profile', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id_token: idToken }),
+            });
+            const data = await res.json();
+            return data.status === 'success' ? data.profile : freshProfile();
+        } catch (e) {
+            return freshProfile();
+        }
+    }
+    return loadGuestProfile();
+}
+
+async function refreshUpgradeShop() {
+    const grid = document.getElementById('upgrade-shop-grid');
+    const balanceEl = document.getElementById('upgrade-shop-xp-balance');
+    if (!grid || !balanceEl) return;
+
+    const profile = await fetchCurrentProfile();
+    balanceEl.textContent = String(profile.xp_balance || 0);
+    renderUpgradeCards(grid, profile);
+}
+
+function renderUpgradeCards(grid, profile) {
+    const upgrades = profile.upgrades || {};
+    const totalLevels = totalUpgradeLevels(upgrades);
+    const atCap = totalLevels >= MAX_TOTAL_UPGRADE_LEVELS;
+
+    grid.innerHTML = '';
+    Object.entries(UPGRADE_CATALOG).forEach(([key, def]) => {
+        const level = upgrades[key] || 0;
+        const cost = costForNextLevel(key, level);
+        const maxed = cost === null;
+        const affordable = !maxed && !atCap && (profile.xp_balance || 0) >= cost;
+
+        let costText;
+        if (maxed) costText = 'Max level reached';
+        else if (atCap) costText = `Total upgrade cap reached (${MAX_TOTAL_UPGRADE_LEVELS})`;
+        else costText = `Next level: ${cost} XP`;
+
+        const card = document.createElement('div');
+        card.className = 'upgrade-card' + (maxed ? ' maxed' : '');
+        card.innerHTML = `
+            <h4>${escapeHtml(def.name)}</h4>
+            <p>${escapeHtml(def.description)}</p>
+            <div class="upgrade-level">Level ${level} / ${def.maxLevel}</div>
+            <div class="upgrade-level">${escapeHtml(costText)}</div>
+            <button type="button" class="neural-btn upgrade-buy-btn" data-upgrade-key="${key}" ${maxed || !affordable ? 'disabled' : ''}>
+                ${maxed ? 'Maxed' : 'Buy'}
+            </button>
+        `;
+        grid.appendChild(card);
+    });
+}
+
+// Spending XP is irreversible (issue #7's confirmation standard for
+// destructive/irreversible actions applies here, unlike issue #21's Play
+// Again/Change Realm which discard nothing).
+async function handleUpgradeBuyClick(e) {
+    const btn = e.target.closest('.upgrade-buy-btn');
+    if (!btn || btn.disabled) return;
+    const upgradeKey = btn.dataset.upgradeKey;
+    const def = UPGRADE_CATALOG[upgradeKey];
+    if (!def) return;
+    if (!confirm(`Buy the next level of ${def.name} (${def.description})? This spends XP and cannot be undone.`)) return;
+
+    btn.disabled = true;
+    let errorMessage = null;
+    if (window.currentUser) {
+        const idToken = await getIdToken();
+        try {
+            const res = await fetch('/api/buy-upgrade', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id_token: idToken, upgrade_key: upgradeKey }),
+            });
+            const data = await res.json();
+            if (data.status !== 'success') errorMessage = data.message || 'Could not complete purchase.';
+        } catch (err) {
+            errorMessage = 'A connection error occurred. Please try again.';
+        }
+    } else {
+        const result = buyUpgradeGuest(upgradeKey);
+        if (!result.ok) errorMessage = result.message;
+    }
+
+    if (errorMessage) {
+        showFeedbackModal({ message: errorMessage, correct: false, title: 'Upgrade Shop' });
+    }
+    await refreshUpgradeShop();
+}
+
+// ---------------------------------------------------------------------------
 // Persistent player profile (issue #22). Signed-in players get this written
 // server-side (combat-action.js, at run end, from its own session state);
 // guests accumulate the identical shape here in localStorage so the profile
@@ -519,6 +649,10 @@ function freshProfile() {
         totals: { runs: 0, questions_answered: 0, questions_correct: 0 },
         realms: {},
         recent_runs: [],
+        // Upgrade shop (issue #23): { [upgradeKey]: purchasedLevel }. Mirrors
+        // profile.js's schema -- see that file's comment on why these two
+        // copies exist and must be kept in sync by hand.
+        upgrades: {},
     };
 }
 
@@ -554,6 +688,53 @@ function applyRunToProfile(profile, run) {
     ].slice(0, RECENT_RUNS_MAX);
 
     return profile;
+}
+
+// Upgrade shop (issue #23): mirrors UPGRADE_CATALOG/MAX_TOTAL_UPGRADE_LEVELS/
+// costForNextLevel/totalUpgradeLevels in cf-pages/functions/_lib/game.js --
+// same by-hand-sync obligation as the profile functions above. Needed
+// client-side both to render the shop for everyone (names/costs/descriptions
+// aren't server-fetched) and to validate a guest's own purchases, since
+// guests have no server-side account to validate against.
+const UPGRADE_CATALOG = {
+    neural_capacity: { name: 'Neural Capacity', description: '+1 max CAP per level', maxLevel: 5, costs: [200, 400, 800, 1600, 3200] },
+    resilience: { name: 'Resilience', description: '+10 max HP per level', maxLevel: 5, costs: [150, 300, 600, 1200, 2400] },
+    efficient_recall: { name: 'Efficient Recall', description: 'Recharge restores +1 CAP per level', maxLevel: 3, costs: [300, 900, 2700] },
+    extra_insight: { name: 'Extra Insight', description: '+1 Simple hint per run, per level', maxLevel: 3, costs: [250, 750, 2250] },
+    deep_insight: { name: 'Deep Insight', description: '+1 Deep hint per run, per level', maxLevel: 2, costs: [1000, 3000] },
+    focused_strike: { name: 'Focused Strike', description: '+2 Attack damage per level', maxLevel: 5, costs: [200, 400, 800, 1600, 3200] },
+};
+const MAX_TOTAL_UPGRADE_LEVELS = 12;
+
+function totalUpgradeLevels(upgrades) {
+    return Object.values(upgrades || {}).reduce((sum, lvl) => sum + (lvl || 0), 0);
+}
+
+function costForNextLevel(upgradeKey, currentLevel) {
+    const upgrade = UPGRADE_CATALOG[upgradeKey];
+    if (!upgrade || currentLevel >= upgrade.maxLevel) return null;
+    return upgrade.costs[currentLevel];
+}
+
+// Guest purchase: validated against the guest's own localStorage balance,
+// same trust model as the rest of the guest profile (there's no server-side
+// account to check against). Returns {ok, message} rather than throwing, so
+// the shop UI can show a reason instead of a stack trace.
+function buyUpgradeGuest(upgradeKey) {
+    const profile = loadGuestProfile();
+    profile.upgrades = profile.upgrades || {};
+    const currentLevel = profile.upgrades[upgradeKey] || 0;
+    const cost = costForNextLevel(upgradeKey, currentLevel);
+    if (cost === null) return { ok: false, message: 'This upgrade is already at its max level.' };
+    if (totalUpgradeLevels(profile.upgrades) >= MAX_TOTAL_UPGRADE_LEVELS) {
+        return { ok: false, message: `Total upgrade levels are capped at ${MAX_TOTAL_UPGRADE_LEVELS} for now.` };
+    }
+    if ((profile.xp_balance || 0) < cost) return { ok: false, message: 'Not enough XP for this upgrade.' };
+
+    profile.xp_balance -= cost;
+    profile.upgrades[upgradeKey] = currentLevel + 1;
+    saveGuestProfile(profile);
+    return { ok: true, profile };
 }
 
 // Same defensive try/catch pattern as hasSeenTutorial()/holo-card.js --
@@ -992,10 +1173,15 @@ async function selectSyllabus(id, difficulty) {
         }
 
         console.log('POST /api/start-combat with gameId:', window.gameId);
+        // Upgrades (issue #23): signed-in players' levels are read
+        // server-side from their own profile (id_token is enough); guests
+        // have no server-side account, so their local levels ride along here.
+        const idToken = await getIdToken();
+        const upgrades = window.currentUser ? undefined : (loadGuestProfile().upgrades || {});
         const response = await fetch('/api/start-combat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ game_id: window.gameId, syllabus_id: id, enemy_id: 'misconception_golem', difficulty })
+            body: JSON.stringify({ game_id: window.gameId, syllabus_id: id, enemy_id: 'misconception_golem', difficulty, id_token: idToken, upgrades })
         });
         console.log('Response status:', response.status);
         const data = await response.json();

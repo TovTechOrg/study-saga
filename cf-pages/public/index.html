@@ -161,6 +161,7 @@
                 <p class="auth-error" id="auth-status-error" role="alert" style="display: none;"></p>
             </div>
             <button type="button" id="profile-panel-btn" class="game-nav-home-btn" style="margin-top: 1rem;">My Profile</button>
+            <button type="button" id="upgrade-shop-btn" class="game-nav-home-btn" style="margin-top: 1rem;">Upgrade Shop</button>
         </div>
     </div>
 
@@ -170,6 +171,19 @@
             <div class="modal-label" id="profile-modal-title">My Profile</div>
             <div id="profile-modal-body" class="profile-modal-body"></div>
             <button id="close-profile-btn" class="neural-btn" style="margin-top: 1.5rem;">Close</button>
+        </div>
+    </div>
+
+    <!-- Upgrade shop (issue #23): permanent, deterministic upgrades bought
+         with XP. Card grid populated from UPGRADE_CATALOG in game-simple.js
+         matching .syllabus-card's look so it reads as part of the same
+         product (style-neural.css). -->
+    <div id="upgrade-shop-modal" class="neural-modal" role="dialog" aria-modal="true" aria-labelledby="upgrade-shop-title">
+        <div class="neural-modal-content">
+            <div class="modal-label" id="upgrade-shop-title">Upgrade Shop</div>
+            <p class="upgrade-shop-balance">XP Balance: <span id="upgrade-shop-xp-balance">0</span></p>
+            <div id="upgrade-shop-grid" class="upgrade-shop-grid"></div>
+            <button id="close-upgrade-shop-btn" class="neural-btn" style="margin-top: 1.5rem;">Close</button>
         </div>
     </div>
 
@@ -302,6 +316,7 @@
             <div class="end-screen-actions">
                 <button class="neural-btn" id="victory-play-again-btn">Play Again (Same Realm)</button>
                 <button class="neural-btn" id="victory-change-realm-btn">Change Realm</button>
+                <button class="neural-btn" id="victory-upgrade-shop-btn">Upgrade Shop</button>
                 <button class="neural-btn" onclick="backToMenu()">Return to Main Menu</button>
             </div>
         </div>
@@ -319,6 +334,7 @@
             <div class="end-screen-actions">
                 <button class="neural-btn" id="defeat-play-again-btn">Play Again (Same Realm)</button>
                 <button class="neural-btn" id="defeat-change-realm-btn">Change Realm</button>
+                <button class="neural-btn" id="defeat-upgrade-shop-btn">Upgrade Shop</button>
                 <button class="neural-btn" onclick="backToMenu()">Return to Main Menu</button>
             </div>
         </div>

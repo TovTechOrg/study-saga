@@ -27,6 +27,10 @@ export function freshProfile(uid) {
         totals: { runs: 0, questions_answered: 0, questions_correct: 0 },
         realms: {},
         recent_runs: [],
+        // Upgrade shop (issue #23): { [upgradeKey]: purchasedLevel }. Levels
+        // are permanent and monotonic (never decrease), so merging on
+        // sign-in (see mergeProfiles) takes the max per key rather than summing.
+        upgrades: {},
     };
 }
 
@@ -95,6 +99,10 @@ export function mergeProfiles(remote, local) {
         recent_runs: [...(local.recent_runs || []), ...(remote.recent_runs || [])]
             .sort((a, b) => String(b.finished_at || '').localeCompare(String(a.finished_at || '')))
             .slice(0, RECENT_RUNS_MAX),
+        // Upgrade levels are permanent and already paid for once -- merge by
+        // max per key, never sum, or a guest-then-signed-in player would get
+        // both sets of levels for the price of one.
+        upgrades: {},
     };
 
     const realmKeys = new Set([...Object.keys(remote.realms || {}), ...Object.keys(local.realms || {})]);
@@ -108,6 +116,11 @@ export function mergeProfiles(remote, local) {
             questions_answered: (r.questions_answered || 0) + (l.questions_answered || 0),
             best_streak: Math.max(r.best_streak || 0, l.best_streak || 0),
         };
+    }
+
+    const upgradeKeys = new Set([...Object.keys(remote.upgrades || {}), ...Object.keys(local.upgrades || {})]);
+    for (const key of upgradeKeys) {
+        merged.upgrades[key] = Math.max(remote.upgrades?.[key] || 0, local.upgrades?.[key] || 0);
     }
 
     return merged;

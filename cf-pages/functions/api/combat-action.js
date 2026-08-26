@@ -38,16 +38,20 @@ export async function onRequestPost({ request, env }) {
     if (action === 'attack' || action === 'ability') {
         const spec = ACTIONS[action];
         const cost = spec.cost;
-        const baseDamage = spec.damage;
+        // Focused Strike (issue #23) only upgrades Attack's damage, per the
+        // catalogue -- Ability's damage is never affected by any upgrade.
+        const baseDamage = action === 'attack'
+            ? (session.effective_stats?.attack_damage ?? spec.damage)
+            : spec.damage;
 
         if ((player.current_cap || 0) < cost) {
-            const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(), streak: session.streak };
+            const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(session.effective_stats), streak: session.streak };
             return jsonResponse({
                 status: 'error',
                 message: 'Not enough CAP -- Recharge to continue.',
                 game_id: gameId,
                 combat_state: combatState,
-                hints: hintsSummary(session.hints),
+                hints: hintsSummary(session.hints, session.effective_stats),
                 score: player.score || 0,
                 score_delta: 0,
                 streak: session.streak,
@@ -210,8 +214,8 @@ export async function onRequestPost({ request, env }) {
                     question: { text: nextQuestion.text || '', options: sanitizedOpts, type: nextQuestionType },
                     game_id: gameId,
                     is_correct: isCorrect,
-                    combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(), streak: session.streak },
-                    hints: hintsSummary(session.hints),
+                    combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(session.effective_stats), streak: session.streak },
+                    hints: hintsSummary(session.hints, session.effective_stats),
                     messages,
                     outcome,
                     score: player.score,
@@ -236,15 +240,15 @@ export async function onRequestPost({ request, env }) {
                 status: 'question',
                 question: { text: question.text || '', options: sanitizedOpts, type: questionType },
                 game_id: gameId,
-                combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(), streak: session.streak },
-                hints: hintsSummary(session.hints),
+                combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(session.effective_stats), streak: session.streak },
+                hints: hintsSummary(session.hints, session.effective_stats),
                 score: player.score || 0,
                 score_delta: 0,
                 streak: session.streak,
             }, 200);
         }
     } else if (action === 'recharge') {
-        const gain = ACTIONS.recharge.gain;
+        const gain = session.effective_stats?.recharge_gain ?? ACTIONS.recharge.gain;
         const before = player.current_cap || 0;
         const maxC = player.max_cap || 10;
         player.current_cap = Math.min(maxC, before + gain);
@@ -255,7 +259,7 @@ export async function onRequestPost({ request, env }) {
 
     await putSession(env, gameId, session);
 
-    const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(), streak: session.streak };
+    const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(session.effective_stats), streak: session.streak };
 
     // Run summary (issue #21): computed here, once, at the same point
     // level_results is already finalized -- extends the existing end-of-run
@@ -313,7 +317,7 @@ export async function onRequestPost({ request, env }) {
         game_id: gameId,
         is_correct: isCorrect,
         combat_state: combatState,
-        hints: hintsSummary(session.hints),
+        hints: hintsSummary(session.hints, session.effective_stats),
         messages,
         outcome,
         level_results: outcome ? session.level_results : undefined,

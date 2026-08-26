@@ -10,7 +10,10 @@ import {
     putSession,
     shuffle,
     actionCosts,
+    effectiveStats,
 } from '../_lib/game.js';
+import { verifyFirebaseToken } from '../_lib/auth.js';
+import { getProfile } from '../_lib/profile.js';
 
 export async function onRequestPost({ request, env }) {
     const payload = await request.json().catch(() => ({}));
@@ -29,13 +32,31 @@ export async function onRequestPost({ request, env }) {
         session = { player: freshPlayer() };
     }
 
+    // Upgrades (issue #23): a signed-in player's purchased levels come from
+    // their own Firestore profile -- server-trusted the same way the rest of
+    // that profile is (see profile.js's comment on the accepted tradeoff of
+    // a player being able to edit their own document directly; this can
+    // only affect their own run, never another player's). Guests have no
+    // server-side account to read from, so their levels ride in the request
+    // body instead, same trust model as the rest of the guest profile.
+    let upgrades = {};
+    const auth = await verifyFirebaseToken(payload.id_token);
+    if (auth) {
+        const profile = await getProfile(payload.id_token, auth.uid);
+        upgrades = profile?.upgrades || {};
+    } else if (payload.upgrades && typeof payload.upgrades === 'object') {
+        upgrades = payload.upgrades;
+    }
+    const stats = effectiveStats(upgrades);
+    session.effective_stats = stats;
+
     // Score (issue #20) is deliberately carried forward across encounters
     // within a session -- it's a running session score, not a per-battle
     // one -- via freshPlayer(existingScore). Streak is the opposite choice:
     // it resets with every new encounter, same as HP/CAP/enemy state, since
     // a "streak" is meant to reflect this battle's run of correct answers,
     // not one inherited from a fight that already ended.
-    session.player = freshPlayer(session.player?.score);
+    session.player = freshPlayer(session.player?.score, stats);
     session.streak = 0;
     session.best_streak = 0;
     session.pending_q_hint_used = false;
@@ -70,10 +91,10 @@ export async function onRequestPost({ request, env }) {
             enemy: session.enemy,
             syllabus_id: syllabusId,
             difficulty,
-            action_costs: actionCosts(),
+            action_costs: actionCosts(stats),
             streak: session.streak,
         },
-        hints: hintsSummary(session.hints),
+        hints: hintsSummary(session.hints, session.effective_stats),
         score: session.player.score || 0,
         score_delta: 0,
         streak: session.streak,
