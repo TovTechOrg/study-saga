@@ -42,7 +42,7 @@ export async function onRequestPost({ request, env }) {
             const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium' };
             return jsonResponse({
                 status: 'error',
-                message: 'Not enough CAP',
+                message: 'Not enough CAP -- Recharge to continue.',
                 game_id: gameId,
                 combat_state: combatState,
                 hints: hintsSummary(session.hints),
@@ -160,7 +160,7 @@ export async function onRequestPost({ request, env }) {
                 const recheckCost = ACTIONS[action].cost;
                 if ((player.current_cap || 0) < recheckCost) {
                     canAfford = false;
-                    messages.push(`Not enough CAP for ${action}.`);
+                    messages.push(`Not enough CAP for ${action} -- Recharge to continue.`);
                 }
             }
 

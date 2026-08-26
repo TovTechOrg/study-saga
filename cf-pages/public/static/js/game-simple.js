@@ -368,7 +368,11 @@ function setStatus(message) {
 
 function handleInvalidSession(message) {
     console.warn('Invalid session detected:', message);
-    alert(message || 'Session expired. Click Deploy System to relaunch.');
+    // issue #19: this alert() was redundant -- the function already ends
+    // with setStatus() showing the same recovery message on the main menu
+    // it returns the player to (setStatus() itself was silently broken
+    // until this same issue's fix -- see the #test-output element added
+    // to index.html).
     window.gameId = null;
     window.combatState = null;
 
@@ -388,7 +392,10 @@ function handleInvalidSession(message) {
     const deploy = document.getElementById('deploy-btn');
     if (deploy) deploy.disabled = false;
     hideGameNav();
-    setStatus('Session expired. Click Deploy System to relaunch.');
+    // Prefer the caller's specific message (e.g. the backend's actual
+    // reason) over the generic fallback -- previously silently discarded
+    // since this setStatus() call ignored the `message` parameter.
+    setStatus(message || 'Session expired. Click Deploy System to relaunch.');
 }
 
 async function startGame() {
@@ -488,7 +495,7 @@ async function startGame() {
         }
     } catch (e) {
         console.error(e);
-        setStatus('Error: ' + e.message);
+        setStatus('Could not start a game. Please try again.');
     } finally {
         if (btn) btn.disabled = false;
         window.__startingGame = false;
@@ -564,11 +571,11 @@ async function selectSyllabus(id, difficulty) {
             console.log('Combat screen is now visible');
         } else {
             console.error('FAILED - status is not success:', data.status);
-            alert('Failed: ' + (data.message || JSON.stringify(data)));
+            showFeedbackModal({ message: data.message || 'Could not enter this realm. Please try again.', correct: false, title: 'Error' });
         }
     } catch (e) {
         console.error('EXCEPTION:', e);
-        alert('Error: ' + e.message);
+        showFeedbackModal({ message: 'A connection error occurred. Please try again.', correct: false, title: 'Error' });
     } finally {
         gridButtons.forEach(b => b.disabled = false);
         window.__startingCombat = false;
@@ -1134,7 +1141,10 @@ function showFeedbackModal(feedback, onClose) {
         modal.classList.remove('good', 'bad');
         if (isObject && typeof feedback.correct !== 'undefined') {
             modal.classList.add(feedback.correct ? 'good' : 'bad');
-            if (titleEl) titleEl.textContent = feedback.correct ? '✅ Correct!' : '❌ Incorrect';
+            // issue #19: allow a caller-supplied title for non-quiz uses of
+            // this modal (system/network errors) instead of always saying
+            // "Correct"/"Incorrect", which is misleading outside grading.
+            if (titleEl) titleEl.textContent = feedback.title || (feedback.correct ? '✅ Correct!' : '❌ Incorrect');
             if (window.HoloCard) {
                 const playerCard = document.getElementById('player-card');
                 const enemyCard = document.getElementById('enemy-card');
@@ -1233,11 +1243,14 @@ async function resetGame() {
             hideGameNav();
             setStatus('Session reset. Click Deploy System to start!');
         } else {
-            alert(data.message || 'Reset failed');
+            // Reset can be triggered from any screen (persistent nav), not
+            // just the main menu setStatus() targets -- use the
+            // universally-visible feedback modal instead.
+            showFeedbackModal({ message: data.message || 'Could not reset the session. Please try again.', correct: false, title: 'Error' });
         }
     } catch (e) {
         console.error('reset-game error:', e);
-        alert('Error: ' + e.message);
+        showFeedbackModal({ message: 'A connection error occurred. Please try again.', correct: false, title: 'Error' });
     } finally {
         window.__resetting = false;
         // Re-enable buttons on main menu
