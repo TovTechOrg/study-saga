@@ -139,6 +139,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    const navHelpBtn = document.getElementById('game-nav-help-btn');
+    if (navHelpBtn) navHelpBtn.addEventListener('click', openHowToPlayModal);
+    const closeHowToPlayBtn = document.getElementById('close-how-to-play-btn');
+    if (closeHowToPlayBtn) closeHowToPlayBtn.addEventListener('click', closeHowToPlayModal);
+
     const signInBtn = document.getElementById('sign-in-btn');
     if (signInBtn) {
         signInBtn.addEventListener('click', function () {
@@ -232,6 +237,7 @@ async function handleAuthChanged(user) {
             if (data.status === 'resumed' && confirm('You have a game in progress. Resume it?')) {
                 window.gameId = data.game_id;
                 window.combatState = data.combat_state;
+                window._lastResolve = undefined;
                 document.getElementById('main-menu').style.display = 'none';
                 const combatScreen = document.getElementById('combat-screen');
                 combatScreen.style.display = 'block';
@@ -311,6 +317,46 @@ function trapFocus(modalEl, onEscape) {
         setTimeout(focusFirst, 450);
     }
     return () => modalEl.removeEventListener('keydown', handleKeydown);
+}
+
+// Single source of truth for the HUD's stat explanations (issue #17), also
+// consumed by the first-run tutorial (issue #16) so the two never drift.
+const COMBAT_STAT_EXPLANATIONS = [
+    { stat: 'HP', text: 'Your confusion tolerance. Reaches zero and the run ends.' },
+    { stat: 'CAP', text: 'Your action budget. Attack costs 3, Use Ability costs 5, Recharge gives back 5.' },
+    { stat: 'Resolve', text: "The enemy's confidence. Right answers push it down and weaken its counterattacks. Wrong answers feed it, and a confident enemy hits up to 1.4x harder." },
+];
+
+function renderStatExplanations(container) {
+    if (!container) return;
+    container.innerHTML = '';
+    const dl = document.createElement('dl');
+    COMBAT_STAT_EXPLANATIONS.forEach(({ stat, text }) => {
+        const item = document.createElement('div');
+        item.className = 'how-to-play-stat';
+        const dt = document.createElement('dt');
+        dt.textContent = stat;
+        const dd = document.createElement('dd');
+        dd.textContent = text;
+        item.appendChild(dt);
+        item.appendChild(dd);
+        dl.appendChild(item);
+    });
+    container.appendChild(dl);
+}
+
+function openHowToPlayModal() {
+    const modal = document.getElementById('how-to-play-modal');
+    if (!modal) return;
+    renderStatExplanations(document.getElementById('how-to-play-body'));
+    modal.classList.add('active');
+    modal._previouslyFocused = document.activeElement;
+    modal._releaseFocusTrap = trapFocus(modal, closeHowToPlayModal);
+}
+
+function closeHowToPlayModal() {
+    const modal = document.getElementById('how-to-play-modal');
+    if (modal) deactivateModal(modal);
 }
 
 function deactivateModal(modal) {
@@ -567,6 +613,7 @@ async function selectSyllabus(id, difficulty) {
             void combatScreen.offsetHeight;
 
             window.combatState = data.combat_state;
+            window._lastResolve = undefined;
             updateCombatHUD(data.combat_state);
             updateHintsBar(data.hints);
             console.log('Combat screen display:', window.getComputedStyle(combatScreen).display);
@@ -584,18 +631,66 @@ async function selectSyllabus(id, difficulty) {
     }
 }
 
+// Resolve delta + state label (issue #17): "-18" / "+14" next to the bar,
+// plus a text state at the extremes matching combat-action.js's own
+// thresholds (<=15 => hesitate chance, >=85 => heavy-hit chance) so the
+// number swinging the enemy's counterattack between ~6 and ~25 damage
+// isn't invisible. window._lastResolve is reset to undefined whenever a
+// fresh battle starts, so entering a new fight never shows a stray delta
+// carried over from the last one.
+function updateResolveAnnotation(resolve) {
+    const el = document.getElementById('enemy-resolve-annotation');
+    if (!el) return;
+    // Several call sites re-invoke updateCombatHUD a second time with the
+    // same already-applied state as a defensive re-render (see
+    // submitQuizAnswer's `finally` block). Without this guard that redundant
+    // second call would immediately overwrite the delta just shown with a
+    // "no change" blank, since by then window._lastResolve already equals
+    // the new value.
+    if (typeof window._lastResolve === 'number' && window._lastResolve === resolve) return;
+
+    const parts = [];
+    if (typeof window._lastResolve === 'number' && window._lastResolve !== resolve) {
+        const delta = resolve - window._lastResolve;
+        parts.push(delta > 0 ? `+${delta}` : `${delta}`);
+        el.classList.toggle('delta-down', delta < 0);
+        el.classList.toggle('delta-up', delta > 0);
+    } else {
+        el.classList.remove('delta-down', 'delta-up');
+    }
+    if (resolve <= 15) parts.push('Rattled');
+    else if (resolve >= 85) parts.push('Emboldened');
+
+    el.textContent = parts.join(' · ');
+    window._lastResolve = resolve;
+}
+
+// Keeps a progress bar's visual width in sync with an accurate
+// role="progressbar" (issue #17) in one place instead of repeating both
+// updates inline for each of the 4 bars.
+function setProgressBar(barId, value, max, label) {
+    const bar = document.getElementById(barId);
+    if (!bar) return;
+    bar.style.width = `${(value / max) * 100}%`;
+    bar.setAttribute('aria-valuenow', String(value));
+    bar.setAttribute('aria-valuemax', String(max));
+    if (label) bar.setAttribute('aria-label', label);
+}
+
 function updateCombatHUD(state) {
     document.getElementById('player-hp').textContent = `${state.player.current_hp}/${state.player.max_hp}`;
-    document.getElementById('player-hp-bar-inner').style.width = `${(state.player.current_hp / state.player.max_hp) * 100}%`;
+    setProgressBar('player-hp-bar-inner', state.player.current_hp, state.player.max_hp);
     document.getElementById('player-cap').textContent = `${state.player.current_cap}/${state.player.max_cap}`;
-    document.getElementById('player-cap-bar-inner').style.width = `${(state.player.current_cap / state.player.max_cap) * 100}%`;
+    setProgressBar('player-cap-bar-inner', state.player.current_cap, state.player.max_cap);
     document.getElementById('enemy-name').textContent = state.enemy.name;
     document.getElementById('enemy-hp').textContent = `${state.enemy.current_hp}/${state.enemy.max_hp}`;
-    document.getElementById('enemy-hp-bar-inner').style.width = `${(state.enemy.current_hp / state.enemy.max_hp) * 100}%`;
+    setProgressBar('enemy-hp-bar-inner', state.enemy.current_hp, state.enemy.max_hp);
+
     const resolve = state.enemy.resolve ?? 50;
     const maxResolve = state.enemy.max_resolve ?? 100;
     document.getElementById('enemy-resolve').textContent = `${resolve}/${maxResolve}`;
-    document.getElementById('enemy-resolve-bar-inner').style.width = `${(resolve / maxResolve) * 100}%`;
+    setProgressBar('enemy-resolve-bar-inner', resolve, maxResolve);
+    updateResolveAnnotation(resolve);
 
     // Action costs come from the server (issue #15) so the client never
     // hardcodes a copy of the rules that could drift -- see actionCosts()

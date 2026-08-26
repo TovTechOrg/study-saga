@@ -114,6 +114,13 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.game-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
 .game-nav-home-btn {
     padding: 0.5rem 1.25rem;
     font-size: 0.85rem;
@@ -411,6 +418,35 @@ body {
 .player-info,
 .enemy-info {
     text-align: left;
+}
+
+/* Resolve delta + state label (issue #17) */
+.resolve-annotation {
+    font-weight: 700;
+    font-size: 0.85em;
+}
+
+.resolve-annotation.delta-down {
+    color: #34d399;
+}
+
+.resolve-annotation.delta-up {
+    color: #ef4444;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .resolve-annotation:not(:empty) {
+        animation: resolve-annotation-in 0.3s ease-out;
+    }
+}
+
+@keyframes resolve-annotation-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .neural-progress-bar {
@@ -737,6 +773,35 @@ body {
     letter-spacing: 0.5em;
     text-transform: uppercase;
     margin-bottom: 2rem;
+}
+
+.how-to-play-body {
+    text-align: left;
+}
+
+.how-to-play-stat {
+    margin-bottom: 1.25rem;
+}
+
+.how-to-play-stat:last-child {
+    margin-bottom: 0;
+}
+
+.how-to-play-stat dt {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    color: #9ad1ff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.how-to-play-stat dd {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .quiz-question {

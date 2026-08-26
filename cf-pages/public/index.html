@@ -107,9 +107,23 @@
 
     <!-- Persistent navigation, hidden on the main menu -->
     <nav id="game-nav" class="game-nav" style="display: none;" aria-label="Game navigation">
-        <button type="button" id="game-nav-home-btn" class="game-nav-home-btn">Home</button>
+        <div class="game-nav-actions">
+            <button type="button" id="game-nav-home-btn" class="game-nav-home-btn">Home</button>
+            <button type="button" id="game-nav-help-btn" class="game-nav-home-btn">How to Play</button>
+        </div>
         <span id="game-nav-realm" class="game-nav-realm"></span>
     </nav>
+
+    <!-- How to Play (issue #17): content is rendered from COMBAT_STAT_EXPLANATIONS
+         in game-simple.js, the single source also used by the issue #16 tutorial,
+         so the two never drift apart. -->
+    <div id="how-to-play-modal" class="neural-modal" role="dialog" aria-modal="true" aria-labelledby="how-to-play-title">
+        <div class="neural-modal-content">
+            <div class="modal-label" id="how-to-play-title">How to Play</div>
+            <div id="how-to-play-body" class="how-to-play-body"></div>
+            <button id="close-how-to-play-btn" class="neural-btn" style="margin-top: 2rem;">Close</button>
+        </div>
+    </div>
 
     <!-- MAIN MENU SCREEN -->
     <div id="main-menu" data-screen="main_menu" style="display: block;">
@@ -150,14 +164,16 @@
                     <div class="hud-label">KnowledgeKeeper</div>
                     <img id="player-sprite" src="/static/images/player-sprite.png" alt="Player" class="neural-sprite">
                     <div class="player-info">
-                        <div class="hud-value">HP: <span id="player-hp">110/110</span></div>
+                        <div class="hud-value">Your HP: <span id="player-hp">110/110</span></div>
                         <div class="neural-progress-bar">
-                            <div id="player-hp-bar-inner" class="neural-progress-fill hp-fill" style="width: 100%;">
+                            <div id="player-hp-bar-inner" class="neural-progress-fill hp-fill" style="width: 100%;"
+                                role="progressbar" aria-valuemin="0" aria-valuemax="110" aria-valuenow="110" aria-label="Your HP">
                             </div>
                         </div>
-                        <div class="hud-value">CAP: <span id="player-cap">10/10</span></div>
+                        <div class="hud-value">CAP (actions): <span id="player-cap">10/10</span></div>
                         <div class="neural-progress-bar">
-                            <div id="player-cap-bar-inner" class="neural-progress-fill cap-fill" style="width: 100%;">
+                            <div id="player-cap-bar-inner" class="neural-progress-fill cap-fill" style="width: 100%;"
+                                role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="10" aria-label="Your CAP">
                             </div>
                         </div>
                     </div>
@@ -168,14 +184,16 @@
                     <div class="hud-label" id="enemy-name">Enemy</div>
                     <img id="enemy-sprite" src="/static/images/enemy-sprite.png" alt="Enemy" class="neural-sprite">
                     <div class="enemy-info">
-                        <div class="hud-value">HP: <span id="enemy-hp">80/80</span></div>
+                        <div class="hud-value">Enemy HP: <span id="enemy-hp">80/80</span></div>
                         <div class="neural-progress-bar">
-                            <div id="enemy-hp-bar-inner" class="neural-progress-fill hp-fill" style="width: 100%;">
+                            <div id="enemy-hp-bar-inner" class="neural-progress-fill hp-fill" style="width: 100%;"
+                                role="progressbar" aria-valuemin="0" aria-valuemax="80" aria-valuenow="80" aria-label="Enemy HP">
                             </div>
                         </div>
-                        <div class="hud-value">Resolve: <span id="enemy-resolve">50/100</span></div>
+                        <div class="hud-value">Resolve: <span id="enemy-resolve">50/100</span> <span id="enemy-resolve-annotation" class="resolve-annotation" aria-live="polite"></span></div>
                         <div class="neural-progress-bar">
-                            <div id="enemy-resolve-bar-inner" class="neural-progress-fill resolve-fill" style="width: 50%;">
+                            <div id="enemy-resolve-bar-inner" class="neural-progress-fill resolve-fill" style="width: 50%;"
+                                role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Enemy Resolve">
                             </div>
                         </div>
                     </div>
