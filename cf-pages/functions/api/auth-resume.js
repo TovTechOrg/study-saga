@@ -30,7 +30,11 @@ export async function onRequestPost({ request, env }) {
             enemy: session.enemy,
             syllabus_id: session.syllabus_id || null,
             action_costs: actionCosts(),
+            streak: session.streak || 0,
         },
         hints: hintsSummary(session.hints),
+        score: session.player?.score || 0,
+        score_delta: 0,
+        streak: session.streak || 0,
     });
 }

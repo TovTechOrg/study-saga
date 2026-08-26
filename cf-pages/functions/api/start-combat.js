@@ -29,7 +29,15 @@ export async function onRequestPost({ request, env }) {
         session = { player: freshPlayer() };
     }
 
+    // Score (issue #20) is deliberately carried forward across encounters
+    // within a session -- it's a running session score, not a per-battle
+    // one -- via freshPlayer(existingScore). Streak is the opposite choice:
+    // it resets with every new encounter, same as HP/CAP/enemy state, since
+    // a "streak" is meant to reflect this battle's run of correct answers,
+    // not one inherited from a fight that already ended.
     session.player = freshPlayer(session.player?.score);
+    session.streak = 0;
+    session.pending_q_hint_used = false;
     session.enemy_id = enemyId;
     session.enemy = freshEnemy(enemyId);
     session.syllabus_id = syllabusId;
@@ -62,7 +70,11 @@ export async function onRequestPost({ request, env }) {
             syllabus_id: syllabusId,
             difficulty,
             action_costs: actionCosts(),
+            streak: session.streak,
         },
         hints: hintsSummary(session.hints),
+        score: session.player.score || 0,
+        score_delta: 0,
+        streak: session.streak,
     });
 }

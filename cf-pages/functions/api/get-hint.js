@@ -160,6 +160,10 @@ export async function onRequestPost({ request, env }) {
             } else if (h.credits > 0) {
                 h.credits -= 1;
             } else {
+                // Marked below (session.pending_q_hint_used) only on the
+                // paths that actually grant a hint -- this blocked path
+                // must not halve a question's score for a hint the player
+                // never received.
                 await putSession(env, gameId, session);
                 return jsonResponse({
                     status: 'blocked',
@@ -169,6 +173,11 @@ export async function onRequestPost({ request, env }) {
                     hints: hintsSummary(h),
                 });
             }
+            // Issue #20: a hint actually granted on the currently pending
+            // question halves that question's score once it's graded in
+            // combat-action.js. Reset back to false there after grading, so
+            // this only ever reflects the question in progress right now.
+            session.pending_q_hint_used = true;
             await putSession(env, gameId, session);
         }
     }

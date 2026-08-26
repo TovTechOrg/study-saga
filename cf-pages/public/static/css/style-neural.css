@@ -525,6 +525,36 @@ body {
     }
 }
 
+/* Score + streak (issue #20) */
+.score-display {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+    color: #e7f5ff;
+}
+
+.score-delta-annotation {
+    font-weight: 700;
+    color: #34d399;
+    margin-left: 0.4em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .score-delta-annotation:not(:empty) {
+        animation: resolve-annotation-in 0.3s ease-out;
+    }
+}
+
+.streak-display {
+    margin-left: 0.6em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.85em;
+    color: #fbbf24;
+}
+
 .neural-progress-bar {
     width: 100%;
     height: 12px;

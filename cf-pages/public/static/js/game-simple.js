@@ -261,6 +261,8 @@ async function handleAuthChanged(user) {
                 window.gameId = data.game_id;
                 window.combatState = data.combat_state;
                 window._lastResolve = undefined;
+                window._lastScore = undefined;
+            window._lastRenderedCombatState = undefined;
                 document.getElementById('main-menu').style.display = 'none';
                 const combatScreen = document.getElementById('combat-screen');
                 combatScreen.style.display = 'block';
@@ -773,6 +775,8 @@ async function selectSyllabus(id, difficulty) {
 
             window.combatState = data.combat_state;
             window._lastResolve = undefined;
+            window._lastScore = undefined;
+            window._lastRenderedCombatState = undefined;
             updateCombatHUD(data.combat_state);
             updateHintsBar(data.hints);
             if (!hasSeenTutorial()) startTutorial();
@@ -798,16 +802,14 @@ async function selectSyllabus(id, difficulty) {
 // isn't invisible. window._lastResolve is reset to undefined whenever a
 // fresh battle starts, so entering a new fight never shows a stray delta
 // carried over from the last one.
-function updateResolveAnnotation(resolve) {
+function updateResolveAnnotation(resolve, isFreshState) {
     const el = document.getElementById('enemy-resolve-annotation');
     if (!el) return;
-    // Several call sites re-invoke updateCombatHUD a second time with the
-    // same already-applied state as a defensive re-render (see
-    // submitQuizAnswer's `finally` block). Without this guard that redundant
-    // second call would immediately overwrite the delta just shown with a
-    // "no change" blank, since by then window._lastResolve already equals
-    // the new value.
-    if (typeof window._lastResolve === 'number' && window._lastResolve === resolve) return;
+    // isFreshState (computed once in updateCombatHUD via object identity)
+    // tells a genuinely new server response apart from a same-state redundant
+    // re-render (see updateCombatHUD's comment) -- on a redundant call, leave
+    // whatever annotation is already showing rather than recomputing it.
+    if (!isFreshState) return;
 
     const parts = [];
     if (typeof window._lastResolve === 'number' && window._lastResolve !== resolve) {
@@ -825,6 +827,34 @@ function updateResolveAnnotation(resolve) {
     window._lastResolve = resolve;
 }
 
+// Score + streak (issue #20): score is server-authoritative (player.score,
+// already inside combat_state) -- this only renders it and derives a visible
+// "+100" style delta by comparing against the last value shown, gated on
+// isFreshState the same way as updateResolveAnnotation() above. This has to
+// be an isFreshState check rather than a value-diff: unlike Resolve (which
+// always changes on a graded turn), a wrong answer is a real, fresh turn
+// that legitimately scores a delta of 0 -- a value-diff can't tell that
+// apart from "nothing happened, don't touch the display" and would leave a
+// stale "+100" showing after a miss.
+function updateScoreDisplay(score, streak, isFreshState) {
+    const scoreEl = document.getElementById('player-score');
+    const deltaEl = document.getElementById('score-delta-annotation');
+    const streakEl = document.getElementById('streak-display');
+    if (!scoreEl || !deltaEl || !streakEl) return;
+
+    scoreEl.textContent = String(score);
+    streakEl.textContent = streak >= 2 ? `Streak x${streak}` : '';
+
+    if (!isFreshState) return;
+    if (typeof window._lastScore === 'number') {
+        const delta = score - window._lastScore;
+        deltaEl.textContent = delta > 0 ? `+${delta}` : (delta < 0 ? `${delta}` : '');
+    } else {
+        deltaEl.textContent = '';
+    }
+    window._lastScore = score;
+}
+
 // Keeps a progress bar's visual width in sync with an accurate
 // role="progressbar" (issue #17) in one place instead of repeating both
 // updates inline for each of the 4 bars.
@@ -838,6 +868,17 @@ function setProgressBar(barId, value, max, label) {
 }
 
 function updateCombatHUD(state) {
+    // Several call sites re-invoke updateCombatHUD a second time (see e.g.
+    // submitQuizAnswer's `finally` block) passing back the exact same
+    // combat_state object already processed once, as a defensive re-render.
+    // Object identity distinguishes that redundant call from a genuinely new
+    // server response -- unlike diffing displayed values, this stays correct
+    // even when a real turn's delta happens to be zero (e.g. a wrong answer
+    // scoring 0 points), which a value-diff can't tell apart from "nothing
+    // changed, so skip."
+    const isFreshState = state !== window._lastRenderedCombatState;
+    window._lastRenderedCombatState = state;
+
     document.getElementById('player-hp').textContent = `${state.player.current_hp}/${state.player.max_hp}`;
     setProgressBar('player-hp-bar-inner', state.player.current_hp, state.player.max_hp);
     document.getElementById('player-cap').textContent = `${state.player.current_cap}/${state.player.max_cap}`;
@@ -850,7 +891,9 @@ function updateCombatHUD(state) {
     const maxResolve = state.enemy.max_resolve ?? 100;
     document.getElementById('enemy-resolve').textContent = `${resolve}/${maxResolve}`;
     setProgressBar('enemy-resolve-bar-inner', resolve, maxResolve);
-    updateResolveAnnotation(resolve);
+    updateResolveAnnotation(resolve, isFreshState);
+
+    updateScoreDisplay(state.player.score || 0, state.streak || 0, isFreshState);
 
     // Action costs come from the server (issue #15) so the client never
     // hardcodes a copy of the rules that could drift -- see actionCosts()
@@ -1507,12 +1550,15 @@ function showFeedbackModal(feedback, onClose) {
             if (window.HoloCard) {
                 const playerCard = document.getElementById('player-card');
                 const enemyCard = document.getElementById('enemy-card');
+                // issue #20: streak is server-authoritative (window.combatState.streak,
+                // already updated above via updateCombatHUD before this runs) --
+                // _holoStreak is only a visual mirror of it now, not an
+                // independent client-side counter that could drift.
+                window._holoStreak = window.combatState?.streak || 0;
                 if (feedback.correct) {
-                    window._holoStreak = (window._holoStreak || 0) + 1;
                     window.HoloCard.pulse(playerCard);
                     window.HoloCard.setIntensity(playerCard, window._holoStreak);
                 } else {
-                    window._holoStreak = 0;
                     window.HoloCard.flash(enemyCard);
                     window.HoloCard.setIntensity(playerCard, 0);
                 }

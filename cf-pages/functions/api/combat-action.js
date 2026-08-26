@@ -1,4 +1,4 @@
-import { jsonResponse, findSyllabus, getSession, putSession, shuffle, freshHints, hintsSummary, ACTIONS, actionCosts } from '../_lib/game.js';
+import { jsonResponse, findSyllabus, getSession, putSession, shuffle, freshHints, hintsSummary, ACTIONS, actionCosts, scoreForAnswer, VICTORY_BONUS, hpRemainingBonus } from '../_lib/game.js';
 
 function optText(opt) {
     return typeof opt === 'object' && opt !== null ? opt.text : String(opt);
@@ -22,10 +22,15 @@ export async function onRequestPost({ request, env }) {
     const enemy = session.enemy || {};
     session.hints = session.hints || freshHints();
     session.level_results = session.level_results || [];
+    // Streak and per-question hint usage live on the session (issue #20), not
+    // the client -- a client-computed score is a client-editable score.
+    session.streak = session.streak || 0;
+    session.pending_q_hint_used = session.pending_q_hint_used || false;
     const messages = [];
     let outcome = null;
     let isCorrect = null;
     let canAfford = true;
+    let scoreDelta = 0;
 
     if (action === 'attack' || action === 'ability') {
         const spec = ACTIONS[action];
@@ -33,13 +38,16 @@ export async function onRequestPost({ request, env }) {
         const baseDamage = spec.damage;
 
         if ((player.current_cap || 0) < cost) {
-            const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts() };
+            const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(), streak: session.streak };
             return jsonResponse({
                 status: 'error',
                 message: 'Not enough CAP -- Recharge to continue.',
                 game_id: gameId,
                 combat_state: combatState,
                 hints: hintsSummary(session.hints),
+                score: player.score || 0,
+                score_delta: 0,
+                streak: session.streak,
             }, 200);
         }
 
@@ -105,6 +113,22 @@ export async function onRequestPost({ request, env }) {
             }
             if (selectedFeedback) messages.push(selectedFeedback);
 
+            // Scoring (issue #20): +100 for a correct answer, a streak bonus
+            // capped at +100, halved if a hint was used on this question.
+            // Computed here -- the one place both single- and multi-select
+            // answers already share for grading -- so the two paths can't
+            // drift the way the pre-#11 battle log did.
+            const hintUsedThisQuestion = session.pending_q_hint_used;
+            const scoreResult = scoreForAnswer({
+                isCorrect,
+                priorStreak: session.streak,
+                hintUsed: hintUsedThisQuestion,
+            });
+            player.score = (player.score || 0) + scoreResult.points;
+            session.streak = scoreResult.newStreak;
+            session.pending_q_hint_used = false;
+            scoreDelta += scoreResult.points;
+
             if (!askedList.includes(qIndex)) {
                 askedList = [...askedList, qIndex];
                 session.asked_indices = askedList;
@@ -119,6 +143,9 @@ export async function onRequestPost({ request, env }) {
             if (enemy.current_hp <= 0) {
                 outcome = 'victory';
                 session.hints.credits += 2;
+                const victoryBonus = VICTORY_BONUS + hpRemainingBonus(player.current_hp);
+                player.score += victoryBonus;
+                scoreDelta += victoryBonus;
             } else {
                 const maxResolve = enemy.max_resolve || 100;
                 let resolve = enemy.resolve ?? 50;
@@ -170,10 +197,13 @@ export async function onRequestPost({ request, env }) {
                     question: { text: nextQuestion.text || '', options: sanitizedOpts, type: nextQuestionType },
                     game_id: gameId,
                     is_correct: isCorrect,
-                    combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts() },
+                    combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(), streak: session.streak },
                     hints: hintsSummary(session.hints),
                     messages,
                     outcome,
+                    score: player.score,
+                    score_delta: scoreDelta,
+                    streak: session.streak,
                 }, 200);
             }
         } else {
@@ -193,8 +223,11 @@ export async function onRequestPost({ request, env }) {
                 status: 'question',
                 question: { text: question.text || '', options: sanitizedOpts, type: questionType },
                 game_id: gameId,
-                combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts() },
+                combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(), streak: session.streak },
                 hints: hintsSummary(session.hints),
+                score: player.score || 0,
+                score_delta: 0,
+                streak: session.streak,
             }, 200);
         }
     } else if (action === 'recharge') {
@@ -209,7 +242,7 @@ export async function onRequestPost({ request, env }) {
 
     await putSession(env, gameId, session);
 
-    const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts() };
+    const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(), streak: session.streak };
 
     return jsonResponse({
         status: 'success',
@@ -220,5 +253,8 @@ export async function onRequestPost({ request, env }) {
         messages,
         outcome,
         level_results: outcome ? session.level_results : undefined,
+        score: player.score || 0,
+        score_delta: scoreDelta,
+        streak: session.streak,
     });
 }

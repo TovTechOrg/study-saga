@@ -93,6 +93,33 @@ export function actionCosts() {
     };
 }
 
+// Scoring (issue #20): server-authoritative so it can't be edited from the
+// client, and factored here so the single/multiple-choice grading paths in
+// combat-action.js -- which have already drifted once, see the battle-log
+// bug in #11 -- share one implementation instead of two that could diverge.
+export const VICTORY_BONUS = 250;
+
+// difficultyMultiplier is a hook for issue #9's Easy/Medium/Hard score
+// multipliers (1x/1.5x/2x) -- #9 hasn't wired a value in yet, so it stays a
+// constant 1 until it does, rather than combat-action.js reimplementing
+// scoring when that lands.
+export function scoreForAnswer({ isCorrect, priorStreak, hintUsed, difficultyMultiplier = 1 }) {
+    if (!isCorrect) {
+        return { points: 0, newStreak: 0 };
+    }
+    const newStreak = priorStreak + 1;
+    // +25 per consecutive correct beyond the first, capped at +100 -- a 5+
+    // streak (4 "beyond the first") hits the ceiling.
+    const streakBonus = Math.min(100, (newStreak - 1) * 25);
+    let points = (100 + streakBonus) * difficultyMultiplier;
+    if (hintUsed) points *= 0.5;
+    return { points: Math.round(points), newStreak };
+}
+
+export function hpRemainingBonus(currentHp) {
+    return Math.max(0, currentHp);
+}
+
 export function shuffle(array) {
     const arr = array.slice();
     for (let i = arr.length - 1; i > 0; i--) {
