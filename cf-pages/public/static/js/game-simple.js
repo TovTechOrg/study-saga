@@ -161,6 +161,8 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Sign-in failed:', e.detail.error);
         showAuthError(e.detail.error);
     });
+
+    initIdleNudge();
 });
 
 // ---------------------------------------------------------------------------
@@ -618,6 +620,63 @@ function updateCombatHUD(state) {
         btnDefend.style.opacity = '1';
         btnDefend.style.cursor = 'pointer';
     }
+
+    resetIdleNudgeTimer();
+}
+
+// ---------------------------------------------------------------------------
+// Idle nudge (issue #14): after IDLE_NUDGE_DELAY_MS of no input on the
+// combat screen, pulse the button the player is expected to press next,
+// so a first-time player isn't left staring at a static screen. Purely
+// additive -- never disables, moves, or auto-clicks anything.
+// ---------------------------------------------------------------------------
+const IDLE_NUDGE_DELAY_MS = 10000;
+let idleNudgeTimer = null;
+let idleNudgeAnnounced = false;
+
+function clearIdleNudge() {
+    document.querySelectorAll('.neural-action-btn.nudge').forEach((b) => b.classList.remove('nudge'));
+    idleNudgeAnnounced = false;
+}
+
+function pickIdleNudgeTarget() {
+    const combatScreen = document.getElementById('combat-screen');
+    if (!combatScreen || combatScreen.style.display !== 'block') return null;
+    // The player's attention belongs to the open modal, not the action row.
+    if (document.querySelector('.neural-modal.active')) return null;
+
+    const cap = window.combatState?.player?.current_cap ?? 0;
+    // CAP >= 3 covers both the ">= 5" and "3-4" rows -- Attack is affordable
+    // either way and is the cheapest way to make progress. Below 3, Attack
+    // and Ability are both disabled, so nudging either would point at a
+    // dead button; Recharge is the only legal action.
+    const targetId = cap >= 3 ? 'attack-btn' : 'defend-btn';
+    return document.getElementById(targetId);
+}
+
+function fireIdleNudge() {
+    const target = pickIdleNudgeTarget();
+    if (!target) return;
+    target.classList.add('nudge');
+    if (!idleNudgeAnnounced) {
+        const announcer = document.getElementById('idle-nudge-announcer');
+        if (announcer) announcer.textContent = `Suggested next action: ${target.textContent.trim()}`;
+        idleNudgeAnnounced = true;
+    }
+}
+
+function resetIdleNudgeTimer() {
+    clearIdleNudge();
+    if (idleNudgeTimer) clearTimeout(idleNudgeTimer);
+    idleNudgeTimer = setTimeout(fireIdleNudge, IDLE_NUDGE_DELAY_MS);
+}
+
+function initIdleNudge() {
+    const combatScreen = document.getElementById('combat-screen');
+    if (!combatScreen) return;
+    ['pointerdown', 'keydown', 'focusin'].forEach((evt) => {
+        combatScreen.addEventListener(evt, resetIdleNudgeTimer);
+    });
 }
 
 function updateHintsBar(hints) {

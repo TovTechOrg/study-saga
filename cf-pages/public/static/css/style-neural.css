@@ -495,6 +495,45 @@ body {
     cursor: not-allowed;
 }
 
+/* IDLE NUDGE -- see initIdleNudge()/resetIdleNudgeTimer() in game-simple.js.
+   Animates off currentColor so each button (attack/defend/skill) glows its
+   own accent color without hardcoding one. */
+@media (prefers-reduced-motion: no-preference) {
+    .neural-action-btn.nudge {
+        animation: nudge-pulse 1.8s ease-in-out infinite;
+    }
+}
+
+@keyframes nudge-pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 16px currentColor;
+    }
+    50% {
+        transform: scale(1.04);
+        box-shadow: 0 0 28px currentColor;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .neural-action-btn.nudge {
+        outline: 3px solid currentColor;
+        outline-offset: 3px;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* BATTLE LOG */
 .battle-log-panel {
     max-width: 700px;
