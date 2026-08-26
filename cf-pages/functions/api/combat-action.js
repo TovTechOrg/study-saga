@@ -25,6 +25,7 @@ export async function onRequestPost({ request, env }) {
     // Streak and per-question hint usage live on the session (issue #20), not
     // the client -- a client-computed score is a client-editable score.
     session.streak = session.streak || 0;
+    session.best_streak = session.best_streak || 0;
     session.pending_q_hint_used = session.pending_q_hint_used || false;
     const messages = [];
     let outcome = null;
@@ -126,6 +127,7 @@ export async function onRequestPost({ request, env }) {
             });
             player.score = (player.score || 0) + scoreResult.points;
             session.streak = scoreResult.newStreak;
+            session.best_streak = Math.max(session.best_streak || 0, session.streak);
             session.pending_q_hint_used = false;
             scoreDelta += scoreResult.points;
 
@@ -137,7 +139,16 @@ export async function onRequestPost({ request, env }) {
             qCursor += 1;
             session.q_cursor = qCursor;
 
-            session.level_results.push({ text: question?.text || '', correct: isCorrect });
+            // correctAnswerText and the easy-tier hint are carried on each
+            // result (issue #21's "review what you missed") so the run
+            // summary can show them without a second request -- the client
+            // only ever received the sanitized, answer-free question/options.
+            session.level_results.push({
+                text: question?.text || '',
+                correct: isCorrect,
+                correctAnswer: correctAnswerText,
+                hint: question?.hints?.easy || '',
+            });
             if (isCorrect) session.hints.credits += 1;
 
             if (enemy.current_hp <= 0) {
@@ -244,6 +255,25 @@ export async function onRequestPost({ request, env }) {
 
     const combatState = { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(), streak: session.streak };
 
+    // Run summary (issue #21): computed here, once, at the same point
+    // level_results is already finalized -- extends the existing end-of-run
+    // payload rather than requiring a second request for it.
+    let runSummary;
+    if (outcome) {
+        const total = session.level_results.length;
+        const correctCount = session.level_results.filter((r) => r.correct).length;
+        runSummary = {
+            score: player.score || 0,
+            accuracy: total > 0 ? correctCount / total : 0,
+            correct_count: correctCount,
+            total_questions: total,
+            best_streak: session.best_streak || 0,
+            xp_earned: Math.floor((player.score || 0) / 10),
+            hints_used: (session.hints.simple_used || 0) + (session.hints.hard_used || 0),
+            hp_remaining: outcome === 'victory' ? (player.current_hp || 0) : 0,
+        };
+    }
+
     return jsonResponse({
         status: 'success',
         game_id: gameId,
@@ -253,6 +283,7 @@ export async function onRequestPost({ request, env }) {
         messages,
         outcome,
         level_results: outcome ? session.level_results : undefined,
+        run_summary: runSummary,
         score: player.score || 0,
         score_delta: scoreDelta,
         streak: session.streak,

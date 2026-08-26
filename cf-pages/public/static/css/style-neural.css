@@ -1056,6 +1056,42 @@ body {
     color: #ef4444;
 }
 
+/* Run summary (issue #21): score is the visually dominant element, not the
+   "Victory!"/"Defeat" flavour text above it. */
+.run-summary {
+    margin-top: 1rem;
+}
+
+.run-summary:focus {
+    outline: none;
+}
+
+.run-summary-score {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.75rem, 9vw, 5.5rem);
+    color: #e7f5ff;
+    line-height: 1;
+}
+
+.run-summary-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    color: #9ad1ff;
+}
+
+.end-screen-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
 /* Hint budget bar (simple/hard hint allowance + credits) */
 .hints-budget-bar {
     display: flex;
@@ -1112,6 +1148,59 @@ body {
 
 .level-result-entry.incorrect .result-icon {
     color: #ef4444;
+}
+
+/* Missed questions expand to review the correct answer + hint (issue #21) --
+   a <details>/<summary> pair rather than custom expand/collapse JS, so
+   keyboard and screen-reader support come from the browser for free. */
+details.level-result-entry {
+    display: block;
+    padding: 0;
+}
+
+details.level-result-entry summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.35rem 0;
+    cursor: pointer;
+    list-style: none;
+}
+
+details.level-result-entry summary::-webkit-details-marker {
+    display: none;
+}
+
+details.level-result-entry summary::before {
+    content: '▸';
+    flex-shrink: 0;
+    color: #9ad1ff;
+    transition: transform 0.15s ease;
+}
+
+details.level-result-entry[open] summary::before {
+    transform: rotate(90deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    details.level-result-entry summary::before {
+        transition: none;
+    }
+}
+
+.level-result-review {
+    padding: 0 0 0.75rem 1.5rem;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+.level-result-review p {
+    margin: 0.25rem 0;
+}
+
+.level-result-review strong {
+    color: #e7f5ff;
 }
 
 /* Compact layout for short/narrow viewports (issue #2) */

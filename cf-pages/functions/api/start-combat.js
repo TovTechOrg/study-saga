@@ -37,6 +37,7 @@ export async function onRequestPost({ request, env }) {
     // not one inherited from a fight that already ended.
     session.player = freshPlayer(session.player?.score);
     session.streak = 0;
+    session.best_streak = 0;
     session.pending_q_hint_used = false;
     session.enemy_id = enemyId;
     session.enemy = freshEnemy(enemyId);

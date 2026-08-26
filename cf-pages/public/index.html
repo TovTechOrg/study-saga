@@ -278,13 +278,22 @@
         </div>
     </div>
 
-    <!-- Victory Screen -->
+    <!-- Victory / Defeat Screens (issue #21): identical structure, populated
+         by the one shared renderRunSummary()/handleRunOutcome() in
+         game-simple.js rather than two copies that could drift. -->
     <div id="victory-screen" data-screen="victory">
         <div class="victory-container">
             <h2>Victory!</h2>
-            <p>Congratulations, you have defeated the enemy!</p>
+            <div class="run-summary" id="victory-summary" tabindex="-1">
+                <div class="run-summary-score">Score: <span id="victory-summary-score">0</span></div>
+                <div class="run-summary-stats" id="victory-summary-stats"></div>
+            </div>
             <div id="victory-results-list" class="level-results-list"></div>
-            <button class="neural-btn" onclick="backToMenu()">Return to Main Menu</button>
+            <div class="end-screen-actions">
+                <button class="neural-btn" id="victory-play-again-btn">Play Again (Same Realm)</button>
+                <button class="neural-btn" id="victory-change-realm-btn">Change Realm</button>
+                <button class="neural-btn" onclick="backToMenu()">Return to Main Menu</button>
+            </div>
         </div>
     </div>
 
@@ -292,9 +301,16 @@
     <div id="defeat-screen" data-screen="defeat">
         <div class="defeat-container">
             <h2>Defeat</h2>
-            <p>Better luck next time!</p>
+            <div class="run-summary" id="defeat-summary" tabindex="-1">
+                <div class="run-summary-score">Score: <span id="defeat-summary-score">0</span></div>
+                <div class="run-summary-stats" id="defeat-summary-stats"></div>
+            </div>
             <div id="defeat-results-list" class="level-results-list"></div>
-            <button class="neural-btn" onclick="backToMenu()">Return to Main Menu</button>
+            <div class="end-screen-actions">
+                <button class="neural-btn" id="defeat-play-again-btn">Play Again (Same Realm)</button>
+                <button class="neural-btn" id="defeat-change-realm-btn">Change Realm</button>
+                <button class="neural-btn" onclick="backToMenu()">Return to Main Menu</button>
+            </div>
         </div>
     </div>
 

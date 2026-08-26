@@ -14,6 +14,7 @@ export async function onRequestPost({ request, env }) {
 
     session.player = freshPlayer();
     session.streak = 0;
+    session.best_streak = 0;
     session.pending_q_hint_used = false;
     session.enemy_id = 'misconception_golem';
     session.enemy = freshEnemy('misconception_golem');

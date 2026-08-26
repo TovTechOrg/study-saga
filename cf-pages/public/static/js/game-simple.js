@@ -151,6 +151,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // End-screen actions (issue #21): same handlers for both victory and defeat.
+    ['victory', 'defeat'].forEach((prefix) => {
+        const playAgainBtn = document.getElementById(`${prefix}-play-again-btn`);
+        if (playAgainBtn) playAgainBtn.addEventListener('click', playAgainSameRealm);
+        const changeRealmBtn = document.getElementById(`${prefix}-change-realm-btn`);
+        if (changeRealmBtn) changeRealmBtn.addEventListener('click', changeRealm);
+    });
+
     // Advance on a click anywhere in the tutorial overlay (issue #16: "advances
     // on click or Enter"), except the Skip/Next buttons, which already handle
     // their own click below -- without this guard, a click on either would
@@ -1033,6 +1041,13 @@ function updateHintsBar(hints) {
     if (creditsEl) creditsEl.textContent = hints.credits;
 }
 
+// issue #21: question/answer/hint text goes through normalizeMathText (which
+// itself escapes HTML before adding KaTeX $...$ delimiters) rather than being
+// interpolated raw -- corpus text containing "<" or "&" used to break this
+// markup outright. Missed questions expand via native <details> to reveal
+// the correct answer and the pre-generated easy-tier hint (data.json already
+// has one for all 800 questions) -- the single highest-value review moment
+// in the run, previously thrown away as a bare cross mark.
 function renderLevelResults(containerId, results) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -1040,12 +1055,107 @@ function renderLevelResults(containerId, results) {
         container.innerHTML = '';
         return;
     }
-    container.innerHTML = results.map(r => `
-        <div class="level-result-entry ${r.correct ? 'correct' : 'incorrect'}">
-            <span class="result-icon">${r.correct ? '✓' : '✗'}</span>
-            <span>${r.text}</span>
-        </div>
-    `).join('');
+    container.innerHTML = results.map((r) => {
+        const questionHtml = normalizeMathText(r.text);
+        if (r.correct) {
+            return `
+                <div class="level-result-entry correct">
+                    <span class="result-icon">✓</span>
+                    <span>${questionHtml}</span>
+                </div>
+            `;
+        }
+        const answerHtml = normalizeMathText(r.correctAnswer || '');
+        const hintHtml = r.hint ? normalizeMathText(r.hint) : '';
+        return `
+            <details class="level-result-entry incorrect">
+                <summary><span class="result-icon">✗</span> <span>${questionHtml}</span></summary>
+                <div class="level-result-review">
+                    ${answerHtml ? `<p><strong>Correct answer:</strong> ${answerHtml}</p>` : ''}
+                    ${hintHtml ? `<p><strong>Hint:</strong> ${hintHtml}</p>` : ''}
+                </div>
+            </details>
+        `;
+    }).join('');
+    renderMathIn(container);
+}
+
+// Score/accuracy/streak/XP/hints (issue #21), fed straight from the
+// run_summary field combat-action.js already returns once outcome is set --
+// no second request. One function renders both the victory and defeat
+// screens instead of the two duplicating markup, which had already drifted
+// once (the single-select victory path needed a separate 'active'-class fix
+// the multi-select path already had).
+function renderRunSummary(outcome, summary) {
+    const scoreEl = document.getElementById(`${outcome}-summary-score`);
+    const statsEl = document.getElementById(`${outcome}-summary-stats`);
+    if (scoreEl) scoreEl.textContent = summary ? String(summary.score) : '0';
+    if (statsEl) {
+        const stats = [];
+        if (summary) {
+            const pct = Math.round((summary.accuracy || 0) * 100);
+            stats.push(`Accuracy: ${pct}% (${summary.correct_count}/${summary.total_questions})`);
+            stats.push(`Best streak: x${summary.best_streak}`);
+            stats.push(`XP earned: +${summary.xp_earned}`);
+            stats.push(`Hints used: ${summary.hints_used}`);
+            if (outcome === 'victory') stats.push(`HP remaining: ${summary.hp_remaining}`);
+            // Personal best omitted cleanly until the persistent profile (#22) exists.
+        }
+        statsEl.innerHTML = stats.map((s) => `<span class="run-summary-stat">${escapeHtml(s)}</span>`).join('');
+    }
+}
+
+// Ends the run: renders the shared summary, swaps #combat-screen for the
+// victory/defeat overlay (same opacity/visibility 'active'-class system as
+// the modals, not inline display), and moves focus onto the summary so
+// keyboard/screen-reader users land somewhere meaningful instead of wherever
+// focus happened to be when the screen changed underneath them.
+function handleRunOutcome(outcome, data) {
+    if (outcome !== 'victory' && outcome !== 'defeat') return;
+    const combat = document.getElementById('combat-screen');
+    const screen = document.getElementById(`${outcome}-screen`);
+    if (!screen) return;
+
+    renderRunSummary(outcome, data.run_summary);
+    renderLevelResults(`${outcome}-results-list`, data.level_results);
+
+    if (combat) combat.classList.remove('active');
+    screen.classList.add('active');
+    if (combat) setTimeout(() => combat.style.display = 'none', 800);
+
+    const summaryEl = document.getElementById(`${outcome}-summary`);
+    if (summaryEl) {
+        let focused = false;
+        const doFocus = () => { if (!focused) { focused = true; summaryEl.focus(); } };
+        screen.addEventListener('transitionend', doFocus, { once: true });
+        setTimeout(doFocus, 850);
+    }
+}
+
+function hideEndScreens() {
+    document.getElementById('victory-screen')?.classList.remove('active');
+    document.getElementById('defeat-screen')?.classList.remove('active');
+}
+
+// "Play again"/"Change realm" (issue #21): a new run from the end screen
+// discards nothing the player hasn't already finished, so unlike the nav
+// Home button (issue #7) neither of these needs a confirm() dialog -- noted
+// explicitly here so it doesn't get added reflexively later.
+function playAgainSameRealm() {
+    const syllabusId = window.combatState?.syllabus_id;
+    const difficulty = window.combatState?.difficulty || 'medium';
+    if (!syllabusId) { backToMenu(); return; }
+    hideEndScreens();
+    selectSyllabus(syllabusId, difficulty);
+}
+
+function changeRealm() {
+    hideEndScreens();
+    const combat = document.getElementById('combat-screen');
+    const syllabusScreen = document.getElementById('syllabus-screen');
+    if (combat) combat.style.display = 'none';
+    if (syllabusScreen) syllabusScreen.style.display = 'block';
+    showGameNav('');
 }
 
 // Combat action handler wired to backend
@@ -1085,26 +1195,7 @@ async function performAction(action) {
             updateHintsBar(data.hints);
             addBattleLogTurn(data.messages || [], { isCorrect: data.is_correct });
 
-            if (data.outcome === 'victory') {
-                const combat = document.getElementById('combat-screen');
-                const victory = document.getElementById('victory-screen');
-                renderLevelResults('victory-results-list', data.level_results);
-                if (combat && victory) {
-                    combat.classList.remove('active');
-                    victory.classList.add('active');
-                    // Still hide combat screen display to be safe
-                    setTimeout(() => combat.style.display = 'none', 800);
-                }
-            } else if (data.outcome === 'defeat') {
-                const combat = document.getElementById('combat-screen');
-                const defeat = document.getElementById('defeat-screen');
-                renderLevelResults('defeat-results-list', data.level_results);
-                if (combat && defeat) {
-                    combat.classList.remove('active');
-                    defeat.classList.add('active');
-                    setTimeout(() => combat.style.display = 'none', 800);
-                }
-            }
+            handleRunOutcome(data.outcome, data);
         } else {
             addBattleLogEntry(data.message || 'Action failed.');
         }
@@ -1361,29 +1452,8 @@ async function submitQuizAnswer(action, answerIndex) {
         if (modal) closeQuizModal();
         showFeedbackModal({ message: feedbackMsg, correct: isCorrect }, () => {
             // After closing feedback, advance as needed
-            if (data.outcome === 'victory') {
-                // #victory-screen is opacity:0/visibility:hidden by default and only
-                // becomes visible via the 'active' class (see style-neural.css) --
-                // setting style.display='flex' alone (as this used to) leaves it
-                // permanently invisible. This was the single-select path; the
-                // multi-select path already did this correctly.
-                const combat = document.getElementById('combat-screen');
-                const victory = document.getElementById('victory-screen');
-                renderLevelResults('victory-results-list', data.level_results);
-                if (combat && victory) {
-                    combat.classList.remove('active');
-                    victory.classList.add('active');
-                    setTimeout(() => combat.style.display = 'none', 800);
-                }
-            } else if (data.outcome === 'defeat') {
-                const combat = document.getElementById('combat-screen');
-                const defeat = document.getElementById('defeat-screen');
-                renderLevelResults('defeat-results-list', data.level_results);
-                if (combat && defeat) {
-                    combat.classList.remove('active');
-                    defeat.classList.add('active');
-                    setTimeout(() => combat.style.display = 'none', 800);
-                }
+            if (data.outcome === 'victory' || data.outcome === 'defeat') {
+                handleRunOutcome(data.outcome, data);
             } else if (data.status === 'question' && data.question) {
                 // Show next question after feedback is dismissed
                 openQuizModal(data.question, action);
@@ -1468,24 +1538,8 @@ async function submitQuizAnswerMulti(action, answerIndices) {
             // question. This was the real cause of "Attack stops working."
             if (modal) closeQuizModal();
             showFeedbackModal({ message: feedbackMsg, correct: isCorrect }, () => {
-                if (data.outcome === 'victory') {
-                    const combat = document.getElementById('combat-screen');
-                    const victory = document.getElementById('victory-screen');
-                    renderLevelResults('victory-results-list', data.level_results);
-                    if (combat && victory) {
-                        combat.classList.remove('active');
-                        victory.classList.add('active');
-                        setTimeout(() => combat.style.display = 'none', 800);
-                    }
-                } else if (data.outcome === 'defeat') {
-                    const combat = document.getElementById('combat-screen');
-                    const defeat = document.getElementById('defeat-screen');
-                    renderLevelResults('defeat-results-list', data.level_results);
-                    if (combat && defeat) {
-                        combat.classList.remove('active');
-                        defeat.classList.add('active');
-                        setTimeout(() => combat.style.display = 'none', 800);
-                    }
+                if (data.outcome === 'victory' || data.outcome === 'defeat') {
+                    handleRunOutcome(data.outcome, data);
                 } else if (data.status === 'question' && data.question) {
                     openQuizModal(data.question, action);
                 }
