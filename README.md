@@ -24,12 +24,16 @@ study-saga/
 │   ├── app.py         #    Local dev server (same game logic as cf-pages,
 │   │                   #    used for iterating before porting to Functions)
 │   ├── data.json       #    Master question corpus (mirrored into cf-pages)
-│   └── *.py, *.md      #    Hint-generation/audit/bakeoff scripts — see below
+│   ├── archive/        #    Retired standalone scripts, kept for reference
+│   └── *.py, *.md      #    Hint-generation/audit/bakeoff scripts — indexed
+│                        #    in backend/README.md, see below
 ├── frontend/          # Templates/static assets consumed by backend/app.py
-└── docs/              # Static GitHub Pages landing page
+└── docs/              # Static GitHub Pages landing page + archived history
+    ├── history/        #    Superseded session-status/planning docs
+    └── reports/         #    Benchmark/diagnostic report snapshots
 ```
 
-The **cf-pages/** app is what's actually live at study-saga.pages.dev — it's the entire production stack, and it's JavaScript end to end (Pages Functions + vanilla JS frontend), not Python. **`backend/app.py`** is a Flask app kept around only as a local mirror for faster iteration on game logic before porting changes to Functions — it is never deployed. The rest of `backend/` is a large collection of one-off scripts used to build and QA the question/hint corpus (see [Content pipeline](#content-pipeline) below).
+The **cf-pages/** app is what's actually live at study-saga.pages.dev — it's the entire production stack, and it's JavaScript end to end (Pages Functions + vanilla JS frontend), not Python. **`backend/app.py`** is a Flask app kept around only as a local mirror for faster iteration on game logic before porting changes to Functions — it is never deployed. The rest of `backend/` is a large collection of one-off scripts used to build and QA the question/hint corpus — see [`backend/README.md`](backend/README.md) for an index, and [Content pipeline](#content-pipeline) below for the broader picture.
 
 ## Gameplay
 
@@ -98,6 +102,19 @@ Required bindings/secrets (set in the Cloudflare Pages dashboard or `wrangler.to
 
 Because deploys aren't tied to `git push`, the state of this repo's `main` branch on GitHub can lag behind what's actually live — check `npx wrangler pages deployment list --project-name study-saga` for the real deployment history rather than assuming the latest commit is what's served.
 
+### CI
+
+GitHub Actions (`.github/workflows/ci.yml`) runs on every PR to `main` and every push to `main`:
+
+| Check | Blocking? |
+|---|---|
+| Corpus validation (`backend/validate_corpus.py` — schema, exactly-one-correct-answer for single-select, all 3 hint tiers present) | Yes |
+| JS syntax check (`cf-pages/check-js-syntax.sh` — `node --check` over every frontend script and Functions module) | Yes |
+| Python lint (`ruff` over `backend/`) | No — report-only, given ~75 inherited scripts never linted before |
+| README link check (`check-readme-links.py`) | Yes |
+
+**CI does not deploy anything and does not replace the manual deploy step above** — a merged, green PR still requires the `npx wrangler pages deploy` command to actually ship. A corpus-drift check (verifying `backend/data.json` and `cf-pages/functions/_lib/data.json` haven't diverged) is intentionally not included yet — the two files have already diverged and which one should be authoritative is an open question (issue #24); adding the check before that's resolved would just fail on every PR.
+
 ## Content pipeline
 
 `backend/` doubles as the workspace for building and grading the question/hint corpus — generator bake-offs (Gemini vs. Groq vs. Gemma across Math/Biology/Chemistry/Physics), an LLM-judge comparison harness, difficulty classification, and audit scripts that catch things like glued-together text artifacts or mismatched answer keys. Results and intermediate corpora are checked in as `*_results.json`/`*_report.json` next to the scripts that produced them. This is R&D scaffolding, not part of the served app — treat scripts here as a lab notebook rather than a stable API.
@@ -106,7 +123,6 @@ Because deploys aren't tied to `git push`, the state of this repo's `main` branc
 
 - **Points/gacha economy** (spend earned credits on upgrades — potions, attack-power boosts) is scoped but deferred; the hint-credit system above is the first slice of it.
 - **Chemistry hint quality** trails Biology/Physics in bake-off scoring (~14.5% of sampled hints score below the quality floor, vs. ~3-5% for the other two subjects) — root cause still open.
-- User profile storage is being moved from Cloudflare KV to Firestore (direct REST calls with the caller's own Firebase ID token, no Admin SDK) so profile data isn't tied to a single Cloudflare account.
 
 ## License
 

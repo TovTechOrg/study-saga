@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  corpus-validation:
+    name: Corpus validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python backend/validate_corpus.py
+
+  # Corpus drift (comparing backend/data.json against
+  # cf-pages/functions/_lib/data.json) is deliberately NOT checked yet: the
+  # two files have diverged and which one is authoritative is an open
+  # question tracked in issue #24. Add the real check here once #24 is
+  # resolved -- until then a drift check would just fail on every PR.
+
+  js-syntax:
+    name: JS syntax check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: bash cf-pages/check-js-syntax.sh
+
+  python-lint:
+    name: Python lint (non-blocking)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install ruff
+      # backend/ has ~75 inherited scripts never linted before; report only
+      # for now so this doesn't block merges until it's been cleaned up.
+      - run: ruff check backend/ --exit-zero
+
+  readme-links:
+    name: README link check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python check-readme-links.py
