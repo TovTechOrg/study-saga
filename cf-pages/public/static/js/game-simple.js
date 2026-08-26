@@ -5,10 +5,7 @@
 // is inferred from the message text itself (backend already writes
 // narrated strings like "X grows emboldened..."), not from separate flags,
 // so this stays a pure presentation layer -- no combat-numbers change.
-function addBattleLogEntry(message, { isCorrect } = {}) {
-    const log = document.getElementById('battle-log-content');
-    if (!log || !message) return;
-
+function _battleLogLineTone(message, isCorrect) {
     let tone = 'system';
     let burst = null;
     if (/^correct!/i.test(message)) {
@@ -25,17 +22,48 @@ function addBattleLogEntry(message, { isCorrect } = {}) {
         tone = 'falter';
         burst = 'Falters';
     }
+    return { tone, burst };
+}
 
-    const entry = document.createElement('div');
-    entry.className = `battle-log-entry tone-${tone}`;
-    if (burst) {
-        const burstEl = document.createElement('span');
-        burstEl.className = `battle-log-burst ${tone}`;
-        burstEl.textContent = burst;
-        entry.appendChild(burstEl);
-    }
-    entry.appendChild(document.createTextNode(message));
-    log.prepend(entry);
+// One turn (all of a single action's messages -- your result, then the
+// enemy's response) renders as ONE grouped block instead of separate
+// floating lines, per issue #18's "group messages by turn" ask. combat-
+// action.js always pushes the player-facing result message first and any
+// enemy-response message(s) after, so position doubles as a reliable,
+// non-color speaker label ("You" / "Enemy") -- text, not just a border
+// color, differentiates who a line is about.
+function addBattleLogTurn(messages, { isCorrect } = {}) {
+    const log = document.getElementById('battle-log-content');
+    if (!log || !messages || !messages.length) return;
+
+    const turn = document.createElement('div');
+    turn.className = 'battle-log-turn';
+    messages.forEach((message, i) => {
+        const { tone, burst } = _battleLogLineTone(message, isCorrect);
+        const line = document.createElement('div');
+        line.className = `battle-log-entry tone-${tone}`;
+        if (tone !== 'system') {
+            const speaker = document.createElement('span');
+            speaker.className = 'battle-log-speaker';
+            speaker.textContent = (i === 0 ? 'You' : 'Enemy') + ': ';
+            line.appendChild(speaker);
+        }
+        if (burst) {
+            const burstEl = document.createElement('span');
+            burstEl.className = `battle-log-burst ${tone}`;
+            burstEl.textContent = burst;
+            line.appendChild(burstEl);
+        }
+        line.appendChild(document.createTextNode(message));
+        turn.appendChild(line);
+    });
+    log.prepend(turn);
+}
+
+// Single free-standing line (system/error messages that aren't part of a
+// graded turn) -- no speaker label, no grouping needed.
+function addBattleLogEntry(message, opts = {}) {
+    addBattleLogTurn([message], opts);
 }
 
 // Consolidated game logic from inline script in index.html
@@ -646,7 +674,7 @@ async function performAction(action) {
                 updateCombatHUD(data.combat_state);
             }
             updateHintsBar(data.hints);
-            (data.messages || []).forEach(msg => addBattleLogEntry(msg, { isCorrect: data.is_correct }));
+            addBattleLogTurn(data.messages || [], { isCorrect: data.is_correct });
 
             if (data.outcome === 'victory') {
                 const combat = document.getElementById('combat-screen');
@@ -912,7 +940,7 @@ async function submitQuizAnswer(action, answerIndex) {
         // issue #18: this single-select path (the most common one) never
         // wrote anything to the battle log -- the multi-select path did.
         // Same treatment as the other two combat-action response sites.
-        (data.messages || []).forEach(msg => addBattleLogEntry(msg, { isCorrect }));
+        addBattleLogTurn(data.messages || [], { isCorrect });
         // Always show feedback modal after answer submission
         let feedbackMsg = "Answer submitted! Await further results or check the game log for more info.";
         if (data.messages && data.messages.length > 0) {
@@ -1008,7 +1036,7 @@ async function submitQuizAnswerMulti(action, answerIndices) {
         }
         updateHintsBar(data.hints);
 
-        (data.messages || []).forEach(msg => addBattleLogEntry(msg, { isCorrect }));
+        addBattleLogTurn(data.messages || [], { isCorrect });
 
         if (data.status === 'error') {
             addBattleLogEntry(data.message || 'Action failed.');

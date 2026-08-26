@@ -496,27 +496,77 @@ body {
 }
 
 /* BATTLE LOG */
+.battle-log-panel {
+    max-width: 700px;
+    width: 100%;
+    margin: clamp(16px, 3vw, 32px) auto 0;
+}
+
+.battle-log-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin: 0 0 0.5rem 0.25rem;
+}
+
 .battle-log {
     background: rgba(15, 23, 42, 0.4);
     backdrop-filter: blur(40px);
     padding: 1.5rem;
     border-radius: 1.5rem;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    max-width: 700px;
     width: 100%;
-    margin: clamp(16px, 3vw, 32px) auto 0;
     height: clamp(100px, 20vh, 150px);
     overflow-y: auto;
     color: #cbd5e1;
 }
 
+/* issue #18: an unlabelled, permanently-blank scrolling box reads as a
+   rendering failure on a fresh combat screen -- show explanatory text
+   until the first real entry arrives. Pure CSS so it needs no JS upkeep
+   and can never drift out of sync with whether the log actually has
+   content. */
+.battle-log:empty::before {
+    content: "Your actions will appear here.";
+    display: block;
+    font-style: italic;
+    color: #64748b;
+    opacity: 0.8;
+}
+
 /* Comic-caption-style log entries (Epic #11 / issues #18, #19): each turn
    renders as its own narrated panel instead of a bare text line, so the
    log reads like a strip of captions rather than a console dump. */
+
+/* One .battle-log-turn groups every message from a single action (your
+   result, then the enemy's response) into one visual block, per issue
+   #18's "group messages by turn" ask -- rather than each line floating
+   as an independent, disconnected entry. */
+.battle-log-turn {
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.battle-log-turn:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.battle-log-speaker {
+    font-style: normal;
+    font-weight: 700;
+    opacity: 0.75;
+}
+
 .battle-log-entry {
     position: relative;
     padding: 0.55rem 0.75rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
     background: rgba(30, 41, 59, 0.55);
     border-left: 3px solid #64748b;
     border-radius: 0.4rem;
