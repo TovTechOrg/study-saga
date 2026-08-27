@@ -74,6 +74,17 @@ export async function onRequestPost({ request, env }) {
             let correctAnswerText = '';
             let selectedFeedback = '';
 
+            // Answer-position bias fix: the corpus has a severe skew toward
+            // the correct option being stored at index 0 (~89% of single-
+            // select questions) -- options are shuffled once per question at
+            // serve time (below, where sanitizedOpts is built) and the
+            // mapping stashed in session.pending_option_order, so payload
+            // indices here are positions in the SHUFFLED order the client
+            // actually saw. Translate back to original corpus indices before
+            // comparing against the answer key, which is keyed to the
+            // original, unshuffled question.options.
+            const optionOrder = session.pending_option_order || (question.options || []).map((_, i) => i);
+
             if (questionType === 'multiple_choice_multiple') {
                 let correctIndices = new Set(question.answer_indices || []);
                 if (correctIndices.size === 0) {
@@ -81,7 +92,7 @@ export async function onRequestPost({ request, env }) {
                         if (typeof opt === 'object' && opt !== null && opt.isCorrect) correctIndices.add(i);
                     });
                 }
-                const answerIndices = new Set(payload.answer_indices || []);
+                const answerIndices = new Set((payload.answer_indices || []).map((i) => optionOrder[i]));
                 isCorrect = answerIndices.size === correctIndices.size &&
                     [...answerIndices].every((i) => correctIndices.has(i));
                 const opts = question.options || [];
@@ -98,7 +109,9 @@ export async function onRequestPost({ request, env }) {
                     });
                     if (correctIdx === null) correctIdx = 0;
                 }
-                const answerIndex = payload.answer_index;
+                const answerIndex = (payload.answer_index !== undefined && payload.answer_index !== null)
+                    ? optionOrder[payload.answer_index]
+                    : undefined;
                 isCorrect = answerIndex === correctIdx;
                 const opts = question.options || [];
                 if (correctIdx < opts.length) {
@@ -206,7 +219,9 @@ export async function onRequestPost({ request, env }) {
                 const nextQIndex = questionOrder[qCursor];
                 session.pending_q_index = nextQIndex;
                 const nextQuestion = questions[nextQIndex];
-                const sanitizedOpts = (nextQuestion.options || []).map((opt) => ({ text: optText(opt) }));
+                const nextOptionOrder = shuffle((nextQuestion.options || []).map((_, i) => i));
+                session.pending_option_order = nextOptionOrder;
+                const sanitizedOpts = nextOptionOrder.map((origIdx) => ({ text: optText(nextQuestion.options[origIdx]) }));
                 const nextQuestionType = nextQuestion.type || 'multiple_choice_single';
                 await putSession(env, gameId, session);
                 return jsonResponse({
@@ -233,7 +248,9 @@ export async function onRequestPost({ request, env }) {
             const qIndex = questionOrder[qCursor];
             session.pending_q_index = qIndex;
             const question = questions[qIndex];
-            const sanitizedOpts = (question.options || []).map((opt) => ({ text: optText(opt) }));
+            const optionOrder = shuffle((question.options || []).map((_, i) => i));
+            session.pending_option_order = optionOrder;
+            const sanitizedOpts = optionOrder.map((origIdx) => ({ text: optText(question.options[origIdx]) }));
             const questionType = question.type || 'multiple_choice_single';
             await putSession(env, gameId, session);
             return jsonResponse({
