@@ -115,6 +115,18 @@ GitHub Actions (`.github/workflows/ci.yml`) runs on every PR to `main` and every
 
 **CI does not deploy anything and does not replace the manual deploy step above** — a merged, green PR still requires the `npx wrangler pages deploy` command to actually ship. A corpus-drift check (verifying `backend/data.json` and `cf-pages/functions/_lib/data.json` haven't diverged) is intentionally not included yet — the two files have already diverged and which one should be authoritative is an open question (issue #24); adding the check before that's resolved would just fail on every PR.
 
+### Difficulty tier guidelines (issue #9)
+
+Every question in the corpus carries a `difficulty` field of `"easy"`, `"medium"`, or `"hard"` (untagged questions default to `medium`). Question authors — human or LLM-prompted — should write to these definitions so tiers stay meaningfully different in practice, not just in name:
+
+| Tier | Reasoning | Score multiplier |
+|---|---|---|
+| Easy | Recall and definitions. Answerable by directly remembering a single fact, term, or definition. Single-step reasoning only. | 1x |
+| Medium | Applying a concept. Uses a definition/concept in a new context, or two-step reasoning (combining two related facts, or a two-operation calculation). | 1.5x |
+| Hard | Multi-step problems, distractor-heavy options. At least three reasoning steps or calculation stages, or a non-trivial scenario requiring synthesis. | 2x |
+
+A realm's tier is unselectable in the UI until it has at least **15 questions** at that difficulty (`MIN_TIER_QUESTIONS` in `cf-pages/functions/_lib/game.js`) — a tier under that floor is disabled rather than silently falling back to the full question pool.
+
 ## Content pipeline
 
 `backend/` doubles as the workspace for building and grading the question/hint corpus — generator bake-offs (Gemini vs. Groq vs. Gemma across Math/Biology/Chemistry/Physics), an LLM-judge comparison harness, difficulty classification, and audit scripts that catch things like glued-together text artifacts or mismatched answer keys. Results and intermediate corpora are checked in as `*_results.json`/`*_report.json` next to the scripts that produced them. This is R&D scaffolding, not part of the served app — treat scripts here as a lab notebook rather than a stable API.

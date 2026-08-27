@@ -167,10 +167,20 @@ export function effectiveStats(upgrades) {
 // bug in #11 -- share one implementation instead of two that could diverge.
 export const VICTORY_BONUS = 250;
 
-// difficultyMultiplier is a hook for issue #9's Easy/Medium/Hard score
-// multipliers (1x/1.5x/2x) -- #9 hasn't wired a value in yet, so it stays a
-// constant 1 until it does, rather than combat-action.js reimplementing
-// scoring when that lands.
+// Issue #9's per-tier score multiplier -- Easy 1x / Medium 1.5x / Hard 2x,
+// exactly as specified. Questions with no difficulty tag are treated as
+// medium everywhere else in the codebase (start-combat.js's pool filter,
+// merge_tiered_into_live_data.py), so the same default applies here.
+export const DIFFICULTY_MULTIPLIERS = { easy: 1, medium: 1.5, hard: 2 };
+
+export function difficultyMultiplierFor(difficulty) {
+    return DIFFICULTY_MULTIPLIERS[difficulty] ?? DIFFICULTY_MULTIPLIERS.medium;
+}
+
+// Issue #9's acceptance criterion "selecting a tier with insufficient
+// questions is impossible" -- the ticket's own suggested floor.
+export const MIN_TIER_QUESTIONS = 15;
+
 export function scoreForAnswer({ isCorrect, priorStreak, hintUsed, difficultyMultiplier = 1 }) {
     if (!isCorrect) {
         return { points: 0, newStreak: 0 };

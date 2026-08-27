@@ -10,12 +10,27 @@ const FIRESTORE_BASE = `https://firestore.googleapis.com/v1/projects/${FIREBASE_
 
 export const RECENT_RUNS_MAX = 10;
 
-// Realm records are keyed by realm name (issue #22) so #9's difficulty
-// tiers can nest under them later -- e.g. realms.biology.hard.best_score --
-// without a schema migration. Do not add the tier level yet; just leave the
-// shape able to hold it.
-export function freshRealmRecord() {
-    return { best_score: 0, runs: 0, questions_correct: 0, questions_answered: 0, best_streak: 0 };
+// Realm records are keyed by realm name (issue #22), and each realm now
+// nests one record per difficulty tier (issue #9) -- realms.biology.hard,
+// realms.biology.medium, etc. -- exactly the shape #22 was deliberately
+// left able to hold without a migration.
+export const DIFFICULTY_TIERS = ['easy', 'medium', 'hard'];
+
+export function freshTierRecord() {
+    return { best_score: 0, runs: 0, questions_correct: 0, questions_answered: 0, best_streak: 0, victories: 0 };
+}
+
+// Profiles written before #9's tier nesting have a flat record directly on
+// profile.realms[realm] (freshTierRecord's shape, no tier keys). Rather than
+// a one-time migration script, treat that legacy shape as medium-tier data
+// the first time it's touched -- 'medium' is the same default difficulty
+// used everywhere else for untagged content (start-combat.js's pool filter).
+export function migrateLegacyRealmRecord(realmRecord) {
+    if (!realmRecord) return {};
+    if ('best_score' in realmRecord) {
+        return { medium: realmRecord };
+    }
+    return realmRecord;
 }
 
 export function freshProfile(uid) {
@@ -35,13 +50,14 @@ export function freshProfile(uid) {
 }
 
 // Applies one finished run to a profile object in place and returns it.
-// `run` is { realm, score, accuracy, correct_count, total_questions,
-// best_streak, xp_earned, outcome, finished_at }. Pure data manipulation, no
-// I/O -- used identically for the Firestore-backed path here and mirrored in
-// game-simple.js for the guest/localStorage path (there is no shared module
-// system between Pages Functions and the unbundled static frontend, so the
-// two copies must be kept in sync by hand; this is the source of truth,
-// comment cross-references it from the other side).
+// `run` is { realm, difficulty, score, accuracy, correct_count,
+// total_questions, best_streak, xp_earned, outcome, finished_at }. Pure data
+// manipulation, no I/O -- used identically for the Firestore-backed path
+// here and mirrored in game-simple.js for the guest/localStorage path
+// (there is no shared module system between Pages Functions and the
+// unbundled static frontend, so the two copies must be kept in sync by
+// hand; this is the source of truth, comment cross-references it from the
+// other side).
 export function applyRunToProfile(profile, run) {
     profile.lifetime_xp = (profile.lifetime_xp || 0) + (run.xp_earned || 0);
     profile.xp_balance = (profile.xp_balance || 0) + (run.xp_earned || 0);
@@ -53,17 +69,22 @@ export function applyRunToProfile(profile, run) {
 
     profile.realms = profile.realms || {};
     const realmKey = run.realm || 'unknown';
-    const realm = profile.realms[realmKey] || freshRealmRecord();
-    realm.best_score = Math.max(realm.best_score || 0, run.score || 0);
-    realm.runs = (realm.runs || 0) + 1;
-    realm.questions_correct = (realm.questions_correct || 0) + (run.correct_count || 0);
-    realm.questions_answered = (realm.questions_answered || 0) + (run.total_questions || 0);
-    realm.best_streak = Math.max(realm.best_streak || 0, run.best_streak || 0);
-    profile.realms[realmKey] = realm;
+    const tierKey = DIFFICULTY_TIERS.includes(run.difficulty) ? run.difficulty : 'medium';
+    const realmRecord = migrateLegacyRealmRecord(profile.realms[realmKey]);
+    const tier = realmRecord[tierKey] || freshTierRecord();
+    tier.best_score = Math.max(tier.best_score || 0, run.score || 0);
+    tier.runs = (tier.runs || 0) + 1;
+    tier.questions_correct = (tier.questions_correct || 0) + (run.correct_count || 0);
+    tier.questions_answered = (tier.questions_answered || 0) + (run.total_questions || 0);
+    tier.best_streak = Math.max(tier.best_streak || 0, run.best_streak || 0);
+    if (run.outcome === 'victory') tier.victories = (tier.victories || 0) + 1;
+    realmRecord[tierKey] = tier;
+    profile.realms[realmKey] = realmRecord;
 
     profile.recent_runs = [
         {
             realm: realmKey,
+            difficulty: tierKey,
             score: run.score || 0,
             accuracy: run.accuracy || 0,
             xp_earned: run.xp_earned || 0,
@@ -106,16 +127,24 @@ export function mergeProfiles(remote, local) {
     };
 
     const realmKeys = new Set([...Object.keys(remote.realms || {}), ...Object.keys(local.realms || {})]);
-    for (const key of realmKeys) {
-        const r = remote.realms?.[key] || freshRealmRecord();
-        const l = local.realms?.[key] || freshRealmRecord();
-        merged.realms[key] = {
-            best_score: Math.max(r.best_score || 0, l.best_score || 0),
-            runs: (r.runs || 0) + (l.runs || 0),
-            questions_correct: (r.questions_correct || 0) + (l.questions_correct || 0),
-            questions_answered: (r.questions_answered || 0) + (l.questions_answered || 0),
-            best_streak: Math.max(r.best_streak || 0, l.best_streak || 0),
-        };
+    for (const realmKey of realmKeys) {
+        const remoteRealm = migrateLegacyRealmRecord(remote.realms?.[realmKey]);
+        const localRealm = migrateLegacyRealmRecord(local.realms?.[realmKey]);
+        const tierKeys = new Set([...Object.keys(remoteRealm), ...Object.keys(localRealm)]);
+        const mergedRealm = {};
+        for (const tierKey of tierKeys) {
+            const r = remoteRealm[tierKey] || freshTierRecord();
+            const l = localRealm[tierKey] || freshTierRecord();
+            mergedRealm[tierKey] = {
+                best_score: Math.max(r.best_score || 0, l.best_score || 0),
+                runs: (r.runs || 0) + (l.runs || 0),
+                questions_correct: (r.questions_correct || 0) + (l.questions_correct || 0),
+                questions_answered: (r.questions_answered || 0) + (l.questions_answered || 0),
+                best_streak: Math.max(r.best_streak || 0, l.best_streak || 0),
+                victories: (r.victories || 0) + (l.victories || 0),
+            };
+        }
+        merged.realms[realmKey] = mergedRealm;
     }
 
     const upgradeKeys = new Set([...Object.keys(remote.upgrades || {}), ...Object.keys(local.upgrades || {})]);

@@ -1,4 +1,4 @@
-import { jsonResponse, findSyllabus, getSession, putSession, shuffle, freshHints, hintsSummary, ACTIONS, actionCosts, scoreForAnswer, VICTORY_BONUS, hpRemainingBonus } from '../_lib/game.js';
+import { jsonResponse, findSyllabus, getSession, putSession, shuffle, freshHints, hintsSummary, ACTIONS, actionCosts, scoreForAnswer, VICTORY_BONUS, hpRemainingBonus, difficultyMultiplierFor } from '../_lib/game.js';
 import { verifyFirebaseToken } from '../_lib/auth.js';
 import { getProfile, putProfile, freshProfile, applyRunToProfile } from '../_lib/profile.js';
 
@@ -143,6 +143,9 @@ export async function onRequestPost({ request, env }) {
                 isCorrect,
                 priorStreak: session.streak,
                 hintUsed: hintUsedThisQuestion,
+                // Issue #9: Easy 1x / Medium 1.5x / Hard 2x, keyed off the
+                // difficulty locked in for this encounter at start-combat time.
+                difficultyMultiplier: difficultyMultiplierFor(session.difficulty),
             });
             player.score = (player.score || 0) + scoreResult.points;
             session.streak = scoreResult.newStreak;
@@ -294,6 +297,7 @@ export async function onRequestPost({ request, env }) {
             xp_earned: Math.floor((player.score || 0) / 10),
             hints_used: (session.hints.simple_used || 0) + (session.hints.hard_used || 0),
             hp_remaining: outcome === 'victory' ? (player.current_hp || 0) : 0,
+            difficulty: session.difficulty || 'medium',
         };
 
         // Persistent profile (issue #22): written exactly once, here, at run
@@ -311,6 +315,7 @@ export async function onRequestPost({ request, env }) {
                     const profile = (await getProfile(payload.id_token, auth.uid)) || freshProfile(auth.uid);
                     applyRunToProfile(profile, {
                         realm: session.syllabus_id || 'unknown',
+                        difficulty: runSummary.difficulty,
                         score: runSummary.score,
                         accuracy: runSummary.accuracy,
                         correct_count: runSummary.correct_count,

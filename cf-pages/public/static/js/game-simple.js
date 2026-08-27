@@ -464,22 +464,47 @@ function renderProfilePanel(container, profile) {
         ? Math.round((totals.questions_correct / totals.questions_answered) * 100)
         : 0;
 
+    // Issue #9: per-tier rows, not one flat row per realm -- best score,
+    // accuracy, and a cleared/not-cleared indicator (any victory recorded)
+    // per Easy/Medium/Hard. migrateLegacyRealmRecord() handles a profile
+    // fetched before this nesting existed, so old data still renders instead
+    // of vanishing until its next run happens to migrate it.
     const realmEntries = Object.entries(profile.realms || {});
     const realmRows = realmEntries.length
-        ? realmEntries.map(([realm, r]) => {
-            const acc = r.questions_answered > 0 ? Math.round((r.questions_correct / r.questions_answered) * 100) : 0;
-            return `<tr><td>${escapeHtml(realm)}</td><td>${r.best_score || 0}</td><td>${acc}%</td><td>${r.runs || 0}</td></tr>`;
+        ? realmEntries.map(([realm, rawRecord]) => {
+            const record = migrateLegacyRealmRecord(rawRecord);
+            const tierRows = DIFFICULTY_TIERS.map((tierKey) => {
+                const t = record[tierKey];
+                if (!t) return `<tr><td class="profile-tier-name">${escapeHtml(tierKey)}</td><td colspan="3" class="profile-tier-empty">Not played</td></tr>`;
+                const acc = t.questions_answered > 0 ? Math.round((t.questions_correct / t.questions_answered) * 100) : 0;
+                const cleared = (t.victories || 0) > 0;
+                return `
+                    <tr>
+                        <td class="profile-tier-name">${escapeHtml(tierKey)}</td>
+                        <td>${t.best_score || 0}</td>
+                        <td>${acc}%</td>
+                        <td><span class="profile-cleared-badge ${cleared ? 'cleared' : ''}">${cleared ? 'Cleared' : 'Not cleared'}</span></td>
+                    </tr>
+                `;
+            }).join('');
+            return `
+                <tbody class="profile-realm-group">
+                    <tr class="profile-realm-heading"><td colspan="4">${escapeHtml(realm.charAt(0).toUpperCase() + realm.slice(1))}</td></tr>
+                    ${tierRows}
+                </tbody>
+            `;
         }).join('')
-        : '<tr><td colspan="4">No runs yet</td></tr>';
+        : '<tbody><tr><td colspan="4">No runs yet</td></tr></tbody>';
 
     const recentRuns = profile.recent_runs || [];
     const recentRunsHtml = recentRuns.length
         ? recentRuns.map((r) => {
             const date = r.finished_at ? new Date(r.finished_at).toLocaleDateString() : '';
             const pct = Math.round((r.accuracy || 0) * 100);
+            const tierLabel = r.difficulty ? ` · ${r.difficulty}` : '';
             return `
                 <div class="profile-run-entry outcome-${escapeHtml(r.outcome || '')}">
-                    <span class="profile-run-realm">${escapeHtml(r.realm || '')}</span>
+                    <span class="profile-run-realm">${escapeHtml(r.realm || '')}${escapeHtml(tierLabel)}</span>
                     <span>Score ${r.score || 0}</span>
                     <span>${pct}%</span>
                     <span>${escapeHtml(date)}</span>
@@ -497,8 +522,8 @@ function renderProfilePanel(container, profile) {
         </div>
         <h4 class="profile-section-heading">Per-Realm Records</h4>
         <table class="profile-realms-table">
-            <thead><tr><th>Realm</th><th>Best Score</th><th>Accuracy</th><th>Runs</th></tr></thead>
-            <tbody>${realmRows}</tbody>
+            <thead><tr><th>Tier</th><th>Best Score</th><th>Accuracy</th><th>Status</th></tr></thead>
+            ${realmRows}
         </table>
         <h4 class="profile-section-heading">Recent Runs</h4>
         <div class="profile-recent-runs">${recentRunsHtml}</div>
@@ -638,8 +663,22 @@ async function handleUpgradeBuyClick(e) {
 const PROFILE_STORAGE_KEY = 'studysaga_guest_profile';
 const RECENT_RUNS_MAX = 10;
 
-function freshRealmRecord() {
-    return { best_score: 0, runs: 0, questions_correct: 0, questions_answered: 0, best_streak: 0 };
+const DIFFICULTY_TIERS = ['easy', 'medium', 'hard'];
+
+function freshTierRecord() {
+    return { best_score: 0, runs: 0, questions_correct: 0, questions_answered: 0, best_streak: 0, victories: 0 };
+}
+
+// Mirrors migrateLegacyRealmRecord() in profile.js -- a guest profile saved
+// before issue #9's tier nesting has a flat record directly on
+// profile.realms[realm]; treat it as medium-tier data the first time it's
+// touched rather than losing it.
+function migrateLegacyRealmRecord(realmRecord) {
+    if (!realmRecord) return {};
+    if ('best_score' in realmRecord) {
+        return { medium: realmRecord };
+    }
+    return realmRecord;
 }
 
 function freshProfile() {
@@ -667,17 +706,22 @@ function applyRunToProfile(profile, run) {
 
     profile.realms = profile.realms || {};
     const realmKey = run.realm || 'unknown';
-    const realm = profile.realms[realmKey] || freshRealmRecord();
-    realm.best_score = Math.max(realm.best_score || 0, run.score || 0);
-    realm.runs = (realm.runs || 0) + 1;
-    realm.questions_correct = (realm.questions_correct || 0) + (run.correct_count || 0);
-    realm.questions_answered = (realm.questions_answered || 0) + (run.total_questions || 0);
-    realm.best_streak = Math.max(realm.best_streak || 0, run.best_streak || 0);
-    profile.realms[realmKey] = realm;
+    const tierKey = DIFFICULTY_TIERS.includes(run.difficulty) ? run.difficulty : 'medium';
+    const realmRecord = migrateLegacyRealmRecord(profile.realms[realmKey]);
+    const tier = realmRecord[tierKey] || freshTierRecord();
+    tier.best_score = Math.max(tier.best_score || 0, run.score || 0);
+    tier.runs = (tier.runs || 0) + 1;
+    tier.questions_correct = (tier.questions_correct || 0) + (run.correct_count || 0);
+    tier.questions_answered = (tier.questions_answered || 0) + (run.total_questions || 0);
+    tier.best_streak = Math.max(tier.best_streak || 0, run.best_streak || 0);
+    if (run.outcome === 'victory') tier.victories = (tier.victories || 0) + 1;
+    realmRecord[tierKey] = tier;
+    profile.realms[realmKey] = realmRecord;
 
     profile.recent_runs = [
         {
             realm: realmKey,
+            difficulty: tierKey,
             score: run.score || 0,
             accuracy: run.accuracy || 0,
             xp_earned: run.xp_earned || 0,
@@ -689,6 +733,12 @@ function applyRunToProfile(profile, run) {
 
     return profile;
 }
+
+// Issue #9's per-tier score multiplier -- mirrors DIFFICULTY_MULTIPLIERS in
+// cf-pages/functions/_lib/game.js (same by-hand-sync note as the other
+// mirrored constants below: needed client-side purely for display, since
+// the server is what actually applies it).
+const DIFFICULTY_MULTIPLIERS = { easy: 1, medium: 1.5, hard: 2 };
 
 // Upgrade shop (issue #23): mirrors UPGRADE_CATALOG/MAX_TOTAL_UPGRADE_LEVELS/
 // costForNextLevel/totalUpgradeLevels in cf-pages/functions/_lib/game.js --
@@ -774,6 +824,7 @@ function recordGuestRun(realm, outcome, summary) {
     const profile = loadGuestProfile();
     applyRunToProfile(profile, {
         realm: realm || 'unknown',
+        difficulty: summary.difficulty,
         score: summary.score,
         accuracy: summary.accuracy,
         correct_count: summary.correct_count,
@@ -1087,16 +1138,31 @@ async function startGame() {
                     // three buttons instead of one "Initialize Sync" button.
                     const difficultyRow = document.createElement('div');
                     difficultyRow.className = 'syllabus-difficulty-picker';
+                    // Issue #9: score multiplier is stated on the button itself
+                    // ("Score reflects the tier multiplier and this is visible to
+                    // the player") and a tier below the question floor is
+                    // disabled outright, not left to silently substitute the
+                    // full pool once a player has already committed to it.
+                    const tierCounts = syllabus.tier_counts || {};
+                    const minTierQuestions = syllabus.min_tier_questions ?? 15;
                     ['easy', 'medium', 'hard'].forEach(diff => {
                         const button = document.createElement('button');
                         button.type = 'button';
                         button.className = `difficulty-btn difficulty-${diff}`;
-                        button.textContent = diff.charAt(0).toUpperCase() + diff.slice(1);
+                        const multiplierLabel = DIFFICULTY_MULTIPLIERS[diff];
+                        button.innerHTML = `${diff.charAt(0).toUpperCase() + diff.slice(1)}<span class="difficulty-multiplier">${multiplierLabel}x score</span>`;
                         button.dataset.syllabusId = syllabus.id;
                         button.dataset.difficulty = diff;
                         button.setAttribute('data-syllabus-id', syllabus.id);
-                        button.setAttribute('aria-label', `${syllabus.name}, ${diff} difficulty`);
-                        button.addEventListener('click', onSyllabusClick);
+                        const available = (tierCounts[diff] ?? 0) >= minTierQuestions;
+                        if (!available) {
+                            button.disabled = true;
+                            button.setAttribute('aria-label', `${syllabus.name}, ${diff} difficulty -- not enough questions yet`);
+                            button.title = 'Not enough questions in this tier yet';
+                        } else {
+                            button.setAttribute('aria-label', `${syllabus.name}, ${diff} difficulty, ${multiplierLabel}x score`);
+                            button.addEventListener('click', onSyllabusClick);
+                        }
                         difficultyRow.appendChild(button);
                     });
                     card.addEventListener('click', function (e) {
