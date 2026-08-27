@@ -1,4 +1,4 @@
-import { jsonResponse, findSyllabus, getSession, putSession, shuffle, freshHints, hintsSummary, ACTIONS, actionCosts, scoreForAnswer, VICTORY_BONUS, hpRemainingBonus, difficultyMultiplierFor } from '../_lib/game.js';
+import { jsonResponse, findSyllabus, getSession, putSession, shuffle, freshHints, hintsSummary, ACTIONS, actionCosts, scoreForAnswer, VICTORY_BONUS, hpRemainingBonus, difficultyMultiplierFor, questionTimeLimitFor, QUESTION_TIME_GRACE_MS } from '../_lib/game.js';
 import { verifyFirebaseToken } from '../_lib/auth.js';
 import { getProfile, putProfile, freshProfile, applyRunToProfile } from '../_lib/profile.js';
 
@@ -123,11 +123,30 @@ export async function onRequestPost({ request, env }) {
                 }
             }
 
+            // Per-tier question timer (issue #29). Two separate signals here
+            // on purpose: noAnswerGiven drives the MESSAGE (the client's
+            // auto-submit-on-expiry sends an empty answer, which only ever
+            // happens via that path -- a real click always carries a real
+            // index), while timedOut is a grace-padded server-side SCORING
+            // backstop for a late-but-real answer. Basing the message only on
+            // timedOut would rarely show it at all: the client's own auto-
+            // submit fires right at the deadline, which is normally still
+            // inside the grace window meant to protect real near-the-wire
+            // answers from network latency -- so a genuine timeout would
+            // silently read as an ordinary wrong answer instead.
+            const noAnswerGiven = questionType === 'multiple_choice_multiple'
+                ? !(payload.answer_indices || []).length
+                : (payload.answer_index === undefined || payload.answer_index === null);
+            const timedOut = !!session.pending_q_deadline && Date.now() > session.pending_q_deadline + QUESTION_TIME_GRACE_MS;
+            if (timedOut) isCorrect = false;
+
             player.current_cap = (player.current_cap || 0) - cost;
             const dealt = isCorrect ? baseDamage : 0;
             enemy.current_hp = Math.max(0, (enemy.current_hp || 0) - dealt);
             if (isCorrect) {
                 messages.push(`Correct! You used ${spec.label} and dealt ${dealt} damage.`);
+            } else if (timedOut || noAnswerGiven) {
+                messages.push(`Time's up! ${spec.label} failed to deal damage. The correct answer was: ${correctAnswerText}`);
             } else {
                 messages.push(`Incorrect. ${spec.label} failed to deal damage. The correct answer was: ${correctAnswerText}`);
             }
@@ -226,10 +245,12 @@ export async function onRequestPost({ request, env }) {
                 session.pending_option_order = nextOptionOrder;
                 const sanitizedOpts = nextOptionOrder.map((origIdx) => ({ text: optText(nextQuestion.options[origIdx]) }));
                 const nextQuestionType = nextQuestion.type || 'multiple_choice_single';
+                const nextTimeLimitMs = questionTimeLimitFor(nextQuestion.difficulty);
+                session.pending_q_deadline = Date.now() + nextTimeLimitMs;
                 await putSession(env, gameId, session);
                 return jsonResponse({
                     status: 'question',
-                    question: { text: nextQuestion.text || '', options: sanitizedOpts, type: nextQuestionType },
+                    question: { text: nextQuestion.text || '', options: sanitizedOpts, type: nextQuestionType, time_limit_ms: nextTimeLimitMs },
                     game_id: gameId,
                     is_correct: isCorrect,
                     combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(session.effective_stats), streak: session.streak },
@@ -255,10 +276,12 @@ export async function onRequestPost({ request, env }) {
             session.pending_option_order = optionOrder;
             const sanitizedOpts = optionOrder.map((origIdx) => ({ text: optText(question.options[origIdx]) }));
             const questionType = question.type || 'multiple_choice_single';
+            const timeLimitMs = questionTimeLimitFor(question.difficulty);
+            session.pending_q_deadline = Date.now() + timeLimitMs;
             await putSession(env, gameId, session);
             return jsonResponse({
                 status: 'question',
-                question: { text: question.text || '', options: sanitizedOpts, type: questionType },
+                question: { text: question.text || '', options: sanitizedOpts, type: questionType, time_limit_ms: timeLimitMs },
                 game_id: gameId,
                 combat_state: { player, enemy, syllabus_id: session.syllabus_id || null, difficulty: session.difficulty || 'medium', action_costs: actionCosts(session.effective_stats), streak: session.streak },
                 hints: hintsSummary(session.hints, session.effective_stats),

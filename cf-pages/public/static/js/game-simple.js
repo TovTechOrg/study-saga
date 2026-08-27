@@ -1015,8 +1015,71 @@ function deactivateModal(modal) {
 }
 
 function closeQuizModal() {
+    stopQuizTimer();
     const modal = document.getElementById('quiz-modal');
     if (modal) deactivateModal(modal);
+}
+
+// ---------------------------------------------------------------------------
+// Per-tier question timer (issue #29). Server sends time_limit_ms on every
+// question it serves (cf-pages/functions/_lib/game.js's QUESTION_TIME_LIMIT_MS,
+// Easy longer / Hard shorter); this renders the countdown and auto-submits an
+// empty answer on expiry, reusing the normal submitQuizAnswer(Multi) path --
+// a null/empty answer already grades as incorrect there, so no special
+// "timed out" signal needs to travel to the server at all (it independently
+// enforces the same deadline server-side as a backstop, see combat-action.js).
+// ---------------------------------------------------------------------------
+let quizTimerDeadline = null;
+let quizTimerInterval = null;
+let quizTimerExpireTimeout = null;
+
+function stopQuizTimer() {
+    if (quizTimerInterval) clearInterval(quizTimerInterval);
+    if (quizTimerExpireTimeout) clearTimeout(quizTimerExpireTimeout);
+    quizTimerInterval = null;
+    quizTimerExpireTimeout = null;
+    quizTimerDeadline = null;
+    const el = document.getElementById('quiz-timer');
+    if (el) el.style.display = 'none';
+}
+
+function updateQuizTimerDisplay() {
+    const bar = document.getElementById('quiz-timer-bar');
+    const text = document.getElementById('quiz-timer-text');
+    if (!bar || !text || !quizTimerDeadline) return;
+    const remainingMs = Math.max(0, quizTimerDeadline - Date.now());
+    const remainingSec = Math.ceil(remainingMs / 1000);
+    text.textContent = `${remainingSec}s remaining`;
+    bar.classList.toggle('urgent', remainingMs <= 5000);
+}
+
+function startQuizTimer(timeLimitMs, onExpire) {
+    stopQuizTimer();
+    if (!timeLimitMs) return;
+
+    const el = document.getElementById('quiz-timer');
+    const bar = document.getElementById('quiz-timer-bar');
+    if (!el || !bar) return;
+
+    quizTimerDeadline = Date.now() + timeLimitMs;
+    el.style.display = 'block';
+    bar.classList.remove('urgent');
+    // Full width, then transition to 0 over the exact duration -- the CSS
+    // transition (width 1s linear, see style-neural.css) does the visual
+    // sweep; forcing a reflow between setting 100% and 0% is what makes the
+    // browser actually animate the change instead of jumping straight to 0.
+    bar.style.transition = 'none';
+    bar.style.width = '100%';
+    void bar.offsetWidth;
+    bar.style.transition = '';
+    bar.style.width = '0%';
+
+    updateQuizTimerDisplay();
+    quizTimerInterval = setInterval(updateQuizTimerDisplay, 250);
+    quizTimerExpireTimeout = setTimeout(() => {
+        stopQuizTimer();
+        onExpire();
+    }, timeLimitMs);
 }
 
 // ---------------------------------------------------------------------------
@@ -1896,6 +1959,21 @@ function openQuizModal(question, action) {
         optsEl.appendChild(submitBtn);
     }
     renderMathIn(optsEl);
+
+    // Per-tier question timer (issue #29): on expiry, auto-submit an empty
+    // answer through the same path a real submission uses -- null/[] never
+    // matches the answer key, so this needs no special "timed out" flag.
+    if (question?.time_limit_ms) {
+        startQuizTimer(question.time_limit_ms, () => {
+            if (isMulti) {
+                submitQuizAnswerMulti(action, []);
+            } else {
+                submitQuizAnswer(action, null);
+            }
+        });
+    } else {
+        stopQuizTimer();
+    }
 
     // Focus trap (issue #5): set up last, once every focusable control
     // (hint buttons, answer options, close button) actually exists in the DOM.

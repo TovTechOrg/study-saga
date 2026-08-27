@@ -295,6 +295,14 @@
         <div id="quiz-modal" class="neural-modal" role="dialog" aria-modal="true" aria-labelledby="quiz-modal-title">
             <div class="neural-modal-content">
                 <div class="modal-label" id="quiz-modal-title">Quiz Challenge</div>
+                <!-- Per-tier question timer (issue #29). Numeric text is the
+                     primary signal (works identically regardless of motion
+                     preference); the bar's sweep is decorative and disabled
+                     under prefers-reduced-motion in CSS. -->
+                <div id="quiz-timer" class="quiz-timer" style="display: none;">
+                    <div class="quiz-timer-track"><div id="quiz-timer-bar" class="quiz-timer-bar"></div></div>
+                    <span id="quiz-timer-text" class="quiz-timer-text" role="timer" aria-live="off"></span>
+                </div>
                 <div id="quiz-question" class="quiz-question"></div>
                 <div id="quiz-options" class="quiz-options-grid"></div>
                 <button id="close-quiz-btn" class="neural-btn" style="margin-top: 2rem;">Close</button>

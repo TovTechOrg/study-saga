@@ -13,6 +13,24 @@ export function jsonResponse(obj, status = 200) {
     });
 }
 
+// Per-tier question timer (issue #29): Easy longer, Hard shorter, per #9's
+// original ask. Exact values are a starting point, not tuned from playtest
+// data -- easy to retune later since combat-action.js reads this one place.
+export const QUESTION_TIME_LIMIT_MS = { easy: 30000, medium: 20000, hard: 12000 };
+
+// A grace window added on top of the nominal time limit before the server
+// treats an answer as late -- covers real network/render latency between the
+// client's timer hitting zero and the request actually arriving, so a
+// player who answered in time is never penalized for the network. The
+// client-side countdown and auto-submit-on-expiry are the actual UX; this
+// is a server-side backstop only, consistent with scoring being server-
+// authoritative everywhere else in this codebase (issue #20).
+export const QUESTION_TIME_GRACE_MS = 3000;
+
+export function questionTimeLimitFor(difficultyTag) {
+    return QUESTION_TIME_LIMIT_MS[difficultyTag] ?? QUESTION_TIME_LIMIT_MS.medium;
+}
+
 // effectiveStats (issue #23) is optional so every existing caller that
 // doesn't know about upgrades yet (or has none purchased) keeps working
 // unchanged with base config values.
