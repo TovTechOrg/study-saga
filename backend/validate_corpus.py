@@ -32,21 +32,49 @@ def check_question(realm, index, q, errors):
         options = []
 
     correct_count = 0
+    correct_indices = []
+    option_texts = []
     for i, opt in enumerate(options):
         if not isinstance(opt, dict):
             errors.append(f"{where}.options[{i}]: not an object")
             continue
-        if not isinstance(opt.get("text"), str) or not opt["text"].strip():
+        opt_text = opt.get("text")
+        if not isinstance(opt_text, str) or not opt_text.strip():
             errors.append(f"{where}.options[{i}]: missing or empty text")
+        else:
+            option_texts.append(opt_text.strip().lower())
         if not isinstance(opt.get("isCorrect"), bool):
             errors.append(f"{where}.options[{i}]: isCorrect must be a boolean")
         elif opt["isCorrect"]:
             correct_count += 1
+            correct_indices.append(i)
+
+    duplicate_options = {t for t in option_texts if option_texts.count(t) > 1}
+    if duplicate_options:
+        errors.append(f"{where}: duplicate option text within the question: {sorted(duplicate_options)}")
 
     if qtype == "multiple_choice_single" and correct_count != 1:
         errors.append(f"{where}: multiple_choice_single must have exactly 1 correct option, found {correct_count}")
     elif qtype == "multiple_choice_multiple" and correct_count < 1:
         errors.append(f"{where}: multiple_choice_multiple must have at least 1 correct option, found {correct_count}")
+
+    # answer_index/answer_indices are optional (most questions rely on
+    # isCorrect flags instead, per combat-action.js's fallback), but when
+    # present must be in range and agree with the isCorrect flags rather than
+    # silently diverging -- combat-action.js prefers answer_index over
+    # isCorrect when both exist, so a mismatch would grade the wrong option.
+    if "answer_index" in q and q["answer_index"] is not None:
+        idx = q["answer_index"]
+        if not isinstance(idx, int) or idx < 0 or idx >= len(options):
+            errors.append(f"{where}: answer_index {idx!r} out of range for {len(options)} options")
+        elif correct_indices and idx not in correct_indices:
+            errors.append(f"{where}: answer_index {idx} does not match isCorrect flags at {correct_indices}")
+    if "answer_indices" in q and q["answer_indices"]:
+        idxs = q["answer_indices"]
+        if not isinstance(idxs, list) or any((not isinstance(i, int) or i < 0 or i >= len(options)) for i in idxs):
+            errors.append(f"{where}: answer_indices {idxs!r} out of range for {len(options)} options")
+        elif correct_indices and set(idxs) != set(correct_indices):
+            errors.append(f"{where}: answer_indices {idxs} does not match isCorrect flags at {correct_indices}")
 
     hints = q.get("hints")
     if not isinstance(hints, dict) or set(hints.keys()) != REQUIRED_HINT_TIERS:

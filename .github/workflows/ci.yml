@@ -17,11 +17,22 @@ jobs:
           python-version: "3.11"
       - run: python backend/validate_corpus.py
 
-  # Corpus drift (comparing backend/data.json against
-  # cf-pages/functions/_lib/data.json) is deliberately NOT checked yet: the
-  # two files have diverged and which one is authoritative is an open
-  # question tracked in issue #24. Add the real check here once #24 is
-  # resolved -- until then a drift check would just fail on every PR.
+  corpus-drift:
+    name: Corpus drift check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      # Issue #24: cf-pages/functions/_lib/data.json is the authoritative
+      # corpus; backend/data.json is a generated mirror. Regenerate it and
+      # fail if the committed version doesn't match -- this is what makes
+      # drift impossible to commit unnoticed, the single highest-value check
+      # in this file per #26's own description of it.
+      - working-directory: backend
+        run: python sync_corpus.py
+      - run: git diff --exit-code -- backend/data.json
 
   js-syntax:
     name: JS syntax check

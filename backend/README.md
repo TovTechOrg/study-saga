@@ -55,6 +55,23 @@ comparisons between providers): `judge_tiered_content.py`,
 `deduplicate_kb.py`, `semantic_dedup.py`, `fix_glued_artifacts.py`,
 `update_kb.py`, `count_questions.py`.
 
+`sync_corpus.py` — regenerates `backend/data.json` from
+`cf-pages/functions/_lib/data.json` (the master corpus as of issue #24). Run
+after any edit to the live corpus; CI's `corpus-drift` job runs it too and
+fails the build if the committed mirror doesn't match.
+
+`merge_corpus_reconciliation.py` — one-time script from issue #24's
+backend/cf-pages reconciliation (pulled 10 questions' better-written hints
+from `backend/data.json` forward into the new master before retiring
+`backend/data.json` to a generated mirror). Kept for reference, not meant to
+run again.
+
+`validate_corpus.py` — schema/invariant validator for the master corpus
+(type validity, option/hint completeness, no duplicate questions within a
+realm, no duplicate options within a question, `answer_index`/
+`answer_indices` range and consistency with `isCorrect` flags). Run in CI as
+the `corpus-validation` job.
+
 ## Extraction / diagnostics
 
 `extract_benchmarks.py`, `extract_biology_diagnostics.py`,

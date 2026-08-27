@@ -17,13 +17,13 @@ study-saga/
 │   │   │               #    reset-game, auth-resume, syllabi
 │   │   └── _lib/       #    game.js (session/KV helpers), auth.js (Firebase
 │   │                    #    token verification), profile.js (Firestore),
-│   │                    #    data.json/config.json (question corpus)
+│   │                    #    data.json (master question corpus)/config.json
 │   └── public/         #    Static frontend — index.html, game-simple.js,
 │                        #    holo-card.js/css, neural-bg.js, style-neural.css
 ├── backend/           # Original Flask prototype + content pipeline
 │   ├── app.py         #    Local dev server (same game logic as cf-pages,
 │   │                   #    used for iterating before porting to Functions)
-│   ├── data.json       #    Master question corpus (mirrored into cf-pages)
+│   ├── data.json       #    Generated mirror of cf-pages' corpus (see sync_corpus.py)
 │   ├── archive/        #    Retired standalone scripts, kept for reference
 │   └── *.py, *.md      #    Hint-generation/audit/bakeoff scripts — indexed
 │                        #    in backend/README.md, see below
@@ -65,6 +65,10 @@ python app.py
 ```
 
 Open `http://localhost:5000`. Live hint generation needs `GEMINI_API_KEY`/`GROQ_API_KEY` in `backend/.env`; without them, only pre-generated hints from `data.json`/`final_corpus_gemini_hints.json` are served. This is a local-only dev mirror — it is never deployed anywhere.
+
+### Question corpus: single source of truth (issue #24)
+
+`cf-pages/functions/_lib/data.json` is the **authoritative** question corpus — it's what Pages Functions actually serves to players. `backend/data.json` is a **generated mirror** for the local Flask dev server; it is never edited directly. After any edit to the live corpus, run `python backend/sync_corpus.py` to regenerate the mirror. CI's `corpus-drift` job (`.github/workflows/ci.yml`) fails the build if `backend/data.json` doesn't match a fresh regeneration, so drift can't land unnoticed. `backend/validate_corpus.py` runs schema/invariant checks against the master file (types, option/hint completeness, no duplicate questions within a realm, no duplicate options within a question, `answer_index`/`answer_indices` range and consistency with `isCorrect` flags).
 
 ## Deployment
 
