@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between escape velocity and orbital velocity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Escape velocity' refers to the minimum speed needed for an object to:",
+    "options": [
+      {"text": "Completely escape a celestial body's gravitational pull, without any additional propulsion needed afterward", "isCorrect": true, "feedback": "Correct -- escape velocity is the minimum initial speed at which an object can overcome a gravitational field entirely and never fall back, without needing further thrust."},
+      {"text": "Maintain a stable, continuous orbit around a celestial body", "isCorrect": false, "feedback": "That describes ORBITAL velocity, not escape velocity -- orbital velocity keeps an object continuously circling a body, while escape velocity specifically allows it to LEAVE that gravitational influence entirely."},
+      {"text": "Remain completely stationary relative to a celestial body's surface", "isCorrect": false, "feedback": "This isn't accurate -- escape velocity specifically concerns achieving enough speed to LEAVE a gravitational field entirely, not remaining stationary."},
+      {"text": "Crash directly into a celestial body as quickly as possible", "isCorrect": false, "feedback": "This isn't accurate -- escape velocity specifically concerns LEAVING a gravitational field, not crashing into the body it originated from."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For a given celestial body, its escape velocity is always mathematically equal to √2 times its 'orbital velocity' for a circular orbit at that same distance/altitude. Why does escape velocity need to be GREATER than orbital velocity (rather than equal or lesser)?",
+    "options": [
+      {"text": "Achieving a stable orbit only requires enough speed to continuously 'fall around' the body (balancing gravity with the necessary centripetal motion), while completely escaping requires ADDITIONAL speed/energy specifically to overcome the ENTIRE gravitational potential energy well and never return, which is inherently a more demanding condition than merely maintaining a stable orbit", "isCorrect": true, "feedback": "Correct -- this distinction between the specific energy/speed requirements for maintaining a stable orbit (a continuous balance) versus completely overcoming gravity's influence entirely (a much greater one-time energy requirement) explains why escape velocity is mathematically always greater than orbital velocity at the same distance."},
+      {"text": "Escape velocity and orbital velocity are actually always exactly EQUAL to each other, contrary to what's described", "isCorrect": false, "feedback": "This isn't accurate -- these are DIFFERENT values (escape velocity = √2 × orbital velocity), reflecting their genuinely different physical requirements (escaping entirely vs. maintaining a stable orbit)."},
+      {"text": "Orbital velocity actually needs to be GREATER than escape velocity, not the reverse", "isCorrect": false, "feedback": "This is backwards -- ESCAPE velocity is specifically GREATER than orbital velocity (by a factor of √2), not the reverse, precisely because escaping entirely requires more energy/speed than merely maintaining a stable orbit."},
+      {"text": "This velocity relationship has no actual connection to the different physical requirements of orbiting versus escaping a gravitational field", "isCorrect": false, "feedback": "This isn't accurate -- this specific velocity relationship (escape = √2 × orbital) is DIRECTLY and mathematically connected to and explained by these two scenarios' fundamentally different physical/energy requirements."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A spacecraft traveling exactly AT escape velocity (not faster) will theoretically just barely escape a celestial body's gravity, reaching an infinite distance with a final velocity that approaches (but never quite reaches) exactly zero. Why does this specific 'just barely escaping, approaching zero final speed' scenario make physical/mathematical sense, based on energy conservation principles?",
+    "options": [
+      {"text": "Escape velocity is SPECIFICALLY DEFINED as the exact speed at which the spacecraft's initial kinetic energy PRECISELY matches (is just enough to overcome) the total gravitational potential energy that must be overcome to reach an infinite distance, meaning all of that initial kinetic energy gets fully 'used up' converting to escape from the gravitational well, leaving essentially zero kinetic energy (and thus zero speed) remaining at that theoretical infinite endpoint", "isCorrect": true, "feedback": "Correct -- this precise energy conservation balance (initial kinetic energy exactly matching required gravitational potential energy to escape) is exactly why escape velocity represents this specific mathematical 'just barely escaping' boundary condition, with essentially zero velocity remaining at the theoretical point of complete escape."},
+      {"text": "A spacecraft traveling at exactly escape velocity would actually still have significant leftover kinetic energy/speed at an infinite distance", "isCorrect": false, "feedback": "This isn't accurate -- exactly AT escape velocity, the spacecraft's kinetic energy is specifically calculated to be JUST BARELY sufficient to escape, meaning essentially ALL of that initial kinetic energy gets used up in the process, leaving approximately zero (not significant) leftover speed."},
+      {"text": "This scenario is actually mathematically impossible and doesn't represent a valid physical situation", "isCorrect": false, "feedback": "This isn't accurate -- this scenario IS a mathematically valid and well-established physical concept, precisely defining what 'escape velocity' actually means in terms of energy conservation principles."},
+      {"text": "Energy conservation principles have no actual connection to explaining why escape velocity produces this specific 'just barely escaping' outcome", "isCorrect": false, "feedback": "This isn't accurate -- energy conservation principles are DIRECTLY and fundamentally connected to and are precisely what mathematically DEFINES and explains this specific 'just barely escaping, approaching zero final speed' scenario characteristic of exact escape velocity."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This threshold velocity value enables an object to permanently overcome a gravitational potential well without requiring supplementary propulsive input.", "medium": "This is the minimum speed needed to completely break free from something's gravity forever.", "easy": "This is the minimum speed needed to completely break free from gravity forever."},
+    "medium": {"hard": "Compare the specific energy requirement for maintaining a continuous, balanced circular path against the energy requirement for completely overcoming the entire depth of the gravitational potential well.", "medium": "Staying in orbit just needs enough speed to keep 'falling around' the planet in a circle, but actually escaping needs extra speed to break completely free forever -- that's naturally a bigger ask.", "easy": "Staying in orbit needs just enough speed to circle around, but escaping needs extra speed to break free forever."},
+    "hard": {"hard": "Apply the principle of energy conservation, equating initial kinetic energy to the total gravitational potential energy difference between the starting point and infinite distance, to determine the resulting velocity at that infinite endpoint.", "medium": "Escape velocity is defined so that all your starting 'oomph' (kinetic energy) gets exactly used up fighting against gravity the whole way out, leaving basically nothing left over once you're finally free.", "easy": "Escape velocity is defined so all your starting energy gets used up escaping, leaving nothing left over."}
+  }
+}
+]

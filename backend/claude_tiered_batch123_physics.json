@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between transverse waves and longitudinal waves",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a 'transverse' wave, the particles of the medium vibrate:",
+    "options": [
+      {"text": "Perpendicular to the direction the wave travels", "isCorrect": true, "feedback": "Correct -- in a transverse wave, particles vibrate perpendicular (at a right angle) to the wave's direction of travel, like a wave on a string."},
+      {"text": "Parallel to (along the same line as) the direction the wave travels", "isCorrect": false, "feedback": "That describes a LONGITUDINAL wave, not transverse -- longitudinal waves vibrate parallel to travel direction, while transverse waves vibrate perpendicular to it."},
+      {"text": "In a completely random, unpredictable pattern with no consistent relationship to wave direction", "isCorrect": false, "feedback": "This isn't accurate -- transverse wave vibration follows a specific, consistent perpendicular relationship to wave direction, not a random pattern."},
+      {"text": "Only in waves traveling through a vacuum with no medium present at all", "isCorrect": false, "feedback": "This isn't accurate -- transverse waves can travel through various media (like waves on a string or water), and some (like light) can also travel through a vacuum, but this isn't the defining feature."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Sound waves are longitudinal, involving compressions and rarefactions (regions of higher and lower particle density) traveling through air, while a wave on a guitar string is transverse. Why does sound specifically require this compression-based longitudinal structure, rather than transverse vibration, to travel through a gas like air?",
+    "options": [
+      {"text": "Unlike a solid string (which has enough structural rigidity to support perpendicular/transverse vibrations that propagate along its length), a gas like air has no such rigid structure connecting adjacent particles, so it cannot sustain a transverse disturbance -- instead, sound must propagate through air via particles pushing directly into their neighbors along the direction of travel, creating alternating compressions and rarefactions, which is exactly the longitudinal wave pattern", "isCorrect": true, "feedback": "Correct -- this explanation of why a gas medium's lack of structural rigidity prevents transverse wave propagation, while still allowing longitudinal compression waves, correctly explains why sound in air is specifically longitudinal rather than transverse."},
+      {"text": "Sound waves could actually just as easily travel through air as transverse waves, identical to a wave on a guitar string", "isCorrect": false, "feedback": "This isn't accurate -- sound waves in a gas like air specifically CANNOT propagate as transverse waves, due to air's lack of the structural rigidity needed to support transverse vibration."},
+      {"text": "The physical structure/rigidity of the medium has no actual connection to determining whether a wave propagates as transverse or longitudinal", "isCorrect": false, "feedback": "This isn't accurate -- the medium's structure/rigidity IS DIRECTLY connected to and determines whether transverse wave propagation is even possible in that medium."},
+      {"text": "A wave on a guitar string is actually longitudinal, not transverse, contrary to what's described", "isCorrect": false, "feedback": "This isn't accurate -- a wave on a guitar string IS specifically transverse (string particles moving perpendicular to the string's length), not longitudinal."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Unlike sound (a longitudinal wave), transverse waves (like S-waves in earthquakes) generally CANNOT propagate through liquids or gases, only through solids. Explain the physical property of solids that specifically enables transverse wave propagation, which liquids and gases lack.",
+    "options": [
+      {"text": "Solids have a rigid internal structure with strong resistance to SHEAR deformation (sideways/perpendicular displacement of adjacent layers relative to each other), allowing a perpendicular disturbance in one region to pull neighboring particles sideways with it as the wave propagates -- liquids and gases, by contrast, lack this shear rigidity (their particles can flow/slide past each other easily in the perpendicular direction), so they cannot sustain or transmit a transverse disturbance", "isCorrect": true, "feedback": "Correct -- this explanation of shear rigidity (present in solids, absent in liquids/gases) as the key physical property enabling transverse wave propagation correctly explains why S-waves can only travel through Earth's solid regions, a principle used in seismology to study Earth's interior structure."},
+      {"text": "Transverse waves would actually propagate just as easily through liquids and gases as they do through solids", "isCorrect": false, "feedback": "This isn't accurate -- transverse waves specifically CANNOT propagate through liquids or gases (lacking shear rigidity), unlike solids, which is precisely why S-waves are restricted to Earth's solid regions."},
+      {"text": "Shear rigidity has no actual connection to determining whether a medium can support transverse wave propagation", "isCorrect": false, "feedback": "This isn't accurate -- shear rigidity IS DIRECTLY connected to and is precisely the physical property that determines whether a medium can support transverse wave propagation."},
+      {"text": "Liquids and gases would actually have the same shear rigidity as solids, making this distinction between wave types irrelevant to the medium type", "isCorrect": false, "feedback": "This isn't accurate -- liquids and gases specifically LACK the shear rigidity that solids have, which is precisely why this distinction meaningfully restricts transverse wave propagation to solids."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This wave classification exhibits particle oscillation orthogonal to the axis of energy propagation.", "medium": "This is a wave where the medium vibrates side to side, at a right angle to the direction the wave is moving.", "easy": "This is a wave where the medium vibrates side to side, at a right angle to the wave's direction."},
+    "medium": {"hard": "Consider how the absence of structural rigidity in a gaseous medium precludes sideways particle displacement, restricting wave propagation to the along-axis compression-rarefaction mechanism instead.", "medium": "Air particles have nothing holding them together sideways the way a solid string does, so the only way they can pass along a disturbance is by bumping straight into each other along the line of travel.", "easy": "Air particles have nothing holding them together sideways, so they can only pass along a disturbance by bumping straight into each other."},
+    "hard": {"hard": "Consider how resistance to shear deformation, present in the rigid lattice of a solid but absent in the freely flowing particles of a liquid or gas, is the specific mechanical property required to transmit a perpendicular disturbance.", "medium": "Solids can drag their neighboring particles sideways along with them because they're rigidly connected, but liquid and gas particles just slide right past each other sideways instead of getting dragged along.", "easy": "Solids can drag neighboring particles sideways because they're rigidly connected; liquid and gas particles just slide past each other instead."}
+  }
+}
+]

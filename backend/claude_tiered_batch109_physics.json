@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between weight distribution and structural stability",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An object is generally MORE stable (less likely to tip over) when it has:",
+    "options": [
+      {"text": "A lower center of gravity and a wider base of support", "isCorrect": true, "feedback": "Correct -- both a lower center of gravity and a wider base make it harder for the object's center of gravity to shift outside its base of support, which is what causes tipping."},
+      {"text": "A higher center of gravity and a narrower base of support", "isCorrect": false, "feedback": "This is backwards -- a HIGHER center of gravity and NARROWER base actually make an object LESS stable (more prone to tipping), not more stable."},
+      {"text": "No connection at all between center of gravity height and stability", "isCorrect": false, "feedback": "This isn't accurate -- center of gravity height has a very DIRECT, significant connection to an object's overall stability against tipping."},
+      {"text": "An extremely small total mass, regardless of its shape or distribution", "isCorrect": false, "feedback": "Total mass alone isn't the key stability factor -- stability specifically depends on center of gravity HEIGHT and base WIDTH, not simply how much total mass an object has."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "An object begins to tip over specifically when its center of gravity shifts (due to tilting) to a position no longer directly above its base of support. Why does having a WIDER base of support specifically make an object more resistant to tipping over, in terms of this specific tipping mechanism?",
+    "options": [
+      {"text": "A wider base requires the object to be tilted through a LARGER angle before its center of gravity actually moves horizontally far enough to shift outside that wider base's boundary, meaning a wider-based object can tolerate more tilting/disturbance before actually reaching the critical tipping point, compared to a narrower-based object", "isCorrect": true, "feedback": "Correct -- this direct geometric relationship (wider base requiring more tilt before center of gravity exits the base's support boundary) explains why wide-based objects (like a pyramid or a low, wide car) are generally much more resistant to tipping over than tall, narrow-based objects."},
+      {"text": "Base width actually has no real connection to how much an object can be tilted before it tips over", "isCorrect": false, "feedback": "This isn't accurate -- base width IS DIRECTLY and significantly connected to and DETERMINES how much tilting an object can withstand before its center of gravity actually shifts outside the base, triggering tipping."},
+      {"text": "A NARROWER base would actually require MORE tilting before tipping occurs, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- a WIDER base (not narrower) requires MORE tilting before the center of gravity shifts outside the base boundary, making wider-based objects more tip-resistant, not narrower ones."},
+      {"text": "The specific mechanism of how tipping actually occurs has no connection to where the center of gravity is positioned relative to the base", "isCorrect": false, "feedback": "This isn't accurate -- the tipping mechanism IS DIRECTLY and specifically defined by and connected to whether the center of gravity remains positioned ABOVE the base of support, or shifts to be OUTSIDE that base boundary."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Race cars are often deliberately designed with an extremely LOW center of gravity and a WIDE wheelbase/stance, sometimes even at the expense of other design considerations (like interior passenger space). Why does understanding the physics of tipping stability specifically explain this deliberate race car engineering design priority?",
+    "options": [
+      {"text": "Since race cars must navigate sharp, high-speed turns (which specifically generate significant centrifugal/inertial forces that could otherwise cause dangerous tipping/rolling), engineers deliberately prioritize BOTH minimizing center of gravity height AND maximizing wheelbase width specifically to substantially increase the car's resistance to tipping over during these demanding high-speed cornering maneuvers, even if this design priority requires some sacrifice in other areas like passenger comfort/space", "isCorrect": true, "feedback": "Correct -- this direct application of tipping-stability physics principles (combining both a lowered center of gravity AND a widened base of support for maximum tip-resistance) explains this specific, deliberate race car engineering design priority, precisely because race cars experience the extreme cornering forces that make tipping resistance such a critical safety and performance consideration in that particular application."},
+      {"text": "Race car design actually has no real connection to the physics principles of center of gravity height or base width stability", "isCorrect": false, "feedback": "This isn't accurate -- race car design IS DIRECTLY and specifically connected to and DELIBERATELY APPLIES these exact physics principles (center of gravity height, base width) as a core, critical safety and performance consideration in their engineering."},
+      {"text": "A HIGHER center of gravity and NARROWER wheelbase would actually be preferred for race car stability during high-speed cornering", "isCorrect": false, "feedback": "This is backwards -- a LOWER center of gravity and WIDER wheelbase (not higher/narrower) are specifically preferred for maximizing stability against tipping during the significant cornering forces race cars experience."},
+      {"text": "Cornering forces experienced during high-speed turns have no actual connection to why race cars might be at increased risk of tipping over", "isCorrect": false, "feedback": "This isn't accurate -- cornering forces (centrifugal/inertial effects during turns) ARE DIRECTLY and specifically connected to and represent PRECISELY the significant tipping risk factor that this particular race car design priority (low center of gravity, wide wheelbase) is specifically engineered to counteract."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This equilibrium characteristic is enhanced by minimizing the height of the mass centroid while maximizing the footprint dimension of ground contact.", "medium": "Being low to the ground and having a wide stance both help keep something from tipping over.", "easy": "Being low to the ground and wide both help keep something from tipping over."},
+    "medium": {"hard": "Consider the geometric relationship between base boundary extent and the corresponding tilt angle required for the vertically-projected center of gravity to migrate beyond that boundary.", "medium": "A wider stance means the balance point has to travel farther sideways before it actually goes past the edge of what's supporting it, so it takes a bigger tilt before things go wrong.", "easy": "A wider stance means the balance point has to travel farther before going past the edge, needing a bigger tilt to tip."},
+    "hard": {"hard": "Consider how the significant lateral forces generated during high-speed cornering necessitate maximizing the tilt-angle tolerance achievable through combined center-of-gravity lowering and base-width widening, as a critical safety engineering priority.", "medium": "Since race cars have to handle really strong sideways forces when turning sharply at high speed, making them low and wide gives them the biggest possible safety cushion against actually tipping over during those turns.", "easy": "Since race cars handle strong sideways forces when turning, making them low and wide gives the biggest safety cushion against tipping."}
+  }
+}
+]

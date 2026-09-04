@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between founder effect and genetic bottleneck",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The 'founder effect' occurs when:",
+    "options": [
+      {"text": "A small group of individuals separates from a larger population and establishes a new, genetically distinct population", "isCorrect": true, "feedback": "Correct -- the founder effect describes reduced genetic diversity resulting specifically from a small subset of individuals founding a new, isolated population."},
+      {"text": "An entire large population suddenly disappears completely with no survivors", "isCorrect": false, "feedback": "This describes extinction, not the founder effect, which specifically involves a SMALL GROUP successfully establishing a NEW population, not total disappearance."},
+      {"text": "Two completely separate populations suddenly merge into one single population", "isCorrect": false, "feedback": "This describes population merging/hybridization, not the founder effect, which specifically involves a small group SEPARATING from (not merging with) a larger population."},
+      {"text": "A population's genetic diversity dramatically increases overnight", "isCorrect": false, "feedback": "This is generally backwards -- the founder effect typically results in DECREASED (not increased) genetic diversity in the new population, since only a small, potentially non-representative subset of alleles is carried over."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A genetic bottleneck occurs when a population's size is DRASTICALLY reduced (due to a disaster, disease, etc.), regardless of whether any group physically relocates elsewhere. How does this differ conceptually from the founder effect, even though both processes can result in reduced genetic diversity?",
+    "options": [
+      {"text": "A founder effect specifically involves a small group PHYSICALLY SEPARATING from the original population to establish a new one elsewhere, while a bottleneck involves the ENTIRE original population's size being drastically reduced IN PLACE, without necessarily any group relocating", "isCorrect": true, "feedback": "Correct -- this distinction regarding whether physical separation/relocation occurs (founder effect) versus an in-place population size reduction (bottleneck) is the key conceptual difference between these two related but distinct genetic diversity-reducing phenomena."},
+      {"text": "These two phenomena are actually completely identical, with no meaningful conceptual difference between them", "isCorrect": false, "feedback": "This isn't accurate -- while both CAN result in reduced genetic diversity, they represent GENUINELY DIFFERENT underlying scenarios (physical separation/founding a new population vs. in-place population size reduction)."},
+      {"text": "A genetic bottleneck specifically requires physical relocation of a subgroup, just like the founder effect", "isCorrect": false, "feedback": "This isn't accurate -- a genetic bottleneck specifically does NOT require physical relocation; it describes an IN-PLACE population size reduction, unlike the founder effect, which specifically involves group separation/relocation."},
+      {"text": "Only the founder effect can actually result in reduced genetic diversity; bottlenecks have no such effect", "isCorrect": false, "feedback": "This isn't accurate -- BOTH the founder effect AND a genetic bottleneck can result in reduced genetic diversity, just through different underlying mechanisms/scenarios."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Both the founder effect and genetic bottlenecks can result in certain alleles becoming disproportionately common (or completely absent) in the resulting population, purely by chance, rather than due to any particular survival advantage those alleles provide. Why is this element of RANDOM CHANCE (rather than natural selection) an important characteristic distinguishing these phenomena from typical adaptive evolution?",
+    "options": [
+      {"text": "Unlike natural selection (which specifically favors alleles providing a genuine survival/reproductive advantage), these phenomena specifically illustrate 'genetic drift' -- random, chance-based changes in allele frequencies that occur independent of whether those alleles are actually beneficial, neutral, or even slightly harmful", "isCorrect": true, "feedback": "Correct -- this recognition that these phenomena represent RANDOM genetic drift (rather than adaptive, selection-driven change) is an important conceptual distinction in evolutionary biology, highlighting that not all evolutionary change is necessarily driven by adaptive advantage."},
+      {"text": "These phenomena are actually driven entirely by natural selection, identical to typical adaptive evolution", "isCorrect": false, "feedback": "This isn't accurate -- these phenomena SPECIFICALLY represent RANDOM genetic drift (chance-based allele frequency changes), which is conceptually DISTINCT from natural selection's advantage-driven mechanism."},
+      {"text": "This element of random chance has no actual connection to distinguishing these phenomena from typical natural selection processes", "isCorrect": false, "feedback": "This isn't accurate -- this element of random chance is DIRECTLY and centrally connected to and is precisely what conceptually distinguishes these phenomena (genetic drift) from natural selection's advantage-driven mechanism."},
+      {"text": "Alleles that become common through these phenomena must always actually provide some type of survival advantage", "isCorrect": false, "feedback": "This isn't accurate -- alleles becoming more common through these RANDOM chance-based phenomena specifically do NOT need to provide any survival advantage; they can become prevalent purely by chance, regardless of their beneficial, neutral, or harmful nature."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phenomenon describes reduced genetic variation arising when a limited subset of individuals establishes a spatially isolated new population.", "medium": "This happens when a small group breaks off from a bigger group and starts a brand new population somewhere else.", "easy": "This happens when a small group breaks off and starts a new population somewhere else."},
+    "medium": {"hard": "Consider whether the scenario specifically involves a subgroup physically relocating to found a new population, or instead involves the original population's own size shrinking dramatically without relocation.", "medium": "One of these is about a small group actually MOVING AWAY to start something new, while the other is about the WHOLE group getting suddenly much smaller right where it already was.", "easy": "One is about a small group moving away to start something new; the other is the whole group shrinking where it already was."},
+    "hard": {"hard": "Consider how attributing allele frequency changes to random sampling effects, rather than differential survival/reproductive advantage, fundamentally distinguishes genetic drift from selection-based evolutionary mechanisms.", "medium": "These changes happen just by random luck of who happens to survive or found the new group, not because those particular genes are actually better somehow.", "easy": "These changes happen by random luck of who survives, not because those genes are actually better."}
+  }
+}
+]

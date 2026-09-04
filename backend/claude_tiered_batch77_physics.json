@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between elastic and inelastic collisions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a perfectly elastic collision, what happens to kinetic energy?",
+    "options": [
+      {"text": "Total kinetic energy is conserved (stays the same before and after the collision)", "isCorrect": true, "feedback": "Correct -- in a perfectly elastic collision, no kinetic energy is lost to heat, sound, or deformation; it's fully conserved."},
+      {"text": "Total kinetic energy is always completely destroyed", "isCorrect": false, "feedback": "This isn't accurate for an ELASTIC collision -- kinetic energy is specifically CONSERVED (not destroyed) in a perfectly elastic collision."},
+      {"text": "Total kinetic energy always increases significantly", "isCorrect": false, "feedback": "This isn't accurate -- kinetic energy doesn't spontaneously increase in a collision; in a perfectly elastic collision, it specifically stays the SAME (conserved), not increases."},
+      {"text": "Kinetic energy has no actual relevance to describing collision types", "isCorrect": false, "feedback": "This isn't accurate -- kinetic energy conservation (or lack thereof) is actually THE defining characteristic distinguishing elastic from inelastic collisions."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A perfectly inelastic collision occurs when two objects collide and stick together afterward, moving as one combined object. Why does this type of collision always result in some kinetic energy being lost, even though momentum is still conserved?",
+    "options": [
+      {"text": "Some of the initial kinetic energy is converted into other forms (like heat, sound, or deformation energy) during the collision process, specifically due to the objects sticking together, which requires energy dissipation that isn't recovered as kinetic energy afterward", "isCorrect": true, "feedback": "Correct -- this conversion of kinetic energy into other, non-kinetic forms during the sticking process is exactly why kinetic energy is NOT conserved in perfectly inelastic collisions, even though momentum remains conserved throughout."},
+      {"text": "Kinetic energy is actually always fully conserved in EVERY type of collision, including perfectly inelastic ones", "isCorrect": false, "feedback": "This isn't accurate -- kinetic energy is specifically NOT conserved in inelastic collisions (some is converted to other forms), unlike momentum, which IS conserved in essentially all collision types."},
+      {"text": "Momentum is actually NOT conserved in perfectly inelastic collisions, unlike kinetic energy", "isCorrect": false, "feedback": "This is backwards -- momentum IS conserved in virtually all collisions (including inelastic ones), while it's specifically KINETIC ENERGY that is NOT conserved in inelastic collisions."},
+      {"text": "This kinetic energy loss has no actual connection to the objects sticking together during the collision", "isCorrect": false, "feedback": "This isn't accurate -- the kinetic energy loss is DIRECTLY connected to and results from the specific physical process of the objects deforming/sticking together during the collision."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Most real-world collisions (like a car crash or two billiard balls colliding) are neither perfectly elastic nor perfectly inelastic, but fall somewhere in between. Why is understanding this practical reality important when applying the concepts of elastic and inelastic collisions to real-world physics problems?",
+    "options": [
+      {"text": "Perfectly elastic and perfectly inelastic collisions represent theoretical IDEALIZED extremes, useful for understanding underlying physics principles, but real-world collisions typically involve SOME kinetic energy loss (though not complete conservation loss like perfectly inelastic), requiring careful consideration of which idealization (if either) reasonably approximates a given real scenario", "isCorrect": true, "feedback": "Correct -- this recognition that real-world collisions typically exist somewhere on a spectrum between these two theoretical extremes is important for appropriately and realistically applying these fundamental physics concepts to actual practical situations."},
+      {"text": "All real-world collisions are actually always perfectly elastic, with zero kinetic energy loss", "isCorrect": false, "feedback": "This isn't accurate -- most real-world collisions DO experience SOME kinetic energy loss (to heat, sound, deformation), meaning they are NOT perfectly elastic in practice."},
+      {"text": "All real-world collisions are actually always perfectly inelastic, with objects always sticking together", "isCorrect": false, "feedback": "This isn't accurate -- many real-world collisions (like billiard balls) do NOT result in objects sticking together, meaning they aren't perfectly inelastic; most real collisions fall somewhere between the two theoretical extremes."},
+      {"text": "The elastic/inelastic collision framework has no actual practical usefulness for understanding real-world collision scenarios", "isCorrect": false, "feedback": "This isn't accurate -- this framework, even as an idealization, remains a HIGHLY useful conceptual tool for analyzing and approximating real-world collision scenarios, even when reality falls between the two theoretical extremes."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This collision classification is characterized by the preservation of total mechanical kinetic energy across the interaction.", "medium": "In this kind of collision, no energy gets lost to things like heat or sound -- it all stays as motion energy.", "easy": "In this collision, no energy gets lost to heat or sound -- it all stays as motion energy."},
+    "medium": {"hard": "Consider what happens to the kinetic energy that would otherwise be needed to keep the objects moving separately, once they instead become physically joined together.", "medium": "Some of the moving energy has to get converted into other things, like heat or the sound of the crash, when objects squish together and stick.", "easy": "Some moving energy gets converted into heat or sound when objects squish together and stick."},
+    "hard": {"hard": "Consider how treating these two collision types as idealized theoretical boundaries (rather than universally applicable exact descriptions) allows for more nuanced and realistic modeling of actual physical collision scenarios.", "medium": "Think of these two types as the extreme ends of a scale, with most real collisions actually landing somewhere in between those two extremes.", "easy": "Think of these as extreme ends of a scale, with most real collisions landing somewhere in between."}
+  }
+}
+]

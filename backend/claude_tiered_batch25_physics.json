@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of pressure as force distributed over area",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the formula for pressure?",
+    "options": [
+      {"text": "Pressure = Force ÷ Area", "isCorrect": true, "feedback": "Correct -- pressure describes how concentrated a force is over a given surface area."},
+      {"text": "Pressure = Force × Area", "isCorrect": false, "feedback": "Pressure is calculated by dividing, not multiplying, force by area."},
+      {"text": "Pressure = Force + Area", "isCorrect": false, "feedback": "This isn't the correct relationship -- pressure involves dividing, not adding."},
+      {"text": "Pressure = Area only, with no relation to force", "isCorrect": false, "feedback": "Pressure also depends directly on the applied force, not area alone."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does a sharp knife cut more easily than a dull one, even with the same amount of force applied?",
+    "options": [
+      {"text": "The sharp edge concentrates the force over a much smaller area, resulting in much higher pressure at the cutting edge", "isCorrect": true, "feedback": "Correct -- since pressure is force divided by area, a smaller contact area (sharp edge) produces dramatically higher pressure for the same applied force."},
+      {"text": "A sharp knife is always much heavier than a dull one", "isCorrect": false, "feedback": "Weight isn't the key factor here -- it's the difference in contact area (and thus pressure) between a sharp and dull edge."},
+      {"text": "Sharpness has nothing to do with pressure or force", "isCorrect": false, "feedback": "Sharpness is directly related to pressure -- a sharper edge reduces contact area, dramatically increasing pressure for the same force."},
+      {"text": "A dull knife actually applies more force than a sharp one", "isCorrect": false, "feedback": "The scenario assumes the same force is applied in both cases -- it's the difference in contact area (and resulting pressure) that explains the cutting difference."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Snowshoes allow a person to walk on top of soft snow without sinking in, even though the person's weight (force) stays the same as without snowshoes. How does this demonstrate the relationship between pressure, force, and area?",
+    "options": [
+      {"text": "Snowshoes distribute the same body weight over a much larger surface area, significantly reducing the pressure exerted on the snow at any given point", "isCorrect": true, "feedback": "Correct -- since pressure equals force divided by area, spreading the same force over a much larger area proportionally decreases the resulting pressure."},
+      {"text": "Snowshoes actually reduce the person's body weight", "isCorrect": false, "feedback": "Snowshoes don't change the person's actual weight (force) -- they change the AREA over which that weight is distributed, reducing pressure."},
+      {"text": "Snowshoes have no real effect on how a person interacts with snow", "isCorrect": false, "feedback": "Snowshoes have a very real, significant effect, specifically by increasing surface area to reduce pressure on the snow."},
+      {"text": "Snow is not actually affected by pressure at all", "isCorrect": false, "feedback": "Snow's tendency to give way (or not) under a person's weight is directly related to the pressure applied -- higher pressure causes sinking, lower pressure does not."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity captures how concentrated a given force is when spread across a specific surface.", "medium": "This connects how hard something pushes with how much surface area it pushes over.", "easy": "This says pressure equals force divided by area."},
+    "medium": {"hard": "A smaller contact area concentrates the same applied force into a much more intense localized pressure.", "medium": "The same force squeezed into a much smaller edge area creates a lot more pressure right at that edge.", "easy": "The same force pushed through a much thinner edge creates way more pressure right there."},
+    "hard": {"hard": "Spreading identical total force across a substantially larger surface area proportionally reduces the pressure at each point of contact, as governed by the P=F/A relationship.", "medium": "Spreading the same weight over a much bigger area means less pressure is being applied at any single point on the snow.", "easy": "Spreading the same weight over a much bigger area means less pressure at any single point on the snow."}
+  }
+}
+]

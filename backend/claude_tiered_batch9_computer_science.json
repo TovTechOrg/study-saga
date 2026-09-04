@@ -1,0 +1,1517 @@
+[
+  {
+    "topic": "cookies",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'cookie' in the context of web browsing?",
+      "options": [
+        {
+          "text": "A small piece of data stored by a website in a user's browser, often used to remember information between visits",
+          "isCorrect": true,
+          "feedback": "Correct -- cookies let websites retain small bits of information, like login status or preferences, across separate browsing sessions."
+        },
+        {
+          "text": "A physical snack sometimes kept near a computer for the programmer to eat",
+          "isCorrect": false,
+          "feedback": "In web browsing, a 'cookie' refers to stored browser data, not a literal edible snack, despite sharing the same word."
+        },
+        {
+          "text": "A type of computer virus that damages a hard drive",
+          "isCorrect": false,
+          "feedback": "A cookie is a small, legitimate piece of stored browser data used by websites -- it isn't inherently a virus or malicious program."
+        },
+        {
+          "text": "A backup copy of an entire website's source code",
+          "isCorrect": false,
+          "feedback": "A cookie stores a small piece of specific data related to a user's visit -- it isn't a complete backup of a website's underlying source code."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might an online shopping website use a cookie to help remember the items in a user's shopping cart?",
+      "options": [
+        {
+          "text": "The cookie can store a reference to the cart's contents in the user's browser, so that information can persist even as the user navigates across different pages on the site",
+          "isCorrect": true,
+          "feedback": "Correct -- without some mechanism like a cookie to retain this information, a shopping cart's contents could be lost every time the user moved to a different page."
+        },
+        {
+          "text": "Because cookies are required by law for any website that sells products online",
+          "isCorrect": false,
+          "feedback": "There's no such legal requirement mandating cookie use specifically for online sales -- cookies are simply a common, practical technical mechanism for retaining information like cart contents across pages."
+        },
+        {
+          "text": "Because storing cart information in a cookie makes a website's images load in higher resolution",
+          "isCorrect": false,
+          "feedback": "A cookie's role here is retaining small pieces of data like cart contents across page visits -- it has no bearing on image resolution or quality."
+        },
+        {
+          "text": "Because cookies allow a website to permanently store a customer's full credit card number in unencrypted, plain text",
+          "isCorrect": false,
+          "feedback": "Storing sensitive payment information like a full credit card number in a plain, unencrypted cookie would be a serious security risk and isn't standard responsible practice -- cookies are typically used for less sensitive information like a reference or session identifier, not full raw payment details."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why have 'third-party cookies' (cookies set by a domain other than the website a user is directly visiting) become a significant topic of discussion around online privacy?",
+      "options": [
+        {
+          "text": "Third-party cookies can potentially be used to track a user's browsing activity across many different websites that all include the same third-party service, raising concerns about being tracked without full awareness or consent",
+          "isCorrect": true,
+          "feedback": "Correct -- this cross-site tracking capability is precisely why third-party cookies have drawn significant privacy scrutiny and led to various browser restrictions and changes over time."
+        },
+        {
+          "text": "Because third-party cookies are physically incapable of being deleted by a user, ever",
+          "isCorrect": false,
+          "feedback": "Users generally CAN delete cookies, including third-party ones, through their browser's settings -- the privacy concern is specifically about the potential for cross-site TRACKING, not an inability to delete them."
+        },
+        {
+          "text": "Because using any cookie at all is illegal in every country in the world",
+          "isCorrect": false,
+          "feedback": "Cookies themselves are broadly legal to use -- some regions have specific regulations around consent and disclosure for certain kinds of cookies, but a blanket worldwide illegality isn't accurate."
+        },
+        {
+          "text": "Because third-party cookies always contain a computer virus",
+          "isCorrect": false,
+          "feedback": "A cookie is simply a small piece of stored data -- it isn't inherently a virus; the actual privacy concern with third-party cookies is about their potential use for cross-site tracking."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "A website tucks this small bit of data into your browser so it can recognize you and recall details on your next visit.",
+        "medium": "This bit of browser-stored data lets a website recall who you are the next time you show up, such as whether you're still logged in.",
+        "hard": "Think about a website leaving itself a small sticky note in your browser to remember something about your visit."
+      },
+      "medium": {
+        "easy": "This lets a site keep track of what's already in your cart even as you click around from page to page.",
+        "medium": "The site can hang onto a pointer to your cart's contents inside that stored data, so nothing gets lost as you browse onward.",
+        "hard": "Think about needing something to remember your selections as you click from one page to the next on a shopping site."
+      },
+      "hard": {
+        "easy": "Because the same outside service can be embedded on many unrelated sites, it can piece together a picture of everywhere a single visitor has been browsing.",
+        "medium": "The same embedded service can quietly turn up on many different sites you visit, letting it link those visits together into one ongoing picture.",
+        "hard": "Think about a tracking tag that shows up on many different websites you visit, all quietly reporting back to the same place."
+      }
+    }
+  },
+  {
+    "topic": "front-end vs back-end development",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In web development, what does 'front-end' generally refer to?",
+      "options": [
+        {
+          "text": "The parts of a website or application that a user directly sees and interacts with, such as its layout, buttons, and visual design",
+          "isCorrect": true,
+          "feedback": "Correct -- front-end development focuses on the user-facing side of an application, in contrast to the server-side logic handled by back-end development."
+        },
+        {
+          "text": "The physical server hardware that hosts a website's files",
+          "isCorrect": false,
+          "feedback": "Physical server hardware is more closely associated with back-end infrastructure -- front-end specifically refers to the user-facing side of an application."
+        },
+        {
+          "text": "A database used to store a company's internal employee records",
+          "isCorrect": false,
+          "feedback": "A database for internal records is typically a back-end concern -- front-end refers to the user-facing parts of a website or application."
+        },
+        {
+          "text": "The legal contract governing a piece of software's licensing terms",
+          "isCorrect": false,
+          "feedback": "Front-end development refers to a technical area of building user-facing interfaces -- it's unrelated to a software license's legal terms."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does 'back-end' development typically differ from 'front-end' development?",
+      "options": [
+        {
+          "text": "Back-end development focuses on server-side logic, databases, and behind-the-scenes processing, while front-end development focuses on the user-facing interface the user directly sees and interacts with",
+          "isCorrect": true,
+          "feedback": "Correct -- these two areas are complementary, with the front-end handling presentation and interaction, and the back-end handling data processing and storage behind the scenes."
+        },
+        {
+          "text": "Back-end development and front-end development are simply two different names describing the exact identical work",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different, complementary areas of focus -- one on server-side logic and data, the other on the user-facing interface."
+        },
+        {
+          "text": "Back-end development refers only to fixing bugs after a website has already launched",
+          "isCorrect": false,
+          "feedback": "Back-end development covers building the server-side logic and data handling from the very start of a project, not just fixing bugs after launch."
+        },
+        {
+          "text": "Front-end development only concerns a website's underlying database structure",
+          "isCorrect": false,
+          "feedback": "A website's underlying database structure is generally a back-end concern -- front-end development instead focuses on the user-facing interface."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a 'full-stack' developer, someone comfortable working on both front-end and back-end tasks, be particularly valuable on a small development team?",
+      "options": [
+        {
+          "text": "They can work across the entire application, from the user interface down to server-side logic and data storage, which can be especially useful when a small team doesn't have the resources for many narrowly specialized roles",
+          "isCorrect": true,
+          "feedback": "Correct -- this breadth of skill can add flexibility for a small team, letting a single person contribute across multiple layers of a project as needed."
+        },
+        {
+          "text": "Because a full-stack developer is the only kind of developer capable of deploying a website to a server",
+          "isCorrect": false,
+          "feedback": "Deploying a website doesn't require being full-stack -- plenty of backend-focused developers handle deployment; a full-stack developer's real value is their broad range across both layers."
+        },
+        {
+          "text": "Because full-stack developers are the only people capable of writing any HTML at all",
+          "isCorrect": false,
+          "feedback": "Many developers, including those focused narrowly on the front-end, can write HTML -- being 'full-stack' isn't a unique gatekeeping requirement for basic HTML work."
+        },
+        {
+          "text": "Because working on both the front-end and back-end guarantees a project will have zero bugs",
+          "isCorrect": false,
+          "feedback": "Being a full-stack developer provides broad skill coverage, but it doesn't guarantee bug-free software -- that would depend on many other quality practices as well."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This term covers everything a visitor actually sees on screen and clicks or taps on -- the buttons, layout, and visuals.",
+        "medium": "This refers to the parts of an application a user directly sees and interacts with, like its layout and buttons.",
+        "hard": "Think about everything you can actually see and click on when you visit a website."
+      },
+      "medium": {
+        "easy": "One side handles what happens on the server behind the scenes -- logic, databases, processing -- while the other handles what shows up directly on a visitor's screen.",
+        "medium": "One area focuses on server-side logic and data; the other focuses on the interface the user directly experiences.",
+        "hard": "Think about what's happening behind the scenes, on a server, versus what's shown directly on your screen."
+      },
+      "hard": {
+        "easy": "Being able to jump between screen-facing work and server-side work lets one person cover ground that a small team might not have enough specialists for.",
+        "medium": "Being comfortable working across the whole application can add valuable flexibility, especially for a team too small to have many narrow specialists.",
+        "hard": "Think about one person being comfortable working across the entire application, instead of needing several specialists."
+      }
+    }
+  },
+  {
+    "topic": "web servers",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general role of a 'web server'?",
+      "options": [
+        {
+          "text": "Storing and delivering web page content in response to requests from web browsers",
+          "isCorrect": true,
+          "feedback": "Correct -- a web server listens for incoming requests (often over HTTP or HTTPS) and responds by sending back the requested web content."
+        },
+        {
+          "text": "Physically manufacturing computer hardware components",
+          "isCorrect": false,
+          "feedback": "A web server is software (often running on dedicated hardware) that handles delivering web content -- it isn't involved in physically manufacturing hardware."
+        },
+        {
+          "text": "Displaying a computer's desktop wallpaper",
+          "isCorrect": false,
+          "feedback": "A web server's role is delivering web content in response to requests -- it has nothing to do with a computer's desktop wallpaper display."
+        },
+        {
+          "text": "Translating a program's code into a different programming language",
+          "isCorrect": false,
+          "feedback": "A web server's job is handling and responding to web content requests, unrelated to translating code between programming languages."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "When a user's browser requests a specific web page, what does a web server typically do in response?",
+      "options": [
+        {
+          "text": "It processes the request and sends back the relevant content, such as HTML, images, or other resources needed to display the requested page",
+          "isCorrect": true,
+          "feedback": "Correct -- this request-and-response exchange is the fundamental interaction between a browser and a web server underlying ordinary web browsing."
+        },
+        {
+          "text": "It ignores the request entirely and does nothing",
+          "isCorrect": false,
+          "feedback": "A functioning web server is specifically designed to process and respond to incoming requests -- ignoring them entirely would represent a failure, not normal expected behavior."
+        },
+        {
+          "text": "It automatically deletes the requested content from its storage",
+          "isCorrect": false,
+          "feedback": "A web server delivers requested content in response to a request -- it doesn't delete that content as a normal part of handling the request."
+        },
+        {
+          "text": "It physically prints the requested web page on paper",
+          "isCorrect": false,
+          "feedback": "A web server delivers digital content over a network connection -- it doesn't physically print pages on paper."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a popular website use multiple web servers, often behind a load balancer, rather than relying on just a single server to handle all incoming requests?",
+      "options": [
+        {
+          "text": "Distributing incoming requests across multiple servers helps handle higher traffic volumes and improves reliability, since the failure of one server doesn't necessarily bring down the whole website",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of distributed setup is a common strategy for scaling a website to handle many simultaneous users while also improving overall resilience against individual server failures."
+        },
+        {
+          "text": "Because using more than one web server is required by law for any commercial website",
+          "isCorrect": false,
+          "feedback": "There's no legal requirement mandating multiple servers -- using multiple servers is a practical engineering decision made for scalability and reliability reasons, not a legal mandate."
+        },
+        {
+          "text": "Because a single web server is physically incapable of storing more than one web page",
+          "isCorrect": false,
+          "feedback": "A single web server can typically store and serve many different web pages -- the reason for using multiple servers is about handling higher TRAFFIC VOLUME and improving reliability, not a storage limitation on page count."
+        },
+        {
+          "text": "Because using multiple servers guarantees a website will never experience any downtime whatsoever",
+          "isCorrect": false,
+          "feedback": "While a multi-server setup can significantly improve reliability, it doesn't provide an absolute, ironclad guarantee against all possible downtime -- other issues could still potentially cause problems."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is the piece of software that holds onto a site's files and hands them over whenever a browser asks for them.",
+        "medium": "It's the always-listening program that hands a site's pages over to browsers whenever they come calling.",
+        "hard": "Think about the machine responsible for actually sending you a web page's content when you visit a website."
+      },
+      "medium": {
+        "easy": "It takes in the incoming request and sends back whatever's needed to display the page -- the HTML, images, and other files.",
+        "medium": "Once a request comes in, it gathers up whatever the page actually needs and ships that content back out.",
+        "hard": "Think about the request-and-response exchange that happens every time you load a web page."
+      },
+      "hard": {
+        "easy": "Spreading the incoming traffic across several machines means no single one has to handle everything, and the site can keep running even if one goes down.",
+        "medium": "Sharing that incoming traffic out across a group of machines, rather than one, means the whole system can handle more visitors and shrugs off a single failure more easily.",
+        "hard": "Think about spreading a large crowd of visitors across several ticket booths, instead of forcing everyone through just one."
+      }
+    }
+  },
+  {
+    "topic": "JSON and XML (data formats)",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is JSON primarily used for?",
+      "options": [
+        {
+          "text": "Representing structured data, such as key-value pairs and lists, in a text-based format that's easy for both humans and programs to read",
+          "isCorrect": true,
+          "feedback": "Correct -- JSON (JavaScript Object Notation) is a widely used, lightweight format for representing and exchanging structured data."
+        },
+        {
+          "text": "Displaying visual images directly inside a web browser",
+          "isCorrect": false,
+          "feedback": "JSON is a text-based data format for representing structured data -- it isn't a format for displaying images directly."
+        },
+        {
+          "text": "Physically connecting a computer to a network router",
+          "isCorrect": false,
+          "feedback": "JSON is a data representation format, entirely unrelated to physically connecting hardware to a network."
+        },
+        {
+          "text": "Encrypting a password before it's stored",
+          "isCorrect": false,
+          "feedback": "JSON is about REPRESENTING structured data in a readable format -- it isn't itself an encryption mechanism for protecting passwords."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "XML and JSON are both commonly used to represent structured data, especially in the context of exchanging data between different systems. What is a general similarity between them?",
+      "options": [
+        {
+          "text": "Both are text-based formats that can represent structured data using a nested or hierarchical arrangement of elements or key-value pairs",
+          "isCorrect": true,
+          "feedback": "Correct -- despite differing in their specific syntax, both formats share the broader goal of representing structured, often hierarchical data in a way that's readable across different systems and programming languages."
+        },
+        {
+          "text": "Both formats can only be used to store a single number and nothing else",
+          "isCorrect": false,
+          "feedback": "Both XML and JSON are capable of representing much richer, more complex structured data than just a single number -- they can represent nested collections of various data types."
+        },
+        {
+          "text": "Both formats require a specialized, dedicated physical computer to be read by any program",
+          "isCorrect": false,
+          "feedback": "XML and JSON can be read by ordinary software running on standard computers -- neither requires any specialized, dedicated hardware."
+        },
+        {
+          "text": "Both formats are exclusively used for storing video files",
+          "isCorrect": false,
+          "feedback": "Neither XML nor JSON is a video file format -- they're both text-based formats for representing structured data like key-value pairs, lists, or hierarchical elements."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why has JSON become especially popular for exchanging data in many modern web applications, particularly compared to XML in certain contexts?",
+      "options": [
+        {
+          "text": "JSON's syntax is often considered more compact and simpler to read and generate, and it maps very naturally onto common data structures used in many programming languages, like objects and arrays",
+          "isCorrect": true,
+          "feedback": "Correct -- this relative simplicity and natural fit with common programming data structures are frequently cited reasons for JSON's widespread adoption in many modern web APIs."
+        },
+        {
+          "text": "Because JSON is the only data format capable of representing text at all",
+          "isCorrect": false,
+          "feedback": "Both JSON and XML, among many other formats, are fully capable of representing text data -- JSON's popularity isn't due to being uniquely capable of representing text."
+        },
+        {
+          "text": "Because XML has been made completely illegal to use in modern web development",
+          "isCorrect": false,
+          "feedback": "XML remains a legitimate, still widely used data format in many contexts -- it hasn't been made illegal; JSON's popularity is about practical preferences around simplicity and ease of use, not any legal restriction on XML."
+        },
+        {
+          "text": "Because JSON files are always physically smaller in storage size than any other file on a computer",
+          "isCorrect": false,
+          "feedback": "JSON's typical compactness compared to XML in many cases is a common observation, but that doesn't mean a JSON file is always smaller than literally any other file on a computer -- file size depends heavily on the specific content involved."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This format writes out organized data, like lists and labeled values, as plain text that's simple for both people and programs to follow.",
+        "medium": "This format represents structured data, like key-value pairs and lists, in a way that's easy for both humans and programs to read.",
+        "hard": "Think about a lightweight, text-based way to represent organized information, like a list of key-value pairs."
+      },
+      "medium": {
+        "easy": "Even though they look different on the page, both are plain-text ways of laying out data with a nested, layered organization.",
+        "medium": "Both are text-based and can represent data hierarchically, even though their specific syntax differs quite a bit.",
+        "hard": "Think about what these two formats share in common, despite looking quite different on the page."
+      },
+      "hard": {
+        "easy": "It tends to be shorter to write and lines up naturally with the objects and arrays already used in most programming languages.",
+        "medium": "A more compact, simpler syntax, along with a natural fit to common programming data structures, is frequently cited as the reason for this format's rise in popularity.",
+        "hard": "Think about which format tends to feel shorter and simpler to both write by hand and generate automatically."
+      }
+    }
+  },
+  {
+    "topic": "the Document Object Model (DOM)",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does the Document Object Model (DOM) generally represent?",
+      "options": [
+        {
+          "text": "A structured, tree-like representation of a web page's HTML content that a browser builds and that programs (like JavaScript) can interact with",
+          "isCorrect": true,
+          "feedback": "Correct -- the DOM gives a program-accessible model of a page's structure, allowing scripts to read and modify the page's content dynamically."
+        },
+        {
+          "text": "A physical model of a computer's internal circuitry",
+          "isCorrect": false,
+          "feedback": "The DOM is a software-level representation of a web page's structure -- it isn't a physical model of computer hardware circuitry."
+        },
+        {
+          "text": "A separate scripting language required in order to write any JavaScript code",
+          "isCorrect": false,
+          "feedback": "The DOM isn't a scripting language itself -- it's the structural representation of the page that a scripting language like JavaScript reads and modifies."
+        },
+        {
+          "text": "A frozen snapshot of a page's original HTML source that never changes after the page loads",
+          "isCorrect": false,
+          "feedback": "The DOM is a LIVE, changeable representation of the page, not a frozen snapshot of the original source -- that's exactly what lets scripts update the page's content after loading."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is the DOM's tree-like structure well suited to representing an HTML page's nested elements?",
+      "options": [
+        {
+          "text": "Because HTML elements are often nested inside one another, and a tree structure naturally captures those parent-child relationships between elements",
+          "isCorrect": true,
+          "feedback": "Correct -- an element containing other elements maps directly onto a parent node having child nodes in a tree, mirroring HTML's own nested structure closely."
+        },
+        {
+          "text": "Because a tree structure is the only data structure that a computer is capable of storing in memory",
+          "isCorrect": false,
+          "feedback": "Computers can and do use many different data structures beyond trees -- a tree specifically fits well here because it directly mirrors HTML's own natural nested, parent-child structure."
+        },
+        {
+          "text": "Because a tree structure is required before a browser is able to load any CSS styling at all",
+          "isCorrect": false,
+          "feedback": "A browser can apply CSS without that being the reason for a tree-based DOM -- the tree structure exists to represent HTML's nested relationships, not as a precondition for loading styles."
+        },
+        {
+          "text": "Because a tree structure prevents a web page from ever being modified after it loads",
+          "isCorrect": false,
+          "feedback": "The DOM's tree structure is actually part of what ALLOWS a page to be dynamically modified after loading, for instance via JavaScript -- it doesn't prevent modification."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why does dynamically modifying the DOM using JavaScript (such as adding, removing, or changing elements) allow a web page to update its content without requiring a full page reload from the server?",
+      "options": [
+        {
+          "text": "Because the DOM is the browser's own in-memory representation of the page, changes made directly to it are immediately reflected in what's displayed, without needing to re-fetch and reparse the entire page from the server",
+          "isCorrect": true,
+          "feedback": "Correct -- this ability to directly manipulate the in-memory page representation is foundational to how many modern, dynamic, interactive web applications update their content smoothly without needing full page reloads."
+        },
+        {
+          "text": "Because the DOM only updates once the page's original HTML file has finished re-downloading from the server",
+          "isCorrect": false,
+          "feedback": "DOM updates happen immediately in the browser's own memory -- they don't require waiting for the page's original HTML file to re-download from the server."
+        },
+        {
+          "text": "Because only the page's original author is allowed to write JavaScript that modifies the DOM",
+          "isCorrect": false,
+          "feedback": "Any script permitted to run on the page, regardless of who wrote it, can modify the DOM -- it isn't restricted to only the page's original author."
+        },
+        {
+          "text": "Because modifying the DOM requires the entire website to be rewritten in a completely different programming language",
+          "isCorrect": false,
+          "feedback": "Modifying the DOM is typically done using JavaScript operating on the browser's existing in-memory page representation -- it doesn't require rewriting the website in a different language."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "The browser builds this branching, tree-shaped map of a page's HTML, and scripts like JavaScript can reach in and change it.",
+        "medium": "This structured, tree-like representation of a page's HTML content can be read and interacted with by programs like JavaScript.",
+        "hard": "Think about a browser's internal, structured mental map of everything on a web page, which a script can read and change."
+      },
+      "medium": {
+        "easy": "Elements sitting inside other elements naturally map onto branches and sub-branches, which is exactly the shape this kind of structure is built for.",
+        "medium": "Elements nested inside other elements map naturally onto a parent-and-child relationship, which a tree structure is well suited to represent.",
+        "hard": "Think about elements sitting inside other elements, much like branches growing off of other branches."
+      },
+      "hard": {
+        "easy": "Because the change happens straight to the browser's own working copy of the page, it shows up instantly without any need to go fetch a fresh copy from the server.",
+        "medium": "Because changes happen directly to the browser's own in-memory version of the page, they show up immediately without needing to refetch anything from the server.",
+        "hard": "Think about editing a document directly on your screen, versus closing it and reopening a freshly downloaded copy from scratch."
+      }
+    }
+  },
+  {
+    "topic": "responsive web design",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general goal of 'responsive web design'?",
+      "options": [
+        {
+          "text": "To make a website's layout adapt smoothly to different screen sizes and devices, such as phones, tablets, and desktop computers",
+          "isCorrect": true,
+          "feedback": "Correct -- responsive design aims to provide a good viewing and interaction experience across a wide range of different-sized screens."
+        },
+        {
+          "text": "To make a website respond to a user's voice commands",
+          "isCorrect": false,
+          "feedback": "Responding to voice commands is a separate feature (voice interaction) -- responsive web design specifically concerns a layout adapting to different screen sizes."
+        },
+        {
+          "text": "To make a website load its content faster by deleting most of its images entirely",
+          "isCorrect": false,
+          "feedback": "Responsive web design is about adapting LAYOUT to different screen sizes -- it isn't specifically about deleting images to speed up loading."
+        },
+        {
+          "text": "To make a website display an identical, fixed-width layout no matter what device it's viewed on",
+          "isCorrect": false,
+          "feedback": "That describes the opposite of responsive design's actual goal -- responsive design specifically adapts the layout, rather than keeping it fixed and identical regardless of device."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a responsively designed website rearrange its layout, such as stacking content vertically, when viewed on a narrow mobile phone screen instead of a wide desktop monitor?",
+      "options": [
+        {
+          "text": "To keep the content readable and usable given the more limited screen width available on a mobile device, rather than forcing the same wide desktop layout onto a much smaller screen",
+          "isCorrect": true,
+          "feedback": "Correct -- adapting the layout to the available screen width, for instance by stacking sections vertically on narrower screens, is a core technique used to keep responsively designed sites usable across a wide range of screen sizes."
+        },
+        {
+          "text": "Because narrow mobile screens are only able to display images, not any text at all",
+          "isCorrect": false,
+          "feedback": "Narrow mobile screens can absolutely display plenty of text -- the layout rearrangement is about making better use of limited width, not a text display limitation."
+        },
+        {
+          "text": "Because a vertically stacked layout takes noticeably longer for a browser to render than a horizontal one",
+          "isCorrect": false,
+          "feedback": "Layout rearrangement for different screens isn't primarily about rendering speed -- it's about keeping content usable and readable at the available screen width."
+        },
+        {
+          "text": "Because responsive design requires every website to look pixel-for-pixel identical no matter what device is used",
+          "isCorrect": false,
+          "feedback": "Responsive design specifically aims for the LAYOUT to ADAPT to different devices, which is the opposite of requiring a rigid, pixel-identical layout across every possible device."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Techniques like flexible grid layouts, scalable images, and 'media queries' (which apply different styling rules based on characteristics like screen width) are commonly used together to build a responsive website. Why is combining multiple such techniques generally more effective than relying on just one alone?",
+      "options": [
+        {
+          "text": "Each technique addresses a different aspect of adapting to varying screen sizes, and together they can handle layout structure, sizing, and conditional styling in a coordinated way across the huge range of real-world device screen sizes",
+          "isCorrect": true,
+          "feedback": "Correct -- no single technique alone typically handles every aspect of responsive adaptation well, which is why combining several complementary approaches together tends to produce a more robust and consistently usable result."
+        },
+        {
+          "text": "Because well-written media queries alone can already handle every screen size, making flexible grids and scalable images unnecessary extra work",
+          "isCorrect": false,
+          "feedback": "Media queries only change styling rules at certain breakpoints -- without flexible grids and scalable images working alongside them, content can still look cramped or oddly sized between those breakpoints."
+        },
+        {
+          "text": "Because combining multiple techniques guarantees a website will load with zero delay on every possible device",
+          "isCorrect": false,
+          "feedback": "Combining these techniques improves how well a layout ADAPTS to different screen sizes, but it doesn't provide an absolute guarantee of zero loading delay on every device, which depends on many other separate factors too."
+        },
+        {
+          "text": "Because relying on just one technique would require rewriting the entire website in a different programming language",
+          "isCorrect": false,
+          "feedback": "None of these techniques require switching programming languages -- the reason to combine them is that each addresses a different aspect of responsive adaptation, not a language limitation."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This approach reshapes a site's layout on the fly so it still works well whether you're on a phone, tablet, or desktop monitor.",
+        "medium": "This approach lets a site's layout reflow itself to fit whatever screen it's currently being viewed on, phone up through desktop.",
+        "hard": "Think about a website's layout gracefully adjusting itself, whether you're viewing it on a tiny phone screen or a huge desktop monitor."
+      },
+      "medium": {
+        "easy": "Squeezing a wide desktop layout onto a narrow phone screen unchanged would make it cramped and hard to use, so the content gets rearranged to still fit comfortably.",
+        "medium": "Rearranging how content stacks keeps things comfortable to read and interact with once there's a lot less horizontal room to work with.",
+        "hard": "Think about why a design that looks fine on a wide screen might feel cramped and awkward squeezed onto a narrow one."
+      },
+      "hard": {
+        "easy": "Each one of these techniques only handles part of the job -- structure, sizing, or conditional styling -- so using them together covers far more ground across the huge range of real devices out there.",
+        "medium": "Each one of these techniques takes on a distinct part of the responsiveness puzzle, and combining them handles layout, sizing, and styling far more thoroughly than any single one alone.",
+        "hard": "Think about needing several different specialized tools, each handling a different part of a bigger overall job, rather than relying on just one tool to do everything."
+      }
+    }
+  },
+  {
+    "topic": "RESTful web services",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'RESTful' web service generally designed around?",
+      "options": [
+        {
+          "text": "Using standard HTTP methods (like GET, POST, PUT, and DELETE) to perform operations on well-defined resources, typically identified by URLs",
+          "isCorrect": true,
+          "feedback": "Correct -- REST (Representational State Transfer) is an architectural style for web services built around these standard, resource-oriented conventions."
+        },
+        {
+          "text": "Requiring every request to be sent using a completely custom, proprietary network protocol unrelated to HTTP",
+          "isCorrect": false,
+          "feedback": "RESTful services are specifically designed to work over standard HTTP, rather than requiring some unrelated custom, proprietary protocol."
+        },
+        {
+          "text": "Storing all of a service's data exclusively in printed paper documents",
+          "isCorrect": false,
+          "feedback": "RESTful web services handle data digitally over a network -- storing everything on printed paper wouldn't be practical or relevant to this concept at all."
+        },
+        {
+          "text": "Preventing a web service from ever being accessed by more than one user at a time",
+          "isCorrect": false,
+          "feedback": "RESTful services are generally designed to support many simultaneous users making requests -- there's no such single-user restriction inherent to the RESTful approach."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In a RESTful API, what is the general significance of using different HTTP methods, such as GET versus POST, when interacting with a resource?",
+      "options": [
+        {
+          "text": "Different HTTP methods typically signal different intended actions, such as GET for retrieving data and POST for creating new data, providing a consistent, predictable convention",
+          "isCorrect": true,
+          "feedback": "Correct -- following these conventions helps make a RESTful API's behavior more predictable and easier for other developers to understand and correctly use."
+        },
+        {
+          "text": "The specific HTTP method used has absolutely no effect on how a RESTful API behaves",
+          "isCorrect": false,
+          "feedback": "The specific HTTP method used is actually quite significant in a well-designed RESTful API -- it conventionally signals the INTENDED ACTION being requested, like retrieving versus creating data."
+        },
+        {
+          "text": "GET requests are used exclusively for deleting data, while POST requests are used exclusively for retrieving data",
+          "isCorrect": false,
+          "feedback": "This reverses the typical conventions -- GET is conventionally used for RETRIEVING data, while methods like DELETE (not GET) are conventionally used for removing it, and POST is typically used for creating new data."
+        },
+        {
+          "text": "Every HTTP method in a RESTful API must always return the exact identical response, regardless of which resource is targeted",
+          "isCorrect": false,
+          "feedback": "Different methods and different targeted resources typically DO produce different, meaningful responses in a well-designed RESTful API -- they aren't expected to always return an identical response regardless of the target."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What does it mean for a RESTful web service to be 'stateless', a commonly cited principle of REST architecture?",
+      "options": [
+        {
+          "text": "Each request from a client to the server must contain all the information needed to understand and process that request, without relying on any stored session context left over from a previous request",
+          "isCorrect": true,
+          "feedback": "Correct -- this statelessness principle can simplify scaling a service across multiple servers, since any server can handle any incoming request without needing shared knowledge of a client's prior interaction history."
+        },
+        {
+          "text": "The service is incapable of storing any data in a database at all",
+          "isCorrect": false,
+          "feedback": "A RESTful service's statelessness principle concerns not relying on stored SESSION context between individual requests -- it doesn't mean the service can't use a database to persistently store its actual underlying resource data."
+        },
+        {
+          "text": "Every request must be completely identical to every other request ever made to the service",
+          "isCorrect": false,
+          "feedback": "Statelessness means each individual request must be self-contained with all needed information -- it doesn't mean every single request across the whole service must be literally identical to one another."
+        },
+        {
+          "text": "The service can only be accessed from a single, specific physical location",
+          "isCorrect": false,
+          "feedback": "Statelessness concerns how individual requests are handled independently -- it has no bearing on restricting access to a single physical location."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It leans on everyday web actions like GET and POST to act on clearly identified resources, each one usually pointed to by its own URL.",
+        "medium": "This architectural style uses standard web methods to act on well-defined resources, typically identified by a URL.",
+        "hard": "Think about using familiar web actions, like fetching or creating something, targeted at specific, clearly identified resources."
+      },
+      "medium": {
+        "easy": "The specific method chosen acts as a signal for what's actually intended -- fetching something that already exists versus creating something brand new.",
+        "medium": "Different methods conventionally signal different intended actions, like retrieving versus creating data, giving a predictable pattern to follow.",
+        "hard": "Think about how different words like 'get' or 'create' hint at different intended actions, even when directed at the same target."
+      },
+      "hard": {
+        "easy": "Each request has to carry everything the server needs to understand it on its own, with no memory of anything from a prior request.",
+        "medium": "Each request must carry all the necessary information itself, without depending on any leftover memory of a previous interaction.",
+        "hard": "Think about a service that has to be told absolutely everything it needs to know, fresh, with every single request, rather than remembering anything from before."
+      }
+    }
+  },
+  {
+    "topic": "ENIAC",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What was ENIAC, a landmark machine in the history of computing?",
+      "options": [
+        {
+          "text": "One of the earliest general-purpose electronic digital computers, completed in the 1940s",
+          "isCorrect": true,
+          "feedback": "Correct -- ENIAC (Electronic Numerical Integrator and Computer) is widely regarded as a milestone in the early history of electronic computing."
+        },
+        {
+          "text": "A modern smartphone operating system",
+          "isCorrect": false,
+          "feedback": "ENIAC was an early electronic computer from the 1940s, an entirely different era and category of technology from a modern smartphone operating system."
+        },
+        {
+          "text": "A programming language commonly used for web development today",
+          "isCorrect": false,
+          "feedback": "ENIAC was a physical computing machine, not a programming language, and it predates modern web development by decades."
+        },
+        {
+          "text": "An early type of computer virus that spread between machines in the 1980s",
+          "isCorrect": false,
+          "feedback": "ENIAC predates computer viruses and the 1980s entirely -- it was a physical computing machine built in the 1940s, not a virus or piece of malicious software."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Compared to a modern computer, what was a notable characteristic of ENIAC's physical size and construction?",
+      "options": [
+        {
+          "text": "It was enormous, filling a large room, and relied on thousands of vacuum tubes rather than the tiny transistors used in modern electronics",
+          "isCorrect": true,
+          "feedback": "Correct -- ENIAC's massive scale and vacuum-tube-based construction highlight just how dramatically computing hardware has since shrunk and evolved."
+        },
+        {
+          "text": "It was small enough to comfortably fit inside a shirt pocket",
+          "isCorrect": false,
+          "feedback": "ENIAC was actually enormous, filling an entire large room -- it was nowhere close to being pocket-sized."
+        },
+        {
+          "text": "It contained no electronic components whatsoever, relying entirely on purely mechanical gears",
+          "isCorrect": false,
+          "feedback": "ENIAC was specifically an ELECTRONIC computer, relying heavily on vacuum tubes, rather than being a purely mechanical, gear-based machine."
+        },
+        {
+          "text": "It ran so hot that it had to be housed in a specially refrigerated warehouse kept below freezing",
+          "isCorrect": false,
+          "feedback": "ENIAC's many vacuum tubes did generate significant heat, but it wasn't housed in a freezing, refrigerated warehouse -- its defining physical trait was its enormous room-filling size and vacuum-tube construction."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is ENIAC often cited as a significant milestone in the transition from earlier mechanical or electromechanical calculating devices to modern electronic computing?",
+      "options": [
+        {
+          "text": "As an early general-purpose electronic digital computer, it demonstrated that electronic components could be used to perform complex, reprogrammable calculations at a scale and speed not achievable with earlier mechanical or electromechanical devices",
+          "isCorrect": true,
+          "feedback": "Correct -- this leap in speed, flexibility, and reliance on electronic (rather than purely mechanical) components helped pave the way for the subsequent rapid development of electronic computing technology."
+        },
+        {
+          "text": "Because ENIAC was the very first calculating device of any kind ever built in human history",
+          "isCorrect": false,
+          "feedback": "Mechanical and electromechanical calculating devices existed well before ENIAC -- ENIAC's significance lies specifically in advancing ELECTRONIC, general-purpose, reprogrammable computing, not in being the first calculating device of any kind ever."
+        },
+        {
+          "text": "Because ENIAC was small enough to be mass-produced immediately for ordinary household use",
+          "isCorrect": false,
+          "feedback": "ENIAC was actually enormous and highly specialized -- it was far from being ready for immediate mass-produced household use; its significance was as an early electronic computing milestone, not for practical size or accessibility."
+        },
+        {
+          "text": "Because ENIAC eliminated the need for any further advances in computing technology afterward",
+          "isCorrect": false,
+          "feedback": "ENIAC was very much an early STEP in the ongoing evolution of computing technology, not an end point -- many further significant advances followed it."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This machine, finished in the 1940s, is remembered as one of the first electronic computers that could be reprogrammed for general use.",
+        "medium": "It's an early landmark in computing history, built in the 1940s to run general-purpose, reprogrammable calculations using electronic components instead of mechanical ones.",
+        "hard": "Think about a massive, room-filling machine from the 1940s, considered a landmark step in the history of computers."
+      },
+      "medium": {
+        "easy": "It took up an entire room and ran on thousands of glowing vacuum tubes, decades before the tiny transistor existed.",
+        "medium": "It relied on thousands of an older kind of electronic component, called vacuum tubes, rather than modern tiny transistors.",
+        "hard": "Think about a machine so large it filled an entire room, built using now long-obsolete electronic components."
+      },
+      "hard": {
+        "easy": "It proved that electronic parts could crunch complex, reprogrammable calculations far faster than any gear-driven or electromechanical machine that came before it.",
+        "medium": "It showed that electronic components could achieve reprogrammable calculations at a scale and speed earlier mechanical devices couldn't match.",
+        "hard": "Think about a leap from gears and mechanical levers to a machine built from electronic components instead."
+      }
+    }
+  },
+  {
+    "topic": "Moore's Law",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does 'Moore's Law' generally describe?",
+      "options": [
+        {
+          "text": "An observation that the number of transistors that can be fit on a computer chip tends to roughly double every couple of years",
+          "isCorrect": true,
+          "feedback": "Correct -- Moore's Law, named after Intel co-founder Gordon Moore, has been used for decades as a general benchmark for the pace of progress in chip technology."
+        },
+        {
+          "text": "A strict legal regulation requiring computer manufacturers to release a new product every year",
+          "isCorrect": false,
+          "feedback": "Moore's Law is an OBSERVATION and general industry trend about chip technology, not a strict, legally enforced regulation."
+        },
+        {
+          "text": "A mathematical proof that computers can never make an error",
+          "isCorrect": false,
+          "feedback": "Moore's Law concerns the pace of transistor density growth in chip manufacturing -- it says nothing about guaranteeing error-free computer behavior."
+        },
+        {
+          "text": "A rule stating that software must always be free of charge",
+          "isCorrect": false,
+          "feedback": "Moore's Law is specifically about hardware transistor density trends -- it has nothing to do with software pricing or licensing costs."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why has Moore's Law often been closely associated with rapid historical improvements in computing power and cost-efficiency?",
+      "options": [
+        {
+          "text": "As more transistors could be packed onto a chip of similar size, it generally became possible to build more powerful and often more cost-efficient processors over time",
+          "isCorrect": true,
+          "feedback": "Correct -- this trend contributed significantly to the historically rapid pace of improvement in computing capability relative to cost over several decades."
+        },
+        {
+          "text": "Because Moore's Law directly guarantees that a specific software program will run without any bugs",
+          "isCorrect": false,
+          "feedback": "Moore's Law concerns HARDWARE transistor density trends -- it says nothing about the presence or absence of bugs in specific software programs."
+        },
+        {
+          "text": "Because Moore's Law requires computer manufacturers to lower their prices by a fixed percentage every single year, by law",
+          "isCorrect": false,
+          "feedback": "Moore's Law is an observed industry TREND regarding transistor density, not a legally mandated pricing requirement forcing a fixed annual price reduction."
+        },
+        {
+          "text": "Because Moore's Law only applies to the size of a computer's physical monitor",
+          "isCorrect": false,
+          "feedback": "Moore's Law specifically concerns transistor density on computer CHIPS -- it has no direct bearing on a monitor's physical screen size."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why have some in the computing industry suggested that Moore's Law, as an ongoing historical trend, may be slowing down or reaching physical limits in recent years?",
+      "options": [
+        {
+          "text": "As transistors have been shrunk to sizes approaching fundamental physical limits, it has become increasingly difficult and costly to continue packing significantly more of them onto a chip at the previous historical pace",
+          "isCorrect": true,
+          "feedback": "Correct -- this has led to increased industry focus on other approaches for continuing performance improvements, such as specialized chip designs and architectural innovations, rather than relying solely on ever-shrinking transistor size."
+        },
+        {
+          "text": "Because Moore's Law was only ever intended to apply for exactly ten years total, by its original definition",
+          "isCorrect": false,
+          "feedback": "Moore's Law's original observation wasn't framed as a strict ten-year-only prediction -- it was an ongoing trend that held for many decades; concerns about slowing relate to approaching PHYSICAL manufacturing limits, not an originally stated fixed time cutoff."
+        },
+        {
+          "text": "Because computer chip manufacturers stopped producing any new chips entirely after a certain year",
+          "isCorrect": false,
+          "feedback": "Chip manufacturers have continued actively producing new chips -- the slowing concern is specifically about the historical PACE of transistor density growth becoming harder to sustain, not a complete stop in chip production."
+        },
+        {
+          "text": "Because Moore's Law has been legally banned by international regulators",
+          "isCorrect": false,
+          "feedback": "There's no legal ban on Moore's Law -- it's an observed industry trend, and concerns about its slowing relate to genuine physical and manufacturing challenges, not any legal prohibition."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Roughly speaking, the number of tiny switches manufacturers can cram onto a single chip tends to double at a fairly predictable pace, about every two years or so.",
+        "medium": "This observation is about how many of those tiny switches fit on a chip roughly doubling on a fairly regular schedule.",
+        "hard": "Think about a well-known observation about how densely packed a chip's tiny components tend to become over time."
+      },
+      "medium": {
+        "easy": "Squeezing more of these tiny components into roughly the same chip footprint is what let manufacturers keep building faster, cheaper processors generation after generation.",
+        "medium": "Cramming more of those components onto a chip of about the same size is generally what let each new generation of processors get faster and cheaper.",
+        "hard": "Think about how squeezing more tiny components onto the same size chip could make that chip more powerful."
+      },
+      "hard": {
+        "easy": "Transistors have shrunk close to the physical size where the laws of materials science start pushing back, making it far more expensive and difficult to keep cramming in more of them at the old pace.",
+        "medium": "Once components shrink down near the physical limits of the materials involved, squeezing meaningfully more of them onto a chip gets a lot harder and pricier.",
+        "hard": "Think about trying to squeeze components that are already extremely tiny into an even smaller space, and running into real physical constraints."
+      }
+    }
+  },
+  {
+    "topic": "the first computer bug",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What popular computing anecdote involves an actual moth being found inside an early computer?",
+      "options": [
+        {
+          "text": "A moth was found stuck in a relay of an early computer, and the incident is popularly associated with the origin of the term 'bug' for a computer problem",
+          "isCorrect": true,
+          "feedback": "Correct -- this famous anecdote, often associated with pioneering computer scientist Grace Hopper's team, is commonly retold as an early, literal example of a computer 'bug'."
+        },
+        {
+          "text": "A moth was used as an early replacement part for a broken computer keyboard",
+          "isCorrect": false,
+          "feedback": "The popular anecdote involves a moth causing a malfunction by getting stuck in the machine's hardware, not being deliberately used as a replacement keyboard part."
+        },
+        {
+          "text": "A moth was the mascot chosen for the first computer programming language",
+          "isCorrect": false,
+          "feedback": "The famous moth anecdote is about an actual physical insect found causing a hardware malfunction, not about a mascot chosen for a programming language."
+        },
+        {
+          "text": "A moth was used to test the very first computer mouse",
+          "isCorrect": false,
+          "feedback": "The famous anecdote is about a moth found stuck in an early computer's relay hardware, not about testing a computer mouse (an invention that came along later)."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is this famous 'moth in the machine' anecdote often cited when discussing the origin of the term 'bug' for a software or hardware problem?",
+      "options": [
+        {
+          "text": "It's often cited as a memorable, literal instance of an actual physical insect causing a malfunction, which is popularly connected to the term 'bug' being used for a technical problem",
+          "isCorrect": true,
+          "feedback": "Correct -- while the general use of 'bug' to describe a technical glitch actually predates this specific incident, the anecdote remains a popular, illustrative story often associated with the term's history."
+        },
+        {
+          "text": "Because it definitively proves that the word 'bug' was invented at that exact moment, with no earlier usage of the term whatsoever",
+          "isCorrect": false,
+          "feedback": "Historical evidence suggests the term 'bug' for a technical glitch was already in some earlier use before this specific incident -- the anecdote is popularly retold, but it isn't proof of the term's absolute very first coinage."
+        },
+        {
+          "text": "Because it shows that computers from that era were incapable of being affected by insects at all",
+          "isCorrect": false,
+          "feedback": "The anecdote actually demonstrates the OPPOSITE -- that an actual insect could and did physically interfere with an early computer's hardware, causing a malfunction."
+        },
+        {
+          "text": "Because it was the very first time any computer had ever malfunctioned for any reason",
+          "isCorrect": false,
+          "feedback": "Computers had certainly experienced other kinds of malfunctions before this specific incident -- the anecdote is notable for being a memorable, LITERAL instance involving an actual insect, not the first malfunction of any kind."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Given that the term 'bug' for a technical malfunction appears to have been used informally before the famous moth incident, why does that anecdote remain such a persistently popular story in computing history?",
+      "options": [
+        {
+          "text": "Because it provides a vivid, literal, and easily memorable image directly connecting the metaphorical term 'bug' to an actual physical insect, making for a particularly compelling and often-retold story regardless of the term's earlier informal origins",
+          "isCorrect": true,
+          "feedback": "Correct -- a good story with a concrete, tangible image can often become more culturally memorable and widely repeated than a more abstract or less vivid account of a term's actual gradual origin."
+        },
+        {
+          "text": "Because computing historians agree it is the only possible explanation for the term's origin, with no other earlier usage having ever existed",
+          "isCorrect": false,
+          "feedback": "Historians generally acknowledge some earlier informal use of the term -- the anecdote's popularity persists for its memorable, vivid quality, not because it's considered the definitive, sole origin with no earlier usage."
+        },
+        {
+          "text": "Because the anecdote describes an event that caused permanent, catastrophic damage to the entire field of computing",
+          "isCorrect": false,
+          "feedback": "The anecdote describes a specific hardware malfunction that was found and addressed -- it isn't remembered for causing some permanent, catastrophic damage to computing as a field."
+        },
+        {
+          "text": "Because the anecdote is required reading material mandated by law in computer science education",
+          "isCorrect": false,
+          "feedback": "There's no legal mandate requiring this anecdote be taught -- it's popular simply because it's a memorable, illustrative story often shared informally in computing history and education."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "The story involves a real insect getting physically trapped inside an early machine's switching hardware, which people link to why we call glitches 'bugs.'",
+        "medium": "This anecdote involves an actual moth found stuck in an early computer's hardware, connected to the origin of a familiar term.",
+        "hard": "Think about a real insect getting stuck inside an early computer's hardware, causing an actual malfunction."
+      },
+      "medium": {
+        "easy": "Having a real, physical insect at the center of the story gives the term a concrete image to point to, which is likely why people keep repeating it, even though the word was probably already in casual use beforehand.",
+        "medium": "This story works because it ties an actual physical bug directly to a malfunction, giving the familiar term a concrete, memorable anchor.",
+        "hard": "Think about a vivid, literal example connecting a common word for a technical glitch to something you could actually hold in your hand."
+      },
+      "hard": {
+        "easy": "A story with an actual bug you can picture crawling into a machine simply sticks in people's minds better than a vaguer account of a word slowly coming into use.",
+        "medium": "A tangible, easily visualized connection between the term and an actual physical insect makes for a much more compelling and often-repeated story.",
+        "hard": "Think about why a vivid, concrete story often gets remembered and retold far more than a more abstract, gradual explanation."
+      }
+    }
+  },
+  {
+    "topic": "ARPANET and the early internet",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What was ARPANET?",
+      "options": [
+        {
+          "text": "An early computer network, funded by a U.S. government agency, widely regarded as a foundational precursor to the modern internet",
+          "isCorrect": true,
+          "feedback": "Correct -- ARPANET, developed starting in the late 1960s, pioneered key networking concepts that would later underpin the modern internet."
+        },
+        {
+          "text": "A modern social media platform launched in the 2010s",
+          "isCorrect": false,
+          "feedback": "ARPANET is a historical computer network from the late 1960s, an entirely different era of technology from a modern 2010s social media platform."
+        },
+        {
+          "text": "A brand of personal computer sold in stores today",
+          "isCorrect": false,
+          "feedback": "ARPANET was a research computer network, not a brand of personal computer hardware sold today."
+        },
+        {
+          "text": "A programming language used to build modern websites",
+          "isCorrect": false,
+          "feedback": "ARPANET was an early computer NETWORK, not a programming language used for building websites."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is ARPANET often considered historically significant in relation to the modern internet?",
+      "options": [
+        {
+          "text": "It helped pioneer and demonstrate key networking concepts, such as packet switching, that would later become foundational to how the modern internet operates",
+          "isCorrect": true,
+          "feedback": "Correct -- many of the fundamental technical ideas underlying today's internet trace their roots back to research and experimentation carried out on ARPANET."
+        },
+        {
+          "text": "Because ARPANET is still the exact network used to run the entire modern internet today, completely unchanged",
+          "isCorrect": false,
+          "feedback": "The modern internet has evolved dramatically since ARPANET's early days -- ARPANET's significance lies in PIONEERING foundational concepts, not in being the literal, unchanged network still in operation today."
+        },
+        {
+          "text": "Because ARPANET was the very first computing device ever built in human history",
+          "isCorrect": false,
+          "feedback": "ARPANET was a NETWORK connecting existing computers -- it wasn't itself the very first computing device ever built, a distinction belonging to earlier standalone computing machines."
+        },
+        {
+          "text": "Because ARPANET was created specifically to sell products directly to individual consumers",
+          "isCorrect": false,
+          "feedback": "ARPANET originated as a government-funded research network project -- it wasn't created as a direct consumer retail product."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might the decentralized, packet-switching-based design pioneered in networks like ARPANET have been considered advantageous, compared to relying on a single centralized communication hub?",
+      "options": [
+        {
+          "text": "A decentralized approach could potentially continue functioning even if some individual parts of the network failed or were disrupted, since traffic could be rerouted rather than depending entirely on one single central point",
+          "isCorrect": true,
+          "feedback": "Correct -- this resilience consideration is often cited as part of the motivation behind researching more distributed, packet-switched networking approaches during this early era."
+        },
+        {
+          "text": "Because a decentralized network design guarantees that no computer connected to it can ever malfunction",
+          "isCorrect": false,
+          "feedback": "A decentralized design doesn't prevent individual computers from malfunctioning -- its advantage is in the network's overall RESILIENCE and ability to reroute around disruptions, not eliminating individual hardware failures altogether."
+        },
+        {
+          "text": "Because a decentralized network requires significantly fewer total computers to be connected to it overall",
+          "isCorrect": false,
+          "feedback": "The number of computers connected to a network isn't fundamentally tied to whether its design is centralized or decentralized -- the advantage discussed here is about resilience against disruption, not reducing the total number of connected computers."
+        },
+        {
+          "text": "Because a decentralized network design was significantly cheaper to build than any alternative network design at the time",
+          "isCorrect": false,
+          "feedback": "The core advantage discussed for this kind of decentralized design was RESILIENCE against disruption -- cost considerations were a separate factor, not the primary point being highlighted here."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Funded by a government research agency decades ago, this network is widely credited as the direct ancestor of the internet we use today.",
+        "medium": "This decades-old network is generally considered one of the key building blocks that the internet we use today grew out of.",
+        "hard": "Think about a pioneering project, once dismissed by some as just a research experiment, that quietly ended up becoming the seed later generations of technology would build directly on top of."
+      },
+      "medium": {
+        "easy": "It was used to test out and prove ideas like splitting data into small pieces for transmission, ideas that later became standard across the whole internet.",
+        "medium": "It helped pioneer and demonstrate foundational networking concepts, like breaking data into pieces for transmission, that later became standard.",
+        "hard": "Think about foundational technical ideas being tested and proven out early, well before they became standard practice everywhere."
+      },
+      "hard": {
+        "easy": "If one part of the network went down, traffic could simply be sent a different way instead of the whole system depending on a single point that could fail.",
+        "medium": "Being able to reroute traffic around a disrupted part of the network, rather than depending on one single central point, is the key resilience advantage here.",
+        "hard": "Think about a web of many interconnected paths versus a single hub that everything has to pass through."
+      }
+    }
+  },
+  {
+    "topic": "the punch card",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What was a 'punch card', historically used in early computing?",
+      "options": [
+        {
+          "text": "A card with holes punched in specific positions, used to store and input data or instructions into early computing machines",
+          "isCorrect": true,
+          "feedback": "Correct -- punch cards were a widely used method for feeding data and program instructions into computers and earlier tabulating machines for many decades."
+        },
+        {
+          "text": "A modern credit card used for online shopping",
+          "isCorrect": false,
+          "feedback": "A punch card is a historical data-input medium using physically punched holes, an entirely different concept from a modern credit card."
+        },
+        {
+          "text": "A pre-printed paper form that a human operator read aloud so another operator could manually retype the data",
+          "isCorrect": false,
+          "feedback": "That describes manual dictation-style data entry -- a punch card instead physically encoded the data itself, through a pattern of punched holes a machine could sense directly."
+        },
+        {
+          "text": "A magnetic strip card that stored data as patterns of magnetized regions, similar to a modern credit card",
+          "isCorrect": false,
+          "feedback": "That describes magnetic storage media, which came later -- a punch card instead stored data as physical holes punched through paper stock."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How did an early computing machine or tabulating device typically 'read' the information encoded on a punch card?",
+      "options": [
+        {
+          "text": "By detecting the specific pattern of punched holes, often using mechanical or electrical sensing methods, to determine what data or instructions the card represented",
+          "isCorrect": true,
+          "feedback": "Correct -- the precise positions of the holes (or their absence) encoded specific information that the reading mechanism could detect and interpret."
+        },
+        {
+          "text": "By using a modern optical laser scanner identical to those used for barcodes today",
+          "isCorrect": false,
+          "feedback": "While later systems evolved various reading technologies, the classic punch card reading mechanisms were generally based on detecting hole patterns mechanically or electrically, not modern laser barcode scanning technology."
+        },
+        {
+          "text": "By reading small printed digits along one edge of the card that corresponded to each punched value",
+          "isCorrect": false,
+          "feedback": "Punch card readers sensed the holes themselves, mechanically or electrically -- they didn't rely on separately printed digits along an edge."
+        },
+        {
+          "text": "By running a magnet along the card's surface, since punched holes were thought to change the card's magnetic properties",
+          "isCorrect": false,
+          "feedback": "Plain punch cards weren't magnetic -- readers sensed the physical presence or absence of holes directly, mechanically or with light/electrical contacts."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why did punch cards eventually fall out of common use as a primary method for programming and data entry, as computing technology advanced?",
+      "options": [
+        {
+          "text": "Newer input and storage methods, such as magnetic storage media and interactive terminals, offered significantly faster, more flexible, and more convenient ways to enter and store data and instructions",
+          "isCorrect": true,
+          "feedback": "Correct -- these more advanced alternatives to physically punched cards offered substantial practical improvements in speed, flexibility, and convenience for both programmers and computer operators."
+        },
+        {
+          "text": "Because manufacturing enough punch cards for increasingly large, complex programs became slow and expensive",
+          "isCorrect": false,
+          "feedback": "Card readers could still physically fit into newer machines -- the real shift was that other input and storage methods became faster, cheaper, and more flexible."
+        },
+        {
+          "text": "Because each punch card could only be used one single time before it had to be thrown away",
+          "isCorrect": false,
+          "feedback": "Punch cards actually stored many bits of information across their many hole positions, not just one -- reusability wasn't really the reason they fell out of favor."
+        },
+        {
+          "text": "Because computers eventually lost the physical ability to read any card-based input at all",
+          "isCorrect": false,
+          "feedback": "Computers didn't lose the physical ability to read cards -- newer input and storage methods, like magnetic media and interactive terminals, simply became faster and more convenient alternatives that were adopted instead."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Picture a rectangular card where rows of tiny punched holes, in exact positions, actually held the information early machines needed to run.",
+        "medium": "This object stored information as a fixed pattern etched into a physical card, which a machine could later scan to recover what had been recorded.",
+        "hard": "Think about how you might encode information as a simple physical pattern, like a series of small marks, that a machine could later sense and read back."
+      },
+      "medium": {
+        "easy": "A reading mechanism sensed exactly where holes were present versus absent, mechanically or electrically, to figure out what information the card carried.",
+        "medium": "A sensor mechanism -- mechanical or electrical -- picks up on that pattern of holes and translates it back into the information it represents.",
+        "hard": "Think about a machine physically feeling its way across the card, picking up on some kind of on/off pattern as it moves through."
+      },
+      "hard": {
+        "easy": "Once magnetic tapes, disks, and interactive terminals came along, they were simply quicker and more convenient than feeding cards through a reader.",
+        "medium": "Newer methods, like magnetic storage and interactive terminals, offered considerably faster and more flexible alternatives.",
+        "hard": "Think about newer, faster, more convenient ways of getting information into a computer eventually coming along."
+      }
+    }
+  },
+  {
+    "topic": "the invention of the transistor",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'transistor', a foundational invention in the history of electronics and computing?",
+      "options": [
+        {
+          "text": "A small semiconductor device that can amplify or switch electronic signals, forming a basic building block of modern electronic circuits",
+          "isCorrect": true,
+          "feedback": "Correct -- transistors replaced older, bulkier technologies like vacuum tubes, enabling dramatically smaller, more efficient, and more reliable electronic devices."
+        },
+        {
+          "text": "A larger, external cooling component used to keep vacuum tubes from overheating",
+          "isCorrect": false,
+          "feedback": "That describes a cooling accessory, not the transistor -- a transistor is the semiconductor component itself that amplifies or switches a signal."
+        },
+        {
+          "text": "An early type of computer memory chip used only for permanent, unchangeable storage",
+          "isCorrect": false,
+          "feedback": "That describes a kind of read-only memory, not a transistor -- a transistor amplifies or switches electronic signals rather than storing fixed data."
+        },
+        {
+          "text": "A specialized cable used to connect two vacuum-tube-based computers together",
+          "isCorrect": false,
+          "feedback": "That describes a physical connector, not a transistor -- a transistor is itself a semiconductor device that amplifies or switches signals, not a cable."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why was the invention of the transistor considered such a major advance over the earlier vacuum tubes commonly used in electronic devices?",
+      "options": [
+        {
+          "text": "Transistors are generally much smaller, more energy-efficient, more reliable, and longer-lasting than vacuum tubes, which were comparatively bulky, power-hungry, and prone to burning out",
+          "isCorrect": true,
+          "feedback": "Correct -- these practical advantages made transistors far better suited to building the smaller, more powerful, and more reliable electronic devices, including computers, that followed."
+        },
+        {
+          "text": "Because transistors could be manufactured using far cheaper raw materials than vacuum tubes required",
+          "isCorrect": false,
+          "feedback": "Cost of raw materials wasn't the main driver -- the key advantages were size, energy efficiency, reliability, and longevity compared to vacuum tubes."
+        },
+        {
+          "text": "Because transistors could switch on and off far faster than any mechanical relay could physically move",
+          "isCorrect": false,
+          "feedback": "Switching speed versus mechanical relays is real, but it isn't the main comparison being drawn here -- the key advantages were size, efficiency, reliability, and longevity versus vacuum tubes specifically."
+        },
+        {
+          "text": "Because vacuum tubes were actually more compact and used less power than transistors of the same era",
+          "isCorrect": false,
+          "feedback": "This has it backwards -- transistors were the smaller, more energy-efficient, and more reliable technology, which is exactly why they replaced vacuum tubes."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How did the transistor's invention help pave the way for the later development of the integrated circuit and, eventually, the modern microprocessor?",
+      "options": [
+        {
+          "text": "Because transistors were so much smaller and more efficient than vacuum tubes, it became practical to combine many of them together on a single small chip, a key step toward the densely packed integrated circuits used in modern processors",
+          "isCorrect": true,
+          "feedback": "Correct -- this progression, from individual, room-sized vacuum tube components toward compact, densely integrated transistor-based chips, is central to the historical trajectory of shrinking, increasingly powerful computing hardware."
+        },
+        {
+          "text": "Because transistors required a completely different, incompatible manufacturing process that most factories couldn't adopt for decades",
+          "isCorrect": false,
+          "feedback": "Manufacturing did have to adapt, but factories transitioned much faster than 'decades' -- the real story is that smaller, more efficient transistors made densely packing many components together practical."
+        },
+        {
+          "text": "Because larger vacuum tubes were actually easier to wire together into complex circuits than smaller transistors were",
+          "isCorrect": false,
+          "feedback": "It's the opposite -- transistors' small size and efficiency are exactly what made packing many of them together into complex circuits practical, unlike bulkier vacuum tubes."
+        },
+        {
+          "text": "Because the transistor was primarily intended to replace mechanical relays, not vacuum tubes, in early computer designs",
+          "isCorrect": false,
+          "feedback": "Transistors mainly displaced vacuum tubes, not mechanical relays -- their smaller size and efficiency enabled packing many of them onto a single chip, paving the way for integrated circuits."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is the small semiconductor part that either strengthens or switches on/off an electrical signal, and it's the fundamental component practically all modern circuits are made of.",
+        "medium": "This device can control or boost an electrical signal at a tiny scale, and modern electronics are built up from enormous numbers of them.",
+        "hard": "Think about a tiny component that can act like a switch or a volume knob for electrical signals, small enough to pack millions of them onto a single chip."
+      },
+      "medium": {
+        "easy": "It ran cooler, lasted longer, and took up a fraction of the space of the bulky, power-hungry component it replaced.",
+        "medium": "This newer component was generally much smaller, more efficient, and more reliable than the bulkier, more power-hungry older technology it replaced.",
+        "hard": "Think about a bulky, power-hungry older component being replaced by something much smaller and far more efficient."
+      },
+      "hard": {
+        "easy": "Because each one shrank down so much, engineers could finally fit huge numbers of them together on one small chip.",
+        "medium": "Their shrinking size and improved efficiency is what made it realistic to gang huge numbers of them together on a single small chip.",
+        "hard": "Think about how much easier it becomes to pack many tiny components together onto one small chip, once each individual component shrinks dramatically in size."
+      }
+    }
+  },
+  {
+    "topic": "the personal computer revolution",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does the 'personal computer revolution' generally refer to?",
+      "options": [
+        {
+          "text": "The period, especially from the 1970s into the 1980s, when computers became small, affordable, and accessible enough for individual and home use, rather than being confined mostly to large institutions",
+          "isCorrect": true,
+          "feedback": "Correct -- earlier computers were typically enormous, expensive machines used mainly by large organizations, and this shift brought computing into homes, schools, and small businesses."
+        },
+        {
+          "text": "The invention of the very first calculating device in human history",
+          "isCorrect": false,
+          "feedback": "The personal computer revolution refers specifically to computers becoming widely ACCESSIBLE for individual and home use -- it isn't about the invention of the very first calculating device ever, which came much earlier."
+        },
+        {
+          "text": "A recent event that occurred within just the last few years",
+          "isCorrect": false,
+          "feedback": "The personal computer revolution is generally associated with the 1970s and 1980s, a much earlier historical period, not a recent event from just the last few years."
+        },
+        {
+          "text": "A political movement focused on changing a country's government structure",
+          "isCorrect": false,
+          "feedback": "The personal computer revolution refers to a shift in computing technology and accessibility, not a political movement about government structure."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why did advances like the invention of the microprocessor play a significant role in enabling the personal computer revolution?",
+      "options": [
+        {
+          "text": "A microprocessor packed much of a computer's core processing capability onto a single, relatively small and increasingly affordable chip, making it far more practical to build compact, individually affordable computers",
+          "isCorrect": true,
+          "feedback": "Correct -- before the microprocessor, achieving similar processing capability generally required much larger, more expensive, and less practical arrangements of components."
+        },
+        {
+          "text": "Because the microprocessor made computers require significantly MORE physical space than before",
+          "isCorrect": false,
+          "feedback": "Microprocessors actually enabled computers to become dramatically SMALLER and more compact -- they reduced, rather than increased, the physical space needed for meaningful processing capability."
+        },
+        {
+          "text": "Because microprocessors made computers illegal to sell to large businesses and institutions",
+          "isCorrect": false,
+          "feedback": "Microprocessors didn't restrict sales to any particular kind of customer -- they simply made it practical to build smaller, more affordable computers suitable for wider adoption across individuals, homes, and businesses alike."
+        },
+        {
+          "text": "Because the microprocessor eliminated the need for a computer to use any software",
+          "isCorrect": false,
+          "feedback": "Computers built around microprocessors still very much require software to actually function and be useful -- the microprocessor's key role was in processing hardware, not eliminating the need for software."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might the personal computer revolution be considered significant beyond just the underlying hardware advances, in terms of its broader impact on how computing technology was used and perceived?",
+      "options": [
+        {
+          "text": "It fundamentally shifted computing from being a specialized tool used mainly by large institutions and trained professionals toward something ordinary individuals could own, learn, and use directly for a wide range of everyday personal or educational purposes",
+          "isCorrect": true,
+          "feedback": "Correct -- this broadening of who could access and directly use computing technology had far-reaching cultural and economic effects, well beyond the purely technical hardware improvements that enabled it."
+        },
+        {
+          "text": "Because personal computers immediately replaced every large institutional computing system in existence overnight",
+          "isCorrect": false,
+          "feedback": "Large institutional computing systems continued to exist and evolve alongside the rise of personal computers -- the personal computer revolution didn't immediately eliminate institutional computing altogether."
+        },
+        {
+          "text": "Because it was a purely legal and regulatory change, with no accompanying technological developments involved at all",
+          "isCorrect": false,
+          "feedback": "The personal computer revolution was fundamentally driven by real technological advances, like the microprocessor, alongside broader shifts in accessibility and use -- it wasn't purely a legal or regulatory change with no technology involved."
+        },
+        {
+          "text": "Because it caused computers to stop being used for any business purposes whatsoever",
+          "isCorrect": false,
+          "feedback": "Personal computers actually became widely adopted for various BUSINESS purposes as well as personal ones -- the shift didn't eliminate business use, but rather broadened computing's reach across many different contexts."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "During roughly the 1970s and 80s, computers finally shrank down in size and price enough for ordinary people to own one at home.",
+        "medium": "This stretch of time is marked by computers finally becoming compact and cheap enough that individuals, not just institutions, could reasonably own one.",
+        "hard": "Think about computers shrinking from room-filling institutional machines down to something an ordinary family could actually own at home."
+      },
+      "medium": {
+        "easy": "Cramming most of a computer's core processing power onto one steadily cheaper chip is exactly what made a small, affordable, individually owned machine possible.",
+        "medium": "A single, increasingly affordable chip took on most of what used to require a computer's dedicated processing hardware, making a compact machine realistic.",
+        "hard": "Think about shrinking the 'brain' of a computer down small enough, and cheap enough, that it could fit into a machine meant for one person's desk."
+      },
+      "hard": {
+        "easy": "Ordinary people, not just trained specialists at big institutions, could suddenly own and learn to use a computer themselves.",
+        "medium": "Computing moved out of the exclusive domain of big institutions and specially trained staff, and into the hands of everyday individual users.",
+        "hard": "Think about who could actually own and directly use a computer before this shift, compared to afterward."
+      }
+    }
+  },
+  {
+    "topic": "the Y2K bug",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What was the general concern behind the 'Y2K bug' (the 'year 2000 problem')?",
+      "options": [
+        {
+          "text": "Many older computer systems stored years using only the last two digits, raising fears that the transition from 1999 to 2000 could cause date-related errors or malfunctions",
+          "isCorrect": true,
+          "feedback": "Correct -- this two-digit shortcut meant '00' could potentially be misinterpreted, for instance as 1900 instead of 2000, prompting widespread concern and remediation efforts leading up to the year 2000."
+        },
+        {
+          "text": "A specific, well-known computer virus deliberately designed to spread only during the year 2000",
+          "isCorrect": false,
+          "feedback": "The Y2K bug was a date-handling design LIMITATION in older systems, not a deliberately designed, spreading computer virus."
+        },
+        {
+          "text": "A hardware defect that only affected computer monitors manufactured in the year 2000",
+          "isCorrect": false,
+          "feedback": "The Y2K concern was specifically about how DATES were stored and processed in software and systems, not a hardware defect limited to monitors made in that particular year."
+        },
+        {
+          "text": "A rule requiring all computers worldwide to be replaced at the start of the year 2000",
+          "isCorrect": false,
+          "feedback": "There was no such requirement mandating a worldwide computer replacement -- the actual concern was about how existing systems handled the date transition, prompting many organizations to update or fix their existing software instead."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why did the specific practice of storing calendar years using only two digits (like '99' for 1999) create the underlying risk associated with the Y2K bug?",
+      "options": [
+        {
+          "text": "When the year rolled over from '99' to '00', some systems could misinterpret that '00' as the year 1900 instead of 2000, potentially leading to date-related calculation errors",
+          "isCorrect": true,
+          "feedback": "Correct -- this potential misinterpretation could cause various downstream problems in date-dependent calculations, such as incorrectly computing someone's age or a duration between dates."
+        },
+        {
+          "text": "Because storing years with two digits was against the law in every country",
+          "isCorrect": false,
+          "feedback": "There was no legal prohibition on the practice -- it was a common technical shortcut adopted historically to save storage space, which only later became recognized as a significant risk as the year 2000 approached."
+        },
+        {
+          "text": "Because two-digit years take up significantly more storage space than four-digit years",
+          "isCorrect": false,
+          "feedback": "This reverses the actual motivation -- two-digit years were originally used specifically to SAVE storage space compared to four-digit years, not because they used more space."
+        },
+        {
+          "text": "Because two-digit years are physically incapable of being stored in any computer memory at all",
+          "isCorrect": false,
+          "feedback": "Two-digit years were clearly capable of being stored in memory -- that's precisely why the practice was so common; the actual RISK was about how the resulting truncated year might be misinterpreted after the century rolled over."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Given that the year 2000 ultimately passed without the catastrophic, widespread failures some had feared, what is a reasonable explanation often given for that relatively smooth outcome?",
+      "options": [
+        {
+          "text": "Considerable time, effort, and resources were spent in the years leading up to 2000 identifying and fixing vulnerable systems, which likely helped prevent many of the more serious problems that might otherwise have occurred",
+          "isCorrect": true,
+          "feedback": "Correct -- the extensive remediation effort undertaken beforehand is generally viewed as a major contributing factor to the relatively smooth transition into the year 2000, rather than the risk having simply been overstated with no real basis at all."
+        },
+        {
+          "text": "Because the Y2K bug was purely a hoax that never posed any genuine underlying technical risk in the first place",
+          "isCorrect": false,
+          "feedback": "The underlying technical risk from two-digit year storage was genuine, even if the very worst potential outcomes ultimately didn't materialize -- it wasn't simply a hoax with no real technical basis at all."
+        },
+        {
+          "text": "Because computers were incapable of recognizing the date change from 1999 to 2000 at all",
+          "isCorrect": false,
+          "feedback": "Computers could and did register the date transition -- the actual concern was about how certain systems using two-digit years might have MISINTERPRETED that new date, not an inability to recognize any date change had occurred."
+        },
+        {
+          "text": "Because every computer in the world was replaced with a brand new model immediately before the year 2000",
+          "isCorrect": false,
+          "feedback": "Not every computer was replaced -- many EXISTING systems were instead specifically identified, tested, and patched or fixed to properly handle the date transition, rather than being universally replaced with entirely new hardware."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Because so many systems tracked a year with just its last two digits, there was real worry about what would happen to date calculations once the century flipped over.",
+        "medium": "So many older systems saved space by tracking years with just two digits, which created real worry about how date math would behave once one century gave way to the next.",
+        "hard": "Think about a shortcut that saves space by dropping information a computer assumes it'll never actually need -- and what happens when that assumption turns out to be wrong."
+      },
+      "medium": {
+        "easy": "A system might read that rolled-over '00' as a full century earlier than it actually was, throwing off any calculation that depended on the date.",
+        "medium": "The rollover from '99' to '00' created a risk that some systems might misread that '00' as an earlier century entirely.",
+        "hard": "Think about how a two-digit shortcut for a year could get confused between two very different centuries."
+      },
+      "hard": {
+        "easy": "Years of dedicated work finding and patching at-risk systems ahead of time is generally credited with why things went as smoothly as they did.",
+        "medium": "Considerable time and resources were devoted beforehand to identifying and fixing systems vulnerable to this specific date-related risk.",
+        "hard": "Think about a huge, concentrated effort spent finding and fixing potential problems well before the actual date rollover happened."
+      }
+    }
+  }
+]

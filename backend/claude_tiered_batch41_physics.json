@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of specific heat capacity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does specific heat capacity measure?",
+    "options": [
+      {"text": "The amount of heat energy needed to raise the temperature of a unit mass of a substance by one degree", "isCorrect": true, "feedback": "Correct -- specific heat capacity is a material property describing its resistance to temperature change per unit of heat energy."},
+      {"text": "The total mass of an object", "isCorrect": false, "feedback": "Mass is a separate physical property, not what specific heat capacity measures."},
+      {"text": "The temperature at which a substance boils", "isCorrect": false, "feedback": "Boiling point is a different property from specific heat capacity, which concerns how much energy is needed to change temperature."},
+      {"text": "The speed at which heat travels through a material", "isCorrect": false, "feedback": "That describes thermal conductivity, a different property from specific heat capacity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Water has a much higher specific heat capacity than sand. Why does this explain why sand at the beach can feel scorching hot while nearby ocean water feels comfortably cool, even under the same sunlight?",
+    "options": [
+      {"text": "Since water requires much more energy input to raise its temperature by the same amount, it heats up more slowly than sand under the same solar energy input", "isCorrect": true, "feedback": "Correct -- this large difference in specific heat capacity is exactly why water resists temperature change more than sand does, given equal energy input from sunlight."},
+      {"text": "Sand and water actually absorb the exact same amount of solar energy, but sand simply looks hotter", "isCorrect": false, "feedback": "This isn't just a visual impression -- sand genuinely reaches a higher temperature than water under the same sunlight, due to its lower specific heat capacity."},
+      {"text": "Specific heat capacity doesn't actually have any real effect on how quickly something heats up", "isCorrect": false, "feedback": "Specific heat capacity has a very direct effect on heating rate -- higher specific heat capacity means more resistance to temperature change for a given energy input."},
+      {"text": "Water reflects all sunlight, so it never absorbs any heat energy at all", "isCorrect": false, "feedback": "Water does absorb solar energy -- it's just able to absorb more energy while showing a smaller temperature increase, due to its high specific heat capacity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Coastal regions tend to have milder climates (smaller day-to-night and seasonal temperature swings) than inland regions at similar latitudes. How does water's high specific heat capacity help explain this?",
+    "options": [
+      {"text": "Large bodies of water absorb and release substantial amounts of heat with only small temperature changes, moderating nearby air temperatures throughout the day and across seasons", "isCorrect": true, "feedback": "Correct -- this thermal buffering effect from large water bodies is a key reason coastal climates tend to be milder and less variable than inland climates."},
+      {"text": "Coastal regions have milder climates purely due to their elevation above sea level", "isCorrect": false, "feedback": "Elevation is a separate factor from this phenomenon -- the moderating effect described here specifically comes from water's high specific heat capacity acting as a thermal buffer."},
+      {"text": "Ocean water actually has a lower specific heat capacity than land, causing more extreme coastal temperature swings", "isCorrect": false, "feedback": "This is backwards -- water has a HIGHER specific heat capacity than land/sand, which causes LESS extreme (milder) temperature swings near coastlines, not more."},
+      {"text": "Specific heat capacity has no meaningful connection to regional climate patterns", "isCorrect": false, "feedback": "Specific heat capacity is actually a significant factor in explaining regional climate moderation, particularly the mildness of coastal climates."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property quantifies the energy required per unit mass to achieve a given temperature increase in a substance.", "medium": "This measures how much energy it takes to heat up a certain amount of a material by one degree.", "easy": "This measures how much energy it takes to heat up a material by one degree."},
+    "medium": {"hard": "Compare how much temperature change results per unit of absorbed energy for materials with very different specific heat capacities.", "medium": "Since water needs way more energy to warm up by the same amount, it just doesn't heat up as fast as sand does.", "easy": "Since water needs way more energy to warm up, it just doesn't get as hot as sand does."},
+    "hard": {"hard": "Consider how a large thermal reservoir with high heat capacity can absorb or release significant energy while undergoing only minor temperature fluctuations, buffering the surrounding air.", "medium": "Large amounts of water can soak up or give off a lot of heat while barely changing temperature themselves, which keeps nearby air more stable.", "easy": "Large amounts of water can soak up or give off heat while barely changing temperature, keeping nearby air more stable."}
+  }
+}
+]

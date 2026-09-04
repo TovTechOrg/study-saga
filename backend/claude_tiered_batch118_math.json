@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between mean, median, and mode as measures of central tendency",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The 'median' of a data set is:",
+    "options": [
+      {"text": "The middle value when the data is arranged in order", "isCorrect": true, "feedback": "Correct -- the median is specifically the middle value of an ordered data set (or the average of the two middle values if there's an even count)."},
+      {"text": "The value that appears most frequently in the data set", "isCorrect": false, "feedback": "That describes the MODE, not the median -- the median is specifically the middle value of ordered data, not the most frequent value."},
+      {"text": "The sum of all values divided by the count of values", "isCorrect": false, "feedback": "That describes the MEAN (average), not the median -- the median is specifically the middle value of ordered data, not a sum-based calculation."},
+      {"text": "The difference between the largest and smallest values", "isCorrect": false, "feedback": "That describes the RANGE, not the median -- the median is specifically the middle value of ordered data, not a measure of spread."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For a data set containing a few extreme outliers (like one billionaire's income mixed into a neighborhood income survey), the MEDIAN typically gives a more representative 'typical value' than the MEAN. Why does the median resist the influence of outliers better than the mean?",
+    "options": [
+      {"text": "The mean incorporates the exact numerical value of every data point (including extreme outliers) directly into its sum-based calculation, so one extreme value can dramatically shift the result, while the median only depends on which value occupies the middle POSITION in the ordered list, so an extreme value merely occupying an end position doesn't change which value sits in the middle", "isCorrect": true, "feedback": "Correct -- this distinction between position-based (median) and magnitude-based (mean) calculation explains why the median is considered more 'robust' to outliers, a key reason it's often preferred for skewed data like income."},
+      {"text": "The median would actually be affected MORE severely by outliers than the mean, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- the median is generally LESS affected by outliers than the mean, precisely because of its reliance on position rather than exact magnitude."},
+      {"text": "Outliers have no actual differing effect on the mean compared to the median in any data set", "isCorrect": false, "feedback": "This isn't accurate -- outliers DO affect the mean and median DIFFERENTLY, with the mean being considerably more sensitive to extreme values."},
+      {"text": "The mean only considers the middle position of the data, identical to the median's calculation method", "isCorrect": false, "feedback": "This isn't accurate -- the mean specifically uses the SUM of all values divided by count, a fundamentally different calculation from the median's middle-position approach."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In a strongly right-skewed distribution (like most income or home-price data, with a long tail of high values), the MEAN is typically noticeably HIGHER than the MEDIAN. Explain the underlying mathematical reason for this specific directional relationship.",
+    "options": [
+      {"text": "A long right tail contains relatively few but very large extreme values, which pull the SUM (and therefore the mean, since mean depends directly on sum) substantially upward, while these same extreme values occupy only a few END positions in the ordered list and therefore barely affect which value sits in the MIDDLE position (the median) -- this asymmetric pull specifically raises the mean well above the median", "isCorrect": true, "feedback": "Correct -- this reasoning about how extreme tail values disproportionately inflate a sum-based measure (mean) while barely affecting a position-based measure (median) correctly explains why mean exceeds median in right-skewed distributions, a diagnostic relationship commonly used to detect skewness."},
+      {"text": "In a right-skewed distribution, the mean and median would actually always be exactly equal to each other", "isCorrect": false, "feedback": "This isn't accurate -- in a right-skewed distribution, the mean and median are typically NOT equal, with the mean usually being noticeably higher than the median."},
+      {"text": "The median would actually be higher than the mean in a right-skewed distribution, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- in a right-skewed distribution, the MEAN is typically HIGHER than the median, not the reverse."},
+      {"text": "This relationship between mean and median has no actual connection to the underlying skewness or shape of the data distribution", "isCorrect": false, "feedback": "This isn't accurate -- this mean-median relationship IS DIRECTLY connected to and diagnostic of the distribution's skewness."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This central tendency measure is defined as the value occupying the central position within an ordinally arranged data sequence.", "medium": "This is the value smack in the middle once you line all the numbers up in order.", "easy": "This is the value in the middle once you line all the numbers up in order."},
+    "medium": {"hard": "Consider how a magnitude-dependent aggregate statistic responds to extreme values differently than a rank-dependent positional statistic.", "medium": "The average adds up every single number, so one huge number throws it way off, but the middle value just cares about position, so a huge number sitting at one end doesn't move it much.", "easy": "The average adds up every number, so one huge value throws it off; the middle value just cares about position, so it barely moves."},
+    "hard": {"hard": "Consider how a sparse but extreme upper tail disproportionately inflates a sum-dependent statistic while leaving a rank-dependent statistic's central position essentially unperturbed.", "medium": "A few really huge values in the tail drag the sum (and so the average) way up, but they only take up a few spots at the far end, so they barely budge which number ends up sitting in the middle.", "easy": "A few huge values drag the average up, but they only sit at the far end, so they barely affect the middle value."}
+  }
+}
+]

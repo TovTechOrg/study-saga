@@ -1,0 +1,207 @@
+[
+{
+  "topic": "liver function (detoxification)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a major function of the liver?",
+    "options": [
+      {"text": "Filtering toxins out of the blood", "isCorrect": true, "feedback": "Correct -- the liver processes and neutralizes many harmful substances in the blood."},
+      {"text": "Pumping blood through the body", "isCorrect": false, "feedback": "That's the heart's job, not the liver's."},
+      {"text": "Producing sound for speech", "isCorrect": false, "feedback": "Sound production involves the vocal cords, unrelated to liver function."},
+      {"text": "Absorbing oxygen from the air", "isCorrect": false, "feedback": "Oxygen absorption happens in the lungs, not the liver."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Besides detoxification, what other important substance does the liver produce to help digest fats?",
+    "options": [
+      {"text": "Bile", "isCorrect": true, "feedback": "Correct -- bile, produced by the liver and stored in the gallbladder, helps break down fats in the small intestine."},
+      {"text": "Insulin", "isCorrect": false, "feedback": "Insulin is produced by the pancreas, not the liver."},
+      {"text": "Saliva", "isCorrect": false, "feedback": "Saliva is produced by salivary glands, not the liver."},
+      {"text": "Mucus", "isCorrect": false, "feedback": "Mucus is produced by various glands throughout the body, but it isn't the liver's main digestive contribution."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is liver damage particularly dangerous for the whole body, beyond just digestive issues?",
+    "options": [
+      {"text": "The liver processes and removes many toxins from the blood, so damage allows harmful substances to build up throughout the body", "isCorrect": true, "feedback": "Correct -- the liver's detoxification role means its failure has widespread effects beyond digestion alone."},
+      {"text": "The liver is the only organ responsible for breathing", "isCorrect": false, "feedback": "Breathing is controlled by the lungs and respiratory system, not the liver."},
+      {"text": "The liver directly controls heart rate", "isCorrect": false, "feedback": "Heart rate regulation isn't a primary liver function -- that involves the nervous system and the heart's own pacemaker cells."},
+      {"text": "The liver produces all of the body's red blood cells throughout life", "isCorrect": false, "feedback": "Ongoing red blood cell production happens mainly in bone marrow, not the liver, in a healthy adult."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This organ processes harmful substances so they can be safely removed from circulation.", "medium": "This organ cleans out harmful substances from the blood.", "easy": "This organ cleans harmful things out of your blood."},
+    "medium": {"hard": "This greenish-yellow fluid is made in the liver and helps emulsify fats for easier digestion.", "medium": "This substance, made by the liver, helps break fats into smaller droplets for digestion.", "easy": "This fluid from the liver helps digest the fat in your food."},
+    "hard": {"hard": "Because the liver filters blood circulating through the entire body, impairment lets toxins accumulate systemically, affecting far more than digestion alone.", "medium": "Since the liver normally cleans toxins from blood flowing through the whole body, damage lets those toxins spread and affect many organs.", "easy": "Since the liver normally cleans your whole blood supply, damage lets harmful stuff build up all over your body."}
+  }
+},
+{
+  "topic": "ABO blood types",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "How many main blood types exist in the ABO blood group system?",
+    "options": [
+      {"text": "4 (A, B, AB, and O)", "isCorrect": true, "feedback": "Correct -- these four types are determined by which antigens are present on red blood cells."},
+      {"text": "2", "isCorrect": false, "feedback": "The ABO system actually includes four distinct types, not just two."},
+      {"text": "10", "isCorrect": false, "feedback": "This overstates the number of main ABO blood types -- there are only four."},
+      {"text": "1", "isCorrect": false, "feedback": "There is more than one blood type -- the ABO system distinguishes four."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which blood type is often called the 'universal donor' because it can typically be given to people of any ABO blood type?",
+    "options": [
+      {"text": "Type O", "isCorrect": true, "feedback": "Correct -- Type O red blood cells lack A and B antigens, making them less likely to trigger an immune reaction in recipients of other types."},
+      {"text": "Type AB", "isCorrect": false, "feedback": "Type AB is often called the 'universal recipient,' not the universal donor."},
+      {"text": "Type A", "isCorrect": false, "feedback": "Type A blood carries A antigens, which can trigger a reaction in Type B or O recipients -- it isn't the universal donor."},
+      {"text": "Type B", "isCorrect": false, "feedback": "Type B blood carries B antigens, which can trigger a reaction in Type A or O recipients -- it isn't the universal donor."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can a person with Type AB blood safely receive blood from any of the four ABO types, while a person with Type O blood can only safely receive Type O?",
+    "options": [
+      {"text": "Type AB has no anti-A or anti-B antibodies, while Type O has both, which would attack any A or B antigens received", "isCorrect": true, "feedback": "Correct -- AB recipients don't reject A or B antigens since they lack antibodies against them, but O recipients' antibodies would attack any donated blood carrying A or B antigens."},
+      {"text": "Type AB blood is simply thicker and more compatible with everything", "isCorrect": false, "feedback": "Blood thickness isn't the relevant factor -- the presence or absence of specific antibodies determines compatibility."},
+      {"text": "Type O blood has extra antigens that reject other blood types", "isCorrect": false, "feedback": "It's actually the presence of anti-A and anti-B antibodies in Type O's plasma, not extra antigens on its cells, that causes rejection of other types."},
+      {"text": "There is no real biological reason -- it's simply a historical labeling convention", "isCorrect": false, "feedback": "This has a specific, well-understood biological basis rooted in antigen-antibody interactions, not just naming convention."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This classification system is based on specific marker molecules present or absent on red blood cells.", "medium": "This system sorts blood into four types based on markers on red blood cells.", "easy": "This system groups blood into four types: A, B, AB, and O."},
+    "medium": {"hard": "This type's red blood cells lack the two specific antigens that would otherwise trigger an immune response in most other blood types.", "medium": "This blood type's cells don't carry the markers that would trigger a reaction in other blood types.", "easy": "This blood type doesn't have the markers that would upset other blood types' immune systems."},
+    "hard": {"hard": "Compatibility hinges on whether a recipient's plasma antibodies will attack the antigens present on donated red blood cells -- AB has no such antibodies, while O has antibodies against both A and B antigens.", "medium": "It comes down to whether the recipient's blood has antibodies that would attack the antigens on the donated blood cells.", "easy": "It comes down to whether the recipient's blood has defenses that would attack the donated blood's markers."}
+  }
+},
+{
+  "topic": "cellular respiration and ATP production",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main purpose of cellular respiration?",
+    "options": [
+      {"text": "To convert food energy into usable energy (ATP) for the cell", "isCorrect": true, "feedback": "Correct -- cellular respiration breaks down glucose to produce ATP, the cell's main energy currency."},
+      {"text": "To produce oxygen for the body to breathe", "isCorrect": false, "feedback": "Cellular respiration actually USES oxygen (in most cases), it doesn't produce it -- that's more associated with photosynthesis."},
+      {"text": "To break down DNA into smaller pieces", "isCorrect": false, "feedback": "DNA breakdown isn't the goal of cellular respiration -- energy production from food is."},
+      {"text": "To create new proteins for the cell", "isCorrect": false, "feedback": "Protein creation is a separate process (protein synthesis), not the main purpose of cellular respiration."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which organelle is primarily responsible for producing most of a cell's ATP during aerobic respiration?",
+    "options": [
+      {"text": "Mitochondria", "isCorrect": true, "feedback": "Correct -- mitochondria are often called the 'powerhouse of the cell' for this reason."},
+      {"text": "Nucleus", "isCorrect": false, "feedback": "The nucleus houses genetic material and directs cell activity, but isn't the main site of ATP production."},
+      {"text": "Ribosome", "isCorrect": false, "feedback": "Ribosomes build proteins, they aren't the main site of ATP production."},
+      {"text": "Golgi apparatus", "isCorrect": false, "feedback": "The Golgi apparatus packages and ships proteins, it isn't the main site of ATP production."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does aerobic cellular respiration (using oxygen) produce far more ATP per glucose molecule than anaerobic fermentation?",
+    "options": [
+      {"text": "Aerobic respiration fully breaks down glucose using oxygen through additional stages that extract much more of its stored energy", "isCorrect": true, "feedback": "Correct -- fermentation only partially breaks down glucose, leaving most of its potential energy untapped, while aerobic respiration extracts far more via oxygen-dependent stages."},
+      {"text": "Aerobic respiration uses a completely different starting molecule than fermentation", "isCorrect": false, "feedback": "Both processes actually start with the same glucose molecule -- the difference is in how completely it's broken down afterward."},
+      {"text": "Fermentation actually produces more ATP, but it's rarely measured correctly", "isCorrect": false, "feedback": "This is backwards -- aerobic respiration reliably produces significantly more ATP per glucose molecule than fermentation."},
+      {"text": "Oxygen itself directly becomes ATP", "isCorrect": false, "feedback": "Oxygen doesn't directly convert into ATP -- it serves as a final electron acceptor that allows the ATP-producing pathway to run much more completely."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process converts chemical energy stored in food into the specific energy currency cells actually use.", "medium": "This process turns the energy stored in food into a usable form of energy for the cell.", "easy": "This process turns food energy into a usable energy the cell can actually use."},
+    "medium": {"hard": "This structure has its own folded inner membranes specifically to maximize the surface area for energy-generating reactions.", "medium": "This structure is often nicknamed the cell's 'powerhouse' because of what it produces.", "easy": "This structure is nicknamed the cell's powerhouse because it makes energy."},
+    "hard": {"hard": "Oxygen-dependent pathways allow glucose to be broken down much more completely across additional stages, extracting far more of the energy originally stored in its chemical bonds compared to the incomplete breakdown in fermentation.", "medium": "Using oxygen lets the cell break down glucose much more completely, pulling out a lot more of its stored energy than fermentation does.", "easy": "Using oxygen lets the cell squeeze a lot more energy out of the same glucose molecule than without it."}
+  }
+},
+{
+  "topic": "the role of decomposers in an ecosystem",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main role of decomposers in an ecosystem?",
+    "options": [
+      {"text": "Breaking down dead organisms and waste into simpler substances", "isCorrect": true, "feedback": "Correct -- decomposers like fungi and bacteria recycle nutrients back into the environment."},
+      {"text": "Producing food through photosynthesis", "isCorrect": false, "feedback": "That's the role of producers, like plants, not decomposers."},
+      {"text": "Hunting and eating other living animals", "isCorrect": false, "feedback": "That describes predators/consumers, not decomposers, which mainly break down dead matter."},
+      {"text": "Providing shelter for other organisms", "isCorrect": false, "feedback": "Providing shelter isn't the defining ecological role of decomposers -- breaking down organic matter is."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following organisms are common examples of decomposers?",
+    "options": [
+      {"text": "Fungi and bacteria", "isCorrect": true, "feedback": "Correct -- these organisms specialize in breaking down dead organic material."},
+      {"text": "Lions and tigers", "isCorrect": false, "feedback": "These are predators/consumers that hunt live prey, not decomposers."},
+      {"text": "Oak trees and grass", "isCorrect": false, "feedback": "These are producers that make their own food via photosynthesis, not decomposers."},
+      {"text": "Eagles and hawks", "isCorrect": false, "feedback": "These are predators that hunt live prey, not decomposers."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why would an ecosystem eventually collapse if decomposers were completely removed?",
+    "options": [
+      {"text": "Nutrients would remain locked inside dead organic matter instead of being recycled back into the soil for producers to use", "isCorrect": true, "feedback": "Correct -- without decomposers, essential nutrients wouldn't return to the soil, eventually starving the producers that the rest of the food web depends on."},
+      {"text": "All animals would immediately stop reproducing", "isCorrect": false, "feedback": "Reproduction isn't directly and immediately tied to decomposer presence -- the more direct issue is nutrient cycling."},
+      {"text": "The sun would stop providing energy to the ecosystem", "isCorrect": false, "feedback": "Solar energy input is unrelated to whether decomposers are present -- the issue is about nutrient recycling, not sunlight."},
+      {"text": "Water would stop evaporating from the ecosystem", "isCorrect": false, "feedback": "The water cycle isn't directly dependent on decomposer organisms -- the key issue is the nutrient cycle."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This role involves recycling organic matter back into raw materials usable by other organisms.", "medium": "This job involves breaking down dead plants and animals into simpler materials.", "easy": "These organisms break down dead plants and animals."},
+    "medium": {"hard": "Look for organisms specialized in chemically breaking down organic material rather than consuming live prey or producing their own food.", "medium": "Look for organisms that break down dead material rather than hunting live prey or making their own food.", "easy": "Look for the organisms that break down dead stuff, not the ones that hunt or make their own food."},
+    "hard": {"hard": "Nutrients cycle from producers through consumers and finally back to the soil via decomposition -- removing that last step traps nutrients in dead matter, starving the producers at the base of the food web.", "medium": "Without something to break down dead matter, nutrients would stay locked away instead of returning to the soil for plants to use.", "easy": "Without decomposers, nutrients from dead things never get back into the soil for plants to use."}
+  }
+},
+{
+  "topic": "asexual reproduction methods",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is asexual reproduction?",
+    "options": [
+      {"text": "Reproduction that produces offspring from a single parent, without fertilization", "isCorrect": true, "feedback": "Correct -- asexual reproduction doesn't require two parents or the fusion of sex cells."},
+      {"text": "Reproduction that always requires two parents", "isCorrect": false, "feedback": "That describes sexual reproduction, the opposite of asexual reproduction."},
+      {"text": "Reproduction that only happens in animals", "isCorrect": false, "feedback": "Asexual reproduction occurs across many types of organisms, including bacteria, fungi, and plants, not just animals."},
+      {"text": "Reproduction that requires fertilization by sperm and egg", "isCorrect": false, "feedback": "Sperm and egg fertilization is characteristic of sexual reproduction, not asexual reproduction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Binary fission, a common method of asexual reproduction in bacteria, involves what process?",
+    "options": [
+      {"text": "A single cell dividing into two genetically identical daughter cells", "isCorrect": true, "feedback": "Correct -- binary fission is a simple, direct splitting of one cell into two identical copies."},
+      {"text": "Two separate organisms combining their genetic material", "isCorrect": false, "feedback": "That describes a sexual reproduction process, not binary fission."},
+      {"text": "A small offshoot growing off the side of the parent and later detaching", "isCorrect": false, "feedback": "That describes budding, a different asexual method, not binary fission specifically."},
+      {"text": "The production of spores that develop into new organisms", "isCorrect": false, "feedback": "That describes spore formation, a different asexual reproduction method than binary fission."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is a major genetic disadvantage of asexual reproduction compared to sexual reproduction?",
+    "options": [
+      {"text": "Offspring are genetically identical to the parent, reducing genetic diversity in the population", "isCorrect": true, "feedback": "Correct -- lower genetic diversity can make a population more vulnerable to disease or environmental changes."},
+      {"text": "Asexual reproduction always produces far fewer offspring overall", "isCorrect": false, "feedback": "Asexual reproduction can actually produce offspring very quickly and in large numbers -- the disadvantage is about genetic diversity, not offspring quantity."},
+      {"text": "Asexual reproduction cannot occur in any multicellular organism", "isCorrect": false, "feedback": "Many multicellular organisms, like some plants, can reproduce asexually -- this isn't the key disadvantage being described."},
+      {"text": "Asexual offspring are always weaker and less healthy than the parent", "isCorrect": false, "feedback": "Asexual offspring aren't inherently weaker -- the real drawback relates to a lack of genetic variation across the population, not individual health."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process doesn't combine genetic material from two separate sources.", "medium": "This type of reproduction only needs one parent, with no mixing of genes from a second parent.", "easy": "This type of reproduction only needs one parent."},
+    "medium": {"hard": "One cell physically splits apart, producing two cells with matching genetic content.", "medium": "One bacterial cell splits into two cells that are exact genetic copies of each other.", "easy": "One cell splits into two identical copies of itself."},
+    "hard": {"hard": "Since offspring are genetic clones of the parent, the population lacks the variation that would help some individuals survive a new disease or environmental stress.", "medium": "Since all the offspring are genetically identical, the whole population could be equally vulnerable to the same disease or environmental change.", "easy": "Since offspring are genetic copies, a disease that hurts one could hurt the whole population equally."}
+  }
+}
+]

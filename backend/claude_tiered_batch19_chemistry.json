@@ -1,0 +1,125 @@
+[
+{
+  "topic": "the states of matter changing based on temperature and pressure",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What generally happens to a gas when it is compressed under increasing pressure at a constant temperature?",
+    "options": [
+      {"text": "It can turn into a liquid if compressed enough", "isCorrect": true, "feedback": "Correct -- sufficient pressure can force gas molecules close enough together to become a liquid."},
+      {"text": "It always stays a gas no matter how much pressure is applied", "isCorrect": false, "feedback": "With enough pressure, most gases can actually be forced into a liquid state."},
+      {"text": "It immediately turns into a solid", "isCorrect": false, "feedback": "Simple compression typically leads to liquefaction first, not directly to a solid, though extreme pressure could eventually lead further."},
+      {"text": "It disappears completely", "isCorrect": false, "feedback": "The matter doesn't disappear -- it's compressed into a smaller volume, potentially changing state."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Water boils at a lower temperature at high altitudes (like on a mountain) compared to sea level. Why does this happen?",
+    "options": [
+      {"text": "Lower atmospheric pressure at high altitude means less pressure needs to be overcome for water molecules to escape into vapor, so boiling occurs at a lower temperature", "isCorrect": true, "feedback": "Correct -- boiling point is directly tied to the surrounding atmospheric pressure, which decreases with altitude."},
+      {"text": "Mountains are always colder, which somehow makes water boil at a lower temperature", "isCorrect": false, "feedback": "While mountains are often colder, the actual reason for water's lower boiling point there is specifically REDUCED ATMOSPHERIC PRESSURE, not just cold air."},
+      {"text": "Water at high altitude is a completely different chemical substance", "isCorrect": false, "feedback": "The water itself is chemically identical -- what changes is the surrounding atmospheric pressure affecting its boiling point."},
+      {"text": "This is a myth, and boiling point doesn't actually change with altitude", "isCorrect": false, "feedback": "This is a real, well-documented phenomenon directly tied to how atmospheric pressure decreases with altitude."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A substance's phase diagram shows the specific combinations of temperature and pressure at which it exists as a solid, liquid, or gas. Why is a single temperature value (like '100°C for boiling') actually an oversimplification?",
+    "options": [
+      {"text": "The boiling point (and other phase transition points) actually depends on both temperature AND pressure together, not temperature alone", "isCorrect": true, "feedback": "Correct -- the commonly cited '100°C' boiling point specifically assumes standard atmospheric pressure; changing pressure shifts that boiling point."},
+      {"text": "Temperature has no actual effect on phase transitions", "isCorrect": false, "feedback": "Temperature absolutely does affect phase transitions -- but so does pressure, which is exactly the point being made here."},
+      {"text": "All substances actually boil at exactly the same temperature, regardless of pressure", "isCorrect": false, "feedback": "Different substances have different boiling points, AND for any given substance, that boiling point changes with pressure."},
+      {"text": "Phase diagrams are purely theoretical and don't reflect real-world behavior", "isCorrect": false, "feedback": "Phase diagrams accurately reflect real, measurable, and highly practical phase-transition behavior of substances under different conditions."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Reducing the space between gas particles can force them into a more tightly packed liquid arrangement.", "medium": "Squeezing gas particles closer together can force them to become a liquid.", "easy": "Squeezing a gas hard enough can turn it into a liquid."},
+    "medium": {"hard": "The surrounding pressure directly determines how much energy is needed for molecules to escape the liquid's surface into vapor form.", "medium": "With less air pressure pushing down, water molecules can escape into vapor more easily, at a lower temperature.", "easy": "With less air pressure up high, water can turn to vapor more easily, at a lower temperature."},
+    "hard": {"hard": "Phase transition points are defined by a specific temperature-pressure PAIR, not temperature in isolation -- a commonly cited value like 100°C implicitly assumes one specific, standard pressure.", "medium": "The temperature where something boils actually changes depending on the surrounding pressure, so quoting just one temperature leaves out important information.", "easy": "The temperature where water boils actually changes depending on the pressure around it, like on a mountain."}
+  }
+},
+{
+  "topic": "the difference between ionic and molecular (covalent) compounds' physical properties",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which type of compound generally has a higher melting point: ionic or molecular (covalent)?",
+    "options": [
+      {"text": "Ionic compounds", "isCorrect": true, "feedback": "Correct -- the strong electrostatic attractions in ionic compounds generally require more energy (higher temperature) to break apart."},
+      {"text": "Molecular (covalent) compounds", "isCorrect": false, "feedback": "Molecular compounds generally have weaker intermolecular forces, resulting in LOWER melting points compared to ionic compounds."},
+      {"text": "They always have exactly the same melting point", "isCorrect": false, "feedback": "There's a general, well-documented difference in typical melting points between these two compound categories."},
+      {"text": "Neither type of compound has a melting point", "isCorrect": false, "feedback": "Both ionic and molecular compounds do have defined melting points -- they just tend to differ significantly in value."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Ionic compounds like table salt conduct electricity when dissolved in water or melted, but not in their solid form. Why?",
+    "options": [
+      {"text": "In the solid state, ions are locked in a fixed lattice and can't move freely, but when dissolved or melted, they become mobile and can carry electric charge", "isCorrect": true, "feedback": "Correct -- electrical conductivity in ionic compounds specifically requires the ions to be free to move, which only happens outside the rigid solid structure."},
+      {"text": "Solid ionic compounds don't actually contain any charged particles", "isCorrect": false, "feedback": "Solid ionic compounds definitely contain charged ions -- they're just locked in place within a rigid structure, unable to move and carry current."},
+      {"text": "Ionic compounds can never conduct electricity under any circumstances", "isCorrect": false, "feedback": "Ionic compounds CAN conduct electricity, specifically when dissolved in water or melted, allowing their ions to move freely."},
+      {"text": "This has nothing to do with the movement of charged particles", "isCorrect": false, "feedback": "This phenomenon is entirely explained by whether the charged ions are free to move (conducting) or locked in place (non-conducting)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why are molecular (covalent) compounds generally poor conductors of electricity, even when dissolved in water or melted, unlike ionic compounds?",
+    "options": [
+      {"text": "Molecular compounds are typically made of neutral molecules without freely moving charged particles, since their atoms share electrons rather than forming distinct ions", "isCorrect": true, "feedback": "Correct -- without charged, mobile ions (or free electrons), there's no effective way for these compounds to carry an electric current."},
+      {"text": "Molecular compounds actually conduct electricity better than ionic compounds in every situation", "isCorrect": false, "feedback": "This is generally backwards -- ionic compounds (when dissolved/melted) typically conduct electricity much better than molecular compounds."},
+      {"text": "Molecular compounds don't actually contain any atoms", "isCorrect": false, "feedback": "Molecular compounds are definitely made of atoms, just held together by shared electrons (covalent bonds) rather than forming free-moving charged ions."},
+      {"text": "Electricity requires heat, which molecular compounds cannot produce", "isCorrect": false, "feedback": "Electrical conductivity is about the presence of mobile charged particles, not about a substance's ability to produce heat."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This bonding type creates an extensive network of strong, uniform electrostatic attractions throughout the solid structure.", "medium": "This bonding type creates especially strong attractions between charged particles throughout the whole structure.", "easy": "This type of compound has very strong attractions holding it together, needing more heat to melt."},
+    "medium": {"hard": "Conductivity requires charged particles free to migrate through the material -- a condition met only when the rigid ionic lattice is disrupted (melting or dissolving).", "medium": "The charged particles need to be free to move around in order to carry electricity, which only happens once the solid structure breaks down.", "easy": "The charged particles need to be free to move around to carry electricity, which only happens once melted or dissolved."},
+    "hard": {"hard": "Since covalent bonding involves shared electron pairs rather than distinct, mobile charged ions, molecular compounds generally lack the free charge carriers necessary for electrical conductivity, regardless of physical state.", "medium": "Since these compounds are made of neutral molecules without loose charged particles, there's nothing available to actually carry an electric current.", "easy": "Since these compounds don't have loose charged particles, there's nothing there to actually carry electricity."}
+  }
+},
+{
+  "topic": "the difference between an oxidation reaction and a reduction reaction",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In terms of electrons, what happens during oxidation?",
+    "options": [
+      {"text": "A substance loses electrons", "isCorrect": true, "feedback": "Correct -- oxidation is defined by the loss of electrons from a substance."},
+      {"text": "A substance gains electrons", "isCorrect": false, "feedback": "That describes reduction, the opposite of oxidation."},
+      {"text": "A substance loses protons", "isCorrect": false, "feedback": "Oxidation/reduction reactions are specifically about electron transfer, not proton loss."},
+      {"text": "A substance gains protons", "isCorrect": false, "feedback": "Oxidation/reduction reactions are specifically about electron transfer, not proton gain."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a reaction where iron rusts (Fe → Fe³⁺ + electrons), is the iron being oxidized or reduced?",
+    "options": [
+      {"text": "Oxidized, because it is losing electrons", "isCorrect": true, "feedback": "Correct -- since iron loses electrons in this process, it is undergoing oxidation."},
+      {"text": "Reduced, because it is losing electrons", "isCorrect": false, "feedback": "Losing electrons specifically defines oxidation, not reduction -- reduction is the GAINING of electrons."},
+      {"text": "Neither oxidized nor reduced", "isCorrect": false, "feedback": "Since electrons are clearly being lost in this equation, this is a clear case of oxidation."},
+      {"text": "Both oxidized and reduced simultaneously", "isCorrect": false, "feedback": "In this specific reaction, iron is only losing electrons (oxidation) -- it isn't simultaneously gaining electrons too."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Oxidation and reduction always occur together in a single reaction (called a redox reaction), never in isolation. Why must this always be the case?",
+    "options": [
+      {"text": "Electrons lost by one substance (oxidation) must be gained by another substance (reduction) -- electrons can't simply disappear or appear from nowhere", "isCorrect": true, "feedback": "Correct -- this pairing reflects the fundamental conservation of charge, since electrons transferred from one substance must be received by another."},
+      {"text": "Oxidation and reduction are actually completely unrelated processes that never occur together", "isCorrect": false, "feedback": "This is incorrect -- they are, in fact, ALWAYS linked together in any real redox reaction."},
+      {"text": "This pairing is just a naming coincidence with no real chemical basis", "isCorrect": false, "feedback": "This pairing has a very real chemical basis: the conservation of electrons requires that any lost electrons must be gained by something else."},
+      {"text": "Reduction reactions can happen without any electrons being involved at all", "isCorrect": false, "feedback": "Reduction is specifically DEFINED as the gain of electrons -- it's not possible without electron involvement."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process involves a substance parting with some of its negatively charged particles.", "medium": "This process involves a substance giving away some electrons.", "easy": "This is when a substance loses electrons."},
+    "medium": {"hard": "Match the described electron behavior (losing vs. gaining) to its correct corresponding term.", "medium": "Since electrons are being lost here, match that to the correct term.", "easy": "Since iron is losing electrons here, that matches the term for losing electrons."},
+    "hard": {"hard": "Electron transfer is a zero-sum process -- any electrons released by the oxidized species must be captured by the reduced species, making the two processes inherently coupled.", "medium": "Since electrons that leave one substance have to go somewhere, another substance must be gaining them at the very same time.", "easy": "Since electrons that leave one substance have to go somewhere else, another substance must be gaining them at the same time."}
+  }
+}
+]

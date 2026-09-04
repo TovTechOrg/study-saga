@@ -1,0 +1,84 @@
+[
+{
+  "topic": "calculating simple probability of the complement of an event",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If the probability of rain tomorrow is 30%, what is the probability it does NOT rain?",
+    "options": [
+      {"text": "70%", "isCorrect": true, "feedback": "Correct -- the complement of an event's probability is found by subtracting from 100%: 100-30=70."},
+      {"text": "30%", "isCorrect": false, "feedback": "This just repeats the original probability rather than finding its complement."},
+      {"text": "0%", "isCorrect": false, "feedback": "This would mean it's impossible for it not to rain, which isn't correct here."},
+      {"text": "130%", "isCorrect": false, "feedback": "Probabilities can't exceed 100% -- this adds instead of subtracting from 100."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A bag has 20 marbles, and the probability of drawing a red one is 1/4. What is the probability of drawing a marble that is NOT red?",
+    "options": [
+      {"text": "3/4", "isCorrect": true, "feedback": "Correct -- 1 - 1/4 = 3/4."},
+      {"text": "1/4", "isCorrect": false, "feedback": "This just repeats the original probability rather than finding its complement."},
+      {"text": "1/20", "isCorrect": false, "feedback": "This doesn't correctly compute the complement of 1/4."},
+      {"text": "4/4", "isCorrect": false, "feedback": "This would mean it's certain to draw a red marble, which contradicts the given probability."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The probability of at least one success in 3 independent attempts is often found using the complement rule: 1 - P(no successes). If the probability of failure on each single attempt is 0.8, what is the probability of AT LEAST one success in 3 attempts?",
+    "options": [
+      {"text": "0.488", "isCorrect": true, "feedback": "Correct -- P(all 3 fail)=0.8³=0.512, so P(at least one success)=1-0.512=0.488."},
+      {"text": "0.2", "isCorrect": false, "feedback": "This just uses the single-attempt success probability, ignoring the multiple attempts."},
+      {"text": "0.512", "isCorrect": false, "feedback": "This is the probability of ALL THREE failing, not the complement (at least one success)."},
+      {"text": "0.6", "isCorrect": false, "feedback": "This doesn't match correctly cubing the failure probability before subtracting from 1."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "The probabilities of an event and its complement must always add up to 100%.", "medium": "Subtract the given probability from 100%.", "easy": "Subtract 30 from 100."},
+    "medium": {"hard": "The probabilities of an event and its complement must always add up to a whole (1 or 100%).", "medium": "Subtract the given fraction from 1.", "easy": "Subtract 1/4 from 1 (or 4/4)."},
+    "hard": {"hard": "Calculate the probability of the complementary event (all failures) by raising the single-failure probability to the power of the number of attempts, then subtract from 1.", "medium": "Cube 0.8 to find the probability all three fail, then subtract that from 1.", "easy": "Multiply 0.8 by itself three times (0.512), then subtract from 1."}
+  }
+},
+{
+  "topic": "simplifying expressions with the distributive property and combining like terms",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Simplify: 2(x + 3) + 4",
+    "options": [
+      {"text": "2x + 10", "isCorrect": true, "feedback": "Correct -- distribute to get 2x+6, then add 4 to get 2x+10."},
+      {"text": "2x + 7", "isCorrect": false, "feedback": "This doesn't correctly distribute the 2 before adding the 4."},
+      {"text": "2x + 3 + 4", "isCorrect": false, "feedback": "This forgets to distribute the 2 across both terms inside the parentheses."},
+      {"text": "6x + 4", "isCorrect": false, "feedback": "This incorrectly multiplies the 2 into an already-combined x+3 term."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Simplify: 3(2x - 1) + 2(x + 4)",
+    "options": [
+      {"text": "8x + 5", "isCorrect": true, "feedback": "Correct -- distribute both terms (6x-3 and 2x+8), then combine like terms: 6x+2x=8x, and -3+8=5."},
+      {"text": "8x + 3", "isCorrect": false, "feedback": "This doesn't correctly add -3 and 8 together."},
+      {"text": "5x + 5", "isCorrect": false, "feedback": "This doesn't correctly add 6x and 2x together."},
+      {"text": "6x + 5", "isCorrect": false, "feedback": "This forgets to include the 2x term from the second distributed expression."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Simplify: 4(x - 2) - 3(2x - 5)",
+    "options": [
+      {"text": "-2x + 7", "isCorrect": true, "feedback": "Correct -- distribute both terms (4x-8 and -6x+15), then combine: 4x-6x=-2x, and -8+15=7."},
+      {"text": "-2x - 7", "isCorrect": false, "feedback": "This has the wrong sign on the constant term."},
+      {"text": "2x + 7", "isCorrect": false, "feedback": "This has the wrong sign on the x-term."},
+      {"text": "10x - 23", "isCorrect": false, "feedback": "This doesn't correctly distribute the negative sign across the second parentheses."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply the outside term into the parentheses before combining any remaining constants.", "medium": "Multiply 2 by both x and 3, then add the 4.", "easy": "Multiply 2 by x and by 3, then add 4."},
+    "medium": {"hard": "Distribute each term across its own parentheses first, then combine matching x-terms and matching constants separately.", "medium": "Distribute both parts separately, then combine the x-terms and the constants.", "easy": "Multiply out both parts first, then add the x's together and the numbers together."},
+    "hard": {"hard": "Carefully distribute the negative sign across the second parentheses, then combine matching x-terms and matching constants separately.", "medium": "Distribute both parts, being careful with the negative sign on the second term, then combine like terms.", "easy": "Multiply out both parts carefully with the signs, then combine the x's and the numbers."}
+  }
+}
+]

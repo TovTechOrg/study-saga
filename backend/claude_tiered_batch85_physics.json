@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between potential energy types (gravitational vs. elastic)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Elastic potential energy is specifically stored in:",
+    "options": [
+      {"text": "A stretched or compressed object, like a spring or rubber band", "isCorrect": true, "feedback": "Correct -- elastic potential energy is stored specifically in deformable objects when they are stretched, compressed, or otherwise deformed from their natural resting shape."},
+      {"text": "Any object simply positioned at a certain height above the ground", "isCorrect": false, "feedback": "That describes GRAVITATIONAL potential energy, not elastic potential energy, which specifically involves stretching/compressing a deformable object."},
+      {"text": "An object that is moving at a constant, unchanging speed", "isCorrect": false, "feedback": "That relates to kinetic energy (motion), not elastic potential energy, which specifically involves stored energy from deformation (stretching/compression)."},
+      {"text": "Any solid, rigid, non-deformable object regardless of its condition", "isCorrect": false, "feedback": "This isn't accurate -- elastic potential energy specifically requires a DEFORMABLE object being stretched or compressed, not simply any rigid, non-deformable object."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Both gravitational potential energy (PE=mgh) and elastic potential energy (PE=½kx²) represent stored energy with the potential to do work. What is the key difference in what specifically determines the AMOUNT of stored energy in each case?",
+    "options": [
+      {"text": "Gravitational PE depends on an object's mass and height above a reference point, while elastic PE depends on a spring's stiffness (spring constant) and how far it's been stretched/compressed from its natural resting position", "isCorrect": true, "feedback": "Correct -- these are genuinely different physical mechanisms for storing energy, each governed by its own specific relevant variables (mass/height for gravitational, stiffness/deformation for elastic)."},
+      {"text": "Both types of potential energy actually depend on the exact same physical variables", "isCorrect": false, "feedback": "This isn't accurate -- these are governed by DIFFERENT specific variables (mass/height for gravitational vs. spring constant/deformation distance for elastic), not identical factors."},
+      {"text": "Gravitational potential energy actually depends on a spring constant, while elastic potential energy depends on height", "isCorrect": false, "feedback": "This has the formulas/variables mixed up -- GRAVITATIONAL PE depends on mass/height, while ELASTIC PE depends on spring constant/deformation distance, not the reverse."},
+      {"text": "Neither type of potential energy actually depends on any specific measurable physical variables", "isCorrect": false, "feedback": "This isn't accurate -- BOTH types of potential energy DO depend on specific, measurable physical variables (as shown in their respective formulas), not on nothing measurable at all."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A pogo stick converts a person's gravitational potential energy (from jumping down) into elastic potential energy (compressing an internal spring), which then converts back into kinetic energy (propelling the person back upward), and the cycle repeats. Why does understanding BOTH types of potential energy help explain how this seemingly continuous 'bouncing' motion can be sustained (ignoring energy losses to friction/sound)?",
+    "options": [
+      {"text": "This cyclical energy transformation between gravitational potential, elastic potential, and kinetic energy (with total energy conserved, barring losses) explains how the pogo stick can continue bouncing repeatedly, since each energy form is successively converted into the next, rather than being lost after each single conversion step", "isCorrect": true, "feedback": "Correct -- this understanding of continuous energy transformation between multiple potential and kinetic energy forms (while total energy remains conserved) is precisely what explains the pogo stick's sustained, cyclical bouncing motion, which would otherwise be difficult to explain using only ONE type of potential energy consideration alone."},
+      {"text": "Only gravitational potential energy is actually involved in this scenario, with no elastic potential energy playing any role", "isCorrect": false, "feedback": "This isn't accurate -- BOTH gravitational AND elastic potential energy are specifically involved and important in this scenario, given the pogo stick's internal spring mechanism converting between these different energy forms."},
+      {"text": "Only elastic potential energy is actually involved in this scenario, with no gravitational potential energy playing any role", "isCorrect": false, "feedback": "This isn't accurate -- BOTH elastic AND gravitational potential energy are specifically involved in this scenario, since the person's height change (jumping) directly involves gravitational potential energy as well."},
+      {"text": "This cyclical bouncing motion has no actual connection to energy transformation or conservation principles", "isCorrect": false, "feedback": "This isn't accurate -- this cyclical bouncing motion is DIRECTLY explained by and connected to the principles of energy transformation and conservation across these different energy forms."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This energy form is specifically stored within a deformable material as a consequence of strain applied relative to its natural equilibrium configuration.", "medium": "This kind of stored energy comes from something being squeezed or stretched out of its normal shape.", "easy": "This kind of energy comes from something being squeezed or stretched."},
+    "medium": {"hard": "Compare the specific defining formula variables (mass and height vs. spring constant and displacement) governing each respective type of potential energy.", "medium": "One depends on how heavy something is and how high up it is; the other depends on how stiff a spring is and how far it's been squished or stretched.", "easy": "One depends on height and weight; the other depends on spring stiffness and how far it's squished."},
+    "hard": {"hard": "Trace the sequential energy transformation pathway (gravitational to elastic to kinetic and back) to understand how total energy is conserved and continuously reshuffled between forms rather than dissipated after a single conversion.", "medium": "The energy just keeps changing forms -- from height energy, to squished-spring energy, to motion energy, and back again -- which is what keeps the bouncing going.", "easy": "The energy keeps changing forms -- height energy, spring energy, motion energy -- which keeps the bouncing going."}
+  }
+}
+]

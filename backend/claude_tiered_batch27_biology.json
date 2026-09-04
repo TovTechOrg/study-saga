@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a vaccine creating herd immunity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is herd immunity?",
+    "options": [
+      {"text": "When enough of a population is immune to a disease that its spread is significantly slowed or stopped, protecting even non-immune individuals", "isCorrect": true, "feedback": "Correct -- herd immunity provides indirect protection to those who aren't immune, by reducing the disease's ability to spread through the population."},
+      {"text": "When only farm animals can become immune to diseases", "isCorrect": false, "feedback": "\"Herd\" here refers to a population group in general (often human), not specifically farm animals."},
+      {"text": "When a single individual becomes immune to every possible disease", "isCorrect": false, "feedback": "Herd immunity is about a POPULATION-level effect, not a single individual gaining immunity to everything."},
+      {"text": "A disease that only affects herds of animals, never humans", "isCorrect": false, "feedback": "Herd immunity is a general epidemiological concept applicable to human populations too, not a specific animal disease."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why can herd immunity help protect individuals who cannot receive a vaccine themselves (like infants or those with certain medical conditions)?",
+    "options": [
+      {"text": "With enough immune individuals around them, the disease has fewer opportunities to spread and reach the unvaccinated individual", "isCorrect": true, "feedback": "Correct -- this indirect protection is a key public health benefit of achieving widespread immunity in a community."},
+      {"text": "Unvaccinated individuals automatically become immune through herd immunity", "isCorrect": false, "feedback": "Herd immunity doesn't make unvaccinated individuals personally immune -- it reduces their chances of EXPOSURE by limiting the disease's overall spread."},
+      {"text": "Herd immunity has no actual effect on unvaccinated individuals", "isCorrect": false, "feedback": "Herd immunity does provide meaningful indirect protection to unvaccinated individuals by reducing overall disease transmission in the community."},
+      {"text": "This concept only applies to diseases that don't spread between people", "isCorrect": false, "feedback": "Herd immunity specifically applies to CONTAGIOUS diseases that spread between people -- it's irrelevant for diseases that don't transmit this way."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Different diseases require different percentages of a population to be immune before herd immunity takes effect (the 'herd immunity threshold'). What primarily determines this required percentage?",
+    "options": [
+      {"text": "How contagious the disease is -- more contagious diseases require a higher percentage of the population to be immune before transmission is significantly slowed", "isCorrect": true, "feedback": "Correct -- highly contagious diseases can spread even with relatively few susceptible people remaining, requiring a higher immunity threshold to interrupt transmission chains."},
+      {"text": "The threshold is always exactly the same percentage for every disease", "isCorrect": false, "feedback": "This threshold actually varies significantly between diseases, primarily based on how contagious each specific disease is."},
+      {"text": "The threshold depends entirely on the color of the vaccine used", "isCorrect": false, "feedback": "Vaccine color has no scientific bearing on herd immunity thresholds -- disease contagiousness is the key factor."},
+      {"text": "This threshold has nothing to do with how easily a disease spreads", "isCorrect": false, "feedback": "This threshold is actually directly and fundamentally tied to how easily a specific disease spreads between people."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This concept describes a population-level protective effect that emerges once enough individuals resist a contagious disease.", "medium": "This is when enough people are protected from a disease that it has trouble spreading through the whole group.", "easy": "This is when enough people are immune that a disease has trouble spreading to everyone else."},
+    "medium": {"hard": "Reduced overall circulation of the pathogen in a population lowers the statistical likelihood of any specific unprotected individual encountering it.", "medium": "If most people around someone are immune, that person is less likely to ever run into the disease in the first place.", "easy": "If most people around someone are immune, that person is less likely to catch the disease from someone else."},
+    "hard": {"hard": "A disease's basic reproduction number (how many new cases one case typically causes) directly determines how large a fraction of the population must be immune to reduce transmission below a sustaining level.", "medium": "A disease that spreads super easily needs way more people protected before it actually starts having trouble spreading.", "easy": "A disease that spreads really easily needs way more people protected before it has trouble spreading."}
+  }
+}
+]

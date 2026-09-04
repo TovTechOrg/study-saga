@@ -1,0 +1,829 @@
+[
+{
+  "topic": "metaphor",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What literary device directly compares two unlike things without using 'like' or 'as'?",
+    "options": [
+      {"text": "Metaphor", "isCorrect": true, "feedback": "Correct -- a metaphor states that one thing IS another, without using 'like' or 'as.'"},
+      {"text": "Simile", "isCorrect": false, "feedback": "A simile makes the same kind of comparison, but specifically uses 'like' or 'as.'"},
+      {"text": "Alliteration", "isCorrect": false, "feedback": "Alliteration is the repetition of initial consonant sounds, not a comparison between two things."},
+      {"text": "Onomatopoeia", "isCorrect": false, "feedback": "Onomatopoeia is a word that imitates a sound, not a comparison between two things."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these sentences is an example of a metaphor?",
+    "options": [
+      {"text": "\"Time is a thief.\"", "isCorrect": true, "feedback": "Correct -- this directly states that time IS a thief, without using 'like' or 'as.'"},
+      {"text": "\"She is as brave as a lion.\"", "isCorrect": false, "feedback": "This uses 'as,' making it a simile rather than a metaphor."},
+      {"text": "\"The wind whispered through the trees.\"", "isCorrect": false, "feedback": "This gives the wind a human action (whispering) -- that's personification, not a metaphor."},
+      {"text": "\"He ran like the wind.\"", "isCorrect": false, "feedback": "This uses 'like,' making it a simile rather than a metaphor."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following best explains why a metaphor is often considered a more direct comparison than a simile?",
+    "options": [
+      {"text": "A metaphor asserts that one thing literally IS another, rather than merely resembling it", "isCorrect": true, "feedback": "Correct -- this direct assertion of identity, rather than resemblance, is what distinguishes a metaphor from a simile."},
+      {"text": "A metaphor is always longer than a simile", "isCorrect": false, "feedback": "Length isn't the defining distinction between the two devices -- the type of comparison being made is."},
+      {"text": "A metaphor can only be used in poetry, never in prose", "isCorrect": false, "feedback": "Metaphors appear frequently in both poetry and prose -- this isn't the distinguishing feature."},
+      {"text": "A metaphor always involves an animal", "isCorrect": false, "feedback": "Metaphors can involve any two things being compared -- animals aren't a requirement."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This device asserts identity between two things rather than using a comparison word.", "medium": "This device says one thing IS another, without using 'like' or 'as.'", "easy": "This device compares two things directly, without saying 'like' or 'as.'"},
+    "medium": {"hard": "Look for the sentence that asserts a direct identity between two unlike things, rather than using a comparison word or giving a non-human thing a human action.", "medium": "Look for the sentence that says something IS something else, not one using 'like' or 'as,' and not one giving human actions to a non-human thing.", "easy": "The correct sentence says one thing IS another thing, without the words 'like' or 'as.'"},
+    "hard": {"hard": "The distinction is about asserting identity versus resemblance, not about length, genre restriction, or subject matter.", "medium": "The distinction is about stating something IS something else, versus just comparing it -- not about length or genre.", "easy": "A metaphor says one thing literally IS another thing, which feels more direct than just comparing two things."}
+  }
+},
+{
+  "topic": "simile",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which literary device compares two different things using the words 'like' or 'as'?",
+    "options": [
+      {"text": "Simile", "isCorrect": true, "feedback": "Correct -- a simile makes a comparison explicitly using 'like' or 'as.'"},
+      {"text": "Metaphor", "isCorrect": false, "feedback": "A metaphor makes a similar comparison, but without using 'like' or 'as.'"},
+      {"text": "Hyperbole", "isCorrect": false, "feedback": "Hyperbole is deliberate exaggeration, not necessarily a comparison using 'like' or 'as.'"},
+      {"text": "Irony", "isCorrect": false, "feedback": "Irony involves a contrast between expectation and reality, not a direct comparison using 'like' or 'as.'"}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these sentences is an example of a simile?",
+    "options": [
+      {"text": "\"Her smile was as bright as the sun.\"", "isCorrect": true, "feedback": "Correct -- this comparison uses the word 'as,' making it a simile."},
+      {"text": "\"Her smile was sunshine itself.\"", "isCorrect": false, "feedback": "This states her smile IS sunshine, without 'like' or 'as' -- that makes it a metaphor, not a simile."},
+      {"text": "\"The sun smiled down on the town.\"", "isCorrect": false, "feedback": "This gives the sun a human action (smiling) -- that's personification, not a simile."},
+      {"text": "\"The bright, blazing sun.\"", "isCorrect": false, "feedback": "This is simple descriptive language -- it doesn't compare two different things using 'like' or 'as.'"}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the key distinguishing feature that separates a simile from a metaphor?",
+    "options": [
+      {"text": "A simile explicitly uses comparison words like 'like' or 'as'", "isCorrect": true, "feedback": "Correct -- this explicit comparison marker is the defining structural difference between a simile and a metaphor."},
+      {"text": "A simile is always shorter than a metaphor", "isCorrect": false, "feedback": "Length isn't the distinguishing factor -- the use of explicit comparison words is."},
+      {"text": "A simile can only describe people, not objects", "isCorrect": false, "feedback": "Similes can compare any two things, including objects, not just people."},
+      {"text": "A simile must rhyme, while a metaphor never does", "isCorrect": false, "feedback": "Rhyme has nothing to do with the distinction between these two devices."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This device uses specific comparison words that a related device omits entirely.", "medium": "This device compares two things using specific words -- 'like' or 'as.'", "easy": "This device compares two things directly using the word 'like' or 'as.'"},
+    "medium": {"hard": "Look for the sentence containing the word 'as' or 'like' used to compare two different things, rather than asserting identity or giving human action to something non-human.", "medium": "Look for the sentence using 'as' or 'like' to compare two things -- not one stating direct identity, and not one giving something human behavior.", "easy": "The correct sentence uses the word 'as' to compare two different things."},
+    "hard": {"hard": "The distinction is the presence of an explicit comparison word, not length, subject restrictions, or rhyme.", "medium": "The distinction is about using words like 'like' or 'as' -- not about length or rhyme.", "easy": "A simile always includes the word 'like' or 'as' when making its comparison."}
+  }
+},
+{
+  "topic": "personification",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "When a writer gives human qualities to an animal, object, or idea, this technique is called what?",
+    "options": [
+      {"text": "Personification", "isCorrect": true, "feedback": "Correct -- personification gives human traits or actions to non-human things."},
+      {"text": "Simile", "isCorrect": false, "feedback": "A simile makes a comparison using 'like' or 'as' -- it doesn't specifically involve giving human traits to something."},
+      {"text": "Foreshadowing", "isCorrect": false, "feedback": "Foreshadowing hints at future events -- it's unrelated to giving human traits to non-human things."},
+      {"text": "Symbolism", "isCorrect": false, "feedback": "Symbolism uses an object to represent a deeper idea -- it doesn't specifically involve giving human traits to something."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these sentences is an example of personification?",
+    "options": [
+      {"text": "\"The old house groaned in the wind.\"", "isCorrect": true, "feedback": "Correct -- 'groaned' gives the house a human-like action or sound."},
+      {"text": "\"The house was as old as the hills.\"", "isCorrect": false, "feedback": "This compares the house's age using 'as,' making it a simile, not personification."},
+      {"text": "\"The house was ancient and crumbling.\"", "isCorrect": false, "feedback": "This is straightforward description -- it doesn't give the house a human action or quality."},
+      {"text": "\"The house stood on the hill.\"", "isCorrect": false, "feedback": "This is a simple factual statement, without any human quality given to the house."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does personification, as a literary device, typically differ from full anthropomorphism (such as talking animal characters in a fable)?",
+    "options": [
+      {"text": "Personification briefly attributes a human trait or action for figurative effect, while anthropomorphism gives a non-human character fuller, sustained human behavior", "isCorrect": true, "feedback": "Correct -- personification is usually a momentary figurative device, while anthropomorphism treats a non-human being as an ongoing, human-like character."},
+      {"text": "Personification only applies to weather, while anthropomorphism only applies to animals", "isCorrect": false, "feedback": "Personification can apply to almost any non-human subject, not just weather -- the real distinction is about brief figurative effect versus sustained characterization."},
+      {"text": "Personification is only used in poetry, while anthropomorphism is only used in prose", "isCorrect": false, "feedback": "Both devices appear across poetry and prose -- genre isn't the distinguishing factor."},
+      {"text": "There is no real difference; the terms are entirely interchangeable", "isCorrect": false, "feedback": "While related, the terms describe a real difference in scope and duration of the human-like treatment."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This device attributes human behavior or emotion to something that isn't human at all.", "medium": "This device gives a non-human thing, like an object or animal, a human quality or action.", "easy": "This device makes something non-human -- like an object or animal -- act or feel like a person."},
+    "medium": {"hard": "Look for the sentence attributing a human-like action or sound to a non-human object, rather than a comparison using 'as,' or plain factual description.", "medium": "Look for the sentence giving the house a human-like action, not one comparing it with 'as' or just describing it plainly.", "easy": "The correct sentence gives the house a human-like sound or action -- one word here means something a person, not a house, usually does."},
+    "hard": {"hard": "The distinction is about duration and depth of the human-like treatment -- brief figurative flourish versus a fully sustained character -- not subject-matter restrictions or genre.", "medium": "The distinction is about how BRIEF or how SUSTAINED the human-like treatment is, not about specific subjects or genres.", "easy": "One device is a quick figure of speech; the other builds an entire ongoing character, like a talking animal in a story."}
+  }
+},
+{
+  "topic": "foreshadowing",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which term describes hints or clues an author gives about events that will happen later in a story?",
+    "options": [
+      {"text": "Foreshadowing", "isCorrect": true, "feedback": "Correct -- foreshadowing plants clues that hint at what's to come."},
+      {"text": "Flashback", "isCorrect": false, "feedback": "A flashback shows events from the PAST, not hints about the future."},
+      {"text": "Exposition", "isCorrect": false, "feedback": "Exposition provides background information at a story's start, not hints about future events."},
+      {"text": "Resolution", "isCorrect": false, "feedback": "The resolution wraps up the story's conflicts at the end -- it isn't about hinting at future events."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is an example of foreshadowing?",
+    "options": [
+      {"text": "A character notices dark storm clouds gathering, right before a tragedy occurs later in the story", "isCorrect": true, "feedback": "Correct -- the ominous clouds hint at the trouble to come."},
+      {"text": "A character remembers a childhood event from years earlier in the story's timeline", "isCorrect": false, "feedback": "Recalling a past event describes a flashback, not foreshadowing."},
+      {"text": "A narrator describes a character's appearance at the story's beginning", "isCorrect": false, "feedback": "This is straightforward exposition or description, not a hint about future events."},
+      {"text": "A character explains what happened after the story's main conflict is resolved", "isCorrect": false, "feedback": "This describes a resolution or epilogue, not a hint about events yet to come."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does foreshadowing fundamentally differ from a flashback as a narrative technique?",
+    "options": [
+      {"text": "Foreshadowing hints at events that will happen later in the story, while a flashback depicts events that already happened earlier", "isCorrect": true, "feedback": "Correct -- the two devices point in opposite temporal directions relative to the story's main timeline."},
+      {"text": "Foreshadowing is always spoken by a narrator, while a flashback is always shown through dialogue", "isCorrect": false, "feedback": "Both devices can be delivered through narration, dialogue, or imagery -- the real distinction is the direction in time each one points."},
+      {"text": "Foreshadowing only appears in poetry, while flashbacks only appear in novels", "isCorrect": false, "feedback": "Both techniques appear across poetry, novels, and other narrative forms -- genre isn't the distinguishing factor."},
+      {"text": "Foreshadowing and flashback are simply two names for the same technique", "isCorrect": false, "feedback": "They are distinct techniques pointing in opposite directions along a story's timeline."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This technique points forward in the story's timeline, planting clues for what's still to come.", "medium": "This technique gives the reader clues about something that hasn't happened yet in the story.", "easy": "This technique gives hints about something that will happen LATER in the story."},
+    "medium": {"hard": "Look for the option describing an ominous clue tied to a LATER event, rather than a memory of an earlier one, plain description, or a wrap-up after the conflict.", "medium": "Look for the option that hints at something bad about to happen, not one describing the past or wrapping things up.", "easy": "The correct option describes something ominous happening right before a tragedy occurs LATER in the story."},
+    "hard": {"hard": "The distinction is about which direction in the story's timeline each technique points, not who delivers it or what genre it appears in.", "medium": "The distinction is about pointing toward the FUTURE versus the PAST in the story's timeline -- not who says it or what genre.", "easy": "One technique points toward the future of the story; the other looks back at its past."}
+  }
+},
+{
+  "topic": "symbolism",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In literature, when an object, person, or color represents an idea beyond its literal meaning, this is called what?",
+    "options": [
+      {"text": "Symbolism", "isCorrect": true, "feedback": "Correct -- symbolism uses something concrete to represent a deeper, abstract idea."},
+      {"text": "Alliteration", "isCorrect": false, "feedback": "Alliteration is the repetition of initial sounds -- unrelated to representing deeper ideas."},
+      {"text": "Onomatopoeia", "isCorrect": false, "feedback": "Onomatopoeia is a word that imitates a sound -- unrelated to representing deeper ideas."},
+      {"text": "Hyperbole", "isCorrect": false, "feedback": "Hyperbole is deliberate exaggeration -- unrelated to representing a deeper idea through an object or image."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In many stories, a dove is commonly used as a symbol to represent which concept?",
+    "options": [
+      {"text": "Peace", "isCorrect": true, "feedback": "Correct -- the dove is a widely recognized symbol of peace across many cultures and literary traditions."},
+      {"text": "War", "isCorrect": false, "feedback": "The dove is traditionally associated with peace, not war -- an eagle or a sword is more commonly used to symbolize conflict."},
+      {"text": "Greed", "isCorrect": false, "feedback": "The dove isn't traditionally used to symbolize greed -- other imagery, like gold or a serpent, is more commonly used for that."},
+      {"text": "Deception", "isCorrect": false, "feedback": "The dove isn't traditionally a symbol of deception -- a fox or a serpent is more commonly used for that idea."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does a 'motif' typically differ from a 'symbol' in literary analysis?",
+    "options": [
+      {"text": "A motif is a recurring element that repeats throughout a work, while a symbol may appear even just once to represent a deeper idea", "isCorrect": true, "feedback": "Correct -- repetition is central to a motif's function, while a symbol's meaning doesn't depend on repeated appearances."},
+      {"text": "A motif always represents death, while a symbol always represents life", "isCorrect": false, "feedback": "Neither term is tied to one specific meaning -- both can represent a wide range of ideas depending on the work."},
+      {"text": "A motif can only appear in film, while a symbol can only appear in written text", "isCorrect": false, "feedback": "Both motifs and symbols appear across mediums, including literature and film -- medium isn't the distinguishing factor."},
+      {"text": "There is no real difference; the two terms are entirely interchangeable", "isCorrect": false, "feedback": "The terms are related, but the recurrence involved in a motif is a genuine distinguishing feature."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This device lets a physical object or image stand in for something conceptual or emotional.", "medium": "This device uses a concrete image or object to stand for a bigger, more abstract idea.", "easy": "This device uses an object or image to represent a bigger idea, like using a color to represent a feeling."},
+    "medium": {"hard": "This bird is widely recognized across cultures as representing the absence of conflict, often shown carrying an olive branch.", "medium": "This bird is often shown carrying an olive branch as a symbol of calm and non-violence.", "easy": "This white bird is a very commonly recognized symbol -- think of it appearing at the end of conflicts or in wedding imagery."},
+    "hard": {"hard": "The distinction hinges on repetition throughout a work versus a single meaningful appearance, not on a fixed meaning or a restriction to one medium.", "medium": "The distinction is about how often the element repeats throughout the work, not about a fixed meaning or medium.", "easy": "One term is specifically about something that keeps showing up again and again throughout the story."}
+  }
+},
+{
+  "topic": "types of irony",
+  "easy": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of the following are recognized types of irony in literature? (Select all that apply)",
+    "options": [
+      {"text": "Dramatic irony", "isCorrect": true, "feedback": "Correct -- dramatic irony occurs when the audience knows something a character does not."},
+      {"text": "Situational irony", "isCorrect": true, "feedback": "Correct -- situational irony occurs when the outcome of a situation is the opposite of what was expected."},
+      {"text": "Hyperbole", "isCorrect": false, "feedback": "Hyperbole is deliberate exaggeration -- it's a separate literary device, not a type of irony."},
+      {"text": "Alliteration", "isCorrect": false, "feedback": "Alliteration is the repetition of initial sounds -- it's a separate literary device, not a type of irony."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of these are standard classifications of irony recognized in literary analysis? (Select all that apply)",
+    "options": [
+      {"text": "Verbal irony", "isCorrect": true, "feedback": "Correct -- verbal irony occurs when someone says the opposite of what they actually mean."},
+      {"text": "Dramatic irony", "isCorrect": true, "feedback": "Correct -- dramatic irony relies on the audience knowing more than a character does."},
+      {"text": "Situational irony", "isCorrect": true, "feedback": "Correct -- situational irony describes an outcome that contradicts expectations."},
+      {"text": "Personification", "isCorrect": false, "feedback": "Personification gives human traits to non-human things -- it's a distinct device, not a type of irony."},
+      {"text": "Foreshadowing", "isCorrect": false, "feedback": "Foreshadowing hints at future events -- it's a distinct device, not a type of irony."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of these scenarios correctly illustrate a recognized TYPE of irony? (Select all that apply)",
+    "options": [
+      {"text": "A fire station burns down (situational irony)", "isCorrect": true, "feedback": "Correct -- this is a classic example of situational irony, where the outcome directly contradicts what should logically happen."},
+      {"text": "The audience knows a killer is hiding in the room, but the character walking in does not (dramatic irony)", "isCorrect": true, "feedback": "Correct -- this is dramatic irony, since the audience has knowledge the character lacks."},
+      {"text": "A character says 'What lovely weather' during a violent storm (verbal irony)", "isCorrect": true, "feedback": "Correct -- this is verbal irony, since the character means the opposite of what they say."},
+      {"text": "A story repeats the color red every time danger is near (symbolism, not irony)", "isCorrect": false, "feedback": "This describes a recurring symbol or motif, not a form of irony."},
+      {"text": "A narrator describes a character's childhood before the main plot begins (exposition, not irony)", "isCorrect": false, "feedback": "This describes exposition, providing background information -- not a form of irony."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Both correct answers describe a gap between expectation and reality, unlike the sound- and exaggeration-based devices listed.", "medium": "Both correct answers involve some kind of unexpected twist or mismatch -- unlike the two devices listed that don't.", "easy": "Both correct answers are actual types of irony -- the other two are unrelated literary devices."},
+    "medium": {"hard": "All three correct answers describe a mismatch between expectation, appearance, or knowledge and reality -- unlike the two devices listed that describe entirely different techniques.", "medium": "All three correct answers are irony types describing some kind of mismatch -- the other two are unrelated devices.", "easy": "Three of these are irony types; the other two are completely different literary devices."},
+    "hard": {"hard": "The three correct scenarios each match a specific type of irony's defining mismatch -- expectation-versus-outcome, audience-versus-character knowledge, or stated-versus-meant words -- while the last two describe unrelated devices (a recurring image and background narration).", "medium": "Three scenarios genuinely show a type of irony; the last two describe a recurring symbol and simple background information instead.", "easy": "Three of these show some kind of ironic twist; the other two are just an example of symbolism and an example of exposition."}
+  }
+},
+{
+  "topic": "satire",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A literary work that uses humor, exaggeration, or ridicule to criticize people's foolishness or vices is called what?",
+    "options": [
+      {"text": "Satire", "isCorrect": true, "feedback": "Correct -- satire uses humor and exaggeration to criticize and expose flaws in people, society, or institutions."},
+      {"text": "Elegy", "isCorrect": false, "feedback": "An elegy is a mournful poem, often for the dead -- the opposite tone from satire's humor and mockery."},
+      {"text": "Ode", "isCorrect": false, "feedback": "An ode is a poem praising or celebrating its subject -- unrelated to satire's critical, mocking purpose."},
+      {"text": "Epic", "isCorrect": false, "feedback": "An epic is a long narrative poem about heroic deeds -- unrelated to satire's humorous criticism."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does satire typically differ from parody as a literary technique?",
+    "options": [
+      {"text": "Satire criticizes broader human vices or societal issues, while parody specifically imitates the style of a particular work for comic effect", "isCorrect": true, "feedback": "Correct -- parody's humor comes from mimicking a specific source, while satire's target is broader folly or wrongdoing."},
+      {"text": "Satire is always written in verse, while parody is always written in prose", "isCorrect": false, "feedback": "Both satire and parody can appear in verse or prose -- form isn't the distinguishing factor."},
+      {"text": "Satire always targets governments, while parody always targets celebrities", "isCorrect": false, "feedback": "Satire and parody can each target a wide range of subjects -- their targets aren't fixed by category."},
+      {"text": "There is no real difference between the two terms", "isCorrect": false, "feedback": "While related, the two techniques have a genuine difference in their focus -- criticizing broader folly versus imitating a specific source."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which classic work by Jonathan Swift satirizes European society and politics through a traveler's visits to a series of fantastical lands?",
+    "options": [
+      {"text": "Gulliver's Travels", "isCorrect": true, "feedback": "Correct -- through Gulliver's encounters with tiny, giant, and other fantastical societies, Swift satirizes European politics, science, and human nature."},
+      {"text": "Robinson Crusoe", "isCorrect": false, "feedback": "Robinson Crusoe, by Daniel Defoe, is a survival adventure story, not primarily a satirical work."},
+      {"text": "Paradise Lost", "isCorrect": false, "feedback": "Paradise Lost, by John Milton, is an epic poem about the biblical Fall of Man, not a satirical travel narrative."},
+      {"text": "The Canterbury Tales", "isCorrect": false, "feedback": "The Canterbury Tales, by Geoffrey Chaucer, contains some satirical elements, but it isn't the specific fantastical travel satire described here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This genre's tone is mocking and critical, the opposite of works meant to mourn or celebrate their subject.", "medium": "This genre uses humor and mockery specifically to criticize flaws in people or society.", "easy": "This type of writing pokes fun at people's flaws to criticize them, often through exaggeration."},
+    "medium": {"hard": "The distinction is about the target -- general human folly versus a specific source text -- not the form (verse or prose) or a fixed subject category.", "medium": "The distinction is about what's being targeted -- broad human folly, or one specific existing work.", "easy": "One technique makes fun of people's flaws in general; the other specifically imitates one particular existing work."},
+    "hard": {"hard": "This work involves a traveler visiting multiple invented societies, each used to satirize a different aspect of European civilization, distinct from a survival story, a religious epic, or a medieval collection of pilgrim tales.", "medium": "This work follows a traveler visiting several made-up lands, each poking fun at a different aspect of society.", "easy": "This famous satire follows a man who visits places with tiny people and giant people, among others."}
+  }
+},
+{
+  "topic": "Romeo and Juliet as tragedy",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "William Shakespeare's play 'Romeo and Juliet' is classified as which type of drama?",
+    "options": [
+      {"text": "Tragedy", "isCorrect": true, "feedback": "Correct -- the play ends with the deaths of its two protagonists, a defining feature of tragedy."},
+      {"text": "Comedy", "isCorrect": false, "feedback": "Shakespearean comedies typically end happily, often in marriage -- unlike Romeo and Juliet's fatal ending."},
+      {"text": "History", "isCorrect": false, "feedback": "Shakespeare's history plays dramatize real English monarchs' reigns -- Romeo and Juliet is a fictional tragedy, not a history play."},
+      {"text": "Satire", "isCorrect": false, "feedback": "Romeo and Juliet is a serious tragedy, not a work of mocking social criticism."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What key feature of 'Romeo and Juliet' most clearly marks it as a tragedy rather than a tragicomedy?",
+    "options": [
+      {"text": "The story ends with the protagonists' deaths, without a happy resolution", "isCorrect": true, "feedback": "Correct -- a true tragedy ends in the protagonists' downfall, unlike a tragicomedy, which blends serious and comedic elements toward a less bleak ending."},
+      {"text": "The play includes some comedic characters, like Mercutio", "isCorrect": false, "feedback": "Comedic moments or characters can appear within a tragedy -- their presence alone doesn't make a play a tragicomedy."},
+      {"text": "The play is set in Verona, Italy", "isCorrect": false, "feedback": "Setting doesn't determine a play's classification as tragedy versus tragicomedy -- the story's overall outcome does."},
+      {"text": "The play was written in the 16th century", "isCorrect": false, "feedback": "The time period of writing doesn't determine genre classification -- the nature of the ending does."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which classical tragic element, common in Shakespearean tragedy, is often cited as driving Romeo and Juliet toward their downfall?",
+    "options": [
+      {"text": "A chain of fateful misunderstandings and impulsive decisions, compounded by their families' feud", "isCorrect": true, "feedback": "Correct -- miscommunications (like the delayed message about Juliet's faked death) combine with the Montague-Capulet feud to seal the lovers' fate."},
+      {"text": "A supernatural curse placed on both families by a witch", "isCorrect": false, "feedback": "There is no witch's curse driving the plot -- the tragedy stems from human feud, chance, and impulsive choices."},
+      {"text": "A foreign invasion that separates the two lovers", "isCorrect": false, "feedback": "No foreign invasion occurs in the play -- the conflict is rooted in the feuding Montague and Capulet families."},
+      {"text": "A financial dispute between the two families over inheritance", "isCorrect": false, "feedback": "The families' conflict is a long-standing feud, not a financial or inheritance dispute."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This genre's defining feature is the protagonists' downfall, distinct from genres ending in marriage or triumph.", "medium": "This genre typically ends with the death or downfall of its main characters.", "easy": "This type of play ends sadly, with the deaths of the two main characters."},
+    "medium": {"hard": "The distinguishing feature is the story's ultimate outcome for its protagonists, not its setting, era, or the presence of some lighter character moments.", "medium": "The distinguishing feature is how the story ends for its main characters, not its setting or era.", "easy": "Look at what actually happens to Romeo and Juliet by the end of the play."},
+    "hard": {"hard": "The driving force is human error and long-standing family conflict, not supernatural intervention, external war, or a financial dispute.", "medium": "The driving force involves miscommunication and an existing family conflict -- not magic, war, or money.", "easy": "A message that arrives too late, combined with the ongoing feud between their families, seals the lovers' fate."}
+  }
+},
+{
+  "topic": "sonnet structure",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "How many lines does a traditional sonnet contain?",
+    "options": [
+      {"text": "14", "isCorrect": true, "feedback": "Correct -- the sonnet form, whether Shakespearean or Petrarchan, traditionally has 14 lines."},
+      {"text": "10", "isCorrect": false, "feedback": "10 lines is not the traditional sonnet length -- the standard is 14."},
+      {"text": "20", "isCorrect": false, "feedback": "20 lines is longer than the traditional sonnet -- the standard is 14."},
+      {"text": "7", "isCorrect": false, "feedback": "7 lines is half the traditional sonnet length -- the standard is 14."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which rhyme scheme is typically used in a Shakespearean (English) sonnet?",
+    "options": [
+      {"text": "ABAB CDCD EFEF GG", "isCorrect": true, "feedback": "Correct -- this pattern of three quatrains followed by a rhyming couplet is the classic Shakespearean sonnet structure."},
+      {"text": "AABB CCDD EEFF GG", "isCorrect": false, "feedback": "This isn't the standard Shakespearean rhyme scheme -- the classic pattern alternates rhymes within each quatrain (ABAB) rather than pairing consecutive lines throughout."},
+      {"text": "ABBA ABBA CDECDE", "isCorrect": false, "feedback": "This pattern describes a Petrarchan (Italian) sonnet, not the Shakespearean form."},
+      {"text": "No consistent rhyme scheme at all", "isCorrect": false, "feedback": "The Shakespearean sonnet follows a specific, consistent rhyme scheme -- it isn't unstructured."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does the structure of a Shakespearean (English) sonnet differ from a Petrarchan (Italian) sonnet?",
+    "options": [
+      {"text": "The Shakespearean sonnet uses three quatrains and a final couplet, while the Petrarchan sonnet uses an eight-line octave followed by a six-line sestet", "isCorrect": true, "feedback": "Correct -- this structural difference also shapes how each form typically develops and resolves its central idea."},
+      {"text": "The Shakespearean sonnet has no fixed line count, while the Petrarchan sonnet always has exactly 14 lines", "isCorrect": false, "feedback": "Both forms traditionally have exactly 14 lines -- the difference lies in how those lines are grouped and rhymed."},
+      {"text": "The Shakespearean sonnet is always about nature, while the Petrarchan sonnet is always about war", "isCorrect": false, "feedback": "Subject matter isn't what distinguishes these two sonnet forms -- their structural organization is."},
+      {"text": "The Shakespearean sonnet must be spoken aloud, while the Petrarchan sonnet must be sung", "isCorrect": false, "feedback": "Performance method isn't the distinguishing feature between these two structural forms."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This poetic form is fixed at a specific line count shared by both of its major historical variants.", "medium": "This poetic form always has the same total line count, whether in its English or Italian variant.", "easy": "This is the total number of lines in a traditional sonnet -- an easy number to remember since it doesn't change."},
+    "medium": {"hard": "This pattern alternates rhymes across three four-line groups before ending in a rhymed pair, unlike patterns pairing every two consecutive lines or the eight-then-six-line Italian structure.", "medium": "This pattern rhymes alternating lines in groups of four, ending with a rhymed pair -- it's not the eight-and-six-line Italian pattern.", "easy": "This pattern has three four-line sections that each rhyme every-other-line, followed by a final rhyming pair of lines."},
+    "hard": {"hard": "Both forms share the same total line count, can address any subject, and are read the same way -- so the answer has to come down to how those 14 lines are internally divided into sections. Compare the number and size of those sections between the two traditions before choosing.", "medium": "The difference is in how the same 14 lines are grouped into sections, not in total line count or subject matter.", "easy": "One form breaks into three four-line sections plus a rhyming pair; the other breaks into an eight-line section plus a six-line section."}
+  }
+},
+{
+  "topic": "haiku structure",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A traditional Japanese haiku follows which syllable pattern across its three lines?",
+    "options": [
+      {"text": "5-7-5", "isCorrect": true, "feedback": "Correct -- a traditional haiku has 5 syllables in the first line, 7 in the second, and 5 in the third."},
+      {"text": "7-5-7", "isCorrect": false, "feedback": "This reverses the traditional pattern -- the correct order is 5-7-5."},
+      {"text": "4-4-4", "isCorrect": false, "feedback": "This is an even pattern, but a traditional haiku's pattern is 5-7-5, not uniform across all three lines."},
+      {"text": "3-5-3", "isCorrect": false, "feedback": "This isn't the traditional haiku pattern -- the correct syllable count is 5-7-5."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Traditional haiku poems often focus primarily on which subject matter?",
+    "options": [
+      {"text": "Nature and the changing seasons", "isCorrect": true, "feedback": "Correct -- haiku traditionally center on brief, vivid images from nature, often tied to a specific season."},
+      {"text": "Epic battles and heroic quests", "isCorrect": false, "feedback": "Epic battles are more associated with long narrative epics, not the brief, nature-focused haiku form."},
+      {"text": "Complex political commentary", "isCorrect": false, "feedback": "Political commentary is more associated with satire, not the traditional nature-focused haiku."},
+      {"text": "Detailed character biographies", "isCorrect": false, "feedback": "Haiku are typically far too brief to develop detailed character biographies -- their focus is a brief, vivid image, usually from nature."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does a senryu typically differ from a haiku, despite sharing the same 5-7-5 syllable structure?",
+    "options": [
+      {"text": "A senryu focuses on human nature and foibles, often with irony or humor, while a haiku traditionally focuses on nature and the seasons", "isCorrect": true, "feedback": "Correct -- both forms share the same syllable pattern, but their traditional subject matter and tone differ."},
+      {"text": "A senryu has 17 lines, while a haiku has only 3", "isCorrect": false, "feedback": "Both forms share the same three-line, 5-7-5 syllable structure -- line count isn't what distinguishes them."},
+      {"text": "A senryu is always written in English, while a haiku is always written in Japanese", "isCorrect": false, "feedback": "Both forms originated in Japanese poetry and have since been adapted into many languages -- language isn't the distinguishing feature."},
+      {"text": "There is no real difference between a senryu and a haiku", "isCorrect": false, "feedback": "While structurally identical, the two forms are traditionally distinguished by their differing subject matter and tone."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This pattern totals 17 syllables spread unevenly across three lines.", "medium": "This pattern has a middle line that's longer than the two lines surrounding it.", "easy": "The first and third lines of this pattern have the same, shorter syllable count; the middle line is longer."},
+    "medium": {"hard": "This subject matter is tied to brief, vivid natural imagery, often anchored to a specific time of year, unlike large-scale narratives, political commentary, or personal biography.", "medium": "This subject matter centers on brief images from the natural world, tied to a specific season.", "easy": "Haiku are famous for short, vivid images about nature -- like a falling leaf or a frog jumping into a pond."},
+    "hard": {"hard": "The distinction is about traditional subject matter and tone -- human folly and irony versus nature imagery -- not line count or language of origin.", "medium": "The distinction is about traditional subject matter -- people and their quirks, versus nature -- not structure or language.", "easy": "One form usually pokes fun at people and their quirks; the other usually focuses on nature."}
+  }
+},
+{
+  "topic": "limerick structure",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A limerick is a short, humorous poem typically written with which rhyme scheme?",
+    "options": [
+      {"text": "AABBA", "isCorrect": true, "feedback": "Correct -- limericks follow the AABBA pattern, with the first, second, and fifth lines rhyming, and the third and fourth lines rhyming separately."},
+      {"text": "ABAB", "isCorrect": false, "feedback": "ABAB is a common rhyme scheme in other poetic forms, like some sonnets, but not the traditional limerick pattern."},
+      {"text": "ABCB", "isCorrect": false, "feedback": "ABCB isn't the traditional limerick pattern -- limericks follow AABBA."},
+      {"text": "No rhyme at all", "isCorrect": false, "feedback": "Limericks are traditionally known for their distinct, consistent rhyme scheme, not an absence of rhyme."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Limericks are typically written using which rhythmic pattern, giving them their bouncy, sing-song quality?",
+    "options": [
+      {"text": "Anapestic meter (a rhythm built on unstressed-unstressed-stressed syllable groupings)", "isCorrect": true, "feedback": "Correct -- this bouncy rhythm, combined with the AABBA rhyme scheme, gives limericks their distinctive comedic feel."},
+      {"text": "Free verse, with no set rhythm at all", "isCorrect": false, "feedback": "Limericks follow a specific, recognizable rhythm -- they aren't written in unstructured free verse."},
+      {"text": "Iambic pentameter, the same meter used in most Shakespearean plays", "isCorrect": false, "feedback": "Iambic pentameter is associated with Shakespearean verse, not the bouncier rhythm typical of limericks."},
+      {"text": "A rhythm based on counting only vowels, not syllables", "isCorrect": false, "feedback": "This isn't a real poetic meter -- limericks follow anapestic meter, based on syllable stress patterns."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does the typical tone of a limerick usually differ from that of a traditional haiku?",
+    "options": [
+      {"text": "A limerick is typically comedic or nonsensical, while a haiku is typically serious and contemplative, often focused on nature", "isCorrect": true, "feedback": "Correct -- despite both being short poetic forms, their traditional tones and purposes are quite different."},
+      {"text": "A limerick must always be tragic, while a haiku must always be comedic", "isCorrect": false, "feedback": "This reverses the actual traditional tones -- limericks are typically comedic, while haiku are typically serious and contemplative."},
+      {"text": "A limerick is always written by children, while a haiku is always written by adults", "isCorrect": false, "feedback": "Age of the poet isn't a defining feature of either form -- their traditional tone and subject matter are."},
+      {"text": "There is no difference in tone between the two forms", "isCorrect": false, "feedback": "The two forms have traditionally distinct tones -- comedic and playful versus serious and contemplative."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This pattern pairs three longer rhyming lines with two shorter rhyming lines in between them.", "medium": "This pattern has the first, second, and last lines rhyme with each other, while the two middle lines rhyme with each other separately.", "easy": "In this rhyme scheme, lines one, two, and five all rhyme, while lines three and four rhyme with each other instead."},
+    "medium": {"hard": "This rhythm builds each phrase toward a stressed syllable after two unstressed ones, distinct from the steady up-down pattern used in Shakespearean verse or the absence of pattern in free verse.", "medium": "This rhythm has a bouncy, rolling quality, distinct from Shakespeare's steady rhythm or having no set rhythm at all.", "easy": "This rhythm has a bouncy, sing-song quality that makes limericks fun to read aloud."},
+    "hard": {"hard": "The contrast is between playful, often absurd humor and quiet, reflective observation of nature -- not the age of the writer or an absolute rule about tragedy versus comedy.", "medium": "The contrast is between playful humor and quiet, reflective nature imagery -- not about who wrote it.", "easy": "One form is meant to be funny and silly; the other is meant to be calm and thoughtful, usually about nature."}
+  }
+},
+{
+  "topic": "first-person point of view",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A story told from the first-person point of view is narrated using which pronoun?",
+    "options": [
+      {"text": "\"I\"", "isCorrect": true, "feedback": "Correct -- first-person narration uses 'I' (or 'we'), as the narrator is a character within the story."},
+      {"text": "\"He\" or \"she\"", "isCorrect": false, "feedback": "\"He\" or \"she\" is used in third-person narration, not first-person."},
+      {"text": "\"You\"", "isCorrect": false, "feedback": "\"You\" is used in the much rarer second-person narration, not first-person."},
+      {"text": "\"They\"", "isCorrect": false, "feedback": "\"They\" is generally used in third-person narration, not first-person."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does first-person narration typically differ from third-person LIMITED narration?",
+    "options": [
+      {"text": "First-person is narrated by a character using 'I,' while third-person limited uses 'he/she' but is still restricted to one character's inner thoughts", "isCorrect": true, "feedback": "Correct -- both are restricted to one character's perspective, but they differ in the specific pronoun and narrative distance used."},
+      {"text": "First-person can access every character's thoughts, while third-person limited can only access one", "isCorrect": false, "feedback": "This describes third-person OMNISCIENT versus limited -- first-person is generally restricted to just the narrating character's own thoughts."},
+      {"text": "First-person is only used in poetry, while third-person limited is only used in novels", "isCorrect": false, "feedback": "Both narrative modes appear across poetry, novels, and other prose forms -- genre isn't the distinction."},
+      {"text": "There is no real difference between the two", "isCorrect": false, "feedback": "The two modes differ meaningfully in the pronoun used and in the narrator's relationship to the story."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What distinguishes an 'unreliable narrator' from a standard first-person narrator?",
+    "options": [
+      {"text": "An unreliable narrator's account may be distorted by bias, deception, or limited understanding, making their version of events questionable", "isCorrect": true, "feedback": "Correct -- readers must read between the lines with an unreliable narrator, since their account can't be fully trusted."},
+      {"text": "An unreliable narrator always speaks in third person instead of first person", "isCorrect": false, "feedback": "Unreliable narrators are typically still first-person narrators -- the unreliability is about trustworthiness of the account, not the pronoun used."},
+      {"text": "An unreliable narrator never appears as a character in the story", "isCorrect": false, "feedback": "Unreliable narrators are usually characters within the story -- their involvement is often exactly why their account can be biased."},
+      {"text": "An unreliable narrator only appears in nonfiction writing", "isCorrect": false, "feedback": "Unreliable narrators are a fiction technique, found in novels and short stories, not typically a nonfiction device."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This narrative mode places the narrator inside the story as a participant referring to themselves directly.", "medium": "This narrative mode has the narrator refer to themselves directly as a character in the story.", "easy": "This point of view has the narrator talking about themselves as 'I,' since they're a character in the story."},
+    "medium": {"hard": "The key difference is the pronoun used and how the narrator relates to the story, not the scope of whose thoughts are accessible, which is a separate distinction (limited versus omniscient).", "medium": "The key difference is the pronoun used, not how many characters' thoughts the narrator can access.", "easy": "One point of view uses 'I'; the other uses 'he' or 'she,' even though both are still limited to one character's thoughts."},
+    "hard": {"hard": "The defining trait is the trustworthiness of the account itself, due to bias, deception, or limited perception -- not the pronoun used, the narrator's involvement in the story, or the genre.", "medium": "The defining trait is whether you can fully trust what the narrator tells you -- not the pronoun or genre.", "easy": "This kind of narrator might be lying, mistaken, or biased, so you can't fully trust everything they say."}
+  }
+},
+{
+  "topic": "the protagonist",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes the main character around whom a story's events revolve?",
+    "options": [
+      {"text": "Protagonist", "isCorrect": true, "feedback": "Correct -- the protagonist is the central character whose journey drives the story."},
+      {"text": "Antagonist", "isCorrect": false, "feedback": "The antagonist opposes the main character -- the main character themselves is the protagonist."},
+      {"text": "Narrator", "isCorrect": false, "feedback": "The narrator is who tells the story -- they aren't necessarily the story's central character."},
+      {"text": "Foil", "isCorrect": false, "feedback": "A foil is a character who contrasts with another to highlight certain qualities -- not the story's central character."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does the protagonist typically relate to the antagonist within a story's central conflict?",
+    "options": [
+      {"text": "The antagonist opposes or creates conflict for the protagonist", "isCorrect": true, "feedback": "Correct -- the antagonist's opposition to the protagonist is often what drives the story's central conflict."},
+      {"text": "The antagonist and protagonist are always the same character", "isCorrect": false, "feedback": "The protagonist and antagonist are distinct roles -- though a story can have internal conflict, the antagonist is generally a separate opposing force."},
+      {"text": "The antagonist always narrates the story", "isCorrect": false, "feedback": "The antagonist's role is defined by opposing the protagonist, not by narrating the story."},
+      {"text": "The antagonist and protagonist never interact within the plot", "isCorrect": false, "feedback": "The antagonist's conflict with the protagonist typically requires them to interact or clash in some way throughout the plot."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does an 'anti-hero' protagonist typically differ from a traditional heroic protagonist?",
+    "options": [
+      {"text": "An anti-hero lacks conventional heroic qualities, such as moral virtue or courage, while still serving as the story's central character", "isCorrect": true, "feedback": "Correct -- an anti-hero can still be the protagonist driving the plot, despite lacking traditionally admirable traits."},
+      {"text": "An anti-hero is always the story's antagonist, not its protagonist", "isCorrect": false, "feedback": "An anti-hero is still the protagonist -- the term describes their unconventional character traits, not a shift to the opposing role."},
+      {"text": "An anti-hero always dies at the end of the story", "isCorrect": false, "feedback": "An anti-hero's fate varies by story -- the term is about their character traits, not a required ending."},
+      {"text": "An anti-hero only appears in nonfiction writing", "isCorrect": false, "feedback": "Anti-heroes are a fiction technique, common in novels and film, not specifically a nonfiction device."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This character's journey and choices are typically what the story's plot centers around.", "medium": "This is the character the story's main plot follows and focuses on.", "easy": "This is the story's main character -- the one the story mostly follows."},
+    "medium": {"hard": "The relationship involves one character (or force) creating obstacles or conflict for the other, driving the story's central tension.", "medium": "The relationship involves one character creating conflict or obstacles for the other.", "easy": "One character stands in the way of, or causes trouble for, the other character."},
+    "hard": {"hard": "The distinguishing feature is the character's lack of conventional virtue while still occupying the central story role, not a shift to the opposing side, a required fate, or genre restriction.", "medium": "The distinguishing feature is lacking typical heroic virtues while still being the main character -- not switching to the opposing role.", "easy": "This kind of protagonist isn't very heroic or virtuous, but they're still the character the story follows."}
+  }
+},
+{
+  "topic": "the climax of a story",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a story's plot structure, what is the term for the moment of greatest tension or the turning point?",
+    "options": [
+      {"text": "Climax", "isCorrect": true, "feedback": "Correct -- the climax is the story's peak moment of tension, where the central conflict reaches its turning point."},
+      {"text": "Exposition", "isCorrect": false, "feedback": "Exposition introduces background information at a story's beginning -- it isn't the peak of tension."},
+      {"text": "Resolution", "isCorrect": false, "feedback": "The resolution wraps up the story after the tension has already peaked and subsided."},
+      {"text": "Rising action", "isCorrect": false, "feedback": "Rising action builds tension leading UP TO the climax -- it isn't the peak moment itself."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does the climax differ from the rising action in a story's plot structure?",
+    "options": [
+      {"text": "The rising action builds tension leading up to the peak, while the climax IS that peak moment of highest tension", "isCorrect": true, "feedback": "Correct -- the rising action is the buildup, while the climax is the turning point itself."},
+      {"text": "The rising action always comes after the climax", "isCorrect": false, "feedback": "This reverses the actual order -- rising action leads UP TO the climax, not after it."},
+      {"text": "The climax always occurs at the very beginning of a story", "isCorrect": false, "feedback": "The climax typically occurs after a buildup of tension, generally around the middle or later part of a story, not at the very beginning."},
+      {"text": "There is no meaningful difference between the two stages", "isCorrect": false, "feedback": "They are distinct stages -- one is a gradual buildup, the other is the peak turning point itself."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does the climax typically differ from the denouement (or resolution) in a story's structure?",
+    "options": [
+      {"text": "The climax is the peak moment of tension and the conflict's turning point, while the denouement resolves the remaining loose ends afterward", "isCorrect": true, "feedback": "Correct -- the denouement follows the climax, tying up the story's remaining threads once the central tension has been resolved."},
+      {"text": "The denouement always occurs before the climax in a story's structure", "isCorrect": false, "feedback": "This reverses the typical order -- the denouement follows the climax, resolving what's left after the turning point."},
+      {"text": "The climax and denouement are simply two different names for the exact same story stage", "isCorrect": false, "feedback": "They are distinct stages -- the climax is the peak of tension, while the denouement is the resolution that follows it."},
+      {"text": "The climax only appears in comedies, while the denouement only appears in tragedies", "isCorrect": false, "feedback": "Both stages appear in nearly all narrative structures, regardless of genre -- they aren't restricted to comedy or tragedy specifically."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the story's peak point of tension, where the central conflict reaches its decisive turn.", "medium": "This is the point in the story where tension is at its highest and the conflict turns one way or another.", "easy": "This is the most tense, exciting part of the story -- the turning point."},
+    "medium": {"hard": "One stage is the gradual buildup of tension; the other IS the peak moment itself -- not a stage that comes after it or that occurs at the very start.", "medium": "One stage builds UP to the peak; the other IS the peak itself.", "easy": "Rising action happens BEFORE the most tense moment; the climax IS that most tense moment."},
+    "hard": {"hard": "One stage is the peak turning point of tension; the other is what ties up loose ends AFTER that peak has passed -- not a stage occurring before it, an identical stage, or one restricted by genre.", "medium": "One stage is the peak of tension; the other wraps things up AFTER that peak.", "easy": "One is the most tense moment; the other is what happens afterward, once things start getting resolved."}
+  }
+},
+{
+  "topic": "stages of plot structure",
+  "easy": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of the following are standard stages of a story's plot structure? (Select all that apply)",
+    "options": [
+      {"text": "Exposition", "isCorrect": true, "feedback": "Correct -- exposition introduces the setting, characters, and background at a story's start."},
+      {"text": "Climax", "isCorrect": true, "feedback": "Correct -- the climax is the story's peak moment of tension."},
+      {"text": "Alliteration", "isCorrect": false, "feedback": "Alliteration is a sound device, not a stage of plot structure."},
+      {"text": "Simile", "isCorrect": false, "feedback": "A simile is a figure of speech, not a stage of plot structure."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of these are recognized stages within the traditional plot structure known as Freytag's Pyramid? (Select all that apply)",
+    "options": [
+      {"text": "Rising action", "isCorrect": true, "feedback": "Correct -- rising action builds tension leading up to the climax."},
+      {"text": "Falling action", "isCorrect": true, "feedback": "Correct -- falling action follows the climax, as tension begins to ease."},
+      {"text": "Resolution", "isCorrect": true, "feedback": "Correct -- the resolution ties up the story's remaining loose ends."},
+      {"text": "Foreshadowing", "isCorrect": false, "feedback": "Foreshadowing is a narrative technique used within a story, not one of the formal structural stages of the plot itself."},
+      {"text": "Personification", "isCorrect": false, "feedback": "Personification is a figure of speech, not a stage of plot structure."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of these are considered the five classic stages of Freytag's Pyramid plot structure? (Select all that apply)",
+    "options": [
+      {"text": "Exposition", "isCorrect": true, "feedback": "Correct -- exposition is the first stage, introducing the story's world."},
+      {"text": "Rising action", "isCorrect": true, "feedback": "Correct -- rising action is the second stage, building tension."},
+      {"text": "Climax", "isCorrect": true, "feedback": "Correct -- the climax is the third, central stage, marking the peak of tension."},
+      {"text": "Falling action", "isCorrect": true, "feedback": "Correct -- falling action is the fourth stage, as tension eases after the climax."},
+      {"text": "Resolution", "isCorrect": true, "feedback": "Correct -- resolution (or denouement) is the fifth and final stage, tying up remaining threads."},
+      {"text": "Prologue", "isCorrect": false, "feedback": "A prologue is an optional framing device some stories use, but it isn't one of Freytag's five core structural stages."},
+      {"text": "Epilogue", "isCorrect": false, "feedback": "An epilogue is an optional closing framing device some stories use, but it isn't one of Freytag's five core structural stages."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Both correct answers are structural stages of a plot's arc, unlike the sound- and comparison-based literary devices listed.", "medium": "Both correct answers describe a STAGE of the story's structure, not a figure of speech.", "easy": "Both correct answers are actual parts of a story's structure -- the other two are types of figures of speech."},
+    "medium": {"hard": "All three correct answers are formal structural stages within Freytag's Pyramid, distinct from a narrative TECHNIQUE (foreshadowing) and a figure of speech (personification), neither of which is a structural stage itself.", "medium": "All three correct answers are formal stages of plot structure -- the other two are a technique and a figure of speech, not structural stages.", "easy": "Three of these are stages of a story's structure; the other two are a storytelling technique and a figure of speech."},
+    "hard": {"hard": "The five correct stages make up the complete, classic Freytag's Pyramid, distinct from a prologue and epilogue, which are optional framing devices some stories add but which fall outside this core five-stage structure.", "medium": "The five correct answers make up the complete classic plot structure -- the other two are optional framing devices, not core stages.", "easy": "Five of these make up the classic plot structure taught in most literature classes; the other two are optional add-ons some stories use."}
+  }
+},
+{
+  "topic": "Homer's epic poems",
+  "easy": {
+    "type": "multiple_choice_multiple",
+    "text": "Which two epic poems are traditionally attributed to the ancient Greek poet Homer? (Select all that apply)",
+    "options": [
+      {"text": "The Iliad", "isCorrect": true, "feedback": "Correct -- the Iliad tells the story of the Trojan War."},
+      {"text": "The Odyssey", "isCorrect": true, "feedback": "Correct -- the Odyssey follows Odysseus's long journey home after the Trojan War."},
+      {"text": "The Aeneid", "isCorrect": false, "feedback": "The Aeneid was written by the Roman poet Virgil, not Homer."},
+      {"text": "Paradise Lost", "isCorrect": false, "feedback": "Paradise Lost was written by the English poet John Milton, over two thousand years after Homer."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of these epic works are attributed to Homer, as opposed to a different ancient or later poet? (Select all that apply)",
+    "options": [
+      {"text": "The Iliad", "isCorrect": true, "feedback": "Correct -- attributed to Homer, centering on the final weeks of the Trojan War."},
+      {"text": "The Odyssey", "isCorrect": true, "feedback": "Correct -- attributed to Homer, following Odysseus's ten-year journey home."},
+      {"text": "Metamorphoses", "isCorrect": false, "feedback": "Metamorphoses was written by the Roman poet Ovid, not Homer."},
+      {"text": "The Aeneid", "isCorrect": false, "feedback": "The Aeneid was written by the Roman poet Virgil, not Homer."},
+      {"text": "The Divine Comedy", "isCorrect": false, "feedback": "The Divine Comedy was written by the Italian poet Dante Alighieri, over a thousand years after Homer."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of the following statements correctly describe works attributed to Homer? (Select all that apply)",
+    "options": [
+      {"text": "The Iliad focuses on events during the final weeks of the Trojan War, centered on the hero Achilles", "isCorrect": true, "feedback": "Correct -- the Iliad is centered on Achilles's wrath and the war's climactic final stretch."},
+      {"text": "The Odyssey follows Odysseus's ten-year journey home after the Trojan War", "isCorrect": true, "feedback": "Correct -- the Odyssey recounts Odysseus's long, obstacle-filled voyage back to Ithaca."},
+      {"text": "The Aeneid follows the Trojan hero Aeneas as he journeys to found Rome, and was written by Virgil", "isCorrect": false, "feedback": "This description is accurate, but the Aeneid is attributed to Virgil, not Homer -- it's a Roman work inspired by Homer's epics."},
+      {"text": "Metamorphoses is a long poem retelling numerous myths of transformation, written by Ovid", "isCorrect": false, "feedback": "This description is accurate, but Metamorphoses is attributed to Ovid, not Homer."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Both correct answers are attributed to the same ancient Greek epic poet, distinct from a Roman and a much later English poet.", "medium": "Both correct answers were written by the same ancient Greek poet -- not the Roman or English poets in the other options.", "easy": "Both correct answers are ancient Greek epics about the Trojan War and its aftermath."},
+    "medium": {"hard": "Both correct answers share the same ancient Greek author, distinct from a Roman poet's transformation myths, another Roman poet's Trojan-hero epic, and a much later Italian poet's afterlife journey.", "medium": "Both correct answers share the same ancient Greek author -- the others are Roman or much later Italian works.", "easy": "Both correct answers are by the same ancient Greek poet -- the rest are by Roman or much later poets."},
+    "hard": {"hard": "The two correct statements accurately describe works BY Homer specifically, while the other two statements are factually accurate descriptions of real epics -- just ones attributed to different (Roman) poets, not Homer.", "medium": "The two correct statements are about Homer's own two epics -- the other two are accurate descriptions, but of different poets' works.", "easy": "Watch the author, not just the description -- two of these accurately describe real epics, but by a different (Roman) poet, not Homer."}
+  }
+},
+{
+  "topic": "Jane Austen's Pride and Prejudice",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Jane Austen's novel about Elizabeth Bennet and her sisters navigating marriage and social class in England is called what?",
+    "options": [
+      {"text": "Pride and Prejudice", "isCorrect": true, "feedback": "Correct -- Pride and Prejudice follows Elizabeth Bennet and her sisters as they navigate courtship and social class."},
+      {"text": "Sense and Sensibility", "isCorrect": false, "feedback": "Sense and Sensibility is another Austen novel, but it follows the Dashwood sisters, not the Bennets."},
+      {"text": "Wuthering Heights", "isCorrect": false, "feedback": "Wuthering Heights was written by Emily Bronte, not Jane Austen, and follows different characters entirely."},
+      {"text": "Jane Eyre", "isCorrect": false, "feedback": "Jane Eyre was written by Charlotte Bronte, not Jane Austen."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the name of Elizabeth Bennet's primary love interest and the novel's male protagonist?",
+    "options": [
+      {"text": "Mr. Darcy", "isCorrect": true, "feedback": "Correct -- Mr. Darcy's evolving relationship with Elizabeth is central to the novel's plot."},
+      {"text": "Mr. Bingley", "isCorrect": false, "feedback": "Mr. Bingley is a significant character who courts Elizabeth's sister Jane, not Elizabeth herself."},
+      {"text": "Mr. Wickham", "isCorrect": false, "feedback": "Mr. Wickham is a charming but deceitful character in the novel, not Elizabeth's primary love interest."},
+      {"text": "Mr. Collins", "isCorrect": false, "feedback": "Mr. Collins proposes to Elizabeth early in the novel, but she rejects him -- he isn't the novel's central male protagonist."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The novel's famous opening line, about a single man in possession of a good fortune needing a wife, is often cited as an example of what narrative technique used throughout the novel?",
+    "options": [
+      {"text": "Irony, since the novel goes on to show it is often women (or their families) who most urgently need a husband of good fortune", "isCorrect": true, "feedback": "Correct -- Austen's narrator uses this witty, ironic reversal to set the tone for the novel's social satire."},
+      {"text": "Foreshadowing of a character's death later in the novel", "isCorrect": false, "feedback": "The line doesn't hint at any death -- it sets up an ironic commentary on marriage and social expectations."},
+      {"text": "A direct, literal statement of the author's personal opinion with no irony intended", "isCorrect": false, "feedback": "The line is widely read as ironic and satirical, not as a literal, sincere statement of belief."},
+      {"text": "A flashback to events before the novel's timeline", "isCorrect": false, "feedback": "The opening line is a general statement, not a flashback to a specific earlier event."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This novel's title pairs two contrasting character flaws that Elizabeth and her love interest must each overcome.", "medium": "This novel's title names two character flaws, and it follows several sisters navigating courtship.", "easy": "This novel's title has two words describing character flaws, and it's about a family of sisters looking for husbands."},
+    "medium": {"hard": "This character is a wealthy, initially proud gentleman whose relationship with Elizabeth forms the novel's central romantic arc, distinct from her sister's suitor or two other men who court Elizabeth herself.", "medium": "This character is a wealthy, initially standoffish gentleman -- not the one who courts Elizabeth's sister instead.", "easy": "This wealthy gentleman starts off seeming proud and aloof, but becomes Elizabeth's true love interest."},
+    "hard": {"hard": "The technique involves saying something as if it were an obvious truth, while the novel's actual events reveal an ironic reversal of that assumption -- not a hint at death, a sincere statement, or a look backward in time.", "medium": "The technique involves stating something as an obvious 'truth,' while the story actually undercuts or reverses that assumption.", "easy": "The line sounds like a serious statement of fact, but the novel actually pokes fun at that very idea -- that's a clue to the technique."}
+  }
+},
+{
+  "topic": "Chinua Achebe's Things Fall Apart",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Chinua Achebe's novel 'Things Fall Apart,' about the Igbo leader Okonkwo, is set in which country?",
+    "options": [
+      {"text": "Nigeria", "isCorrect": true, "feedback": "Correct -- the novel is set among the Igbo people in what is now southeastern Nigeria."},
+      {"text": "Kenya", "isCorrect": false, "feedback": "Kenya is in East Africa; Things Fall Apart is set among the Igbo people of Nigeria, in West Africa."},
+      {"text": "South Africa", "isCorrect": false, "feedback": "South Africa is not the novel's setting -- it takes place in Nigeria."},
+      {"text": "Egypt", "isCorrect": false, "feedback": "Egypt is in North Africa; the novel is set in Nigeria, among the Igbo people."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The novel's title, 'Things Fall Apart,' is drawn from a line in which famous poem?",
+    "options": [
+      {"text": "\"The Second Coming\" by W.B. Yeats", "isCorrect": true, "feedback": "Correct -- Achebe took his title directly from a line in Yeats's poem, which describes a world in chaotic collapse."},
+      {"text": "\"The Road Not Taken\" by Robert Frost", "isCorrect": false, "feedback": "This is a different famous poem, unrelated to Achebe's title -- the actual source is Yeats's 'The Second Coming.'"},
+      {"text": "\"Ozymandias\" by Percy Bysshe Shelley", "isCorrect": false, "feedback": "This is a different famous poem about a fallen ruler's statue -- Achebe's title comes from Yeats instead."},
+      {"text": "\"Do Not Go Gentle into That Good Night\" by Dylan Thomas", "isCorrect": false, "feedback": "This is a different famous poem, unrelated to Achebe's title -- the actual source is Yeats's 'The Second Coming.'"}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Things Fall Apart is often cited as a landmark work in which broader literary category, addressing the impact of European colonialism on traditional African societies?",
+    "options": [
+      {"text": "Postcolonial literature", "isCorrect": true, "feedback": "Correct -- the novel is a foundational text in postcolonial literature, examining colonialism's disruption of Igbo society from an African perspective."},
+      {"text": "Gothic literature", "isCorrect": false, "feedback": "Gothic literature typically involves horror, the supernatural, and decaying settings -- Things Fall Apart is a realist work about colonialism's social impact."},
+      {"text": "Absurdist literature", "isCorrect": false, "feedback": "Absurdist literature explores meaninglessness and irrationality in existence -- Things Fall Apart is grounded in realistic historical and social depiction."},
+      {"text": "Science fiction", "isCorrect": false, "feedback": "The novel contains no speculative or futuristic elements -- it's a realist historical novel, not science fiction."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This country lies in West Africa and is home to the Igbo people depicted in the novel.", "medium": "This West African country is home to the Igbo people, whose traditional society the novel depicts.", "easy": "This country is in West Africa and is the most populous country on the continent."},
+    "medium": {"hard": "This poem's apocalyptic imagery of a center that 'cannot hold' gave Achebe his novel's title.", "medium": "This poem describes a chaotic world falling apart, giving Achebe the exact phrase for his title.", "easy": "This poem's title refers to a Biblical event, and it contains the exact phrase Achebe used for his novel's title."},
+    "hard": {"hard": "This category centers on societies and literatures responding to and examining the aftermath of European colonial rule, distinct from genres centered on horror, absurdity, or speculative futures.", "medium": "This category is about literature examining the effects of European colonialism, not horror, absurdity, or futuristic speculation.", "easy": "This category of literature focuses on colonialism's impact on colonized peoples and societies -- not ghosts, absurd humor, or the future."}
+  }
+},
+{
+  "topic": "Gabriel Garcia Marquez and magical realism",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Colombian author Gabriel Garcia Marquez is best known for pioneering which literary style, blending realistic settings with fantastical elements?",
+    "options": [
+      {"text": "Magical realism", "isCorrect": true, "feedback": "Correct -- Garcia Marquez is one of the most celebrated pioneers of magical realism."},
+      {"text": "Science fiction", "isCorrect": false, "feedback": "Science fiction typically involves speculative technology or futuristic settings, distinct from magical realism's blend of the mundane and the fantastical."},
+      {"text": "Gothic horror", "isCorrect": false, "feedback": "Gothic horror centers on fear, the supernatural, and decay, distinct from magical realism's more matter-of-fact blending of the fantastical into ordinary life."},
+      {"text": "Absurdism", "isCorrect": false, "feedback": "Absurdism focuses on the irrational meaninglessness of existence, distinct from magical realism's blending of fantastical elements into an otherwise realistic setting."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which novel is Gabriel Garcia Marquez's most famous work, often cited as a landmark of magical realism?",
+    "options": [
+      {"text": "One Hundred Years of Solitude", "isCorrect": true, "feedback": "Correct -- this multi-generational novel about the Buendia family is Garcia Marquez's most celebrated work."},
+      {"text": "Don Quixote", "isCorrect": false, "feedback": "Don Quixote was written by Miguel de Cervantes centuries earlier, not by Garcia Marquez."},
+      {"text": "The House of the Spirits", "isCorrect": false, "feedback": "The House of the Spirits was written by Isabel Allende, a different author associated with magical realism."},
+      {"text": "Love in the Time of Cholera", "isCorrect": false, "feedback": "This is also a Garcia Marquez novel, but it isn't his most famous or most commonly cited landmark work -- that's One Hundred Years of Solitude."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does magical realism typically differ from pure fantasy as a literary genre?",
+    "options": [
+      {"text": "Magical realism presents fantastical elements as an unremarkable, normal part of an otherwise realistic setting, rather than building an entirely separate fantasy world", "isCorrect": true, "feedback": "Correct -- in magical realism, characters often treat magical occurrences matter-of-factly, without the world-building typical of pure fantasy."},
+      {"text": "Magical realism never includes any realistic elements at all", "isCorrect": false, "feedback": "This is the opposite of the truth -- magical realism is defined precisely by blending realistic settings with fantastical elements."},
+      {"text": "Magical realism is always set in outer space", "isCorrect": false, "feedback": "Magical realism is typically set in recognizable, real-world locations, not outer space."},
+      {"text": "There is no meaningful difference between magical realism and pure fantasy", "isCorrect": false, "feedback": "The two genres differ meaningfully in how they treat the fantastical elements relative to an otherwise realistic setting."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This style treats fantastical events as an unremarkable part of otherwise ordinary, real-world settings.", "medium": "This style blends everyday, realistic settings with strange or fantastical events, treated matter-of-factly.", "easy": "This style mixes ordinary, real-life settings with strange or magical events that characters treat as normal."},
+    "medium": {"hard": "This novel follows multiple generations of one family in a fictional town, and is the author's most celebrated and frequently cited work.", "medium": "This is the author's most famous novel, following several generations of one family in a fictional South American town.", "easy": "This is Garcia Marquez's single most famous novel, tracking generations of one family."},
+    "hard": {"hard": "The distinction is about how fantastical elements are integrated -- treated as ordinary within a real-world setting, versus built into a wholly separate, self-contained fantasy world -- not about the presence of realism, setting location, or an absence of difference.", "medium": "The distinction is about treating magic as NORMAL within a real-world setting, versus building an entirely separate fantasy world.", "easy": "In one style, magic just happens as a normal part of everyday life; in the other, there's often a whole separate fantasy world built around it."}
+  }
+},
+{
+  "topic": "Mark Twain's Huckleberry Finn",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which American author wrote 'The Adventures of Huckleberry Finn,' a novel following a boy's journey down the Mississippi River?",
+    "options": [
+      {"text": "Mark Twain", "isCorrect": true, "feedback": "Correct -- Mark Twain, the pen name of Samuel Clemens, wrote this classic American novel."},
+      {"text": "Herman Melville", "isCorrect": false, "feedback": "Herman Melville wrote Moby-Dick, a different classic American novel, not Huckleberry Finn."},
+      {"text": "Nathaniel Hawthorne", "isCorrect": false, "feedback": "Nathaniel Hawthorne wrote The Scarlet Letter, a different classic American novel, not Huckleberry Finn."},
+      {"text": "F. Scott Fitzgerald", "isCorrect": false, "feedback": "F. Scott Fitzgerald wrote The Great Gatsby, decades after Huckleberry Finn was published, and is not its author."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The Adventures of Huckleberry Finn is generally considered a sequel to which earlier Mark Twain novel?",
+    "options": [
+      {"text": "The Adventures of Tom Sawyer", "isCorrect": true, "feedback": "Correct -- Huckleberry Finn continues the story of a character first introduced as Tom Sawyer's friend."},
+      {"text": "A Connecticut Yankee in King Arthur's Court", "isCorrect": false, "feedback": "This is a different Twain novel, not the one Huckleberry Finn serves as a sequel to."},
+      {"text": "The Prince and the Pauper", "isCorrect": false, "feedback": "This is a different Twain novel, set in England, not the one Huckleberry Finn continues."},
+      {"text": "Life on the Mississippi", "isCorrect": false, "feedback": "This is a memoir/travel narrative by Twain, not the novel that Huckleberry Finn serves as a direct sequel to."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Huckleberry Finn is frequently studied for its critical portrayal of which societal institution in the antebellum American South?",
+    "options": [
+      {"text": "Slavery", "isCorrect": true, "feedback": "Correct -- through Huck's relationship with Jim, an enslaved man seeking freedom, the novel critically examines slavery and the moral hypocrisy surrounding it."},
+      {"text": "The British monarchy", "isCorrect": false, "feedback": "The British monarchy is not the novel's focus -- the story is set in the antebellum American South, examining slavery."},
+      {"text": "The Industrial Revolution's factory system", "isCorrect": false, "feedback": "The novel is set in a rural, riverside American setting, not focused on industrial factories."},
+      {"text": "The Roman Catholic Church", "isCorrect": false, "feedback": "The novel's central social critique concerns slavery, not religious institutions."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This author's pen name is more widely recognized than his real name, Samuel Clemens.", "medium": "This author wrote under a well-known pen name, taken from a riverboat measuring term.", "easy": "This author's famous pen name comes from a term riverboat workers used to measure water depth."},
+    "medium": {"hard": "This earlier novel introduces the title character as Huck's close friend, in the same small Mississippi River town setting.", "medium": "This earlier novel is about Huck's best friend, set in the same river town.", "easy": "This earlier novel is named after Huck's best friend, who appears alongside him in both books."},
+    "hard": {"hard": "The institution central to the novel's social critique involves Huck's journey with an enslaved man seeking freedom, distinct from a European monarchy, industrial factories, or a religious institution.", "medium": "The institution involves Huck's companion, an enslaved man seeking his freedom, not a monarchy, factories, or a church.", "easy": "Huck travels the river with a man named Jim, who is enslaved and seeking freedom -- this points to the institution being examined."}
+  }
+}
+]

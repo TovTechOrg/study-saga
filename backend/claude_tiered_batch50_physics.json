@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of electric circuits: series vs. parallel",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a series circuit, how are components connected?",
+    "options": [
+      {"text": "Along a single path, so current flows through each component one after another", "isCorrect": true, "feedback": "Correct -- in a series circuit, there's only one path for current, passing sequentially through each component."},
+      {"text": "Along multiple separate paths, so current can take different routes", "isCorrect": false, "feedback": "That describes a PARALLEL circuit, not a series circuit, which has only a single current path."},
+      {"text": "Components in a series circuit aren't actually connected to each other at all", "isCorrect": false, "feedback": "Components in a series circuit ARE connected, forming a single continuous loop for current to flow through."},
+      {"text": "Series circuits have no consistent connection pattern at all", "isCorrect": false, "feedback": "Series circuits have a very specific, defined pattern: a single continuous path connecting all components in sequence."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If one light bulb burns out in a series circuit of multiple bulbs, what happens to the other bulbs?",
+    "options": [
+      {"text": "All the other bulbs also go out, since the single current path is broken", "isCorrect": true, "feedback": "Correct -- since series circuits have only one path for current, breaking that path anywhere (like a burnt-out bulb) stops current flow throughout the entire circuit."},
+      {"text": "The other bulbs continue working normally, unaffected by the burnt-out bulb", "isCorrect": false, "feedback": "This would be true in a PARALLEL circuit, but not in a series circuit, where breaking the single path stops current everywhere."},
+      {"text": "The other bulbs actually become brighter", "isCorrect": false, "feedback": "The other bulbs don't become brighter -- they actually go OUT completely, since the single current path is broken by the burnt-out bulb."},
+      {"text": "This scenario has nothing to do with how the circuit is wired", "isCorrect": false, "feedback": "This scenario is DIRECTLY related to circuit wiring -- specifically, it demonstrates a key characteristic of series circuits (as opposed to parallel circuits)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Household electrical wiring uses parallel circuits (rather than series circuits) for outlets and lights. Why is this design choice important for practical, everyday use?",
+    "options": [
+      {"text": "Parallel wiring lets each device operate independently on its own separate path, so turning off (or unplugging) one device doesn't affect the operation of any other devices in the house", "isCorrect": true, "feedback": "Correct -- this independence between parallel branches is exactly why household wiring uses parallel circuits, allowing individual appliances and lights to be controlled without affecting the rest of the house's electrical devices."},
+      {"text": "Series circuits would actually work identically well for household wiring, with no meaningful difference", "isCorrect": false, "feedback": "This isn't accurate -- series wiring would mean turning off any single device could interrupt the ENTIRE house's electrical flow, which is clearly impractical, unlike parallel circuits."},
+      {"text": "Household wiring doesn't use parallel or series circuits at all", "isCorrect": false, "feedback": "Household wiring specifically DOES use parallel circuit design for its practical, everyday functionality."},
+      {"text": "Parallel circuits require significantly less total electrical current than series circuits for the same devices", "isCorrect": false, "feedback": "This isn't the primary reasoning here -- the key practical benefit of parallel circuits is the independent operation of each device, not necessarily an overall current reduction."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This circuit topology provides a single, unbranched conductive pathway through which all current must sequentially pass.", "medium": "This type of circuit has just one path for the electricity to flow through everything.", "easy": "This type of circuit has just one path for electricity to flow through."},
+    "medium": {"hard": "Consider the consequence of interrupting the sole conductive pathway at any single point along a series circuit.", "medium": "Since there's only one path for the electricity, breaking it anywhere stops the flow for the whole circuit.", "easy": "Since there's only one path, breaking it anywhere stops the flow for everything."},
+    "hard": {"hard": "Consider how having multiple independent current paths allows individual circuit branches to be interrupted without affecting the operation of other branches.", "medium": "Since each device gets its own separate path, you can turn one off without affecting the others in the house.", "easy": "Since each device gets its own path, you can turn one off without affecting the others."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of solubility and saturated solutions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean for a solution to be 'saturated'?",
+    "options": [
+      {"text": "It contains the maximum amount of dissolved solute possible at that temperature", "isCorrect": true, "feedback": "Correct -- a saturated solution has reached its solubility limit, where no more solute can dissolve at that given temperature."},
+      {"text": "It contains no dissolved solute at all", "isCorrect": false, "feedback": "That describes a completely pure solvent, not a saturated solution -- saturation refers to the MAXIMUM amount of solute dissolved."},
+      {"text": "It has reached its boiling point", "isCorrect": false, "feedback": "Boiling point is a separate, unrelated property from solubility saturation."},
+      {"text": "It has been heated to a very high temperature", "isCorrect": false, "feedback": "Temperature affects solubility, but 'saturated' specifically refers to reaching a maximum dissolved solute amount, not a specific temperature."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For most solid solutes dissolving in water, increasing the temperature typically increases solubility. If you have a saturated sugar-water solution at room temperature and then heat it, what will likely happen?",
+    "options": [
+      {"text": "The solution can now dissolve additional sugar, since higher temperature typically increases a solid solute's solubility", "isCorrect": true, "feedback": "Correct -- since heating generally increases solubility for solid solutes like sugar, the solution becomes capable of dissolving more solute than it could at the lower temperature."},
+      {"text": "The dissolved sugar will immediately come out of solution and form solid crystals", "isCorrect": false, "feedback": "This is backwards -- for most solids, HEATING increases solubility (allowing MORE to dissolve), rather than causing dissolved solute to crystallize out."},
+      {"text": "Temperature changes have no effect on how much sugar can dissolve", "isCorrect": false, "feedback": "Temperature very much affects solubility for most solutes -- for solids like sugar, increasing temperature typically increases how much can dissolve."},
+      {"text": "The solution will instantly boil away completely, leaving only solid sugar", "isCorrect": false, "feedback": "Simply heating up (without reaching full boiling and complete evaporation) doesn't cause this -- it primarily increases the solution's capacity to dissolve more solute."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If you make a saturated sugar solution at a high temperature and then let it cool slowly and undisturbed, sometimes MORE sugar remains dissolved than the solution's normal saturation point at that lower temperature would allow. What is this unstable condition called, and why can it occur?",
+    "options": [
+      {"text": "A supersaturated solution -- it occurs when the solution cools without a nucleation site (like a sugar crystal or disturbance) to trigger the excess solute crystallizing back out", "isCorrect": true, "feedback": "Correct -- without a trigger point for crystal formation, excess dissolved solute can remain suspended in solution beyond its normal solubility limit, creating an unstable, supersaturated state (used in rock candy making)."},
+      {"text": "This condition is impossible and could never actually occur in a real solution", "isCorrect": false, "feedback": "This is a real, well-documented phenomenon called supersaturation, commonly demonstrated with sugar or salt solutions (and used to make rock candy)."},
+      {"text": "This is simply an ordinary unsaturated solution, nothing unusual is happening", "isCorrect": false, "feedback": "This is actually an unusual, UNSTABLE state (supersaturation) exceeding the normal saturation limit at that temperature, not a typical unsaturated solution."},
+      {"text": "This occurs because the sugar chemically transforms into a completely different, more soluble substance", "isCorrect": false, "feedback": "No chemical transformation of the sugar occurs -- the excess dissolved sugar is simply in an unstable physical state, lacking a trigger point for crystallization."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This state describes a mixture that has reached its maximum solute-holding capacity for the given conditions.", "medium": "This is when a liquid has dissolved as much of something as it possibly can.", "easy": "This is when a liquid has dissolved as much as it possibly can."},
+    "medium": {"hard": "Consider the general relationship between temperature and solubility for most solid solutes dissolving in a liquid solvent.", "medium": "For most solids dissolving in water, hotter water can generally hold more dissolved solute than cooler water.", "easy": "Hotter water can generally dissolve more sugar than cooler water can."},
+    "hard": {"hard": "Consider what physical trigger point is typically required to initiate crystallization, and what happens to dissolved solute when that trigger is absent during cooling.", "medium": "Without something like a tiny crystal or a disturbance to 'kick off' the process, the extra dissolved sugar can stay dissolved even past its normal limit.", "easy": "Without something to 'kick off' crystal formation, extra dissolved sugar can stay dissolved past its normal limit."}
+  }
+}
+]

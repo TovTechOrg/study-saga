@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between molarity and molality as concentration units",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Molarity' expresses concentration as:",
+    "options": [
+      {"text": "Moles of solute per liter of total solution", "isCorrect": true, "feedback": "Correct -- molarity (mol/L) measures moles of solute per liter of the total solution volume."},
+      {"text": "Moles of solute per kilogram of solvent only", "isCorrect": false, "feedback": "That describes MOLALITY, not molarity -- molality uses kilograms of solvent (not total solution volume) as its denominator, while molarity uses liters of total solution."},
+      {"text": "Grams of solute per liter of solution", "isCorrect": false, "feedback": "This isn't accurate -- that describes a mass-based concentration unit; molarity is specifically defined using MOLES of solute, not grams."},
+      {"text": "The percentage of solute by total mass of the solution", "isCorrect": false, "feedback": "This isn't accurate -- that describes mass percent concentration, a different concentration unit; molarity is specifically moles per liter of solution."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Molality is often preferred over molarity in experiments involving significant temperature changes, since molality (based on solvent MASS) doesn't change with temperature, while molarity (based on solution VOLUME) does. Why does temperature specifically affect molarity but not molality?",
+    "options": [
+      {"text": "Volume is temperature-dependent, since most liquids expand slightly when heated and contract when cooled, changing the total solution volume (and therefore molarity, moles per liter) even though the amount of solute and solvent hasn't actually changed, whereas mass remains constant regardless of temperature, so molality (moles per kilogram of solvent) stays accurate even as temperature fluctuates", "isCorrect": true, "feedback": "Correct -- this explanation of volume's temperature-dependence (via thermal expansion/contraction) versus mass's temperature-independence correctly explains why molality is more reliable than molarity across temperature changes, a key practical consideration in choosing concentration units for certain experiments."},
+      {"text": "Molarity would actually remain completely unaffected by temperature changes, identical to molality in this respect", "isCorrect": false, "feedback": "This isn't accurate -- molarity specifically IS affected by temperature changes (since solution volume changes with temperature), unlike molality."},
+      {"text": "Mass, unlike volume, would actually also change meaningfully with temperature, making molality equally temperature-sensitive as molarity", "isCorrect": false, "feedback": "This isn't accurate -- mass does NOT meaningfully change with temperature (unlike volume), which is precisely why molality remains temperature-independent while molarity does not."},
+      {"text": "This temperature-sensitivity difference between molarity and molality has no actual connection to solution volume changing with temperature", "isCorrect": false, "feedback": "This isn't accurate -- this difference IS DIRECTLY connected to and explained by solution volume's temperature-dependence, unlike mass, which remains constant."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For dilute aqueous solutions at room temperature, molarity and molality often give numerically very similar values, but for concentrated solutions or solutions using a dense, non-water solvent, these two values can differ substantially. Explain why the assumption 'molarity approximately equals molality' breaks down under these latter conditions.",
+    "options": [
+      {"text": "In a dilute aqueous solution, the total solution volume (in liters) is very close to the mass of solvent alone (in kilograms), since water's density is close to 1 kg/L and the small amount of dissolved solute barely changes the total volume/mass -- but in concentrated solutions (where solute significantly adds to volume/mass) or with denser/less-dense solvents (where the volume-to-mass relationship differs from water's), this near-equivalence breaks down, causing molarity and molality to diverge", "isCorrect": true, "feedback": "Correct -- this explanation of why the molarity-molality approximation specifically relies on dilute aqueous conditions (where water's density conveniently makes volume and solvent mass numerically similar) correctly explains why this approximation fails for concentrated solutions or non-aqueous solvents with different densities."},
+      {"text": "Molarity and molality would actually always be exactly numerically equal to each other, regardless of solution concentration or solvent identity", "isCorrect": false, "feedback": "This isn't accurate -- molarity and molality DIVERGE meaningfully in concentrated solutions or with non-aqueous solvents, and are only approximately similar for dilute aqueous solutions."},
+      {"text": "Solvent density has no actual connection to explaining why molarity and molality diverge in certain solutions", "isCorrect": false, "feedback": "This isn't accurate -- solvent density IS DIRECTLY connected to and explains why the molarity-molality approximation holds for water but breaks down for other solvents with different densities."},
+      {"text": "Concentrated solutions would actually show BETTER agreement between molarity and molality than dilute solutions do", "isCorrect": false, "feedback": "This is backwards -- concentrated solutions generally show WORSE (not better) agreement between molarity and molality compared to dilute solutions."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This concentration metric quantifies solute quantity in moles relative to the aggregate volume of the resultant solution, expressed in liters.", "medium": "This concentration measure is moles of dissolved stuff per liter of the WHOLE solution.", "easy": "This concentration measure is moles of dissolved stuff per liter of the whole solution."},
+    "medium": {"hard": "Consider how thermal expansion alters solution volume with temperature while leaving solvent mass invariant, differentially affecting volume-based versus mass-based concentration measures.", "medium": "Liquids puff up a little when heated, which throws off anything measured by volume, but nothing about the actual MASS of stuff changes just from heating it up.", "easy": "Liquids expand slightly when heated, throwing off volume-based measures, but mass doesn't change from heating."},
+    "hard": {"hard": "Consider how the numerical coincidence that dilute aqueous solution volume approximates solvent mass (given water's near-unity density) fails once solute concentration or solvent density departs significantly from that baseline.", "medium": "For watered-down water-based solutions, the total volume and the water's mass happen to come out to almost the same number, but that lucky coincidence falls apart once the solution gets concentrated or uses a different liquid.", "easy": "For dilute water solutions, volume and mass happen to come out about the same, but that coincidence falls apart for concentrated or non-water solutions."}
+  }
+}
+]

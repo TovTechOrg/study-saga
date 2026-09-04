@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between reversible and irreversible reactions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What characterizes a reversible chemical reaction?",
+    "options": [
+      {"text": "It can proceed in both the forward direction (reactants to products) and the reverse direction (products back to reactants)", "isCorrect": true, "feedback": "Correct -- reversible reactions can occur in both directions simultaneously, often reaching a state of dynamic equilibrium."},
+      {"text": "It can only ever proceed in one single direction, with no reverse possible", "isCorrect": false, "feedback": "That describes an IRREVERSIBLE reaction, not a reversible one, which specifically CAN proceed in both directions."},
+      {"text": "It never actually produces any products at all", "isCorrect": false, "feedback": "Reversible reactions DO produce products (in the forward direction) -- what makes them distinctive is that products can also convert BACK into reactants."},
+      {"text": "It always happens instantaneously with no time delay", "isCorrect": false, "feedback": "Reaction speed/timing isn't the defining characteristic of reversibility -- reversibility specifically concerns whether the reaction can proceed in BOTH directions, not how quickly it occurs."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Burning wood (combustion) is a classic example of an irreversible reaction, while the reaction N2+3H2⇌2NH3 (forming ammonia) is reversible. What key characteristic distinguishes these two reaction types?",
+    "options": [
+      {"text": "The ammonia-forming reaction can proceed in both directions (forming ammonia OR decomposing back into nitrogen and hydrogen), while burning wood's products (ash, CO2, water vapor) don't spontaneously recombine back into the original wood under normal conditions", "isCorrect": true, "feedback": "Correct -- this ability (or inability) for a reaction's products to convert back into the original reactants under normal conditions is precisely what distinguishes reversible from irreversible reactions."},
+      {"text": "Burning wood is actually also a reversible reaction, identical to the ammonia-forming reaction", "isCorrect": false, "feedback": "This isn't accurate -- burning wood is a classic, well-established example of an IRREVERSIBLE reaction; its products don't spontaneously reform back into wood under normal conditions, unlike the ammonia reaction."},
+      {"text": "The ammonia-forming reaction is actually also irreversible, just like burning wood", "isCorrect": false, "feedback": "This isn't accurate -- the ammonia-forming reaction is specifically REVERSIBLE (as indicated by the double arrow ⇌), unlike burning wood, which is irreversible under normal conditions."},
+      {"text": "There is actually no meaningful difference between these two reaction types", "isCorrect": false, "feedback": "There IS a meaningful, fundamental difference -- specifically whether the reaction's products can readily convert back into the original reactants (reversible) or not (irreversible)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Reversible reactions often reach a state called 'dynamic equilibrium,' where the forward and reverse reactions continue occurring at EQUAL rates, resulting in seemingly constant (unchanging) concentrations of reactants and products, even though the reaction hasn't actually stopped. Why is understanding this 'dynamic' (rather than 'static') nature of equilibrium important?",
+    "options": [
+      {"text": "It clarifies that equilibrium represents an active, ongoing balance between continuously occurring forward and reverse reactions (which happen to proceed at matching rates), rather than the reaction having completely stopped or reached some kind of permanently static, unchanging state", "isCorrect": true, "feedback": "Correct -- this distinction (dynamic ongoing balance vs. static cessation) is crucial for accurately understanding chemical equilibrium, and helps explain phenomena like Le Chatelier's principle, where disturbing this dynamic balance can shift the observable concentrations in a predictable direction."},
+      {"text": "At dynamic equilibrium, the forward and reverse reactions have actually both completely stopped occurring entirely", "isCorrect": false, "feedback": "This isn't accurate -- at DYNAMIC equilibrium, both the forward and reverse reactions CONTINUE occurring actively; they just happen to proceed at EQUAL rates, not that they've stopped altogether."},
+      {"text": "This distinction between dynamic and static equilibrium has no actual practical or conceptual importance in chemistry", "isCorrect": false, "feedback": "This isn't accurate -- this distinction is actually QUITE important for accurately understanding chemical equilibrium concepts and related principles, like how equilibrium can shift in response to changing conditions."},
+      {"text": "Reactant and product concentrations actually continue changing significantly and unpredictably even at dynamic equilibrium", "isCorrect": false, "feedback": "This isn't accurate -- at dynamic equilibrium, concentrations specifically remain relatively CONSTANT (unchanging) overall, even though the underlying forward/reverse reactions continue actively occurring at matched rates."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This reaction classification permits bidirectional conversion between the reactant and product chemical species under the given conditions.", "medium": "This kind of reaction can go both forward (making products) and backward (making reactants again).", "easy": "This kind of reaction can go both forward and backward."},
+    "medium": {"hard": "Consider whether the reaction's products retain the capacity to spontaneously reform the original reactant species under the same conditions that produced them.", "medium": "Ask whether the 'stuff' made by the reaction could actually turn back into the original starting ingredients under normal circumstances.", "easy": "Ask whether the products could actually turn back into the original ingredients."},
+    "hard": {"hard": "Consider how ongoing, balanced bidirectional molecular activity (despite unchanging bulk concentrations) fundamentally differs from a scenario where all reactive processes have entirely ceased.", "medium": "Even though it LOOKS like nothing is happening anymore (same amounts of everything), the forward and backward reactions are actually still happening nonstop, just at matching speeds.", "easy": "Even though it looks like nothing is happening, the forward and backward reactions are still happening at matching speeds."}
+  }
+}
+]

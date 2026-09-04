@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of pH and the strength of acids and bases",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "On the pH scale (0-14), what does a pH value below 7 indicate?",
+    "options": [
+      {"text": "The solution is acidic", "isCorrect": true, "feedback": "Correct -- pH values below 7 indicate acidity, with lower values being more strongly acidic."},
+      {"text": "The solution is basic (alkaline)", "isCorrect": false, "feedback": "Basic solutions have a pH ABOVE 7, not below it."},
+      {"text": "The solution is perfectly neutral", "isCorrect": false, "feedback": "Neutral solutions have a pH of exactly 7, not below it."},
+      {"text": "The solution contains no water", "isCorrect": false, "feedback": "pH doesn't indicate water content -- it measures the concentration of hydrogen ions, which relates to acidity/basicity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The pH scale is logarithmic, meaning each whole number change represents a 10-fold change in hydrogen ion concentration. How many times more acidic is a solution with pH 3 compared to one with pH 5?",
+    "options": [
+      {"text": "100 times more acidic (10² since the difference is 2 pH units)", "isCorrect": true, "feedback": "Correct -- since each pH unit represents a 10-fold change, a 2-unit difference means 10×10 = 100 times more hydrogen ion concentration."},
+      {"text": "2 times more acidic", "isCorrect": false, "feedback": "This treats the pH scale as linear, but it's actually logarithmic -- a difference of 2 pH units means a 100-fold difference, not just 2 times."},
+      {"text": "20 times more acidic", "isCorrect": false, "feedback": "This doesn't correctly apply the logarithmic (powers of 10) relationship between pH units."},
+      {"text": "10 times more acidic", "isCorrect": false, "feedback": "10 times would be correct for just a ONE-unit pH difference, but here the difference is 2 units, requiring 10×10=100."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A strong acid and a weak acid can have the same molar concentration but different pH values. Why does a strong acid typically have a lower pH (more acidic) than a weak acid at the same concentration?",
+    "options": [
+      {"text": "A strong acid fully dissociates into ions in solution, releasing the maximum possible hydrogen ions, while a weak acid only partially dissociates, releasing fewer free hydrogen ions", "isCorrect": true, "feedback": "Correct -- this difference in dissociation degree (not just initial concentration) is exactly what determines the actual free hydrogen ion concentration, and thus the resulting pH."},
+      {"text": "Strong acids and weak acids always have identical pH values at the same concentration", "isCorrect": false, "feedback": "This isn't accurate -- differing degrees of dissociation between strong and weak acids lead to genuinely different pH values, even at equal starting concentrations."},
+      {"text": "Weak acids actually release MORE hydrogen ions than strong acids at the same concentration", "isCorrect": false, "feedback": "This is backwards -- strong acids fully dissociate and release MORE free hydrogen ions than weak acids (which only partially dissociate) at the same starting concentration."},
+      {"text": "The strength of an acid has nothing to do with how much it dissociates in solution", "isCorrect": false, "feedback": "Acid strength is DEFINED by degree of dissociation -- strong acids dissociate completely, while weak acids only dissociate partially, which is the key distinguishing factor here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Values below the scale's midpoint on this measure correspond to a higher concentration of hydrogen ions.", "medium": "Lower numbers on this scale mean the solution has a higher concentration of hydrogen ions.", "easy": "Lower numbers on this scale mean more acidic."},
+    "medium": {"hard": "Since each single unit represents a factor-of-10 change, calculate 10 raised to the power of the total pH unit difference.", "medium": "Since each pH unit is a factor of 10, and the difference here is 2 units, multiply 10 by itself.", "easy": "Since the difference is 2 pH units, multiply 10 times 10 to get 100."},
+    "hard": {"hard": "Distinguish between a substance's overall (analytical) concentration and the actual concentration of free ions it releases upon dissociation in solution.", "medium": "A strong acid breaks apart completely in water, releasing all its hydrogen ions, while a weak acid only breaks apart partway.", "easy": "A strong acid breaks apart completely, releasing all its hydrogen ions, while a weak acid only breaks apart partway."}
+  }
+}
+]

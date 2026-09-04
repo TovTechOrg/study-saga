@@ -1,10 +1,69 @@
-// Placeholder: the real showFeedbackModal is defined further below.
-// This stub prevents errors if called before the real one is ready.
-function showFeedbackModal(feedback, onClose) {
-    // Will be overridden by the real definition below.
-    const msg = typeof feedback === 'string' ? feedback : (feedback.message || '');
-    alert(msg);
-    if (onClose) onClose();
+// Comic-caption-style battle log entries (Epic #11 / issues #18, #19): one
+// shared helper so every turn outcome -- attack, ability, recharge, and
+// in-combat errors -- renders the same narrated way instead of some paths
+// using plain text divs and others falling through to a bare alert(). Tone
+// is inferred from the message text itself (backend already writes
+// narrated strings like "X grows emboldened..."), not from separate flags,
+// so this stays a pure presentation layer -- no combat-numbers change.
+function _battleLogLineTone(message, isCorrect) {
+    let tone = 'system';
+    let burst = null;
+    if (/^correct!/i.test(message)) {
+        tone = 'correct';
+    } else if (/^incorrect\./i.test(message)) {
+        tone = 'incorrect';
+    } else if (typeof isCorrect === 'boolean') {
+        tone = isCorrect ? 'correct' : 'incorrect';
+    }
+    if (/emboldened/i.test(message)) {
+        tone = 'crit';
+        burst = 'Heavy Hit';
+    } else if (/hesitates/i.test(message)) {
+        tone = 'falter';
+        burst = 'Falters';
+    }
+    return { tone, burst };
+}
+
+// One turn (all of a single action's messages -- your result, then the
+// enemy's response) renders as ONE grouped block instead of separate
+// floating lines, per issue #18's "group messages by turn" ask. combat-
+// action.js always pushes the player-facing result message first and any
+// enemy-response message(s) after, so position doubles as a reliable,
+// non-color speaker label ("You" / "Enemy") -- text, not just a border
+// color, differentiates who a line is about.
+function addBattleLogTurn(messages, { isCorrect } = {}) {
+    const log = document.getElementById('battle-log-content');
+    if (!log || !messages || !messages.length) return;
+
+    const turn = document.createElement('div');
+    turn.className = 'battle-log-turn';
+    messages.forEach((message, i) => {
+        const { tone, burst } = _battleLogLineTone(message, isCorrect);
+        const line = document.createElement('div');
+        line.className = `battle-log-entry tone-${tone}`;
+        if (tone !== 'system') {
+            const speaker = document.createElement('span');
+            speaker.className = 'battle-log-speaker';
+            speaker.textContent = (i === 0 ? 'You' : 'Enemy') + ': ';
+            line.appendChild(speaker);
+        }
+        if (burst) {
+            const burstEl = document.createElement('span');
+            burstEl.className = `battle-log-burst ${tone}`;
+            burstEl.textContent = burst;
+            line.appendChild(burstEl);
+        }
+        line.appendChild(document.createTextNode(message));
+        turn.appendChild(line);
+    });
+    log.prepend(turn);
+}
+
+// Single free-standing line (system/error messages that aren't part of a
+// graded turn) -- no speaker label, no grouping needed.
+function addBattleLogEntry(message, opts = {}) {
+    addBattleLogTurn([message], opts);
 }
 
 // Consolidated game logic from inline script in index.html
@@ -42,7 +101,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.preventDefault();
                 e.stopPropagation();
                 console.log('Delegated click for syllabus (card):', card.dataset.syllabusId);
-                selectSyllabus(card.dataset.syllabusId);
+                // Clicking the card body itself (not a specific difficulty
+                // button) has no difficulty to read -- default to medium.
+                selectSyllabus(card.dataset.syllabusId, 'medium');
             }
         });
     }
@@ -78,6 +139,58 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    const profilePanelBtn = document.getElementById('profile-panel-btn');
+    if (profilePanelBtn) profilePanelBtn.addEventListener('click', openProfileModal);
+    const closeProfileBtn = document.getElementById('close-profile-btn');
+    if (closeProfileBtn) closeProfileBtn.addEventListener('click', closeProfileModal);
+
+    // Upgrade shop (issue #23): reachable from the main menu and both
+    // run-summary screens.
+    ['upgrade-shop-btn', 'victory-upgrade-shop-btn', 'defeat-upgrade-shop-btn'].forEach((id) => {
+        const btn = document.getElementById(id);
+        if (btn) btn.addEventListener('click', openUpgradeShopModal);
+    });
+    const closeUpgradeShopBtn = document.getElementById('close-upgrade-shop-btn');
+    if (closeUpgradeShopBtn) closeUpgradeShopBtn.addEventListener('click', closeUpgradeShopModal);
+    const upgradeShopGrid = document.getElementById('upgrade-shop-grid');
+    if (upgradeShopGrid) upgradeShopGrid.addEventListener('click', handleUpgradeBuyClick);
+
+    const navHelpBtn = document.getElementById('game-nav-help-btn');
+    if (navHelpBtn) navHelpBtn.addEventListener('click', openHowToPlayModal);
+    const closeHowToPlayBtn = document.getElementById('close-how-to-play-btn');
+    if (closeHowToPlayBtn) closeHowToPlayBtn.addEventListener('click', closeHowToPlayModal);
+    const replayTutorialBtn = document.getElementById('replay-tutorial-btn');
+    if (replayTutorialBtn) {
+        replayTutorialBtn.addEventListener('click', function () {
+            closeHowToPlayModal();
+            startTutorial();
+        });
+    }
+
+    // End-screen actions (issue #21): same handlers for both victory and defeat.
+    ['victory', 'defeat'].forEach((prefix) => {
+        const playAgainBtn = document.getElementById(`${prefix}-play-again-btn`);
+        if (playAgainBtn) playAgainBtn.addEventListener('click', playAgainSameRealm);
+        const changeRealmBtn = document.getElementById(`${prefix}-change-realm-btn`);
+        if (changeRealmBtn) changeRealmBtn.addEventListener('click', changeRealm);
+    });
+
+    // Advance on a click anywhere in the tutorial overlay (issue #16: "advances
+    // on click or Enter"), except the Skip/Next buttons, which already handle
+    // their own click below -- without this guard, a click on either would
+    // bubble up here too and double-advance.
+    const tutorialOverlay = document.getElementById('tutorial-overlay');
+    const tutorialNextBtn = document.getElementById('tutorial-next-btn');
+    const tutorialSkipBtn = document.getElementById('tutorial-skip-btn');
+    if (tutorialNextBtn) tutorialNextBtn.addEventListener('click', advanceTutorial);
+    if (tutorialSkipBtn) tutorialSkipBtn.addEventListener('click', skipTutorial);
+    if (tutorialOverlay) {
+        tutorialOverlay.addEventListener('click', function (e) {
+            if (e.target === tutorialNextBtn || e.target === tutorialSkipBtn) return;
+            advanceTutorial();
+        });
+    }
+
     const signInBtn = document.getElementById('sign-in-btn');
     if (signInBtn) {
         signInBtn.addEventListener('click', function () {
@@ -100,6 +213,8 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Sign-in failed:', e.detail.error);
         showAuthError(e.detail.error);
     });
+
+    initIdleNudge();
 });
 
 // ---------------------------------------------------------------------------
@@ -157,6 +272,11 @@ async function handleAuthChanged(user) {
         if (signInBtn) signInBtn.textContent = 'Sign out';
         if (caption) caption.textContent = `Signed in as ${user.displayName || user.email}`;
 
+        // One-time guest-profile merge (issue #22) -- no-ops if there's
+        // nothing to merge (loadGuestProfile never ran, or a prior merge
+        // already cleared it).
+        mergeGuestProfileOnSignIn();
+
         // Check for a game already in progress on another device.
         const idToken = await getIdToken();
         try {
@@ -169,6 +289,9 @@ async function handleAuthChanged(user) {
             if (data.status === 'resumed' && confirm('You have a game in progress. Resume it?')) {
                 window.gameId = data.game_id;
                 window.combatState = data.combat_state;
+                window._lastResolve = undefined;
+                window._lastScore = undefined;
+            window._lastRenderedCombatState = undefined;
                 document.getElementById('main-menu').style.display = 'none';
                 const combatScreen = document.getElementById('combat-screen');
                 combatScreen.style.display = 'block';
@@ -176,6 +299,7 @@ async function handleAuthChanged(user) {
                 showGameNav((data.combat_state.syllabus_id || '').charAt(0).toUpperCase() + (data.combat_state.syllabus_id || '').slice(1));
                 updateCombatHUD(data.combat_state);
                 updateHintsBar(data.hints);
+                if (!hasSeenTutorial()) startTutorial();
             }
         } catch (e) {
             console.error('auth-resume check failed:', e);
@@ -250,6 +374,635 @@ function trapFocus(modalEl, onEscape) {
     return () => modalEl.removeEventListener('keydown', handleKeydown);
 }
 
+// Single source of truth for the HUD's stat explanations (issue #17), also
+// consumed by the first-run tutorial (issue #16) so the two never drift.
+const COMBAT_STAT_EXPLANATIONS = [
+    { stat: 'HP', text: 'Your confusion tolerance. Reaches zero and the run ends.' },
+    { stat: 'CAP', text: 'Your action budget. Attack costs 3, Use Ability costs 5, Recharge gives back 5.' },
+    { stat: 'Resolve', text: "The enemy's confidence. Right answers push it down and weaken its counterattacks. Wrong answers feed it, and a confident enemy hits up to 1.4x harder." },
+];
+
+function renderStatExplanations(container) {
+    if (!container) return;
+    container.innerHTML = '';
+    const dl = document.createElement('dl');
+    COMBAT_STAT_EXPLANATIONS.forEach(({ stat, text }) => {
+        const item = document.createElement('div');
+        item.className = 'how-to-play-stat';
+        const dt = document.createElement('dt');
+        dt.textContent = stat;
+        const dd = document.createElement('dd');
+        dd.textContent = text;
+        item.appendChild(dt);
+        item.appendChild(dd);
+        dl.appendChild(item);
+    });
+    container.appendChild(dl);
+}
+
+function openHowToPlayModal() {
+    const modal = document.getElementById('how-to-play-modal');
+    if (!modal) return;
+    renderStatExplanations(document.getElementById('how-to-play-body'));
+    modal.classList.add('active');
+    modal._previouslyFocused = document.activeElement;
+    modal._releaseFocusTrap = trapFocus(modal, closeHowToPlayModal);
+}
+
+function closeHowToPlayModal() {
+    const modal = document.getElementById('how-to-play-modal');
+    if (modal) deactivateModal(modal);
+}
+
+// Fetches (and for signed-in players, syncs) the current profile and renders
+// it into the panel -- guests read straight from localStorage, signed-in
+// players hit /api/sync-profile so a second device shows the same lifetime
+// totals per issue #22's acceptance criteria.
+async function openProfileModal() {
+    const modal = document.getElementById('profile-modal');
+    const body = document.getElementById('profile-modal-body');
+    if (!modal || !body) return;
+
+    body.innerHTML = '<p>Loading...</p>';
+    modal.classList.add('active');
+    modal._previouslyFocused = document.activeElement;
+    modal._releaseFocusTrap = trapFocus(modal, closeProfileModal);
+
+    let profile;
+    if (window.currentUser) {
+        const idToken = await getIdToken();
+        try {
+            const res = await fetch('/api/sync-profile', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id_token: idToken }),
+            });
+            const data = await res.json();
+            profile = data.status === 'success' ? data.profile : freshProfile();
+        } catch (e) {
+            console.error('Profile fetch failed:', e);
+            profile = null;
+        }
+    } else {
+        profile = loadGuestProfile();
+    }
+    renderProfilePanel(body, profile);
+}
+
+function closeProfileModal() {
+    const modal = document.getElementById('profile-modal');
+    if (modal) deactivateModal(modal);
+}
+
+function renderProfilePanel(container, profile) {
+    if (!profile) {
+        container.innerHTML = '<p>Could not load your profile right now. Please try again.</p>';
+        return;
+    }
+    const totals = profile.totals || { runs: 0, questions_answered: 0, questions_correct: 0 };
+    const overallAccuracy = totals.questions_answered > 0
+        ? Math.round((totals.questions_correct / totals.questions_answered) * 100)
+        : 0;
+
+    // Issue #9: per-tier rows, not one flat row per realm -- best score,
+    // accuracy, and a cleared/not-cleared indicator (any victory recorded)
+    // per Easy/Medium/Hard. migrateLegacyRealmRecord() handles a profile
+    // fetched before this nesting existed, so old data still renders instead
+    // of vanishing until its next run happens to migrate it.
+    const realmEntries = Object.entries(profile.realms || {});
+    const realmRows = realmEntries.length
+        ? realmEntries.map(([realm, rawRecord]) => {
+            const record = migrateLegacyRealmRecord(rawRecord);
+            const tierRows = DIFFICULTY_TIERS.map((tierKey) => {
+                const t = record[tierKey];
+                if (!t) return `<tr><td class="profile-tier-name">${escapeHtml(tierKey)}</td><td colspan="3" class="profile-tier-empty">Not played</td></tr>`;
+                const acc = t.questions_answered > 0 ? Math.round((t.questions_correct / t.questions_answered) * 100) : 0;
+                const cleared = (t.victories || 0) > 0;
+                return `
+                    <tr>
+                        <td class="profile-tier-name">${escapeHtml(tierKey)}</td>
+                        <td>${t.best_score || 0}</td>
+                        <td>${acc}%</td>
+                        <td><span class="profile-cleared-badge ${cleared ? 'cleared' : ''}">${cleared ? 'Cleared' : 'Not cleared'}</span></td>
+                    </tr>
+                `;
+            }).join('');
+            return `
+                <tbody class="profile-realm-group">
+                    <tr class="profile-realm-heading"><td colspan="4">${escapeHtml(realm.charAt(0).toUpperCase() + realm.slice(1))}</td></tr>
+                    ${tierRows}
+                </tbody>
+            `;
+        }).join('')
+        : '<tbody><tr><td colspan="4">No runs yet</td></tr></tbody>';
+
+    const recentRuns = profile.recent_runs || [];
+    const recentRunsHtml = recentRuns.length
+        ? recentRuns.map((r) => {
+            const date = r.finished_at ? new Date(r.finished_at).toLocaleDateString() : '';
+            const pct = Math.round((r.accuracy || 0) * 100);
+            const tierLabel = r.difficulty ? ` · ${r.difficulty}` : '';
+            return `
+                <div class="profile-run-entry outcome-${escapeHtml(r.outcome || '')}">
+                    <span class="profile-run-realm">${escapeHtml(r.realm || '')}${escapeHtml(tierLabel)}</span>
+                    <span>Score ${r.score || 0}</span>
+                    <span>${pct}%</span>
+                    <span>${escapeHtml(date)}</span>
+                </div>
+            `;
+        }).join('')
+        : '<p>No runs yet -- play a realm to start your record.</p>';
+
+    container.innerHTML = `
+        <div class="profile-summary-stats">
+            <span>Lifetime XP: <b>${profile.lifetime_xp || 0}</b></span>
+            <span>XP Balance: <b>${profile.xp_balance || 0}</b></span>
+            <span>Total Runs: <b>${totals.runs || 0}</b></span>
+            <span>Overall Accuracy: <b>${overallAccuracy}%</b></span>
+        </div>
+        <h4 class="profile-section-heading">Per-Realm Records</h4>
+        <table class="profile-realms-table">
+            <thead><tr><th>Tier</th><th>Best Score</th><th>Accuracy</th><th>Status</th></tr></thead>
+            ${realmRows}
+        </table>
+        <h4 class="profile-section-heading">Recent Runs</h4>
+        <div class="profile-recent-runs">${recentRunsHtml}</div>
+    `;
+}
+
+// ---------------------------------------------------------------------------
+// Upgrade shop (issue #23). Permanent, deterministic upgrades bought with
+// XP -- reachable from the main menu and from both run-summary screens.
+// Purchases are validated server-side for signed-in players (/api/buy-
+// upgrade) and against the guest's own localStorage balance for guests
+// (buyUpgradeGuest, defined with the profile helpers above) -- same trust
+// model split as the rest of the profile system.
+// ---------------------------------------------------------------------------
+async function openUpgradeShopModal() {
+    const modal = document.getElementById('upgrade-shop-modal');
+    if (!modal) return;
+    modal.classList.add('active');
+    modal._previouslyFocused = document.activeElement;
+    modal._releaseFocusTrap = trapFocus(modal, closeUpgradeShopModal);
+    await refreshUpgradeShop();
+}
+
+function closeUpgradeShopModal() {
+    const modal = document.getElementById('upgrade-shop-modal');
+    if (modal) deactivateModal(modal);
+}
+
+async function fetchCurrentProfile() {
+    if (window.currentUser) {
+        const idToken = await getIdToken();
+        try {
+            const res = await fetch('/api/sync-profile', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id_token: idToken }),
+            });
+            const data = await res.json();
+            return data.status === 'success' ? data.profile : freshProfile();
+        } catch (e) {
+            return freshProfile();
+        }
+    }
+    return loadGuestProfile();
+}
+
+async function refreshUpgradeShop() {
+    const grid = document.getElementById('upgrade-shop-grid');
+    const balanceEl = document.getElementById('upgrade-shop-xp-balance');
+    if (!grid || !balanceEl) return;
+
+    const profile = await fetchCurrentProfile();
+    balanceEl.textContent = String(profile.xp_balance || 0);
+    renderUpgradeCards(grid, profile);
+}
+
+function renderUpgradeCards(grid, profile) {
+    const upgrades = profile.upgrades || {};
+    const totalLevels = totalUpgradeLevels(upgrades);
+    const atCap = totalLevels >= MAX_TOTAL_UPGRADE_LEVELS;
+
+    grid.innerHTML = '';
+    Object.entries(UPGRADE_CATALOG).forEach(([key, def]) => {
+        const level = upgrades[key] || 0;
+        const cost = costForNextLevel(key, level);
+        const maxed = cost === null;
+        const affordable = !maxed && !atCap && (profile.xp_balance || 0) >= cost;
+
+        let costText;
+        if (maxed) costText = 'Max level reached';
+        else if (atCap) costText = `Total upgrade cap reached (${MAX_TOTAL_UPGRADE_LEVELS})`;
+        else costText = `Next level: ${cost} XP`;
+
+        const card = document.createElement('div');
+        card.className = 'upgrade-card' + (maxed ? ' maxed' : '');
+        card.innerHTML = `
+            <h4>${escapeHtml(def.name)}</h4>
+            <p>${escapeHtml(def.description)}</p>
+            <div class="upgrade-level">Level ${level} / ${def.maxLevel}</div>
+            <div class="upgrade-level">${escapeHtml(costText)}</div>
+            <button type="button" class="neural-btn upgrade-buy-btn" data-upgrade-key="${key}" ${maxed || !affordable ? 'disabled' : ''}>
+                ${maxed ? 'Maxed' : 'Buy'}
+            </button>
+        `;
+        grid.appendChild(card);
+    });
+}
+
+// Spending XP is irreversible (issue #7's confirmation standard for
+// destructive/irreversible actions applies here, unlike issue #21's Play
+// Again/Change Realm which discard nothing).
+async function handleUpgradeBuyClick(e) {
+    const btn = e.target.closest('.upgrade-buy-btn');
+    if (!btn || btn.disabled) return;
+    const upgradeKey = btn.dataset.upgradeKey;
+    const def = UPGRADE_CATALOG[upgradeKey];
+    if (!def) return;
+    if (!confirm(`Buy the next level of ${def.name} (${def.description})? This spends XP and cannot be undone.`)) return;
+
+    btn.disabled = true;
+    let errorMessage = null;
+    if (window.currentUser) {
+        const idToken = await getIdToken();
+        try {
+            const res = await fetch('/api/buy-upgrade', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id_token: idToken, upgrade_key: upgradeKey }),
+            });
+            const data = await res.json();
+            if (data.status !== 'success') errorMessage = data.message || 'Could not complete purchase.';
+        } catch (err) {
+            errorMessage = 'A connection error occurred. Please try again.';
+        }
+    } else {
+        const result = buyUpgradeGuest(upgradeKey);
+        if (!result.ok) errorMessage = result.message;
+    }
+
+    if (errorMessage) {
+        showFeedbackModal({ message: errorMessage, correct: false, title: 'Upgrade Shop' });
+    }
+    await refreshUpgradeShop();
+}
+
+// ---------------------------------------------------------------------------
+// Persistent player profile (issue #22). Signed-in players get this written
+// server-side (combat-action.js, at run end, from its own session state);
+// guests accumulate the identical shape here in localStorage so the profile
+// panel works either way. freshProfile()/applyRunToProfile() below are a
+// deliberate line-for-line mirror of cf-pages/functions/_lib/profile.js --
+// there's no shared module system between Pages Functions and this
+// unbundled classic script, so keeping the two in sync is a by-hand
+// obligation, not something the platform enforces. If you change one,
+// change the other.
+// ---------------------------------------------------------------------------
+const PROFILE_STORAGE_KEY = 'studysaga_guest_profile';
+const RECENT_RUNS_MAX = 10;
+
+const DIFFICULTY_TIERS = ['easy', 'medium', 'hard'];
+
+function freshTierRecord() {
+    return { best_score: 0, runs: 0, questions_correct: 0, questions_answered: 0, best_streak: 0, victories: 0 };
+}
+
+// Mirrors migrateLegacyRealmRecord() in profile.js -- a guest profile saved
+// before issue #9's tier nesting has a flat record directly on
+// profile.realms[realm]; treat it as medium-tier data the first time it's
+// touched rather than losing it.
+function migrateLegacyRealmRecord(realmRecord) {
+    if (!realmRecord) return {};
+    if ('best_score' in realmRecord) {
+        return { medium: realmRecord };
+    }
+    return realmRecord;
+}
+
+function freshProfile() {
+    return {
+        lifetime_xp: 0,
+        xp_balance: 0,
+        totals: { runs: 0, questions_answered: 0, questions_correct: 0 },
+        realms: {},
+        recent_runs: [],
+        // Upgrade shop (issue #23): { [upgradeKey]: purchasedLevel }. Mirrors
+        // profile.js's schema -- see that file's comment on why these two
+        // copies exist and must be kept in sync by hand.
+        upgrades: {},
+    };
+}
+
+function applyRunToProfile(profile, run) {
+    profile.lifetime_xp = (profile.lifetime_xp || 0) + (run.xp_earned || 0);
+    profile.xp_balance = (profile.xp_balance || 0) + (run.xp_earned || 0);
+
+    profile.totals = profile.totals || { runs: 0, questions_answered: 0, questions_correct: 0 };
+    profile.totals.runs = (profile.totals.runs || 0) + 1;
+    profile.totals.questions_answered = (profile.totals.questions_answered || 0) + (run.total_questions || 0);
+    profile.totals.questions_correct = (profile.totals.questions_correct || 0) + (run.correct_count || 0);
+
+    profile.realms = profile.realms || {};
+    const realmKey = run.realm || 'unknown';
+    const tierKey = DIFFICULTY_TIERS.includes(run.difficulty) ? run.difficulty : 'medium';
+    const realmRecord = migrateLegacyRealmRecord(profile.realms[realmKey]);
+    const tier = realmRecord[tierKey] || freshTierRecord();
+    tier.best_score = Math.max(tier.best_score || 0, run.score || 0);
+    tier.runs = (tier.runs || 0) + 1;
+    tier.questions_correct = (tier.questions_correct || 0) + (run.correct_count || 0);
+    tier.questions_answered = (tier.questions_answered || 0) + (run.total_questions || 0);
+    tier.best_streak = Math.max(tier.best_streak || 0, run.best_streak || 0);
+    if (run.outcome === 'victory') tier.victories = (tier.victories || 0) + 1;
+    realmRecord[tierKey] = tier;
+    profile.realms[realmKey] = realmRecord;
+
+    profile.recent_runs = [
+        {
+            realm: realmKey,
+            difficulty: tierKey,
+            score: run.score || 0,
+            accuracy: run.accuracy || 0,
+            xp_earned: run.xp_earned || 0,
+            outcome: run.outcome,
+            finished_at: run.finished_at,
+        },
+        ...(profile.recent_runs || []),
+    ].slice(0, RECENT_RUNS_MAX);
+
+    return profile;
+}
+
+// Issue #9's per-tier score multiplier -- mirrors DIFFICULTY_MULTIPLIERS in
+// cf-pages/functions/_lib/game.js (same by-hand-sync note as the other
+// mirrored constants below: needed client-side purely for display, since
+// the server is what actually applies it).
+const DIFFICULTY_MULTIPLIERS = { easy: 1, medium: 1.5, hard: 2 };
+
+// Upgrade shop (issue #23): mirrors UPGRADE_CATALOG/MAX_TOTAL_UPGRADE_LEVELS/
+// costForNextLevel/totalUpgradeLevels in cf-pages/functions/_lib/game.js --
+// same by-hand-sync obligation as the profile functions above. Needed
+// client-side both to render the shop for everyone (names/costs/descriptions
+// aren't server-fetched) and to validate a guest's own purchases, since
+// guests have no server-side account to validate against.
+const UPGRADE_CATALOG = {
+    neural_capacity: { name: 'Neural Capacity', description: '+1 max CAP per level', maxLevel: 5, costs: [200, 400, 800, 1600, 3200] },
+    resilience: { name: 'Resilience', description: '+10 max HP per level', maxLevel: 5, costs: [150, 300, 600, 1200, 2400] },
+    efficient_recall: { name: 'Efficient Recall', description: 'Recharge restores +1 CAP per level', maxLevel: 3, costs: [300, 900, 2700] },
+    extra_insight: { name: 'Extra Insight', description: '+1 Simple hint per run, per level', maxLevel: 3, costs: [250, 750, 2250] },
+    deep_insight: { name: 'Deep Insight', description: '+1 Deep hint per run, per level', maxLevel: 2, costs: [1000, 3000] },
+    focused_strike: { name: 'Focused Strike', description: '+2 Attack damage per level', maxLevel: 5, costs: [200, 400, 800, 1600, 3200] },
+};
+const MAX_TOTAL_UPGRADE_LEVELS = 12;
+
+function totalUpgradeLevels(upgrades) {
+    return Object.values(upgrades || {}).reduce((sum, lvl) => sum + (lvl || 0), 0);
+}
+
+function costForNextLevel(upgradeKey, currentLevel) {
+    const upgrade = UPGRADE_CATALOG[upgradeKey];
+    if (!upgrade || currentLevel >= upgrade.maxLevel) return null;
+    return upgrade.costs[currentLevel];
+}
+
+// Guest purchase: validated against the guest's own localStorage balance,
+// same trust model as the rest of the guest profile (there's no server-side
+// account to check against). Returns {ok, message} rather than throwing, so
+// the shop UI can show a reason instead of a stack trace.
+function buyUpgradeGuest(upgradeKey) {
+    const profile = loadGuestProfile();
+    profile.upgrades = profile.upgrades || {};
+    const currentLevel = profile.upgrades[upgradeKey] || 0;
+    const cost = costForNextLevel(upgradeKey, currentLevel);
+    if (cost === null) return { ok: false, message: 'This upgrade is already at its max level.' };
+    if (totalUpgradeLevels(profile.upgrades) >= MAX_TOTAL_UPGRADE_LEVELS) {
+        return { ok: false, message: `Total upgrade levels are capped at ${MAX_TOTAL_UPGRADE_LEVELS} for now.` };
+    }
+    if ((profile.xp_balance || 0) < cost) return { ok: false, message: 'Not enough XP for this upgrade.' };
+
+    profile.xp_balance -= cost;
+    profile.upgrades[upgradeKey] = currentLevel + 1;
+    saveGuestProfile(profile);
+    return { ok: true, profile };
+}
+
+// Same defensive try/catch pattern as hasSeenTutorial()/holo-card.js --
+// private browsing or storage-disabled must not throw, and a guest whose
+// profile can't persist just doesn't get one this session rather than
+// crashing the run-summary screen.
+function loadGuestProfile() {
+    try {
+        const raw = localStorage.getItem(PROFILE_STORAGE_KEY);
+        return raw ? JSON.parse(raw) : freshProfile();
+    } catch (e) {
+        return freshProfile();
+    }
+}
+
+function saveGuestProfile(profile) {
+    try {
+        localStorage.setItem(PROFILE_STORAGE_KEY, JSON.stringify(profile));
+    } catch (e) {
+        // Nothing to do -- see loadGuestProfile().
+    }
+}
+
+function clearGuestProfile() {
+    try {
+        localStorage.removeItem(PROFILE_STORAGE_KEY);
+    } catch (e) {
+        // Nothing to do.
+    }
+}
+
+// Called once per finished run (issue #22's "write once, at run end") for
+// guests only -- signed-in players get the equivalent write server-side, and
+// doing both would double-count if a sign-in happened mid-session.
+function recordGuestRun(realm, outcome, summary) {
+    if (window.currentUser || !summary) return;
+    const profile = loadGuestProfile();
+    applyRunToProfile(profile, {
+        realm: realm || 'unknown',
+        difficulty: summary.difficulty,
+        score: summary.score,
+        accuracy: summary.accuracy,
+        correct_count: summary.correct_count,
+        total_questions: summary.total_questions,
+        best_streak: summary.best_streak,
+        xp_earned: summary.xp_earned,
+        outcome,
+        finished_at: new Date().toISOString(),
+    });
+    saveGuestProfile(profile);
+}
+
+// Merges a guest's local history into their account exactly once, right
+// after sign-in -- mirrors mergeProfiles() in profile.js server-side (sums
+// totals, takes the max of bests) so a week of guest play isn't overwritten
+// by a brand-new account. Clears the local copy only once the server
+// confirms the merge was saved, so a network failure leaves it intact to
+// retry on the next sign-in instead of silently losing it.
+async function mergeGuestProfileOnSignIn() {
+    const idToken = await getIdToken();
+    if (!idToken) return;
+    let localProfile = null;
+    try {
+        const raw = localStorage.getItem(PROFILE_STORAGE_KEY);
+        localProfile = raw ? JSON.parse(raw) : null;
+    } catch (e) {
+        localProfile = null;
+    }
+    if (!localProfile || !(localProfile.totals?.runs > 0)) return;
+
+    try {
+        const res = await fetch('/api/sync-profile', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id_token: idToken, local_profile: localProfile }),
+        });
+        const data = await res.json();
+        if (data.status === 'success') clearGuestProfile();
+    } catch (e) {
+        console.error('Profile merge failed:', e);
+    }
+}
+
+// ---------------------------------------------------------------------------
+// First-run coach-mark tutorial (issue #16). Points at the real combat UI
+// (no sandbox battle, no fake state) -- the overlay sits visually on top of
+// the real buttons and captures every click itself, so nothing underneath
+// it is ever actually pressed while a step is showing.
+// ---------------------------------------------------------------------------
+const TUTORIAL_STORAGE_KEY = 'studysaga_tutorial_seen';
+
+function hasSeenTutorial() {
+    // Same defensive pattern as holo-card.js's localStorage use: private
+    // browsing / storage-disabled must not throw, and is treated as
+    // "not seen" -- the tutorial may reappear next session, which the issue
+    // explicitly allows rather than requiring persistence at any cost.
+    try {
+        return localStorage.getItem(TUTORIAL_STORAGE_KEY) === '1';
+    } catch (e) {
+        return false;
+    }
+}
+
+function markTutorialSeen() {
+    try {
+        localStorage.setItem(TUTORIAL_STORAGE_KEY, '1');
+    } catch (e) {
+        // Nothing to do -- see hasSeenTutorial().
+    }
+}
+
+// One array drives both the highlight target and the copy, so wording
+// changes never require touching positioning logic. The closing step
+// re-highlights Attack rather than pointing at nothing, so the spotlight
+// dimming (see .tutorial-highlight's box-shadow) never has to fully vanish
+// mid-tutorial only to reappear differently.
+const TUTORIAL_STEPS = [
+    { selector: '#player-card', text: 'This is you. HP is how much confusion you can absorb before the run ends.' },
+    { selector: '#player-cap-bar-inner', text: 'CAP is your action budget. Every attack spends it.' },
+    { selector: '#attack-btn', text: 'Attack costs 3 CAP and opens a question. Answer correctly to deal 15 damage -- answer wrong and the CAP is spent anyway.' },
+    { selector: '#defend-btn', text: 'Out of CAP? Recharge is free: +5 CAP, no question, and the enemy does not counterattack.' },
+    { selector: '#enemy-resolve-bar-inner', text: "Resolve is the enemy's confidence. Right answers push it down and weaken its counterattacks; wrong answers feed it." },
+    { selector: '#attack-btn', text: 'Your turn -- press Attack.', final: true },
+];
+
+let tutorialStepIndex = 0;
+let tutorialResizeHandler = null;
+
+function isTutorialActive() {
+    const overlay = document.getElementById('tutorial-overlay');
+    return !!overlay && overlay.classList.contains('active');
+}
+
+function startTutorial() {
+    const overlay = document.getElementById('tutorial-overlay');
+    if (!overlay) return;
+    tutorialStepIndex = 0;
+    overlay.classList.add('active');
+    overlay._previouslyFocused = document.activeElement;
+    overlay._releaseFocusTrap = trapFocus(overlay, skipTutorial);
+    tutorialResizeHandler = () => renderTutorialStep();
+    window.addEventListener('resize', tutorialResizeHandler);
+    renderTutorialStep();
+}
+
+function renderTutorialStep() {
+    const highlight = document.getElementById('tutorial-highlight');
+    const textEl = document.getElementById('tutorial-step-text');
+    const nextBtn = document.getElementById('tutorial-next-btn');
+    const step = TUTORIAL_STEPS[tutorialStepIndex];
+    if (!highlight || !textEl || !nextBtn || !step) return;
+
+    textEl.textContent = step.text;
+    nextBtn.textContent = step.final ? 'Got it' : 'Next';
+    positionTutorialStep(step);
+}
+
+// Derives the highlight box (and which side the tooltip sits on) from the
+// target's real, current layout rather than hardcoding coordinates -- at
+// narrow widths the combat cards stack, so a fixed side would eventually
+// point at empty space.
+function positionTutorialStep(step) {
+    const target = document.querySelector(step.selector);
+    const highlight = document.getElementById('tutorial-highlight');
+    const tooltip = document.getElementById('tutorial-tooltip');
+    if (!target || !highlight || !tooltip) return;
+
+    const rect = target.getBoundingClientRect();
+    const pad = 6;
+    highlight.style.top = `${rect.top - pad}px`;
+    highlight.style.left = `${rect.left - pad}px`;
+    highlight.style.width = `${rect.width + pad * 2}px`;
+    highlight.style.height = `${rect.height + pad * 2}px`;
+
+    const spaceBelow = window.innerHeight - rect.bottom;
+    const spaceAbove = rect.top;
+    const placeBelow = spaceBelow >= spaceAbove;
+    tooltip.style.top = placeBelow ? `${rect.bottom + 12}px` : '';
+    tooltip.style.bottom = placeBelow ? '' : `${window.innerHeight - rect.top + 12}px`;
+
+    const tooltipWidth = tooltip.offsetWidth || 280;
+    let left = rect.left + rect.width / 2 - tooltipWidth / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - tooltipWidth - 12));
+    tooltip.style.left = `${left}px`;
+}
+
+function advanceTutorial() {
+    if (tutorialStepIndex >= TUTORIAL_STEPS.length - 1) {
+        finishTutorial();
+        return;
+    }
+    tutorialStepIndex += 1;
+    renderTutorialStep();
+}
+
+function finishTutorial() {
+    markTutorialSeen();
+    closeTutorialOverlay();
+}
+
+function skipTutorial() {
+    markTutorialSeen();
+    closeTutorialOverlay();
+}
+
+function closeTutorialOverlay() {
+    const overlay = document.getElementById('tutorial-overlay');
+    if (overlay) deactivateModal(overlay);
+    if (tutorialResizeHandler) {
+        window.removeEventListener('resize', tutorialResizeHandler);
+        tutorialResizeHandler = null;
+    }
+    // Hand control back with the idle nudge armed fresh from now, not from
+    // whenever combat originally loaded (which may have already elapsed
+    // while the tutorial was showing).
+    resetIdleNudgeTimer();
+}
+
 function deactivateModal(modal) {
     modal.classList.remove('active');
     if (modal._releaseFocusTrap) {
@@ -262,8 +1015,71 @@ function deactivateModal(modal) {
 }
 
 function closeQuizModal() {
+    stopQuizTimer();
     const modal = document.getElementById('quiz-modal');
     if (modal) deactivateModal(modal);
+}
+
+// ---------------------------------------------------------------------------
+// Per-tier question timer (issue #29). Server sends time_limit_ms on every
+// question it serves (cf-pages/functions/_lib/game.js's QUESTION_TIME_LIMIT_MS,
+// Easy longer / Hard shorter); this renders the countdown and auto-submits an
+// empty answer on expiry, reusing the normal submitQuizAnswer(Multi) path --
+// a null/empty answer already grades as incorrect there, so no special
+// "timed out" signal needs to travel to the server at all (it independently
+// enforces the same deadline server-side as a backstop, see combat-action.js).
+// ---------------------------------------------------------------------------
+let quizTimerDeadline = null;
+let quizTimerInterval = null;
+let quizTimerExpireTimeout = null;
+
+function stopQuizTimer() {
+    if (quizTimerInterval) clearInterval(quizTimerInterval);
+    if (quizTimerExpireTimeout) clearTimeout(quizTimerExpireTimeout);
+    quizTimerInterval = null;
+    quizTimerExpireTimeout = null;
+    quizTimerDeadline = null;
+    const el = document.getElementById('quiz-timer');
+    if (el) el.style.display = 'none';
+}
+
+function updateQuizTimerDisplay() {
+    const bar = document.getElementById('quiz-timer-bar');
+    const text = document.getElementById('quiz-timer-text');
+    if (!bar || !text || !quizTimerDeadline) return;
+    const remainingMs = Math.max(0, quizTimerDeadline - Date.now());
+    const remainingSec = Math.ceil(remainingMs / 1000);
+    text.textContent = `${remainingSec}s remaining`;
+    bar.classList.toggle('urgent', remainingMs <= 5000);
+}
+
+function startQuizTimer(timeLimitMs, onExpire) {
+    stopQuizTimer();
+    if (!timeLimitMs) return;
+
+    const el = document.getElementById('quiz-timer');
+    const bar = document.getElementById('quiz-timer-bar');
+    if (!el || !bar) return;
+
+    quizTimerDeadline = Date.now() + timeLimitMs;
+    el.style.display = 'block';
+    bar.classList.remove('urgent');
+    // Full width, then transition to 0 over the exact duration -- the CSS
+    // transition (width 1s linear, see style-neural.css) does the visual
+    // sweep; forcing a reflow between setting 100% and 0% is what makes the
+    // browser actually animate the change instead of jumping straight to 0.
+    bar.style.transition = 'none';
+    bar.style.width = '100%';
+    void bar.offsetWidth;
+    bar.style.transition = '';
+    bar.style.width = '0%';
+
+    updateQuizTimerDisplay();
+    quizTimerInterval = setInterval(updateQuizTimerDisplay, 250);
+    quizTimerExpireTimeout = setTimeout(() => {
+        stopQuizTimer();
+        onExpire();
+    }, timeLimitMs);
 }
 
 // ---------------------------------------------------------------------------
@@ -307,7 +1123,11 @@ function setStatus(message) {
 
 function handleInvalidSession(message) {
     console.warn('Invalid session detected:', message);
-    alert(message || 'Session expired. Click Deploy System to relaunch.');
+    // issue #19: this alert() was redundant -- the function already ends
+    // with setStatus() showing the same recovery message on the main menu
+    // it returns the player to (setStatus() itself was silently broken
+    // until this same issue's fix -- see the #test-output element added
+    // to index.html).
     window.gameId = null;
     window.combatState = null;
 
@@ -327,7 +1147,10 @@ function handleInvalidSession(message) {
     const deploy = document.getElementById('deploy-btn');
     if (deploy) deploy.disabled = false;
     hideGameNav();
-    setStatus('Session expired. Click Deploy System to relaunch.');
+    // Prefer the caller's specific message (e.g. the backend's actual
+    // reason) over the generic fallback -- previously silently discarded
+    // since this setStatus() call ignored the `message` parameter.
+    setStatus(message || 'Session expired. Click Deploy System to relaunch.');
 }
 
 async function startGame() {
@@ -373,32 +1196,63 @@ async function startGame() {
                     // Eyebrow now says "Realm" instead of repeating the syllabus
                     // name a second time right above the <h3> (issue #4 bug).
                     card.innerHTML = `<span class="syllabus-realm">Realm</span><h3>${syllabus.name}</h3><p>${syllabus.description}</p>`;
-                    const button = document.createElement('button');
-                    button.type = 'button';
-                    button.textContent = 'Initialize Sync';
-                    button.dataset.syllabusId = syllabus.id;
-                    button.setAttribute('data-syllabus-id', syllabus.id);
-                    console.log('Binding click to syllabus', syllabus.id, 'selectSyllabus type:', typeof selectSyllabus);
-                    button.addEventListener('click', onSyllabusClick);
+                    // Difficulty is chosen once here, before combat starts, and
+                    // locked in for the whole battle (not a per-turn toggle) --
+                    // three buttons instead of one "Initialize Sync" button.
+                    const difficultyRow = document.createElement('div');
+                    difficultyRow.className = 'syllabus-difficulty-picker';
+                    // Issue #9: score multiplier is stated on the button itself
+                    // ("Score reflects the tier multiplier and this is visible to
+                    // the player") and a tier below the question floor is
+                    // disabled outright, not left to silently substitute the
+                    // full pool once a player has already committed to it.
+                    const tierCounts = syllabus.tier_counts || {};
+                    const minTierQuestions = syllabus.min_tier_questions ?? 15;
+                    ['easy', 'medium', 'hard'].forEach(diff => {
+                        const button = document.createElement('button');
+                        button.type = 'button';
+                        button.className = `difficulty-btn difficulty-${diff}`;
+                        const multiplierLabel = DIFFICULTY_MULTIPLIERS[diff];
+                        button.innerHTML = `${diff.charAt(0).toUpperCase() + diff.slice(1)}<span class="difficulty-multiplier">${multiplierLabel}x score</span>`;
+                        button.dataset.syllabusId = syllabus.id;
+                        button.dataset.difficulty = diff;
+                        button.setAttribute('data-syllabus-id', syllabus.id);
+                        const available = (tierCounts[diff] ?? 0) >= minTierQuestions;
+                        if (!available) {
+                            button.disabled = true;
+                            button.setAttribute('aria-label', `${syllabus.name}, ${diff} difficulty -- not enough questions yet`);
+                            button.title = 'Not enough questions in this tier yet';
+                        } else {
+                            button.setAttribute('aria-label', `${syllabus.name}, ${diff} difficulty, ${multiplierLabel}x score`);
+                            button.addEventListener('click', onSyllabusClick);
+                        }
+                        difficultyRow.appendChild(button);
+                    });
                     card.addEventListener('click', function (e) {
-                        // If the button is clicked, let its handler run
+                        // If a difficulty button was clicked, let its own handler run
                         if (e.target.closest('button')) return;
-                        console.log('Card click handler for', syllabus.id);
-                        selectSyllabus(syllabus.id);
+                        console.log('Card click handler for', syllabus.id, '-- defaulting to medium');
+                        selectSyllabus(syllabus.id, 'medium');
                     });
                     card.addEventListener('keydown', function (e) {
                         if (e.key === 'Enter' || e.key === ' ') {
                             e.preventDefault();
-                            selectSyllabus(syllabus.id);
+                            selectSyllabus(syllabus.id, 'medium');
                         }
                     });
                     const caption = document.createElement('p');
                     caption.className = 'neural-btn-caption';
-                    caption.textContent = "Begin this realm's challenges";
-                    card.appendChild(button);
+                    // These are LEVELS of this syllabus's questions (how
+                    // advanced the content itself is), distinct from the
+                    // hint TIERS shown later inside a question. Internal
+                    // real-world calibration (not shown to players): Easy =
+                    // Ramaz (high school), Medium = Cornell (college),
+                    // Hard = graduate school.
+                    caption.textContent = "Choose a difficulty to begin this realm's challenges";
+                    card.appendChild(difficultyRow);
                     card.appendChild(caption);
                     grid.appendChild(card);
-                    console.log('Created button for:', syllabus.id);
+                    console.log('Created difficulty buttons for:', syllabus.id);
                 });
                 setStatus('Select a realm to sync');
             } else {
@@ -411,7 +1265,7 @@ async function startGame() {
         }
     } catch (e) {
         console.error(e);
-        setStatus('Error: ' + e.message);
+        setStatus('Could not start a game. Please try again.');
     } finally {
         if (btn) btn.disabled = false;
         window.__startingGame = false;
@@ -420,16 +1274,18 @@ async function startGame() {
 
 function onSyllabusClick(e) {
     const id = e.currentTarget.dataset.syllabusId;
+    const difficulty = e.currentTarget.dataset.difficulty || 'medium';
     if (!id) {
-        console.warn('Initialize Sync clicked but no syllabus id found');
+        console.warn('Difficulty button clicked but no syllabus id found');
         return;
     }
-    console.log('Initialize Sync clicked for', id);
-    selectSyllabus(id);
+    console.log('Difficulty button clicked:', id, difficulty);
+    selectSyllabus(id, difficulty);
 }
 
-async function selectSyllabus(id) {
-    console.log('=== selectSyllabus called for:', id);
+async function selectSyllabus(id, difficulty) {
+    difficulty = ['easy', 'medium', 'hard'].includes(difficulty) ? difficulty : 'medium';
+    console.log('=== selectSyllabus called for:', id, 'difficulty:', difficulty);
     if (window.__startingCombat) {
         console.log('Combat start already in progress');
         return;
@@ -446,10 +1302,15 @@ async function selectSyllabus(id) {
         }
 
         console.log('POST /api/start-combat with gameId:', window.gameId);
+        // Upgrades (issue #23): signed-in players' levels are read
+        // server-side from their own profile (id_token is enough); guests
+        // have no server-side account, so their local levels ride along here.
+        const idToken = await getIdToken();
+        const upgrades = window.currentUser ? undefined : (loadGuestProfile().upgrades || {});
         const response = await fetch('/api/start-combat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ game_id: window.gameId, syllabus_id: id, enemy_id: 'misconception_golem' })
+            body: JSON.stringify({ game_id: window.gameId, syllabus_id: id, enemy_id: 'misconception_golem', difficulty, id_token: idToken, upgrades })
         });
         console.log('Response status:', response.status);
         const data = await response.json();
@@ -472,56 +1333,158 @@ async function selectSyllabus(id) {
             // "everything pushed left, log floating at top-right" layout bug.
             combatScreen.style.display = 'block';
             combatScreen.style.visibility = 'visible';
-            showGameNav(id.charAt(0).toUpperCase() + id.slice(1));
+            const difficultyLabel = difficulty.charAt(0).toUpperCase() + difficulty.slice(1);
+            showGameNav(`${id.charAt(0).toUpperCase() + id.slice(1)} · ${difficultyLabel}`);
 
             // Force a reflow to ensure DOM updates
             void combatScreen.offsetHeight;
 
             window.combatState = data.combat_state;
+            window._lastResolve = undefined;
+            window._lastScore = undefined;
+            window._lastRenderedCombatState = undefined;
             updateCombatHUD(data.combat_state);
             updateHintsBar(data.hints);
+            if (!hasSeenTutorial()) startTutorial();
             console.log('Combat screen display:', window.getComputedStyle(combatScreen).display);
             console.log('Combat screen is now visible');
         } else {
             console.error('FAILED - status is not success:', data.status);
-            alert('Failed: ' + (data.message || JSON.stringify(data)));
+            showFeedbackModal({ message: data.message || 'Could not enter this realm. Please try again.', correct: false, title: 'Error' });
         }
     } catch (e) {
         console.error('EXCEPTION:', e);
-        alert('Error: ' + e.message);
+        showFeedbackModal({ message: 'A connection error occurred. Please try again.', correct: false, title: 'Error' });
     } finally {
         gridButtons.forEach(b => b.disabled = false);
         window.__startingCombat = false;
     }
 }
 
+// Resolve delta + state label (issue #17): "-18" / "+14" next to the bar,
+// plus a text state at the extremes matching combat-action.js's own
+// thresholds (<=15 => hesitate chance, >=85 => heavy-hit chance) so the
+// number swinging the enemy's counterattack between ~6 and ~25 damage
+// isn't invisible. window._lastResolve is reset to undefined whenever a
+// fresh battle starts, so entering a new fight never shows a stray delta
+// carried over from the last one.
+function updateResolveAnnotation(resolve, isFreshState) {
+    const el = document.getElementById('enemy-resolve-annotation');
+    if (!el) return;
+    // isFreshState (computed once in updateCombatHUD via object identity)
+    // tells a genuinely new server response apart from a same-state redundant
+    // re-render (see updateCombatHUD's comment) -- on a redundant call, leave
+    // whatever annotation is already showing rather than recomputing it.
+    if (!isFreshState) return;
+
+    const parts = [];
+    if (typeof window._lastResolve === 'number' && window._lastResolve !== resolve) {
+        const delta = resolve - window._lastResolve;
+        parts.push(delta > 0 ? `+${delta}` : `${delta}`);
+        el.classList.toggle('delta-down', delta < 0);
+        el.classList.toggle('delta-up', delta > 0);
+    } else {
+        el.classList.remove('delta-down', 'delta-up');
+    }
+    if (resolve <= 15) parts.push('Rattled');
+    else if (resolve >= 85) parts.push('Emboldened');
+
+    el.textContent = parts.join(' · ');
+    window._lastResolve = resolve;
+}
+
+// Score + streak (issue #20): score is server-authoritative (player.score,
+// already inside combat_state) -- this only renders it and derives a visible
+// "+100" style delta by comparing against the last value shown, gated on
+// isFreshState the same way as updateResolveAnnotation() above. This has to
+// be an isFreshState check rather than a value-diff: unlike Resolve (which
+// always changes on a graded turn), a wrong answer is a real, fresh turn
+// that legitimately scores a delta of 0 -- a value-diff can't tell that
+// apart from "nothing happened, don't touch the display" and would leave a
+// stale "+100" showing after a miss.
+function updateScoreDisplay(score, streak, isFreshState) {
+    const scoreEl = document.getElementById('player-score');
+    const deltaEl = document.getElementById('score-delta-annotation');
+    const streakEl = document.getElementById('streak-display');
+    if (!scoreEl || !deltaEl || !streakEl) return;
+
+    scoreEl.textContent = String(score);
+    streakEl.textContent = streak >= 2 ? `Streak x${streak}` : '';
+
+    if (!isFreshState) return;
+    if (typeof window._lastScore === 'number') {
+        const delta = score - window._lastScore;
+        deltaEl.textContent = delta > 0 ? `+${delta}` : (delta < 0 ? `${delta}` : '');
+    } else {
+        deltaEl.textContent = '';
+    }
+    window._lastScore = score;
+}
+
+// Keeps a progress bar's visual width in sync with an accurate
+// role="progressbar" (issue #17) in one place instead of repeating both
+// updates inline for each of the 4 bars.
+function setProgressBar(barId, value, max, label) {
+    const bar = document.getElementById(barId);
+    if (!bar) return;
+    bar.style.width = `${(value / max) * 100}%`;
+    bar.setAttribute('aria-valuenow', String(value));
+    bar.setAttribute('aria-valuemax', String(max));
+    if (label) bar.setAttribute('aria-label', label);
+}
+
 function updateCombatHUD(state) {
+    // Several call sites re-invoke updateCombatHUD a second time (see e.g.
+    // submitQuizAnswer's `finally` block) passing back the exact same
+    // combat_state object already processed once, as a defensive re-render.
+    // Object identity distinguishes that redundant call from a genuinely new
+    // server response -- unlike diffing displayed values, this stays correct
+    // even when a real turn's delta happens to be zero (e.g. a wrong answer
+    // scoring 0 points), which a value-diff can't tell apart from "nothing
+    // changed, so skip."
+    const isFreshState = state !== window._lastRenderedCombatState;
+    window._lastRenderedCombatState = state;
+
     document.getElementById('player-hp').textContent = `${state.player.current_hp}/${state.player.max_hp}`;
-    document.getElementById('player-hp-bar-inner').style.width = `${(state.player.current_hp / state.player.max_hp) * 100}%`;
+    setProgressBar('player-hp-bar-inner', state.player.current_hp, state.player.max_hp);
     document.getElementById('player-cap').textContent = `${state.player.current_cap}/${state.player.max_cap}`;
-    document.getElementById('player-cap-bar-inner').style.width = `${(state.player.current_cap / state.player.max_cap) * 100}%`;
+    setProgressBar('player-cap-bar-inner', state.player.current_cap, state.player.max_cap);
     document.getElementById('enemy-name').textContent = state.enemy.name;
     document.getElementById('enemy-hp').textContent = `${state.enemy.current_hp}/${state.enemy.max_hp}`;
-    document.getElementById('enemy-hp-bar-inner').style.width = `${(state.enemy.current_hp / state.enemy.max_hp) * 100}%`;
+    setProgressBar('enemy-hp-bar-inner', state.enemy.current_hp, state.enemy.max_hp);
+
     const resolve = state.enemy.resolve ?? 50;
     const maxResolve = state.enemy.max_resolve ?? 100;
     document.getElementById('enemy-resolve').textContent = `${resolve}/${maxResolve}`;
-    document.getElementById('enemy-resolve-bar-inner').style.width = `${(resolve / maxResolve) * 100}%`;
+    setProgressBar('enemy-resolve-bar-inner', resolve, maxResolve);
+    updateResolveAnnotation(resolve, isFreshState);
+
+    updateScoreDisplay(state.player.score || 0, state.streak || 0, isFreshState);
+
+    // Action costs come from the server (issue #15) so the client never
+    // hardcodes a copy of the rules that could drift -- see actionCosts()
+    // in cf-pages/functions/_lib/game.js. Cached on window so call sites
+    // that don't have a fresh combat_state handy (the idle nudge) can still
+    // read the real numbers instead of re-guessing them.
+    window.actionCosts = state.action_costs || window.actionCosts || DEFAULT_ACTION_COSTS;
+    updateActionButtonCosts(window.actionCosts);
 
     // Update button states based on CAP
     const cap = state.player.current_cap;
+    const attackCost = window.actionCosts.attack.cost;
+    const abilityCost = window.actionCosts.ability.cost;
     const btnAttack = document.getElementById('attack-btn');
     const btnSkill = document.getElementById('skill-btn');
     const btnDefend = document.getElementById('defend-btn');
 
     if (btnAttack) {
-        const canAfford = cap >= 3;
+        const canAfford = cap >= attackCost;
         btnAttack.disabled = !canAfford;
         btnAttack.style.opacity = canAfford ? '1' : '0.5';
         btnAttack.style.cursor = canAfford ? 'pointer' : 'not-allowed';
     }
     if (btnSkill) {
-        const canAfford = cap >= 5;
+        const canAfford = cap >= abilityCost;
         btnSkill.disabled = !canAfford;
         btnSkill.style.opacity = canAfford ? '1' : '0.5';
         btnSkill.style.cursor = canAfford ? 'pointer' : 'not-allowed';
@@ -531,6 +1494,98 @@ function updateCombatHUD(state) {
         btnDefend.style.opacity = '1';
         btnDefend.style.cursor = 'pointer';
     }
+
+    // Disabled-state reason (issue #15): explain why, not just that.
+    const reasonEl = document.getElementById('action-afford-reason');
+    if (reasonEl) {
+        reasonEl.textContent = cap < attackCost ? 'Not enough CAP -- Recharge to continue.' : '';
+    }
+
+    resetIdleNudgeTimer();
+}
+
+// Fallback only used before any server response carrying real action_costs
+// has arrived -- the combat buttons aren't interactive before that anyway.
+// Kept in sync with ACTIONS in cf-pages/functions/_lib/game.js.
+const DEFAULT_ACTION_COSTS = {
+    attack: { cost: 3, damage: 15 },
+    ability: { cost: 5, damage: 25 },
+    recharge: { gain: 5 },
+};
+
+function updateActionButtonCosts(costs) {
+    const attackCostEl = document.getElementById('attack-btn-cost');
+    const attackDescEl = document.getElementById('attack-btn-desc');
+    if (attackCostEl) attackCostEl.textContent = `${costs.attack.cost} CAP · ${costs.attack.damage} dmg`;
+    if (attackDescEl) attackDescEl.textContent = `Costs ${costs.attack.cost} CAP, deals ${costs.attack.damage} damage`;
+
+    const skillCostEl = document.getElementById('skill-btn-cost');
+    const skillDescEl = document.getElementById('skill-btn-desc');
+    if (skillCostEl) skillCostEl.textContent = `${costs.ability.cost} CAP · ${costs.ability.damage} dmg`;
+    if (skillDescEl) skillDescEl.textContent = `Costs ${costs.ability.cost} CAP, deals ${costs.ability.damage} damage`;
+
+    const defendCostEl = document.getElementById('defend-btn-cost');
+    const defendDescEl = document.getElementById('defend-btn-desc');
+    if (defendCostEl) defendCostEl.textContent = `free · +${costs.recharge.gain} CAP`;
+    if (defendDescEl) defendDescEl.textContent = `Free, restores ${costs.recharge.gain} CAP`;
+}
+
+// ---------------------------------------------------------------------------
+// Idle nudge (issue #14): after IDLE_NUDGE_DELAY_MS of no input on the
+// combat screen, pulse the button the player is expected to press next,
+// so a first-time player isn't left staring at a static screen. Purely
+// additive -- never disables, moves, or auto-clicks anything.
+// ---------------------------------------------------------------------------
+const IDLE_NUDGE_DELAY_MS = 10000;
+let idleNudgeTimer = null;
+let idleNudgeAnnounced = false;
+
+function clearIdleNudge() {
+    document.querySelectorAll('.neural-action-btn.nudge').forEach((b) => b.classList.remove('nudge'));
+    idleNudgeAnnounced = false;
+}
+
+function pickIdleNudgeTarget() {
+    const combatScreen = document.getElementById('combat-screen');
+    if (!combatScreen || combatScreen.style.display !== 'block') return null;
+    // The player's attention belongs to the open modal, not the action row.
+    if (document.querySelector('.neural-modal.active')) return null;
+    if (isTutorialActive()) return null;
+
+    const cap = window.combatState?.player?.current_cap ?? 0;
+    const attackCost = (window.actionCosts || DEFAULT_ACTION_COSTS).attack.cost;
+    // CAP >= attackCost covers both the ">= 5" and "3-4" rows from the issue
+    // table -- Attack is affordable either way and is the cheapest way to
+    // make progress. Below that, Attack and Ability are both disabled, so
+    // nudging either would point at a dead button; Recharge is the only
+    // legal action.
+    const targetId = cap >= attackCost ? 'attack-btn' : 'defend-btn';
+    return document.getElementById(targetId);
+}
+
+function fireIdleNudge() {
+    const target = pickIdleNudgeTarget();
+    if (!target) return;
+    target.classList.add('nudge');
+    if (!idleNudgeAnnounced) {
+        const announcer = document.getElementById('idle-nudge-announcer');
+        if (announcer) announcer.textContent = `Suggested next action: ${target.textContent.trim()}`;
+        idleNudgeAnnounced = true;
+    }
+}
+
+function resetIdleNudgeTimer() {
+    clearIdleNudge();
+    if (idleNudgeTimer) clearTimeout(idleNudgeTimer);
+    idleNudgeTimer = setTimeout(fireIdleNudge, IDLE_NUDGE_DELAY_MS);
+}
+
+function initIdleNudge() {
+    const combatScreen = document.getElementById('combat-screen');
+    if (!combatScreen) return;
+    ['pointerdown', 'keydown', 'focusin'].forEach((evt) => {
+        combatScreen.addEventListener(evt, resetIdleNudgeTimer);
+    });
 }
 
 function updateHintsBar(hints) {
@@ -544,6 +1599,13 @@ function updateHintsBar(hints) {
     if (creditsEl) creditsEl.textContent = hints.credits;
 }
 
+// issue #21: question/answer/hint text goes through normalizeMathText (which
+// itself escapes HTML before adding KaTeX $...$ delimiters) rather than being
+// interpolated raw -- corpus text containing "<" or "&" used to break this
+// markup outright. Missed questions expand via native <details> to reveal
+// the correct answer and the pre-generated easy-tier hint (data.json already
+// has one for all 800 questions) -- the single highest-value review moment
+// in the run, previously thrown away as a bare cross mark.
 function renderLevelResults(containerId, results) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -551,25 +1613,108 @@ function renderLevelResults(containerId, results) {
         container.innerHTML = '';
         return;
     }
-    container.innerHTML = results.map(r => `
-        <div class="level-result-entry ${r.correct ? 'correct' : 'incorrect'}">
-            <span class="result-icon">${r.correct ? '✓' : '✗'}</span>
-            <span>${r.text}</span>
-        </div>
-    `).join('');
+    container.innerHTML = results.map((r) => {
+        const questionHtml = normalizeMathText(r.text);
+        if (r.correct) {
+            return `
+                <div class="level-result-entry correct">
+                    <span class="result-icon">✓</span>
+                    <span>${questionHtml}</span>
+                </div>
+            `;
+        }
+        const answerHtml = normalizeMathText(r.correctAnswer || '');
+        const hintHtml = r.hint ? normalizeMathText(r.hint) : '';
+        return `
+            <details class="level-result-entry incorrect">
+                <summary><span class="result-icon">✗</span> <span>${questionHtml}</span></summary>
+                <div class="level-result-review">
+                    ${answerHtml ? `<p><strong>Correct answer:</strong> ${answerHtml}</p>` : ''}
+                    ${hintHtml ? `<p><strong>Hint:</strong> ${hintHtml}</p>` : ''}
+                </div>
+            </details>
+        `;
+    }).join('');
+    renderMathIn(container);
 }
 
-function pushRecentMessages(messages) {
-    const list = document.getElementById('recent-results-list');
-    if (!list || !messages) return;
-    const entries = Array.from(messages).map(msg => {
-        const div = document.createElement('div');
-        div.className = 'recent-list-entry';
-        div.textContent = msg;
-        return div;
-    });
-    entries.reverse().forEach(entry => list.prepend(entry));
-    while (list.children.length > 6) list.removeChild(list.lastChild);
+// Score/accuracy/streak/XP/hints (issue #21), fed straight from the
+// run_summary field combat-action.js already returns once outcome is set --
+// no second request. One function renders both the victory and defeat
+// screens instead of the two duplicating markup, which had already drifted
+// once (the single-select victory path needed a separate 'active'-class fix
+// the multi-select path already had).
+function renderRunSummary(outcome, summary) {
+    const scoreEl = document.getElementById(`${outcome}-summary-score`);
+    const statsEl = document.getElementById(`${outcome}-summary-stats`);
+    if (scoreEl) scoreEl.textContent = summary ? String(summary.score) : '0';
+    if (statsEl) {
+        const stats = [];
+        if (summary) {
+            const pct = Math.round((summary.accuracy || 0) * 100);
+            stats.push(`Accuracy: ${pct}% (${summary.correct_count}/${summary.total_questions})`);
+            stats.push(`Best streak: x${summary.best_streak}`);
+            stats.push(`XP earned: +${summary.xp_earned}`);
+            stats.push(`Hints used: ${summary.hints_used}`);
+            if (outcome === 'victory') stats.push(`HP remaining: ${summary.hp_remaining}`);
+            // Personal best omitted cleanly until the persistent profile (#22) exists.
+        }
+        statsEl.innerHTML = stats.map((s) => `<span class="run-summary-stat">${escapeHtml(s)}</span>`).join('');
+    }
+}
+
+// Ends the run: renders the shared summary, swaps #combat-screen for the
+// victory/defeat overlay (same opacity/visibility 'active'-class system as
+// the modals, not inline display), and moves focus onto the summary so
+// keyboard/screen-reader users land somewhere meaningful instead of wherever
+// focus happened to be when the screen changed underneath them.
+function handleRunOutcome(outcome, data) {
+    if (outcome !== 'victory' && outcome !== 'defeat') return;
+    const combat = document.getElementById('combat-screen');
+    const screen = document.getElementById(`${outcome}-screen`);
+    if (!screen) return;
+
+    renderRunSummary(outcome, data.run_summary);
+    renderLevelResults(`${outcome}-results-list`, data.level_results);
+    recordGuestRun(window.combatState?.syllabus_id, outcome, data.run_summary);
+
+    if (combat) combat.classList.remove('active');
+    screen.classList.add('active');
+    if (combat) setTimeout(() => combat.style.display = 'none', 800);
+
+    const summaryEl = document.getElementById(`${outcome}-summary`);
+    if (summaryEl) {
+        let focused = false;
+        const doFocus = () => { if (!focused) { focused = true; summaryEl.focus(); } };
+        screen.addEventListener('transitionend', doFocus, { once: true });
+        setTimeout(doFocus, 850);
+    }
+}
+
+function hideEndScreens() {
+    document.getElementById('victory-screen')?.classList.remove('active');
+    document.getElementById('defeat-screen')?.classList.remove('active');
+}
+
+// "Play again"/"Change realm" (issue #21): a new run from the end screen
+// discards nothing the player hasn't already finished, so unlike the nav
+// Home button (issue #7) neither of these needs a confirm() dialog -- noted
+// explicitly here so it doesn't get added reflexively later.
+function playAgainSameRealm() {
+    const syllabusId = window.combatState?.syllabus_id;
+    const difficulty = window.combatState?.difficulty || 'medium';
+    if (!syllabusId) { backToMenu(); return; }
+    hideEndScreens();
+    selectSyllabus(syllabusId, difficulty);
+}
+
+function changeRealm() {
+    hideEndScreens();
+    const combat = document.getElementById('combat-screen');
+    const syllabusScreen = document.getElementById('syllabus-screen');
+    if (combat) combat.style.display = 'none';
+    if (syllabusScreen) syllabusScreen.style.display = 'block';
+    showGameNav('');
 }
 
 // Combat action handler wired to backend
@@ -584,10 +1729,14 @@ async function performAction(action) {
             return;
         }
 
+        // id_token (issue #22) lets combat-action.js write the persistent
+        // profile at run end for signed-in players -- undefined for guests,
+        // who accumulate the same data client-side instead.
+        const idToken = await getIdToken();
         const response = await fetch('/api/combat-action', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ game_id: window.gameId, action })
+            body: JSON.stringify({ game_id: window.gameId, action, id_token: idToken })
         });
         const data = await response.json();
         console.log('combat-action result:', data);
@@ -599,7 +1748,6 @@ async function performAction(action) {
 
         if (data.status === 'question') {
             // Show quiz modal and wait for user answer
-            console.log('[DEBUG] performAction received data:', data);
             openQuizModal(data.question, action);
             return; // keep buttons disabled until answer resolves
         } else if (data.status === 'success') {
@@ -608,40 +1756,15 @@ async function performAction(action) {
                 updateCombatHUD(data.combat_state);
             }
             updateHintsBar(data.hints);
-            const log = document.getElementById('battle-log-content');
-            (data.messages || []).forEach(msg => {
-                const entry = document.createElement('div');
-                entry.textContent = msg;
-                if (log) log.prepend(entry);
-            });
-            pushRecentMessages(data.messages || []);
+            addBattleLogTurn(data.messages || [], { isCorrect: data.is_correct });
 
-            if (data.outcome === 'victory') {
-                const combat = document.getElementById('combat-screen');
-                const victory = document.getElementById('victory-screen');
-                renderLevelResults('victory-results-list', data.level_results);
-                if (combat && victory) {
-                    combat.classList.remove('active');
-                    victory.classList.add('active');
-                    // Still hide combat screen display to be safe
-                    setTimeout(() => combat.style.display = 'none', 800);
-                }
-            } else if (data.outcome === 'defeat') {
-                const combat = document.getElementById('combat-screen');
-                const defeat = document.getElementById('defeat-screen');
-                renderLevelResults('defeat-results-list', data.level_results);
-                if (combat && defeat) {
-                    combat.classList.remove('active');
-                    defeat.classList.add('active');
-                    setTimeout(() => combat.style.display = 'none', 800);
-                }
-            }
+            handleRunOutcome(data.outcome, data);
         } else {
-            alert(data.message || 'Action failed');
+            addBattleLogEntry(data.message || 'Action failed.');
         }
     } catch (e) {
         console.error('combat-action error:', e);
-        alert('Error: ' + e.message);
+        addBattleLogEntry('Error: ' + e.message);
     } finally {
         // Re-enable buttons unless game ended
         const victoryVisible = document.getElementById('victory-screen')?.style.display === 'flex';
@@ -657,8 +1780,6 @@ async function performAction(action) {
 }
 
 function openQuizModal(question, action) {
-    console.log('[DEBUG] openQuizModal called with:', question, action);
-    console.log('[DEBUG] Full question object:', question);
     console.log('Opening quiz for action:', action, 'question:', question);
     console.log('Question type:', question?.type, 'isMulti check:', question?.type === 'multiple_choice_multiple');
     // Prevent duplicate modals
@@ -690,81 +1811,101 @@ function openQuizModal(question, action) {
     }
     // Sean's suggestion: don't auto-reveal hints -- the player must explicitly
     // request one. Only fetch from the backend once they click a button.
-    // Two separate hint tiers, each with its own per-game budget (see
-    // hints-budget-bar): Simple (easy tier only, 3/game) and Deep (all three
-    // tiers, 1/game). Correct answers earn credits that unlock more of either.
+    // Three distinct, independently-clickable buttons -- Easy/Medium/Hard --
+    // rather than a "Simple/Deep" pair with a progressive reveal inside Deep.
+    // Backend budget is unchanged: tier="simple" returns easy only (the
+    // cheap, 3/game budget); tier="hard" returns all three tiers in ONE call
+    // (the pricier, 1/game budget). Medium and Hard share that single deep
+    // fetch/budget-spend via a cached promise, so clicking both only costs
+    // one "deep hint" use, not two.
     const optionsArray = (question?.options || []).map(opt => opt.text || String(opt));
-    function requestHint(tier) {
-        hintBox.textContent = 'Loading hint...';
-        fetch('/api/get-hint', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ question: question?.text || '', options: optionsArray, game_id: window.gameId, tier })
-        })
-            .then(res => res.json())
+    const revealedTiers = {};
+    let deepFetchPromise = null;
+    const TIER_META = [
+        { key: 'easy', label: 'Easy', color: '#6bff6b' },
+        { key: 'medium', label: 'Medium', color: '#ffd93d' },
+        { key: 'hard', label: 'Hard', color: '#ff6b6b' },
+    ];
+
+    function parseHintPayload(hint) {
+        if (typeof hint === 'string') {
+            try { return JSON.parse(hint); } catch (e) { return null; }
+        }
+        return (typeof hint === 'object' && hint !== null) ? hint : null;
+    }
+
+    function renderRevealedTiers() {
+        let html = '';
+        for (const t of TIER_META) {
+            if (revealedTiers[t.key]) {
+                html += `<div style="margin-bottom:8px;"><b style="color:${t.color}">${t.label}:</b> ${revealedTiers[t.key]}</div>`;
+            }
+        }
+        let display = document.getElementById('hint-display');
+        if (!display) {
+            display = document.createElement('div');
+            display.id = 'hint-display';
+            display.style.marginTop = '8px';
+            hintBox.appendChild(display);
+        }
+        display.innerHTML = html;
+    }
+
+    function fetchDeepTiers() {
+        if (!deepFetchPromise) {
+            deepFetchPromise = fetch('/api/get-hint', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ question: question?.text || '', options: optionsArray, game_id: window.gameId, tier: 'hard' })
+            }).then(res => res.json());
+        }
+        return deepFetchPromise;
+    }
+
+    function revealTier(tierKey, btn) {
+        if (revealedTiers[tierKey]) return;
+        const request = tierKey === 'easy'
+            ? fetch('/api/get-hint', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ question: question?.text || '', options: optionsArray, game_id: window.gameId, tier: 'simple' })
+            }).then(res => res.json())
+            : fetchDeepTiers();
+
+        if (btn) btn.disabled = true;
+        request
             .then(data => {
                 updateHintsBar(data.hints);
                 if (data.status === 'blocked') {
-                    hintBox.textContent = data.message || 'No hints left.';
-                    return;
-                }
-                if (data.status === 'success') {
-                    let hint = data.hint;
-                    let parsed = null;
-                    try {
-                        if (typeof hint === 'string') {
-                            parsed = JSON.parse(hint);
-                        } else if (typeof hint === 'object' && hint !== null) {
-                            parsed = hint;
-                        }
-                    } catch (e) {
-                        parsed = null;
-                    }
-                    if (parsed && (parsed.hard || parsed.medium || parsed.easy)) {
-                        // Progressive reveal within whichever tiers this request unlocked
-                        const tiers = [];
-                        if (parsed.hard) tiers.push({ label: 'Hard', text: parsed.hard, color: '#ff6b6b' });
-                        if (parsed.medium) tiers.push({ label: 'Medium', text: parsed.medium, color: '#ffd93d' });
-                        if (parsed.easy) tiers.push({ label: 'Easy', text: parsed.easy, color: '#6bff6b' });
-
-                        let currentTier = 0;
-                        function renderHints() {
-                            let html = '';
-                            for (let i = 0; i <= currentTier && i < tiers.length; i++) {
-                                html += `<div style="margin-bottom:8px;"><b style="color:${tiers[i].color}">${tiers[i].label}:</b> ${tiers[i].text}</div>`;
-                            }
-                            if (currentTier < tiers.length - 1) {
-                                html += `<button id="reveal-next-hint" class="neural-btn" style="margin-top:6px;padding:6px 16px;font-size:0.9em;opacity:0.85;">Need More Help?</button>`;
-                            }
-                            hintBox.innerHTML = html;
-                            const revealBtn = document.getElementById('reveal-next-hint');
-                            if (revealBtn) {
-                                revealBtn.addEventListener('click', function () {
-                                    currentTier++;
-                                    renderHints();
-                                });
-                            }
-                        }
-                        renderHints();
-                    } else {
-                        hintBox.textContent = hint;
-                    }
+                    revealedTiers[tierKey] = data.message || 'No hints left.';
+                } else if (data.status === 'success') {
+                    const parsed = parseHintPayload(data.hint);
+                    revealedTiers[tierKey] = (parsed && parsed[tierKey]) || 'No hint available.';
                 } else {
-                    hintBox.textContent = 'No hint available.';
+                    revealedTiers[tierKey] = 'No hint available.';
+                    if (btn) btn.disabled = false;
                 }
+                renderRevealedTiers();
             })
-            .catch((err) => {
-                hintBox.textContent = 'No hint available.';
+            .catch(() => {
+                revealedTiers[tierKey] = 'No hint available.';
+                if (btn) btn.disabled = false;
+                renderRevealedTiers();
             });
     }
+
     hintBox.innerHTML = `
-        <button id="request-simple-hint-btn" class="neural-btn" style="padding:6px 16px;font-size:0.9em;opacity:0.85;">Simple Hint</button>
-        <button id="request-hard-hint-btn" class="neural-btn" style="padding:6px 16px;font-size:0.9em;opacity:0.85;margin-left:8px;">Deep Hint</button>
+        <div style="font-size:0.75rem;color:#64748b;margin-bottom:6px;letter-spacing:0.02em;">Hint tiers for THIS question (not the realm's difficulty level) -- pick how much help you want:</div>
+        <button id="request-easy-hint-btn" class="neural-btn difficulty-btn difficulty-easy" style="padding:6px 16px;font-size:0.9em;">Easy</button>
+        <button id="request-medium-hint-btn" class="neural-btn difficulty-btn difficulty-medium" style="padding:6px 16px;font-size:0.9em;margin-left:8px;">Medium</button>
+        <button id="request-hard-hint-btn" class="neural-btn difficulty-btn difficulty-hard" style="padding:6px 16px;font-size:0.9em;margin-left:8px;">Hard</button>
     `;
-    const simpleBtn = document.getElementById('request-simple-hint-btn');
-    if (simpleBtn) simpleBtn.addEventListener('click', () => requestHint('simple'), { once: true });
+    const easyBtn = document.getElementById('request-easy-hint-btn');
+    if (easyBtn) easyBtn.addEventListener('click', () => revealTier('easy', easyBtn));
+    const mediumBtn = document.getElementById('request-medium-hint-btn');
+    if (mediumBtn) mediumBtn.addEventListener('click', () => revealTier('medium', mediumBtn));
     const hardBtn = document.getElementById('request-hard-hint-btn');
-    if (hardBtn) hardBtn.addEventListener('click', () => requestHint('hard'), { once: true });
+    if (hardBtn) hardBtn.addEventListener('click', () => revealTier('hard', hardBtn));
     const options = question?.options || [];
     const isMulti = question?.type === 'multiple_choice_multiple';
     if (!options.length) {
@@ -819,6 +1960,21 @@ function openQuizModal(question, action) {
     }
     renderMathIn(optsEl);
 
+    // Per-tier question timer (issue #29): on expiry, auto-submit an empty
+    // answer through the same path a real submission uses -- null/[] never
+    // matches the answer key, so this needs no special "timed out" flag.
+    if (question?.time_limit_ms) {
+        startQuizTimer(question.time_limit_ms, () => {
+            if (isMulti) {
+                submitQuizAnswerMulti(action, []);
+            } else {
+                submitQuizAnswer(action, null);
+            }
+        });
+    } else {
+        stopQuizTimer();
+    }
+
     // Focus trap (issue #5): set up last, once every focusable control
     // (hint buttons, answer options, close button) actually exists in the DOM.
     modal._previouslyFocused = document.activeElement;
@@ -832,14 +1988,13 @@ async function submitQuizAnswer(action, answerIndex) {
     buttons.forEach(b => b.disabled = true);
 
     try {
-        console.log('[DEBUG] Sending quiz answer to backend:', { game_id: window.gameId, action, answer_index: answerIndex });
+        const idToken = await getIdToken();
         const response = await fetch('/api/combat-action', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ game_id: window.gameId, action, answer_index: answerIndex })
+            body: JSON.stringify({ game_id: window.gameId, action, answer_index: answerIndex, id_token: idToken })
         });
         const data = await response.json();
-        console.log('[DEBUG] combat-action graded result:', data);
 
         if ((data.message || '').toLowerCase().includes('invalid game session')) {
             handleInvalidSession(data.message);
@@ -852,15 +2007,6 @@ async function submitQuizAnswer(action, answerIndex) {
             updateCombatHUD(data.combat_state);
         }
         updateHintsBar(data.hints);
-        console.log('[DEBUG] submitQuizAnswer called');
-        // ...existing code...
-        // Always show feedback modal after answer submission
-        let feedbackMsg = "Answer submitted! Await further results or check the game log for more info.";
-        if (data.messages && data.messages.length > 0) {
-            feedbackMsg = data.messages[0];
-        } else if (data.message) {
-            feedbackMsg = data.message;
-        }
         // Determine correctness if possible
         let isCorrect = false;
         if (typeof data.correct !== 'undefined') {
@@ -870,46 +2016,35 @@ async function submitQuizAnswer(action, answerIndex) {
         } else if (typeof data.status !== 'undefined' && data.status === 'correct') {
             isCorrect = true;
         }
+        // issue #18: this single-select path (the most common one) never
+        // wrote anything to the battle log -- the multi-select path did.
+        // Same treatment as the other two combat-action response sites.
+        addBattleLogTurn(data.messages || [], { isCorrect });
+        // Always show feedback modal after answer submission
+        let feedbackMsg = "Answer submitted! Await further results or check the game log for more info.";
+        if (data.messages && data.messages.length > 0) {
+            feedbackMsg = data.messages[0];
+        } else if (data.message) {
+            feedbackMsg = data.message;
+        }
         // Hide quiz modal before showing feedback
         if (modal) closeQuizModal();
         showFeedbackModal({ message: feedbackMsg, correct: isCorrect }, () => {
             // After closing feedback, advance as needed
-            if (data.outcome === 'victory') {
-                // #victory-screen is opacity:0/visibility:hidden by default and only
-                // becomes visible via the 'active' class (see style-neural.css) --
-                // setting style.display='flex' alone (as this used to) leaves it
-                // permanently invisible. This was the single-select path; the
-                // multi-select path already did this correctly.
-                const combat = document.getElementById('combat-screen');
-                const victory = document.getElementById('victory-screen');
-                renderLevelResults('victory-results-list', data.level_results);
-                if (combat && victory) {
-                    combat.classList.remove('active');
-                    victory.classList.add('active');
-                    setTimeout(() => combat.style.display = 'none', 800);
-                }
-            } else if (data.outcome === 'defeat') {
-                const combat = document.getElementById('combat-screen');
-                const defeat = document.getElementById('defeat-screen');
-                renderLevelResults('defeat-results-list', data.level_results);
-                if (combat && defeat) {
-                    combat.classList.remove('active');
-                    defeat.classList.add('active');
-                    setTimeout(() => combat.style.display = 'none', 800);
-                }
+            if (data.outcome === 'victory' || data.outcome === 'defeat') {
+                handleRunOutcome(data.outcome, data);
             } else if (data.status === 'question' && data.question) {
                 // Show next question after feedback is dismissed
                 openQuizModal(data.question, action);
             }
         });
         if (data.status === 'error') {
-            alert(data.message || 'Action failed');
+            addBattleLogEntry(data.message || 'Action failed.');
         } else if (!(data.combat_state || data.status === 'question' || data.status === 'error')) {
-            console.warn('[DEBUG] Unexpected backend response:', data);
         }
     } catch (e) {
         console.error('submitQuizAnswer error:', e);
-        alert('Error: ' + e.message);
+        addBattleLogEntry('Error: ' + e.message);
     } finally {
         const victoryVisible = document.getElementById('victory-screen')?.style.display === 'flex';
         const defeatVisible = document.getElementById('defeat-screen')?.style.display === 'flex';
@@ -930,10 +2065,11 @@ async function submitQuizAnswerMulti(action, answerIndices) {
     buttons.forEach(b => b.disabled = true);
 
     try {
+        const idToken = await getIdToken();
         const response = await fetch('/api/combat-action', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ game_id: window.gameId, action, answer_indices: answerIndices })
+            body: JSON.stringify({ game_id: window.gameId, action, answer_indices: answerIndices, id_token: idToken })
         });
         const data = await response.json();
         console.log('combat-action graded multi result:', data);
@@ -959,16 +2095,10 @@ async function submitQuizAnswerMulti(action, answerIndices) {
         }
         updateHintsBar(data.hints);
 
-        const log = document.getElementById('battle-log-content');
-        (data.messages || []).forEach(msg => {
-            const entry = document.createElement('div');
-            entry.textContent = msg;
-            if (log) log.prepend(entry);
-        });
-        pushRecentMessages(data.messages || []);
+        addBattleLogTurn(data.messages || [], { isCorrect });
 
         if (data.status === 'error') {
-            alert(data.message || 'Action failed');
+            addBattleLogEntry(data.message || 'Action failed.');
         } else {
             // Always show feedback modal with correct/incorrect styling
             let feedbackMsg = "Answer submitted! Await further results or check the game log for more info.";
@@ -988,24 +2118,8 @@ async function submitQuizAnswerMulti(action, answerIndices) {
             // question. This was the real cause of "Attack stops working."
             if (modal) closeQuizModal();
             showFeedbackModal({ message: feedbackMsg, correct: isCorrect }, () => {
-                if (data.outcome === 'victory') {
-                    const combat = document.getElementById('combat-screen');
-                    const victory = document.getElementById('victory-screen');
-                    renderLevelResults('victory-results-list', data.level_results);
-                    if (combat && victory) {
-                        combat.classList.remove('active');
-                        victory.classList.add('active');
-                        setTimeout(() => combat.style.display = 'none', 800);
-                    }
-                } else if (data.outcome === 'defeat') {
-                    const combat = document.getElementById('combat-screen');
-                    const defeat = document.getElementById('defeat-screen');
-                    renderLevelResults('defeat-results-list', data.level_results);
-                    if (combat && defeat) {
-                        combat.classList.remove('active');
-                        defeat.classList.add('active');
-                        setTimeout(() => combat.style.display = 'none', 800);
-                    }
+                if (data.outcome === 'victory' || data.outcome === 'defeat') {
+                    handleRunOutcome(data.outcome, data);
                 } else if (data.status === 'question' && data.question) {
                     openQuizModal(data.question, action);
                 }
@@ -1013,7 +2127,7 @@ async function submitQuizAnswerMulti(action, answerIndices) {
         }
     } catch (e) {
         console.error('submitQuizAnswerMulti error:', e);
-        alert('Error: ' + e.message);
+        addBattleLogEntry('Error: ' + e.message);
     } finally {
         const victoryVisible = document.getElementById('victory-screen')?.style.display === 'flex';
         const defeatVisible = document.getElementById('defeat-screen')?.style.display === 'flex';
@@ -1028,7 +2142,6 @@ async function submitQuizAnswerMulti(action, answerIndices) {
 }
 // Show feedback modal with message, then call callback after close
 function showFeedbackModal(feedback, onClose) {
-    console.log('[DEBUG] showFeedbackModal called with:', feedback);
     let modal = document.getElementById('feedback-modal');
     if (!modal) {
         // Create modal if missing
@@ -1064,16 +2177,22 @@ function showFeedbackModal(feedback, onClose) {
         modal.classList.remove('good', 'bad');
         if (isObject && typeof feedback.correct !== 'undefined') {
             modal.classList.add(feedback.correct ? 'good' : 'bad');
-            if (titleEl) titleEl.textContent = feedback.correct ? '✅ Correct!' : '❌ Incorrect';
+            // issue #19: allow a caller-supplied title for non-quiz uses of
+            // this modal (system/network errors) instead of always saying
+            // "Correct"/"Incorrect", which is misleading outside grading.
+            if (titleEl) titleEl.textContent = feedback.title || (feedback.correct ? '✅ Correct!' : '❌ Incorrect');
             if (window.HoloCard) {
                 const playerCard = document.getElementById('player-card');
                 const enemyCard = document.getElementById('enemy-card');
+                // issue #20: streak is server-authoritative (window.combatState.streak,
+                // already updated above via updateCombatHUD before this runs) --
+                // _holoStreak is only a visual mirror of it now, not an
+                // independent client-side counter that could drift.
+                window._holoStreak = window.combatState?.streak || 0;
                 if (feedback.correct) {
-                    window._holoStreak = (window._holoStreak || 0) + 1;
                     window.HoloCard.pulse(playerCard);
                     window.HoloCard.setIntensity(playerCard, window._holoStreak);
                 } else {
-                    window._holoStreak = 0;
                     window.HoloCard.flash(enemyCard);
                     window.HoloCard.setIntensity(playerCard, 0);
                 }
@@ -1163,11 +2282,14 @@ async function resetGame() {
             hideGameNav();
             setStatus('Session reset. Click Deploy System to start!');
         } else {
-            alert(data.message || 'Reset failed');
+            // Reset can be triggered from any screen (persistent nav), not
+            // just the main menu setStatus() targets -- use the
+            // universally-visible feedback modal instead.
+            showFeedbackModal({ message: data.message || 'Could not reset the session. Please try again.', correct: false, title: 'Error' });
         }
     } catch (e) {
         console.error('reset-game error:', e);
-        alert('Error: ' + e.message);
+        showFeedbackModal({ message: 'A connection error occurred. Please try again.', correct: false, title: 'Error' });
     } finally {
         window.__resetting = false;
         // Re-enable buttons on main menu

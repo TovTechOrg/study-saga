@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between mean absolute deviation and standard deviation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Mean Absolute Deviation (MAD) measures data spread by:",
+    "options": [
+      {"text": "Taking the ABSOLUTE VALUE of each deviation from the mean, then averaging those values", "isCorrect": true, "feedback": "Correct -- MAD uses absolute values to make deviations positive before averaging, similar in purpose to standard deviation's squaring approach."},
+      {"text": "Squaring each deviation from the mean, then averaging those values", "isCorrect": false, "feedback": "That describes the approach used to calculate VARIANCE (leading to standard deviation), not MAD, which specifically uses ABSOLUTE VALUE, not squaring."},
+      {"text": "Simply averaging the raw, unadjusted deviations directly", "isCorrect": false, "feedback": "This wouldn't work correctly -- raw deviations from the mean always average to exactly zero (positive and negative values canceling out), which is precisely why MAD specifically uses ABSOLUTE VALUES instead."},
+      {"text": "Multiplying all the deviations together", "isCorrect": false, "feedback": "Multiplication isn't the correct operation for MAD -- it specifically uses ABSOLUTE VALUE followed by AVERAGING (not multiplication) of the deviations."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Both Mean Absolute Deviation (MAD) and standard deviation address the same core problem: raw deviations from the mean always average to exactly zero. Why do these two measures use DIFFERENT techniques (absolute value vs. squaring) to solve this same shared problem?",
+    "options": [
+      {"text": "Both absolute value and squaring convert negative deviations into positive values, preventing cancellation -- MAD uses the simpler absolute value approach, while standard deviation uses squaring because it has additional useful mathematical properties (like differentiability) making it more convenient for advanced statistical work", "isCorrect": true, "feedback": "Correct -- this recognition (both approaches solve the same sign-cancellation problem, but squaring offers additional mathematical advantages) explains why standard deviation is generally more widely used in advanced statistics despite being conceptually more complex than MAD."},
+      {"text": "MAD and standard deviation actually use exactly the same underlying mathematical technique", "isCorrect": false, "feedback": "This isn't accurate -- these use GENUINELY DIFFERENT specific techniques (absolute value vs. squaring), even though both address the same underlying problem."},
+      {"text": "This difference in technique has no actual mathematical justification or explanation", "isCorrect": false, "feedback": "This isn't accurate -- this difference DOES have a genuine mathematical justification, related to squaring's additional useful properties for advanced statistical applications."},
+      {"text": "Squaring deviations would actually NOT successfully solve the sign-cancellation problem", "isCorrect": false, "feedback": "This isn't accurate -- squaring DOES successfully solve this problem (since squaring any negative number gives a positive result), just as absolute value does."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Standard deviation is much more mathematically 'sensitive' to outliers than MAD, since squaring an already-large deviation makes it disproportionately larger, while absolute value simply preserves the deviation's original magnitude. Why might this specific sensitivity difference make MAD sometimes preferable for data sets containing significant outliers?",
+    "options": [
+      {"text": "Since standard deviation's squaring operation disproportionately AMPLIFIES the influence of large deviations (outliers), a data set's standard deviation can become heavily SKEWED by just a few extreme values, while MAD's simpler absolute-value approach treats all deviations proportionally, making it a more ROBUST, representative measure of TYPICAL spread when significant outliers are present", "isCorrect": true, "feedback": "Correct -- this recognition of MAD's greater robustness against outlier influence (compared to standard deviation's outlier-amplifying squaring approach) explains why statisticians sometimes prefer MAD specifically for data sets where extreme outliers might otherwise distort a more standard, outlier-sensitive spread measure."},
+      {"text": "Standard deviation and MAD are actually equally sensitive to outliers, with no meaningful difference in this specific respect", "isCorrect": false, "feedback": "This isn't accurate -- standard deviation is GENUINELY MORE sensitive to outliers than MAD, precisely because squaring disproportionately amplifies large deviations, unlike absolute value's proportional treatment."},
+      {"text": "MAD would actually be MORE affected by outliers than standard deviation, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- MAD is generally LESS affected by outliers than standard deviation, precisely because it doesn't disproportionately amplify large deviations the way squaring does."},
+      {"text": "This outlier-sensitivity difference has no actual practical relevance for choosing between these two measures in real statistical analysis", "isCorrect": false, "feedback": "This isn't accurate -- this difference has GENUINE practical relevance, directly informing which measure might be more appropriate for a given data set, particularly one containing significant outliers."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This dispersion metric employs the absolute value transformation to eliminate sign cancellation among individual deviations before averaging.", "medium": "This method makes every deviation positive first, then finds the average of those positive values.", "easy": "This method makes every deviation positive first, then averages them."},
+    "medium": {"hard": "Consider how each sign-correcting technique differs in its downstream mathematical tractability for calculus-based statistical derivations, despite both achieving the same basic sign-cancellation goal.", "medium": "Both tricks stop the positives and negatives from canceling out, but squaring happens to work better with more advanced math tools used later in statistics.", "easy": "Both tricks stop positives and negatives from canceling out, but squaring works better with more advanced math."},
+    "hard": {"hard": "Consider how a monotonically increasing, convex transformation like squaring disproportionately weights large-magnitude deviations relative to a linear transformation like absolute value.", "medium": "Squaring a big gap makes it EVEN bigger relative to small gaps, so just one wild outlier can throw off the standard deviation a lot more than it would throw off MAD.", "easy": "Squaring a big gap makes it even bigger, so one wild outlier throws off standard deviation more than MAD."}
+  }
+}
+]

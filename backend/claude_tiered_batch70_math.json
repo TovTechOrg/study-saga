@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the unit circle and reference angles",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The unit circle has a radius of exactly:",
+    "options": [
+      {"text": "1", "isCorrect": true, "feedback": "Correct -- the unit circle is specifically defined as having a radius of exactly 1, centered at the origin."},
+      {"text": "0", "isCorrect": false, "feedback": "A radius of 0 would just be a single point, not a circle at all -- the unit circle specifically has radius 1."},
+      {"text": "100", "isCorrect": false, "feedback": "This isn't the definition of the unit circle -- 'unit' specifically refers to a radius of exactly 1, not 100."},
+      {"text": "It varies depending on the specific angle being measured", "isCorrect": false, "feedback": "The unit circle's radius is always FIXED at exactly 1, regardless of which specific angle is being considered on it."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "On the unit circle, the coordinates of any point corresponding to angle θ are given by (cos θ, sin θ). What are the coordinates of the point at 0 degrees?",
+    "options": [
+      {"text": "(1, 0)", "isCorrect": true, "feedback": "Correct -- cos(0°)=1 and sin(0°)=0, giving the point (1,0), which lies on the positive x-axis at the circle's edge."},
+      {"text": "(0, 1)", "isCorrect": false, "feedback": "This would actually be the coordinates for 90 degrees, not 0 degrees -- check the values of cos(0°) and sin(0°) specifically."},
+      {"text": "(0, 0)", "isCorrect": false, "feedback": "This is the circle's CENTER, not a point ON the unit circle itself, which specifically has a radius of 1 from the center."},
+      {"text": "(1, 1)", "isCorrect": false, "feedback": "This point wouldn't actually lie exactly on the unit circle (its distance from origin would be √2, not 1)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An angle of 210 degrees lies in the third quadrant. Its reference angle (the acute angle to the nearest x-axis) is 30 degrees. Given that sin(30°)=0.5 and cos(30°)≈0.87, what are the approximate coordinates for the 210-degree point on the unit circle, accounting for the correct signs in the third quadrant?",
+    "options": [
+      {"text": "(-0.87, -0.5)", "isCorrect": true, "feedback": "Correct -- in the third quadrant, both x (cosine) and y (sine) values are negative, giving approximately (-0.87, -0.5)."},
+      {"text": "(0.87, 0.5)", "isCorrect": false, "feedback": "This uses the correct magnitude values but with the wrong signs -- in the THIRD quadrant, both coordinates should be negative."},
+      {"text": "(-0.5, -0.87)", "isCorrect": false, "feedback": "This swaps the cosine and sine values -- the x-coordinate (cosine) should correspond to 0.87's magnitude, and the y-coordinate (sine) to 0.5's magnitude, both negative."},
+      {"text": "(0.5, -0.87)", "isCorrect": false, "feedback": "This has the correct sign for only one coordinate -- both x and y should be NEGATIVE in the third quadrant, and the values are also swapped."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This standardized geometric reference figure is defined with a fixed radial distance of exactly one unit from its center.", "medium": "This special circle always has a distance of exactly 1 from its center to its edge.", "easy": "This special circle always has a distance of exactly 1 from center to edge."},
+    "medium": {"hard": "Evaluate the cosine and sine functions specifically at the given angle value to determine the corresponding coordinate pair.", "medium": "Calculate cos(0°) for the x-coordinate and sin(0°) for the y-coordinate.", "easy": "cos(0°) is 1 and sin(0°) is 0, giving (1,0)."},
+    "hard": {"hard": "Apply the reference angle's trigonometric magnitude values, then adjust the sign of each coordinate according to the specific quadrant's sign conventions.", "medium": "Use the reference angle's values (0.87 and 0.5), but remember that in the third quadrant, both x and y coordinates should be negative.", "easy": "Use 0.87 for x and 0.5 for y, but make both negative since it's the third quadrant: (-0.87,-0.5)."}
+  }
+}
+]

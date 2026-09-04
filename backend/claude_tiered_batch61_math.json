@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of complementary and supplementary angles",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Two angles are 'complementary' if their measures add up to:",
+    "options": [
+      {"text": "90 degrees", "isCorrect": true, "feedback": "Correct -- complementary angles always sum to exactly 90 degrees (a right angle)."},
+      {"text": "180 degrees", "isCorrect": false, "feedback": "That describes SUPPLEMENTARY angles, not complementary angles, which specifically sum to 90 degrees."},
+      {"text": "360 degrees", "isCorrect": false, "feedback": "360 degrees describes a full circle/rotation, not the definition of complementary angles, which sum to 90 degrees."},
+      {"text": "45 degrees", "isCorrect": false, "feedback": "This isn't the defining sum for complementary angles -- their measures specifically add up to 90 degrees total, not 45."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two angles are supplementary, and one of them measures 65 degrees. What is the measure of the other angle?",
+    "options": [
+      {"text": "115 degrees", "isCorrect": true, "feedback": "Correct -- since supplementary angles sum to 180 degrees, 180-65=115 degrees."},
+      {"text": "25 degrees", "isCorrect": false, "feedback": "This would be correct if the angles were COMPLEMENTARY (summing to 90), not supplementary (summing to 180)."},
+      {"text": "65 degrees", "isCorrect": false, "feedback": "This would only be correct if both angles were exactly equal, but that's not necessarily implied just because they're supplementary."},
+      {"text": "180 degrees", "isCorrect": false, "feedback": "This is the TOTAL sum for supplementary angles, not the measure of the remaining single angle after subtracting the given 65 degrees."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two complementary angles have measures in the ratio 2:3. What are the measures of each angle?",
+    "options": [
+      {"text": "36 degrees and 54 degrees", "isCorrect": true, "feedback": "Correct -- dividing 90 into 5 equal parts (2+3=5) gives 18 per part; 2×18=36 and 3×18=54, and 36+54=90."},
+      {"text": "30 degrees and 60 degrees", "isCorrect": false, "feedback": "While these do sum to 90, they don't correctly represent a 2:3 ratio (30:60 simplifies to 1:2, not 2:3)."},
+      {"text": "40 degrees and 50 degrees", "isCorrect": false, "feedback": "While these sum to 90, checking the ratio: 40:50 simplifies to 4:5, not the required 2:3 ratio."},
+      {"text": "45 degrees and 45 degrees", "isCorrect": false, "feedback": "While these sum to 90, they represent an equal 1:1 ratio, not the specified 2:3 ratio."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This angle relationship requires the pairwise sum to equal exactly one-quarter of a full rotation.", "medium": "These are two angles that together make up a perfect right-angle corner (90 degrees total).", "easy": "These are two angles that together make a right angle (90 degrees)."},
+    "medium": {"hard": "Subtract the known angle measure from the total supplementary angle sum to isolate the unknown angle.", "medium": "Subtract 65 from 180 to find the other angle.", "easy": "Subtract 65 from 180 to get 115."},
+    "hard": {"hard": "Divide the total angle sum by the sum of the ratio parts to find the value of one part, then scale each ratio term accordingly.", "medium": "Add the ratio parts (2+3=5), divide 90 by 5 to find one 'part,' then multiply that part by 2 and by 3.", "easy": "90 divided by 5 (2+3) is 18. Then 2×18=36 and 3×18=54."}
+  }
+}
+]

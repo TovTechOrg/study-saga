@@ -1,7 +1,4 @@
 // Persistent per-user profile in Firestore, keyed by Firebase UID.
-// Deliberately minimal for now (just enough to resume a game on another
-// device); the points/gacha/upgrades economy discussed separately this
-// session is an intentionally deferred, larger feature, not part of this.
 //
 // Uses Firestore's REST API directly with the caller's own Firebase Auth ID
 // token as the Bearer credential -- no service account/Admin SDK needed.
@@ -11,27 +8,201 @@
 const FIREBASE_PROJECT_ID = 'study-saga-live';
 const FIRESTORE_BASE = `https://firestore.googleapis.com/v1/projects/${FIREBASE_PROJECT_ID}/databases/(default)/documents/user_profiles`;
 
+export const RECENT_RUNS_MAX = 10;
+
+// Realm records are keyed by realm name (issue #22), and each realm now
+// nests one record per difficulty tier (issue #9) -- realms.biology.hard,
+// realms.biology.medium, etc. -- exactly the shape #22 was deliberately
+// left able to hold without a migration.
+export const DIFFICULTY_TIERS = ['easy', 'medium', 'hard'];
+
+export function freshTierRecord() {
+    return { best_score: 0, runs: 0, questions_correct: 0, questions_answered: 0, best_streak: 0, victories: 0 };
+}
+
+// Profiles written before #9's tier nesting have a flat record directly on
+// profile.realms[realm] (freshTierRecord's shape, no tier keys). Rather than
+// a one-time migration script, treat that legacy shape as medium-tier data
+// the first time it's touched -- 'medium' is the same default difficulty
+// used everywhere else for untagged content (start-combat.js's pool filter).
+export function migrateLegacyRealmRecord(realmRecord) {
+    if (!realmRecord) return {};
+    if ('best_score' in realmRecord) {
+        return { medium: realmRecord };
+    }
+    return realmRecord;
+}
+
 export function freshProfile(uid) {
-    return { uid, active_game_id: null };
+    return {
+        uid,
+        active_game_id: null,
+        lifetime_xp: 0,
+        xp_balance: 0,
+        totals: { runs: 0, questions_answered: 0, questions_correct: 0 },
+        realms: {},
+        recent_runs: [],
+        // Upgrade shop (issue #23): { [upgradeKey]: purchasedLevel }. Levels
+        // are permanent and monotonic (never decrease), so merging on
+        // sign-in (see mergeProfiles) takes the max per key rather than summing.
+        upgrades: {},
+    };
+}
+
+// Applies one finished run to a profile object in place and returns it.
+// `run` is { realm, difficulty, score, accuracy, correct_count,
+// total_questions, best_streak, xp_earned, outcome, finished_at }. Pure data
+// manipulation, no I/O -- used identically for the Firestore-backed path
+// here and mirrored in game-simple.js for the guest/localStorage path
+// (there is no shared module system between Pages Functions and the
+// unbundled static frontend, so the two copies must be kept in sync by
+// hand; this is the source of truth, comment cross-references it from the
+// other side).
+export function applyRunToProfile(profile, run) {
+    profile.lifetime_xp = (profile.lifetime_xp || 0) + (run.xp_earned || 0);
+    profile.xp_balance = (profile.xp_balance || 0) + (run.xp_earned || 0);
+
+    profile.totals = profile.totals || { runs: 0, questions_answered: 0, questions_correct: 0 };
+    profile.totals.runs = (profile.totals.runs || 0) + 1;
+    profile.totals.questions_answered = (profile.totals.questions_answered || 0) + (run.total_questions || 0);
+    profile.totals.questions_correct = (profile.totals.questions_correct || 0) + (run.correct_count || 0);
+
+    profile.realms = profile.realms || {};
+    const realmKey = run.realm || 'unknown';
+    const tierKey = DIFFICULTY_TIERS.includes(run.difficulty) ? run.difficulty : 'medium';
+    const realmRecord = migrateLegacyRealmRecord(profile.realms[realmKey]);
+    const tier = realmRecord[tierKey] || freshTierRecord();
+    tier.best_score = Math.max(tier.best_score || 0, run.score || 0);
+    tier.runs = (tier.runs || 0) + 1;
+    tier.questions_correct = (tier.questions_correct || 0) + (run.correct_count || 0);
+    tier.questions_answered = (tier.questions_answered || 0) + (run.total_questions || 0);
+    tier.best_streak = Math.max(tier.best_streak || 0, run.best_streak || 0);
+    if (run.outcome === 'victory') tier.victories = (tier.victories || 0) + 1;
+    realmRecord[tierKey] = tier;
+    profile.realms[realmKey] = realmRecord;
+
+    profile.recent_runs = [
+        {
+            realm: realmKey,
+            difficulty: tierKey,
+            score: run.score || 0,
+            accuracy: run.accuracy || 0,
+            xp_earned: run.xp_earned || 0,
+            outcome: run.outcome,
+            finished_at: run.finished_at,
+        },
+        ...(profile.recent_runs || []),
+    ].slice(0, RECENT_RUNS_MAX);
+
+    return profile;
+}
+
+// Guest-to-account merge on first sign-in (issue #22): sums totals, takes
+// the max of bests, and merges recent_runs by recency rather than the
+// account overwriting a week of guest play. `remote` may be null (brand new
+// account); `local` may be null (nothing to merge, e.g. every sign-in after
+// the first).
+export function mergeProfiles(remote, local) {
+    if (!local) return remote;
+    if (!remote) return local;
+
+    const merged = {
+        uid: remote.uid,
+        active_game_id: remote.active_game_id,
+        lifetime_xp: (remote.lifetime_xp || 0) + (local.lifetime_xp || 0),
+        xp_balance: (remote.xp_balance || 0) + (local.xp_balance || 0),
+        totals: {
+            runs: (remote.totals?.runs || 0) + (local.totals?.runs || 0),
+            questions_answered: (remote.totals?.questions_answered || 0) + (local.totals?.questions_answered || 0),
+            questions_correct: (remote.totals?.questions_correct || 0) + (local.totals?.questions_correct || 0),
+        },
+        realms: {},
+        recent_runs: [...(local.recent_runs || []), ...(remote.recent_runs || [])]
+            .sort((a, b) => String(b.finished_at || '').localeCompare(String(a.finished_at || '')))
+            .slice(0, RECENT_RUNS_MAX),
+        // Upgrade levels are permanent and already paid for once -- merge by
+        // max per key, never sum, or a guest-then-signed-in player would get
+        // both sets of levels for the price of one.
+        upgrades: {},
+    };
+
+    const realmKeys = new Set([...Object.keys(remote.realms || {}), ...Object.keys(local.realms || {})]);
+    for (const realmKey of realmKeys) {
+        const remoteRealm = migrateLegacyRealmRecord(remote.realms?.[realmKey]);
+        const localRealm = migrateLegacyRealmRecord(local.realms?.[realmKey]);
+        const tierKeys = new Set([...Object.keys(remoteRealm), ...Object.keys(localRealm)]);
+        const mergedRealm = {};
+        for (const tierKey of tierKeys) {
+            const r = remoteRealm[tierKey] || freshTierRecord();
+            const l = localRealm[tierKey] || freshTierRecord();
+            mergedRealm[tierKey] = {
+                best_score: Math.max(r.best_score || 0, l.best_score || 0),
+                runs: (r.runs || 0) + (l.runs || 0),
+                questions_correct: (r.questions_correct || 0) + (l.questions_correct || 0),
+                questions_answered: (r.questions_answered || 0) + (l.questions_answered || 0),
+                best_streak: Math.max(r.best_streak || 0, l.best_streak || 0),
+                victories: (r.victories || 0) + (l.victories || 0),
+            };
+        }
+        merged.realms[realmKey] = mergedRealm;
+    }
+
+    const upgradeKeys = new Set([...Object.keys(remote.upgrades || {}), ...Object.keys(local.upgrades || {})]);
+    for (const key of upgradeKeys) {
+        merged.upgrades[key] = Math.max(remote.upgrades?.[key] || 0, local.upgrades?.[key] || 0);
+    }
+
+    return merged;
 }
 
 // Firestore REST documents use typed field values, e.g. {stringValue: "x"}
-// or {nullValue: null} -- these convert our plain JS profile object to/from
-// that shape. Keep both directions in one file since the schema is tiny.
-function toFirestoreFields(profile) {
-    return {
-        uid: { stringValue: profile.uid },
-        active_game_id: profile.active_game_id
-            ? { stringValue: profile.active_game_id }
-            : { nullValue: null },
-    };
+// or {mapValue: {fields: {...}}}. Generic/recursive rather than hand-mapping
+// each field -- the profile schema nests objects (totals, realms, each
+// realm's record) and arrays (recent_runs), and a generic converter means
+// #9's difficulty tiers (or any future nesting) round-trips correctly
+// without touching this file again.
+function toFirestoreValue(value) {
+    if (value === null || value === undefined) return { nullValue: null };
+    if (typeof value === 'string') return { stringValue: value };
+    if (typeof value === 'boolean') return { booleanValue: value };
+    if (typeof value === 'number') {
+        return Number.isInteger(value) ? { integerValue: String(value) } : { doubleValue: value };
+    }
+    if (Array.isArray(value)) {
+        return { arrayValue: { values: value.map(toFirestoreValue) } };
+    }
+    if (typeof value === 'object') {
+        return { mapValue: { fields: toFirestoreFields(value) } };
+    }
+    return { nullValue: null };
+}
+
+function toFirestoreFields(obj) {
+    const fields = {};
+    for (const [key, value] of Object.entries(obj || {})) {
+        fields[key] = toFirestoreValue(value);
+    }
+    return fields;
+}
+
+function fromFirestoreValue(value) {
+    if (!value) return null;
+    if ('stringValue' in value) return value.stringValue;
+    if ('integerValue' in value) return parseInt(value.integerValue, 10);
+    if ('doubleValue' in value) return value.doubleValue;
+    if ('booleanValue' in value) return value.booleanValue;
+    if ('nullValue' in value) return null;
+    if ('arrayValue' in value) return (value.arrayValue.values || []).map(fromFirestoreValue);
+    if ('mapValue' in value) return fromFirestoreFields(value.mapValue.fields || {});
+    return null;
 }
 
 function fromFirestoreFields(fields) {
-    return {
-        uid: fields.uid?.stringValue ?? null,
-        active_game_id: fields.active_game_id?.stringValue ?? null,
-    };
+    const obj = {};
+    for (const [key, value] of Object.entries(fields || {})) {
+        obj[key] = fromFirestoreValue(value);
+    }
+    return obj;
 }
 
 export async function getProfile(idToken, uid) {
@@ -61,6 +232,16 @@ export async function putProfile(idToken, uid, profile) {
 // Paste this into the Firebase Console -> Firestore Database -> Rules tab.
 // Restricts each user's profile document to only that user's own verified
 // token -- nobody can read or write another user's progress.
+//
+// This also means a determined player can edit their own XP/profile fields
+// directly through the Firebase SDK, bypassing the server entirely -- a
+// deliberate accepted tradeoff for a single-player study game with no
+// leaderboards or social comparison (issue #22). The server-side write path
+// (combat-action.js) still only ever derives XP from its own session state,
+// never from the request body, so the *game* can't be cheated through the
+// normal client -- only a player's own private stat display could be, which
+// only harms their own record-keeping. Revisit this before shipping any
+// feature that compares one player's stats to another's.
 export const FIRESTORE_RULES = `
 rules_version = '2';
 service cloud.firestore {

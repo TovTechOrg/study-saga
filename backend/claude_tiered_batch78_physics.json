@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between heat conduction, convection, and radiation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which method of heat transfer specifically requires direct physical contact between particles?",
+    "options": [
+      {"text": "Conduction", "isCorrect": true, "feedback": "Correct -- conduction transfers heat through direct particle-to-particle contact and collision, like heat traveling through a metal spoon in hot soup."},
+      {"text": "Radiation", "isCorrect": false, "feedback": "Radiation transfers heat via electromagnetic waves and specifically does NOT require any physical medium or direct contact at all -- it can even travel through a vacuum."},
+      {"text": "None of the heat transfer methods require any particle contact", "isCorrect": false, "feedback": "This isn't accurate -- conduction SPECIFICALLY requires direct particle contact, unlike radiation, which doesn't need any medium at all."},
+      {"text": "All three heat transfer methods require identical physical mechanisms", "isCorrect": false, "feedback": "This isn't accurate -- conduction, convection, and radiation are three genuinely DIFFERENT physical mechanisms, only one of which (conduction) specifically requires direct particle contact."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Convection specifically involves the movement of heated fluid (liquid or gas) itself, carrying thermal energy with it as it flows -- for example, warm air rising and cooler air sinking in a room. Why does this fundamentally differ from conduction's heat transfer mechanism?",
+    "options": [
+      {"text": "Convection transfers heat through the BULK MOVEMENT of the heated substance itself, while conduction transfers heat through stationary particles vibrating and colliding with their immediate neighbors, without any large-scale movement of the substance itself", "isCorrect": true, "feedback": "Correct -- this fundamental difference (bulk fluid movement vs. particle-to-particle vibration/collision without bulk movement) is precisely what distinguishes convection from conduction as separate heat transfer mechanisms."},
+      {"text": "Convection and conduction are actually identical processes, with no meaningful mechanistic difference", "isCorrect": false, "feedback": "This isn't accurate -- these are genuinely DIFFERENT heat transfer mechanisms (bulk fluid movement vs. stationary particle vibration), which is precisely why they're classified as distinct categories."},
+      {"text": "Convection can actually occur in solids just as easily as conduction can", "isCorrect": false, "feedback": "This isn't accurate -- convection specifically requires FLUID (liquid or gas) movement and generally doesn't occur in rigid solids, unlike conduction, which can occur in solids, liquids, and gases."},
+      {"text": "This distinction has no actual practical relevance for understanding heat transfer in everyday situations", "isCorrect": false, "feedback": "This isn't accurate -- this distinction is HIGHLY relevant for understanding countless everyday heat transfer phenomena, like weather patterns, home heating systems, and cooking."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Radiation is the only heat transfer method that can occur through a complete vacuum (empty space), which is precisely how the Sun's heat reaches Earth despite the vast vacuum of space between them. Why can't conduction or convection accomplish this same feat?",
+    "options": [
+      {"text": "Both conduction (requiring direct particle contact) and convection (requiring bulk fluid movement) fundamentally depend on the PRESENCE of matter/particles to transfer heat, while radiation transfers heat via electromagnetic waves that don't require any medium or particles at all to propagate", "isCorrect": true, "feedback": "Correct -- this fundamental distinction, radiation's unique independence from requiring any physical medium (unlike conduction and convection, which both require some form of particle presence), is precisely why radiation alone can transfer heat across the vacuum of space."},
+      {"text": "Conduction and convection could actually work perfectly well across the vacuum of space, just like radiation", "isCorrect": false, "feedback": "This isn't accurate -- BOTH conduction and convection specifically REQUIRE some form of matter/particles to function, making them physically IMPOSSIBLE in a true vacuum, unlike radiation."},
+      {"text": "Radiation actually also requires a physical medium to transfer heat, just like conduction and convection", "isCorrect": false, "feedback": "This is backwards -- radiation is SPECIFICALLY DEFINED by its unique ability to transfer heat WITHOUT requiring any physical medium, unlike conduction and convection, both of which do require some form of matter."},
+      {"text": "This difference has no actual connection to why the Sun's heat can reach Earth across empty space", "isCorrect": false, "feedback": "This isn't accurate -- this difference is DIRECTLY and specifically connected to explaining precisely how and why the Sun's heat manages to reach Earth despite the vacuum of space separating them."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This heat transfer mechanism operates through direct molecular collision propagating vibrational energy across adjacent particles in physical contact.", "medium": "This method needs particles to actually be touching each other to pass heat along.", "easy": "This method needs particles to be touching to pass heat along."},
+    "medium": {"hard": "Consider whether heat is being carried along by the large-scale physical relocation of the heated material itself, versus being passed between particles that remain in roughly the same location.", "medium": "In one method, the heated stuff itself actually moves around (like warm air rising); in the other, particles just pass the energy along without really moving from their spot.", "easy": "In convection, heated stuff actually moves around; in conduction, particles just pass energy along without moving much."},
+    "hard": {"hard": "Consider which heat transfer mechanisms fundamentally require the presence of matter/particles as their transmission medium, versus which mechanism can propagate through the complete absence of matter.", "medium": "Conduction and convection both need actual matter/particles to work with, but radiation travels as waves that don't need anything physical in between at all.", "easy": "Conduction and convection both need matter to work, but radiation travels as waves needing nothing in between."}
+  }
+}
+]

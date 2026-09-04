@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of efficiency in machines",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the efficiency of a machine measure?",
+    "options": [
+      {"text": "How much of the input energy is converted into useful output, versus lost as waste (like heat)", "isCorrect": true, "feedback": "Correct -- efficiency is typically expressed as a percentage of useful energy output compared to total energy input."},
+      {"text": "How fast a machine can operate", "isCorrect": false, "feedback": "Speed is a separate characteristic from efficiency, which specifically measures useful energy output versus input."},
+      {"text": "How much a machine weighs", "isCorrect": false, "feedback": "Weight is unrelated to efficiency -- efficiency is about energy conversion effectiveness."},
+      {"text": "How colorful a machine is", "isCorrect": false, "feedback": "Color has no bearing on a machine's efficiency."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "No real machine is 100% efficient. Where does the 'lost' energy typically go?",
+    "options": [
+      {"text": "It's usually converted into heat due to friction and other resistive forces", "isCorrect": true, "feedback": "Correct -- friction between moving parts is a common way that useful energy gets converted into unusable heat."},
+      {"text": "It simply disappears completely, violating physics", "isCorrect": false, "feedback": "Energy doesn't just disappear -- the law of conservation of energy means it's converted into another form, typically heat, not destroyed."},
+      {"text": "It turns into additional useful mechanical output", "isCorrect": false, "feedback": "Lost energy specifically does NOT contribute to useful output -- that's exactly why it's classified as \"lost\" rather than useful."},
+      {"text": "It converts entirely into light energy", "isCorrect": false, "feedback": "While some energy loss can appear as light in specific cases, the most common form of lost energy in typical machines is heat from friction."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A machine has an efficiency of 80%, meaning 100 joules of input energy produces 80 joules of useful output. If you need 400 joules of useful work done, how much total input energy is required?",
+    "options": [
+      {"text": "500 joules", "isCorrect": true, "feedback": "Correct -- since output=input×0.80, input=output÷0.80=400÷0.80=500."},
+      {"text": "320 joules", "isCorrect": false, "feedback": "This multiplies instead of dividing the desired output by the efficiency."},
+      {"text": "480 joules", "isCorrect": false, "feedback": "This doesn't match correctly dividing 400 by 0.80."},
+      {"text": "400 joules", "isCorrect": false, "feedback": "This ignores the inefficiency entirely -- more input than the desired output is needed, since some energy is always lost."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value expresses the proportion of energy that emerges as useful output relative to the total energy invested.", "medium": "This shows what percentage of energy put in actually ends up doing something useful.", "easy": "This shows how much of the energy you put in actually gets used usefully."},
+    "medium": {"hard": "Resistive forces like friction between moving parts convert organized mechanical energy into disordered thermal energy.", "medium": "Friction between moving parts turns some of the useful energy into heat instead.", "easy": "Friction between moving parts turns some useful energy into heat instead."},
+    "hard": {"hard": "Divide the desired useful output by the efficiency (as a decimal) to find the required total input energy.", "medium": "Divide 400 by 0.80 to find the required input energy.", "easy": "Divide 400 by 0.80."}
+  }
+}
+]

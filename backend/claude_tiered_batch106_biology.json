@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between essential and non-essential nutrients",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An 'essential nutrient' is one that:",
+    "options": [
+      {"text": "The body cannot produce on its own (or not in sufficient amounts) and must be obtained through diet", "isCorrect": true, "feedback": "Correct -- essential nutrients (like certain amino acids, vitamins, and minerals) must come from external food sources since the body cannot synthesize them adequately itself."},
+      {"text": "The body can easily produce entirely on its own, with no dietary source needed", "isCorrect": false, "feedback": "That describes a NON-essential nutrient, not an essential one -- essential nutrients specifically CANNOT be adequately self-produced, requiring dietary intake instead."},
+      {"text": "A nutrient that provides absolutely no benefit to the body whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- essential nutrients are specifically CRITICALLY IMPORTANT/beneficial for proper body function; that's precisely why the body's inability to produce them makes obtaining them through diet so essential."},
+      {"text": "Only relevant for plants, never for animals or humans", "isCorrect": false, "feedback": "This isn't accurate -- the concept of essential nutrients applies to animals/humans as well as plants -- humans specifically require certain essential amino acids, vitamins, and minerals through diet."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Essential amino acids (which the human body cannot synthesize) must be obtained through dietary protein, while non-essential amino acids CAN be synthesized by the body itself from other available materials. Why does this distinction matter for understanding nutritional requirements/dietary planning?",
+    "options": [
+      {"text": "Since essential amino acids specifically CANNOT be internally produced regardless of other dietary factors, ensuring adequate DIETARY INTAKE of these specific amino acids is nutritionally critical, unlike non-essential amino acids, where the body's own internal synthesis capability provides more flexibility/buffer against variations in direct dietary intake of those particular ones", "isCorrect": true, "feedback": "Correct -- this important distinction (dietary necessity vs. internal synthesis flexibility) is precisely why nutritionists/dietitians pay particular attention to ensuring adequate intake specifically of ESSENTIAL nutrients in dietary planning, since deficiencies in these specific compounds cannot be compensated for by the body's own production capabilities."},
+      {"text": "This distinction between essential and non-essential amino acids has no actual practical relevance for nutritional planning", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has SIGNIFICANT practical relevance for nutritional planning, specifically informing which nutrients require particular dietary attention (essential ones) versus which have more internal synthesis flexibility (non-essential ones)."},
+      {"text": "Non-essential amino acids are actually MORE important for the body than essential amino acids", "isCorrect": false, "feedback": "This isn't accurate -- BOTH types of amino acids are generally important for the body; the key distinction specifically concerns SOURCE (dietary necessity vs. internal synthesis capability), not one type being inherently more important than the other."},
+      {"text": "The body's ability to internally synthesize non-essential amino acids has no actual connection to dietary planning flexibility", "isCorrect": false, "feedback": "This isn't accurate -- the body's internal synthesis CAPABILITY for non-essential amino acids IS DIRECTLY connected to and provides genuine dietary planning FLEXIBILITY regarding those specific compounds, unlike the stricter dietary requirement for essential ones."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some amino acids are classified as 'conditionally essential' -- normally non-essential (the body can usually produce them), but becoming ESSENTIAL (requiring dietary intake) under specific circumstances, like illness, injury, or particular developmental stages (such as infancy). Why does this more nuanced 'conditionally essential' category illustrate an important refinement to the simpler essential/non-essential binary classification?",
+    "options": [
+      {"text": "This category recognizes that the body's internal synthesis CAPABILITY for certain nutrients isn't necessarily a completely FIXED, unchanging property, but can instead be significantly influenced by specific physiological circumstances/demands (like illness or rapid growth), meaning a nutrient's practical essentiality can meaningfully SHIFT depending on an individual's specific current physiological state/needs, rather than being a simple, permanently fixed either/or classification", "isCorrect": true, "feedback": "Correct -- this more nuanced understanding (that nutrient essentiality can be CONTEXT-DEPENDENT rather than a fixed, permanent property) represents an important scientific refinement to the simpler binary classification, with significant practical implications for personalized/situational nutritional recommendations, particularly for vulnerable populations like infants or ill/injured individuals."},
+      {"text": "Conditionally essential amino acids are actually always essential for absolutely everyone, regardless of any specific circumstances", "isCorrect": false, "feedback": "This isn't accurate -- conditionally essential amino acids are specifically essential only UNDER CERTAIN SPECIFIC CIRCUMSTANCES (illness, particular developmental stages), not universally/permanently essential for everyone regardless of circumstance."},
+      {"text": "This conditionally essential category has no actual connection to refining or nuancing the simpler essential/non-essential binary framework", "isCorrect": false, "feedback": "This isn't accurate -- this category is DIRECTLY and specifically connected to and represents a meaningful REFINEMENT/nuancing of the simpler binary classification, illustrating that nutrient essentiality isn't always a fixed, permanent property."},
+      {"text": "A person's specific physiological circumstances (illness, developmental stage, etc.) have no actual connection to whether a given nutrient might become essential for them", "isCorrect": false, "feedback": "This isn't accurate -- a person's SPECIFIC physiological circumstances ARE DIRECTLY connected to and can determine whether a normally non-essential nutrient becomes CONDITIONALLY essential for them under those particular circumstances."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This nutrient category cannot be endogenously synthesized in adequate quantity, necessitating exogenous dietary acquisition.", "medium": "This is a nutrient the body just can't make enough of on its own, so it has to come from food.", "easy": "This is a nutrient the body can't make on its own, so it has to come from food."},
+    "medium": {"hard": "Consider how a fixed inability to internally produce a given compound necessitates prioritizing reliable dietary sourcing, unlike a compound with flexible internal production capability.", "medium": "If your body absolutely can't make something itself no matter what, you HAVE to make sure you're eating it -- but if your body CAN make something, you have a bit more wiggle room in your diet.", "easy": "If your body can't make something, you have to eat it -- if it can, you have more wiggle room."},
+    "hard": {"hard": "Consider how introducing context-dependency into a previously binary classification framework reflects a more biologically accurate, situationally responsive understanding of nutrient requirement variability.", "medium": "It shows that whether your body can make enough of something on its own isn't always a fixed, permanent fact -- it can actually change depending on what's currently going on with your body, like being sick or a baby growing fast.", "easy": "It shows that whether your body can make enough of something can change depending on what's going on, like being sick."}
+  }
+}
+]

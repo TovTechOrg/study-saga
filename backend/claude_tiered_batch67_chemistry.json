@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of allotropes (different structural forms of the same element)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What are allotropes?",
+    "options": [
+      {"text": "Different structural forms of the same element, with the atoms bonded together differently", "isCorrect": true, "feedback": "Correct -- allotropes are made of identical atoms but differ in how those atoms are structurally arranged and bonded, leading to different physical properties."},
+      {"text": "Different elements that happen to share similar chemical properties", "isCorrect": false, "feedback": "Allotropes are specifically forms of the SAME single element, not different elements, even if those different elements share similar properties."},
+      {"text": "Isotopes of the same element with different neutron counts", "isCorrect": false, "feedback": "That describes isotopes, a different concept -- allotropes concern differing STRUCTURAL ARRANGEMENTS of the same element's atoms, not neutron count."},
+      {"text": "Compounds formed from two or more different elements", "isCorrect": false, "feedback": "Allotropes involve only ONE single element -- compounds (which involve multiple different elements) are an entirely different chemistry concept."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Diamond and graphite are both allotropes of pure carbon, yet diamond is extremely hard while graphite is soft and slippery (used in pencil lead). Why do these two allotropes have such dramatically different physical properties despite being made of the exact same element?",
+    "options": [
+      {"text": "The carbon atoms are structurally arranged and bonded very differently in each form -- diamond has a rigid 3D lattice of strong bonds, while graphite has flat, weakly-bonded layers that can easily slide past each other", "isCorrect": true, "feedback": "Correct -- this dramatic difference in atomic-level structural arrangement (despite identical chemical composition) is precisely why these two carbon allotropes exhibit such vastly different physical properties."},
+      {"text": "Diamond and graphite are actually made of completely different elements, not both pure carbon", "isCorrect": false, "feedback": "This isn't accurate -- diamond and graphite are BOTH composed entirely of pure carbon atoms; their dramatically different properties come specifically from their different structural ARRANGEMENTS, not different elemental composition."},
+      {"text": "This difference in properties has no actual connection to how the carbon atoms are structurally arranged", "isCorrect": false, "feedback": "This difference is DIRECTLY and specifically explained by the differing structural arrangements of carbon atoms in each allotrope -- this is precisely the core concept of allotropy."},
+      {"text": "Diamond and graphite actually have identical physical properties, contrary to common knowledge", "isCorrect": false, "feedback": "This isn't accurate -- diamond and graphite have famously and dramatically DIFFERENT physical properties (hardness, appearance, conductivity), despite sharing the same elemental composition."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A third carbon allotrope, graphene, consists of a single, one-atom-thick layer extracted from graphite's layered structure. Despite being made of the same carbon atoms bonded in the same hexagonal pattern as graphite's individual layers, graphene has remarkable properties (exceptional strength, electrical conductivity) not fully realized in bulk graphite. Why might isolating a single layer produce such distinct properties?",
+    "options": [
+      {"text": "In bulk graphite, the weak forces between STACKED layers allow easy sliding (contributing to graphite's softness), but isolating a single layer removes this inter-layer weakness entirely, allowing the layer's inherently strong in-plane atomic bonds to fully express their remarkable properties without being masked by the material's bulk layered behavior", "isCorrect": true, "feedback": "Correct -- this demonstrates how even within a single broader allotrope category (graphite-derived carbon structures), the specific physical FORM (bulk layered material vs. isolated single layer) can dramatically affect which properties are actually observable and exploitable."},
+      {"text": "Graphene is actually chemically completely different from graphite, not simply a single isolated layer of it", "isCorrect": false, "feedback": "This isn't accurate -- graphene is specifically understood as a single isolated layer extracted from graphite's existing layered structure, sharing the same fundamental atomic bonding pattern, not a chemically distinct substance."},
+      {"text": "Isolating a single layer of any layered material would always result in identical properties to the bulk material", "isCorrect": false, "feedback": "This isn't accurate -- as demonstrated by graphene's surprisingly distinct properties compared to bulk graphite, isolating a single layer can reveal significantly different material behaviors, not simply replicate the bulk material's characteristics."},
+      {"text": "This difference in properties between graphene and bulk graphite has no actual connection to layer structure", "isCorrect": false, "feedback": "This difference is actually DIRECTLY explained by the structural distinction between many stacked, loosely-bonded layers (bulk graphite) versus a single isolated layer with fully expressed intra-layer bond strength (graphene)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term denotes distinct structural configurations that a single element's atoms can adopt, resulting in materially different bulk properties.", "medium": "These are different versions of the same element, where the atoms are just connected together differently.", "easy": "These are different versions of the same element, connected together differently."},
+    "medium": {"hard": "Consider how the geometric arrangement and bonding pattern of identical atoms fundamentally determines a material's macroscopic physical characteristics.", "medium": "Diamond's atoms are locked into a super strong 3D framework, while graphite's atoms are in flat sheets that can slide over each other easily.", "easy": "Diamond's atoms are locked in a strong 3D framework, while graphite's atoms are in sheets that slide easily."},
+    "hard": {"hard": "Consider how removing the weak inter-layer forces present in the bulk material allows the intrinsically strong intra-layer bonding characteristics to become the dominant, unmasked property of the isolated single-layer structure.", "medium": "Once you pull apart the weakly-stuck-together layers, the single layer's own super strong internal bonds can finally show off their full strength without other layers getting in the way.", "easy": "Once you pull apart the weakly-stuck layers, the single layer's strong internal bonds can finally show their full strength."}
+  }
+}
+]

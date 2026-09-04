@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the relationship between frequency, wavelength, and wave speed",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The wave equation v = fλ relates wave speed (v), frequency (f), and wavelength (λ). If frequency increases while wave speed stays constant, what happens to wavelength?",
+    "options": [
+      {"text": "Wavelength decreases", "isCorrect": true, "feedback": "Correct -- rearranging to λ=v/f shows wavelength is inversely proportional to frequency when speed is constant."},
+      {"text": "Wavelength increases", "isCorrect": false, "feedback": "This is backwards -- with wave speed held constant, INCREASING frequency actually DECREASES wavelength, not increases it."},
+      {"text": "Wavelength stays exactly the same", "isCorrect": false, "feedback": "Since v=fλ must remain balanced, changing frequency (with v constant) necessarily changes wavelength -- it won't stay the same."},
+      {"text": "Wave speed automatically increases to compensate", "isCorrect": false, "feedback": "The scenario specifies wave speed stays constant -- it's wavelength that changes in response to a change in frequency, not speed."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A sound wave has a frequency of 440 Hz and travels at 343 m/s through air. Using v=fλ, what is its wavelength?",
+    "options": [
+      {"text": "Approximately 0.78 meters", "isCorrect": true, "feedback": "Correct -- rearranging to λ=v/f gives λ=343/440≈0.78 meters."},
+      {"text": "Approximately 151,000 meters", "isCorrect": false, "feedback": "This results from multiplying v and f together, rather than dividing v by f as the rearranged formula requires."},
+      {"text": "Approximately 1.28 meters", "isCorrect": false, "feedback": "This appears to have inverted the calculation (440/343 instead of 343/440)."},
+      {"text": "343 meters", "isCorrect": false, "feedback": "This is just the wave speed value alone, without dividing by the frequency as the formula requires."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "All visible light travels at the same speed in a vacuum (the speed of light, c), regardless of color. Given this fact, why do different colors of visible light have different wavelengths?",
+    "options": [
+      {"text": "Since wave speed (c) is constant for all visible light, and different colors correspond to different frequencies, the wave equation (v=fλ) requires that different frequencies correspond to different wavelengths to maintain that same constant speed", "isCorrect": true, "feedback": "Correct -- this direct mathematical relationship (from v=fλ) between frequency and wavelength, given a fixed wave speed, is exactly why different colors of light (differing in frequency) necessarily have different corresponding wavelengths."},
+      {"text": "Different colors of light actually travel at different speeds in a vacuum, which is why they have different wavelengths", "isCorrect": false, "feedback": "This isn't accurate -- ALL visible light travels at the SAME speed in a vacuum (c), regardless of color; it's specifically the differing FREQUENCIES (not differing speeds) that result in different wavelengths for different colors."},
+      {"text": "Wavelength and frequency are actually completely unrelated properties of light", "isCorrect": false, "feedback": "This isn't accurate -- wavelength and frequency are DIRECTLY mathematically related (via the wave equation v=fλ), especially significant here since wave speed remains constant for all visible light in a vacuum."},
+      {"text": "All colors of visible light actually have exactly the same wavelength", "isCorrect": false, "feedback": "This isn't accurate -- different colors of visible light specifically correspond to DIFFERENT wavelengths (and frequencies), which is precisely why our eyes perceive them as different colors in the first place."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Consider the inverse relationship between wavelength and frequency implied by rearranging v=fλ to solve for wavelength.", "medium": "Rearrange the formula to λ=v/f -- with v staying fixed, what happens to λ if f gets bigger?", "easy": "If f gets bigger while v stays the same, λ (wavelength) gets smaller."},
+    "medium": {"hard": "Rearrange the wave equation algebraically to isolate wavelength, then substitute the given values.", "medium": "Rearrange the equation to λ=v/f, then plug in 343 for v and 440 for f.", "easy": "Divide 343 by 440 to find the wavelength."},
+    "hard": {"hard": "Apply the wave equation's fixed-speed constraint to derive the necessary inverse relationship between frequency and wavelength across the visible spectrum.", "medium": "Since speed has to stay the same for all colors, and each color has its own frequency, each color also has to end up with its own matching wavelength.", "easy": "Since speed stays the same for all colors, each color's different frequency means a different wavelength too."}
+  }
+}
+]

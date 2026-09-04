@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of resonance and natural frequency",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Every object has a 'natural frequency' at which it tends to vibrate most easily. What is 'resonance'?",
+    "options": [
+      {"text": "When an external force applied at an object's natural frequency causes the amplitude of vibration to dramatically increase", "isCorrect": true, "feedback": "Correct -- resonance occurs when repeated force applications are precisely timed to match an object's natural vibrational frequency, progressively building up larger oscillations."},
+      {"text": "When an object completely stops vibrating entirely", "isCorrect": false, "feedback": "This is essentially the opposite of resonance -- resonance specifically describes vibration AMPLITUDE INCREASING dramatically, not stopping."},
+      {"text": "A measure of an object's total mass", "isCorrect": false, "feedback": "Mass is a separate physical property from resonance, which specifically concerns vibrational frequency matching and resulting amplitude changes."},
+      {"text": "A phenomenon that can only occur in electrical circuits, never in mechanical systems", "isCorrect": false, "feedback": "This isn't accurate -- resonance can occur in numerous different types of systems, including mechanical ones (like bridges or musical instruments), not exclusively electrical circuits."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Pushing a child on a swing at exactly the right rhythm (matching the swing's natural back-and-forth frequency) makes the swing go higher and higher with relatively little effort. Why does this timing specifically matter for building up the swing's amplitude so effectively?",
+    "options": [
+      {"text": "When each push is precisely timed to match the swing's natural rhythm, each successive push adds energy at exactly the right moment to reinforce and build upon the existing motion, rather than working against it", "isCorrect": true, "feedback": "Correct -- this precise timing (matching natural frequency) is exactly why resonance allows relatively small, well-timed force inputs to produce a progressively larger and larger swing amplitude over successive pushes."},
+      {"text": "The timing of the pushes actually has no real effect on how high the swing eventually goes", "isCorrect": false, "feedback": "This isn't accurate -- timing is actually CRUCIAL for this phenomenon; pushing at the wrong times could actually work against the swing's motion rather than building it up effectively."},
+      {"text": "Pushing at random times (rather than matching the natural frequency) would actually work equally well for building up amplitude", "isCorrect": false, "feedback": "This isn't accurate -- pushing at RANDOM times (not matching natural frequency) would generally be significantly LESS effective at building amplitude, since pushes might sometimes work against rather than with the existing motion."},
+      {"text": "This phenomenon has no actual connection to the general physics concept of resonance", "isCorrect": false, "feedback": "This isn't accurate -- pushing a swing at its natural frequency is actually a classic, everyday, easily-relatable EXAMPLE of the resonance phenomenon in action."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The 1940 Tacoma Narrows Bridge collapse is a famous historical example where wind-induced vibrations matched the bridge's natural frequency, causing catastrophically increasing oscillations that eventually destroyed the structure. Why does this dramatic historical event illustrate an important engineering consideration related to resonance?",
+    "options": [
+      {"text": "It demonstrates that engineers must carefully consider a structure's natural frequency and design it (or add appropriate dampening mechanisms) to avoid dangerous resonance buildup from environmental forces (like wind) that might otherwise match that natural frequency and cause catastrophic amplitude growth", "isCorrect": true, "feedback": "Correct -- this historically significant, dramatic real-world example serves as a powerful, well-known illustration of why understanding and actively designing around resonance phenomena is a critical practical engineering consideration for structures exposed to various environmental forces."},
+      {"text": "This bridge collapse actually had no real connection to the physics phenomenon of resonance", "isCorrect": false, "feedback": "This isn't accurate -- this famous historical collapse is actually widely recognized as a classic, well-documented (though scientifically nuanced) illustration specifically connected to resonance-related structural vibration phenomena."},
+      {"text": "Engineers actually don't need to consider natural frequency or resonance at all when designing structures like bridges", "isCorrect": false, "feedback": "This isn't accurate -- engineers absolutely DO need to carefully consider natural frequency and potential resonance effects when designing structures, precisely to avoid disasters like this historical bridge collapse example."},
+      {"text": "Wind forces have no actual capability of triggering a resonance effect in a large physical structure like a bridge", "isCorrect": false, "feedback": "This isn't accurate -- wind forces CAN potentially trigger resonance-related effects in structures under certain conditions, which is precisely the engineering concern illustrated by this historical example."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phenomenon describes a dramatic amplitude increase resulting from a periodic driving force precisely matched to a system's intrinsic oscillatory frequency.", "medium": "This is when pushing something at just the right rhythm makes its back-and-forth motion get bigger and bigger.", "easy": "This is when pushing at just the right rhythm makes motion get bigger and bigger."},
+    "medium": {"hard": "Consider how precisely synchronized force application, matched to an oscillating system's inherent periodicity, allows sequential energy inputs to constructively combine rather than interfere with each other.", "medium": "When your push lines up perfectly with the swing's own natural rhythm, each push adds a little extra energy right when it's most helpful, building up more and more.", "easy": "When your push lines up with the swing's own rhythm, each push adds energy right when it's most helpful."},
+    "hard": {"hard": "Consider how failing to account for a structure's natural vibrational frequency relative to potential environmental driving forces could allow a resonance condition to develop, progressively amplifying oscillations to a destructive level.", "medium": "If the wind happens to blow in a pattern that matches how the bridge naturally likes to wobble, that wobbling can build up more and more until it becomes way too much for the bridge to handle.", "easy": "If the wind matches how the bridge naturally wobbles, that wobbling can build up until it's too much for the bridge."}
+  }
+}
+]

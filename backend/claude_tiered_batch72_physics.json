@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the equivalence principle and gravitational acceleration",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to Galileo's classic (though likely legendary) demonstration, if you drop a heavy object and a light object from the same height at the same time (ignoring air resistance), what happens?",
+    "options": [
+      {"text": "They hit the ground at the same time, regardless of their different masses", "isCorrect": true, "feedback": "Correct -- ignoring air resistance, all objects fall with the same gravitational acceleration, regardless of their mass."},
+      {"text": "The heavier object always hits the ground first", "isCorrect": false, "feedback": "This is a common misconception -- ignoring air resistance, mass does NOT affect how quickly an object falls; both would land at the same time."},
+      {"text": "The lighter object always hits the ground first", "isCorrect": false, "feedback": "This is also inaccurate -- ignoring air resistance, mass doesn't determine fall speed; both objects would actually land simultaneously."},
+      {"text": "Neither object would ever actually fall at all", "isCorrect": false, "feedback": "This isn't accurate -- both objects WOULD fall due to gravity; the key point is that they'd fall at the same rate, landing simultaneously, regardless of their different masses."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why doesn't a heavier object actually experience greater gravitational acceleration, even though gravity's force (F=mg) is indeed stronger on more massive objects?",
+    "options": [
+      {"text": "While gravitational FORCE does increase with mass, ACCELERATION also depends on mass (a=F/m), and these two mass-dependencies exactly cancel out, resulting in the same acceleration regardless of an object's mass", "isCorrect": true, "feedback": "Correct -- this precise cancellation between increased gravitational force and increased inertial resistance (both scaling with mass) is exactly why all objects experience identical gravitational acceleration in the absence of air resistance."},
+      {"text": "Gravitational force actually doesn't depend on an object's mass at all", "isCorrect": false, "feedback": "This isn't accurate -- gravitational force (F=mg) DOES depend on mass; the key insight is that this increased force is exactly offset by the object's correspondingly increased inertial resistance to acceleration."},
+      {"text": "Heavier objects actually do experience greater gravitational acceleration than lighter objects", "isCorrect": false, "feedback": "This isn't accurate (ignoring air resistance) -- despite experiencing greater gravitational FORCE, heavier objects have proportionally more inertia, resulting in the SAME acceleration as lighter objects, not greater."},
+      {"text": "This phenomenon has no actual mathematical explanation or connection to Newton's laws", "isCorrect": false, "feedback": "This isn't accurate -- this phenomenon has a very precise mathematical explanation, directly derivable from Newton's second law (F=ma) combined with the gravitational force formula (F=mg)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Einstein's equivalence principle proposes that being in a gravitational field is locally indistinguishable from being in an accelerating reference frame (like an accelerating rocket in deep space). Why did this seemingly simple idea become such a foundational cornerstone for his general theory of relativity?",
+    "options": [
+      {"text": "This principle suggested that gravity might not be a conventional 'force' at all, but rather a consequence of the geometric curvature of spacetime itself, fundamentally reshaping how gravity is conceptually understood in physics", "isCorrect": true, "feedback": "Correct -- this profound conceptual shift, from viewing gravity as a traditional force to understanding it as spacetime curvature, represents one of the most significant paradigm shifts in the history of physics, directly stemming from Einstein's equivalence principle."},
+      {"text": "This principle actually has no real connection to Einstein's broader theory of general relativity", "isCorrect": false, "feedback": "This isn't accurate -- the equivalence principle is actually widely recognized as a FOUNDATIONAL cornerstone specifically underlying Einstein's development of general relativity, not an unrelated side idea."},
+      {"text": "This principle proves that gravity and acceleration are actually completely different, entirely unrelated phenomena", "isCorrect": false, "feedback": "This is backwards -- the equivalence principle specifically proposes that gravity and acceleration are, in a meaningful sense, EQUIVALENT (locally indistinguishable), not completely different phenomena."},
+      {"text": "This principle only applies to extremely small-scale quantum phenomena, not to large-scale gravitational effects", "isCorrect": false, "feedback": "This isn't accurate -- the equivalence principle specifically applies to gravitational phenomena at a classical, large-scale level (general relativity), not specifically to quantum-scale phenomena."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Consider the historical thought experiment addressing whether an object's inertial mass influences its rate of gravitational descent.", "medium": "Ignoring air resistance, does being heavier actually make something fall down faster?", "easy": "Ignoring air resistance, being heavier doesn't make something fall faster."},
+    "medium": {"hard": "Consider how the mass-dependence in the gravitational force equation directly cancels against the mass-dependence in Newton's second law when solving for acceleration.", "medium": "A heavier object gets pulled with more force, but it also resists that pull more (more inertia), and those two effects cancel out perfectly.", "easy": "A heavier object gets pulled harder, but it also resists more, so those effects cancel out."},
+    "hard": {"hard": "Consider how recognizing gravity and acceleration as locally indistinguishable phenomena could motivate reconceiving gravity's fundamental nature in terms of geometric spacetime structure rather than a conventional force.", "medium": "If being pulled by gravity feels exactly the same as accelerating in a rocket, maybe gravity isn't really a 'force' in the usual sense, but something to do with the shape of space itself.", "easy": "If gravity feels the same as accelerating, maybe gravity isn't a normal force, but something about the shape of space itself."}
+  }
+}
+]

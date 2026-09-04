@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between analogous and homologous genes (orthologs vs. paralogs)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Orthologous' genes are genes in different species that:",
+    "options": [
+      {"text": "Evolved from a common ancestral gene through a speciation event (the species themselves diverging)", "isCorrect": true, "feedback": "Correct -- orthologs are genes in separate species that trace back to the same ancestral gene, having diverged specifically when those species themselves split apart."},
+      {"text": "Arose from a gene duplication event WITHIN a single species", "isCorrect": false, "feedback": "That describes PARALOGOUS genes, not orthologous ones -- paralogs specifically arise from duplication events within one species, while orthologs arise from species divergence."},
+      {"text": "Have absolutely no evolutionary relationship to each other whatsoever", "isCorrect": false, "feedback": "This is essentially the opposite of what orthologous genes represent -- orthologs specifically DO share a meaningful evolutionary relationship (common ancestry via species divergence)."},
+      {"text": "Can only be found in bacteria, never in more complex organisms", "isCorrect": false, "feedback": "This isn't accurate -- orthologous genes can be found and compared across many different types of organisms, not exclusively in bacteria."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "'Paralogous' genes, by contrast, arise from a gene duplication event WITHIN a single species' genome, with the duplicated copies then potentially evolving somewhat different specific functions over time. Why is distinguishing between orthologs and paralogs important when comparing genes across (or within) different species?",
+    "options": [
+      {"text": "Since orthologs and paralogs arise through fundamentally DIFFERENT evolutionary processes (species divergence vs. within-species duplication), correctly distinguishing between them helps researchers accurately interpret gene relationships and appropriately infer likely SIMILAR function (more likely for orthologs) versus potentially DIVERGED function (more likely for paralogs, which had more evolutionary 'freedom' to specialize)", "isCorrect": true, "feedback": "Correct -- this important distinction helps genomic researchers avoid incorrectly assuming identical function between genes just because they're similar in sequence, since the specific evolutionary PATHWAY (ortholog vs. paralog) actually matters for reasonably predicting likely functional similarity or divergence."},
+      {"text": "This distinction between orthologs and paralogs actually has no practical importance for genomic research or gene function prediction", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has SIGNIFICANT practical importance for genomic research, particularly for accurately interpreting gene relationships and making informed predictions about likely gene function similarity or divergence."},
+      {"text": "Orthologs and paralogs are actually generated through identical evolutionary processes, with no meaningful difference between them", "isCorrect": false, "feedback": "This isn't accurate -- these gene types arise through GENUINELY DIFFERENT evolutionary processes (species divergence for orthologs, within-species gene duplication for paralogs), which is precisely why distinguishing between them matters."},
+      {"text": "Paralogous genes are actually always MORE likely to have identical function compared to orthologous genes", "isCorrect": false, "feedback": "This is generally backwards -- ORTHOLOGOUS genes (from species divergence) are generally considered MORE likely to retain similar function, while PARALOGOUS genes (from duplication) have had more evolutionary opportunity to diverge and specialize into different functions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Gene duplication events (creating paralogs) are considered an important evolutionary mechanism for generating genetic novelty, since a duplicated gene copy can potentially evolve a new function while the original copy continues performing its original essential role. Why might this specific duplication mechanism be evolutionarily advantageous compared to a single, non-duplicated gene evolving a completely new function directly?",
+    "options": [
+      {"text": "Since gene duplication creates a 'backup' copy that continues performing the ESSENTIAL original function, the duplicate copy is relatively 'free' to accumulate mutations and potentially evolve entirely new functions WITHOUT risking the organism's survival by disrupting that critical original function, unlike a single non-duplicated gene, where any function-altering mutation would directly risk that gene's essential original role", "isCorrect": true, "feedback": "Correct -- this protective 'redundancy' provided by gene duplication (allowing one copy to freely evolve while the other maintains essential function) is a compelling evolutionary explanation for why duplication events are considered such an important source of genetic novelty and functional innovation over evolutionary time."},
+      {"text": "Gene duplication actually provides no evolutionary advantage whatsoever compared to non-duplicated genes evolving new functions directly", "isCorrect": false, "feedback": "This isn't accurate -- gene duplication IS widely considered to provide a SIGNIFICANT evolutionary advantage (via this redundancy/backup mechanism) for generating genetic novelty, compared to non-duplicated genes evolving new functions directly (which risks disrupting essential existing function)."},
+      {"text": "A single, non-duplicated gene evolving a new function would actually pose no risk to the organism's survival", "isCorrect": false, "feedback": "This isn't accurate -- a single non-duplicated gene undergoing function-altering mutations WOULD risk disrupting its essential original function (potentially harming the organism), which is precisely why the duplication-based 'backup copy' mechanism is considered evolutionarily advantageous by comparison."},
+      {"text": "This duplication mechanism has no actual connection to explaining the evolutionary origin of new gene functions", "isCorrect": false, "feedback": "This isn't accurate -- this duplication mechanism is DIRECTLY and significantly connected to and is considered an important evolutionary EXPLANATION for how new gene functions can arise over time."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This genetic relationship arises specifically from a shared ancestral gene lineage diverging alongside the speciation event separating the host organisms.", "medium": "These are genes in different species that came from the exact same ancestor gene, back when those species themselves split apart.", "easy": "These are genes in different species that came from the same ancestor gene when species split apart."},
+    "medium": {"hard": "Consider how the specific evolutionary PATHWAY producing a gene relationship (species-splitting vs. within-genome copying) provides meaningfully different information about how much functional divergence to reasonably expect.", "medium": "Knowing WHICH way two similar genes are related (did species split apart, or did one gene copy itself) actually gives you a hint about whether they're likely to do the same job or different jobs.", "easy": "Knowing how two genes are related gives a hint about whether they likely do the same job or different jobs."},
+    "hard": {"hard": "Consider how possessing a redundant functional copy removes the survival-threatening constraint that would otherwise limit exploratory mutation and functional innovation in a single essential gene.", "medium": "Having a spare copy means one gene can keep doing its important job while the OTHER copy is free to experiment and change without putting the organism at risk if those experiments don't work out.", "easy": "Having a spare copy means one gene can keep doing its job while the other is free to experiment safely."}
+  }
+}
+]

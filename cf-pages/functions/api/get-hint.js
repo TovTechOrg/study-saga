@@ -153,22 +153,37 @@ export async function onRequestPost({ request, env }) {
             session.hints = session.hints || freshHints();
             const h = session.hints;
             const usedKey = tier === 'hard' ? 'hard_used' : 'simple_used';
-            const maxAllowed = tier === 'hard' ? HARD_HINT_MAX : SIMPLE_HINT_MAX;
+            // Issue #23: Extra/Deep Insight upgrades raise these per-run
+            // budgets -- session.effective_stats (resolved once at
+            // start-combat time from the player's purchased levels) takes
+            // priority over the base-config module constants.
+            const maxAllowed = tier === 'hard'
+                ? (session.effective_stats?.hard_hint_max ?? HARD_HINT_MAX)
+                : (session.effective_stats?.simple_hint_max ?? SIMPLE_HINT_MAX);
 
             if (h[usedKey] < maxAllowed) {
                 h[usedKey] += 1;
             } else if (h.credits > 0) {
                 h.credits -= 1;
             } else {
+                // Marked below (session.pending_q_hint_used) only on the
+                // paths that actually grant a hint -- this blocked path
+                // must not halve a question's score for a hint the player
+                // never received.
                 await putSession(env, gameId, session);
                 return jsonResponse({
                     status: 'blocked',
                     message: tier === 'hard'
                         ? 'No deep hints left this game. Answer questions correctly to earn credits.'
                         : 'No simple hints left this game. Answer questions correctly to earn credits.',
-                    hints: hintsSummary(h),
+                    hints: hintsSummary(h, session.effective_stats),
                 });
             }
+            // Issue #20: a hint actually granted on the currently pending
+            // question halves that question's score once it's graded in
+            // combat-action.js. Reset back to false there after grading, so
+            // this only ever reflects the question in progress right now.
+            session.pending_q_hint_used = true;
             await putSession(env, gameId, session);
         }
     }
@@ -199,6 +214,6 @@ export async function onRequestPost({ request, env }) {
     return jsonResponse({
         status: 'success',
         hint: scopedHint,
-        hints: session ? hintsSummary(session.hints) : undefined,
+        hints: session ? hintsSummary(session.hints, session.effective_stats) : undefined,
     });
 }

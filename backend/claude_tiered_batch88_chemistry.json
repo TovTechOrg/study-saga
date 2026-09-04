@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between ionic and molecular compound naming conventions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Ionic compounds (like NaCl) are typically formed between:",
+    "options": [
+      {"text": "A metal and a nonmetal", "isCorrect": true, "feedback": "Correct -- ionic bonds typically form when a metal atom transfers electrons to a nonmetal atom, creating oppositely charged ions that attract each other."},
+      {"text": "Two different nonmetals", "isCorrect": false, "feedback": "Two nonmetals bonding together typically forms a MOLECULAR (covalent) compound, not an ionic one, which specifically involves a metal and a nonmetal."},
+      {"text": "Two atoms of the exact same element", "isCorrect": false, "feedback": "This would typically form a covalent molecule (like O2), not an ionic compound, which specifically requires a metal and a nonmetal with significantly different electronegativities."},
+      {"text": "Only elements from the noble gas group", "isCorrect": false, "feedback": "Noble gases are generally very unreactive and don't typically form ionic compounds in the way described -- ionic compounds specifically form between metals and nonmetals."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Molecular (covalent) compounds use prefixes (like mono-, di-, tri-) in their names to specify the exact number of each type of atom (e.g., carbon dioxide, CO2), while ionic compounds typically don't use these prefixes (e.g., simply 'sodium chloride,' not 'monosodium monochloride'). Why does this naming convention difference make practical sense?",
+    "options": [
+      {"text": "Since ionic compounds form in FIXED, predictable ratios based on the specific charges of their constituent ions (making the exact ratio predictable/implied), prefixes specifying atom count aren't necessary, unlike molecular compounds, which CAN form in multiple different possible ratios between the same two elements, requiring prefixes to specify exactly which compound is being referenced", "isCorrect": true, "feedback": "Correct -- this practical naming distinction directly reflects an underlying chemical difference: ionic compound ratios are predictably determined by charge balance, while molecular compounds between the same two elements can genuinely form in multiple different ratios (like CO vs. CO2), necessitating explicit prefixes for clarity."},
+      {"text": "Ionic compounds actually also require prefixes in their naming, just like molecular compounds do", "isCorrect": false, "feedback": "This isn't accurate -- standard ionic compound naming conventions specifically do NOT use these prefixes (mono-, di-, tri-, etc.), unlike molecular compound naming, which specifically requires them."},
+      {"text": "This naming convention difference has no actual connection to any real underlying chemical distinction between these two compound types", "isCorrect": false, "feedback": "This isn't accurate -- this naming convention difference is DIRECTLY connected to and reflects a genuine underlying chemical distinction regarding how these two compound types form and their possible atom ratios."},
+      {"text": "Molecular compounds between the same two elements can actually only ever form in exactly one single possible ratio", "isCorrect": false, "feedback": "This isn't accurate -- molecular compounds between the SAME two elements CAN form in multiple DIFFERENT possible ratios (like CO vs. CO2, both made of carbon and oxygen), which is precisely why prefixes are necessary to distinguish between them."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For ionic compounds involving transition metals (which can have multiple possible charge states, like iron forming either Fe²⁺ or Fe³⁺), a Roman numeral is included in the compound's name (e.g., 'iron(II) chloride' vs. 'iron(III) chloride') to specify which particular charge state is present. Why is this additional naming information specifically necessary for these compounds, unlike for many other simpler ionic compounds?",
+    "options": [
+      {"text": "Since certain transition metals can form ions with different possible charges (unlike many other metals, which typically form only ONE predictable, fixed charge), simply naming the metal alone would be ambiguous regarding which specific compound (and thus which specific chemical formula/ratio) is actually being referenced, requiring the Roman numeral to clarify the metal's specific charge state in that compound", "isCorrect": true, "feedback": "Correct -- this additional naming requirement specifically for variable-charge transition metals directly addresses a genuine potential ambiguity that wouldn't exist for metals with only one fixed, predictable charge state."},
+      {"text": "All metals, including transition metals, actually only ever form one single fixed charge state, making this naming convention completely unnecessary", "isCorrect": false, "feedback": "This isn't accurate -- CERTAIN transition metals specifically CAN form multiple different possible charge states (like iron's Fe²⁺ and Fe³⁺), which is precisely why this additional Roman numeral naming convention is necessary for clarity in these particular cases."},
+      {"text": "This naming convention requirement has no actual connection to transition metals having multiple possible charge states", "isCorrect": false, "feedback": "This isn't accurate -- this naming convention requirement is DIRECTLY and specifically connected to and necessitated by certain transition metals' capacity to form multiple different possible charge states."},
+      {"text": "The Roman numeral in this naming convention actually refers to the number of chloride ions present, not the metal's charge", "isCorrect": false, "feedback": "This isn't accurate -- the Roman numeral SPECIFICALLY indicates the METAL's charge state (like Fe²⁺ vs Fe³⁺), not directly the count of the other ion (chloride) present in the compound."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This compound category typically arises from electron transfer between an element with low ionization energy and one with high electron affinity.", "medium": "This kind of bond usually forms between a shiny, electron-giving element and a non-shiny, electron-taking element.", "easy": "This kind of bond usually forms between a metal and a nonmetal."},
+    "medium": {"hard": "Consider how the predictability (or lack thereof) of a compound's atomic ratio, based on the underlying bonding mechanism, determines whether explicit quantity-specifying language is necessary.", "medium": "Ionic compounds have a predictable ratio based on their charges, so you don't need extra words -- but molecular compounds can come in different ratios, so you DO need extra words to specify which one.", "easy": "Ionic compounds have a predictable ratio, but molecular compounds can come in different ratios, needing extra words to specify."},
+    "hard": {"hard": "Consider how naming ambiguity would arise specifically when a single metal element could correspond to multiple different, chemically distinct ionic charge states.", "medium": "Since some metals can have more than one possible 'charge personality,' you need the Roman numeral to say exactly which version of that metal's charge is actually being used in that specific compound.", "easy": "Since some metals can have more than one possible charge, you need the Roman numeral to specify which one."}
+  }
+}
+]

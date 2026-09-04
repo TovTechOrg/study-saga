@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the Law of Sines for solving non-right triangles",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The Law of Sines is primarily used to solve for missing sides or angles in which type of triangle?",
+    "options": [
+      {"text": "Any triangle, including non-right (oblique) triangles", "isCorrect": true, "feedback": "Correct -- unlike basic right-triangle trigonometry (SOH-CAH-TOA), the Law of Sines works for ANY triangle, including those without a right angle."},
+      {"text": "Only right triangles", "isCorrect": false, "feedback": "The Law of Sines is actually most notably useful for NON-right triangles -- right triangles can typically be solved using simpler basic trigonometric ratios."},
+      {"text": "Only equilateral triangles", "isCorrect": false, "feedback": "The Law of Sines applies broadly to any triangle type, not exclusively to equilateral triangles (which have their own simple properties)."},
+      {"text": "Triangles are never applicable for the Law of Sines", "isCorrect": false, "feedback": "This is incorrect -- the Law of Sines is specifically a triangle-solving tool, applicable to any general triangle."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The Law of Sines states: a/sin(A) = b/sin(B) = c/sin(C). If angle A = 30°, angle B = 70°, and side a = 10, find side b (rounded to one decimal place). (sin30°=0.5, sin70°≈0.94)",
+    "options": [
+      {"text": "18.8", "isCorrect": true, "feedback": "Correct -- setting up 10/0.5 = b/0.94, solving gives b = (10×0.94)/0.5 = 18.8."},
+      {"text": "10.0", "isCorrect": false, "feedback": "This doesn't correctly apply the Law of Sines proportion to solve for the unknown side b."},
+      {"text": "5.3", "isCorrect": false, "feedback": "This appears to invert the correct ratio setup -- check which values go in the numerator versus denominator."},
+      {"text": "23.5", "isCorrect": false, "feedback": "This doesn't correctly result from solving the proportion 10/0.5 = b/0.94."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A triangle has angle A = 40°, side a = 15, and side b = 20. Using the Law of Sines to find angle B, why might this particular setup potentially yield TWO possible valid triangles (the 'ambiguous case')?",
+    "options": [
+      {"text": "Since the sine function gives the same value for both an angle and its supplement (180° minus that angle), solving for angle B might yield two different valid angle solutions, both of which could form a geometrically valid triangle given the other known values", "isCorrect": true, "feedback": "Correct -- this ambiguous case (SSA configuration) is a well-known consideration when using the Law of Sines, requiring careful checking of both possible angle solutions to determine which one(s) actually produce a valid triangle."},
+      {"text": "The Law of Sines actually always produces exactly one single unambiguous solution in every possible scenario", "isCorrect": false, "feedback": "This isn't accurate -- certain configurations (specifically, side-side-angle or 'SSA' setups like this one) CAN produce an ambiguous case with two possible valid solutions, not always just one."},
+      {"text": "This ambiguity has no actual connection to any mathematical properties of the sine function", "isCorrect": false, "feedback": "This ambiguity is DIRECTLY connected to and caused by a specific mathematical property of the sine function (that sin(θ) = sin(180°-θ)), not an unrelated issue."},
+      {"text": "This particular set of given values could never actually form a valid triangle at all", "isCorrect": false, "feedback": "This isn't necessarily accurate -- this configuration might actually produce one or even two valid triangles (the ambiguous case), not automatically zero valid triangles."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This trigonometric relationship generalizes side-angle ratio equivalence beyond the constraints of right-angle-specific trigonometric methods.", "medium": "This rule works for triangles that don't have a 90-degree angle, unlike basic right-triangle trig.", "easy": "This rule works for triangles without a right angle."},
+    "medium": {"hard": "Set up the proportional relationship between the known side-angle pair and the unknown side-angle pair, then solve algebraically for the missing side.", "medium": "Set up 10/0.5 equal to b/0.94, then cross-multiply and solve for b.", "easy": "Set up 10/0.5 = b/0.94, then solve: b = (10×0.94)/0.5."},
+    "hard": {"hard": "Recall that the sine function's periodic symmetry (equal values for supplementary angles) can produce two geometrically distinct, valid angle solutions from a single calculated sine value.", "medium": "Since sine gives the same number for an angle and its 'flip' (180 minus that angle), there might be two different angles that both technically work.", "easy": "Since sine gives the same number for an angle and its flip (180 minus it), there might be two answers."}
+  }
+}
+]

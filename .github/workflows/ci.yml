@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  corpus-validation:
+    name: Corpus validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python backend/validate_corpus.py
+
+  corpus-drift:
+    name: Corpus drift check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      # Issue #24: cf-pages/functions/_lib/data.json is the authoritative
+      # corpus; backend/data.json is a generated mirror. Regenerate it and
+      # fail if the committed version doesn't match -- this is what makes
+      # drift impossible to commit unnoticed, the single highest-value check
+      # in this file per #26's own description of it.
+      - working-directory: backend
+        run: python sync_corpus.py
+      - run: git diff --exit-code -- backend/data.json
+
+  js-syntax:
+    name: JS syntax check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: bash cf-pages/check-js-syntax.sh
+
+  python-lint:
+    name: Python lint (non-blocking)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install ruff
+      # backend/ has ~75 inherited scripts never linted before; report only
+      # for now so this doesn't block merges until it's been cleaned up.
+      - run: ruff check backend/ --exit-zero
+
+  readme-links:
+    name: README link check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python check-readme-links.py

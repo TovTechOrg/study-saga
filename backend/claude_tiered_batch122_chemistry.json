@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between empirical formula and molecular formula",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The 'empirical formula' of a compound represents:",
+    "options": [
+      {"text": "The simplest whole-number ratio of atoms of each element in the compound", "isCorrect": true, "feedback": "Correct -- the empirical formula shows the simplest whole-number ratio of elements, which may or may not match the compound's actual molecular formula."},
+      {"text": "The exact, actual total number of each type of atom in one molecule of the compound", "isCorrect": false, "feedback": "That describes the MOLECULAR formula, not the empirical formula -- the molecular formula gives actual atom counts, while the empirical formula gives only the simplest ratio."},
+      {"text": "The specific three-dimensional shape of the molecule", "isCorrect": false, "feedback": "This isn't accurate -- neither empirical nor molecular formulas describe 3D shape; that's shown by structural or geometric representations instead."},
+      {"text": "The total mass of one mole of the compound", "isCorrect": false, "feedback": "This isn't accurate -- that describes MOLAR MASS, not empirical formula, which specifically concerns atom ratios, not mass."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Glucose has a molecular formula of C6H12O6, but its empirical formula is CH2O (the simplest ratio, dividing each subscript by 6). Why can multiple different actual compounds potentially share the exact SAME empirical formula despite having different molecular formulas?",
+    "options": [
+      {"text": "Since the empirical formula only captures the simplest whole-number RATIO between elements (not actual atom counts), any compound whose molecular formula is a whole-number multiple of that same ratio (like C2H4O2, C3H6O3, or C6H12O6) will all reduce down to identical empirical formulas, even though these are chemically distinct compounds with different actual molecular sizes and structures", "isCorrect": true, "feedback": "Correct -- this explanation of empirical formula as a ratio (rather than an actual atom count) correctly explains why multiple distinct molecular formulas can share one common empirical formula, an important distinction in determining a compound's true identity."},
+      {"text": "Every compound would actually have a molecular formula that is completely identical to its empirical formula, with no possible difference between them", "isCorrect": false, "feedback": "This isn't accurate -- many compounds (like glucose) have molecular formulas that DIFFER from their empirical formula, being a whole-number multiple of it instead."},
+      {"text": "Empirical formulas actually represent exact atom counts, identical in meaning to molecular formulas", "isCorrect": false, "feedback": "This isn't accurate -- empirical formulas represent simplified RATIOS, not exact atom counts, which is precisely what distinguishes them from molecular formulas."},
+      {"text": "This scenario of shared empirical formulas has no actual connection to the mathematical relationship between molecular formulas and their simplest ratios", "isCorrect": false, "feedback": "This isn't accurate -- this scenario IS DIRECTLY connected to and explained by the mathematical relationship between a molecular formula and its reduced, simplest-ratio empirical formula."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Determining a compound's empirical formula from experimental data (like combustion analysis) only reveals the element ratio, not the true molecular formula -- an additional measurement of the compound's actual molar mass is required to determine the correct whole-number multiplier and find the true molecular formula. Explain why this additional molar mass measurement is specifically necessary.",
+    "options": [
+      {"text": "Combustion analysis and similar experimental techniques can only measure the relative MASS or moles of each element present, which reveals their simplest ratio (the empirical formula), but this ratio alone is mathematically consistent with infinitely many possible molecular formulas (the ratio times any whole number) -- only by ALSO knowing the compound's actual total molar mass can you determine which specific whole-number multiple of the empirical formula's mass matches the true molecular formula", "isCorrect": true, "feedback": "Correct -- this explanation of why ratio-based experimental data alone is insufficient (requiring an independent molar mass measurement to resolve the correct multiplier) correctly explains the standard two-step process for determining a molecular formula from experimental data."},
+      {"text": "Combustion analysis would actually be capable of directly determining the exact molecular formula on its own, without needing any additional molar mass measurement", "isCorrect": false, "feedback": "This isn't accurate -- combustion analysis alone only reveals the ELEMENT RATIO (empirical formula); an additional molar mass measurement is specifically needed to determine the true molecular formula."},
+      {"text": "Molar mass has no actual mathematical connection to determining the correct multiplier needed to convert an empirical formula into a molecular formula", "isCorrect": false, "feedback": "This isn't accurate -- molar mass IS DIRECTLY connected to and necessary for determining the correct whole-number multiplier used to find the molecular formula."},
+      {"text": "An empirical formula ratio would actually correspond to only one single possible molecular formula, with no ambiguity requiring further data", "isCorrect": false, "feedback": "This isn't accurate -- an empirical formula ratio is mathematically consistent with MULTIPLE possible molecular formulas, which is precisely why additional molar mass data is needed to resolve the ambiguity."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This chemical notation expresses the reduced, simplest integer proportion of constituent elements within a compound.", "medium": "This shows the simplest possible whole-number ratio between the elements in a compound.", "easy": "This shows the simplest whole-number ratio between the elements in a compound."},
+    "medium": {"hard": "Consider how a ratio-based representation, unlike an absolute-count representation, is invariant under uniform scalar multiplication of all subscripts.", "medium": "Since this formula is just a ratio, scaling all the numbers up together by the same amount doesn't change the ratio, so different actual compounds can still land on the same simplified version.", "easy": "Since this formula is just a ratio, scaling all the numbers up together doesn't change it, so different compounds can share one."},
+    "hard": {"hard": "Consider how ratio-only experimental data leaves the scalar multiplier underdetermined, requiring an independent absolute-mass measurement to resolve which specific molecular formula matches.", "medium": "Knowing just the ratio of elements could match a bunch of different actual molecules, so you need one more piece of info, the real total mass, to figure out exactly which one it actually is.", "easy": "Knowing just the ratio could match several molecules, so you need the real total mass to figure out which one it actually is."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of antibiotic resistance evolving in bacterial populations",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean for bacteria to be 'antibiotic resistant'?",
+    "options": [
+      {"text": "The bacteria are able to survive exposure to an antibiotic that would normally kill them", "isCorrect": true, "feedback": "Correct -- resistant bacteria have traits (often genetic mutations) that let them survive antibiotic treatment that would kill non-resistant bacteria."},
+      {"text": "The bacteria are more easily killed by antibiotics than normal", "isCorrect": false, "feedback": "This is the opposite of resistance -- resistant bacteria are HARDER (not easier) to kill with antibiotics."},
+      {"text": "The bacteria have been completely eliminated by antibiotics", "isCorrect": false, "feedback": "This describes successful antibiotic treatment, not resistance -- resistant bacteria specifically SURVIVE despite treatment."},
+      {"text": "The bacteria no longer need any nutrients to survive", "isCorrect": false, "feedback": "This is unrelated to antibiotic resistance, which specifically concerns survival despite antibiotic exposure, not nutrient needs."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When a population of bacteria is exposed to an antibiotic, a small number of bacteria with a resistance-conferring mutation survive, while the rest die. Over time, why does this lead to a population dominated by resistant bacteria?",
+    "options": [
+      {"text": "The surviving resistant bacteria reproduce, passing their resistance trait to their offspring, and since non-resistant competitors were killed off, resistant bacteria eventually make up the majority of the population", "isCorrect": true, "feedback": "Correct -- this is a direct example of natural selection: the antibiotic exposure creates selective pressure that favors reproduction of the resistant survivors."},
+      {"text": "Non-resistant bacteria eventually develop resistance on their own through practice", "isCorrect": false, "feedback": "Bacteria don't 'practice' or intentionally develop resistance -- resistance comes from pre-existing genetic variation, and only bacteria that already had that variation survive to reproduce."},
+      {"text": "The antibiotic itself teaches bacteria how to become resistant", "isCorrect": false, "feedback": "Antibiotics don't teach or induce resistance directly -- they act as a selective pressure that kills non-resistant bacteria, leaving already-resistant ones to reproduce and dominate."},
+      {"text": "This process has nothing to do with natural selection or evolution", "isCorrect": false, "feedback": "This is actually a textbook, real-world example of natural selection and evolution occurring within a bacterial population."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Doctors are advised to complete a full course of prescribed antibiotics, even after symptoms disappear. How does stopping antibiotics too early potentially contribute to antibiotic resistance?",
+    "options": [
+      {"text": "Stopping early may kill off only the most vulnerable bacteria while leaving moderately resistant ones alive, allowing them to reproduce and pass on partial resistance traits, which can accumulate over time and generations", "isCorrect": true, "feedback": "Correct -- an incomplete course selectively eliminates weaker bacteria while sparing more resistant ones, effectively selecting for greater resistance in the surviving population, unlike a full course that aims to eliminate the infection entirely."},
+      {"text": "Stopping antibiotics early has no actual connection to resistance development", "isCorrect": false, "feedback": "This is a significant, well-documented contributing factor to antibiotic resistance development -- incomplete treatment can selectively favor surviving, more resistant bacteria."},
+      {"text": "Completing a full antibiotic course actually makes resistance MORE likely to develop, not less", "isCorrect": false, "feedback": "This is backwards -- completing a full course helps ensure more thorough elimination of the infection, reducing the chance that partially-resistant survivors remain to reproduce, unlike stopping early."},
+      {"text": "Symptom disappearance always means all the bacteria causing the infection have been completely eliminated", "isCorrect": false, "feedback": "Symptoms disappearing doesn't necessarily mean all bacteria are eliminated -- some bacteria, particularly more resistant ones, may still survive even after symptoms improve, which is exactly why completing the full course matters."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This describes a bacterial trait enabling survival despite exposure to compounds normally designed to eliminate that organism.", "medium": "This means the bacteria can survive medicine that's meant to kill them.", "easy": "This means the bacteria can survive medicine meant to kill them."},
+    "medium": {"hard": "Consider how selective pressure eliminates certain individuals while allowing others with an advantageous trait to survive and reproduce disproportionately.", "medium": "The antibiotic kills off the bacteria without resistance, leaving mostly resistant ones to multiply and take over.", "easy": "The antibiotic kills off bacteria without resistance, leaving the resistant ones to multiply and take over."},
+    "hard": {"hard": "Think about how a partial, incomplete elimination process could selectively favor survivors with intermediate levels of a resistance trait, compounding over successive exposures.", "medium": "Stopping early might leave behind the toughest, most resistant bacteria to survive and pass that trait on to more offspring.", "easy": "Stopping early leaves behind the toughest bacteria to survive and multiply."}
+  }
+}
+]

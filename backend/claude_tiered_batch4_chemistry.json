@@ -1,0 +1,249 @@
+[
+{
+  "topic": "water molecule polarity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Why is water considered a 'polar' molecule?",
+    "options": [
+      {"text": "It has an uneven distribution of electric charge across the molecule", "isCorrect": true, "feedback": "Correct -- the oxygen end is slightly negative and the hydrogen ends are slightly positive."},
+      {"text": "It is always found at the North and South Poles", "isCorrect": false, "feedback": "This confuses geographic poles with the chemistry meaning of 'polar.'"},
+      {"text": "It has no charge at all anywhere on the molecule", "isCorrect": false, "feedback": "Polar molecules actually have regions of charge -- a truly chargeless molecule would be nonpolar."},
+      {"text": "It only exists as ice", "isCorrect": false, "feedback": "Polarity is a property of the water molecule itself, regardless of what state (solid, liquid, gas) it's in."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Because of its polarity, water molecules are attracted to each other through what type of force?",
+    "options": [
+      {"text": "Hydrogen bonds", "isCorrect": true, "feedback": "Correct -- the slightly positive hydrogen of one water molecule attracts the slightly negative oxygen of another."},
+      {"text": "Gravitational force only", "isCorrect": false, "feedback": "While gravity exists everywhere, the special attraction between water molecules is due to hydrogen bonding, not gravity."},
+      {"text": "Magnetic attraction", "isCorrect": false, "feedback": "Water molecules aren't magnetic -- their attraction comes from charge differences, not magnetism."},
+      {"text": "Nuclear force", "isCorrect": false, "feedback": "Nuclear forces act within an atom's nucleus, unrelated to how separate water molecules attract each other."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does water have an unusually high boiling point compared to other similarly small molecules?",
+    "options": [
+      {"text": "Hydrogen bonds between water molecules require extra energy to break before boiling can occur", "isCorrect": true, "feedback": "Correct -- the strong hydrogen bonding network in water demands more energy input to separate molecules into vapor."},
+      {"text": "Water molecules are unusually heavy compared to other small molecules", "isCorrect": false, "feedback": "Water is actually a fairly light molecule -- its high boiling point is due to bonding forces, not mass."},
+      {"text": "Water contains a rare, exotic element", "isCorrect": false, "feedback": "Water is made of common hydrogen and oxygen -- its high boiling point comes from intermolecular attraction, not exotic elements."},
+      {"text": "Water molecules repel each other, requiring extra energy to separate", "isCorrect": false, "feedback": "Water molecules actually attract each other strongly (via hydrogen bonds); it's this attraction, not repulsion, that raises the boiling point."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One part of the molecule carries a slightly different charge than the rest.", "medium": "One end of the molecule is slightly negatively charged, and the other end is slightly positive.", "easy": "One side of the water molecule has a slightly different charge than the other side."},
+    "medium": {"hard": "This attractive force forms specifically between a slightly positive hydrogen atom and a nearby slightly negative atom on another molecule.", "medium": "This special attraction forms between the positive hydrogen part of one molecule and the negative part of another.", "easy": "This is the special attraction between water molecules caused by their charged ends."},
+    "hard": {"hard": "Breaking the extensive network of intermolecular hydrogen bonds throughout liquid water demands significantly more energy than overcoming the weaker attractions in nonpolar molecules of similar size.", "medium": "The strong attractions between water molecules mean more heat energy is needed to separate them into gas form.", "easy": "Water molecules stick to each other strongly, so it takes more heat to separate them into steam."}
+  }
+},
+{
+  "topic": "the mole concept (Avogadro's number)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In chemistry, what does a 'mole' represent?",
+    "options": [
+      {"text": "A specific, very large number of particles (atoms, molecules, etc.)", "isCorrect": true, "feedback": "Correct -- a mole is a counting unit, just like a 'dozen' means 12, but much larger."},
+      {"text": "A small burrowing animal", "isCorrect": false, "feedback": "That's a different meaning of the word 'mole' -- in chemistry it refers to a counting unit."},
+      {"text": "A unit of temperature", "isCorrect": false, "feedback": "Temperature is measured in units like Celsius or Kelvin, not moles."},
+      {"text": "A type of chemical bond", "isCorrect": false, "feedback": "A mole is a counting unit for particles, not a type of bond."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Approximately how many particles are in one mole of a substance?",
+    "options": [
+      {"text": "6.02 × 10²³", "isCorrect": true, "feedback": "Correct -- this is Avogadro's number, the standard count defining one mole."},
+      {"text": "1,000", "isCorrect": false, "feedback": "This is far smaller than the actual number of particles in a mole."},
+      {"text": "100", "isCorrect": false, "feedback": "This is far smaller than the actual number of particles in a mole."},
+      {"text": "12", "isCorrect": false, "feedback": "12 defines a 'dozen,' not a mole -- a mole is a vastly larger quantity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is the mole such a useful unit in chemistry?",
+    "options": [
+      {"text": "It lets chemists relate the microscopic scale of atoms/molecules to measurable, macroscopic quantities like grams", "isCorrect": true, "feedback": "Correct -- the mole bridges the gap between individual particles, which are too small to count directly, and lab-scale measurements."},
+      {"text": "It makes all chemical reactions happen instantly", "isCorrect": false, "feedback": "The mole is a counting unit -- it has no effect on reaction speed."},
+      {"text": "It only applies to gases, not solids or liquids", "isCorrect": false, "feedback": "The mole concept applies to any substance, in any state of matter."},
+      {"text": "It replaces the need for the periodic table", "isCorrect": false, "feedback": "The mole concept actually works alongside the periodic table (using atomic masses), not as a replacement for it."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is a counting unit, similar in concept to how 'dozen' always means 12 of something.", "medium": "This word describes a specific, extremely large quantity of tiny particles.", "easy": "This is just a name for a very large counting number, like how 'dozen' means 12."},
+    "medium": {"hard": "This number is a fixed constant used specifically to define the mole as a counting unit.", "medium": "This is a very specific, extremely large number used to define one mole.", "easy": "This number has 23 zeros' worth of scale -- it's Avogadro's number."},
+    "hard": {"hard": "Atoms and molecules are far too small and numerous to count individually, so this unit connects that invisible scale to quantities you can actually weigh on a scale.", "medium": "This unit lets scientists connect the tiny world of individual atoms to amounts they can actually measure with a scale.", "easy": "This unit helps connect super-tiny atoms to amounts you can actually weigh and measure."}
+  }
+},
+{
+  "topic": "combustion reactions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is required for a combustion reaction to occur?",
+    "options": [
+      {"text": "A fuel and oxygen", "isCorrect": true, "feedback": "Correct -- combustion reactions involve a fuel substance reacting with oxygen gas, releasing energy."},
+      {"text": "Only water", "isCorrect": false, "feedback": "Water is not a fuel and doesn't drive combustion -- in fact, it's often used to put fires out."},
+      {"text": "Only darkness", "isCorrect": false, "feedback": "Light or darkness has no role in whether combustion occurs."},
+      {"text": "Extremely cold temperatures", "isCorrect": false, "feedback": "Combustion typically requires heat to start, not cold temperatures."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What are the typical products of a hydrocarbon (like methane) undergoing complete combustion?",
+    "options": [
+      {"text": "Carbon dioxide and water", "isCorrect": true, "feedback": "Correct -- complete combustion of a hydrocarbon fuel with enough oxygen produces CO₂ and H₂O."},
+      {"text": "Pure oxygen and nitrogen", "isCorrect": false, "feedback": "These are reactant-related gases, not the products formed from burning the fuel."},
+      {"text": "Table salt", "isCorrect": false, "feedback": "Salt formation isn't a product of hydrocarbon combustion."},
+      {"text": "Pure carbon only", "isCorrect": false, "feedback": "Pure carbon (soot) can form during incomplete combustion, but complete combustion mainly produces carbon dioxide, not solid carbon."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does incomplete combustion (with insufficient oxygen) produce dangerous carbon monoxide (CO) instead of carbon dioxide (CO₂)?",
+    "options": [
+      {"text": "There isn't enough oxygen available to fully bond with every carbon atom", "isCorrect": true, "feedback": "Correct -- limited oxygen means some carbon atoms only pick up one oxygen atom (forming CO) instead of two (forming CO₂)."},
+      {"text": "The fuel itself contains carbon monoxide before burning starts", "isCorrect": false, "feedback": "Carbon monoxide forms as a result of the incomplete reaction, not because it was already present in the fuel."},
+      {"text": "Cold temperatures during burning convert CO₂ into CO", "isCorrect": false, "feedback": "This isn't related to temperature -- it's about the available oxygen supply during the reaction."},
+      {"text": "Carbon monoxide is simply a byproduct of any flame, regardless of oxygen levels", "isCorrect": false, "feedback": "With sufficient oxygen, combustion mainly produces CO₂, not CO -- oxygen availability is the key factor."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This reaction always needs a burnable substance plus a specific gas from the air.", "medium": "Two things are always needed: something that can burn, and a certain gas from the air.", "easy": "Burning needs something to burn plus the gas that makes up about 21% of air."},
+    "medium": {"hard": "Complete combustion fully oxidizes both the carbon and hydrogen atoms in the fuel into their most oxidized common forms.", "medium": "The carbon in the fuel combines with oxygen to form one gas, and the hydrogen combines with oxygen to form a different substance.", "easy": "One product is the same gas you exhale, and the other is the same substance as rain."},
+    "hard": {"hard": "With oxygen scarce, each carbon atom can only bond with one oxygen atom instead of two, yielding the more dangerous, less-oxidized compound.", "medium": "When oxygen is limited, each carbon atom only manages to grab one oxygen atom instead of the usual two.", "easy": "Without enough oxygen around, carbon atoms only pick up one oxygen atom instead of two."}
+  }
+},
+{
+  "topic": "acid-base indicators",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the purpose of an acid-base indicator like litmus paper?",
+    "options": [
+      {"text": "To show whether a substance is acidic or basic by changing color", "isCorrect": true, "feedback": "Correct -- indicators change color depending on the pH of the substance they touch."},
+      {"text": "To measure the temperature of a substance", "isCorrect": false, "feedback": "Indicators respond to acidity/basicity, not temperature."},
+      {"text": "To increase the mass of a substance", "isCorrect": false, "feedback": "Indicators don't add mass -- they simply reveal a chemical property through color change."},
+      {"text": "To make a substance more reactive", "isCorrect": false, "feedback": "Indicators are diagnostic tools, they don't change how reactive a substance is."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If blue litmus paper turns red when dipped into a solution, what does this suggest about the solution?",
+    "options": [
+      {"text": "The solution is acidic", "isCorrect": true, "feedback": "Correct -- blue litmus paper turning red is the classic indicator of an acidic solution."},
+      {"text": "The solution is basic", "isCorrect": false, "feedback": "A basic solution would keep the litmus paper blue, or turn red litmus paper blue -- not turn blue paper red."},
+      {"text": "The solution is neutral", "isCorrect": false, "feedback": "A neutral solution typically wouldn't cause blue litmus paper to change color at all."},
+      {"text": "The solution is pure water", "isCorrect": false, "feedback": "Pure water is neutral and wouldn't turn blue litmus paper red."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Phenolphthalein is colorless in acidic and neutral solutions but turns pink in basic solutions. If a chemist observes a pink color after adding phenolphthalein to an unknown solution, what can they conclude?",
+    "options": [
+      {"text": "The solution has a pH greater than 7 (basic)", "isCorrect": true, "feedback": "Correct -- phenolphthalein's pink color specifically signals a basic solution."},
+      {"text": "The solution has a pH less than 7 (acidic)", "isCorrect": false, "feedback": "Phenolphthalein stays colorless in acidic solutions, so pink rules this out."},
+      {"text": "The solution is definitely pure water", "isCorrect": false, "feedback": "Pure water is neutral, and phenolphthalein would remain colorless in it, not turn pink."},
+      {"text": "No conclusion can be drawn from the color", "isCorrect": false, "feedback": "The color change is specifically diagnostic -- pink reliably indicates a basic solution with this indicator."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This tool visually reveals a chemical property through a color transformation.", "medium": "This special paper or liquid changes color depending on acidity.", "easy": "This special paper changes color to tell you if something is an acid or a base."},
+    "medium": {"hard": "This particular color shift on this particular paper color is the textbook signal for one specific pH category.", "medium": "This specific color change on blue paper is the classic sign of one particular pH category.", "easy": "Blue paper turning red is the classic sign that something is acidic."},
+    "hard": {"hard": "Match the observed color change to phenolphthalein's known behavior -- colorless in acid/neutral, pink specifically in basic conditions.", "medium": "Recall that this indicator only turns pink under one specific pH condition -- basic solutions.", "easy": "This indicator only turns pink for one type of solution -- basic ones."}
+  }
+},
+{
+  "topic": "diatomic elements",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean for an element to be 'diatomic'?",
+    "options": [
+      {"text": "It naturally exists as a molecule of two atoms bonded together", "isCorrect": true, "feedback": "Correct -- diatomic elements like oxygen (O₂) are found in nature as pairs of bonded atoms."},
+      {"text": "It has two different colors", "isCorrect": false, "feedback": "Diatomic refers to atomic bonding structure, not color."},
+      {"text": "It can only exist as a solid", "isCorrect": false, "feedback": "Diatomic elements can exist as gases, liquids, or solids -- 'diatomic' refers to bonding, not physical state."},
+      {"text": "It has two different chemical symbols", "isCorrect": false, "feedback": "A diatomic element still has one chemical symbol, just written with a subscript of 2."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is an example of a diatomic element as it naturally occurs?",
+    "options": [
+      {"text": "N₂ (nitrogen gas)", "isCorrect": true, "feedback": "Correct -- nitrogen naturally exists as pairs of bonded atoms in the air."},
+      {"text": "Na (sodium metal)", "isCorrect": false, "feedback": "Sodium exists as individual metal atoms in a solid lattice, not as a two-atom molecule."},
+      {"text": "Fe (iron)", "isCorrect": false, "feedback": "Iron exists as a metallic solid made of many bonded atoms, not specifically as pairs of two."},
+      {"text": "C (carbon, as graphite)", "isCorrect": false, "feedback": "Carbon in graphite forms extended sheets of many atoms, not simple two-atom molecules."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which TWO of the following elements are commonly found as diatomic molecules in their natural gaseous form?",
+    "options": [
+      {"text": "Oxygen (O₂)", "isCorrect": true, "feedback": "Correct -- oxygen gas naturally exists as pairs of bonded oxygen atoms."},
+      {"text": "Hydrogen (H₂)", "isCorrect": true, "feedback": "Correct -- hydrogen gas naturally exists as pairs of bonded hydrogen atoms."},
+      {"text": "Helium (He)", "isCorrect": false, "feedback": "Helium is a noble gas that exists as single, unbonded atoms, not in pairs."},
+      {"text": "Neon (Ne)", "isCorrect": false, "feedback": "Neon is a noble gas that exists as single, unbonded atoms, not in pairs."},
+      {"text": "Argon (Ar)", "isCorrect": false, "feedback": "Argon is a noble gas that exists as single, unbonded atoms, not in pairs."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This word describes a molecule built from exactly two atoms of the same element joined together.", "medium": "This describes an element whose atoms naturally pair up, two at a time.", "easy": "This describes an element that naturally comes in pairs of two atoms."},
+    "medium": {"hard": "Look for an element that, in its natural gaseous state, is always found bonded in pairs rather than as standalone metal atoms or extended solid structures.", "medium": "Look for a gas made of two identical atoms bonded together, rather than a solid metal or nonmetal structure.", "easy": "Look for the gas that comes as pairs of two atoms bonded together, unlike the solid metals listed."},
+    "hard": {"hard": "Two of these five are common diatomic gases; the other three are noble gases, which are famously unreactive and exist as lone, unbonded atoms.", "medium": "Two of these are diatomic gases; the other three are noble gases that exist as single atoms, not pairs.", "easy": "Two of these naturally pair up as two-atom molecules; the other three are noble gases that stay as single atoms."}
+  }
+},
+{
+  "topic": "radioactive decay and half-life",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 'half-life' in the context of radioactive decay?",
+    "options": [
+      {"text": "The time it takes for half of a radioactive sample to decay", "isCorrect": true, "feedback": "Correct -- half-life measures how long it takes for half of the radioactive atoms present to decay into another form."},
+      {"text": "The total time an element can exist", "isCorrect": false, "feedback": "Half-life describes a specific fraction of decay (50%), not the total existence time of an element."},
+      {"text": "Half of an atom's mass", "isCorrect": false, "feedback": "Half-life is a measure of time, not a measure of an atom's mass."},
+      {"text": "The time it takes for a substance to melt", "isCorrect": false, "feedback": "Melting relates to physical state changes, unrelated to radioactive decay."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A radioactive sample has a half-life of 10 years. If you start with 100 grams, how much will remain after 20 years?",
+    "options": [
+      {"text": "25 grams", "isCorrect": true, "feedback": "Correct -- after one half-life (10 years) 50g remain, and after a second half-life (20 years total) 25g remain."},
+      {"text": "50 grams", "isCorrect": false, "feedback": "This is the amount remaining after just one half-life (10 years), not two."},
+      {"text": "0 grams", "isCorrect": false, "feedback": "Half-life decay never fully reaches zero in just two half-lives -- it keeps halving the remaining amount."},
+      {"text": "75 grams", "isCorrect": false, "feedback": "This doesn't match repeatedly halving the sample over two half-life periods."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A radioactive isotope has a half-life of 5 years. Starting with 80 grams, approximately how many years will it take to reduce to 10 grams?",
+    "options": [
+      {"text": "15 years", "isCorrect": true, "feedback": "Correct -- 80→40 (5yr)→20 (10yr)→10 (15yr), which is three half-lives."},
+      {"text": "10 years", "isCorrect": false, "feedback": "After 10 years, only two half-lives have passed, leaving 20 grams, not 10."},
+      {"text": "20 years", "isCorrect": false, "feedback": "This is one half-life too many -- 10 grams is reached at 15 years, not 20."},
+      {"text": "5 years", "isCorrect": false, "feedback": "Only one half-life has passed after 5 years, leaving 40 grams, not 10."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measures the duration for exactly 50% of a radioactive quantity to transform.", "medium": "This is the amount of time it takes for exactly half of the material to break down.", "easy": "This is how long it takes for half of a radioactive substance to decay away."},
+    "medium": {"hard": "Divide the amount in half for each half-life period that passes -- here, that means halving it twice.", "medium": "Cut the amount in half once for the first 10 years, then in half again for the next 10 years.", "easy": "Cut 100 in half to get 50, then cut that in half again to get the final answer."},
+    "hard": {"hard": "Repeatedly halve the starting amount once per half-life period elapsed, and count how many halvings are needed to reach the target amount.", "medium": "Keep cutting the amount in half every 5 years and count how many times you need to do that to reach 10.", "easy": "Cut 80 in half repeatedly (80→40→20→10) and count how many 5-year periods that took."}
+  }
+}
+]

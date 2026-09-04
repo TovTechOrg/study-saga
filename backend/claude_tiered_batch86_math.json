@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of asymptotes in rational functions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A vertical asymptote on a graph represents:",
+    "options": [
+      {"text": "A vertical line that the graph approaches but never actually touches or crosses", "isCorrect": true, "feedback": "Correct -- vertical asymptotes typically occur where a function is undefined (like division by zero), with the graph curving toward but never reaching that vertical line."},
+      {"text": "A specific point where the graph crosses the x-axis", "isCorrect": false, "feedback": "That describes an x-intercept, not a vertical asymptote, which specifically describes a line the graph approaches but never touches, not a crossing point."},
+      {"text": "The exact highest point on the entire graph", "isCorrect": false, "feedback": "That describes a maximum point, not a vertical asymptote, which specifically describes a boundary line the graph approaches without touching, not a maximum value."},
+      {"text": "A line that the graph always crosses multiple times", "isCorrect": false, "feedback": "This is essentially the opposite of what an asymptote represents -- an asymptote is specifically a line the graph approaches but does NOT cross (at least not near the asymptote itself)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For the function f(x) = 1/(x-2), why does a vertical asymptote occur specifically at x=2?",
+    "options": [
+      {"text": "Because plugging in x=2 would require dividing by zero, which is undefined, causing the function's value to grow infinitely large (in either the positive or negative direction) as x approaches 2", "isCorrect": true, "feedback": "Correct -- this behavior (the function value growing without bound as the input approaches a specific value) near an undefined point is exactly what creates a vertical asymptote at that location."},
+      {"text": "Because x=2 is simply the highest possible value the function can output", "isCorrect": false, "feedback": "This isn't accurate -- a vertical asymptote isn't about the function's OUTPUT value being highest; it's about the function being UNDEFINED (dividing by zero) at that specific INPUT value."},
+      {"text": "The location of a vertical asymptote has no actual connection to where a function becomes mathematically undefined", "isCorrect": false, "feedback": "This isn't accurate -- vertical asymptote location is DIRECTLY and specifically connected to where the function becomes undefined (typically division by zero), which is precisely why x=2 creates the asymptote here."},
+      {"text": "This function actually has no vertical asymptote at all", "isCorrect": false, "feedback": "This isn't accurate -- this function DOES have a vertical asymptote, specifically at x=2, precisely because the denominator (x-2) becomes zero at that x-value."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For the function g(x) = (2x+3)/(x-1), a HORIZONTAL asymptote occurs at y=2 (not simply y=0), determined by comparing the leading coefficients of the numerator and denominator as x approaches infinity. Why does this specific horizontal asymptote value (2) make sense, given the function's structure?",
+    "options": [
+      {"text": "As x grows extremely large, the constant terms (+3 and -1) become relatively insignificant compared to the x-terms, so the function's behavior increasingly resembles simply 2x/x=2, explaining why the horizontal asymptote value specifically corresponds to the ratio of the leading coefficients (2/1=2)", "isCorrect": true, "feedback": "Correct -- this reasoning, based on how a rational function's behavior at very large x-values becomes dominated by its highest-degree terms, correctly explains why the horizontal asymptote value equals the ratio of leading coefficients for this type of function (equal degree numerator/denominator)."},
+      {"text": "The horizontal asymptote value actually has no connection to the function's leading coefficients", "isCorrect": false, "feedback": "This isn't accurate -- for rational functions with equal-degree numerator and denominator (like this one), the horizontal asymptote value IS DIRECTLY determined by and connected to the RATIO of the leading coefficients."},
+      {"text": "This function's horizontal asymptote should actually be at y=3, not y=2", "isCorrect": false, "feedback": "This isn't accurate -- the horizontal asymptote here is specifically determined by the ratio of LEADING coefficients (2/1=2), not simply by the constant term (+3) in the numerator alone."},
+      {"text": "As x approaches infinity, the constant terms actually become MORE significant than the x-terms, not less", "isCorrect": false, "feedback": "This is backwards -- as x grows extremely large, the constant terms become RELATIVELY LESS significant (not more) compared to the terms involving x, which is precisely why the leading coefficients dominate the function's long-term behavior."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This boundary line represents a value the function's output approaches asymptotically but never actually attains as the input approaches a critical point.", "medium": "This is an invisible vertical line that the graph gets closer and closer to but never actually reaches.", "easy": "This is an invisible line the graph gets close to but never touches."},
+    "medium": {"hard": "Identify the specific input value that would make the denominator expression equal to zero, causing the overall function to become undefined at that point.", "medium": "Figure out what x-value would make the bottom part of the fraction (the denominator) equal zero.", "easy": "Setting x-2=0 gives x=2, which is where the function is undefined."},
+    "hard": {"hard": "Consider how the relative dominance of the highest-degree terms over lower-degree/constant terms, as x approaches infinity, determines the function's long-term limiting behavior.", "medium": "When x gets really big, the little added numbers (+3 and -1) barely matter anymore compared to the x terms, so it's basically just 2x divided by x, which simplifies to 2.", "easy": "When x gets really big, it's basically just 2x divided by x, which simplifies to 2."}
+  }
+}
+]

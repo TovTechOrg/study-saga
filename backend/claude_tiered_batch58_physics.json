@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of magnetic fields and electromagnetic induction",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What generally happens when a wire carrying an electric current is placed near a compass?",
+    "options": [
+      {"text": "The compass needle deflects, since the current-carrying wire generates its own magnetic field", "isCorrect": true, "feedback": "Correct -- this demonstrates that moving electric charges (current) generate magnetic fields, a fundamental link between electricity and magnetism."},
+      {"text": "The compass needle remains completely unaffected", "isCorrect": false, "feedback": "This isn't accurate -- a current-carrying wire DOES generate a magnetic field that will affect a nearby compass needle."},
+      {"text": "The wire physically moves toward the compass", "isCorrect": false, "feedback": "It's the compass needle that responds to the wire's magnetic field, not the wire physically moving toward the compass."},
+      {"text": "The current in the wire increases due to the compass's presence", "isCorrect": false, "feedback": "A simple compass doesn't have the capability to increase current in a nearby wire -- the effect is specifically the compass needle deflecting due to the wire's magnetic field."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Electromagnetic induction (used in generators) occurs when a magnetic field near a wire loop CHANGES over time, inducing an electric current in that loop. Why is change specifically required, rather than simply having a nearby magnetic field present?",
+    "options": [
+      {"text": "According to Faraday's law, an induced electromotive force (voltage) is generated specifically by a CHANGING magnetic flux through the loop -- a constant, unchanging field produces no induced current", "isCorrect": true, "feedback": "Correct -- this dependence on the RATE OF CHANGE of magnetic flux (not just its presence) is the fundamental principle underlying electromagnetic induction and how generators produce electricity."},
+      {"text": "Any nearby magnetic field, whether constant or changing, would generate the exact same induced current", "isCorrect": false, "feedback": "This isn't accurate -- a constant, unchanging magnetic field induces NO current at all; specifically CHANGING flux is required to induce an electric current, per Faraday's law."},
+      {"text": "Electromagnetic induction has no actual connection to changes in magnetic field", "isCorrect": false, "feedback": "This is incorrect -- electromagnetic induction is fundamentally and specifically dependent on CHANGES in magnetic flux, as described by Faraday's law."},
+      {"text": "A stronger magnetic field would always induce more current, regardless of whether it's changing", "isCorrect": false, "feedback": "This isn't accurate -- field strength alone (without change over time) doesn't induce current; it's specifically the RATE OF CHANGE of the magnetic flux that matters, per Faraday's law."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In an electric generator, mechanical energy (like a person turning a crank) is converted into electrical energy through electromagnetic induction, as a wire loop rotates within a magnetic field. Why does this process require continuous mechanical energy input to sustain electricity generation, rather than generating electricity indefinitely from a single push?",
+    "options": [
+      {"text": "Continuous rotation is needed to continuously change the magnetic flux through the loop, since induction specifically depends on ongoing CHANGE in flux -- a single push would only briefly induce current before the loop stops moving and flux stops changing", "isCorrect": true, "feedback": "Correct -- since induced current requires continuously changing magnetic flux (per Faraday's law), sustained rotation (and thus sustained mechanical energy input) is necessary to keep generating electricity continuously, rather than just a brief single pulse."},
+      {"text": "A single push would actually generate continuous electricity forever, with no further input needed", "isCorrect": false, "feedback": "This isn't accurate -- since induction requires ongoing CHANGE in magnetic flux, a single push (without sustained rotation) would only produce a brief, temporary current, not continuous electricity."},
+      {"text": "Generators don't actually require any mechanical energy input to produce electricity", "isCorrect": false, "feedback": "This isn't accurate -- generators fundamentally require continuous mechanical energy input (like rotation) to sustain the CHANGING magnetic flux needed for ongoing electromagnetic induction."},
+      {"text": "This relates entirely to energy loss from friction, and has nothing to do with the induction process itself", "isCorrect": false, "feedback": "While friction does cause some energy loss, the FUNDAMENTAL reason continuous mechanical input is needed is the requirement for continuously changing magnetic flux to sustain induction, not primarily friction losses."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Consider what physical phenomenon connects the flow of electric charge to the generation of a surrounding field capable of exerting force on other magnetic materials.", "medium": "Moving electric charges (current) create their own invisible magnetic field around them.", "easy": "Moving electric current creates its own invisible magnetic field around it."},
+    "medium": {"hard": "Recall Faraday's law of induction, which specifically links induced voltage to the TIME RATE OF CHANGE of magnetic flux, not merely the flux's static presence or magnitude.", "medium": "The magnetic field passing through the loop actually has to be changing (getting stronger, weaker, or shifting) for it to create a current.", "easy": "The magnetic field passing through the loop has to be actually changing to create a current."},
+    "hard": {"hard": "Apply Faraday's law's dependence on continuously changing flux to explain why sustained physical rotation (and thus ongoing mechanical energy input) is a necessary condition for continuous current generation.", "medium": "Since the induction only works while the magnetic field passing through is actively changing, you need to keep turning the crank to keep that change happening.", "easy": "Since induction only works while the field is actively changing, you need to keep turning the crank."}
+  }
+}
+]

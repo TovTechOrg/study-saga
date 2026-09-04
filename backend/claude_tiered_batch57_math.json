@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of converting between fractions, decimals, and percentages",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "How do you convert a fraction into a decimal?",
+    "options": [
+      {"text": "Divide the numerator by the denominator", "isCorrect": true, "feedback": "Correct -- dividing the top number by the bottom number of a fraction gives its decimal equivalent."},
+      {"text": "Multiply the numerator by the denominator", "isCorrect": false, "feedback": "Multiplication is not the correct operation -- fraction-to-decimal conversion requires DIVISION of numerator by denominator."},
+      {"text": "Add the numerator and denominator together", "isCorrect": false, "feedback": "Addition is not the correct operation -- fraction-to-decimal conversion requires division, not addition."},
+      {"text": "Subtract the denominator from the numerator", "isCorrect": false, "feedback": "Subtraction is not the correct operation -- fraction-to-decimal conversion requires division, not subtraction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Convert 0.75 into a percentage.",
+    "options": [
+      {"text": "75%", "isCorrect": true, "feedback": "Correct -- multiply the decimal by 100 to convert to a percentage: 0.75 × 100 = 75%."},
+      {"text": "7.5%", "isCorrect": false, "feedback": "This doesn't correctly multiply by 100 -- it appears to have only shifted the decimal by one place instead of two."},
+      {"text": "0.75%", "isCorrect": false, "feedback": "This didn't apply the ×100 conversion at all -- the decimal point needs to shift two places to the right."},
+      {"text": "750%", "isCorrect": false, "feedback": "This overshoots the correct conversion -- multiplying 0.75 by 100 gives 75%, not 750%."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Convert the fraction 5/8 into a percentage.",
+    "options": [
+      {"text": "62.5%", "isCorrect": true, "feedback": "Correct -- first divide 5 by 8 to get 0.625, then multiply by 100 to get 62.5%."},
+      {"text": "58%", "isCorrect": false, "feedback": "This appears to just combine the numerator and denominator digits rather than performing the actual division and conversion."},
+      {"text": "5.8%", "isCorrect": false, "feedback": "This doesn't correctly result from dividing 5 by 8 and converting to a percentage."},
+      {"text": "40%", "isCorrect": false, "feedback": "This doesn't correctly result from dividing 5 by 8 (which gives 0.625, not 0.4)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Convert the fractional expression into its equivalent decimal form via the standard division operation.", "medium": "Divide the top number of the fraction by the bottom number.", "easy": "Divide the top number by the bottom number."},
+    "medium": {"hard": "Apply the standard decimal-to-percentage conversion by multiplying by a factor of 100.", "medium": "Multiply the decimal number by 100 to get a percentage.", "easy": "Multiply 0.75 by 100 to get 75."},
+    "hard": {"hard": "First perform the division implied by the fraction to obtain its decimal equivalent, then apply the standard percentage conversion by multiplying by 100.", "medium": "First divide 5 by 8 to get a decimal, then multiply that decimal by 100.", "easy": "Divide 5 by 8 to get 0.625, then multiply by 100 to get 62.5."}
+  }
+}
+]

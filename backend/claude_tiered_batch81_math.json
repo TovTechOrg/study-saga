@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between permutations and combinations formulas",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The permutation formula P(n,r) = n!/(n-r)! is used when:",
+    "options": [
+      {"text": "The order of selection matters", "isCorrect": true, "feedback": "Correct -- permutations count arrangements where different orderings of the same items are considered distinct outcomes."},
+      {"text": "The order of selection does not matter at all", "isCorrect": false, "feedback": "That describes when to use the COMBINATION formula, not the permutation formula, which specifically applies when order DOES matter."},
+      {"text": "You are selecting zero items from a group", "isCorrect": false, "feedback": "This isn't the defining condition for using the permutation formula -- the key factor is whether ORDER matters, not the specific number of items selected."},
+      {"text": "The group being selected from is infinitely large", "isCorrect": false, "feedback": "Group size (finite or otherwise) isn't the defining condition for using the permutation formula -- the key factor is whether order of selection matters."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In how many ways can a President and a Vice President be selected from a group of 5 candidates (assuming no one can hold both positions)? Since these are distinct roles, use the permutation formula P(5,2)=5!/(5-2)!",
+    "options": [
+      {"text": "20", "isCorrect": true, "feedback": "Correct -- P(5,2) = 5!/3! = (5×4×3×2×1)/(3×2×1) = 120/6 = 20."},
+      {"text": "10", "isCorrect": false, "feedback": "This would be the result of the COMBINATION formula C(5,2), not the permutation formula, but since President/VP are distinct roles, order (who gets which role) matters here."},
+      {"text": "5", "isCorrect": false, "feedback": "This is just the total number of candidates, not the correctly calculated number of ways to select two distinct role-holders."},
+      {"text": "25", "isCorrect": false, "feedback": "This doesn't correctly result from applying the permutation formula calculation for this scenario."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A committee of 3 people (with no distinct roles -- everyone is just a regular 'committee member') needs to be chosen from a group of 6 candidates. Explain why the COMBINATION formula C(6,3), rather than the permutation formula, is the correct approach here, and calculate the result.",
+    "options": [
+      {"text": "Since committee membership doesn't involve distinct roles (order doesn't matter -- choosing person A, B, C creates the same committee as choosing C, B, A), the combination formula applies: C(6,3)=6!/(3!×3!)=20", "isCorrect": true, "feedback": "Correct -- since there's no distinction between committee members' roles (unlike President vs. Vice President), the specific ORDER of selection doesn't create a different outcome, making combination (not permutation) the appropriate approach here."},
+      {"text": "The permutation formula would actually give the exact same correct answer as the combination formula here", "isCorrect": false, "feedback": "This isn't accurate -- the permutation formula P(6,3) would give 120 (a different, INCORRECT answer for this scenario), since it would incorrectly treat different orderings of the same 3 people as distinct outcomes, which doesn't apply here since committee membership has no distinct roles."},
+      {"text": "The combination formula happens to be simply irrelevant to this type of selection scenario", "isCorrect": false, "feedback": "This isn't accurate -- the combination formula is actually PRECISELY the correct, relevant tool for this specific type of scenario, since order doesn't matter for undifferentiated committee membership."},
+      {"text": "Order of selection actually DOES matter in this specific committee scenario, contrary to what's being suggested", "isCorrect": false, "feedback": "This isn't accurate -- since all committee members hold the SAME undifferentiated role (no distinct positions like President/VP), order of selection specifically does NOT matter here, which is why combination (not permutation) is the correct approach."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This formula applies specifically when distinguishable ordering among the selected elements constitutes functionally different outcomes.", "medium": "Use this formula when swapping the order of your selections would actually create a different, distinct result.", "easy": "Use this when swapping the order of picks creates a different result."},
+    "medium": {"hard": "Since the two positions are functionally distinct, apply the permutation formula directly using the given values for n and r.", "medium": "Plug 5 and 2 into the permutation formula: 5! divided by (5-2)!.", "easy": "Calculate 5×4=20 (since these are the two relevant terms in the permutation calculation)."},
+    "hard": {"hard": "Determine whether the selected group members hold functionally distinguishable roles (requiring permutation) or an undifferentiated collective role (requiring combination), then apply the appropriate formula.", "medium": "Since all committee members are treated the same (no special roles), use the combination formula instead of the permutation formula.", "easy": "Since committee members have no special roles, use combinations: C(6,3)=20."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of trophic levels and energy flow in food chains",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a food chain, what are producers?",
+    "options": [
+      {"text": "Organisms (like plants) that make their own food through photosynthesis", "isCorrect": true, "feedback": "Correct -- producers form the base of a food chain, converting sunlight into chemical energy other organisms can eventually use."},
+      {"text": "Organisms that eat only other animals", "isCorrect": false, "feedback": "That describes carnivores/consumers, not producers, which create their own food rather than consuming other organisms."},
+      {"text": "Organisms that break down dead material", "isCorrect": false, "feedback": "That describes decomposers, a different role from producers in a food chain."},
+      {"text": "Organisms that eat both plants and animals", "isCorrect": false, "feedback": "That describes omnivores, a type of consumer, not a producer."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Only about 10% of energy transfers from one trophic level to the next (the '10% rule'), with the rest lost mainly as heat. Why does this mean food chains rarely have more than 4-5 trophic levels?",
+    "options": [
+      {"text": "Because so much energy is lost at each transfer step that there's eventually too little energy remaining to support another additional trophic level", "isCorrect": true, "feedback": "Correct -- this cumulative energy loss across trophic levels is exactly why energy becomes too scarce to sustain many additional levels beyond a certain point."},
+      {"text": "Because animals at higher trophic levels choose not to eat as much food", "isCorrect": false, "feedback": "This isn't about dietary choice -- it's a fundamental thermodynamic limitation on how much usable energy remains available at each successive level."},
+      {"text": "The 10% rule only applies to producers, not to any other trophic levels", "isCorrect": false, "feedback": "The 10% rule applies broadly across ALL trophic level transfers, not just from producers -- this cumulative effect across multiple levels is what limits food chain length."},
+      {"text": "Energy loss has no actual connection to how many trophic levels a food chain can support", "isCorrect": false, "feedback": "Energy loss is precisely the limiting factor -- as energy compounds down through fewer available resources at each level, it eventually becomes insufficient to support further levels."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If a producer level has 10,000 units of energy, and each subsequent level retains only 10% of the previous level's energy, how much energy would be available at the FOURTH trophic level (tertiary consumers)?",
+    "options": [
+      {"text": "10 units", "isCorrect": true, "feedback": "Correct -- 10,000 → 1,000 (primary consumers) → 100 (secondary consumers) → 10 (tertiary consumers), applying the 10% rule three times to reach the fourth level."},
+      {"text": "1,000 units", "isCorrect": false, "feedback": "This is the amount at the SECOND trophic level (primary consumers), not the fourth."},
+      {"text": "100 units", "isCorrect": false, "feedback": "This is the amount at the THIRD trophic level (secondary consumers), not the fourth."},
+      {"text": "1 unit", "isCorrect": false, "feedback": "This would require applying the 10% reduction one extra time beyond what's needed to reach the fourth trophic level."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These are autotrophic organisms that synthesize their own organic energy sources via photosynthesis or similar processes.", "medium": "These are organisms, like plants, that create their own food using sunlight.", "easy": "These are organisms, like plants, that make their own food using sunlight."},
+    "medium": {"hard": "Consider how repeated multiplicative energy loss compounds across successive levels, eventually leaving insufficient energy to sustain further levels.", "medium": "Since so much energy disappears at each step, there's less and less left over the further up the chain you go.", "easy": "Since so much energy disappears at each step, there's barely any left after a few levels."},
+    "hard": {"hard": "Apply the 10% multiplier sequentially, once for each trophic level transition between the producer level and the target fourth level.", "medium": "Multiply by 10% (or divide by 10) three separate times, starting from 10,000.", "easy": "Divide 10,000 by 10 three times: 10,000 → 1,000 → 100 → 10."}
+  }
+}
+]

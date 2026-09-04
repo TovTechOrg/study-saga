@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between innate immunity and adaptive immunity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Innate immunity' refers to the immune defenses that:",
+    "options": [
+      {"text": "Are present from birth and respond quickly but non-specifically to a wide range of pathogens", "isCorrect": true, "feedback": "Correct -- innate immunity is the body's fast-acting, non-specific first line of defense, present from birth rather than developed through prior exposure."},
+      {"text": "Take days to weeks to develop and target one specific pathogen", "isCorrect": false, "feedback": "That describes ADAPTIVE immunity, not innate -- innate immunity responds quickly and non-specifically, while adaptive immunity is the slower, pathogen-specific response."},
+      {"text": "Only develop after a vaccine is administered", "isCorrect": false, "feedback": "This isn't accurate -- innate immunity is present from birth, not something that develops only after vaccination (vaccines specifically train adaptive immunity)."},
+      {"text": "Involve no cells or biological components at all", "isCorrect": false, "feedback": "This isn't accurate -- innate immunity involves specific cells (like macrophages and neutrophils) and biological barriers, not an absence of biological components."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Adaptive immunity is slower to activate initially but provides 'immunological memory,' allowing a much faster, stronger response upon a second exposure to the same pathogen. Why does innate immunity NOT provide this same memory-based improvement upon repeated exposure?",
+    "options": [
+      {"text": "Innate immunity relies on recognizing broad, general molecular patterns shared across many pathogens using a fixed set of pre-existing receptors, rather than generating pathogen-specific memory cells tailored to a particular previously-encountered pathogen, so repeated exposure to the same pathogen doesn't change or improve its response", "isCorrect": true, "feedback": "Correct -- this explanation of innate immunity's fixed, general-pattern recognition (versus adaptive immunity's pathogen-specific memory cell generation) correctly explains why only adaptive immunity improves with repeated exposure."},
+      {"text": "Innate immunity would actually also develop memory and improve with repeated pathogen exposure, just like adaptive immunity", "isCorrect": false, "feedback": "This isn't accurate -- innate immunity specifically does NOT develop memory or improve with repeated exposure, unlike adaptive immunity."},
+      {"text": "This difference in memory capability has no actual connection to how each immune system component recognizes pathogens", "isCorrect": false, "feedback": "This isn't accurate -- this difference in memory capability IS DIRECTLY connected to the fundamentally different recognition mechanisms used by innate versus adaptive immunity."},
+      {"text": "Adaptive immunity would actually also fail to develop memory upon repeated pathogen exposure", "isCorrect": false, "feedback": "This isn't accurate -- adaptive immunity SPECIFICALLY develops memory upon exposure, which is precisely what distinguishes it from innate immunity and underlies how vaccines work."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Dendritic cells (a key innate immune cell) capture pathogen fragments and present them to T cells, effectively bridging the innate and adaptive immune systems. Why is this bridging role critical for the adaptive immune response to activate properly?",
+    "options": [
+      {"text": "Adaptive immune cells like T cells cannot directly detect and respond to a raw, whole pathogen on their own -- they specifically require pathogen fragments to be captured, processed, and presented to them by innate immune cells like dendritic cells, so without this handoff, the highly specific and powerful adaptive immune response would never be triggered in the first place", "isCorrect": true, "feedback": "Correct -- this explanation of the antigen-presentation handoff correctly identifies why innate and adaptive immunity, though functionally distinct, are deeply interdependent rather than fully separate systems."},
+      {"text": "T cells would actually be able to fully activate and respond to pathogens without any assistance from dendritic cells or other innate immune cells", "isCorrect": false, "feedback": "This isn't accurate -- T cells specifically REQUIRE antigen presentation from cells like dendritic cells to become properly activated against a specific pathogen."},
+      {"text": "This antigen-presentation bridging role has no actual importance for triggering an effective adaptive immune response", "isCorrect": false, "feedback": "This isn't accurate -- this bridging role is CRITICALLY important, since it's specifically how the adaptive immune response gets triggered against a particular pathogen."},
+      {"text": "Dendritic cells are actually part of the adaptive immune system rather than the innate immune system", "isCorrect": false, "feedback": "This isn't accurate -- dendritic cells are specifically part of the INNATE immune system, even though their antigen-presentation function connects to and activates the adaptive system."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This branch of host defense is constitutively present and mounts a rapid, non-specific response against a broad spectrum of pathogens.", "medium": "This is the immune system you're born with that reacts fast but the same way against lots of different germs.", "easy": "This is the immune system you're born with that reacts fast but the same way against many germs."},
+    "medium": {"hard": "Consider how fixed, general-pattern receptor recognition contrasts with the generation of pathogen-tailored memory cells that persist after a specific exposure.", "medium": "One system just uses the same general alarm every time no matter what, while the other one actually remembers the specific invader and gets better at fighting it next time.", "easy": "One system uses the same general alarm every time; the other remembers the specific invader and improves next time."},
+    "hard": {"hard": "Consider how the specific adaptive immune cells depend on antigen-presenting innate cells to first process and display pathogen-derived fragments before targeted activation can occur.", "medium": "The picky, specific immune cells can't recognize a raw germ by themselves -- they need another cell to basically hand them a piece of it first before they can spring into action.", "easy": "The specific immune cells can't recognize a raw germ alone -- they need another cell to hand them a piece of it first."}
+  }
+}
+]

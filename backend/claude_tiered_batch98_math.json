@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of dimensional analysis for unit conversion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Dimensional analysis (unit conversion using conversion factors) works by:",
+    "options": [
+      {"text": "Multiplying a quantity by fractions equal to 1 (conversion factors) that cancel out unwanted units and introduce desired ones", "isCorrect": true, "feedback": "Correct -- since a conversion factor like (1 hour/60 minutes) equals exactly 1, multiplying by it doesn't change the actual quantity's value, just its unit representation."},
+      {"text": "Randomly guessing at an approximately correct converted value", "isCorrect": false, "feedback": "This isn't accurate -- dimensional analysis is a PRECISE, systematic mathematical method, not a random guessing approach."},
+      {"text": "Always requiring you to completely ignore the original units involved", "isCorrect": false, "feedback": "This isn't accurate -- dimensional analysis specifically requires CAREFULLY TRACKING units throughout the calculation (to ensure proper cancellation), not ignoring them."},
+      {"text": "Adding a fixed constant number to the original quantity, regardless of units", "isCorrect": false, "feedback": "This isn't accurate -- dimensional analysis specifically uses MULTIPLICATION by conversion factors (fractions equal to 1), not simple addition of a constant."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Convert 45 miles per hour into feet per second, using the conversion factors: 1 mile = 5,280 feet, and 1 hour = 3,600 seconds.",
+    "options": [
+      {"text": "66 feet per second (approximately)", "isCorrect": true, "feedback": "Correct -- 45 miles/hour × (5,280 feet/1 mile) × (1 hour/3,600 seconds) = (45×5,280)/3,600 = 237,600/3,600 = 66 feet/second."},
+      {"text": "45 feet per second", "isCorrect": false, "feedback": "This is just the original numerical value without actually applying either necessary conversion factor."},
+      {"text": "5,280 feet per second", "isCorrect": false, "feedback": "This is just the conversion factor value itself (feet per mile), not the correctly calculated final converted rate."},
+      {"text": "158,400 feet per second", "isCorrect": false, "feedback": "This appears to have multiplied by both conversion factors without correctly dividing by 3,600 (converting hours to seconds properly)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Explain WHY multiplying by a conversion factor like (5,280 feet / 1 mile) doesn't actually change the true physical quantity being measured, even though the resulting NUMBER changes significantly (e.g., from '1 mile' to '5,280 feet').",
+    "options": [
+      {"text": "Since 5,280 feet and 1 mile represent the EXACT SAME physical distance (just expressed using different units), the conversion factor (5,280 feet/1 mile) is mathematically equal to exactly 1 -- multiplying any quantity by 1 never changes its true underlying value, only how that value is numerically expressed/represented", "isCorrect": true, "feedback": "Correct -- this fundamental mathematical principle (multiplying by a well-constructed conversion factor is equivalent to multiplying by 1, preserving the true underlying quantity while changing only its unit representation) is precisely why dimensional analysis works as a valid, reliable conversion technique."},
+      {"text": "The true physical quantity actually DOES change when you apply a unit conversion factor, becoming a fundamentally different amount", "isCorrect": false, "feedback": "This isn't accurate -- the TRUE physical quantity (the actual distance, time, etc.) does NOT change during a proper unit conversion; only its NUMERICAL representation and unit label change, not the underlying real-world quantity itself."},
+      {"text": "This mathematical principle has no actual connection to why dimensional analysis is considered a valid, reliable conversion method", "isCorrect": false, "feedback": "This isn't accurate -- this principle (conversion factors equal 1) is DIRECTLY and fundamentally connected to and is precisely WHY dimensional analysis works as a mathematically valid, trustworthy conversion technique."},
+      {"text": "Conversion factors like this are actually not really equal to exactly 1, despite appearances", "isCorrect": false, "feedback": "This isn't accurate -- a properly constructed conversion factor (like 5,280 feet/1 mile, when these represent the identical physical distance) IS mathematically exactly equal to 1, which is precisely the foundational principle making dimensional analysis valid."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This technique leverages multiplicative identities (ratios equivalent to unity) to systematically transform measurement units while preserving the underlying quantity's true value.", "medium": "You multiply by special fractions that equal 1, which cancel out the units you don't want and bring in the units you do want.", "easy": "You multiply by special fractions equal to 1 that swap out the units."},
+    "medium": {"hard": "Sequentially apply both necessary conversion factors (distance and time units), ensuring proper unit cancellation, then perform the resulting arithmetic calculation.", "medium": "Multiply by the feet-per-mile conversion, then multiply by the hours-per-second conversion, making sure the units cancel out correctly.", "easy": "Multiply 45 by 5,280, then divide by 3,600 to get 66."},
+    "hard": {"hard": "Recognize that a properly formed unit ratio representing an identical physical quantity in its numerator and denominator is mathematically equivalent to the multiplicative identity, regardless of the differing numerical values involved.", "medium": "Since 5,280 feet and 1 mile are actually the exact same real-world distance, that fraction is secretly just equal to 1, and multiplying by 1 never really changes anything except how it looks.", "easy": "Since 5,280 feet and 1 mile are the same real distance, that fraction is secretly just equal to 1."}
+  }
+}
+]

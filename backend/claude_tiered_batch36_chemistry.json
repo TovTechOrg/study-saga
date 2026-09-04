@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of electron shielding affecting atomic properties",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is electron shielding?",
+    "options": [
+      {"text": "The effect where inner-shell electrons reduce the attractive pull of the nucleus on outer-shell electrons", "isCorrect": true, "feedback": "Correct -- inner electrons partially block (shield) the nuclear charge from being fully felt by outer electrons."},
+      {"text": "A physical shield made of metal placed around an atom", "isCorrect": false, "feedback": "This isn't a literal physical object -- it's an electronic effect involving how electrons interact with the nucleus's pull."},
+      {"text": "The process of an atom losing all its electrons", "isCorrect": false, "feedback": "Electron shielding is about the interaction between existing electrons and the nucleus, not about losing electrons entirely."},
+      {"text": "A technique for protecting atoms from radioactivity", "isCorrect": false, "feedback": "This isn't related to radiation protection -- it's specifically about how inner electrons affect the nuclear attraction felt by outer electrons."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does atomic radius generally increase as you move down a group (column) on the periodic table?",
+    "options": [
+      {"text": "Each additional electron shell increases both the distance from the nucleus and the shielding effect, both of which contribute to a larger atomic size", "isCorrect": true, "feedback": "Correct -- adding new electron shells further from the nucleus, combined with increased shielding, results in progressively larger atoms down a group."},
+      {"text": "Atomic radius actually decreases as you move down a group", "isCorrect": false, "feedback": "This is backwards -- atomic radius generally INCREASES moving down a group, due to additional electron shells."},
+      {"text": "Electron shielding has no effect on atomic radius", "isCorrect": false, "feedback": "Electron shielding is actually a significant contributing factor to the trend of increasing atomic radius down a group."},
+      {"text": "Atoms lower in a group have fewer protons than atoms higher up", "isCorrect": false, "feedback": "This is incorrect -- atomic number (proton count) actually INCREASES moving down a group, not decreases."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Moving ACROSS a period (row) on the periodic table (left to right), atomic radius generally DECREASES, even though more protons and electrons are being added. Why doesn't increased electron shielding prevent this shrinking trend across a period?",
+    "options": [
+      {"text": "Within the same period, new electrons are added to the SAME outer shell rather than a new one, so shielding doesn't increase proportionally, while nuclear charge (protons) does increase, pulling electrons in more tightly", "isCorrect": true, "feedback": "Correct -- since electrons are added to the same energy level, the increasing nuclear charge dominates over the relatively unchanged shielding, resulting in a smaller atomic radius."},
+      {"text": "Electron shielding actually increases dramatically across a period, more than compensating for the added protons", "isCorrect": false, "feedback": "This is incorrect -- shielding stays relatively constant within the same shell across a period, which is exactly why the increasing nuclear charge can dominate and shrink the atom."},
+      {"text": "Atoms across a period all have the exact same number of protons", "isCorrect": false, "feedback": "This is incorrect -- proton count (atomic number) increases by one with each step across a period, which is central to explaining the shrinking radius trend."},
+      {"text": "This trend has no real explanation in atomic theory", "isCorrect": false, "feedback": "This is actually a well-understood, well-explained trend rooted in the relationship between nuclear charge and electron shielding within the same shell."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This effect describes how electrons closer to the nucleus can partially block the nuclear pull experienced by more distant electrons.", "medium": "This describes how inner electrons can partly block the nucleus's pull on outer electrons.", "easy": "This is how inner electrons partly block the nucleus's pull on the outer ones."},
+    "medium": {"hard": "Consider how the addition of an entirely new, farther-out electron shell affects both distance from the nucleus and the cumulative shielding provided by all inner shells.", "medium": "Each new row down means an entirely new outer shell, which is both farther away and gets more shielding from the shells beneath it.", "easy": "Each new row down means a whole new outer shell, farther from the nucleus."},
+    "hard": {"hard": "Since additional electrons within the same period occupy the same principal energy level, the shielding contribution remains relatively constant, allowing the steadily increasing nuclear charge to progressively pull the electron cloud inward.", "medium": "Since the new electrons are going into the same outer shell (not a new one), they don't shield each other much better, but the growing pull from more protons wins out.", "easy": "Since the new electrons stay in the same outer shell, they don't block much extra, so the growing pull from more protons wins out."}
+  }
+}
+]

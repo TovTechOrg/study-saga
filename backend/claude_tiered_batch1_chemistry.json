@@ -1,0 +1,413 @@
+[
+{
+  "topic": "states of matter",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which state of matter has a definite shape and a definite volume?",
+    "options": [
+      {"text": "Solid", "isCorrect": true, "feedback": "Correct -- solids hold both their shape and volume."},
+      {"text": "Liquid", "isCorrect": false, "feedback": "Liquids have a definite volume but take the shape of their container."},
+      {"text": "Gas", "isCorrect": false, "feedback": "Gases have neither a definite shape nor a definite volume."},
+      {"text": "Plasma", "isCorrect": false, "feedback": "Plasma is an ionized gas-like state with no fixed shape or volume."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the process called when a solid changes directly into a gas without becoming a liquid first?",
+    "options": [
+      {"text": "Sublimation", "isCorrect": true, "feedback": "Correct -- sublimation skips the liquid phase entirely, like dry ice turning to gas."},
+      {"text": "Condensation", "isCorrect": false, "feedback": "Condensation is gas turning into liquid, not solid turning into gas."},
+      {"text": "Melting", "isCorrect": false, "feedback": "Melting is solid turning into liquid, an intermediate step this process skips."},
+      {"text": "Evaporation", "isCorrect": false, "feedback": "Evaporation is liquid turning into gas, not solid turning into gas."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "As a substance moves from solid to liquid to gas, what generally happens to the arrangement of its particles?",
+    "options": [
+      {"text": "Particles become more spread out and move more freely", "isCorrect": true, "feedback": "Correct -- increasing energy spreads particles apart and increases their movement."},
+      {"text": "Particles pack more tightly together", "isCorrect": false, "feedback": "This describes the reverse direction, like gas condensing into liquid."},
+      {"text": "Particles stop moving entirely", "isCorrect": false, "feedback": "Particles actually move MORE as a substance gains energy and changes state toward gas."},
+      {"text": "Particles change into a different element", "isCorrect": false, "feedback": "A state change is physical, not a change in the identity of the atoms/molecules."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This state resists changes to both its outer form and the total space it occupies.", "medium": "This state doesn't flow or spread out -- it keeps a fixed form.", "easy": "This is the state of matter that keeps its shape, like a rock or ice cube."},
+    "medium": {"hard": "This transition bypasses the intermediate liquid phase entirely, moving straight from a rigid state to a diffuse one.", "medium": "This is when something goes straight from solid to gas, skipping the liquid stage.", "easy": "Dry ice 'smoking' without melting into a puddle is an example of this process."},
+    "hard": {"hard": "As energy increases, intermolecular forces are overcome, allowing particles to separate and gain kinetic energy/freedom of movement.", "medium": "Adding energy makes particles move faster and spread further apart from each other.", "easy": "As things heat up and change state, their particles spread out and move around more."}
+  }
+},
+{
+  "topic": "periodic table: elements and symbols",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the chemical symbol for Oxygen?",
+    "options": [
+      {"text": "O", "isCorrect": true, "feedback": "Correct -- Oxygen's symbol is simply O."},
+      {"text": "Ox", "isCorrect": false, "feedback": "Element symbols are usually one or two letters, and this isn't the standard one."},
+      {"text": "O2", "isCorrect": false, "feedback": "O2 refers to the oxygen molecule, not the element symbol itself."},
+      {"text": "Og", "isCorrect": false, "feedback": "Og is actually the symbol for Oganesson, a completely different element."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Elements in the periodic table are primarily arranged by which property?",
+    "options": [
+      {"text": "Increasing atomic number", "isCorrect": true, "feedback": "Correct -- the modern periodic table orders elements by their number of protons."},
+      {"text": "Alphabetical order of their names", "isCorrect": false, "feedback": "The table follows atomic number, not the alphabet -- that's why Hydrogen isn't near the H's in a dictionary sense."},
+      {"text": "Increasing price per gram", "isCorrect": false, "feedback": "Cost has nothing to do with the table's scientific arrangement."},
+      {"text": "The year each element was discovered", "isCorrect": false, "feedback": "Discovery date isn't the organizing principle of the table."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which TWO of the following are alkali metals found in Group 1 of the periodic table?",
+    "options": [
+      {"text": "Sodium", "isCorrect": true, "feedback": "Correct -- Sodium (Na) is a Group 1 alkali metal."},
+      {"text": "Potassium", "isCorrect": true, "feedback": "Correct -- Potassium (K) is also a Group 1 alkali metal."},
+      {"text": "Calcium", "isCorrect": false, "feedback": "Calcium is in Group 2, the alkaline earth metals, not Group 1."},
+      {"text": "Iron", "isCorrect": false, "feedback": "Iron is a transition metal, not an alkali metal."},
+      {"text": "Chlorine", "isCorrect": false, "feedback": "Chlorine is a halogen in Group 17, not an alkali metal."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This element's symbol is a single letter, matching the first letter of its English name.", "medium": "This gas makes up about 21% of the air we breathe.", "easy": "This is the gas you breathe in that your body needs to survive -- its symbol is just one letter."},
+    "medium": {"hard": "The organizing property relates directly to the number of protons found in each element's nucleus.", "medium": "The table is arranged by a number that increases by exactly one from element to element.", "easy": "Elements are lined up by a number related to what's inside their atoms, not by name or price."},
+    "hard": {"hard": "Group 1 elements are highly reactive metals that each have a single electron in their outermost shell -- look for the two whose names you'd recognize as soft, reactive metals rather than transition metals or nonmetals.", "medium": "Two of these five are soft, highly reactive metals found in the leftmost column of the table.", "easy": "Two of these are the very reactive metals found in the first column of the periodic table."}
+  }
+},
+{
+  "topic": "chemical vs. physical changes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is an example of a physical change?",
+    "options": [
+      {"text": "Ice melting into water", "isCorrect": true, "feedback": "Correct -- melting changes the form of water but not its chemical identity."},
+      {"text": "Wood burning into ash", "isCorrect": false, "feedback": "Burning creates entirely new substances (ash, smoke, gases), making it a chemical change."},
+      {"text": "Iron rusting", "isCorrect": false, "feedback": "Rusting forms a new substance (iron oxide), making it a chemical change."},
+      {"text": "Baking a cake", "isCorrect": false, "feedback": "Baking triggers chemical reactions that create new substances, making it a chemical change."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the key difference between a chemical change and a physical change?",
+    "options": [
+      {"text": "A chemical change produces a new substance with different properties", "isCorrect": true, "feedback": "Correct -- physical changes alter form or appearance, but the substance's chemical identity stays the same."},
+      {"text": "A physical change always requires heat", "isCorrect": false, "feedback": "Physical changes don't necessarily require heat -- e.g. cutting paper is a physical change with no heat involved."},
+      {"text": "A chemical change is always reversible", "isCorrect": false, "feedback": "Chemical changes are often difficult or impossible to reverse, unlike many physical changes."},
+      {"text": "A physical change always involves a gas", "isCorrect": false, "feedback": "Many physical changes, like crushing a can, involve no gas at all."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which observation is the strongest evidence that a chemical change has occurred?",
+    "options": [
+      {"text": "The formation of a gas bubble or a new solid precipitate that wasn't there before", "isCorrect": true, "feedback": "Correct -- gas or precipitate formation signals a new substance has been created."},
+      {"text": "The substance changed color when light hit it differently", "isCorrect": false, "feedback": "Apparent color shifts from lighting or angle don't indicate a new substance formed."},
+      {"text": "The substance was cut into smaller pieces", "isCorrect": false, "feedback": "Cutting only changes size and shape, not the chemical identity of the substance."},
+      {"text": "The substance was dissolved in water and then evaporated back to its original form", "isCorrect": false, "feedback": "If it returns to its original form, no new substance was permanently created -- this is physical."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This example only changes the state of the substance, not its underlying chemical makeup.", "medium": "This is a state change (solid to liquid) with no new substance formed.", "easy": "This is just water changing from solid to liquid form -- no new substance appears."},
+    "medium": {"hard": "The defining difference is whether the molecules themselves are rearranged into something new, versus simply changing shape, state, or size.", "medium": "A chemical change results in a substance with genuinely different properties than what you started with.", "easy": "In a chemical change, you end up with a totally different substance than you started with."},
+    "hard": {"hard": "Look for evidence that new molecules have formed -- gas bubbles or a precipitate indicate a new substance, whereas reversible or purely visual/size changes don't.", "medium": "The clearest sign of a chemical change is something brand new appearing, like a gas or a solid that wasn't there before.", "easy": "Bubbles of gas or a new solid forming are strong signs that a real chemical change happened."}
+  }
+},
+{
+  "topic": "acids and bases (pH scale)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "On the pH scale, a value of 7 is considered:",
+    "options": [
+      {"text": "Neutral", "isCorrect": true, "feedback": "Correct -- pH 7, like pure water, is neither acidic nor basic."},
+      {"text": "Strongly acidic", "isCorrect": false, "feedback": "Strongly acidic values are much lower, closer to 0-2."},
+      {"text": "Strongly basic", "isCorrect": false, "feedback": "Strongly basic values are much higher, closer to 12-14."},
+      {"text": "Not a valid pH value", "isCorrect": false, "feedback": "pH 7 is a completely valid and common value, right in the middle of the scale."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A solution with a pH of 3 is best described as:",
+    "options": [
+      {"text": "Acidic", "isCorrect": true, "feedback": "Correct -- any pH below 7 is considered acidic, and 3 is well below that."},
+      {"text": "Basic", "isCorrect": false, "feedback": "Basic solutions have a pH above 7, not below it."},
+      {"text": "Neutral", "isCorrect": false, "feedback": "Neutral is specifically pH 7, not 3."},
+      {"text": "Radioactive", "isCorrect": false, "feedback": "pH measures acidity/basicity, it has nothing to do with radioactivity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Going from a pH of 4 to a pH of 2 represents what kind of change in acidity?",
+    "options": [
+      {"text": "A 100-fold increase in acidity, since the pH scale is logarithmic", "isCorrect": true, "feedback": "Correct -- each whole pH step is a 10x change, so 2 steps is 10×10=100x."},
+      {"text": "A doubling of acidity", "isCorrect": false, "feedback": "This treats the scale as linear, but pH is actually logarithmic, making the real change much larger."},
+      {"text": "No real change in acidity, just a small numeric shift", "isCorrect": false, "feedback": "A 2-point pH drop is actually a massive change in acidity, not a negligible one."},
+      {"text": "A 2-fold increase in acidity", "isCorrect": false, "feedback": "This assumes a simple 1:1 relationship with the pH number, ignoring the logarithmic scale."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value sits exactly at the midpoint of the pH scale, matching pure water.", "medium": "This is the pH value of pure water, right in the middle of the scale.", "easy": "This is the middle value on the pH scale -- neither acidic nor basic."},
+    "medium": {"hard": "Any value below the midpoint of the scale falls into this category.", "medium": "Values below 7 on the pH scale fall into this category.", "easy": "A pH lower than 7 means the solution is this type."},
+    "hard": {"hard": "Each single-unit drop in pH represents a tenfold increase in acidity, so calculate the compounded effect across multiple units.", "medium": "Each pH unit represents a 10x change, so two units apart means multiplying 10 by itself.", "easy": "Each single step on the pH scale is actually a 10-times change, not just a 1-unit change."}
+  }
+},
+{
+  "topic": "atomic structure (protons, neutrons, electrons)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which subatomic particle has a positive charge?",
+    "options": [
+      {"text": "Proton", "isCorrect": true, "feedback": "Correct -- protons carry a positive charge."},
+      {"text": "Electron", "isCorrect": false, "feedback": "Electrons carry a negative charge, the opposite of positive."},
+      {"text": "Neutron", "isCorrect": false, "feedback": "Neutrons carry no charge at all -- they're neutral."},
+      {"text": "Photon", "isCorrect": false, "feedback": "A photon is a particle of light, not a component of an atom's nucleus."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Where are electrons located relative to the nucleus of an atom?",
+    "options": [
+      {"text": "Orbiting outside the nucleus in electron shells", "isCorrect": true, "feedback": "Correct -- electrons occupy shells/orbitals surrounding the nucleus."},
+      {"text": "Inside the nucleus, alongside protons", "isCorrect": false, "feedback": "Protons and neutrons are inside the nucleus, but electrons are found outside it."},
+      {"text": "Inside the nucleus, alongside neutrons only", "isCorrect": false, "feedback": "Electrons don't reside in the nucleus at all -- only protons and neutrons do."},
+      {"text": "Scattered randomly throughout the entire universe", "isCorrect": false, "feedback": "Electrons are bound to their specific atom's shells, not scattered randomly everywhere."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An atom has 6 protons, 6 neutrons, and 6 electrons. If it gains 2 extra electrons, what does it become?",
+    "options": [
+      {"text": "A negatively charged ion", "isCorrect": true, "feedback": "Correct -- gaining electrons without changing protons creates a net negative charge, forming an anion."},
+      {"text": "A positively charged ion", "isCorrect": false, "feedback": "Gaining (not losing) electrons results in a negative charge, not positive."},
+      {"text": "A different element entirely", "isCorrect": false, "feedback": "The element is determined by the number of protons, which hasn't changed here."},
+      {"text": "A neutral atom, unchanged", "isCorrect": false, "feedback": "Adding extra electrons unbalances the charge, so it's no longer neutral."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This particle's charge is the opposite of the one found in the electron cloud surrounding the nucleus.", "medium": "This particle sits in the nucleus and has a charge opposite to an electron's.", "easy": "This particle in the atom's center has a positive charge, opposite to electrons."},
+    "medium": {"hard": "These negatively charged particles occupy regions of space surrounding, but distinct from, the dense central core of the atom.", "medium": "These particles orbit around the outside of the nucleus rather than being part of it.", "easy": "These particles circle around the outside of the atom's center, not inside it."},
+    "hard": {"hard": "The element identity depends only on proton count, but the overall charge depends on the balance between protons and electrons -- extra electrons tip that balance negative.", "medium": "The number of protons decides what element it is; extra electrons just change the overall charge.", "easy": "Adding electrons without changing protons makes the atom negatively charged, not a new element."}
+  }
+},
+{
+  "topic": "balancing chemical equations",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a balanced chemical equation, what must be equal on both sides?",
+    "options": [
+      {"text": "The number of atoms of each element", "isCorrect": true, "feedback": "Correct -- balancing ensures the same number of each type of atom appears on both sides."},
+      {"text": "The number of molecules of each compound", "isCorrect": false, "feedback": "Molecule counts (coefficients) can differ -- it's the total atom counts that must match."},
+      {"text": "The color of the reactants and products", "isCorrect": false, "feedback": "Color has nothing to do with whether an equation is balanced."},
+      {"text": "The temperature of the reaction", "isCorrect": false, "feedback": "Temperature is a reaction condition, not part of balancing an equation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "To balance H₂ + O₂ → H₂O, what coefficients are needed?",
+    "options": [
+      {"text": "2H₂ + O₂ → 2H₂O", "isCorrect": true, "feedback": "Correct -- this gives 4 H atoms and 2 O atoms on both sides."},
+      {"text": "H₂ + O₂ → H₂O", "isCorrect": false, "feedback": "As written, oxygen atoms don't balance: 2 on the left, only 1 on the right."},
+      {"text": "H₂ + 2O₂ → H₂O", "isCorrect": false, "feedback": "This adds too much oxygen on the left without balancing the hydrogen or matching oxygen on the right."},
+      {"text": "3H₂ + O₂ → 2H₂O", "isCorrect": false, "feedback": "This leaves extra unbalanced hydrogen atoms on the left side."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "When balancing CH₄ + O₂ → CO₂ + H₂O, what is the correct set of coefficients?",
+    "options": [
+      {"text": "CH₄ + 2O₂ → CO₂ + 2H₂O", "isCorrect": true, "feedback": "Correct -- this balances 1 C, 4 H, and 4 O on both sides."},
+      {"text": "CH₄ + O₂ → CO₂ + H₂O", "isCorrect": false, "feedback": "As written, oxygen and hydrogen atoms don't balance between the two sides."},
+      {"text": "2CH₄ + O₂ → CO₂ + H₂O", "isCorrect": false, "feedback": "Doubling only the methane leaves carbon and hydrogen badly unbalanced."},
+      {"text": "CH₄ + 2O₂ → 2CO₂ + H₂O", "isCorrect": false, "feedback": "This creates too many carbon atoms on the right compared to the left."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This principle reflects that atoms are neither created nor destroyed in a chemical reaction.", "medium": "The count of each type of atom must match before and after the reaction.", "easy": "Both sides of the equation need the same number of each kind of atom."},
+    "medium": {"hard": "Start by balancing hydrogen atoms using a coefficient, then check whether oxygen atoms also balance afterward.", "medium": "Try doubling both the hydrogen gas and the water to see if the oxygen atoms then match up.", "easy": "Try putting a 2 in front of both the hydrogen gas and the water, then count the oxygens."},
+    "hard": {"hard": "Balance carbon first, then hydrogen using water's coefficient, then count total oxygen needed on the right to determine oxygen gas's coefficient last.", "medium": "Balance carbon and hydrogen first using the product coefficients, then figure out how much oxygen gas is needed to match.", "easy": "Balance the carbons and hydrogens first, then adjust the oxygen gas amount to match what's needed."}
+  }
+},
+{
+  "topic": "ionic vs. covalent bonds",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What happens to electrons in an ionic bond?",
+    "options": [
+      {"text": "Electrons are transferred from one atom to another", "isCorrect": true, "feedback": "Correct -- ionic bonds form when one atom gives up electrons and another takes them."},
+      {"text": "Electrons are shared equally between atoms", "isCorrect": false, "feedback": "Equal sharing describes a covalent bond, not an ionic one."},
+      {"text": "Electrons are destroyed", "isCorrect": false, "feedback": "Electrons are transferred, not destroyed, in a chemical bond."},
+      {"text": "No electrons are involved at all", "isCorrect": false, "feedback": "Electron behavior is exactly what defines the type of bond formed."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which type of bond typically forms between two nonmetal atoms?",
+    "options": [
+      {"text": "Covalent bond", "isCorrect": true, "feedback": "Correct -- nonmetals tend to share electrons rather than fully transferring them."},
+      {"text": "Ionic bond", "isCorrect": false, "feedback": "Ionic bonds typically form between a metal and a nonmetal, not two nonmetals."},
+      {"text": "Metallic bond", "isCorrect": false, "feedback": "Metallic bonds occur between metal atoms, not nonmetal atoms."},
+      {"text": "Nuclear bond", "isCorrect": false, "feedback": "This isn't a standard type of chemical bond between atoms."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do ionic compounds generally have higher melting points than covalent compounds?",
+    "options": [
+      {"text": "The strong electrostatic attraction between oppositely charged ions requires more energy to break", "isCorrect": true, "feedback": "Correct -- ionic bonds form a rigid lattice held together by strong charge attraction, which resists melting."},
+      {"text": "Ionic compounds are always heavier", "isCorrect": false, "feedback": "Weight/mass isn't what determines melting point in this comparison."},
+      {"text": "Covalent compounds contain more atoms", "isCorrect": false, "feedback": "Atom count doesn't determine bond strength or melting point in this way."},
+      {"text": "Ionic compounds don't actually have a fixed melting point", "isCorrect": false, "feedback": "Ionic compounds do have well-defined, typically high, melting points."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One atom fully gives up what the other atom fully gains, rather than the two sharing.", "medium": "One atom loses this particle completely while another atom gains it.", "easy": "In this type of bond, one atom gives away electrons and another takes them."},
+    "medium": {"hard": "Nonmetal atoms tend to have similar attraction for electrons, favoring a mutual sharing arrangement over a full transfer.", "medium": "Two nonmetals tend to share electrons rather than one taking them from the other.", "easy": "When two nonmetals bond, they usually share their electrons instead of one stealing from the other."},
+    "hard": {"hard": "The lattice structure formed by oppositely charged ions creates very strong, uniform attractive forces throughout the solid, unlike the more localized bonds in covalent molecules.", "medium": "The charged particles in ionic compounds attract each other very strongly across the whole structure, requiring lots of energy to separate.", "easy": "Ionic compounds hold together very tightly because of strong attraction between oppositely charged particles."}
+  }
+},
+{
+  "topic": "solutions (solute, solvent, concentration)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a solution of salt water, what is the salt called?",
+    "options": [
+      {"text": "The solute", "isCorrect": true, "feedback": "Correct -- the solute is the substance being dissolved."},
+      {"text": "The solvent", "isCorrect": false, "feedback": "The solvent is the substance doing the dissolving -- here, that's the water."},
+      {"text": "The precipitate", "isCorrect": false, "feedback": "A precipitate is a solid that forms out of a solution, not a dissolved substance."},
+      {"text": "The catalyst", "isCorrect": false, "feedback": "A catalyst speeds up a reaction without being consumed -- that's not what's happening here."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If you add more solute to a fixed amount of solvent, what happens to the solution's concentration?",
+    "options": [
+      {"text": "It increases", "isCorrect": true, "feedback": "Correct -- more dissolved solute in the same amount of solvent raises the concentration."},
+      {"text": "It decreases", "isCorrect": false, "feedback": "Adding more solute raises concentration, it doesn't lower it."},
+      {"text": "It stays exactly the same", "isCorrect": false, "feedback": "Concentration depends directly on the amount of solute present, so it must change."},
+      {"text": "The solution becomes a pure solvent", "isCorrect": false, "feedback": "Adding solute moves the solution further from being pure solvent, not closer."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A solution is described as 'saturated.' What does this mean?",
+    "options": [
+      {"text": "It has dissolved the maximum amount of solute possible at that temperature", "isCorrect": true, "feedback": "Correct -- a saturated solution can't dissolve any more solute under the current conditions."},
+      {"text": "It contains no solute at all", "isCorrect": false, "feedback": "A solution with no solute would just be pure solvent, not saturated."},
+      {"text": "It has reached its boiling point", "isCorrect": false, "feedback": "Saturation is about how much solute is dissolved, not about temperature or boiling."},
+      {"text": "It is chemically unstable and about to react", "isCorrect": false, "feedback": "Saturation doesn't imply instability or an imminent chemical reaction."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the substance present in a smaller amount that gets dissolved into the larger substance.", "medium": "This is the substance being dissolved, not the one doing the dissolving.", "easy": "This is the ingredient that gets dissolved into the water."},
+    "medium": {"hard": "Concentration is a ratio of solute to solvent -- changing the solute amount directly shifts that ratio.", "medium": "More dissolved substance in the same amount of liquid means a stronger solution.", "easy": "Adding more of the dissolved substance makes the solution stronger, not weaker."},
+    "hard": {"hard": "This term describes a solute-solvent system that has reached its solubility limit under the given conditions, where additional solute would simply not dissolve.", "medium": "This describes a solution that can't hold any more dissolved solute at that temperature.", "easy": "This means the liquid has dissolved as much solute as it possibly can."}
+  }
+},
+{
+  "topic": "law of conservation of mass",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to the law of conservation of mass, what happens to mass during a chemical reaction?",
+    "options": [
+      {"text": "It stays the same", "isCorrect": true, "feedback": "Correct -- mass is neither created nor destroyed in a chemical reaction."},
+      {"text": "It always increases", "isCorrect": false, "feedback": "Mass doesn't spontaneously increase during a normal chemical reaction."},
+      {"text": "It always decreases", "isCorrect": false, "feedback": "Mass doesn't disappear during a normal chemical reaction."},
+      {"text": "It disappears completely", "isCorrect": false, "feedback": "Matter doesn't vanish -- it's rearranged into new substances, not destroyed."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If 10 grams of substance A reacts completely with 5 grams of substance B, what is the total mass of the products?",
+    "options": [
+      {"text": "15 grams", "isCorrect": true, "feedback": "Correct -- the total mass of reactants must equal the total mass of products."},
+      {"text": "10 grams", "isCorrect": false, "feedback": "This ignores the mass contributed by substance B."},
+      {"text": "5 grams", "isCorrect": false, "feedback": "This ignores the mass contributed by substance A."},
+      {"text": "It depends on the temperature of the reaction", "isCorrect": false, "feedback": "Temperature can affect reaction rate, but not the total conserved mass."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A sealed container holds a burning candle. Why does the total mass inside the sealed container stay the same, even though the candle appears to shrink?",
+    "options": [
+      {"text": "The candle's mass is converted into gases (like CO₂ and water vapor) that remain trapped inside the container", "isCorrect": true, "feedback": "Correct -- the 'lost' solid mass becomes gaseous products, conserving total mass within the sealed system."},
+      {"text": "Mass is destroyed by the flame's heat", "isCorrect": false, "feedback": "Heat doesn't destroy mass -- the law of conservation of mass still applies."},
+      {"text": "The container itself loses mass to compensate", "isCorrect": false, "feedback": "The container isn't part of the reaction and doesn't lose mass to balance anything."},
+      {"text": "Light escaping the flame carries away the missing mass", "isCorrect": false, "feedback": "The tiny mass-energy of escaping light is negligible here -- the real explanation is the gaseous products staying in the sealed container."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This principle means matter is rearranged during a reaction, not created or destroyed.", "medium": "The total amount of matter before and after a reaction doesn't change.", "easy": "The total mass before a chemical reaction equals the total mass after it."},
+    "medium": {"hard": "Add together the masses of everything that reacts to find the total mass of everything produced.", "medium": "Add the two starting masses together to find the total mass of the products.", "easy": "Add 10 grams and 5 grams together to find the answer."},
+    "hard": {"hard": "In a sealed system, any mass that seems to 'disappear' from a solid has actually transformed into another form (like a gas) that's still present within the boundary.", "medium": "The candle's solid mass turns into gases that stay trapped in the sealed container, so nothing is actually lost.", "easy": "The candle doesn't lose mass -- it just turns into gases that stay trapped inside the sealed container."}
+  }
+},
+{
+  "topic": "elements, compounds, and mixtures",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a pure element?",
+    "options": [
+      {"text": "Oxygen (O₂)", "isCorrect": true, "feedback": "Correct -- oxygen gas is made of only one type of atom, making it an element."},
+      {"text": "Water (H₂O)", "isCorrect": false, "feedback": "Water is a compound made of two different elements chemically combined."},
+      {"text": "Salt water", "isCorrect": false, "feedback": "Salt water is a mixture of salt and water, not a pure element."},
+      {"text": "Air", "isCorrect": false, "feedback": "Air is a mixture of several different gases, not a single pure element."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What distinguishes a compound from a mixture?",
+    "options": [
+      {"text": "A compound's components are chemically bonded in fixed proportions", "isCorrect": true, "feedback": "Correct -- compounds have a fixed chemical formula, while mixtures can vary in proportion and aren't chemically bonded."},
+      {"text": "A mixture always contains only one element", "isCorrect": false, "feedback": "Mixtures can contain elements, compounds, or both, in any proportion -- not just one element."},
+      {"text": "A compound can be separated by simple physical methods like filtering", "isCorrect": false, "feedback": "Compounds require chemical reactions to break apart, unlike many mixtures which separate physically."},
+      {"text": "There is no real difference between them", "isCorrect": false, "feedback": "Compounds and mixtures are fundamentally different in how their components are combined."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Salt dissolved in water is best classified as which of the following?",
+    "options": [
+      {"text": "A homogeneous mixture", "isCorrect": true, "feedback": "Correct -- salt water is uniformly mixed but the salt and water remain chemically distinct, and it can be separated by evaporation."},
+      {"text": "A compound", "isCorrect": false, "feedback": "No new chemical bonds form between salt and water -- they remain chemically separate substances."},
+      {"text": "A pure element", "isCorrect": false, "feedback": "This contains two different substances (salt and water), so it can't be a single pure element."},
+      {"text": "A heterogeneous mixture", "isCorrect": false, "feedback": "Dissolved salt water looks uniform throughout, which makes it homogeneous, not heterogeneous."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This substance consists of only one type of atom, with no chemical bonding to a different element.", "medium": "This substance can't be broken down into anything simpler by chemical means, unlike a compound.", "easy": "This is a substance made of just one type of atom, like the gas you breathe."},
+    "medium": {"hard": "Compounds involve a specific, unchanging ratio of atoms held together by chemical bonds, unlike the variable, unbonded combination found in a mixture.", "medium": "In a compound, the parts are chemically joined together in a fixed ratio that never changes.", "easy": "A compound's ingredients are chemically stuck together in an exact, unchanging ratio."},
+    "hard": {"hard": "Consider whether new chemical bonds form (they don't, ruling out compound) and whether the result looks uniform throughout (it does, ruling out heterogeneous).", "medium": "No new chemical bonds form here, and the mixture looks the same throughout -- narrow it down from there.", "easy": "Salt and water don't chemically bond, and the mixture looks the same all the way through."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between series and parallel resistors' total resistance",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "When resistors are connected in series, how do you find the total resistance?",
+    "options": [
+      {"text": "Simply add up all the individual resistance values", "isCorrect": true, "feedback": "Correct -- for resistors in series, total resistance equals the sum of each individual resistor's value (R_total = R1+R2+R3...)."},
+      {"text": "Multiply all the individual resistance values together", "isCorrect": false, "feedback": "Multiplication isn't the correct method for series resistors -- simple ADDITION of the individual values gives the total series resistance."},
+      {"text": "Divide the resistance values by the number of resistors", "isCorrect": false, "feedback": "This averaging approach isn't correct for series resistors -- total series resistance is found by simply ADDING the individual values together."},
+      {"text": "Total resistance is always exactly the same, regardless of how many resistors are added", "isCorrect": false, "feedback": "This isn't accurate -- adding more resistors in series DOES increase total resistance (since values are simply summed), not remain the same value regardless of the number of resistors."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two resistors, each with resistance 6 ohms, are connected in PARALLEL. Using the parallel resistance formula (1/R_total = 1/R1 + 1/R2), what is the total resistance?",
+    "options": [
+      {"text": "3 ohms", "isCorrect": true, "feedback": "Correct -- 1/R_total = 1/6 + 1/6 = 2/6 = 1/3, so R_total = 3 ohms."},
+      {"text": "12 ohms", "isCorrect": false, "feedback": "This would be the correct total if the resistors were connected in SERIES (simple addition), not in parallel, which requires the reciprocal formula."},
+      {"text": "6 ohms", "isCorrect": false, "feedback": "This is just the value of ONE individual resistor, not the correctly calculated total parallel resistance for both combined."},
+      {"text": "36 ohms", "isCorrect": false, "feedback": "This results from multiplying the two resistor values together, which isn't the correct formula for parallel resistance."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Notice that connecting two identical resistors in PARALLEL results in a total resistance LOWER than either individual resistor's value, while connecting them in SERIES results in a total HIGHER than either individual value. Why does this make physical sense in terms of how current can flow?",
+    "options": [
+      {"text": "Parallel connections provide multiple simultaneous pathways for current to flow, effectively making it 'easier' overall for current to pass through (lower resistance), while series connections force current through each resistor sequentially, adding up the total obstruction (higher resistance)", "isCorrect": true, "feedback": "Correct -- this conceptual understanding, connecting the physical circuit topology (multiple parallel paths vs. one sequential path) to the resulting resistance behavior, helps explain why these two configurations produce such different, and seemingly opposite, effects on total resistance."},
+      {"text": "Parallel connections actually result in HIGHER total resistance than series connections, contrary to the standard formulas", "isCorrect": false, "feedback": "This is backwards -- parallel connections specifically result in LOWER total resistance (not higher) compared to series connections, as directly shown by the standard resistance formulas for each configuration."},
+      {"text": "The specific circuit configuration (series vs. parallel) has no actual connection to how easily current can flow through the circuit", "isCorrect": false, "feedback": "This isn't accurate -- circuit configuration (series vs. parallel) has a very DIRECT and significant connection to how easily current can flow, precisely explaining the different total resistance behaviors observed."},
+      {"text": "Series connections actually provide multiple simultaneous pathways for current, while parallel connections force current through resistors sequentially", "isCorrect": false, "feedback": "This has the descriptions backwards -- PARALLEL connections provide multiple simultaneous pathways, while SERIES connections force current through resistors sequentially, not the other way around."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This configuration requires additive combination of individual resistive elements arranged along a single continuous conductive pathway.", "medium": "Just add all the resistor numbers together for this type of connection.", "easy": "Just add all the resistor values together."},
+    "medium": {"hard": "Apply the reciprocal-sum formula specifically designed for combining resistances arranged in parallel branches.", "medium": "Add the reciprocals of each resistance (1/6 + 1/6), then take the reciprocal of that sum.", "easy": "1/6 + 1/6 = 2/6 = 1/3, so the total is 3 ohms (the reciprocal of 1/3)."},
+    "hard": {"hard": "Consider how the number of available conductive pathways for current flow directly relates to the overall ease (or difficulty) of current passing through the combined circuit segment.", "medium": "Having more paths side by side (parallel) makes it easier overall for current to get through, while making it go through one thing after another (series) makes it harder overall.", "easy": "More paths side by side makes it easier for current to flow; one path after another makes it harder."}
+  }
+}
+]

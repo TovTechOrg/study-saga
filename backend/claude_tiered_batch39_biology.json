@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a plant's response to light (phototropism)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is phototropism?",
+    "options": [
+      {"text": "A plant's growth response toward (or away from) a light source", "isCorrect": true, "feedback": "Correct -- most plant shoots exhibit positive phototropism, growing toward light."},
+      {"text": "A plant's response to touch", "isCorrect": false, "feedback": "That describes thigmotropism, a different type of plant response, not phototropism."},
+      {"text": "A plant's response to gravity", "isCorrect": false, "feedback": "That describes gravitropism (or geotropism), a different type of plant response, not phototropism."},
+      {"text": "A plant's response to water", "isCorrect": false, "feedback": "That describes hydrotropism, a different type of plant response, not phototropism."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A houseplant placed near a window often bends its stem toward the light over time. What is responsible for this bending growth pattern?",
+    "options": [
+      {"text": "Plant hormones (like auxin) accumulate more on the shaded side of the stem, causing those cells to elongate more than the cells on the light-facing side", "isCorrect": true, "feedback": "Correct -- this uneven hormone distribution and resulting uneven cell growth is what causes the stem to visibly curve toward the light source."},
+      {"text": "The plant physically moves its roots to point the stem toward light", "isCorrect": false, "feedback": "This isn't accurate -- the bending occurs due to uneven cell elongation in the stem itself, not repositioning by the roots."},
+      {"text": "This bending happens completely randomly, with no biological mechanism", "isCorrect": false, "feedback": "This is actually a well-understood, hormonally-driven biological mechanism (phototropism via auxin distribution), not a random occurrence."},
+      {"text": "The light physically pushes the stem to bend toward it", "isCorrect": false, "feedback": "Light doesn't exert a physical pushing force causing this bending -- it's the plant's own internal hormonal response that drives the directional growth."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why would positive phototropism (growing toward light) provide a significant survival advantage for most plants?",
+    "options": [
+      {"text": "Since plants need light for photosynthesis, growing toward available light sources maximizes their ability to capture the energy needed for food production", "isCorrect": true, "feedback": "Correct -- this directional growth response helps ensure a plant's leaves are optimally positioned to capture sunlight, directly supporting its energy production and overall survival."},
+      {"text": "Phototropism actually provides no survival benefit to plants at all", "isCorrect": false, "feedback": "This is incorrect -- phototropism provides a very real and significant survival advantage by optimizing a plant's light capture for photosynthesis."},
+      {"text": "Plants grow toward light purely to look more visually appealing to humans", "isCorrect": false, "feedback": "This isn't the actual biological explanation -- phototropism serves a genuine survival function related to photosynthesis, not human aesthetic preference."},
+      {"text": "This response only benefits plants that don't perform photosynthesis at all", "isCorrect": false, "feedback": "This is backwards -- phototropism is specifically beneficial FOR plants that DO rely on photosynthesis, helping them access the light they need."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This growth response orients a plant's structures relative to an external light source.", "medium": "This is when a plant grows toward (or sometimes away from) a light source.", "easy": "This is when a plant grows toward a light source."},
+    "medium": {"hard": "Differential hormone concentration across the stem drives asymmetric cell elongation, causing directional curvature toward the light.", "medium": "A plant hormone builds up more on the darker side, making those cells grow longer and causing the stem to bend toward the light.", "easy": "A plant hormone builds up more on the shady side, making that side grow longer and bend the stem toward light."},
+    "hard": {"hard": "Optimizing light exposure directly enhances a plant's photosynthetic capacity, which is fundamentally tied to its energy production, growth, and overall reproductive success.", "medium": "Since plants need sunlight to make their own food, growing toward the light helps them get more energy to survive and grow.", "easy": "Since plants need sunlight to make food, growing toward light helps them get more energy to survive."}
+  }
+}
+]

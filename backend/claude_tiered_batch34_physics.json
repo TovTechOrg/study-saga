@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a Newton's cradle demonstrating conservation of momentum",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a Newton's cradle (the desk toy with swinging metal balls), when you lift and release one ball on the end, what typically happens?",
+    "options": [
+      {"text": "One ball pops out on the opposite end, while the middle balls stay nearly still", "isCorrect": true, "feedback": "Correct -- the momentum transfers through the middle balls in sequence, ultimately launching the ball on the far end."},
+      {"text": "All the balls fly off in random directions", "isCorrect": false, "feedback": "The balls move in a very specific, predictable pattern (momentum transfer through the line), not randomly."},
+      {"text": "Nothing happens at all -- the balls stay completely still", "isCorrect": false, "feedback": "The released ball's momentum is transferred through the chain, causing visible movement, specifically of the far-end ball."},
+      {"text": "The middle balls swing out the highest", "isCorrect": false, "feedback": "In an idealized Newton's cradle, the middle balls stay nearly stationary while the momentum passes through them to the far end."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What physical principle explains why exactly one ball (not two, at half speed) pops out when one ball strikes the row?",
+    "options": [
+      {"text": "Conservation of both momentum AND kinetic energy together are best satisfied by one ball leaving at the same speed as the striking ball, rather than other possible combinations", "isCorrect": true, "feedback": "Correct -- while multiple outcomes could conserve momentum alone, only the \"one ball out at full speed\" outcome also satisfies conservation of kinetic energy in this nearly elastic collision."},
+      {"text": "This has nothing to do with momentum or energy conservation", "isCorrect": false, "feedback": "This is actually a classic, well-studied demonstration specifically explained by simultaneous conservation of momentum and kinetic energy."},
+      {"text": "Two balls popping out at half speed would actually be the correct expected outcome", "isCorrect": false, "feedback": "While this WOULD conserve momentum alone, it would NOT conserve kinetic energy in the same way as the single full-speed ball outcome -- physics favors the option satisfying both conservation laws together."},
+      {"text": "The balls are magnetically attracted to stay in place", "isCorrect": false, "feedback": "Magnetism isn't the explanation here -- this is a mechanical momentum/energy transfer phenomenon, not a magnetic effect."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If you lift and release TWO balls together on one end of a Newton's cradle, what would you predict happens on the other end, based on conservation of momentum and energy?",
+    "options": [
+      {"text": "Two balls pop out together on the opposite end, at approximately the same speed as the two that were released", "isCorrect": true, "feedback": "Correct -- this outcome satisfies both conservation of momentum and conservation of kinetic energy, matching the pattern established with a single ball."},
+      {"text": "Four balls would pop out on the opposite end", "isCorrect": false, "feedback": "This wouldn't conserve momentum or energy correctly -- the number of balls leaving should match the number that struck the row, not double it."},
+      {"text": "Only one ball would pop out on the opposite end, moving at double speed", "isCorrect": false, "feedback": "This wouldn't correctly conserve momentum and kinetic energy together in the way that matching ball counts would."},
+      {"text": "No balls would move on the opposite end at all", "isCorrect": false, "feedback": "The momentum from the two released balls needs to go somewhere -- based on the physics, it transfers through to launch a matching pair on the other end."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "The transferred momentum passes efficiently through the stationary middle balls to the opposite end.", "medium": "The push from the released ball passes all the way through to the far end of the row.", "easy": "The push travels all the way through the row to the ball on the other end."},
+    "medium": {"hard": "Consider which specific outcome, among several that could conserve momentum alone, also independently satisfies conservation of kinetic energy.", "medium": "Momentum could be conserved a few different ways, but only one specific outcome also keeps the total kinetic energy the same.", "easy": "Only one specific outcome keeps both momentum AND energy the same as before, and that's one ball leaving at full speed."},
+    "hard": {"hard": "By analogy with the single-ball case, the outcome satisfying both conservation laws simultaneously involves an equal number of balls leaving the opposite end at matching speed.", "medium": "Just like with one ball, the same number of balls should pop out on the other side, moving at about the same speed as the ones released.", "easy": "Just like with one ball, the same number of balls should pop out on the other side at about the same speed."}
+  }
+}
+]

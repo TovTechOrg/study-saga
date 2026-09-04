@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between heat and temperature",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the key distinction between heat and temperature?",
+    "options": [
+      {"text": "Temperature measures the average kinetic energy of particles, while heat refers to the total energy transferred between objects", "isCorrect": true, "feedback": "Correct -- temperature is an intensive property (a measure of average particle motion), while heat is energy in transit between systems at different temperatures."},
+      {"text": "Heat and temperature are actually exactly the same thing, with no distinction", "isCorrect": false, "feedback": "These are genuinely distinct physical concepts -- temperature measures average particle kinetic energy, while heat specifically refers to energy TRANSFER between objects."},
+      {"text": "Temperature refers to energy transfer, while heat measures average particle motion", "isCorrect": false, "feedback": "This has the definitions reversed -- TEMPERATURE measures average particle kinetic energy, and HEAT refers to energy transfer between objects."},
+      {"text": "Heat can only be measured in solid objects, never in liquids or gases", "isCorrect": false, "feedback": "This isn't accurate -- heat transfer can occur between objects in ANY state of matter (solid, liquid, gas), not exclusively in solids."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A large pot of lukewarm water and a small cup of very hot tea might contain the same total amount of thermal energy (heat), yet have very different temperatures. How does this scenario illustrate the distinction between heat and temperature?",
+    "options": [
+      {"text": "Temperature depends on average kinetic energy PER PARTICLE, while total heat/thermal energy depends on both temperature AND the total amount of substance present, so a large quantity at lower temperature can contain similar total energy to a small quantity at higher temperature", "isCorrect": true, "feedback": "Correct -- this scenario vividly demonstrates that temperature (an intensive, per-particle average) and total heat energy (which also depends on quantity/mass) are genuinely distinct physical quantities that don't always correlate simply."},
+      {"text": "This scenario is actually impossible -- objects with different temperatures can never contain the same total heat energy", "isCorrect": false, "feedback": "This isn't accurate -- it's entirely possible for objects with different temperatures but different total quantities/masses to contain similar total heat energy, precisely because heat depends on BOTH temperature AND quantity of substance."},
+      {"text": "Temperature and total heat energy are actually always exactly proportional to each other in every scenario", "isCorrect": false, "feedback": "This isn't accurate -- while related, temperature and total heat energy aren't always simply proportional, since total heat also depends on the QUANTITY of substance present, not just its temperature."},
+      {"text": "The amount of substance present has no actual connection to how much total heat energy is contained within it", "isCorrect": false, "feedback": "This isn't accurate -- the AMOUNT of substance present is actually directly relevant to total heat energy content, alongside temperature -- this is precisely the key insight illustrated by this scenario."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If you drop the small cup of very hot tea into the large pot of lukewarm water (from the previous scenario), heat will flow from the tea into the surrounding water until they reach the same final temperature (thermal equilibrium), even though the tea initially had a much higher temperature. Why does heat flow specifically from hot to cold, rather than the reverse, even considering that the large volume of water might contain more total thermal energy?",
+    "options": [
+    {"text": "Heat flow direction is determined specifically by temperature DIFFERENCE (not by which object has more total thermal energy), always moving from higher to lower temperature regions until temperatures equalize, according to the second law of thermodynamics", "isCorrect": true, "feedback": "Correct -- this fundamental principle, that heat flows based on temperature GRADIENT rather than total energy content, is a foundational concept in thermodynamics, explaining countless everyday heat transfer phenomena."},
+      {"text": "Heat actually flows based on which object contains more TOTAL thermal energy, regardless of their relative temperatures", "isCorrect": false, "feedback": "This isn't accurate -- heat flow direction is specifically determined by TEMPERATURE DIFFERENCE (hot to cold), not by which object happens to contain more total thermal energy overall."},
+      {"text": "Heat would actually flow from the cooler water into the hotter tea in this scenario", "isCorrect": false, "feedback": "This is backwards -- heat always flows from HIGHER to LOWER temperature regions (hot to cold), meaning it would flow FROM the hot tea INTO the cooler water, not the reverse."},
+      {"text": "This heat flow direction has no actual connection to any established physical law or principle", "isCorrect": false, "feedback": "This isn't accurate -- this heat flow direction is DIRECTLY governed by and consistent with the second law of thermodynamics, a well-established fundamental physical principle."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One of these quantities represents an intensive, per-particle average kinetic energy measure, while the other represents an extensive quantity of transferred thermal energy.", "medium": "One of these measures average particle speed, and the other measures total energy moving between things.", "easy": "One measures how fast particles move on average, the other measures total energy moving."},
+    "medium": {"hard": "Consider how an intensive property (average per particle) differs from an extensive property (which scales with total quantity of substance) when comparing these two containers.", "medium": "A small amount can be super hot (high temperature) while a big amount is just warm (lower temperature), but the big amount might still hold just as much total energy because there's so much more of it.", "easy": "A small amount can be super hot while a big amount is just warm, but the big amount might still hold just as much total energy."},
+    "hard": {"hard": "Recall that thermodynamic heat flow direction is dictated specifically by relative temperature (a gradient-driven process), independent of the absolute total thermal energy content of either object.", "medium": "Heat always moves from whatever is hotter to whatever is colder, no matter which one actually has more total energy stored up overall.", "easy": "Heat always moves from hotter to colder, no matter which one has more total energy stored up."}
+  }
+}
+]

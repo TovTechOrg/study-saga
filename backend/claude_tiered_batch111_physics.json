@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between wave speed and wave frequency in different media",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "When a wave passes from one medium into a different medium (like light going from air into glass), which wave property typically stays the SAME (unchanged)?",
+    "options": [
+      {"text": "Frequency", "isCorrect": true, "feedback": "Correct -- a wave's frequency is determined by its SOURCE (how often it oscillates) and remains constant even when the wave enters a new medium, unlike its speed and wavelength."},
+      {"text": "Speed", "isCorrect": false, "feedback": "Wave SPEED typically DOES change when entering a different medium (that's precisely what causes refraction/bending) -- frequency, not speed, is the property that specifically stays the same."},
+      {"text": "Wavelength", "isCorrect": false, "feedback": "WAVELENGTH typically DOES change when a wave enters a different medium (since wavelength = speed/frequency, and speed changes while frequency stays constant) -- frequency, not wavelength, is what stays the same."},
+      {"text": "None of the wave's properties remain the same when changing media", "isCorrect": false, "feedback": "This isn't accurate -- FREQUENCY specifically DOES remain constant when a wave changes media, even though speed and wavelength typically do change."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Since a wave's frequency remains CONSTANT when entering a new medium, but its SPEED typically changes (usually slowing down when entering a denser medium), what must necessarily happen to its WAVELENGTH, based on the fundamental wave equation (v=fλ)?",
+    "options": [
+      {"text": "Wavelength must also change, specifically in the SAME direction as the speed change (decreasing if speed decreases, increasing if speed increases)", "isCorrect": true, "feedback": "Correct -- since v=fλ and frequency (f) stays constant, wavelength (λ) must change PROPORTIONALLY with speed (v) to maintain this fundamental mathematical relationship -- if speed decreases, wavelength must correspondingly decrease too (and vice versa)."},
+      {"text": "Wavelength would actually stay completely constant too, identical to frequency", "isCorrect": false, "feedback": "This isn't accurate -- while frequency stays constant, WAVELENGTH specifically DOES change (proportionally with speed) when a wave enters a new medium, according to the fundamental v=fλ relationship."},
+      {"text": "Wavelength would actually change in the OPPOSITE direction from the speed change", "isCorrect": false, "feedback": "This is backwards -- wavelength changes in the SAME direction as speed (both decrease together, or both increase together), not in opposite directions, based on the v=fλ relationship with constant frequency."},
+      {"text": "This scenario has no actual mathematical connection to the fundamental wave equation v=fλ", "isCorrect": false, "feedback": "This isn't accurate -- this scenario IS DIRECTLY and specifically governed BY and connected to the fundamental wave equation v=fλ, which is precisely what determines and explains how wavelength must change (proportionally with speed) when frequency remains constant."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Light slows down when entering glass from air (higher refractive index medium), causing its wavelength to correspondingly shorten (since frequency stays constant). Yet we perceive the COLOR of light (which is determined by FREQUENCY, not wavelength, in terms of the light's fundamental nature) as remaining the SAME both in air and after entering glass. Why does this observation make sense, given the specific wave properties involved?",
+    "options": [
+      {"text": "Since human color perception is fundamentally based on light's FREQUENCY (which remains constant across different media), rather than its WAVELENGTH (which DOES change between media), light continues to appear the SAME color to our eyes both in air and after entering glass, even though its wavelength has measurably changed -- this correctly explains why color, as we perceive it, is a media-independent characteristic tied to the media-independent, invariant frequency, not the media-dependent wavelength", "isCorrect": true, "feedback": "Correct -- this understanding (that color perception is specifically tied to the invariant frequency property, not the media-dependent wavelength property) correctly explains this seemingly subtle but scientifically important observation, and represents an important, sometimes overlooked distinction between these two related, but functionally different, wave properties in the specific context of color perception."},
+      {"text": "Light's wavelength would actually also remain completely unchanged when passing from air into glass, contrary to what's described", "isCorrect": false, "feedback": "This isn't accurate -- light's WAVELENGTH DOES measurably change (specifically shortening) when passing from air into a denser medium like glass, even though its FREQUENCY (and thus perceived color) remains constant."},
+      {"text": "Human color perception is actually based on light's WAVELENGTH, not its frequency, contrary to what's being described", "isCorrect": false, "feedback": "While wavelength IS often used as a convenient reference/description for color in a SPECIFIC medium (usually air/vacuum), the more FUNDAMENTALLY invariant property actually determining perceived color across different media is specifically FREQUENCY, not wavelength, which is precisely the more precise, technically correct point being made here."},
+      {"text": "This observation about consistent color perception has no actual connection to the specific distinction between frequency and wavelength as wave properties", "isCorrect": false, "feedback": "This isn't accurate -- this observation IS DIRECTLY and specifically connected to and is BEST EXPLAINED BY this exact distinction between the media-invariant frequency property and the media-dependent wavelength property."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This wave characteristic is intrinsically determined by the emitting source and remains invariant across differing propagation media.", "medium": "This wave property is set by whatever created the wave in the first place, and it doesn't change even when the wave enters a new material.", "easy": "This wave property is set by the source and doesn't change when entering a new material."},
+    "medium": {"hard": "Apply the fixed-frequency constraint to the wave equation to deduce that wavelength must adjust proportionally with any change in propagation speed.", "medium": "Since v=fλ and f can't change, if v goes down, λ has to go down too, to keep the equation balanced.", "easy": "Since v=fλ and frequency stays the same, if speed goes down, wavelength must go down too."},
+    "hard": {"hard": "Consider how attributing color perception to the medium-invariant frequency property, rather than the medium-dependent wavelength property, resolves the apparent inconsistency between changing wavelength and unchanging perceived color.", "medium": "Since your eyes are actually responding to frequency (which never changes, no matter what the light travels through), the color you see stays the same, even though the wavelength itself is technically different once light enters the glass.", "easy": "Since eyes respond to frequency (which never changes), color stays the same even though wavelength changes in glass."}
+  }
+}
+]

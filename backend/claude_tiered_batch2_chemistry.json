@@ -1,0 +1,249 @@
+[
+{
+  "topic": "metals vs. nonmetals properties",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which property is typical of metals?",
+    "options": [
+      {"text": "They conduct electricity well", "isCorrect": true, "feedback": "Correct -- metals are generally excellent conductors of electricity."},
+      {"text": "They are usually dull, not shiny", "isCorrect": false, "feedback": "Metals are typically shiny (lustrous), not dull."},
+      {"text": "They are brittle and shatter easily", "isCorrect": false, "feedback": "Metals are usually malleable and ductile, not brittle -- brittleness is more typical of nonmetals."},
+      {"text": "They are poor conductors of heat", "isCorrect": false, "feedback": "Metals are generally excellent conductors of heat, not poor ones."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Where are nonmetals generally located on the periodic table?",
+    "options": [
+      {"text": "Upper right side", "isCorrect": true, "feedback": "Correct -- nonmetals cluster in the upper right region of the periodic table."},
+      {"text": "Lower left side", "isCorrect": false, "feedback": "The lower left region contains the most reactive metals, not nonmetals."},
+      {"text": "Exact center only", "isCorrect": false, "feedback": "The center contains transition metals, not the main nonmetal cluster."},
+      {"text": "Bottom two rows only", "isCorrect": false, "feedback": "The bottom two rows contain the lanthanides and actinides, which are metals."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which TWO of the following are characteristic properties of nonmetals?",
+    "options": [
+      {"text": "Poor conductors of electricity", "isCorrect": true, "feedback": "Correct -- most nonmetals are poor electrical conductors."},
+      {"text": "Brittle in solid form", "isCorrect": true, "feedback": "Correct -- solid nonmetals tend to shatter rather than bend."},
+      {"text": "Highly malleable", "isCorrect": false, "feedback": "Malleability (bending into shapes without breaking) is a metal property, not typical of nonmetals."},
+      {"text": "Excellent heat conductors", "isCorrect": false, "feedback": "Good heat conduction is a metal property, not typical of nonmetals."},
+      {"text": "Lustrous (shiny) surface", "isCorrect": false, "feedback": "Luster is a metal property -- most nonmetals appear dull."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property relates to how easily electric charge flows through the material.", "medium": "Metals are generally very good at letting electric current flow through them.", "easy": "This is why metal wires are used to carry electricity."},
+    "medium": {"hard": "This region of the table is opposite from where the most reactive metals are found.", "medium": "This region is on the opposite side of the table from the alkali metals.", "easy": "Look toward the right-hand side, near the top of the periodic table."},
+    "hard": {"hard": "Two of these five properties describe poor electrical behavior and a tendency to break rather than bend -- both are the opposite of typical metal behavior.", "medium": "Two of these describe poor conductivity and easily-broken solids -- both are the opposite of metal properties.", "easy": "Two of these describe things nonmetals are bad at (conducting) or prone to (breaking)."}
+  }
+},
+{
+  "topic": "chemical formulas and subscripts",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the chemical formula H₂O, what does the subscript 2 tell you?",
+    "options": [
+      {"text": "There are 2 hydrogen atoms in the molecule", "isCorrect": true, "feedback": "Correct -- a subscript shows how many atoms of that element are in one molecule."},
+      {"text": "There are 2 molecules of water", "isCorrect": false, "feedback": "A number in front of the formula (a coefficient) would indicate multiple molecules, not a subscript."},
+      {"text": "The water has 2 grams of mass", "isCorrect": false, "feedback": "Subscripts describe atom counts within a molecule, not mass."},
+      {"text": "There are 2 oxygen atoms in the molecule", "isCorrect": false, "feedback": "The subscript 2 is written after H, applying to hydrogen, not oxygen."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How many total atoms are in one molecule of glucose, C₆H₁₂O₆?",
+    "options": [
+      {"text": "24", "isCorrect": true, "feedback": "Correct -- 6 carbon + 12 hydrogen + 6 oxygen = 24 total atoms."},
+      {"text": "18", "isCorrect": false, "feedback": "This doesn't add all three subscripts together correctly."},
+      {"text": "6", "isCorrect": false, "feedback": "This only counts one of the three elements present."},
+      {"text": "12", "isCorrect": false, "feedback": "This only counts the hydrogen atoms, ignoring carbon and oxygen."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In the formula 2H₂O, what is the total number of hydrogen atoms represented?",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- the coefficient 2 multiplies the entire molecule, so 2 × 2 hydrogen atoms = 4."},
+      {"text": "2", "isCorrect": false, "feedback": "This only counts the hydrogen in one molecule, ignoring the coefficient of 2."},
+      {"text": "6", "isCorrect": false, "feedback": "This doesn't correctly multiply the coefficient by the hydrogen subscript."},
+      {"text": "8", "isCorrect": false, "feedback": "This overcounts -- the coefficient only multiplies by 2 hydrogens per molecule, not 4."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This small number applies only to the element written directly before it.", "medium": "This number counts how many atoms of the element right before it are in the molecule.", "easy": "This number tells you how many hydrogen atoms are in the molecule."},
+    "medium": {"hard": "Add together each subscript from every distinct element shown in the formula.", "medium": "Add 6, 12, and 6 together.", "easy": "Add up all three of the subscript numbers in the formula."},
+    "hard": {"hard": "A coefficient in front of a formula multiplies every atom count inside that formula, so multiply the coefficient by the subscript for hydrogen.", "medium": "Multiply the number in front of the formula by the number of hydrogens shown inside it.", "easy": "Multiply 2 (the front number) by 2 (the hydrogen subscript)."}
+  }
+},
+{
+  "topic": "exothermic vs. endothermic reactions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A reaction that releases heat to its surroundings is called:",
+    "options": [
+      {"text": "Exothermic", "isCorrect": true, "feedback": "Correct -- exothermic reactions release energy, often felt as heat."},
+      {"text": "Endothermic", "isCorrect": false, "feedback": "Endothermic reactions absorb heat, the opposite of releasing it."},
+      {"text": "Isothermic", "isCorrect": false, "feedback": "This isn't a standard term for describing heat release or absorption in a reaction."},
+      {"text": "Neutral", "isCorrect": false, "feedback": "This doesn't describe a specific heat-related reaction type."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If you touch a container and it feels cold during a chemical reaction inside, what type of reaction is likely occurring?",
+    "options": [
+      {"text": "Endothermic", "isCorrect": true, "feedback": "Correct -- endothermic reactions absorb heat from their surroundings, making the container feel cold."},
+      {"text": "Exothermic", "isCorrect": false, "feedback": "Exothermic reactions release heat, which would make the container feel warm, not cold."},
+      {"text": "Combustion", "isCorrect": false, "feedback": "Combustion reactions release large amounts of heat, making things feel hot, not cold."},
+      {"text": "Catalytic", "isCorrect": false, "feedback": "This describes a reaction sped up by a catalyst, not one defined by heat absorption or release."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Photosynthesis absorbs energy from sunlight to build glucose from carbon dioxide and water. How is this reaction best classified?",
+    "options": [
+      {"text": "Endothermic, because it requires an input of energy to proceed", "isCorrect": true, "feedback": "Correct -- absorbing energy (from sunlight) to drive a reaction forward is the defining trait of an endothermic process."},
+      {"text": "Exothermic, because it produces oxygen gas", "isCorrect": false, "feedback": "Producing a gas doesn't determine whether a reaction is exothermic or endothermic -- energy flow does."},
+      {"text": "Exothermic, because it happens in living organisms", "isCorrect": false, "feedback": "Where a reaction occurs doesn't determine its energy classification -- the direction of energy flow does."},
+      {"text": "Neither, because plants don't involve chemical energy", "isCorrect": false, "feedback": "Photosynthesis is very much a chemical process involving energy transformation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of reaction sends energy outward into the environment around it.", "medium": "This is the type of reaction where energy leaves and enters the surroundings.", "easy": "This reaction gives off heat to its surroundings."},
+    "medium": {"hard": "A cold sensation means energy is being pulled INTO the reaction from its surroundings, not released from it.", "medium": "A reaction that pulls in heat from around it will make its surroundings feel cooler.", "easy": "If it feels cold, the reaction is pulling heat in rather than giving it off."},
+    "hard": {"hard": "The key question is which direction energy flows -- into the reaction (requiring input) or out of it (releasing output) -- regardless of what products form or where it happens.", "medium": "Since the reaction needs an outside energy source (sunlight) to happen at all, it's absorbing energy rather than releasing it.", "easy": "Since sunlight energy is needed to make this reaction happen, it's absorbing energy, not releasing it."}
+  }
+},
+{
+  "topic": "atoms vs. molecules",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the smallest unit of an element that still has the properties of that element?",
+    "options": [
+      {"text": "Atom", "isCorrect": true, "feedback": "Correct -- an atom is the basic building block of an element."},
+      {"text": "Molecule", "isCorrect": false, "feedback": "A molecule is made of two or more atoms bonded together, not the smallest single unit."},
+      {"text": "Cell", "isCorrect": false, "feedback": "A cell is a biological unit, unrelated to the smallest unit of a chemical element."},
+      {"text": "Compound", "isCorrect": false, "feedback": "A compound is made of different elements bonded together, larger than a single atom."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is a molecule?",
+    "options": [
+      {"text": "Two or more atoms bonded together", "isCorrect": true, "feedback": "Correct -- molecules form when atoms join through chemical bonds."},
+      {"text": "A single, unbonded atom", "isCorrect": false, "feedback": "A single atom alone isn't considered a molecule."},
+      {"text": "A mixture of unrelated substances", "isCorrect": false, "feedback": "A mixture involves substances that aren't chemically bonded, unlike a molecule."},
+      {"text": "The nucleus of an atom", "isCorrect": false, "feedback": "The nucleus is a component inside a single atom, not a combination of atoms."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following best describes an O₂ molecule versus a single O atom?",
+    "options": [
+      {"text": "O₂ is two oxygen atoms chemically bonded together, while a single O atom exists alone", "isCorrect": true, "feedback": "Correct -- O₂ is the stable diatomic form oxygen naturally exists as, made of two bonded atoms."},
+      {"text": "O₂ and a single O atom are exactly the same thing, just written differently", "isCorrect": false, "feedback": "They're chemically distinct -- one is a bonded pair, the other is a standalone atom."},
+      {"text": "O₂ has twice the number of protons as a single O atom", "isCorrect": false, "feedback": "O₂ has two separate oxygen atoms bonded together, not one atom with double the protons."},
+      {"text": "O₂ is a compound, while a single O atom is a mixture", "isCorrect": false, "feedback": "O₂ is a molecule of a single element (not a compound, which requires different elements), and a lone atom isn't a mixture."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the fundamental unit that keeps an element's identity, before any bonding occurs.", "medium": "This is the basic particle that makes up all matter, retaining the identity of its element.", "easy": "This is the tiny basic building block that makes up all elements."},
+    "medium": {"hard": "This structure forms specifically when individual atoms link together through shared or transferred electrons.", "medium": "This forms when two or more atoms join together through a chemical bond.", "easy": "This is what you get when atoms join together."},
+    "hard": {"hard": "Focus on the bonding relationship: O₂ represents two identical atoms joined by a covalent bond, distinct from either an isolated atom or a compound of different elements.", "medium": "O₂ is two oxygen atoms bonded together as the same element, not a different substance entirely.", "easy": "O₂ is just two oxygen atoms stuck together, while a lone O atom is by itself."}
+  }
+},
+{
+  "topic": "valence electrons and bonding",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What are valence electrons?",
+    "options": [
+      {"text": "The electrons in the outermost shell of an atom", "isCorrect": true, "feedback": "Correct -- valence electrons occupy the outermost energy level and determine bonding behavior."},
+      {"text": "The electrons closest to the nucleus", "isCorrect": false, "feedback": "Electrons closest to the nucleus are inner-shell electrons, not valence electrons."},
+      {"text": "All the protons in an atom", "isCorrect": false, "feedback": "Protons are a completely different particle, located in the nucleus, not valence electrons at all."},
+      {"text": "The neutrons that hold the nucleus together", "isCorrect": false, "feedback": "Neutrons are nuclear particles, unrelated to valence electrons."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do atoms tend to form bonds with other atoms?",
+    "options": [
+      {"text": "To achieve a more stable arrangement of valence electrons, often a full outer shell", "isCorrect": true, "feedback": "Correct -- atoms bond to reach a lower-energy, more stable electron configuration."},
+      {"text": "To increase the total number of protons they have", "isCorrect": false, "feedback": "Bonding doesn't change the number of protons in an atom -- that would change the element itself."},
+      {"text": "To become radioactive", "isCorrect": false, "feedback": "Radioactivity relates to unstable nuclei, not the general reason atoms form chemical bonds."},
+      {"text": "To lose all of their electrons entirely", "isCorrect": false, "feedback": "Atoms seek stability, which usually means gaining, losing, or sharing just a few electrons -- not losing all of them."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An atom has 7 valence electrons. Based on the octet rule, what is it most likely to do when bonding?",
+    "options": [
+      {"text": "Gain 1 electron to complete a stable set of 8", "isCorrect": true, "feedback": "Correct -- gaining just 1 electron is the shortest path to a full, stable outer shell of 8."},
+      {"text": "Lose 7 electrons to have none left", "isCorrect": false, "feedback": "Losing all 7 electrons is far less favorable than simply gaining 1 to complete the octet."},
+      {"text": "Gain 5 more electrons", "isCorrect": false, "feedback": "This overshoots the stable octet of 8 valence electrons."},
+      {"text": "Do nothing, since 7 is already a stable number", "isCorrect": false, "feedback": "7 valence electrons is not a stable configuration -- 8 is the stable target under the octet rule."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These are the electrons positioned in the shell furthest from the atom's center.", "medium": "These electrons sit in the outermost energy level of the atom.", "easy": "These are the electrons in the outside layer of an atom."},
+    "medium": {"hard": "Atoms bond in order to reach the lowest-energy, most stable configuration of electrons, typically a full outer shell.", "medium": "Bonding helps atoms fill up their outer electron shell to become more stable.", "easy": "Atoms bond to try to fill up their outer shell of electrons."},
+    "hard": {"hard": "Compare the effort of gaining 1 electron versus losing 7 -- the smaller change toward a full octet is always the energetically favorable path.", "medium": "It's much easier for the atom to gain just 1 electron than to lose all 7 to reach a stable configuration.", "easy": "Gaining just 1 more electron gets this atom to a stable total of 8 -- that's the easier path."}
+  }
+},
+{
+  "topic": "isotopes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What makes two atoms of the same element isotopes of each other?",
+    "options": [
+      {"text": "They have different numbers of neutrons", "isCorrect": true, "feedback": "Correct -- isotopes share the same number of protons but differ in neutron count."},
+      {"text": "They have different numbers of protons", "isCorrect": false, "feedback": "Different proton counts would make them different elements entirely, not isotopes."},
+      {"text": "They have different numbers of electrons only, with the same protons and neutrons", "isCorrect": false, "feedback": "That describes an ion, not an isotope."},
+      {"text": "They are found in different countries", "isCorrect": false, "feedback": "Geographic location has no bearing on what defines an isotope."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Carbon-12 and Carbon-14 are isotopes of carbon. What do the numbers 12 and 14 represent?",
+    "options": [
+      {"text": "The mass number (protons + neutrons)", "isCorrect": true, "feedback": "Correct -- the number after the element name is the total mass number."},
+      {"text": "The number of protons only", "isCorrect": false, "feedback": "Both isotopes have the same number of protons (6) -- the numbers reflect total mass, not proton count alone."},
+      {"text": "The number of electrons only", "isCorrect": false, "feedback": "Electron count isn't what distinguishes these two isotopes -- neutron count is."},
+      {"text": "The atomic charge", "isCorrect": false, "feedback": "These numbers describe mass, not electrical charge."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Carbon-14 has 6 protons and a mass number of 14. How many neutrons does it have?",
+    "options": [
+      {"text": "8", "isCorrect": true, "feedback": "Correct -- mass number minus protons: 14-6=8 neutrons."},
+      {"text": "6", "isCorrect": false, "feedback": "This assumes protons and neutrons are always equal, which isn't true for this isotope."},
+      {"text": "14", "isCorrect": false, "feedback": "This uses the mass number directly instead of subtracting the proton count."},
+      {"text": "20", "isCorrect": false, "feedback": "This adds protons and mass number instead of subtracting."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This particle's count in the nucleus can vary between isotopes without changing the identity of the element.", "medium": "This is the particle in the nucleus that has no electric charge, and its count can vary between isotopes.", "easy": "The number of these neutral particles in the nucleus differs between isotopes."},
+    "medium": {"hard": "This number combines two types of nuclear particles into a single total.", "medium": "This number adds together the protons and neutrons in the nucleus.", "easy": "This number is the total count of protons and neutrons combined."},
+    "hard": {"hard": "Subtract the atomic number (proton count) from the mass number to isolate the neutron count.", "medium": "Subtract the number of protons from the mass number to find the neutrons.", "easy": "Subtract 6 from 14 to find the number of neutrons."}
+  }
+}
+]

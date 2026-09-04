@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of Newton's third law of motion (action-reaction pairs)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to Newton's third law, what happens when one object exerts a force on another object?",
+    "options": [
+      {"text": "The second object exerts an equal and opposite force back on the first object", "isCorrect": true, "feedback": "Correct -- forces always come in equal, opposite pairs acting on two different objects (action-reaction pairs)."},
+      {"text": "The second object exerts a smaller force back on the first object", "isCorrect": false, "feedback": "According to Newton's third law, the reaction force is equal in magnitude, not smaller, to the action force."},
+      {"text": "The second object doesn't exert any force back at all", "isCorrect": false, "feedback": "Newton's third law specifically states there IS always a reaction force -- it isn't absent."},
+      {"text": "The two forces act in the exact same direction", "isCorrect": false, "feedback": "Action-reaction force pairs act in OPPOSITE directions, not the same direction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When you jump off the ground, your legs push down on the Earth, and the Earth pushes back up on you with an equal and opposite force. Why don't you notice the Earth moving in response, even though the reaction force should be equal?",
+    "options": [
+      {"text": "Because the Earth's enormous mass compared to yours means the same force produces a vastly smaller (practically unnoticeable) acceleration on the Earth", "isCorrect": true, "feedback": "Correct -- while the forces are indeed equal in magnitude, the resulting acceleration (F=ma, so a=F/m) depends heavily on mass, and the Earth's mass is astronomically larger than yours."},
+      {"text": "The Earth actually doesn't experience any reaction force in this scenario", "isCorrect": false, "feedback": "According to Newton's third law, the Earth DOES experience an equal and opposite reaction force -- it's just that this force produces an imperceptibly tiny acceleration given the Earth's enormous mass."},
+      {"text": "Newton's third law doesn't actually apply to interactions with very large objects like the Earth", "isCorrect": false, "feedback": "Newton's third law applies universally to all force interactions, regardless of the size or mass of the objects involved."},
+      {"text": "The force you exert on the Earth is actually much smaller than the force it exerts on you", "isCorrect": false, "feedback": "The forces are exactly equal in magnitude per Newton's third law -- what differs dramatically is the resulting acceleration, due to the vast difference in mass."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A rocket in the vacuum of space expels exhaust gas backward to propel itself forward, with no air or ground to push against. How does Newton's third law explain this, given there's nothing external to push off of?",
+    "options": [
+      {"text": "The rocket pushes the exhaust gas backward, and by Newton's third law, the gas pushes the rocket forward with an equal and opposite force -- the interacting pair is the rocket and its own expelled gas, not any external medium", "isCorrect": true, "feedback": "Correct -- rocket propulsion doesn't require pushing against external air or ground; the action-reaction pair exists between the rocket and its own ejected propellant mass."},
+      {"text": "Rockets actually need to push against air molecules to move forward, so they can't function in a true vacuum", "isCorrect": false, "feedback": "This is a common misconception -- rockets work perfectly well in a vacuum, since the reaction force comes from expelling their own propellant, not from pushing against surrounding air."},
+      {"text": "Newton's third law doesn't apply in a vacuum, since there's no external medium involved", "isCorrect": false, "feedback": "Newton's third law applies regardless of the surrounding medium -- the key insight is that the interacting pair here is the rocket and its expelled exhaust gas, not an external medium."},
+      {"text": "The rocket moves forward due to gravity, unrelated to Newton's third law at all", "isCorrect": false, "feedback": "Gravity is a separate force -- the rocket's forward THRUST specifically comes from the action-reaction pair between the rocket and its expelled exhaust gas, as described by Newton's third law."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This principle dictates that force interactions between two bodies are always mutual and symmetric in magnitude, though opposite in direction.", "medium": "This is the idea that forces always come in pairs -- pushing on something means it pushes back on you equally.", "easy": "This is the idea that if you push on something, it pushes back on you equally."},
+    "medium": {"hard": "Apply Newton's second law (a = F/m) to both interacting objects, considering how vastly different masses affect the resulting accelerations despite equal forces.", "medium": "The forces are equal, but since the Earth is so much heavier than you, that same force barely moves it at all.", "easy": "The forces are equal, but since the Earth is so much heavier than you, it barely moves at all."},
+    "hard": {"hard": "Identify the actual pair of interacting objects in this scenario, recognizing that Newton's third law doesn't require an external medium to push against.", "medium": "The rocket pushes its own exhaust gas backward, and that gas pushes the rocket forward -- no outside air or ground needed.", "easy": "The rocket pushes its own exhaust gas backward, and the gas pushes the rocket forward in return."}
+  }
+}
+]

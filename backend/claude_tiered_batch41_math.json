@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of standard deviation as a measure of spread",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does standard deviation measure about a data set?",
+    "options": [
+      {"text": "How spread out the data values are from the mean (average)", "isCorrect": true, "feedback": "Correct -- a larger standard deviation means data points are more spread out from the mean; a smaller one means they're clustered closer together."},
+      {"text": "The exact middle value of the data set", "isCorrect": false, "feedback": "That describes the median, a different statistical measure from standard deviation."},
+      {"text": "The most frequently occurring value in the data set", "isCorrect": false, "feedback": "That describes the mode, a different statistical measure from standard deviation."},
+      {"text": "The total sum of all values in the data set", "isCorrect": false, "feedback": "The sum is a different quantity entirely -- standard deviation is about how spread out the data is, not its total."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two classes take the same test, both with an average score of 80. Class A has a standard deviation of 2, while Class B has a standard deviation of 15. What does this tell you?",
+    "options": [
+      {"text": "Class A's scores are much more tightly clustered around 80, while Class B's scores are much more spread out (more variability)", "isCorrect": true, "feedback": "Correct -- a smaller standard deviation (Class A) indicates less variability/more consistency, while a larger one (Class B) indicates greater spread among scores."},
+      {"text": "Class B's scores are more tightly clustered around 80 than Class A's", "isCorrect": false, "feedback": "This is backwards -- a LARGER standard deviation (Class B's 15) indicates MORE spread, not tighter clustering, compared to Class A's smaller value."},
+      {"text": "Both classes have identical score distributions, since their averages match", "isCorrect": false, "feedback": "Having the same average doesn't mean identical distributions -- the very different standard deviations show these two classes have very different spreads of scores."},
+      {"text": "Standard deviation doesn't provide any additional information beyond the average", "isCorrect": false, "feedback": "Standard deviation provides crucial additional information about spread/variability that the average alone cannot show, as demonstrated by this exact scenario."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A weather station reports an average daily temperature of 70°F with a standard deviation of 3°F for City A, and an average of 70°F with a standard deviation of 20°F for City B. If you were packing for a week-long trip and could only check the average temperature, why would this be misleading for City B?",
+    "options": [
+      {"text": "Because City B's high standard deviation means daily temperatures could vary widely around 70°F, so the average alone doesn't reliably predict what any single day's actual weather will be", "isCorrect": true, "feedback": "Correct -- a high standard deviation means individual data points (daily temperatures) can deviate substantially from the average, making the average a much less reliable single predictor for City B than for City A."},
+      {"text": "The average temperature calculation itself would be mathematically incorrect for City B", "isCorrect": false, "feedback": "The average calculation itself isn't wrong -- the issue is that a high standard deviation means that average is a much less reliable predictor of any individual day's actual temperature."},
+      {"text": "Both cities would have identical weather patterns throughout the week, since the averages match", "isCorrect": false, "feedback": "Despite matching averages, the very different standard deviations mean these two cities would likely show quite different day-to-day patterns, with City B being far less consistent."},
+      {"text": "Standard deviation has no practical relevance to interpreting real-world data like weather", "isCorrect": false, "feedback": "This is a very practical, real-world example of why standard deviation matters -- it directly affects how reliable an average is at predicting individual outcomes."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This statistic quantifies the typical deviation of individual data points from the data set's central average.", "medium": "This tells you how far, on average, the data points tend to be from the mean.", "easy": "This tells you how spread out the numbers are from the average."},
+    "medium": {"hard": "Compare the relative magnitude of each standard deviation to infer how tightly or loosely each class's scores cluster around the shared mean.", "medium": "A smaller standard deviation number means scores are packed closer together; a bigger number means more spread out.", "easy": "A smaller number (2) means scores are close together; a bigger number (15) means scores are spread out."},
+    "hard": {"hard": "Consider how a large standard deviation undermines the reliability of the mean as a predictor for any single individual data point (in this case, a specific day's temperature).", "medium": "Since City B's temperatures vary a lot day to day, just knowing the average of 70 doesn't tell you much about any one specific day.", "easy": "Since City B's temperatures vary a lot, the average alone doesn't tell you much about any single day."}
+  }
+}
+]

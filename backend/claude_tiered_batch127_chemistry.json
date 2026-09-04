@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between oxidation and reduction in redox reactions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a redox reaction, 'oxidation' refers to a substance:",
+    "options": [
+      {"text": "Losing electrons", "isCorrect": true, "feedback": "Correct -- oxidation is specifically defined as the loss of electrons by a substance, often remembered by the mnemonic 'OIL RIG' (Oxidation Is Loss)."},
+      {"text": "Gaining electrons", "isCorrect": false, "feedback": "That describes REDUCTION, not oxidation -- oxidation specifically involves LOSING electrons, the opposite of reduction's electron gain."},
+      {"text": "Gaining protons in its nucleus", "isCorrect": false, "feedback": "This isn't accurate -- oxidation concerns ELECTRON transfer, not changes to the nucleus (which would be a nuclear reaction, an entirely different process)."},
+      {"text": "Undergoing no change in its chemical composition at all", "isCorrect": false, "feedback": "This isn't accurate -- oxidation specifically involves a real chemical change (electron loss, often changing oxidation state), not an absence of change."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Oxidation and reduction always occur TOGETHER in the same reaction (hence the term 'redox,' short for reduction-oxidation) -- one substance can never be oxidized without another being simultaneously reduced. Why is this pairing a fundamental requirement rather than a coincidence?",
+    "options": [
+      {"text": "Since electrons cannot simply disappear or be created from nothing, any electrons LOST by the substance being oxidized must be transferred directly to and GAINED by some other substance, which is by definition undergoing reduction -- this conservation of electrons is precisely why oxidation and reduction are inherently linked, occurring simultaneously as two halves of the same overall electron-transfer process", "isCorrect": true, "feedback": "Correct -- this explanation of electron conservation (electrons lost by one substance must be gained by another) correctly explains why oxidation and reduction are fundamentally, necessarily paired processes, not independent or coincidental occurrences."},
+      {"text": "Oxidation and reduction would actually be capable of occurring completely independently of each other, without requiring simultaneous pairing", "isCorrect": false, "feedback": "This isn't accurate -- oxidation and reduction specifically CANNOT occur independently; they are fundamentally paired, since electrons lost by one substance must be gained by another."},
+      {"text": "This pairing between oxidation and reduction has no actual connection to the conservation of electrons during the reaction", "isCorrect": false, "feedback": "This isn't accurate -- this pairing IS DIRECTLY and fundamentally connected to and explained by electron conservation during the reaction."},
+      {"text": "Electrons can actually be created or destroyed during a chemical reaction, which is why oxidation and reduction don't need to pair together", "isCorrect": false, "feedback": "This isn't accurate -- electrons cannot be created or destroyed in a chemical reaction, which is precisely WHY oxidation and reduction must occur together as paired processes."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In a redox reaction, the substance that gets oxidized (losing electrons) is called the 'reducing agent,' since it causes the OTHER substance to be reduced by supplying it electrons. Explain why this naming convention (naming a substance after the effect it has on the OTHER substance, rather than after what happens to itself) makes logical sense.",
+    "options": [
+      {"text": "The terms 'oxidizing agent' and 'reducing agent' specifically describe each substance's FUNCTIONAL ROLE in causing a change in its reaction partner, rather than describing the change happening to the substance itself -- the reducing agent's defining role is that it CAUSES reduction in the other substance (by donating electrons to it), even though the reducing agent itself is simultaneously being oxidized in the process", "isCorrect": true, "feedback": "Correct -- this explanation of the agent-naming convention as describing causal, functional roles (rather than self-referential change) correctly clarifies why a substance being oxidized is nonetheless called the 'reducing agent,' a naming distinction that often causes initial confusion for students."},
+      {"text": "The reducing agent and oxidizing agent naming convention actually has no logical basis and is simply an arbitrary historical naming choice", "isCorrect": false, "feedback": "This isn't accurate -- this naming convention DOES have a clear, logical basis, specifically describing each substance's causal, functional role in affecting its reaction partner."},
+      {"text": "The reducing agent is actually the substance that itself undergoes reduction, not the substance that gets oxidized", "isCorrect": false, "feedback": "This isn't accurate -- the reducing agent is specifically the substance that itself gets OXIDIZED (while causing reduction in the other substance), a common point of confusion worth clarifying."},
+      {"text": "This naming convention has no actual connection to describing how one substance causally affects the chemical state of the other substance", "isCorrect": false, "feedback": "This isn't accurate -- this naming convention IS DIRECTLY connected to and specifically describes each substance's causal effect on the other substance in the reaction."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This half-reaction process is characterized by the net departure of electrons from the reacting chemical species.", "medium": "This is when a substance gives away electrons during a reaction.", "easy": "This is when a substance gives away electrons during a reaction."},
+    "medium": {"hard": "Consider how the principle of electron conservation necessitates that any electron loss from one reactant be exactly matched by electron gain in another, linking the two processes inseparably.", "medium": "Electrons can't just vanish into thin air, so whatever one substance loses, some other substance has to be the one picking it up at the exact same time.", "easy": "Electrons can't vanish, so whatever one substance loses, another substance has to pick up at the same time."},
+    "hard": {"hard": "Consider how agent-naming reflects the causal role a substance plays in transforming its reaction partner, independent of the chemical transformation the agent itself simultaneously undergoes.", "medium": "The substance getting called the 'reducing agent' is named for what it DOES to the other guy (helps it gain electrons), not for what's happening to itself (which is actually getting oxidized).", "easy": "The 'reducing agent' is named for what it does to the other substance, not for what happens to itself."}
+  }
+}
+]

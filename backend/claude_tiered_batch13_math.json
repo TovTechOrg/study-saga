@@ -1,0 +1,207 @@
+[
+{
+  "topic": "solving proportions with cross-multiplication",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: x/4 = 6/8",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- cross-multiplying gives 8x=24, so x=3."},
+      {"text": "12", "isCorrect": false, "feedback": "This doesn't match correctly cross-multiplying and solving for x."},
+      {"text": "2", "isCorrect": false, "feedback": "This doesn't match correctly dividing 24 by 8."},
+      {"text": "48", "isCorrect": false, "feedback": "This is the cross-product before dividing, not the final value of x."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: 3/5 = x/20",
+    "options": [
+      {"text": "12", "isCorrect": true, "feedback": "Correct -- cross-multiplying gives 5x=60, so x=12."},
+      {"text": "60", "isCorrect": false, "feedback": "This is the cross-product before dividing, not the final value of x."},
+      {"text": "15", "isCorrect": false, "feedback": "This doesn't match correctly solving 5x=60."},
+      {"text": "6.67", "isCorrect": false, "feedback": "This doesn't match correctly cross-multiplying before dividing."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: (2x+1)/3 = 5/1",
+    "options": [
+      {"text": "7", "isCorrect": true, "feedback": "Correct -- cross-multiplying gives 2x+1=15, so 2x=14, x=7."},
+      {"text": "8", "isCorrect": false, "feedback": "This doesn't match correctly solving 2x+1=15."},
+      {"text": "15", "isCorrect": false, "feedback": "This is the cross-product result before isolating x."},
+      {"text": "6", "isCorrect": false, "feedback": "This doesn't match correctly solving the equation after cross-multiplying."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply diagonally across the equals sign, then solve the resulting equation.", "medium": "Multiply x by 8 and 4 by 6, then solve.", "easy": "Multiply x by 8, and 4 by 6, then divide to find x."},
+    "medium": {"hard": "Multiply diagonally across the equals sign, then solve the resulting equation.", "medium": "Multiply 3 by 20 and 5 by x, then solve.", "easy": "Multiply 3 by 20 to get 60, then divide by 5."},
+    "hard": {"hard": "Multiply diagonally across the equals sign, then solve the resulting linear equation step by step.", "medium": "Multiply (2x+1) by 1 and 3 by 5, then solve the equation.", "easy": "Cross-multiply to get 2x+1=15, then solve for x."}
+  }
+},
+{
+  "topic": "identifying independent and dependent variables",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the equation y = 2x, which variable is the independent variable?",
+    "options": [
+      {"text": "x", "isCorrect": true, "feedback": "Correct -- x is chosen freely, and y depends on the value of x."},
+      {"text": "y", "isCorrect": false, "feedback": "y is the dependent variable here, since its value depends on x."},
+      {"text": "2", "isCorrect": false, "feedback": "2 is just a constant coefficient, not a variable at all."},
+      {"text": "Neither x nor y is a variable", "isCorrect": false, "feedback": "Both x and y are indeed variables in this equation -- one is independent, one is dependent."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A scientist studies how plant growth (measured in cm) changes based on the amount of sunlight given (measured in hours). Which is the dependent variable?",
+    "options": [
+      {"text": "Plant growth", "isCorrect": true, "feedback": "Correct -- plant growth is what's being measured as a RESULT of the sunlight amount, making it dependent."},
+      {"text": "Amount of sunlight", "isCorrect": false, "feedback": "Sunlight amount is being deliberately controlled/varied by the scientist, making it the independent variable, not dependent."},
+      {"text": "The scientist's notebook", "isCorrect": false, "feedback": "The notebook is just a recording tool, not a variable being measured in the experiment."},
+      {"text": "Neither is dependent", "isCorrect": false, "feedback": "One of these two must be dependent -- specifically the outcome being measured, which is plant growth."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A researcher wants to test if the amount of fertilizer affects crop yield, while controlling factors like water and sunlight to be identical for all test plots. In this experiment, what role does 'water amount' play?",
+    "options": [
+      {"text": "It is a controlled variable, deliberately kept constant so it doesn't interfere with testing the fertilizer's effect", "isCorrect": true, "feedback": "Correct -- controlled variables are held constant to isolate the effect of the actual independent variable being tested (fertilizer amount)."},
+      {"text": "It is the independent variable being tested", "isCorrect": false, "feedback": "The independent variable being deliberately varied here is fertilizer amount, not water -- water is intentionally kept the same across all groups."},
+      {"text": "It is the dependent variable being measured", "isCorrect": false, "feedback": "The dependent variable (the outcome being measured) is crop yield, not water amount."},
+      {"text": "It has no role in this experiment at all", "isCorrect": false, "feedback": "Water amount still plays an important role -- specifically as a controlled variable, ensuring a fair comparison focused on fertilizer's effect."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This variable is freely chosen and doesn't rely on the other variable's value.", "medium": "This variable is the one you choose or change on purpose.", "easy": "This is the variable you pick or control, not the one that responds."},
+    "medium": {"hard": "This variable's value changes as a direct RESULT of manipulating the other variable.", "medium": "This is the outcome being measured, which changes because of the other factor.", "easy": "This is the thing being measured as a result, not the thing being changed on purpose."},
+    "hard": {"hard": "This type of variable is deliberately held constant across all experimental groups so it cannot confound or influence the specific relationship being tested.", "medium": "Since this factor is kept the same for every group, it's meant to prevent it from interfering with what's actually being tested.", "easy": "Since this factor is kept exactly the same for everyone, it's there to make the test fair, not to be tested itself."}
+  }
+},
+{
+  "topic": "finding the volume of a cylinder",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the formula for the volume of a cylinder?",
+    "options": [
+      {"text": "πr²h", "isCorrect": true, "feedback": "Correct -- volume equals the area of the circular base (πr²) times the height."},
+      {"text": "2πrh", "isCorrect": false, "feedback": "This is closer to a formula related to surface area, not volume."},
+      {"text": "πr²", "isCorrect": false, "feedback": "This is just the area of the circular base, missing the height factor needed for volume."},
+      {"text": "2πr", "isCorrect": false, "feedback": "This is the circumference formula, not related to a cylinder's volume."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the volume of a cylinder with a radius of 3 and a height of 10? (use π ≈ 3.14)",
+    "options": [
+      {"text": "282.6", "isCorrect": true, "feedback": "Correct -- 3.14×3²×10=3.14×9×10=282.6."},
+      {"text": "94.2", "isCorrect": false, "feedback": "This forgets to multiply by the height of 10."},
+      {"text": "188.4", "isCorrect": false, "feedback": "This doesn't match correctly squaring the radius before multiplying by height."},
+      {"text": "94,200", "isCorrect": false, "feedback": "This overstates the correct volume significantly."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A cylindrical water tank has a volume of 942 cubic units and a height of 12 units. What is its approximate radius? (use π ≈ 3.14)",
+    "options": [
+      {"text": "5 units", "isCorrect": true, "feedback": "Correct -- dividing 942 by (3.14×12)=37.68 gives about 25, and the square root of 25 is 5."},
+      {"text": "25 units", "isCorrect": false, "feedback": "This is the value of the radius SQUARED, not the radius itself -- one more step (square root) is needed."},
+      {"text": "78.5 units", "isCorrect": false, "feedback": "This doesn't correctly divide by both pi and the height before taking the square root."},
+      {"text": "12 units", "isCorrect": false, "feedback": "This just repeats the height value rather than solving for the radius."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This formula multiplies the area of the circular base by how tall the shape is.", "medium": "Square the radius, multiply by pi, then multiply by the height.", "easy": "Multiply pi, the radius squared, and the height together."},
+    "medium": {"hard": "Square the radius, multiply by pi, then multiply by the height.", "medium": "Square 3 to get 9, multiply by 3.14, then multiply by 10.", "easy": "Multiply 3.14 by 9 by 10."},
+    "hard": {"hard": "Divide the volume by pi times the height to isolate the radius squared, then take the square root.", "medium": "Divide 942 by the product of 3.14 and 12, then find the square root of that result.", "easy": "Divide 942 by 37.68 to get 25, then find the square root of 25."}
+  }
+},
+{
+  "topic": "writing equations from word problems (two-step)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A number, doubled and then increased by 3, equals 11. Which equation represents this?",
+    "options": [
+      {"text": "2x + 3 = 11", "isCorrect": true, "feedback": "Correct -- doubling the number (2x) then adding 3 gives 11."},
+      {"text": "x + 3 = 11", "isCorrect": false, "feedback": "This forgets to represent \"doubled\" as multiplying by 2."},
+      {"text": "2x - 3 = 11", "isCorrect": false, "feedback": "This uses subtraction instead of the correct addition described in the problem."},
+      {"text": "2(x+3) = 11", "isCorrect": false, "feedback": "This incorrectly adds 3 before doubling, rather than doubling first and then adding 3."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Jamie has $15 more than twice what Alex has. If Jamie has $55, which equation finds how much Alex has (x)?",
+    "options": [
+      {"text": "2x + 15 = 55", "isCorrect": true, "feedback": "Correct -- twice Alex's amount plus $15 equals Jamie's $55."},
+      {"text": "x + 15 = 55", "isCorrect": false, "feedback": "This forgets to represent \"twice what Alex has\" as multiplying by 2."},
+      {"text": "2x - 15 = 55", "isCorrect": false, "feedback": "This uses subtraction instead of the correct addition described in the problem."},
+      {"text": "15x + 2 = 55", "isCorrect": false, "feedback": "This swaps the roles of the coefficient and the constant term."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A rectangle's length is 5 more than 3 times its width. If the perimeter is 58, which equation could you set up to find the width (w), using P=2(length+width)?",
+    "options": [
+      {"text": "2((3w+5)+w) = 58", "isCorrect": true, "feedback": "Correct -- this represents the length as (3w+5) and plugs both length and width into the perimeter formula."},
+      {"text": "(3w+5) + w = 58", "isCorrect": false, "feedback": "This forgets to multiply by 2, which the perimeter formula requires."},
+      {"text": "3w+5 = 58", "isCorrect": false, "feedback": "This only sets the length expression equal to the perimeter, ignoring the width and the full perimeter formula."},
+      {"text": "2(w+w) = 58", "isCorrect": false, "feedback": "This incorrectly treats both sides as equal to the width, ignoring the actual length expression entirely."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Translate each phrase into its corresponding mathematical operation, in the order described.", "medium": "\"Doubled\" means multiply by 2; \"increased by 3\" means add 3 afterward.", "easy": "Multiply the number by 2, then add 3."},
+    "medium": {"hard": "Translate each phrase into its corresponding mathematical operation, in the order described.", "medium": "\"Twice what Alex has\" means 2 times x; \"$15 more\" means add 15.", "easy": "Multiply Alex's amount by 2, then add 15."},
+    "hard": {"hard": "Substitute the length expression (in terms of w) and the width directly into the standard perimeter formula, then set it equal to the given perimeter.", "medium": "Write the length as (3w+5), then plug both length and width into the perimeter formula 2(length+width).", "easy": "Replace \"length\" with (3w+5) and \"width\" with w in the perimeter formula, then set it equal to 58."}
+  }
+},
+{
+  "topic": "converting between different units of weight/mass",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "How many grams are in 1 kilogram?",
+    "options": [
+      {"text": "1,000", "isCorrect": true, "feedback": "Correct -- there are 1,000 grams in every kilogram."},
+      {"text": "100", "isCorrect": false, "feedback": "100 grams would only be a tenth of a kilogram."},
+      {"text": "10", "isCorrect": false, "feedback": "10 grams is far too small to equal a full kilogram."},
+      {"text": "10,000", "isCorrect": false, "feedback": "This overstates the correct conversion by a factor of 10."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How many kilograms are in 4,500 grams?",
+    "options": [
+      {"text": "4.5", "isCorrect": true, "feedback": "Correct -- dividing by 1,000 (since 1,000g=1kg) gives 4,500÷1,000=4.5."},
+      {"text": "45", "isCorrect": false, "feedback": "This is off by a factor of 10 from the correct conversion."},
+      {"text": "450", "isCorrect": false, "feedback": "This is off by a factor of 100 from the correct conversion."},
+      {"text": "4,500,000", "isCorrect": false, "feedback": "This multiplies instead of dividing by 1,000."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A recipe requires 0.75 kg of flour. If a bag contains 250 grams of flour, how many bags are needed?",
+    "options": [
+      {"text": "3 bags", "isCorrect": true, "feedback": "Correct -- 0.75 kg=750 grams, and 750÷250=3."},
+      {"text": "2 bags", "isCorrect": false, "feedback": "This doesn't correctly convert kg to grams before dividing by the bag size."},
+      {"text": "30 bags", "isCorrect": false, "feedback": "This overstates the number of bags needed by a factor of 10."},
+      {"text": "1 bag", "isCorrect": false, "feedback": "This underestimates how much flour is actually needed."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This metric prefix indicates a multiplication factor of one thousand relative to the base unit.", "medium": "There are 1,000 of this smaller unit in each kilogram.", "easy": "There are 1,000 grams in every kilogram."},
+    "medium": {"hard": "Divide by 1,000 to convert from the smaller metric unit to the larger one.", "medium": "Divide 4,500 by 1,000 to convert grams to kilograms.", "easy": "Divide 4,500 by 1,000."},
+    "hard": {"hard": "Convert all quantities to the same unit first, then divide the total needed by the amount per bag.", "medium": "Convert 0.75 kg into grams first, then divide by 250 to find the number of bags.", "easy": "Multiply 0.75 by 1,000 to get 750 grams, then divide by 250."}
+  }
+}
+]

@@ -1,0 +1,212 @@
+[
+{
+  "topic": "tropism",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is it called when a plant grows toward a light source?",
+    "options": [
+      {"text": "Tropism", "isCorrect": true, "feedback": "Correct -- specifically, growth toward light is called phototropism, a type of tropism."},
+      {"text": "Photosynthesis", "isCorrect": false, "feedback": "Photosynthesis is about making food from sunlight, not the growth response toward light."},
+      {"text": "Respiration", "isCorrect": false, "feedback": "Respiration is about releasing energy from food -- unrelated to directional growth."},
+      {"text": "Fermentation", "isCorrect": false, "feedback": "Fermentation is an energy-releasing process without oxygen, not a growth response to light."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What actually causes a plant stem to bend toward a light source?",
+    "options": [
+      {"text": "Uneven cell growth, with cells on the shaded side elongating faster", "isCorrect": true, "feedback": "Correct -- a growth hormone accumulates more on the shaded side, causing those cells to stretch more and bend the stem toward the light."},
+      {"text": "The plant physically moves its stem like a muscle", "isCorrect": false, "feedback": "Plants have no muscle tissue -- the bending comes from differential growth rates, not muscular movement."},
+      {"text": "Water pressure pushes the stem in the direction of light", "isCorrect": false, "feedback": "Water pressure (turgor) affects rigidity generally, but it's uneven growth, not water pressure alone, that causes the directional bending."},
+      {"text": "The leaves rotate independently while the stem stays still", "isCorrect": false, "feedback": "It's actually the stem itself that bends due to uneven growth -- this isn't just the leaves reorienting."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the term for the process by which plants adjust their growth to optimize their exposure to sunlight?",
+    "options": [
+      {"text": "Tropism", "isCorrect": true, "feedback": "Correct -- and this specific type, growth in response to light, is called phototropism, driven by an uneven distribution of the growth hormone auxin."},
+      {"text": "Photosynthesis", "isCorrect": false, "feedback": "Photosynthesis is the chemical process of converting light into sugar -- it's the reason plants need light, but not the term for adjusting growth direction toward it."},
+      {"text": "Transpiration", "isCorrect": false, "feedback": "Transpiration is water vapor loss through leaves -- unrelated to directional growth responses."},
+      {"text": "Respiration", "isCorrect": false, "feedback": "Respiration is the energy-releasing breakdown of glucose -- it has nothing to do with growth direction."},
+      {"text": "Fermentation", "isCorrect": false, "feedback": "Fermentation is an anaerobic energy-release pathway -- entirely unrelated to how a plant orients its growth."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This general term for directional plant growth has a light-specific version driven by uneven hormone distribution.", "medium": "This is the general term for a plant's growth response to a directional stimulus like light.", "easy": "This is the word for a plant growing in the direction of light."},
+    "medium": {"hard": "The mechanism involves a hormone concentrating more heavily on one side of the stem, causing asymmetric cell elongation rather than any active movement.", "medium": "One side of the stem grows faster than the other because of where a growth hormone builds up, causing the bend.", "easy": "The side of the stem away from the light grows faster than the side facing it, which makes the whole stem bend toward the light."},
+    "hard": {"hard": "This is the umbrella term for directional growth responses generally, of which light-driven growth is one specific type, distinct from the chemical energy-capturing process, water-loss process, or either energy-releasing pathway (aerobic or anaerobic).", "medium": "This is the general term for growth-based responses to a directional stimulus, distinct from the chemical process of capturing light energy itself.", "easy": "This is the general term for a plant adjusting its GROWTH direction -- not the process of making food from light, which is a separate thing."}
+  }
+},
+{
+  "topic": "light-dependent reactions products",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the light-capturing stage of photosynthesis produce, to be used in the next stage?",
+    "options": [
+      {"text": "ATP and NADPH", "isCorrect": true, "feedback": "Correct -- these energy carriers get passed to the next stage of photosynthesis."},
+      {"text": "Glucose and oxygen", "isCorrect": false, "feedback": "Glucose is actually the final product of the LATER stage -- oxygen is a byproduct here, but glucose isn't made yet at this point."},
+      {"text": "Water and carbon dioxide", "isCorrect": false, "feedback": "These are actually raw materials USED by photosynthesis, not products of this particular stage."},
+      {"text": "Amino acids and proteins", "isCorrect": false, "feedback": "Amino acids and proteins aren't products of photosynthesis at all -- they come from entirely separate biological processes."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why are the products of the light-dependent reactions necessary for photosynthesis to continue?",
+    "options": [
+      {"text": "They supply the energy and electrons needed to build glucose in the next stage", "isCorrect": true, "feedback": "Correct -- these energy carriers power the sugar-building reactions that follow."},
+      {"text": "They directly form the plant's cell wall", "isCorrect": false, "feedback": "Cell wall material is built from separate carbohydrates -- not from these particular energy-carrying molecules."},
+      {"text": "They are released into the air as the plant's main waste product", "isCorrect": false, "feedback": "It's oxygen, a separate byproduct of this stage, that gets released into the air -- these two molecules are consumed internally instead."},
+      {"text": "They break down glucose into simpler molecules", "isCorrect": false, "feedback": "That breakdown describes cellular respiration, essentially the reverse process -- these molecules are used to BUILD glucose, not break it down."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a product of the light-dependent reactions in photosynthesis?",
+    "options": [
+      {"text": "ATP and NADPH", "isCorrect": true, "feedback": "Correct -- these carry the captured energy and electrons forward into the Calvin cycle, where they're used to fix carbon into sugar."},
+      {"text": "Glucose and oxygen", "isCorrect": false, "feedback": "Oxygen genuinely is released here as a byproduct of splitting water, but glucose isn't formed until the separate Calvin cycle stage that follows."},
+      {"text": "Water and carbon dioxide", "isCorrect": false, "feedback": "Water is actually consumed (split apart) during this stage, and carbon dioxide is a raw material for the later stage -- neither is a product here."},
+      {"text": "Chlorophyll and starch", "isCorrect": false, "feedback": "Chlorophyll is the pigment doing the capturing, not a product of the reaction, and starch is a longer-term storage molecule built later from glucose."},
+      {"text": "Amino acids and proteins", "isCorrect": false, "feedback": "These are built from entirely separate metabolic pathways using nitrogen, unrelated to the photosynthetic light reactions."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These two energy-carrying molecules ferry captured energy and electrons onward, but neither is the final sugar product.", "medium": "These two molecules carry the captured light energy forward to the next stage, where sugar actually gets built.", "easy": "These two molecules carry energy from the light-capturing stage over to the sugar-building stage."},
+    "medium": {"hard": "The link is functional: without these two energy/electron carriers arriving from this stage, the Calvin cycle would have no power source to fix carbon into sugar.", "medium": "The next stage of photosynthesis needs these two molecules as its energy source to actually build sugar.", "easy": "Without these two molecules, the plant wouldn't have the energy needed to build sugar in the next step."},
+    "hard": {"hard": "The key distinction is timing: water is consumed and oxygen released here as a byproduct, but the actual sugar-building (and thus glucose as a product) doesn't happen until the separate carbon-fixation stage that follows and consumes these two energy carriers.", "medium": "Don't confuse this stage's actual products with the raw materials it consumes (water) or the sugar product made only in the later stage.", "easy": "This stage doesn't make sugar yet -- it makes two energy-carrying molecules that get used to build sugar in the next step."}
+  }
+},
+{
+  "topic": "adaptation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is it called when an organism develops a trait that helps it survive in its environment?",
+    "options": [
+      {"text": "Adaptation", "isCorrect": true, "feedback": "Correct -- an adaptation is a trait that improves survival or reproduction in a given environment."},
+      {"text": "Evolution", "isCorrect": false, "feedback": "Evolution is the broader change in a whole population over many generations -- an adaptation is one specific helpful trait within that process."},
+      {"text": "Genetic drift", "isCorrect": false, "feedback": "Genetic drift is random, chance-driven change in a population, not a trait specifically selected for helping survival."},
+      {"text": "Mutation", "isCorrect": false, "feedback": "A mutation is a random change in DNA -- it might become an adaptation if helpful, but a mutation on its own isn't automatically one."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How is an 'adaptation' different from a random 'mutation'?",
+    "options": [
+      {"text": "An adaptation is a trait that has proven helpful for survival or reproduction, while a mutation is simply any random genetic change", "isCorrect": true, "feedback": "Correct -- every adaptation starts as some kind of genetic variation, but only helpful variations that spread through a population become adaptations."},
+      {"text": "They are simply two different words for the exact same thing", "isCorrect": false, "feedback": "They're related but distinct -- a mutation is a raw genetic change, while adaptation specifically refers to a trait that's helpful and has become established."},
+      {"text": "A mutation only happens in animals, while adaptation only happens in plants", "isCorrect": false, "feedback": "Both mutation and adaptation apply broadly across all types of living organisms -- this isn't a plant-versus-animal distinction."},
+      {"text": "An adaptation happens within one organism's lifetime, while a mutation takes generations", "isCorrect": false, "feedback": "This has it backwards -- a mutation is a single, immediate genetic event, while an adaptation becoming widespread typically takes many generations."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the term for the process by which an organism becomes better suited to its environment through genetic changes?",
+    "options": [
+      {"text": "Adaptation", "isCorrect": true, "feedback": "Correct -- and this is the OUTCOME/trait itself, distinct from natural selection, which is the MECHANISM that spreads it through a population."},
+      {"text": "Evolution", "isCorrect": false, "feedback": "Evolution is the broader, population-level change in genetic makeup over generations -- adaptation refers more specifically to the resulting beneficial trait itself."},
+      {"text": "Natural selection", "isCorrect": false, "feedback": "Natural selection is the specific MECHANISM (differential survival and reproduction) that causes helpful traits to become common -- adaptation is the trait that results from it."},
+      {"text": "Genetic drift", "isCorrect": false, "feedback": "Genetic drift describes random changes in trait frequency unrelated to whether the trait is actually helpful -- the opposite of a trait becoming common because it aids survival."},
+      {"text": "Mutation", "isCorrect": false, "feedback": "A mutation is the raw, random source of genetic variation -- only a small fraction of mutations turn out to be beneficial adaptations."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term describes a heritable trait that specifically improves an organism's chances of surviving and reproducing.", "medium": "This is the word for a trait an organism has that helps it survive better in its specific environment.", "easy": "This is a helpful trait a living thing has that suits its environment, like a polar bear's white fur."},
+    "medium": {"hard": "The distinguishing factor is proven usefulness and eventual prevalence in a population, versus the raw, undirected genetic change that might or might not turn out to be useful.", "medium": "One term describes ANY random genetic change; the other describes specifically a change that turned out to help and became common.", "easy": "A random genetic change might or might not be useful -- this term is specifically for the ones that turn out to help survival."},
+    "hard": {"hard": "This term names the resulting beneficial trait itself, distinct from the broader population-level change over time (evolution), the specific mechanism spreading it (natural selection), random shifts unrelated to usefulness (genetic drift), and the raw genetic source material it originates from (mutation).", "medium": "This term is the trait/outcome itself, distinct from the mechanism that spreads it (natural selection) and the broader population-level change over time (evolution).", "easy": "This is the resulting helpful trait itself -- a related but different word describes the process that spreads it through a population."}
+  }
+},
+{
+  "topic": "fermentation is not a stage of cellular respiration",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of these happens WITHOUT oxygen, unlike the main stages of cellular respiration?",
+    "options": [
+      {"text": "Fermentation", "isCorrect": true, "feedback": "Correct -- fermentation is an alternative pathway used when oxygen isn't available."},
+      {"text": "Glycolysis", "isCorrect": false, "feedback": "Glycolysis is actually the first true stage of cellular respiration, and it happens whether or not oxygen is present."},
+      {"text": "Krebs cycle", "isCorrect": false, "feedback": "The Krebs cycle is a core stage of cellular respiration that requires oxygen to be available overall."},
+      {"text": "Electron transport chain", "isCorrect": false, "feedback": "This stage directly requires oxygen as the final electron acceptor -- it's a genuine stage of aerobic respiration."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why is fermentation considered a separate pathway from cellular respiration rather than one of its stages?",
+    "options": [
+      {"text": "It's a backup pathway that regenerates a needed molecule without using oxygen, bypassing respiration's later stages entirely", "isCorrect": true, "feedback": "Correct -- fermentation lets glycolysis keep running when oxygen is scarce, but it doesn't continue into the oxygen-dependent stages."},
+      {"text": "It produces far more ATP than any respiration stage", "isCorrect": false, "feedback": "The opposite is true -- fermentation produces much LESS ATP than the full aerobic respiration pathway, which is precisely why it's a backup, not an upgrade."},
+      {"text": "It only happens in plant cells, never in animal cells", "isCorrect": false, "feedback": "Fermentation happens in both -- for example, human muscle cells use a form of it during intense exercise when oxygen runs low."},
+      {"text": "It occurs in a completely different organelle from respiration", "isCorrect": false, "feedback": "Fermentation actually happens in the cytoplasm, the same location as glycolysis -- location isn't what separates it from being a 'stage.'"}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is NOT a stage of cellular respiration?",
+    "options": [
+      {"text": "Fermentation", "isCorrect": true, "feedback": "Correct -- fermentation is a separate anaerobic pathway that regenerates a molecule needed for glycolysis to continue, rather than a stage within aerobic respiration itself."},
+      {"text": "Glycolysis", "isCorrect": false, "feedback": "Glycolysis genuinely is the first stage of cellular respiration, occurring in the cytoplasm before the remaining stages proceed."},
+      {"text": "Pyruvate oxidation", "isCorrect": false, "feedback": "This is a real bridging stage, converting the product of glycolysis into a form usable by the Krebs cycle."},
+      {"text": "Krebs cycle", "isCorrect": false, "feedback": "This is a genuine core stage, generating electron carriers that feed into the final stage."},
+      {"text": "Electron transport chain", "isCorrect": false, "feedback": "This is the final genuine stage, where the bulk of ATP is actually produced using oxygen as the final electron acceptor."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process is an alternate pathway that kicks in specifically when oxygen is unavailable, rather than a sequential step within the oxygen-using pathway.", "medium": "This is the process that takes over when oxygen runs low, instead of the normal oxygen-based stages continuing.", "easy": "This is the one option that happens when there's NO oxygen available, unlike the real stages of respiration."},
+    "medium": {"hard": "Four of these are sequential steps within one continuous aerobic pathway; the fifth is a separate backup pathway that only regenerates one specific molecule so glycolysis can keep functioning without oxygen.", "medium": "Four options are genuine sequential steps of the same aerobic pathway -- one is a separate backup process for when oxygen is missing.", "easy": "Four of these happen in order as part of one process that needs oxygen -- one of them is a different backup process for when there's no oxygen."},
+    "hard": {"hard": "Four of the five options are genuine sequential stages of the aerobic pathway (cytoplasm-based first stage, a bridging step, a cycle generating electron carriers, and a final oxygen-dependent stage) -- the fifth is a distinct anaerobic pathway that merely regenerates a cofactor to keep the very first stage running, without proceeding through any of the later ones.", "medium": "Four of these are ordered stages of one continuous aerobic process -- the fifth is a separate anaerobic shortcut that doesn't lead into the later stages at all.", "easy": "Four of these are real steps, in order, of the process that needs oxygen -- one is a totally separate shortcut process used when oxygen is missing."}
+  }
+},
+{
+  "topic": "male reproductive system components",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is part of the male reproductive system?",
+    "options": [
+      {"text": "Testes", "isCorrect": true, "feedback": "Correct -- the testes are a core part of the male reproductive system."},
+      {"text": "Ovaries", "isCorrect": false, "feedback": "Ovaries belong to the female reproductive system, producing eggs, not sperm."},
+      {"text": "Uterus", "isCorrect": false, "feedback": "The uterus is where pregnancy develops -- part of the female reproductive system."},
+      {"text": "Fallopian tube", "isCorrect": false, "feedback": "The fallopian tube carries an egg toward the uterus -- another female reproductive structure."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_multiple",
+    "text": "Which TWO of the following structures help transport and mature sperm after it's produced?",
+    "options": [
+      {"text": "Vas deferens", "isCorrect": true, "feedback": "Right -- this duct carries mature sperm toward ejaculation."},
+      {"text": "Epididymis", "isCorrect": true, "feedback": "Right -- sperm mature and are stored here after leaving the testes."},
+      {"text": "Ovaries", "isCorrect": false, "feedback": "Ovaries are part of the female reproductive system -- they don't transport sperm."},
+      {"text": "Uterus", "isCorrect": false, "feedback": "The uterus is where an embryo develops during pregnancy, part of the female system, not involved in sperm transport."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "What are the main components of the human reproductive system in males?",
+    "options": [
+      {"text": "Testes", "isCorrect": true, "feedback": "Correct -- the primary organ producing both sperm and testosterone."},
+      {"text": "Ovaries", "isCorrect": false, "feedback": "Ovaries are the female counterpart, producing eggs -- not part of the male system."},
+      {"text": "Vas deferens", "isCorrect": true, "feedback": "Correct -- the duct transporting mature sperm from the epididymis toward ejaculation."},
+      {"text": "Uterus", "isCorrect": false, "feedback": "The uterus is exclusively part of the female reproductive system, where pregnancy develops."},
+      {"text": "Epididymis", "isCorrect": true, "feedback": "Correct -- the coiled structure where sperm complete maturation and are stored after leaving the testes."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the primary organ that produces both sperm cells and the main male sex hormone.", "medium": "This organ is where sperm is actually made in the male body.", "easy": "This is the organ that produces sperm in males."},
+    "medium": {"hard": "Both correct answers are downstream of production -- one is a maturation/storage site, the other is the transport duct leading from it, distinct from any female reproductive structure.", "medium": "One structure is where sperm matures and waits, the other is the tube that carries it onward -- both come after the sperm is first made.", "easy": "Pick the structure where sperm matures and waits, and the tube that carries it onward from there."},
+    "hard": {"hard": "Three of these five are genuine male reproductive structures spanning production (an organ making both sperm and hormone), maturation/storage (a coiled structure), and transport (a connecting duct) -- the other two are exclusively female reproductive organs.", "medium": "Three of these belong to the male reproductive system, covering production, storage/maturation, and transport -- the other two are female-only structures.", "easy": "Three of these five are part of the male reproductive system -- the other two are female reproductive organs instead."}
+  }
+}
+]

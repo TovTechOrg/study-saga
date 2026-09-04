@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the surface area of 3D solids",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'surface area' measure for a 3D solid?",
+    "options": [
+      {"text": "The total area covering all of the solid's outer surfaces combined", "isCorrect": true, "feedback": "Correct -- surface area sums up the area of every face (or curved surface) on the outside of the 3D shape."},
+      {"text": "The total space enclosed within the solid", "isCorrect": false, "feedback": "That describes VOLUME, not surface area -- surface area specifically measures the outer covering, not the enclosed space."},
+      {"text": "The distance around the base of the solid", "isCorrect": false, "feedback": "That describes perimeter/circumference of the base, a 2D measurement, not the total surface area of the entire 3D solid."},
+      {"text": "The weight of the solid object", "isCorrect": false, "feedback": "Weight is an unrelated physical property -- surface area specifically measures the total exterior area, not mass or weight."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A rectangular box has dimensions 4 cm × 3 cm × 2 cm. Using the formula SA = 2(lw + lh + wh), what is its total surface area?",
+    "options": [
+      {"text": "52 cm²", "isCorrect": true, "feedback": "Correct -- SA = 2(4×3 + 4×2 + 3×2) = 2(12+8+6) = 2(26) = 52 cm²."},
+      {"text": "26 cm²", "isCorrect": false, "feedback": "This is the value inside the parentheses before doubling -- the formula requires multiplying that sum by 2 for all 6 faces."},
+      {"text": "24 cm²", "isCorrect": false, "feedback": "This is actually the VOLUME (4×3×2=24), not the surface area, which requires a different calculation."},
+      {"text": "9 cm²", "isCorrect": false, "feedback": "This doesn't correctly result from applying the surface area formula to these dimensions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A cylindrical can has a radius of 3 cm and a height of 10 cm. Using SA = 2πr² + 2πrh (with π ≈ 3.14), what is its approximate total surface area?",
+    "options": [
+      {"text": "244.92 cm²", "isCorrect": true, "feedback": "Correct -- SA = 2(3.14)(3²) + 2(3.14)(3)(10) = 2(3.14)(9) + 2(3.14)(30) = 56.52 + 188.4 = 244.92 cm²."},
+      {"text": "188.4 cm²", "isCorrect": false, "feedback": "This only calculates the lateral (side) surface area (2πrh), missing the two circular end caps (2πr²)."},
+      {"text": "56.52 cm²", "isCorrect": false, "feedback": "This only calculates the area of the two circular end caps (2πr²), missing the lateral (side) surface area."},
+      {"text": "94.2 cm²", "isCorrect": false, "feedback": "This doesn't correctly combine both the end caps and lateral surface calculations."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measurement quantifies the cumulative extent of the exterior boundary enclosing a three-dimensional object.", "medium": "This adds up the area of every outer face of the shape.", "easy": "This adds up the area of every outer face of the shape."},
+    "medium": {"hard": "Calculate each pairwise face-area product, sum them, then double the total to account for both matching faces of each pair.", "medium": "Find each of the three different face areas (length×width, length×height, width×height), add them, then double the total.", "easy": "Multiply 4×3, 4×2, and 3×2, add them together (26), then double it (52)."},
+    "hard": {"hard": "Compute the two circular end-cap areas and the rectangular lateral surface area separately using the given formula components, then sum both results.", "medium": "Calculate the area of the two circle ends (2πr²) and the area of the curved side (2πrh) separately, then add them together.", "easy": "Calculate 2×3.14×9=56.52 for the ends, and 2×3.14×3×10=188.4 for the side, then add them."}
+  }
+}
+]

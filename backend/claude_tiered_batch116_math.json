@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between an event's probability and its odds",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If the PROBABILITY of an event is 1/4 (25%), the ODDS of that event (odds in favor) are expressed as:",
+    "options": [
+      {"text": "1 to 3 (favorable outcomes to unfavorable outcomes)", "isCorrect": true, "feedback": "Correct -- odds compare favorable outcomes to unfavorable outcomes directly (1 favorable for every 3 unfavorable), unlike probability, which compares favorable outcomes to TOTAL outcomes."},
+      {"text": "1 to 4, identical to how the probability is expressed", "isCorrect": false, "feedback": "This isn't accurate -- odds and probability are calculated DIFFERENTLY -- probability compares favorable to TOTAL outcomes (1/4), while odds compare favorable to UNFAVORABLE outcomes (1 to 3), not the same ratio."},
+      {"text": "4 to 1", "isCorrect": false, "feedback": "This has the ratio reversed and uses the wrong total -- correctly calculated odds in favor should be 1 to 3 (favorable to unfavorable), not 4 to 1."},
+      {"text": "There is actually no way to convert probability into odds", "isCorrect": false, "feedback": "This isn't accurate -- there IS a specific, well-defined mathematical conversion between probability and odds, which is precisely what's being calculated here."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do probability and odds use DIFFERENT denominators (total outcomes for probability, vs. unfavorable outcomes for odds), even though both describe the same underlying likelihood of an event?",
+    "options": [
+      {"text": "Probability is specifically designed to express a value between 0 and 1 (or 0% to 100%) by comparing favorable outcomes to the ENTIRE set of possible outcomes, while odds instead compare favorable outcomes DIRECTLY against unfavorable outcomes, without needing to reference the total -- both are valid, complete ways of describing the same underlying likelihood, just using different specific reference points/ratios", "isCorrect": true, "feedback": "Correct -- this recognition that probability and odds represent two different but mathematically related conventions for describing the same underlying likelihood (each with its own useful properties and common contexts of use, like odds being traditional in gambling) helps clarify why both exist and how to correctly convert between them."},
+      {"text": "Probability and odds are actually just two completely different names for the exact same numerical value and calculation", "isCorrect": false, "feedback": "This isn't accurate -- these are GENUINELY DIFFERENT numerical values/ratios (though mathematically related and convertible), not simply two names for an identical calculation."},
+      {"text": "This difference in denominators has no actual mathematical basis or justification", "isCorrect": false, "feedback": "This isn't accurate -- this difference DOES have a clear, valid mathematical basis, reflecting two different but related conventions for expressing the same underlying likelihood."},
+      {"text": "Odds would actually use the total number of outcomes as their denominator, identical to probability", "isCorrect": false, "feedback": "This isn't accurate -- odds specifically use UNFAVORABLE outcomes (not total outcomes) as their comparison basis, which is precisely what distinguishes them from probability's total-outcomes-based calculation."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Given odds of 'A to B' in favor of an event, the corresponding probability can be calculated as A/(A+B). Explain why adding A and B together (rather than using either value alone) correctly recovers the TOTAL number of possible outcomes needed for the probability calculation.",
+    "options": [
+      {"text": "Since odds specifically compare FAVORABLE outcomes (A) to UNFAVORABLE outcomes (B), and every possible outcome must be EITHER favorable OR unfavorable (with no other possibilities), adding A and B together necessarily recovers the COMPLETE TOTAL number of possible outcomes, which is exactly the denominator needed to correctly calculate the corresponding probability value", "isCorrect": true, "feedback": "Correct -- this logical reasoning (favorable plus unfavorable must equal the complete total, since these two categories exhaustively cover all possibilities) correctly justifies the conversion formula from odds to probability, demonstrating the underlying mathematical relationship connecting these two related but distinct ways of expressing likelihood."},
+      {"text": "This conversion formula (A/(A+B)) is actually just an arbitrary mathematical convention with no real logical justification", "isCorrect": false, "feedback": "This isn't accurate -- this formula has a clear, LOGICAL justification (favorable plus unfavorable equals the total), not simply an arbitrary, unexplained convention."},
+      {"text": "Adding A and B together would actually NOT correctly recover the total number of possible outcomes in this scenario", "isCorrect": false, "feedback": "This isn't accurate -- adding A (favorable) and B (unfavorable) together DOES correctly recover the total, precisely because every outcome must fall into exactly one of these two exhaustive, non-overlapping categories."},
+      {"text": "This conversion formula has no actual connection to the fundamental definitions of favorable and unfavorable outcomes in odds calculations", "isCorrect": false, "feedback": "This isn't accurate -- this formula IS DIRECTLY and specifically connected to and DERIVED FROM these exact fundamental definitions of favorable and unfavorable outcomes."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This ratio directly contrasts favorable outcome count against unfavorable outcome count, rather than against the aggregate outcome total.", "medium": "Odds compare the number of ways something CAN happen to the number of ways it CAN'T, not to the total.", "easy": "Odds compare ways something can happen to ways it can't, not to the total."},
+    "medium": {"hard": "Consider how probability's reference frame (favorable over total) differs from odds' reference frame (favorable over unfavorable), despite both quantifying the identical underlying likelihood.", "medium": "Probability and odds are just two different ways of describing the same chance, using different numbers on the bottom of the fraction.", "easy": "Probability and odds describe the same chance using different numbers on the bottom of the fraction."},
+    "hard": {"hard": "Consider how the mutually exclusive and exhaustive partition of all outcomes into favorable and unfavorable categories guarantees their sum reconstitutes the full outcome space.", "medium": "Every single possible outcome has to be either a 'win' or a 'loss' -- there's no third option -- so adding wins and losses together always gives you everything there is.", "easy": "Every outcome is either a win or a loss, so adding wins and losses together gives you everything."}
+  }
+}
+]

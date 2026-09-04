@@ -1,0 +1,1517 @@
+[
+  {
+    "topic": "quantum computing basics",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a key difference between a classical computer bit and a quantum computer's 'qubit'?",
+      "options": [
+        {
+          "text": "A classical bit is always either 0 or 1, while a qubit can exist in a combination ('superposition') of both states at once",
+          "isCorrect": true,
+          "feedback": "Correct -- this ability to exist in superposition is one of the defining features that distinguishes qubits from classical bits."
+        },
+        {
+          "text": "A qubit is simply a classical bit that runs at a much faster clock speed",
+          "isCorrect": false,
+          "feedback": "The difference isn't about speed -- a qubit can exist in a superposition of both 0 and 1 at once, a fundamentally different kind of state than a classical bit has, regardless of clock speed."
+        },
+        {
+          "text": "A qubit is simply a larger physical version of a classical bit, storing the same kind of information",
+          "isCorrect": false,
+          "feedback": "A qubit isn't just a scaled-up classical bit -- it relies on fundamentally different quantum mechanical properties, like superposition, not just physical size."
+        },
+        {
+          "text": "A classical bit and a qubit are simply two different names for the exact identical concept",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different underlying concepts -- a qubit's ability to exist in superposition is a fundamentally different property from a classical bit's strict 0-or-1 state."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is quantum computing generally considered potentially well suited to certain specific kinds of problems, rather than being expected to broadly replace classical computers for all everyday tasks?",
+      "options": [
+        {
+          "text": "Quantum computing's potential advantages are believed to apply mainly to particular kinds of problems (like certain simulations or specific mathematical problems) where its unique properties offer a meaningful benefit, while classical computers remain well suited or even more suitable for most everyday tasks",
+          "isCorrect": true,
+          "feedback": "Correct -- current understanding suggests quantum computing is likely to complement classical computing for particular specialized problems, rather than serving as a general-purpose replacement for everyday computing tasks."
+        },
+        {
+          "text": "Because quantum computers can solve every kind of problem faster than classical computers, across the board",
+          "isCorrect": false,
+          "feedback": "Quantum computers aren't a blanket speedup for everything -- their believed advantages apply mainly to specific kinds of problems, while classical computers remain just as good or better for most everyday tasks."
+        },
+        {
+          "text": "Because quantum computing has been proven to be strictly worse than classical computing at absolutely everything",
+          "isCorrect": false,
+          "feedback": "Quantum computing is believed to offer genuine advantages for CERTAIN SPECIFIC kinds of problems -- it hasn't been shown to be strictly worse at everything; the nuance is about its suitability being problem-specific rather than universal."
+        },
+        {
+          "text": "Because quantum computers require a complete rewrite of all existing software before they can run anything at all",
+          "isCorrect": false,
+          "feedback": "Quantum computers do need specialized programming approaches for certain algorithms, but the real reason isn't about existing software -- it's that their advantages only show up for particular kinds of problems."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What does 'quantum entanglement' generally refer to, in the context of quantum computing?",
+      "options": [
+        {
+          "text": "A phenomenon where the states of two or more qubits become correlated in such a way that the state of one qubit is directly linked to the state of another, even when considered separately",
+          "isCorrect": true,
+          "feedback": "Correct -- entanglement is one of the distinctive quantum mechanical properties that quantum computing seeks to leverage, alongside superposition, for certain kinds of computation."
+        },
+        {
+          "text": "A malfunction where a qubit's state randomly resets to zero without warning",
+          "isCorrect": false,
+          "feedback": "That describes a kind of error or decoherence, not entanglement -- entanglement specifically refers to a correlation linking the states of two or more qubits together."
+        },
+        {
+          "text": "A phenomenon where simply adding more qubits automatically makes every calculation less accurate",
+          "isCorrect": false,
+          "feedback": "Adding qubits does introduce real engineering challenges around noise, but that's not what 'entanglement' refers to -- entanglement is about qubit states becoming correlated with each other."
+        },
+        {
+          "text": "A technique used to physically cool a quantum computer down to near absolute-zero temperatures",
+          "isCorrect": false,
+          "feedback": "Cooling is a separate, real engineering requirement for many quantum computers, but it isn't what entanglement refers to -- entanglement is specifically about correlated qubit states."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "One of these can only ever sit at 0 or 1; the other can hold a blend of both at the same time, which is the core distinction between them.",
+        "medium": "One of these is locked into being strictly one value or the other, while the other can blend both values together at once.",
+        "hard": "Think about a value that can be strictly one of two options, versus something that can exist as a blend of both options at once."
+      },
+      "medium": {
+        "easy": "It shines on a narrow set of specialized problems, but for ordinary everyday computing tasks, a regular classical computer still does just fine.",
+        "medium": "These believed advantages are thought to kick in only for certain specialized categories of problems, with ordinary classical machines still handling most everyday work just fine.",
+        "hard": "Think about a specialized tool that's expected to shine for certain specific jobs, rather than replacing every general-purpose tool out there."
+      },
+      "hard": {
+        "easy": "This is the phenomenon where measuring one of two linked qubits instantly tells you something about the other, no matter how far apart they are.",
+        "medium": "This phenomenon ties two or more qubits' states together so tightly that learning one instantly tells you something about the others.",
+        "hard": "Think about two coins that always land showing opposite faces no matter how far apart you flip them -- some hidden link ties their outcomes together."
+      }
+    }
+  },
+  {
+    "topic": "NP-completeness and computational complexity classes",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In computational complexity theory, what does the complexity class 'P' generally represent?",
+      "options": [
+        {
+          "text": "The set of problems that can be solved by an algorithm in polynomial time, meaning the time required grows in a manageable way as the input size grows",
+          "isCorrect": true,
+          "feedback": "Correct -- problems in P are generally considered efficiently solvable, since their required running time doesn't explode unmanageably as the input grows larger."
+        },
+        {
+          "text": "The set of problems for which a proposed solution can be checked in polynomial time, even if actually finding that solution might take far longer",
+          "isCorrect": false,
+          "feedback": "That description actually defines the complexity class NP, not P -- P specifically requires the SOLUTION itself to be found in polynomial time, not just verified."
+        },
+        {
+          "text": "The set of problems that require an exponential amount of time to solve, no matter which algorithm is used",
+          "isCorrect": false,
+          "feedback": "That's closer to describing problems believed to be intractable -- P is the opposite: it's the set of problems that CAN be solved efficiently, in polynomial time."
+        },
+        {
+          "text": "The set of problems that can be solved using only a small, fixed amount of memory, regardless of how much time the computation takes",
+          "isCorrect": false,
+          "feedback": "That describes a class defined by limited memory usage, not P -- P is defined by the algorithm's running TIME growing polynomially with input size, not by memory constraints."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What does it generally mean for a problem to belong to the complexity class 'NP'?",
+      "options": [
+        {
+          "text": "A proposed solution to the problem can be verified as correct in polynomial time, even if actually finding that solution might take much longer",
+          "isCorrect": true,
+          "feedback": "Correct -- NP is defined based on the efficiency of VERIFYING a given proposed solution, not necessarily the efficiency of finding one in the first place."
+        },
+        {
+          "text": "A solution to the problem can be found in polynomial time, though verifying whether it's correct might take much longer",
+          "isCorrect": false,
+          "feedback": "That has it backwards -- NP is defined by how quickly a proposed solution can be VERIFIED, not by how quickly one can be found in the first place."
+        },
+        {
+          "text": "A proposed solution to the problem can only ever be verified using an exponential amount of time, with no faster verification possible",
+          "isCorrect": false,
+          "feedback": "That's the opposite of what defines NP -- NP specifically requires that a proposed solution CAN be verified in polynomial time, not that verification is necessarily slow."
+        },
+        {
+          "text": "A problem belongs to NP only if no algorithm exists that can solve it in polynomial time",
+          "isCorrect": false,
+          "feedback": "That's a common mix-up -- NP isn't defined as 'not solvable in polynomial time.' In fact, every problem in P is also in NP; NP is about verification efficiency, not about being unsolvable efficiently."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is the open question of whether 'P equals NP' considered one of the most significant unsolved problems in computer science and mathematics?",
+      "options": [
+        {
+          "text": "If it turned out that P equals NP, it would mean every problem whose solution can be efficiently verified could also be efficiently solved, which would have enormous practical implications across many fields, including cryptography, which often relies on certain problems being hard to solve even though solutions are easy to verify",
+          "isCorrect": true,
+          "feedback": "Correct -- this question remains unresolved, and its significance comes from the profound theoretical and practical consequences that either a proof or disproof would carry across computer science and beyond."
+        },
+        {
+          "text": "Because proving that P equals NP would mean that most of today's encryption methods would become dramatically more secure and harder to break",
+          "isCorrect": false,
+          "feedback": "It's actually the opposite -- many current encryption schemes rely on certain problems being hard to SOLVE despite being easy to VERIFY, so proving P equals NP would likely make much of today's cryptography breakable, not more secure."
+        },
+        {
+          "text": "Because it's mainly a philosophical question about the nature of intelligence, without much real practical relevance to real-world computing problems",
+          "isCorrect": false,
+          "feedback": "The P versus NP question has substantial practical stakes -- across optimization, cryptography, logistics, and more -- it isn't merely a philosophical curiosity with little practical bearing."
+        },
+        {
+          "text": "Because most experts already consider the question essentially settled in favor of P equals NP, with only a formal proof still missing",
+          "isCorrect": false,
+          "feedback": "Most researchers actually lean the opposite way, suspecting P does NOT equal NP, though it remains formally unproven either way -- the question is genuinely open, not just a missing technicality on an already-assumed answer."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is the group of problems where a known algorithm can solve them in polynomial time -- meaning the required computation scales manageably, not explosively, as the input gets larger.",
+        "medium": "This class includes problems solvable by an algorithm in polynomial time, where required time grows manageably with input size.",
+        "hard": "Think about a set of problems considered efficiently solvable, where the work needed grows in a manageable way as the problem gets bigger."
+      },
+      "medium": {
+        "easy": "This complexity class hinges on verification: if someone hands you a candidate answer, you can confirm whether it's correct in polynomial time, even if arriving at that answer originally could take much longer.",
+        "medium": "This class is defined based on how efficiently a proposed solution can be checked for correctness, not necessarily how efficiently one can be found.",
+        "hard": "Think about how quickly you could check whether a proposed answer is correct, even if coming up with that answer in the first place might be much harder."
+      },
+      "hard": {
+        "easy": "The profound implications for fields like cryptography -- which often relies on a gap between solving difficulty and verification ease -- are exactly why resolving this question carries such enormous significance.",
+        "medium": "A resolution either way would carry enormous theoretical and practical consequences, including for fields like cryptography that rely on a gap between these two notions.",
+        "hard": "Think about what it would mean if 'easy to check' and 'easy to solve' turned out to actually be exactly the same thing."
+      }
+    }
+  },
+  {
+    "topic": "the traveling salesman problem",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does the classic 'traveling salesman problem' ask?",
+      "options": [
+        {
+          "text": "Given a list of cities and the distances between them, find the shortest possible route that visits every city exactly once and returns to the starting city",
+          "isCorrect": true,
+          "feedback": "Correct -- this is one of the most famous and extensively studied optimization problems in computer science and mathematics."
+        },
+        {
+          "text": "How to build the fastest possible computer processor",
+          "isCorrect": false,
+          "feedback": "The traveling salesman problem is about finding an optimal ROUTE among a set of locations -- it isn't about designing computer processor hardware."
+        },
+        {
+          "text": "How to encrypt a message so only the intended recipient can read it",
+          "isCorrect": false,
+          "feedback": "The traveling salesman problem concerns route optimization -- it's unrelated to encrypting messages for secure communication."
+        },
+        {
+          "text": "How to find the single most popular tourist destination among a list of cities",
+          "isCorrect": false,
+          "feedback": "The traveling salesman problem is about finding the shortest route visiting every city, not about ranking or identifying the most popular single destination."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why does the traveling salesman problem become dramatically harder to solve by simply checking every possible route, as the number of cities involved grows even modestly larger?",
+      "options": [
+        {
+          "text": "The number of possible distinct routes to check grows extremely rapidly (factorially) with the number of cities, quickly becoming far too large to exhaustively check within any practical amount of time",
+          "isCorrect": true,
+          "feedback": "Correct -- this explosive growth in possibilities is a classic illustration of how a brute-force approach can become impractical astonishingly quickly, even for a problem that's simple to describe."
+        },
+        {
+          "text": "Because recalculating every pairwise distance from scratch is what actually makes the problem slow, not the number of possible routes",
+          "isCorrect": false,
+          "feedback": "Distances are typically calculated once and reused -- the real slowdown comes from how quickly the number of possible ROUTES multiplies as cities are added."
+        },
+        {
+          "text": "Because most computers can only store a small, fixed number of city names in memory at any one time",
+          "isCorrect": false,
+          "feedback": "Modern computers can easily store far more city names than needed here -- the real bottleneck is the exploding number of possible routes to check, not memory for names."
+        },
+        {
+          "text": "Because the problem requires physically drawing out a map before any calculation can begin",
+          "isCorrect": false,
+          "feedback": "No physical map-drawing is required -- distances can simply be given as numbers. The real difficulty is the factorial explosion in the number of possible routes to check."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Given that finding the guaranteed absolute optimal solution to a large traveling salesman problem instance can be computationally impractical, what approach do practitioners often use instead in real-world applications?",
+      "options": [
+        {
+          "text": "Using heuristic or approximation algorithms that aim to find a very good, though not necessarily perfectly optimal, solution within a reasonable and practical amount of time",
+          "isCorrect": true,
+          "feedback": "Correct -- accepting a near-optimal solution in exchange for a dramatic reduction in required computation time is a very common, practical tradeoff for large-scale optimization problems like this one."
+        },
+        {
+          "text": "Simply refusing to attempt solving the problem at all once a certain number of cities is exceeded",
+          "isCorrect": false,
+          "feedback": "Practitioners generally still attempt to find good, workable solutions using approximation approaches, rather than refusing to try solving the problem altogether."
+        },
+        {
+          "text": "Randomly guessing a single arbitrary route and using that route with no further consideration at all",
+          "isCorrect": false,
+          "feedback": "While randomness might play some limited role within certain more sophisticated heuristic strategies, practitioners generally use much more carefully designed structured heuristic approaches, rather than relying on one single, completely arbitrary random guess."
+        },
+        {
+          "text": "Waiting for sufficiently powerful hardware to become available so the exact optimal route can always still be found",
+          "isCorrect": false,
+          "feedback": "Even with much faster hardware, the number of possible routes still grows so quickly that guaranteeing the exact optimum stays impractical -- practitioners instead typically accept a very good, not-necessarily-perfect answer."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "You're given a map of cities along with the travel distance between every pair, and the challenge is finding one loop that visits each city exactly once for the least total travel.",
+        "medium": "This problem asks for the most efficient possible loop that touches every city on the list exactly once before heading back to the start.",
+        "hard": "Think about a delivery route that needs to visit every city on a list exactly once, in the shortest possible way, before heading home."
+      },
+      "medium": {
+        "easy": "Every extra city multiplies the number of possible routes so quickly that checking them all by brute force stops being realistic after just a handful of cities.",
+        "medium": "As you add more cities, the count of distinct possible routes explodes at a factorial rate, blowing past what you could ever fully check by brute force.",
+        "hard": "Think about how many different possible orders you could visit even a modest handful of cities in."
+      },
+      "hard": {
+        "easy": "These methods trade away the guarantee of finding the absolute best route in exchange for getting a solid, workable answer in a fraction of the time.",
+        "medium": "These approaches settle for a solution that's very good, arrived at in a practical amount of time, even without a guarantee it's the single best one possible.",
+        "hard": "Think about settling for a really good answer quickly, instead of insisting on the absolute perfect answer no matter how long it takes."
+      }
+    }
+  },
+  {
+    "topic": "microservices architecture",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general idea behind a 'microservices' software architecture?",
+      "options": [
+        {
+          "text": "Structuring an application as a collection of small, independently deployable services, each focused on a specific piece of functionality",
+          "isCorrect": true,
+          "feedback": "Correct -- microservices architecture breaks a larger application down into smaller, more focused, independently manageable pieces."
+        },
+        {
+          "text": "Building an entire application as one single, large, tightly interconnected unit",
+          "isCorrect": false,
+          "feedback": "That describes a 'monolithic' architecture, essentially the opposite approach -- microservices specifically breaks an application into smaller, independently deployable pieces."
+        },
+        {
+          "text": "Using only extremely tiny, low-powered physical computers to run software",
+          "isCorrect": false,
+          "feedback": "Microservices refers to a SOFTWARE ARCHITECTURE approach involving small, independent services -- it isn't about the physical size or power of the computer hardware involved."
+        },
+        {
+          "text": "Writing an entire application using the absolute minimum number of lines of code possible",
+          "isCorrect": false,
+          "feedback": "Microservices architecture is about STRUCTURING an application into small, independent services -- it isn't specifically about minimizing the total number of lines of code written."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is a commonly cited benefit of a microservices architecture, compared to a single large monolithic application?",
+      "options": [
+        {
+          "text": "Individual services can often be developed, deployed, updated, and scaled independently of one another, which can offer more flexibility for a development team",
+          "isCorrect": true,
+          "feedback": "Correct -- this independence between services is a major reason many organizations have adopted microservices architecture for certain kinds of larger, more complex applications."
+        },
+        {
+          "text": "Because a microservices architecture guarantees an application will never contain any bugs",
+          "isCorrect": false,
+          "feedback": "Adopting a microservices architecture doesn't guarantee freedom from bugs -- its benefits relate to development, deployment, and scaling FLEXIBILITY, not an absolute guarantee against all possible software defects."
+        },
+        {
+          "text": "Because a microservices architecture always requires significantly less total code to be written overall",
+          "isCorrect": false,
+          "feedback": "A microservices architecture doesn't inherently reduce the total amount of code required -- in fact, it can sometimes involve MORE overall complexity due to needing coordination between the various independent services."
+        },
+        {
+          "text": "Because a microservices architecture eliminates the need for the different services to ever communicate with each other",
+          "isCorrect": false,
+          "feedback": "Microservices generally still need to communicate with each other, often over a network, to work together as a complete application -- this architecture doesn't eliminate that need for communication."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a notable challenge that a microservices architecture can introduce, compared to a simpler monolithic application?",
+      "options": [
+        {
+          "text": "Coordinating communication, consistency, and reliability across many independently deployed services, often over a network, can add significant operational and architectural complexity",
+          "isCorrect": true,
+          "feedback": "Correct -- this added complexity in coordinating many independent, network-communicating pieces is a well-known and significant tradeoff that organizations must carefully weigh against the architectural flexibility microservices can offer."
+        },
+        {
+          "text": "Because a microservices architecture requires significantly more hardware servers than a single data center could ever provide",
+          "isCorrect": false,
+          "feedback": "Microservices can certainly require more infrastructure than a single monolithic application, but that's a matter of degree, not a hard impossibility -- the real notable tradeoff is the added operational complexity of coordinating many independent services."
+        },
+        {
+          "text": "Because a microservices architecture requires every single service to be written in the exact same programming language",
+          "isCorrect": false,
+          "feedback": "One notable characteristic of microservices architecture is actually the flexibility it CAN offer to use different technologies for different services, if desired -- it doesn't strictly mandate one uniform language across all services."
+        },
+        {
+          "text": "Because a microservices architecture removes the need for a team to write any automated tests",
+          "isCorrect": false,
+          "feedback": "Automated testing remains just as important, if not more so, with microservices -- the real tradeoff is the added complexity of coordinating communication and reliability across many independently deployed services."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Instead of one big connected program, the application gets split into many small services that can each be built and shipped on their own.",
+        "medium": "In this approach, one application gets broken apart into a set of small, separately deployable services, with each one owning a specific piece of functionality.",
+        "hard": "Think about breaking one big application down into several smaller, independently manageable pieces, each with its own focused job."
+      },
+      "medium": {
+        "easy": "A team can update or scale just one piece of the system without needing to touch, redeploy, or coordinate around anything else.",
+        "medium": "Each individual piece can typically be built, shipped, and scaled independently of the others, giving a development team a lot more flexibility.",
+        "hard": "Think about being able to update just one small piece of an application without needing to touch or redeploy the whole thing at once."
+      },
+      "hard": {
+        "easy": "Now that the pieces talk to each other over a network instead of within one program, keeping everything communicating reliably and consistently becomes a real operational headache.",
+        "medium": "Keeping all those separately deployed, network-connected pieces talking to each other reliably and consistently adds a real layer of operational difficulty.",
+        "hard": "Think about how much more coordination is needed once you have many separate pieces that all need to talk to each other reliably over a network."
+      }
+    }
+  },
+  {
+    "topic": "black-box vs white-box testing",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In software testing, what does 'black-box testing' generally mean?",
+      "options": [
+        {
+          "text": "Testing a piece of software's functionality based only on its inputs and expected outputs, without looking at or considering its internal code structure",
+          "isCorrect": true,
+          "feedback": "Correct -- black-box testing evaluates whether the software behaves correctly from an outside, user-facing perspective, treating the internal implementation as an unseen 'black box'."
+        },
+        {
+          "text": "Testing that only checks whether a program crashes, without checking whether its output is actually correct",
+          "isCorrect": false,
+          "feedback": "Black-box testing still checks whether outputs match what's expected for given inputs -- it isn't limited to just checking for crashes."
+        },
+        {
+          "text": "Testing performed exclusively by the software's original programmer",
+          "isCorrect": false,
+          "feedback": "Black-box testing can be performed by anyone evaluating input/output behavior, not necessarily exclusively by the software's original programmer."
+        },
+        {
+          "text": "Testing that requires full knowledge of a program's internal source code before it can be performed",
+          "isCorrect": false,
+          "feedback": "That description is closer to WHITE-box testing -- black-box testing is specifically defined by NOT needing knowledge of the internal source code."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does 'white-box testing' generally differ from black-box testing?",
+      "options": [
+        {
+          "text": "White-box testing involves examining and testing a program's internal code structure and logic directly, rather than treating it as an unseen system evaluated only by inputs and outputs",
+          "isCorrect": true,
+          "feedback": "Correct -- white-box testing gives the tester visibility into the code's internal workings, letting them design tests that specifically target particular code paths or logic branches."
+        },
+        {
+          "text": "White-box testing and black-box testing are simply two different names describing the exact identical testing approach",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different testing approaches -- one examines internal code structure directly, the other treats the internals as unseen and focuses only on external input/output behavior."
+        },
+        {
+          "text": "White-box testing refers to testing done using only automated tools, never performed manually by a person",
+          "isCorrect": false,
+          "feedback": "White-box testing can be done manually or with automated tools -- what defines it is examining the internal code structure directly, not who or what performs the testing."
+        },
+        {
+          "text": "White-box testing requires that the software contain absolutely no internal logic whatsoever",
+          "isCorrect": false,
+          "feedback": "White-box testing specifically involves EXAMINING a program's internal logic directly -- it doesn't require the software to have no internal logic; the opposite is true."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a testing team use both black-box and white-box testing techniques together, rather than relying exclusively on just one approach?",
+      "options": [
+        {
+          "text": "Black-box testing helps verify that the software behaves correctly from an external, user-facing perspective, while white-box testing helps ensure specific internal code paths and edge cases are properly exercised and correct, and combining both can offer more thorough overall coverage",
+          "isCorrect": true,
+          "feedback": "Correct -- each approach has its own particular strengths and blind spots, so using them together tends to provide more comprehensive testing coverage than relying on either one alone."
+        },
+        {
+          "text": "Because relying on just one testing approach always takes significantly longer than combining both",
+          "isCorrect": false,
+          "feedback": "Time isn't the core issue here -- the real reason to combine both approaches is COVERAGE: each one catches different kinds of problems that the other might miss."
+        },
+        {
+          "text": "Because combining both approaches guarantees the software will have precisely zero remaining bugs",
+          "isCorrect": false,
+          "feedback": "Using both black-box and white-box testing together can improve overall test coverage considerably, but it doesn't provide an absolute guarantee of zero remaining bugs in every case."
+        },
+        {
+          "text": "Because black-box testing and white-box testing must always be performed by the exact same single individual",
+          "isCorrect": false,
+          "feedback": "These two testing approaches can be performed by different individuals or teams entirely -- there's no requirement that the exact same single person must perform both."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This approach judges a program purely by feeding it inputs and checking the outputs, with the actual code kept completely out of view.",
+        "medium": "This testing approach evaluates functionality based only on inputs and expected outputs, without looking at the internal code structure.",
+        "hard": "Think about testing something purely from the outside, based on what goes in and what comes out, without peeking inside."
+      },
+      "medium": {
+        "easy": "Here, the tester actually opens up and works directly with the code's internal logic, instead of treating it as a sealed box.",
+        "medium": "This approach involves directly examining and testing the internal code structure and logic, rather than treating it as unseen.",
+        "hard": "Think about actually being able to see and examine the internal code, rather than only observing what goes in and what comes out."
+      },
+      "hard": {
+        "easy": "Using both together means outward-facing behavior gets checked AND the hidden internal paths get exercised, catching more than either method alone would.",
+        "medium": "One approach verifies correct behavior from an external, user-facing view; the other targets specific internal code paths directly.",
+        "hard": "Think about one approach catching problems visible from the outside, and a different approach catching problems hidden deep inside the code."
+      }
+    }
+  },
+  {
+    "topic": "sets and maps",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In programming, what is a 'set' generally used to represent?",
+      "options": [
+        {
+          "text": "A collection of unique values, with no duplicates allowed",
+          "isCorrect": true,
+          "feedback": "Correct -- a set specifically enforces uniqueness among its stored elements, automatically preventing duplicate values from being stored more than once."
+        },
+        {
+          "text": "A collection that always keeps its values in a strict numerical order, from smallest to largest",
+          "isCorrect": false,
+          "feedback": "A set's defining property is specifically UNIQUENESS of its values -- strict ordering isn't the defining characteristic of a basic set, though some specific implementations might behave differently."
+        },
+        {
+          "text": "A single fixed value that can never be changed once created",
+          "isCorrect": false,
+          "feedback": "A set is a COLLECTION capable of holding multiple distinct values -- it isn't a single fixed, unchangeable value."
+        },
+        {
+          "text": "A collection that can only ever store exactly two values total",
+          "isCorrect": false,
+          "feedback": "A set can generally hold any number of unique values, not a fixed maximum of exactly two."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What does a 'map' (sometimes called a dictionary or associative array) generally represent, as a data structure?",
+      "options": [
+        {
+          "text": "A collection of key-value pairs, where each unique key is associated with a corresponding value",
+          "isCorrect": true,
+          "feedback": "Correct -- a map lets you efficiently look up a value using its associated key, rather than needing to search through a plain list of values."
+        },
+        {
+          "text": "A physical, printed map used for navigating unfamiliar geography",
+          "isCorrect": false,
+          "feedback": "In programming, a 'map' refers to a key-value pair data structure -- it isn't a literal physical map used for geographic navigation."
+        },
+        {
+          "text": "A collection that can only ever store a single key-value pair total",
+          "isCorrect": false,
+          "feedback": "A map can typically store many key-value pairs at once, not just a single one."
+        },
+        {
+          "text": "A collection where every key must be mapped to the exact same shared value",
+          "isCorrect": false,
+          "feedback": "In a map, each key is typically associated with its own, potentially different, corresponding value -- there's no requirement that every key share the exact same value."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a program use a map, keyed by a unique identifier, to efficiently look up related data, rather than searching through a plain, unordered list of items each time a lookup is needed?",
+      "options": [
+        {
+          "text": "A well-implemented map (commonly backed by a hash-table-like structure) can typically look up a value associated with a given key much faster on average than scanning through every item in an unordered list one by one",
+          "isCorrect": true,
+          "feedback": "Correct -- this efficiency advantage for direct key-based lookup is a major reason maps are so commonly used whenever data needs to be retrieved quickly using some kind of unique identifier."
+        },
+        {
+          "text": "Because a plain, unordered list is physically incapable of storing more than a single item",
+          "isCorrect": false,
+          "feedback": "A plain list can certainly store many items -- the actual advantage of using a map here is about LOOKUP EFFICIENCY using a key, not about the list's raw storage capacity."
+        },
+        {
+          "text": "Because using a map automatically sorts all of the program's other unrelated data as a side effect",
+          "isCorrect": false,
+          "feedback": "Using a map for efficient key-based lookups doesn't have some unrelated side effect of automatically sorting other, unrelated parts of a program's data."
+        },
+        {
+          "text": "Because a map guarantees a program will use zero total memory",
+          "isCorrect": false,
+          "feedback": "A map still requires memory to store its keys and associated values -- using a map doesn't provide some impossible guarantee of using zero memory."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This structure simply refuses to let the same value appear in it more than once.",
+        "medium": "This collection specifically enforces that no duplicate values can be stored within it.",
+        "hard": "Think about a collection where every single value is guaranteed to be different from every other value in it."
+      },
+      "medium": {
+        "easy": "Each entry here pairs a distinct label with a value, so you look things up by that label rather than by position.",
+        "medium": "This structure pairs each unique key with a corresponding value, allowing lookup by that key.",
+        "hard": "Think about looking something up using a specific label, rather than a numbered position, to retrieve its associated value."
+      },
+      "hard": {
+        "easy": "Instead of checking every item one by one, a good implementation can jump almost straight to the value tied to a given key.",
+        "medium": "A solidly built version of this structure can jump almost straight to a value using its key, without needing to check every entry one by one like an unordered list would.",
+        "hard": "Think about jumping directly to what you need using a label, instead of scanning through every single item one at a time to find it."
+      }
+    }
+  },
+  {
+    "topic": "programming paradigms (imperative vs declarative)",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What generally characterizes an 'imperative' programming style?",
+      "options": [
+        {
+          "text": "Writing code as an explicit sequence of step-by-step instructions describing exactly how to accomplish a task",
+          "isCorrect": true,
+          "feedback": "Correct -- imperative programming focuses on precisely specifying the steps a program should take, in order, to reach a desired result."
+        },
+        {
+          "text": "Writing code that describes only what result is desired, without specifying any of the exact steps needed to get there",
+          "isCorrect": false,
+          "feedback": "That description fits a DECLARATIVE style more closely -- imperative programming specifically focuses on spelling out the exact step-by-step instructions, not simply describing the desired end result."
+        },
+        {
+          "text": "Writing code exclusively using mathematical symbols, with no words allowed at all",
+          "isCorrect": false,
+          "feedback": "Imperative programming style is defined by explicit step-by-step instructions -- it isn't specifically defined by using only mathematical symbols with no words."
+        },
+        {
+          "text": "Writing code that can only ever run on a single specific type of computer hardware",
+          "isCorrect": false,
+          "feedback": "Imperative programming is a general STYLE of writing code, not something inherently tied to running only on one specific type of computer hardware."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does a 'declarative' programming style, such as writing a SQL query, generally differ from an imperative style?",
+      "options": [
+        {
+          "text": "A declarative style focuses on describing what result is desired, leaving the underlying system to figure out the specific steps needed to achieve it, rather than spelling out those steps explicitly",
+          "isCorrect": true,
+          "feedback": "Correct -- with a SQL query, for example, you specify what data you want, while the underlying database engine determines the specific steps to actually retrieve it efficiently."
+        },
+        {
+          "text": "A declarative style requires every single step of execution to be spelled out explicitly, in painstaking detail",
+          "isCorrect": false,
+          "feedback": "That description is closer to the IMPERATIVE style -- a declarative style specifically focuses on describing the desired outcome, leaving the specific execution steps up to the underlying system."
+        },
+        {
+          "text": "A declarative style and an imperative style are simply two different names describing the exact identical programming approach",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different approaches to writing code -- one focused on explicit step-by-step instructions, the other focused on describing a desired outcome."
+        },
+        {
+          "text": "A declarative style can only be used for writing web page styling, never for querying data",
+          "isCorrect": false,
+          "feedback": "Declarative programming style is used in various contexts beyond web page styling, including data querying languages like SQL, among others."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a declarative approach, like a SQL query, sometimes allow the underlying system more flexibility to optimize how a task actually gets performed, compared to a strictly imperative approach that hard-codes the exact execution steps?",
+      "options": [
+        {
+          "text": "Because the declarative code only specifies the desired outcome rather than the specific steps to achieve it, the underlying system is free to choose and potentially improve the most efficient way to actually produce that outcome, without being constrained by a hard-coded sequence",
+          "isCorrect": true,
+          "feedback": "Correct -- this flexibility is one of the practical benefits often cited in favor of declarative approaches for certain tasks, such as letting a database engine choose the most efficient query execution plan on its own."
+        },
+        {
+          "text": "Because declarative code is always physically shorter in total character count than imperative code",
+          "isCorrect": false,
+          "feedback": "Code length isn't the fundamental distinguishing factor here -- the described optimization flexibility specifically comes from separating WHAT is wanted from HOW it gets accomplished, not from a difference in overall code length."
+        },
+        {
+          "text": "Because declarative code can only be executed on specialized, custom-built computer hardware",
+          "isCorrect": false,
+          "feedback": "Declarative code, such as SQL queries, runs on ordinary general-purpose computing hardware, just like imperative code -- it doesn't require any specialized custom hardware."
+        },
+        {
+          "text": "Because imperative code is incapable of ever being optimized in any way by anyone",
+          "isCorrect": false,
+          "feedback": "Imperative code CAN still be optimized, often by the original programmer making deliberate changes -- the key difference discussed here is that declarative code leaves that optimization decision-making up to the underlying SYSTEM itself, rather than requiring it to be optimized by hand."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Code written this way spells out, step by step, precisely how to get from start to finish.",
+        "medium": "This style spells out code as a precise, ordered sequence of commands, laying out exactly how a task should be carried out one step after another.",
+        "hard": "Think about writing out a precise step-by-step recipe, spelling out exactly how to get something done."
+      },
+      "medium": {
+        "easy": "This style simply states the outcome you want, and trusts whatever's running underneath to work out its own path to get there.",
+        "medium": "This style is about spelling out the desired result and letting the system underneath handle deciding on the specific steps to take.",
+        "hard": "Think about describing WHAT you want as the end result, and letting something else figure out exactly HOW to get there."
+      },
+      "hard": {
+        "easy": "Because only the goal is specified, the system underneath has room to pick a smarter or faster way of getting there than any single hard-coded sequence would allow.",
+        "medium": "Since the code only pins down the end goal, whatever's running underneath has room to pick -- and even improve on -- its own efficient way of getting there.",
+        "hard": "Think about giving someone a goal to achieve versus handing them a rigid, fixed list of exact steps to follow no matter what."
+      }
+    }
+  },
+  {
+    "topic": "artificial intelligence",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does 'artificial intelligence' (AI), as a broad field, generally aim to do?",
+      "options": [
+        {
+          "text": "Develop computer systems capable of performing tasks that would typically be thought to require human-like intelligence, such as reasoning, learning, or problem-solving",
+          "isCorrect": true,
+          "feedback": "Correct -- artificial intelligence is a broad, overarching field encompassing many different approaches and techniques aimed at building systems capable of such tasks."
+        },
+        {
+          "text": "Build physical robots exclusively for manufacturing cars",
+          "isCorrect": false,
+          "feedback": "Artificial intelligence is a broad field covering many kinds of intelligent behavior, not narrowly restricted to physical robots built exclusively for car manufacturing."
+        },
+        {
+          "text": "Design more visually appealing computer keyboards",
+          "isCorrect": false,
+          "feedback": "Artificial intelligence concerns developing systems capable of intelligent behavior -- it isn't concerned with the visual design of physical keyboards."
+        },
+        {
+          "text": "Increase the physical storage capacity of computer hard drives",
+          "isCorrect": false,
+          "feedback": "Artificial intelligence is about developing systems capable of intelligent behavior, not about increasing physical hard drive storage capacity."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does 'machine learning' generally relate to the broader field of 'artificial intelligence'?",
+      "options": [
+        {
+          "text": "Machine learning is generally considered one particular approach or subfield within the broader field of artificial intelligence, focused specifically on having systems learn patterns from data",
+          "isCorrect": true,
+          "feedback": "Correct -- artificial intelligence is the broader overarching goal of building intelligent systems, while machine learning is one prominent technique commonly used to help pursue that broader goal."
+        },
+        {
+          "text": "Machine learning and artificial intelligence are simply two different names for the exact identical single concept, with no distinction at all",
+          "isCorrect": false,
+          "feedback": "While closely related, they aren't simply identical -- machine learning is generally understood as one specific APPROACH within the broader field of artificial intelligence, not a perfectly interchangeable synonym for the entire field."
+        },
+        {
+          "text": "Artificial intelligence is a subfield that exists specifically within machine learning",
+          "isCorrect": false,
+          "feedback": "This reverses their actual, more commonly understood relationship -- artificial intelligence is generally considered the broader overarching field, with machine learning as one significant approach within it."
+        },
+        {
+          "text": "Machine learning refers exclusively to physical robotic hardware, while artificial intelligence refers exclusively to software",
+          "isCorrect": false,
+          "feedback": "Machine learning is fundamentally about algorithms and software techniques for learning from data -- it isn't defined as being exclusively about physical robotic hardware."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might it be more accurate to describe many of today's widely deployed 'artificial intelligence' systems as 'narrow AI', rather than possessing the kind of broad, general intelligence often depicted in science fiction?",
+      "options": [
+        {
+          "text": "Most current AI systems are typically designed and trained to perform well at one specific task or a limited set of related tasks, rather than possessing the flexible, general-purpose reasoning and adaptability associated with human-like general intelligence",
+          "isCorrect": true,
+          "feedback": "Correct -- this distinction between 'narrow AI', specialized for particular tasks, and a more speculative, broader 'general AI' is an important one commonly discussed when evaluating the actual current capabilities of AI systems, versus popular but often much more expansive fictional portrayals."
+        },
+        {
+          "text": "Because current AI systems are incapable of performing any task successfully at all",
+          "isCorrect": false,
+          "feedback": "Many current AI systems perform quite well, sometimes even exceeding human performance, at their SPECIFIC designed tasks -- the 'narrow' distinction is about the LIMITED SCOPE of that competence, not an inability to perform any task successfully."
+        },
+        {
+          "text": "Because the term 'narrow AI' refers specifically to AI systems that can only be run on very small, narrow physical computer chips",
+          "isCorrect": false,
+          "feedback": "The term 'narrow' here refers to the LIMITED SCOPE of TASKS a system is designed to competently handle -- it doesn't refer to the physical size or shape of the computer chip running that system."
+        },
+        {
+          "text": "Because narrow AI systems are required by law to be smaller in file size than general AI systems",
+          "isCorrect": false,
+          "feedback": "There's no such legal file-size requirement distinguishing these terms -- the distinction is fundamentally about the SCOPE OF CAPABILITY (specialized versus broadly general), not file size."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This broad field is about getting computer systems to do things -- reasoning, learning, solving problems -- that we'd normally say require human-like smarts.",
+        "medium": "This broad field is aimed at building computer systems that can pull off tasks we'd normally assume needed a human mind behind them.",
+        "hard": "Think about building computer systems that can reason, learn, or solve problems, tasks we'd normally associate with human intelligence."
+      },
+      "medium": {
+        "easy": "One is the big umbrella goal; the other is a specific, widely used technique underneath it that works by having systems learn directly from data.",
+        "medium": "One is generally considered the broader overarching field; the other is one particular approach commonly used within it, focused on learning from data.",
+        "hard": "Think about a big overarching goal, and one particular popular technique commonly used to help pursue that goal."
+      },
+      "hard": {
+        "easy": "A system that excels at chess but couldn't hold a conversation is a good example of this -- narrowly skilled rather than broadly, flexibly intelligent like a person.",
+        "medium": "Today's typical systems are built and trained around excelling at one job, or a small cluster of closely related jobs, rather than reasoning flexibly across just about anything.",
+        "hard": "Think about a system that's remarkably good at one specific job, but wouldn't necessarily be able to flexibly handle a completely different, unrelated kind of task."
+      }
+    }
+  },
+  {
+    "topic": "computer vision",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'computer vision' generally concerned with?",
+      "options": [
+        {
+          "text": "Enabling computers to interpret and understand information from visual inputs, such as images or video",
+          "isCorrect": true,
+          "feedback": "Correct -- computer vision is a field focused on giving computers the ability to derive meaningful understanding from visual data."
+        },
+        {
+          "text": "Enabling computers to physically repair a broken camera lens",
+          "isCorrect": false,
+          "feedback": "Computer vision is concerned with INTERPRETING visual data through software -- it isn't about physically repairing camera hardware."
+        },
+        {
+          "text": "Enabling computers to run faster by upgrading their monitor's resolution",
+          "isCorrect": false,
+          "feedback": "Computer vision is about interpreting and understanding visual data -- it isn't about simply increasing a monitor's display resolution to make a computer run faster."
+        },
+        {
+          "text": "Enabling computers to translate spoken language into written text",
+          "isCorrect": false,
+          "feedback": "Translating spoken language into text describes speech recognition, a related but distinct field -- computer vision specifically concerns interpreting VISUAL inputs like images."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is a task like recognizing objects within a photograph considered a genuinely challenging problem for a computer, compared to something like simply checking whether two numbers are equal?",
+      "options": [
+        {
+          "text": "Objects can appear in a photograph at many different angles, lighting conditions, sizes, and levels of occlusion, requiring the computer to recognize an underlying pattern despite significant variation in the raw visual data",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of variability is exactly why building reliable computer vision systems is a considerably more complex problem than straightforward, well-defined numeric comparisons."
+        },
+        {
+          "text": "Because a computer can only compare an image to one single, exact reference photo stored in its memory",
+          "isCorrect": false,
+          "feedback": "Real-world images vary too much for simple exact matching against one single reference photo to work reliably -- the actual challenge is recognizing a pattern despite that variation, not simply comparing to one fixed stored image."
+        },
+        {
+          "text": "Because comparing two numbers for equality is actually a much harder task than recognizing objects in an image",
+          "isCorrect": false,
+          "feedback": "This significantly understates the genuine complexity of visual recognition -- comparing two numbers for equality is a comparatively simple, well-defined task, while recognizing objects amid real-world visual variability is considerably more complex."
+        },
+        {
+          "text": "Because every photograph of the same object always looks pixel-for-pixel identical, regardless of camera or lighting",
+          "isCorrect": false,
+          "feedback": "This is the opposite of reality -- the same object can look very different across photos due to lighting, angle, and other variation, which is exactly why recognizing it reliably is such a hard problem."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why have deep learning approaches, particularly convolutional neural networks, become especially influential and widely adopted within modern computer vision research?",
+      "options": [
+        {
+          "text": "These networks can automatically learn to detect increasingly complex visual features directly from large amounts of training data, without requiring a person to manually and explicitly define every specific visual pattern to look for ahead of time",
+          "isCorrect": true,
+          "feedback": "Correct -- this ability to automatically learn relevant visual features directly from data has been a major driving factor behind significant improvements in computer vision performance in recent years."
+        },
+        {
+          "text": "Because convolutional neural networks require a human expert to manually program every specific visual rule and pattern the system should look for",
+          "isCorrect": false,
+          "feedback": "This is actually the opposite of what makes these networks so influential -- their key advantage is learning relevant visual features automatically from data, without requiring a person to manually hand-code every specific rule."
+        },
+        {
+          "text": "Because convolutional neural networks perform significantly worse than manually hand-coded rule-based systems on most real-world visual recognition tasks",
+          "isCorrect": false,
+          "feedback": "This reverses the actual, well-documented relationship -- convolutional neural networks have generally significantly outperformed earlier hand-coded, rule-based approaches on most real-world visual recognition tasks, which is a major reason for their widespread adoption."
+        },
+        {
+          "text": "Because convolutional neural networks eliminate the need for a computer to have a camera or existing images to work with",
+          "isCorrect": false,
+          "feedback": "These networks still fundamentally need actual visual data, such as images, to learn from and operate on -- they don't eliminate the underlying need for a camera or existing images altogether."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This area focuses on getting a computer to actually make sense of what's captured in an image or video feed.",
+        "medium": "This is about giving a machine the ability to interpret and draw meaning from a picture or video, rather than just storing the raw pixels.",
+        "hard": "Think about a computer trying to go beyond just storing an image, toward actually understanding what it depicts."
+      },
+      "medium": {
+        "easy": "The same object can look wildly different from shot to shot, so the system has to see past all that surface variation to recognize what it's actually looking at.",
+        "medium": "Real-world images of the same thing vary a lot -- in angle, lighting, size -- so recognizing them reliably takes more than a simple, fixed comparison.",
+        "hard": "Think about what makes recognizing a real photo a fundamentally messier problem than comparing two fixed, exact values."
+      },
+      "hard": {
+        "easy": "Rather than a person hand-coding every visual rule, the system works out its own increasingly sophisticated visual features just by being shown huge amounts of example data.",
+        "medium": "Fed enough example images, these networks work out on their own, layer by layer, how to pick up on increasingly sophisticated visual patterns -- no one has to hand-code the rules.",
+        "hard": "Think about a system that figures out on its own which visual details matter, rather than a person having to spell out every single detail in advance."
+      }
+    }
+  },
+  {
+    "topic": "robotics basics",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'robotics' generally concerned with?",
+      "options": [
+        {
+          "text": "The design, construction, and operation of machines (robots) that can sense their environment and perform physical actions, often autonomously or semi-autonomously",
+          "isCorrect": true,
+          "feedback": "Correct -- robotics combines elements of mechanical engineering, electronics, and computer science to create machines capable of sensing and acting in the physical world."
+        },
+        {
+          "text": "Writing fictional stories specifically about robots",
+          "isCorrect": false,
+          "feedback": "Robotics is a genuine technical and engineering field concerned with building and operating actual robots -- it isn't about writing fictional stories."
+        },
+        {
+          "text": "Designing the visual layout of a website",
+          "isCorrect": false,
+          "feedback": "Robotics concerns physical machines that sense and act in the world -- it's unrelated to designing a website's visual layout."
+        },
+        {
+          "text": "Managing a company's financial accounting records",
+          "isCorrect": false,
+          "feedback": "Robotics is a technical engineering field focused on physical machines, entirely unrelated to financial accounting."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why do many robots rely on a combination of sensors and software to interact effectively with their physical environment?",
+      "options": [
+        {
+          "text": "Sensors provide the robot with information about its surroundings, such as distance to obstacles or the position of objects, and software processes that information to help decide on and control the robot's appropriate physical actions",
+          "isCorrect": true,
+          "feedback": "Correct -- this sense-then-act loop, gathering information through sensors and then using software to decide on and control a response, is fundamental to how many robots operate effectively in their environment."
+        },
+        {
+          "text": "Because robots are physically incapable of moving without a sensor attached to them",
+          "isCorrect": false,
+          "feedback": "Some simple mechanical devices can move without sophisticated sensors -- but many capable, more sophisticated robots specifically use sensors and software TOGETHER to interact intelligently with a changing, real-world environment, not merely to enable basic physical movement at all."
+        },
+        {
+          "text": "Because software alone, without any sensors, is always sufficient for a robot to understand its surroundings perfectly",
+          "isCorrect": false,
+          "feedback": "Software alone, without sensor input providing real-world information, generally cannot perceive an actual physical environment -- sensors are what supply the real-world data software then processes."
+        },
+        {
+          "text": "Because sensors are only used to make a robot look more visually appealing",
+          "isCorrect": false,
+          "feedback": "Sensors serve a genuine FUNCTIONAL purpose, providing critical information about the robot's surroundings -- they aren't included merely for visual appeal."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a robot designed to operate in a highly unpredictable, dynamic environment (such as a home) require considerably more sophisticated sensing and decision-making capabilities than a robot performing a single, fixed, repetitive task on a controlled factory assembly line?",
+      "options": [
+        {
+          "text": "An unpredictable environment can present a much wider range of possible situations and obstacles, requiring the robot to adaptively sense and respond to circumstances that couldn't all be fully anticipated and preprogrammed in advance",
+          "isCorrect": true,
+          "feedback": "Correct -- this need for adaptability in the face of considerable real-world unpredictability is a key reason that robotics for less controlled, more dynamic environments is generally a substantially harder engineering challenge than robotics for a fixed, tightly controlled setting."
+        },
+        {
+          "text": "Because factory assembly line robots are not permitted to use any sensors whatsoever",
+          "isCorrect": false,
+          "feedback": "Factory assembly line robots can and do use sensors as well -- the key distinction being discussed is about the DEGREE of unpredictability and adaptability required by the differing environments, not a blanket restriction against sensor use on assembly lines."
+        },
+        {
+          "text": "Because a home environment always contains significantly fewer total objects than a factory floor",
+          "isCorrect": false,
+          "feedback": "The number of objects present isn't the fundamental distinguishing factor here -- the key difference is the UNPREDICTABILITY and VARIABILITY of a home setting, compared to a controlled, repetitive factory task."
+        },
+        {
+          "text": "Because robots operating in homes are required by law to be much smaller in physical size",
+          "isCorrect": false,
+          "feedback": "There's no such legal size requirement -- the real distinguishing factor is the need for adaptability given a highly variable, less predictable environment, not any legally mandated physical size difference."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This field covers building machines that can take in information about the world around them and then physically act on it, with varying degrees of independence.",
+        "medium": "This area covers machines built to pick up on what's happening around them and then carry out physical actions, sometimes without a person directly steering each move.",
+        "hard": "Think about a discipline concerned with machines that take in cues from the world around them and then physically do something in response."
+      },
+      "medium": {
+        "easy": "First the sensors feed in what's happening around the machine, and then software takes that information and decides what physical action actually makes sense.",
+        "medium": "Sensors take in details about the surrounding environment, which software then works through to figure out and carry out a sensible physical response.",
+        "hard": "Think about needing to first gather information about the surroundings, and then deciding what to actually do based on that information."
+      },
+      "hard": {
+        "easy": "When the surroundings could throw almost anything at the machine, it has to sense and react on the fly instead of just following one fixed, pre-planned routine.",
+        "medium": "When the surroundings are unpredictable, the robot can run into a huge variety of situations that nobody could have fully scripted responses for ahead of time.",
+        "hard": "Think about how much harder it is to prepare for absolutely anything that could possibly happen, compared to preparing for the exact same predictable task every single time."
+      }
+    }
+  },
+  {
+    "topic": "two-factor authentication",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general idea behind 'two-factor authentication' (2FA)?",
+      "options": [
+        {
+          "text": "Requiring a user to provide two different types of proof of identity before being granted access, such as a password plus a one-time code sent to their phone",
+          "isCorrect": true,
+          "feedback": "Correct -- combining two different factors makes it considerably harder for someone to gain unauthorized access using just one compromised piece of information, like a stolen password alone."
+        },
+        {
+          "text": "Requiring a user to enter the same single password exactly twice in a row",
+          "isCorrect": false,
+          "feedback": "Two-factor authentication specifically requires two DIFFERENT TYPES of proof -- entering the identical password twice wouldn't count as two genuinely different factors."
+        },
+        {
+          "text": "Allowing exactly two separate people to share a single user account",
+          "isCorrect": false,
+          "feedback": "Two-factor authentication is about the METHOD used to verify one person's identity, not about the number of people permitted to share a single account."
+        },
+        {
+          "text": "Requiring a user to purchase two separate computers to access one account",
+          "isCorrect": false,
+          "feedback": "Two-factor authentication concerns providing two different types of identity verification -- it has nothing to do with needing to purchase multiple physical computers."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why does adding a second authentication factor, such as a one-time code sent to a user's phone, meaningfully improve security compared to relying on a password alone?",
+      "options": [
+        {
+          "text": "Even if an attacker manages to obtain or guess a user's password, they would still generally need access to that user's separate second factor (like their phone) in order to successfully complete the login process",
+          "isCorrect": true,
+          "feedback": "Correct -- this added requirement significantly raises the difficulty for an attacker, since compromising just one single factor, like a leaked password, is no longer sufficient on its own to gain unauthorized access."
+        },
+        {
+          "text": "Because adding a second factor makes a password completely unnecessary and irrelevant to enter at all",
+          "isCorrect": false,
+          "feedback": "The password (or another 'first factor') is still typically required alongside the second factor -- 2FA doesn't eliminate the need for that first factor; rather, it supplements it with an additional one."
+        },
+        {
+          "text": "Because a one-time code sent to a phone can be reused indefinitely by anyone who ever sees it once",
+          "isCorrect": false,
+          "feedback": "A ONE-TIME code, as its name suggests, is specifically designed to be used only once and typically expires quickly -- it isn't intended to remain reusable indefinitely, which is actually part of why it adds meaningful security."
+        },
+        {
+          "text": "Because having two factors guarantees that a user's account can never be compromised under any circumstances",
+          "isCorrect": false,
+          "feedback": "While two-factor authentication significantly improves security compared to a password alone, it doesn't provide an absolute, ironclad guarantee against every conceivable attack scenario."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might using a one-time code generated by a dedicated authenticator app be considered generally more secure than relying on a one-time code sent via a standard text message (SMS)?",
+      "options": [
+        {
+          "text": "SMS messages can potentially be intercepted through certain vulnerabilities, such as those related to phone number porting or SIM-swapping fraud, whereas a code generated locally by an authenticator app doesn't rely on transmission through those particular telecom-related channels",
+          "isCorrect": true,
+          "feedback": "Correct -- this is a well-documented security consideration, and it's part of why security-conscious guidance often recommends an authenticator app or physical security key as a generally more robust second factor than SMS in many contexts."
+        },
+        {
+          "text": "Because SMS messages are always completely and instantly readable by absolutely anyone in the entire world",
+          "isCorrect": false,
+          "feedback": "This substantially overstates the actual concern -- SMS isn't inherently readable by literally 'anyone in the world' by default, but it does carry certain SPECIFIC documented vulnerabilities, such as SIM-swapping, that an authenticator app can help avoid."
+        },
+        {
+          "text": "Because authenticator apps are incapable of ever generating an incorrect code",
+          "isCorrect": false,
+          "feedback": "Authenticator apps can still occasionally have their own issues, like clock synchronization problems -- their security advantage over SMS is about avoiding certain SPECIFIC telecom-related vulnerabilities, not an absolute guarantee of never producing an incorrect code."
+        },
+        {
+          "text": "Because SMS messages are illegal to use for authentication purposes in most countries",
+          "isCorrect": false,
+          "feedback": "SMS-based authentication remains legal and is still quite commonly used in many countries -- the actual concern discussed here is a technical SECURITY consideration, not a legal restriction on its use."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Access only gets granted after proving who you are in two genuinely separate ways, like a password plus a code sent elsewhere.",
+        "medium": "This requires providing two different types of proof of identity, such as a password plus a code sent to your phone.",
+        "hard": "Think about needing to prove your identity in two genuinely different ways before being let in, not just one."
+      },
+      "medium": {
+        "easy": "Even after cracking the password, an attacker would still be stuck needing physical access to the victim's second factor, like their actual phone.",
+        "medium": "Even with a stolen password, an attacker would generally still need access to your separate second factor to actually complete the login.",
+        "hard": "Think about what an attacker would still be missing, even if they somehow already had your password."
+      },
+      "hard": {
+        "easy": "Generating the code right there on the device sidesteps the phone-network-related tricks, like SIM swapping, that can be used to intercept a text message instead.",
+        "medium": "One method can be vulnerable to certain telecom-related tricks, like someone else fraudulently taking over your phone number; the other doesn't rely on that same transmission channel at all.",
+        "hard": "Think about a message traveling over the phone network, versus a code generated locally, right there on your own device, with no telecom network involved in generating it."
+      }
+    }
+  },
+  {
+    "topic": "digital signatures",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of a 'digital signature'?",
+      "options": [
+        {
+          "text": "To verify the authenticity and integrity of a digital message or document, confirming it genuinely came from a specific sender and hasn't been altered",
+          "isCorrect": true,
+          "feedback": "Correct -- a digital signature provides a way to cryptographically confirm both who sent a message and that its content hasn't been tampered with since being signed."
+        },
+        {
+          "text": "To make a digital document look visually more attractive with a decorative signature image",
+          "isCorrect": false,
+          "feedback": "A digital signature serves a functional cryptographic verification purpose -- it isn't simply a decorative visual image added to make a document look nicer."
+        },
+        {
+          "text": "To permanently encrypt a document so absolutely no one can ever read it again",
+          "isCorrect": false,
+          "feedback": "A digital signature is specifically about verifying authenticity and integrity -- it isn't the same thing as encrypting a document to prevent anyone from reading its content at all."
+        },
+        {
+          "text": "To physically print a person's handwritten signature using a computer printer",
+          "isCorrect": false,
+          "feedback": "A digital signature is a cryptographic verification mechanism, distinct from the separate, much simpler concept of printing an image of a handwritten signature."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does a digital signature typically help detect if a signed document has been altered after it was originally signed?",
+      "options": [
+        {
+          "text": "The digital signature is mathematically tied to the specific content of the original document, such that even a small change to that content would cause the signature to no longer validly match",
+          "isCorrect": true,
+          "feedback": "Correct -- this sensitivity to any change in the underlying content is exactly what allows a digital signature to help reveal tampering after the fact."
+        },
+        {
+          "text": "Because the digital signature physically prevents anyone from being able to open or view the document at all",
+          "isCorrect": false,
+          "feedback": "A digital signature doesn't prevent a document from being opened or viewed -- its role is specifically about VERIFYING authenticity and integrity, not restricting basic access to view the file."
+        },
+        {
+          "text": "Because the digital signature automatically repairs any change made to the document after signing",
+          "isCorrect": false,
+          "feedback": "A digital signature helps DETECT that a change occurred -- it doesn't automatically repair or reverse the document back to its original state."
+        },
+        {
+          "text": "Because the digital signature is stored completely separately, with no actual link at all to the document's content",
+          "isCorrect": false,
+          "feedback": "A digital signature is specifically and mathematically TIED to the document's content -- it isn't stored with no genuine relationship to that content at all, since that connection is precisely what enables detecting tampering."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Digital signatures commonly rely on public-key cryptography, where a sender signs a document using their own private key, and others can verify that signature using the sender's corresponding public key. Why does this asymmetric approach help establish that a specific document genuinely came from a specific sender?",
+      "options": [
+        {
+          "text": "Because only the sender possesses their own private key, a valid signature that successfully verifies using the sender's public key provides strong evidence the document was signed by someone in possession of that particular private key",
+          "isCorrect": true,
+          "feedback": "Correct -- as long as the private key itself has been kept properly secret and secure, a successfully verified signature provides meaningful assurance about who actually signed the given document."
+        },
+        {
+          "text": "Because the private key and the public key are actually the exact same identical key, just given two different names",
+          "isCorrect": false,
+          "feedback": "In public-key cryptography, the private key and public key are mathematically related but are genuinely DIFFERENT keys -- they aren't simply the same single key referred to by two different names."
+        },
+        {
+          "text": "Because anyone at all can freely access and use the sender's private key to verify the signature",
+          "isCorrect": false,
+          "feedback": "The private key is specifically meant to be kept SECRET and used ONLY by its owner for signing -- it's the PUBLIC key, not the private one, that others freely use to verify a given signature."
+        },
+        {
+          "text": "Because digital signatures require the sender and recipient to physically meet in person beforehand",
+          "isCorrect": false,
+          "feedback": "Digital signatures are specifically designed to allow secure identity verification without requiring the sender and recipient to physically meet in person beforehand."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This mechanism lets a recipient confirm both who actually sent a document and that nobody has quietly tampered with it since.",
+        "medium": "This lets a recipient confirm both that a digital message truly came from the sender it claims, and that nothing about it was quietly changed afterward.",
+        "hard": "Think about a way to cryptographically prove who sent a document and that its content hasn't secretly been changed."
+      },
+      "medium": {
+        "easy": "Because the math behind it depends on the document's exact content, even a single altered character would make the signature fail to check out.",
+        "medium": "Because the underlying math ties the signature so closely to the document's exact content, altering even one character throws off the match.",
+        "hard": "Think about a signature so tightly tied to the exact content that even a tiny edit would throw it out of sync."
+      },
+      "hard": {
+        "easy": "Since nobody else has access to that private key, a signature that checks out against the matching public key is strong evidence it came from that key's actual owner.",
+        "medium": "Since nobody besides the sender has access to that private key, a signature that checks out successfully is strong evidence of who actually created it.",
+        "hard": "Think about a lock that only one specific person holds the unique key to, even though anyone can check whether something was actually locked with it."
+      }
+    }
+  },
+  {
+    "topic": "blockchain technology",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'blockchain', at a basic conceptual level?",
+      "options": [
+        {
+          "text": "A distributed digital ledger that records transactions or data across a chain of linked 'blocks', typically maintained collaboratively by many participants rather than a single central authority",
+          "isCorrect": true,
+          "feedback": "Correct -- a blockchain's structure and distributed maintenance are central to how it's designed to record data in a way resistant to being altered by any single party."
+        },
+        {
+          "text": "A single, centrally controlled database maintained by one trusted company",
+          "isCorrect": false,
+          "feedback": "That describes the opposite of blockchain's typical design -- a blockchain is usually maintained collaboratively by many participants rather than one central authority."
+        },
+        {
+          "text": "A type of computer virus that spreads through cryptocurrency wallets",
+          "isCorrect": false,
+          "feedback": "Blockchain is a legitimate underlying technology for recording data -- it isn't inherently a type of malicious computer virus."
+        },
+        {
+          "text": "A cryptocurrency itself, rather than the underlying technology that can support one",
+          "isCorrect": false,
+          "feedback": "Blockchain is the underlying ledger technology -- a cryptocurrency is one example of something that can be BUILT on top of a blockchain, not the blockchain itself."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is a blockchain often described as making previously recorded data difficult to alter without detection?",
+      "options": [
+        {
+          "text": "Each new block typically contains a reference (often a cryptographic hash) tied to the previous block's content, so altering an earlier block would break that link and be detectable across the chain",
+          "isCorrect": true,
+          "feedback": "Correct -- this linking mechanism between blocks is a key part of what gives blockchain-based records their resistance to undetected tampering."
+        },
+        {
+          "text": "Because blocks are stored in a completely random order, so their sequence doesn't actually matter",
+          "isCorrect": false,
+          "feedback": "The sequence absolutely matters -- each block's reference to the previous one creates a specific chain, and that ordered chain is exactly what makes tampering detectable."
+        },
+        {
+          "text": "Because a blockchain can only ever contain a single block, making alteration impossible by definition",
+          "isCorrect": false,
+          "feedback": "A blockchain is specifically made up of a CHAIN of MULTIPLE linked blocks -- it isn't limited to containing just a single block; the tamper-resistance instead comes from how those multiple blocks are cryptographically linked together."
+        },
+        {
+          "text": "Older blocks are automatically deleted after a fixed amount of time to save storage space",
+          "isCorrect": false,
+          "feedback": "Blocks are generally kept permanently, not automatically deleted -- the tamper-resistance comes from each block referencing the previous one's content, not from data being purged over time."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is a blockchain often maintained in a decentralized way, with many participants independently keeping and validating copies of the ledger, rather than relying on one single central authority?",
+      "options": [
+        {
+          "text": "Decentralization can help make the system more resistant to manipulation by any single party, since altering the recognized record would generally require gaining control over a significant portion of the participants maintaining and validating it, rather than compromising just one central point",
+          "isCorrect": true,
+          "feedback": "Correct -- this distributed trust model, where many independent participants must generally agree on the recognized state of the ledger, is a foundational design principle behind how many blockchain systems aim to resist manipulation by any single party."
+        },
+        {
+          "text": "Because decentralization guarantees that a blockchain-based system can never experience any technical problems whatsoever",
+          "isCorrect": false,
+          "feedback": "Decentralization can improve resistance to manipulation by a single party, but it doesn't provide an absolute guarantee against every possible technical problem a system might encounter."
+        },
+        {
+          "text": "Because decentralized systems automatically encrypt all of their data, while centralized ones cannot",
+          "isCorrect": false,
+          "feedback": "Encryption is a separate technique available to both centralized and decentralized systems -- the manipulation-resistance benefit here comes specifically from requiring control over many independent participants, not from encryption."
+        },
+        {
+          "text": "Because decentralization makes a blockchain system require significantly less total computing power overall",
+          "isCorrect": false,
+          "feedback": "Decentralized blockchain systems can actually require considerable combined computing resources across their many participants -- decentralization isn't chosen specifically to minimize overall computing power requirements."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Picture a shared record book, copied and maintained across many participants at once, where entries get grouped into blocks that link back to the one before.",
+        "medium": "This ledger spreads its data across a chain of connected blocks, with many separate participants all keeping their own copy in sync.",
+        "hard": "Think about a record book with no single official copy -- instead, many separate copies exist at once, and they all have to agree with each other."
+      },
+      "medium": {
+        "easy": "Because each block carries a fingerprint of the one before it, sneaking a change into an old block would break that chain of fingerprints and immediately stand out.",
+        "medium": "Every new block carries a reference back to what came right before it, so tampering with an older block would snap that chain and stick out immediately.",
+        "hard": "Think about each new link in a chain carrying a reference back to the previous link, so breaking one link would be noticeable."
+      },
+      "hard": {
+        "easy": "An attacker would have to take over a large chunk of all the independent participants at once, rather than just breaking into one central server, to successfully rewrite the record.",
+        "medium": "An attacker would need to seize control of a large share of all the independent participants at once, rather than just one central point, making manipulation much harder to pull off.",
+        "hard": "Think about how much harder it is to fake a shared record when many independent people all have to agree on it, rather than just fooling one single gatekeeper."
+      }
+    }
+  },
+  {
+    "topic": "software piracy and DRM",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does 'software piracy' generally refer to?",
+      "options": [
+        {
+          "text": "Using, copying, or distributing software in violation of its license terms, such as without proper authorization or payment",
+          "isCorrect": true,
+          "feedback": "Correct -- software piracy specifically involves obtaining or using software outside the terms permitted by its license."
+        },
+        {
+          "text": "Sailing a ship to attack and rob other vessels at sea",
+          "isCorrect": false,
+          "feedback": "In this technology context, 'software piracy' refers to unauthorized software use or distribution -- it's a figurative use of the term, not literal seafaring robbery."
+        },
+        {
+          "text": "Legally purchasing a single copy of software for personal use, exactly as its license permits",
+          "isCorrect": false,
+          "feedback": "That describes legitimate, AUTHORIZED software use, following the license's actual permitted terms -- it's the opposite of software piracy, which specifically involves violating those terms."
+        },
+        {
+          "text": "Writing entirely new, original software completely from scratch",
+          "isCorrect": false,
+          "feedback": "Writing new original software from scratch is unrelated to software piracy, which specifically concerns violating an EXISTING piece of software's license terms."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of 'DRM' (Digital Rights Management) technology, as commonly used by some software, music, or video providers?",
+      "options": [
+        {
+          "text": "To technically restrict or control how digital content can be copied, used, or distributed, aiming to reduce unauthorized use in accordance with its licensing terms",
+          "isCorrect": true,
+          "feedback": "Correct -- DRM technology aims to technically enforce restrictions consistent with a piece of content's intended licensing terms, rather than relying purely on legal deterrents alone."
+        },
+        {
+          "text": "To make digital files load and open more quickly on a device",
+          "isCorrect": false,
+          "feedback": "DRM's purpose is specifically about controlling and restricting authorized use and copying -- it isn't primarily aimed at improving general file-loading speed."
+        },
+        {
+          "text": "To automatically translate digital content into a different language",
+          "isCorrect": false,
+          "feedback": "DRM concerns controlling and restricting authorized use and copying of content -- automatic language translation is an entirely separate, unrelated feature."
+        },
+        {
+          "text": "To permanently delete digital content after a single use, regardless of the license terms",
+          "isCorrect": false,
+          "feedback": "DRM's purpose is enforcing whatever specific restrictions are defined by a piece of content's license terms -- it doesn't universally mean deleting content after just one single use in every case."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why has DRM technology sometimes been a source of controversy or criticism, even among some legitimate, paying customers?",
+      "options": [
+        {
+          "text": "DRM restrictions can sometimes inconvenience legitimate purchasers, for instance by limiting how they can use content they've properly paid for, such as restricting playback to certain devices or preventing normally permitted uses like personal backups",
+          "isCorrect": true,
+          "feedback": "Correct -- this tension, between preventing unauthorized use and avoiding excessive inconvenience for legitimate, paying customers, is a genuinely common point of ongoing debate surrounding various DRM implementations."
+        },
+        {
+          "text": "Because DRM technology is illegal in absolutely every country in the world",
+          "isCorrect": false,
+          "feedback": "DRM technology is legal in many countries, though specific regulations do vary by jurisdiction -- the actual controversy being discussed here is about USER EXPERIENCE and restriction concerns, not a blanket claim of universal illegality."
+        },
+        {
+          "text": "Because DRM technology has been definitively proven to have no effect whatsoever on reducing unauthorized use",
+          "isCorrect": false,
+          "feedback": "This overstates the actual critique -- the more commonly discussed controversy is about the tradeoff between preventing unauthorized use and inconveniencing LEGITIMATE users, not a definitive proof that DRM has literally zero effect on piracy at all."
+        },
+        {
+          "text": "Because DRM technology requires purchasing an entirely separate physical computer just to use it",
+          "isCorrect": false,
+          "feedback": "DRM operates as software-level restrictions integrated with existing digital content and devices -- it doesn't require purchasing some entirely separate, additional physical computer."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This happens whenever software gets used, copied, or shared in a way its license doesn't actually permit.",
+        "medium": "This happens whenever someone uses, duplicates, or hands out software in a way that steps outside what its license actually allows.",
+        "hard": "Think about using or sharing software in a way that goes against what its license actually permits."
+      },
+      "medium": {
+        "easy": "This technology builds a technical lock directly into digital content, aiming to keep its actual use within whatever the license allows.",
+        "medium": "This technology builds in technical limits on how digital content is allowed to be copied, used, or shared onward.",
+        "hard": "Think about a technical lock built into digital content, meant to enforce its intended usage rules."
+      },
+      "hard": {
+        "easy": "A customer who paid fairly might still find themselves blocked from something totally reasonable, like playing their purchase on a different device or making a personal backup copy.",
+        "medium": "Even a customer who paid fair and square can sometimes run into limits on how they're allowed to use what they bought, like which specific device it'll play on.",
+        "hard": "Think about a paying customer running into an inconvenient restriction, even though they did everything legitimately and correctly."
+      }
+    }
+  },
+  {
+    "topic": "the internet of things (IoT)",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does the 'Internet of Things' (IoT) generally refer to?",
+      "options": [
+        {
+          "text": "A network of everyday physical devices, such as thermostats or appliances, that are connected to the internet and can collect or exchange data",
+          "isCorrect": true,
+          "feedback": "Correct -- IoT describes the broader trend of embedding internet connectivity and data-exchange capability into everyday physical objects beyond traditional computers."
+        },
+        {
+          "text": "A single specific website that lists all the physical products currently for sale online",
+          "isCorrect": false,
+          "feedback": "IoT refers to a broad network of connected physical devices, not a single website listing products for sale."
+        },
+        {
+          "text": "A programming language specifically designed for building smartphone apps",
+          "isCorrect": false,
+          "feedback": "IoT is a broad conceptual trend involving connected physical devices, not a specific programming language."
+        },
+        {
+          "text": "A type of computer virus that specifically targets smart home devices",
+          "isCorrect": false,
+          "feedback": "IoT refers to the general category of connected everyday devices themselves -- it isn't inherently a type of malicious software targeting them."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a 'smart' thermostat that's part of the Internet of Things be able to offer features that a traditional, non-connected thermostat cannot?",
+      "options": [
+        {
+          "text": "Being connected to the internet lets it exchange data remotely, such as receiving commands from a smartphone app or adjusting settings based on external information like weather forecasts",
+          "isCorrect": true,
+          "feedback": "Correct -- this internet connectivity is precisely what enables the kind of remote control and broader data-exchange capabilities associated with many IoT devices."
+        },
+        {
+          "text": "Because a smart thermostat is physically much larger in size than a traditional thermostat",
+          "isCorrect": false,
+          "feedback": "Physical size isn't the distinguishing factor between a smart and traditional thermostat -- the added capability specifically comes from internet CONNECTIVITY and its resulting data-exchange abilities."
+        },
+        {
+          "text": "Because a smart thermostat requires no electrical power to operate",
+          "isCorrect": false,
+          "feedback": "A smart thermostat still requires electrical power to function, just like a traditional one -- its added smart capability comes from network connectivity, not from somehow eliminating the need for power."
+        },
+        {
+          "text": "Because traditional, non-connected thermostats are incapable of controlling temperature at all",
+          "isCorrect": false,
+          "feedback": "Traditional thermostats have long been fully capable of controlling temperature on their own -- the key ADDED capability an internet-connected version offers is remote access and broader data exchange, not basic temperature control itself, which non-connected models already handle."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why has the rapid growth of Internet of Things devices raised particular cybersecurity concerns among some security researchers?",
+      "options": [
+        {
+          "text": "Many IoT devices may have limited built-in security protections or infrequent software updates, and a large number of internet-connected devices can create a correspondingly larger number of potential targets for attackers to exploit",
+          "isCorrect": true,
+          "feedback": "Correct -- this combination of potentially weaker individual device security and a rapidly growing number of connected devices overall is a commonly cited reason for heightened cybersecurity concern specifically surrounding the IoT space."
+        },
+        {
+          "text": "Because IoT devices are incapable of connecting to the internet at all, by definition",
+          "isCorrect": false,
+          "feedback": "Being connected to the internet is actually the CENTRAL, defining characteristic of an IoT device -- the cybersecurity concern specifically arises FROM that widespread connectivity, not from some inherent inability to connect at all."
+        },
+        {
+          "text": "Because traditional computers are completely immune to any possible cybersecurity threats, unlike IoT devices",
+          "isCorrect": false,
+          "feedback": "Traditional computers can also certainly be vulnerable to cybersecurity threats -- the specific IoT-related concern is more about issues like limited built-in security and a rapidly growing number of connected devices, rather than any claimed complete immunity for traditional computers."
+        },
+        {
+          "text": "Because IoT devices are required by law to have absolutely no security protections whatsoever",
+          "isCorrect": false,
+          "feedback": "There's no such legal requirement mandating zero security -- the practical concern is that many IoT devices simply MAY have relatively limited security measures in practice, a technical and design shortfall rather than a legal mandate against having any security."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Ordinary physical objects, from thermostats to appliances, get quietly hooked up to the internet so they can gather or share data.",
+        "medium": "This network of everyday physical devices connects to the internet and can collect or exchange data.",
+        "hard": "Think about everyday physical objects, like a thermostat or an appliance, quietly connected to the internet."
+      },
+      "medium": {
+        "easy": "That internet connection is what lets the device take commands remotely, say from a phone app, or adjust itself using outside data like a weather forecast.",
+        "medium": "Internet connectivity lets the device exchange data remotely, such as receiving commands from an app or adjusting based on external data.",
+        "hard": "Think about being able to control or check on the device from your phone, no matter where you actually are."
+      },
+      "hard": {
+        "easy": "A lot of these devices ship with fairly weak built-in protections, and there are now so many of them online that attackers have an ever-growing pool of easy targets to pick from.",
+        "medium": "Potentially limited built-in security on many devices, combined with a large and growing number of connected targets, is at the heart of this concern.",
+        "hard": "Think about a huge number of devices, some perhaps not built with especially strong protections, all connected to the internet at once."
+      }
+    }
+  }
+]

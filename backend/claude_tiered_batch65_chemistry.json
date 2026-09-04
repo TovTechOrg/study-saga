@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between strong and weak electrolytes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is an electrolyte, in the context of chemistry?",
+    "options": [
+      {"text": "A substance that dissolves in water to form ions, allowing the solution to conduct electricity", "isCorrect": true, "feedback": "Correct -- electrolytes dissociate into charged ions in solution, which enables the movement of electric charge through the solution."},
+      {"text": "A substance that never dissolves in water at all", "isCorrect": false, "feedback": "This is essentially the opposite characteristic -- an electrolyte specifically DOES dissolve in water, forming ions in the process."},
+      {"text": "A substance that only exists as a solid at room temperature", "isCorrect": false, "feedback": "Physical state at room temperature isn't the defining characteristic of an electrolyte -- its ability to form ions in solution is what matters."},
+      {"text": "A type of chemical bond found in all molecules", "isCorrect": false, "feedback": "An electrolyte is a type of SUBSTANCE (based on its ion-forming, conductive behavior in solution), not a type of chemical bond."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A strong electrolyte (like NaCl) dissociates almost completely into ions in water, while a weak electrolyte (like acetic acid) only partially dissociates. How does this difference affect each solution's ability to conduct electricity?",
+    "options": [
+      {"text": "The strong electrolyte solution conducts electricity much more effectively, since it contains a much higher concentration of free ions available to carry electric charge", "isCorrect": true, "feedback": "Correct -- since electrical conductivity in solution directly depends on the concentration of free-moving ions, a strong electrolyte's near-complete dissociation results in significantly better conductivity than a weak electrolyte's partial dissociation."},
+      {"text": "The weak electrolyte solution actually conducts electricity better, due to its incomplete dissociation", "isCorrect": false, "feedback": "This is backwards -- weak electrolytes, having FEWER free ions due to their partial dissociation, actually conduct electricity LESS effectively than strong electrolytes."},
+      {"text": "Both solutions would conduct electricity exactly equally well, regardless of their degree of dissociation", "isCorrect": false, "feedback": "This isn't accurate -- the degree of dissociation directly affects ion concentration, which in turn directly affects conductivity, meaning these two solutions would NOT conduct equally well."},
+      {"text": "Degree of dissociation has no actual connection to a solution's ability to conduct electricity", "isCorrect": false, "feedback": "Degree of dissociation is actually DIRECTLY connected to conductivity -- more free ions (from greater dissociation) directly enables better electrical conductivity in solution."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Pure water is technically a very weak electrolyte, since a tiny fraction of water molecules naturally dissociate into H+ and OH- ions. Why is this tiny degree of self-ionization actually significant for understanding acid-base chemistry, despite being such a small effect?",
+    "options": [
+      {"text": "This self-ionization establishes water's baseline neutral pH (7) and forms the foundational reference point for the entire pH scale, even though the actual concentration of these self-generated ions is quite small", "isCorrect": true, "feedback": "Correct -- despite occurring to a very small extent, this water self-ionization phenomenon is foundational to understanding pH, acidity, and basicity, since acids and bases are fundamentally defined relative to this baseline neutral condition established by pure water."},
+      {"text": "This self-ionization phenomenon actually has no real significance for understanding acid-base chemistry", "isCorrect": false, "feedback": "This isn't accurate -- despite its small magnitude, water's self-ionization is actually FOUNDATIONAL to the entire concept of pH and acid-base chemistry, establishing the crucial neutral reference point."},
+      {"text": "Pure water actually doesn't undergo any self-ionization at all", "isCorrect": false, "feedback": "This isn't accurate -- pure water DOES undergo a small but measurable degree of self-ionization into H+ and OH- ions, which is precisely the basis for this significant concept."},
+      {"text": "This concept is only relevant to advanced research chemistry and has no practical classroom-level applications", "isCorrect": false, "feedback": "This isn't accurate -- this concept is actually FOUNDATIONAL to understanding basic pH and acid-base chemistry at essentially every educational level, not just advanced research contexts."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This substance ionizes when dissolved in a solvent, enabling the resulting solution to conduct electrical current.", "medium": "This is a substance that breaks apart into charged particles when dissolved in water, letting the water conduct electricity.", "easy": "This is a substance that breaks into charged particles in water, letting it conduct electricity."},
+    "medium": {"hard": "Consider how the actual concentration of mobile charge carriers (ions) present in solution directly determines the solution's electrical conductivity.", "medium": "More free-floating charged particles in the water means electricity can flow through it more easily.", "easy": "More free-floating charged particles means electricity flows through more easily."},
+    "hard": {"hard": "Consider how this self-ionization phenomenon, despite its small magnitude, establishes the essential reference framework against which all subsequent acid-base concepts (like pH) are defined and measured.", "medium": "Even though only a tiny bit of water actually breaks apart, that tiny amount is what defines what 'neutral' even means on the pH scale.", "easy": "Even though only a tiny bit of water breaks apart, that's what defines 'neutral' on the pH scale."}
+  }
+}
+]

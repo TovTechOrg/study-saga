@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the fundamental counting principle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The fundamental counting principle states that if one event can occur in 'm' ways and a second independent event can occur in 'n' ways, the total number of ways both can occur together is:",
+    "options": [
+      {"text": "m × n", "isCorrect": true, "feedback": "Correct -- the counting principle uses multiplication to combine the number of choices at each independent step."},
+      {"text": "m + n", "isCorrect": false, "feedback": "This would be used for counting mutually exclusive alternatives (either/or), not combined sequential choices, which require multiplication."},
+      {"text": "m - n", "isCorrect": false, "feedback": "Subtraction isn't the correct operation for combining independent choices -- multiplication is required."},
+      {"text": "m ÷ n", "isCorrect": false, "feedback": "Division isn't the correct operation for combining independent choices -- multiplication is required."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A restaurant menu offers 4 different appetizers and 6 different main courses. If you choose exactly one appetizer and one main course, how many different meal combinations are possible?",
+    "options": [
+      {"text": "24", "isCorrect": true, "feedback": "Correct -- using the fundamental counting principle, 4 × 6 = 24 possible combinations."},
+      {"text": "10", "isCorrect": false, "feedback": "This results from ADDING 4+6 instead of multiplying, which is the correct operation for the counting principle."},
+      {"text": "4", "isCorrect": false, "feedback": "This is just the number of appetizer choices alone, not the full combination count including main courses."},
+      {"text": "6", "isCorrect": false, "feedback": "This is just the number of main course choices alone, not the full combination count including appetizers."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A license plate consists of 3 letters followed by 4 digits. If letters and digits can each repeat, how many different license plates are possible? (26 possible letters, 10 possible digits)",
+    "options": [
+      {"text": "26³ × 10⁴ (175,760,000)", "isCorrect": true, "feedback": "Correct -- apply the counting principle across all 7 positions: 26×26×26×10×10×10×10 = 17,576 × 10,000 = 175,760,000."},
+      {"text": "26 × 10 (260)", "isCorrect": false, "feedback": "This only accounts for one letter position and one digit position, not all 3 letter positions and 4 digit positions."},
+      {"text": "(26+10)⁷", "isCorrect": false, "feedback": "This incorrectly adds the letter and digit counts together before raising to a power, rather than correctly multiplying separate position counts."},
+      {"text": "26⁴ × 10³", "isCorrect": false, "feedback": "This swaps the exponents -- there are 3 letter positions (not 4) and 4 digit positions (not 3)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This principle combines the number of possible outcomes for each independent sequential choice via multiplication.", "medium": "This principle says to multiply the number of choices at each step together.", "easy": "This principle says to multiply the number of choices at each step together."},
+    "medium": {"hard": "Apply the counting principle by multiplying the number of independent choices available at each selection stage.", "medium": "Multiply the number of appetizer choices by the number of main course choices.", "easy": "Multiply 4 by 6 to get 24."},
+    "hard": {"hard": "Apply the counting principle across all seven independent positions, multiplying the number of choices available at each position sequentially.", "medium": "Multiply 26 by itself 3 times (for the letters), then multiply by 10 four times (for the digits).", "easy": "Multiply 26×26×26 for the letters, then multiply by 10×10×10×10 for the digits."}
+  }
+}
+]

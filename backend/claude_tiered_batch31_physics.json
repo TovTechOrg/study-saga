@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a satellite's orbit as continuous free fall",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What force keeps a satellite in orbit around Earth?",
+    "options": [
+      {"text": "Gravity", "isCorrect": true, "feedback": "Correct -- Earth's gravity continuously pulls the satellite, curving its path into an orbit."},
+      {"text": "The satellite's own engines running constantly", "isCorrect": false, "feedback": "Most orbiting satellites don't need constant engine thrust -- gravity alone maintains their orbital path."},
+      {"text": "Magnetism", "isCorrect": false, "feedback": "Magnetism isn't the force responsible for orbital motion -- gravity is."},
+      {"text": "Air pressure", "isCorrect": false, "feedback": "There's essentially no air at typical satellite orbital altitudes -- gravity alone maintains the orbit."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Astronauts on the International Space Station appear weightless, even though Earth's gravity there is still quite strong (almost as strong as on Earth's surface). Why do they experience this apparent weightlessness?",
+    "options": [
+      {"text": "The station and everything inside it are in continuous free fall together, so there's no relative force pushing astronauts against any surface", "isCorrect": true, "feedback": "Correct -- orbiting is essentially a state of perpetual falling around the Earth, and since everything falls together at the same rate, astronauts don't feel a supporting force, creating the sensation of weightlessness."},
+      {"text": "Gravity doesn't actually exist at that altitude", "isCorrect": false, "feedback": "Gravity is still very much present and strong at the ISS's orbital altitude -- the weightless sensation comes from the state of continuous free fall, not an absence of gravity."},
+      {"text": "The astronauts have no actual mass while in space", "isCorrect": false, "feedback": "Astronauts retain their full mass in space -- what changes is the absence of a supporting force (like a floor) pushing back against that mass, due to free fall."},
+      {"text": "This weightlessness has nothing to do with orbital motion", "isCorrect": false, "feedback": "This sensation is actually directly and specifically explained by the physics of orbital free fall."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A common misconception is that astronauts feel weightless because they are \"outside of Earth's gravity.\" Why is this explanation actually incorrect, based on the true physics of orbital motion?",
+    "options": [
+      {"text": "Earth's gravity at typical orbital altitudes is still nearly as strong as at the surface -- weightlessness results from continuous free fall (falling around the Earth) rather than an absence or great weakening of gravity", "isCorrect": true, "feedback": "Correct -- gravity is what keeps the satellite (and astronauts) in orbit in the first place; without gravity, they wouldn't orbit at all, but instead fly off in a straight line."},
+      {"text": "This popular explanation is actually completely correct", "isCorrect": false, "feedback": "This is actually a common misconception -- gravity remains strong at orbital altitudes, and it's precisely gravity that causes the continuous free-fall state producing weightlessness."},
+      {"text": "Gravity actually increases dramatically once you leave Earth's surface", "isCorrect": false, "feedback": "Gravity actually decreases gradually (not increases) with distance from Earth, though it remains substantial at typical orbital altitudes."},
+      {"text": "Weightlessness has no connection to gravity at all", "isCorrect": false, "feedback": "Weightlessness in orbit is actually directly caused by gravity (creating continuous free fall), not something unrelated to it."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This universal attractive force curves the satellite's path into a continuous, repeating fall around the planet.", "medium": "This is the same force that pulls things down to the ground on Earth's surface.", "easy": "This is the same force that pulls things down here on Earth."},
+    "medium": {"hard": "A shared state of continuous acceleration toward Earth means no differential (supporting) force develops between the astronaut and their surroundings.", "medium": "Since the station and the astronauts are both falling together at the same rate, there's nothing pushing back on the astronauts to make them feel their weight.", "easy": "Since the station and astronauts are falling together at the same rate, nothing pushes back on them to make them feel weight."},
+    "hard": {"hard": "Without gravity, there would be no curved orbital path at all -- gravity is the essential cause of the continuous free-fall trajectory that produces the sensation of weightlessness, not an absent or negligible force at that altitude.", "medium": "Gravity is actually still strong up there -- it's exactly what's making the station continuously fall around the Earth, which is what causes the weightless feeling.", "easy": "Gravity is still strong up there -- it's actually what makes the station keep falling around the Earth, causing the weightless feeling."}
+  }
+}
+]

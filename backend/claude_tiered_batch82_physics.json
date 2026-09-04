@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between scalar and vector displacement vs. distance",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the key difference between 'distance' and 'displacement'?",
+    "options": [
+      {"text": "Distance is the total path length traveled (scalar), while displacement is the straight-line change in position including direction (vector)", "isCorrect": true, "feedback": "Correct -- distance measures total ground covered regardless of direction, while displacement specifically measures the net change in position from start to end point."},
+      {"text": "Distance and displacement are always exactly equal in every situation", "isCorrect": false, "feedback": "This isn't accurate -- these are only equal for perfectly straight-line motion in one direction; for any path involving turns or backtracking, distance and displacement will differ."},
+      {"text": "Displacement measures the total path length traveled, while distance measures the straight-line change in position", "isCorrect": false, "feedback": "This has the definitions reversed -- DISTANCE measures total path length, while DISPLACEMENT specifically measures the net straight-line change in position."},
+      {"text": "Distance requires a specific direction, while displacement does not", "isCorrect": false, "feedback": "This is backwards -- DISPLACEMENT specifically requires a direction (vector), while DISTANCE does not (scalar, magnitude only)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A runner completes one full lap around a 400-meter circular track, ending up back at their exact starting point. What are their total distance traveled and total displacement?",
+    "options": [
+      {"text": "Distance = 400 meters; Displacement = 0 meters", "isCorrect": true, "feedback": "Correct -- the runner traveled the full 400m path (distance), but since they ended up back at their starting point, their net change in position (displacement) is zero."},
+      {"text": "Distance = 0 meters; Displacement = 400 meters", "isCorrect": false, "feedback": "This has the values reversed -- the runner DID cover 400m of actual path (distance), but their DISPLACEMENT (net position change) is 0, since they returned to their starting point."},
+      {"text": "Distance = 400 meters; Displacement = 400 meters", "isCorrect": false, "feedback": "This isn't accurate -- while distance is indeed 400m, displacement should be 0m, not 400m, since the runner ended up exactly where they started."},
+      {"text": "Both distance and displacement would actually be 0 meters", "isCorrect": false, "feedback": "This isn't accurate -- while displacement IS 0 (net position unchanged), distance is NOT 0, since the runner did travel an actual physical path of 400m."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A hiker walks 3 km east, then 4 km north. Using the Pythagorean theorem (since these two segments form a right angle), what is the hiker's total displacement (straight-line distance from start to end point), and how does this compare to their total distance traveled?",
+    "options": [
+      {"text": "Displacement = 5 km (√(3²+4²)); Distance = 7 km (3+4); displacement is LESS than the total distance traveled", "isCorrect": true, "feedback": "Correct -- displacement (5km, the direct straight-line path) is calculated via the Pythagorean theorem, while distance (7km) simply sums the actual path segments traveled; displacement being less than distance is typical for any non-straight-line path."},
+      {"text": "Displacement = 7 km; Distance = 5 km", "isCorrect": false, "feedback": "This has the values reversed -- DISTANCE (simple path summing) should be 7km, while DISPLACEMENT (straight-line Pythagorean calculation) should be 5km, not the other way around."},
+      {"text": "Displacement and distance would actually be exactly equal in this scenario, both 7 km", "isCorrect": false, "feedback": "This isn't accurate -- since the hiker's path involves a direction CHANGE (not a single straight line), displacement (5km) and distance (7km) are NOT equal in this scenario."},
+      {"text": "The Pythagorean theorem has no actual application for calculating displacement in this type of scenario", "isCorrect": false, "feedback": "This isn't accurate -- the Pythagorean theorem is PRECISELY the correct tool for calculating displacement here, since the two path segments (3km east, 4km north) form a right angle, allowing the straight-line distance to be calculated directly."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One of these quantities is a scalar measuring cumulative path length; the other is a vector measuring net positional change including direction.", "medium": "One measures the total ground covered, and the other measures how far you actually ended up from where you started (in a straight line).", "easy": "One measures total ground covered, the other measures a straight line from start to end."},
+    "medium": {"hard": "Determine the total path length traversed versus the net straight-line separation between the initial and final positions.", "medium": "Distance is just the total length of the path walked; displacement is how far the ending point actually is from the starting point.", "easy": "Distance is the full lap (400m); displacement is zero since start and end are the same spot."},
+    "hard": {"hard": "Compute distance via simple additive path-segment summation, and displacement via the geometric (Pythagorean) resultant of the two perpendicular displacement components.", "medium": "Add the two segments together for distance (3+4=7), and use the Pythagorean theorem on those same two segments for displacement.", "easy": "Distance is 3+4=7km. Displacement uses √(3²+4²)=5km."}
+  }
+}
+]

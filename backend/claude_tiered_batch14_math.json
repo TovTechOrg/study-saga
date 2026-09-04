@@ -1,0 +1,207 @@
+[
+{
+  "topic": "finding the mean from a frequency table",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A frequency table shows: 2 appears 3 times, 4 appears 2 times. What is the sum of all the values (not yet the mean)?",
+    "options": [
+      {"text": "14", "isCorrect": true, "feedback": "Correct -- (2×3)+(4×2)=6+8=14."},
+      {"text": "6", "isCorrect": false, "feedback": "This only accounts for the value 2 appearing 3 times, ignoring the value 4."},
+      {"text": "8", "isCorrect": false, "feedback": "This only accounts for the value 4 appearing 2 times, ignoring the value 2."},
+      {"text": "5", "isCorrect": false, "feedback": "This doesn't match correctly multiplying each value by its frequency and adding."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A frequency table shows: 3 appears 2 times, 5 appears 3 times, 7 appears 1 time. What is the mean of this data?",
+    "options": [
+      {"text": "4.67", "isCorrect": true, "feedback": "Correct -- sum is (3×2)+(5×3)+(7×1)=6+15+7=28, and total count is 2+3+1=6, so 28÷6≈4.67."},
+      {"text": "5", "isCorrect": false, "feedback": "This is close, but doesn't match the precise result of dividing 28 by 6."},
+      {"text": "5.5", "isCorrect": false, "feedback": "This doesn't match the correct sum divided by total count."},
+      {"text": "6", "isCorrect": false, "feedback": "This doesn't match the correct sum divided by total count."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A frequency table shows: 10 appears 4 times, 20 appears 4 times, 30 appears 2 times. What is the mean of this data?",
+    "options": [
+      {"text": "18", "isCorrect": true, "feedback": "Correct -- sum is (10×4)+(20×4)+(30×2)=40+80+60=180, total count is 4+4+2=10, so 180÷10=18."},
+      {"text": "20", "isCorrect": false, "feedback": "This is just the middle value, not the actual weighted mean."},
+      {"text": "60", "isCorrect": false, "feedback": "This is the simple average of 10, 20, and 30 without weighting by frequency."},
+      {"text": "15", "isCorrect": false, "feedback": "This doesn't match correctly computing the weighted sum divided by total count."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply each value by how many times it occurs, then add all those products together.", "medium": "Multiply 2 by 3, and 4 by 2, then add the results.", "easy": "Multiply 2 by 3 to get 6, and 4 by 2 to get 8, then add them."},
+    "medium": {"hard": "Multiply each value by its frequency, sum those products, then divide by the total number of data points.", "medium": "Add up all the weighted values, then divide by the total count of data points (6).", "easy": "Add up all the values weighted by frequency, then divide by 6."},
+    "hard": {"hard": "Multiply each value by its frequency, sum those products, then divide by the total number of data points.", "medium": "Add up all the weighted values (180), then divide by the total count of data points (10).", "easy": "Divide 180 by 10."}
+  }
+},
+{
+  "topic": "finding the missing dimension given area",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A rectangle has an area of 24 and a width of 4. What is its length?",
+    "options": [
+      {"text": "6", "isCorrect": true, "feedback": "Correct -- 24÷4=6."},
+      {"text": "20", "isCorrect": false, "feedback": "This subtracts instead of dividing area by width."},
+      {"text": "96", "isCorrect": false, "feedback": "This multiplies instead of dividing area by width."},
+      {"text": "4", "isCorrect": false, "feedback": "This just repeats the given width instead of solving for the length."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A triangle has an area of 30 and a base of 12. What is its height? (Formula: Area = ½ × base × height)",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- 30=½×12×h, so 30=6h, h=5."},
+      {"text": "2.5", "isCorrect": false, "feedback": "This doesn't correctly reverse the ½ base × height formula."},
+      {"text": "60", "isCorrect": false, "feedback": "This doesn't correctly divide by the base after doubling."},
+      {"text": "18", "isCorrect": false, "feedback": "This doesn't match correctly solving 30=6h."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A trapezoid has an area of 60, a height of 5, and one base of 10. What is the length of the other base? (Formula: Area = ½ × (base1+base2) × height)",
+    "options": [
+      {"text": "14", "isCorrect": true, "feedback": "Correct -- 60=½×(10+b)×5, so 60=2.5×(10+b), 24=10+b, b=14."},
+      {"text": "12", "isCorrect": false, "feedback": "This doesn't correctly reverse the trapezoid area formula."},
+      {"text": "24", "isCorrect": false, "feedback": "This is the sum of both bases, not the missing base alone."},
+      {"text": "8", "isCorrect": false, "feedback": "This doesn't match correctly solving the trapezoid area equation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Divide the total area by the known dimension to isolate the missing one.", "medium": "Divide the area by the width.", "easy": "Divide 24 by 4."},
+    "medium": {"hard": "Reverse the triangle area formula by multiplying by 2 and then dividing by the base.", "medium": "Multiply 30 by 2, then divide by 12.", "easy": "Double 30 to get 60, then divide by 12."},
+    "hard": {"hard": "Divide by height, double the result, then subtract the known base to isolate the missing one.", "medium": "Divide 60 by 5, double that, then subtract 10.", "easy": "Divide 60 by 5 to get 12, double it to get 24, then subtract 10."}
+  }
+},
+{
+  "topic": "understanding negative exponents",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is x⁻¹ equivalent to?",
+    "options": [
+      {"text": "1/x", "isCorrect": true, "feedback": "Correct -- a negative exponent means taking the reciprocal of the base raised to the positive exponent."},
+      {"text": "-x", "isCorrect": false, "feedback": "A negative exponent doesn't simply make the value negative -- it indicates a reciprocal."},
+      {"text": "x", "isCorrect": false, "feedback": "This ignores the negative exponent entirely."},
+      {"text": "0", "isCorrect": false, "feedback": "A negative exponent doesn't result in zero -- it results in a reciprocal fraction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 2⁻³ equal to?",
+    "options": [
+      {"text": "1/8", "isCorrect": true, "feedback": "Correct -- 2⁻³=1/2³=1/8."},
+      {"text": "-8", "isCorrect": false, "feedback": "A negative exponent doesn't make the result negative -- it creates a reciprocal, which is positive here."},
+      {"text": "8", "isCorrect": false, "feedback": "This forgets to take the reciprocal after computing 2³."},
+      {"text": "-6", "isCorrect": false, "feedback": "This doesn't correctly apply the negative exponent rule at all."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Simplify: (3⁻²) × (3⁴)",
+    "options": [
+      {"text": "9", "isCorrect": true, "feedback": "Correct -- add the exponents: -2+4=2, so the result is 3²=9."},
+      {"text": "3⁻⁸", "isCorrect": false, "feedback": "This multiplies the exponents instead of adding them."},
+      {"text": "1/9", "isCorrect": false, "feedback": "This doesn't correctly add the exponents (-2+4=2, a positive result)."},
+      {"text": "81", "isCorrect": false, "feedback": "This doesn't match correctly adding -2 and 4 to get exponent 2."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "A negative exponent signals taking the reciprocal of the base raised to the corresponding positive exponent.", "medium": "A negative exponent means flipping the base into a fraction.", "easy": "A negative exponent means put a 1 over that base."},
+    "medium": {"hard": "Compute the positive-exponent version first, then take its reciprocal.", "medium": "Calculate 2³ first, then flip it into a fraction.", "easy": "Calculate 2³ (which is 8), then flip it to 1/8."},
+    "hard": {"hard": "When multiplying same-base powers, add the exponents together, even when one is negative.", "medium": "Add -2 and 4 together to get the new exponent.", "easy": "Add -2 and 4 together to get 2, then calculate 3 squared."}
+  }
+},
+{
+  "topic": "calculating average speed over multiple segments",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A car travels 100 miles in 2 hours. What is its average speed?",
+    "options": [
+      {"text": "50 mph", "isCorrect": true, "feedback": "Correct -- average speed = total distance ÷ total time = 100÷2=50."},
+      {"text": "200 mph", "isCorrect": false, "feedback": "This multiplies instead of dividing distance by time."},
+      {"text": "102 mph", "isCorrect": false, "feedback": "This adds the numbers instead of dividing them."},
+      {"text": "98 mph", "isCorrect": false, "feedback": "This subtracts the numbers instead of dividing them."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A cyclist rides 30 miles in the first 2 hours, then 20 miles in the next 1 hour. What is their overall average speed for the whole trip?",
+    "options": [
+      {"text": "50/3 mph, or about 16.7 mph", "isCorrect": true, "feedback": "Correct -- total distance is 30+20=50 miles, total time is 2+1=3 hours, so 50÷3≈16.7."},
+      {"text": "25 mph", "isCorrect": false, "feedback": "This averages the two individual speeds (15 and 20) rather than dividing total distance by total time."},
+      {"text": "20 mph", "isCorrect": false, "feedback": "This only reflects the second segment's speed, not the overall trip average."},
+      {"text": "15 mph", "isCorrect": false, "feedback": "This only reflects the first segment's speed, not the overall trip average."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A train travels the first half of its journey at 60 mph and the second half (same distance) at 40 mph. Why is the overall average speed NOT simply 50 mph (the arithmetic average of 60 and 40)?",
+    "options": [
+      {"text": "The train spends more TIME traveling at the slower speed (since time = distance/speed), so the slower speed has a greater influence on the true overall average", "isCorrect": true, "feedback": "Correct -- true average speed must account for the actual time spent at each speed, not just average the speed values directly, since equal DISTANCES don't mean equal TIMES."},
+      {"text": "The distances are actually different for each half of the trip", "isCorrect": false, "feedback": "The problem specifies equal distances for each half -- the issue is that equal distances at different speeds take unequal amounts of TIME."},
+      {"text": "Average speed calculations don't apply to trains", "isCorrect": false, "feedback": "Average speed calculations apply to any moving object, including trains -- the key issue here is properly weighting by time, not distance."},
+      {"text": "50 mph actually is the correct overall average in this case", "isCorrect": false, "feedback": "This is a common misconception -- because more time is spent at the slower speed, the true weighted average is actually somewhat less than 50 mph."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Divide the total distance covered by the total time it took to cover it.", "medium": "Divide the total distance by the total time.", "easy": "Divide 100 by 2."},
+    "medium": {"hard": "Add up the total distance across all segments, add up the total time across all segments, then divide the total distance by the total time.", "medium": "Add both distances together, add both times together, then divide the total distance by the total time.", "easy": "Add 30 and 20 to get 50, add 2 and 1 to get 3, then divide 50 by 3."},
+    "hard": {"hard": "Since equal distances at different speeds require unequal time durations, a true time-weighted average will always be pulled more toward the slower speed's contribution.", "medium": "Since the train spends more actual time going the slower speed, that slower speed ends up affecting the overall average more heavily.", "easy": "Since the train spends more time going slow, the slow speed pulls the true average speed down below 50."}
+  }
+},
+{
+  "topic": "finding a fraction of a whole number",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 1/2 of 20?",
+    "options": [
+      {"text": "10", "isCorrect": true, "feedback": "Correct -- half of 20 is 10."},
+      {"text": "40", "isCorrect": false, "feedback": "This doubles 20 instead of taking half of it."},
+      {"text": "2", "isCorrect": false, "feedback": "This doesn't match correctly dividing 20 by 2."},
+      {"text": "22", "isCorrect": false, "feedback": "This adds instead of taking a fraction of 20."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 3/4 of 32?",
+    "options": [
+      {"text": "24", "isCorrect": true, "feedback": "Correct -- 32÷4=8, and 8×3=24."},
+      {"text": "8", "isCorrect": false, "feedback": "This is just 1/4 of 32, not 3/4."},
+      {"text": "28", "isCorrect": false, "feedback": "This doesn't match correctly computing 3/4 of 32."},
+      {"text": "36", "isCorrect": false, "feedback": "This overstates the correct value."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A classroom has 40 students. If 2/5 of them are boys, and 3/4 of the boys play a sport, how many boys play a sport?",
+    "options": [
+      {"text": "12", "isCorrect": true, "feedback": "Correct -- 2/5 of 40 is 16 boys, and 3/4 of 16 is 12."},
+      {"text": "16", "isCorrect": false, "feedback": "This is the total number of boys, but forgets to apply the second fraction (3/4 who play a sport)."},
+      {"text": "30", "isCorrect": false, "feedback": "This doesn't match correctly applying both fractions in sequence."},
+      {"text": "24", "isCorrect": false, "feedback": "This doesn't match correctly computing 3/4 of the 16 boys."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply the whole number by the fraction to find the specified portion.", "medium": "Divide 20 by 2 to find half.", "easy": "Divide 20 by 2."},
+    "medium": {"hard": "Divide by the denominator first, then multiply by the numerator to find the fractional portion.", "medium": "Divide 32 by 4, then multiply by 3.", "easy": "Divide 32 by 4 to get 8, then multiply by 3."},
+    "hard": {"hard": "Apply each fraction sequentially: first find the fractional portion of the total, then find the fractional portion of that result.", "medium": "First find 2/5 of 40, then find 3/4 of that result.", "easy": "First find 2/5 of 40 (which is 16), then find 3/4 of 16."}
+  }
+}
+]

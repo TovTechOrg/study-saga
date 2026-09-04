@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a virus needing a specific host cell receptor",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Why can't a typical virus infect just any random type of cell?",
+    "options": [
+      {"text": "The virus needs to bind to a specific matching receptor on the surface of a compatible host cell", "isCorrect": true, "feedback": "Correct -- this specific lock-and-key binding requirement limits which cell types a given virus can actually infect."},
+      {"text": "Viruses can actually infect any cell they come into contact with", "isCorrect": false, "feedback": "This isn't accurate -- viruses require a specific matching receptor to successfully attach to and enter a host cell."},
+      {"text": "Viruses don't need to enter cells at all to reproduce", "isCorrect": false, "feedback": "Viruses specifically need to enter a host cell to hijack its machinery for reproduction -- receptor binding is a key step in this process."},
+      {"text": "This has nothing to do with any specific molecular interaction", "isCorrect": false, "feedback": "This is actually directly explained by a specific molecular interaction: the virus's surface proteins matching a particular host cell receptor."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The flu virus primarily infects respiratory tract cells, while a different virus might target liver cells. What does this specificity suggest about how each virus is structured?",
+    "options": [
+      {"text": "Each virus's surface proteins are shaped to bind specifically to the receptor proteins found on their particular target cell type", "isCorrect": true, "feedback": "Correct -- this specific structural matching (like a key fitting a particular lock) explains why different viruses target different tissues in the body."},
+      {"text": "All viruses have identical surface structures, regardless of which cells they infect", "isCorrect": false, "feedback": "If this were true, viruses wouldn't show this kind of tissue specificity -- their surface structures actually differ to match different target receptors."},
+      {"text": "Virus targeting has nothing to do with any structural features of the virus", "isCorrect": false, "feedback": "This targeting specificity is actually directly explained by the virus's own structural features (surface proteins) matching specific host receptors."},
+      {"text": "Viruses randomly choose which type of cell to infect each time", "isCorrect": false, "feedback": "This targeting is not random -- it's determined by a specific molecular compatibility between the virus's surface proteins and the host cell's receptors."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some antiviral drugs work by blocking the specific receptor a virus needs to enter host cells, rather than attacking the virus directly. Why might this be an effective strategy?",
+    "options": [
+      {"text": "If the virus cannot bind to and enter the host cell in the first place, it cannot replicate, effectively stopping the infection at its earliest stage, before viral replication even begins", "isCorrect": true, "feedback": "Correct -- this preventive strategy targets a critical, specific vulnerability in the virus's infection process, rather than trying to combat an already-established infection."},
+      {"text": "This strategy has no actual effect on viral infection at all", "isCorrect": false, "feedback": "This is actually a legitimate, effective antiviral strategy used in real medicine, specifically by preventing the essential first step of viral entry."},
+      {"text": "Blocking a receptor would actually make it easier for the virus to enter cells", "isCorrect": false, "feedback": "This is backwards -- blocking the necessary receptor makes it HARDER (not easier) for the virus to successfully enter and infect the cell."},
+      {"text": "Viruses don't actually need to enter any specific cells to cause illness", "isCorrect": false, "feedback": "Viral illness specifically depends on the virus successfully entering host cells to hijack their machinery for replication -- receptor binding is an essential first step in this process."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process requires a precise structural match between the virus and a specific molecule on the host cell's surface.", "medium": "The virus needs to fit onto a specific matching spot on the cell's surface, like a key fitting a lock.", "easy": "The virus needs to fit onto a specific matching spot on the cell, like a key fitting a lock."},
+    "medium": {"hard": "Different viruses have evolved surface structures precisely complementary to the receptor molecules characteristic of their particular target tissue.", "medium": "Each virus has its own specific shape that only matches the receptors found on its particular target cell type.", "easy": "Each virus has its own specific shape that only matches its particular target cell type."},
+    "hard": {"hard": "Since receptor binding is an obligatory first step for viral entry and subsequent replication, disrupting this step prevents the infection cycle from ever beginning, regardless of the virus's subsequent replicative capability.", "medium": "If the virus can't even get into the cell in the first place, it has no way to start making copies of itself and spreading the infection.", "easy": "If the virus can't even get into the cell in the first place, it can't start making copies of itself."}
+  }
+}
+]

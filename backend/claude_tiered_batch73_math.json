@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of permutations with repetition allowed",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If repetition is allowed, how many different 2-digit codes can be made using the digits 1, 2, and 3 (each digit can be used more than once)?",
+    "options": [
+      {"text": "9", "isCorrect": true, "feedback": "Correct -- with 3 choices for each of the 2 positions (repetition allowed), the total is 3×3=9."},
+      {"text": "6", "isCorrect": false, "feedback": "This would be correct WITHOUT repetition (3×2=6 for choosing different digits each time), but repetition IS allowed here, giving 3×3=9."},
+      {"text": "3", "isCorrect": false, "feedback": "This is just the number of available digits, not the total number of possible 2-digit codes using them."},
+      {"text": "5", "isCorrect": false, "feedback": "This doesn't correctly result from applying the counting principle (3 choices × 3 choices) for this scenario."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A padlock uses a 3-digit code, with each digit ranging from 0-9 (repetition allowed). How many total possible codes exist?",
+    "options": [
+      {"text": "1,000", "isCorrect": true, "feedback": "Correct -- with 10 choices for each of the 3 positions (0-9, repetition allowed), the total is 10×10×10=1,000."},
+      {"text": "30", "isCorrect": false, "feedback": "This results from adding (10+10+10) instead of correctly multiplying the choices together."},
+      {"text": "720", "isCorrect": false, "feedback": "This would be the result WITHOUT repetition allowed (10×9×8), but repetition IS explicitly allowed here, giving a different total."},
+      {"text": "100", "isCorrect": false, "feedback": "This only accounts for 2 digit positions (10×10), missing the third digit position in this 3-digit code."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A license plate format uses 2 letters followed by 3 digits, with repetition allowed for both letters and digits (26 letters, 10 digits). If the state decides to change the format to 3 letters followed by 2 digits instead (keeping the same total of 5 characters), how does the total number of possible plates change?",
+    "options": [
+      {"text": "The number of possible plates increases significantly, since 26³×10² (1,757,600) is much greater than the original 26²×10³ (676,000)", "isCorrect": true, "feedback": "Correct -- since letters (26 options) provide more possible combinations per position than digits (10 options), shifting to MORE letter positions (even while keeping the same total character count) substantially increases the total number of possible plates."},
+      {"text": "The total number of possible plates would actually stay exactly the same either way", "isCorrect": false, "feedback": "This isn't accurate -- calculating both totals (676,000 for the original format vs. 1,757,600 for the new format) shows they are NOT equal; the new format actually allows for significantly MORE combinations."},
+      {"text": "The number of possible plates would actually decrease with the new format", "isCorrect": false, "feedback": "This is backwards -- switching to MORE letter positions (which each offer more choices than digit positions) actually INCREASES the total number of possible combinations, not decreases it."},
+      {"text": "The specific arrangement of letters versus digits has no actual effect on the total number of possible plate combinations", "isCorrect": false, "feedback": "This isn't accurate -- the SPECIFIC arrangement (how many letter positions vs. digit positions) very much affects the total combination count, since letters and digits offer different numbers of choices per position."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Apply the fundamental counting principle across each independent position, permitting recurring selections from the same available option set.", "medium": "Multiply the number of choices for the first position by the number of choices for the second position.", "easy": "Multiply 3 choices by 3 choices to get 9."},
+    "medium": {"hard": "Apply the fundamental counting principle sequentially across each of the three independent digit positions, given ten choices per position with unrestricted repetition.", "medium": "Multiply the number of choices (10) for each of the three digit positions together.", "easy": "Multiply 10×10×10 to get 1,000."},
+    "hard": {"hard": "Calculate the total combination count separately for each format using the fundamental counting principle, then directly compare the two resulting totals.", "medium": "Calculate 26×26×10×10×10 for the original format, and 26×26×26×10×10 for the new format, then compare the two totals.", "easy": "Calculate both totals (676,000 vs 1,757,600) and compare -- the new format has more."}
+  }
+}
+]

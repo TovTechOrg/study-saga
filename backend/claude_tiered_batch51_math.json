@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of function notation and evaluating functions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If f(x) = x + 3, what does f(5) mean?",
+    "options": [
+      {"text": "Substitute 5 for x in the function, giving f(5) = 5 + 3 = 8", "isCorrect": true, "feedback": "Correct -- function notation means plugging the given value in for x wherever it appears in the function's rule."},
+      {"text": "Multiply f by 5", "isCorrect": false, "feedback": "f(5) doesn't represent multiplication -- it means evaluating the function f at the input value 5."},
+      {"text": "Add 5 to the function name f", "isCorrect": false, "feedback": "This misinterprets function notation -- f(5) means evaluating the function at x=5, not adding to the function's name."},
+      {"text": "It means f and 5 are separate, unrelated values", "isCorrect": false, "feedback": "f(5) is a single, specific value: the output of function f when the input is 5, not two separate values."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Given g(x) = 2x² - 3, find g(4).",
+    "options": [
+      {"text": "29", "isCorrect": true, "feedback": "Correct -- g(4) = 2(4)² - 3 = 2(16) - 3 = 32 - 3 = 29."},
+      {"text": "13", "isCorrect": false, "feedback": "This doesn't correctly square 4 before multiplying by 2 -- check the order of operations."},
+      {"text": "5", "isCorrect": false, "feedback": "This doesn't correctly result from evaluating the full expression 2(4)²-3."},
+      {"text": "35", "isCorrect": false, "feedback": "This doesn't correctly subtract 3 from the correctly calculated 2(4)² term."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Given h(x) = 3x - 1, find the value of x such that h(x) = 14.",
+    "options": [
+      {"text": "x = 5", "isCorrect": true, "feedback": "Correct -- setting 3x-1=14, adding 1 to both sides gives 3x=15, then dividing by 3 gives x=5."},
+      {"text": "x = 13", "isCorrect": false, "feedback": "This doesn't correctly solve the equation 3x-1=14 for x -- check the algebraic steps."},
+      {"text": "x = 4", "isCorrect": false, "feedback": "Checking: h(4)=3(4)-1=11, which doesn't equal 14, so this isn't the correct solution."},
+      {"text": "x = 15", "isCorrect": false, "feedback": "This represents 3x (before dividing by 3) rather than the final solved value of x itself."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This notation instructs substitution of the specified input value for the function's independent variable throughout its defining expression.", "medium": "This means plugging in the number 5 everywhere you see x in the function's rule.", "easy": "This means plugging 5 in for x in the function's rule."},
+    "medium": {"hard": "Substitute the given input directly into the function's expression, applying the order of operations carefully, especially with the squared term.", "medium": "Replace x with 4, remembering to square 4 first before multiplying by 2.", "easy": "Replace x with 4: square it to get 16, multiply by 2 to get 32, then subtract 3."},
+    "hard": {"hard": "Set the function's expression equal to the target output value, then isolate the variable algebraically using standard equation-solving steps.", "medium": "Set 3x-1 equal to 14, then use algebra (add 1, then divide by 3) to solve for x.", "easy": "Set 3x-1=14. Add 1 to both sides to get 3x=15, then divide by 3."}
+  }
+}
+]

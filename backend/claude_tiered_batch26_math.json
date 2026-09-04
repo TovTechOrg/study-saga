@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of a step function or piecewise cost",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A parking garage charges $5 for the first hour, then $5 for each additional hour (or part of an hour). How much does 2.5 hours of parking cost?",
+    "options": [
+      {"text": "$15", "isCorrect": true, "feedback": "Correct -- 2.5 hours requires rounding up to 3 full billed hours (first hour + 2 more), so 3×$5=$15."},
+      {"text": "$12.50", "isCorrect": false, "feedback": "This treats the cost as continuous/proportional, but the pricing is based on whole (rounded-up) hours, not fractional ones."},
+      {"text": "$10", "isCorrect": false, "feedback": "This only counts 2 billed hours, but 2.5 hours actually requires rounding up to 3 billed hours."},
+      {"text": "$5", "isCorrect": false, "feedback": "This only accounts for the first hour, ignoring the additional time parked."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Using the same parking garage rule ($5 per hour or part of an hour), how much does exactly 4 hours of parking cost?",
+    "options": [
+      {"text": "$20", "isCorrect": true, "feedback": "Correct -- exactly 4 full hours costs 4×$5=$20, with no partial hour needing to be rounded up."},
+      {"text": "$25", "isCorrect": false, "feedback": "This rounds up to 5 hours unnecessarily, when exactly 4 full hours requires no rounding."},
+      {"text": "$15", "isCorrect": false, "feedback": "This only counts 3 hours, undercounting the actual 4 hours parked."},
+      {"text": "$4", "isCorrect": false, "feedback": "This confuses the number of hours with the actual dollar cost."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A shipping company charges $10 for packages up to 5 lbs, then an additional $3 for every additional pound (or part of a pound) beyond that. What is the cost to ship a 7.2 lb package?",
+    "options": [
+      {"text": "$19", "isCorrect": true, "feedback": "Correct -- the first 5 lbs costs $10; the remaining 2.2 lbs rounds up to 3 billed additional pounds, costing 3×$3=$9, for a total of 10+9=19."},
+      {"text": "$16.60", "isCorrect": false, "feedback": "This treats the extra weight as continuous/proportional, but the pricing is based on whole (rounded-up) additional pounds, not fractional ones."},
+      {"text": "$16", "isCorrect": false, "feedback": "This only rounds up to 2 extra billed pounds, but 2.2 lbs actually requires rounding up to 3."},
+      {"text": "$22", "isCorrect": false, "feedback": "This overcounts the extra billed pounds beyond what's actually needed for 7.2 lbs."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Any partial unit of time or weight still counts as a full unit for billing purposes in this type of pricing structure.", "medium": "Since any part of an hour counts as a full hour, round 2.5 up to the next whole hour.", "easy": "Since any part of an hour counts as a full hour, round 2.5 up to 3."},
+    "medium": {"hard": "Multiply the flat per-unit rate by the exact number of whole units used, when no rounding is needed.", "medium": "Since it's exactly 4 whole hours, no rounding is needed -- just multiply by the rate.", "easy": "Multiply 4 by $5."},
+    "hard": {"hard": "Separate the base fee from the additional charge, rounding UP any partial additional unit to the next whole unit before multiplying by the per-unit rate.", "medium": "Start with the base $10 for the first 5 lbs, then round the remaining weight up to the next whole pound before multiplying by $3.", "easy": "Start with $10, then round 2.2 extra pounds up to 3, and multiply by $3, then add to the $10."}
+  }
+}
+]

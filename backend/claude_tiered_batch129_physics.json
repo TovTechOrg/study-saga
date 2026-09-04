@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between specific heat capacity and latent heat",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Specific heat capacity' describes the amount of energy needed to:",
+    "options": [
+      {"text": "Raise the temperature of a specific mass of a substance by a specific amount", "isCorrect": true, "feedback": "Correct -- specific heat capacity measures the energy needed to raise a given mass of a substance by a given temperature interval, without changing its phase."},
+      {"text": "Change a substance from one phase to another, without changing its temperature", "isCorrect": false, "feedback": "That describes LATENT HEAT, not specific heat capacity -- latent heat is associated with phase changes at constant temperature, while specific heat capacity is associated with temperature changes."},
+      {"text": "Completely destroy a substance's molecular structure", "isCorrect": false, "feedback": "This isn't accurate -- specific heat capacity concerns TEMPERATURE change, not destruction of molecular structure, which isn't a standard physical process being described here."},
+      {"text": "Move a substance from one physical location to another", "isCorrect": false, "feedback": "This isn't accurate -- specific heat capacity concerns thermal energy and temperature change, not physical relocation of a substance."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When heating a substance, specific heat capacity applies while the temperature is actively rising, but latent heat applies during a phase change (like boiling), when temperature remains constant despite continued heat input. Why do these represent two fundamentally different ways heat energy can be 'used' by a substance?",
+    "options": [
+      {"text": "Specific heat capacity describes energy going toward increasing the AVERAGE KINETIC ENERGY of molecules (raising temperature), while latent heat describes energy going toward overcoming INTERMOLECULAR FORCES to change phase (without increasing kinetic energy/temperature) -- since these represent genuinely different physical processes (kinetic energy increase versus intermolecular bond disruption), they require separate concepts and separate calculations to describe how added heat energy is used", "isCorrect": true, "feedback": "Correct -- this explanation distinguishing energy directed toward kinetic energy increase (specific heat, raising temperature) from energy directed toward intermolecular bond disruption (latent heat, phase change without temperature change) correctly explains why these are treated as separate physical concepts."},
+      {"text": "Specific heat capacity and latent heat actually describe the exact same underlying physical process, just using different names", "isCorrect": false, "feedback": "This isn't accurate -- these describe GENUINELY DIFFERENT physical processes (temperature increase versus phase change), not the same process under different names."},
+      {"text": "Temperature would actually continue to rise steadily during a phase change, identical to normal heating described by specific heat capacity", "isCorrect": false, "feedback": "This isn't accurate -- temperature specifically remains CONSTANT during a phase change (governed by latent heat), unlike normal heating (governed by specific heat capacity), where temperature does rise."},
+      {"text": "Intermolecular forces have no actual connection to explaining why latent heat is a distinct concept from specific heat capacity", "isCorrect": false, "feedback": "This isn't accurate -- intermolecular forces ARE DIRECTLY connected to and are precisely what latent heat is associated with overcoming during a phase change, unlike specific heat capacity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Water has an unusually HIGH specific heat capacity compared to most other common substances, meaning it takes a lot of energy to change its temperature. Explain why this specific property makes water particularly effective for use in cooling systems (like a car radiator) or for regulating temperature in general.",
+    "options": [
+      {"text": "Since water requires a large amount of energy input to raise its temperature by any given amount (due to its high specific heat capacity), it can absorb a substantial quantity of excess heat from another source (like a car engine) while its OWN temperature rises only modestly -- this allows water to effectively transport or absorb large amounts of unwanted heat energy without itself becoming excessively hot, making it well-suited for cooling and temperature-regulation applications", "isCorrect": true, "feedback": "Correct -- this explanation of high specific heat capacity enabling substantial heat absorption with only modest temperature rise correctly explains water's practical effectiveness as a coolant and temperature regulator, a widely applied real-world consequence of this physical property."},
+      {"text": "Water's high specific heat capacity would actually make it a POOR choice for cooling systems, since it would heat up too quickly", "isCorrect": false, "feedback": "This is backwards -- water's HIGH specific heat capacity means it heats up relatively SLOWLY (requiring lots of energy per degree), making it a GOOD, not poor, choice for absorbing heat in cooling systems."},
+      {"text": "Specific heat capacity has no actual connection to explaining why a substance would be effective for use in temperature-regulation or cooling applications", "isCorrect": false, "feedback": "This isn't accurate -- specific heat capacity IS DIRECTLY connected to and is precisely the key property explaining why certain substances (like water) work well for cooling and temperature regulation."},
+      {"text": "A substance with a LOW specific heat capacity would actually be more effective than water for these cooling and temperature-regulation applications", "isCorrect": false, "feedback": "This isn't accurate -- a substance with a LOW specific heat capacity would heat up quickly with little energy absorbed, making it LESS effective (not more) for absorbing and managing large amounts of excess heat."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This thermal property quantifies the energy requisite to elevate the temperature of a defined mass of substance by a specified increment.", "medium": "This tells you how much energy it takes to heat up a certain amount of something by a certain amount.", "easy": "This tells you how much energy it takes to heat up a certain amount of something."},
+    "medium": {"hard": "Consider how one concept tracks energy directed toward raising average molecular kinetic energy while the other tracks energy directed toward disrupting intermolecular bonding during a phase transition.", "medium": "One measures energy going into speeding molecules up (raising temperature), and the other measures energy going into breaking apart the bonds holding molecules together (changing phase), which are just different jobs for the energy to do.", "easy": "One measures energy going into speeding molecules up, and the other measures energy going into breaking bonds during a phase change."},
+    "hard": {"hard": "Consider how a high specific heat capacity enables substantial thermal energy absorption per unit temperature rise, allowing sustained heat uptake from a source while the absorbing substance itself warms only modestly.", "medium": "Because it takes so much energy to heat water up even a little, it can soak up a ton of unwanted heat from something like an engine while barely warming up itself, which is exactly what you want in a coolant.", "easy": "Because it takes a lot of energy to heat water up, it can soak up a lot of unwanted heat while barely warming up itself."}
+  }
+}
+]

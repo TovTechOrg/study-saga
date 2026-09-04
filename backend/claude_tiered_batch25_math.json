@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of a two-way frequency table",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A two-way frequency table compares what?",
+    "options": [
+      {"text": "Two different categorical variables at once", "isCorrect": true, "feedback": "Correct -- a two-way table shows how two different categories relate to each other, like favorite subject vs. grade level."},
+      {"text": "Only one variable, shown twice", "isCorrect": false, "feedback": "A two-way table specifically involves TWO DIFFERENT variables, not the same one repeated."},
+      {"text": "The mean and median of a data set", "isCorrect": false, "feedback": "Mean and median are single-variable statistics, not what a two-way table is designed to compare."},
+      {"text": "Nothing -- it's just a decorative table", "isCorrect": false, "feedback": "A two-way table serves a real analytical purpose: comparing two categorical variables against each other."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A two-way table shows that out of 50 students, 20 like math AND play sports, while 30 like math total. How many students who like math do NOT play sports?",
+    "options": [
+      {"text": "10", "isCorrect": true, "feedback": "Correct -- 30 (total who like math) minus 20 (who like math AND play sports) leaves 10 who like math but don't play sports."},
+      {"text": "20", "isCorrect": false, "feedback": "This just repeats the number who like math AND play sports, not those who like math but DON'T play sports."},
+      {"text": "50", "isCorrect": false, "feedback": "This is the total number of students, not the specific subgroup being asked about."},
+      {"text": "30", "isCorrect": false, "feedback": "This is the total number who like math (with or without sports), not specifically those who don't play sports."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A two-way table of 100 students shows: 40 total like science, 60 total don't like science, 25 of the science-likers are in 9th grade, and 45 total students are in 9th grade. How many 9th graders do NOT like science?",
+    "options": [
+      {"text": "20", "isCorrect": true, "feedback": "Correct -- 45 total 9th graders minus 25 who like science leaves 20 who don't."},
+      {"text": "25", "isCorrect": false, "feedback": "This is the number of 9th graders who DO like science, not those who don't."},
+      {"text": "35", "isCorrect": false, "feedback": "This doesn't match correctly subtracting 25 from 45."},
+      {"text": "15", "isCorrect": false, "feedback": "This doesn't match correctly computing the remaining 9th graders after removing the science-likers."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This table format cross-references two distinct categorical dimensions simultaneously.", "medium": "This table shows how two different categories overlap with each other.", "easy": "This table compares two different categories at the same time, like subject and grade."},
+    "medium": {"hard": "Subtract the overlapping subgroup count from the total count for one category to isolate the remaining subgroup.", "medium": "Subtract the number who like both math and sports from the total number who like math.", "easy": "Subtract 20 from 30."},
+    "hard": {"hard": "Subtract the known overlapping subgroup count from the relevant category total to isolate the remaining subgroup.", "medium": "Subtract the number of 9th graders who like science from the total number of 9th graders.", "easy": "Subtract 25 from 45."}
+  }
+}
+]

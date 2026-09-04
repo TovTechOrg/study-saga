@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between saturated, unsaturated, and supersaturated solutions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An 'unsaturated' solution is one that:",
+    "options": [
+      {"text": "Can still dissolve more solute at that given temperature", "isCorrect": true, "feedback": "Correct -- an unsaturated solution hasn't yet reached its maximum solute-holding capacity for that temperature."},
+      {"text": "Cannot dissolve any additional solute at all, no matter what", "isCorrect": false, "feedback": "That describes a SATURATED (or supersaturated) solution, not an unsaturated one, which specifically CAN still dissolve more solute."},
+      {"text": "Contains absolutely no dissolved solute whatsoever", "isCorrect": false, "feedback": "An unsaturated solution CAN contain some dissolved solute -- it just hasn't reached its maximum possible capacity yet; it's not necessarily completely solute-free."},
+      {"text": "Has already been heated to its boiling point", "isCorrect": false, "feedback": "Boiling point is an unrelated concept -- 'unsaturated' specifically refers to a solution's remaining solute-dissolving capacity, not its temperature relative to boiling."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If you add sugar to a cup of unsaturated tea and stir, it dissolves completely. If you keep adding sugar, eventually it stops dissolving and starts collecting at the bottom of the cup. What has happened to the solution at that point?",
+    "options": [
+      {"text": "The solution has reached its saturation point -- it can no longer dissolve additional sugar at that temperature", "isCorrect": true, "feedback": "Correct -- once a solution reaches saturation, any additional solute added will simply remain undissolved, settling at the bottom rather than dissolving further."},
+      {"text": "The solution has actually become MORE unsaturated at this point", "isCorrect": false, "feedback": "This is backwards -- the solution has moved TOWARD (and reached) saturation, not further away from it (more unsaturated), which is exactly why additional sugar stops dissolving."},
+      {"text": "This behavior has no actual connection to solution saturation concepts", "isCorrect": false, "feedback": "This is DIRECTLY connected to and is a classic demonstration of a solution reaching its saturation point."},
+      {"text": "The tea has undergone a chemical reaction, transforming into a completely different substance", "isCorrect": false, "feedback": "This isn't accurate -- no chemical transformation is occurring here; this is simply a PHYSICAL phenomenon related to the solution's maximum solute-dissolving capacity being reached (saturation)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A 'supersaturated' solution contains MORE dissolved solute than would normally be possible at that temperature under stable conditions -- an inherently unstable state. If a single small 'seed crystal' is added to a supersaturated sugar solution, the excess dissolved sugar can rapidly crystallize out all at once. Why does this dramatic, rapid crystallization occur?",
+    "options": [
+      {"text": "The seed crystal provides an initial structural template (nucleation site) that allows the excess dissolved solute, which was already unstably 'holding on' in solution beyond normal capacity, to rapidly organize into a solid crystal structure, triggering a cascading crystallization process", "isCorrect": true, "feedback": "Correct -- this dramatic demonstration highlights how a supersaturated solution's inherent instability can be dramatically and suddenly resolved once a proper nucleation trigger point (like a seed crystal) is introduced, allowing for rapid, large-scale crystallization."},
+      {"text": "Supersaturated solutions are actually completely stable and never undergo this type of rapid crystallization", "isCorrect": false, "feedback": "This isn't accurate -- supersaturated solutions are SPECIFICALLY described as inherently UNSTABLE, which is precisely why they're prone to rapid, dramatic crystallization when triggered by something like a seed crystal."},
+      {"text": "The seed crystal actually has no real connection to triggering this crystallization process", "isCorrect": false, "feedback": "This isn't accurate -- the seed crystal is DIRECTLY responsible for and connected to triggering this crystallization process, by providing the necessary nucleation site that was previously missing."},
+      {"text": "This crystallization process actually represents new sugar being chemically created from nothing", "isCorrect": false, "feedback": "This isn't accurate -- no NEW sugar is being created; this process specifically involves the EXISTING excess dissolved sugar (already present in the supersaturated solution) simply transitioning into a solid crystalline form."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This solution state retains the capacity for additional solute incorporation without exceeding its equilibrium dissolution threshold.", "medium": "This kind of solution still has room to dissolve more stuff in it.", "easy": "This kind of solution still has room to dissolve more stuff."},
+    "medium": {"hard": "Consider what a solution's inability to dissolve any FURTHER added solute specifically indicates about its current solute-holding capacity relative to that temperature's maximum.", "medium": "Once sugar stops dissolving and starts piling up at the bottom, that tells you the liquid has reached its maximum dissolving capacity.", "easy": "Once sugar stops dissolving and piles up, the liquid has reached its maximum capacity."},
+    "hard": {"hard": "Consider how introducing a physical structural starting point can resolve an inherently unstable, 'overloaded' dissolved state by providing the missing trigger for organized solid-phase formation.", "medium": "The little crystal gives the extra dissolved sugar something to 'grab onto' and start building a solid structure from, which then keeps growing rapidly.", "easy": "The little crystal gives the extra sugar something to grab onto and start building a solid from."}
+  }
+}
+]

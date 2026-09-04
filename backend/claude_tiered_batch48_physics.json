@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of work and energy transfer",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In physics, when is 'work' done on an object?",
+    "options": [
+      {"text": "When a force causes an object to move a distance in the direction of that force", "isCorrect": true, "feedback": "Correct -- physics work specifically requires both a force AND resulting displacement in that force's direction (Work = Force × distance)."},
+      {"text": "Whenever any force is applied to an object, regardless of movement", "isCorrect": false, "feedback": "Applying force alone isn't enough -- physics work also requires actual displacement of the object in the direction of that force."},
+      {"text": "Whenever an object is simply picked up and held stationary", "isCorrect": false, "feedback": "Holding something stationary (no displacement) means zero work is done in the physics sense, even though it might feel tiring."},
+      {"text": "Only when a machine is involved in moving the object", "isCorrect": false, "feedback": "Work can be done by any force causing displacement, not exclusively by machines -- human muscles, gravity, etc. can all do work too."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If you push against a heavy wall as hard as you can, but the wall doesn't move at all, how much work have you done on the wall, according to the physics definition?",
+    "options": [
+      {"text": "Zero work, since there was no displacement (distance moved), despite the force applied", "isCorrect": true, "feedback": "Correct -- since Work = Force × distance, and distance moved is zero here, the total work done on the wall is also zero, regardless of how much force or effort was applied."},
+      {"text": "A large amount of work, proportional to how hard you pushed", "isCorrect": false, "feedback": "This confuses effort/force with the physics definition of work -- since the wall didn't move at all, zero work was done on it, regardless of force applied."},
+      {"text": "Negative work, since the wall resisted your force", "isCorrect": false, "feedback": "Negative work specifically applies to cases with displacement opposite to the force direction -- here, there's no displacement at all, so work is exactly zero, not negative."},
+      {"text": "Work done cannot be determined without knowing the wall's mass", "isCorrect": false, "feedback": "The wall's mass isn't needed here -- since displacement is zero, the work done is zero regardless of mass, force, or any other factor."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A person carries a heavy box at a constant height while walking horizontally across a room. According to the physics definition of work, why is the work done by the person's upward-supporting force on the box actually zero, even though carrying a heavy box clearly requires physical effort?",
+    "options": [
+      {"text": "Because work depends on displacement in the DIRECTION of the applied force, and since the box moves horizontally while the supporting force is vertical (perpendicular to the motion), there's no displacement in the force's direction", "isCorrect": true, "feedback": "Correct -- this distinction between physical effort/fatigue and the strict physics definition of work (requiring displacement specifically in the force's direction) explains this seemingly counterintuitive result."},
+      {"text": "The physics definition of work is simply wrong and doesn't match real-world physical effort", "isCorrect": false, "feedback": "The physics definition isn't wrong -- it's a precise, specific definition that intentionally differs from everyday notions of 'effort,' focusing specifically on force and displacement in the same direction."},
+      {"text": "Since the box has weight, work is always automatically done whenever weight is involved", "isCorrect": false, "feedback": "Weight alone doesn't guarantee work is done -- work specifically depends on displacement occurring in the direction of the applied force, which isn't the case here for the vertical supporting force."},
+      {"text": "The person isn't actually applying any force to the box while carrying it", "isCorrect": false, "feedback": "The person IS applying an upward supporting force (counteracting gravity) -- the zero-work result comes from that force being perpendicular to the horizontal displacement, not from an absence of force."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity requires both an applied force and resulting displacement occurring along that same force's direction of action.", "medium": "This requires both a force AND the object actually moving because of that force.", "easy": "This requires both pushing on something AND it actually moving."},
+    "medium": {"hard": "Recall that the work formula fundamentally requires nonzero displacement -- without any actual movement, the calculated work must be zero regardless of force magnitude.", "medium": "Since the wall never actually moved (zero distance), the work calculation comes out to zero no matter how hard you pushed.", "easy": "Since the wall never moved, work is zero, no matter how hard you pushed."},
+    "hard": {"hard": "Recognize the crucial requirement that displacement must occur specifically ALONG the axis of the applied force for that force to contribute to work -- perpendicular motion doesn't count.", "medium": "The supporting force is straight up and down, but the box is moving sideways -- since those directions don't match, no work is done by that particular force.", "easy": "The lifting force is up-and-down, but the box moves sideways -- since those don't match, no work is done by that force."}
+  }
+}
+]

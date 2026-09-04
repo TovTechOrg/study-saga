@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between static friction and kinetic friction",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Static friction' acts on an object that is:",
+    "options": [
+      {"text": "Not yet moving, resisting the start of motion", "isCorrect": true, "feedback": "Correct -- static friction acts on a stationary object, resisting the initial force that would otherwise start it moving."},
+      {"text": "Already sliding across a surface", "isCorrect": false, "feedback": "That describes KINETIC friction, not static -- kinetic friction acts on an object already in motion, while static friction acts on a stationary object."},
+      {"text": "Floating freely with no surface contact at all", "isCorrect": false, "feedback": "This isn't accurate -- friction (static or kinetic) specifically requires surface CONTACT between two objects; it doesn't apply to an object with no surface contact."},
+      {"text": "Moving at a constant, unchanging velocity in a vacuum", "isCorrect": false, "feedback": "This isn't accurate -- friction requires surface contact, and a vacuum with no contacting surface wouldn't experience static friction at all."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The maximum static friction force is generally somewhat LARGER than the kinetic friction force between the same two surfaces. Why does this explain why it takes more force to START an object sliding than to KEEP it sliding once already in motion?",
+    "options": [
+      {"text": "Since maximum static friction (resisting the start of motion) is larger than kinetic friction (resisting motion already in progress), an applied force needs to exceed this larger maximum static friction threshold to first overcome it and begin moving the object, but once moving, only the smaller kinetic friction needs to be overcome to keep it moving, meaning less force is required to maintain motion than was needed to initiate it", "isCorrect": true, "feedback": "Correct -- this explanation of the different (larger static vs. smaller kinetic) friction thresholds correctly explains the common everyday experience that starting to push a heavy object is harder than continuing to push it once it's already sliding."},
+      {"text": "Maximum static friction and kinetic friction would actually always be exactly equal in magnitude for the same two surfaces", "isCorrect": false, "feedback": "This isn't accurate -- maximum static friction is generally SOMEWHAT LARGER than kinetic friction for the same two surfaces, not exactly equal."},
+      {"text": "Kinetic friction would actually be larger than maximum static friction, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- maximum static friction is generally LARGER than kinetic friction, not the reverse, which is precisely why starting motion requires more force than sustaining it."},
+      {"text": "The relative sizes of static versus kinetic friction have no actual connection to explaining why starting motion requires more force than sustaining it", "isCorrect": false, "feedback": "This isn't accurate -- the relative sizes of these two friction types ARE DIRECTLY connected to and explain this common everyday experience."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Static friction is not a single fixed value -- it automatically adjusts in magnitude (from zero up to some maximum) to exactly match whatever applied force is trying to cause motion, as long as that applied force stays below the maximum static friction threshold. Explain why static friction must behave this way (adjusting to match the applied force) rather than always being at its maximum possible value.",
+    "options": [
+      {"text": "If a stationary object remains stationary, its net force must be exactly zero (per Newton's first law) -- so if a moderate applied force is pushing the object, static friction must respond with an EQUAL AND OPPOSITE force to keep the net force at zero, and since applied forces can vary continuously, static friction must correspondingly vary to exactly balance whatever force is applied, only reaching its fixed maximum value at the specific point where the object is on the verge of starting to slide", "isCorrect": true, "feedback": "Correct -- this explanation grounded in Newton's first law (zero net force for a stationary object) correctly explains why static friction is a variable, self-adjusting force matching the applied force, rather than a single fixed value, an important nuance often misunderstood about static friction."},
+      {"text": "Static friction would actually always immediately act at its maximum possible value, regardless of how large the applied force is", "isCorrect": false, "feedback": "This isn't accurate -- static friction specifically ADJUSTS to match the applied force (as long as below the maximum), not always acting at its maximum value regardless of applied force."},
+      {"text": "Newton's first law has no actual connection to explaining why static friction adjusts to match a variable applied force", "isCorrect": false, "feedback": "This isn't accurate -- Newton's first law (requiring zero net force for a stationary object) IS DIRECTLY connected to and explains why static friction must adjust to balance the applied force."},
+      {"text": "An object would actually begin accelerating even while static friction is present and the applied force remains below the maximum threshold", "isCorrect": false, "feedback": "This isn't accurate -- as long as the applied force stays below the maximum static friction threshold, the object remains stationary (zero acceleration), precisely because static friction adjusts to exactly balance the applied force."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This resistive force opposes the initiation of relative motion between two surfaces currently at rest with respect to each other.", "medium": "This kind of friction is what keeps something from starting to slide in the first place.", "easy": "This kind of friction keeps something from starting to slide in the first place."},
+    "medium": {"hard": "Consider how the differing magnitudes of these two friction thresholds account for the greater force needed to initiate sliding compared to that needed to sustain it.", "medium": "Getting something to START sliding takes more push because the friction resisting the start is bigger than the friction resisting it once it's already moving.", "easy": "Getting something to start sliding takes more push than keeping it sliding, because starting friction is bigger."},
+    "hard": {"hard": "Consider how the zero-net-force requirement for a motionless object compels static friction to continuously self-adjust in exact opposition to the applied force, up until that force surpasses the maximum threshold.", "medium": "Since the object isn't moving, the pushes on it have to perfectly cancel out, so friction has to keep adjusting itself to exactly match whatever force is pushing, right up until it can't keep up anymore.", "easy": "Since the object isn't moving, the forces on it must cancel out, so friction adjusts to exactly match the push until it can't keep up anymore."}
+  }
+}
+]

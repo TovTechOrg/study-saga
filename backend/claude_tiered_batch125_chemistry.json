@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between a saturated solution and a supersaturated solution",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'saturated' solution is one that:",
+    "options": [
+      {"text": "Contains the maximum amount of dissolved solute that can normally dissolve at that temperature", "isCorrect": true, "feedback": "Correct -- a saturated solution holds the maximum amount of solute that can dissolve under normal equilibrium conditions at a given temperature."},
+      {"text": "Contains more dissolved solute than would normally be possible at that temperature, an unstable state", "isCorrect": false, "feedback": "That describes a SUPERSATURATED solution, not a saturated one -- supersaturated solutions hold MORE solute than the normal maximum, an unstable condition."},
+      {"text": "Contains no dissolved solute at all", "isCorrect": false, "feedback": "This isn't accurate -- a saturated solution specifically DOES contain dissolved solute (at its maximum normal amount), not zero solute."},
+      {"text": "Has reached its boiling point", "isCorrect": false, "feedback": "This isn't accurate -- saturation refers to dissolved solute amount, not boiling point, which is an unrelated physical property."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A supersaturated solution is often created by dissolving solute in hot water (which can typically dissolve more solute) and then carefully cooling the solution without disturbing it. Why does slow, undisturbed cooling allow more solute to remain dissolved than the solution could normally hold at that cooler temperature?",
+    "options": [
+      {"text": "Without a disturbance (like a seed crystal, scratch, or agitation) to provide a starting point for crystal formation, the excess dissolved solute molecules have no efficient pathway to come out of solution and form solid crystals, allowing them to remain suspended in an unstable, energetically unfavorable dissolved state even though the solution is technically holding more solute than its normal saturation point at that cooler temperature", "isCorrect": true, "feedback": "Correct -- this explanation of the kinetic barrier to crystallization (lacking a nucleation point) without disturbance correctly explains how a supersaturated solution can persist in this excess, unstable dissolved state."},
+      {"text": "Cooling the solution slowly would actually cause the solute to dissolve to an even greater extent than when it was hot, rather than remaining in an unstable excess state", "isCorrect": false, "feedback": "This isn't accurate -- cooling generally DECREASES a solvent's capacity to hold solute; the excess solute remains dissolved in an unstable state, not because cooling increases solubility further."},
+      {"text": "Supersaturated solutions are actually completely stable and will never spontaneously form crystals under any circumstances", "isCorrect": false, "feedback": "This isn't accurate -- supersaturated solutions are specifically UNSTABLE and will readily crystallize once given any disturbance or nucleation point, unlike a genuinely stable solution."},
+      {"text": "Disturbances like scratching or seed crystals have no actual effect on triggering crystallization from a supersaturated solution", "isCorrect": false, "feedback": "This isn't accurate -- disturbances DIRECTLY trigger crystallization from a supersaturated solution, providing the nucleation point the excess solute needs to come out of solution."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "When a small seed crystal is dropped into a supersaturated solution, the excess dissolved solute rapidly crystallizes out, often quite dramatically. Explain the role the seed crystal plays in triggering this sudden change, in terms of nucleation and crystal growth.",
+    "options": [
+      {"text": "The seed crystal provides an already-organized crystalline surface (a nucleation site) onto which dissolved solute molecules can readily attach and continue building an ordered crystal lattice, bypassing the difficult, energetically unfavorable initial step of forming a new crystal structure entirely from scratch -- once this pathway is available, the excess solute rapidly crystallizes out until the solution returns to a normal, stable saturation level", "isCorrect": true, "feedback": "Correct -- this explanation of the seed crystal providing an existing nucleation surface that bypasses the difficult initial nucleation step correctly explains why introducing a seed crystal triggers such rapid, dramatic crystallization from a supersaturated solution."},
+      {"text": "The seed crystal would actually have no real effect on triggering crystallization from a supersaturated solution", "isCorrect": false, "feedback": "This isn't accurate -- a seed crystal DOES have a significant, well-documented effect, specifically triggering rapid crystallization by providing a nucleation site."},
+      {"text": "The seed crystal works by chemically reacting with and dissolving the excess solute rather than providing a nucleation surface", "isCorrect": false, "feedback": "This isn't accurate -- the seed crystal works by providing a PHYSICAL nucleation surface for crystal growth, not by chemically reacting with or dissolving the solute."},
+      {"text": "This crystallization process would actually occur at the exact same rate regardless of whether a seed crystal is introduced or not", "isCorrect": false, "feedback": "This isn't accurate -- introducing a seed crystal specifically ACCELERATES crystallization dramatically compared to leaving the solution undisturbed."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This solution state represents the equilibrium maximum solute concentration achievable under standard dissolution conditions at a specified temperature.", "medium": "This is a solution that's holding as much dissolved stuff as it normally can at that temperature.", "easy": "This is a solution holding as much dissolved stuff as it normally can at that temperature."},
+    "medium": {"hard": "Consider how the absence of a nucleation site creates a kinetic barrier preventing excess dissolved solute from transitioning into the thermodynamically favored solid crystalline state.", "medium": "Without something to kick off the process, the extra dissolved stuff just has nowhere to start forming crystals, so it stays stuck dissolved even though it technically shouldn't be able to.", "easy": "Without something to kick off the process, the extra dissolved stuff stays stuck dissolved even though it shouldn't be able to."},
+    "hard": {"hard": "Consider how a pre-existing crystalline lattice surface eliminates the high energetic barrier of spontaneous nucleation, offering solute molecules a template for ordered attachment.", "medium": "Dropping in a tiny crystal gives the dissolved stuff something to latch onto and start building on, instead of needing to form a brand new crystal structure completely from nothing.", "easy": "A tiny crystal gives the dissolved stuff something to latch onto, instead of needing to form a new structure from nothing."}
+  }
+}
+]

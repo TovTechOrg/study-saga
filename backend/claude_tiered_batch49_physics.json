@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of static vs. kinetic friction",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is friction?",
+    "options": [
+      {"text": "A force that resists the relative motion (or attempted motion) between two surfaces in contact", "isCorrect": true, "feedback": "Correct -- friction opposes sliding or attempted sliding between two contacting surfaces."},
+      {"text": "A force that always speeds up moving objects", "isCorrect": false, "feedback": "Friction generally SLOWS DOWN or resists motion, rather than speeding objects up."},
+      {"text": "A force that only exists between two liquids", "isCorrect": false, "feedback": "Friction occurs between solid surfaces in contact (and also in fluids, as drag), not exclusively between two liquids."},
+      {"text": "A force that has no direction", "isCorrect": false, "feedback": "Friction has a specific direction -- it always opposes the direction of relative motion or attempted motion."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "It typically takes more force to START pushing a heavy box across the floor than it does to KEEP it moving once it's sliding. Why is this the case?",
+    "options": [
+      {"text": "Static friction (resisting the start of motion) is generally greater than kinetic friction (resisting already-occurring motion)", "isCorrect": true, "feedback": "Correct -- this is why it typically takes an initial 'extra push' to overcome static friction, after which the object moves more easily against the lower kinetic friction."},
+      {"text": "Kinetic friction is always greater than static friction", "isCorrect": false, "feedback": "This is backwards -- static friction (before motion starts) is generally GREATER than kinetic friction (once motion is occurring), not the other way around."},
+      {"text": "Friction has no actual difference between a stationary and moving object", "isCorrect": false, "feedback": "There IS a meaningful, measurable difference between static and kinetic friction coefficients, which is exactly why starting motion requires more force than sustaining it."},
+      {"text": "The box's weight increases once it starts moving", "isCorrect": false, "feedback": "The box's weight doesn't change based on motion -- the difference in required force comes from static friction being greater than kinetic friction, not a weight change."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Anti-lock braking systems (ABS) in cars are designed to prevent wheels from fully locking up (skidding) during hard braking. How does understanding static vs. kinetic friction explain why ABS can result in shorter stopping distances than a fully locked, skidding wheel?",
+    "options": [
+      {"text": "A rolling (non-skidding) wheel maintains contact conditions closer to static friction (generally higher) with the road, while a fully skidding wheel experiences kinetic friction (generally lower), providing less braking force", "isCorrect": true, "feedback": "Correct -- by preventing full lock-up, ABS helps keep the tire in a rolling-with-slipping state that maximizes the higher static friction coefficient, rather than dropping to the lower kinetic friction of a fully skidding tire, generally improving braking effectiveness."},
+      {"text": "Static and kinetic friction are always exactly equal, so ABS provides no actual braking advantage", "isCorrect": false, "feedback": "This isn't accurate -- static friction is generally GREATER than kinetic friction, and this real difference is exactly why ABS (avoiding full skidding) can improve braking performance."},
+      {"text": "A skidding wheel actually experiences MORE friction with the road than a rolling wheel does", "isCorrect": false, "feedback": "This is backwards -- a skidding wheel experiences the lower kinetic friction, while a rolling (non-skidding) wheel can benefit from the higher static friction, which is the basis for ABS's advantage."},
+      {"text": "ABS works by eliminating friction between the tires and the road entirely", "isCorrect": false, "feedback": "ABS doesn't eliminate friction -- it works specifically by managing the wheel's rotation to maximize the (higher) static friction available, rather than eliminating friction altogether."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This resistive force opposes the tendency of two contacting surfaces to slide relative to one another.", "medium": "This is a force that resists two surfaces sliding against each other.", "easy": "This is a force that resists two surfaces sliding against each other."},
+    "medium": {"hard": "Compare the relative magnitude of the friction coefficient before motion begins versus once sliding is already underway.", "medium": "The friction resisting the START of sliding is usually a bit stronger than the friction resisting ongoing sliding.", "easy": "The friction resisting the start of sliding is usually stronger than the friction during sliding."},
+    "hard": {"hard": "Consider which friction regime (static, associated with rolling/non-slipping contact, or kinetic, associated with full sliding) provides the larger resistive force to convert into braking effectiveness.", "medium": "A wheel that's still gripping (not fully sliding) can use the stronger static friction, while a fully skidding wheel is stuck with the weaker kinetic friction.", "easy": "A wheel that's still gripping uses the stronger static friction, while a skidding wheel only gets the weaker kinetic friction."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the nitrogen cycle and its importance for plant growth",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Why do plants need nitrogen?",
+    "options": [
+      {"text": "Nitrogen is a key component of proteins and DNA, essential for growth", "isCorrect": true, "feedback": "Correct -- nitrogen is a fundamental building block of amino acids (proteins) and nucleic acids (DNA/RNA)."},
+      {"text": "Plants use nitrogen purely for photosynthesis energy production", "isCorrect": false, "feedback": "Nitrogen isn't the primary energy source for photosynthesis (that's sunlight) -- it's essential structurally, for building proteins and DNA."},
+      {"text": "Nitrogen makes up the majority of a plant's cell walls", "isCorrect": false, "feedback": "Cell walls are primarily made of cellulose (carbon-based), not nitrogen -- nitrogen's key role is in proteins and DNA."},
+      {"text": "Plants don't actually need nitrogen at all", "isCorrect": false, "feedback": "Nitrogen is actually an essential nutrient for plants, critical for building proteins and genetic material."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Even though nitrogen gas (N2) makes up about 78% of the atmosphere, plants can't directly use this atmospheric nitrogen. Why not, and how do they typically obtain usable nitrogen?",
+    "options": [
+      {"text": "N2 gas has an extremely strong triple bond that plants cannot break; instead, they rely on nitrogen-fixing bacteria that convert N2 into usable forms like ammonia or nitrates", "isCorrect": true, "feedback": "Correct -- this biological nitrogen fixation process, performed by specialized bacteria (often in symbiotic relationships with plant roots), is essential for making atmospheric nitrogen usable by plants."},
+      {"text": "Plants can actually absorb atmospheric N2 gas directly through their leaves with no issue", "isCorrect": false, "feedback": "This isn't accurate -- plants cannot directly use N2 gas due to its strong triple bond; they require nitrogen-fixing bacteria to convert it into usable compounds first."},
+      {"text": "Plants don't need nitrogen from any external source at all", "isCorrect": false, "feedback": "Plants absolutely require an external nitrogen source (in usable chemical forms) for healthy growth -- they just can't use it directly from atmospheric N2 gas."},
+      {"text": "The strong triple bond in N2 has no actual effect on whether plants can use it", "isCorrect": false, "feedback": "The strong triple bond is precisely why plants CANNOT directly use atmospheric N2 -- it requires significant energy (via bacteria) to break that bond into usable forms."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Farmers often rotate nitrogen-depleting crops (like corn) with legume crops (like soybeans or clover), which host nitrogen-fixing bacteria in root nodules. Why does this crop rotation strategy help maintain soil fertility over time?",
+    "options": [
+      {"text": "The legumes' symbiotic bacteria replenish usable nitrogen compounds in the soil (via nitrogen fixation), naturally restoring nitrogen levels that other crops had previously depleted", "isCorrect": true, "feedback": "Correct -- this natural replenishment cycle, harnessing the legume-bacteria symbiotic relationship, is a well-established sustainable farming technique to maintain soil nitrogen levels without relying solely on synthetic fertilizers."},
+      {"text": "Legume crops actually deplete nitrogen from the soil even faster than corn does", "isCorrect": false, "feedback": "This is backwards -- legumes, through their symbiotic nitrogen-fixing bacteria, actually ADD usable nitrogen to the soil, rather than depleting it further."},
+      {"text": "Crop rotation has no actual effect on soil nitrogen levels", "isCorrect": false, "feedback": "Crop rotation, specifically alternating with nitrogen-fixing legumes, has a very real and well-documented positive effect on restoring soil nitrogen levels."},
+      {"text": "Soil nitrogen levels are entirely unrelated to which crops are grown in a given field", "isCorrect": false, "feedback": "Soil nitrogen levels are directly affected by crop choice -- some crops deplete nitrogen while others (like legumes, via their bacterial partners) actively replenish it."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This element is a fundamental structural component of amino acids and nucleotides, the building blocks of proteins and genetic material.", "medium": "This element is a key building block for proteins and genetic material.", "easy": "This element is a key building block for proteins and DNA."},
+    "medium": {"hard": "Consider the chemical stability of the atmospheric molecular form of this element versus the energy required to convert it into a biologically usable compound.", "medium": "The nitrogen gas in the air is locked together too tightly for plants to break apart -- special bacteria have to convert it first.", "easy": "The nitrogen gas in the air is locked together too tightly for plants to use -- special bacteria convert it first."},
+    "hard": {"hard": "Consider how a biological process performed by one crop's symbiotic partners could directly counteract the nutrient depletion caused by a different crop's growth demands.", "medium": "The legume's bacteria pull nitrogen from the air and put it into the soil, refilling what other crops had used up.", "easy": "The legume's bacteria pull nitrogen from the air and add it to the soil, refilling what other crops used up."}
+  }
+}
+]

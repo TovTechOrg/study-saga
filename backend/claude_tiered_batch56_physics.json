@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of refraction and light bending through different media",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is refraction?",
+    "options": [
+      {"text": "The bending of light as it passes from one medium into another with a different density", "isCorrect": true, "feedback": "Correct -- refraction occurs because light changes speed when entering a new medium, causing it to bend at the boundary."},
+      {"text": "The bouncing of light off a surface", "isCorrect": false, "feedback": "That describes reflection, a different phenomenon from refraction, which involves light passing INTO a new medium and bending."},
+      {"text": "The complete absorption of light by an object", "isCorrect": false, "feedback": "Absorption is a separate phenomenon from refraction, which specifically involves light bending as it changes medium, not being absorbed."},
+      {"text": "The splitting of white light into a rainbow of colors", "isCorrect": false, "feedback": "That describes dispersion, which is actually related to refraction (different colors refract by different amounts) but isn't the basic definition of refraction itself."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A straw placed in a glass of water appears to be 'bent' or displaced at the water's surface when viewed from certain angles. What causes this optical illusion?",
+    "options": [
+      {"text": "Light traveling from the submerged part of the straw refracts (bends) as it passes from water into air, changing the apparent position of that part of the straw to our eyes", "isCorrect": true, "feedback": "Correct -- this everyday observation is a classic, easily demonstrated example of light refraction occurring at the boundary between two different media (water and air)."},
+      {"text": "The straw actually physically bends when placed in water", "isCorrect": false, "feedback": "The straw itself doesn't physically bend -- this is purely an optical illusion caused by light refraction, not an actual physical deformation of the straw."},
+      {"text": "This effect has nothing to do with light behavior at all", "isCorrect": false, "feedback": "This effect is DIRECTLY caused by light's behavior -- specifically its refraction (bending) when transitioning between water and air."},
+      {"text": "Light doesn't actually change direction when passing between water and air", "isCorrect": false, "feedback": "Light DOES change direction (refracts) when passing between media of different densities like water and air, which is precisely why the straw appears bent."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A prism separates white light into a rainbow of colors due to refraction. Why do different colors of light (different wavelengths) refract by slightly different amounts when passing through the same prism?",
+    "options": [
+      {"text": "Different wavelengths of light travel at slightly different speeds within the same medium (like glass), and since the degree of bending depends on this speed change, each wavelength refracts by a slightly different angle", "isCorrect": true, "feedback": "Correct -- this wavelength-dependent speed variation within a given medium (dispersion) is exactly why a prism can separate white light into its full spectrum of visible colors."},
+      {"text": "All wavelengths of light actually travel at exactly the same speed within any given medium", "isCorrect": false, "feedback": "This isn't accurate -- different wavelengths DO travel at slightly different speeds within the same medium, which is precisely why they refract by different amounts, enabling a prism to separate colors."},
+      {"text": "The prism physically applies a different color filter to each part of the light beam", "isCorrect": false, "feedback": "This isn't how prisms work -- there's no physical color filtering occurring; the color separation results purely from wavelength-dependent differences in refraction (bending) angle."},
+      {"text": "This color separation effect has no actual connection to the physics of refraction", "isCorrect": false, "feedback": "This color separation (dispersion) is DIRECTLY explained by refraction principles -- specifically, how different wavelengths refract by different amounts within the same medium."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This optical phenomenon results from a change in a wave's propagation speed as it crosses a boundary between media of differing density.", "medium": "This is when light changes direction as it moves from one material into a different one.", "easy": "This is when light bends as it moves from one material into another."},
+    "medium": {"hard": "Consider how a change in the light's propagation speed at the water-air boundary alters the apparent path the light appears to have traveled.", "medium": "As light moves from the water into the air, it changes speed and direction, which shifts where that part of the straw seems to appear.", "easy": "As light moves from water into air, it bends, which shifts where that part of the straw seems to be."},
+    "hard": {"hard": "Recognize that refraction angle depends on the ratio of light speeds between two media, and that this speed itself varies slightly by wavelength within a given medium.", "medium": "Since each color of light travels at a very slightly different speed through the glass, each one ends up bending by a slightly different amount.", "easy": "Since each color travels at a slightly different speed through the glass, each bends by a different amount."}
+  }
+}
+]

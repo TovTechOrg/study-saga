@@ -1,0 +1,617 @@
+[
+{
+  "topic": "volcanoes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes an opening in Earth's crust through which molten rock, gases, and ash can erupt?",
+    "options": [
+      {"text": "Volcano", "isCorrect": true, "feedback": "Correct -- a volcano is a vent where magma, gas, and ash escape from beneath Earth's surface."},
+      {"text": "Canyon", "isCorrect": false, "feedback": "A canyon is a deep valley carved by erosion, not an opening that erupts molten rock."},
+      {"text": "Glacier", "isCorrect": false, "feedback": "A glacier is a large mass of slow-moving ice, unrelated to erupting molten rock."},
+      {"text": "Estuary", "isCorrect": false, "feedback": "An estuary is where a river meets the sea -- unrelated to erupting molten rock."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which type of volcano is characterized by a broad, gently sloping profile, formed by highly fluid lava flows?",
+    "options": [
+      {"text": "Shield volcano", "isCorrect": true, "feedback": "Correct -- shield volcanoes, like those in Hawaii, form from thin, fast-flowing lava that spreads out over a wide area."},
+      {"text": "Cinder cone volcano", "isCorrect": false, "feedback": "Cinder cone volcanoes are small and steep, built from erupted fragments -- not the broad, gentle shape described here."},
+      {"text": "Stratovolcano (composite volcano)", "isCorrect": false, "feedback": "Stratovolcanoes are typically steep and cone-shaped, built from alternating layers of thick lava and ash -- not the broad, gentle shape described here."},
+      {"text": "Supervolcano", "isCorrect": false, "feedback": "'Supervolcano' describes an unusually massive eruptive system, not specifically the broad, gently sloping shape described here."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why are stratovolcanoes (composite volcanoes) typically much steeper and more explosive than shield volcanoes?",
+    "options": [
+      {"text": "They're built from alternating layers of thick, viscous lava and ash, which traps gas and leads to more violent eruptions, unlike shield volcanoes' thin, fast-flowing lava", "isCorrect": true, "feedback": "Correct -- the thick, slow-moving lava of stratovolcanoes allows pressure to build up dramatically before release, unlike the free-flowing lava of a shield volcano."},
+      {"text": "Stratovolcanoes are always located underwater, unlike shield volcanoes", "isCorrect": false, "feedback": "Both stratovolcanoes and shield volcanoes can be found on land or underwater -- location isn't the key distinguishing factor here."},
+      {"text": "Stratovolcanoes contain no magma at all", "isCorrect": false, "feedback": "Stratovolcanoes do contain magma -- their explosiveness actually comes from that magma's thick, gas-trapping consistency."},
+      {"text": "Stratovolcanoes are always much older than shield volcanoes", "isCorrect": false, "feedback": "Age isn't what determines a volcano's shape or explosiveness -- the type and behavior of its lava is."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This vent releases material from deep beneath Earth's surface up through the crust.", "medium": "This is where melted rock and gases from deep underground escape to the surface.", "easy": "This is an opening where hot melted rock, ash, and gases can burst out from underground."},
+    "medium": {"hard": "This type's lava flows quickly and spreads thinly, unlike the thick, slow-building lava of steeper volcano types.", "medium": "This type's lava spreads out thin and wide, rather than piling up steeply.", "easy": "This type of volcano is wide and only gently sloped, because its lava flows easily and spreads far, like Hawaii's volcanoes."},
+    "hard": {"hard": "The explanation involves lava viscosity and gas retention, not underwater location, an absence of magma, or relative age.", "medium": "The explanation involves how THICK and SLOW-MOVING the lava is, trapping gas until it explodes.", "easy": "This type of volcano has thick, slow lava that traps gas inside, building up pressure until it explodes -- unlike thin, fast-flowing lava that just spreads out easily."}
+  }
+},
+{
+  "topic": "earthquakes and magnitude",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a sudden shaking of the ground caused by movement along a fault, typically due to tectonic plate activity?",
+    "options": [
+      {"text": "Earthquake", "isCorrect": true, "feedback": "Correct -- earthquakes result from the sudden release of energy along a fault in Earth's crust."},
+      {"text": "Monsoon", "isCorrect": false, "feedback": "A monsoon is a seasonal wind and rain pattern -- unrelated to ground shaking from tectonic activity."},
+      {"text": "Tsunami", "isCorrect": false, "feedback": "A tsunami is a large ocean wave, sometimes CAUSED by an underwater earthquake, but not the ground-shaking event itself."},
+      {"text": "Drought", "isCorrect": false, "feedback": "A drought is a prolonged lack of rainfall -- unrelated to ground shaking from tectonic activity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What scale is commonly used to measure the magnitude, or energy released, of an earthquake?",
+    "options": [
+      {"text": "The Richter scale (or modern moment magnitude scale)", "isCorrect": true, "feedback": "Correct -- these scales quantify how much energy an earthquake releases."},
+      {"text": "The Fahrenheit scale", "isCorrect": false, "feedback": "The Fahrenheit scale measures temperature -- unrelated to earthquake energy."},
+      {"text": "The Big O notation scale", "isCorrect": false, "feedback": "Big O notation describes algorithm efficiency in computer science -- unrelated to measuring earthquakes."},
+      {"text": "The Beaufort scale", "isCorrect": false, "feedback": "The Beaufort scale measures wind speed -- unrelated to measuring earthquake magnitude."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Each whole-number increase on the Richter scale represents approximately how much of an increase in the amplitude of ground shaking?",
+    "options": [
+      {"text": "A tenfold (10 times) increase", "isCorrect": true, "feedback": "Correct -- the Richter scale is logarithmic, so even small increases in the number represent dramatically larger increases in shaking."},
+      {"text": "A twofold (2 times) increase", "isCorrect": false, "feedback": "This understates the true jump -- the Richter scale's logarithmic nature means each whole number represents a tenfold increase, not just double."},
+      {"text": "No increase at all -- the scale is not logarithmic", "isCorrect": false, "feedback": "The Richter scale is specifically logarithmic -- each whole-number step represents a substantial, tenfold increase in shaking amplitude."},
+      {"text": "A hundredfold (100 times) increase", "isCorrect": false, "feedback": "This overstates the amplitude increase per whole number -- a hundredfold increase corresponds to a jump of TWO whole numbers, not one."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This event releases stored energy suddenly along a crack in Earth's crust, often felt as intense shaking.", "medium": "This event happens when tension along a crack in the Earth's crust suddenly releases.", "easy": "This is the sudden, violent shaking of the ground, often caused by movement deep underground."},
+    "medium": {"hard": "This scale is specifically designed to quantify seismic energy release, distinct from scales for temperature or wind.", "medium": "This scale specifically measures the size and energy of ground-shaking events.", "easy": "This is the famous scale used to say how big or strong an earthquake was."},
+    "hard": {"hard": "Think about how numbers on this kind of scale relate to real-world intensity -- equal steps in the number don't necessarily mean equal steps in strength.", "medium": "The scale is LOGARITHMIC, meaning each single step up represents a much bigger jump than just doubling.", "easy": "Going from a 5 to a 6 on this scale is a huge leap in actual shaking -- far more than just a little bit stronger, because the scale grows exponentially rather than in even steps."}
+  }
+},
+{
+  "topic": "weathering versus erosion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes the breaking down of rocks in place, without them being moved elsewhere?",
+    "options": [
+      {"text": "Weathering", "isCorrect": true, "feedback": "Correct -- weathering breaks rock apart through processes like temperature changes, water, or chemical reactions, without relocating it."},
+      {"text": "Erosion", "isCorrect": false, "feedback": "Erosion specifically involves TRANSPORTING broken-down material elsewhere -- weathering is the breaking-down process that happens in place."},
+      {"text": "Urbanization", "isCorrect": false, "feedback": "Urbanization describes population movement into cities -- unrelated to rocks breaking down."},
+      {"text": "Desertification", "isCorrect": false, "feedback": "Desertification describes fertile land turning into desert -- a different, broader process from simple rock breakdown."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does 'erosion' typically differ from 'weathering'?",
+    "options": [
+      {"text": "Erosion transports the broken-down material to a new location, driven by forces like wind, water, or ice", "isCorrect": true, "feedback": "Correct -- while weathering breaks rock apart in place, erosion is the process of actually moving those broken pieces elsewhere."},
+      {"text": "Erosion and weathering are simply two names for the identical process", "isCorrect": false, "feedback": "They are related but distinct processes -- one breaks rock down in place, the other moves the broken pieces."},
+      {"text": "Erosion only happens underwater, while weathering only happens on land", "isCorrect": false, "feedback": "Both erosion and weathering can occur in a wide variety of environments -- this isn't the actual distinction."},
+      {"text": "Erosion builds up new rock, while weathering destroys existing rock", "isCorrect": false, "feedback": "Erosion doesn't build new rock -- it moves already broken-down material, which may later be deposited elsewhere."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why are weathering and erosion often described as working together, rather than as entirely separate, competing processes?",
+    "options": [
+      {"text": "Weathering breaks rock down into smaller, transportable pieces, which erosion then physically carries away, so the two typically occur as a connected sequence", "isCorrect": true, "feedback": "Correct -- weathering essentially prepares material that erosion then relocates, making the two processes closely linked in shaping landscapes."},
+      {"text": "They actually cancel each other out completely, leaving the landscape unchanged", "isCorrect": false, "feedback": "The two processes work together to reshape landscapes over time -- they don't cancel each other out."},
+      {"text": "They can never occur in the same location at the same time", "isCorrect": false, "feedback": "Weathering and erosion frequently occur together in the same location, working in sequence on the same rock material."},
+      {"text": "One process only occurs on Earth, while the other only occurs on other planets", "isCorrect": false, "feedback": "Both weathering and erosion can occur on Earth (and are studied on other planetary bodies too) -- this isn't a real distinction between the two terms."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process breaks rock apart using forces like temperature swings, water, or chemical reactions, without relocating the pieces.", "medium": "This process cracks and crumbles rock apart right where it sits, without moving it anywhere.", "easy": "This is when rock breaks apart little by little, right where it is, without being carried away."},
+    "medium": {"hard": "This process specifically involves MOVEMENT of already-broken material via wind, water, or ice, rather than the initial breaking-apart step.", "medium": "This process is about CARRYING broken material somewhere else, not about breaking it apart in the first place.", "easy": "This process is about moving broken-up rock pieces to a new location, using wind, water, or ice."},
+    "hard": {"hard": "The relationship is sequential -- one process creates smaller fragments, the other transports them -- rather than being mutually exclusive, canceling, or planet-specific.", "medium": "The relationship is a SEQUENCE -- one process creates small pieces, and the other one carries them away.", "easy": "One process breaks rock into smaller pieces first; then the other process picks up those pieces and carries them somewhere else."}
+  }
+},
+{
+  "topic": "groundwater and aquifers",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes an underground layer of rock or sediment that holds and can transmit groundwater?",
+    "options": [
+      {"text": "Aquifer", "isCorrect": true, "feedback": "Correct -- aquifers store groundwater within the tiny spaces between rock or sediment particles."},
+      {"text": "Estuary", "isCorrect": false, "feedback": "An estuary is a coastal area where river and ocean water mix -- not an underground water-holding layer."},
+      {"text": "Glacier", "isCorrect": false, "feedback": "A glacier is a large mass of ice on the surface -- not an underground water-holding layer."},
+      {"text": "Canyon", "isCorrect": false, "feedback": "A canyon is a deep valley carved by erosion -- not an underground water-holding layer."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How is groundwater in an aquifer primarily replenished?",
+    "options": [
+      {"text": "Through precipitation soaking (infiltrating) down through the soil and into the aquifer", "isCorrect": true, "feedback": "Correct -- rain and snowmelt gradually seep downward, recharging the water stored underground."},
+      {"text": "Through ocean water flowing directly uphill into the aquifer", "isCorrect": false, "feedback": "Water doesn't naturally flow uphill from the ocean -- aquifers are primarily recharged by precipitation soaking downward."},
+      {"text": "Through deliberate injection of seawater by mining companies", "isCorrect": false, "feedback": "This isn't the primary natural recharge method -- precipitation soaking into the ground is."},
+      {"text": "Aquifers cannot be replenished under any circumstances", "isCorrect": false, "feedback": "Aquifers can be naturally replenished over time through precipitation, though this can be much slower than the rate of human water extraction."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What serious long-term problem can result from pumping groundwater out of an aquifer faster than it can naturally be replenished?",
+    "options": [
+      {"text": "Aquifer depletion, which can lead to land subsidence (sinking) and reduced future water availability", "isCorrect": true, "feedback": "Correct -- overpumping can permanently reduce an aquifer's capacity and even cause the ground above it to sink."},
+      {"text": "The groundwater automatically converts into a nonrenewable fossil fuel", "isCorrect": false, "feedback": "Groundwater doesn't transform into fossil fuels -- the actual risk is depletion and land subsidence."},
+      {"text": "The land above the aquifer instantly turns into solid rock", "isCorrect": false, "feedback": "Overpumping doesn't cause the ground to instantly turn to solid rock -- it can cause the ground to gradually sink instead."},
+      {"text": "There is no possible negative consequence to overpumping an aquifer", "isCorrect": false, "feedback": "Overpumping does carry serious, well-documented risks, including depletion and land subsidence."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This underground layer functions almost like a natural, hidden reservoir, storing water within porous rock or sediment.", "medium": "This underground layer stores water that seeps down from the surface, functioning like a natural reservoir.", "easy": "This is an underground layer of rock or sand that holds water, like a natural underground reservoir."},
+    "medium": {"hard": "The recharge source is rain and snowmelt gradually filtering downward through soil layers, not seawater, artificial injection, or an impossibility of recharge.", "medium": "The recharge source is rain and snow slowly soaking downward through the ground.", "easy": "Rain slowly soaks down through the soil and eventually refills the water stored underground."},
+    "hard": {"hard": "The consequence involves depleting the stored water faster than natural recharge allows, which can also cause the ground above to physically sink, not a fossil-fuel transformation, instant solidification, or an absence of risk.", "medium": "The consequence involves using up water faster than it can refill, which can also cause the ground above to sink.", "easy": "If people pump out water faster than rain can refill it, the underground space can eventually collapse, causing the ground above to sink."}
+  }
+},
+{
+  "topic": "ocean currents",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the name of the powerful warm ocean current that flows from the Gulf of Mexico along the U.S. East Coast toward Europe?",
+    "options": [
+      {"text": "The Gulf Stream", "isCorrect": true, "feedback": "Correct -- the Gulf Stream is one of the most powerful and well-known ocean currents in the world."},
+      {"text": "The Ring of Fire", "isCorrect": false, "feedback": "The Ring of Fire is a zone of volcanic and seismic activity, not an ocean current."},
+      {"text": "The Prime Meridian", "isCorrect": false, "feedback": "The Prime Meridian is an imaginary reference line for longitude, not an ocean current."},
+      {"text": "The International Date Line", "isCorrect": false, "feedback": "The International Date Line marks where the calendar date changes -- it isn't an ocean current."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What effect does the Gulf Stream have on the climate of Western Europe?",
+    "options": [
+      {"text": "It carries warm water northward, helping give Western Europe a milder climate than other regions at similar latitudes", "isCorrect": true, "feedback": "Correct -- without the Gulf Stream's warming influence, places like the United Kingdom would likely have a much colder climate for their latitude."},
+      {"text": "It makes Western Europe significantly colder than other regions at the same latitude", "isCorrect": false, "feedback": "This is the opposite of the Gulf Stream's actual effect -- it warms Western Europe's climate rather than cooling it."},
+      {"text": "It has no measurable effect on European climate at all", "isCorrect": false, "feedback": "The Gulf Stream has a well-documented, significant warming influence on Western Europe's climate."},
+      {"text": "It causes Western Europe to have a desert climate", "isCorrect": false, "feedback": "The Gulf Stream's warming, moisture-carrying influence doesn't produce a desert climate -- Western Europe generally has a mild, temperate climate."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How do surface ocean currents typically differ from deep ocean currents in terms of what drives their movement?",
+    "options": [
+      {"text": "Surface currents are driven mainly by wind, while deep currents are driven by differences in water density, caused by temperature and salinity, as part of global thermohaline circulation", "isCorrect": true, "feedback": "Correct -- these two systems, wind-driven surface flow and density-driven deep flow, work together to circulate water across the entire globe."},
+      {"text": "Surface currents and deep currents are driven by the exact same single mechanism", "isCorrect": false, "feedback": "They're driven by genuinely different mechanisms -- wind at the surface, and density differences in the deep ocean."},
+      {"text": "Surface currents are driven by moonlight, while deep currents are driven by sunlight", "isCorrect": false, "feedback": "Neither moonlight nor sunlight directly drives ocean currents in this way -- wind and density differences are the actual mechanisms."},
+      {"text": "Surface currents only exist near the Equator, while deep currents only exist near the poles", "isCorrect": false, "feedback": "Both surface and deep currents exist across the global ocean, not confined to specific latitude zones."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This current carries warm water from the tropics far northward across the Atlantic.", "medium": "This current carries warm water from near Florida up toward Western Europe.", "easy": "This famous ocean current carries warm water from the Gulf of Mexico all the way toward Europe."},
+    "medium": {"hard": "The effect involves transporting heat from warmer regions toward a higher-latitude region, moderating what would otherwise be a colder climate.", "medium": "The effect involves bringing WARMTH from a tropical region up to a higher-latitude one.", "easy": "This current brings extra warmth to Western Europe, since it's carrying warm tropical water all that way north."},
+    "hard": {"hard": "The driving mechanisms differ by depth -- atmospheric wind pushing surface water, versus density gradients from temperature and salt content driving deeper circulation -- not celestial light sources or a strict latitude restriction.", "medium": "The driving mechanisms are different -- WIND at the surface, versus DENSITY differences (temperature and salt) in the deep ocean.", "easy": "Surface currents get pushed around by wind blowing across the water; deep currents move because of differences in how dense the water is."}
+  }
+},
+{
+  "topic": "El Nino and La Nina",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a periodic climate pattern involving unusually warm ocean temperatures in the central and eastern tropical Pacific Ocean?",
+    "options": [
+      {"text": "El Nino", "isCorrect": true, "feedback": "Correct -- El Nino events occur periodically and can significantly influence weather patterns worldwide."},
+      {"text": "The Ring of Fire", "isCorrect": false, "feedback": "The Ring of Fire refers to volcanic and seismic activity around the Pacific -- not a periodic ocean-warming climate pattern."},
+      {"text": "The monsoon", "isCorrect": false, "feedback": "A monsoon is a seasonal reversing wind pattern -- a different phenomenon from the multi-year El Nino cycle."},
+      {"text": "Desertification", "isCorrect": false, "feedback": "Desertification describes land turning into desert -- unrelated to periodic ocean temperature patterns."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 'La Nina,' relative to El Nino?",
+    "options": [
+      {"text": "The opposite phase, involving unusually cool ocean temperatures in the same tropical Pacific region", "isCorrect": true, "feedback": "Correct -- El Nino and La Nina are opposite phases of the same broader Pacific climate cycle."},
+      {"text": "A completely unrelated weather phenomenon that occurs only in the Atlantic Ocean", "isCorrect": false, "feedback": "La Nina is directly related to El Nino, as its cool-phase counterpart, and it occurs in the same Pacific region, not the Atlantic."},
+      {"text": "Another name for a hurricane", "isCorrect": false, "feedback": "La Nina describes a large-scale, multi-month ocean temperature pattern, not an individual storm like a hurricane."},
+      {"text": "A term for the exact same phenomenon as El Nino, just with a different name", "isCorrect": false, "feedback": "La Nina is the opposite (cool) phase, distinct from El Nino's warm phase, not simply another name for the same thing."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How can El Nino events affect weather patterns far beyond the tropical Pacific Ocean itself?",
+    "options": [
+      {"text": "By altering global atmospheric circulation patterns, contributing to droughts in some distant regions and heavy rainfall or flooding in others", "isCorrect": true, "feedback": "Correct -- because El Nino shifts where heat and moisture concentrate in the atmosphere, its effects can ripple out to influence weather on other continents."},
+      {"text": "El Nino has no effect whatsoever outside the immediate tropical Pacific region", "isCorrect": false, "feedback": "El Nino is well documented to have significant, far-reaching effects on weather patterns around the globe, not just locally."},
+      {"text": "El Nino directly causes earthquakes in unrelated regions of the world", "isCorrect": false, "feedback": "El Nino is an oceanic and atmospheric climate pattern -- it isn't a direct cause of earthquakes, which are driven by tectonic activity."},
+      {"text": "El Nino permanently and irreversibly changes Earth's continents' positions", "isCorrect": false, "feedback": "El Nino is a temporary, cyclical climate pattern -- it has no effect on the positions of tectonic plates or continents."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This pattern involves a periodic warming of a specific ocean region, with effects that can ripple outward globally.", "medium": "This pattern involves warmer-than-usual ocean water in part of the Pacific, occurring every few years.", "easy": "This is a climate pattern where part of the Pacific Ocean gets unusually warm every few years."},
+    "medium": {"hard": "This phase is the cool-water counterpart within the same recurring Pacific Ocean temperature cycle, not an unrelated Atlantic phenomenon or a synonym for a storm.", "medium": "This phase is the COOL counterpart to the warm El Nino phase, within the same overall cycle.", "easy": "Think of this as El Nino's opposite twin -- same general area, just cooler instead of warmer."},
+    "hard": {"hard": "The mechanism involves shifting large-scale atmospheric circulation patterns that redistribute heat and moisture globally, unrelated to earthquakes or continental drift.", "medium": "The mechanism involves shifting big-picture WEATHER PATTERNS around the globe, not causing earthquakes or moving continents.", "easy": "Because the ocean and atmosphere are so connected, a change in one part of the Pacific can shift rain and temperature patterns in places far away."}
+  }
+},
+{
+  "topic": "the seven continents",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "How many continents are traditionally recognized on Earth?",
+    "options": [
+      {"text": "7", "isCorrect": true, "feedback": "Correct -- the traditionally recognized continents are Africa, Antarctica, Asia, Australia, Europe, North America, and South America."},
+      {"text": "3", "isCorrect": false, "feedback": "3 is far too few -- there are 7 traditionally recognized continents."},
+      {"text": "12", "isCorrect": false, "feedback": "12 is too many -- there are 7 traditionally recognized continents."},
+      {"text": "20", "isCorrect": false, "feedback": "20 is far too many -- there are 7 traditionally recognized continents."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which is the largest continent by both land area and population?",
+    "options": [
+      {"text": "Asia", "isCorrect": true, "feedback": "Correct -- Asia is by far the largest continent in both total land area and total population."},
+      {"text": "Australia", "isCorrect": false, "feedback": "Australia is actually the smallest of the traditionally recognized continents, not the largest."},
+      {"text": "Europe", "isCorrect": false, "feedback": "Europe is relatively small in land area compared to Asia, which is the largest continent."},
+      {"text": "Antarctica", "isCorrect": false, "feedback": "While Antarctica has significant land area, its population is extremely small (mainly research staff) -- Asia is the largest by both measures."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some geographers argue that Europe and Asia, which share a connected landmass, should be considered a single continent, often called what?",
+    "options": [
+      {"text": "Eurasia", "isCorrect": true, "feedback": "Correct -- since Europe and Asia aren't separated by ocean, some classifications combine them into this single landmass."},
+      {"text": "Pangaea", "isCorrect": false, "feedback": "Pangaea was an ancient supercontinent that existed hundreds of millions of years ago, containing all continents -- not the modern Europe/Asia combination."},
+      {"text": "Gondwana", "isCorrect": false, "feedback": "Gondwana was an ancient supercontinent made up of continents now in the Southern Hemisphere -- not the modern Europe/Asia combination."},
+      {"text": "Oceania", "isCorrect": false, "feedback": "Oceania refers to a region including Australia and Pacific islands -- not the combined Europe/Asia landmass."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This number of major landmasses is what most world maps and school curricula traditionally divide the world into.", "medium": "This is the number of major landmasses most commonly taught in geography classes.", "easy": "Count Africa, Antarctica, Asia, Australia, Europe, North America, and South America -- how many is that?"},
+    "medium": {"hard": "This continent's sheer scale in both dimensions dwarfs every other continent, including the smallest ones by far.", "medium": "This continent is home to well over half the world's total population.", "easy": "This is the continent home to countries like China, India, and Russia -- by far the biggest one."},
+    "hard": {"hard": "This term applies specifically to the connected modern landmass of two continents that lack an ocean boundary between them, distinct from ancient supercontinents or a Pacific-islands region.", "medium": "This term describes the CONNECTED landmass of two specific continents, not an ancient supercontinent.", "easy": "This is just the name for Europe and Asia combined, since they're actually connected by land with no ocean in between."}
+  }
+},
+{
+  "topic": "political versus physical maps",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which type of map primarily shows human-made boundaries, such as countries, states, and cities, rather than natural features?",
+    "options": [
+      {"text": "Political map", "isCorrect": true, "feedback": "Correct -- political maps emphasize borders and human-defined divisions, like countries and states."},
+      {"text": "Physical map", "isCorrect": false, "feedback": "A physical map instead emphasizes natural features like mountains, rivers, and elevation -- not primarily political boundaries."},
+      {"text": "Weather map", "isCorrect": false, "feedback": "A weather map shows current or forecasted atmospheric conditions -- not primarily political boundaries."},
+      {"text": "Topographic map", "isCorrect": false, "feedback": "A topographic map shows elevation using contour lines -- a type of physical map, not one focused on political boundaries."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does a 'physical map' typically differ from a political map?",
+    "options": [
+      {"text": "A physical map shows natural features like mountains, rivers, and elevation, rather than emphasizing political boundaries", "isCorrect": true, "feedback": "Correct -- physical maps focus on the land's natural characteristics, while political maps focus on human-drawn divisions."},
+      {"text": "A physical map and a political map are simply two names for the identical type of map", "isCorrect": false, "feedback": "They are genuinely different in focus -- natural features versus political boundaries."},
+      {"text": "A physical map can only show oceans, while a political map can only show mountains", "isCorrect": false, "feedback": "A physical map can show a wide range of natural features, not just oceans -- and political maps don't focus on mountains at all."},
+      {"text": "A physical map is always in black and white, while a political map is always in color", "isCorrect": false, "feedback": "Both types of maps can be produced in color or black and white -- color scheme isn't the actual distinguishing feature."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why might a single map sometimes deliberately combine both political and physical features together?",
+    "options": [
+      {"text": "To show how natural geography, like rivers or mountain ranges, relates to or has influenced political boundaries and human settlement patterns", "isCorrect": true, "feedback": "Correct -- many real-world borders follow natural features like rivers, so combining both map types can reveal that connection clearly."},
+      {"text": "Because it is legally required in every country to combine both types of features on any map", "isCorrect": false, "feedback": "There's no such universal legal requirement -- mapmakers combine features when it serves a specific analytical or educational purpose."},
+      {"text": "Because political and physical maps cannot actually exist as separate map types", "isCorrect": false, "feedback": "Political and physical maps very much exist as distinct, separate map types -- they're sometimes combined intentionally, but they aren't inherently inseparable."},
+      {"text": "Because combining them makes the map's total land area larger", "isCorrect": false, "feedback": "Combining features on a map doesn't change the actual land area being represented -- it simply adds more information layers to the same area."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This map type emphasizes human-drawn divisions rather than the land's natural characteristics.", "medium": "This map type focuses on countries, states, and cities, rather than natural land features.", "easy": "This map type shows things like country borders and city locations, rather than mountains and rivers."},
+    "medium": {"hard": "This map type instead emphasizes the land's natural characteristics -- elevation, water bodies, and terrain -- rather than human-drawn divisions.", "medium": "This map type focuses on natural land features, like mountains and rivers, rather than borders.", "easy": "This map type shows mountains, rivers, and land shapes, rather than borders and cities."},
+    "hard": {"hard": "The purpose involves revealing a relationship between natural terrain and human political divisions, not a legal mandate, an impossibility of separate map types, or an effect on actual land area.", "medium": "The purpose is to show a CONNECTION between natural features and where political borders actually ended up.", "easy": "Combining both can show how things like rivers or mountains actually shaped where a country's borders ended up being drawn."}
+  }
+},
+{
+  "topic": "fossil fuels",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes energy sources like coal, oil, and natural gas, formed from the remains of ancient organisms over millions of years?",
+    "options": [
+      {"text": "Fossil fuels", "isCorrect": true, "feedback": "Correct -- fossil fuels form from the compressed, transformed remains of ancient plants and organisms over vast timescales."},
+      {"text": "Renewable resources", "isCorrect": false, "feedback": "Fossil fuels are specifically classified as NONrenewable, unlike resources such as solar or wind energy."},
+      {"text": "Freshwater ecosystems", "isCorrect": false, "feedback": "Freshwater ecosystems refer to habitats like lakes and rivers -- unrelated to ancient organic energy sources."},
+      {"text": "Precipitation", "isCorrect": false, "feedback": "Precipitation refers to rain, snow, and similar falling moisture -- unrelated to ancient organic energy sources."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why are fossil fuels classified as a nonrenewable resource?",
+    "options": [
+      {"text": "They take millions of years to form naturally, far longer than the human timescale on which they're being consumed", "isCorrect": true, "feedback": "Correct -- since fossil fuels can't be replenished within any practical human timeframe, they're treated as a finite, nonrenewable resource."},
+      {"text": "They can be instantly regenerated within a single year if demand increases", "isCorrect": false, "feedback": "This is the opposite of reality -- fossil fuels take an extremely long time to form, which is exactly why they're nonrenewable."},
+      {"text": "Governments have made it illegal to ever use fossil fuels", "isCorrect": false, "feedback": "Fossil fuel use isn't universally illegal -- their nonrenewable classification is about their extremely slow natural formation process."},
+      {"text": "They are actually classified as renewable, not nonrenewable", "isCorrect": false, "feedback": "Fossil fuels are specifically classified as nonrenewable, precisely because of how long they take to form."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Besides being nonrenewable, what major environmental concern is most commonly associated with burning fossil fuels?",
+    "options": [
+      {"text": "The release of greenhouse gases, like carbon dioxide, contributing to climate change", "isCorrect": true, "feedback": "Correct -- burning fossil fuels releases stored carbon into the atmosphere, a major driver of human-caused climate change."},
+      {"text": "Burning fossil fuels directly causes earthquakes", "isCorrect": false, "feedback": "Burning fossil fuels isn't a direct cause of earthquakes -- earthquakes are driven by tectonic plate activity."},
+      {"text": "Burning fossil fuels has no environmental impact whatsoever", "isCorrect": false, "feedback": "Burning fossil fuels has well-documented significant environmental effects, particularly regarding greenhouse gas emissions."},
+      {"text": "Burning fossil fuels causes an immediate and permanent drop in global sea levels", "isCorrect": false, "feedback": "This is the opposite of the actual concern -- climate change linked to fossil fuel emissions is associated with RISING sea levels, not falling ones."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These energy sources originate from ancient biological material transformed by immense heat and pressure over geologic time.", "medium": "These energy sources come from the remains of ancient plants and organisms, compressed over millions of years.", "easy": "These energy sources, like coal and oil, formed from ancient plants and creatures over a very, very long time."},
+    "medium": {"hard": "The classification hinges on the mismatch between an extremely long natural formation timescale and a much faster human consumption rate.", "medium": "The classification is about how LONG they take to form naturally, compared to how fast we use them.", "easy": "It takes millions of years for these to form, way longer than how quickly people are using them up."},
+    "hard": {"hard": "The concern involves releasing stored carbon as greenhouse gases into the atmosphere, distinct from earthquakes, an absence of environmental impact, or sea-level effects moving in the wrong direction.", "medium": "The concern involves releasing gases that trap heat in the atmosphere, contributing to a warming climate.", "easy": "Burning these releases gases that trap heat in the atmosphere, which is a big part of why the climate is changing."}
+  }
+},
+{
+  "topic": "deforestation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes the large-scale clearing or removal of forests, often for agriculture, logging, or development?",
+    "options": [
+      {"text": "Deforestation", "isCorrect": true, "feedback": "Correct -- deforestation describes forests being cleared, often permanently, for other land uses."},
+      {"text": "Urbanization", "isCorrect": false, "feedback": "Urbanization specifically refers to population movement into cities -- a related but distinct concept from clearing forests."},
+      {"text": "Desertification", "isCorrect": false, "feedback": "Desertification describes fertile land degrading into desert -- a related but distinct process from clearing forests."},
+      {"text": "Precipitation", "isCorrect": false, "feedback": "Precipitation refers to rain, snow, and similar falling moisture -- unrelated to clearing forests."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is a commonly cited driver of deforestation in tropical regions?",
+    "options": [
+      {"text": "Clearing land for agriculture and cattle ranching", "isCorrect": true, "feedback": "Correct -- converting forest land into farmland or pasture is one of the largest drivers of tropical deforestation."},
+      {"text": "An excess of rainfall causing forests to disappear naturally", "isCorrect": false, "feedback": "Excess rainfall doesn't cause deforestation -- human land-use changes, like agriculture, are the primary drivers."},
+      {"text": "A sudden, permanent drop in global temperatures", "isCorrect": false, "feedback": "Temperature drops aren't a typical driver of tropical deforestation -- human activities like agriculture are."},
+      {"text": "Excessive snowfall in tropical regions", "isCorrect": false, "feedback": "Tropical regions don't typically experience significant snowfall, and this isn't a driver of deforestation regardless."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does deforestation in tropical rainforests have a particularly significant impact on global climate?",
+    "options": [
+      {"text": "Rainforests act as major carbon sinks, absorbing large amounts of atmospheric carbon dioxide; removing them both releases stored carbon and reduces future absorption capacity", "isCorrect": true, "feedback": "Correct -- this dual effect -- releasing stored carbon while also removing a key carbon-absorbing system -- makes tropical deforestation especially impactful on global climate."},
+      {"text": "Rainforests have no connection to the global carbon cycle at all", "isCorrect": false, "feedback": "Rainforests play a major, well-documented role in the global carbon cycle -- they aren't disconnected from it."},
+      {"text": "Removing rainforests instantly cools the entire planet", "isCorrect": false, "feedback": "This is the opposite of the actual concern -- rainforest loss is associated with contributing to global warming, not cooling."},
+      {"text": "Deforestation only affects local wildlife and has no broader global climate impact", "isCorrect": false, "feedback": "Deforestation's impact extends well beyond local wildlife -- it significantly affects the global carbon cycle and climate."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process removes a landscape's dominant vegetation, often permanently converting it to another land use.", "medium": "This process clears away large areas of forest, usually to make room for farming or development.", "easy": "This is when large areas of forest are cut down, often to make room for farms or buildings."},
+    "medium": {"hard": "This driver involves converting forested land into space for raising crops or livestock, a major economic use of cleared tropical land.", "medium": "This driver involves converting forest land into space for growing food or raising animals.", "easy": "A lot of tropical forest gets cleared specifically to make room for farms and cattle ranches."},
+    "hard": {"hard": "The impact stems from rainforests' dual role -- storing carbon and actively absorbing more of it -- so their removal both releases and reduces future absorption, unlike claims of disconnection, cooling, or purely local effects.", "medium": "The impact involves rainforests both STORING carbon and ACTIVELY ABSORBING more of it from the atmosphere.", "easy": "Rainforests both hold onto a lot of carbon AND keep soaking up more of it from the air -- cutting them down messes with both of those jobs at once."}
+  }
+},
+{
+  "topic": "coral reefs",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a diverse underwater ecosystem built from the calcium carbonate skeletons of tiny marine organisms called coral polyps?",
+    "options": [
+      {"text": "Coral reef", "isCorrect": true, "feedback": "Correct -- coral reefs are built up over time by colonies of coral polyps, forming rich underwater habitats."},
+      {"text": "Estuary", "isCorrect": false, "feedback": "An estuary is where river and ocean water mix -- a different type of ecosystem from a coral reef."},
+      {"text": "Tundra", "isCorrect": false, "feedback": "Tundra is a cold, land-based biome -- entirely unrelated to underwater coral structures."},
+      {"text": "Aquifer", "isCorrect": false, "feedback": "An aquifer is an underground layer holding groundwater -- unrelated to a coral-built ocean ecosystem."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What condition, often triggered by rising ocean temperatures, causes corals to expel the colorful algae living in their tissues, turning them white?",
+    "options": [
+      {"text": "Coral bleaching", "isCorrect": true, "feedback": "Correct -- coral bleaching is a major, increasingly common stress response linked to warming ocean waters."},
+      {"text": "Coral blooming", "isCorrect": false, "feedback": "'Coral blooming' isn't the standard term for this stress response -- 'coral bleaching' is."},
+      {"text": "Coral photosynthesis", "isCorrect": false, "feedback": "Photosynthesis is actually performed by the algae living within healthy coral -- it isn't the term for the whitening stress response itself."},
+      {"text": "Coral hibernation", "isCorrect": false, "feedback": "'Hibernation' isn't an accurate description of this process -- 'coral bleaching' is the correct term."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is prolonged coral bleaching so dangerous to a reef's survival, beyond just the loss of its color?",
+    "options": [
+      {"text": "The expelled algae provide the coral with most of its energy through photosynthesis, so a prolonged loss of algae can lead to coral starvation and death", "isCorrect": true, "feedback": "Correct -- if warm conditions persist and the algae don't return in time, the coral can starve, even though bleaching itself doesn't always mean immediate death."},
+      {"text": "Losing its color makes coral instantly toxic to all nearby marine life", "isCorrect": false, "feedback": "Color loss itself isn't what makes bleaching dangerous -- the loss of the algae's energy contribution to the coral is."},
+      {"text": "Bleached coral immediately turns into rock and can never support any life again", "isCorrect": false, "feedback": "Coral can sometimes recover from bleaching if conditions improve in time -- it doesn't instantly and permanently turn to inert rock."},
+      {"text": "Coral bleaching has no real impact on the coral's health at all", "isCorrect": false, "feedback": "Coral bleaching is a serious stress event -- it can very much impact the coral's survival if prolonged, due to lost energy from expelled algae."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This structure is a living ecosystem built collectively by tiny organisms depositing hard mineral skeletons over generations.", "medium": "This structure is built by tiny ocean creatures, layer by layer, forming a rich underwater habitat.", "easy": "This colorful underwater structure is built by tiny ocean creatures called coral polyps."},
+    "medium": {"hard": "This condition involves the coral expelling its symbiotic algae partners, typically triggered by unusually warm water.", "medium": "This condition happens when warm water causes coral to push out the algae that normally live inside it.", "easy": "This is what happens to coral when it gets too warm and pushes out the colorful algae living inside it, turning white."},
+    "hard": {"hard": "The danger involves losing the algae's photosynthetic energy contribution over an extended period, distinct from instant toxicity, immediate permanent petrification, or a claim of no real health impact.", "medium": "The danger involves losing the ENERGY the coral normally gets from its algae partners, not instant toxicity or permanent rock formation.", "easy": "The algae that live inside coral actually make most of its food through photosynthesis -- without them for too long, the coral can literally starve."}
+  }
+},
+{
+  "topic": "glaciers and ice ages",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a large, slow-moving mass of ice formed from accumulated snow over long periods of time?",
+    "options": [
+      {"text": "Glacier", "isCorrect": true, "feedback": "Correct -- glaciers form as layers of snow compact into dense ice over many years, and they slowly move under their own weight."},
+      {"text": "Iceberg", "isCorrect": false, "feedback": "An iceberg is a chunk of ice that has broken off from a glacier or ice shelf and now floats in open water -- it's related to glaciers but isn't the slow-moving ice mass itself."},
+      {"text": "Permafrost", "isCorrect": false, "feedback": "Permafrost is permanently frozen ground, not a moving mass of ice -- it forms from sustained cold temperatures, not from accumulated snow."},
+      {"text": "Ice shelf", "isCorrect": false, "feedback": "An ice shelf is a floating platform of ice attached to land where a glacier meets the ocean -- it's related to glaciers but isn't the general term for the ice mass itself."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a long period in Earth's history when large ice sheets and glaciers covered much more of the planet's surface than they do today?",
+    "options": [
+      {"text": "Ice age", "isCorrect": true, "feedback": "Correct -- Earth has experienced several ice ages throughout its history, with ice sheets extending far beyond their current coverage."},
+      {"text": "Interglacial period", "isCorrect": false, "feedback": "An interglacial period is actually the opposite -- a warmer stretch between ice ages when ice sheets retreat, not when they're at their most extensive."},
+      {"text": "The Holocene", "isCorrect": false, "feedback": "The Holocene is our current, relatively warm geological epoch, which began as the last major ice age was ending -- not a time of maximum ice coverage."},
+      {"text": "The Little Ice Age", "isCorrect": false, "feedback": "The Little Ice Age was a smaller, more recent cooling period (roughly 1300-1850) with only modest glacial expansion -- far less extensive than a true ice age."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How do glaciers leave lasting evidence of their past movement on the landscape, even long after they've retreated?",
+    "options": [
+      {"text": "They carve distinctive landforms like U-shaped valleys and leave behind deposited rock and sediment called moraines", "isCorrect": true, "feedback": "Correct -- these physical traces let scientists identify where glaciers once existed, even thousands of years after they melted away."},
+      {"text": "They leave evidence solely through scattered boulders called erratics, with no other lasting landforms", "isCorrect": false, "feedback": "Erratic boulders are indeed one kind of evidence glaciers leave, but they're only part of the picture -- glaciers also carve distinctive U-shaped valleys and deposit larger moraines, giving a much fuller record than boulders alone."},
+      {"text": "They leave evidence mainly by permanently altering the local climate, which meteorologists can still measure today", "isCorrect": false, "feedback": "Glaciers don't leave a lasting, still-measurable change to local climate after they retreat -- the durable evidence is physical, in landforms like carved valleys and rock deposits, not ongoing climate effects."},
+      {"text": "They leave evidence mainly in the chemical composition of nearby rivers, which stays altered indefinitely", "isCorrect": false, "feedback": "River chemistry shifts too much over time to serve as lasting evidence -- the dependable traces of past glaciers come from carved landforms and rock deposits like moraines."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This ice mass forms gradually from compacted snow, then slowly flows under the pull of gravity and its own weight.", "medium": "This mass of ice forms over a long time from packed-down snow, then slowly moves.", "easy": "This is a huge, slow-moving mass of ice, formed from snow that's been packed down over a very long time."},
+    "medium": {"hard": "This period is defined by climate, not human culture, involving much greater global ice coverage than exists today.", "medium": "This period is defined by climate and ice coverage, not by human cultural or economic developments.", "easy": "This is a period when Earth was much colder and covered in far more ice than it is now."},
+    "hard": {"hard": "Think about what marks something massive and slow-moving leaves behind on the ground long after it's gone -- the clues aren't hidden, they're written into the landscape itself.", "medium": "The evidence involves permanent changes to the LAND itself -- valley shapes and piles of rock left behind.", "easy": "Glaciers carve out distinctive valley shapes and leave behind piles of rock and dirt that stick around long after the ice itself is gone."}
+  }
+},
+{
+  "topic": "the water cycle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes the continuous natural process by which water moves between the atmosphere, land, and oceans through evaporation, condensation, and precipitation?",
+    "options": [
+      {"text": "The water cycle", "isCorrect": true, "feedback": "Correct -- the water cycle continuously recycles Earth's water between its oceans, atmosphere, and land."},
+      {"text": "The rock cycle", "isCorrect": false, "feedback": "The rock cycle describes the transformation of rocks over geologic time -- a different process from water's movement."},
+      {"text": "The carbon cycle", "isCorrect": false, "feedback": "The carbon cycle describes carbon's movement through ecosystems and the atmosphere -- a different process from water's movement."},
+      {"text": "The nitrogen cycle", "isCorrect": false, "feedback": "The nitrogen cycle describes nitrogen's movement through ecosystems -- a different process from water's movement."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does 'evaporation' differ from 'condensation' within the water cycle?",
+    "options": [
+      {"text": "Evaporation is liquid water turning into water vapor (typically due to heat), while condensation is water vapor turning back into liquid droplets (typically as it cools)", "isCorrect": true, "feedback": "Correct -- these two opposite processes work together, moving water back and forth between its liquid and gaseous states."},
+      {"text": "Evaporation and condensation are simply two names for the identical process", "isCorrect": false, "feedback": "They describe opposite transformations -- liquid to gas, and gas back to liquid."},
+      {"text": "Evaporation only happens in oceans, while condensation only happens over mountains", "isCorrect": false, "feedback": "Both processes can occur in many different locations -- this isn't the actual distinction between the two terms."},
+      {"text": "Evaporation happens only at night, while condensation happens only during the day", "isCorrect": false, "feedback": "Neither process is restricted to a specific time of day -- the distinction is about the direction of the state change (liquid to gas, or gas to liquid)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What role does 'transpiration' play within the broader water cycle?",
+    "options": [
+      {"text": "It's the process by which plants release water vapor into the atmosphere through their leaves, contributing to the same atmospheric moisture that evaporation from water bodies also provides", "isCorrect": true, "feedback": "Correct -- transpiration is often studied together with evaporation, as the combined term 'evapotranspiration,' since both add moisture to the atmosphere."},
+      {"text": "It describes water freezing permanently and never re-entering the water cycle", "isCorrect": false, "feedback": "Transpiration specifically involves adding water vapor to the atmosphere through plants, not permanently removing water from the cycle."},
+      {"text": "It refers only to water moving underground through aquifers", "isCorrect": false, "feedback": "Transpiration specifically involves plants releasing water vapor into the air, not underground water movement."},
+      {"text": "It has no actual connection to the water cycle at all", "isCorrect": false, "feedback": "Transpiration is a genuine, well-recognized part of the water cycle, contributing atmospheric moisture alongside evaporation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This cycle continuously redistributes Earth's finite water supply between its major reservoirs and the atmosphere.", "medium": "This cycle moves water between the ocean, the atmosphere, and the land, over and over again.", "easy": "This is the natural cycle where water evaporates, forms clouds, falls as rain, and repeats over and over."},
+    "medium": {"hard": "One process is liquid becoming gas, usually from heating; the other is gas becoming liquid again, usually from cooling.", "medium": "One process turns liquid water INTO vapor; the other turns vapor BACK INTO liquid.", "easy": "One of these is water turning into vapor as it heats up; the other is vapor turning back into liquid as it cools down, like clouds forming."},
+    "hard": {"hard": "This process adds atmospheric moisture from a biological source -- plant leaves -- functioning alongside evaporation from open water bodies, rather than involving freezing, underground water, or no connection at all.", "medium": "This process adds moisture to the air from PLANTS specifically, working alongside evaporation from water bodies.", "easy": "Plants also release water vapor into the air through their leaves -- it's like a plant version of evaporation, adding to the same water cycle."}
+  }
+},
+{
+  "topic": "exclaves and enclaves",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a territory that is entirely surrounded by the territory of a single other country?",
+    "options": [
+      {"text": "Enclave", "isCorrect": true, "feedback": "Correct -- an enclave is completely encircled by the territory of one surrounding country."},
+      {"text": "Peninsula", "isCorrect": false, "feedback": "A peninsula is land surrounded by water on most sides -- unrelated to being surrounded by another country's territory."},
+      {"text": "Isthmus", "isCorrect": false, "feedback": "An isthmus is a narrow strip of land connecting two larger landmasses -- unrelated to being surrounded by another country's territory."},
+      {"text": "Archipelago", "isCorrect": false, "feedback": "An archipelago is a group or chain of islands -- unrelated to being surrounded by another country's territory."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does an 'exclave' differ from an enclave?",
+    "options": [
+      {"text": "An exclave is a portion of a country's territory that is geographically separated from that country's main territory, often by another country's land", "isCorrect": true, "feedback": "Correct -- a territory can actually be both an enclave (surrounded by one country) and an exclave (separated from its own country) at the same time."},
+      {"text": "An exclave and an enclave are simply two names for the identical concept", "isCorrect": false, "feedback": "They describe related but distinct relationships -- one is about being surrounded, the other is about being separated from one's own country."},
+      {"text": "An exclave can only exist on an island, while an enclave can only exist inland", "isCorrect": false, "feedback": "Neither term is restricted to islands or purely inland locations -- the distinction is about surrounding territory versus separation from the home country."},
+      {"text": "An exclave always has a larger population than its home country's main territory", "isCorrect": false, "feedback": "Population size isn't the defining feature of an exclave -- its defining feature is geographic separation from its home country."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is a real-world example of a Russian exclave, separated from the rest of Russia by other countries' territory?",
+    "options": [
+      {"text": "Kaliningrad", "isCorrect": true, "feedback": "Correct -- Kaliningrad is a Russian region on the Baltic Sea, physically separated from the rest of Russia by Poland and Lithuania."},
+      {"text": "Siberia", "isCorrect": false, "feedback": "Siberia is a vast region directly connected to the rest of Russia -- it isn't a separated exclave."},
+      {"text": "Moscow", "isCorrect": false, "feedback": "Moscow is Russia's capital, located within its main, connected territory -- it isn't a separated exclave."},
+      {"text": "Vladivostok", "isCorrect": false, "feedback": "Vladivostok is a Russian city in the Far East, directly connected to the rest of Russia's territory -- it isn't a separated exclave."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This territory's borders are entirely defined by a single neighboring country's land, with no outside access.", "medium": "This is a piece of land completely boxed in by just one other country all around it.", "easy": "This is a small piece of land that's completely surrounded by just ONE other country."},
+    "medium": {"hard": "This concept concerns a territory's disconnection from its OWN country's main body of land, distinct from being surrounded by a single neighbor, island restriction, or population size.", "medium": "This concept is about being cut off from your OWN country's main land, not about being surrounded by one specific neighbor.", "easy": "This is when a piece of a country is separated from the rest of that same country by someone else's land in between."},
+    "hard": {"hard": "This region sits on the Baltic coast, physically cut off from Russia's main territory by two other countries, unlike Russia's directly connected regions.", "medium": "This region sits on the Baltic Sea, cut off from the rest of Russia by two other countries in between.", "easy": "This small Russian region on the Baltic Sea is squeezed between Poland and Lithuania, totally cut off from the rest of Russia."}
+  }
+},
+{
+  "topic": "GPS (Global Positioning System)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What technology uses a network of satellites to determine a receiver's precise location on Earth?",
+    "options": [
+      {"text": "GPS (Global Positioning System)", "isCorrect": true, "feedback": "Correct -- GPS uses satellite signals to calculate a receiver's exact location."},
+      {"text": "Wi-Fi", "isCorrect": false, "feedback": "Wi-Fi is a wireless networking technology for internet access -- not the satellite-based location system."},
+      {"text": "Bluetooth", "isCorrect": false, "feedback": "Bluetooth is a short-range wireless technology for connecting nearby devices -- not the satellite-based location system."},
+      {"text": "HTML", "isCorrect": false, "feedback": "HTML structures web page content -- unrelated to satellite-based location technology."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Approximately how many satellites does a GPS receiver typically need signals from to calculate its position, including altitude?",
+    "options": [
+      {"text": "At least 4", "isCorrect": true, "feedback": "Correct -- signals from at least four satellites are generally needed to accurately calculate a three-dimensional position (latitude, longitude, and altitude)."},
+      {"text": "Exactly 1", "isCorrect": false, "feedback": "A single satellite isn't enough to determine a precise three-dimensional position -- multiple satellites are needed."},
+      {"text": "Exactly 100", "isCorrect": false, "feedback": "This is far more than actually necessary -- around 4 satellites are typically sufficient for a precise position fix."},
+      {"text": "None -- GPS doesn't use satellites at all", "isCorrect": false, "feedback": "GPS is fundamentally satellite-based -- its entire function depends on receiving signals from orbiting satellites."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does a GPS receiver actually calculate its position using signals from multiple satellites?",
+    "options": [
+      {"text": "By precisely measuring how long signals take to travel from each satellite (whose exact positions are known) to the receiver, then using those distances to triangulate its exact location", "isCorrect": true, "feedback": "Correct -- this technique, called trilateration, relies on extremely precise timing to calculate distance from each satellite and pinpoint an exact position."},
+      {"text": "By taking a photograph of the ground and comparing it to a stored map", "isCorrect": false, "feedback": "GPS doesn't work by photographing the ground -- it relies on precisely timed radio signals from satellites."},
+      {"text": "By asking nearby cell phone towers to physically point in the receiver's direction", "isCorrect": false, "feedback": "GPS positioning relies on satellite signals, not directional information from cell towers pointing at a device."},
+      {"text": "By randomly guessing a location and gradually refining it through trial and error over several days", "isCorrect": false, "feedback": "GPS calculates position almost instantly and precisely through signal timing, not through random guessing over an extended period."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This system relies on orbiting satellites broadcasting precisely timed signals down to receivers on Earth.", "medium": "This system uses satellites orbiting Earth to help a device figure out exactly where it is.", "easy": "This technology uses satellites in space to figure out exactly where you are on Earth."},
+    "medium": {"hard": "A three-dimensional position fix, including height above sea level, generally requires signals from at least this many satellites.", "medium": "You generally need signals from at least this many satellites to get a full 3D position, including altitude.", "easy": "You typically need at least this many satellites' signals to figure out your exact spot, including how high up you are."},
+    "hard": {"hard": "The method relies on precise signal travel-time measurement from known satellite positions to calculate distance, then combines multiple such distances to pinpoint a location -- not photography, cell tower pointing, or random guessing.", "medium": "The method relies on measuring exactly how LONG a signal takes to travel from each satellite, to figure out distance.", "easy": "Each satellite's signal takes a tiny, measurable amount of time to reach your device -- using that timing from several satellites at once pinpoints your exact spot."}
+  }
+}
+]

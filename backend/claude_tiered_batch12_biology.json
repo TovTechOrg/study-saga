@@ -1,0 +1,207 @@
+[
+{
+  "topic": "structure and function of the eye",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which part of the eye focuses light onto the retina?",
+    "options": [
+      {"text": "The lens", "isCorrect": true, "feedback": "Correct -- the lens bends light to focus a clear image onto the retina."},
+      {"text": "The eyelid", "isCorrect": false, "feedback": "The eyelid protects the eye and helps spread tears -- it doesn't focus light."},
+      {"text": "The eyebrow", "isCorrect": false, "feedback": "The eyebrow mainly helps keep sweat out of the eyes, unrelated to focusing light."},
+      {"text": "The eyelash", "isCorrect": false, "feedback": "Eyelashes help keep debris out of the eye -- they don't focus light."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the function of the retina?",
+    "options": [
+      {"text": "Converting light into electrical signals sent to the brain", "isCorrect": true, "feedback": "Correct -- the retina contains light-sensitive cells that begin the process of vision."},
+      {"text": "Producing tears to keep the eye moist", "isCorrect": false, "feedback": "Tears are produced by tear glands, not the retina."},
+      {"text": "Controlling how much light enters the eye", "isCorrect": false, "feedback": "That's the role of the iris and pupil, not the retina."},
+      {"text": "Protecting the eye from dust and debris", "isCorrect": false, "feedback": "That's more the role of eyelashes and eyelids, not the retina, which is located at the back of the eye."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In dim lighting, the pupil of the eye widens (dilates). What is the functional purpose of this response?",
+    "options": [
+      {"text": "To allow more light to enter the eye and reach the retina", "isCorrect": true, "feedback": "Correct -- a wider pupil lets in more available light, helping vision in low-light conditions."},
+      {"text": "To block out most incoming light", "isCorrect": false, "feedback": "Dilating (widening) the pupil lets MORE light in, not less -- blocking light would involve the pupil constricting instead."},
+      {"text": "To change the color of objects being viewed", "isCorrect": false, "feedback": "Pupil size doesn't alter the actual color of objects -- it just controls how much light reaches the retina."},
+      {"text": "To focus light more sharply, similar to the lens", "isCorrect": false, "feedback": "Focusing is primarily the lens's job -- pupil size specifically regulates the amount of light entering, not focus."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This clear structure bends incoming light rays to create a sharp image inside the eye.", "medium": "This part of the eye works like a camera lens, bending light to a focus point.", "easy": "This clear part of the eye bends light, just like a camera lens."},
+    "medium": {"hard": "This light-sensitive layer at the back of the eye contains specialized cells that convert light into signals the brain can interpret.", "medium": "This is the light-sensitive layer at the back of the eye that starts the process of seeing.", "easy": "This is the layer at the back of the eye that senses light."},
+    "hard": {"hard": "In low-light conditions, maximizing the light-collecting aperture size improves the eye's ability to detect the limited available light.", "medium": "In dim light, opening the pupil wider lets in as much of the limited available light as possible.", "easy": "In the dark, the pupil opens wider to let in more of the little light that's available."}
+  }
+},
+{
+  "topic": "bacteria vs. viruses",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a key difference between bacteria and viruses?",
+    "options": [
+      {"text": "Bacteria are living cells, while viruses are not considered fully alive on their own", "isCorrect": true, "feedback": "Correct -- bacteria are single-celled living organisms, while viruses need a host cell to reproduce and are debated as \"alive.\""},
+      {"text": "Bacteria are always helpful, while viruses are always harmful", "isCorrect": false, "feedback": "Both bacteria and viruses include harmful and, in the case of bacteria, many helpful/harmless types -- this isn't the defining structural difference."},
+      {"text": "Viruses are much larger than bacteria", "isCorrect": false, "feedback": "This is backwards -- viruses are generally much SMALLER than bacteria, not larger."},
+      {"text": "There is no meaningful difference between them", "isCorrect": false, "feedback": "Bacteria and viruses are fundamentally different types of biological entities."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why don't antibiotics work against viral infections, even though they're effective against many bacterial infections?",
+    "options": [
+      {"text": "Antibiotics target structures and processes found in bacterial cells, which viruses don't have", "isCorrect": true, "feedback": "Correct -- antibiotics are designed to disrupt bacterial cell walls or processes, but viruses lack these structures entirely, relying instead on host cells to replicate."},
+      {"text": "Antibiotics are too weak to affect anything at all", "isCorrect": false, "feedback": "Antibiotics are indeed effective against many bacteria -- they just aren't designed to target the very different structure of viruses."},
+      {"text": "Viruses are immune to all forms of medicine", "isCorrect": false, "feedback": "While antibiotics don't work on viruses, antiviral medications specifically designed for viruses do exist."},
+      {"text": "Bacteria and viruses are actually the exact same type of organism", "isCorrect": false, "feedback": "Bacteria and viruses are structurally and biologically very different from one another."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why must viruses hijack a host cell's machinery to reproduce, while bacteria can typically reproduce on their own?",
+    "options": [
+      {"text": "Bacteria have their own complete cellular machinery, but viruses lack the components needed to replicate independently", "isCorrect": true, "feedback": "Correct -- bacteria are self-sufficient cells, while viruses are essentially genetic material in a protein coat, needing a host cell's ribosomes and machinery to make copies of themselves."},
+      {"text": "Viruses are simply too lazy to reproduce on their own", "isCorrect": false, "feedback": "This isn't a scientific explanation -- viruses genuinely lack the biological machinery (like ribosomes) needed for independent reproduction."},
+      {"text": "Bacteria cannot reproduce at all without a host either", "isCorrect": false, "feedback": "Bacteria are fully capable of independent reproduction (like binary fission) without needing a host cell, unlike viruses."},
+      {"text": "Viruses have more advanced reproductive systems than bacteria", "isCorrect": false, "feedback": "It's the opposite -- viruses have a much simpler, incomplete structure that requires borrowing a host's machinery to reproduce at all."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One of these is a complete, independently functioning cell; the other is a much simpler particle.", "medium": "One of these is a full living cell; the other needs to invade a cell to make copies of itself.", "easy": "One of these is a living cell; the other needs to invade a cell to reproduce."},
+    "medium": {"hard": "These drugs are designed to interfere with specific bacterial structures (like cell walls) or processes that simply don't exist in the very different structure of a virus.", "medium": "These drugs work by disrupting parts of bacterial cells that viruses simply don't have.", "easy": "These medicines work on parts of bacteria that viruses just don't have."},
+    "hard": {"hard": "Bacteria possess all the necessary internal structures (ribosomes, enzymes, etc.) for independent metabolism and division, whereas a virus is essentially just genetic material and a protein shell, entirely dependent on borrowing a host cell's internal machinery.", "medium": "Bacteria have everything they need inside themselves to grow and divide, but viruses are missing key parts and have to borrow them from a host cell.", "easy": "Bacteria have everything needed to reproduce on their own, but viruses are missing key parts and have to borrow a host cell's."}
+  }
+},
+{
+  "topic": "seed dispersal methods",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Why is seed dispersal important for plants?",
+    "options": [
+      {"text": "It helps spread seeds to new areas, reducing competition with the parent plant", "isCorrect": true, "feedback": "Correct -- spreading seeds away from the parent plant improves the chances of seedlings finding space, light, and resources."},
+      {"text": "It helps the parent plant photosynthesize more", "isCorrect": false, "feedback": "Photosynthesis relates to leaves and sunlight, not seed dispersal specifically."},
+      {"text": "It prevents the plant from ever producing more seeds", "isCorrect": false, "feedback": "Seed dispersal is about spreading existing seeds -- it doesn't prevent future seed production."},
+      {"text": "It changes the plant's genetic makeup", "isCorrect": false, "feedback": "Dispersal is about seed location, not a mechanism for changing genetics."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A dandelion seed has a fluffy, feathery structure that helps it travel far from the parent plant. What method of seed dispersal does this represent?",
+    "options": [
+      {"text": "Dispersal by wind", "isCorrect": true, "feedback": "Correct -- the fluffy structure catches the wind and carries the seed through the air."},
+      {"text": "Dispersal by water", "isCorrect": false, "feedback": "Water dispersal typically relies on seeds floating, like a coconut, not on a fluffy wind-catching structure."},
+      {"text": "Dispersal by animals eating the fruit", "isCorrect": false, "feedback": "Animal dispersal usually involves seeds inside a fruit being eaten and passed later, not a fluffy wind-catching structure."},
+      {"text": "Dispersal by explosive pods", "isCorrect": false, "feedback": "That method involves a pod physically bursting open to fling out seeds, not a fluffy wind-catching structure."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some seeds, like burrs, have hooks that stick to animal fur. How does this method benefit the plant's chances of survival?",
+    "options": [
+      {"text": "The seeds can be carried far away by the moving animal before eventually falling off, spreading the plant to new locations", "isCorrect": true, "feedback": "Correct -- hitchhiking on animals allows for potentially long-distance dispersal without the plant needing to expend its own energy on flight structures."},
+      {"text": "The hooks help the seed absorb more sunlight", "isCorrect": false, "feedback": "Hooks are a mechanical attachment structure, unrelated to sunlight absorption."},
+      {"text": "The hooks allow the seed to photosynthesize while attached to the animal", "isCorrect": false, "feedback": "Seeds don't actively photosynthesize in this dormant stage -- the hooks are purely for hitching a ride."},
+      {"text": "The hooks prevent the seed from ever germinating", "isCorrect": false, "feedback": "The hooks are for transport only -- they don't prevent the seed from eventually germinating once it settles."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Spreading offspring away from the parent plant reduces competition for the same limited local resources.", "medium": "Moving seeds away from the parent plant means less competition for sunlight, water, and space.", "easy": "Spreading seeds far away means less competition with the parent plant for space and sunlight."},
+    "medium": {"hard": "This lightweight, feathery adaptation is specifically shaped to catch and be carried by moving air currents.", "medium": "This fluffy adaptation helps the seed float and drift on moving air.", "easy": "This fluffy structure lets the seed float away on a breeze."},
+    "hard": {"hard": "By attaching to a mobile host, the seed can be transported potentially long distances at no direct energy cost to the plant, before detaching in a new, less crowded location.", "medium": "By sticking to a moving animal, the seed gets a free ride to a brand new location, away from the crowded area near the parent plant.", "easy": "By hitching a ride on an animal, the seed gets carried far away to a new spot to grow."}
+  }
+},
+{
+  "topic": "food chains vs. food webs",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a food web?",
+    "options": [
+      {"text": "A network of interconnected food chains showing multiple feeding relationships in an ecosystem", "isCorrect": true, "feedback": "Correct -- a food web captures the complexity of many overlapping food chains."},
+      {"text": "A single, straight-line sequence of who eats whom", "isCorrect": false, "feedback": "That describes a simple food chain, not the more complex food web."},
+      {"text": "A list of foods a single animal likes to eat", "isCorrect": false, "feedback": "A food web involves relationships across an entire ecosystem, not just one animal's preferences."},
+      {"text": "A diagram showing only plants in an ecosystem", "isCorrect": false, "feedback": "A food web includes multiple types of organisms across different feeding levels, not just plants."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why is a food web generally considered more realistic than a single food chain?",
+    "options": [
+      {"text": "Because most organisms in nature eat more than one type of food and are eaten by more than one predator", "isCorrect": true, "feedback": "Correct -- a food web reflects these many overlapping relationships, unlike a simplified single-path food chain."},
+      {"text": "Because a food web only involves plants", "isCorrect": false, "feedback": "A food web includes producers, consumers, and decomposers across many interconnected paths, not just plants."},
+      {"text": "Because a food web never changes over time", "isCorrect": false, "feedback": "Food webs can and do change as populations and environments shift -- that's not the reason they're more realistic."},
+      {"text": "Because a food chain is actually more complex than a food web", "isCorrect": false, "feedback": "This has it backwards -- a food web is the more complex structure, made of many interconnected food chains."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If a single species of insect went extinct, why might a food web help predict the ecosystem's response better than a single food chain?",
+    "options": [
+      {"text": "The food web shows multiple alternative food sources and predators, helping predict how other species might adapt or compensate", "isCorrect": true, "feedback": "Correct -- a food web's interconnected structure reveals alternate pathways that a simple linear food chain would miss."},
+      {"text": "A food chain would show exactly the same information as a food web", "isCorrect": false, "feedback": "A food chain only shows one linear path, missing the alternate connections a food web reveals."},
+      {"text": "The insect's extinction would have no effect on anything else in the ecosystem", "isCorrect": false, "feedback": "In most ecosystems, losing a species does ripple outward to affect other connected organisms -- a food web helps reveal which ones."},
+      {"text": "A food web only tracks changes in plant populations", "isCorrect": false, "feedback": "A food web tracks relationships across many types of organisms, not just plants."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This diagram captures many interconnected feeding relationships rather than just one single path.", "medium": "This diagram shows many different feeding connections crossing over each other, not just one line.", "easy": "This diagram shows lots of different feeding connections, not just one single path."},
+    "medium": {"hard": "In reality, most organisms occupy multiple roles across several potential feeding relationships rather than a single fixed path.", "medium": "In real ecosystems, most animals eat more than one thing and get eaten by more than one predator.", "easy": "In real life, most animals eat more than one kind of food, which a simple chain can't show."},
+    "hard": {"hard": "The web's multiple interconnections reveal which other species share overlapping food sources or predators, offering insight into potential compensatory shifts a single linear chain would obscure.", "medium": "Since the web shows multiple connections, you can see what other species might step in to fill the gap left by the extinct insect.", "easy": "Since the web shows many connections, you can see which other animals might fill in the gap left behind."}
+  }
+},
+{
+  "topic": "DNA vs. RNA",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which sugar is found in DNA, distinguishing it from RNA?",
+    "options": [
+      {"text": "Deoxyribose", "isCorrect": true, "feedback": "Correct -- DNA (deoxyribonucleic acid) contains deoxyribose sugar, while RNA contains ribose."},
+      {"text": "Glucose", "isCorrect": false, "feedback": "Glucose is a common sugar used for energy, but it isn't the specific sugar found in DNA's backbone."},
+      {"text": "Sucrose", "isCorrect": false, "feedback": "Sucrose is table sugar, unrelated to the sugar found in DNA's structure."},
+      {"text": "Fructose", "isCorrect": false, "feedback": "Fructose is a fruit sugar, unrelated to the sugar found in DNA's structure."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a key structural difference between DNA and RNA?",
+    "options": [
+      {"text": "DNA is typically double-stranded, while RNA is typically single-stranded", "isCorrect": true, "feedback": "Correct -- DNA's two strands form its well-known double helix, while RNA usually exists as a single strand."},
+      {"text": "DNA is found only in plants, while RNA is found only in animals", "isCorrect": false, "feedback": "Both DNA and RNA are found across virtually all living organisms, not separated by plant/animal lines."},
+      {"text": "DNA has no genetic information, while RNA carries all genetic information", "isCorrect": false, "feedback": "DNA is actually the primary long-term storage of genetic information -- RNA typically helps carry out that information's instructions."},
+      {"text": "DNA is always found outside the cell, while RNA is always found inside the nucleus", "isCorrect": false, "feedback": "This is backwards from typical cell biology -- DNA is primarily housed within the nucleus, while RNA moves more freely, including outside it."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "DNA uses the base thymine, while RNA uses uracil in its place. Both pair with adenine. Why might having a distinct base be useful for distinguishing DNA from RNA?",
+    "options": [
+      {"text": "It allows cellular repair mechanisms to more easily recognize and correct errors, since RNA components mistakenly incorporated into DNA can be identified", "isCorrect": true, "feedback": "Correct -- this distinction helps repair enzymes tell the two nucleic acids apart, supporting accurate genetic maintenance."},
+      {"text": "It has no functional benefit and is simply a random coincidence", "isCorrect": false, "feedback": "This distinction is thought to serve a specific functional purpose related to error detection and molecular stability, not mere coincidence."},
+      {"text": "It allows DNA and RNA to pair directly with each other constantly", "isCorrect": false, "feedback": "DNA and RNA do interact temporarily during processes like transcription, but this base difference isn't primarily about constant direct pairing between the two molecules."},
+      {"text": "It makes RNA more stable than DNA over long periods", "isCorrect": false, "feedback": "This is actually backwards -- DNA (with thymine) is generally more chemically stable over long periods than RNA (with uracil)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This sugar is missing one oxygen atom compared to the sugar found in RNA.", "medium": "This sugar's name reflects that it's missing an oxygen atom compared to RNA's sugar.", "easy": "This sugar is in DNA's backbone, distinct from RNA's sugar."},
+    "medium": {"hard": "One molecule typically forms a paired, twisted structure; the other typically exists as a single unpaired strand.", "medium": "One of these two molecules typically has two intertwined strands; the other usually has just one.", "easy": "DNA typically has two twisted strands; RNA typically has just one."},
+    "hard": {"hard": "Distinguishing bases allows cellular machinery to detect molecules that don't belong (like RNA components appearing where DNA should be), supporting genome integrity through targeted repair.", "medium": "Having a different base lets the cell's repair systems tell DNA and RNA apart, which helps catch and fix mistakes.", "easy": "Having a different base helps the cell's repair systems tell DNA and RNA apart, catching mistakes."}
+  }
+}
+]

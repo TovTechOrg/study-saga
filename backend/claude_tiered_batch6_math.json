@@ -1,0 +1,248 @@
+[
+{
+  "topic": "distance formula on the coordinate plane",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the distance formula calculate?",
+    "options": [
+      {"text": "The straight-line distance between two points on a coordinate plane", "isCorrect": true, "feedback": "Correct -- the distance formula finds the length of the segment connecting two points."},
+      {"text": "The slope between two points", "isCorrect": false, "feedback": "Slope is a different calculation, describing steepness, not distance."},
+      {"text": "The area of a triangle", "isCorrect": false, "feedback": "Area requires a different formula entirely, not the distance formula."},
+      {"text": "The angle between two lines", "isCorrect": false, "feedback": "Angle measurement uses different tools, not the distance formula."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the distance between the points (0, 0) and (3, 4)?",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- using the distance formula (essentially the Pythagorean theorem): √(3²+4²)=√25=5."},
+      {"text": "7", "isCorrect": false, "feedback": "This just adds 3 and 4 rather than applying the distance formula."},
+      {"text": "12", "isCorrect": false, "feedback": "This doesn't match the correct square-root calculation."},
+      {"text": "25", "isCorrect": false, "feedback": "This is the value before taking the square root -- one more step is needed."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the distance between the points (1, 2) and (4, 6)?",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- the differences are 3 and 4, so √(3²+4²)=√25=5."},
+      {"text": "7", "isCorrect": false, "feedback": "This just adds the two differences rather than applying the distance formula."},
+      {"text": "10", "isCorrect": false, "feedback": "This doesn't match the correct square-root calculation."},
+      {"text": "25", "isCorrect": false, "feedback": "This is the value before taking the square root -- one more step is needed."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This calculation is essentially an application of a well-known theorem about right triangles.", "medium": "This uses the same idea as finding the hypotenuse of a right triangle.", "easy": "This formula finds how far apart two points are, like measuring a straight line between them."},
+    "medium": {"hard": "Find the differences in x and y coordinates, square each, add them, then take the square root.", "medium": "Square 3 and 4, add them together, then take the square root of the total.", "easy": "Square 3 and 4, add them, then find the square root of the sum."},
+    "hard": {"hard": "Subtract the corresponding coordinates to find the horizontal and vertical differences, then apply the Pythagorean relationship to those differences.", "medium": "Find the difference in x-values and y-values first, then square and add them before taking the square root.", "easy": "Subtract the x's (4-1=3) and the y's (6-2=4), then use those like a right triangle's legs."}
+  }
+},
+{
+  "topic": "midpoint formula",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the midpoint formula find?",
+    "options": [
+      {"text": "The point exactly halfway between two given points", "isCorrect": true, "feedback": "Correct -- the midpoint is the center point of a line segment connecting two points."},
+      {"text": "The total distance between two points", "isCorrect": false, "feedback": "That's what the distance formula calculates, not the midpoint formula."},
+      {"text": "The steepness of a line", "isCorrect": false, "feedback": "That describes slope, a different concept from midpoint."},
+      {"text": "The angle a line makes with the x-axis", "isCorrect": false, "feedback": "Angle measurement isn't what the midpoint formula calculates."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the midpoint of the segment connecting (2, 4) and (6, 8)?",
+    "options": [
+      {"text": "(4, 6)", "isCorrect": true, "feedback": "Correct -- average the x-values ((2+6)/2=4) and the y-values ((4+8)/2=6)."},
+      {"text": "(8, 12)", "isCorrect": false, "feedback": "This adds the coordinates without dividing by 2."},
+      {"text": "(2, 4)", "isCorrect": false, "feedback": "This just repeats one of the original points instead of finding the midpoint."},
+      {"text": "(4, 4)", "isCorrect": false, "feedback": "This doesn't correctly average both the x and y coordinates."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The midpoint of a segment is (5, 3), and one endpoint is (2, 1). What is the other endpoint?",
+    "options": [
+      {"text": "(8, 5)", "isCorrect": true, "feedback": "Correct -- since the midpoint is the average, the other endpoint is found by doubling the midpoint and subtracting the known endpoint: (2×5-2, 2×3-1)=(8,5)."},
+      {"text": "(3.5, 2)", "isCorrect": false, "feedback": "This is actually the midpoint between the given midpoint and the known endpoint, not the other endpoint itself."},
+      {"text": "(7, 4)", "isCorrect": false, "feedback": "This doesn't correctly reverse the midpoint averaging process."},
+      {"text": "(10, 6)", "isCorrect": false, "feedback": "This doubles the midpoint but forgets to subtract the known endpoint's coordinates."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This point sits at the exact center of a straight line segment connecting two other points.", "medium": "This is the point exactly in the middle of two other points.", "easy": "This is the point exactly halfway between two other points."},
+    "medium": {"hard": "Average the x-coordinates together, and separately average the y-coordinates together.", "medium": "Add the two x-values and divide by 2; do the same for the y-values.", "easy": "Add the x's and divide by 2; add the y's and divide by 2."},
+    "hard": {"hard": "Since the midpoint equals the average of both endpoints, double the midpoint coordinates and subtract the known endpoint's coordinates to isolate the missing one.", "medium": "Double each midpoint coordinate, then subtract the corresponding known endpoint coordinate.", "easy": "Double 5 and subtract 2 for the x-value; double 3 and subtract 1 for the y-value."}
+  }
+},
+{
+  "topic": "factoring simple quadratic expressions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which pair of factors multiplies to give x² + 5x + 6?",
+    "options": [
+      {"text": "(x + 2)(x + 3)", "isCorrect": true, "feedback": "Correct -- 2×3=6 and 2+3=5, matching the constant and middle coefficient."},
+      {"text": "(x + 1)(x + 6)", "isCorrect": false, "feedback": "While 1×6=6, 1+6=7, which doesn't match the middle term of 5x."},
+      {"text": "(x + 5)(x + 6)", "isCorrect": false, "feedback": "5×6=30, not 6, so this doesn't match the constant term."},
+      {"text": "(x - 2)(x - 3)", "isCorrect": false, "feedback": "This would give x²-5x+6 (a negative middle term), not the positive +5x needed here."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Factor: x² - x - 6",
+    "options": [
+      {"text": "(x - 3)(x + 2)", "isCorrect": true, "feedback": "Correct -- (-3)×2=-6 and -3+2=-1, matching both terms."},
+      {"text": "(x + 3)(x - 2)", "isCorrect": false, "feedback": "3×(-2)=-6 matches, but 3+(-2)=1, not -1 -- the middle term sign doesn't match."},
+      {"text": "(x - 6)(x + 1)", "isCorrect": false, "feedback": "(-6)×1=-6 matches, but -6+1=-5, not -1 -- the middle term doesn't match."},
+      {"text": "(x + 6)(x - 1)", "isCorrect": false, "feedback": "6×(-1)=-6 matches, but 6+(-1)=5, not -1 -- the middle term doesn't match."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Factor: x² + 2x - 15",
+    "options": [
+      {"text": "(x + 5)(x - 3)", "isCorrect": true, "feedback": "Correct -- 5×(-3)=-15 and 5+(-3)=2, matching both the constant and middle terms."},
+      {"text": "(x - 5)(x + 3)", "isCorrect": false, "feedback": "(-5)×3=-15 matches, but -5+3=-2, not +2 -- the middle term sign doesn't match."},
+      {"text": "(x + 15)(x - 1)", "isCorrect": false, "feedback": "15×(-1)=-15 matches, but 15+(-1)=14, not 2 -- the middle term doesn't match."},
+      {"text": "(x - 15)(x + 1)", "isCorrect": false, "feedback": "(-15)×1=-15 matches, but -15+1=-14, not 2 -- the middle term doesn't match."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Find two numbers whose product matches the constant term and whose sum matches the middle coefficient.", "medium": "Find two numbers that multiply to 6 and add to 5.", "easy": "Find two numbers that multiply to 6 and add up to 5."},
+    "medium": {"hard": "Find two numbers whose product matches the constant term (-6) and whose sum matches the middle coefficient (-1).", "medium": "Find two numbers that multiply to -6 and add to -1.", "easy": "Find two numbers that multiply to -6 and add up to -1."},
+    "hard": {"hard": "Find two numbers whose product matches the constant term (-15) and whose sum matches the middle coefficient (+2).", "medium": "Find two numbers that multiply to -15 and add to 2.", "easy": "Find two numbers that multiply to -15 and add up to 2."}
+  }
+},
+{
+  "topic": "multiplying binomials (FOIL method)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does FOIL stand for when multiplying two binomials?",
+    "options": [
+      {"text": "First, Outer, Inner, Last", "isCorrect": true, "feedback": "Correct -- FOIL describes the order for multiplying each pair of terms in two binomials."},
+      {"text": "Factor, Order, Isolate, Log", "isCorrect": false, "feedback": "This isn't what FOIL stands for -- it specifically refers to term positions during multiplication."},
+      {"text": "Fraction, Operation, Integer, Line", "isCorrect": false, "feedback": "This isn't the correct meaning of the FOIL acronym."},
+      {"text": "First, One, Inverse, Last", "isCorrect": false, "feedback": "This isn't the correct meaning of the FOIL acronym."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is (x + 2)(x + 3) expanded?",
+    "options": [
+      {"text": "x² + 5x + 6", "isCorrect": true, "feedback": "Correct -- First: x², Outer: 3x, Inner: 2x, Last: 6, combining to x²+5x+6."},
+      {"text": "x² + 6x + 5", "isCorrect": false, "feedback": "This swaps the coefficient and constant terms incorrectly."},
+      {"text": "x² + 6", "isCorrect": false, "feedback": "This forgets to include the middle term entirely."},
+      {"text": "2x² + 5x + 6", "isCorrect": false, "feedback": "This incorrectly doubles the first term's coefficient."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is (2x - 1)(x + 4) expanded?",
+    "options": [
+      {"text": "2x² + 7x - 4", "isCorrect": true, "feedback": "Correct -- First: 2x², Outer: 8x, Inner: -x, Last: -4, combining to 2x²+7x-4."},
+      {"text": "2x² + 3x - 4", "isCorrect": false, "feedback": "This doesn't correctly combine the outer (8x) and inner (-x) terms."},
+      {"text": "2x² - 7x - 4", "isCorrect": false, "feedback": "This has the wrong sign on the middle term."},
+      {"text": "2x² + 7x + 4", "isCorrect": false, "feedback": "This has the wrong sign on the constant term."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This describes the four pairings of terms needed to fully multiply two two-term expressions.", "medium": "This describes the order for multiplying each pair of terms between two parentheses.", "easy": "This is the order for multiplying terms: First terms, Outer terms, Inner terms, Last terms."},
+    "medium": {"hard": "Multiply each term in the first parentheses by each term in the second, then combine any like terms.", "medium": "Multiply x by x, x by 3, 2 by x, and 2 by 3, then add everything together.", "easy": "Multiply x times x, x times 3, 2 times x, and 2 times 3, then combine like terms."},
+    "hard": {"hard": "Multiply each term in the first parentheses by each term in the second, being careful with signs, then combine any like terms.", "medium": "Multiply 2x by x, 2x by 4, -1 by x, and -1 by 4, then combine like terms carefully with signs.", "easy": "Multiply 2x times x, 2x times 4, -1 times x, and -1 times 4, then add them all together."}
+  }
+},
+{
+  "topic": "rounding decimals",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 3.67 rounded to the nearest tenth?",
+    "options": [
+      {"text": "3.7", "isCorrect": true, "feedback": "Correct -- since the hundredths digit (7) is 5 or more, round the tenths digit up."},
+      {"text": "3.6", "isCorrect": false, "feedback": "This rounds down, but since the next digit is 7 (5 or more), it should round up instead."},
+      {"text": "4.0", "isCorrect": false, "feedback": "This rounds to the nearest whole number, not the nearest tenth."},
+      {"text": "3.67", "isCorrect": false, "feedback": "This isn't rounded at all -- it's the original unrounded number."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 12.845 rounded to the nearest hundredth?",
+    "options": [
+      {"text": "12.85", "isCorrect": true, "feedback": "Correct -- since the thousandths digit (5) rounds up, the hundredths digit becomes 5."},
+      {"text": "12.84", "isCorrect": false, "feedback": "Since the next digit is exactly 5, standard rounding rounds the hundredths digit up, not down."},
+      {"text": "12.8", "isCorrect": false, "feedback": "This rounds to the nearest tenth, not the nearest hundredth as asked."},
+      {"text": "13.00", "isCorrect": false, "feedback": "This rounds to the nearest whole number, far more than requested."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is 5.9951 rounded to the nearest hundredth?",
+    "options": [
+      {"text": "6.00", "isCorrect": true, "feedback": "Correct -- rounding 5.9951 to the hundredths place causes a carry-over: 5.99 rounds up to 6.00."},
+      {"text": "5.99", "isCorrect": false, "feedback": "This forgets that the thousandths digit (5) rounds the hundredths digit up, causing a carry-over."},
+      {"text": "5.995", "isCorrect": false, "feedback": "This rounds to the nearest thousandth, not the nearest hundredth as asked."},
+      {"text": "6.10", "isCorrect": false, "feedback": "This overshoots -- the carry-over only affects the ones and tenths/hundredths place appropriately, not this far."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Look at the digit just past the place you're rounding to, and use it to decide whether to round up or keep the same.", "medium": "Look at the digit right after the tenths place to decide whether to round up.", "easy": "Look at the digit after the 6 -- since it's 7, round the 6 up to 7."},
+    "medium": {"hard": "Look at the digit just past the hundredths place, and if it's 5 or more, round the hundredths digit up.", "medium": "Look at the thousandths digit (5) to decide whether to round the hundredths place up.", "easy": "Since the digit after the 4 is a 5, round the 4 up to 5."},
+    "hard": {"hard": "Round based on the digit just past the target place, and watch for a carry-over effect when rounding up causes a 9 to roll over to the next place value.", "medium": "Rounding up 5.99 to the next hundredth causes it to roll over to 6.00, since 99 rounds up to 100.", "easy": "Since the digit after 99 rounds up, 5.99 becomes 6.00 due to the carry-over."}
+  }
+},
+{
+  "topic": "basic probability with a spinner",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A spinner is divided into 4 equal sections numbered 1-4. What is the probability of landing on 2?",
+    "options": [
+      {"text": "1/4", "isCorrect": true, "feedback": "Correct -- there's 1 favorable outcome out of 4 equally likely sections."},
+      {"text": "1/2", "isCorrect": false, "feedback": "This would mean 2 out of the 4 sections are favorable, but only 1 section is labeled 2."},
+      {"text": "2/4", "isCorrect": false, "feedback": "This would mean 2 favorable outcomes, but only one section shows the number 2."},
+      {"text": "4", "isCorrect": false, "feedback": "This is just the total number of sections, not a probability expressed as a fraction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A spinner has 8 equal sections: 3 red, 2 blue, and 3 green. What is the probability of landing on blue?",
+    "options": [
+      {"text": "2/8 (or 1/4)", "isCorrect": true, "feedback": "Correct -- there are 2 blue sections out of 8 total equally likely sections."},
+      {"text": "3/8", "isCorrect": false, "feedback": "This matches the red or green count, not the blue count."},
+      {"text": "1/8", "isCorrect": false, "feedback": "This undercounts the blue sections -- there are 2, not 1."},
+      {"text": "6/8", "isCorrect": false, "feedback": "This overcounts far beyond the actual 2 blue sections."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A spinner has 10 equal sections: 4 yellow, 3 purple, 2 orange, and 1 black. What is the probability of NOT landing on yellow?",
+    "options": [
+      {"text": "6/10 (or 3/5)", "isCorrect": true, "feedback": "Correct -- 10 total sections minus 4 yellow leaves 6 non-yellow sections, giving 6/10."},
+      {"text": "4/10", "isCorrect": false, "feedback": "This is the probability of landing ON yellow, not avoiding it."},
+      {"text": "3/10", "isCorrect": false, "feedback": "This only counts the purple sections, missing orange and black."},
+      {"text": "1/10", "isCorrect": false, "feedback": "This only counts the black sections, missing purple and orange."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Count the favorable sections and divide by the total number of equally sized sections.", "medium": "Count how many sections show the number 2 out of the total number of sections.", "easy": "There's 1 section labeled 2 out of 4 total sections."},
+    "medium": {"hard": "Count the favorable sections and divide by the total number of equally sized sections.", "medium": "Count the blue sections and divide by the total of 8 sections.", "easy": "There are 2 blue sections out of 8 total sections."},
+    "hard": {"hard": "Subtract the favorable outcome's count from the total to find the complementary count, then divide by the total.", "medium": "Subtract the 4 yellow sections from the 10 total to find how many are NOT yellow.", "easy": "Subtract 4 from 10 to find how many sections are not yellow, then put that over 10."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of reaction rates and factors that affect them",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of these factors generally INCREASES the rate of a chemical reaction?",
+    "options": [
+      {"text": "Increasing the temperature", "isCorrect": true, "feedback": "Correct -- higher temperature gives reactant particles more kinetic energy, leading to more frequent and more energetic collisions, speeding up the reaction."},
+      {"text": "Decreasing the concentration of reactants", "isCorrect": false, "feedback": "This would generally DECREASE (not increase) reaction rate, since fewer reactant particles means fewer collisions occurring."},
+      {"text": "Removing any catalyst present in the reaction", "isCorrect": false, "feedback": "Removing a catalyst would generally SLOW DOWN (not speed up) a reaction, since catalysts specifically function to increase reaction rate."},
+      {"text": "Decreasing the surface area of solid reactants", "isCorrect": false, "feedback": "This would generally DECREASE (not increase) reaction rate, since less surface area means fewer opportunities for reactant particles to collide and react."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Crushing a solid reactant into a fine powder (increasing its surface area) typically increases reaction rate compared to using the same reactant as a single large chunk. Why does this happen?",
+    "options": [
+      {"text": "A powder has much more exposed surface area for reactant particles to actually come into contact and collide with other reacting substances, allowing more collisions to occur per unit time", "isCorrect": true, "feedback": "Correct -- since chemical reactions specifically require particles to collide with sufficient energy, maximizing the exposed reactive surface area directly increases the frequency of these necessary collisions."},
+      {"text": "Crushing a solid into powder actually changes its fundamental chemical identity into a completely different substance", "isCorrect": false, "feedback": "This isn't accurate -- crushing is a PHYSICAL change (same chemical substance, different physical form), not a chemical transformation into something new."},
+      {"text": "Surface area has no actual connection to how quickly a reaction proceeds", "isCorrect": false, "feedback": "Surface area is actually a well-established, significant factor affecting reaction RATE -- more exposed surface area generally allows more frequent particle collisions, increasing reaction speed."},
+      {"text": "A large chunk of solid reactant would actually react faster than the same amount crushed into powder", "isCorrect": false, "feedback": "This is backwards -- crushing into a powder (increasing surface area) generally makes a reaction FASTER, not slower, compared to a single large chunk with less exposed surface area."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Collision theory states that for a reaction to occur, particles must not only collide, but collide with sufficient energy (activation energy) AND proper orientation. Why does understanding BOTH of these additional requirements (beyond simple collision) help explain why not every particle collision results in an actual chemical reaction?",
+    "options": [
+      {"text": "Even if particles collide frequently, many collisions will fail to result in a reaction if they lack sufficient kinetic energy to overcome the activation energy barrier, or if the colliding particles aren't oriented in the specific spatial arrangement needed for their reactive parts to properly interact", "isCorrect": true, "feedback": "Correct -- this more complete understanding of collision theory (requiring both sufficient energy AND proper orientation, not just any collision) explains why reaction rates depend on more than simply how often particles bump into each other."},
+      {"text": "Every single particle collision, regardless of energy or orientation, always results in a successful chemical reaction", "isCorrect": false, "feedback": "This isn't accurate -- according to collision theory, MANY collisions actually FAIL to produce a reaction, specifically due to insufficient energy or improper orientation, not every collision succeeding automatically."},
+      {"text": "Activation energy and particle orientation have no actual connection to whether a collision successfully produces a reaction", "isCorrect": false, "feedback": "These factors are actually CENTRAL to collision theory -- both sufficient activation energy AND proper orientation are specifically required for a collision to successfully result in a chemical reaction."},
+      {"text": "Only the total NUMBER of collisions matters for determining reaction rate, with no other contributing factors", "isCorrect": false, "feedback": "This isn't accurate -- while collision frequency matters, collision theory specifically also requires sufficient ENERGY and proper ORIENTATION for a successful reaction, not simply raw collision count alone."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This thermal parameter directly correlates with the average kinetic energy of reactant particles, influencing collision frequency and energy.", "medium": "Making things hotter gives particles more energy to bump into each other faster and harder.", "easy": "Making things hotter gives particles more energy to bump into each other faster."},
+    "medium": {"hard": "Consider how maximizing exposed reactive surface area directly correlates with an increased frequency of effective particle collisions.", "medium": "Breaking something into tiny pieces exposes way more of its surface, giving more chances for particles to actually touch and react.", "easy": "Breaking something into tiny pieces exposes more surface, giving more chances to react."},
+    "hard": {"hard": "Consider how a collision lacking either sufficient kinetic energy (to overcome the activation barrier) or the correct geometric alignment would fail to produce a successful reaction, despite the particles having physically collided.", "medium": "Bumping into each other isn't enough on its own -- the particles also need enough oomph AND to be facing the right way for anything to actually happen.", "easy": "Bumping into each other isn't enough -- particles also need enough energy and the right orientation to react."}
+  }
+}
+]

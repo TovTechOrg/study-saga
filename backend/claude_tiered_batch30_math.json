@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of a two-step inequality word problem",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A number, tripled and then decreased by 4, is greater than 11. Which inequality represents this?",
+    "options": [
+      {"text": "3x - 4 > 11", "isCorrect": true, "feedback": "Correct -- \"tripled\" means 3x, and \"decreased by 4\" means subtracting 4, with the result being greater than 11."},
+      {"text": "3x + 4 > 11", "isCorrect": false, "feedback": "This uses addition instead of the \"decreased by\" subtraction described in the problem."},
+      {"text": "x - 4 > 11", "isCorrect": false, "feedback": "This forgets to represent \"tripled\" as multiplying by 3."},
+      {"text": "3x - 4 < 11", "isCorrect": false, "feedback": "This uses the wrong inequality direction -- the problem specifies \"greater than,\" not \"less than.\""}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Solve the inequality: 2x + 5 ≤ 17",
+    "options": [
+      {"text": "x ≤ 6", "isCorrect": true, "feedback": "Correct -- subtract 5 from both sides (2x≤12), then divide by 2 (x≤6)."},
+      {"text": "x ≤ 11", "isCorrect": false, "feedback": "This forgets to divide by 2 after subtracting 5."},
+      {"text": "x ≤ 22", "isCorrect": false, "feedback": "This multiplies instead of subtracting 5 first."},
+      {"text": "x ≥ 6", "isCorrect": false, "feedback": "This has the wrong inequality direction -- dividing by a positive number doesn't flip the inequality sign."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A taxi charges a flat $3 fee plus $2 per mile. If a rider has at most $25 to spend, which inequality represents the maximum number of miles (m) they can travel, and what is that maximum?",
+    "options": [
+      {"text": "3 + 2m ≤ 25, so m ≤ 11", "isCorrect": true, "feedback": "Correct -- solving 3+2m≤25 gives 2m≤22, so m≤11 miles."},
+      {"text": "3 + 2m ≤ 25, so m ≤ 14", "isCorrect": false, "feedback": "This doesn't correctly solve the inequality -- subtracting 3 from 25 gives 22, and dividing by 2 gives 11, not 14."},
+      {"text": "2 + 3m ≤ 25, so m ≤ 7.67", "isCorrect": false, "feedback": "This swaps the flat fee and per-mile rate, setting up the inequality incorrectly."},
+      {"text": "3 + 2m ≥ 25, so m ≥ 11", "isCorrect": false, "feedback": "This uses the wrong inequality direction -- the rider has \"at most\" $25, meaning the total cost should be less than or equal to 25, not greater."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Translate each phrase into its corresponding mathematical operation and inequality direction, in the order described.", "medium": "\"Tripled\" means multiply by 3; \"decreased by 4\" means subtract 4; \"greater than\" sets the inequality direction.", "easy": "Multiply by 3, subtract 4, and use a greater-than sign."},
+    "medium": {"hard": "Move constants to one side and isolate the variable, keeping the inequality direction the same since you're working with positive numbers.", "medium": "Subtract 5 from both sides, then divide by 2.", "easy": "Subtract 5 from 17, then divide by 2."},
+    "hard": {"hard": "Set up the total cost as flat fee plus per-mile rate times miles, use the correct inequality direction based on the spending limit, then solve for the maximum miles.", "medium": "Set up 3+2m≤25 (flat fee plus per-mile cost, no more than the budget), then solve for m.", "easy": "Subtract 3 from 25 to get 22, then divide by 2."}
+  }
+}
+]

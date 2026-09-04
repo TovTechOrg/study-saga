@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of stem cells and their potential for differentiation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What makes stem cells unique compared to most other body cells?",
+    "options": [
+      {"text": "They have the ability to develop into many different specialized cell types", "isCorrect": true, "feedback": "Correct -- stem cells are undifferentiated cells capable of becoming various specialized cell types, unlike already-specialized cells."},
+      {"text": "They are always larger in physical size than other cells", "isCorrect": false, "feedback": "Physical size isn't the defining characteristic of stem cells -- their defining feature is their capacity to differentiate into various specialized cell types."},
+      {"text": "They cannot divide or reproduce at all", "isCorrect": false, "feedback": "Stem cells actually CAN divide and reproduce -- this capacity, along with their differentiation potential, is part of what makes them significant."},
+      {"text": "They exist only in fully mature adult organisms", "isCorrect": false, "feedback": "Stem cells exist at various life stages, including in early embryos, not exclusively in fully mature adults."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Embryonic stem cells are described as 'pluripotent,' meaning they can differentiate into almost any cell type in the body, while many adult stem cells are more limited ('multipotent'), typically only able to become a smaller range of related cell types. Why might this distinction matter for potential medical applications?",
+    "options": [
+      {"text": "Pluripotent cells offer greater theoretical flexibility for treating a wider variety of conditions, since they aren't restricted to becoming just one narrow category of specialized cells like many multipotent adult stem cells are", "isCorrect": true, "feedback": "Correct -- this difference in differentiation potential (pluripotent vs. multipotent) is a key consideration in stem cell research, influencing which cell source might be most appropriate for treating different specific medical conditions."},
+      {"text": "This distinction actually has no practical relevance to medical research applications", "isCorrect": false, "feedback": "This distinction is actually HIGHLY relevant to medical research, directly influencing decisions about which stem cell source might be most suitable for treating particular conditions."},
+      {"text": "Multipotent adult stem cells can actually become any cell type in the body, identical to pluripotent cells", "isCorrect": false, "feedback": "This isn't accurate -- multipotent adult stem cells are specifically MORE LIMITED in their differentiation potential compared to pluripotent embryonic stem cells, which is the whole basis for this important distinction."},
+      {"text": "Pluripotent and multipotent stem cells are actually identical terms describing the exact same cell capability", "isCorrect": false, "feedback": "These are NOT identical terms -- they describe genuinely different LEVELS of differentiation potential (broader for pluripotent, more limited for multipotent), which is precisely the distinction being discussed."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Induced pluripotent stem cells (iPSCs) are adult cells that have been genetically 'reprogrammed' in a lab to behave like embryonic pluripotent stem cells. Why might this scientific breakthrough be particularly significant, especially considering some of the ethical debates surrounding embryonic stem cell research?",
+    "options": [
+      {"text": "iPSCs potentially offer many of the same broad research and therapeutic benefits as embryonic pluripotent stem cells, but since they're derived from a patient's own existing adult cells rather than embryos, they can help sidestep certain ethical concerns while also potentially reducing immune rejection risk in medical treatments", "isCorrect": true, "feedback": "Correct -- this dual benefit (avoiding embryo-related ethical concerns while potentially offering better immune compatibility, since cells come from the patient's own body) is precisely why the discovery of iPSCs was considered such a significant breakthrough in stem cell research."},
+      {"text": "iPSCs are actually functionally completely different from and inferior to embryonic stem cells in every possible way", "isCorrect": false, "feedback": "This isn't accurate -- iPSCs are specifically engineered to closely MIMIC many key properties of embryonic pluripotent stem cells, which is precisely what makes them scientifically significant, despite not being identical in every single respect."},
+      {"text": "This breakthrough has no actual connection to any of the ethical debates surrounding stem cell research", "isCorrect": false, "feedback": "This breakthrough is actually DIRECTLY connected to and significant for these ethical debates, specifically by offering an alternative pluripotent cell source that doesn't require using embryos."},
+      {"text": "iPSCs must still be derived from human embryos, identical to traditional embryonic stem cells", "isCorrect": false, "feedback": "This isn't accurate -- iPSCs are specifically derived from adult (already differentiated) cells that are reprogrammed in the lab, NOT from embryos, which is exactly the significant, ethically relevant distinction here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These undifferentiated cells retain the developmental capacity to specialize into a range of distinct functional cell lineages.", "medium": "These cells have the special ability to turn into many different kinds of specialized cells.", "easy": "These cells can turn into many different kinds of specialized cells."},
+    "medium": {"hard": "Consider how a broader range of possible differentiation outcomes could translate into a wider scope of potential therapeutic applications.", "medium": "Cells that can become almost anything have more potential uses for treating many different kinds of medical problems.", "easy": "Cells that can become almost anything have more potential medical uses."},
+    "hard": {"hard": "Consider how sourcing pluripotent-like cells from a patient's own existing adult tissue (rather than an embryo) could address both ethical concerns and biological compatibility issues simultaneously.", "medium": "Since these special cells come from a patient's own adult cells (not an embryo), they can avoid some ethical concerns and might even match better with that same patient's body.", "easy": "Since these cells come from a patient's own adult cells (not an embryo), they avoid ethical concerns and might match better."}
+  }
+}
+]

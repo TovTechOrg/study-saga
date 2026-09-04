@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of projectile motion (horizontal and vertical components)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "When analyzing projectile motion, why are the horizontal and vertical motions typically treated separately?",
+    "options": [
+      {"text": "Because gravity only affects the vertical motion, while horizontal motion (ignoring air resistance) remains at constant velocity, making them independent components", "isCorrect": true, "feedback": "Correct -- this independence between horizontal and vertical components is a foundational simplification technique for analyzing projectile motion."},
+      {"text": "Because horizontal and vertical motion are actually identical and interchangeable", "isCorrect": false, "feedback": "These two components behave very differently -- vertical motion is affected by gravity (accelerating), while horizontal motion remains constant (ignoring air resistance) -- they aren't interchangeable."},
+      {"text": "Because gravity affects horizontal motion much more strongly than vertical motion", "isCorrect": false, "feedback": "This is backwards -- gravity specifically affects VERTICAL motion (causing acceleration downward), not horizontal motion, which stays constant."},
+      {"text": "There's no valid reason to treat these two components separately", "isCorrect": false, "feedback": "There is a well-established, valid physical reason: gravity's effect is exclusively on the vertical component, making it useful to analyze horizontal and vertical motion independently."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A ball is thrown horizontally off a cliff at the same moment another ball is simply dropped straight down from the same height. Ignoring air resistance, which ball hits the ground first?",
+    "options": [
+      {"text": "They hit the ground at the same time, since their vertical motion (governed by gravity) is identical, regardless of horizontal velocity", "isCorrect": true, "feedback": "Correct -- this is a classic physics result demonstrating the independence of horizontal and vertical motion; horizontal velocity has no effect on the time it takes to fall a given vertical distance."},
+      {"text": "The horizontally thrown ball hits the ground first, since it has extra forward velocity", "isCorrect": false, "feedback": "Horizontal velocity doesn't affect vertical fall time -- since both balls experience identical vertical acceleration (gravity) from the same height, they land simultaneously."},
+      {"text": "The dropped ball hits the ground first, since it has no horizontal motion to 'slow it down'", "isCorrect": false, "feedback": "Horizontal motion doesn't actually slow down or interfere with vertical fall time -- both balls experience identical vertical motion and land at the same time."},
+      {"text": "It's impossible to determine which ball lands first without knowing the horizontal throwing speed", "isCorrect": false, "feedback": "The horizontal throwing speed is actually irrelevant to vertical fall time -- both balls will land simultaneously regardless of how fast (or slow) the horizontal throw was."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A projectile is launched at an angle, following a parabolic path. At the very peak of its trajectory, its vertical velocity is momentarily zero. Why doesn't this mean the projectile briefly stops moving entirely at that point?",
+    "options": [
+      {"text": "The horizontal velocity component remains unchanged (constant) throughout the entire flight, so even when vertical velocity is momentarily zero, the projectile continues moving horizontally at that same constant speed", "isCorrect": true, "feedback": "Correct -- since horizontal and vertical motions are independent, the projectile's horizontal velocity persists unaffected even as vertical velocity temporarily reaches zero at the peak, so overall motion never actually stops."},
+      {"text": "The projectile actually does completely stop moving at the very peak of its trajectory", "isCorrect": false, "feedback": "This isn't accurate -- while VERTICAL velocity is momentarily zero at the peak, the HORIZONTAL velocity component continues unchanged, so the object never fully stops moving overall."},
+      {"text": "Horizontal velocity also becomes zero at the exact peak of the trajectory", "isCorrect": false, "feedback": "This isn't correct -- horizontal velocity remains CONSTANT throughout the entire flight (ignoring air resistance), including at the peak, unlike vertical velocity which does become momentarily zero there."},
+      {"text": "This scenario is a special exception where the usual independence of horizontal and vertical motion doesn't apply", "isCorrect": false, "feedback": "This is not a special exception -- the independence of horizontal and vertical motion applies consistently throughout the ENTIRE trajectory, including at the peak point."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Consider which force specifically acts along only one of the two spatial dimensions involved in this type of motion.", "medium": "Gravity only pulls things down (vertically) -- it doesn't push or pull sideways.", "easy": "Gravity only pulls things down -- it doesn't affect sideways motion."},
+    "medium": {"hard": "Recognize that the vertical motion for both objects is governed by the identical physical process (free fall under gravity from the same height), independent of any horizontal velocity component.", "medium": "Since gravity affects both balls' downward motion the exact same way, having sideways motion doesn't change how fast something falls.", "easy": "Since gravity pulls both balls down the same way, having sideways motion doesn't change how fast something falls."},
+    "hard": {"hard": "Separate the two velocity components entirely: analyze the vertical component's momentary zero value independently from the horizontal component's constant, unaffected value throughout the flight.", "medium": "Even when the up-and-down motion pauses for an instant, the side-to-side motion just keeps going at the same steady speed.", "easy": "Even when the up-and-down motion pauses for an instant, the sideways motion just keeps going."}
+  }
+}
+]

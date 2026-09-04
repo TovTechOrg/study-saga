@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between correlation and causation in statistics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Two variables being 'correlated' means:",
+    "options": [
+      {"text": "They tend to change together in a consistent pattern", "isCorrect": true, "feedback": "Correct -- correlation specifically describes a consistent statistical relationship where two variables tend to change together (either in the same or opposite direction)."},
+      {"text": "One variable definitely causes changes in the other", "isCorrect": false, "feedback": "This isn't accurate -- correlation alone does NOT establish that one variable causes the other; that's a separate, stronger claim called causation."},
+      {"text": "The two variables have no statistical relationship at all", "isCorrect": false, "feedback": "This is backwards -- correlation specifically means there IS a statistical relationship between the variables, not an absence of one."},
+      {"text": "The two variables were measured using the exact same units", "isCorrect": false, "feedback": "Correlation doesn't require identical units -- it describes a statistical relationship between values, regardless of what units they're measured in."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Ice cream sales and drowning incidents are positively correlated (both increase in summer), yet ice cream doesn't cause drowning. Why does this classic example illustrate the danger of assuming causation from correlation alone?",
+    "options": [
+      {"text": "A hidden third variable (like hot summer weather) independently increases BOTH ice cream sales and swimming activity (and therefore drowning risk), creating a correlation between the two original variables even though neither one directly causes the other", "isCorrect": true, "feedback": "Correct -- this identification of a 'confounding variable' (summer heat) driving both observed variables independently is the classic explanation for why correlation can appear without any direct causal link between the two correlated variables themselves."},
+      {"text": "Ice cream sales would actually have a genuine, direct causal effect on drowning incidents", "isCorrect": false, "feedback": "This isn't accurate -- there is no plausible direct causal mechanism connecting ice cream consumption to drowning; a hidden third variable explains the correlation instead."},
+      {"text": "This example actually demonstrates that correlation and causation are always equivalent to each other", "isCorrect": false, "feedback": "This isn't accurate -- this example specifically demonstrates the OPPOSITE: that correlation can exist WITHOUT causation, which is precisely the point of this classic illustration."},
+      {"text": "Hidden third variables have no actual role in explaining unexpected correlations between seemingly unrelated variables", "isCorrect": false, "feedback": "This isn't accurate -- hidden third variables (confounders) are PRECISELY the mechanism that explains many unexpected correlations, including this classic example."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Randomized controlled experiments (where participants are randomly assigned to different treatment groups) are considered much stronger evidence for causation than purely observational correlational studies. Explain the key statistical reason why random assignment specifically strengthens a causal claim.",
+    "options": [
+      {"text": "Random assignment ensures that, on average, any potential confounding variables (known or unknown) are evenly distributed across the treatment groups, so any resulting difference in outcomes between groups can be attributed specifically to the treatment itself rather than to some pre-existing systematic difference between the groups", "isCorrect": true, "feedback": "Correct -- this explanation of how randomization neutralizes confounding variables (by evenly distributing them across groups on average) is the key statistical justification for why randomized experiments provide stronger causal evidence than purely observational studies."},
+      {"text": "Random assignment actually has no meaningful effect on the strength of causal claims compared to observational studies", "isCorrect": false, "feedback": "This isn't accurate -- random assignment SIGNIFICANTLY strengthens causal claims, precisely because it helps neutralize the influence of confounding variables."},
+      {"text": "Observational studies would actually provide stronger causal evidence than randomized controlled experiments", "isCorrect": false, "feedback": "This is backwards -- randomized controlled experiments generally provide STRONGER causal evidence than purely observational studies, precisely because of the confounding-control benefit of randomization."},
+      {"text": "Random assignment specifically works by increasing the sample size of the study, not by addressing confounding variables", "isCorrect": false, "feedback": "This isn't accurate -- random assignment's key benefit is addressing CONFOUNDING VARIABLES, not increasing sample size (which is a separate, independent consideration)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This statistical relationship describes co-variation between two variables without necessarily implying a direct causal link between them.", "medium": "This is when two things tend to go up and down together in a consistent pattern.", "easy": "This is when two things tend to go up and down together."},
+    "medium": {"hard": "Consider how a latent variable can independently drive two observed variables upward or downward together, mimicking a direct relationship between them.", "medium": "Hot weather makes people want both ice cream AND swimming, so the two go up together even though one doesn't actually cause the other.", "easy": "Hot weather makes people want both ice cream and swimming, so the two rise together without one causing the other."},
+    "hard": {"hard": "Consider how randomization statistically balances both observed and unobserved confounders across groups, isolating the treatment as the remaining systematic source of outcome difference.", "medium": "Randomly splitting people into groups means any weird hidden factors get spread out evenly between the groups, so if one group does differently, it's most likely because of the treatment itself.", "easy": "Randomly splitting people into groups spreads hidden factors evenly, so any difference is likely due to the treatment."}
+  }
+}
+]

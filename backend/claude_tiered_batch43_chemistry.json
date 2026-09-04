@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of limiting reactants in a chemical reaction",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a 'limiting reactant' in a chemical reaction?",
+    "options": [
+      {"text": "The reactant that is completely used up first, stopping the reaction and limiting how much product can form", "isCorrect": true, "feedback": "Correct -- once the limiting reactant runs out, the reaction cannot proceed further, regardless of how much of the other reactant remains."},
+      {"text": "The reactant that is left over in excess after the reaction", "isCorrect": false, "feedback": "That describes the 'excess reactant' -- the limiting reactant is the one that runs out first, not the one left over."},
+      {"text": "The reactant with the largest molar mass", "isCorrect": false, "feedback": "Molar mass alone doesn't determine which reactant is limiting -- it depends on the amounts present relative to the reaction's stoichiometry."},
+      {"text": "The reactant that reacts the slowest", "isCorrect": false, "feedback": "Reaction speed (kinetics) is a separate concept from which reactant is limiting, which is about quantity relative to stoichiometric need."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In the reaction 2H2 + O2 → 2H2O, you have 4 moles of H2 and 1 mole of O2. Which is the limiting reactant?",
+    "options": [
+      {"text": "O2, since only 1 mole of O2 is needed to fully react with the 4 moles of H2 (2 moles of H2 react per mole of O2), leaving no O2 left over", "isCorrect": true, "feedback": "Correct -- 4 moles H2 requires exactly 2 moles O2 to react completely, but only 1 mole O2 is available, and O2 runs out first, leaving excess H2 unreacted."},
+      {"text": "H2, since there is more of it than O2", "isCorrect": false, "feedback": "Having a larger quantity doesn't automatically make a reactant limiting -- it depends on the required stoichiometric ratio, not just raw amount."},
+      {"text": "Neither is limiting, since both reactants will be completely used up", "isCorrect": false, "feedback": "Checking the stoichiometric ratio shows one reactant DOES run out first (O2), leaving excess H2 -- they aren't both fully consumed."},
+      {"text": "This reaction doesn't have a limiting reactant", "isCorrect": false, "feedback": "Nearly all reactions with a specific given ratio of reactants have a limiting reactant, unless the reactants happen to be provided in the exact stoichiometric ratio."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Using the same reaction and initial amounts (4 moles H2, 1 mole O2, with O2 as the limiting reactant), how many moles of water (H2O) will actually be produced?",
+    "options": [
+      {"text": "2 moles, since 1 mole of O2 produces 2 moles of H2O according to the balanced equation's 2:1 ratio of products to O2", "isCorrect": true, "feedback": "Correct -- since O2 is limiting and the equation shows 1 mole O2 yields 2 moles H2O, all 1 mole of available O2 produces exactly 2 moles of H2O."},
+      {"text": "4 moles, based on the amount of H2 available", "isCorrect": false, "feedback": "Since O2 is the LIMITING reactant, product yield must be calculated based on O2's available quantity, not H2's (since not all H2 will actually get to react)."},
+      {"text": "1 mole, matching the amount of O2 present", "isCorrect": false, "feedback": "This doesn't correctly apply the reaction's stoichiometric ratio -- 1 mole of O2 actually yields 2 moles of H2O, not 1 mole."},
+      {"text": "5 moles, adding together the reactant amounts", "isCorrect": false, "feedback": "Simply adding reactant amounts doesn't reflect how stoichiometry determines product yield -- yield must be calculated from the limiting reactant's amount and the balanced equation's ratios."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the reactant whose depletion halts further product formation, regardless of remaining quantities of other reactants.", "medium": "This is the ingredient that runs out first, stopping the reaction from making any more product.", "easy": "This is the ingredient that runs out first, stopping the reaction."},
+    "medium": {"hard": "Compare the available mole ratio of the reactants to the required stoichiometric ratio from the balanced equation to identify which runs out first.", "medium": "Check how much O2 is actually needed for all the H2 to react, then compare to how much O2 you actually have.", "easy": "You need 2 moles of O2 for 4 moles of H2, but you only have 1 mole of O2 -- so O2 runs out first."},
+    "hard": {"hard": "Use the limiting reactant's molar amount together with the balanced equation's mole ratio between that reactant and the product to calculate maximum yield.", "medium": "Since O2 is limiting, use its amount and the equation's ratio (1 mole O2 makes 2 moles H2O) to find the product amount.", "easy": "Since O2 is limiting, and 1 mole O2 makes 2 moles of water, the answer is 2 moles."}
+  }
+}
+]

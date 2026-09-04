@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between prokaryotic and eukaryotic cells",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a key structural difference between prokaryotic and eukaryotic cells?",
+    "options": [
+      {"text": "Eukaryotic cells have a membrane-bound nucleus, while prokaryotic cells do not", "isCorrect": true, "feedback": "Correct -- this presence (eukaryotic) or absence (prokaryotic) of a true, membrane-enclosed nucleus is a defining structural distinction between these two cell types."},
+      {"text": "Prokaryotic cells have a membrane-bound nucleus, while eukaryotic cells do not", "isCorrect": false, "feedback": "This is backwards -- EUKARYOTIC cells have a membrane-bound nucleus, while PROKARYOTIC cells specifically lack one."},
+      {"text": "Both cell types have identical internal structures, with no meaningful differences", "isCorrect": false, "feedback": "This isn't accurate -- these are genuinely DIFFERENT cell types with several significant structural distinctions, most notably the presence/absence of a membrane-bound nucleus."},
+      {"text": "Eukaryotic cells are always smaller than prokaryotic cells", "isCorrect": false, "feedback": "This is backwards from the typical pattern -- eukaryotic cells are generally LARGER (not smaller) than prokaryotic cells, though the defining distinction is the nucleus, not size specifically."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Eukaryotic cells contain various membrane-bound organelles (like mitochondria and the endoplasmic reticulum), while prokaryotic cells generally lack these internal membrane-bound compartments. Why might this structural difference relate to the generally greater complexity of eukaryotic cells?",
+    "options": [
+      {"text": "Membrane-bound organelles allow eukaryotic cells to compartmentalize different biochemical processes into specialized, separate internal spaces, enabling more complex, efficient, and specialized cellular functions than the less compartmentalized prokaryotic cell structure allows", "isCorrect": true, "feedback": "Correct -- this compartmentalization advantage, allowing for specialized internal environments for different cellular processes, is a key structural feature contributing to the generally greater functional complexity of eukaryotic cells compared to prokaryotic cells."},
+      {"text": "Membrane-bound organelles actually make eukaryotic cells LESS efficient and complex than prokaryotic cells", "isCorrect": false, "feedback": "This is backwards -- membrane-bound organelles are generally considered to ENABLE greater cellular complexity and efficiency in eukaryotic cells, not decrease it, by providing specialized compartments for different functions."},
+      {"text": "This structural difference has no actual connection to differences in cellular complexity between these two cell types", "isCorrect": false, "feedback": "This isn't accurate -- this structural difference (presence/absence of membrane-bound organelles) is DIRECTLY connected to and helps explain the generally greater functional complexity observed in eukaryotic cells."},
+      {"text": "Prokaryotic cells actually also contain the exact same membrane-bound organelles as eukaryotic cells", "isCorrect": false, "feedback": "This isn't accurate -- prokaryotic cells specifically LACK these membrane-bound organelles, which is precisely the key structural distinction being discussed here."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The endosymbiotic theory proposes that mitochondria (and chloroplasts in plants) were once free-living prokaryotic organisms that were engulfed by an ancestral eukaryotic cell, eventually forming a mutually beneficial permanent relationship. What evidence, related to mitochondria's own characteristics, particularly supports this theory?",
+    "options": [
+      {"text": "Mitochondria have their own separate circular DNA (similar in structure to prokaryotic DNA) and their own ribosomes (similar in size/structure to prokaryotic ribosomes), both distinct from the cell's main nuclear DNA and cytoplasmic ribosomes, suggesting an independent evolutionary origin consistent with once having been separate prokaryotic organisms", "isCorrect": true, "feedback": "Correct -- these specific molecular and structural similarities between mitochondria and independent prokaryotic organisms provide compelling supporting evidence for the endosymbiotic theory's proposed evolutionary history."},
+      {"text": "Mitochondria actually share no distinctive molecular or structural similarities with prokaryotic organisms at all", "isCorrect": false, "feedback": "This isn't accurate -- mitochondria actually DO share several notable molecular/structural similarities with prokaryotic organisms (like their own circular DNA and prokaryotic-like ribosomes), which is precisely the evidence supporting the endosymbiotic theory."},
+      {"text": "This evidence has no actual connection to supporting the endosymbiotic theory", "isCorrect": false, "feedback": "This isn't accurate -- this evidence is DIRECTLY and centrally connected to and supportive of the endosymbiotic theory's proposed evolutionary explanation for mitochondria's origin."},
+      {"text": "Mitochondria's DNA is actually identical to and indistinguishable from the cell's main nuclear DNA", "isCorrect": false, "feedback": "This isn't accurate -- mitochondrial DNA is specifically DISTINCT from (and structurally different than) the cell's main nuclear DNA, which is precisely part of the evidence supporting mitochondria's proposed independent evolutionary origin."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This structural distinction concerns whether genetic material is enclosed within a dedicated, membrane-delimited compartment.", "medium": "One type of cell has its genetic material enclosed in its own little membrane 'room,' and the other doesn't.", "easy": "One cell type has its DNA enclosed in its own membrane, and the other doesn't."},
+    "medium": {"hard": "Consider how physically separating different biochemical processes into distinct internal compartments could allow for more specialized, efficient, and complex simultaneous cellular functions.", "medium": "Having separate little 'rooms' inside the cell for different jobs lets each job happen more efficiently without interfering with the others.", "easy": "Having separate compartments for different jobs lets each happen more efficiently without interfering."},
+    "hard": {"hard": "Consider how the presence of independently-originated genetic material and protein-synthesis machinery within an organelle would specifically support a theory of that organelle's separate evolutionary origin.", "medium": "Mitochondria having their own separate DNA and their own little protein-making machinery (similar to what independent bacteria have) is a big clue they used to be independent organisms.", "easy": "Mitochondria having their own separate DNA and protein-making machinery is a big clue they used to be independent organisms."}
+  }
+}
+]

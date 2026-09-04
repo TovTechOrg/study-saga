@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between complete and incomplete dominance in genetics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In 'incomplete dominance,' what happens when an organism is heterozygous (has one of each allele)?",
+    "options": [
+      {"text": "The resulting phenotype is a blended intermediate between the two homozygous phenotypes", "isCorrect": true, "feedback": "Correct -- unlike complete dominance (where one allele fully masks the other), incomplete dominance produces a visible blend, like red and white flowers producing pink offspring."},
+      {"text": "One allele completely masks the other, showing only one distinct phenotype", "isCorrect": false, "feedback": "That describes COMPLETE dominance, not incomplete dominance, which specifically produces a BLENDED intermediate phenotype, not one allele fully masking the other."},
+      {"text": "The organism shows no phenotype at all in this scenario", "isCorrect": false, "feedback": "This isn't accurate -- incomplete dominance specifically DOES produce a phenotype -- a blended intermediate one, not an absence of phenotype."},
+      {"text": "Both alleles are expressed completely and separately, with no blending at all", "isCorrect": false, "feedback": "This describes CODOMINANCE, not incomplete dominance -- incomplete dominance specifically produces a BLENDED phenotype, not two fully separate, simultaneously visible traits."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In snapdragon flowers, incomplete dominance means a cross between a red-flowered plant (RR) and a white-flowered plant (WW) produces pink-flowered offspring (RW), rather than all-red or all-white offspring. Why does this pink outcome specifically demonstrate incomplete dominance rather than complete dominance?",
+    "options": [
+      {"text": "Since neither the red nor white allele fully masks the other (instead producing a visible BLEND -- pink), this demonstrates that neither allele is completely dominant over the other, which is the defining characteristic of incomplete dominance", "isCorrect": true, "feedback": "Correct -- if this were complete dominance, the heterozygous offspring would show ONE of the two original colors (fully masking the other), not a blended intermediate color like pink."},
+      {"text": "This pink outcome would actually also occur under standard complete dominance rules", "isCorrect": false, "feedback": "This isn't accurate -- under COMPLETE dominance, heterozygous offspring would show ONE of the original parent colors entirely (whichever allele is dominant), not a blended pink color."},
+      {"text": "This scenario has no actual connection to distinguishing between complete and incomplete dominance patterns", "isCorrect": false, "feedback": "This isn't accurate -- this scenario is actually a classic, definitive example SPECIFICALLY demonstrating incomplete dominance, precisely because of the blended (rather than fully masked) phenotype outcome."},
+      {"text": "The red and white alleles are actually completely unrelated genes, not different alleles of the same gene", "isCorrect": false, "feedback": "This isn't accurate -- in this classic incomplete dominance example, red and white ARE different alleles of the SAME gene (flower color), not unrelated separate genes."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If two pink snapdragons (RW × RW) are crossed, the resulting offspring show a 1:2:1 ratio of red:pink:white flowers -- notably different from the standard 3:1 ratio typically seen in a complete dominance heterozygous cross. Why does incomplete dominance produce this different observable ratio, even though the underlying genotype ratio (1 RR : 2 RW : 1 WW) is actually identical to a standard genetic cross?",
+    "options": [
+      {"text": "Since each genotype (RR, RW, WW) produces its own DISTINCT phenotype under incomplete dominance (unlike complete dominance, where RR and RW would produce the SAME phenotype), all three genotype categories remain visually distinguishable, directly translating the underlying 1:2:1 genotype ratio into an identically visible 1:2:1 phenotype ratio", "isCorrect": true, "feedback": "Correct -- this direct correspondence between genotype and phenotype ratios under incomplete dominance (since each genotype has its own distinct visible phenotype) explains why the resulting observed ratio (1:2:1) differs from the typical 3:1 ratio seen with complete dominance, even though the underlying genotype ratios are the same in both cases."},
+      {"text": "The underlying genotype ratio is actually different in incomplete dominance crosses compared to complete dominance crosses", "isCorrect": false, "feedback": "This isn't accurate -- the underlying GENOTYPE ratio (1:2:1) is actually the SAME in both cases; what specifically DIFFERS is how that genotype ratio translates into an observable PHENOTYPE ratio, based on whether dominance is complete or incomplete."},
+      {"text": "This observed ratio difference has no actual connection to the concept of incomplete dominance", "isCorrect": false, "feedback": "This isn't accurate -- this ratio difference is DIRECTLY and specifically explained by the concept of incomplete dominance, particularly its characteristic of producing distinct phenotypes for each genotype."},
+      {"text": "A standard complete dominance cross would actually also produce this exact same 1:2:1 phenotype ratio", "isCorrect": false, "feedback": "This isn't accurate -- a STANDARD COMPLETE dominance cross would typically produce a 3:1 phenotype ratio (since RR and RW share the same phenotype), not the 1:2:1 ratio specifically characteristic of incomplete dominance."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This inheritance pattern produces a phenotype representing an intermediate blend between the two homozygous parental phenotypes.", "medium": "This is when having one of each version of a gene creates a mixed, in-between trait, not one trait fully hiding the other.", "easy": "This is when having one of each gene version creates a mixed, in-between trait."},
+    "medium": {"hard": "Consider what phenotype outcome would be expected if one allele fully masked the other (complete dominance) versus if neither allele fully masked the other (incomplete dominance).", "medium": "If one color could just hide the other completely, you'd get all red or all white -- getting pink instead means neither one is fully 'winning.'", "easy": "If one color could hide the other, you'd get all red or all white -- pink means neither one is fully winning."},
+    "hard": {"hard": "Consider how the mapping between genotype and phenotype differs between complete dominance (where two genotypes share one phenotype) and incomplete dominance (where each genotype has its own unique phenotype).", "medium": "Since each of the three genetic combinations actually LOOKS different under this type of dominance, the genetic ratio and the visible trait ratio end up matching exactly.", "easy": "Since each genetic combination looks different here, the genetic ratio and the visible trait ratio end up matching."}
+  }
+}
+]

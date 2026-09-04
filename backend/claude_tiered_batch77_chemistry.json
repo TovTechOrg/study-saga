@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between exothermic dissolution and endothermic dissolution",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "When a substance dissolves in water and the resulting solution feels warmer, this indicates the dissolution process is:",
+    "options": [
+      {"text": "Exothermic (releasing heat energy into the surroundings)", "isCorrect": true, "feedback": "Correct -- a warming effect during dissolution indicates that net energy is being released into the surrounding solution as heat."},
+      {"text": "Endothermic (absorbing heat energy from the surroundings)", "isCorrect": false, "feedback": "This is backwards -- an ENDOTHERMIC dissolution process would make the solution feel COLDER (absorbing heat), not warmer."},
+      {"text": "Completely unrelated to any energy changes at all", "isCorrect": false, "feedback": "This isn't accurate -- a temperature change during dissolution is DIRECTLY related to the energy changes occurring during that dissolution process."},
+      {"text": "Always chemically identical to a physical change with no energy involved", "isCorrect": false, "feedback": "This isn't accurate -- dissolution processes DO involve energy changes (either releasing or absorbing heat), which is precisely why temperature changes are observed."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Dissolving a substance in water involves both breaking apart the solute's own particle interactions (requiring energy) AND forming new interactions between the solute particles and water molecules (releasing energy). Why does the overall process end up being either exothermic or endothermic, depending on the specific substance?",
+    "options": [
+      {"text": "The NET energy change depends on the relative balance between the energy required to break the original solute interactions and the energy released forming new solute-water interactions -- if more energy is released than required, it's exothermic; if less, it's endothermic", "isCorrect": true, "feedback": "Correct -- this net energy balance between these two competing energy processes (breaking original bonds vs. forming new interactions) is exactly what determines whether a specific substance's dissolution will be observed as exothermic or endothermic overall."},
+      {"text": "Dissolution processes actually never involve any energy changes at all, regardless of the specific substance", "isCorrect": false, "feedback": "This isn't accurate -- dissolution processes DO involve real energy changes (from breaking and forming particle interactions), which is precisely why different substances show different exothermic/endothermic dissolution behavior."},
+      {"text": "All substances dissolving in water always release exactly the same amount of net energy", "isCorrect": false, "feedback": "This isn't accurate -- different substances have different specific energy balances between their bond-breaking and bond-forming processes, resulting in genuinely different net energy outcomes (some exothermic, some endothermic) upon dissolution."},
+      {"text": "The energy required to break original solute interactions has no actual connection to the overall dissolution energy outcome", "isCorrect": false, "feedback": "This isn't accurate -- the energy required to break original interactions is DIRECTLY connected to and forms one half of the crucial energy balance determining the overall exothermic/endothermic outcome of dissolution."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Instant cold packs often use ammonium nitrate, whose dissolution in water is strongly endothermic, while some hand warmers use calcium chloride, whose dissolution is strongly exothermic. Why does understanding this specific dissolution energetics distinction matter for these particular commercial product designs?",
+    "options": [
+      {"text": "Product designers specifically select a substance based on its known dissolution thermodynamics (endothermic for cooling products, exothermic for warming products) to reliably achieve the desired temperature effect for that product's intended practical use", "isCorrect": true, "feedback": "Correct -- this deliberate application of dissolution thermodynamics knowledge, matching a substance's specific energetic behavior to a product's intended function, is a direct, practical, real-world use of this fundamental chemistry concept."},
+      {"text": "The specific substance chosen for these products actually has no real connection to whether the product produces a cooling or warming effect", "isCorrect": false, "feedback": "This isn't accurate -- the SPECIFIC substance chosen is DIRECTLY and deliberately connected to and responsible for the product's specific cooling or warming effect, based on its known dissolution thermodynamics."},
+      {"text": "Both ammonium nitrate and calcium chloride actually produce identical thermal effects upon dissolving in water", "isCorrect": false, "feedback": "This isn't accurate -- these two substances produce genuinely DIFFERENT (opposite) thermal effects upon dissolution (endothermic vs. exothermic), which is precisely why they're used for different product purposes (cooling vs. warming)."},
+      {"text": "Cold packs and hand warmers actually don't rely on any dissolution chemistry at all for their functioning", "isCorrect": false, "feedback": "This isn't accurate -- both of these product types SPECIFICALLY rely on dissolution chemistry (and its associated thermal effects) as their core functional mechanism."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This thermodynamic classification indicates a net liberation of thermal energy into the immediate surrounding environment.", "medium": "This means the process gives off heat into its surroundings.", "easy": "This means the process gives off heat into its surroundings."},
+    "medium": {"hard": "Consider the competing energy costs and gains associated with disrupting existing particle interactions versus establishing new ones, and how their relative magnitudes determine the net thermodynamic outcome.", "medium": "It's like a tug-of-war between the energy needed to break apart the old connections and the energy given off making new ones -- whichever side 'wins' determines hot or cold.", "easy": "It's a tug-of-war between energy needed to break old connections and energy given off making new ones."},
+    "hard": {"hard": "Consider how deliberately selecting a substance with a known, specific net dissolution energy outcome allows engineers to reliably design a product for a targeted thermal application.", "medium": "Companies pick specific chemicals on purpose because they already know whether that chemical will make things colder or hotter when it dissolves.", "easy": "Companies pick specific chemicals because they already know if dissolving them makes things colder or hotter."}
+  }
+}
+]

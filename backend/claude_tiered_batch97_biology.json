@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between mechanical and chemical digestion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Chewing food with your teeth is an example of which type of digestion?",
+    "options": [
+      {"text": "Mechanical digestion", "isCorrect": true, "feedback": "Correct -- mechanical digestion involves physically breaking food into smaller pieces (chewing, churning), without altering its actual chemical composition."},
+      {"text": "Chemical digestion", "isCorrect": false, "feedback": "That would specifically involve enzymes breaking down chemical bonds in food molecules, not simply physically breaking food into smaller physical pieces via chewing."},
+      {"text": "Neither mechanical nor chemical digestion -- chewing has no connection to digestion at all", "isCorrect": false, "feedback": "This isn't accurate -- chewing IS a genuine, important part of the digestive process, specifically classified as MECHANICAL digestion."},
+      {"text": "A completely separate process entirely unrelated to digestion", "isCorrect": false, "feedback": "This isn't accurate -- chewing is DIRECTLY and specifically part of the digestive process, classified specifically as mechanical digestion."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Mechanical digestion (like chewing) physically breaks food into smaller pieces, while chemical digestion (using enzymes) breaks down the actual chemical bonds within food molecules. Why does mechanical digestion actually make chemical digestion MORE effective, even though these are considered distinct processes?",
+    "options": [
+      {"text": "By physically breaking food into smaller pieces, mechanical digestion significantly increases the total exposed SURFACE AREA available for digestive enzymes to actually access and act upon, allowing chemical digestion to proceed much more efficiently and completely", "isCorrect": true, "feedback": "Correct -- this direct connection between increased surface area (from mechanical breakdown) and improved enzyme accessibility explains why these two digestion types work together synergistically, with mechanical digestion specifically enhancing chemical digestion's overall effectiveness."},
+      {"text": "Mechanical digestion actually has no real effect on how effectively chemical digestion can occur", "isCorrect": false, "feedback": "This isn't accurate -- mechanical digestion has a SIGNIFICANT, direct effect on chemical digestion's effectiveness, specifically by increasing the surface area available for digestive enzymes to act upon."},
+      {"text": "Chemical digestion would actually work equally well regardless of whether mechanical digestion had already occurred", "isCorrect": false, "feedback": "This isn't accurate -- chemical digestion is generally significantly MORE effective when food has ALREADY undergone mechanical breakdown (increasing surface area), not equally effective regardless of prior mechanical processing."},
+      {"text": "Surface area has no actual connection to how effectively digestive enzymes can act on food molecules", "isCorrect": false, "feedback": "This isn't accurate -- surface area is DIRECTLY and significantly connected to and determines how effectively digestive enzymes can access and act upon food molecules during chemical digestion."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The stomach performs BOTH mechanical digestion (churning/mixing food) AND chemical digestion (via stomach acid and digestive enzymes like pepsin) simultaneously. Why might this combined, simultaneous approach be particularly effective compared to if these two processes occurred in a strictly separated, sequential order?",
+    "options": [
+      {"text": "The continuous mechanical churning action helps constantly expose FRESH food surfaces to the digestive enzymes/acid (rather than these chemical agents only reaching the food's outer surface once), while also helping to evenly distribute those chemical digestive agents throughout the food mass, creating a mutually reinforcing, more thorough combined digestive effect", "isCorrect": true, "feedback": "Correct -- this synergistic, simultaneous combination of ongoing mechanical churning and chemical digestive action explains why the stomach's combined approach can be particularly effective at thoroughly breaking down food, compared to if these processes occurred in a strictly separated, one-at-a-time sequential manner."},
+      {"text": "Performing mechanical and chemical digestion simultaneously actually provides no additional benefit compared to doing them in a strictly separate sequential order", "isCorrect": false, "feedback": "This isn't accurate -- this SIMULTANEOUS combined approach DOES provide meaningful additional benefits (continuously refreshing exposed surfaces, better distribution of digestive agents), compared to a strictly separated sequential approach."},
+      {"text": "The stomach actually only performs chemical digestion, with no mechanical digestion component involved at all", "isCorrect": false, "feedback": "This isn't accurate -- the stomach specifically performs BOTH mechanical digestion (churning/mixing) AND chemical digestion (acid/enzymes) simultaneously, not chemical digestion alone."},
+      {"text": "This simultaneous combined approach has no actual connection to improving overall digestive thoroughness or effectiveness", "isCorrect": false, "feedback": "This isn't accurate -- this simultaneous combined approach is DIRECTLY connected to and specifically explains improved overall digestive thoroughness/effectiveness, compared to a strictly sequential approach."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This digestive process physically fragments ingested material without altering its underlying molecular composition.", "medium": "This is when food gets physically broken into smaller pieces, without changing its actual chemistry.", "easy": "This is when food gets physically broken into smaller pieces."},
+    "medium": {"hard": "Consider how increasing the total exposed surface area of a substance directly affects the rate/extent at which surface-acting chemical agents (like enzymes) can interact with it.", "medium": "Breaking food into tinier pieces gives the digestive juices way more surface to actually work on all at once, instead of just the outside of one big chunk.", "easy": "Breaking food into tinier pieces gives digestive juices more surface to work on."},
+    "hard": {"hard": "Consider how ongoing physical agitation could continuously refresh which portions of the food mass are directly exposed to the chemical digestive agents, compared to a single, one-time exposure.", "medium": "Constantly stirring the food around means fresh, un-digested parts keep getting exposed to the digestive juices over and over, instead of just the outer layer getting treated once.", "easy": "Constantly stirring means fresh parts keep getting exposed to digestive juices, not just the outer layer."}
+  }
+}
+]

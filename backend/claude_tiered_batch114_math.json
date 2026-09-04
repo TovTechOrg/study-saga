@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between combinations with and without repetition",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "When choosing a committee of people (where each person can only serve once, no repeats allowed), you use:",
+    "options": [
+      {"text": "Combinations WITHOUT repetition", "isCorrect": true, "feedback": "Correct -- since each person can only be selected once for the committee, this scenario specifically requires combinations without repetition/replacement."},
+      {"text": "Combinations WITH repetition", "isCorrect": false, "feedback": "That would apply if the SAME item/person could be selected multiple times, which isn't the case here -- a committee specifically requires each person to be chosen at most once."},
+      {"text": "This scenario cannot be solved using any combination formula at all", "isCorrect": false, "feedback": "This isn't accurate -- this scenario is PRECISELY the type of problem that standard COMBINATION formulas (without repetition) are specifically designed to solve."},
+      {"text": "Permutations, since order matters for choosing a committee", "isCorrect": false, "feedback": "For an unranked, undifferentiated committee (no distinct roles), order does NOT matter, making this a COMBINATION problem, not a permutation problem."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Choosing scoops of ice cream (where you CAN pick the same flavor multiple times, like getting 2 scoops of chocolate) requires 'combinations WITH repetition,' using a different formula than standard combinations. Why does allowing repetition require this different, adjusted approach?",
+    "options": [
+      {"text": "Since the standard combination formula assumes each item can only be selected ONCE, it cannot correctly account for scenarios where the SAME item (like a specific ice cream flavor) can be validly chosen MULTIPLE times -- a specifically adjusted formula is needed to correctly count all the valid ways to make selections when repetition of the same item IS allowed", "isCorrect": true, "feedback": "Correct -- this recognition that standard combination formulas specifically assume no repetition explains why a separate, adjusted formula (combinations with repetition) is mathematically necessary for correctly counting selection scenarios where choosing the same item multiple times IS a valid, countable possibility."},
+      {"text": "Standard combination formulas (without repetition) would actually work equally well for counting scenarios that allow repetition", "isCorrect": false, "feedback": "This isn't accurate -- standard combination formulas specifically assume NO repetition and would give an INCORRECT (too small) count for scenarios where repetition is actually allowed, which is precisely why a different formula is needed."},
+      {"text": "This distinction between combinations with and without repetition has no actual mathematical basis or necessity", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has a GENUINE, necessary mathematical basis, since these two scenarios (repetition allowed vs. not allowed) require counting fundamentally different sets of valid outcomes."},
+      {"text": "Choosing ice cream flavors with repetition allowed would actually result in FEWER total possible combinations than without repetition", "isCorrect": false, "feedback": "This is backwards -- allowing repetition generally results in MORE (not fewer) total possible combinations, since it opens up additional valid selection possibilities (like choosing the same flavor twice) that wouldn't be countable without repetition."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The formula for combinations WITH repetition, choosing r items from n types, is C(n+r-1, r). Explain the conceptual reasoning (sometimes called the 'stars and bars' method) for why adding (r-1) to n, before applying the standard combination formula, correctly accounts for repetition being allowed.",
+    "options": [
+      {"text": "The 'stars and bars' technique conceptually represents each selection as a sequence of 'stars' (representing the r items being chosen) separated by 'bars' (representing dividers between the n different categories/types) -- by cleverly transforming this repetition-allowed selection problem into an equivalent problem of choosing POSITIONS for those (n-1) dividing bars among a total of (n+r-1) total symbols, the problem becomes solvable using the STANDARD (no-repetition) combination formula applied to this cleverly reframed, equivalent counting problem", "isCorrect": true, "feedback": "Correct -- this elegant 'stars and bars' technique demonstrates how a seemingly different combinatorial problem (combinations WITH repetition) can be cleverly transformed into an equivalent problem solvable using the FAMILIAR standard combination formula, showcasing an important, broadly useful problem-solving strategy in combinatorics: creatively reframing a new problem into an equivalent, already-solved one."},
+      {"text": "This specific formula adjustment is actually just an arbitrary mathematical trick with no real underlying conceptual justification", "isCorrect": false, "feedback": "This isn't accurate -- this formula has a genuine, elegant underlying conceptual justification (the stars and bars technique), not simply an arbitrary, unexplained adjustment."},
+      {"text": "The stars and bars method actually has no real connection to correctly solving combinations-with-repetition counting problems", "isCorrect": false, "feedback": "This isn't accurate -- the stars and bars method IS DIRECTLY and specifically connected to and PROVIDES THE CONCEPTUAL FOUNDATION for correctly deriving and understanding the combinations-with-repetition formula."},
+      {"text": "This formula would actually give the same numerical result as the standard no-repetition combination formula applied directly to n and r", "isCorrect": false, "feedback": "This isn't accurate -- these two formulas generally give GENUINELY DIFFERENT numerical results (since they're counting different sets of possibilities), which is precisely why a distinct, adjusted formula is needed for the repetition-allowed case."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This selection scenario requires distinct, non-repeatable elements drawn from the available population set.", "medium": "Use this when each person or item can only be picked one single time.", "easy": "Use this when each item can only be picked once."},
+    "medium": {"hard": "Consider how permitting an item to be selected multiple times introduces additional valid outcome possibilities that a single-selection-only formula cannot account for.", "medium": "If you can pick the SAME flavor more than once, there are extra possible combinations that a formula built for 'only once each' just can't count correctly.", "easy": "If you can pick the same flavor more than once, a formula built for 'only once' can't count it correctly."},
+    "hard": {"hard": "Consider how representing chosen items as symbols separated by category-dividing markers converts a repetition-based selection problem into an equivalent, standard no-repetition arrangement-counting problem.", "medium": "Imagine lining up little marks for each scoop you pick, with dividers marking where one flavor category ends and the next begins -- counting where to place those dividers turns this into a problem you already know how to solve.", "easy": "Imagine lining up marks for each scoop with dividers between flavors -- that turns it into a problem you already know how to solve."}
+  }
+}
+]

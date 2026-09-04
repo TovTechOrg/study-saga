@@ -1,0 +1,125 @@
+[
+{
+  "topic": "the role of catalysts in enzymes vs. industrial catalysts",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What do enzymes and industrial catalysts have in common?",
+    "options": [
+      {"text": "Both speed up chemical reactions without being permanently used up", "isCorrect": true, "feedback": "Correct -- enzymes are essentially biological catalysts, sharing this key function with industrial catalysts."},
+      {"text": "Both are always made of metal", "isCorrect": false, "feedback": "Enzymes are proteins, not metal -- while some industrial catalysts do use metals, this isn't a shared defining trait."},
+      {"text": "Both slow down chemical reactions", "isCorrect": false, "feedback": "Both actually SPEED UP reactions, not slow them down -- that's their defining shared function."},
+      {"text": "Both are only found in living organisms", "isCorrect": false, "feedback": "Industrial catalysts are specifically NOT found naturally in living organisms -- only enzymes are biological."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does an enzyme's specificity generally compare to that of a typical industrial catalyst (like platinum in a catalytic converter)?",
+    "options": [
+      {"text": "Enzymes are generally much more specific, often working on only one particular reaction, while industrial catalysts often work on a broader range of similar reactions", "isCorrect": true, "feedback": "Correct -- an enzyme's precise molecular shape typically matches only one substrate, unlike many industrial catalysts."},
+      {"text": "Industrial catalysts are always more specific than enzymes", "isCorrect": false, "feedback": "This is generally backwards -- enzymes are typically known for their high specificity, more so than many industrial catalysts."},
+      {"text": "Both are equally specific in every case", "isCorrect": false, "feedback": "There's a general, well-documented difference in typical specificity between these two catalyst types."},
+      {"text": "Neither type of catalyst has any specificity at all", "isCorrect": false, "feedback": "Both types of catalysts do have some degree of specificity -- enzymes are just generally known for having much higher specificity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Enzymes typically work best within a narrow range of temperature and pH, losing effectiveness (or denaturing) outside that range, while many industrial catalysts can function across a much broader range of conditions. Why might this difference exist?",
+    "options": [
+      {"text": "Enzymes are proteins with a precise 3D shape essential to their function, which is sensitive to environmental conditions, while many industrial catalysts (often simpler metals/compounds) don't rely on such a fragile structure", "isCorrect": true, "feedback": "Correct -- an enzyme's delicate folded protein structure is central to its function but also makes it vulnerable to environmental extremes, unlike many more robust industrial catalyst materials."},
+      {"text": "Enzymes are actually more durable than industrial catalysts in every situation", "isCorrect": false, "feedback": "This is generally backwards -- enzymes are typically more sensitive to extreme conditions, while some industrial catalysts can withstand harsher environments."},
+      {"text": "Industrial catalysts are actually biological in nature too", "isCorrect": false, "feedback": "Industrial catalysts are typically non-biological materials (like metals), fundamentally different in structure from a protein-based enzyme."},
+      {"text": "There is no real difference in how sensitive these two types of catalysts are to their environment", "isCorrect": false, "feedback": "There's a well-documented and significant difference in environmental sensitivity between typical enzymes and many industrial catalysts."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Both categories accelerate a chemical process without being consumed as part of it.", "medium": "Both help chemical reactions go faster without getting used up themselves.", "easy": "Both make reactions happen faster without being used up."},
+    "medium": {"hard": "Consider how closely an enzyme's shape must match its target molecule, compared to a metal catalyst's broader surface-based interaction.", "medium": "An enzyme usually only fits one specific molecule, like a key fitting one lock, while many industrial catalysts work more broadly.", "easy": "An enzyme usually only works with one specific molecule, like a key for one lock."},
+    "hard": {"hard": "Protein-based catalysts derive their function from a precise, foldable structure that's inherently fragile under environmental stress, unlike the more chemically robust and often simpler structures of many industrial catalyst materials.", "medium": "An enzyme's delicate folded shape is key to how it works, but that same delicate shape makes it easily disrupted by extreme heat or pH.", "easy": "An enzyme's delicate shape is key to how it works, but that same delicate shape breaks easily in extreme heat."}
+  }
+},
+{
+  "topic": "the difference between a strong base and a weak base",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What makes a base 'strong'?",
+    "options": [
+      {"text": "It fully dissociates (breaks apart) into ions in water", "isCorrect": true, "feedback": "Correct -- strong bases like sodium hydroxide almost completely ionize in solution."},
+      {"text": "It has a very high pH number, like 20", "isCorrect": false, "feedback": "The pH scale typically ranges from 0-14 for common substances -- strength refers to dissociation, not an extreme pH value."},
+      {"text": "It is always more concentrated than a weak base", "isCorrect": false, "feedback": "Strength (dissociation) and concentration are separate properties -- a dilute strong base and concentrated weak base can both exist."},
+      {"text": "It is always used in cleaning products", "isCorrect": false, "feedback": "While some strong bases are used in cleaners, this isn't the defining chemical property of strength."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Ammonia (NH₃) is considered a weak base. What does this mean about its behavior in water?",
+    "options": [
+      {"text": "It only partially reacts with water to form ions, with most of it remaining as unreacted ammonia molecules", "isCorrect": true, "feedback": "Correct -- weak bases establish an equilibrium where much of the substance stays in its original molecular form."},
+      {"text": "It completely and fully dissociates into ions in water", "isCorrect": false, "feedback": "That describes a strong base's behavior, not a weak base like ammonia."},
+      {"text": "It doesn't dissolve in water at all", "isCorrect": false, "feedback": "Ammonia does dissolve in water and reacts to some extent -- it just doesn't dissociate completely."},
+      {"text": "It turns into an acid when placed in water", "isCorrect": false, "feedback": "Ammonia remains a base in water -- it doesn't transform into an acid."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Sodium hydroxide (a strong base) and ammonia (a weak base) at the same low concentration will have different pH values in water. Why would the sodium hydroxide solution have a higher pH?",
+    "options": [
+      {"text": "Since sodium hydroxide dissociates completely, it releases more hydroxide ions into solution than the partially-dissociating ammonia at the same concentration, resulting in a higher pH", "isCorrect": true, "feedback": "Correct -- greater ion release from complete dissociation directly translates to a more strongly basic (higher pH) solution."},
+      {"text": "Sodium hydroxide and ammonia will always have exactly the same pH at the same concentration", "isCorrect": false, "feedback": "Their differing degrees of dissociation (complete vs. partial) mean they will NOT have the same pH at equal concentrations."},
+      {"text": "Ammonia is actually more basic than sodium hydroxide in every situation", "isCorrect": false, "feedback": "At equal concentrations, sodium hydroxide (a strong base) will generally produce a higher pH than ammonia (a weak base), due to its complete dissociation."},
+      {"text": "pH has no real connection to how completely a base dissociates", "isCorrect": false, "feedback": "The extent of dissociation directly affects how many hydroxide ions are released, which is directly connected to the resulting pH."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This classification is based on the extent to which the base molecules separate into charged particles in solution.", "medium": "This describes how completely the base molecules break apart into ions when dissolved in water.", "easy": "This describes whether the base breaks apart completely or only partly in water."},
+    "medium": {"hard": "A weak base reaches a balance point where only a fraction of its molecules have reacted with water to form ions.", "medium": "Only some of the ammonia molecules actually react with water to form ions -- most stay unreacted.", "easy": "Only some of the ammonia actually turns into ions in water -- most stays as is."},
+    "hard": {"hard": "The pH depends directly on hydroxide ion concentration, and complete dissociation releases proportionally more ions than partial dissociation at the same starting concentration.", "medium": "Since sodium hydroxide breaks apart completely, it releases way more of the ions that make a solution basic, compared to ammonia at the same starting amount.", "easy": "Since sodium hydroxide breaks apart completely, it releases a lot more basic ions than ammonia does at the same amount."}
+  }
+},
+{
+  "topic": "the concept of a chemical formula's subscripts representing a fixed ratio",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the formula CO₂, what does the subscript 2 indicate?",
+    "options": [
+      {"text": "There are 2 oxygen atoms for every 1 carbon atom", "isCorrect": true, "feedback": "Correct -- the subscript specifies the fixed ratio of atoms within a single molecule."},
+      {"text": "There are 2 molecules of CO₂", "isCorrect": false, "feedback": "A coefficient in front of the formula (not a subscript within it) would indicate multiple molecules."},
+      {"text": "There are 2 grams of oxygen", "isCorrect": false, "feedback": "Subscripts indicate atom counts within a molecule, not a specific mass measurement."},
+      {"text": "There are 2 carbon atoms", "isCorrect": false, "feedback": "The subscript 2 is written after O (oxygen), applying specifically to oxygen, not carbon."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why must the ratio of atoms in a chemical formula (like the 2:1 ratio of H to O in H₂O) always stay fixed for a given compound?",
+    "options": [
+      {"text": "This fixed ratio reflects the specific way the atoms are chemically bonded together to form that particular compound's molecular structure", "isCorrect": true, "feedback": "Correct -- a compound's formula reflects its actual bonding structure, which is consistent for every molecule of that specific substance."},
+      {"text": "The ratio can actually change randomly depending on the day", "isCorrect": false, "feedback": "A compound's formula ratio is fixed and doesn't vary randomly -- it's determined by its consistent chemical bonding structure."},
+      {"text": "Chemical formulas don't actually represent any real ratio of atoms", "isCorrect": false, "feedback": "Chemical formulas specifically and precisely represent the real ratio of atoms bonded together in that compound."},
+      {"text": "The ratio depends entirely on the temperature of the room", "isCorrect": false, "feedback": "A compound's fundamental atomic ratio doesn't change with room temperature -- it's fixed by the compound's chemical identity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Water is always H₂O, never, say, H₃O₂ under normal conditions. What fundamental chemical principle does this consistency reflect?",
+    "options": [
+      {"text": "The law of definite proportions -- a specific compound always contains its constituent elements in the same fixed ratio by mass (and therefore atom count)", "isCorrect": true, "feedback": "Correct -- this consistent ratio is precisely what the law of definite proportions describes and what gives each compound its unique, unchanging formula."},
+      {"text": "The law of conservation of energy", "isCorrect": false, "feedback": "That law is about energy in reactions, not specifically about the fixed atomic ratio defining a compound's formula."},
+      {"text": "Newton's third law of motion", "isCorrect": false, "feedback": "That's a physics principle about force pairs, unrelated to chemical formula ratios."},
+      {"text": "There is no underlying scientific principle -- it's just a coincidence", "isCorrect": false, "feedback": "This consistency is actually a well-established, foundational chemical principle (the law of definite proportions), not mere coincidence."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This number specifies exactly how many atoms of one particular element exist within a single molecule.", "medium": "This number tells you how many of that element are in the molecule.", "easy": "This number tells you how many oxygen atoms are in the molecule."},
+    "medium": {"hard": "The specific arrangement of chemical bonds holding a compound's atoms together dictates a single, unchanging combining ratio for that substance.", "medium": "The way the atoms are actually bonded together determines a fixed, unchanging ratio for that specific compound.", "easy": "The way atoms are bonded together in water always happens the same specific way."},
+    "hard": {"hard": "This principle states that a pure chemical compound always contains its component elements in the exact same proportion by mass, which is what fixes a compound's formula and atomic ratio.", "medium": "This principle says a specific compound always has its elements combined in exactly the same fixed proportion, no matter the sample.", "easy": "This is the principle that says a compound's elements always combine in the exact same fixed amounts."}
+  }
+}
+]

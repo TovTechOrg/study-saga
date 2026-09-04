@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the human respiratory system and gas exchange",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Where does gas exchange (oxygen entering the blood, carbon dioxide leaving it) primarily occur in the lungs?",
+    "options": [
+      {"text": "In tiny air sacs called alveoli", "isCorrect": true, "feedback": "Correct -- alveoli are the tiny, thin-walled sacs where oxygen and carbon dioxide are exchanged between the air and the bloodstream."},
+      {"text": "In the trachea (windpipe)", "isCorrect": false, "feedback": "The trachea is mainly an air passageway, not the primary site of gas exchange -- that occurs specifically in the alveoli."},
+      {"text": "In the nasal cavity", "isCorrect": false, "feedback": "The nasal cavity primarily warms and filters incoming air -- gas exchange itself specifically occurs in the alveoli deep within the lungs."},
+      {"text": "In the diaphragm", "isCorrect": false, "feedback": "The diaphragm is a muscle that helps drive breathing mechanics, not the actual site of gas exchange, which occurs in the alveoli."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Alveoli have extremely thin walls and are surrounded by a dense network of tiny capillaries. Why are these two structural features particularly well-suited for efficient gas exchange?",
+    "options": [
+      {"text": "The thin walls minimize the distance gases must diffuse across, while the dense capillary network maximizes the surface area and blood flow available for that gas exchange to occur", "isCorrect": true, "feedback": "Correct -- this structural design (minimizing diffusion distance while maximizing exchange surface area) exemplifies key principles that make biological gas exchange systems highly efficient."},
+      {"text": "These structural features actually make gas exchange less efficient than it would otherwise be", "isCorrect": false, "feedback": "This isn't accurate -- these specific structural adaptations are precisely what make gas exchange highly EFFICIENT, not less efficient, in the lungs."},
+      {"text": "Thin walls and capillary density have no actual connection to gas exchange efficiency", "isCorrect": false, "feedback": "These structural features are DIRECTLY connected to and responsible for efficient gas exchange -- they're not incidental details but functionally critical adaptations."},
+      {"text": "Alveoli actually have extremely thick walls, not thin ones", "isCorrect": false, "feedback": "This isn't accurate -- alveoli specifically have very THIN walls (just one cell layer thick), which is precisely what allows for efficient, rapid gas diffusion."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Emphysema, often caused by long-term smoking, damages and destroys alveolar walls, causing individual alveoli to merge into fewer, larger air sacs. Why does this structural damage significantly impair a person's ability to breathe effectively, even though the lungs may still contain a similar total air volume?",
+    "options": [
+      {"text": "Merging many small alveoli into fewer larger sacs dramatically reduces the total available surface area for gas exchange, even if overall lung air volume remains similar, significantly reducing how efficiently oxygen can enter the blood and carbon dioxide can be removed", "isCorrect": true, "feedback": "Correct -- this reduction in total gas-exchange surface area, despite similar overall volume, is precisely why emphysema significantly impairs respiratory function, illustrating how surface area (not just volume) is critical for efficient gas exchange."},
+      {"text": "This structural change would actually have no effect on gas exchange efficiency, since air volume stays similar", "isCorrect": false, "feedback": "This isn't accurate -- structural surface area, not just overall volume, is CRITICAL for gas exchange efficiency; the significant surface area reduction from merged alveoli directly impairs breathing function, despite similar volume."},
+      {"text": "Emphysema actually increases the total surface area available for gas exchange", "isCorrect": false, "feedback": "This is backwards -- emphysema specifically DECREASES total alveolar surface area (by merging many small sacs into fewer large ones), which is precisely why it impairs respiratory function."},
+      {"text": "Surface area has no actual connection to how efficiently gas exchange can occur in the lungs", "isCorrect": false, "feedback": "Surface area is actually a CRITICAL factor in gas exchange efficiency -- this is precisely why emphysema's surface-area-reducing structural damage causes such significant respiratory problems."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This anatomical structure represents the terminal, thin-walled sac where respiratory gases are exchanged between inhaled air and pulmonary capillary blood.", "medium": "This is a tiny air sac deep in the lungs where oxygen and carbon dioxide actually swap places with the blood.", "easy": "This is a tiny air sac where oxygen and carbon dioxide swap with the blood."},
+    "medium": {"hard": "Consider how minimizing diffusion distance while maximizing available exchange surface area work together to optimize the rate of gas transfer.", "medium": "A shorter distance to travel and lots of surface area to work with both help gases move quickly between the air and the blood.", "easy": "A shorter distance to travel and more surface area both help gases move quickly."},
+    "hard": {"hard": "Consider how gas exchange EFFICIENCY depends specifically on total available exchange SURFACE AREA, which can decrease significantly even while overall enclosed VOLUME remains comparatively similar.", "medium": "Even if the lungs still hold about the same amount of air overall, having fewer, bigger sacs means way less total surface for the actual oxygen swap to happen on.", "easy": "Even with similar air volume, fewer bigger sacs means way less total surface for oxygen exchange."}
+  }
+}
+]

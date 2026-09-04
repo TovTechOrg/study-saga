@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of interpreting box plots (box-and-whisker plots)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a box-and-whisker plot, what does the line inside the box typically represent?",
+    "options": [
+      {"text": "The median of the data set", "isCorrect": true, "feedback": "Correct -- the line inside the box marks the median (middle value) of the data, dividing it into two equal halves."},
+      {"text": "The mean (average) of the data set", "isCorrect": false, "feedback": "While related, the line inside the box specifically represents the MEDIAN, not the mean -- these are different statistical measures."},
+      {"text": "The absolute maximum value in the entire data set", "isCorrect": false, "feedback": "The maximum value is typically shown at the end of the upper 'whisker,' not by the line inside the box, which represents the median."},
+      {"text": "The total number of data points collected", "isCorrect": false, "feedback": "This isn't what the box plot's internal line represents -- it specifically indicates the median value, not a count of data points."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A box plot's 'box' itself represents the interquartile range (IQR), spanning from the first quartile (Q1) to the third quartile (Q3), containing the middle 50% of the data. Why is a WIDER box (larger IQR) generally interpreted as indicating greater data variability?",
+    "options": [
+      {"text": "A wider box means the middle 50% of data points are spread across a larger range of values, indicating those central data points are less tightly clustered together than they would be with a narrower box", "isCorrect": true, "feedback": "Correct -- this direct relationship between box width (IQR size) and data spread within that central 50% is precisely why box width serves as a useful visual indicator of variability in a box plot."},
+      {"text": "A wider box actually indicates that the data points are MORE tightly clustered together, not less", "isCorrect": false, "feedback": "This is backwards -- a WIDER box actually indicates the middle 50% of data is MORE SPREAD OUT (greater variability), not more tightly clustered."},
+      {"text": "Box width has no actual connection to how spread out or clustered the underlying data points are", "isCorrect": false, "feedback": "This isn't accurate -- box width (representing the IQR) is DIRECTLY connected to and specifically indicates how spread out the middle 50% of the data actually is."},
+      {"text": "A box plot's box width only relates to the sample size, not the data's actual spread", "isCorrect": false, "feedback": "This isn't accurate -- box width specifically relates to the RANGE of the middle 50% of values (variability), not directly to the total sample size/count of data points."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A box plot can visually reveal 'skewness' in a data set -- for example, if the median line is positioned much closer to Q1 (left/bottom of the box) than to Q3 (right/top), and the upper whisker is notably longer than the lower whisker, this suggests the data is 'right-skewed' (has a longer tail toward higher values). Why is this visual pattern a meaningful indicator of skewness?",
+    "options": [
+      {"text": "This asymmetric pattern (median closer to Q1, longer upper whisker) indicates that while most data clusters at lower-to-middle values, there's a smaller subset of notably higher values extending the distribution's upper tail, which is exactly what right-skewness describes", "isCorrect": true, "feedback": "Correct -- this ability to visually identify distributional asymmetry (skewness) through the relative positioning of the median and the differing whisker lengths is one of the valuable analytical benefits of using box plots for data visualization."},
+      {"text": "This visual pattern actually indicates the data is perfectly symmetric, with no skewness at all", "isCorrect": false, "feedback": "This isn't accurate -- this specific ASYMMETRIC pattern (median off-center, unequal whisker lengths) is precisely what indicates skewness, not symmetry."},
+      {"text": "Skewness has no actual connection to the median's position within the box or the relative whisker lengths", "isCorrect": false, "feedback": "This isn't accurate -- skewness is DIRECTLY connected to and can be visually identified through both the median's position within the box and the relative lengths of the two whiskers."},
+      {"text": "A longer upper whisker actually indicates 'left-skewness,' not 'right-skewness'", "isCorrect": false, "feedback": "This is backwards -- a longer UPPER whisker (extending toward higher values) specifically indicates RIGHT-skewness (a tail toward higher values), not left-skewness."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measure represents the middle-ranked value that bisects an ordered data set into two equally-sized halves.", "medium": "This is the exact middle value when all the data points are lined up in order.", "easy": "This is the exact middle value when all data points are lined up in order."},
+    "medium": {"hard": "Consider how the spatial extent of the box directly reflects the numerical range spanned by the central 50% of the ordered data set.", "medium": "A bigger box means the middle chunk of values is stretched out over a wider range of numbers.", "easy": "A bigger box means the middle values are stretched out over a wider range."},
+    "hard": {"hard": "Consider how an off-center median combined with unequal whisker lengths reflects an underlying asymmetric distribution shape, with a longer tail extending in the direction of the longer whisker.", "medium": "If most of your data is bunched up low but a few unusually high values stretch things out, that shows up as an off-center median and a stretched-out upper whisker.", "easy": "If most data is bunched up low but a few high values stretch things out, that shows up as a longer upper whisker."}
+  }
+}
+]

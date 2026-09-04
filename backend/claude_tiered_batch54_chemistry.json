@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of polymers and monomers",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a polymer?",
+    "options": [
+      {"text": "A large molecule made of many repeating smaller units (monomers) bonded together", "isCorrect": true, "feedback": "Correct -- polymers are essentially long chains built from repeating monomer building blocks."},
+      {"text": "A single small molecule with no repeating structure", "isCorrect": false, "feedback": "That describes a monomer (or simple molecule), not a polymer, which is specifically a LARGE, repeating-unit structure."},
+      {"text": "A type of chemical bond found only in metals", "isCorrect": false, "feedback": "Polymers are large molecules, not a type of bond, and they're common in both natural and synthetic organic materials, not specifically metals."},
+      {"text": "A gas at room temperature", "isCorrect": false, "feedback": "Physical state (gas, liquid, solid) isn't the defining characteristic of a polymer -- its defining feature is being made of repeating monomer units."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Starch (found in potatoes and bread) is a polymer made of many repeating glucose monomer units linked together. Why is understanding this polymer-monomer relationship useful for understanding digestion?",
+    "options": [
+      {"text": "Digestion involves breaking the polymer (starch) back down into its individual glucose monomers, which the body can then absorb and use for energy", "isCorrect": true, "feedback": "Correct -- this depolymerization process (breaking polymer bonds to release monomers) is exactly what happens during starch digestion, ultimately yielding usable glucose molecules."},
+      {"text": "Digestion actually builds MORE glucose monomers into the starch polymer, rather than breaking it down", "isCorrect": false, "feedback": "This is backwards -- digestion specifically BREAKS DOWN the starch polymer into individual glucose monomers, rather than building up more polymer."},
+      {"text": "Starch and glucose are actually completely unrelated chemical substances", "isCorrect": false, "feedback": "This is incorrect -- starch is literally made of many linked glucose monomers, making them directly and structurally related."},
+      {"text": "The body can absorb and use starch directly, without any need to break it down first", "isCorrect": false, "feedback": "The body actually CANNOT directly absorb/use starch in its polymer form -- it must first be broken down into individual glucose monomers during digestion."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Both starch and cellulose are polymers made entirely of glucose monomers, yet humans can digest starch for energy but cannot digest cellulose (found in plant cell walls/fiber) at all. What explains this significant functional difference despite using the identical monomer building block?",
+    "options": [
+      {"text": "Starch and cellulose link their glucose monomers together with different bond orientations (alpha vs. beta glycosidic bonds), and human digestive enzymes can only break the specific bond type found in starch, not the one found in cellulose", "isCorrect": true, "feedback": "Correct -- this structural difference in bonding pattern, despite both polymers sharing the exact same glucose monomer, is precisely why human enzymes can digest one (starch) but not the other (cellulose)."},
+      {"text": "Starch and cellulose are actually made of completely different, unrelated monomers", "isCorrect": false, "feedback": "This isn't accurate -- both starch and cellulose ARE made of the same glucose monomer; what differs is specifically the type of chemical bond linking those monomers together."},
+      {"text": "Human digestive enzymes can actually break down both starch and cellulose equally well", "isCorrect": false, "feedback": "This isn't accurate -- human digestive enzymes can break down starch's specific bond type, but lack the ability to break cellulose's different bond type, which is exactly why humans can't digest cellulose."},
+      {"text": "This difference has nothing to do with the type of chemical bond linking the glucose monomers together", "isCorrect": false, "feedback": "This difference is PRECISELY due to the different bond types (alpha vs. beta glycosidic linkages) connecting the otherwise identical glucose monomers in each polymer."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This large molecular structure consists of numerous smaller repeating structural subunits joined through chemical bonding.", "medium": "This is a big molecule made by linking together lots of smaller repeating pieces.", "easy": "This is a big molecule made of lots of smaller repeating pieces."},
+    "medium": {"hard": "Consider the biochemical process required to reverse the polymerization bonds, releasing the individual monomer units for cellular use.", "medium": "The body has to break the big chain apart into its individual glucose pieces before it can actually use that glucose for energy.", "easy": "The body has to break the starch chain apart into individual glucose pieces to use it for energy."},
+    "hard": {"hard": "Consider how the specific geometric orientation of the bond linking otherwise identical monomer units can determine whether a particular enzyme is structurally able to interact with and break that bond.", "medium": "Even though both are made of the same glucose building block, they're linked together with a slightly different type of connection, and our enzymes only recognize one type.", "easy": "Even though both use the same glucose building block, they're linked differently, and our enzymes only recognize one type of link."}
+  }
+}
+]

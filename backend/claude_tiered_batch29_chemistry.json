@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a chemical formula for a hydrate (water of crystallization)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a hydrate, in chemistry?",
+    "options": [
+      {"text": "A compound that has water molecules incorporated into its crystal structure", "isCorrect": true, "feedback": "Correct -- hydrates include a specific, fixed number of water molecules as part of their solid structure."},
+      {"text": "Any liquid that contains water", "isCorrect": false, "feedback": "A hydrate specifically refers to a SOLID compound with water built into its crystal structure, not simply any water-containing liquid."},
+      {"text": "A type of acid", "isCorrect": false, "feedback": "Hydrates aren't defined as a type of acid -- they're compounds incorporating water into their solid crystal structure."},
+      {"text": "A substance that repels all water", "isCorrect": false, "feedback": "This describes a hydrophobic substance, the opposite of a hydrate, which specifically incorporates water."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The formula CuSO₄·5H₂O represents copper sulfate pentahydrate. What does the '5H₂O' part specifically indicate?",
+    "options": [
+      {"text": "Five water molecules are incorporated into each formula unit of the crystal structure", "isCorrect": true, "feedback": "Correct -- the dot notation specifically shows a fixed number of water molecules associated with each unit of the compound."},
+      {"text": "The compound is 5% water by mass", "isCorrect": false, "feedback": "This notation indicates a specific whole-number count of water molecules per formula unit, not simply a percentage by mass."},
+      {"text": "The compound needs to be dissolved in 5 liters of water", "isCorrect": false, "feedback": "This notation isn't an instruction for dissolving -- it describes the water already incorporated into the compound's own solid crystal structure."},
+      {"text": "The compound was created 5 years ago", "isCorrect": false, "feedback": "This notation has nothing to do with age or dates -- it specifically indicates water molecules built into the crystal."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Heating a hydrate like CuSO₄·5H₂O can drive off its water of crystallization, leaving behind anhydrous (water-free) CuSO₄, often accompanied by a visible color change. Why does removing this structural water change the compound's appearance?",
+    "options": [
+      {"text": "The water molecules are often directly involved in the compound's crystal structure and its interaction with light, so removing them alters the arrangement and can change how the substance absorbs/reflects light", "isCorrect": true, "feedback": "Correct -- hydrated copper sulfate is blue, while anhydrous copper sulfate is white/gray, precisely because the structural water's presence or absence affects the compound's light-absorbing properties."},
+      {"text": "Heating always destroys a substance's ability to have any color at all", "isCorrect": false, "feedback": "Heating doesn't universally eliminate color -- in this specific case, the color change is due to the water's specific role in the compound's structure, not a general heating effect."},
+      {"text": "This color change is completely unrelated to the loss of water", "isCorrect": false, "feedback": "This color change is actually directly and specifically caused by the loss of the structurally significant water of crystallization."},
+      {"text": "The compound becomes a completely different element after heating", "isCorrect": false, "feedback": "The compound remains chemically copper sulfate throughout -- it's simply losing its associated water molecules, not transforming into a different element."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of compound has water molecules built directly into its solid crystalline arrangement.", "medium": "This compound has water molecules built right into its solid structure.", "easy": "This compound has water actually built into its solid crystal form."},
+    "medium": {"hard": "This notation specifies a fixed, whole-number ratio of water molecules bound within the crystal lattice for every one formula unit of the compound.", "medium": "This number tells you exactly how many water molecules are built into each unit of the crystal.", "easy": "This tells you exactly 5 water molecules are built into each unit of the crystal."},
+    "hard": {"hard": "The presence of coordinated water molecules can influence the electronic environment of ions within the crystal, affecting which wavelengths of light are absorbed versus reflected -- removing that water alters this interaction.", "medium": "The water molecules are actually part of what gives the crystal its specific color, so taking them out changes how it looks.", "easy": "The water molecules are part of what gives the crystal its blue color, so removing them changes its color."}
+  }
+}
+]

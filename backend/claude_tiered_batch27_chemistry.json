@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a catalyst not being consumed in a reaction",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "After a catalyst helps speed up a reaction, how much of it remains at the end?",
+    "options": [
+      {"text": "The same amount as at the start -- it isn't consumed", "isCorrect": true, "feedback": "Correct -- a defining feature of a catalyst is that it emerges from the reaction chemically unchanged."},
+      {"text": "None -- it is completely used up", "isCorrect": false, "feedback": "If it were fully used up, it would be acting as a reactant, not a catalyst -- catalysts are specifically NOT consumed."},
+      {"text": "Only half of the original amount remains", "isCorrect": false, "feedback": "A true catalyst isn't partially consumed either -- the full original amount remains available at the end."},
+      {"text": "It turns into a completely new substance", "isCorrect": false, "feedback": "A catalyst doesn't transform into a new substance during the reaction -- it returns to its original chemical form once the reaction is complete."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Since a catalyst isn't consumed, why can just a small amount of catalyst speed up a reaction involving a much larger amount of reactants?",
+    "options": [
+      {"text": "The catalyst molecule can be reused repeatedly, participating in the reaction mechanism, then returning to its original state to catalyze another reaction cycle", "isCorrect": true, "feedback": "Correct -- this ability to be continuously recycled is exactly why catalysts are effective even in relatively small quantities."},
+      {"text": "A small amount of catalyst can only speed up a small amount of reactant, proportionally", "isCorrect": false, "feedback": "This isn't correct -- because catalysts are continuously regenerated and reused, even a small amount can catalyze a much larger quantity of reactants."},
+      {"text": "Catalysts actually don't speed up reactions at all", "isCorrect": false, "feedback": "Catalysts absolutely do speed up reactions -- that's their defining function, and their reusability is what makes small amounts effective."},
+      {"text": "The catalyst multiplies itself during the reaction", "isCorrect": false, "feedback": "A catalyst doesn't increase in quantity -- it's simply reused repeatedly, participating in and then completing each individual reaction cycle."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Catalysts work by providing an alternative reaction pathway with lower activation energy, rather than by directly supplying energy to the reactants. Why is this distinction important?",
+    "options": [
+      {"text": "It explains why a catalyst can facilitate a reaction without being consumed or permanently altered -- it changes the pathway (mechanism) available, not the fundamental energy content of the reactants or products", "isCorrect": true, "feedback": "Correct -- since the catalyst provides an easier route rather than directly funding the energy requirement, it emerges unchanged and reusable, while the overall energy relationship between reactants and products stays the same."},
+      {"text": "This distinction doesn't matter and has no real implications", "isCorrect": false, "feedback": "This distinction is actually crucial for understanding both WHY catalysts aren't consumed and how they achieve their effect without changing overall reaction energetics."},
+      {"text": "Catalysts actually change the overall energy difference between reactants and products", "isCorrect": false, "feedback": "This is incorrect -- catalysts specifically do NOT change the overall energy difference between reactants and products; they only lower the activation energy BARRIER along the way."},
+      {"text": "Providing an alternative pathway means the catalyst gets permanently altered by the reaction", "isCorrect": false, "feedback": "Providing an alternative pathway is actually precisely why the catalyst CAN return to its original, unaltered form after facilitating the reaction."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "A catalyst emerges from the completed reaction chemically identical to how it started.", "medium": "The catalyst comes out of the reaction exactly the same as it went in.", "easy": "The catalyst comes out exactly the same as it went in -- nothing is used up."},
+    "medium": {"hard": "Since the catalyst returns to its original form after each individual reaction event, a single catalyst molecule can participate in many successive reaction cycles.", "medium": "Since the catalyst gets its original form back each time, it can help with the reaction over and over again.", "easy": "Since the catalyst gets its original form back each time, it can help over and over again."},
+    "hard": {"hard": "Since the catalyst only lowers the activation energy barrier along an alternate pathway (without altering the reactants' or products' fundamental energy states or being incorporated into them), it can be fully regenerated after each cycle.", "medium": "Since the catalyst just opens up an easier path rather than getting used up in the process, it comes out the other side unchanged.", "easy": "Since the catalyst just opens up an easier path rather than getting used up, it comes out unchanged."}
+  }
+}
+]

@@ -1,0 +1,125 @@
+[
+{
+  "topic": "finding the circumference and area relationship of concentric circles",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If a circle's radius doubles, what happens to its circumference?",
+    "options": [
+      {"text": "It also doubles", "isCorrect": true, "feedback": "Correct -- circumference is directly proportional to radius (C=2πr), so doubling radius doubles circumference."},
+      {"text": "It quadruples", "isCorrect": false, "feedback": "This would be true for area, not circumference, since circumference scales linearly with radius, not by the square."},
+      {"text": "It stays exactly the same", "isCorrect": false, "feedback": "Since circumference depends directly on radius, changing the radius does change the circumference."},
+      {"text": "It's cut in half", "isCorrect": false, "feedback": "Increasing (not decreasing) the radius should increase, not decrease, the circumference."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If a circle's radius doubles, what happens to its area?",
+    "options": [
+      {"text": "It quadruples", "isCorrect": true, "feedback": "Correct -- area depends on radius squared (A=πr²), so doubling radius (2²=4) quadruples the area."},
+      {"text": "It also just doubles", "isCorrect": false, "feedback": "This would be true for circumference, but area scales with the SQUARE of radius, so it increases by a factor of 4, not 2."},
+      {"text": "It stays exactly the same", "isCorrect": false, "feedback": "Since area depends on radius squared, changing the radius definitely changes the area."},
+      {"text": "It increases by a factor of 8", "isCorrect": false, "feedback": "This would apply to a 3D volume scaling with radius cubed, not a 2D circle's area, which scales with radius squared."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A large circle has 3 times the radius of a small circle. How many times greater is the large circle's area compared to the small circle's area?",
+    "options": [
+      {"text": "9 times greater", "isCorrect": true, "feedback": "Correct -- since area scales with radius squared, 3²=9."},
+      {"text": "3 times greater", "isCorrect": false, "feedback": "This would be true for circumference, but area scales with the SQUARE of the radius ratio, not the ratio itself."},
+      {"text": "6 times greater", "isCorrect": false, "feedback": "This doesn't match correctly squaring the radius ratio of 3."},
+      {"text": "27 times greater", "isCorrect": false, "feedback": "This would apply to volume scaling (radius cubed) in 3D, not a 2D circle's area."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measurement scales directly and linearly with the radius.", "medium": "This measurement increases by the exact same factor as the radius.", "easy": "Circumference just doubles right along with the radius."},
+    "medium": {"hard": "This measurement scales with the SQUARE of the radius, not the radius directly.", "medium": "Square the factor by which the radius increased to find the area's increase.", "easy": "Square the number 2 to get 4 -- that's how much the area increases."},
+    "hard": {"hard": "Square the ratio between the two radii to find the ratio between their areas.", "medium": "Square the number 3 to find how many times greater the area is.", "easy": "Square 3 to get 9."}
+  }
+},
+{
+  "topic": "solving multi-step percent problems (tax and tip)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A meal costs $40, and a 10% tip is added. What is the total cost?",
+    "options": [
+      {"text": "$44", "isCorrect": true, "feedback": "Correct -- 10% of 40 is 4, and 40+4=44."},
+      {"text": "$50", "isCorrect": false, "feedback": "This overestimates the tip amount, treating it as though it were 25%."},
+      {"text": "$40.10", "isCorrect": false, "feedback": "This doesn't correctly calculate 10% of the total meal cost."},
+      {"text": "$4", "isCorrect": false, "feedback": "This is just the tip amount alone, forgetting to add it to the original cost."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "An item costs $80 before an 8% sales tax. What is the total cost including tax?",
+    "options": [
+      {"text": "$86.40", "isCorrect": true, "feedback": "Correct -- 8% of 80 is 6.40, and 80+6.40=86.40."},
+      {"text": "$88", "isCorrect": false, "feedback": "This doesn't match correctly calculating 8% of 80."},
+      {"text": "$80.08", "isCorrect": false, "feedback": "This doesn't correctly calculate 8% of the total cost."},
+      {"text": "$6.40", "isCorrect": false, "feedback": "This is just the tax amount alone, forgetting to add it to the original price."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A restaurant bill is $60. A customer wants to leave a 20% tip, calculated on the bill BEFORE an 8% tax is added. What is the final total (bill + tax + tip)?",
+    "options": [
+      {"text": "$76.80", "isCorrect": true, "feedback": "Correct -- tip is 20% of 60=12; tax is 8% of 60=4.80; total is 60+12+4.80=76.80."},
+      {"text": "$81.60", "isCorrect": false, "feedback": "This doesn't correctly calculate both the tip and tax based on the original $60 bill."},
+      {"text": "$72", "isCorrect": false, "feedback": "This only accounts for the tip, forgetting to add the tax as well."},
+      {"text": "$64.80", "isCorrect": false, "feedback": "This only accounts for the tax, forgetting to add the tip as well."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Calculate the percentage amount separately, then add it to the original value.", "medium": "Find 10% of 40, then add it to 40.", "easy": "Find 10% of 40 (which is 4), then add it to 40."},
+    "medium": {"hard": "Calculate the percentage amount separately, then add it to the original value.", "medium": "Find 8% of 80, then add it to 80.", "easy": "Find 8% of 80 (which is 6.40), then add it to 80."},
+    "hard": {"hard": "Calculate the tip and tax as separate percentages of the original bill amount, then add all three values together.", "medium": "Find 20% of 60 for the tip, find 8% of 60 for the tax, then add all three amounts together.", "easy": "Find 20% of 60 and 8% of 60 separately, then add both to the original 60."}
+  }
+},
+{
+  "topic": "identifying types of triangles by side length",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a triangle with all three sides of equal length called?",
+    "options": [
+      {"text": "Equilateral", "isCorrect": true, "feedback": "Correct -- an equilateral triangle has all three sides (and all three angles) equal."},
+      {"text": "Scalene", "isCorrect": false, "feedback": "A scalene triangle has all sides of DIFFERENT lengths, the opposite of equilateral."},
+      {"text": "Isosceles", "isCorrect": false, "feedback": "An isosceles triangle has exactly two equal sides, not necessarily all three."},
+      {"text": "Right", "isCorrect": false, "feedback": "A right triangle is defined by having a 90-degree angle, not by having equal sides."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A triangle has sides of length 5, 5, and 8. What type of triangle is this, based on its sides?",
+    "options": [
+      {"text": "Isosceles", "isCorrect": true, "feedback": "Correct -- exactly two of the three sides (5 and 5) are equal, making this an isosceles triangle."},
+      {"text": "Equilateral", "isCorrect": false, "feedback": "Equilateral requires ALL three sides to be equal, but here only two of the three match."},
+      {"text": "Scalene", "isCorrect": false, "feedback": "Scalene requires all three sides to be different, but here two of the sides (5 and 5) are equal."},
+      {"text": "Not a valid triangle", "isCorrect": false, "feedback": "These side lengths (5, 5, 8) do form a valid triangle, since the two shorter sides add up to more than the longest side."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Can a triangle have sides of length 3, 4, and 9? Why or why not?",
+    "options": [
+      {"text": "No, because the two shorter sides (3+4=7) don't add up to more than the longest side (9), violating the triangle inequality", "isCorrect": true, "feedback": "Correct -- for any three lengths to form a valid triangle, the sum of the two shorter sides must exceed the longest side."},
+      {"text": "Yes, any three positive numbers can always form a triangle", "isCorrect": false, "feedback": "This isn't true -- the triangle inequality rule must be satisfied, and these specific numbers fail that test."},
+      {"text": "No, because none of the sides are equal to each other", "isCorrect": false, "feedback": "Triangles don't require any equal sides (that's just one category, scalene) -- the real issue here is the triangle inequality being violated."},
+      {"text": "Yes, because 3+4+9 equals a valid perimeter", "isCorrect": false, "feedback": "Having a valid-sounding perimeter sum doesn't guarantee the sides can actually form a closed triangle -- the triangle inequality test is what matters."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term describes a triangle where every side matches every other side exactly.", "medium": "This is the triangle type where every single side is the same length.", "easy": "This is the triangle where all three sides are exactly equal."},
+    "medium": {"hard": "Count exactly how many of the three side lengths match each other.", "medium": "Check how many of the three sides are the same length.", "easy": "Two of the sides (5 and 5) match -- that's a specific triangle type."},
+    "hard": {"hard": "Check whether the sum of the two shorter side lengths exceeds the length of the longest side -- this is required for any valid triangle.", "medium": "Add the two smaller numbers together and see if the sum is bigger than the largest number.", "easy": "Add 3 and 4 together (getting 7) and compare that to 9 -- is it bigger or smaller?"}
+  }
+}
+]

@@ -57,6 +57,82 @@
     box-shadow: 0 0 50px rgba(239, 68, 68, 0.3);
 }
 
+/* First-run coach-mark tutorial (issue #16). Same fixed/inset/active-toggle
+   pattern as .neural-modal above, one z-index higher so it can layer over
+   the combat screen it's pointing at; no backdrop-filter blur since the
+   point is to keep the real HUD legible underneath the highlight. */
+.tutorial-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100001 !important;
+    /* No background of its own -- .tutorial-highlight's oversized box-shadow
+       below does the dimming, punching a clear "spotlight" hole around
+       whichever element is highlighted instead of double-dimming it. */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tutorial-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.tutorial-highlight {
+    position: fixed;
+    border: 3px solid #00eaff;
+    border-radius: 12px;
+    box-shadow: 0 0 0 4000px rgba(0, 0, 0, 0.5), 0 0 24px #00eaffcc;
+    pointer-events: none;
+    transition: top 0.25s ease, left 0.25s ease, width 0.25s ease, height 0.25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tutorial-highlight {
+        transition: none;
+    }
+}
+
+.tutorial-tooltip {
+    position: fixed;
+    max-width: min(320px, calc(100vw - 24px));
+    background: #0f172a;
+    border: 1px solid rgba(154, 209, 255, 0.4);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.tutorial-step-text {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.tutorial-tooltip-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.tutorial-skip-btn {
+    order: -1;
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tutorial-skip-btn:hover {
+    color: #cbd5e1;
+}
+
 /* ==================== NEURAL THEME - KNOWLEDGE KEEPER ==================== */
 
 * {
@@ -112,6 +188,13 @@ body {
     background: rgba(2, 6, 23, 0.7);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.game-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .game-nav-home-btn {
@@ -290,6 +373,133 @@ body {
     margin-bottom: 1.25rem;
 }
 
+/* Upgrade shop (issue #23) -- deliberately matches .syllabus-card/
+   .neural-syllabi-grid above so it reads as part of the same product. */
+.upgrade-shop-balance {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    color: #9ad1ff;
+    margin-bottom: 1rem;
+}
+
+.upgrade-shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.upgrade-card {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 58, 138, 0.1) 100%);
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: left;
+}
+
+.upgrade-card h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.35rem;
+    color: #e7f5ff;
+}
+
+.upgrade-card p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+}
+
+.upgrade-card .upgrade-level {
+    font-size: 0.8rem;
+    color: #9ad1ff;
+    margin-bottom: 0.5rem;
+}
+
+.upgrade-card .upgrade-buy-btn {
+    width: 100%;
+    min-height: 44px;
+}
+
+.upgrade-card .upgrade-buy-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.upgrade-card.maxed .upgrade-buy-btn {
+    opacity: 0.6;
+}
+
+/* Difficulty picker (chosen once per realm-entry, locked for the battle) --
+   colors match the existing hint-tier convention used elsewhere (easy =
+   green, medium = yellow, hard = red) for a consistent visual language. */
+.syllabus-difficulty-picker {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.difficulty-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-height: 44px;
+    padding: 0.6rem 0.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(15, 23, 42, 0.5);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Issue #9: the multiplier is stated on the button itself so it's visible
+   before a player commits to a tier, not just reflected in the score after. */
+.difficulty-multiplier {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 0.68rem;
+    opacity: 0.75;
+}
+
+.difficulty-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.difficulty-btn:disabled:hover {
+    transform: none;
+    background: rgba(15, 23, 42, 0.5);
+}
+
+.difficulty-btn.difficulty-easy {
+    color: #6bff6b;
+    border-color: rgba(107, 255, 107, 0.3);
+}
+
+.difficulty-btn.difficulty-medium {
+    color: #ffd93d;
+    border-color: rgba(255, 217, 61, 0.3);
+}
+
+.difficulty-btn.difficulty-hard {
+    color: #ff6b6b;
+    border-color: rgba(255, 107, 107, 0.3);
+}
+
+.difficulty-btn:hover,
+.difficulty-btn:focus-visible {
+    transform: translateY(-0.15rem);
+    background: rgba(30, 41, 59, 0.7);
+}
+
 /* COMBAT SCREEN */
 .neural-combat-container {
     position: relative;
@@ -368,6 +578,65 @@ body {
     text-align: left;
 }
 
+/* Resolve delta + state label (issue #17) */
+.resolve-annotation {
+    font-weight: 700;
+    font-size: 0.85em;
+}
+
+.resolve-annotation.delta-down {
+    color: #34d399;
+}
+
+.resolve-annotation.delta-up {
+    color: #ef4444;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .resolve-annotation:not(:empty) {
+        animation: resolve-annotation-in 0.3s ease-out;
+    }
+}
+
+@keyframes resolve-annotation-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Score + streak (issue #20) */
+.score-display {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+    color: #e7f5ff;
+}
+
+.score-delta-annotation {
+    font-weight: 700;
+    color: #34d399;
+    margin-left: 0.4em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .score-delta-annotation:not(:empty) {
+        animation: resolve-annotation-in 0.3s ease-out;
+    }
+}
+
+.streak-display {
+    margin-left: 0.6em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.85em;
+    color: #fbbf24;
+}
+
 .neural-progress-bar {
     width: 100%;
     height: 12px;
@@ -404,9 +673,14 @@ body {
 }
 
 .neural-action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
     min-width: clamp(110px, 26vw, 200px);
-    height: clamp(48px, 8vw, 56px);
-    padding: 0 1rem;
+    min-height: clamp(48px, 8vw, 56px);
+    padding: 0.5rem 1rem;
     font-family: 'Orbitron', sans-serif;
     font-weight: 800;
     font-size: clamp(0.85rem, 2vw, 1rem);
@@ -416,6 +690,34 @@ body {
     background: #002a3a;
     cursor: pointer;
     transition: all 0.2s cubic-bezier(.4, 2, .6, 1);
+}
+
+.action-btn-label {
+    line-height: 1.1;
+}
+
+.action-btn-cost {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    font-size: clamp(0.65rem, 1.6vw, 0.75rem);
+    opacity: 0.75;
+    letter-spacing: 0.02em;
+}
+
+.action-afford-reason {
+    min-height: 1.2em;
+    margin: 0.5rem auto 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #ff8080;
+}
+
+.cap-disclaimer {
+    margin: 0.35rem auto 0;
+    text-align: center;
+    font-size: 0.75rem;
+    opacity: 0.6;
 }
 
 .neural-action-btn#attack-btn {
@@ -450,19 +752,193 @@ body {
     cursor: not-allowed;
 }
 
+/* IDLE NUDGE -- see initIdleNudge()/resetIdleNudgeTimer() in game-simple.js.
+   Animates off currentColor so each button (attack/defend/skill) glows its
+   own accent color without hardcoding one. */
+@media (prefers-reduced-motion: no-preference) {
+    .neural-action-btn.nudge {
+        animation: nudge-pulse 1.8s ease-in-out infinite;
+    }
+}
+
+@keyframes nudge-pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 16px currentColor;
+    }
+    50% {
+        transform: scale(1.04);
+        box-shadow: 0 0 28px currentColor;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .neural-action-btn.nudge {
+        outline: 3px solid currentColor;
+        outline-offset: 3px;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* BATTLE LOG */
+.battle-log-panel {
+    max-width: 700px;
+    width: 100%;
+    margin: clamp(16px, 3vw, 32px) auto 0;
+}
+
+.battle-log-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin: 0 0 0.5rem 0.25rem;
+}
+
 .battle-log {
     background: rgba(15, 23, 42, 0.4);
     backdrop-filter: blur(40px);
     padding: 1.5rem;
     border-radius: 1.5rem;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    max-width: 700px;
     width: 100%;
-    margin: clamp(16px, 3vw, 32px) auto 0;
     height: clamp(100px, 20vh, 150px);
     overflow-y: auto;
     color: #cbd5e1;
+}
+
+/* issue #18: an unlabelled, permanently-blank scrolling box reads as a
+   rendering failure on a fresh combat screen -- show explanatory text
+   until the first real entry arrives. Pure CSS so it needs no JS upkeep
+   and can never drift out of sync with whether the log actually has
+   content. */
+.battle-log:empty::before {
+    content: "Your actions will appear here.";
+    display: block;
+    font-style: italic;
+    color: #64748b;
+    opacity: 0.8;
+}
+
+/* Comic-caption-style log entries (Epic #11 / issues #18, #19): each turn
+   renders as its own narrated panel instead of a bare text line, so the
+   log reads like a strip of captions rather than a console dump. */
+
+/* One .battle-log-turn groups every message from a single action (your
+   result, then the enemy's response) into one visual block, per issue
+   #18's "group messages by turn" ask -- rather than each line floating
+   as an independent, disconnected entry. */
+.battle-log-turn {
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.battle-log-turn:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.battle-log-speaker {
+    font-style: normal;
+    font-weight: 700;
+    opacity: 0.75;
+}
+
+.battle-log-entry {
+    position: relative;
+    padding: 0.55rem 0.75rem;
+    margin-bottom: 0.35rem;
+    background: rgba(30, 41, 59, 0.55);
+    border-left: 3px solid #64748b;
+    border-radius: 0.4rem;
+    font-style: italic;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    color: #e2e8f0;
+    animation: battleLogIn 0.22s ease-out;
+}
+
+.battle-log-entry:last-child {
+    margin-bottom: 0;
+}
+
+.battle-log-entry.tone-correct {
+    border-left-color: #4ade80;
+}
+
+.battle-log-entry.tone-incorrect {
+    border-left-color: #f87171;
+}
+
+.battle-log-entry.tone-crit {
+    border-left-color: #facc15;
+}
+
+.battle-log-entry.tone-falter {
+    border-left-color: #38bdf8;
+}
+
+.battle-log-entry.tone-system {
+    border-left-color: #64748b;
+    font-style: normal;
+    opacity: 0.85;
+}
+
+.battle-log-burst {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-right: 0.5em;
+    padding: 0.05em 0.45em;
+    border-radius: 0.25em;
+    font-size: 0.78em;
+    vertical-align: middle;
+}
+
+.battle-log-burst.crit {
+    background: rgba(250, 204, 21, 0.18);
+    color: #facc15;
+    box-shadow: 0 0 8px rgba(250, 204, 21, 0.35);
+}
+
+.battle-log-burst.falter {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+}
+
+@keyframes battleLogIn {
+    from {
+        opacity: 0;
+        transform: translateX(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .battle-log-entry {
+        animation: none;
+    }
 }
 
 @keyframes slideInFromBottom {
@@ -487,11 +963,187 @@ body {
     margin-bottom: 2rem;
 }
 
+.how-to-play-body {
+    text-align: left;
+}
+
+.how-to-play-stat {
+    margin-bottom: 1.25rem;
+}
+
+.how-to-play-stat:last-child {
+    margin-bottom: 0;
+}
+
+.how-to-play-stat dt {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    color: #9ad1ff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.how-to-play-stat dd {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
 .quiz-question {
     font-size: clamp(1.15rem, 3.5vw, 1.5rem);
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 1.5rem;
+}
+
+/* Per-tier question timer (issue #29) */
+.quiz-timer {
+    margin-bottom: 1rem;
+}
+
+.quiz-timer-track {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.quiz-timer-bar {
+    height: 100%;
+    width: 100%;
+    background: #00eaff;
+    border-radius: 3px;
+    transform-origin: left;
+    transition: width 1s linear, background-color 0.3s ease;
+}
+
+.quiz-timer-bar.urgent {
+    background: #ef4444;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .quiz-timer-bar {
+        transition: background-color 0.3s ease;
+    }
+}
+
+.quiz-timer-text {
+    display: block;
+    margin-top: 0.35rem;
+    font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace;
+    font-size: 0.8rem;
+    color: #9ad1ff;
+}
+
+/* Profile / track record panel (issue #22) */
+.profile-modal-body {
+    text-align: left;
+}
+
+.profile-summary-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    color: #9ad1ff;
+    margin-bottom: 1rem;
+}
+
+.profile-summary-stats b {
+    color: #e7f5ff;
+}
+
+.profile-section-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #9ad1ff;
+    margin: 1.25rem 0 0.5rem;
+}
+
+.profile-realms-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.profile-realms-table th,
+.profile-realms-table td {
+    text-align: left;
+    padding: 0.35rem 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.profile-realms-table th {
+    color: #9ad1ff;
+    font-weight: 600;
+}
+
+/* Issue #9: per-tier rows within each realm's table body. */
+.profile-realm-heading td {
+    padding-top: 0.75rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #e7f5ff;
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.profile-realm-group:first-child .profile-realm-heading td {
+    padding-top: 0;
+}
+
+.profile-tier-name {
+    text-transform: capitalize;
+    color: #94a3b8;
+}
+
+.profile-tier-empty {
+    color: #64748b;
+    font-style: italic;
+}
+
+.profile-cleared-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #94a3b8;
+}
+
+.profile-cleared-badge.cleared {
+    background: rgba(52, 211, 153, 0.15);
+    color: #34d399;
+}
+
+.profile-recent-runs {
+    max-height: 12rem;
+    overflow-y: auto;
+}
+
+.profile-run-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    padding: 0.35rem 0;
+    font-size: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.profile-run-entry.outcome-victory .profile-run-realm {
+    color: #34d399;
+}
+
+.profile-run-entry.outcome-defeat .profile-run-realm {
+    color: #ef4444;
 }
 
 /* KaTeX renders with its own default (black-on-transparent) text color --
@@ -633,6 +1285,42 @@ body {
     color: #ef4444;
 }
 
+/* Run summary (issue #21): score is the visually dominant element, not the
+   "Victory!"/"Defeat" flavour text above it. */
+.run-summary {
+    margin-top: 1rem;
+}
+
+.run-summary:focus {
+    outline: none;
+}
+
+.run-summary-score {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.75rem, 9vw, 5.5rem);
+    color: #e7f5ff;
+    line-height: 1;
+}
+
+.run-summary-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    color: #9ad1ff;
+}
+
+.end-screen-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
 /* Hint budget bar (simple/hard hint allowance + credits) */
 .hints-budget-bar {
     display: flex;
@@ -689,6 +1377,59 @@ body {
 
 .level-result-entry.incorrect .result-icon {
     color: #ef4444;
+}
+
+/* Missed questions expand to review the correct answer + hint (issue #21) --
+   a <details>/<summary> pair rather than custom expand/collapse JS, so
+   keyboard and screen-reader support come from the browser for free. */
+details.level-result-entry {
+    display: block;
+    padding: 0;
+}
+
+details.level-result-entry summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.35rem 0;
+    cursor: pointer;
+    list-style: none;
+}
+
+details.level-result-entry summary::-webkit-details-marker {
+    display: none;
+}
+
+details.level-result-entry summary::before {
+    content: '▸';
+    flex-shrink: 0;
+    color: #9ad1ff;
+    transition: transform 0.15s ease;
+}
+
+details.level-result-entry[open] summary::before {
+    transform: rotate(90deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    details.level-result-entry summary::before {
+        transition: none;
+    }
+}
+
+.level-result-review {
+    padding: 0 0 0.75rem 1.5rem;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+.level-result-review p {
+    margin: 0.25rem 0;
+}
+
+.level-result-review strong {
+    color: #e7f5ff;
 }
 
 /* Compact layout for short/narrow viewports (issue #2) */

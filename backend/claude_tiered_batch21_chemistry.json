@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the difference between physical states of the same element (allotropes)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Diamond and graphite are both made purely of carbon atoms, yet they look and behave very differently. What term describes different structural forms of the same element?",
+    "options": [
+      {"text": "Allotropes", "isCorrect": true, "feedback": "Correct -- allotropes are different structural arrangements of the same element, like diamond and graphite for carbon."},
+      {"text": "Isotopes", "isCorrect": false, "feedback": "Isotopes refer to atoms of the same element with different neutron counts, not different structural arrangements."},
+      {"text": "Compounds", "isCorrect": false, "feedback": "A compound involves multiple different elements bonded together -- diamond and graphite are both purely carbon."},
+      {"text": "Mixtures", "isCorrect": false, "feedback": "A mixture involves multiple different substances combined -- diamond and graphite are each a single pure element in a different structural form."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do diamond and graphite, both pure carbon, have such different physical properties (diamond is extremely hard, graphite is soft and slippery)?",
+    "options": [
+      {"text": "Their carbon atoms are arranged and bonded in completely different structural patterns, even though the atoms themselves are identical", "isCorrect": true, "feedback": "Correct -- diamond's rigid 3D lattice makes it hard, while graphite's layered sheet structure allows layers to slide past each other."},
+      {"text": "Diamond and graphite are actually made of completely different elements", "isCorrect": false, "feedback": "Both diamond and graphite are made purely of carbon -- the difference lies in atomic arrangement, not elemental identity."},
+      {"text": "This difference has nothing to do with atomic structure at all", "isCorrect": false, "feedback": "This difference is entirely explained by their differing atomic-level structural arrangements (allotropes)."},
+      {"text": "Diamond contains additional hydrogen atoms that graphite lacks", "isCorrect": false, "feedback": "Both diamond and graphite are composed purely of carbon atoms -- no additional hydrogen is involved in this comparison."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In graphite, carbon atoms form flat, layered sheets, with relatively weak forces holding the separate layers together (though strong bonds within each layer). How does this specific structure explain graphite's usefulness as a lubricant and pencil lead material?",
+    "options": [
+      {"text": "The weak forces between layers allow them to slide past each other easily, letting thin layers flake off (as pencil marks) or reduce friction between surfaces (as a lubricant)", "isCorrect": true, "feedback": "Correct -- this layered structure with weak interlayer forces is precisely what gives graphite its slippery, flaky characteristics useful for both applications."},
+      {"text": "Graphite's layers are actually bonded together as strongly as diamond's structure", "isCorrect": false, "feedback": "This is incorrect -- graphite's WEAKER interlayer forces (compared to diamond's uniformly strong 3D bonding) are exactly what give it its distinct sliding, flaking properties."},
+      {"text": "This has nothing to do with graphite's practical uses", "isCorrect": false, "feedback": "Graphite's layered atomic structure is directly and specifically responsible for its practical usefulness as both a lubricant and pencil lead material."},
+      {"text": "Graphite's structure is identical to diamond's, so they should have identical properties", "isCorrect": false, "feedback": "Graphite's structure (flat, weakly-bonded layers) is fundamentally different from diamond's rigid 3D lattice, which is exactly why their properties differ so dramatically."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term describes distinct structural variants that a single element's atoms can adopt.", "medium": "This term describes different structural forms that atoms of the same element can take.", "easy": "This word describes different forms of the same element, like carbon."},
+    "medium": {"hard": "Consider how the specific 3D or layered arrangement of identical atoms can produce vastly different macroscopic physical characteristics.", "medium": "The way the carbon atoms are connected and arranged is completely different between the two, even though the atoms themselves are the same.", "easy": "The carbon atoms are just arranged very differently in each one, even though they're the exact same type of atom."},
+    "hard": {"hard": "Weak interlayer bonding permits the flat carbon sheets to shear and separate easily under minimal force, directly enabling both the flaking (writing) and low-friction (lubricating) behaviors.", "medium": "Since the layers aren't stuck together very tightly, they can easily slide apart, which is exactly what happens when you write with a pencil or use it to reduce friction.", "easy": "Since the layers aren't stuck together very tightly, they easily slide apart -- that's why pencil marks rub off and it works as a lubricant."}
+  }
+}
+]

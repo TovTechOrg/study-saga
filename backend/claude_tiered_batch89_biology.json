@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between somatic and germline mutations",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'somatic mutation' occurs in:",
+    "options": [
+      {"text": "A regular body cell (not a reproductive/sex cell), and is not passed on to offspring", "isCorrect": true, "feedback": "Correct -- somatic mutations affect only the individual organism's own body cells and their descendants through cell division, not future generations."},
+      {"text": "A reproductive (sex) cell, and IS passed on to offspring", "isCorrect": false, "feedback": "That describes a GERMLINE mutation, not a somatic mutation, which specifically occurs in regular body cells and is NOT passed to offspring."},
+      {"text": "No cells at all -- somatic mutations don't actually occur in any cell type", "isCorrect": false, "feedback": "This isn't accurate -- somatic mutations DO occur, specifically in regular body (somatic) cells, not in some cell-free context."},
+      {"text": "Only in plant cells, never in animal cells", "isCorrect": false, "feedback": "This isn't accurate -- somatic mutations can occur in the body cells of BOTH plants and animals, not exclusively in plant cells."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Somatic mutations (occurring in regular body cells) can potentially cause health issues (like certain cancers) for the individual organism, but they are NOT passed on to that organism's offspring. Why does this specific limitation (not being heritable) make sense, given where somatic mutations occur?",
+    "options": [
+      {"text": "Since somatic mutations occur in regular body cells (not in the specific reproductive/sex cells responsible for creating offspring), these mutations simply aren't present in the genetic material that actually gets passed on during reproduction", "isCorrect": true, "feedback": "Correct -- this direct connection between WHERE a mutation occurs (a regular body cell vs. specifically a reproductive cell) and whether it can be inherited is precisely why somatic mutations, while potentially impactful for the individual, don't get passed to the next generation."},
+      {"text": "Somatic mutations actually ARE passed on to offspring, contrary to what's being described", "isCorrect": false, "feedback": "This isn't accurate -- somatic mutations specifically are NOT passed on to offspring, precisely because they occur in body cells rather than reproductive cells."},
+      {"text": "The specific location (cell type) where a mutation occurs has no actual connection to whether it can be inherited by offspring", "isCorrect": false, "feedback": "This isn't accurate -- the SPECIFIC cell type/location where a mutation occurs (somatic vs. germline) is DIRECTLY and centrally connected to and determines whether that mutation can be inherited."},
+      {"text": "Somatic mutations actually never have any health effects on the individual organism where they occur", "isCorrect": false, "feedback": "This isn't accurate -- somatic mutations CAN have significant health effects on the individual organism (like contributing to certain cancers), even though they're specifically not heritable/passed to offspring."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Cancer often develops through the accumulation of MULTIPLE somatic mutations within a single cell lineage over time (a concept sometimes called 'multi-hit' carcinogenesis), rather than typically arising from just one single mutation event. Why might requiring multiple accumulated mutations (rather than just one) actually serve as an important protective mechanism against cancer development?",
+    "options": [
+      {"text": "Requiring multiple specific mutations to accumulate within the SAME cell lineage before cancer fully develops makes spontaneous cancer formation statistically much less likely than if just a SINGLE mutation event were sufficient, since the probability of several specific, independent mutations occurring together in one cell lineage is much lower than the probability of any one single mutation occurring", "isCorrect": true, "feedback": "Correct -- this multi-hit requirement acts as a natural statistical safeguard, since requiring multiple specific, independent mutational events to occur together in the same cell lineage substantially reduces the overall probability of full cancer development compared to a hypothetical single-mutation trigger."},
+      {"text": "Requiring multiple mutations would actually make cancer development significantly MORE likely, not less likely", "isCorrect": false, "feedback": "This is backwards -- requiring MULTIPLE specific mutations to accumulate together actually makes full cancer development statistically LESS likely (a protective effect), not more likely, compared to a hypothetical single-mutation-trigger scenario."},
+      {"text": "This multi-hit mutation accumulation concept has no actual connection to understanding cancer risk or development", "isCorrect": false, "feedback": "This isn't accurate -- this multi-hit concept is actually CENTRALLY connected to and important for understanding the general statistical and biological basis of cancer development risk."},
+      {"text": "A single mutation event would actually be equally likely to cause cancer as an accumulation of multiple specific mutations", "isCorrect": false, "feedback": "This isn't accurate -- requiring MULTIPLE specific mutations together is generally considered LESS statistically likely to occur (and thus provides a protective effect) compared to if cancer could be triggered by just a single mutation event alone."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This mutation category arises within non-reproductive cellular lineages, precluding transmission through the germline to subsequent generations.", "medium": "This kind of genetic change happens in a regular body cell, not in an egg or sperm cell.", "easy": "This kind of change happens in a regular body cell, not an egg or sperm cell."},
+    "medium": {"hard": "Consider how the specific cellular pathway through which genetic material is transmitted to offspring (via reproductive cells) determines which mutations can and cannot be inherited.", "medium": "Since only egg and sperm cells' DNA actually gets passed to kids, a change that happens in a random skin or liver cell just doesn't make it into that inheritance pathway.", "easy": "Since only egg and sperm cells get passed to kids, a change in a random body cell doesn't make it there."},
+    "hard": {"hard": "Consider how compounding the required probability of several independent, specific genetic events occurring together within a single cell lineage creates a statistically robust barrier against full malignant transformation from any single random mutational event.", "medium": "It's like needing several specific unlucky rolls of the dice to all happen in a row within the same cell family, which is a lot less likely than just needing one single unlucky roll.", "easy": "It's like needing several specific unlucky things to happen together, which is less likely than needing just one."}
+  }
+}
+]

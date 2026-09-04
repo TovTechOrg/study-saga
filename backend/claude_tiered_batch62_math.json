@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the greatest common factor and least common multiple",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the Greatest Common Factor (GCF) of two numbers?",
+    "options": [
+      {"text": "The largest number that divides evenly into both numbers", "isCorrect": true, "feedback": "Correct -- the GCF is the biggest shared factor between two (or more) numbers."},
+      {"text": "The smallest number that both numbers can divide into evenly", "isCorrect": false, "feedback": "That describes the Least Common Multiple (LCM), not the GCF, which specifically involves finding the largest shared FACTOR, not smallest shared multiple."},
+      {"text": "The sum of the two numbers", "isCorrect": false, "feedback": "Simple addition doesn't determine the GCF -- it requires finding the largest number that evenly DIVIDES both given numbers."},
+      {"text": "The product of the two numbers multiplied together", "isCorrect": false, "feedback": "Multiplication doesn't determine the GCF -- it requires identifying the largest common divisor between the two numbers."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Find the Greatest Common Factor (GCF) of 12 and 18.",
+    "options": [
+      {"text": "6", "isCorrect": true, "feedback": "Correct -- the factors of 12 are 1,2,3,4,6,12, and factors of 18 are 1,2,3,6,9,18; the largest shared factor is 6."},
+      {"text": "36", "isCorrect": false, "feedback": "36 is actually the Least Common Multiple (LCM) of 12 and 18, not the Greatest Common Factor."},
+      {"text": "3", "isCorrect": false, "feedback": "While 3 IS a common factor, it's not the GREATEST one -- 6 is also a common factor and is larger."},
+      {"text": "2", "isCorrect": false, "feedback": "While 2 IS a common factor, it's not the GREATEST one -- 6 is also a common factor and is larger."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Find the Least Common Multiple (LCM) of 8 and 12 using their prime factorizations (8=2³, 12=2²×3).",
+    "options": [
+      {"text": "24", "isCorrect": true, "feedback": "Correct -- take the highest power of each prime factor present: 2³ × 3¹ = 8×3 = 24."},
+      {"text": "4", "isCorrect": false, "feedback": "This is actually the GREATEST COMMON FACTOR (GCF) of 8 and 12, not the Least Common Multiple."},
+      {"text": "96", "isCorrect": false, "feedback": "This is the product of 8×12, but the LCM using prime factorization should use only the HIGHEST power of each unique prime, not simply multiply the original numbers."},
+      {"text": "12", "isCorrect": false, "feedback": "12 alone is not a multiple of 8 (8 doesn't divide evenly into 12), so it can't be the LCM of both numbers."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value represents the largest positive integer that evenly divides each of the given numbers without remainder.", "medium": "This is the biggest number that can divide evenly into both of your original numbers.", "easy": "This is the biggest number that divides evenly into both numbers."},
+    "medium": {"hard": "List out all factors of each number, then identify the largest value appearing in both lists.", "medium": "List all the factors of 12 and all the factors of 18, then find the biggest one they share.", "easy": "Factors of 12: 1,2,3,4,6,12. Factors of 18: 1,2,3,6,9,18. The biggest shared one is 6."},
+    "hard": {"hard": "For each distinct prime factor appearing in either number's factorization, take the highest power present, then multiply these together.", "medium": "Take the highest power of 2 that appears (2³ from 8) and the highest power of 3 that appears (3¹ from 12), then multiply them together.", "easy": "Take 2³ (8) and multiply by 3 (from 12) to get 24."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between free fall acceleration and terminal velocity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An object in true 'free fall' (ignoring air resistance entirely) experiences:",
+    "options": [
+      {"text": "Constant acceleration due to gravity, with continuously increasing speed", "isCorrect": true, "feedback": "Correct -- in true free fall, gravity provides a constant acceleration (about 9.8 m/s² on Earth), causing speed to increase steadily over time."},
+      {"text": "Constant speed throughout the entire fall, with no acceleration", "isCorrect": false, "feedback": "This isn't accurate -- true free fall specifically involves CONSTANT ACCELERATION (continuously increasing speed), not constant speed with zero acceleration."},
+      {"text": "Decreasing speed as the fall continues", "isCorrect": false, "feedback": "This is backwards -- in true free fall, speed CONTINUOUSLY INCREASES (due to constant gravitational acceleration), not decreases."},
+      {"text": "No connection to gravity at all", "isCorrect": false, "feedback": "This isn't accurate -- free fall is SPECIFICALLY AND DIRECTLY caused by and defined by the constant acceleration due to gravity, not disconnected from gravity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In REAL falling scenarios (accounting for air resistance), an object eventually reaches 'terminal velocity' -- a constant maximum speed where it STOPS accelerating. Why does air resistance specifically cause this transition from continuous acceleration to eventual constant speed?",
+    "options": [
+      {"text": "As the object's falling SPEED increases, the opposing air resistance force ALSO increases, until it eventually becomes exactly EQUAL in magnitude to the downward gravitational force -- at that specific point, the NET force on the object becomes zero, meaning it stops accelerating and continues falling at that resulting constant (terminal) velocity", "isCorrect": true, "feedback": "Correct -- this balance point (air resistance force growing to exactly match gravitational force) is precisely why real falling objects eventually reach a stable terminal velocity, rather than continuing to accelerate indefinitely as in idealized, resistance-free free fall."},
+      {"text": "Air resistance actually has no real connection to why a falling object's acceleration eventually stops in real-world scenarios", "isCorrect": false, "feedback": "This isn't accurate -- air resistance IS DIRECTLY and specifically connected to and IS THE FUNDAMENTAL CAUSE of why a real falling object's acceleration eventually stops (reaching terminal velocity)."},
+      {"text": "Terminal velocity is actually reached when air resistance becomes much GREATER than the gravitational force, not simply equal to it", "isCorrect": false, "feedback": "This isn't accurate -- terminal velocity is specifically reached when air resistance becomes EQUAL to (not greater than) the gravitational force, resulting in exactly zero net force and thus zero further acceleration."},
+      {"text": "An object's falling speed would actually have no effect on the magnitude of the air resistance force acting on it", "isCorrect": false, "feedback": "This isn't accurate -- air resistance force SPECIFICALLY INCREASES with increasing falling speed, which is precisely the mechanism that eventually allows it to match and balance the gravitational force, producing terminal velocity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A skydiver's terminal velocity depends significantly on their body orientation (a spread-eagle position has much greater air resistance/lower terminal velocity than a compact, head-first diving position). Explain why changing orientation (without changing mass) can significantly change terminal velocity, based on the physics of how air resistance is generated.",
+    "options": [
+      {"text": "Air resistance force depends significantly on the object's CROSS-SECTIONAL AREA facing the direction of motion -- a spread-eagle position presents a much LARGER cross-sectional area (creating much more air resistance at any given speed), meaning the gravitational force gets balanced (reaching terminal velocity) at a LOWER speed, compared to a compact diving position's much smaller area, which requires a HIGHER speed before air resistance can similarly balance gravity", "isCorrect": true, "feedback": "Correct -- this direct connection between cross-sectional area and air resistance magnitude explains why skydivers can dramatically change their terminal velocity simply by changing body orientation/shape, without needing to change their actual mass at all, since area (not mass) is the key variable being manipulated here."},
+      {"text": "Cross-sectional area actually has no real connection to the amount of air resistance force experienced by a falling object", "isCorrect": false, "feedback": "This isn't accurate -- cross-sectional area IS DIRECTLY and significantly connected to and DETERMINES the magnitude of air resistance force experienced, which is precisely why orientation changes affect terminal velocity."},
+      {"text": "A spread-eagle position would actually result in a HIGHER terminal velocity than a compact diving position, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- a spread-eagle position (larger area, more air resistance) results in a LOWER terminal velocity, while a compact diving position (smaller area, less air resistance) results in a HIGHER terminal velocity, not the reverse."},
+      {"text": "Changing body orientation would actually also require changing the skydiver's mass for any terminal velocity change to occur", "isCorrect": false, "feedback": "This isn't accurate -- terminal velocity can change SIGNIFICANTLY due to orientation alone (changing cross-sectional area), WITHOUT requiring any change in the skydiver's actual mass at all."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This idealized motion involves a uniform gravitational acceleration acting exclusively on the falling body, absent any opposing resistive force.", "medium": "Without air resistance, a falling object just keeps speeding up steadily the whole way down.", "easy": "Without air resistance, a falling object keeps speeding up the whole way down."},
+    "medium": {"hard": "Consider how a speed-dependent opposing force can grow until it exactly cancels a constant driving force, producing a subsequent state of zero net force and thus zero acceleration.", "medium": "As the object falls faster, the air pushes back harder and harder, until that push finally matches gravity's pull exactly, and then the object just cruises at a steady speed.", "easy": "As the object falls faster, air pushes back harder until it matches gravity, and then speed stays steady."},
+    "hard": {"hard": "Consider how altering the object's presented cross-sectional area, independent of its mass, directly rescales the speed-dependent resistive force curve relative to the fixed gravitational force line.", "medium": "Spreading your body out is like opening a bigger parachute -- more surface catching the air means you don't have to fall as fast before the air resistance catches up to gravity.", "easy": "Spreading out is like opening a bigger parachute -- more surface means you don't fall as fast before balancing out."}
+  }
+}
+]

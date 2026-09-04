@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a simple pendulum's period formula",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the 'period' of a pendulum refer to?",
+    "options": [
+      {"text": "The time for one complete back-and-forth swing", "isCorrect": true, "feedback": "Correct -- period is the total time for the pendulum to return to its starting position after one full swing cycle."},
+      {"text": "The highest point the pendulum reaches", "isCorrect": false, "feedback": "That describes the amplitude or maximum displacement, not the period (a measure of time)."},
+      {"text": "The weight of the pendulum's bob", "isCorrect": false, "feedback": "Weight is a separate physical property, unrelated to the definition of a pendulum's period."},
+      {"text": "The material the pendulum is made of", "isCorrect": false, "feedback": "Material composition isn't related to the definition of period, which is specifically a measure of time."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If you increase the length of a pendulum's string, what generally happens to its period?",
+    "options": [
+      {"text": "The period increases (the pendulum swings more slowly)", "isCorrect": true, "feedback": "Correct -- a longer pendulum takes more time to complete each swing, resulting in a longer period."},
+      {"text": "The period decreases (the pendulum swings faster)", "isCorrect": false, "feedback": "This is backwards -- increasing the length actually makes each swing take LONGER, increasing the period, not decreasing it."},
+      {"text": "The period stays exactly the same, regardless of length", "isCorrect": false, "feedback": "Length is actually one of the primary factors affecting a pendulum's period -- changing it does change the period."},
+      {"text": "The pendulum stops swinging entirely", "isCorrect": false, "feedback": "Changing the length doesn't stop the pendulum -- it continues swinging, just at a different (in this case slower) rate."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The period of a simple pendulum is proportional to the SQUARE ROOT of its length (T ∝ √L). If you want to double a pendulum's period, by what factor must you increase its length?",
+    "options": [
+      {"text": "4 times (quadruple the length)", "isCorrect": true, "feedback": "Correct -- since period depends on the square root of length, doubling the period requires quadrupling the length (√4=2)."},
+      {"text": "2 times (double the length)", "isCorrect": false, "feedback": "This would only double the period if period were directly proportional to length, but it's actually proportional to the SQUARE ROOT of length, requiring a larger length increase."},
+      {"text": "8 times", "isCorrect": false, "feedback": "This overstates the needed increase -- quadrupling (not increasing by 8x) the length is what doubles the period, based on the square root relationship."},
+      {"text": "The length has no effect on achieving a longer period", "isCorrect": false, "feedback": "Length absolutely does affect the period -- increasing it appropriately (quadrupling, in this case) is exactly how you'd double the period."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measures the duration of a single, complete repeating oscillation cycle.", "medium": "This is how long it takes for the pendulum to swing there and back once.", "easy": "This is how long it takes the pendulum to swing there and back once."},
+    "medium": {"hard": "A longer physical length generally corresponds to a proportionally longer time needed to complete each full swing cycle.", "medium": "A longer pendulum takes more time to complete each full swing.", "easy": "A longer pendulum takes longer to swing back and forth."},
+    "hard": {"hard": "Since period scales with the square root of length, achieving a given multiplicative change in period requires squaring that same multiplicative factor for length.", "medium": "Since period depends on the square root of length, you need to square the desired period-doubling factor to find the needed length factor.", "easy": "Since doubling the period needs the SQUARE ROOT of the length to double, the length itself needs to go up by 4 times (since √4=2)."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between phenotype plasticity and genetic determinism",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Phenotypic plasticity' refers to an organism's ability to:",
+    "options": [
+      {"text": "Change its observable traits/characteristics in response to different environmental conditions, without changing its underlying DNA", "isCorrect": true, "feedback": "Correct -- phenotypic plasticity describes how the SAME genotype can produce different observable phenotypes depending on environmental factors, like a plant growing differently in sun versus shade."},
+      {"text": "Have its genetic code (DNA sequence) permanently change over its own single lifetime", "isCorrect": false, "feedback": "This isn't accurate -- phenotypic plasticity specifically involves observable TRAIT changes WITHOUT changing the underlying DNA sequence itself, not a permanent genetic code change."},
+      {"text": "Remain completely fixed and unchanging, regardless of any environmental conditions", "isCorrect": false, "feedback": "This is essentially the opposite of phenotypic plasticity, which specifically describes trait CHANGES in response to different environments, not a fixed, unchanging state."},
+      {"text": "Reproduce asexually without needing a mate", "isCorrect": false, "feedback": "Asexual reproduction is a completely different biological concept from phenotypic plasticity, which specifically concerns observable trait variability in response to environment, not reproductive method."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Some plant species can grow with notably different leaf shapes/sizes depending on whether they develop in sunny versus shaded conditions, despite having identical genetic material (genotype). Why does this phenomenon illustrate that phenotype isn't SOLELY determined by genotype alone?",
+    "options": [
+      {"text": "Since these genetically identical plants can develop into visibly DIFFERENT phenotypes purely based on environmental conditions during development, this demonstrates that phenotype actually results from an INTERACTION between genotype AND environment, rather than genotype alone rigidly and completely determining phenotype in every case", "isCorrect": true, "feedback": "Correct -- this classic example clearly demonstrates the important biological principle that phenotype generally results from genotype-environment INTERACTION, not simply genotype alone deterministically dictating a fixed, single phenotype outcome regardless of environmental context."},
+      {"text": "This phenomenon actually proves that genotype has absolutely no influence on phenotype whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- genotype still DOES have significant influence on phenotype (it sets the underlying potential/range for possible traits); this example specifically shows that ENVIRONMENT ALSO plays a role, not that genotype is entirely irrelevant to phenotype."},
+      {"text": "These plants with different leaf shapes actually have different genetic material, despite appearing genetically identical", "isCorrect": false, "feedback": "This isn't accurate -- the whole point of this phenomenon (phenotypic plasticity) is that these plants specifically DO have IDENTICAL genetic material (genotype), yet still produce different phenotypes based on environmental conditions."},
+      {"text": "This phenomenon has no actual connection to understanding the broader relationship between genotype and phenotype", "isCorrect": false, "feedback": "This isn't accurate -- this phenomenon is DIRECTLY and centrally connected to and helps illustrate an important nuance in understanding the genotype-phenotype relationship (interaction, not simple one-way genetic determinism)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Phenotypic plasticity can itself be considered an EVOLVED trait, meaning natural selection can favor genotypes that produce BENEFICIAL plasticity (the ability to appropriately adjust phenotype based on environmental cues) over genotypes that produce a single, rigidly fixed phenotype regardless of environment. Why might evolving this FLEXIBLE, environmentally-responsive strategy sometimes be more advantageous than evolving one single, rigidly fixed 'optimal' phenotype?",
+    "options": [
+      {"text": "In environments that are unpredictable or vary significantly (across generations or even within an individual's own lifetime), a genotype capable of producing an APPROPRIATELY ADJUSTED phenotype for whatever specific conditions actually occur can outperform a genotype limited to just one single, fixed phenotype that might only be optimal for ONE particular environmental condition and poorly suited for others", "isCorrect": true, "feedback": "Correct -- this recognition (that flexible, environmentally-responsive plasticity can itself be an advantageous evolved strategy, particularly in variable/unpredictable environments) represents a more sophisticated understanding of evolution, showing how NATURAL SELECTION can favor adaptive FLEXIBILITY itself, not just fixed, specific traits alone."},
+      {"text": "A rigidly fixed phenotype would actually always be evolutionarily superior to a flexible, plastic phenotype, in every possible situation", "isCorrect": false, "feedback": "This isn't necessarily accurate -- while a fixed phenotype might be advantageous in a highly STABLE, predictable environment, a FLEXIBLE plastic phenotype can be MORE advantageous specifically in variable/unpredictable environments, which is precisely the nuanced point being made here."},
+      {"text": "Phenotypic plasticity itself has no actual connection to being a trait that could itself be shaped by natural selection/evolution", "isCorrect": false, "feedback": "This isn't accurate -- phenotypic plasticity ITSELF can be considered an EVOLVED trait/capacity, DIRECTLY subject to natural selection pressures, not something disconnected from evolutionary processes."},
+      {"text": "Environmental variability/unpredictability has no actual connection to whether flexible plasticity or fixed phenotype would be more evolutionarily advantageous", "isCorrect": false, "feedback": "This isn't accurate -- environmental variability/unpredictability is DIRECTLY and centrally connected to and specifically determines whether a flexible, plastic strategy or a fixed strategy would tend to be more evolutionarily advantageous in a given context."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This capacity permits divergent phenotypic expression from an invariant genetic template, contingent upon differing environmental exposures.", "medium": "This is when the same genes can produce different-looking traits, depending on what environment the organism grows up in.", "easy": "This is when the same genes can produce different traits depending on the environment."},
+    "medium": {"hard": "Consider what conclusion about the true determinants of a physical trait can be drawn when identical genetic material produces observably divergent phenotypic outcomes under differing environmental circumstances.", "medium": "If the exact same genetic blueprint can produce different-looking results just based on sun versus shade, that shows environment plays a real role too, not just genes alone.", "easy": "If the same genes produce different results in sun versus shade, environment plays a role too, not just genes."},
+    "hard": {"hard": "Consider how a genetically-encoded capacity for adaptive phenotypic adjustment could provide superior average fitness across a range of environmental conditions compared to a single genetically-fixed phenotype optimized for only one specific condition.", "medium": "If you don't know exactly what conditions you'll face, being able to adjust and adapt as needed usually beats being locked into just one single 'best' strategy that only works great in ONE specific situation.", "easy": "If conditions are unpredictable, being able to adjust beats being locked into one strategy that only works in one situation."}
+  }
+}
+]

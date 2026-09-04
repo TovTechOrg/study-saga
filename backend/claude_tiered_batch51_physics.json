@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the electromagnetic spectrum and wavelength-energy relationship",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The electromagnetic spectrum includes radio waves, visible light, and X-rays, among others. What fundamentally distinguishes these different types of electromagnetic radiation from each other?",
+    "options": [
+      {"text": "Their wavelength (and correspondingly, their frequency and energy)", "isCorrect": true, "feedback": "Correct -- all electromagnetic radiation travels at the speed of light, but differs fundamentally in wavelength/frequency, which determines its category and properties."},
+      {"text": "Their speed of travel through a vacuum", "isCorrect": false, "feedback": "All electromagnetic radiation travels at the same speed (the speed of light) in a vacuum -- it's wavelength/frequency that differs, not speed."},
+      {"text": "Whether or not they are affected by gravity", "isCorrect": false, "feedback": "This isn't the key distinguishing factor among electromagnetic spectrum types -- wavelength is the primary distinguishing property."},
+      {"text": "Their chemical composition", "isCorrect": false, "feedback": "Electromagnetic radiation isn't defined by chemical composition -- it's a form of energy distinguished by wavelength/frequency."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Higher-frequency electromagnetic radiation (like X-rays) carries more energy per photon than lower-frequency radiation (like radio waves). Why does this relationship exist?",
+    "options": [
+      {"text": "Photon energy is directly proportional to frequency (E=hf), so as frequency increases, so does the energy carried by each individual photon", "isCorrect": true, "feedback": "Correct -- this direct proportionality (via Planck's constant, h) between frequency and photon energy explains why higher-frequency radiation types are generally more energetic (and potentially more dangerous, as with X-rays)."},
+      {"text": "Photon energy is actually completely unrelated to frequency", "isCorrect": false, "feedback": "This is incorrect -- photon energy and frequency have a direct, well-established proportional relationship (E=hf), which is central to understanding electromagnetic radiation."},
+      {"text": "Lower-frequency radiation always carries MORE energy than higher-frequency radiation", "isCorrect": false, "feedback": "This is backwards -- higher frequency corresponds to HIGHER energy per photon, not lower, according to the direct proportional relationship E=hf."},
+      {"text": "All electromagnetic radiation types carry exactly the same amount of energy per photon", "isCorrect": false, "feedback": "This isn't accurate -- different frequencies correspond to different photon energies, following the direct proportional relationship E=hf, not a uniform energy value."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Ionizing radiation (like X-rays and gamma rays) can damage biological tissue by knocking electrons loose from atoms/molecules, while non-ionizing radiation (like radio waves and visible light) generally cannot. How does the energy-frequency relationship explain this difference in biological risk?",
+    "options": [
+      {"text": "Since ionizing radiation has much higher frequency (and thus much higher photon energy), individual photons carry enough energy to actually eject electrons from atoms, while lower-frequency, lower-energy photons simply don't carry sufficient energy to do so", "isCorrect": true, "feedback": "Correct -- this direct connection between photon energy (governed by frequency) and the ability to ionize atoms explains why higher-frequency radiation poses greater biological risk than lower-frequency radiation, despite both being part of the same broader electromagnetic spectrum."},
+      {"text": "Ionizing and non-ionizing radiation actually have identical photon energies", "isCorrect": false, "feedback": "This isn't accurate -- ionizing radiation specifically has MUCH HIGHER photon energy (due to higher frequency) than non-ionizing radiation, which is exactly why it can cause ionization while non-ionizing radiation generally cannot."},
+      {"text": "This difference in biological effect has nothing to do with photon energy or frequency at all", "isCorrect": false, "feedback": "This difference is DIRECTLY explained by the photon energy-frequency relationship -- higher-energy (higher-frequency) photons can ionize atoms, while lower-energy ones cannot."},
+      {"text": "Non-ionizing radiation actually carries more energy per photon than ionizing radiation", "isCorrect": false, "feedback": "This is backwards -- ionizing radiation (like X-rays) has significantly HIGHER photon energy than non-ionizing radiation (like radio waves), which is precisely why it can cause ionization."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This defining property represents the spatial distance between successive peaks (or troughs) of a repeating electromagnetic oscillation.", "medium": "This is the distance between two repeating peaks of the electromagnetic wave.", "easy": "This is the distance between two repeating peaks of the wave."},
+    "medium": {"hard": "Recall the direct mathematical relationship connecting a photon's energy to its associated wave frequency.", "medium": "There's a direct rule connecting how fast a wave oscillates (frequency) to how much energy each little packet (photon) carries.", "easy": "There's a direct rule: faster oscillation (higher frequency) means more energy per photon."},
+    "hard": {"hard": "Consider the minimum energy threshold required to physically remove an electron from its atomic orbital, and compare that threshold to the photon energies at different points along the spectrum.", "medium": "Only photons carrying enough energy (from very high frequency) can actually knock an electron loose from an atom -- lower energy photons just aren't strong enough.", "easy": "Only very high-energy photons can knock an electron loose from an atom -- lower energy ones aren't strong enough."}
+  }
+}
+]

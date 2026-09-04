@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of domain and range of a function",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The 'domain' of a function refers to:",
+    "options": [
+      {"text": "The complete set of all possible input (x) values for the function", "isCorrect": true, "feedback": "Correct -- the domain represents every valid x-value that can be plugged into the function."},
+      {"text": "The complete set of all possible output (y) values for the function", "isCorrect": false, "feedback": "That describes the RANGE, not the domain -- domain specifically concerns valid INPUT values."},
+      {"text": "The single largest value the function can ever produce", "isCorrect": false, "feedback": "This describes a maximum value (part of range considerations), not domain, which is about the full set of valid inputs."},
+      {"text": "The graph's exact shape", "isCorrect": false, "feedback": "Domain doesn't describe the graph's shape -- it specifically identifies the set of valid input values for the function."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For the function f(x) = 1/(x-3), why must x = 3 be excluded from the function's domain?",
+    "options": [
+      {"text": "Because plugging in x=3 would require dividing by zero, which is mathematically undefined", "isCorrect": true, "feedback": "Correct -- division by zero is undefined in mathematics, so any x-value that would create a zero denominator must be excluded from the domain."},
+      {"text": "Because x=3 would actually make the function equal to exactly 0", "isCorrect": false, "feedback": "This isn't accurate -- plugging in x=3 would create a DIVISION BY ZERO situation (undefined), not simply a result of 0."},
+      {"text": "There's actually no mathematical reason to exclude x=3 from this function's domain", "isCorrect": false, "feedback": "There IS a clear, specific mathematical reason -- x=3 would create an undefined division-by-zero situation in this particular function."},
+      {"text": "All functions automatically exclude the number 3 from their domain, regardless of the specific function", "isCorrect": false, "feedback": "This isn't a universal rule -- x=3 is excluded specifically because of THIS function's particular denominator (x-3), not as some general rule applying to all functions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For the function g(x) = √(x-4) (a square root function), what is the domain, and why?",
+    "options": [
+      {"text": "x ≥ 4, since the expression under the square root (x-4) must be non-negative for the result to be a real number", "isCorrect": true, "feedback": "Correct -- since taking the square root of a negative number doesn't produce a real number, x-4 must be greater than or equal to 0, meaning x must be at least 4."},
+      {"text": "x ≤ 4, since the expression under the square root must be non-positive", "isCorrect": false, "feedback": "This is backwards -- the expression under a square root must be NON-NEGATIVE (not non-positive) to produce a real number result, meaning x must be greater than or equal to 4, not less than or equal to."},
+      {"text": "All real numbers, with no restrictions at all", "isCorrect": false, "feedback": "This isn't accurate -- square root functions DO have domain restrictions, specifically requiring the expression under the root to be non-negative, which excludes certain x-values here."},
+      {"text": "x = 4 only, as the sole valid domain value", "isCorrect": false, "feedback": "This is too restrictive -- while x=4 is included, many OTHER values (any x greater than 4) are also valid, since they also keep the expression under the root non-negative."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term denotes the comprehensive collection of permissible independent variable values for which the function is defined.", "medium": "This is the full list of x-values you're allowed to plug into the function.", "easy": "This is the full list of x-values you're allowed to plug in."},
+    "medium": {"hard": "Identify any value that would render the function's defining expression mathematically undefined, particularly checking for zero denominators.", "medium": "Check what value of x would make the bottom part of the fraction equal to zero, since that's not allowed.", "easy": "Plugging in 3 makes the bottom of the fraction (x-3) equal zero, which isn't allowed."},
+    "hard": {"hard": "Establish the inequality ensuring the radicand (expression under the root) remains non-negative, then solve that inequality for the domain variable.", "medium": "Set the expression under the square root sign to be greater than or equal to zero, then solve that inequality for x.", "easy": "Set x-4 to be greater than or equal to 0, then solve: x is greater than or equal to 4."}
+  }
+}
+]

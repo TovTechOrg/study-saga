@@ -1,0 +1,617 @@
+[
+{
+  "topic": "convergent tectonic boundary",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is it called when two of Earth's tectonic plates move toward each other and collide?",
+    "options": [
+      {"text": "Convergent boundary", "isCorrect": true, "feedback": "Correct -- convergent means moving toward each other, or colliding."},
+      {"text": "Divergent boundary", "isCorrect": false, "feedback": "Divergent boundaries are where plates move APART, not toward each other."},
+      {"text": "Transform boundary", "isCorrect": false, "feedback": "Transform boundaries are where plates slide past each other sideways, not collide."},
+      {"text": "Fault line", "isCorrect": false, "feedback": "A fault line is a general crack in Earth's crust -- it doesn't specifically describe plates colliding."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What commonly forms when two continental plates collide at a convergent boundary?",
+    "options": [
+      {"text": "Large mountain ranges", "isCorrect": true, "feedback": "Correct -- the Himalayas famously formed this way, as the Indian and Eurasian plates continue to collide."},
+      {"text": "New ocean floor", "isCorrect": false, "feedback": "New ocean floor forms at divergent boundaries, where plates pull apart -- not where they collide."},
+      {"text": "A flat, featureless plain", "isCorrect": false, "feedback": "Colliding plates crumple and push land upward, rather than flattening it out."},
+      {"text": "A deep canyon carved by a river", "isCorrect": false, "feedback": "River-carved canyons result from erosion, not from plates colliding."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does a convergent boundary between an oceanic and a continental plate typically differ from one between two continental plates?",
+    "options": [
+      {"text": "The denser oceanic plate subducts beneath the continental plate, often forming volcanoes and deep trenches, while two colliding continental plates instead crumple upward into mountains", "isCorrect": true, "feedback": "Correct -- since continental plates are similarly buoyant, neither easily sinks beneath the other, so the collision folds the crust upward instead."},
+      {"text": "Both scenarios always produce identical results, regardless of plate type", "isCorrect": false, "feedback": "The outcome depends heavily on the density and type of the colliding plates -- the two scenarios differ significantly."},
+      {"text": "An oceanic-continental collision always produces new islands made of coral, unrelated to volcanic activity", "isCorrect": false, "feedback": "Coral islands aren't a product of tectonic subduction -- oceanic-continental collisions are associated with volcanic activity and trenches instead."},
+      {"text": "A continental-continental collision always causes the crust to sink into the mantle and disappear entirely", "isCorrect": false, "feedback": "Continental crust generally resists sinking due to its buoyancy, which is exactly why it crumples upward into mountains instead."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This boundary type is defined by plates approaching and pressing into each other, the geometric opposite of separating plates.", "medium": "This is the type of plate boundary where the plates are pushing toward each other.", "easy": "This is when two of Earth's plates move toward each other and crash together."},
+    "medium": {"hard": "The colliding plates have nowhere to go but up, since neither plate sinks beneath the other in this specific scenario.", "medium": "When two continents collide, the land has to go somewhere -- think about what happens when you push two things together from both sides.", "easy": "When two continents crash into each other, the land gets pushed way up, forming tall mountains."},
+    "hard": {"hard": "The deciding factor is relative plate density -- oceanic crust is denser and sinks, while similarly buoyant continental crust resists sinking and folds instead.", "medium": "The deciding factor is which plate is denser -- one type of plate can sink beneath the other, while two similar plates can't.", "easy": "One kind of plate is heavier and sinks beneath the other; two similarly 'light' continental plates instead just push each other upward."}
+  }
+},
+{
+  "topic": "transform tectonic boundary",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is it called when two tectonic plates slide horizontally past each other?",
+    "options": [
+      {"text": "Transform boundary", "isCorrect": true, "feedback": "Correct -- transform boundaries involve plates sliding past one another sideways."},
+      {"text": "Convergent boundary", "isCorrect": false, "feedback": "Convergent boundaries are where plates collide, not slide past each other sideways."},
+      {"text": "Divergent boundary", "isCorrect": false, "feedback": "Divergent boundaries are where plates move apart, not slide past each other sideways."},
+      {"text": "Subduction zone", "isCorrect": false, "feedback": "A subduction zone is where one plate sinks beneath another -- a feature of convergent, not transform, boundaries."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which famous California fault line is a well-known example of a transform boundary?",
+    "options": [
+      {"text": "The San Andreas Fault", "isCorrect": true, "feedback": "Correct -- the San Andreas Fault marks where the Pacific and North American plates slide past each other."},
+      {"text": "The Ring of Fire", "isCorrect": false, "feedback": "The Ring of Fire is a much larger zone circling the Pacific Ocean, made up of many different boundary types, not one specific transform fault."},
+      {"text": "The Mid-Atlantic Ridge", "isCorrect": false, "feedback": "The Mid-Atlantic Ridge is a divergent boundary in the ocean, not a transform fault in California."},
+      {"text": "The Mariana Trench", "isCorrect": false, "feedback": "The Mariana Trench is a deep convergent-boundary feature in the Pacific, not a California transform fault."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do transform boundaries typically produce earthquakes but not the volcanic activity associated with convergent or divergent boundaries?",
+    "options": [
+      {"text": "The plates slide horizontally past each other, building up and releasing friction as earthquakes, without one plate sinking or magma rising to the surface", "isCorrect": true, "feedback": "Correct -- without subduction or new crust formation, there's no direct path for magma to reach the surface at a transform boundary."},
+      {"text": "Transform boundaries only occur deep in the ocean, far from any volcanic activity", "isCorrect": false, "feedback": "Transform boundaries can occur on land, like the San Andreas Fault, and location alone isn't why they lack volcanic activity."},
+      {"text": "Transform boundaries move too slowly to generate any earthquakes at all", "isCorrect": false, "feedback": "Transform boundaries are, in fact, well known for producing significant earthquakes -- that's one of their defining features."},
+      {"text": "Volcanic activity is actually more common at transform boundaries than at any other boundary type", "isCorrect": false, "feedback": "This is the opposite of reality -- volcanic activity is most associated with convergent and divergent boundaries, not transform ones."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This boundary type involves plates grinding past each other horizontally, unlike boundaries where they collide or separate.", "medium": "This is the boundary type where plates slide sideways past one another, like two cars passing in opposite lanes.", "easy": "This is when two plates slide past each other sideways, instead of crashing together or pulling apart."},
+    "medium": {"hard": "This fault is a well-known land-based example, distinct from a Pacific-wide seismic zone, an oceanic ridge, or a deep ocean trench.", "medium": "This fault is located on land in California, distinct from an oceanic ridge or a deep ocean trench.", "easy": "This is a specific fault line in California, known for causing significant earthquakes."},
+    "hard": {"hard": "The mechanism is purely mechanical friction from sideways sliding, with no subduction or crust-separation process to bring magma toward the surface.", "medium": "The mechanism is friction from sideways sliding -- there's no sinking plate or separating crust to bring magma up.", "easy": "These boundaries just involve grinding and friction from sliding sideways -- nothing pulls magma up to the surface like at other boundary types."}
+  }
+},
+{
+  "topic": "plate tectonics theory",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the scientific theory called that explains how Earth's outer shell is broken into large moving pieces called plates?",
+    "options": [
+      {"text": "Plate tectonics", "isCorrect": true, "feedback": "Correct -- plate tectonics theory explains the movement and interaction of Earth's lithospheric plates."},
+      {"text": "The water cycle", "isCorrect": false, "feedback": "The water cycle describes water's movement through evaporation, precipitation, and collection -- unrelated to moving tectonic plates."},
+      {"text": "The greenhouse effect", "isCorrect": false, "feedback": "The greenhouse effect describes how gases trap heat in the atmosphere -- unrelated to moving tectonic plates."},
+      {"text": "Natural selection", "isCorrect": false, "feedback": "Natural selection is a biological theory about species evolving over time -- unrelated to moving tectonic plates."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What underlying force is widely believed to drive the slow movement of tectonic plates?",
+    "options": [
+      {"text": "Convection currents within the mantle", "isCorrect": true, "feedback": "Correct -- heat-driven convection currents in the semi-fluid mantle are thought to slowly drag the plates above them."},
+      {"text": "Strong winds at the Earth's surface", "isCorrect": false, "feedback": "Surface winds have no connection to the movement of massive tectonic plates deep below."},
+      {"text": "The gravitational pull of the moon alone", "isCorrect": false, "feedback": "While the moon's gravity affects tides, it isn't considered the driving force behind plate movement -- mantle convection is."},
+      {"text": "Ocean currents pushing against the coastlines", "isCorrect": false, "feedback": "Ocean currents affect coastlines and climate, but they don't drive the movement of entire tectonic plates."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What evidence, observed by Alfred Wegener, initially supported the idea of continental drift, a key precursor to modern plate tectonics theory?",
+    "options": [
+      {"text": "Matching coastlines (like South America and Africa fitting together), along with similar fossils and rock formations found across now-separated continents", "isCorrect": true, "feedback": "Correct -- these clues suggested the continents were once joined together before drifting apart."},
+      {"text": "Direct satellite photographs showing the continents moving in real time", "isCorrect": false, "feedback": "Satellites didn't exist in Wegener's early 20th-century era -- his evidence came from coastlines, fossils, and rock formations."},
+      {"text": "Written historical records describing the continents splitting apart", "isCorrect": false, "feedback": "No historical records describe continents splitting -- Wegener's evidence was geological and fossil-based, not historical documentation."},
+      {"text": "Measurements of ocean temperature differences between continents", "isCorrect": false, "feedback": "Ocean temperature wasn't Wegener's key evidence -- matching coastlines, fossils, and rock formations were."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This theory describes Earth's crust as broken into large sections that shift atop a semi-fluid layer beneath them.", "medium": "This theory explains why continents seem to slowly drift and why earthquakes and volcanoes cluster along certain lines.", "easy": "This theory explains that Earth's surface is broken into big moving pieces called plates."},
+    "medium": {"hard": "The driving mechanism involves heat rising and sinking within a layer beneath the plates, not surface wind, lunar gravity, or ocean currents.", "medium": "The driving mechanism involves heat moving in a slow, circular pattern deep underground, beneath the plates.", "easy": "Deep underground, heat rises and sinks in slow circles, and this movement is thought to drag the plates along with it."},
+    "hard": {"hard": "The evidence was geological and paleontological in nature -- shapes, fossils, and rock layers -- rather than direct observation, historical writing, or ocean temperature data, none of which were available or relevant at the time.", "medium": "The evidence involved how continents' shapes and their fossils lined up -- not direct observation or historical writing, which weren't available at the time.", "easy": "Wegener noticed that continents' coastlines looked like puzzle pieces that used to fit together, and similar fossils appeared on both sides."}
+  }
+},
+{
+  "topic": "the monsoon climate",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a seasonal wind pattern that reverses direction, often bringing very heavy rainfall during part of the year?",
+    "options": [
+      {"text": "Monsoon", "isCorrect": true, "feedback": "Correct -- a monsoon is a seasonal reversing wind pattern, often bringing intense rain during its wet phase."},
+      {"text": "Hurricane", "isCorrect": false, "feedback": "A hurricane is a single, powerful storm system -- not a broader seasonal wind pattern that reverses direction."},
+      {"text": "Tornado", "isCorrect": false, "feedback": "A tornado is a short-lived, violently rotating column of air -- not a seasonal wind pattern."},
+      {"text": "Drought", "isCorrect": false, "feedback": "A drought is a prolonged period of little to no rainfall -- the opposite of a monsoon's heavy rain phase."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which region of the world is most famously associated with a strong seasonal monsoon climate?",
+    "options": [
+      {"text": "South Asia (including India)", "isCorrect": true, "feedback": "Correct -- the South Asian monsoon brings a crucial and dramatic wet season each year."},
+      {"text": "Antarctica", "isCorrect": false, "feedback": "Antarctica's extreme cold and ice-covered climate is unrelated to monsoon wind patterns."},
+      {"text": "The Sahara Desert", "isCorrect": false, "feedback": "The Sahara is known for its extreme dryness, not for a monsoon-driven wet season."},
+      {"text": "Northern Scandinavia", "isCorrect": false, "feedback": "Northern Scandinavia's climate is shaped by its high latitude, not a monsoon wind pattern."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What primarily causes the seasonal wind reversal characteristic of a monsoon climate?",
+    "options": [
+      {"text": "Differential heating and cooling between land and ocean across the seasons", "isCorrect": true, "feedback": "Correct -- land heats and cools faster than the ocean, driving a seasonal reversal in wind direction and moisture flow."},
+      {"text": "The gravitational pull of the moon changing with the seasons", "isCorrect": false, "feedback": "Lunar gravity drives tides, not the seasonal land-ocean heating pattern that causes monsoon wind reversal."},
+      {"text": "Volcanic eruptions occurring on a predictable yearly schedule", "isCorrect": false, "feedback": "Volcanic eruptions aren't a scheduled seasonal phenomenon and aren't the cause of monsoon wind reversal."},
+      {"text": "Ocean currents that reverse direction once a year worldwide", "isCorrect": false, "feedback": "Ocean currents don't universally reverse on a yearly cycle -- the monsoon's cause is differential land-ocean heating, not ocean currents."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This wind pattern brings a dramatic wet season to certain regions each year, then reverses for a drier season.", "medium": "This seasonal wind pattern brings a heavy rainy season to certain parts of the world each year.", "easy": "This is a seasonal wind pattern that brings a big rainy season to certain regions each year."},
+    "medium": {"hard": "This region relies heavily on this seasonal wind pattern for its agriculture and water supply each year.", "medium": "This densely populated region in Asia depends heavily on this seasonal rain pattern for farming.", "easy": "This region includes a country famous for its heavy seasonal rains that farmers depend on."},
+    "hard": {"hard": "The mechanism involves land and ocean heating and cooling at different rates across the seasons, not lunar gravity, volcanic activity, or a universal ocean-current reversal.", "medium": "The mechanism involves land and water heating up and cooling down at different speeds throughout the year.", "easy": "Land heats up and cools down faster than the ocean does, and this difference drives the wind to reverse direction with the seasons."}
+  }
+},
+{
+  "topic": "the tundra biome",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which biome is known for extremely cold temperatures, a short growing season, and a layer of permanently frozen ground?",
+    "options": [
+      {"text": "Tundra", "isCorrect": true, "feedback": "Correct -- the tundra biome is defined by its cold climate and permanently frozen subsoil."},
+      {"text": "Tropical rainforest", "isCorrect": false, "feedback": "Tropical rainforests are hot and rainy year-round -- the opposite of the tundra's cold climate."},
+      {"text": "Savanna", "isCorrect": false, "feedback": "Savannas are warm grasslands with wet and dry seasons, not extremely cold, frozen environments."},
+      {"text": "Desert", "isCorrect": false, "feedback": "Deserts are defined by extreme dryness, not necessarily extreme cold or permanently frozen ground."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 'permafrost,' a defining feature of many tundra regions?",
+    "options": [
+      {"text": "A layer of permanently frozen subsoil", "isCorrect": true, "feedback": "Correct -- permafrost remains frozen year-round, even during the brief tundra summer."},
+      {"text": "A type of tundra plant with deep roots", "isCorrect": false, "feedback": "Permafrost refers to frozen ground, not a plant -- tundra plants actually tend to have shallow roots due to permafrost."},
+      {"text": "A seasonal flood that occurs every spring", "isCorrect": false, "feedback": "Permafrost is a ground condition, not a seasonal flooding event."},
+      {"text": "A type of ice formation found only in glaciers", "isCorrect": false, "feedback": "Permafrost is frozen ground/soil, distinct from the ice found in a glacier."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do tundra regions typically support very limited tree growth, despite having some plant life?",
+    "options": [
+      {"text": "The permafrost layer and short growing season prevent the deep root systems and long growth periods that trees require", "isCorrect": true, "feedback": "Correct -- trees generally can't establish deep enough roots or grow long enough each year to survive in tundra conditions."},
+      {"text": "Tundra soil contains toxic chemicals that kill any tree that tries to grow", "isCorrect": false, "feedback": "Toxicity isn't the limiting factor -- the frozen subsoil and short growing season are what prevent tree growth."},
+      {"text": "There is too much rainfall in the tundra for trees to survive", "isCorrect": false, "feedback": "Tundra regions actually tend to receive relatively little precipitation -- the limiting factors are cold and permafrost, not excess rain."},
+      {"text": "Trees are deliberately removed by animals living in the tundra", "isCorrect": false, "feedback": "Animal activity isn't the reason trees struggle in the tundra -- the frozen subsoil and short growing season are."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This biome's ground stays frozen even during its brief warmer season.", "medium": "This biome is extremely cold, with a layer of ground that never fully thaws.", "easy": "This is the extremely cold biome with a layer of ground that stays frozen all year."},
+    "medium": {"hard": "This term describes a subsurface condition, not a plant, a flood event, or glacial ice specifically.", "medium": "This term describes something about the GROUND, not a plant, a flood, or glacial ice.", "easy": "This word describes ground that stays frozen underneath, even when the surface briefly thaws in summer."},
+    "hard": {"hard": "The limiting factors are the frozen subsoil restricting root depth and the short season restricting growth time, not soil toxicity, excess rainfall, or animal interference.", "medium": "The limiting factors are frozen ground blocking deep roots, and a short growing season -- not toxicity or too much rain.", "easy": "Trees need deep roots and a long time to grow, but frozen ground and a short summer don't give them either."}
+  }
+},
+{
+  "topic": "the savanna biome",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which biome is characterized by grassland with scattered trees and distinct wet and dry seasons?",
+    "options": [
+      {"text": "Savanna", "isCorrect": true, "feedback": "Correct -- savannas are grasslands with scattered trees, shaped by a strong wet/dry seasonal pattern."},
+      {"text": "Tundra", "isCorrect": false, "feedback": "Tundra is defined by extreme cold, not grassland with a wet/dry seasonal pattern."},
+      {"text": "Tropical rainforest", "isCorrect": false, "feedback": "Tropical rainforests are dense forests with consistent year-round rain, not seasonal grassland."},
+      {"text": "Taiga", "isCorrect": false, "feedback": "Taiga is a cold coniferous forest biome, not a grassland with wet/dry seasons."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What key seasonal pattern characterizes most savanna regions?",
+    "options": [
+      {"text": "A distinct wet season and a distinct dry season each year", "isCorrect": true, "feedback": "Correct -- this seasonal rainfall pattern shapes the savanna's grassland-with-scattered-trees landscape."},
+      {"text": "Constant heavy rain with no dry season at all", "isCorrect": false, "feedback": "Constant year-round rain describes a tropical rainforest, not a savanna's distinct wet/dry pattern."},
+      {"text": "Permanent snow cover throughout the year", "isCorrect": false, "feedback": "Permanent snow describes polar or high-altitude climates, not a savanna."},
+      {"text": "No measurable rainfall at any point in the year", "isCorrect": false, "feedback": "Savannas do receive significant rainfall during their wet season -- this describes a desert instead."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does a savanna's vegetation and rainfall pattern typically differ from a tropical rainforest's?",
+    "options": [
+      {"text": "A savanna has grassland with scattered trees and a seasonal wet/dry cycle, while a rainforest has dense, continuous tree cover with rain spread fairly evenly throughout the year", "isCorrect": true, "feedback": "Correct -- the rainforest's consistent rainfall supports dense, continuous canopy cover, unlike the savanna's seasonal pattern."},
+      {"text": "A savanna has more total annual rainfall than a rainforest", "isCorrect": false, "feedback": "This reverses reality -- tropical rainforests generally receive far more total annual rainfall than savannas."},
+      {"text": "A savanna and a rainforest have essentially identical vegetation and rainfall patterns", "isCorrect": false, "feedback": "The two biomes differ significantly in both vegetation density and seasonal rainfall distribution."},
+      {"text": "A savanna only exists in the Southern Hemisphere, while a rainforest only exists in the Northern Hemisphere", "isCorrect": false, "feedback": "Both biomes exist in both hemispheres -- hemisphere location isn't the distinguishing feature."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This biome's landscape is shaped by an alternating pattern of a wet season and a dry season each year.", "medium": "This biome is grassy with scattered trees, shaped by a strong seasonal rain pattern.", "easy": "This is the grassy biome with scattered trees, famous for the wildlife found on the African plains."},
+    "medium": {"hard": "This pattern involves alternating rainfall abundance across the year, unlike constant rain, permanent snow, or a total absence of rain.", "medium": "This pattern alternates between a rainy period and a dry period each year.", "easy": "Part of the year this biome gets lots of rain; the rest of the year it gets very little."},
+    "hard": {"hard": "The distinguishing factor is rainfall consistency across the year -- seasonal versus evenly distributed -- which in turn shapes tree density, not total rainfall amount, identical vegetation, or hemisphere restriction.", "medium": "The distinguishing factor is whether rain falls evenly all year or in a seasonal wet/dry pattern -- not total rainfall or hemisphere.", "easy": "One biome gets rain fairly evenly all year, supporting a dense forest; the other has a wet season and dry season, supporting grassland instead."}
+  }
+},
+{
+  "topic": "the taiga (boreal forest) biome",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which biome, found in far northern regions, is dominated by cold-hardy coniferous forests?",
+    "options": [
+      {"text": "Taiga (boreal forest)", "isCorrect": true, "feedback": "Correct -- the taiga is the world's largest land biome, dominated by coniferous trees in cold northern regions."},
+      {"text": "Savanna", "isCorrect": false, "feedback": "Savannas are warm grasslands, not cold coniferous forests."},
+      {"text": "Desert", "isCorrect": false, "feedback": "Deserts are defined by extreme dryness, not coniferous forest cover."},
+      {"text": "Tropical rainforest", "isCorrect": false, "feedback": "Tropical rainforests are warm, dense forests near the equator, not cold northern coniferous forests."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What type of trees dominate the taiga biome?",
+    "options": [
+      {"text": "Coniferous (evergreen, needle-leaved) trees", "isCorrect": true, "feedback": "Correct -- species like spruce, pine, and fir dominate the taiga, well-adapted to cold, snowy conditions."},
+      {"text": "Broad-leaved tropical trees", "isCorrect": false, "feedback": "Broad-leaved tropical trees are associated with rainforests, not the cold taiga biome."},
+      {"text": "Cacti and other succulents", "isCorrect": false, "feedback": "Cacti and succulents are associated with deserts, not the cold, forested taiga."},
+      {"text": "No trees grow in the taiga at all", "isCorrect": false, "feedback": "The taiga is actually defined by its extensive coniferous forest cover -- it isn't treeless like the tundra."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does the taiga's climate typically compare to the tundra biome often found farther north?",
+    "options": [
+      {"text": "The taiga has a longer growing season and less extreme cold, allowing trees to grow, unlike the tundra's permafrost-limited environment", "isCorrect": true, "feedback": "Correct -- this climate difference is exactly why the taiga supports dense forest while the tundra remains largely treeless."},
+      {"text": "The taiga is actually colder than the tundra year-round", "isCorrect": false, "feedback": "This reverses the general relationship -- the tundra is typically colder and has a shorter growing season than the taiga."},
+      {"text": "The taiga and tundra have virtually identical climates and vegetation", "isCorrect": false, "feedback": "The two biomes differ significantly, especially in tree cover and growing season length."},
+      {"text": "The taiga receives dramatically more rainfall than any tropical biome", "isCorrect": false, "feedback": "Tropical rainforests generally receive far more rainfall than the taiga -- rainfall amount isn't the key distinguishing climate factor here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This biome is the world's largest land biome by area, stretching across northern regions of Europe, Asia, and North America.", "medium": "This is the cold, forested biome found just south of the tundra in the far north.", "easy": "This cold, forested biome covers huge stretches of northern Canada, Russia, and Scandinavia."},
+    "medium": {"hard": "These trees keep their needle-like leaves year-round and are well-suited to shedding heavy snow.", "medium": "These trees stay green all year and have needle-shaped leaves, well-suited to cold and snow.", "easy": "These evergreen trees have needles instead of broad leaves, helping them survive the cold."},
+    "hard": {"hard": "The key difference is growing season length and overall temperature, not total annual rainfall or an assumption that the two biomes are identical.", "medium": "The key difference is how long and how mild the growing season is, not rainfall amount.", "easy": "One of these has a slightly longer, milder growing season that allows trees to grow; the other is too cold and frozen for trees at all."}
+  }
+},
+{
+  "topic": "population density",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes the number of people living within a given unit of area, such as per square kilometer?",
+    "options": [
+      {"text": "Population density", "isCorrect": true, "feedback": "Correct -- population density measures how crowded or sparse a given area is."},
+      {"text": "Gross domestic product", "isCorrect": false, "feedback": "Gross domestic product measures a country's total economic output, not how many people live per unit of area."},
+      {"text": "Life expectancy", "isCorrect": false, "feedback": "Life expectancy measures how long people are expected to live, not how many people live in a given area."},
+      {"text": "Literacy rate", "isCorrect": false, "feedback": "Literacy rate measures the percentage of people who can read and write, not how many people live in a given area."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these locations would typically have the HIGHEST population density?",
+    "options": [
+      {"text": "A major coastal city", "isCorrect": true, "feedback": "Correct -- coastal cities often concentrate large numbers of people in a relatively small area."},
+      {"text": "Antarctica", "isCorrect": false, "feedback": "Antarctica has an extremely low permanent population density due to its extreme climate."},
+      {"text": "The Sahara Desert", "isCorrect": false, "feedback": "The Sahara's harsh, arid conditions support a very low population density compared to a major city."},
+      {"text": "Remote Siberian wilderness", "isCorrect": false, "feedback": "Remote Siberian wilderness has a very low population density compared to a major coastal city."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do river valleys and coastal plains historically tend to have higher population densities than mountainous or desert regions?",
+    "options": [
+      {"text": "They typically offer more fertile land, accessible fresh water, and easier trade and transportation routes", "isCorrect": true, "feedback": "Correct -- these advantages made river valleys and coastal plains attractive for settlement throughout history."},
+      {"text": "Governments have historically banned settlement in mountainous or desert regions", "isCorrect": false, "feedback": "There's no universal historical ban on settling mountains or deserts -- the pattern is driven by practical advantages of river valleys and coastal plains, not prohibition."},
+      {"text": "Mountainous and desert regions have historically had better trade access than river valleys", "isCorrect": false, "feedback": "This reverses the typical pattern -- river valleys and coastal plains generally offer easier trade and transportation access."},
+      {"text": "There is no actual historical correlation between geography and population density", "isCorrect": false, "feedback": "There is a well-documented historical correlation, driven by access to resources like fertile land, water, and trade routes."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measure expresses how crowded a place is, relative to its physical size.", "medium": "This measure tells you how many people are packed into a given amount of land.", "easy": "This measure tells you how crowded a place is -- how many people live in a certain amount of space."},
+    "medium": {"hard": "This location offers abundant resources and infrastructure that support large populations, unlike the extreme or remote environments listed.", "medium": "This location has resources and infrastructure that support large numbers of people, unlike the extreme environments listed.", "easy": "Out of these options, this is the only one that isn't an extremely cold, dry, or remote environment."},
+    "hard": {"hard": "The advantage is practical access to resources -- fertile soil, water, and transportation routes -- not government policy, a reversed trade advantage, or an absence of any real pattern.", "medium": "The advantage is about access to water, fertile soil, and trade routes -- not government rules.", "easy": "These areas tend to have good farmland, fresh water, and are easy to travel to and from for trade."}
+  }
+},
+{
+  "topic": "push and pull factors of migration",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes the reasons that drive people to leave one place ('push') and attract them to another ('pull')?",
+    "options": [
+      {"text": "Push and pull factors", "isCorrect": true, "feedback": "Correct -- push factors drive people away from a place, while pull factors attract them to a new one."},
+      {"text": "Supply and demand", "isCorrect": false, "feedback": "Supply and demand is an economic concept about pricing and markets, not the reasons behind migration specifically."},
+      {"text": "Cause and effect", "isCorrect": false, "feedback": "Cause and effect is a general logical relationship, not the specific migration terminology used here."},
+      {"text": "Import and export", "isCorrect": false, "feedback": "Import and export describe trade of goods between countries, not the reasons people migrate."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is an example of a 'push' factor in migration?",
+    "options": [
+      {"text": "Famine or war in a person's home country", "isCorrect": true, "feedback": "Correct -- these are conditions that drive people to leave their home country, making them push factors."},
+      {"text": "Better job opportunities in the destination country", "isCorrect": false, "feedback": "This is a 'pull' factor, since it attracts people TO a new place, rather than pushing them away from home."},
+      {"text": "A more favorable climate in the destination country", "isCorrect": false, "feedback": "This is a 'pull' factor, since it attracts people TO a new place, rather than pushing them away from home."},
+      {"text": "Family already living in the destination country", "isCorrect": false, "feedback": "This is a 'pull' factor, since it attracts people TO a new place, rather than pushing them away from home."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following best illustrates a 'pull' factor, rather than a 'push' factor, in a person's decision to migrate?",
+    "options": [
+      {"text": "A strong, growing job market in the destination country", "isCorrect": true, "feedback": "Correct -- this attracts migrants TOWARD the destination, making it a pull factor rather than a push factor."},
+      {"text": "Political persecution in the person's home country", "isCorrect": false, "feedback": "This drives someone AWAY from their home country, making it a push factor, not a pull factor."},
+      {"text": "Severe drought damaging agriculture in the home country", "isCorrect": false, "feedback": "This drives someone AWAY from their home country, making it a push factor, not a pull factor."},
+      {"text": "High unemployment in the person's home region", "isCorrect": false, "feedback": "This drives someone AWAY from their home region, making it a push factor, not a pull factor."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One category of factors drives people away; the other draws them toward a new destination.", "medium": "One kind of factor makes people want to LEAVE somewhere; the other makes people want to GO somewhere.", "easy": "One factor pushes people away from their home; the other pulls them toward a new place."},
+    "medium": {"hard": "This factor originates in the person's home country and creates conditions that make leaving necessary or desirable.", "medium": "This factor happens in the person's HOME country, making them want to leave.", "easy": "This factor is something bad happening back home, not something good happening somewhere else."},
+    "hard": {"hard": "This factor exists at the DESTINATION, actively drawing migrants toward it, unlike the other options, which all describe conditions driving people away from their home country.", "medium": "This factor exists at the DESTINATION, attracting people toward it -- the others all describe problems back home.", "easy": "This is the one option describing something good happening at the destination, not something bad happening back home."}
+  }
+},
+{
+  "topic": "GDP per capita",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What economic indicator represents the average economic output per person in a country?",
+    "options": [
+      {"text": "GDP per capita", "isCorrect": true, "feedback": "Correct -- GDP per capita gives a rough sense of average economic output on a per-person basis."},
+      {"text": "Population density", "isCorrect": false, "feedback": "Population density measures how crowded an area is, not economic output per person."},
+      {"text": "Literacy rate", "isCorrect": false, "feedback": "Literacy rate measures reading and writing ability, not economic output per person."},
+      {"text": "Life expectancy", "isCorrect": false, "feedback": "Life expectancy measures expected lifespan, not economic output per person."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "GDP per capita is calculated by dividing a country's total GDP by what?",
+    "options": [
+      {"text": "Its total population", "isCorrect": true, "feedback": "Correct -- dividing total GDP by population gives the average economic output per person."},
+      {"text": "Its total land area", "isCorrect": false, "feedback": "Dividing by land area would give a measure of economic output per square kilometer, not per person -- that isn't GDP per capita."},
+      {"text": "Its total number of businesses", "isCorrect": false, "feedback": "GDP per capita divides by population, not by the number of businesses in a country."},
+      {"text": "Its total government budget", "isCorrect": false, "feedback": "GDP per capita divides total GDP by population, not by the size of the government's budget."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is a key limitation of using GDP per capita alone as a measure of a country's standard of living?",
+    "options": [
+      {"text": "It doesn't account for income inequality, so a high average can still mask large disparities between rich and poor", "isCorrect": true, "feedback": "Correct -- a country could have a high GDP per capita while most of its wealth is concentrated among a small portion of the population."},
+      {"text": "It only measures the population of a country's capital city", "isCorrect": false, "feedback": "GDP per capita refers to the whole country's population, not specifically its capital city -- 'capita' means 'per person,' not 'capital city.'"},
+      {"text": "It cannot be calculated for any country smaller than the United States", "isCorrect": false, "feedback": "GDP per capita can be calculated for countries of any size -- there's no such restriction."},
+      {"text": "It always overstates a country's actual population", "isCorrect": false, "feedback": "GDP per capita doesn't inherently distort a country's population figures -- the real limitation concerns income inequality being masked by an average."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This indicator divides a country's total economic activity across every individual within it.", "medium": "This indicator takes a country's total economic output and spreads it evenly across every person.", "easy": "This indicator estimates how much economic output there is, on average, for each person in a country."},
+    "medium": {"hard": "The divisor is the total number of people, not land area, number of businesses, or the government's own budget figures.", "medium": "The divisor is a count of PEOPLE, not land, businesses, or government spending.", "easy": "You divide the country's total economic output by the number of PEOPLE living there."},
+    "hard": {"hard": "The limitation involves averaging masking uneven distribution of wealth, unrelated to any restriction on country size, a misreading of the term 'capita' as 'capital city,' or population miscounting.", "medium": "The limitation is about how an AVERAGE can hide big gaps between rich and poor -- not about country size or population counts.", "easy": "A high average doesn't tell you whether that wealth is spread out evenly, or mostly held by just a few people."}
+  }
+},
+{
+  "topic": "time zones and the International Date Line",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the name of the imaginary line where, by convention, the calendar day officially changes?",
+    "options": [
+      {"text": "The International Date Line", "isCorrect": true, "feedback": "Correct -- crossing this line changes the calendar date, by international agreement."},
+      {"text": "The Equator", "isCorrect": false, "feedback": "The Equator divides the Northern and Southern Hemispheres -- it doesn't mark where the calendar date changes."},
+      {"text": "The Prime Meridian", "isCorrect": false, "feedback": "The Prime Meridian is the reference line for 0 degrees longitude -- the date line is a separate, related concept, roughly on the opposite side of the globe."},
+      {"text": "The Tropic of Capricorn", "isCorrect": false, "feedback": "The Tropic of Capricorn is a specific line of latitude -- it isn't where the calendar date officially changes."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Roughly how many standard time zones does the Earth have, based on its 360 degrees of longitude divided into 15-degree sections?",
+    "options": [
+      {"text": "24", "isCorrect": true, "feedback": "Correct -- 360 degrees divided by 15-degree sections gives roughly 24 standard time zones, aligning with 24 hours in a day."},
+      {"text": "7", "isCorrect": false, "feedback": "7 is far too few -- there are roughly 24 standard time zones around the globe."},
+      {"text": "60", "isCorrect": false, "feedback": "60 is too many -- there are roughly 24 standard time zones, matching the 24 hours in a day."},
+      {"text": "12", "isCorrect": false, "feedback": "12 is half the actual number -- there are roughly 24 standard time zones around the globe."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What happens to the calendar date when a traveler crosses the International Date Line heading eastward (for example, from Asia toward the Americas)?",
+    "options": [
+      {"text": "They subtract a day, moving back one calendar day", "isCorrect": true, "feedback": "Correct -- crossing eastward means going back a day, while crossing westward means jumping forward a day."},
+      {"text": "They add two full days to the calendar", "isCorrect": false, "feedback": "Crossing the date line shifts the date by exactly one day, not two."},
+      {"text": "Nothing changes -- the date line has no effect on the calendar date", "isCorrect": false, "feedback": "The International Date Line specifically exists to mark where the calendar date changes when crossed."},
+      {"text": "The traveler's time zone becomes fixed permanently at UTC", "isCorrect": false, "feedback": "Crossing the date line doesn't lock a traveler into a single, permanent time zone -- it simply shifts the calendar date."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This line roughly follows the 180-degree longitude mark, opposite the Prime Meridian.", "medium": "This line runs roughly through the middle of the Pacific Ocean.", "easy": "This line runs through the Pacific Ocean, and crossing it changes what day it is."},
+    "medium": {"hard": "Divide the full 360 degrees of longitude by the 15-degree width of each standard zone.", "medium": "Divide 360 by 15 to get the number of standard time zones.", "easy": "There's roughly one time zone for each hour in a day -- how many hours are in a day?"},
+    "hard": {"hard": "The direction of crossing determines whether the date moves backward or forward by exactly one day, not two days, no change, or a fixed time zone.", "medium": "Going one direction across this line moves the date backward by one day; going the other direction moves it forward.", "easy": "Going eastward across this line, you actually go back a day -- like gaining an extra one temporarily."}
+  }
+},
+{
+  "topic": "contour lines on topographic maps",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What are the lines called on a topographic map that connect points of equal elevation?",
+    "options": [
+      {"text": "Contour lines", "isCorrect": true, "feedback": "Correct -- contour lines connect points that are all at the same height above sea level."},
+      {"text": "Latitude lines", "isCorrect": false, "feedback": "Latitude lines measure north-south position -- they don't represent equal elevation."},
+      {"text": "Longitude lines", "isCorrect": false, "feedback": "Longitude lines measure east-west position -- they don't represent equal elevation."},
+      {"text": "The International Date Line", "isCorrect": false, "feedback": "The International Date Line marks where the calendar date changes -- it has nothing to do with elevation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean when contour lines on a map are drawn very close together?",
+    "options": [
+      {"text": "A steep slope", "isCorrect": true, "feedback": "Correct -- closely spaced contour lines indicate elevation changing rapidly over a short distance, meaning a steep slope."},
+      {"text": "A perfectly flat area", "isCorrect": false, "feedback": "A flat area is indicated by widely spaced contour lines (or their absence), not tightly packed ones."},
+      {"text": "A body of water", "isCorrect": false, "feedback": "Bodies of water are usually shown with a specific symbol or color, not simply by closely spaced contour lines."},
+      {"text": "A political border between two countries", "isCorrect": false, "feedback": "Political borders are shown with their own distinct line style -- contour line spacing specifically indicates the steepness of terrain."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How can you typically distinguish a depression (a valley or basin) from a hill using contour lines alone, without reading elevation numbers?",
+    "options": [
+      {"text": "Depressions are marked with small tick marks (hachures) pointing inward and downslope, which hills lack", "isCorrect": true, "feedback": "Correct -- these hachure marks are a standard convention specifically used to indicate a depression rather than a rise in elevation."},
+      {"text": "Depressions are always drawn in blue, while hills are always drawn in green", "isCorrect": false, "feedback": "Contour lines themselves aren't typically color-coded this way to indicate depressions versus hills -- hachure marks are the standard convention."},
+      {"text": "Depressions are always represented by perfectly straight lines, while hills use only curved lines", "isCorrect": false, "feedback": "Both hills and depressions are typically shown using curved contour lines -- the distinguishing feature is the presence of hachure marks."},
+      {"text": "There is no way to distinguish a depression from a hill using contour lines", "isCorrect": false, "feedback": "Cartographers do have a standard method for this -- hachure marks pointing downslope indicate a depression."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These lines let a flat map represent three-dimensional elevation using two-dimensional lines.", "medium": "These lines show elevation on a flat map by connecting all points at the same height.", "easy": "These lines connect points on a map that are all at the same height above sea level."},
+    "medium": {"hard": "The spacing reflects how quickly elevation changes over a short horizontal distance -- tightly packed lines mean a rapid change.", "medium": "Closely packed lines mean elevation is changing very quickly over a short distance.", "easy": "When these lines are packed tightly together, it means the ground rises or falls very quickly there."},
+    "hard": {"hard": "The distinguishing feature is a specific small hash-mark symbol pointing toward lower elevation, not color-coding, a straight-versus-curved line convention, or an inability to distinguish the two.", "medium": "The distinguishing feature is a specific small mark added to the contour lines themselves, not color or line shape.", "easy": "Mapmakers add small tick marks pointing downhill on the lines around a depression -- hills don't get these marks."}
+  }
+},
+{
+  "topic": "latitude and longitude",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which coordinate measures a location's position north or south of the Equator?",
+    "options": [
+      {"text": "Latitude", "isCorrect": true, "feedback": "Correct -- latitude measures north-south position, with the Equator at 0 degrees."},
+      {"text": "Longitude", "isCorrect": false, "feedback": "Longitude measures east-west position, using the Prime Meridian as its reference, not north-south position."},
+      {"text": "Altitude", "isCorrect": false, "feedback": "Altitude measures height above sea level, not a location's north-south position on Earth's surface."},
+      {"text": "Amplitude", "isCorrect": false, "feedback": "Amplitude is a term from physics describing wave size, unrelated to geographic position."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Lines of longitude are also commonly known by what other name?",
+    "options": [
+      {"text": "Meridians", "isCorrect": true, "feedback": "Correct -- lines of longitude are also called meridians, running from the North Pole to the South Pole."},
+      {"text": "Parallels", "isCorrect": false, "feedback": "'Parallels' is the alternate name for lines of latitude, not longitude."},
+      {"text": "Tropics", "isCorrect": false, "feedback": "'Tropics' refers to specific latitude lines (like the Tropic of Cancer), not the general term for longitude lines."},
+      {"text": "Isobars", "isCorrect": false, "feedback": "Isobars are lines on weather maps connecting points of equal air pressure -- unrelated to longitude."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do lines of longitude converge at the North and South Poles, while lines of latitude remain consistently spaced apart from each other?",
+    "options": [
+      {"text": "Longitude lines run from pole to pole, so they naturally meet at those single points, while latitude lines circle the globe parallel to the Equator", "isCorrect": true, "feedback": "Correct -- this is exactly why longitude lines are sometimes described as converging, while latitude lines are called 'parallels.'"},
+      {"text": "Longitude lines are only drawn near the Equator and don't extend to the poles at all", "isCorrect": false, "feedback": "Longitude lines actually run the full length from pole to pole -- that's precisely why they converge there."},
+      {"text": "Latitude lines actually do converge at the poles, just like longitude lines", "isCorrect": false, "feedback": "Latitude lines remain parallel to each other and don't converge -- that's why they're called 'parallels.'"},
+      {"text": "There is no real difference in how the two types of lines behave near the poles", "isCorrect": false, "feedback": "There is a genuine geometric difference -- longitude lines converge at the poles, while latitude lines remain parallel."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This coordinate is measured relative to a reference line at 0 degrees, splitting the globe into two halves along that axis.", "medium": "This coordinate tells you how far a place is above or below the Equator.", "easy": "This coordinate measures how far north or south a place is from the Equator."},
+    "medium": {"hard": "This is the alternate name for the lines running from pole to pole, distinct from the term for latitude lines or specific named latitude circles.", "medium": "This is the alternate name for LONGITUDE lines specifically, not latitude lines.", "easy": "Lines of longitude share this alternate name -- they run from the North Pole down to the South Pole."},
+    "hard": {"hard": "The geometric explanation involves one line type running pole-to-pole (meeting at single points) versus the other circling the globe at a constant distance from the Equator -- not a restriction to the Equator, a reversal of which lines converge, or an absence of real difference.", "medium": "The explanation involves one line type running pole-to-pole, while the other circles the globe at a constant distance from the Equator.", "easy": "One type of line runs from pole to pole, so of course they all meet at the poles; the other type just circles around the globe at the same distance apart."}
+  }
+},
+{
+  "topic": "the Amazon rainforest's biodiversity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which region is home to the greatest biodiversity on Earth, containing an estimated 10 percent of all known species?",
+    "options": [
+      {"text": "The Amazon rainforest", "isCorrect": true, "feedback": "Correct -- the Amazon's warm, wet, densely layered ecosystem supports an extraordinary variety of life."},
+      {"text": "The Sahara Desert", "isCorrect": false, "feedback": "The Sahara's extreme dryness supports far less biodiversity than the Amazon's lush rainforest ecosystem."},
+      {"text": "Antarctica", "isCorrect": false, "feedback": "Antarctica's extreme cold supports very limited biodiversity compared to the Amazon."},
+      {"text": "The Arctic tundra", "isCorrect": false, "feedback": "The Arctic tundra's harsh, cold climate supports far less biodiversity than the Amazon rainforest."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The Amazon basin is primarily located within which South American country, though it extends into several others?",
+    "options": [
+      {"text": "Brazil", "isCorrect": true, "feedback": "Correct -- the majority of the Amazon rainforest lies within Brazil, though it also spans countries like Peru and Colombia."},
+      {"text": "Argentina", "isCorrect": false, "feedback": "Argentina lies farther south and isn't the primary country containing the Amazon basin -- that's Brazil."},
+      {"text": "Chile", "isCorrect": false, "feedback": "Chile is a narrow country along South America's western coast and isn't the primary country containing the Amazon basin -- that's Brazil."},
+      {"text": "Mexico", "isCorrect": false, "feedback": "Mexico is in North America and isn't part of the Amazon basin at all -- the basin is primarily in Brazil."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do tropical rainforests like the Amazon typically support such extraordinarily high biodiversity compared to most other biomes?",
+    "options": [
+      {"text": "A stable, warm, wet climate year-round, combined with complex vertical canopy layering, creates many specialized ecological niches", "isCorrect": true, "feedback": "Correct -- the lack of a limiting cold or dry season, plus distinct forest layers, lets an enormous variety of species coexist and specialize."},
+      {"text": "Tropical rainforests have unusually low rainfall, which limits competition between species", "isCorrect": false, "feedback": "Tropical rainforests actually receive very high rainfall -- low competition isn't the explanation, and low rainfall doesn't describe this biome."},
+      {"text": "Government conservation laws are stronger in tropical rainforests than anywhere else in the world", "isCorrect": false, "feedback": "Conservation policy varies widely and isn't the underlying ecological reason for the Amazon's high biodiversity -- climate and habitat structure are."},
+      {"text": "Tropical rainforests have simpler ecosystems with fewer total habitats than other biomes", "isCorrect": false, "feedback": "This is the opposite of reality -- rainforests have complex, layered habitats that support more species, not fewer."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This ecosystem's stable warmth and moisture, combined with layered vertical habitats, support an enormous range of specialized species.", "medium": "This rainforest's warm, wet, year-round climate supports an enormous variety of plant and animal life.", "easy": "This is the enormous rainforest in South America famous for having more species than almost anywhere else on Earth."},
+    "medium": {"hard": "This country contains the majority of the Amazon basin, distinct from other South American countries farther south or along the western coast.", "medium": "This country contains the majority of the Amazon rainforest, distinct from countries farther south.", "easy": "This large South American country contains most of the Amazon rainforest within its borders."},
+    "hard": {"hard": "The explanation involves stable climate conditions and layered habitat structure creating many ecological niches, not low rainfall, conservation policy, or a claim of ecosystem simplicity.", "medium": "The explanation involves stable warm, wet conditions and many distinct forest layers -- not rainfall scarcity or conservation laws.", "easy": "It stays warm and rainy all year, and the forest has many different layers (floor, understory, canopy), giving lots of different species their own niche to live in."}
+  }
+},
+{
+  "topic": "desertification",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes the process by which fertile land gradually becomes increasingly arid and desert-like?",
+    "options": [
+      {"text": "Desertification", "isCorrect": true, "feedback": "Correct -- desertification describes land degrading into desert-like conditions, often due to a combination of climate and human activity."},
+      {"text": "Urbanization", "isCorrect": false, "feedback": "Urbanization describes population movement into cities -- it isn't about land turning into desert."},
+      {"text": "Deforestation", "isCorrect": false, "feedback": "Deforestation specifically refers to clearing forests -- it can contribute to desertification, but it isn't the same broader process."},
+      {"text": "Precipitation", "isCorrect": false, "feedback": "Precipitation refers to rain, snow, or other forms of falling moisture -- it isn't the process of land turning into desert."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is a common human-caused contributor to desertification?",
+    "options": [
+      {"text": "Overgrazing of livestock on grassland", "isCorrect": true, "feedback": "Correct -- overgrazing strips away protective vegetation, leaving soil exposed to erosion and degradation."},
+      {"text": "Planting large numbers of trees to create new forests", "isCorrect": false, "feedback": "Planting trees typically helps COMBAT desertification by stabilizing soil, rather than causing it."},
+      {"text": "Building large reservoirs to store rainwater for irrigation", "isCorrect": false, "feedback": "Water storage for irrigation is generally a strategy to manage water scarcity, not a primary driver of desertification."},
+      {"text": "Reducing the number of livestock grazing on grassland", "isCorrect": false, "feedback": "Reducing grazing pressure typically helps prevent desertification, rather than causing it."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is desertification often difficult to reverse once it has significantly progressed?",
+    "options": [
+      {"text": "Loss of vegetation and topsoil creates a self-reinforcing cycle, since reduced plant cover further increases erosion and moisture loss, making regrowth harder", "isCorrect": true, "feedback": "Correct -- this feedback loop is what makes severely degraded land so difficult to restore, even if the original human pressures are removed."},
+      {"text": "International law strictly forbids any attempt to restore desertified land", "isCorrect": false, "feedback": "No such legal prohibition exists -- the real challenge is an ecological feedback loop that makes natural or assisted regrowth more difficult."},
+      {"text": "Desertified land always sinks permanently below sea level", "isCorrect": false, "feedback": "Desertification concerns soil quality and vegetation loss, not land sinking below sea level."},
+      {"text": "Once land becomes desert, it always immediately reverts back to fertile land within one growing season", "isCorrect": false, "feedback": "This is the opposite of reality -- desertification is notably difficult and slow to reverse, not something that resolves in a single season."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process degrades once-productive land into a state resembling a desert, often driven by both climate and human activity.", "medium": "This process turns once-fertile land into dry, desert-like land over time.", "easy": "This is the process where land that used to be fertile slowly turns into desert."},
+    "medium": {"hard": "This activity strips away plant cover that would otherwise protect soil from erosion and moisture loss.", "medium": "This activity removes the plants that would otherwise protect and hold the soil in place.", "easy": "Too many grazing animals can eat away all the plants, leaving the soil bare and exposed."},
+    "hard": {"hard": "The difficulty stems from an ecological feedback loop -- less vegetation causes more erosion and moisture loss, which further prevents new vegetation -- not legal restrictions, land elevation change, or rapid natural reversal.", "medium": "The difficulty is a repeating cycle -- less plant cover leads to more erosion, which makes it even harder for plants to grow back.", "easy": "Once the plants and topsoil are gone, it's harder for new plants to grow back, which just keeps the cycle of degradation going."}
+  }
+}
+]

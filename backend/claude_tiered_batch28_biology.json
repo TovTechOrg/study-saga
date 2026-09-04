@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a placebo in biological/medical experiments",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a placebo in a medical experiment?",
+    "options": [
+      {"text": "A fake treatment (like a sugar pill) given to a control group for comparison", "isCorrect": true, "feedback": "Correct -- placebos help researchers determine whether a real treatment's effects go beyond simple expectation or belief."},
+      {"text": "The most powerful version of a real medication", "isCorrect": false, "feedback": "A placebo is specifically an inactive, fake treatment, not a powerful real one."},
+      {"text": "A disease being studied in an experiment", "isCorrect": false, "feedback": "A placebo is a substance/treatment used in the experiment's design, not the disease being studied."},
+      {"text": "A piece of lab equipment used to measure blood pressure", "isCorrect": false, "feedback": "A placebo is a fake treatment, not a piece of measuring equipment."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do researchers include a placebo group when testing whether a new medication actually works?",
+    "options": [
+      {"text": "It helps distinguish between the medication's real biological effect and effects caused simply by patients expecting to feel better (the placebo effect)", "isCorrect": true, "feedback": "Correct -- comparing the treatment group to a placebo group isolates the medication's true, measurable effect."},
+      {"text": "It makes the experiment take much less time overall", "isCorrect": false, "feedback": "Including a placebo group doesn't necessarily speed up the experiment -- its purpose is about improving the SCIENTIFIC VALIDITY of the results, not the timeline."},
+      {"text": "Placebo groups have no real scientific purpose", "isCorrect": false, "feedback": "Placebo groups actually serve a crucial scientific purpose: helping isolate a treatment's true effect from purely psychological expectation effects."},
+      {"text": "It guarantees the new medication will be proven effective", "isCorrect": false, "feedback": "A placebo comparison doesn't guarantee any particular outcome -- it simply provides a valid baseline for fairly evaluating whether the medication truly works better than no real treatment."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In a well-designed drug trial, neither the patients NOR the researchers interacting with them know who received the real drug versus the placebo (called a 'double-blind' study). Why is this additional blinding of the researchers themselves important?",
+    "options": [
+      {"text": "It prevents researchers from unconsciously treating patients differently or interpreting results in a biased way based on knowing which group a patient belongs to", "isCorrect": true, "feedback": "Correct -- double-blinding protects against both patient expectation bias AND researcher observation/interpretation bias, making the results more scientifically reliable."},
+      {"text": "This additional blinding actually serves no real purpose beyond just blinding the patients", "isCorrect": false, "feedback": "Blinding the researchers too serves the very real, important purpose of preventing subtle researcher bias from influencing results or patient interactions."},
+      {"text": "It makes the experiment more expensive with no scientific benefit", "isCorrect": false, "feedback": "While it may add complexity, double-blinding provides a genuine, important scientific benefit: significantly reducing potential bias in the study's results."},
+      {"text": "Researchers are legally required to be blinded for reasons unrelated to scientific accuracy", "isCorrect": false, "feedback": "While ethical/regulatory standards do encourage this practice, its core PURPOSE is specifically about improving scientific validity by reducing bias, not an arbitrary unrelated requirement."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is an inert substance or fake treatment given to a comparison group in an experiment.", "medium": "This is a fake treatment, like a sugar pill, given to see how much of an effect just believing helps.", "easy": "This is a fake treatment, like a sugar pill, given to one group in an experiment."},
+    "medium": {"hard": "This comparison isolates the treatment's measurable biological effect from the psychological effect of simply believing you're being treated.", "medium": "Comparing to a fake treatment helps show whether the real medicine is actually doing something beyond just making people feel hopeful.", "easy": "Comparing to a fake treatment helps show if the real medicine is actually doing something extra."},
+    "hard": {"hard": "Researcher awareness of group assignment could subtly influence patient interactions, symptom reporting, or data interpretation -- blinding removes this potential source of experimenter bias.", "medium": "If the researchers knew who got the real drug, they might unintentionally treat those patients differently or read the results in a biased way.", "easy": "If researchers knew who got the real drug, they might unintentionally treat those patients differently or judge results unfairly."}
+  }
+}
+]

@@ -1,0 +1,84 @@
+[
+{
+  "topic": "the concept of work done against gravity (lifting objects)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the formula for work done when lifting an object straight up against gravity?",
+    "options": [
+      {"text": "Work = weight × height lifted", "isCorrect": true, "feedback": "Correct -- since the force needed equals the object's weight, work equals weight times the vertical distance lifted."},
+      {"text": "Work = weight + height", "isCorrect": false, "feedback": "Work is calculated by multiplying, not adding, weight and height."},
+      {"text": "Work = weight ÷ height", "isCorrect": false, "feedback": "This isn't the correct relationship -- work involves multiplying, not dividing."},
+      {"text": "Work = height only, regardless of weight", "isCorrect": false, "feedback": "Work also depends directly on the object's weight, not height alone."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How much work is done lifting a 50 N object to a height of 3 meters?",
+    "options": [
+      {"text": "150 joules", "isCorrect": true, "feedback": "Correct -- work = weight × height = 50×3=150."},
+      {"text": "53 joules", "isCorrect": false, "feedback": "This adds the values instead of multiplying them."},
+      {"text": "16.7 joules", "isCorrect": false, "feedback": "This divides instead of multiplying weight by height."},
+      {"text": "50 joules", "isCorrect": false, "feedback": "This ignores the height factor entirely."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two people lift identical 20 kg boxes to the same height of 2 meters, but Person A does it in 5 seconds while Person B takes 10 seconds. How do the amounts of WORK done by each person compare?",
+    "options": [
+      {"text": "The work done is exactly the same for both, since work depends only on force and distance, not time", "isCorrect": true, "feedback": "Correct -- while their POWER output differs (Person A is more powerful, doing the same work in less time), the actual work done is identical since force and distance are the same."},
+      {"text": "Person A did twice as much work as Person B", "isCorrect": false, "feedback": "Work depends on force and distance, not time -- since both lifted the same weight the same height, they did the same amount of work, though Person A had more power."},
+      {"text": "Person B did twice as much work as Person A", "isCorrect": false, "feedback": "This is backwards, and also incorrect regardless -- work depends on force and distance only, and both did the same amount of work despite the time difference."},
+      {"text": "Work cannot be calculated without knowing the exact time taken", "isCorrect": false, "feedback": "Work specifically does NOT depend on time -- it can be calculated purely from force and distance, which are identical in both cases."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This calculation combines how much an object weighs with how far up it's raised.", "medium": "Multiply the object's weight by how high it's lifted.", "easy": "Multiply weight by height to get work."},
+    "medium": {"hard": "Multiply the weight value by the height value.", "medium": "Multiply 50 by 3.", "easy": "Multiply 50 by 3."},
+    "hard": {"hard": "Work is defined purely in terms of force and displacement, independent of the time taken -- time only affects the related but distinct quantity of power.", "medium": "Since work only cares about force and distance, not how fast it happened, both people technically did the same amount of work.", "easy": "Since work only cares about the weight and the height, not the time it took, both people did the same amount of work."}
+  }
+},
+{
+  "topic": "the concept of a system's total mechanical energy (KE + PE)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is total mechanical energy generally the sum of?",
+    "options": [
+      {"text": "Kinetic energy and potential energy", "isCorrect": true, "feedback": "Correct -- mechanical energy combines the energy of motion (kinetic) and the energy of position (potential)."},
+      {"text": "Heat energy and light energy", "isCorrect": false, "feedback": "These are different forms of energy, not what typically makes up mechanical energy."},
+      {"text": "Mass and volume", "isCorrect": false, "feedback": "Mass and volume are physical properties, not forms of energy."},
+      {"text": "Only kinetic energy, with nothing else", "isCorrect": false, "feedback": "Mechanical energy includes both kinetic AND potential energy, not kinetic energy alone."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "As a ball falls from a height (ignoring air resistance), what happens to its TOTAL mechanical energy?",
+    "options": [
+      {"text": "It stays constant, since energy just converts from potential to kinetic form", "isCorrect": true, "feedback": "Correct -- without energy loss to air resistance, total mechanical energy is conserved even as its form shifts."},
+      {"text": "It continuously increases as the ball falls", "isCorrect": false, "feedback": "Without an outside energy input, total mechanical energy shouldn't increase -- it stays constant, just changing form."},
+      {"text": "It continuously decreases as the ball falls", "isCorrect": false, "feedback": "Without energy loss (like air resistance), total mechanical energy doesn't decrease -- it remains constant."},
+      {"text": "It becomes exactly zero the instant the ball starts falling", "isCorrect": false, "feedback": "Total mechanical energy doesn't drop to zero -- it's conserved throughout the fall, just shifting between potential and kinetic forms."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A roller coaster car at the top of a hill has 500 J of potential energy and 0 J of kinetic energy. Ignoring friction, what is its kinetic energy at the bottom of the hill, where potential energy is 0 J?",
+    "options": [
+      {"text": "500 J", "isCorrect": true, "feedback": "Correct -- since total mechanical energy (500 J) is conserved, all of it converts to kinetic energy when potential energy reaches 0."},
+      {"text": "0 J", "isCorrect": false, "feedback": "This would mean all the energy simply vanished, which contradicts the conservation of mechanical energy."},
+      {"text": "1,000 J", "isCorrect": false, "feedback": "This doubles the energy without justification -- total mechanical energy should remain constant at 500 J, not increase."},
+      {"text": "250 J", "isCorrect": false, "feedback": "This assumes only half the energy converted, but with no friction, ALL of the potential energy should convert to kinetic energy."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This total combines the energy of motion with the energy stored due to position.", "medium": "This total combines the energy of movement with the energy of position/height.", "easy": "This is kinetic energy plus potential energy added together."},
+    "medium": {"hard": "Without energy loss to outside forces, the sum of kinetic and potential energy remains constant throughout the motion.", "medium": "As height-based energy decreases, motion-based energy increases by the same amount, keeping the total the same.", "easy": "As the ball loses height energy, it gains the same amount of motion energy -- the total stays the same."},
+    "hard": {"hard": "Since total mechanical energy is conserved, whatever potential energy is lost must be exactly converted into an equal amount of kinetic energy.", "medium": "Since total energy stays the same, whatever potential energy is lost, kinetic energy gains the same amount.", "easy": "Since total energy stays the same, whatever potential energy is lost, kinetic energy gains that exact amount."}
+  }
+}
+]

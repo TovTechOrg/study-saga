@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of conservation of momentum in collisions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the law of conservation of momentum state?",
+    "options": [
+      {"text": "The total momentum of a closed system remains constant if no external forces act on it", "isCorrect": true, "feedback": "Correct -- momentum can transfer between objects within the system, but the total stays constant absent external forces."},
+      {"text": "Momentum is always destroyed in a collision", "isCorrect": false, "feedback": "Momentum isn't destroyed -- it's conserved (transferred between objects), which is the whole point of the conservation law."},
+      {"text": "Momentum can be created out of nothing during a collision", "isCorrect": false, "feedback": "Momentum cannot be created from nothing -- the total amount in a closed system stays constant, just redistributed."},
+      {"text": "Only kinetic energy is conserved in collisions, never momentum", "isCorrect": false, "feedback": "This is actually backwards from the general rule -- momentum IS conserved in essentially all collisions, while kinetic energy is only conserved in perfectly elastic ones."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A 2 kg cart moving at 3 m/s collides with and sticks to a stationary 1 kg cart. Using conservation of momentum, what is their combined velocity after collision? (momentum = mass × velocity)",
+    "options": [
+      {"text": "2 m/s", "isCorrect": true, "feedback": "Correct -- initial momentum = 2×3 + 1×0 = 6 kg·m/s. After sticking together, combined mass is 3 kg, so 6 ÷ 3 = 2 m/s."},
+      {"text": "3 m/s", "isCorrect": false, "feedback": "This ignores that momentum must be redistributed across the now-combined larger mass -- it doesn't correctly apply conservation of momentum."},
+      {"text": "6 m/s", "isCorrect": false, "feedback": "This is the total momentum value (6 kg·m/s), not the resulting velocity after dividing by the combined mass."},
+      {"text": "1.5 m/s", "isCorrect": false, "feedback": "This doesn't correctly result from dividing the total momentum by the correct combined mass."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In the cart collision above (2 kg at 3 m/s striking a stationary 1 kg cart, sticking together), is kinetic energy also conserved in this collision?",
+    "options": [
+      {"text": "No -- initial KE = ½(2)(3²) = 9 J, but final KE = ½(3)(2²) = 6 J, meaning kinetic energy was lost (converted to heat/sound/deformation), even though momentum was conserved", "isCorrect": true, "feedback": "Correct -- this is a perfectly inelastic collision (objects stick together), where momentum is always conserved but kinetic energy is generally NOT, since some is converted to other energy forms."},
+      {"text": "Yes, kinetic energy is always conserved whenever momentum is conserved", "isCorrect": false, "feedback": "This isn't true in general -- kinetic energy is only conserved in perfectly ELASTIC collisions, while momentum is conserved in virtually all collisions (elastic or not)."},
+      {"text": "No, and this actually violates the law of conservation of momentum", "isCorrect": false, "feedback": "This doesn't violate momentum conservation at all -- momentum conservation and kinetic energy conservation are separate laws, and only momentum is guaranteed to hold here."},
+      {"text": "Kinetic energy calculations aren't applicable to collision problems", "isCorrect": false, "feedback": "Kinetic energy calculations are very much applicable and important in collision analysis -- they're just not always conserved, unlike momentum."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This physical quantity remains invariant across a closed system in the absence of external influences.", "medium": "This total quantity stays the same in a closed system, even as it's exchanged between objects.", "easy": "This total amount of 'motion' stays the same, even when objects push against each other."},
+    "medium": {"hard": "Sum the individual momenta (mass times velocity) of both carts before the collision, then divide by the total combined mass to find the shared post-collision velocity.", "medium": "Add up mass times velocity for each cart, then divide that total by the combined mass afterward.", "easy": "Multiply 2 by 3 to get total momentum, then divide by the total mass of 3."},
+    "hard": {"hard": "Compute kinetic energy (½mv²) separately before and after the collision, and compare -- momentum conservation does not guarantee kinetic energy conservation outside of elastic collisions.", "medium": "Calculate kinetic energy before and after using ½mv² for each case, and see if the numbers actually match.", "easy": "Calculate kinetic energy before (using speed 3) and after (using speed 2), and compare the two."}
+  }
+}
+]

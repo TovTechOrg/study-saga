@@ -1,0 +1,207 @@
+[
+{
+  "topic": "Newton's second law (F = ma)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does Newton's second law state?",
+    "options": [
+      {"text": "Force equals mass times acceleration (F=ma)", "isCorrect": true, "feedback": "Correct -- this equation relates the net force on an object to its mass and resulting acceleration."},
+      {"text": "For every action there is an equal and opposite reaction", "isCorrect": false, "feedback": "That's Newton's THIRD law, not the second."},
+      {"text": "An object in motion stays in motion unless acted on by a force", "isCorrect": false, "feedback": "That's Newton's FIRST law, not the second."},
+      {"text": "Energy cannot be created or destroyed", "isCorrect": false, "feedback": "That's the law of conservation of energy, a different principle from Newton's second law."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What net force is needed to accelerate a 10 kg object at 5 m/s²?",
+    "options": [
+      {"text": "50 N", "isCorrect": true, "feedback": "Correct -- F=ma=10×5=50."},
+      {"text": "15 N", "isCorrect": false, "feedback": "This adds the values instead of multiplying them."},
+      {"text": "2 N", "isCorrect": false, "feedback": "This divides instead of multiplying mass and acceleration."},
+      {"text": "500 N", "isCorrect": false, "feedback": "This doesn't match correctly multiplying 10 by 5."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A 1,200 kg car experiences a net force of 3,000 N. What is its acceleration?",
+    "options": [
+      {"text": "2.5 m/s²", "isCorrect": true, "feedback": "Correct -- rearranging F=ma to a=F/m: 3000÷1200=2.5."},
+      {"text": "3,600,000 m/s²", "isCorrect": false, "feedback": "This multiplies instead of dividing force by mass."},
+      {"text": "1,800 m/s²", "isCorrect": false, "feedback": "This subtracts instead of dividing force by mass."},
+      {"text": "0.4 m/s²", "isCorrect": false, "feedback": "This inverts the correct division (mass divided by force instead of force divided by mass)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This law directly relates the net push or pull on an object to how quickly its motion changes, factoring in how much matter it has.", "medium": "This law connects three things: force, mass, and acceleration.", "easy": "This law says force equals mass times acceleration."},
+    "medium": {"hard": "Multiply the mass value by the acceleration value to find the required force.", "medium": "Multiply 10 by 5 to find the force.", "easy": "Multiply the mass and acceleration together."},
+    "hard": {"hard": "Rearrange the force equation to isolate acceleration by dividing force by mass.", "medium": "Divide the force by the mass to find acceleration.", "easy": "Divide 3,000 by 1,200."}
+  }
+},
+{
+  "topic": "total resistance in a series circuit",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "How do you find the total resistance of resistors connected in series?",
+    "options": [
+      {"text": "Add all the individual resistances together", "isCorrect": true, "feedback": "Correct -- in a series circuit, total resistance is simply the sum of each resistor's resistance."},
+      {"text": "Multiply all the individual resistances together", "isCorrect": false, "feedback": "Series resistance is found by adding, not multiplying, the individual resistances."},
+      {"text": "Divide the resistances by the number of resistors", "isCorrect": false, "feedback": "That's not how series resistance combines -- the values are added together, not averaged."},
+      {"text": "Subtract the smaller resistance from the larger one", "isCorrect": false, "feedback": "Subtraction isn't the correct way to combine series resistances -- they're added together instead."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Three resistors of 5 ohms, 10 ohms, and 15 ohms are connected in series. What is the total resistance?",
+    "options": [
+      {"text": "30 ohms", "isCorrect": true, "feedback": "Correct -- 5+10+15=30."},
+      {"text": "750 ohms", "isCorrect": false, "feedback": "This multiplies the resistances instead of adding them."},
+      {"text": "10 ohms", "isCorrect": false, "feedback": "This is just the average of the values, not their sum."},
+      {"text": "5 ohms", "isCorrect": false, "feedback": "This only accounts for one of the three resistors."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A series circuit has a total resistance of 60 ohms across 4 identical resistors. What is the resistance of each individual resistor?",
+    "options": [
+      {"text": "15 ohms", "isCorrect": true, "feedback": "Correct -- since series resistances add up, divide the total evenly: 60÷4=15."},
+      {"text": "240 ohms", "isCorrect": false, "feedback": "This multiplies instead of dividing the total by the number of resistors."},
+      {"text": "56 ohms", "isCorrect": false, "feedback": "This subtracts instead of dividing to find the individual resistance."},
+      {"text": "64 ohms", "isCorrect": false, "feedback": "This adds instead of dividing to find the individual resistance."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Each resistor along the single path contributes cumulatively to the overall opposition to current flow.", "medium": "Combine each resistor's value using simple addition.", "easy": "Just add up all the resistor values."},
+    "medium": {"hard": "Sum the values of every resistor present in the series circuit.", "medium": "Add 5, 10, and 15 together.", "easy": "Add 5, 10, and 15."},
+    "hard": {"hard": "Since identical series resistors share the total resistance equally, divide the total by the number of resistors.", "medium": "Divide the total resistance evenly among the 4 identical resistors.", "easy": "Divide 60 by 4."}
+  }
+},
+{
+  "topic": "total resistance in a parallel circuit",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a parallel circuit, how does the total resistance compare to any single individual resistor's resistance?",
+    "options": [
+      {"text": "The total resistance is always less than the smallest individual resistor", "isCorrect": true, "feedback": "Correct -- adding more parallel paths always makes it easier overall for current to flow, lowering total resistance."},
+      {"text": "The total resistance is always greater than any individual resistor", "isCorrect": false, "feedback": "This is backwards for parallel circuits -- total resistance actually decreases, not increases, compared to individual resistors."},
+      {"text": "The total resistance always equals the sum of all resistors", "isCorrect": false, "feedback": "That's how SERIES resistances combine, not parallel ones."},
+      {"text": "The total resistance is always exactly zero", "isCorrect": false, "feedback": "While total resistance decreases, it doesn't typically drop all the way to exactly zero unless a resistor value is itself zero."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two identical 10-ohm resistors are connected in parallel. What is the total resistance? (Formula: 1/Rtotal = 1/R1 + 1/R2)",
+    "options": [
+      {"text": "5 ohms", "isCorrect": true, "feedback": "Correct -- for two identical resistors in parallel, total resistance is always half the individual value: 10÷2=5."},
+      {"text": "20 ohms", "isCorrect": false, "feedback": "This adds the resistances, which is how series circuits combine, not parallel ones."},
+      {"text": "10 ohms", "isCorrect": false, "feedback": "This just repeats one resistor's value rather than correctly combining them in parallel."},
+      {"text": "100 ohms", "isCorrect": false, "feedback": "This multiplies the resistances rather than correctly applying the parallel resistance formula."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two resistors, 6 ohms and 3 ohms, are connected in parallel. What is the total resistance? (Formula: 1/Rtotal = 1/R1 + 1/R2)",
+    "options": [
+      {"text": "2 ohms", "isCorrect": true, "feedback": "Correct -- 1/Rtotal=1/6+1/3=1/6+2/6=3/6=1/2, so Rtotal=2."},
+      {"text": "9 ohms", "isCorrect": false, "feedback": "This adds the resistances, which is how series circuits combine, not parallel ones."},
+      {"text": "4.5 ohms", "isCorrect": false, "feedback": "This is just the average of the two values, not the correct parallel combination."},
+      {"text": "18 ohms", "isCorrect": false, "feedback": "This multiplies the resistances directly rather than correctly applying the parallel resistance formula."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Adding more paths for current to flow through always makes the overall opposition to current smaller, not larger.", "medium": "More paths for current to take means it's overall easier for current to flow, lowering total resistance.", "easy": "Having more paths for electricity to flow through makes the total resistance go down."},
+    "medium": {"hard": "For identical resistors in parallel, the combined resistance is found by dividing one resistor's value by the total count of resistors.", "medium": "For two identical resistors in parallel, the total resistance is always half of one resistor's value.", "easy": "For two identical resistors in parallel, just divide the resistor value by 2."},
+    "hard": {"hard": "Take the reciprocal of each resistance, add them together, then take the reciprocal of that sum to find total resistance.", "medium": "Add 1/6 and 1/3 together first (using a common denominator), then flip the result to find the total resistance.", "easy": "Add 1/6 and 2/6 to get 3/6 (or 1/2), then flip it to find the answer: 2."}
+  }
+},
+{
+  "topic": "escape velocity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is escape velocity?",
+    "options": [
+      {"text": "The minimum speed needed for an object to break free from a planet's gravitational pull", "isCorrect": true, "feedback": "Correct -- reaching this speed allows an object to leave the planet's gravity without additional propulsion."},
+      {"text": "The speed at which a planet rotates", "isCorrect": false, "feedback": "That describes rotational speed, a completely different concept from escape velocity."},
+      {"text": "The speed of light", "isCorrect": false, "feedback": "The speed of light is a universal constant, unrelated to a planet's specific escape velocity."},
+      {"text": "The speed at which objects fall on Earth", "isCorrect": false, "feedback": "That's more related to acceleration due to gravity, not the specific concept of escaping a gravitational field entirely."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does a more massive planet generally have a higher escape velocity than a less massive one (of similar size)?",
+    "options": [
+      {"text": "A more massive planet exerts a stronger gravitational pull, requiring more speed to overcome it", "isCorrect": true, "feedback": "Correct -- greater mass means stronger gravity, which demands a higher velocity to break free from it."},
+      {"text": "A more massive planet has a warmer atmosphere", "isCorrect": false, "feedback": "Atmospheric temperature isn't the determining factor for escape velocity -- gravitational strength (tied to mass) is."},
+      {"text": "A more massive planet is always farther from the Sun", "isCorrect": false, "feedback": "Distance from the Sun isn't directly related to a planet's own escape velocity -- that depends on the planet's own mass and radius."},
+      {"text": "There is no real relationship between mass and escape velocity", "isCorrect": false, "feedback": "There's a direct, well-established relationship: greater mass generally means stronger gravity and a higher escape velocity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A rocket reaches Earth's escape velocity and travels away from Earth with no further propulsion. What eventually happens to its speed as it gets farther away?",
+    "options": [
+      {"text": "Its speed continues to decrease due to Earth's gravity, but it never quite reaches zero, and it continues moving away forever", "isCorrect": true, "feedback": "Correct -- escape velocity is defined as exactly the speed needed to overcome gravity, so the rocket's speed approaches (but never quite hits) zero as distance approaches infinity."},
+      {"text": "Its speed increases the farther it gets from Earth", "isCorrect": false, "feedback": "Gravity continues to decelerate the rocket as it moves away -- its speed decreases, not increases, with distance."},
+      {"text": "Its speed instantly drops to zero the moment it reaches escape velocity", "isCorrect": false, "feedback": "The whole point of reaching escape velocity is that the rocket keeps moving away indefinitely, not stopping instantly."},
+      {"text": "Gravity from Earth stops affecting the rocket entirely once it leaves the atmosphere", "isCorrect": false, "feedback": "Earth's gravity technically extends indefinitely (though weakening with distance) -- it doesn't simply switch off at the edge of the atmosphere."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This threshold speed represents the exact energy needed to counteract a gravitational field entirely.", "medium": "This is the minimum speed something needs to permanently leave a planet's gravitational grip.", "easy": "This is how fast something needs to go to completely escape a planet's gravity."},
+    "medium": {"hard": "Escape velocity is mathematically tied to the gravitational parameter of the planet, which scales directly with the planet's mass.", "medium": "A heavier planet pulls harder with gravity, so it takes more speed to break away from it.", "easy": "A heavier planet has stronger gravity, so escaping it needs more speed."},
+    "hard": {"hard": "Escape velocity is defined precisely as the speed at which kinetic energy exactly matches the gravitational potential energy needed to reach infinite distance, meaning velocity asymptotically approaches (but never reaches) zero.", "medium": "Gravity keeps slowing the rocket down the whole way, but since it started at exactly escape velocity, it never quite stops completely.", "easy": "Gravity keeps slowing the rocket down a little the whole way, but it never fully stops -- it just keeps going, slower and slower."}
+  }
+},
+{
+  "topic": "angular momentum basics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is angular momentum associated with?",
+    "options": [
+      {"text": "Rotational motion, like a spinning object", "isCorrect": true, "feedback": "Correct -- angular momentum is the rotational counterpart to regular (linear) momentum."},
+      {"text": "Objects moving in a perfectly straight line only", "isCorrect": false, "feedback": "That describes linear momentum, not angular momentum, which specifically relates to rotation."},
+      {"text": "The temperature of a spinning object", "isCorrect": false, "feedback": "Temperature is unrelated to angular momentum, which is about rotational motion."},
+      {"text": "The color of a rotating object", "isCorrect": false, "feedback": "Color has no bearing on angular momentum."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A figure skater spins with their arms out, then pulls their arms in close to their body. What happens to their spin rate, and why?",
+    "options": [
+      {"text": "They spin faster, because pulling their mass closer to the axis of rotation increases their rotation rate to conserve angular momentum", "isCorrect": true, "feedback": "Correct -- as their mass distribution changes, their spin speed adjusts to keep total angular momentum constant."},
+      {"text": "They spin slower, because their body becomes heavier when arms are pulled in", "isCorrect": false, "feedback": "The skater's total mass doesn't change -- what changes is how that mass is distributed relative to the spin axis, which speeds up the spin, not slows it."},
+      {"text": "Their spin rate doesn't change at all", "isCorrect": false, "feedback": "This is a classic, well-documented demonstration where spin rate DOES noticeably increase when arms are pulled in."},
+      {"text": "They stop spinning immediately", "isCorrect": false, "feedback": "Pulling arms in doesn't stop the spin -- it actually speeds it up due to conservation of angular momentum."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does pulling mass closer to the axis of rotation increase rotational speed, according to the conservation of angular momentum?",
+    "options": [
+      {"text": "Angular momentum depends on both mass distribution and rotation speed, so decreasing the distance of mass from the axis must be compensated for by increasing rotational speed to keep angular momentum constant", "isCorrect": true, "feedback": "Correct -- this trade-off between mass distribution and rotational speed is exactly what conservation of angular momentum predicts."},
+      {"text": "The total angular momentum actually decreases when arms are pulled in", "isCorrect": false, "feedback": "In the absence of external torque, angular momentum stays constant, not decreases -- it's the balance between distribution and speed that adjusts."},
+      {"text": "Pulling the arms in adds new energy to the system from an outside source", "isCorrect": false, "feedback": "No outside energy is added in this scenario -- the increased spin speed comes from redistributing existing angular momentum, not new energy input."},
+      {"text": "This effect only works underwater, not on ice", "isCorrect": false, "feedback": "This effect is a fundamental physics principle that works based on angular momentum conservation, independent of the specific surface (ice, etc.)."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity is the rotational analog of ordinary momentum, involving mass, speed, and distance from a spin axis.", "medium": "This is like regular momentum, but specifically for something spinning.", "easy": "This is like momentum, but for spinning things."},
+    "medium": {"hard": "Angular momentum depends on the product of mass distribution (distance from axis) and rotational speed -- reducing one factor requires increasing the other to keep the total the same.", "medium": "Without anything applying an outside twist, that overall \"spinning quantity\" stays the same, so pulling mass in speeds up the spin to compensate.", "easy": "Since nothing outside is pushing on them, pulling their arms in has to speed up their spin to balance things out."},
+    "hard": {"hard": "With no external torque acting on the skater, total angular momentum is conserved, so a decrease in the mass's average distance from the axis (arms in) must be offset by an increase in rotational velocity.", "medium": "Since nothing from outside is adding a twist, moving mass closer to the center has to be balanced by spinning faster.", "easy": "Since nothing outside is pushing on them, pulling their mass in closer has to be balanced by spinning faster."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the derivative rules: product rule and quotient rule",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The product rule for derivatives is used specifically when you need to differentiate:",
+    "options": [
+      {"text": "A function that is the PRODUCT (multiplication) of two separate functions", "isCorrect": true, "feedback": "Correct -- the product rule (d/dx[f·g] = f'g + fg') is specifically needed when two functions are multiplied together, since you can't simply differentiate each part separately and multiply the results."},
+      {"text": "A function that is the SUM (addition) of two separate functions", "isCorrect": false, "feedback": "For a SUM of functions, you can simply differentiate each term separately and ADD the results (the sum rule) -- the product rule is specifically needed for MULTIPLIED functions, not added ones."},
+      {"text": "A single, standalone constant number with no variables at all", "isCorrect": false, "feedback": "The derivative of a constant is simply 0 -- the product rule isn't needed for this simple case, which doesn't even involve multiplying two separate functions together."},
+      {"text": "A function that has no variables present in it whatsoever", "isCorrect": false, "feedback": "This isn't relevant -- the product rule specifically applies when differentiating the PRODUCT of two functions that DO involve variables, not to variable-free expressions."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Using the product rule (d/dx[f·g] = f'g + fg'), find the derivative of h(x) = x²·sin(x). (Recall: derivative of x² is 2x; derivative of sin(x) is cos(x))",
+    "options": [
+      {"text": "h'(x) = 2x·sin(x) + x²·cos(x)", "isCorrect": true, "feedback": "Correct -- applying the product rule with f=x², g=sin(x): f'=2x, g'=cos(x), giving h'(x)=(2x)(sin x)+(x²)(cos x)."},
+      {"text": "h'(x) = 2x·cos(x)", "isCorrect": false, "feedback": "This incorrectly applies only PART of the product rule formula, missing the second term (x²·cos(x)) entirely."},
+      {"text": "h'(x) = 2x + cos(x)", "isCorrect": false, "feedback": "This incorrectly treats the functions as if they were being ADDED (using the sum rule) rather than correctly applying the PRODUCT rule for multiplied functions."},
+      {"text": "h'(x) = 2x·sin(x)·x²·cos(x)", "isCorrect": false, "feedback": "This incorrectly MULTIPLIES the two derivative terms together, rather than correctly ADDING them as the product rule formula specifically requires."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The quotient rule (d/dx[f/g] = (f'g-fg')/g²) can actually be DERIVED from the product rule combined with the chain rule (by rewriting f/g as f·g⁻¹). Explain the general logic behind why this derivation approach works.",
+    "options": [
+      {"text": "Since f/g can be algebraically rewritten as f multiplied by g⁻¹ (a product of two functions), the PRODUCT rule can then be directly applied to this rewritten form, and since g⁻¹ itself requires the CHAIN rule to differentiate (as a composite function), combining these two established derivative rules together produces the specific quotient rule formula as a resulting special case, rather than the quotient rule needing to be treated as some entirely separate, independently-derived rule", "isCorrect": true, "feedback": "Correct -- this derivation approach (showing the quotient rule as a specific derivable CONSEQUENCE of combining the more fundamental product rule and chain rule, rather than being an independent, unrelated rule) demonstrates an elegant, unifying mathematical relationship between these calculus differentiation rules, reflecting good mathematical practice of finding underlying connections between seemingly separate rules/formulas."},
+      {"text": "The quotient rule and product rule are actually completely unrelated, independent rules with no possible mathematical connection between them", "isCorrect": false, "feedback": "This isn't accurate -- these rules ARE DIRECTLY mathematically connected -- the quotient rule can specifically be DERIVED FROM the product rule (combined with the chain rule), rather than being some entirely separate, unrelated rule."},
+      {"text": "Rewriting f/g as f·g⁻¹ actually doesn't accurately represent the original division operation mathematically", "isCorrect": false, "feedback": "This isn't accurate -- rewriting f/g as f·g⁻¹ IS a mathematically VALID and EQUIVALENT algebraic representation of division, which is precisely why this rewriting approach can be legitimately used as the starting point for this specific derivation."},
+      {"text": "The chain rule has no actual role or necessity in this specific derivation process connecting the product rule to the quotient rule", "isCorrect": false, "feedback": "This isn't accurate -- the chain rule IS DIRECTLY NECESSARY and specifically required in this derivation, since differentiating g⁻¹ (a composite function) specifically REQUIRES applying the chain rule as part of the overall derivation process."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This differentiation technique is specifically required when the target function is expressed as a multiplicative composition of two distinct differentiable components.", "medium": "Use this rule specifically when two separate functions are being multiplied together.", "easy": "Use this rule when two functions are being multiplied together."},
+    "medium": {"hard": "Identify the two component functions (f and g), compute each one's individual derivative, then combine them according to the product rule's specific additive formula structure.", "medium": "Take the derivative of the first part times the second part, plus the first part times the derivative of the second part.", "easy": "2x times sin(x), plus x² times cos(x)."},
+    "hard": {"hard": "Consider how expressing division as multiplication by a reciprocal function, then applying both the product rule and chain rule sequentially, naturally reproduces the quotient rule's specific formulaic structure.", "medium": "By rewriting the fraction as a multiplication problem (using a negative exponent), you can use the rules you already know (product rule and chain rule) to work out the quotient rule from scratch.", "easy": "By rewriting the fraction as multiplication, you can use rules you already know to work out the quotient rule."}
+  }
+}
+]

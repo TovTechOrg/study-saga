@@ -1,0 +1,84 @@
+[
+{
+  "topic": "the concept of genotype vs. phenotype",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a genotype?",
+    "options": [
+      {"text": "The genetic makeup of an organism (its specific alleles)", "isCorrect": true, "feedback": "Correct -- genotype refers to the actual genetic information an organism carries, like Bb or bb."},
+      {"text": "The physical appearance of an organism", "isCorrect": false, "feedback": "That describes phenotype, not genotype."},
+      {"text": "The habitat where an organism lives", "isCorrect": false, "feedback": "Habitat is an environmental factor, unrelated to genotype, which is about genetic makeup."},
+      {"text": "The age of an organism", "isCorrect": false, "feedback": "Age is unrelated to genotype -- genotype refers specifically to genetic information."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A pea plant has the genotype Bb (heterozygous), where B (dominant) causes purple flowers. What is its phenotype?",
+    "options": [
+      {"text": "Purple flowers", "isCorrect": true, "feedback": "Correct -- since B is dominant, having at least one B allele results in the purple flower phenotype, regardless of the second allele."},
+      {"text": "White flowers", "isCorrect": false, "feedback": "White flowers would only occur with the recessive genotype (bb), not Bb, since B is dominant."},
+      {"text": "A mix of purple and white flowers on the same plant", "isCorrect": false, "feedback": "With simple dominant/recessive inheritance (not incomplete dominance), the dominant trait is fully and singularly expressed, not blended."},
+      {"text": "No flowers at all", "isCorrect": false, "feedback": "This genotype doesn't indicate an absence of flowers -- it determines the flower's COLOR, which will be purple."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two pea plants, one with genotype BB and one with genotype Bb, both display the same purple-flower phenotype. Why can two different genotypes produce an identical phenotype?",
+    "options": [
+      {"text": "Since B is dominant, having either one or two copies of B still results in the same visible dominant trait being expressed", "isCorrect": true, "feedback": "Correct -- phenotype only reveals which trait is expressed, not necessarily the exact underlying allele combination that produced it."},
+      {"text": "BB and Bb are actually identical genotypes", "isCorrect": false, "feedback": "BB and Bb are genuinely different genotypes (homozygous dominant vs. heterozygous) -- they just happen to produce the same visible phenotype due to dominance."},
+      {"text": "This is a mistake, since different genotypes must always produce different phenotypes", "isCorrect": false, "feedback": "This is actually a common, well-understood genetics scenario -- dominant alleles can mask genotype differences in the resulting phenotype."},
+      {"text": "Phenotype is determined entirely randomly, unrelated to genotype", "isCorrect": false, "feedback": "Phenotype is directly determined by genotype (plus environment in some cases) -- it isn't random, though dominance can cause different genotypes to share a phenotype."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term refers to the underlying genetic code an organism carries, rather than its visible traits.", "medium": "This is the actual genetic information an organism has, like which alleles it carries.", "easy": "This is the genetic code an organism has, like Bb."},
+    "medium": {"hard": "Since one dominant allele is enough to mask the recessive one, the dominant trait will be the one visibly expressed.", "medium": "Since the dominant allele is present, its trait will show up, not the recessive one.", "easy": "Since B is dominant, having at least one B means the purple trait shows up."},
+    "hard": {"hard": "Phenotype reflects only which allele's trait is expressed, and a single dominant allele is sufficient to produce that expression regardless of whether the second allele is the same or different.", "medium": "Since just one copy of the dominant gene is enough to show its trait, having one or two copies looks exactly the same on the outside.", "easy": "Since just one copy of the dominant gene is enough, having one or two copies looks exactly the same from the outside."}
+  }
+},
+{
+  "topic": "the concept of a vestige of common ancestry: homologous structures",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a homologous structure?",
+    "options": [
+      {"text": "A body structure that is similar in different species due to shared ancestry, even if it now serves different functions", "isCorrect": true, "feedback": "Correct -- the forelimb bones of humans, whales, and bats are a classic example, despite serving very different purposes."},
+      {"text": "A structure that looks similar but evolved completely independently, with no shared ancestry", "isCorrect": false, "feedback": "That describes an ANALOGOUS structure, the opposite concept from homologous."},
+      {"text": "A structure found in only one specific species", "isCorrect": false, "feedback": "Homologous structures are specifically about SIMILARITY ACROSS different species due to shared ancestry, not something unique to one species."},
+      {"text": "A structure that no longer exists in any organism", "isCorrect": false, "feedback": "Homologous structures are structures that DO exist and can be compared across related species, not extinct or absent features."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The forelimbs of a human (arm), a bat (wing), and a whale (flipper) all share a similar underlying bone structure, despite serving very different functions. What does this suggest?",
+    "options": [
+      {"text": "These species likely share a common ancestor from which this basic limb structure was inherited and then modified for different uses over time", "isCorrect": true, "feedback": "Correct -- this shared underlying structure, despite different functions, is strong evidence for common evolutionary ancestry."},
+      {"text": "These species have absolutely no evolutionary relationship to each other", "isCorrect": false, "feedback": "This shared bone structure actually strongly suggests the OPPOSITE -- a shared evolutionary history and common ancestor."},
+      {"text": "This is just a random coincidence with no scientific significance", "isCorrect": false, "feedback": "This pattern is actually considered significant, well-documented evidence for evolution and common ancestry, not mere coincidence."},
+      {"text": "All three species must have exactly the same diet", "isCorrect": false, "feedback": "Diet isn't the relevant explanation here -- shared skeletal structure specifically points to shared evolutionary ancestry."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A bird's wing and an insect's wing both function for flight, but they have completely different underlying structures (bird wings have bones, insect wings don't) and evolved independently. What term describes this type of similarity, and how does it differ from homology?",
+    "options": [
+      {"text": "This is analogous structure -- a similarity in FUNCTION due to similar environmental pressures (convergent evolution), not due to shared ancestry like homologous structures", "isCorrect": true, "feedback": "Correct -- unlike homologous structures (shared ancestry, potentially different function), analogous structures share function but arose independently, without shared ancestry."},
+      {"text": "This is also homology, identical to the human/bat/whale limb example", "isCorrect": false, "feedback": "This is actually the opposite case -- homology involves shared ANCESTRY (and often different function), while this bird/insect wing example involves independent evolution toward a similar FUNCTION."},
+      {"text": "There is no meaningful distinction between these two types of biological similarity", "isCorrect": false, "feedback": "There's a very meaningful and important distinction in evolutionary biology between these two types of similarity (analogous vs. homologous)."},
+      {"text": "Birds and insects must share a very recent common ancestor because of their similar wings", "isCorrect": false, "feedback": "This is incorrect -- their wing similarity arose independently (convergent evolution) due to similar functional pressures, not from a recent shared ancestor."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This structural similarity traces back to inheritance from a shared ancestral lineage, even as function diverges.", "medium": "This is a body part that's similar between species because they share a distant relative.", "easy": "This is a body part that's similar between species because of a shared ancestor."},
+    "medium": {"hard": "Shared underlying structural blueprints across different species are best explained by descent from a common ancestral form.", "medium": "Having the same basic bone layout, even for different jobs, suggests they all inherited it from a shared ancestor.", "easy": "Having the same basic bone layout suggests all three inherited it from a shared ancestor."},
+    "hard": {"hard": "This term specifically describes structures that converge on a similar function through independent evolutionary paths, contrasting with homologous structures that share a common structural origin regardless of current function.", "medium": "This describes structures that ended up doing the same job through completely separate evolutionary paths, not because of a shared ancestor.", "easy": "This describes structures that ended up doing the same job in completely different ways, not because of a shared ancestor."}
+  }
+}
+]

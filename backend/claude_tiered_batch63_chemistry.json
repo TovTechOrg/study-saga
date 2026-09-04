@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of acids and bases neutralizing each other",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What happens when an acid and a base react together (a neutralization reaction)?",
+    "options": [
+      {"text": "They typically form water and a salt, with the solution's pH moving toward neutral", "isCorrect": true, "feedback": "Correct -- neutralization reactions combine H+ ions (from acid) with OH- ions (from base) to form water, along with a salt from the remaining ions."},
+      {"text": "They form a highly explosive gas mixture every time", "isCorrect": false, "feedback": "Standard acid-base neutralization typically produces water and a salt, not generally an explosive gas mixture."},
+      {"text": "The acid and base have no actual reaction with each other", "isCorrect": false, "feedback": "Acids and bases DO react with each other in a well-known process called neutralization, forming water and a salt."},
+      {"text": "The base becomes stronger while the acid disappears completely", "isCorrect": false, "feedback": "This isn't accurate -- neutralization involves both the acid and base reacting together and effectively canceling out each other's extreme pH characteristics, not one simply overpowering the other."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If you mix equal moles of a strong acid (like HCl) and a strong base (like NaOH), what will the resulting solution's pH likely be?",
+    "options": [
+      {"text": "Approximately neutral (pH around 7)", "isCorrect": true, "feedback": "Correct -- when equal moles of a strong acid and strong base fully react, they neutralize each other's extreme pH characteristics, ideally resulting in a solution close to neutral pH."},
+      {"text": "Extremely acidic (pH close to 0)", "isCorrect": false, "feedback": "This isn't accurate -- combining EQUAL moles of a strong acid and strong base would neutralize the extreme acidity, resulting in a solution closer to neutral, not extremely acidic."},
+      {"text": "Extremely basic (pH close to 14)", "isCorrect": false, "feedback": "This isn't accurate -- combining EQUAL moles of a strong acid and strong base would neutralize the extreme basicity, resulting in a solution closer to neutral, not extremely basic."},
+      {"text": "It's impossible to predict the resulting pH in this scenario", "isCorrect": false, "feedback": "This scenario is actually quite predictable -- combining equal moles of a strong acid and strong base is a standard neutralization reaction, generally resulting in an approximately neutral pH."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If you instead mix equal moles of a WEAK acid (like acetic acid) with a strong base (like NaOH), the resulting neutralized solution's pH tends to be slightly BASIC (above 7), rather than perfectly neutral. Why might this occur?",
+    "options": [
+      {"text": "The resulting salt (from the weak acid's conjugate base) can react slightly with water in a process called hydrolysis, shifting the solution's pH slightly basic, unlike the neutral salt produced from a strong acid-strong base reaction", "isCorrect": true, "feedback": "Correct -- this subtler chemical behavior, related to the resulting salt's hydrolysis with water, explains why weak acid-strong base neutralizations don't always result in a perfectly neutral pH of exactly 7, unlike strong acid-strong base reactions."},
+      {"text": "Weak acids and strong bases actually never react with each other at all", "isCorrect": false, "feedback": "This isn't accurate -- weak acids and strong bases DO react together in a neutralization reaction; the specific resulting pH being slightly basic (rather than perfectly neutral) is due to subsequent salt hydrolysis effects, not an absence of reaction."},
+      {"text": "This scenario would actually still result in exactly the same neutral pH of 7, identical to a strong acid-strong base reaction", "isCorrect": false, "feedback": "This isn't accurate -- weak acid-strong base neutralizations characteristically result in a slightly BASIC pH (above 7), not exactly neutral like a strong acid-strong base reaction."},
+      {"text": "The resulting pH has no actual connection to whether the original acid was strong or weak", "isCorrect": false, "feedback": "This isn't accurate -- the specific STRENGTH of the original acid (strong vs weak) does have a direct, meaningful connection to the resulting solution's exact pH after full neutralization, due to subsequent salt hydrolysis effects."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This chemical process combines an acidic and a basic substance to produce a comparatively pH-neutral product along with an ionic compound.", "medium": "This is when an acid and a base combine and their extreme properties cancel each other out.", "easy": "This is when an acid and base combine and cancel out each other's extreme properties."},
+    "medium": {"hard": "Consider the direct stoichiometric cancellation of hydrogen and hydroxide ions when equal molar amounts of a strong acid and strong base are combined.", "medium": "Since the acid and base are both strong and in equal amounts, they should cancel each other out pretty evenly.", "easy": "Since the acid and base are both strong and equal in amount, they cancel out to about neutral."},
+    "hard": {"hard": "Consider how the resulting salt's conjugate base component might interact with water molecules after the primary neutralization reaction is complete.", "medium": "The leftover salt from a weak acid can still react a little bit with the water afterward, nudging the pH slightly toward basic.", "easy": "The leftover salt from a weak acid can react a little with water, nudging the pH slightly basic."}
+  }
+}
+]

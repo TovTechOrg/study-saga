@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the triangle inequality theorem",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The triangle inequality theorem states that the sum of the lengths of any two sides of a triangle must be:",
+    "options": [
+      {"text": "Greater than the length of the third side", "isCorrect": true, "feedback": "Correct -- if this condition isn't met, the three given lengths simply cannot form a valid, closed triangle."},
+      {"text": "Less than the length of the third side", "isCorrect": false, "feedback": "This is backwards -- the sum of two sides must be GREATER than (not less than) the third side for a valid triangle to actually form."},
+      {"text": "Exactly equal to the length of the third side", "isCorrect": false, "feedback": "If the sum were exactly EQUAL to the third side, the three lengths would form a degenerate (flat, zero-area) 'triangle,' not a genuine, valid triangle -- the sum specifically needs to be GREATER than the third side."},
+      {"text": "Completely unrelated to the length of the third side", "isCorrect": false, "feedback": "This isn't accurate -- there IS a specific, defined mathematical relationship between the sum of two sides and the third side, which is precisely what the triangle inequality theorem describes."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Can a triangle be formed with side lengths of 3, 4, and 8?",
+    "options": [
+      {"text": "No, since 3+4=7, which is NOT greater than 8", "isCorrect": true, "feedback": "Correct -- since the sum of the two shorter sides (3+4=7) doesn't exceed the longest side (8), these three lengths cannot form a valid, closed triangle."},
+      {"text": "Yes, since all three numbers are positive", "isCorrect": false, "feedback": "Being positive numbers isn't sufficient -- you specifically need to check the triangle inequality condition (sum of two sides > third side), which FAILS in this particular case."},
+      {"text": "Yes, since 3+8 is greater than 4", "isCorrect": false, "feedback": "While this particular comparison happens to be true, you need to check ALL THREE possible combinations, and specifically 3+4=7 is NOT greater than 8, which means these lengths cannot form a valid triangle."},
+      {"text": "It's impossible to determine this without additional given information", "isCorrect": false, "feedback": "This isn't accurate -- this CAN be definitively determined using just the given side lengths and the triangle inequality theorem, without needing any additional information."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A triangle has two known sides of length 5 and 9. Using the triangle inequality theorem, what is the range of possible values for the third side's length (x)?",
+    "options": [
+      {"text": "4 < x < 14", "isCorrect": true, "feedback": "Correct -- applying the theorem: x must be less than 5+9=14 (sum of other two sides), AND x must be greater than 9-5=4 (difference of the other two sides, ensuring the smallest side plus x still exceeds 9)."},
+      {"text": "0 < x < 14", "isCorrect": false, "feedback": "This correctly identifies the upper bound (14) but incorrectly allows x to be too small -- x must specifically be greater than the DIFFERENCE of the other two sides (9-5=4), not simply greater than 0."},
+      {"text": "5 < x < 9", "isCorrect": false, "feedback": "This doesn't correctly apply the triangle inequality theorem's actual bounds -- the correct range should be based on the SUM (14) and DIFFERENCE (4) of the two given sides, not the sides' own values directly as bounds."},
+      {"text": "x must be exactly 14", "isCorrect": false, "feedback": "This isn't accurate -- x can be any value WITHIN a RANGE (between 4 and 14), not restricted to just one single specific exact value like 14."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This geometric constraint mandates that any pairwise combination of side lengths must strictly exceed the remaining side's measure for valid triangle formation.", "medium": "Adding any two of the three sides together should give you MORE than the third side's length.", "easy": "Adding any two sides together should give you more than the third side."},
+    "medium": {"hard": "Verify whether the sum of the two shorter given lengths exceeds the longest given length, as required by the triangle inequality condition.", "medium": "Add the two smaller numbers together and check if that sum is bigger than the largest number.", "easy": "Add 3+4=7, and check if 7 is bigger than 8 (it's not)."},
+    "hard": {"hard": "Establish both the upper bound (sum of the two known sides) and lower bound (absolute difference of the two known sides) to define the complete valid range for the unknown side.", "medium": "The unknown side has to be less than the sum of the other two sides (5+9=14), and more than their difference (9-5=4).", "easy": "The unknown side must be less than 14 (the sum) and more than 4 (the difference)."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of ratios and proportions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A ratio of 3:4 compares what to what?",
+    "options": [
+      {"text": "Two quantities, showing that for every 3 units of one, there are 4 units of the other", "isCorrect": true, "feedback": "Correct -- a ratio expresses a relative relationship in quantity between two (or more) values."},
+      {"text": "It shows that both quantities are exactly equal", "isCorrect": false, "feedback": "A 3:4 ratio specifically indicates the quantities are NOT equal -- an equal ratio would be written as 1:1."},
+      {"text": "It shows the sum of two numbers", "isCorrect": false, "feedback": "A ratio expresses a relative comparison between quantities, not their sum (which would just be 3+4=7)."},
+      {"text": "It represents a single standalone number with no comparison involved", "isCorrect": false, "feedback": "A ratio inherently involves a COMPARISON between (at least) two related quantities, not a single isolated number."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A recipe calls for a ratio of 2 cups of flour to 3 cups of sugar. If you want to use 6 cups of flour, how much sugar do you need to maintain the same ratio?",
+    "options": [
+      {"text": "9 cups", "isCorrect": true, "feedback": "Correct -- since 6 is 3 times 2, multiply the sugar amount by 3 too: 3×3=9 cups."},
+      {"text": "6 cups", "isCorrect": false, "feedback": "This would only be correct if the ratio were 1:1, but the recipe requires 3 cups of sugar for every 2 cups of flour, not an equal amount."},
+      {"text": "4.5 cups", "isCorrect": false, "feedback": "This doesn't correctly scale the sugar amount by the same factor (3) used to scale up the flour amount."},
+      {"text": "3 cups", "isCorrect": false, "feedback": "This is the original sugar amount before scaling up -- since the flour amount tripled, the sugar amount must also triple to maintain the ratio."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A map has a scale of 1 inch : 25 miles. If two cities are 3.5 inches apart on the map, what is the actual distance between them in miles?",
+    "options": [
+      {"text": "87.5 miles", "isCorrect": true, "feedback": "Correct -- set up the proportion 1/25 = 3.5/x, then cross-multiply: x = 3.5 × 25 = 87.5 miles."},
+      {"text": "28.5 miles", "isCorrect": false, "feedback": "This doesn't correctly result from applying the map scale proportion to the given map distance."},
+      {"text": "25 miles", "isCorrect": false, "feedback": "This is just the scale value itself (miles per inch), not the actual computed distance for 3.5 inches on the map."},
+      {"text": "75 miles", "isCorrect": false, "feedback": "This doesn't correctly result from multiplying 3.5 by 25 -- double check the multiplication."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This mathematical expression conveys the relative magnitude relationship between two or more quantities.", "medium": "This is a way of comparing two amounts to each other.", "easy": "This is a way of comparing two amounts to each other."},
+    "medium": {"hard": "Determine the scaling factor applied to one quantity, then apply that same multiplicative factor to the corresponding quantity to maintain the ratio.", "medium": "Figure out what number you multiply 2 by to get 6, then multiply 3 by that same number.", "easy": "2 times 3 equals 6, so multiply 3 (sugar) by 3 too, to get 9."},
+    "hard": {"hard": "Set up a proportion equating the given scale ratio to the unknown actual-distance ratio, then solve using cross-multiplication.", "medium": "Set up 1/25 equal to 3.5 over the unknown distance, then cross-multiply to solve.", "easy": "Multiply 3.5 by 25 to find the actual distance in miles."}
+  }
+}
+]

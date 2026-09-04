@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between a strong electrolyte and a weak electrolyte",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'strong electrolyte' is a substance that, when dissolved in water:",
+    "options": [
+      {"text": "Dissociates (ionizes) almost completely into ions", "isCorrect": true, "feedback": "Correct -- strong electrolytes dissociate nearly completely into ions in solution, which is why their solutions conduct electricity very well."},
+      {"text": "Dissociates only a very small percentage into ions, remaining mostly as intact molecules", "isCorrect": false, "feedback": "That describes a WEAK electrolyte, not a strong one -- strong electrolytes dissociate almost COMPLETELY, unlike weak electrolytes which dissociate only partially."},
+      {"text": "Does not dissolve in water at all", "isCorrect": false, "feedback": "This isn't accurate -- electrolytes (strong or weak) specifically DO dissolve in water and produce ions; a substance that doesn't dissolve at all isn't classified this way."},
+      {"text": "Never conducts electricity under any circumstances", "isCorrect": false, "feedback": "This isn't accurate -- strong electrolytes specifically conduct electricity VERY WELL in solution, precisely because of their high degree of ionization."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A solution of a strong electrolyte (like NaCl) conducts electricity much better than an equally concentrated solution of a weak electrolyte (like acetic acid). Why does the degree of dissociation, rather than just the concentration of the original substance, determine how well a solution conducts electricity?",
+    "options": [
+      {"text": "Electrical conductivity in solution specifically depends on the concentration of freely mobile IONS present, not on the total concentration of the original dissolved substance -- since strong electrolytes dissociate almost completely into ions while weak electrolytes dissociate only partially, a strong electrolyte solution actually contains far MORE mobile ions at the same overall concentration, explaining its much higher conductivity", "isCorrect": true, "feedback": "Correct -- this explanation of why actual ION concentration (not just total dissolved substance concentration) determines conductivity correctly explains why strong and weak electrolytes at equal concentrations conduct electricity so differently."},
+      {"text": "Both strong and weak electrolyte solutions would actually conduct electricity equally well at the same overall concentration", "isCorrect": false, "feedback": "This isn't accurate -- strong and weak electrolyte solutions conduct electricity DIFFERENTLY at the same concentration, precisely because of their different degrees of dissociation into ions."},
+      {"text": "The degree of dissociation into ions has no actual connection to how well a solution conducts electricity", "isCorrect": false, "feedback": "This isn't accurate -- the degree of dissociation IS DIRECTLY connected to and explains differences in solution conductivity."},
+      {"text": "Weak electrolyte solutions would actually conduct electricity better than strong electrolyte solutions at the same concentration", "isCorrect": false, "feedback": "This is backwards -- strong electrolyte solutions conduct electricity BETTER than weak electrolyte solutions at the same concentration, due to their much higher degree of ionization."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Weak electrolytes establish a dynamic chemical EQUILIBRIUM between their non-ionized molecular form and their dissociated ion form (only partially ionizing), while strong electrolytes essentially undergo complete, one-directional dissociation with no meaningful reverse reaction. Explain why this equilibrium-versus-complete-reaction distinction is the fundamental reason behind their differing degrees of ionization.",
+    "options": [
+      {"text": "For a weak electrolyte, the forward dissociation reaction and its reverse (ions recombining into the molecular form) reach a balanced equilibrium state where a substantial amount of non-ionized molecule remains at any given time, whereas a strong electrolyte's dissociation reaction proceeds so overwhelmingly toward the ionized products that the reverse reaction is essentially negligible, resulting in nearly complete conversion into ions", "isCorrect": true, "feedback": "Correct -- this explanation, framing weak electrolyte behavior as a genuine equilibrium (with a meaningful reverse reaction) versus a strong electrolyte's essentially irreversible, complete dissociation, correctly identifies the fundamental chemical distinction underlying their differing degrees of ionization."},
+      {"text": "Strong electrolytes would actually also establish a meaningful chemical equilibrium between dissociated and non-dissociated forms, identical to weak electrolytes", "isCorrect": false, "feedback": "This isn't accurate -- strong electrolytes specifically undergo essentially COMPLETE dissociation (with negligible reverse reaction), unlike weak electrolytes' genuine, balanced equilibrium."},
+      {"text": "This equilibrium-versus-complete-dissociation distinction has no actual connection to explaining the differing degrees of ionization between strong and weak electrolytes", "isCorrect": false, "feedback": "This isn't accurate -- this distinction IS DIRECTLY and fundamentally connected to explaining why strong and weak electrolytes ionize to such different degrees."},
+      {"text": "Weak electrolytes would actually undergo complete, one-directional dissociation, identical to strong electrolytes", "isCorrect": false, "feedback": "This isn't accurate -- weak electrolytes specifically undergo only PARTIAL dissociation, reaching a genuine equilibrium, unlike a strong electrolyte's essentially complete dissociation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This category of solute undergoes near-complete ionic dissociation upon dissolution in an aqueous medium.", "medium": "This kind of substance breaks apart into ions almost entirely when it dissolves in water.", "easy": "This kind of substance breaks apart into ions almost entirely when dissolved in water."},
+    "medium": {"hard": "Consider how conductivity tracks actual mobile-ion concentration rather than total dissolved-substance concentration, given differing degrees of dissociation.", "medium": "What actually carries the electric current is the ions floating around, so a substance that breaks apart more completely puts more ion-carriers into the water at the same starting amount.", "easy": "Ions carry the current, so a substance that breaks apart more completely puts more ion-carriers into the water."},
+    "hard": {"hard": "Consider how a genuine reversible equilibrium sustaining significant undissociated molecular concentration contrasts with an essentially irreversible reaction driving dissociation to near completion.", "medium": "Weak ones settle into a back-and-forth balance where plenty of the original molecule sticks around, while strong ones basically just fall apart completely with barely any going back.", "easy": "Weak ones settle into a balance where plenty of the original molecule sticks around; strong ones just fall apart completely."}
+  }
+}
+]

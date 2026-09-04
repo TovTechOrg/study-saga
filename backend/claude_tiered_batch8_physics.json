@@ -1,0 +1,166 @@
+[
+{
+  "topic": "measuring temperature scales (Celsius, Fahrenheit, Kelvin)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "At what Celsius temperature does water freeze?",
+    "options": [
+      {"text": "0°C", "isCorrect": true, "feedback": "Correct -- 0°C is the freezing point of water on the Celsius scale."},
+      {"text": "32°C", "isCorrect": false, "feedback": "32 is water's freezing point in Fahrenheit, not Celsius."},
+      {"text": "100°C", "isCorrect": false, "feedback": "100°C is water's BOILING point, not its freezing point."},
+      {"text": "273°C", "isCorrect": false, "feedback": "273 is close to water's freezing point in Kelvin, not Celsius."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 0 Kelvin commonly known as?",
+    "options": [
+      {"text": "Absolute zero, the coldest theoretically possible temperature", "isCorrect": true, "feedback": "Correct -- 0 Kelvin represents the point where particle motion is at its theoretical minimum."},
+      {"text": "The freezing point of water", "isCorrect": false, "feedback": "Water freezes at about 273 Kelvin, not 0 Kelvin."},
+      {"text": "The boiling point of water", "isCorrect": false, "feedback": "Water boils at about 373 Kelvin, not 0 Kelvin."},
+      {"text": "Room temperature", "isCorrect": false, "feedback": "Room temperature is around 293-298 Kelvin, far from 0 Kelvin."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Water boils at 100°C. What is this temperature in Kelvin (using K = °C + 273)?",
+    "options": [
+      {"text": "373 K", "isCorrect": true, "feedback": "Correct -- 100+273=373."},
+      {"text": "100 K", "isCorrect": false, "feedback": "This forgets to add 273 to convert from Celsius to Kelvin."},
+      {"text": "273 K", "isCorrect": false, "feedback": "This is close to water's freezing point in Kelvin, not its boiling point."},
+      {"text": "473 K", "isCorrect": false, "feedback": "This doesn't match correctly adding 100 and 273."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the reference point for the bottom of the Celsius scale, tied to a common substance's phase change.", "medium": "This is the temperature where ice starts to form from liquid water.", "easy": "Water turns to ice at this Celsius temperature."},
+    "medium": {"hard": "This point on the Kelvin scale represents the theoretical minimum of particle kinetic energy.", "medium": "This is the coldest temperature theoretically possible, where particle motion is minimal.", "easy": "This is the coldest possible temperature, where particles barely move at all."},
+    "hard": {"hard": "Add the fixed conversion constant to the Celsius value to find the Kelvin equivalent.", "medium": "Add 273 to the Celsius temperature.", "easy": "Add 100 and 273 together."}
+  }
+},
+{
+  "topic": "the electromagnetic nature of light",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What type of wave is visible light?",
+    "options": [
+      {"text": "An electromagnetic wave", "isCorrect": true, "feedback": "Correct -- visible light is one small part of the broader electromagnetic spectrum."},
+      {"text": "A sound wave", "isCorrect": false, "feedback": "Sound waves are mechanical waves requiring a medium -- light is a different, electromagnetic type of wave."},
+      {"text": "A water wave", "isCorrect": false, "feedback": "Water waves are a physical disturbance in liquid, unrelated to how light waves travel."},
+      {"text": "A seismic wave", "isCorrect": false, "feedback": "Seismic waves travel through the earth during events like earthquakes, unrelated to light."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Unlike sound waves, light waves can travel through:",
+    "options": [
+      {"text": "A vacuum (empty space)", "isCorrect": true, "feedback": "Correct -- light doesn't need any matter to travel, which is why sunlight can reach Earth through empty space."},
+      {"text": "Only solid objects", "isCorrect": false, "feedback": "Light can travel through many transparent materials and empty space, not just solids."},
+      {"text": "Only liquids", "isCorrect": false, "feedback": "Light travels through many mediums (and no medium at all), not just liquids specifically."},
+      {"text": "Nothing at all -- light cannot travel anywhere", "isCorrect": false, "feedback": "Light clearly does travel, including through empty space, air, water, and glass."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Visible light, radio waves, and X-rays are all part of the electromagnetic spectrum. What fundamentally distinguishes these different types from each other?",
+    "options": [
+      {"text": "Their frequency and wavelength", "isCorrect": true, "feedback": "Correct -- all electromagnetic waves travel at the same speed in a vacuum, but differ in frequency/wavelength, which determines their type and behavior."},
+      {"text": "Whether or not they are actually waves at all", "isCorrect": false, "feedback": "All of these are genuinely electromagnetic waves -- the distinguishing factor is their frequency/wavelength, not their wave nature."},
+      {"text": "The speed at which they travel through a vacuum", "isCorrect": false, "feedback": "All electromagnetic waves travel at the same constant speed (the speed of light) in a vacuum -- speed isn't what differs between them."},
+      {"text": "Whether they require a physical medium to travel", "isCorrect": false, "feedback": "None of these require a medium -- all electromagnetic waves can travel through a vacuum, so this isn't the distinguishing factor."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This category of wave is generated by oscillating electric and magnetic fields, requiring no physical medium.", "medium": "This is the category of wave that includes visible light, radio waves, and X-rays.", "easy": "This is the broad category of wave that light belongs to."},
+    "medium": {"hard": "This unique property allows light to reach us across the vast emptiness separating us from the sun and stars.", "medium": "Light doesn't need any matter at all to travel, unlike sound.", "easy": "Sunlight reaches Earth through the emptiness of space, with nothing there to carry sound."},
+    "hard": {"hard": "While sharing the same fundamental nature and vacuum speed, these waves are categorized by how many oscillations occur per second and the corresponding wave spacing.", "medium": "All these waves travel at the same speed in a vacuum -- what differs is how fast they oscillate and how long their waves are.", "easy": "These waves travel at the same speed, but differ in how quickly they wiggle and how long each wave is."}
+  }
+},
+{
+  "topic": "kinetic theory of gases",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to the kinetic theory, gas particles are best described as:",
+    "options": [
+      {"text": "Constantly moving in random directions", "isCorrect": true, "feedback": "Correct -- gas particles move freely and randomly, colliding with each other and their container."},
+      {"text": "Completely stationary and fixed in place", "isCorrect": false, "feedback": "That describes particles in a solid, not the constant random motion of gas particles."},
+      {"text": "Arranged in a neat, orderly grid pattern", "isCorrect": false, "feedback": "That describes a crystalline solid structure, not the chaotic motion of gas particles."},
+      {"text": "Merged together into one single large particle", "isCorrect": false, "feedback": "Gas particles remain individual and separate, moving independently, not merged together."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "According to kinetic theory, what causes gas pressure on the walls of its container?",
+    "options": [
+      {"text": "Gas particles colliding with the container walls", "isCorrect": true, "feedback": "Correct -- these frequent collisions exert a measurable force, which we observe as pressure."},
+      {"text": "The container walls pushing inward on the gas", "isCorrect": false, "feedback": "Pressure is generated by the gas particles pushing outward via collisions, not the walls pushing inward."},
+      {"text": "Gravity pulling the gas particles downward", "isCorrect": false, "feedback": "While gravity affects gas particles, pressure on the container walls specifically comes from particle collisions, not gravity alone."},
+      {"text": "Chemical reactions occurring within the gas", "isCorrect": false, "feedback": "Ordinary gas pressure doesn't require any chemical reaction -- it results from simple physical collisions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "According to kinetic theory, why does increasing a gas's temperature (at constant volume) increase its pressure?",
+    "options": [
+      {"text": "Higher temperature increases particle speed, causing more frequent and forceful collisions with the container walls", "isCorrect": true, "feedback": "Correct -- both the frequency and force of wall collisions increase with particle speed, raising pressure."},
+      {"text": "Higher temperature makes the gas particles larger in size", "isCorrect": false, "feedback": "Particle size doesn't change with temperature -- it's their speed and kinetic energy that increases."},
+      {"text": "Higher temperature reduces the number of gas particles present", "isCorrect": false, "feedback": "Temperature change doesn't remove particles from a sealed container -- the particle count stays the same."},
+      {"text": "Higher temperature has no real effect on gas particle behavior", "isCorrect": false, "feedback": "Temperature has a very direct effect on particle speed and kinetic energy, according to kinetic theory."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This theory pictures gas particles as tiny, independent, freely-moving objects bouncing chaotically.", "medium": "This theory describes gas particles zipping around chaotically in all directions.", "easy": "Gas particles are always zooming around randomly, bumping into things."},
+    "medium": {"hard": "Force exerted per unit area on the container boundary comes directly from the cumulative impact of countless tiny particle impacts.", "medium": "Every time a gas particle bumps into the container wall, it exerts a tiny push -- lots of these pushes add up to pressure.", "easy": "Every time a gas particle bumps into the wall, it pushes on it a tiny bit -- that's what makes pressure."},
+    "hard": {"hard": "Increased thermal energy raises average particle velocity, which increases both collision frequency and the momentum transferred per collision, both contributing to greater pressure.", "medium": "Hotter particles move faster, so they hit the container walls more often and harder, increasing the overall pressure.", "easy": "Hotter gas particles move faster, so they smack into the walls more often and harder, increasing pressure."}
+  }
+},
+{
+  "topic": "the difference between mass and weight",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the key difference between mass and weight?",
+    "options": [
+      {"text": "Mass measures the amount of matter in an object, while weight measures the force of gravity on that object", "isCorrect": true, "feedback": "Correct -- mass stays constant everywhere, but weight changes depending on the local gravitational pull."},
+      {"text": "Mass and weight are exactly the same thing, with no real difference", "isCorrect": false, "feedback": "These are genuinely distinct physical quantities, even though they're often used interchangeably in casual speech."},
+      {"text": "Weight measures the amount of matter, while mass measures gravitational force", "isCorrect": false, "feedback": "This has the definitions swapped -- mass measures matter amount, weight measures gravitational force."},
+      {"text": "Mass is measured in seconds, while weight is measured in meters", "isCorrect": false, "feedback": "These units don't match either quantity -- mass is measured in kilograms, and weight is a force, typically measured in newtons."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "An astronaut's mass is 70 kg on Earth. What happens to their mass and weight once they arrive on the Moon (which has weaker gravity)?",
+    "options": [
+      {"text": "Their mass stays the same, but their weight decreases", "isCorrect": true, "feedback": "Correct -- mass doesn't depend on gravity, but weight (a force from gravity) is lower on the Moon."},
+      {"text": "Both their mass and weight decrease", "isCorrect": false, "feedback": "Mass doesn't change based on location -- only weight, which depends on local gravity, actually decreases."},
+      {"text": "Both their mass and weight stay exactly the same", "isCorrect": false, "feedback": "Weight specifically depends on gravitational pull, which is weaker on the Moon, so weight should decrease even though mass stays the same."},
+      {"text": "Their mass increases, while their weight stays the same", "isCorrect": false, "feedback": "Mass doesn't change with location, and weight (not mass) is what's affected by the Moon's weaker gravity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why would a bathroom scale reading be different on the Moon compared to Earth, even though the person's mass hasn't changed?",
+    "options": [
+      {"text": "A scale measures the force of gravity pulling down on you (your weight), and the Moon's weaker gravity produces a smaller force", "isCorrect": true, "feedback": "Correct -- scales are calibrated to measure weight (a force), which directly depends on local gravitational strength, not mass itself."},
+      {"text": "The scale is broken and giving an incorrect reading", "isCorrect": false, "feedback": "The scale is actually working correctly -- it's accurately measuring the genuinely lower gravitational force on the Moon."},
+      {"text": "Mass actually changes between the Earth and the Moon", "isCorrect": false, "feedback": "Mass is an intrinsic property of matter and doesn't change based on location -- only weight (dependent on gravity) changes."},
+      {"text": "The scale can only function properly on Earth", "isCorrect": false, "feedback": "A scale that measures force can function anywhere, but its reading (weight) will vary correctly with local gravity."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One quantity remains fixed no matter where you are; the other varies based on local gravitational pull.", "medium": "One of these two properties changes depending on where you are; the other stays the same everywhere.", "easy": "Weight changes depending on where you are; mass stays the same everywhere."},
+    "medium": {"hard": "Distinguish between the intrinsic amount of matter (constant) and the gravitational force acting on that matter (variable with location).", "medium": "The amount of \"stuff\" in the astronaut doesn't change, but the gravitational pull on them does.", "easy": "The astronaut is still made of the same amount of stuff, but the Moon pulls on them less strongly."},
+    "hard": {"hard": "A scale actually measures the downward force exerted on it, which is precisely weight -- a quantity directly tied to the local strength of gravity, unlike the unchanging quantity of mass.", "medium": "A scale is really measuring how hard gravity pulls on you, and gravity is simply weaker on the Moon.", "easy": "A scale measures how hard gravity pulls on you, and the Moon's gravity is just weaker."}
+  }
+}
+]

@@ -1,0 +1,207 @@
+[
+{
+  "topic": "balanced vs. unbalanced forces",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What happens to an object's motion when the forces acting on it are balanced?",
+    "options": [
+      {"text": "Its motion doesn't change -- it stays at rest or keeps moving at constant velocity", "isCorrect": true, "feedback": "Correct -- balanced forces produce zero net force, so motion stays the same."},
+      {"text": "It immediately speeds up", "isCorrect": false, "feedback": "Speeding up requires a net (unbalanced) force -- balanced forces don't cause acceleration."},
+      {"text": "It immediately stops moving, no matter what", "isCorrect": false, "feedback": "Balanced forces don't force an object to stop -- they simply don't change its current motion."},
+      {"text": "It starts spinning uncontrollably", "isCorrect": false, "feedback": "Balanced forces don't produce any new rotational or motion change at all."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A book sits still on a table. The table pushes up on the book with the same force that gravity pulls the book down. What does this indicate?",
+    "options": [
+      {"text": "The forces on the book are balanced", "isCorrect": true, "feedback": "Correct -- equal, opposite forces result in zero net force, keeping the book still."},
+      {"text": "The forces on the book are unbalanced", "isCorrect": false, "feedback": "Equal and opposite forces are the definition of balanced forces, not unbalanced ones."},
+      {"text": "There is no force acting on the book at all", "isCorrect": false, "feedback": "Two forces (gravity and the table's support) ARE acting -- they just happen to cancel each other out."},
+      {"text": "The book is accelerating downward", "isCorrect": false, "feedback": "Since the forces cancel out, the book isn't accelerating in any direction -- it stays still."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A car moves at a constant 60 mph in a straight line. What can you conclude about the forces acting on it?",
+    "options": [
+      {"text": "The net force on the car is zero, even though individual forces (like engine thrust and friction) are still present", "isCorrect": true, "feedback": "Correct -- constant velocity means balanced forces, even though the car's engine and friction/air resistance are both actively acting on it."},
+      {"text": "No forces are acting on the car at all", "isCorrect": false, "feedback": "Forces like engine thrust, friction, and air resistance are definitely still acting -- they just balance out to a net force of zero."},
+      {"text": "The car must be accelerating", "isCorrect": false, "feedback": "Constant speed in a straight line means the car is NOT accelerating -- acceleration would mean changing speed or direction."},
+      {"text": "The forces on the car are definitely unbalanced", "isCorrect": false, "feedback": "Constant velocity is specifically the signature of balanced forces, not unbalanced ones."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This condition results in a net force of exactly zero on the object.", "medium": "When forces cancel each other out exactly, nothing about the object's motion changes.", "easy": "When forces cancel out evenly, the object just keeps doing what it was already doing."},
+    "medium": {"hard": "Equal magnitude forces acting in exactly opposite directions produce zero net force.", "medium": "Two equal forces pushing in opposite directions cancel out completely.", "easy": "Since the two forces are equal and opposite, they cancel each other out."},
+    "hard": {"hard": "Constant velocity is only possible when the net force is zero, regardless of how many individual forces are contributing to that balance.", "medium": "Since the car isn't speeding up, slowing down, or turning, the various forces acting on it must all be canceling out.", "easy": "Since the car's speed and direction aren't changing, the forces pushing and slowing it down must be canceling out."}
+  }
+},
+{
+  "topic": "buoyancy (Archimedes' principle)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is buoyancy?",
+    "options": [
+      {"text": "The upward force a fluid exerts on an object placed in it", "isCorrect": true, "feedback": "Correct -- buoyancy is the upward push fluids exert, which can cause objects to float."},
+      {"text": "The downward pull of gravity on an object", "isCorrect": false, "feedback": "That describes weight/gravity, the opposite direction from buoyancy."},
+      {"text": "The friction between two solid surfaces", "isCorrect": false, "feedback": "Friction between solids is unrelated to buoyancy, which involves fluids."},
+      {"text": "The speed at which an object falls", "isCorrect": false, "feedback": "Falling speed relates to gravity and air resistance, not specifically to buoyant force."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "According to Archimedes' principle, the buoyant force on an object equals the weight of what?",
+    "options": [
+      {"text": "The fluid displaced by the object", "isCorrect": true, "feedback": "Correct -- the buoyant force matches the weight of the fluid the object pushes out of the way."},
+      {"text": "The object itself", "isCorrect": false, "feedback": "The buoyant force relates to the displaced fluid's weight, not necessarily the object's own weight."},
+      {"text": "The container holding the fluid", "isCorrect": false, "feedback": "The container's weight has no bearing on the buoyant force calculation."},
+      {"text": "The air above the fluid's surface", "isCorrect": false, "feedback": "Buoyant force relates specifically to the fluid displaced by the submerged object, not surrounding air."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A steel ship floats on water, even though steel is much denser than water. How is this possible?",
+    "options": [
+      {"text": "The ship's hollow shape displaces a large volume of water, creating enough buoyant force to support its total weight", "isCorrect": true, "feedback": "Correct -- what matters is the overall density of the ship's shape (including the air-filled hollow space), not the density of steel alone."},
+      {"text": "Steel actually becomes less dense than water once shaped into a ship", "isCorrect": false, "feedback": "The steel material itself doesn't become less dense -- it's the ship's overall hollow shape that allows it to displace enough water."},
+      {"text": "Ships don't actually experience gravity while at sea", "isCorrect": false, "feedback": "Gravity still acts fully on the ship -- what changes is the large buoyant force balancing it out."},
+      {"text": "The ocean water becomes denser wherever a ship is present", "isCorrect": false, "feedback": "The water's density doesn't change due to a nearby ship -- it's the ship's shape and displaced volume that matter."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This force pushes upward against gravity whenever an object is placed into a fluid.", "medium": "This upward push from water or another fluid can help objects float.", "easy": "This is the force from water that pushes objects upward, helping them float."},
+    "medium": {"hard": "The size of this upward force is directly tied to how much fluid volume gets pushed out of the way by the submerged object.", "medium": "The upward force matches how much fluid gets pushed aside by the object.", "easy": "The upward force equals the weight of the water the object pushes out of the way."},
+    "hard": {"hard": "Overall density depends on total mass divided by total volume -- the ship's hollow interior greatly increases its volume without adding proportional mass, lowering its overall (average) density below water's.", "medium": "The ship's hollow interior means it takes up a lot of space for its weight, making its overall average density lower than water's.", "easy": "The ship's hollow shape takes up a lot of space, spreading its weight out so it floats even though steel itself sinks."}
+  }
+},
+{
+  "topic": "projectile motion basics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a projectile?",
+    "options": [
+      {"text": "An object launched into the air that moves under the influence of gravity", "isCorrect": true, "feedback": "Correct -- a thrown ball or a launched rocket are examples of projectiles."},
+      {"text": "An object that never leaves the ground", "isCorrect": false, "feedback": "A projectile is specifically airborne, moving through the air after being launched."},
+      {"text": "An object that moves only in a straight horizontal line forever", "isCorrect": false, "feedback": "Projectiles typically follow a curved path due to gravity, not an endless straight line."},
+      {"text": "An object that is completely unaffected by any force", "isCorrect": false, "feedback": "Projectiles are very much affected by gravity, which shapes their curved path."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When a ball is thrown horizontally off a cliff, what happens to its horizontal and vertical motions?",
+    "options": [
+      {"text": "They act independently -- horizontal speed stays constant while vertical speed increases due to gravity", "isCorrect": true, "feedback": "Correct -- in projectile motion, horizontal and vertical motion are independent of each other."},
+      {"text": "Both horizontal and vertical speed stay exactly constant throughout the fall", "isCorrect": false, "feedback": "Vertical speed increases due to gravity's constant pull -- it doesn't stay constant."},
+      {"text": "The ball's horizontal speed increases due to gravity", "isCorrect": false, "feedback": "Gravity acts vertically, not horizontally -- horizontal speed stays the same (ignoring air resistance)."},
+      {"text": "The ball immediately stops moving horizontally once thrown", "isCorrect": false, "feedback": "Horizontal motion continues at a constant speed throughout the fall, it doesn't stop."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two identical balls are released at the same height and same time: one is simply dropped, and the other is thrown horizontally. Ignoring air resistance, which ball hits the ground first?",
+    "options": [
+      {"text": "They hit the ground at the same time", "isCorrect": true, "feedback": "Correct -- horizontal motion doesn't affect vertical fall time, since gravity acts independently on the vertical component."},
+      {"text": "The dropped ball hits first", "isCorrect": false, "feedback": "Since both experience the same vertical acceleration from gravity, they fall at the same rate regardless of horizontal motion."},
+      {"text": "The thrown ball hits first", "isCorrect": false, "feedback": "The horizontal throw doesn't speed up the vertical fall -- both balls fall at the same rate."},
+      {"text": "It's impossible to determine without knowing the throwing speed", "isCorrect": false, "feedback": "Since horizontal and vertical motions are independent, the throwing speed doesn't affect how long the fall takes."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This kind of object follows a curved path shaped by gravity after being launched.", "medium": "This is any object launched into the air that then falls under gravity's pull.", "easy": "This is an object thrown or launched that then falls due to gravity."},
+    "medium": {"hard": "The two directions of motion don't influence each other -- one direction experiences gravity's acceleration, the other doesn't.", "medium": "The sideways motion and the falling motion happen independently of each other.", "easy": "The ball keeps moving sideways at the same speed while it also falls faster and faster."},
+    "hard": {"hard": "Since gravity's downward acceleration acts identically and independently on both balls' vertical motion, the horizontal throw has zero effect on the time it takes to fall.", "medium": "Since gravity pulls both balls down at the same rate regardless of their sideways motion, they should land at the same time.", "easy": "Since gravity affects both balls the same way regardless of sideways motion, they hit the ground at the same time."}
+  }
+},
+{
+  "topic": "electrical conductors and insulators",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is an electrical conductor?",
+    "options": [
+      {"text": "A material that allows electric current to flow through it easily", "isCorrect": true, "feedback": "Correct -- conductors, like copper, let electrons move through them freely."},
+      {"text": "A material that completely blocks all electric current", "isCorrect": false, "feedback": "That describes an insulator, the opposite of a conductor."},
+      {"text": "A material that generates its own electricity", "isCorrect": false, "feedback": "A conductor simply allows current to pass through -- it doesn't generate electricity on its own."},
+      {"text": "A material that only works at very cold temperatures", "isCorrect": false, "feedback": "Ordinary conductors work across a wide range of everyday temperatures, not just extreme cold."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why is rubber commonly used to coat electrical wires?",
+    "options": [
+      {"text": "Rubber is an insulator, preventing current from escaping the wire and causing shocks", "isCorrect": true, "feedback": "Correct -- rubber's insulating property keeps electricity contained safely within the wire."},
+      {"text": "Rubber is an excellent conductor, helping current flow faster", "isCorrect": false, "feedback": "Rubber is actually a poor conductor (an insulator) -- that's exactly why it's used as a protective coating."},
+      {"text": "Rubber makes the wire heavier for stability", "isCorrect": false, "feedback": "Weight isn't the reason for the rubber coating -- its insulating property for safety is the real purpose."},
+      {"text": "Rubber increases the wire's temperature", "isCorrect": false, "feedback": "The coating's purpose is electrical insulation and safety, not raising temperature."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Metals are generally good electrical conductors because of which underlying property?",
+    "options": [
+      {"text": "Their outer electrons are loosely held and can move freely throughout the material", "isCorrect": true, "feedback": "Correct -- these freely moving electrons are what allow metals to carry electric current so effectively."},
+      {"text": "Metals contain no electrons at all", "isCorrect": false, "feedback": "Metals do contain electrons -- in fact, it's their loosely bound electrons that make conduction possible."},
+      {"text": "Metals are always magnetic", "isCorrect": false, "feedback": "Not all metals are strongly magnetic, and magnetism isn't what determines electrical conductivity."},
+      {"text": "Metals have unusually large atoms compared to other materials", "isCorrect": false, "feedback": "Atomic size isn't the key factor -- it's the mobility of outer electrons that makes metals good conductors."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of material lets charged particles move through it with little resistance.", "medium": "This material lets electricity pass through it easily, like the wires in your house.", "easy": "This is a material, like copper, that lets electricity flow through easily."},
+    "medium": {"hard": "This coating material's poor conductivity is exactly the protective quality that keeps current safely inside the wire.", "medium": "This material doesn't let electricity pass through easily, which keeps the current safely inside the wire.", "easy": "This material doesn't conduct electricity well, which is exactly why it's safe to touch a coated wire."},
+    "hard": {"hard": "In metallic bonding, valence electrons aren't tied to any single atom and instead form a shared, mobile 'sea' that can carry charge throughout the material.", "medium": "Metal atoms don't hold onto their outermost electrons tightly, letting those electrons drift freely and carry current.", "easy": "Metal atoms don't hold their outer electrons very tightly, so those electrons can move around freely and carry current."}
+  }
+},
+{
+  "topic": "the Doppler effect",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the Doppler effect?",
+    "options": [
+      {"text": "The change in pitch of a sound as its source moves toward or away from a listener", "isCorrect": true, "feedback": "Correct -- this is why a passing ambulance siren sounds higher-pitched approaching and lower-pitched leaving."},
+      {"text": "The way light bends when passing through glass", "isCorrect": false, "feedback": "That describes refraction, not the Doppler effect."},
+      {"text": "The bouncing of sound waves off a wall", "isCorrect": false, "feedback": "That describes an echo (reflection), not the Doppler effect."},
+      {"text": "The complete blocking of sound by a solid object", "isCorrect": false, "feedback": "That describes sound absorption/blocking, not the Doppler effect."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "As an ambulance with its siren on approaches you, what happens to the pitch you hear?",
+    "options": [
+      {"text": "The pitch sounds higher than the siren's actual pitch", "isCorrect": true, "feedback": "Correct -- sound waves get compressed in front of an approaching source, raising the perceived pitch."},
+      {"text": "The pitch sounds lower than the siren's actual pitch", "isCorrect": false, "feedback": "A lower pitch would occur as the ambulance moves AWAY from you, not toward you."},
+      {"text": "The pitch doesn't change at all", "isCorrect": false, "feedback": "The Doppler effect specifically causes a noticeable pitch change based on relative motion."},
+      {"text": "The sound disappears completely", "isCorrect": false, "feedback": "The Doppler effect changes the sound's pitch, it doesn't make the sound vanish."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does a moving sound source cause the perceived frequency to change for a stationary listener?",
+    "options": [
+      {"text": "The source's motion compresses sound waves in front of it and stretches them out behind it", "isCorrect": true, "feedback": "Correct -- this changes the effective wavelength (and thus frequency) heard on each side of the moving source."},
+      {"text": "The sound waves actually travel faster when the source moves toward you", "isCorrect": false, "feedback": "The speed of sound through a given medium stays the same -- what changes is the wave spacing (wavelength), not the wave's travel speed."},
+      {"text": "The listener's ears physically change shape based on the source's motion", "isCorrect": false, "feedback": "This is about the properties of the sound wave itself changing, not the listener's ear anatomy."},
+      {"text": "Moving objects always produce louder sound, mistaken here for pitch change", "isCorrect": false, "feedback": "The main effect described is a change in frequency/pitch, not simply volume/loudness."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This effect involves a shift in a wave's perceived pitch due to relative motion between source and observer.", "medium": "This is why a fire truck's siren seems to change pitch as it drives past you.", "easy": "This explains why a siren sounds different as a vehicle drives toward you versus away from you."},
+    "medium": {"hard": "Motion toward the listener compresses the wave pattern, shortening the effective wavelength and raising perceived pitch.", "medium": "As the source moves closer, the sound waves get squeezed closer together, raising the pitch you hear.", "easy": "As the ambulance gets closer, the sound waves bunch up, making the pitch sound higher."},
+    "hard": {"hard": "The source's forward motion effectively squeezes wave crests together ahead of it and spreads them apart behind it, altering the wavelength (and thus frequency) an observer detects on each side.", "medium": "As the source moves, it squeezes the sound waves together on one side and spreads them apart on the other, changing the pitch heard.", "easy": "The moving source squeezes sound waves together in front and spreads them out behind, changing the pitch you hear."}
+  }
+}
+]

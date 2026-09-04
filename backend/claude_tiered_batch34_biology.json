@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of biomagnification in food chains",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is biomagnification?",
+    "options": [
+      {"text": "The increasing concentration of a substance (like a toxin) as it moves up a food chain", "isCorrect": true, "feedback": "Correct -- predators at higher trophic levels can accumulate much higher concentrations of certain substances than their prey."},
+      {"text": "The process of a population growing larger over time", "isCorrect": false, "feedback": "That describes population growth, a completely different concept from biomagnification."},
+      {"text": "The process of an organism getting physically bigger with age", "isCorrect": false, "feedback": "That describes ordinary growth/development, not the toxin-concentration effect of biomagnification."},
+      {"text": "A type of camera used to study small organisms", "isCorrect": false, "feedback": "This isn't related to any imaging technology -- biomagnification is an ecological/toxicological concept."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do top predators (like large fish or eagles) often have the highest concentrations of certain persistent toxins, like mercury, in their bodies?",
+    "options": [
+      {"text": "They eat many prey animals that already have some accumulated toxin, so the toxin becomes increasingly concentrated at each step up the food chain", "isCorrect": true, "feedback": "Correct -- this cumulative effect, where each predator eats many prey items containing the toxin, leads to the highest concentrations at the top of the food chain."},
+      {"text": "Top predators produce these toxins internally themselves", "isCorrect": false, "feedback": "These toxins typically originate from environmental sources (pollution) and accumulate through the food chain, rather than being produced internally by the predator."},
+      {"text": "Top predators have no actual connection to toxin levels in an ecosystem", "isCorrect": false, "feedback": "Top predators are actually directly and significantly affected by toxin accumulation through the biomagnification process."},
+      {"text": "This has nothing to do with what the predator eats", "isCorrect": false, "feedback": "This phenomenon is entirely explained by diet -- specifically, eating many toxin-containing prey items over time."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Biomagnification specifically affects certain substances (like some heavy metals and certain pesticides) much more than others. What property must a substance typically have to biomagnify significantly through a food chain?",
+    "options": [
+      {"text": "It must be persistent (not easily broken down or excreted) and tend to accumulate in fatty tissue rather than being eliminated from the body", "isCorrect": true, "feedback": "Correct -- substances that the body can easily break down or excrete generally don't accumulate significantly, while persistent, fat-soluble substances tend to build up over an organism's lifetime and up the food chain."},
+      {"text": "The substance must be brightly colored", "isCorrect": false, "feedback": "Color has no bearing on whether a substance biomagnifies -- persistence and fat solubility are the relevant properties."},
+      {"text": "The substance must be a naturally occurring element, never a synthetic compound", "isCorrect": false, "feedback": "Biomagnification can occur with both natural substances (like mercury) and synthetic compounds (like certain pesticides) -- origin isn't the deciding factor, persistence and accumulation properties are."},
+      {"text": "Any substance at all will biomagnify equally, regardless of its properties", "isCorrect": false, "feedback": "This isn't accurate -- substances vary significantly in their tendency to biomagnify, based specifically on how persistent and bioaccumulative they are."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This describes a rising concentration of a specific substance moving progressively up successive feeding levels.", "medium": "This is when something builds up more and more as you go up the food chain.", "easy": "This is when a substance builds up more and more as you go up the food chain."},
+    "medium": {"hard": "Consider the cumulative effect of consuming many prey items, each already carrying some quantity of an unexcreted substance.", "medium": "Each predator eats lots of prey, and each of those prey already has some of the toxin built up in them.", "easy": "Each predator eats lots of prey that already have some toxin in them, so it adds up."},
+    "hard": {"hard": "The substance must resist metabolic breakdown and excretion while preferentially dissolving into lipid tissue, allowing it to accumulate progressively in an organism over its lifetime and across trophic transfers.", "medium": "The substance needs to be hard for the body to get rid of and tends to get stored in fat instead of being flushed out.", "easy": "The substance needs to be hard for the body to get rid of, so it just builds up in fat instead."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of enzyme specificity and the lock-and-key model",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean for an enzyme to be 'specific' to a substrate?",
+    "options": [
+      {"text": "It only binds to and catalyzes a reaction for a particular substrate (or a small group of similar substrates)", "isCorrect": true, "feedback": "Correct -- enzyme specificity comes from the precise shape match between an enzyme's active site and its target substrate."},
+      {"text": "It can catalyze any reaction with any substrate", "isCorrect": false, "feedback": "This describes a lack of specificity -- specific enzymes work with only particular substrates, not any substrate."},
+      {"text": "It never reacts with any substrate at all", "isCorrect": false, "feedback": "Enzymes exist specifically to catalyze reactions with their target substrate(s) -- being 'specific' doesn't mean non-reactive."},
+      {"text": "It changes its own shape permanently after one use", "isCorrect": false, "feedback": "Enzymes are typically reusable and return to their original shape after catalysis -- this isn't what specificity refers to."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The 'lock-and-key' model describes enzyme specificity by comparing the enzyme's active site to a lock and the substrate to a key. Why is this a useful analogy?",
+    "options": [
+      {"text": "Just as a specific key shape only fits a specific lock, a substrate's specific shape only fits (binds to) an enzyme's correspondingly-shaped active site", "isCorrect": true, "feedback": "Correct -- this shape-complementarity concept is exactly why enzymes typically only work with specific, matching substrates."},
+      {"text": "Because enzymes and substrates are literally made of metal, like locks and keys", "isCorrect": false, "feedback": "This analogy is about matching SHAPES, not literal material composition -- enzymes and substrates are biological molecules, not metal objects."},
+      {"text": "Because any key can open any lock, just as any enzyme can bind any substrate", "isCorrect": false, "feedback": "This is the opposite of what the analogy conveys -- specific keys open specific locks, just as specific enzymes bind specific substrates."},
+      {"text": "This analogy isn't actually useful for understanding enzymes at all", "isCorrect": false, "feedback": "This is a classic, widely-used analogy that helpfully illustrates the concept of shape-based enzyme specificity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The 'induced fit' model refines the lock-and-key model by proposing that an enzyme's active site changes shape slightly as it binds its substrate, rather than being a perfectly rigid pre-formed match. Why might this refined model better explain some enzyme behavior?",
+    "options": [
+      {"text": "Because it accounts for enzymes that can bind slightly different (but similar) substrates through minor conformational flexibility, while still maintaining an overall high degree of specificity", "isCorrect": true, "feedback": "Correct -- the induced fit model captures a more nuanced reality where the active site's flexibility allows optimized binding upon substrate contact, better matching observed enzyme behavior than a perfectly rigid lock-and-key model."},
+      {"text": "It shows that enzymes actually have no specificity at all and can bind any substrate equally well", "isCorrect": false, "feedback": "This isn't accurate -- induced fit still involves substantial specificity, just with some flexibility in the exact binding process, not a complete absence of selectivity."},
+      {"text": "It proves that the lock-and-key model was completely wrong and enzymes don't have active sites", "isCorrect": false, "feedback": "Enzymes definitely do have active sites -- induced fit refines (rather than completely discards) the lock-and-key concept by adding the idea of slight conformational flexibility."},
+      {"text": "It shows that substrate shape has no actual influence on enzyme binding", "isCorrect": false, "feedback": "Substrate shape still plays a central role in induced fit binding -- the model just adds that the enzyme's shape can adjust slightly in response, rather than being perfectly rigid."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property means an enzyme's binding pocket geometrically complements only a limited set of molecules.", "medium": "This means the enzyme's shape only really matches up with one particular substrate.", "easy": "This means the enzyme only really works with one particular substrate."},
+    "medium": {"hard": "Consider how matching physical shapes between two objects (a key and a lock, or a substrate and an active site) determines whether a functional interaction can occur.", "medium": "Just like a key needs the right shape to fit a lock, a substrate needs the right shape to fit an enzyme's active site.", "easy": "Just like a key needs the right shape for a lock, a substrate needs the right shape for the enzyme."},
+    "hard": {"hard": "Consider how allowing slight structural flexibility in the active site could still preserve overall specificity while accommodating minor variations in substrate shape.", "medium": "If the enzyme's shape can adjust a little bit when the substrate arrives, it could still work well with substrates that aren't a perfect rigid match.", "easy": "If the enzyme's shape can adjust a little when the substrate arrives, it can still bind substrates that aren't a perfect match."}
+  }
+}
+]

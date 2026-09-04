@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of speciation through geographic isolation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is speciation?",
+    "options": [
+      {"text": "The evolutionary process by which new, distinct species arise from a common ancestor", "isCorrect": true, "feedback": "Correct -- speciation occurs when populations diverge genetically over time until they can no longer interbreed, forming separate species."},
+      {"text": "The process of a single species going extinct", "isCorrect": false, "feedback": "Extinction is the disappearance of a species, essentially the opposite concept from speciation, which is about NEW species FORMING."},
+      {"text": "The process of two different species merging into one", "isCorrect": false, "feedback": "This describes hybridization or merging, generally the reverse of speciation, which is about a single lineage splitting into multiple distinct species."},
+      {"text": "The process of an individual organism changing species during its lifetime", "isCorrect": false, "feedback": "Individual organisms cannot change species during their own lifetime -- speciation is a population-level, multi-generational evolutionary process."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When a geographic barrier (like a new river or mountain range) splits a single population into two separate groups, why might these groups eventually become distinct species (allopatric speciation)?",
+    "options": [
+      {"text": "Once physically separated, each group accumulates different genetic mutations and adapts to potentially different local conditions independently, eventually becoming too genetically different to interbreed successfully", "isCorrect": true, "feedback": "Correct -- this genetic divergence over time, driven by independent mutation and selection in physically isolated populations, is the core mechanism behind allopatric speciation."},
+      {"text": "Geographic separation actually has no effect on whether two populations remain the same species", "isCorrect": false, "feedback": "Geographic separation is actually a major, well-documented driver of speciation -- it prevents gene flow between populations, allowing them to diverge independently over time."},
+      {"text": "The two separated populations would always remain genetically identical forever, regardless of separation", "isCorrect": false, "feedback": "This isn't accurate -- physically separated populations typically DO diverge genetically over time, due to independent mutations and potentially different selective pressures in each location."},
+      {"text": "Both groups would immediately become different species the moment they are physically separated", "isCorrect": false, "feedback": "Speciation isn't immediate -- it's a gradual process typically requiring many generations of accumulated genetic divergence before reproductive isolation becomes complete."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If two geographically separated populations of the same original species were later reunited (e.g., a land bridge forms), and they can still successfully interbreed and produce fertile offspring, what does this suggest about the speciation process?",
+    "options": [
+      {"text": "Speciation has NOT yet been completed -- the populations haven't diverged genetically enough to be considered fully separate species, despite their period of geographic isolation", "isCorrect": true, "feedback": "Correct -- the standard biological species concept defines separate species partly by reproductive isolation (inability to produce fertile offspring), so successful interbreeding here indicates the populations remain part of the same species."},
+      {"text": "This proves the two populations have already become completely separate species", "isCorrect": false, "feedback": "This is backwards -- successful interbreeding with fertile offspring is actually evidence AGAINST complete speciation, indicating the populations haven't yet become reproductively isolated species."},
+      {"text": "Geographic isolation guarantees complete speciation will occur within any timeframe", "isCorrect": false, "feedback": "This isn't accurate -- geographic isolation provides the OPPORTUNITY for speciation, but doesn't guarantee it will complete within any given timeframe; the outcome depends on how much genetic divergence actually accumulates."},
+      {"text": "Reproductive compatibility has no actual connection to whether two populations are considered separate species", "isCorrect": false, "feedback": "Reproductive compatibility is actually a CENTRAL criterion in the biological species concept -- the ability to interbreed and produce fertile offspring is a key indicator of belonging to the same species."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This evolutionary process describes lineage divergence resulting in the formation of reproductively isolated, distinct species.", "medium": "This is when one original group of living things eventually splits into separate, distinct species.", "easy": "This is when one group of living things eventually splits into separate species."},
+    "medium": {"hard": "Consider how the absence of gene flow between physically separated groups allows each to accumulate independent genetic changes over successive generations.", "medium": "Once they can't mix and mate with each other anymore, each group starts changing on its own path over many generations.", "easy": "Once they can't mate with each other anymore, each group starts changing on its own over time."},
+    "hard": {"hard": "Apply the standard criterion for species distinction (reproductive isolation and fertile offspring viability) to determine whether sufficient genetic divergence has actually occurred.", "medium": "If they can still successfully have healthy babies together, that's a sign they haven't actually become fully separate species yet.", "easy": "If they can still have healthy babies together, they haven't become fully separate species yet."}
+  }
+}
+]

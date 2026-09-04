@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a dichotomous key for species identification",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a dichotomous key used for?",
+    "options": [
+      {"text": "Identifying an unknown organism by answering a series of either/or questions about its features", "isCorrect": true, "feedback": "Correct -- each step narrows down the possibilities until a specific identification is reached."},
+      {"text": "Measuring the exact age of an organism", "isCorrect": false, "feedback": "Age determination isn't the purpose of a dichotomous key -- it's specifically for identifying WHAT an organism is."},
+      {"text": "Unlocking a door in a laboratory", "isCorrect": false, "feedback": "This isn't a literal key for a lock -- \"dichotomous key\" is a biological identification tool."},
+      {"text": "Measuring the weight of a specimen", "isCorrect": false, "feedback": "Weight measurement isn't the purpose of a dichotomous key -- its function is species identification through characteristic comparisons."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why is each step in a dichotomous key structured as a choice between exactly two options (hence 'di-' meaning two)?",
+    "options": [
+      {"text": "This binary structure allows for a clear, systematic narrowing of possibilities, with each choice leading definitively to the next step or a final identification", "isCorrect": true, "feedback": "Correct -- this simple, consistent yes/no or either/or format makes the key easy to follow logically toward a correct identification."},
+      {"text": "There is no particular reason for this structure -- it's arbitrary", "isCorrect": false, "feedback": "This binary structure actually serves a clear practical purpose: making the identification process systematic and easy to follow."},
+      {"text": "This structure means only two total species can ever be identified", "isCorrect": false, "feedback": "A dichotomous key can lead to identifying MANY different species -- each individual STEP has two choices, but there can be many sequential steps covering many possible organisms."},
+      {"text": "This structure is required by law for all biological identification", "isCorrect": false, "feedback": "This is simply a practical, traditional design convention for these keys, not a legal requirement."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A student uses a dichotomous key and reaches an identification that seems inconsistent with other obvious features of their specimen. What is the most likely explanation for this discrepancy?",
+    "options": [
+      {"text": "The student likely made an incorrect choice at one or more steps along the way, since dichotomous keys rely on accurately observing and correctly answering each sequential characteristic question", "isCorrect": true, "feedback": "Correct -- since each step depends on the accuracy of the previous one, an early misidentification of a characteristic can lead to an entirely incorrect final result."},
+      {"text": "Dichotomous keys are inherently unreliable and never produce accurate results", "isCorrect": false, "feedback": "Dichotomous keys are actually a well-established, reliable identification tool when used correctly -- errors typically stem from mistakes in following the steps, not an inherent flaw in the method."},
+      {"text": "The specimen must be a completely new, previously undiscovered species", "isCorrect": false, "feedback": "While theoretically possible, a simple observational error at some step in the key is a far more common and likely explanation than discovering an entirely new species."},
+      {"text": "Dichotomous keys are only meant to be used for plants, never animals", "isCorrect": false, "feedback": "Dichotomous keys can be used for both plants and animals (and other organisms) -- this isn't the source of the described inconsistency."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This tool guides identification through a sequence of paired, contrasting characteristic choices.", "medium": "This tool asks a series of two-choice questions to figure out what species something is.", "easy": "This tool asks yes-or-no style questions to help figure out what species something is."},
+    "medium": {"hard": "Consider how a simple, consistent choice format at each step supports a clear, traceable logical path toward identification.", "medium": "Having just two options at each step makes it simple and clear to follow along step by step.", "easy": "Having just two choices at each step makes it simple to follow along."},
+    "hard": {"hard": "Since each step's outcome depends entirely on the accuracy of the previous choice, a single misjudged characteristic early in the sequence can cascade into an entirely incorrect final identification.", "medium": "If the student picked the wrong option at some earlier step by mistake, that would send them down the wrong path toward an incorrect final answer.", "easy": "If the student picked the wrong option at some earlier step, that would lead them to the wrong final answer."}
+  }
+}
+]

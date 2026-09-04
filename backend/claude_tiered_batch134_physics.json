@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between specific gravity and density",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Specific gravity' of a substance is defined as:",
+    "options": [
+      {"text": "The ratio of the substance's density to the density of water (a unitless number)", "isCorrect": true, "feedback": "Correct -- specific gravity is a unitless ratio comparing a substance's density directly to the density of water, typically at a standard reference temperature."},
+      {"text": "The exact mass of one liter of the substance, measured in kilograms", "isCorrect": false, "feedback": "That's closer to a description of DENSITY itself (with units), not specific gravity -- specific gravity specifically involves a unitless RATIO to water's density, not a direct mass measurement with units."},
+      {"text": "The force of gravity acting on the substance, measured in Newtons", "isCorrect": false, "feedback": "This isn't accurate -- that would describe WEIGHT, not specific gravity; specific gravity is a unitless density ratio, unrelated to a direct gravitational force measurement."},
+      {"text": "The substance's boiling point compared to water's boiling point", "isCorrect": false, "feedback": "This isn't accurate -- specific gravity compares DENSITY to water's density, not boiling points, which is an unrelated physical property."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Density is typically expressed with units (like kg/m^3 or g/cm^3), while specific gravity is a unitless number (like 2.7 for aluminum). Why does dividing a substance's density by water's density specifically produce this unitless result?",
+    "options": [
+      {"text": "Since specific gravity is calculated by dividing one density value (with units, like g/cm^3) by another density value using the SAME units (water's density, also in g/cm^3), the units in the numerator and denominator cancel out completely, leaving behind only a pure numerical ratio with no units attached -- this is precisely why specific gravity is always expressed as a unitless number, unlike density itself", "isCorrect": true, "feedback": "Correct -- this explanation of unit cancellation when dividing two quantities with identical units correctly explains why specific gravity, unlike density, comes out as a pure, unitless ratio."},
+      {"text": "Specific gravity would actually also require units to be properly expressed, identical to density", "isCorrect": false, "feedback": "This isn't accurate -- specific gravity is specifically UNITLESS, unlike density, precisely because it's a ratio of two quantities with the same units, which cancel out."},
+      {"text": "Unit cancellation has no actual connection to explaining why specific gravity comes out as a unitless number", "isCorrect": false, "feedback": "This isn't accurate -- unit cancellation IS DIRECTLY connected to and is precisely why specific gravity results in a unitless number, unlike density."},
+      {"text": "Water's density and the substance's density would actually need to be measured in different units before calculating specific gravity", "isCorrect": false, "feedback": "This isn't accurate -- both densities need to be measured using the SAME units for the calculation and resulting unit cancellation to work correctly, not different units."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A substance with a specific gravity greater than 1 will sink in water, while a substance with a specific gravity less than 1 will float, regardless of the specific unit system (metric or otherwise) used to originally measure density. Explain why specific gravity's unitless nature makes it particularly useful for this kind of universal floating/sinking comparison, compared to using raw density values directly.",
+    "options": [
+      {"text": "Since specific gravity is a unitless ratio comparing directly to water (which always has a specific gravity of exactly 1, by definition), the single threshold value of 1 universally and unambiguously determines floating versus sinking behavior in water, regardless of what unit system was originally used to measure density -- raw density values, by contrast, require knowing water's density IN THAT SAME UNIT SYSTEM to make the equivalent comparison, adding an extra step and potential for unit-conversion error", "isCorrect": true, "feedback": "Correct -- this explanation of specific gravity's built-in, unit-independent comparison to water (via the universal threshold of 1) correctly explains its practical convenience for floating/sinking determinations, compared to needing to separately track and compare unit-dependent raw density values."},
+      {"text": "Raw density values would actually be equally convenient as specific gravity for determining floating versus sinking, with no meaningful practical difference between them", "isCorrect": false, "feedback": "This isn't accurate -- specific gravity's UNITLESS, universal comparison to water (threshold of 1) offers a practical convenience that raw density values (requiring matching units to water's density) do not provide as directly."},
+      {"text": "Water would actually have a specific gravity value that varies depending on which unit system is used to measure density", "isCorrect": false, "feedback": "This isn't accurate -- water's specific gravity is always defined as exactly 1, by definition, REGARDLESS of the unit system used, which is precisely what makes specific gravity so universally convenient."},
+      {"text": "The unitless nature of specific gravity has no actual connection to explaining its practical usefulness for floating/sinking comparisons", "isCorrect": false, "feedback": "This isn't accurate -- the unitless nature of specific gravity IS DIRECTLY connected to and explains its practical usefulness for universal, unit-independent floating/sinking comparisons."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This dimensionless metric expresses a substance's mass density as a proportional ratio relative to the density of water.", "medium": "This tells you how many times denser something is compared to water, as a plain number with no units.", "easy": "This tells you how many times denser something is compared to water, with no units."},
+    "medium": {"hard": "Consider how dividing two quantities expressed in identical units algebraically cancels those units, leaving a pure dimensionless numerical ratio as the result.", "medium": "Since you're dividing a density by another density measured the exact same way, the units on top and bottom just cancel out, leaving behind a plain number with nothing attached.", "easy": "Since you're dividing a density by another density measured the same way, the units cancel out, leaving a plain number."},
+    "hard": {"hard": "Consider how anchoring the comparison to a universal, unit-invariant reference point (water at exactly 1) eliminates the need to separately reconcile unit systems when judging floating versus sinking.", "medium": "Since water is always exactly 1 on this scale no matter what units you started with, you can just check if a number is above or below 1 to know if something floats, without worrying about which units anyone used.", "easy": "Since water is always exactly 1 on this scale, you can just check if a number is above or below 1 to know if something floats."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of catalytic converters using catalysis to reduce pollution",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main purpose of a catalytic converter in a car's exhaust system?",
+    "options": [
+      {"text": "To convert harmful exhaust gases into less harmful substances before they're released into the atmosphere", "isCorrect": true, "feedback": "Correct -- catalytic converters use catalysts to transform pollutants like carbon monoxide and nitrogen oxides into less harmful gases like carbon dioxide, nitrogen, and water."},
+      {"text": "To increase the amount of harmful pollutants released by the car", "isCorrect": false, "feedback": "This is the opposite of a catalytic converter's actual purpose -- it specifically works to REDUCE (not increase) harmful pollutant emissions."},
+      {"text": "To make the car's engine run more quietly", "isCorrect": false, "feedback": "That's the function of a muffler, a different exhaust system component -- catalytic converters specifically address chemical pollutant conversion, not sound reduction."},
+      {"text": "To increase the car's fuel storage capacity", "isCorrect": false, "feedback": "Fuel storage is handled by the fuel tank, an unrelated component -- catalytic converters specifically address exhaust gas chemical composition."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Catalytic converters use metals like platinum and palladium as catalysts to speed up the chemical reactions that convert pollutants. Why is it beneficial that these metals function specifically as catalysts, rather than as reactants that get consumed in the reaction?",
+    "options": [
+      {"text": "Since catalysts aren't consumed during the reaction, the same relatively small amount of precious metal can continue facilitating pollutant conversion reactions indefinitely (or for a very long service life), rather than needing constant replenishment", "isCorrect": true, "feedback": "Correct -- this catalytic (non-consumed) property is precisely why catalytic converters can operate effectively for the long lifespan of a vehicle without needing their core catalytic metals replaced or replenished."},
+      {"text": "If these metals were reactants instead of catalysts, they would actually work even more effectively at converting pollutants", "isCorrect": false, "feedback": "This isn't accurate -- if these metals were consumed as reactants, they would need CONSTANT REPLENISHMENT, making catalytic converters impractically expensive and inefficient, unlike their actual catalytic (reusable) function."},
+      {"text": "These metals actually do get completely consumed and need frequent replacement in catalytic converters", "isCorrect": false, "feedback": "This isn't accurate -- catalysts specifically are NOT consumed during the reaction, which is precisely why catalytic converters can function effectively over a very long vehicle service life without needing frequent catalyst replacement."},
+      {"text": "Whether these metals function as catalysts or reactants has no actual practical significance for the catalytic converter's operation", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has SIGNIFICANT practical importance, since a catalyst's non-consumed nature is precisely what makes catalytic converters practical, cost-effective, and long-lasting."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Catalytic converters can become less effective over time if 'poisoned' by certain substances (like lead or sulfur compounds) that bind tightly to the catalyst's surface, blocking its active sites. Why does this poisoning phenomenon significantly impair the converter's function, given that the catalyst itself isn't chemically consumed by its normal catalytic action?",
+    "options": [
+      {"text": "Even though the catalyst isn't consumed by its NORMAL catalytic reaction, poisoning substances can physically or chemically occupy the catalyst's active surface sites, preventing the actual pollutant molecules from accessing those sites and undergoing the necessary reaction", "isCorrect": true, "feedback": "Correct -- this distinction between a catalyst's normal reusability (not consumed by ITS intended reaction) versus vulnerability to unrelated poisoning substances (which can permanently block its functional sites) explains this seemingly paradoxical but well-documented practical limitation."},
+      {"text": "Catalyst poisoning actually has no real effect on how well a catalytic converter functions", "isCorrect": false, "feedback": "This isn't accurate -- catalyst poisoning has a very REAL and significant negative effect on catalytic converter function, which is precisely why certain fuel additives (like leaded gasoline) had to be phased out."},
+      {"text": "A catalyst being 'not consumed' during ITS normal reaction means it's also completely immune to being blocked or interfered with by other substances", "isCorrect": false, "feedback": "This isn't accurate -- being 'not consumed' by its OWN intended catalytic reaction doesn't make a catalyst immune to having its active sites blocked by OTHER, unrelated substances (poisoning), which is precisely the nuance being highlighted here."},
+      {"text": "Catalyst poisoning and normal catalytic consumption during a reaction are actually the exact same phenomenon", "isCorrect": false, "feedback": "These are actually DIFFERENT phenomena -- normal catalytic action doesn't consume the catalyst at all, while poisoning specifically involves a DIFFERENT, unrelated substance physically/chemically blocking the catalyst's active sites."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This automotive component facilitates the transformation of environmentally harmful exhaust byproducts into comparatively benign chemical species.", "medium": "This car part turns bad exhaust gases into less harmful ones before they leave the car.", "easy": "This car part turns bad exhaust gases into less harmful ones."},
+    "medium": {"hard": "Consider the practical, long-term cost and maintenance implications if the core functional metal were consumed with each catalytic cycle rather than persisting through repeated use.", "medium": "Since the metal doesn't get used up, the same small amount can just keep helping convert pollutants over and over, for a really long time.", "easy": "Since the metal doesn't get used up, it can keep working for a really long time."},
+    "hard": {"hard": "Distinguish between a catalyst's inherent chemical persistence through its OWN intended reaction cycle versus its physical/chemical vulnerability to unrelated substances occupying its functional surface area.", "medium": "The metal itself doesn't wear out from doing its normal job, but other unrelated gunk can still physically stick to it and block it from working properly.", "easy": "The metal doesn't wear out from its normal job, but other gunk can still stick to it and block it."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between permutations of distinct vs. identical objects",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The number of ways to arrange 4 completely DISTINCT (different) objects in a row is:",
+    "options": [
+      {"text": "4! = 24", "isCorrect": true, "feedback": "Correct -- with 4 distinct objects, there are 4 choices for the first position, 3 for the second, 2 for the third, and 1 for the last: 4×3×2×1=24."},
+      {"text": "4", "isCorrect": false, "feedback": "This is just the number of objects itself, not the correctly calculated total number of possible ARRANGEMENTS (which requires the full factorial calculation)."},
+      {"text": "4×4 = 16", "isCorrect": false, "feedback": "This incorrectly assumes each position has exactly 4 choices, but the choices actually DECREASE by one at each successive position (4,3,2,1), not staying constant at 4."},
+      {"text": "4+3+2+1 = 10", "isCorrect": false, "feedback": "This incorrectly ADDS the position counts, rather than correctly MULTIPLYING them together, as the fundamental counting principle for permutations requires."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How many distinct arrangements are possible for the letters in the word 'BANANA' (6 letters total, but with repeated letters: 3 A's, 2 N's, 1 B)?",
+    "options": [
+      {"text": "60 (calculated as 6!/(3!×2!×1!))", "isCorrect": true, "feedback": "Correct -- since some letters repeat, we must divide the total permutations (6!=720) by the factorial of each repeated letter's count to eliminate counting indistinguishable arrangements multiple times: 720/(6×2×1)=60."},
+      {"text": "720 (simply 6!)", "isCorrect": false, "feedback": "This treats all 6 letters as if they were completely DISTINCT/different from each other, but since some letters REPEAT (3 A's, 2 N's), this overcounts many arrangements that are actually indistinguishable from each other."},
+      {"text": "6", "isCorrect": false, "feedback": "This is just the total letter count, not the correctly calculated number of distinct possible arrangements."},
+      {"text": "36", "isCorrect": false, "feedback": "This doesn't correctly result from applying the formula for permutations with repeated elements (6!/(3!×2!))."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Explain WHY we specifically divide by the factorial of each repeated letter's count (like 3! for the three A's in BANANA) when calculating arrangements with repeated elements, rather than simply using the basic n! formula.",
+    "options": [
+      {"text": "Since the repeated letters (like the three A's) are actually INDISTINGUISHABLE from each other, treating them as if they were distinct (as the basic n! calculation would) counts each TRULY UNIQUE arrangement MULTIPLE TIMES (specifically, 3! = 6 times for each unique arrangement, corresponding to every possible way of internally rearranging just those 3 identical A's among themselves) -- dividing by 3! specifically corrects for and eliminates this systematic overcounting", "isCorrect": true, "feedback": "Correct -- this precise mathematical correction (dividing out the redundant internal arrangements of each set of identical/indistinguishable objects) is exactly why the formula n!/(repeated element factorials) correctly calculates the true number of DISTINCT, DISTINGUISHABLE arrangements, rather than the inflated total that treating all elements as fully distinct would incorrectly produce."},
+      {"text": "This division step is actually just an arbitrary mathematical convention with no real underlying logical justification", "isCorrect": false, "feedback": "This isn't accurate -- this division step has a very SPECIFIC, LOGICAL mathematical justification (correcting for overcounting indistinguishable internal rearrangements of repeated elements), not an arbitrary convention."},
+      {"text": "Repeated letters actually should be treated as fully distinct from each other, making this division step completely unnecessary", "isCorrect": false, "feedback": "This isn't accurate -- repeated/identical letters specifically should NOT be treated as distinct from each other for this purpose, precisely because swapping two identical letters doesn't create a genuinely NEW, distinguishable arrangement, which is exactly why this correction/division step IS necessary."},
+      {"text": "This division correction has no actual connection to avoiding overcounting of indistinguishable letter arrangements", "isCorrect": false, "feedback": "This isn't accurate -- this division correction is DIRECTLY and specifically connected to and is PRECISELY DESIGNED to avoid this exact overcounting issue with indistinguishable repeated elements."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This calculation applies the factorial function to determine every possible sequential ordering of a set of uniquely identifiable elements.", "medium": "Multiply decreasing numbers together, starting from the total count down to 1.", "easy": "Multiply 4×3×2×1 together."},
+    "medium": {"hard": "Divide the total factorial arrangement count by the factorial of each individual repeated element's occurrence count to correct for indistinguishable internal rearrangements.", "medium": "Calculate 6! for all the letters, then divide by 3! (for the repeated A's) and 2! (for the repeated N's).", "easy": "720 divided by (6×2) equals 60."},
+    "hard": {"hard": "Consider how treating indistinguishable repeated elements as if they were uniquely distinguishable inflates the raw permutation count by a factor equal to the number of ways those identical elements could be internally reordered without creating any visibly different arrangement.", "medium": "If you swap two identical A's with each other, the word still looks exactly the same -- so the basic factorial method is secretly counting that 'different-looking-the-same' swap as if it were a brand new arrangement, and dividing fixes that mistake.", "easy": "Swapping two identical A's doesn't actually create a new-looking word, so dividing fixes the overcounting."}
+  }
+}
+]

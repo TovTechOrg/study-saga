@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a chemical bond's energy and stability",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Generally speaking, is a system with lower potential energy more or less stable?",
+    "options": [
+      {"text": "More stable", "isCorrect": true, "feedback": "Correct -- systems tend to naturally move toward lower-energy, more stable configurations."},
+      {"text": "Less stable", "isCorrect": false, "feedback": "This is backwards -- lower potential energy generally corresponds to greater stability, not less."},
+      {"text": "Stability has nothing to do with energy", "isCorrect": false, "feedback": "Stability and potential energy are actually closely linked concepts in chemistry and physics."},
+      {"text": "It depends entirely on the substance's color", "isCorrect": false, "feedback": "Color has no bearing on chemical stability -- potential energy is the relevant factor."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do atoms often form chemical bonds with each other?",
+    "options": [
+      {"text": "Forming bonds typically lowers the overall potential energy of the system, resulting in a more stable configuration", "isCorrect": true, "feedback": "Correct -- this drive toward lower energy and greater stability is a fundamental reason atoms bond together."},
+      {"text": "Bonding always increases the system's potential energy", "isCorrect": false, "feedback": "This is generally backwards -- bond formation typically LOWERS potential energy, making the bonded state more stable and favorable."},
+      {"text": "Atoms bond together completely randomly, with no underlying reason", "isCorrect": false, "feedback": "Bond formation is actually driven by a clear underlying principle: achieving lower, more stable potential energy."},
+      {"text": "Bonding has nothing to do with energy or stability", "isCorrect": false, "feedback": "Bond formation is fundamentally and directly connected to changes in potential energy and resulting stability."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Breaking a chemical bond always requires an energy input, yet some overall reactions (breaking some bonds, forming others) release net energy. How can both of these facts be true together?",
+    "options": [
+      {"text": "The energy released by forming new, more stable bonds can exceed the energy required to break the original bonds, resulting in a net energy release overall", "isCorrect": true, "feedback": "Correct -- the key is comparing the energy cost of breaking OLD bonds against the energy released forming NEW bonds -- the net result depends on which is greater."},
+      {"text": "Breaking bonds actually never requires any energy at all", "isCorrect": false, "feedback": "Breaking any chemical bond always requires energy input -- this is a fundamental principle, regardless of the overall reaction's net energy change."},
+      {"text": "This is a contradiction that hasn't been resolved in chemistry", "isCorrect": false, "feedback": "This isn't an unresolved contradiction -- it's a well-understood principle involving comparing bond-breaking costs against bond-forming energy release."},
+      {"text": "Forming new bonds never releases any energy", "isCorrect": false, "feedback": "Forming new bonds actually does release energy -- and in exothermic reactions, this release exceeds what was needed to break the original bonds."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Systems generally favor configurations that minimize their overall stored energy.", "medium": "Lower stored energy generally corresponds to a calmer, more settled state.", "easy": "Lower energy usually means more stable, like a ball settled at the bottom of a hill."},
+    "medium": {"hard": "Bonded atoms typically reach a lower overall energy state compared to their separated, unbonded form.", "medium": "Being bonded together usually puts atoms in a lower, more comfortable energy state than being separate.", "easy": "Being bonded together usually puts atoms in a calmer, lower-energy state."},
+    "hard": {"hard": "Compare the total energy input required to break all original bonds against the total energy released forming all new bonds -- the sign of the net difference determines whether the reaction is exothermic or endothermic overall.", "medium": "It comes down to comparing how much energy it costs to break the old bonds versus how much energy is gained from making the new ones.", "easy": "It comes down to comparing how much energy breaking the old bonds costs versus how much making new bonds gives back."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between fundamental and overtone frequencies in musical instruments",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The 'fundamental frequency' of a vibrating string (like a guitar string) refers to:",
+    "options": [
+      {"text": "The lowest possible resonant frequency at which the entire string vibrates as a single unit", "isCorrect": true, "feedback": "Correct -- the fundamental frequency (or first harmonic) is the simplest, lowest-pitched standing wave pattern a string can produce, with nodes only at the two fixed ends."},
+      {"text": "The highest possible frequency a string can ever produce", "isCorrect": false, "feedback": "This is essentially the opposite of the fundamental frequency, which specifically refers to the LOWEST (not highest) possible resonant frequency."},
+      {"text": "A frequency that has no actual connection to the string's vibration pattern at all", "isCorrect": false, "feedback": "This isn't accurate -- the fundamental frequency is DIRECTLY and specifically connected to and defined by a particular characteristic vibration pattern of the string (the simplest possible standing wave)."},
+      {"text": "The exact volume/loudness level of the sound produced", "isCorrect": false, "feedback": "Volume/loudness is a separate concept (related to amplitude) from fundamental frequency, which specifically concerns the particular PITCH-determining vibration pattern, not loudness."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In addition to its fundamental frequency, a vibrating string also simultaneously produces various 'overtones' (higher-frequency vibration patterns, typically whole-number multiples of the fundamental). Why does the presence and specific relative strength of these different overtones help explain why the same musical note played on a guitar sounds distinctly different from that same note played on a piano?",
+    "options": [
+      {"text": "Even when two different instruments produce the exact same FUNDAMENTAL frequency (same basic musical note/pitch), the specific mixture and relative intensity of the various OVERTONES present differs between instrument types, creating each instrument's unique characteristic sound quality (timbre), despite the identical fundamental pitch", "isCorrect": true, "feedback": "Correct -- this concept of 'timbre' (sound quality/character), determined specifically by an instrument's unique overtone mixture/pattern, is precisely why identical musical notes (same fundamental frequency) still sound distinctly different when played on different instruments."},
+      {"text": "Different instruments actually always produce completely identical overtone patterns, with no variation between instrument types", "isCorrect": false, "feedback": "This isn't accurate -- DIFFERENT instrument types specifically produce DIFFERENT characteristic overtone patterns/mixtures, which is precisely why they sound different from each other, even for the exact same fundamental note."},
+      {"text": "Overtones have no actual connection to explaining why different instruments produce distinctly different sound qualities", "isCorrect": false, "feedback": "This isn't accurate -- overtones (their SPECIFIC PATTERN/mixture) are DIRECTLY and centrally connected to and are precisely what explains the different characteristic sound qualities (timbre) between different instrument types."},
+      {"text": "Fundamental frequency alone actually fully determines an instrument's complete unique sound quality, with overtones playing no meaningful role", "isCorrect": false, "feedback": "This isn't accurate -- fundamental frequency alone only determines the basic PITCH/NOTE, while the OVERTONE pattern is specifically what determines the distinctive SOUND QUALITY/TIMBRE that differentiates various instruments playing that same note."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A string's specific overtone pattern (which harmonics are present and their relative strengths) is influenced by factors like exactly WHERE along the string it's plucked/struck, and the string's own physical properties (like stiffness). Why does this sensitivity to plucking location and physical properties provide musicians with meaningful expressive/tonal control over their instrument's resulting sound?",
+    "options": [
+      {"text": "By strategically choosing exactly where to pluck/strike a string (or by using strings with different physical properties), a musician can deliberately emphasize or suppress specific overtones, thereby actively shaping and controlling the resulting sound's timbre/character, providing an additional expressive dimension beyond simply choosing which basic note (fundamental frequency) to play", "isCorrect": true, "feedback": "Correct -- this practical connection between playing technique (pluck/strike location) and the resulting overtone pattern is precisely why skilled musicians can achieve meaningfully different tonal qualities/expressiveness from the same basic instrument and note, beyond simply the pitch itself, by deliberately manipulating this technique-dependent overtone emphasis."},
+      {"text": "Plucking location and string physical properties actually have no real effect on which specific overtones are produced or their relative strength", "isCorrect": false, "feedback": "This isn't accurate -- plucking LOCATION and the string's physical PROPERTIES DO have a significant, well-documented effect on which overtones are produced and their relative strength/emphasis in the resulting sound."},
+      {"text": "This sensitivity to technique has no actual connection to a musician's ability to expressively control their instrument's resulting sound quality", "isCorrect": false, "feedback": "This isn't accurate -- this sensitivity to technique (plucking location, string properties) is DIRECTLY and specifically connected to and EXPLAINS musicians' meaningful ability to expressively control tonal quality beyond simply pitch selection alone."},
+      {"text": "Only a string's fundamental frequency (basic pitch) can actually be controlled by a musician, with overtone patterns being entirely fixed and uncontrollable", "isCorrect": false, "feedback": "This isn't accurate -- musicians CAN and DO exercise meaningful control over the OVERTONE pattern (not just the fundamental pitch) through specific playing technique choices, which is precisely the expressive capability being described here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This baseline resonant mode represents the simplest standing wave configuration achievable by the vibrating medium, characterized by nodes exclusively at its fixed boundary points.", "medium": "This is the simplest, lowest note a vibrating string can make when it moves as one single whole unit.", "easy": "This is the simplest, lowest note a vibrating string can make."},
+    "medium": {"hard": "Consider how the unique combination and relative intensity of higher-frequency vibration modes superimposed on an identical base frequency could produce a perceptually distinct overall sound character.", "medium": "Even if two instruments hit the exact same basic note, the different EXTRA vibration patterns layered on top give each instrument its own unique 'flavor' of sound.", "easy": "Even with the same basic note, different extra vibration patterns give each instrument its own unique sound."},
+    "hard": {"hard": "Consider how varying the physical excitation point along a vibrating string selectively favors or suppresses specific standing wave modes whose node/antinode patterns align differently with that particular excitation location.", "medium": "Where exactly you pluck the string changes which of the extra vibration patterns get emphasized more, giving the player a way to shape the exact character of the sound, not just which note it is.", "easy": "Where you pluck the string changes which extra vibration patterns get emphasized, shaping the sound's character."}
+  }
+}
+]

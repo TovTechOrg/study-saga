@@ -1,0 +1,125 @@
+[
+{
+  "topic": "the difference between speed and acceleration",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does acceleration measure?",
+    "options": [
+      {"text": "The rate at which an object's velocity changes", "isCorrect": true, "feedback": "Correct -- acceleration describes how quickly speed or direction is changing, not the speed itself."},
+      {"text": "How fast an object is currently moving", "isCorrect": false, "feedback": "That describes speed, not acceleration."},
+      {"text": "The total distance an object has traveled", "isCorrect": false, "feedback": "That describes distance, not acceleration."},
+      {"text": "The weight of a moving object", "isCorrect": false, "feedback": "Weight is unrelated to acceleration -- acceleration is about the rate of change of velocity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A car is moving at a constant 60 mph in a straight line. What is its acceleration?",
+    "options": [
+      {"text": "0 (zero)", "isCorrect": true, "feedback": "Correct -- since velocity isn't changing at all, there's no acceleration, even though the car is moving fast."},
+      {"text": "60 mph", "isCorrect": false, "feedback": "This confuses speed with acceleration -- since velocity is constant, acceleration is actually zero."},
+      {"text": "Increasing steadily", "isCorrect": false, "feedback": "Acceleration would only increase if speed or direction were changing -- here, the car maintains a constant velocity."},
+      {"text": "It cannot be determined", "isCorrect": false, "feedback": "It absolutely can be determined -- constant velocity directly means zero acceleration."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A car moving at a constant 60 mph goes around a curve without changing its speed. Does it experience acceleration during the turn?",
+    "options": [
+      {"text": "Yes, because acceleration depends on velocity (speed AND direction), and the direction is changing even though speed isn't", "isCorrect": true, "feedback": "Correct -- this is called centripetal acceleration; changing direction alone counts as a change in velocity, even without a change in speed."},
+      {"text": "No, because speed alone determines acceleration, and speed isn't changing", "isCorrect": false, "feedback": "Acceleration depends on velocity, which includes DIRECTION as well as speed -- changing direction alone still counts as acceleration."},
+      {"text": "No, acceleration only applies to objects moving in a perfectly straight line", "isCorrect": false, "feedback": "Acceleration can absolutely occur during curved motion -- in fact, any change in direction constitutes acceleration."},
+      {"text": "Yes, but only because the car's engine is working harder to turn", "isCorrect": false, "feedback": "The engine's effort isn't the defining reason -- it's specifically the changing DIRECTION of velocity that constitutes the acceleration here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity captures how quickly an object's speed OR direction is changing over time.", "medium": "This measures how quickly something speeds up, slows down, or changes direction.", "easy": "This measures how quickly something speeds up or slows down."},
+    "medium": {"hard": "Consider whether the car's velocity (speed and direction combined) is changing at all in this scenario.", "medium": "Since the speed and direction aren't changing at all, think about what that means for acceleration.", "easy": "Since the car isn't speeding up, slowing down, or turning, there's no acceleration at all."},
+    "hard": {"hard": "Velocity is a vector combining speed and direction -- a change in either component, including direction alone, constitutes a nonzero acceleration.", "medium": "Since velocity includes direction, and the direction is changing as the car turns, that alone counts as acceleration.", "easy": "Since velocity includes which way you're going, turning the corner counts as acceleration, even if speed stays the same."}
+  }
+},
+{
+  "topic": "the relationship between current, voltage, and power (P=IV)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the formula relating electrical power, current, and voltage?",
+    "options": [
+      {"text": "Power = Current × Voltage", "isCorrect": true, "feedback": "Correct -- electrical power equals current multiplied by voltage."},
+      {"text": "Power = Current + Voltage", "isCorrect": false, "feedback": "Power is calculated by multiplying, not adding, current and voltage."},
+      {"text": "Power = Current ÷ Voltage", "isCorrect": false, "feedback": "This isn't the correct relationship -- power involves multiplying, not dividing."},
+      {"text": "Power = Voltage only, with no relation to current", "isCorrect": false, "feedback": "Power also depends directly on current, not voltage alone."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A device operates at 120 volts and draws 2 amps of current. What is its power consumption?",
+    "options": [
+      {"text": "240 watts", "isCorrect": true, "feedback": "Correct -- P=IV=2×120=240."},
+      {"text": "60 watts", "isCorrect": false, "feedback": "This divides instead of multiplying current and voltage."},
+      {"text": "122 watts", "isCorrect": false, "feedback": "This adds the values instead of multiplying them."},
+      {"text": "118 watts", "isCorrect": false, "feedback": "This subtracts the values instead of multiplying them."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A 1,200-watt appliance is plugged into a 120-volt outlet. How much current does it draw? (Using I = P/V)",
+    "options": [
+      {"text": "10 amps", "isCorrect": true, "feedback": "Correct -- current = power ÷ voltage = 1200÷120=10."},
+      {"text": "144,000 amps", "isCorrect": false, "feedback": "This multiplies instead of dividing power by voltage."},
+      {"text": "1,080 amps", "isCorrect": false, "feedback": "This subtracts instead of dividing power by voltage."},
+      {"text": "100 amps", "isCorrect": false, "feedback": "This doesn't correctly divide 1200 by 120."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity combines the flow rate of charge with the electrical \"push\" driving it.", "medium": "This connects three key electrical quantities: power, current, and voltage.", "easy": "This says power equals current times voltage."},
+    "medium": {"hard": "Multiply the current value by the voltage value to find the power.", "medium": "Multiply 2 by 120 to find the power.", "easy": "Multiply 2 by 120."},
+    "hard": {"hard": "Rearrange the power equation to isolate current by dividing power by voltage.", "medium": "Divide the power by the voltage to find the current.", "easy": "Divide 1,200 by 120."}
+  }
+},
+{
+  "topic": "the concept of equilibrium in physics (balanced systems)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean for an object to be in mechanical equilibrium?",
+    "options": [
+      {"text": "The net force acting on it is zero", "isCorrect": true, "feedback": "Correct -- equilibrium means all forces balance out, resulting in no net force."},
+      {"text": "It is moving at extremely high speed", "isCorrect": false, "feedback": "Speed alone doesn't determine equilibrium -- what matters is whether the net force is zero, regardless of how fast something moves (as long as it's constant)."},
+      {"text": "It has stopped existing", "isCorrect": false, "feedback": "Equilibrium describes a balanced force state, not the object ceasing to exist."},
+      {"text": "It is accelerating rapidly", "isCorrect": false, "feedback": "Rapid acceleration would indicate a significant net force, the opposite of equilibrium."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A picture frame hangs motionless on a wall, supported by a nail. What can you conclude about the forces acting on it?",
+    "options": [
+      {"text": "The forces (gravity pulling down, the nail's support force pushing up) are balanced, resulting in equilibrium", "isCorrect": true, "feedback": "Correct -- since the frame isn't moving, the forces on it must be in equilibrium."},
+      {"text": "There are no forces acting on the frame at all", "isCorrect": false, "feedback": "Forces (gravity and the nail's support) are definitely acting on the frame -- they just happen to balance out."},
+      {"text": "The forces are unbalanced, causing constant acceleration", "isCorrect": false, "feedback": "If the forces were unbalanced, the frame would be accelerating (falling or moving) -- but it's staying still, indicating balanced forces."},
+      {"text": "Gravity has stopped acting on the frame", "isCorrect": false, "feedback": "Gravity is still fully acting on the frame -- it's just balanced by the nail's support force."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A ladder leans against a wall at an angle, staying perfectly still. Multiple forces act on it: gravity, the wall's push, the ground's push, and friction from the ground. Why is this a more complex equilibrium example than a simple hanging object?",
+    "options": [
+      {"text": "Equilibrium here requires balancing forces in multiple directions (both horizontal and vertical) simultaneously, plus balancing rotational effects (torques), not just a simple up-down balance", "isCorrect": true, "feedback": "Correct -- for a rigid object like a ladder, true equilibrium requires both net force AND net torque to be zero, which is more complex than a simple one-dimensional force balance."},
+      {"text": "This scenario doesn't actually involve any real equilibrium at all", "isCorrect": false, "feedback": "Since the ladder is perfectly still, it IS in equilibrium -- it's just a more complex multi-directional and rotational example."},
+      {"text": "The ladder is actually falling very slowly, not in equilibrium", "isCorrect": false, "feedback": "The scenario specifies the ladder is staying perfectly still, which is the definition of being in equilibrium, not slowly falling."},
+      {"text": "Friction has no role in this type of equilibrium problem", "isCorrect": false, "feedback": "Friction is actually a crucial force in this scenario, helping prevent the ladder's base from sliding out and contributing to the overall force and torque balance."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This condition describes a state where all forces acting on an object perfectly cancel each other out.", "medium": "This is when all the forces on something perfectly cancel out.", "easy": "This is when all forces on something balance out perfectly."},
+    "medium": {"hard": "Since the frame isn't accelerating in any direction, the vector sum of all forces acting on it must equal zero.", "medium": "Since the frame isn't falling or moving, the forces pulling and pushing on it must be canceling out.", "easy": "Since the frame isn't moving, the forces on it must be balanced."},
+    "hard": {"hard": "Beyond simple linear force balance, a rigid extended object like a ladder must also have balanced torques (rotational effects) around any point, since forces act at different distances and angles along its length.", "medium": "Because the ladder is tilted and touches two different surfaces, you have to balance forces pushing sideways AND up-down, plus make sure it doesn't rotate.", "easy": "Because the ladder touches two different surfaces at an angle, there's more to balance than just up and down forces."}
+  }
+}
+]

@@ -1,0 +1,330 @@
+[
+{
+  "topic": "Newton's first law of motion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to Newton's first law, an object at rest will stay at rest unless:",
+    "options": [
+      {"text": "An unbalanced force acts on it", "isCorrect": true, "feedback": "Correct -- objects resist changes to their motion unless a net force pushes or pulls them."},
+      {"text": "It gets older", "isCorrect": false, "feedback": "Time passing alone doesn't change an object's motion."},
+      {"text": "It changes color", "isCorrect": false, "feedback": "Color has no effect on motion."},
+      {"text": "Someone looks at it", "isCorrect": false, "feedback": "Observation alone doesn't apply any physical force to an object."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What term describes an object's tendency to resist changes in its state of motion?",
+    "options": [
+      {"text": "Inertia", "isCorrect": true, "feedback": "Correct -- inertia is the resistance to a change in motion, the core idea behind the first law."},
+      {"text": "Velocity", "isCorrect": false, "feedback": "Velocity describes speed and direction, not resistance to change."},
+      {"text": "Acceleration", "isCorrect": false, "feedback": "Acceleration describes a change in velocity, not the resistance to that change."},
+      {"text": "Gravity", "isCorrect": false, "feedback": "Gravity is a specific force, not the general property of resisting motion changes."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A hockey puck sliding on frictionless ice continues moving in a straight line at constant speed. This best illustrates:",
+    "options": [
+      {"text": "Newton's first law -- no net force means no change in motion", "isCorrect": true, "feedback": "Correct -- with no friction or other unbalanced force, the puck's motion stays constant, exactly as the first law predicts."},
+      {"text": "Newton's third law -- for every action there's an equal and opposite reaction", "isCorrect": false, "feedback": "The third law is about paired forces between two interacting objects, not about maintaining constant motion."},
+      {"text": "The law of conservation of mass", "isCorrect": false, "feedback": "That law is about matter in chemical reactions, unrelated to a puck's motion."},
+      {"text": "Newton's second law -- force equals mass times acceleration", "isCorrect": false, "feedback": "The second law explains changing motion under force; here there's no force and no change, which is the first law's territory."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Only something applying a net push or pull can change this object's state of motion.", "medium": "Something has to actually push or pull on it to change what it's doing.", "easy": "A force has to act on it to make it start moving."},
+    "medium": {"hard": "This property describes why heavier or already-moving objects resist having their motion altered.", "medium": "This is the name for an object's built-in resistance to changing its speed or direction.", "easy": "This is the tendency of objects to keep doing what they're already doing."},
+    "hard": {"hard": "With friction eliminated, there's no unbalanced force acting on the puck, so its motion cannot change -- this is the defining scenario the first law describes.", "medium": "Since there's no friction slowing it down, there's no force changing its motion, which is exactly what this law predicts.", "easy": "With nothing pushing or slowing it down, the puck just keeps going the same way, forever -- which law describes that?"}
+  }
+},
+{
+  "topic": "speed vs. velocity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the key difference between speed and velocity?",
+    "options": [
+      {"text": "Velocity includes direction, speed does not", "isCorrect": true, "feedback": "Correct -- velocity is speed with a specified direction."},
+      {"text": "Speed includes direction, velocity does not", "isCorrect": false, "feedback": "This has it backwards -- velocity is the one that includes direction."},
+      {"text": "They are always the same value with no difference", "isCorrect": false, "feedback": "They can have the same magnitude, but conceptually direction is what sets them apart."},
+      {"text": "Speed is measured in a different unit than velocity", "isCorrect": false, "feedback": "Both are commonly measured in the same units, like meters per second -- the difference is conceptual, not unit-based."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A car travels 100 km in 2 hours. What is its average speed?",
+    "options": [
+      {"text": "50 km/h", "isCorrect": true, "feedback": "Correct -- speed equals distance divided by time: 100/2 = 50."},
+      {"text": "200 km/h", "isCorrect": false, "feedback": "This multiplies distance and time instead of dividing."},
+      {"text": "100 km/h", "isCorrect": false, "feedback": "This ignores the 2-hour time period entirely."},
+      {"text": "2 km/h", "isCorrect": false, "feedback": "This divides time by distance instead of distance by time."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A runner completes one full lap around a circular track, ending up back at the starting point. Which statement is true?",
+    "options": [
+      {"text": "Their average speed was greater than zero, but their average velocity was zero", "isCorrect": true, "feedback": "Correct -- they covered real distance (positive speed), but since displacement (start to end position) is zero, velocity is zero."},
+      {"text": "Both their average speed and average velocity were zero", "isCorrect": false, "feedback": "Speed depends on total distance traveled, which was not zero here."},
+      {"text": "Both their average speed and average velocity were equal and positive", "isCorrect": false, "feedback": "Velocity depends on displacement, which is zero since they returned to the start."},
+      {"text": "Their average velocity was greater than their average speed", "isCorrect": false, "feedback": "Velocity's magnitude can never exceed speed over the same time period."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One of these two quantities is a vector (has direction), the other is a scalar (magnitude only).", "medium": "One of these terms tells you which way something is moving, not just how fast.", "easy": "One of these words tells you both how fast AND which direction something moves."},
+    "medium": {"hard": "Divide the total distance covered by the total time it took to cover it.", "medium": "Divide 100 by 2 to find the speed.", "easy": "Divide the distance by the time to get the speed."},
+    "hard": {"hard": "Speed depends on total path length traveled, while velocity depends only on the net change in position (displacement) from start to finish.", "medium": "The runner covered real ground (so speed isn't zero), but ended up exactly where they started (so displacement, and thus velocity, is zero).", "easy": "The runner ran a real distance, but ended up back at the same spot -- so their overall position didn't change at all."}
+  }
+},
+{
+  "topic": "types of energy: kinetic and potential",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What type of energy does a moving car have?",
+    "options": [
+      {"text": "Kinetic energy", "isCorrect": true, "feedback": "Correct -- kinetic energy is the energy of motion."},
+      {"text": "Potential energy", "isCorrect": false, "feedback": "Potential energy is stored energy due to position, not motion."},
+      {"text": "Nuclear energy", "isCorrect": false, "feedback": "Nuclear energy comes from reactions within an atom's nucleus, unrelated to simply moving."},
+      {"text": "Sound energy", "isCorrect": false, "feedback": "A moving car's main energy of interest here is due to its motion, not the sound it makes."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A ball held high above the ground has what type of energy due to its position?",
+    "options": [
+      {"text": "Gravitational potential energy", "isCorrect": true, "feedback": "Correct -- height above the ground gives an object stored energy due to gravity."},
+      {"text": "Kinetic energy", "isCorrect": false, "feedback": "Kinetic energy requires motion -- a held, stationary ball isn't moving."},
+      {"text": "Thermal energy", "isCorrect": false, "feedback": "Thermal energy relates to temperature/heat, not height."},
+      {"text": "Electrical energy", "isCorrect": false, "feedback": "There's no electric charge or current involved in simply holding a ball up."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "As a ball falls from a height, what happens to its kinetic and potential energy (ignoring air resistance)?",
+    "options": [
+      {"text": "Potential energy decreases while kinetic energy increases by the same amount", "isCorrect": true, "feedback": "Correct -- total mechanical energy is conserved, so potential energy converts directly into kinetic energy as height decreases."},
+      {"text": "Both potential and kinetic energy increase together", "isCorrect": false, "feedback": "Potential energy decreases as height decreases -- it doesn't increase alongside kinetic energy."},
+      {"text": "Both potential and kinetic energy decrease together", "isCorrect": false, "feedback": "Kinetic energy actually increases as the ball speeds up while falling."},
+      {"text": "Energy simply disappears as the ball falls", "isCorrect": false, "feedback": "Energy is conserved, not destroyed -- it converts from one form to another."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This form of energy depends directly on an object's speed.", "medium": "This is the energy an object has because it's moving.", "easy": "This is the energy something has just because it's moving."},
+    "medium": {"hard": "This form of energy is stored due to an object's position relative to a force like gravity.", "medium": "This is energy stored because of how high up something is.", "easy": "This is the energy something has just because of how high up it is."},
+    "hard": {"hard": "Without air resistance, total mechanical energy is conserved -- whatever height-based energy is lost converts directly into motion-based energy.", "medium": "As height is lost, that stored energy transforms directly into energy of motion, keeping the total the same.", "easy": "As the ball falls and loses height, that lost energy turns directly into speed -- the total amount stays the same."}
+  }
+},
+{
+  "topic": "Ohm's law (voltage, current, resistance)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does Ohm's law relate?",
+    "options": [
+      {"text": "Voltage, current, and resistance", "isCorrect": true, "feedback": "Correct -- Ohm's law states V = I × R."},
+      {"text": "Mass, volume, and density", "isCorrect": false, "feedback": "That relationship describes density, a completely different formula."},
+      {"text": "Force, mass, and acceleration", "isCorrect": false, "feedback": "That's Newton's second law, not Ohm's law."},
+      {"text": "Distance, speed, and time", "isCorrect": false, "feedback": "That's the basic motion formula, not Ohm's law."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Using Ohm's law (V = I × R), what is the voltage across a resistor with 2 amps of current and 5 ohms of resistance?",
+    "options": [
+      {"text": "10 volts", "isCorrect": true, "feedback": "Correct -- 2 × 5 = 10 volts."},
+      {"text": "2.5 volts", "isCorrect": false, "feedback": "This divides instead of multiplying current and resistance."},
+      {"text": "7 volts", "isCorrect": false, "feedback": "This adds current and resistance instead of multiplying them."},
+      {"text": "3 volts", "isCorrect": false, "feedback": "This doesn't match multiplying 2 by 5."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If the resistance in a circuit doubles while the voltage stays constant, what happens to the current?",
+    "options": [
+      {"text": "It is cut in half", "isCorrect": true, "feedback": "Correct -- since I = V/R, doubling R while V stays constant halves the current."},
+      {"text": "It doubles", "isCorrect": false, "feedback": "Current and resistance are inversely related when voltage is constant, so doubling resistance shouldn't double current."},
+      {"text": "It stays exactly the same", "isCorrect": false, "feedback": "Current depends directly on resistance in this formula, so it must change when resistance changes."},
+      {"text": "It becomes zero", "isCorrect": false, "feedback": "Doubling resistance reduces current, but doesn't eliminate it entirely."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This law connects electrical pressure, the flow of charge, and the opposition to that flow, all in one formula.", "medium": "This law connects three electrical quantities in a circuit using one simple equation.", "easy": "This law connects voltage, current, and resistance together."},
+    "medium": {"hard": "Multiply the current value by the resistance value to find the voltage.", "medium": "Multiply 2 by 5 to find the voltage.", "easy": "Multiply the current and the resistance together."},
+    "hard": {"hard": "Rearranging Ohm's law as I = V/R shows current is inversely proportional to resistance when voltage is held constant.", "medium": "Since current equals voltage divided by resistance, increasing resistance while voltage stays fixed must decrease current proportionally.", "easy": "If resistance doubles and voltage stays the same, the current has to drop -- specifically to half its original value."}
+  }
+},
+{
+  "topic": "waves: wavelength, frequency, and amplitude",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the distance between two consecutive crests of a wave called?",
+    "options": [
+      {"text": "Wavelength", "isCorrect": true, "feedback": "Correct -- wavelength measures the distance from one crest to the next."},
+      {"text": "Amplitude", "isCorrect": false, "feedback": "Amplitude measures the height of the wave, not the distance between crests."},
+      {"text": "Frequency", "isCorrect": false, "feedback": "Frequency measures how many waves pass a point per second, not a distance."},
+      {"text": "Period", "isCorrect": false, "feedback": "Period measures time for one full wave cycle, not a spatial distance."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What does the amplitude of a wave represent?",
+    "options": [
+      {"text": "The maximum height of the wave from its resting position", "isCorrect": true, "feedback": "Correct -- amplitude measures how far the wave displaces from equilibrium at its peak."},
+      {"text": "The number of waves passing a point each second", "isCorrect": false, "feedback": "That describes frequency, not amplitude."},
+      {"text": "The speed at which the wave travels", "isCorrect": false, "feedback": "That describes wave speed, a separate property from amplitude."},
+      {"text": "The distance between two troughs", "isCorrect": false, "feedback": "That describes wavelength, not amplitude."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If a wave's frequency increases while its speed stays constant, what must happen to its wavelength?",
+    "options": [
+      {"text": "It must decrease", "isCorrect": true, "feedback": "Correct -- since speed = wavelength × frequency, keeping speed constant while frequency rises means wavelength must fall."},
+      {"text": "It must increase", "isCorrect": false, "feedback": "With speed fixed, a higher frequency requires a shorter wavelength, not a longer one."},
+      {"text": "It stays exactly the same", "isCorrect": false, "feedback": "Wavelength and frequency are linked through speed, so one changing while speed is fixed forces the other to change too."},
+      {"text": "It becomes impossible to determine", "isCorrect": false, "feedback": "The relationship (speed = wavelength × frequency) determines this precisely, it's not unknowable."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measures a spatial gap, specifically between two identical repeating points on the wave.", "medium": "This is the length of one complete wave cycle, from one peak to the next.", "easy": "This measures how long one full wave 'loop' is, from peak to peak."},
+    "medium": {"hard": "This measures how far the wave swings away from its neutral, undisturbed position at its most extreme point.", "medium": "This is how tall or how far the wave reaches from its resting middle line.", "easy": "This measures how big or tall the wave's peak is."},
+    "hard": {"hard": "Speed equals wavelength times frequency -- if speed is fixed and frequency rises, wavelength must fall proportionally to keep the equation balanced.", "medium": "Since speed = wavelength × frequency, and speed doesn't change, wavelength and frequency must move in opposite directions.", "easy": "If speed stays the same and frequency goes up, wavelength has to go down to balance it out."}
+  }
+},
+{
+  "topic": "states of matter and heat transfer",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the transfer of heat through direct contact between materials called?",
+    "options": [
+      {"text": "Conduction", "isCorrect": true, "feedback": "Correct -- conduction is heat transfer through direct contact, like touching a hot pan."},
+      {"text": "Convection", "isCorrect": false, "feedback": "Convection is heat transfer through the movement of fluids (liquids or gases), not direct contact."},
+      {"text": "Radiation", "isCorrect": false, "feedback": "Radiation is heat transfer through electromagnetic waves, without needing any contact at all."},
+      {"text": "Reflection", "isCorrect": false, "feedback": "Reflection describes light bouncing off a surface, not a method of heat transfer."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which method of heat transfer explains how the Sun warms the Earth, despite the vacuum of space between them?",
+    "options": [
+      {"text": "Radiation", "isCorrect": true, "feedback": "Correct -- radiation travels as electromagnetic waves and doesn't require a physical medium."},
+      {"text": "Conduction", "isCorrect": false, "feedback": "Conduction requires direct contact between materials, which isn't possible across empty space."},
+      {"text": "Convection", "isCorrect": false, "feedback": "Convection requires a fluid medium to carry heat, which space (a vacuum) doesn't have."},
+      {"text": "Friction", "isCorrect": false, "feedback": "Friction requires two surfaces rubbing together, not applicable to sunlight crossing empty space."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which TWO of the following heat-transfer methods require a physical medium (matter) to occur?",
+    "options": [
+      {"text": "Conduction", "isCorrect": true, "feedback": "Correct -- conduction relies on particle-to-particle contact within a material."},
+      {"text": "Convection", "isCorrect": true, "feedback": "Correct -- convection relies on the physical movement of a fluid's particles."},
+      {"text": "Radiation", "isCorrect": false, "feedback": "Radiation travels through empty space and doesn't need any matter at all."},
+      {"text": "None of these require a medium", "isCorrect": false, "feedback": "Two of the three listed methods do in fact require a physical medium."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This method requires the two objects to be physically touching each other.", "medium": "This method needs direct physical contact between the two materials.", "easy": "This is heat moving between two things that are physically touching."},
+    "medium": {"hard": "This method travels as electromagnetic waves and can pass through the vacuum of empty space.", "medium": "This is the only heat-transfer method that doesn't need any matter to travel through at all.", "easy": "This type of heat transfer can travel through empty space, with nothing in between."},
+    "hard": {"hard": "Two of the three rely on particles of matter interacting or moving to carry energy along; only one travels as waves with no particles required at all.", "medium": "Two of these methods need actual particles of matter present to transfer the heat; one does not.", "easy": "Two of these three need real matter to work; only one can travel through completely empty space."}
+  }
+},
+{
+  "topic": "density",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the formula for density?",
+    "options": [
+      {"text": "Mass ÷ Volume", "isCorrect": true, "feedback": "Correct -- density equals mass divided by volume."},
+      {"text": "Mass × Volume", "isCorrect": false, "feedback": "Density is found by dividing, not multiplying, these two quantities."},
+      {"text": "Volume ÷ Mass", "isCorrect": false, "feedback": "This is the inverse of density, not density itself."},
+      {"text": "Mass + Volume", "isCorrect": false, "feedback": "Mass and volume have different units, so they can't simply be added together."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "An object has a mass of 20 grams and a volume of 4 cm³. What is its density?",
+    "options": [
+      {"text": "5 g/cm³", "isCorrect": true, "feedback": "Correct -- 20 divided by 4 equals 5."},
+      {"text": "80 g/cm³", "isCorrect": false, "feedback": "This multiplies mass and volume instead of dividing."},
+      {"text": "16 g/cm³", "isCorrect": false, "feedback": "This subtracts instead of dividing mass by volume."},
+      {"text": "24 g/cm³", "isCorrect": false, "feedback": "This adds instead of dividing mass by volume."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An object floats in water. What must be true about its density compared to water's density (1 g/cm³)?",
+    "options": [
+      {"text": "The object's density is less than 1 g/cm³", "isCorrect": true, "feedback": "Correct -- objects less dense than the fluid they're placed in will float."},
+      {"text": "The object's density is greater than 1 g/cm³", "isCorrect": false, "feedback": "Objects denser than water sink rather than float."},
+      {"text": "The object's density is exactly 1 g/cm³", "isCorrect": false, "feedback": "An object with exactly matching density would stay suspended in place, not float at the surface."},
+      {"text": "Density has no effect on whether something floats", "isCorrect": false, "feedback": "Density relative to the fluid is precisely what determines floating versus sinking."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property compares how much matter is packed into a given amount of space.", "medium": "Divide how heavy something is by how much space it takes up.", "easy": "Divide the mass by the volume to get this."},
+    "medium": {"hard": "Divide the mass value by the volume value to compute density.", "medium": "Divide 20 by 4 to find the density.", "easy": "Divide the mass by the volume."},
+    "hard": {"hard": "An object floats when it displaces a weight of fluid equal to its own weight while being less dense than that fluid overall.", "medium": "Objects lighter than water for their size (less dense) will float; heavier-for-their-size (denser) ones sink.", "easy": "Things that are less dense than water float; things denser than water sink."}
+  }
+},
+{
+  "topic": "simple machines: levers",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the fixed point that a lever pivots around called?",
+    "options": [
+      {"text": "Fulcrum", "isCorrect": true, "feedback": "Correct -- the fulcrum is the fixed pivot point of a lever."},
+      {"text": "Load", "isCorrect": false, "feedback": "The load is the object being moved or lifted, not the pivot point."},
+      {"text": "Effort", "isCorrect": false, "feedback": "Effort is the force applied to the lever, not the pivot point."},
+      {"text": "Axle", "isCorrect": false, "feedback": "An axle is part of a wheel-and-axle machine, a different type of simple machine."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Moving the fulcrum of a lever closer to the load generally has what effect?",
+    "options": [
+      {"text": "It requires less effort force to lift the load", "isCorrect": true, "feedback": "Correct -- a fulcrum closer to the load gives greater mechanical advantage, reducing the effort needed."},
+      {"text": "It requires more effort force to lift the load", "isCorrect": false, "feedback": "Moving the fulcrum closer to the load actually makes lifting easier, not harder."},
+      {"text": "It has no effect on the effort needed", "isCorrect": false, "feedback": "Fulcrum position directly changes the mechanical advantage of a lever."},
+      {"text": "It makes the load heavier", "isCorrect": false, "feedback": "The lever doesn't change the load's actual weight, only how much effort is needed to move it."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A seesaw (a first-class lever) is balanced with a 40 kg child sitting 2 meters from the fulcrum. Where must a 20 kg child sit on the other side to balance it?",
+    "options": [
+      {"text": "4 meters from the fulcrum", "isCorrect": true, "feedback": "Correct -- balance requires equal torque: 40×2 = 20×4 = 80 on both sides."},
+      {"text": "2 meters from the fulcrum", "isCorrect": false, "feedback": "At equal distance, the lighter child wouldn't balance the heavier one -- the torques wouldn't match."},
+      {"text": "1 meter from the fulcrum", "isCorrect": false, "feedback": "This would produce far less torque than needed to balance the heavier child."},
+      {"text": "8 meters from the fulcrum", "isCorrect": false, "feedback": "This produces more torque than needed, tipping the balance the other way."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the stationary point around which all rotation of the lever happens.", "medium": "This is the point the lever rotates around, staying fixed in place.", "easy": "This is the point where a lever balances and turns around."},
+    "medium": {"hard": "Mechanical advantage in a lever increases as the fulcrum sits nearer to the resistance being moved.", "medium": "The closer the pivot is to the heavy object, the easier it becomes to lift.", "easy": "Moving the pivot point nearer to the heavy object makes it easier to lift."},
+    "hard": {"hard": "Balance requires the product of weight and distance to be equal on both sides of the fulcrum -- solve for the distance that makes both sides match.", "medium": "Multiply the first child's weight by their distance, then divide that result by the second child's weight to find their needed distance.", "easy": "Multiply 40 by 2 to get 80, then figure out what distance times 20 also equals 80."}
+  }
+}
+]

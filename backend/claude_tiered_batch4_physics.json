@@ -1,0 +1,248 @@
+[
+{
+  "topic": "electric current basics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is electric current?",
+    "options": [
+      {"text": "The flow of electric charge through a conductor", "isCorrect": true, "feedback": "Correct -- current measures how much charge moves past a point per unit time."},
+      {"text": "The force pushing electrons apart", "isCorrect": false, "feedback": "That describes an electric force or field, not current itself."},
+      {"text": "The color of a wire", "isCorrect": false, "feedback": "Wire color has nothing to do with electric current."},
+      {"text": "The resistance in a wire", "isCorrect": false, "feedback": "Resistance opposes current -- it isn't the same thing as current itself."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In what unit is electric current typically measured?",
+    "options": [
+      {"text": "Amperes (amps)", "isCorrect": true, "feedback": "Correct -- amperes measure the rate of electric charge flow."},
+      {"text": "Volts", "isCorrect": false, "feedback": "Volts measure electric potential difference (voltage), not current."},
+      {"text": "Ohms", "isCorrect": false, "feedback": "Ohms measure electrical resistance, not current."},
+      {"text": "Watts", "isCorrect": false, "feedback": "Watts measure power, a different (though related) electrical quantity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In a simple circuit, electrons actually flow from the negative terminal to the positive terminal of the battery, but conventional current is defined as flowing in the opposite direction. Why?",
+    "options": [
+      {"text": "Conventional current direction was historically defined before electrons were discovered, based on the assumed flow of positive charge", "isCorrect": true, "feedback": "Correct -- early scientists defined current direction based on positive charge flow, and that convention stuck even after electrons (negative charges) were later discovered."},
+      {"text": "Electrons don't actually move in a circuit at all", "isCorrect": false, "feedback": "Electrons do physically move through the conductor -- this scenario is about the historical labeling convention, not actual electron movement."},
+      {"text": "Positive charges physically flow in real circuits, not electrons", "isCorrect": false, "feedback": "In most everyday circuits, it's electrons that physically move, even though conventional current is labeled the opposite way."},
+      {"text": "This is simply a modern printing error found in most textbooks", "isCorrect": false, "feedback": "This is an intentional, historically established scientific convention, not an error."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This describes the motion of charged particles moving through a wire or circuit.", "medium": "This describes charged particles moving through a conducting path.", "easy": "This is the flow of electricity through a wire."},
+    "medium": {"hard": "This unit is named after a pioneering French physicist and measures charge flow rate.", "medium": "This unit is often abbreviated with the letter 'A.'", "easy": "This unit's name starts with 'Amp.'"},
+    "hard": {"hard": "The convention predates the discovery of the electron and was based on an assumption about the direction positive charge would flow, a labeling choice that was never changed despite later discoveries.", "medium": "Scientists picked this direction as a naming convention before they even knew electrons existed, and it just stuck around afterward.", "easy": "This direction was just an early guess made before electrons were even discovered, and it stuck as the standard label."}
+  }
+},
+{
+  "topic": "conservation of energy",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to the law of conservation of energy, energy can be:",
+    "options": [
+      {"text": "Transformed from one form to another, but not created or destroyed", "isCorrect": true, "feedback": "Correct -- total energy in a closed system remains constant, even as it changes form."},
+      {"text": "Created out of nothing whenever needed", "isCorrect": false, "feedback": "Energy cannot be created from nothing -- it must come from another form of energy already present."},
+      {"text": "Completely destroyed after use", "isCorrect": false, "feedback": "Energy isn't destroyed -- it transforms into other forms, like heat or motion."},
+      {"text": "Only stored, never used", "isCorrect": false, "feedback": "Stored energy can definitely be used and converted into other forms, like motion or heat."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A swinging pendulum slows down over time due to air resistance and friction. According to conservation of energy, where does the 'lost' mechanical energy go?",
+    "options": [
+      {"text": "It converts into heat energy released into the surroundings", "isCorrect": true, "feedback": "Correct -- friction and air resistance convert mechanical energy into heat, which then disperses into the environment."},
+      {"text": "It simply disappears and ceases to exist", "isCorrect": false, "feedback": "Energy is never truly destroyed -- it transforms into another form, in this case heat."},
+      {"text": "It transfers entirely into the pendulum's mass", "isCorrect": false, "feedback": "Mass doesn't increase from this process -- the energy converts into heat, not into added mass."},
+      {"text": "It converts into additional gravitational potential energy", "isCorrect": false, "feedback": "The pendulum's swings actually get smaller over time, meaning its potential energy decreases, not increases."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A ball is dropped from a height and bounces repeatedly, reaching a lower height with each bounce. What does this observation demonstrate about the collisions with the ground?",
+    "options": [
+      {"text": "Each collision is not perfectly elastic -- some mechanical energy converts to heat and sound with each bounce", "isCorrect": true, "feedback": "Correct -- real-world collisions lose some mechanical energy to heat and sound, which is why the bounce height decreases each time."},
+      {"text": "Energy is being created with each bounce", "isCorrect": false, "feedback": "The ball's energy is decreasing over time, not increasing -- energy isn't being created here."},
+      {"text": "Gravity gets weaker after each bounce", "isCorrect": false, "feedback": "Gravity's strength doesn't change during this process -- the ball's total mechanical energy is what's decreasing."},
+      {"text": "The ball's mass increases with each bounce", "isCorrect": false, "feedback": "The ball's mass stays constant -- the decreasing bounce height reflects energy loss, not mass change."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Energy simply changes its form -- it never appears from nothing or vanishes into nothing.", "medium": "Energy just changes form -- it doesn't vanish or appear out of nowhere.", "easy": "Energy doesn't disappear -- it just changes into a different form."},
+    "medium": {"hard": "Friction and air resistance are classic mechanisms that convert organized mechanical motion into disordered thermal energy.", "medium": "Friction and air resistance turn the pendulum's motion energy into heat that spreads into the air.", "easy": "The pendulum's motion energy turns into heat due to friction and air resistance."},
+    "hard": {"hard": "A perfectly elastic collision would preserve all kinetic energy and result in the same bounce height every time -- the decreasing height reveals ongoing energy loss to heat and sound at each impact.", "medium": "Since the ball keeps bouncing lower and lower, some energy must be leaking out as heat and sound with every bounce.", "easy": "Since the bounces get smaller, some energy is being lost as heat and sound each time it hits the ground."}
+  }
+},
+{
+  "topic": "power (rate of doing work)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'power' measure in physics?",
+    "options": [
+      {"text": "How quickly work is done", "isCorrect": true, "feedback": "Correct -- power is the rate at which work is performed or energy is transferred."},
+      {"text": "The total distance an object travels", "isCorrect": false, "feedback": "Distance alone doesn't capture how fast work is being done -- that's what power measures."},
+      {"text": "The color of the energy source", "isCorrect": false, "feedback": "Color has no bearing on the physics definition of power."},
+      {"text": "The weight of an object", "isCorrect": false, "feedback": "Weight is a separate quantity, unrelated to the rate of doing work."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If 100 joules of work is done in 5 seconds, what is the power?",
+    "options": [
+      {"text": "20 watts", "isCorrect": true, "feedback": "Correct -- power equals work divided by time: 100÷5=20."},
+      {"text": "500 watts", "isCorrect": false, "feedback": "This multiplies instead of dividing work by time."},
+      {"text": "95 watts", "isCorrect": false, "feedback": "This subtracts instead of dividing work by time."},
+      {"text": "105 watts", "isCorrect": false, "feedback": "This adds instead of dividing work by time."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two machines each lift the same 500 N load to the same height, but Machine A does it in 10 seconds while Machine B takes 20 seconds. What can you conclude?",
+    "options": [
+      {"text": "Machine A has twice the power output of Machine B", "isCorrect": true, "feedback": "Correct -- with equal work done in half the time, Machine A's power (work/time) is double Machine B's."},
+      {"text": "Machine B did more total work than Machine A", "isCorrect": false, "feedback": "Both machines did the exact same amount of total work -- lifting the same load the same height -- only the time differed."},
+      {"text": "Machine A used less energy overall than Machine B", "isCorrect": false, "feedback": "Both machines used the same amount of energy (work) -- the difference is only in how fast that work was completed."},
+      {"text": "Power output was identical for both machines", "isCorrect": false, "feedback": "Since Machine A completed the same work in half the time, its power output must be higher, not identical."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity relates the amount of work accomplished to the time it took to accomplish it.", "medium": "This tells you how fast energy is being transferred or work is being done.", "easy": "This tells you how quickly work gets done."},
+    "medium": {"hard": "Divide the amount of work performed by the time taken to perform it.", "medium": "Divide 100 by 5 to find the power.", "easy": "Divide the work by the time."},
+    "hard": {"hard": "Since both machines perform identical total work, power (work divided by time) is inversely related to the time taken -- half the time means double the power.", "medium": "Since the work is the same for both, the machine that took less time must have a higher power output.", "easy": "Since Machine A did the same job in half the time, it must be twice as powerful."}
+  }
+},
+{
+  "topic": "simple machines: inclined planes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main benefit of using an inclined plane (ramp) to move a heavy object?",
+    "options": [
+      {"text": "It reduces the amount of force needed, spread over a longer distance", "isCorrect": true, "feedback": "Correct -- a ramp trades a longer travel distance for a smaller required force."},
+      {"text": "It makes the object weigh less", "isCorrect": false, "feedback": "An inclined plane doesn't change an object's actual weight, just how much force is needed to move it."},
+      {"text": "It eliminates the need for any force at all", "isCorrect": false, "feedback": "Some force is still required to move an object up a ramp -- it's just less than lifting it straight up."},
+      {"text": "It speeds up the object automatically", "isCorrect": false, "feedback": "An inclined plane's main benefit is reducing force needed, not automatically increasing speed."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Comparing a short, steep ramp to a long, gently sloped ramp for lifting the same object to the same height, which requires less force?",
+    "options": [
+      {"text": "The long, gently sloped ramp", "isCorrect": true, "feedback": "Correct -- a longer ramp spreads the same work over a greater distance, reducing the force needed at any point."},
+      {"text": "The short, steep ramp", "isCorrect": false, "feedback": "A steeper, shorter ramp actually requires more force since the same height gain happens over less distance."},
+      {"text": "Both ramps require exactly the same force", "isCorrect": false, "feedback": "The force needed changes with the ramp's length and steepness -- they aren't the same in this comparison."},
+      {"text": "Neither ramp requires any force", "isCorrect": false, "feedback": "Moving an object up any ramp against gravity always requires some force."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A ramp is 10 meters long and rises to a height of 2 meters. If lifting the load straight up would require 100 N of force, approximately how much force is needed to push it up the ramp (ignoring friction)?",
+    "options": [
+      {"text": "20 N", "isCorrect": true, "feedback": "Correct -- using the ramp's mechanical advantage (length÷height = 10÷2 = 5), the force needed is 100÷5=20 N."},
+      {"text": "100 N", "isCorrect": false, "feedback": "This ignores the mechanical advantage the ramp provides."},
+      {"text": "500 N", "isCorrect": false, "feedback": "This multiplies instead of dividing by the ramp's mechanical advantage."},
+      {"text": "50 N", "isCorrect": false, "feedback": "This doesn't correctly use the ramp's length-to-height ratio."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This trade-off exchanges a smaller effort force for having to apply that force over more distance.", "medium": "You push with less force, but you have to push the object over a longer path.", "easy": "You need less force, but you have to push the object farther."},
+    "medium": {"hard": "A longer ramp achieves the same height gain more gradually, spreading the required work over more distance and thus requiring less force at any moment.", "medium": "The longer ramp spreads the same height gain over more distance, so it takes less force to push something up it.", "easy": "The longer, gentler ramp needs less pushing force since it covers more distance to reach the same height."},
+    "hard": {"hard": "Divide the straight-lift force by the ramp's mechanical advantage, calculated as the ramp's length divided by its height.", "medium": "Divide the ramp's length by its height to find the mechanical advantage, then divide the straight-lift force by that number.", "easy": "Divide 10 by 2 to get 5, then divide 100 by 5 to find the force needed."}
+  }
+},
+{
+  "topic": "sound requires a medium to travel",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Sound waves need what in order to travel from one place to another?",
+    "options": [
+      {"text": "A medium, such as air, water, or a solid", "isCorrect": true, "feedback": "Correct -- sound is a mechanical wave that requires particles of matter to transmit its vibrations."},
+      {"text": "Complete darkness", "isCorrect": false, "feedback": "Darkness or light has no effect on whether sound can travel."},
+      {"text": "Nothing at all -- it can travel through empty space", "isCorrect": false, "feedback": "Sound cannot travel through a vacuum -- it needs particles of matter to carry its vibrations."},
+      {"text": "Extremely high temperatures", "isCorrect": false, "feedback": "Sound doesn't require high temperatures -- it just needs some medium of matter to travel through."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why can astronauts not hear explosions directly in the vacuum of space?",
+    "options": [
+      {"text": "There are no particles of matter in a vacuum to carry the sound vibrations", "isCorrect": true, "feedback": "Correct -- without air or any other matter, there's nothing for the sound wave to travel through."},
+      {"text": "Explosions in space don't produce any sound energy at all", "isCorrect": false, "feedback": "The explosion does produce vibrations, but with no matter present, those vibrations have nothing to travel through."},
+      {"text": "Astronauts' spacesuits completely block all sound", "isCorrect": false, "feedback": "The core issue is the vacuum itself lacking any medium, not the suit blocking sound."},
+      {"text": "Sound travels too fast in space to be detected", "isCorrect": false, "feedback": "Sound doesn't travel through a vacuum at all, regardless of speed -- there's no medium to carry it."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Sound generally travels faster through solids than through air. Why?",
+    "options": [
+      {"text": "Particles in a solid are packed closer together, transmitting vibrations more quickly between neighbors", "isCorrect": true, "feedback": "Correct -- tightly packed solid particles pass vibrational energy to each other faster than the more spread-out particles in air."},
+      {"text": "Solids are always colder than air, and cold speeds up sound", "isCorrect": false, "feedback": "Temperature isn't the main factor here -- particle spacing and how tightly they interact is what matters most."},
+      {"text": "Sound doesn't actually travel through solids at all", "isCorrect": false, "feedback": "Sound does travel through solids -- often faster than through air or liquids."},
+      {"text": "Solids have no mass, so sound moves instantly through them", "isCorrect": false, "feedback": "Solids definitely have mass -- their particle arrangement, not lack of mass, explains the faster sound speed."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This kind of wave physically pushes and pulls particles of matter to propagate.", "medium": "This wave type needs particles of some kind of matter to bump into each other and pass the vibration along.", "easy": "Sound needs some kind of matter -- like air or water -- to travel through."},
+    "medium": {"hard": "This environment lacks any particles of matter whatsoever for a mechanical wave to propagate through.", "medium": "This environment has no air or any other matter at all for sound to travel through.", "easy": "Space is basically empty, with no air or matter for sound to travel through."},
+    "hard": {"hard": "Closer particle spacing in solids allows faster transfer of vibrational energy from particle to neighboring particle compared to the more dispersed particles in a gas.", "medium": "In a solid, particles are packed much closer together, so vibrations can pass from one to the next more quickly.", "easy": "Solid particles are packed tightly together, so the vibration passes between them faster than in air."}
+  }
+},
+{
+  "topic": "momentum",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the formula for momentum?",
+    "options": [
+      {"text": "Mass × velocity", "isCorrect": true, "feedback": "Correct -- momentum equals an object's mass multiplied by its velocity."},
+      {"text": "Mass + velocity", "isCorrect": false, "feedback": "Momentum is found by multiplying, not adding, mass and velocity."},
+      {"text": "Mass ÷ velocity", "isCorrect": false, "feedback": "This isn't the correct relationship -- momentum involves multiplying, not dividing."},
+      {"text": "Velocity² only", "isCorrect": false, "feedback": "This formula is missing the mass component entirely."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the momentum of a 5 kg object moving at 4 m/s?",
+    "options": [
+      {"text": "20 kg·m/s", "isCorrect": true, "feedback": "Correct -- 5 × 4 = 20."},
+      {"text": "9 kg·m/s", "isCorrect": false, "feedback": "This adds the values instead of multiplying them."},
+      {"text": "1.25 kg·m/s", "isCorrect": false, "feedback": "This divides instead of multiplying mass and velocity."},
+      {"text": "25 kg·m/s", "isCorrect": false, "feedback": "This doesn't match multiplying 5 by 4 correctly."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A small car and a large truck are traveling at the same speed. Why does the truck have much greater momentum?",
+    "options": [
+      {"text": "The truck has significantly more mass, and momentum depends directly on mass", "isCorrect": true, "feedback": "Correct -- since momentum is mass times velocity, and velocity is equal here, the truck's greater mass gives it greater momentum."},
+      {"text": "The truck is traveling faster than the car", "isCorrect": false, "feedback": "The scenario states they're traveling at the same speed, so velocity isn't the differentiating factor here."},
+      {"text": "The truck has a different color, which increases momentum", "isCorrect": false, "feedback": "Color has no physical effect on an object's momentum."},
+      {"text": "Momentum doesn't depend on mass at all", "isCorrect": false, "feedback": "Momentum is directly proportional to mass -- it's a core part of the momentum formula."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity combines how much matter is moving with how fast it's moving.", "medium": "Multiply how heavy something is by how fast it's going.", "easy": "Multiply mass by velocity to get momentum."},
+    "medium": {"hard": "Multiply the mass value by the velocity value to compute momentum.", "medium": "Multiply 5 by 4 to find the momentum.", "easy": "Multiply the mass and the velocity together."},
+    "hard": {"hard": "Since velocity is identical for both vehicles, the difference in momentum must come entirely from the difference in their mass.", "medium": "Since both are moving at the same speed, the only thing that differs between them is their mass -- and mass drives momentum.", "easy": "Since they're going the same speed, it's the truck's much bigger mass that gives it more momentum."}
+  }
+}
+]

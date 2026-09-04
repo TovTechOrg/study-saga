@@ -1,0 +1,248 @@
+[
+{
+  "topic": "adding and subtracting fractions with unlike denominators",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 1/4 + 1/4?",
+    "options": [
+      {"text": "1/2", "isCorrect": true, "feedback": "Correct -- with matching denominators, just add the numerators: 1+1=2, giving 2/4, which simplifies to 1/2."},
+      {"text": "2/8", "isCorrect": false, "feedback": "This incorrectly adds the denominators together as well."},
+      {"text": "1/8", "isCorrect": false, "feedback": "This doesn't match adding the numerators correctly."},
+      {"text": "2/4", "isCorrect": false, "feedback": "This is correct before simplifying, but should be reduced to 1/2."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 1/3 + 1/6?",
+    "options": [
+      {"text": "1/2", "isCorrect": true, "feedback": "Correct -- convert 1/3 to 2/6, then add: 2/6+1/6=3/6, which simplifies to 1/2."},
+      {"text": "2/9", "isCorrect": false, "feedback": "This incorrectly adds the denominators together instead of finding a common one."},
+      {"text": "1/9", "isCorrect": false, "feedback": "This doesn't correctly find a common denominator before adding."},
+      {"text": "2/6", "isCorrect": false, "feedback": "This only converts one fraction but forgets to add the other numerator."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is 3/4 - 1/6?",
+    "options": [
+      {"text": "7/12", "isCorrect": true, "feedback": "Correct -- convert to twelfths (9/12 and 2/12), then subtract: 9/12-2/12=7/12."},
+      {"text": "2/2", "isCorrect": false, "feedback": "This doesn't correctly convert both fractions to a common denominator first."},
+      {"text": "1/12", "isCorrect": false, "feedback": "This doesn't match subtracting the correctly converted numerators."},
+      {"text": "2/12", "isCorrect": false, "feedback": "This doesn't correctly convert 3/4 to twelfths before subtracting."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "When denominators already match, only the top numbers need to be combined.", "medium": "Since the bottoms match, just add the top numbers together.", "easy": "Since the denominators are the same, just add the numerators."},
+    "medium": {"hard": "Convert both fractions to a shared denominator before combining the numerators.", "medium": "Change 1/3 into sixths first, then add.", "easy": "Turn 1/3 into 2/6, then add it to 1/6."},
+    "hard": {"hard": "Find a common denominator for both fractions, convert each numerator accordingly, then subtract.", "medium": "Convert both fractions into twelfths before subtracting.", "easy": "Change both fractions to have a denominator of 12, then subtract the numerators."}
+  }
+},
+{
+  "topic": "multiplying and dividing fractions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 1/2 × 1/3?",
+    "options": [
+      {"text": "1/6", "isCorrect": true, "feedback": "Correct -- multiply the numerators together and the denominators together: 1×1=1, 2×3=6."},
+      {"text": "1/5", "isCorrect": false, "feedback": "This incorrectly adds the denominators instead of multiplying them."},
+      {"text": "2/3", "isCorrect": false, "feedback": "This doesn't match multiplying the two fractions together."},
+      {"text": "3/2", "isCorrect": false, "feedback": "This flips the correct result upside down."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 2/3 ÷ 1/2?",
+    "options": [
+      {"text": "4/3", "isCorrect": true, "feedback": "Correct -- dividing by a fraction means multiplying by its reciprocal: 2/3 × 2/1 = 4/3."},
+      {"text": "1/3", "isCorrect": false, "feedback": "This doesn't correctly flip the second fraction before multiplying."},
+      {"text": "2/6", "isCorrect": false, "feedback": "This multiplies straight across instead of first flipping the divisor."},
+      {"text": "3/4", "isCorrect": false, "feedback": "This flips the correct result upside down."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is 3/4 ÷ 2/5?",
+    "options": [
+      {"text": "15/8", "isCorrect": true, "feedback": "Correct -- flip the second fraction and multiply: 3/4 × 5/2 = 15/8."},
+      {"text": "6/20", "isCorrect": false, "feedback": "This multiplies straight across without flipping the second fraction first."},
+      {"text": "8/15", "isCorrect": false, "feedback": "This flips the correct answer upside down."},
+      {"text": "5/8", "isCorrect": false, "feedback": "This doesn't correctly multiply both numerators and both denominators after flipping."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Combine the top numbers together and the bottom numbers together, separately.", "medium": "Multiply the numerators together, then multiply the denominators together.", "easy": "Multiply the top numbers together, then multiply the bottom numbers together."},
+    "medium": {"hard": "Flip the second fraction upside down, then multiply straight across.", "medium": "Turn 1/2 into 2/1, then multiply it by 2/3.", "easy": "Flip 1/2 to become 2/1, then multiply the two fractions."},
+    "hard": {"hard": "Flip the second fraction upside down, then multiply the numerators together and the denominators together.", "medium": "Flip 2/5 to become 5/2, then multiply it by 3/4.", "easy": "Flip 2/5 to become 5/2, then multiply straight across."}
+  }
+},
+{
+  "topic": "circumference of a circle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the formula for the circumference of a circle?",
+    "options": [
+      {"text": "2πr", "isCorrect": true, "feedback": "Correct -- circumference equals 2 times pi times the radius."},
+      {"text": "πr²", "isCorrect": false, "feedback": "This is the formula for area, not circumference."},
+      {"text": "πr", "isCorrect": false, "feedback": "This formula is missing the factor of 2 needed for circumference."},
+      {"text": "2r", "isCorrect": false, "feedback": "This is missing the pi constant needed for circumference."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the circumference of a circle with a radius of 5? (use π ≈ 3.14)",
+    "options": [
+      {"text": "31.4", "isCorrect": true, "feedback": "Correct -- 2 × 3.14 × 5 = 31.4."},
+      {"text": "15.7", "isCorrect": false, "feedback": "This is exactly half of the correct circumference."},
+      {"text": "78.5", "isCorrect": false, "feedback": "This is the area of the circle, not the circumference."},
+      {"text": "62.8", "isCorrect": false, "feedback": "This is double the correct circumference."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A circle has a circumference of 62.8. What is its approximate radius? (use π ≈ 3.14)",
+    "options": [
+      {"text": "10", "isCorrect": true, "feedback": "Correct -- divide circumference by 2π: 62.8÷(2×3.14)=62.8÷6.28=10."},
+      {"text": "20", "isCorrect": false, "feedback": "This divides only by pi instead of by 2π."},
+      {"text": "5", "isCorrect": false, "feedback": "This doesn't match dividing 62.8 by 6.28."},
+      {"text": "31.4", "isCorrect": false, "feedback": "This only divides by 2, forgetting to also divide by pi."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This formula uses the radius multiplied by a constant related to circles and doubled.", "medium": "Multiply the radius by pi, then double it.", "easy": "Multiply 2, pi, and the radius together."},
+    "medium": {"hard": "Multiply the radius by 2, then multiply that result by pi.", "medium": "Multiply 5 by 2, then multiply by 3.14.", "easy": "Multiply 2 times 3.14 times 5."},
+    "hard": {"hard": "Divide the circumference by the combined constant of 2 times pi to isolate the radius.", "medium": "Divide 62.8 by the product of 2 and 3.14.", "easy": "Divide 62.8 by 6.28 to find the radius."}
+  }
+},
+{
+  "topic": "solving simple one-variable inequalities",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: x + 3 > 8",
+    "options": [
+      {"text": "x > 5", "isCorrect": true, "feedback": "Correct -- subtract 3 from both sides to isolate x."},
+      {"text": "x > 11", "isCorrect": false, "feedback": "This adds 3 instead of subtracting it."},
+      {"text": "x < 5", "isCorrect": false, "feedback": "This has the correct number but the wrong inequality direction."},
+      {"text": "x > 3", "isCorrect": false, "feedback": "This doesn't correctly isolate x by subtracting 3 from 8."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: 2x ≤ 10",
+    "options": [
+      {"text": "x ≤ 5", "isCorrect": true, "feedback": "Correct -- divide both sides by 2 to isolate x."},
+      {"text": "x ≤ 20", "isCorrect": false, "feedback": "This multiplies instead of dividing by 2."},
+      {"text": "x ≥ 5", "isCorrect": false, "feedback": "This has the correct number but the wrong inequality direction -- dividing by a positive number doesn't flip the sign."},
+      {"text": "x ≤ 8", "isCorrect": false, "feedback": "This subtracts 2 instead of dividing by it."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: -3x > 12",
+    "options": [
+      {"text": "x < -4", "isCorrect": true, "feedback": "Correct -- dividing both sides by a negative number flips the inequality sign: x < -4."},
+      {"text": "x > -4", "isCorrect": false, "feedback": "This forgets to flip the inequality sign when dividing by a negative number."},
+      {"text": "x < 4", "isCorrect": false, "feedback": "This has the wrong sign on the number -- dividing 12 by -3 gives a negative result."},
+      {"text": "x > 4", "isCorrect": false, "feedback": "This has both the wrong sign on the number and the wrong inequality direction."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Perform the inverse operation of addition, just like solving a normal equation.", "medium": "Subtract 3 from both sides to isolate x.", "easy": "Subtract 3 from 8 to find what x must be greater than."},
+    "medium": {"hard": "Divide both sides by the coefficient -- dividing by a positive number keeps the inequality direction the same.", "medium": "Divide both sides by 2, keeping the inequality symbol pointing the same way.", "easy": "Divide 10 by 2 to isolate x."},
+    "hard": {"hard": "Remember the special rule: dividing or multiplying both sides of an inequality by a negative number reverses the inequality symbol.", "medium": "Divide both sides by -3, and remember to flip the inequality sign since you're dividing by a negative.", "easy": "Divide 12 by -3, and flip the greater-than sign to a less-than sign."}
+  }
+},
+{
+  "topic": "exponent rules: power of a power and division",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is x⁶ ÷ x²?",
+    "options": [
+      {"text": "x⁴", "isCorrect": true, "feedback": "Correct -- when dividing same-base powers, subtract the exponents: 6-2=4."},
+      {"text": "x³", "isCorrect": false, "feedback": "This doesn't match subtracting the exponents correctly."},
+      {"text": "x⁸", "isCorrect": false, "feedback": "This adds the exponents instead of subtracting them, which is the rule for multiplying, not dividing."},
+      {"text": "x¹²", "isCorrect": false, "feedback": "This multiplies the exponents instead of subtracting them."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is (x³)⁴?",
+    "options": [
+      {"text": "x¹²", "isCorrect": true, "feedback": "Correct -- for a power raised to another power, multiply the exponents: 3×4=12."},
+      {"text": "x⁷", "isCorrect": false, "feedback": "This adds the exponents, which is the rule for multiplying same-base terms, not raising a power to a power."},
+      {"text": "x³⁴", "isCorrect": false, "feedback": "This concatenates the digits rather than multiplying the exponent values."},
+      {"text": "x¹", "isCorrect": false, "feedback": "This doesn't correctly apply the power-of-a-power rule."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Simplify: (x²)³ ÷ x²",
+    "options": [
+      {"text": "x⁴", "isCorrect": true, "feedback": "Correct -- (x²)³=x⁶, then x⁶÷x²=x⁴."},
+      {"text": "x⁵", "isCorrect": false, "feedback": "This doesn't correctly apply both the power-of-a-power rule and the division rule in sequence."},
+      {"text": "x⁸", "isCorrect": false, "feedback": "This adds instead of subtracting the final exponent."},
+      {"text": "x³", "isCorrect": false, "feedback": "This doesn't correctly compute the power-of-a-power step first."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "When dividing powers with matching bases, the exponents combine using subtraction.", "medium": "Subtract the smaller exponent from the larger one.", "easy": "Subtract 2 from 6 to get the new exponent."},
+    "medium": {"hard": "When a power is raised to another power, the two exponents combine using multiplication instead of addition.", "medium": "Multiply the two exponents together instead of adding them.", "easy": "Multiply 3 and 4 together to get the new exponent."},
+    "hard": {"hard": "First apply the power-of-a-power rule by multiplying 2 and 3, then apply the division rule by subtracting the remaining exponent.", "medium": "First multiply 2×3 for the parentheses, then subtract 2 for the division step.", "easy": "First calculate 2×3=6 for the parentheses part, then subtract 2 for the division part."}
+  }
+},
+{
+  "topic": "reading data from a bar graph",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "On a bar graph, what does the height of each bar typically represent?",
+    "options": [
+      {"text": "The value or quantity of that category", "isCorrect": true, "feedback": "Correct -- bar height corresponds directly to the amount being measured for that category."},
+      {"text": "The color of the category", "isCorrect": false, "feedback": "Color is just a visual style choice, not a data value on a bar graph."},
+      {"text": "The order the bars were drawn in", "isCorrect": false, "feedback": "Bar order is a layout choice, not what the height itself represents."},
+      {"text": "The width of the bar", "isCorrect": false, "feedback": "Bar width is typically kept uniform for readability -- height is what conveys the data value."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A bar graph shows that 'Apples' has a bar reaching 15 and 'Bananas' has a bar reaching 25. How many more bananas were counted than apples?",
+    "options": [
+      {"text": "10", "isCorrect": true, "feedback": "Correct -- 25 - 15 = 10 more bananas."},
+      {"text": "40", "isCorrect": false, "feedback": "This adds the two values instead of finding their difference."},
+      {"text": "25", "isCorrect": false, "feedback": "This is just the banana total alone, not the difference between the two."},
+      {"text": "15", "isCorrect": false, "feedback": "This is just the apple total alone, not the difference between the two."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A bar graph shows 4 fruit categories with counts of 10, 20, 15, and 25. What is the average count across all four categories?",
+    "options": [
+      {"text": "17.5", "isCorrect": true, "feedback": "Correct -- add all values (10+20+15+25=70) and divide by 4 categories: 70÷4=17.5."},
+      {"text": "70", "isCorrect": false, "feedback": "This is the total sum, but the average requires dividing by the number of categories."},
+      {"text": "25", "isCorrect": false, "feedback": "This is just the highest individual value, not the average of all four."},
+      {"text": "20", "isCorrect": false, "feedback": "This doesn't match dividing the correct total by 4."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This visual dimension of the bar scales directly with the underlying number being shown.", "medium": "The taller the bar, the bigger the number it represents.", "easy": "The taller the bar, the more of that item there was."},
+    "medium": {"hard": "Find the difference between the two bar heights by subtracting the smaller value from the larger one.", "medium": "Subtract the apple count from the banana count.", "easy": "Subtract 15 from 25 to find the difference."},
+    "hard": {"hard": "Add all four bar values together, then divide that total by the number of categories to find the average.", "medium": "Add all four numbers together, then divide by 4.", "easy": "Add 10, 20, 15, and 25 together, then divide by 4."}
+  }
+}
+]

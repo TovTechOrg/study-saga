@@ -1,0 +1,412 @@
+[
+{
+  "topic": "order of operations (PEMDAS)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the value of 3 + 4 × 2?",
+    "options": [
+      {"text": "11", "isCorrect": true, "feedback": "Correct -- multiply first (4×2=8), then add 3."},
+      {"text": "14", "isCorrect": false, "feedback": "This comes from adding 3+4 first, but multiplication has to happen before addition."},
+      {"text": "9", "isCorrect": false, "feedback": "This doesn't match either the correct order or a common mistake -- recheck the multiplication."},
+      {"text": "24", "isCorrect": false, "feedback": "This multiplies all three numbers together, but 3 should only be added at the end."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which operation should be performed FIRST when evaluating 20 ÷ (5 - 3) + 2²?",
+    "options": [
+      {"text": "The subtraction inside the parentheses (5 - 3)", "isCorrect": true, "feedback": "Correct -- parentheses are always evaluated before exponents, multiplication/division, or addition."},
+      {"text": "The division (20 ÷ 5)", "isCorrect": false, "feedback": "You can't divide by 5 alone -- the parentheses group (5-3) together first."},
+      {"text": "The exponent (2²)", "isCorrect": false, "feedback": "Exponents come after parentheses, not before."},
+      {"text": "The final addition", "isCorrect": false, "feedback": "Addition always happens last in this order of operations."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the value of 6 + 2 × (5 - 3)²?",
+    "options": [
+      {"text": "14", "isCorrect": true, "feedback": "Correct -- (5-3)=2, squared is 4, times 2 is 8, plus 6 is 14."},
+      {"text": "40", "isCorrect": false, "feedback": "This comes from combining numbers in the wrong order -- the parentheses and exponent must be resolved before multiplying."},
+      {"text": "10", "isCorrect": false, "feedback": "This skips squaring the result of the parentheses."},
+      {"text": "16", "isCorrect": false, "feedback": "This doesn't correctly apply the exponent before multiplying."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "PEMDAS tells you which single operation to perform before the others when they'd otherwise give a different answer here.", "medium": "Multiplication happens before addition when there are no parentheses saying otherwise.", "easy": "Do the multiplication part first, then add."},
+    "medium": {"hard": "Whatever is enclosed by grouping symbols always gets evaluated first, before any exponents, multiplication, or addition happen.", "medium": "Parentheses always come first in the order of operations, before exponents or multiplication.", "easy": "Always solve what's inside the parentheses before anything else."},
+    "hard": {"hard": "Work from the innermost grouping symbol outward: subtract inside the parentheses, then apply the exponent, then multiply, then add last.", "medium": "Solve the subtraction in parentheses first, then square the result, then multiply, then add.", "easy": "Do the parentheses first, then the exponent, then multiply, then add at the very end."}
+  }
+},
+{
+  "topic": "converting fractions to decimals",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 1/2 written as a decimal?",
+    "options": [
+      {"text": "0.5", "isCorrect": true, "feedback": "Correct -- dividing 1 by 2 gives 0.5."},
+      {"text": "1.2", "isCorrect": false, "feedback": "This isn't what you get from dividing 1 by 2."},
+      {"text": "0.12", "isCorrect": false, "feedback": "This has too many digits for such a simple division."},
+      {"text": "2.0", "isCorrect": false, "feedback": "This would be 2 divided by 1, not 1 divided by 2."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 3/4 written as a decimal?",
+    "options": [
+      {"text": "0.75", "isCorrect": true, "feedback": "Correct -- 3 divided by 4 equals 0.75."},
+      {"text": "0.34", "isCorrect": false, "feedback": "This just rearranges the digits rather than dividing 3 by 4."},
+      {"text": "1.34", "isCorrect": false, "feedback": "A proper fraction less than 1 can't convert to a decimal greater than 1."},
+      {"text": "0.43", "isCorrect": false, "feedback": "This swaps the digits of the correct answer."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which fraction is equivalent to the repeating decimal 0.333...?",
+    "options": [
+      {"text": "1/3", "isCorrect": true, "feedback": "Correct -- dividing 1 by 3 produces an endlessly repeating 3."},
+      {"text": "3/10", "isCorrect": false, "feedback": "This converts to a terminating decimal (0.3), not a repeating one."},
+      {"text": "1/4", "isCorrect": false, "feedback": "This converts to 0.25, a terminating decimal."},
+      {"text": "3/100", "isCorrect": false, "feedback": "This converts to 0.03, not 0.333..."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Divide the numerator by the denominator to get this form of the number.", "medium": "Half of something written as a decimal has one digit after the decimal point.", "easy": "One divided by two equals what decimal?"},
+    "medium": {"hard": "Divide the top number by the bottom number -- three-fourths lands exactly three-quarters of the way from 0 to 1.", "medium": "Divide 3 by 4 to get the decimal form.", "easy": "Three divided by four equals what decimal?"},
+    "hard": {"hard": "A decimal that repeats a single digit forever often comes from dividing by a small number like 3 -- test which fraction, when divided out, never terminates.", "medium": "This repeating decimal comes from dividing 1 by a small single-digit number.", "easy": "Dividing 1 by 3 gives you an endlessly repeating decimal -- which fraction is that?"}
+  }
+},
+{
+  "topic": "area of a circle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the formula for the area of a circle?",
+    "options": [
+      {"text": "πr²", "isCorrect": true, "feedback": "Correct -- area equals pi times the radius squared."},
+      {"text": "2πr", "isCorrect": false, "feedback": "This is the formula for circumference, not area."},
+      {"text": "πd", "isCorrect": false, "feedback": "This isn't a standard circle formula -- diameter alone times pi gives circumference-related values, not area."},
+      {"text": "r²", "isCorrect": false, "feedback": "This is missing the pi constant needed for a circle's area."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the area of a circle with a radius of 4? (use π ≈ 3.14)",
+    "options": [
+      {"text": "50.24", "isCorrect": true, "feedback": "Correct -- 4 squared is 16, times 3.14 is 50.24."},
+      {"text": "25.12", "isCorrect": false, "feedback": "This is half of the correct area."},
+      {"text": "12.56", "isCorrect": false, "feedback": "This comes from multiplying the radius by pi without squaring it first."},
+      {"text": "100.48", "isCorrect": false, "feedback": "This is double the correct area."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A circle has a diameter of 10. What is its approximate area? (use π ≈ 3.14)",
+    "options": [
+      {"text": "78.5", "isCorrect": true, "feedback": "Correct -- radius is 5, squared is 25, times 3.14 is 78.5."},
+      {"text": "31.4", "isCorrect": false, "feedback": "This is the circumference, not the area."},
+      {"text": "157", "isCorrect": false, "feedback": "This is double the correct area."},
+      {"text": "50", "isCorrect": false, "feedback": "This skips the pi multiplication and squaring step."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This formula uses the radius squared multiplied by a constant related to circles.", "medium": "You need to square the radius and multiply by pi.", "easy": "This formula involves pi times the radius squared."},
+    "medium": {"hard": "Square the radius first, then multiply that result by pi.", "medium": "Square 4 to get 16, then multiply by 3.14.", "easy": "Multiply 4 by itself, then multiply by 3.14."},
+    "hard": {"hard": "Remember the formula uses the RADIUS, not the diameter -- so halve the diameter first before squaring and multiplying by pi.", "medium": "Divide the diameter by 2 to get the radius, then square it and multiply by pi.", "easy": "Half of 10 is 5 -- square that, then multiply by 3.14."}
+  }
+},
+{
+  "topic": "solving one-step linear equations",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: x + 5 = 12",
+    "options": [
+      {"text": "7", "isCorrect": true, "feedback": "Correct -- subtract 5 from both sides to isolate x."},
+      {"text": "17", "isCorrect": false, "feedback": "This adds 5 instead of subtracting it."},
+      {"text": "5", "isCorrect": false, "feedback": "This just restates part of the equation rather than solving for x."},
+      {"text": "12", "isCorrect": false, "feedback": "This is the total, not the value of x alone."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: 3x = 21",
+    "options": [
+      {"text": "7", "isCorrect": true, "feedback": "Correct -- divide both sides by 3 to isolate x."},
+      {"text": "63", "isCorrect": false, "feedback": "This multiplies instead of dividing by 3."},
+      {"text": "18", "isCorrect": false, "feedback": "This subtracts 3 instead of dividing."},
+      {"text": "24", "isCorrect": false, "feedback": "This adds 3 instead of dividing."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Solve for x: x/4 - 2 = 3",
+    "options": [
+      {"text": "20", "isCorrect": true, "feedback": "Correct -- add 2 to both sides to get x/4=5, then multiply both sides by 4."},
+      {"text": "5", "isCorrect": false, "feedback": "This is the value of x/4, not x itself -- one more step is needed."},
+      {"text": "12", "isCorrect": false, "feedback": "This doesn't correctly reverse both operations in order."},
+      {"text": "22", "isCorrect": false, "feedback": "This adds 2 but forgets to multiply by 4."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Perform the inverse operation of addition to isolate x.", "medium": "Subtract 5 from both sides to find x.", "easy": "What number plus 5 equals 12?"},
+    "medium": {"hard": "Perform the inverse operation of multiplication to isolate x.", "medium": "Divide both sides by 3 to find x.", "easy": "What number times 3 equals 21?"},
+    "hard": {"hard": "Undo the operations in reverse order: first undo the subtraction, then undo the division.", "medium": "Add 2 to both sides first, then multiply both sides by 4.", "easy": "First add 2 to both sides, then multiply by 4 to find x."}
+  }
+},
+{
+  "topic": "mean, median, and mode",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the mean of 2, 4, and 6?",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- (2+4+6)/3 = 12/3 = 4."},
+      {"text": "6", "isCorrect": false, "feedback": "This is the largest value, not the average."},
+      {"text": "2", "isCorrect": false, "feedback": "This is the smallest value, not the average."},
+      {"text": "12", "isCorrect": false, "feedback": "This is the sum, but the mean requires dividing by how many numbers there are."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the median of 3, 9, 5, 1, 7?",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- sorted (1,3,5,7,9), the middle value is 5."},
+      {"text": "3", "isCorrect": false, "feedback": "This is the second value when sorted, not the middle one."},
+      {"text": "7", "isCorrect": false, "feedback": "This is the fourth value when sorted, not the middle one."},
+      {"text": "9", "isCorrect": false, "feedback": "This is the largest value, not the middle one."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the mode of 2, 3, 3, 5, 5, 5, 7?",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- 5 appears three times, more than any other value."},
+      {"text": "3", "isCorrect": false, "feedback": "This appears twice, fewer times than 5."},
+      {"text": "2", "isCorrect": false, "feedback": "This appears only once."},
+      {"text": "7", "isCorrect": false, "feedback": "This appears only once."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Add all the values together, then divide by how many values there are.", "medium": "This measure is the sum of the numbers divided by the count of numbers.", "easy": "Add up all the numbers, then divide by how many numbers there are."},
+    "medium": {"hard": "Arrange the numbers in order first -- this measure is simply the one sitting exactly in the middle.", "medium": "Put the numbers in order from smallest to largest, then find the middle one.", "easy": "Line the numbers up in order -- the one in the very middle is your answer."},
+    "hard": {"hard": "This measure isn't about order or averaging -- it's whichever value shows up more often than any other in the list.", "medium": "Count how many times each number appears -- the one that appears most often is the answer.", "easy": "Find the number that shows up the most times in the list."}
+  }
+},
+{
+  "topic": "laws of exponents (multiplying same base)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is x³ × x²?",
+    "options": [
+      {"text": "x⁵", "isCorrect": true, "feedback": "Correct -- when multiplying same-base powers, add the exponents: 3+2=5."},
+      {"text": "x⁶", "isCorrect": false, "feedback": "This multiplies the exponents instead of adding them."},
+      {"text": "x¹", "isCorrect": false, "feedback": "This subtracts the exponents, which is the rule for dividing, not multiplying."},
+      {"text": "2x⁵", "isCorrect": false, "feedback": "There's no extra coefficient of 2 introduced when multiplying powers this way."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Simplify: 2³ × 2²",
+    "options": [
+      {"text": "32", "isCorrect": true, "feedback": "Correct -- 2³×2²=2⁵=32."},
+      {"text": "16", "isCorrect": false, "feedback": "This is 2⁴, one exponent short of the correct sum."},
+      {"text": "64", "isCorrect": false, "feedback": "This is 2⁶, one exponent too many."},
+      {"text": "10", "isCorrect": false, "feedback": "This comes from adding 8+2 rather than combining the exponents first."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Simplify: (x²)³ × x",
+    "options": [
+      {"text": "x⁷", "isCorrect": true, "feedback": "Correct -- (x²)³=x⁶, then x⁶×x=x⁷."},
+      {"text": "x⁶", "isCorrect": false, "feedback": "This forgets to add the extra exponent of 1 from the standalone x."},
+      {"text": "x⁵", "isCorrect": false, "feedback": "This doesn't correctly apply the power-of-a-power rule first."},
+      {"text": "x⁹", "isCorrect": false, "feedback": "This overcounts the exponents involved."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "When multiplying powers with the same base, add the exponents together.", "medium": "Add the two exponents together to get the new exponent.", "easy": "Add 3 and 2 together to get the new exponent."},
+    "medium": {"hard": "Add the exponents first to combine into a single power, then calculate that power's value.", "medium": "Combine the exponents by adding them, then compute 2 to that power.", "easy": "Add the exponents (3+2=5), then calculate 2 to the 5th power."},
+    "hard": {"hard": "First apply the power-of-a-power rule (multiply the exponents inside and outside the parentheses), then add the exponent from the extra standalone x.", "medium": "Multiply 2 and 3 to handle the parentheses first, then add 1 for the extra x.", "easy": "First multiply 2×3=6 for the parentheses part, then add 1 more for the lone x."}
+  }
+},
+{
+  "topic": "Pythagorean theorem",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a right triangle, what formula relates the two legs (a, b) and the hypotenuse (c)?",
+    "options": [
+      {"text": "a² + b² = c²", "isCorrect": true, "feedback": "Correct -- this is the Pythagorean theorem."},
+      {"text": "a + b = c", "isCorrect": false, "feedback": "The sides aren't simply added together without squaring."},
+      {"text": "a² - b² = c²", "isCorrect": false, "feedback": "The legs are added together after squaring, not subtracted."},
+      {"text": "a × b = c", "isCorrect": false, "feedback": "This describes an area-like relationship, not the side lengths of a right triangle."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A right triangle has legs of length 3 and 4. What is the length of the hypotenuse?",
+    "options": [
+      {"text": "5", "isCorrect": true, "feedback": "Correct -- 3²+4²=9+16=25, and the square root of 25 is 5."},
+      {"text": "7", "isCorrect": false, "feedback": "This just adds the two legs together instead of using the theorem."},
+      {"text": "6", "isCorrect": false, "feedback": "This doesn't match the square root of 25."},
+      {"text": "12", "isCorrect": false, "feedback": "This multiplies the legs together instead of applying the theorem."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A right triangle has a hypotenuse of 13 and one leg of 5. What is the length of the other leg?",
+    "options": [
+      {"text": "12", "isCorrect": true, "feedback": "Correct -- 13²-5²=169-25=144, and the square root of 144 is 12."},
+      {"text": "8", "isCorrect": false, "feedback": "This doesn't match the square root of the correct difference."},
+      {"text": "10", "isCorrect": false, "feedback": "This doesn't match the square root of 169-25."},
+      {"text": "18", "isCorrect": false, "feedback": "This adds instead of using the Pythagorean relationship correctly."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This relationship only applies to right triangles and connects the squares of all three sides.", "medium": "Square each leg, add them together, and that equals the square of the longest side.", "easy": "This formula says the two shorter sides squared and added equal the longest side squared."},
+    "medium": {"hard": "Square both legs, add the results together, then take the square root of that sum to find the hypotenuse.", "medium": "Square 3 and 4, add them (9+16=25), then find the square root.", "easy": "Square both numbers, add them together, then find the square root of the total."},
+    "hard": {"hard": "Rearrange the theorem to isolate the unknown leg: square the hypotenuse, subtract the square of the known leg, then take the square root of what's left.", "medium": "Square 13 and 5, subtract the smaller from the larger, then take the square root.", "easy": "Square both numbers, subtract, then find the square root of what's left."}
+  }
+},
+{
+  "topic": "probability of independent events",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the probability of flipping a coin and getting heads?",
+    "options": [
+      {"text": "1/2", "isCorrect": true, "feedback": "Correct -- there are two equally likely outcomes, and heads is one of them."},
+      {"text": "1/4", "isCorrect": false, "feedback": "A coin only has two sides, not four possible outcomes."},
+      {"text": "1", "isCorrect": false, "feedback": "This would mean heads is guaranteed, which isn't true."},
+      {"text": "1/3", "isCorrect": false, "feedback": "A coin has two sides, not three possible outcomes."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the probability of rolling a 4 on a fair six-sided die?",
+    "options": [
+      {"text": "1/6", "isCorrect": true, "feedback": "Correct -- there are six equally likely outcomes, and only one of them is a 4."},
+      {"text": "1/4", "isCorrect": false, "feedback": "A six-sided die has six outcomes, not four."},
+      {"text": "1/2", "isCorrect": false, "feedback": "This would mean a 4 is as likely as any even number combined, which overstates it."},
+      {"text": "4/6", "isCorrect": false, "feedback": "This would mean four of the six outcomes are 4s, which isn't the case."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the probability of flipping a coin twice and getting heads both times?",
+    "options": [
+      {"text": "1/4", "isCorrect": true, "feedback": "Correct -- multiply the probability of each independent flip: 1/2 × 1/2 = 1/4."},
+      {"text": "1/2", "isCorrect": false, "feedback": "This is the probability for just one flip, not two in a row."},
+      {"text": "1", "isCorrect": false, "feedback": "This would mean getting heads twice is guaranteed, which isn't true."},
+      {"text": "2/3", "isCorrect": false, "feedback": "This doesn't come from multiplying the two independent probabilities together."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "There are only two equally likely outcomes for a coin flip.", "medium": "Out of two equally likely outcomes, count how many are heads.", "easy": "A coin has two sides -- what's the chance of landing on one specific side?"},
+    "medium": {"hard": "Count the favorable outcomes (rolling a 4) out of all equally likely outcomes on the die.", "medium": "There are six equally likely outcomes -- how many of them are a 4?", "easy": "A die has six sides -- what's the chance of landing on one specific number?"},
+    "hard": {"hard": "For independent events, multiply the probability of each individual event together rather than adding them.", "medium": "Multiply the probability of the first flip by the probability of the second flip.", "easy": "Multiply 1/2 by 1/2 to get the combined probability."}
+  }
+},
+{
+  "topic": "ratios and proportions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If a recipe calls for a ratio of 2 cups flour to 1 cup sugar, how many cups of flour are needed for 3 cups of sugar?",
+    "options": [
+      {"text": "6", "isCorrect": true, "feedback": "Correct -- keeping the 2:1 ratio, 3 cups of sugar needs 6 cups of flour."},
+      {"text": "3", "isCorrect": false, "feedback": "This would only work for a 1:1 ratio, not 2:1."},
+      {"text": "9", "isCorrect": false, "feedback": "This overshoots the 2:1 ratio."},
+      {"text": "4", "isCorrect": false, "feedback": "This doesn't scale the ratio correctly to 3 cups of sugar."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Solve the proportion: 3/4 = x/12",
+    "options": [
+      {"text": "9", "isCorrect": true, "feedback": "Correct -- cross-multiplying gives 3×12=36, and 36/4=9."},
+      {"text": "16", "isCorrect": false, "feedback": "This doesn't come from correctly cross-multiplying and dividing."},
+      {"text": "8", "isCorrect": false, "feedback": "This is close but doesn't match the correct cross-multiplication result."},
+      {"text": "6", "isCorrect": false, "feedback": "This doesn't match 36 divided by 4."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A map has a scale of 1 inch = 50 miles. If two cities are 3.5 inches apart on the map, how far apart are they in real life?",
+    "options": [
+      {"text": "175 miles", "isCorrect": true, "feedback": "Correct -- 3.5 × 50 = 175 miles."},
+      {"text": "150 miles", "isCorrect": false, "feedback": "This doesn't match multiplying 3.5 by 50."},
+      {"text": "200 miles", "isCorrect": false, "feedback": "This overestimates the real distance."},
+      {"text": "53.5 miles", "isCorrect": false, "feedback": "This mistakenly adds instead of multiplying the scale factor."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply the sugar amount by the same factor that scales the original ratio's two numbers.", "medium": "Since the ratio is 2:1, multiply the sugar amount by 2 to find the flour amount.", "easy": "For every 1 cup of sugar you need 2 cups of flour -- how much flour for 3 cups of sugar?"},
+    "medium": {"hard": "Cross-multiply the two fractions, then divide to isolate x.", "medium": "Multiply 3 by 12, then divide by 4.", "easy": "Multiply the numbers diagonally across the equals sign, then divide."},
+    "hard": {"hard": "Multiply the map distance by the real-world value that one map unit represents.", "medium": "Multiply 3.5 by 50 to convert map inches into real miles.", "easy": "Multiply the map distance by 50 to get the real distance."}
+  }
+},
+{
+  "topic": "slope of a line",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the slope of a line measure?",
+    "options": [
+      {"text": "How steep the line is", "isCorrect": true, "feedback": "Correct -- slope describes the line's rate of rise or fall."},
+      {"text": "How long the line is", "isCorrect": false, "feedback": "Length is a separate property from steepness."},
+      {"text": "Where the line crosses the y-axis", "isCorrect": false, "feedback": "That's the y-intercept, a different property of the line."},
+      {"text": "The color of the line", "isCorrect": false, "feedback": "Color isn't a mathematical property of a line at all."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the slope of a line passing through the points (1, 2) and (3, 6)?",
+    "options": [
+      {"text": "2", "isCorrect": true, "feedback": "Correct -- (6-2)/(3-1) = 4/2 = 2."},
+      {"text": "4", "isCorrect": false, "feedback": "This is the change in y alone, without dividing by the change in x."},
+      {"text": "1", "isCorrect": false, "feedback": "This doesn't match dividing 4 by 2."},
+      {"text": "0.5", "isCorrect": false, "feedback": "This inverts the correct ratio of y-change to x-change."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A line has a slope of -2 and passes through the point (0, 5). What is the y-value when x = 3?",
+    "options": [
+      {"text": "-1", "isCorrect": true, "feedback": "Correct -- y = 5 + (-2 × 3) = 5 - 6 = -1."},
+      {"text": "11", "isCorrect": false, "feedback": "This adds instead of subtracting the slope's effect."},
+      {"text": "-6", "isCorrect": false, "feedback": "This forgets to add the starting y-value of 5."},
+      {"text": "1", "isCorrect": false, "feedback": "This doesn't match applying the negative slope correctly."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value describes the rate of change between two points on a line, not its length or position.", "medium": "This describes how much the line rises or falls as you move along it.", "easy": "This tells you how steep a line is."},
+    "medium": {"hard": "Find the change in y-values and divide by the change in x-values between the two points.", "medium": "Subtract the y-values, subtract the x-values, then divide the first result by the second.", "easy": "Subtract the y's, subtract the x's, then divide."},
+    "hard": {"hard": "Starting from the given point, apply the slope repeatedly for each unit of x-change to find the new y-value.", "medium": "Multiply the slope by the change in x, then add that to the starting y-value.", "easy": "Multiply -2 by 3, then add that to 5."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of a repeating decimal as a fraction",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 0.5 written as a simplified fraction?",
+    "options": [
+      {"text": "1/2", "isCorrect": true, "feedback": "Correct -- 0.5 is five-tenths (5/10), which simplifies to 1/2."},
+      {"text": "5/10", "isCorrect": false, "feedback": "This is technically correct before simplifying, but it should be reduced to 1/2."},
+      {"text": "1/5", "isCorrect": false, "feedback": "This doesn't correctly represent the value of 0.5."},
+      {"text": "5/1", "isCorrect": false, "feedback": "This represents the number 5, not 0.5 -- the fraction should be less than 1."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 0.75 written as a simplified fraction?",
+    "options": [
+      {"text": "3/4", "isCorrect": true, "feedback": "Correct -- 0.75 is 75/100, which simplifies to 3/4."},
+      {"text": "75/100", "isCorrect": false, "feedback": "This is technically correct before simplifying, but should be reduced to 3/4."},
+      {"text": "7/5", "isCorrect": false, "feedback": "This doesn't correctly represent the value of 0.75."},
+      {"text": "1/4", "isCorrect": false, "feedback": "This equals 0.25, not 0.75."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Let x = 0.333... (repeating). Using the algebraic technique of multiplying by 10 and subtracting, what fraction does this repeating decimal equal?",
+    "options": [
+      {"text": "1/3", "isCorrect": true, "feedback": "Correct -- 10x=3.333..., subtracting x=0.333... gives 9x=3, so x=3/9=1/3."},
+      {"text": "1/9", "isCorrect": false, "feedback": "This doesn't match correctly solving 9x=3 for x."},
+      {"text": "3/10", "isCorrect": false, "feedback": "This would be the fraction for the TERMINATING decimal 0.3, not the repeating decimal 0.333..."},
+      {"text": "1/30", "isCorrect": false, "feedback": "This doesn't match correctly solving the equation derived from the repeating decimal."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Write the decimal as a fraction over the appropriate power of ten, then reduce to lowest terms.", "medium": "Write 0.5 as 5/10, then simplify.", "easy": "Write 0.5 as 5 over 10, then simplify by dividing both by 5."},
+    "medium": {"hard": "Write the decimal as a fraction over the appropriate power of ten, then reduce to lowest terms.", "medium": "Write 0.75 as 75/100, then simplify.", "easy": "Write 0.75 as 75 over 100, then simplify by dividing both by 25."},
+    "hard": {"hard": "Set the repeating decimal equal to a variable, multiply by a power of 10 to align the repeating parts, then subtract the original equation to eliminate the repeating portion and solve.", "medium": "Multiply x by 10, subtract the original x, then solve the resulting equation for x.", "easy": "Set up 10x-x=3.333...-0.333..., which gives 9x=3, then solve for x."}
+  }
+}
+]

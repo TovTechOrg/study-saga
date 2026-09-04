@@ -1,0 +1,249 @@
+[
+{
+  "topic": "physical properties used to identify substances",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is a physical property of a substance?",
+    "options": [
+      {"text": "Melting point", "isCorrect": true, "feedback": "Correct -- melting point can be observed without changing the substance into something new."},
+      {"text": "Flammability", "isCorrect": false, "feedback": "Flammability describes how a substance reacts (burns) to become a new substance, making it a chemical property."},
+      {"text": "Reactivity with acid", "isCorrect": false, "feedback": "This describes a chemical change, making it a chemical property, not physical."},
+      {"text": "Tendency to rust", "isCorrect": false, "feedback": "Rusting forms a new substance, making this a chemical property, not physical."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two clear liquids look identical. Which physical property would best help identify which one is water?",
+    "options": [
+      {"text": "Boiling point", "isCorrect": true, "feedback": "Correct -- comparing each liquid's boiling point to water's known 100°C can help identify it without altering its identity."},
+      {"text": "Whether it reacts with a strong acid", "isCorrect": false, "feedback": "Testing a reaction would cause a chemical change, going beyond simply observing a physical property."},
+      {"text": "Whether it is flammable", "isCorrect": false, "feedback": "Flammability is a chemical property, not a physical one, and involves an actual reaction."},
+      {"text": "Whether it can rust metal", "isCorrect": false, "feedback": "This describes a chemical interaction, not a physical property of the liquid itself."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which TWO of the following are physical properties, rather than chemical properties?",
+    "options": [
+      {"text": "Density", "isCorrect": true, "feedback": "Correct -- density can be measured without changing the substance's identity."},
+      {"text": "Color", "isCorrect": true, "feedback": "Correct -- color is observable without any chemical transformation."},
+      {"text": "Ability to react with oxygen (oxidize)", "isCorrect": false, "feedback": "This describes a chemical property, since it involves forming a new substance."},
+      {"text": "Toxicity when combined with another chemical", "isCorrect": false, "feedback": "This describes how the substance reacts with something else, making it a chemical property."},
+      {"text": "Tendency to decompose when heated", "isCorrect": false, "feedback": "Decomposition creates new substances, making this a chemical property."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property can be observed or measured without turning the substance into something chemically different.", "medium": "This is a property you can measure without causing a chemical reaction.", "easy": "This is something you can observe about a substance without changing what it's made of."},
+    "medium": {"hard": "Look for a measurable characteristic that distinguishes the liquid without triggering any chemical transformation.", "medium": "Compare a measurable physical characteristic, like the temperature at which each liquid boils.", "easy": "Compare the temperature at which each liquid starts to boil."},
+    "hard": {"hard": "Two of these five can be observed or measured with no chemical transformation occurring; the other three all describe how the substance reacts or transforms into something new.", "medium": "Two of these can be measured without any reaction happening; the rest all involve the substance changing into something new.", "easy": "Two of these you can observe without anything reacting or changing into something new."}
+  }
+},
+{
+  "topic": "synthesis and decomposition reactions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a synthesis reaction, what generally happens?",
+    "options": [
+      {"text": "Two or more simple substances combine to form one more complex substance", "isCorrect": true, "feedback": "Correct -- synthesis reactions build a single, more complex product from simpler starting materials."},
+      {"text": "One complex substance breaks apart into simpler substances", "isCorrect": false, "feedback": "That describes a decomposition reaction, the opposite of synthesis."},
+      {"text": "Nothing changes at all", "isCorrect": false, "feedback": "A synthesis reaction always results in a new combined substance being formed."},
+      {"text": "A substance changes color without reacting", "isCorrect": false, "feedback": "This doesn't describe an actual chemical combination happening."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which equation represents a decomposition reaction?",
+    "options": [
+      {"text": "2H₂O → 2H₂ + O₂", "isCorrect": true, "feedback": "Correct -- one compound (water) breaks down into two simpler substances."},
+      {"text": "2H₂ + O₂ → 2H₂O", "isCorrect": false, "feedback": "This combines simpler substances into one compound, making it a synthesis reaction instead."},
+      {"text": "NaCl + AgNO₃ → AgCl + NaNO₃", "isCorrect": false, "feedback": "This swaps components between two compounds, which is a different reaction type (double replacement), not decomposition."},
+      {"text": "CH₄ + 2O₂ → CO₂ + 2H₂O", "isCorrect": false, "feedback": "This is a combustion reaction, where a substance reacts with oxygen, not a simple breakdown of one compound."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Heating calcium carbonate (CaCO₃) produces calcium oxide (CaO) and carbon dioxide (CO₂). What type of reaction is this?",
+    "options": [
+      {"text": "Decomposition", "isCorrect": true, "feedback": "Correct -- one starting compound breaks down into two separate simpler products."},
+      {"text": "Synthesis", "isCorrect": false, "feedback": "Synthesis would combine multiple substances into one, but here one substance is breaking into two."},
+      {"text": "Single replacement", "isCorrect": false, "feedback": "Single replacement involves one element swapping places with another in a compound, which isn't happening here."},
+      {"text": "Combustion", "isCorrect": false, "feedback": "Combustion specifically involves reacting with oxygen gas in a burning process, not simply heating a solid compound apart."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "The direction of change here is toward combination, not toward breaking apart.", "medium": "Multiple simpler starting materials come together into one final substance.", "easy": "This reaction joins simpler things together into one bigger thing."},
+    "medium": {"hard": "Look at whether one compound is being broken apart into two or more distinct products, versus multiple substances joining into one.", "medium": "Look for the equation where a single starting compound splits into separate simpler products.", "easy": "Look for the equation where one thing on the left breaks into two things on the right."},
+    "hard": {"hard": "One starting compound is being broken apart into two distinct, simpler products, which is the defining pattern of this reaction type.", "medium": "One compound breaking into two separate products is the key sign of this specific reaction type.", "easy": "One substance splitting into two separate substances is the key clue here."}
+  }
+},
+{
+  "topic": "catalysts and reaction rate",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does a catalyst do in a chemical reaction?",
+    "options": [
+      {"text": "Speeds up the reaction without being consumed", "isCorrect": true, "feedback": "Correct -- catalysts lower the energy needed for a reaction and come out of it unchanged."},
+      {"text": "Slows down the reaction", "isCorrect": false, "feedback": "Catalysts speed reactions up, they don't slow them down."},
+      {"text": "Gets permanently used up in the reaction", "isCorrect": false, "feedback": "A defining feature of catalysts is that they are NOT consumed by the reaction."},
+      {"text": "Changes the final products of the reaction", "isCorrect": false, "feedback": "Catalysts affect the reaction's speed, not what products ultimately form."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does increasing temperature generally affect the rate of a chemical reaction?",
+    "options": [
+      {"text": "It increases the reaction rate", "isCorrect": true, "feedback": "Correct -- higher temperature gives particles more energy, leading to more frequent and effective collisions."},
+      {"text": "It decreases the reaction rate", "isCorrect": false, "feedback": "Higher temperature generally speeds reactions up, not slows them down."},
+      {"text": "It has no effect on reaction rate", "isCorrect": false, "feedback": "Temperature is actually one of the main factors affecting how fast a reaction proceeds."},
+      {"text": "It stops the reaction completely", "isCorrect": false, "feedback": "Increased temperature speeds up most reactions rather than stopping them."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does a catalyst increase the rate of a reaction?",
+    "options": [
+      {"text": "It lowers the activation energy needed for the reaction to occur", "isCorrect": true, "feedback": "Correct -- a lower energy barrier means more particle collisions succeed in reacting per unit time."},
+      {"text": "It increases the temperature of the surroundings", "isCorrect": false, "feedback": "A catalyst works by changing the reaction pathway, not simply by heating things up."},
+      {"text": "It adds more reactant molecules to the mixture", "isCorrect": false, "feedback": "A catalyst doesn't add material to the reaction -- it changes how easily existing reactants can react."},
+      {"text": "It removes some of the products as they form", "isCorrect": false, "feedback": "Removing products is a different technique entirely, unrelated to how catalysts function."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This substance participates in helping the reaction along but is chemically unchanged by the end.", "medium": "This helps a reaction go faster but comes out the other side unchanged.", "easy": "This makes a reaction happen faster without being used up itself."},
+    "medium": {"hard": "More thermal energy means particles move and collide more frequently and forcefully.", "medium": "More heat means particles move faster and collide more often, which speeds things up.", "easy": "More heat makes molecules move faster, which usually speeds up reactions."},
+    "hard": {"hard": "A catalyst provides an alternate reaction pathway requiring less energy input to get reactants over the energy barrier.", "medium": "A catalyst provides an easier path for the reaction, requiring less energy to get it started.", "easy": "A catalyst makes it easier for the reaction to get started, needing less energy overall."}
+  }
+},
+{
+  "topic": "noble gases and chemical reactivity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which group of elements is known for being extremely unreactive?",
+    "options": [
+      {"text": "Noble gases", "isCorrect": true, "feedback": "Correct -- noble gases like helium and neon rarely form chemical bonds."},
+      {"text": "Alkali metals", "isCorrect": false, "feedback": "Alkali metals are actually highly reactive, the opposite of unreactive."},
+      {"text": "Halogens", "isCorrect": false, "feedback": "Halogens are quite reactive, especially with metals, not known for being unreactive."},
+      {"text": "Transition metals", "isCorrect": false, "feedback": "Transition metals vary in reactivity but aren't specifically known as the unreactive group."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why are noble gases generally unreactive?",
+    "options": [
+      {"text": "They already have a full outer electron shell", "isCorrect": true, "feedback": "Correct -- a complete outer shell means they have little tendency to gain, lose, or share electrons."},
+      {"text": "They have no electrons at all", "isCorrect": false, "feedback": "Noble gases do have electrons -- their stability comes from having a complete outer shell, not from lacking electrons."},
+      {"text": "They are extremely dense", "isCorrect": false, "feedback": "Density isn't what determines chemical reactivity in this case."},
+      {"text": "They only exist at very high temperatures", "isCorrect": false, "feedback": "Noble gases exist as gases at room temperature and their unreactivity isn't about temperature conditions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following best explains why noble gases are positioned in the far right column of the periodic table?",
+    "options": [
+      {"text": "They share the property of having a complete valence electron shell, which places them together as a group", "isCorrect": true, "feedback": "Correct -- elements are grouped by similar valence electron configurations, and noble gases uniquely share a full outer shell."},
+      {"text": "They were the first elements ever discovered", "isCorrect": false, "feedback": "Discovery order isn't how the periodic table columns are organized."},
+      {"text": "They are the heaviest elements known", "isCorrect": false, "feedback": "Noble gases include some very light elements, like helium, so weight isn't the organizing factor here."},
+      {"text": "They cannot exist in nature", "isCorrect": false, "feedback": "Noble gases occur naturally in the atmosphere and elsewhere -- this isn't why they're grouped together."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This group's atoms rarely need to gain, lose, or share electrons with other atoms.", "medium": "This group of elements almost never forms bonds with other elements.", "easy": "This group of gases barely reacts with anything at all."},
+    "medium": {"hard": "Their outermost energy level is already completely filled with electrons, removing the usual drive to bond.", "medium": "Their outer shell of electrons is already completely full, so they don't need to bond.", "easy": "Their outer shell of electrons is already full, so they don't need to react with anything."},
+    "hard": {"hard": "Periodic table columns group elements sharing similar valence electron configurations -- noble gases uniquely share a complete outer shell, distinguishing them as a column.", "medium": "Elements in the same column share a similar outer-electron setup -- noble gases all happen to have a full outer shell.", "easy": "Elements in the same column of the table share similar electron setups -- these elements all have a full outer shell."}
+  }
+},
+{
+  "topic": "periodic table: groups vs. periods",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a vertical column in the periodic table called?",
+    "options": [
+      {"text": "A group", "isCorrect": true, "feedback": "Correct -- vertical columns are called groups (or families)."},
+      {"text": "A period", "isCorrect": false, "feedback": "A period refers to a horizontal row, not a vertical column."},
+      {"text": "A block", "isCorrect": false, "feedback": "While 'block' is used for certain regions of the table, it isn't the term for a single vertical column."},
+      {"text": "A series", "isCorrect": false, "feedback": "'Series' isn't the standard term for a vertical column in the periodic table."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Elements in the same period (row) of the periodic table share which of the following?",
+    "options": [
+      {"text": "The same number of electron shells", "isCorrect": true, "feedback": "Correct -- elements in a period all have the same number of occupied electron shells."},
+      {"text": "The exact same chemical properties", "isCorrect": false, "feedback": "Elements in the same period actually vary widely in chemical properties -- that similarity is more true within a group."},
+      {"text": "The exact same number of valence electrons", "isCorrect": false, "feedback": "Valence electron count increases across a period -- it's elements in the same group that typically share this."},
+      {"text": "The same atomic mass", "isCorrect": false, "feedback": "Atomic mass increases across a period, it isn't shared equally among elements in a row."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do elements within the same group (column) of the periodic table tend to have similar chemical properties?",
+    "options": [
+      {"text": "They have the same number of valence electrons", "isCorrect": true, "feedback": "Correct -- matching valence electron counts lead to similar bonding behavior and reactivity."},
+      {"text": "They have the same atomic mass", "isCorrect": false, "feedback": "Atomic mass varies considerably down a group -- it's valence electron count that stays consistent."},
+      {"text": "They were all discovered in the same year", "isCorrect": false, "feedback": "Discovery timing has no bearing on chemical behavior."},
+      {"text": "They all have the exact same number of electron shells", "isCorrect": false, "feedback": "The number of electron shells actually increases going down a group -- that's a period-related pattern, not what defines a group."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term describes elements arranged up and down, sharing similar outer-electron patterns.", "medium": "This is the term for a column of elements stacked vertically.", "easy": "This is the up-and-down column of elements in the table."},
+    "medium": {"hard": "This shared trait relates to how many energy levels of electrons surround the nucleus, which increases moving down the table but stays consistent moving across a single row.", "medium": "Elements across the same row share the same count of electron energy levels.", "easy": "Elements in the same row all have the same number of electron shells."},
+    "hard": {"hard": "The number of electrons in the outermost shell is what drives an element's bonding behavior, and this number stays consistent down a single column.", "medium": "Elements in the same column all have the same number of outer-shell electrons, which drives similar reactivity.", "easy": "Elements in the same column all have the same number of electrons in their outer shell."}
+  }
+},
+{
+  "topic": "solubility and temperature",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'solubility' describe?",
+    "options": [
+      {"text": "How much of a solute can dissolve in a solvent", "isCorrect": true, "feedback": "Correct -- solubility measures the maximum amount of solute that will dissolve under given conditions."},
+      {"text": "How fast a liquid boils", "isCorrect": false, "feedback": "Boiling speed relates to heat and pressure, not solubility."},
+      {"text": "The color of a solution", "isCorrect": false, "feedback": "Color isn't what solubility measures."},
+      {"text": "The weight of a container", "isCorrect": false, "feedback": "Container weight has nothing to do with how much solute can dissolve."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For most solid solutes, how does increasing temperature typically affect their solubility in water?",
+    "options": [
+      {"text": "It generally increases solubility", "isCorrect": true, "feedback": "Correct -- warmer water can typically dissolve more of most solid solutes, like sugar."},
+      {"text": "It generally decreases solubility", "isCorrect": false, "feedback": "This is the general pattern for gases dissolving in liquids, but most solids become MORE soluble as temperature rises."},
+      {"text": "It has no effect on solubility at all", "isCorrect": false, "feedback": "Temperature is actually one of the main factors that changes how much solute can dissolve."},
+      {"text": "It always makes the solute stop dissolving completely", "isCorrect": false, "feedback": "Higher temperature typically helps more solute dissolve, not less."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Unlike most solids, how does increasing temperature typically affect the solubility of gases in a liquid?",
+    "options": [
+      {"text": "It decreases the gas's solubility", "isCorrect": true, "feedback": "Correct -- warmer liquids hold LESS dissolved gas, which is why warm soda goes flat faster."},
+      {"text": "It increases the gas's solubility, just like with solids", "isCorrect": false, "feedback": "Gases behave oppositely to most solids -- their solubility actually drops as temperature rises."},
+      {"text": "It has no effect on gas solubility", "isCorrect": false, "feedback": "Temperature does affect gas solubility -- it just works in the opposite direction compared to most solids."},
+      {"text": "It turns the dissolved gas into a solid", "isCorrect": false, "feedback": "The gas simply escapes the liquid as temperature rises -- it doesn't turn into a solid."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term describes an upper limit on how much of one substance can mix into another before no more will dissolve.", "medium": "This describes the maximum amount of a substance that will dissolve into a liquid.", "easy": "This describes how much of something can dissolve in a liquid."},
+    "medium": {"hard": "For most solids, added thermal energy helps break apart the solute's structure, generally allowing more to dissolve.", "medium": "Warmer water usually lets more solid material dissolve into it.", "easy": "Warmer water usually dissolves more sugar or salt than cold water."},
+    "hard": {"hard": "Gas molecules have more kinetic energy at higher temperatures, making them more likely to escape the liquid rather than stay dissolved -- the opposite trend from solids.", "medium": "Warmer liquids let dissolved gas escape more easily, unlike the trend seen with dissolved solids.", "easy": "This is why a warm soda goes flat faster than a cold one -- heat lets the gas escape."}
+  }
+}
+]

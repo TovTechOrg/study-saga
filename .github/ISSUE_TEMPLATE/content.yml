@@ -1,0 +1,47 @@
+name: Content / corpus problem
+description: A question, answer, or hint in the game itself is wrong
+labels: [content-pipeline]
+body:
+  - type: dropdown
+    id: realm
+    attributes:
+      label: Realm
+      options:
+        - Biology
+        - Chemistry
+        - Math
+        - Physics
+        - Geography
+        - History
+        - Literature
+        - Computer Science
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: question-text
+    attributes:
+      label: Question text
+      description: Paste the exact question text (or as much as you remember) so it can be found in the corpus.
+    validations:
+      required: true
+  - type: dropdown
+    id: problem-type
+    attributes:
+      label: What's wrong
+      options:
+        - Wrong answer marked correct
+        - Hint gives away the answer
+        - Hint is wrong or confusing
+        - Broken formula / math rendering
+        - Typo or unclear wording
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: "Example of a real past instance of this class of bug: an answer option read \"7 - (-2)\" where the arithmetic didn't check out."
+    validations:
+      required: false

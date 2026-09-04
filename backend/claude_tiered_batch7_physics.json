@@ -1,0 +1,207 @@
+[
+{
+  "topic": "renewable vs. nonrenewable energy sources",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a renewable energy source?",
+    "options": [
+      {"text": "Solar energy", "isCorrect": true, "feedback": "Correct -- sunlight is naturally replenished and won't run out on a human timescale."},
+      {"text": "Coal", "isCorrect": false, "feedback": "Coal is a nonrenewable fossil fuel that takes millions of years to form."},
+      {"text": "Natural gas", "isCorrect": false, "feedback": "Natural gas is a nonrenewable fossil fuel, not a renewable source."},
+      {"text": "Oil", "isCorrect": false, "feedback": "Oil is a nonrenewable fossil fuel, not a renewable source."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why are fossil fuels like coal and oil considered nonrenewable?",
+    "options": [
+      {"text": "They take millions of years to form and are being used up much faster than they can be replaced", "isCorrect": true, "feedback": "Correct -- their formation timescale is far longer than human consumption rates, so supplies effectively don't renew."},
+      {"text": "They are completely nontoxic and safe to use in unlimited amounts", "isCorrect": false, "feedback": "Toxicity/safety isn't the relevant factor for renewability -- it's about how quickly the resource can be replenished."},
+      {"text": "They can be instantly recreated in a laboratory", "isCorrect": false, "feedback": "Fossil fuels cannot practically be recreated on demand -- their natural formation takes an extremely long time."},
+      {"text": "They are found only underwater", "isCorrect": false, "feedback": "Location isn't what determines renewability -- the formation timescale relative to usage rate is the key factor."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is wind energy sometimes considered less reliable on its own compared to a fossil fuel power plant, even though it's renewable?",
+    "options": [
+      {"text": "Wind speed varies throughout the day and isn't always available on demand, unlike a fuel-burning plant that can run continuously", "isCorrect": true, "feedback": "Correct -- this intermittency is a real practical challenge for wind power, often addressed with energy storage or backup sources."},
+      {"text": "Wind energy actually produces more pollution than fossil fuels", "isCorrect": false, "feedback": "Wind energy generally produces far less pollution during operation than fossil fuel combustion -- reliability, not pollution, is the issue here."},
+      {"text": "Wind turbines cannot generate any electricity at all", "isCorrect": false, "feedback": "Wind turbines do generate real, usable electricity -- the issue is that generation isn't constant or fully controllable."},
+      {"text": "Wind is a nonrenewable resource that will eventually run out", "isCorrect": false, "feedback": "Wind is indeed renewable and won't run out -- the practical challenge is its variability, not its renewability."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This energy source is naturally replenished on a timescale relevant to human use.", "medium": "This is an energy source that naturally replenishes itself and won't run out.", "easy": "This energy source comes from the sun and never runs out."},
+    "medium": {"hard": "The natural process creating these fuels operates on a geological timescale vastly slower than the rate at which humans consume them.", "medium": "These fuels take an extremely long time to naturally form, far longer than we use them up.", "easy": "These fuels take millions of years to form, way longer than we're using them up."},
+    "hard": {"hard": "The core challenge is intermittency -- generation output fluctuates with a variable natural condition, unlike a controllable fuel-burning process that can run on demand.", "medium": "Since wind doesn't blow steadily all the time, the power output isn't as predictable or constant as a fuel-burning plant.", "easy": "Since wind isn't always blowing, this energy source can't always be counted on like a fuel-burning plant."}
+  }
+},
+{
+  "topic": "thermal expansion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What generally happens to most materials when they are heated?",
+    "options": [
+      {"text": "They expand, taking up more space", "isCorrect": true, "feedback": "Correct -- heating typically increases particle motion, causing most materials to expand."},
+      {"text": "They shrink, taking up less space", "isCorrect": false, "feedback": "Most materials expand when heated, not shrink -- shrinking is more typical when materials cool."},
+      {"text": "They disappear completely", "isCorrect": false, "feedback": "Heating causes expansion, not disappearance of the material."},
+      {"text": "They always turn into a gas immediately", "isCorrect": false, "feedback": "Simple heating within normal ranges typically just causes expansion, not necessarily a full state change to gas."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do engineers include small gaps between sections of railroad track or bridge segments?",
+    "options": [
+      {"text": "To allow room for the materials to expand in heat without buckling or breaking", "isCorrect": true, "feedback": "Correct -- these expansion gaps prevent damage as metal expands on hot days and contracts on cold days."},
+      {"text": "To make construction cheaper by using less material", "isCorrect": false, "feedback": "Cost savings isn't the primary engineering reason for these specific gaps -- they're there to accommodate thermal expansion."},
+      {"text": "To allow water to drain away more easily", "isCorrect": false, "feedback": "Drainage isn't the main purpose of these particular gaps -- they exist to accommodate thermal expansion and contraction."},
+      {"text": "To make the structure look more decorative", "isCorrect": false, "feedback": "These gaps serve a specific functional engineering purpose related to temperature changes, not aesthetics."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A metal lid on a glass jar is often easier to remove after running hot water over it. Why does this work?",
+    "options": [
+      {"text": "The metal lid expands more than the glass jar, loosening the tight seal between them", "isCorrect": true, "feedback": "Correct -- metals generally expand more than glass for the same temperature increase, which loosens the lid's grip on the jar."},
+      {"text": "The hot water dissolves part of the metal lid", "isCorrect": false, "feedback": "Hot water doesn't dissolve the metal -- the loosening effect comes from differing thermal expansion rates."},
+      {"text": "The glass jar shrinks significantly from the heat", "isCorrect": false, "feedback": "The glass jar would also expand slightly with heat, but much less than the metal lid -- it's this difference in expansion that loosens the seal."},
+      {"text": "Hot water changes the jar's shape permanently", "isCorrect": false, "feedback": "This is a temporary thermal expansion effect, not a permanent change to the jar's shape."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Adding thermal energy generally increases the space between a material's particles.", "medium": "Heating something usually makes its particles move around more and spread out.", "easy": "Heating something usually makes it take up a little more space."},
+    "medium": {"hard": "Without room to expand, rigid materials under thermal stress can buckle, crack, or warp as temperatures rise.", "medium": "Without extra space, the metal would push against itself and warp as it heats up and expands.", "easy": "Without extra space, the metal would push against itself and bend as it heats up."},
+    "hard": {"hard": "Different materials expand at different rates for the same temperature change -- metal's greater expansion relative to glass creates a temporary gap that loosens the lid's grip.", "medium": "The metal lid expands more than the glass jar does, so a small gap opens up between them, making it easier to twist off.", "easy": "The metal lid expands more than the glass does, loosening its grip so it's easier to twist off."}
+  }
+},
+{
+  "topic": "wave interference",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is constructive interference?",
+    "options": [
+      {"text": "When two waves combine to make a larger wave", "isCorrect": true, "feedback": "Correct -- when wave crests line up with crests, their amplitudes add together."},
+      {"text": "When two waves combine to cancel each other out completely", "isCorrect": false, "feedback": "That describes destructive interference, the opposite effect."},
+      {"text": "When a single wave splits into two separate waves", "isCorrect": false, "feedback": "Interference involves combining existing waves, not splitting one wave into two."},
+      {"text": "When a wave simply stops moving", "isCorrect": false, "feedback": "Interference is about combining wave effects, not stopping wave motion."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What happens during destructive interference?",
+    "options": [
+      {"text": "A wave crest lines up with another wave's trough, and they partially or fully cancel out", "isCorrect": true, "feedback": "Correct -- opposite parts of two waves combining reduce or eliminate the resulting amplitude."},
+      {"text": "Two wave crests line up and combine to create a bigger wave", "isCorrect": false, "feedback": "That describes constructive interference, the opposite effect."},
+      {"text": "A wave becomes permanently destroyed and can never travel again", "isCorrect": false, "feedback": "The waves aren't permanently destroyed -- they continue on after passing through each other, just momentarily cancel at that point."},
+      {"text": "Two waves merge into one wave with double the frequency", "isCorrect": false, "feedback": "Interference affects amplitude at the point of overlap, not frequency in this way."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Noise-canceling headphones use destructive interference to reduce unwanted sound. How do they accomplish this?",
+    "options": [
+      {"text": "They generate a sound wave that is the exact opposite (inverted) of the incoming noise, canceling it out", "isCorrect": true, "feedback": "Correct -- by producing a matching but inverted wave, the crest of one aligns with the trough of the other, canceling the noise."},
+      {"text": "They physically block all sound waves from entering the ear with solid material alone", "isCorrect": false, "feedback": "While some physical blocking (passive noise reduction) does occur, the 'canceling' technology specifically relies on generating an inverted wave, not just blocking."},
+      {"text": "They amplify the incoming noise to make it louder", "isCorrect": false, "feedback": "Amplifying noise would make it louder, not cancel it -- the goal here is the opposite: reduction via interference."},
+      {"text": "They convert sound waves into light waves", "isCorrect": false, "feedback": "Noise-canceling technology doesn't convert sound into light -- it works entirely within sound wave interference."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This effect occurs when overlapping waves reinforce each other, resulting in greater amplitude.", "medium": "This happens when two wave peaks meet and add together, making a taller wave.", "easy": "This is when two waves add together to make a bigger wave."},
+    "medium": {"hard": "This effect occurs when the high point of one wave meets the low point of another, reducing the combined amplitude.", "medium": "This happens when a wave's high point meets another wave's low point, and they cancel each other out.", "easy": "This happens when a wave's peak meets another wave's dip, canceling each other out."},
+    "hard": {"hard": "The device analyzes the incoming sound wave and produces a matched wave shifted exactly out of phase, so their combined amplitude approaches zero at the listener's ear.", "medium": "The headphones create a sound wave that's the flipped opposite of the noise, so when they combine, they cancel each other out.", "easy": "The headphones make a matching sound wave that's flipped upside down, so it cancels out the noise."}
+  }
+},
+{
+  "topic": "friction: static vs. kinetic",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is friction?",
+    "options": [
+      {"text": "A force that resists motion between two surfaces in contact", "isCorrect": true, "feedback": "Correct -- friction opposes the relative sliding motion between surfaces."},
+      {"text": "A force that pulls objects toward the Earth", "isCorrect": false, "feedback": "That describes gravity, a different force entirely."},
+      {"text": "A force that pushes objects apart magnetically", "isCorrect": false, "feedback": "That describes a magnetic force, unrelated to friction between surfaces."},
+      {"text": "The energy released by a chemical reaction", "isCorrect": false, "feedback": "Chemical reaction energy is unrelated to the mechanical concept of friction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the difference between static friction and kinetic friction?",
+    "options": [
+      {"text": "Static friction acts on objects at rest, while kinetic friction acts on objects already in motion", "isCorrect": true, "feedback": "Correct -- static friction must be overcome to start motion, while kinetic friction acts continuously during sliding."},
+      {"text": "Static friction only occurs in liquids, kinetic friction only in solids", "isCorrect": false, "feedback": "Both types of friction relate to solid surfaces in contact, not a liquid-versus-solid distinction."},
+      {"text": "Static friction is always weaker than kinetic friction", "isCorrect": false, "feedback": "This is generally backwards -- static friction is usually equal to or slightly greater than kinetic friction for the same surfaces."},
+      {"text": "There is no real difference between the two", "isCorrect": false, "feedback": "These are genuinely distinct types of friction, differing in whether the object is stationary or already sliding."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does it typically take more force to START pushing a heavy box across the floor than to KEEP it moving once it's sliding?",
+    "options": [
+      {"text": "Static friction (resisting the start of motion) is generally greater than kinetic friction (resisting ongoing motion)", "isCorrect": true, "feedback": "Correct -- once the box overcomes the higher static friction threshold and starts moving, the lower kinetic friction takes over, requiring less force to maintain motion."},
+      {"text": "The box becomes lighter once it starts moving", "isCorrect": false, "feedback": "The box's mass doesn't change -- the difference is due to static friction being generally higher than kinetic friction."},
+      {"text": "Gravity weakens once an object starts moving", "isCorrect": false, "feedback": "Gravity's strength doesn't change based on motion -- the friction type changing is what explains this effect."},
+      {"text": "There is actually no difference in force needed at any point", "isCorrect": false, "feedback": "There's a well-documented, real difference in force needed to start versus maintain motion, due to differing friction types."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This force opposes relative sliding motion between two surfaces pressed together.", "medium": "This is the resistance you feel when trying to slide two surfaces against each other.", "easy": "This is the force that resists things sliding against each other."},
+    "medium": {"hard": "One type applies before relative motion begins; the other applies continuously once sliding is underway.", "medium": "One type of friction applies to something not yet moving, the other to something already sliding.", "easy": "One type is for objects sitting still, the other is for objects already sliding."},
+    "hard": {"hard": "The threshold to initiate sliding is generally higher than the resistance experienced during ongoing sliding, since static friction typically exceeds kinetic friction for the same surface pair.", "medium": "It usually takes more force to overcome the friction holding something still than to keep it going once it's already sliding.", "easy": "It takes more force to get something moving from a stop than to keep it moving once it's already sliding."}
+  }
+},
+{
+  "topic": "factors affecting a pendulum's period",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the 'period' of a pendulum?",
+    "options": [
+      {"text": "The time it takes to complete one full swing back and forth", "isCorrect": true, "feedback": "Correct -- the period measures the time for one complete oscillation."},
+      {"text": "The total distance the pendulum travels", "isCorrect": false, "feedback": "Distance traveled is a different measurement from the time-based period."},
+      {"text": "The weight of the pendulum's bob", "isCorrect": false, "feedback": "Weight is a separate physical property, not the period."},
+      {"text": "The color of the pendulum string", "isCorrect": false, "feedback": "Color has no relevance to a pendulum's period."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which factor has the most significant effect on a simple pendulum's period?",
+    "options": [
+      {"text": "The length of the pendulum's string", "isCorrect": true, "feedback": "Correct -- a longer pendulum swings more slowly, taking more time per swing."},
+      {"text": "The mass of the pendulum's bob", "isCorrect": false, "feedback": "For an ideal simple pendulum, the bob's mass has essentially no effect on the period."},
+      {"text": "The color of the pendulum's bob", "isCorrect": false, "feedback": "Color has no physical effect on a pendulum's swinging period."},
+      {"text": "The material the string is made of", "isCorrect": false, "feedback": "String material (assuming it's rigid enough and doesn't stretch) doesn't significantly affect the period -- length does."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two pendulums have bobs of different mass but the exact same string length, and are released from small, similar angles. What can you predict about their periods?",
+    "options": [
+      {"text": "Their periods will be approximately the same, since mass doesn't significantly affect a simple pendulum's period", "isCorrect": true, "feedback": "Correct -- for a simple pendulum, period depends mainly on length and gravity, not the mass of the bob."},
+      {"text": "The heavier pendulum will swing back and forth much faster", "isCorrect": false, "feedback": "Mass doesn't meaningfully speed up or slow down a simple pendulum's period -- length is the dominant factor."},
+      {"text": "The lighter pendulum will swing back and forth much faster", "isCorrect": false, "feedback": "Mass doesn't meaningfully affect period for a simple pendulum -- length is what matters most."},
+      {"text": "It's impossible to predict anything without knowing the exact mass values", "isCorrect": false, "feedback": "Since mass has minimal effect on a simple pendulum's period, a reasonable prediction (similar periods) can be made based on the shared length."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value measures the duration of one complete repeating cycle of motion.", "medium": "This measures how long one complete swing, there and back, takes.", "easy": "This is how long it takes the pendulum to swing there and back once."},
+    "medium": {"hard": "For an idealized simple pendulum, this specific dimension is the dominant factor determining swing timing, far more than mass.", "medium": "A longer pendulum takes noticeably longer to complete each swing than a shorter one.", "easy": "A longer pendulum swings more slowly than a shorter one."},
+    "hard": {"hard": "For a simple pendulum, period is governed by length and gravitational acceleration, with mass canceling out of the governing equation entirely (to a good approximation for small swings).", "medium": "Since mass barely affects a simple pendulum's timing, two pendulums of the same length should swing at about the same rate regardless of their weight.", "easy": "Since mass doesn't really matter for a pendulum's swing speed, both should swing at about the same rate since they're the same length."}
+  }
+}
+]

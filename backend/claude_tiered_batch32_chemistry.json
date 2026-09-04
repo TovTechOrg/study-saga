@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a chemical formula's implication for a compound's fixed properties",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If two samples both have the exact chemical formula H₂O and are pure, will they have the same physical properties (like boiling point)?",
+    "options": [
+      {"text": "Yes, since they are chemically identical, their fundamental properties will be the same under the same conditions", "isCorrect": true, "feedback": "Correct -- pure samples of the same compound share identical chemical and physical properties under matching conditions."},
+      {"text": "No, they will always have completely different properties", "isCorrect": false, "feedback": "Pure samples of the exact same compound should have identical properties under the same conditions, not different ones."},
+      {"text": "It depends entirely on which country the water came from", "isCorrect": false, "feedback": "Geographic origin doesn't affect the fundamental properties of a pure chemical compound -- its formula and structure do."},
+      {"text": "Properties are always completely random for any substance", "isCorrect": false, "feedback": "Chemical and physical properties are actually determined by a substance's specific composition and structure, not randomness."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why can chemists reliably predict a pure compound's properties (like melting point) just from knowing its identity, without needing to test every single sample?",
+    "options": [
+      {"text": "A pure compound's properties are consistently determined by its fixed chemical composition and structure, which don't vary between different pure samples of the same substance", "isCorrect": true, "feedback": "Correct -- this reliability and reproducibility of properties is a foundational principle that makes chemistry a predictive science."},
+      {"text": "Chemists actually cannot predict any compound's properties in advance", "isCorrect": false, "feedback": "This isn't true -- chemists rely heavily on established properties of known pure compounds precisely because these properties are consistent and predictable."},
+      {"text": "Every single sample of a pure compound has completely different, unpredictable properties", "isCorrect": false, "feedback": "This is incorrect -- properties of a pure compound are consistent and reproducible, not unpredictably variable between samples."},
+      {"text": "This predictability has nothing to do with chemical composition", "isCorrect": false, "feedback": "This predictability is actually directly rooted in a compound's fixed, well-defined chemical composition and structure."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If a sample labeled as 'pure water' shows a boiling point significantly different from 100°C at standard atmospheric pressure, what would this most likely indicate?",
+    "options": [
+      {"text": "The sample is likely not actually pure -- it probably contains dissolved impurities that are altering its boiling point", "isCorrect": true, "feedback": "Correct -- deviations from a substance's known, expected properties are often used as practical evidence that a sample isn't as pure as claimed."},
+      {"text": "Water's boiling point actually varies randomly with no explanation", "isCorrect": false, "feedback": "Water's boiling point at a given standard pressure is a well-established, consistent value -- an unexpected result more likely points to impurities or non-standard conditions."},
+      {"text": "The measurement definitely proves nothing unusual is happening", "isCorrect": false, "feedback": "A significant deviation from the expected value for a supposedly pure substance IS a meaningful, notable finding worth investigating (likely impurities)."},
+      {"text": "This result has no scientific significance at all", "isCorrect": false, "feedback": "This kind of unexpected result actually has real scientific significance -- it's a practical, useful signal suggesting the sample may not be genuinely pure."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Chemically identical substances should exhibit identical characteristic behaviors under matching physical conditions.", "medium": "Since they're the exact same pure substance, they should behave exactly the same way.", "easy": "Since it's the exact same pure substance, it should act the same way every time."},
+    "medium": {"hard": "This predictability stems from the direct causal link between a compound's fixed molecular structure/bonding and its resulting physical/chemical behavior.", "medium": "A pure compound's structure directly determines its properties, and that structure doesn't change from sample to sample.", "easy": "A pure compound's structure stays the same, so its properties stay the same too."},
+    "hard": {"hard": "Established reference properties (like boiling point at standard pressure) serve as a diagnostic benchmark -- significant deviation strongly suggests the presence of contaminants altering the substance's expected behavior.", "medium": "If something dissolved is mixed in with the water, it can change the boiling point away from the normal expected value.", "easy": "If something else is mixed in with the water, it can change the boiling point away from normal."}
+  }
+}
+]

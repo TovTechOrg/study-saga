@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between strong and weak acids at the molecular level",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A strong acid, like hydrochloric acid (HCl), is defined by its ability to:",
+    "options": [
+      {"text": "Completely dissociate (ionize) into its ions when dissolved in water", "isCorrect": true, "feedback": "Correct -- strong acids fully break apart into their constituent ions in solution, releasing the maximum possible concentration of H+ ions."},
+      {"text": "Only partially dissociate into ions when dissolved in water", "isCorrect": false, "feedback": "That describes a WEAK acid, not a strong acid, which specifically dissociates COMPLETELY (fully), not just partially."},
+      {"text": "Never actually dissolve in water at all", "isCorrect": false, "feedback": "This isn't accurate -- strong acids DO dissolve in water; that's specifically when their complete dissociation into ions occurs."},
+      {"text": "Always be more corrosive/dangerous than any weak acid", "isCorrect": false, "feedback": "This isn't necessarily accurate -- 'strong' in this chemistry context specifically refers to the DEGREE OF DISSOCIATION, not necessarily a direct measure of overall danger/corrosiveness in every practical situation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Both hydrochloric acid (a strong acid) and acetic acid (a weak acid, found in vinegar) can lower a solution's pH, but a strong acid solution at the same overall concentration will have a LOWER pH (more acidic) than a weak acid solution. Why does the degree of dissociation specifically explain this pH difference?",
+    "options": [
+      {"text": "Since strong acids dissociate completely (releasing the maximum possible free H+ ions), while weak acids only partially dissociate (releasing fewer free H+ ions from the same starting concentration), the strong acid solution ends up with a higher concentration of free H+ ions, resulting in a lower (more acidic) pH", "isCorrect": true, "feedback": "Correct -- this direct connection between degree of dissociation and resulting free H+ ion concentration is precisely why strong and weak acids at the same starting concentration produce measurably different pH values."},
+      {"text": "Weak acids actually release MORE free H+ ions than strong acids at the same starting concentration", "isCorrect": false, "feedback": "This is backwards -- STRONG acids release MORE free H+ ions (due to complete dissociation) compared to WEAK acids (partial dissociation) at the same starting concentration, not the reverse."},
+      {"text": "Degree of dissociation has no actual connection to a solution's resulting pH value", "isCorrect": false, "feedback": "This isn't accurate -- degree of dissociation is actually THE central factor explaining the resulting free H+ ion concentration, which DIRECTLY determines a solution's pH value."},
+      {"text": "Strong and weak acids at the same concentration would actually always produce identical pH values", "isCorrect": false, "feedback": "This isn't accurate -- strong and weak acids at the SAME starting concentration produce GENUINELY DIFFERENT pH values, precisely due to their different degrees of dissociation into free H+ ions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Weak acids exist in a dynamic equilibrium between their dissociated (ionized) and undissociated (molecular) forms in solution, described by an equilibrium constant (Ka). Why is understanding this equilibrium concept important for accurately predicting a weak acid solution's actual properties, compared to simply assuming complete dissociation (as with strong acids)?",
+    "options": [
+      {"text": "Since only a portion of a weak acid's molecules actually dissociate at any given time (with the rest remaining as undissociated molecules in a dynamic equilibrium), accurately calculating properties like pH requires using the specific equilibrium constant (Ka) to determine the actual, generally lower proportion of dissociated ions present, rather than assuming full dissociation like a strong acid", "isCorrect": true, "feedback": "Correct -- this need to specifically account for the DYNAMIC EQUILIBRIUM nature of weak acid dissociation (using Ka), rather than assuming complete dissociation, is essential for accurately predicting and calculating weak acid solution properties like pH."},
+      {"text": "Weak acids actually also completely dissociate, identical to strong acids, making this equilibrium consideration unnecessary", "isCorrect": false, "feedback": "This isn't accurate -- weak acids specifically do NOT completely dissociate (unlike strong acids); they exist in a genuine dynamic equilibrium between dissociated and undissociated forms, making this equilibrium consideration essential, not unnecessary."},
+      {"text": "The equilibrium constant (Ka) has no actual practical use for calculating or predicting weak acid solution properties", "isCorrect": false, "feedback": "This isn't accurate -- the equilibrium constant (Ka) is actually a CRUCIAL, practically necessary tool for accurately calculating weak acid solution properties like the actual resulting pH value."},
+      {"text": "Assuming complete dissociation would actually give equally accurate results for both strong and weak acids alike", "isCorrect": false, "feedback": "This isn't accurate -- assuming COMPLETE dissociation is only accurate for STRONG acids; applying this same assumption to WEAK acids would give significantly INACCURATE results, since weak acids only partially dissociate."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This acid classification is characterized by essentially complete ionic dissociation upon introduction into an aqueous solvent environment.", "medium": "This type of acid falls completely apart into its ion pieces once it's in water.", "easy": "This type of acid falls completely apart into ions once in water."},
+    "medium": {"hard": "Consider how the specific fraction of acid molecules actually releasing free hydrogen ions directly determines the resulting solution's overall hydrogen ion concentration and thus its pH.", "medium": "Since a strong acid lets go of ALL its H+ ions but a weak acid only lets go of SOME, the strong acid ends up with way more free H+ ions floating around.", "easy": "Since a strong acid releases all its H+ ions but a weak acid only releases some, the strong acid has more free H+ ions."},
+    "hard": {"hard": "Consider how failing to account for the partial, equilibrium-governed nature of weak acid dissociation would lead to a significant overestimation of the actual free ion concentration present in solution.", "medium": "Since a weak acid doesn't fully break apart, you need a special number (Ka) to figure out exactly how much of it actually does break apart, or your pH calculation would be way off.", "easy": "Since a weak acid doesn't fully break apart, you need a special number (Ka) to calculate the actual pH correctly."}
+  }
+}
+]

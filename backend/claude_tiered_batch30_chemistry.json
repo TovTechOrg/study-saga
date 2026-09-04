@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a chemical indicator changing color across a pH range",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the general purpose of a universal indicator?",
+    "options": [
+      {"text": "To show a range of colors corresponding to different pH levels", "isCorrect": true, "feedback": "Correct -- unlike single-color indicators, a universal indicator shows a whole spectrum of colors across the pH scale."},
+      {"text": "To measure the temperature of a solution", "isCorrect": false, "feedback": "A universal indicator measures pH (acidity/basicity), not temperature."},
+      {"text": "To measure the exact mass of a solution", "isCorrect": false, "feedback": "Mass measurement isn't the purpose of a pH indicator -- it's specifically about showing acidity/basicity via color."},
+      {"text": "To make a solution taste different", "isCorrect": false, "feedback": "Indicators are visual tools showing color change, not something that affects taste."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A universal indicator turns red in one solution and dark blue/purple in another. What does this suggest about the two solutions?",
+    "options": [
+      {"text": "The red solution is strongly acidic, while the dark blue/purple solution is strongly basic", "isCorrect": true, "feedback": "Correct -- universal indicators typically show red for strong acids and blue/purple for strong bases, with green representing neutral."},
+      {"text": "Both solutions have exactly the same pH", "isCorrect": false, "feedback": "Different colors specifically indicate DIFFERENT pH levels -- if they had the same pH, the indicator would show the same color for both."},
+      {"text": "The red solution is basic, and the blue solution is acidic", "isCorrect": false, "feedback": "This is backwards for a standard universal indicator -- red typically signals acidic, and blue/purple typically signals basic."},
+      {"text": "This color difference has nothing to do with pH", "isCorrect": false, "feedback": "This color difference is specifically and directly tied to the pH difference between the two solutions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Different indicators (like litmus, phenolphthalein, and universal indicator) change color at different, specific pH ranges. Why might a chemist choose a specific indicator rather than always using a universal indicator?",
+    "options": [
+      {"text": "A specific indicator with a narrow, well-defined color-change range can more precisely pinpoint whether a solution has crossed a particular pH threshold relevant to their experiment", "isCorrect": true, "feedback": "Correct -- for identifying a precise endpoint (like in a titration), a sharp, specific color change at a known pH is often more useful than a broad, gradual color spectrum."},
+      {"text": "There is no real reason -- all indicators work identically in every situation", "isCorrect": false, "feedback": "Different indicators actually have genuinely different, useful properties (specific color-change pH ranges) suited to different experimental needs."},
+      {"text": "Specific indicators are always cheaper than universal indicators, which is the only reason for choosing them", "isCorrect": false, "feedback": "While cost might be A factor, the PRIMARY scientific reason for choosing a specific indicator relates to its precise, well-defined pH transition range, not simply cost."},
+      {"text": "Specific indicators can only be used with acids, never with bases", "isCorrect": false, "feedback": "Specific indicators can be selected for use across various points along the pH scale, working with both acid-related and base-related transitions depending on the indicator chosen."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This tool visually reveals a solution's approximate position along the full acid-to-base spectrum.", "medium": "This tool shows a whole range of colors depending on how acidic or basic something is.", "easy": "This tool changes into different colors depending on how acidic or basic something is."},
+    "medium": {"hard": "Recall the typical color-coding convention: warm colors (red/orange) for acidic, cool colors (blue/purple) for basic, with green in the middle for neutral.", "medium": "Remember that red typically signals strong acid, and blue/purple typically signals strong base on this type of indicator.", "easy": "Red usually means acidic, and blue/purple usually means basic."},
+    "hard": {"hard": "A narrow-range indicator provides a sharp, unambiguous color change precisely at a known pH value, which is more useful for detecting a specific threshold than a gradual, broad-spectrum color shift.", "medium": "A specific indicator gives a sharp, clear color change right at one particular pH point, which is more useful for pinpointing an exact moment in an experiment.", "easy": "A specific indicator gives one clear, sudden color change right at a useful pH point, unlike the gradual rainbow of a universal indicator."}
+  }
+}
+]

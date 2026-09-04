@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between a homogeneous mixture and a heterogeneous mixture",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'homogeneous' mixture has:",
+    "options": [
+      {"text": "A uniform composition throughout, with components not visually distinguishable", "isCorrect": true, "feedback": "Correct -- homogeneous mixtures have uniform composition throughout, so individual components cannot be visually distinguished, like salt fully dissolved in water."},
+      {"text": "Visibly distinct regions or components that can be seen separately", "isCorrect": false, "feedback": "That describes a HETEROGENEOUS mixture, not a homogeneous one -- heterogeneous mixtures have visibly distinct components, unlike homogeneous mixtures' uniform composition."},
+      {"text": "Only a single pure substance, with no mixture of components at all", "isCorrect": false, "feedback": "This isn't accurate -- a homogeneous mixture still contains MULTIPLE components (like salt and water), just uniformly distributed, not a single pure substance."},
+      {"text": "Components that chemically react with each other to form a new substance", "isCorrect": false, "feedback": "This isn't accurate -- a mixture (homogeneous or not) specifically involves components that are physically combined without chemically reacting, unlike a compound formed through chemical reaction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Salt water is a homogeneous mixture, while a mixture of sand and water is heterogeneous. Why does the PARTICLE SIZE of the dissolved/dispersed substance play a key role in determining whether a mixture appears homogeneous or heterogeneous?",
+    "options": [
+      {"text": "When a substance dissolves into individual ions or molecules (like salt in water), these particles are far too small to see or visually distinguish from the solvent, producing an apparently uniform mixture, but when larger particles (like sand grains) are simply dispersed rather than truly dissolved, they remain large enough to see and settle out, creating visibly distinct regions", "isCorrect": true, "feedback": "Correct -- this explanation of particle-size-dependent visual uniformity correctly explains why true dissolution (down to the molecular/ionic level) produces a homogeneous appearance, while larger dispersed particles produce a visibly heterogeneous mixture."},
+      {"text": "Particle size actually has no real connection to whether a mixture appears homogeneous or heterogeneous", "isCorrect": false, "feedback": "This isn't accurate -- particle size IS DIRECTLY connected to and explains the visual difference between homogeneous and heterogeneous mixtures."},
+      {"text": "Sand and water would actually form a homogeneous mixture, identical in uniformity to salt water", "isCorrect": false, "feedback": "This isn't accurate -- sand and water form a HETEROGENEOUS mixture (visibly distinct, and sand settles out), unlike salt water's homogeneous, uniform appearance."},
+      {"text": "Salt water is actually a heterogeneous mixture, not a homogeneous one, since it still contains multiple different substances", "isCorrect": false, "feedback": "This isn't accurate -- salt water is classified as HOMOGENEOUS specifically because the dissolved salt ions are uniformly and invisibly distributed, despite containing multiple substances."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Colloids (like milk or fog) occupy an intermediate category between true homogeneous solutions and clearly heterogeneous mixtures -- they appear uniform to the naked eye but actually contain dispersed particles large enough to scatter light (the Tyndall effect), distinguishing them from true solutions. Explain why this light-scattering behavior provides a more rigorous way to classify a mixture than relying on naked-eye visual uniformity alone.",
+    "options": [
+      {"text": "Naked-eye visual uniformity can be misleading, since colloidal particles are small enough to appear uniformly mixed to the unaided eye, yet still large enough to interact with and scatter light noticeably (unlike true solution particles, which are far too small to scatter light at all) -- this light-scattering test provides an objective, physically-grounded distinction that naked-eye observation alone cannot reliably make", "isCorrect": true, "feedback": "Correct -- this explanation of why the Tyndall effect provides a more precise, physically-grounded classification test than naked-eye appearance correctly explains why colloids require this additional distinguishing criterion beyond simple visual uniformity."},
+      {"text": "The Tyndall effect (light scattering) has no actual connection to distinguishing colloids from true homogeneous solutions", "isCorrect": false, "feedback": "This isn't accurate -- the Tyndall effect IS DIRECTLY used as a specific, reliable test for distinguishing colloids from true solutions, based on particle size differences."},
+      {"text": "True solutions would actually scatter light just as noticeably as colloids do, making the Tyndall effect an unreliable classification test", "isCorrect": false, "feedback": "This isn't accurate -- true solution particles are far too small to noticeably scatter light, unlike colloidal particles, which is precisely why the Tyndall effect is a reliable, effective test."},
+      {"text": "Naked-eye visual uniformity would actually always provide a fully sufficient and rigorous method for correctly classifying any mixture", "isCorrect": false, "feedback": "This isn't accurate -- naked-eye visual uniformity is NOT always sufficient, since colloids specifically LOOK uniform despite containing larger, light-scattering particles, requiring an additional test like the Tyndall effect."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This mixture category exhibits uniform composition throughout its extent, precluding visual differentiation of constituent components.", "medium": "This is a mixture where everything looks the same all the way through, with no separate parts visible.", "easy": "This is a mixture where everything looks the same all the way through."},
+    "medium": {"hard": "Consider how dissolution down to the ionic or molecular scale renders particles optically indistinguishable from solvent, unlike larger dispersed particles that remain visually resolvable and prone to settling.", "medium": "Stuff that dissolves down into tiny invisible pieces blends in completely, but bigger chunks that just get mixed in (not dissolved) stay visible and eventually sink or float apart.", "easy": "Stuff that dissolves into tiny invisible pieces blends in completely; bigger chunks that just get mixed in stay visible."},
+    "hard": {"hard": "Consider how particles of intermediate size can be too small for the unaided eye to resolve individually yet still large enough to physically interact with and deflect passing light waves.", "medium": "Some particles are small enough that your eyes can't pick them out individually, but they're still just big enough to bounce light around in a way you CAN notice, which is a giveaway a solution isn't a true solution.", "easy": "Some particles are too small to see individually but big enough to bounce light around, which reveals it isn't a true solution."}
+  }
+}
+]

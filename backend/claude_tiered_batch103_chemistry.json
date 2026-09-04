@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between covalent network solids and molecular solids",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'covalent network solid' (like diamond) is characterized by:",
+    "options": [
+      {"text": "A continuous network of covalent bonds extending throughout the entire solid structure, essentially making the whole crystal one giant molecule", "isCorrect": true, "feedback": "Correct -- unlike molecular solids (made of many separate, individual molecules), covalent network solids like diamond or quartz have covalent bonds connecting atoms continuously throughout the entire structure."},
+      {"text": "Many separate, individual small molecules held together only by weak intermolecular forces", "isCorrect": false, "feedback": "That describes a MOLECULAR solid, not a covalent network solid, which specifically has continuous COVALENT BONDING throughout, not separate weakly-held molecules."},
+      {"text": "A solid with absolutely no chemical bonds present anywhere", "isCorrect": false, "feedback": "This isn't accurate -- covalent network solids specifically have EXTENSIVE covalent bonding throughout their structure, not an absence of chemical bonds."},
+      {"text": "A liquid substance, not an actual solid at all", "isCorrect": false, "feedback": "This isn't accurate -- covalent network solids (like diamond) are specifically SOLID materials, not liquids."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Covalent network solids (like diamond) typically have extremely high melting points, while molecular solids (like solid CO2/dry ice, or ice) generally have much lower melting points. Why does this significant melting point difference make sense, given these two solid types' different structural bonding?",
+    "options": [
+      {"text": "Melting a covalent network solid requires breaking actual strong COVALENT BONDS throughout the entire structure (requiring enormous energy), while melting a molecular solid only requires overcoming much WEAKER intermolecular forces BETWEEN separate molecules (requiring much less energy), since the strong covalent bonds WITHIN each individual molecule remain intact during melting", "isCorrect": true, "feedback": "Correct -- this fundamental distinction (breaking extensive strong covalent bonds vs. overcoming weaker intermolecular forces between separate molecules) directly explains the dramatic melting point difference typically observed between covalent network solids and molecular solids."},
+      {"text": "Covalent network solids and molecular solids actually require breaking the exact same TYPE and STRENGTH of bonds/forces to melt", "isCorrect": false, "feedback": "This isn't accurate -- these two solid types require overcoming GENUINELY DIFFERENT types/strengths of bonding to melt (strong covalent bonds throughout vs. weaker intermolecular forces between molecules), which is precisely why their melting points differ so dramatically."},
+      {"text": "Molecular solids actually generally have HIGHER melting points than covalent network solids, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- covalent network solids (like diamond) generally have MUCH HIGHER melting points than molecular solids (like ice or dry ice), not the reverse."},
+      {"text": "This melting point difference has no actual connection to the specific type of bonding/structure present in each solid type", "isCorrect": false, "feedback": "This isn't accurate -- this melting point difference is DIRECTLY and fundamentally connected to and explained by the different underlying bonding/structural types (extensive covalent network vs. separate molecules with weak intermolecular forces)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Diamond and graphite are both covalent network solids made entirely of carbon, yet graphite is notably softer than diamond and can conduct electricity (unlike diamond, which is an electrical insulator). Given that both are 'covalent network solids,' why do they still show such dramatically different physical properties?",
+    "options": [
+      {"text": "While both ARE covalent network solids, their SPECIFIC covalent bonding ARRANGEMENTS differ significantly -- diamond has a rigid 3D network of strong bonds in all directions, while graphite has strong covalent bonds only WITHIN flat 2D layers (with much weaker forces BETWEEN those layers, allowing layers to slide, explaining graphite's relative softness), and graphite's specific bonding structure also leaves some electrons more freely mobile (explaining its electrical conductivity), unlike diamond's fully localized bonding electrons", "isCorrect": true, "feedback": "Correct -- this deeper understanding (that even within the broader 'covalent network solid' category, the SPECIFIC bonding arrangement/geometry can vary significantly) explains how diamond and graphite, despite sharing the same basic classification and chemical element, can display such dramatically different physical properties (hardness, electrical conductivity)."},
+      {"text": "Diamond and graphite are actually not both truly covalent network solids, despite common classification", "isCorrect": false, "feedback": "This isn't accurate -- BOTH diamond AND graphite ARE genuinely classified as covalent network solids; their DRAMATICALLY DIFFERENT specific bonding ARRANGEMENTS (3D rigid network vs. layered 2D sheets) is what explains their different properties, not a misclassification."},
+      {"text": "This difference in physical properties has no actual connection to differences in their specific covalent bonding arrangements/geometry", "isCorrect": false, "feedback": "This isn't accurate -- this difference in physical properties is DIRECTLY and specifically connected to and explained BY their different covalent bonding ARRANGEMENTS (3D network vs. layered structure), despite both being broadly classified as covalent network solids."},
+      {"text": "Graphite's electrical conductivity has no actual connection to its specific covalent bonding structure/arrangement", "isCorrect": false, "feedback": "This isn't accurate -- graphite's electrical conductivity IS DIRECTLY connected to and explained by its specific layered bonding structure, which leaves some electrons more freely mobile compared to diamond's fully localized bonding arrangement."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This solid classification is characterized by an uninterrupted, extended lattice of covalent bonds spanning the complete crystalline structure.", "medium": "This kind of solid has strong chemical bonds connecting basically the entire structure together, like one giant molecule.", "easy": "This kind of solid has strong bonds connecting basically the entire structure together."},
+    "medium": {"hard": "Consider the difference in bond dissociation energy required to disrupt extensive covalent networks versus the comparatively lower energy needed to overcome intermolecular attractive forces between discrete molecular units.", "medium": "Breaking apart a solid held together by strong chemical bonds everywhere takes WAY more energy than just separating individual molecules that were only loosely attracted to each other.", "easy": "Breaking a solid held by strong bonds everywhere takes way more energy than separating loosely attracted molecules."},
+    "hard": {"hard": "Consider how the specific geometric arrangement of covalent bonding (isotropic 3D network versus anisotropic layered structure with differing intra- and inter-layer bond strengths) can produce dramatically different macroscopic mechanical and electronic properties despite identical elemental composition.", "medium": "Diamond's carbon atoms are locked in a super strong 3D cage in every direction, but graphite's carbon atoms form strong flat sheets that can slide past each other easily, which also happens to let electrons move around more freely.", "easy": "Diamond's carbon is locked in a 3D cage, but graphite's forms flat sheets that can slide and let electrons move."}
+  }
+}
+]

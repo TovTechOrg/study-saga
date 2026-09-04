@@ -1,0 +1,248 @@
+[
+{
+  "topic": "electron shells and configuration basics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "How many electrons can the first electron shell (closest to the nucleus) hold at most?",
+    "options": [
+      {"text": "2", "isCorrect": true, "feedback": "Correct -- the first shell holds a maximum of 2 electrons."},
+      {"text": "8", "isCorrect": false, "feedback": "8 is the maximum for the second shell, not the first."},
+      {"text": "18", "isCorrect": false, "feedback": "This is far more than the first shell can hold."},
+      {"text": "1", "isCorrect": false, "feedback": "The first shell can actually hold 2 electrons, not just 1."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "An atom of oxygen has 8 electrons. How are they arranged across its electron shells?",
+    "options": [
+      {"text": "2 in the first shell, 6 in the second shell", "isCorrect": true, "feedback": "Correct -- the first shell fills with 2, leaving 6 for the second shell."},
+      {"text": "8 in the first shell", "isCorrect": false, "feedback": "The first shell can only hold a maximum of 2 electrons, not 8."},
+      {"text": "4 in the first shell, 4 in the second shell", "isCorrect": false, "feedback": "The first shell always fills to its maximum of 2 before any electrons go into the second shell."},
+      {"text": "1 in the first shell, 7 in the second shell", "isCorrect": false, "feedback": "The first shell must be filled completely to 2 electrons before the second shell begins filling."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Sodium has 11 electrons. Based on shell-filling rules (2, 8, 8...), how many electrons are in sodium's outermost (valence) shell?",
+    "options": [
+      {"text": "1", "isCorrect": true, "feedback": "Correct -- 2 fill the first shell, 8 fill the second shell, leaving just 1 electron in the third (outer) shell."},
+      {"text": "11", "isCorrect": false, "feedback": "This is the total electron count, not just the outer shell's count."},
+      {"text": "8", "isCorrect": false, "feedback": "8 electrons fill the second shell, but there's still 1 more electron left for the third shell after that."},
+      {"text": "3", "isCorrect": false, "feedback": "This doesn't match subtracting 2 and 8 from the total of 11 correctly."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This innermost energy level has the smallest possible electron capacity.", "medium": "This is the shell closest to the nucleus, and it fills up first with a small number of electrons.", "easy": "The shell closest to the nucleus can only hold 2 electrons."},
+    "medium": {"hard": "Fill the innermost shell to its maximum capacity first, then place any remaining electrons into the next shell out.", "medium": "Fill the first shell up to its max of 2 first, then put the rest in the second shell.", "easy": "Put 2 electrons in the first shell, then put the remaining 6 in the second shell."},
+    "hard": {"hard": "Subtract the capacities of the fully filled inner shells (2 and 8) from the total electron count to find how many remain for the outermost shell.", "medium": "Subtract 2 and then 8 from 11 to see how many electrons are left for the outer shell.", "easy": "Take away 2 for the first shell and 8 for the second shell -- how many are left over?"}
+  }
+},
+{
+  "topic": "single and double replacement reactions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a single replacement reaction, what generally happens?",
+    "options": [
+      {"text": "One element replaces another element within a compound", "isCorrect": true, "feedback": "Correct -- a more reactive element displaces a less reactive one from a compound."},
+      {"text": "Two compounds swap all of their components", "isCorrect": false, "feedback": "That describes a double replacement reaction, not a single replacement."},
+      {"text": "A compound simply breaks apart into its elements", "isCorrect": false, "feedback": "That describes a decomposition reaction, not a single replacement."},
+      {"text": "Two elements combine to form one compound", "isCorrect": false, "feedback": "That describes a synthesis reaction, not a single replacement."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which equation represents a double replacement reaction?",
+    "options": [
+      {"text": "AgNO₃ + NaCl → AgCl + NaNO₃", "isCorrect": true, "feedback": "Correct -- the positive and negative components of the two compounds swap partners."},
+      {"text": "Zn + 2HCl → ZnCl₂ + H₂", "isCorrect": false, "feedback": "This is a single replacement reaction, where zinc replaces hydrogen in the compound."},
+      {"text": "2H₂ + O₂ → 2H₂O", "isCorrect": false, "feedback": "This is a synthesis reaction, combining elements into one compound."},
+      {"text": "2H₂O₂ → 2H₂O + O₂", "isCorrect": false, "feedback": "This is a decomposition reaction, breaking one compound into simpler substances."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In the reaction Zn + CuSO₄ → ZnSO₄ + Cu, what type of reaction is occurring, and why?",
+    "options": [
+      {"text": "Single replacement -- zinc displaces copper because zinc is more reactive", "isCorrect": true, "feedback": "Correct -- zinc metal takes copper's place in the compound, since zinc is a more reactive metal than copper."},
+      {"text": "Double replacement -- the sulfate ion swaps between two metals", "isCorrect": false, "feedback": "Only one element (zinc) is displacing another (copper) here -- the sulfate group stays paired the same way, which is characteristic of single, not double, replacement."},
+      {"text": "Synthesis -- two substances are combining into one", "isCorrect": false, "feedback": "This reaction produces two separate products, not one combined substance, ruling out synthesis."},
+      {"text": "Decomposition -- one compound is breaking into simpler parts", "isCorrect": false, "feedback": "There are two starting reactants here, not just one compound breaking down."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One free element takes the place of a different element that was previously bonded in a compound.", "medium": "One lone element swaps places with an element that's part of a compound.", "easy": "One element takes the place of another element that's part of a compound."},
+    "medium": {"hard": "Look for the equation where the positive and negative parts of two different compounds trade partners with each other.", "medium": "Look for the equation where parts of two different compounds swap with each other, rather than one element replacing another.", "easy": "Look for the equation where two compounds trade parts with each other."},
+    "hard": {"hard": "Since a single free element (zinc) displaces another single element (copper) from its compound, while the sulfate group remains intact throughout, this fits the single replacement pattern.", "medium": "Notice that only one element (zinc) is swapping in for another element (copper), while the sulfate part stays together the whole time.", "easy": "Zinc is swapping in for copper here, while the sulfate part stays together -- that's the single-swap pattern."}
+  }
+},
+{
+  "topic": "reactants and products in a chemical equation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a chemical equation, what are 'reactants'?",
+    "options": [
+      {"text": "The starting substances that undergo the reaction", "isCorrect": true, "feedback": "Correct -- reactants are written on the left side of the equation, before the arrow."},
+      {"text": "The substances formed after the reaction completes", "isCorrect": false, "feedback": "That describes the products, not the reactants."},
+      {"text": "The catalyst used to speed up the reaction", "isCorrect": false, "feedback": "A catalyst is a separate substance that isn't consumed -- it isn't the same as a reactant."},
+      {"text": "The temperature at which the reaction occurs", "isCorrect": false, "feedback": "Temperature is a reaction condition, not a substance involved in the reaction itself."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In the equation 2H₂ + O₂ → 2H₂O, which substances are the products?",
+    "options": [
+      {"text": "H₂O (water)", "isCorrect": true, "feedback": "Correct -- products appear on the right side of the arrow, after the reaction occurs."},
+      {"text": "H₂ and O₂", "isCorrect": false, "feedback": "These are the reactants, listed on the left side of the arrow, not the products."},
+      {"text": "Only O₂", "isCorrect": false, "feedback": "O₂ is a reactant here, appearing on the left side of the arrow."},
+      {"text": "The arrow symbol itself", "isCorrect": false, "feedback": "The arrow simply indicates the direction of the reaction -- it isn't a chemical substance."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In a chemical reaction at equilibrium, reactants are still converting into products, and products are still converting back into reactants, but the visible amounts of each stop changing. What does this indicate?",
+    "options": [
+      {"text": "The forward and reverse reaction rates have become equal", "isCorrect": true, "feedback": "Correct -- equilibrium doesn't mean the reaction stopped, just that both directions are proceeding at matching rates."},
+      {"text": "The reaction has completely stopped happening", "isCorrect": false, "feedback": "The reaction is still actively occurring in both directions -- it just appears static because the rates match."},
+      {"text": "All the reactants have been fully converted to products", "isCorrect": false, "feedback": "At equilibrium, both reactants and products are typically still present -- it isn't necessarily a complete one-way conversion."},
+      {"text": "The reaction has run out of energy entirely", "isCorrect": false, "feedback": "Equilibrium isn't about running out of energy -- it's about the forward and reverse rates matching each other."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These are the substances present before any chemical transformation has occurred.", "medium": "These are the ingredients you start with before the reaction happens.", "easy": "These are the substances you start with before a reaction happens."},
+    "medium": {"hard": "Look on the side of the arrow that shows what's formed once the transformation is complete.", "medium": "Look at what appears after the arrow, once the reaction has finished.", "easy": "Look at what's written on the right side of the arrow."},
+    "hard": {"hard": "At this state, the concentrations appear constant not because the reaction halted, but because the forward and reverse conversions are happening at identical speeds.", "medium": "The reaction hasn't stopped -- it's just happening in both directions at the same speed, so nothing appears to change.", "easy": "The reaction is still happening both ways, just at the same speed, so nothing looks like it's changing."}
+  }
+},
+{
+  "topic": "pH of common household substances",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following household items is typically acidic (pH below 7)?",
+    "options": [
+      {"text": "Lemon juice", "isCorrect": true, "feedback": "Correct -- lemon juice is quite acidic, with a pH around 2."},
+      {"text": "Baking soda solution", "isCorrect": false, "feedback": "Baking soda solution is basic, with a pH above 7, not acidic."},
+      {"text": "Pure water", "isCorrect": false, "feedback": "Pure water is neutral, at pH 7, not acidic."},
+      {"text": "Ammonia cleaner", "isCorrect": false, "feedback": "Ammonia cleaner is basic, with a high pH, not acidic."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following household substances is typically basic (pH above 7)?",
+    "options": [
+      {"text": "Soap", "isCorrect": true, "feedback": "Correct -- most soaps are mildly basic, often with a pH between 9 and 10."},
+      {"text": "Vinegar", "isCorrect": false, "feedback": "Vinegar is acidic, with a pH around 2-3, not basic."},
+      {"text": "Orange juice", "isCorrect": false, "feedback": "Orange juice is acidic, with a pH around 3-4, not basic."},
+      {"text": "Coffee", "isCorrect": false, "feedback": "Coffee is mildly acidic, with a pH around 5, not basic."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Stomach acid has a pH of about 2, while blood has a pH of about 7.4. Approximately how many times more acidic is stomach acid than blood?",
+    "options": [
+      {"text": "About 100,000 times more acidic", "isCorrect": true, "feedback": "Correct -- since pH is logarithmic, a difference of about 5.4 pH units corresponds to roughly 10^5.4, close to 100,000 times more acidic."},
+      {"text": "About 5 times more acidic", "isCorrect": false, "feedback": "This treats the pH scale as linear, but it's actually logarithmic, making the real difference far larger."},
+      {"text": "Exactly the same acidity", "isCorrect": false, "feedback": "A pH difference of over 5 units represents a massive difference in acidity, not sameness."},
+      {"text": "About 2 times more acidic", "isCorrect": false, "feedback": "This dramatically underestimates the real difference due to the logarithmic nature of the pH scale."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This citrus juice is well known for its sour, sharp taste, a hallmark of acidity.", "medium": "This sour citrus juice is a very common acidic household item.", "easy": "This sour citrus juice is a classic example of something acidic."},
+    "medium": {"hard": "This everyday cleaning product typically leaves your hands feeling slightly slippery, a common trait of basic substances.", "medium": "This everyday cleaning item is mildly basic, often making your skin feel a bit slippery.", "easy": "This everyday cleaning product used for washing your hands is mildly basic."},
+    "hard": {"hard": "Each whole pH unit represents a tenfold change, so raise 10 to the power of the pH difference to find the multiplicative factor.", "medium": "Since each pH unit is a 10x change, calculate 10 raised to the power of the roughly 5-unit difference.", "easy": "Since each single pH step is a 10-times change, a difference of about 5 steps means a huge multiplication, close to 100,000."}
+  }
+},
+{
+  "topic": "metalloids on the periodic table",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What are metalloids?",
+    "options": [
+      {"text": "Elements with properties in between metals and nonmetals", "isCorrect": true, "feedback": "Correct -- metalloids share some characteristics of both metals and nonmetals."},
+      {"text": "Elements that are always liquid at room temperature", "isCorrect": false, "feedback": "Physical state at room temperature isn't what defines a metalloid."},
+      {"text": "Elements found only in the ocean", "isCorrect": false, "feedback": "Metalloids aren't defined by where they're found in nature -- it's about their chemical/physical properties."},
+      {"text": "Elements that don't exist naturally", "isCorrect": false, "feedback": "Metalloids do occur naturally -- their defining trait is their intermediate properties, not artificiality."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Where on the periodic table are metalloids typically found?",
+    "options": [
+      {"text": "Along a zigzag staircase line between metals and nonmetals", "isCorrect": true, "feedback": "Correct -- metalloids sit along this dividing boundary, sharing traits from both sides."},
+      {"text": "Only in the leftmost column", "isCorrect": false, "feedback": "The leftmost column contains highly reactive alkali metals, not metalloids."},
+      {"text": "Only in the bottom two separate rows", "isCorrect": false, "feedback": "Those bottom rows contain the lanthanides and actinides, which are metals, not metalloids."},
+      {"text": "Scattered completely randomly with no pattern", "isCorrect": false, "feedback": "Metalloids actually follow a distinct, identifiable staircase pattern on the table, not a random distribution."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Silicon, a metalloid, is widely used in computer chips. Which property of metalloids makes them especially useful as semiconductors?",
+    "options": [
+      {"text": "Their electrical conductivity can be controlled and falls between that of metals and insulators", "isCorrect": true, "feedback": "Correct -- this adjustable, intermediate conductivity is exactly what makes metalloids like silicon valuable in electronics."},
+      {"text": "They are the best possible conductors of electricity, better than any metal", "isCorrect": false, "feedback": "Metalloids conduct less well than metals -- their usefulness comes from their intermediate, adjustable conductivity, not superior conductivity."},
+      {"text": "They are completely unable to conduct electricity under any condition", "isCorrect": false, "feedback": "Metalloids do conduct some electricity, unlike true insulators -- their value comes from this in-between behavior."},
+      {"text": "They are the least dense materials known", "isCorrect": false, "feedback": "Density isn't the property responsible for their use in electronics -- it's their controllable conductivity."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These elements sit conceptually between two major element categories, sharing traits of each.", "medium": "These elements are a blend of metal-like and nonmetal-like characteristics.", "easy": "These elements have some properties of metals and some of nonmetals."},
+    "medium": {"hard": "This boundary line separates the metal-dominated left/bottom region from the nonmetal-dominated upper right region.", "medium": "Picture a jagged line dividing the table -- these elements sit right along it.", "easy": "Picture a zigzag line on the table -- these elements sit right along it."},
+    "hard": {"hard": "Unlike a metal's freely flowing conductivity or an insulator's complete lack of conductivity, this intermediate, tunable conductivity is precisely what allows controlled electronic behavior in devices.", "medium": "Their conductivity sits in between a full conductor and a full insulator, and can be finely adjusted -- ideal for controlling electric signals.", "easy": "Their electrical conductivity is in between a metal and a non-conductor, and it can be finely controlled."}
+  }
+},
+{
+  "topic": "common polyatomic ions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a polyatomic ion?",
+    "options": [
+      {"text": "A charged particle made of two or more atoms bonded together", "isCorrect": true, "feedback": "Correct -- polyatomic ions act as a single unit but are made of multiple bonded atoms carrying an overall charge."},
+      {"text": "A single atom with no charge at all", "isCorrect": false, "feedback": "A polyatomic ion is made of multiple atoms and does carry a charge -- this describes a neutral single atom instead."},
+      {"text": "A type of radioactive element", "isCorrect": false, "feedback": "Polyatomic ions aren't defined by radioactivity -- they're defined by being a charged group of bonded atoms."},
+      {"text": "A pure element found in nature", "isCorrect": false, "feedback": "Polyatomic ions are combinations of atoms (often from different elements) acting as one charged group, not a single pure element."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the chemical formula and charge of the hydroxide ion?",
+    "options": [
+      {"text": "OH⁻", "isCorrect": true, "feedback": "Correct -- hydroxide is made of one oxygen and one hydrogen atom, carrying a single negative charge."},
+      {"text": "OH²⁻", "isCorrect": false, "feedback": "Hydroxide carries a charge of -1, not -2."},
+      {"text": "O₂H", "isCorrect": false, "feedback": "This doesn't match the correct atomic composition of hydroxide (one oxygen, one hydrogen)."},
+      {"text": "H₂O", "isCorrect": false, "feedback": "This is the formula for neutral water, not the charged hydroxide ion."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Calcium (Ca²⁺) combines with the polyatomic ion carbonate (CO₃²⁻) to form calcium carbonate. What is the correct formula for this compound?",
+    "options": [
+      {"text": "CaCO₃", "isCorrect": true, "feedback": "Correct -- since the charges are equal in magnitude (+2 and -2), they combine in a simple 1:1 ratio."},
+      {"text": "Ca₂CO₃", "isCorrect": false, "feedback": "Since the charges already balance exactly (+2 and -2), no extra calcium is needed."},
+      {"text": "CaCO₃²⁻", "isCorrect": false, "feedback": "The final compound is neutral overall -- charges shouldn't appear in the formula once they've balanced."},
+      {"text": "Ca(CO₃)₂", "isCorrect": false, "feedback": "This would be needed if calcium only had a +1 charge, but calcium's +2 charge already balances one carbonate ion exactly."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This kind of ion involves multiple atoms bonded into a single group that carries an overall electric charge.", "medium": "This is a charged group made of several atoms stuck together, acting as one unit.", "easy": "This is a group of atoms stuck together that acts like one charged particle."},
+    "medium": {"hard": "This ion combines a single oxygen atom with a single hydrogen atom, carrying one extra electron overall.", "medium": "This common ion is made of exactly one oxygen and one hydrogen atom, with a single negative charge.", "easy": "This ion has one oxygen, one hydrogen, and a charge of -1."},
+    "hard": {"hard": "When the magnitudes of the positive and negative charges already match exactly, the ions combine in the simplest possible 1:1 ratio.", "medium": "Since +2 and -2 already balance each other exactly, you only need one of each ion.", "easy": "Since the charges are +2 and -2, they already cancel out evenly with just one of each."}
+  }
+}
+]

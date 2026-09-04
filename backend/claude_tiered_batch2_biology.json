@@ -1,0 +1,212 @@
+[
+{
+  "topic": "bacterial conjugation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Bacteria can share genetic material directly with each other. What is this process called?",
+    "options": [
+      {"text": "Conjugation", "isCorrect": true, "feedback": "Correct -- bacteria literally pass DNA to each other through a direct connection."},
+      {"text": "Mitosis", "isCorrect": false, "feedback": "Mitosis is just one cell splitting into two identical copies, not sharing DNA between two separate cells."},
+      {"text": "Photosynthesis", "isCorrect": false, "feedback": "That's about making food from sunlight -- completely unrelated to swapping genes."},
+      {"text": "Transpiration", "isCorrect": false, "feedback": "That's water movement through a plant -- nothing to do with bacteria or genetics."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does DNA physically travel from one bacterium to another during conjugation?",
+    "options": [
+      {"text": "Through a tube-like structure called a pilus connecting the two cells", "isCorrect": true, "feedback": "Correct -- the pilus forms a direct bridge for DNA transfer between the two bacteria."},
+      {"text": "By one bacterium engulfing the other whole", "isCorrect": false, "feedback": "Neither cell is consumed -- both survive the process, connected only briefly by a physical bridge."},
+      {"text": "By releasing DNA into the surrounding water for the other to absorb passively", "isCorrect": false, "feedback": "That passive absorption process is called transformation, a different mechanism from conjugation's direct cell-to-cell contact."},
+      {"text": "Through spores released into the air", "isCorrect": false, "feedback": "Spore formation is a survival strategy for harsh conditions, unrelated to this direct gene-transfer process."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which process allows bacteria to exchange genetic material?",
+    "options": [
+      {"text": "Conjugation", "isCorrect": true, "feedback": "Correct -- and notably, this is a major route by which antibiotic-resistance genes spread between bacterial strains."},
+      {"text": "Mitosis", "isCorrect": false, "feedback": "Mitosis produces identical daughter cells from one parent -- it doesn't involve two separate cells trading DNA at all."},
+      {"text": "Meiosis", "isCorrect": false, "feedback": "Meiosis is a eukaryotic process for producing sex cells with half the chromosome number -- bacteria don't undergo meiosis."},
+      {"text": "Binary fission", "isCorrect": false, "feedback": "This is simply how bacteria reproduce by splitting in two -- it produces clones, not an exchange of genetic material between cells."},
+      {"text": "Transpiration", "isCorrect": false, "feedback": "That's the plant process of water evaporating from leaves -- unrelated to bacterial genetics entirely."},
+      {"text": "Photosynthesis", "isCorrect": false, "feedback": "That's energy capture from light -- completely separate from how genetic material moves between organisms."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process relies on a specialized structure called a pilus that physically links two bacterial cells together.", "medium": "This process happens when two bacteria form a direct physical connection to pass DNA between them.", "easy": "This is how one bacterium can pass some of its DNA directly to another bacterium."},
+    "medium": {"hard": "The structure involved is a hollow protein appendage, distinct from the whole-cell engulfment, passive DNA absorption, or spore-based methods used in other contexts.", "medium": "Picture a thin tube physically connecting two bacterial cells -- that's the structure DNA travels through.", "easy": "A thin tube called a pilus connects the two bacteria so DNA can move across it."},
+    "hard": {"hard": "This process is distinct from bacterial reproduction (which just clones one cell into two) and from the eukaryotic-only processes of mitosis and meiosis -- it specifically involves a direct, temporary physical connection between two separate bacterial cells for one-way DNA transfer.", "medium": "This is a specific gene-transfer process between two separate bacterial cells, distinct from how bacteria simply reproduce by dividing.", "easy": "This is the name for bacteria directly swapping genetic material with each other, often how antibiotic resistance spreads."}
+  }
+},
+{
+  "topic": "chloroplast as site of photosynthesis",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which structure inside a plant cell is where photosynthesis happens?",
+    "options": [
+      {"text": "Chloroplast", "isCorrect": true, "feedback": "Correct -- this green organelle is the plant cell's solar panel."},
+      {"text": "Mitochondria", "isCorrect": false, "feedback": "Mitochondria release energy from food -- they don't capture sunlight to make it."},
+      {"text": "Nucleus", "isCorrect": false, "feedback": "The nucleus stores genetic instructions -- it plays no direct role in capturing light energy."},
+      {"text": "Cell wall", "isCorrect": false, "feedback": "The cell wall is just a rigid outer support structure, not a site of any chemical energy production."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What gives the chloroplast its green color and lets it capture sunlight?",
+    "options": [
+      {"text": "Chlorophyll, a pigment inside the chloroplast", "isCorrect": true, "feedback": "Correct -- chlorophyll absorbs light and gives chloroplasts (and leaves) their green color."},
+      {"text": "A layer of green cell wall material", "isCorrect": false, "feedback": "The cell wall is a structural layer, not a light-absorbing pigment, and isn't what gives chloroplasts their color."},
+      {"text": "Stored water inside the organelle", "isCorrect": false, "feedback": "Water is colorless and plays no role in the organelle's color or its ability to absorb light."},
+      {"text": "DNA housed inside the organelle", "isCorrect": false, "feedback": "The chloroplast's own DNA is there for replication purposes, but it isn't what absorbs light or produces the green color."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which part of a plant cell is responsible for photosynthesis?",
+    "options": [
+      {"text": "Mitochondria", "isCorrect": false, "feedback": "This organelle releases energy FROM sugar via respiration -- essentially the reverse job of the one that makes sugar using light."},
+      {"text": "Nucleus", "isCorrect": false, "feedback": "The nucleus houses the cell's DNA and directs cellular activity, but doesn't itself perform any light-capturing chemistry."},
+      {"text": "Chloroplast", "isCorrect": true, "feedback": "Correct -- and like the mitochondria, it has its own circular DNA, supporting the theory that it too was once a free-living bacterium."},
+      {"text": "Cell wall", "isCorrect": false, "feedback": "This rigid structure provides support and protection -- it plays no role in capturing or converting light energy."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This organelle contains the pigment that gives plants their color and captures light energy.", "medium": "This green, light-capturing organelle is where a plant makes its own food.", "easy": "This is the green structure inside plant cells that captures sunlight to make food."},
+    "medium": {"hard": "The pigment responsible sits embedded in this organelle's internal membranes and specifically absorbs red and blue light while reflecting green.", "medium": "A specific green pigment inside this organelle is what actually grabs the light energy.", "easy": "A pigment called chlorophyll, found inside this organelle, is what gives it its green color and lets it catch sunlight."},
+    "hard": {"hard": "Like the organelle responsible for the reverse energy process (releasing rather than capturing energy), this one has its own independent circular DNA -- a clue that both were once free-living bacteria absorbed by an ancestral cell.", "medium": "This organelle's job is essentially the mirror image of the one that releases energy from sugar -- this one captures energy from light instead.", "easy": "This is the organelle, not the whole leaf, where photosynthesis actually happens inside plant cells."}
+  }
+},
+{
+  "topic": "mammal characteristic: backbone",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Do mammals have a backbone?",
+    "options": [
+      {"text": "Yes, all mammals have a backbone", "isCorrect": true, "feedback": "Correct -- mammals are vertebrates, meaning every one of them has a spine."},
+      {"text": "No, mammals have no internal skeleton", "isCorrect": false, "feedback": "Mammals actually have a full internal bony skeleton, including a spine -- this is backwards."},
+      {"text": "Only some mammals have a backbone", "isCorrect": false, "feedback": "A backbone is a universal trait of mammals -- there are no exceptions within this animal class."},
+      {"text": "Mammals have an external shell instead", "isCorrect": false, "feedback": "An external shell is a trait of some invertebrates, not mammals, which rely on an internal skeleton."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these traits is shared by every mammal, distinguishing them from most other animal groups?",
+    "options": [
+      {"text": "Has a backbone", "isCorrect": true, "feedback": "Correct -- mammals belong to the vertebrate group, defined by having a segmented spine."},
+      {"text": "Has gills", "isCorrect": false, "feedback": "Gills are found in fish and some amphibian young -- mammals breathe with lungs instead."},
+      {"text": "Has scales", "isCorrect": false, "feedback": "Scales are typical of reptiles and fish -- most mammals are covered in hair or fur instead."},
+      {"text": "Lays eggs", "isCorrect": false, "feedback": "Egg-laying is the exception among mammals (like the platypus), not the shared rule -- most give live birth."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a characteristic of a mammal?",
+    "options": [
+      {"text": "Lays eggs", "isCorrect": false, "feedback": "Only a small number of mammals (like the platypus and echidna) lay eggs -- it's a notable exception, not a defining trait."},
+      {"text": "Has gills", "isCorrect": false, "feedback": "Gills for extracting oxygen from water are a fish trait -- mammals, even aquatic ones like whales, breathe air with lungs."},
+      {"text": "Has a backbone", "isCorrect": true, "feedback": "Correct -- shared with all vertebrates, but combined with hair and mammary glands, it's part of what makes a mammal a mammal."},
+      {"text": "Has scales", "isCorrect": false, "feedback": "Scaled skin belongs to reptiles and fish -- mammals are typically covered in hair or fur instead."},
+      {"text": "Has feathers", "isCorrect": false, "feedback": "Feathers are exclusive to birds -- no mammal has them."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This trait is shared by fish, reptiles, birds, and mammals alike -- it's what makes them all vertebrates.", "medium": "This internal structure, a segmented spine, is present in every single mammal without exception.", "easy": "Every mammal has this internal support structure running down its back."},
+    "medium": {"hard": "Focus on what places mammals in the broader vertebrate group, as opposed to traits like body covering or reproductive method that vary or have exceptions even within mammals.", "medium": "Think about the trait mammals share with fish, reptiles, and birds -- not the traits (like fur or live birth) that are specific to mammals alone.", "easy": "Mammals share this trait with fish, reptiles, and birds -- it's about their internal skeleton, not their skin or fur."},
+    "hard": {"hard": "Four of these five options describe traits that are either absent in mammals entirely or true of only a small exception within the group -- only one describes a trait that is universally true of every mammal without exception.", "medium": "Most of these options describe traits that are either missing in mammals or true of only a rare exception (like an egg-laying mammal) -- one option has no exceptions at all.", "easy": "Only one of these traits applies to literally every mammal with zero exceptions."}
+  }
+},
+{
+  "topic": "circulation (heart pumping blood)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is it called when the heart pumps blood around the body?",
+    "options": [
+      {"text": "Circulation", "isCorrect": true, "feedback": "Correct -- circulation is blood continuously looping through the body."},
+      {"text": "Digestion", "isCorrect": false, "feedback": "Digestion is about breaking down food, not moving blood."},
+      {"text": "Respiration", "isCorrect": false, "feedback": "Respiration is about breathing and releasing energy from food -- not pumping blood."},
+      {"text": "Excretion", "isCorrect": false, "feedback": "Excretion is about removing waste from the body, unrelated to blood flow."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the main purpose of circulation in the body?",
+    "options": [
+      {"text": "Delivering oxygen and nutrients to tissues while removing waste", "isCorrect": true, "feedback": "Correct -- circulation is the body's whole-system delivery and pickup service."},
+      {"text": "Breaking down large food molecules into smaller ones", "isCorrect": false, "feedback": "That describes digestion -- circulation transports the products of digestion, but doesn't break food down itself."},
+      {"text": "Filtering waste directly out of the body through the skin", "isCorrect": false, "feedback": "That's not how waste is removed -- the kidneys filter blood, and circulation just carries the waste there, it doesn't excrete it directly."},
+      {"text": "Producing new blood cells", "isCorrect": false, "feedback": "New blood cells are produced in bone marrow -- circulation is about moving existing blood around, not manufacturing it."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the term for the process by which the heart pumps blood throughout the body?",
+    "options": [
+      {"text": "Circulation", "isCorrect": true, "feedback": "Correct -- and this system actually runs as two connected loops, one to the lungs and one to the rest of the body."},
+      {"text": "Respiration", "isCorrect": false, "feedback": "Respiration refers to the exchange of gases and the cellular release of energy -- circulation is what transports those gases, but isn't the process itself."},
+      {"text": "Digestion", "isCorrect": false, "feedback": "Digestion breaks food into absorbable nutrients -- an entirely separate system from moving blood."},
+      {"text": "Excretion", "isCorrect": false, "feedback": "Excretion is the removal of metabolic waste from the body, a downstream process that circulation supports but doesn't perform itself."},
+      {"text": "Osmosis", "isCorrect": false, "feedback": "Osmosis is the passive movement of water across a membrane at the cellular level -- not the whole-body pumping action of the heart."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the continuous looping movement of blood, powered by the heart's contractions.", "medium": "This is the word for blood being pumped in a loop through the whole body.", "easy": "This is the process where the heart pushes blood all around your body."},
+    "medium": {"hard": "The purpose is a two-way transport job: bringing supplies in and carrying waste out, distinct from the processes that actually break down food or filter that waste out of the body.", "medium": "This process is about moving oxygen and nutrients TO cells and waste AWAY from them -- it's transport, not the breakdown or removal steps themselves.", "easy": "This process carries useful things like oxygen to your cells and picks up waste to carry away -- it's the delivery system, not the cleanup itself."},
+    "hard": {"hard": "This term describes the heart-driven movement of blood through two connected loops -- distinguishing it from the gas-exchange process it supports, the food-breakdown process that supplies its cargo, and the waste-removal process downstream of it.", "medium": "This is specifically the pumping and movement of blood, not the breathing process, the food-breakdown process, or the waste-removal process that all connect to it.", "easy": "This is the specific word for the heart pumping blood -- not breathing, not digesting food, not removing waste."}
+  }
+},
+{
+  "topic": "carnivorous plant example",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of these plants catches and eats insects?",
+    "options": [
+      {"text": "Venus flytrap", "isCorrect": true, "feedback": "Correct -- its hinged leaves snap shut on unsuspecting insects."},
+      {"text": "Sunflower", "isCorrect": false, "feedback": "Sunflowers just get their energy from sunlight like typical plants -- no trapping involved."},
+      {"text": "Dandelion", "isCorrect": false, "feedback": "Dandelions are ordinary photosynthesizing plants with no insect-trapping ability."},
+      {"text": "Prickly pear cactus", "isCorrect": false, "feedback": "A cactus stores water and uses spines for defense, but it doesn't trap or digest insects."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do carnivorous plants like the Venus flytrap trap and digest insects?",
+    "options": [
+      {"text": "To get nutrients like nitrogen that are scarce in their soil", "isCorrect": true, "feedback": "Correct -- they typically grow in poor, nutrient-depleted soil and supplement what they can't get from the ground."},
+      {"text": "Because they cannot photosynthesize at all", "isCorrect": false, "feedback": "They still photosynthesize normally for energy -- trapping insects is a supplement for scarce nutrients, not their main energy source."},
+      {"text": "To defend themselves from being eaten by animals", "isCorrect": false, "feedback": "Trapping insects is about gaining nutrients, not defense -- it doesn't protect the plant from being eaten by larger animals."},
+      {"text": "To spread their seeds more widely", "isCorrect": false, "feedback": "Trapped insects are digested for nutrients, not used for seed dispersal, which these plants handle through other means like wind or pollinators."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is an example of a carnivorous plant?",
+    "options": [
+      {"text": "Venus flytrap", "isCorrect": true, "feedback": "Correct -- and its trap works via tiny trigger hairs that must be touched twice in quick succession, preventing it from wasting energy on false alarms like raindrops."},
+      {"text": "Prickly pear cactus", "isCorrect": false, "feedback": "This plant is adapted for water storage in arid climates, with spines purely for defense -- it has no trapping or digestive mechanism for prey."},
+      {"text": "Pitcher plant", "isCorrect": false, "feedback": "This is actually also a carnivorous plant -- but it traps prey passively in a slippery, fluid-filled pitcher, a different mechanism from the flytrap's active snapping motion."},
+      {"text": "Sunflower", "isCorrect": false, "feedback": "A completely ordinary photosynthesizer, relying entirely on sunlight, soil nutrients, and water -- no carnivorous adaptations at all."},
+      {"text": "Dandelion", "isCorrect": false, "feedback": "Another ordinary photosynthesizing plant, notable for wind-dispersed seeds rather than any insect-trapping ability."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This plant's leaves are hinged and snap shut when triggered by an insect landing inside.", "medium": "This plant has jaw-like leaves that close around insects that land on them.", "easy": "This is the famous plant with leaves that snap shut like a trap to catch bugs."},
+    "medium": {"hard": "The trapping behavior is a workaround for a specific environmental limitation -- poor soil quality -- rather than a replacement for the plant's normal energy-making process.", "medium": "These plants still make their own food from sunlight normally -- the trapping is specifically about getting one scarce ingredient their soil lacks.", "easy": "These plants trap bugs to get a nutrient that's hard to find in the poor soil where they grow -- not for food energy itself."},
+    "hard": {"hard": "Note that one of the distractor options is ALSO carnivorous, but uses a passive slippery-fluid trap rather than this plant's fast, twice-triggered snapping mechanism -- the two non-carnivorous distractors are ordinary photosynthesizers adapted for arid climates or wind seed dispersal instead.", "medium": "One of the wrong options is actually also carnivorous, just with a passive trap instead of an active snapping one -- watch for that distinction.", "easy": "This plant snaps its leaves shut fast to catch insects -- a different, slower carnivorous plant traps them in a pitcher instead."}
+  }
+}
+]

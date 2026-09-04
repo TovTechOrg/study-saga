@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between physical properties and chemical properties",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is an example of a physical property?",
+    "options": [
+      {"text": "The boiling point of a substance", "isCorrect": true, "feedback": "Correct -- boiling point is a physical property, observable without the substance chemically transforming into something new."},
+      {"text": "Flammability (whether a substance can burn)", "isCorrect": false, "feedback": "Flammability is a CHEMICAL property, since observing it requires the substance to undergo a chemical change (burning/combustion)."},
+      {"text": "Reactivity with acids", "isCorrect": false, "feedback": "Reactivity with acids is a CHEMICAL property, since it involves the substance undergoing an actual chemical reaction and transformation."},
+      {"text": "The tendency to rust or corrode", "isCorrect": false, "feedback": "Rusting/corroding is a CHEMICAL property, since it involves the substance chemically transforming into a new substance (like iron oxide)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What key distinction determines whether a property is classified as physical or chemical?",
+    "options": [
+      {"text": "A physical property can be observed/measured without changing the substance's fundamental chemical identity, while a chemical property specifically describes how a substance changes into a NEW substance", "isCorrect": true, "feedback": "Correct -- this distinction (whether observing the property requires the substance to transform into something chemically different) is the fundamental basis for classifying properties as physical or chemical."},
+      {"text": "Physical properties can only be observed using specialized laboratory equipment", "isCorrect": false, "feedback": "This isn't the defining distinction -- many physical properties (like color or state) can be observed without special equipment; the key distinction is whether observing the property requires a chemical transformation."},
+      {"text": "There is actually no meaningful distinction between physical and chemical properties", "isCorrect": false, "feedback": "There IS a meaningful, well-established distinction -- specifically whether observing/measuring the property requires the substance to undergo a chemical transformation or not."},
+      {"text": "Chemical properties can always be observed just by looking at a substance, without any reaction occurring", "isCorrect": false, "feedback": "This is backwards -- chemical properties SPECIFICALLY require observing an actual chemical reaction/transformation to be revealed, unlike physical properties which can often be observed without any such change."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Density is generally considered a physical property, since measuring it (mass divided by volume) doesn't require the substance to chemically transform. However, could density theoretically change if a substance undergoes a chemical reaction and transforms into a different substance? Explain this apparent nuance.",
+    "options": [
+      {"text": "Yes -- while density itself is a physical property of any GIVEN substance, if that substance undergoes a chemical change and becomes a genuinely NEW substance, that new substance would have its own distinct density value, reflecting the change in chemical identity rather than density itself being a chemical property", "isCorrect": true, "feedback": "Correct -- this nuanced distinction (a physical property value can differ between the original substance and a resulting new substance after a chemical change) helps clarify that the CLASSIFICATION of density as 'physical' concerns HOW it's measured for one substance, not whether it might numerically change across different substances."},
+      {"text": "No, density can never possibly change under any circumstances, since it's classified as physical", "isCorrect": false, "feedback": "This isn't accurate -- while density is indeed a physical property, its VALUE can certainly differ between different substances, including before and after a chemical transformation creates a new substance."},
+      {"text": "This scenario proves that density should actually be reclassified as a chemical property instead", "isCorrect": false, "feedback": "This isn't accurate -- density remains correctly classified as a physical property, since MEASURING it for any given single substance doesn't itself require a chemical change; the scenario simply illustrates that different substances (including reaction products) can have different density values."},
+      {"text": "Chemical reactions have no actual connection to a substance's physical properties like density", "isCorrect": false, "feedback": "This isn't entirely accurate -- while density itself remains a physical property, a chemical reaction CAN result in a new substance having a genuinely different density value than the original, showing an indirect connection between chemical change and resulting physical property values."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This attribute can be directly observed or quantified without inducing any alteration to the substance's fundamental chemical composition.", "medium": "This is something you can measure or observe without the substance actually turning into something different.", "easy": "This is something you can observe without the substance turning into something different."},
+    "medium": {"hard": "Consider whether observing or measuring the given attribute necessitates the substance actually transforming into a chemically distinct product.", "medium": "Ask: does actually SEEING this property require the substance to chemically change into something new, or not?", "easy": "Ask: does seeing this property require the substance to chemically change into something new?"},
+    "hard": {"hard": "Distinguish between the classification criterion for a property TYPE (how it's measured for a single substance) and the fact that different substances (including reaction products) can have different VALUES for that same property type.", "medium": "Density itself doesn't need a chemical change to be measured, but if a chemical change DOES happen and creates a new substance, that new stuff might have its own different density.", "easy": "Density doesn't need a chemical change to be measured, but a new substance from a reaction could have its own different density."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of probability of independent events",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Two events are 'independent' if:",
+    "options": [
+      {"text": "The outcome of one event does not affect the outcome or probability of the other", "isCorrect": true, "feedback": "Correct -- independence means the two events have no influence on each other's outcomes."},
+      {"text": "The two events always happen at the exact same time", "isCorrect": false, "feedback": "Simultaneous timing isn't what defines independence -- it's about whether one event's outcome affects the other's probability."},
+      {"text": "One event always causes the other event to happen", "isCorrect": false, "feedback": "This describes a dependent, causal relationship, which is the opposite of independence."},
+      {"text": "The two events can never both occur", "isCorrect": false, "feedback": "This describes mutually exclusive events, a different concept from independence."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A fair coin is flipped twice. What is the probability of getting heads both times? (Independent events: multiply individual probabilities)",
+    "options": [
+      {"text": "1/4", "isCorrect": true, "feedback": "Correct -- each flip has a 1/2 probability of heads, and since the flips are independent, 1/2 × 1/2 = 1/4."},
+      {"text": "1/2", "isCorrect": false, "feedback": "This is the probability for just ONE flip landing heads, not for two consecutive heads."},
+      {"text": "1", "isCorrect": false, "feedback": "This would imply certainty, but getting heads twice in a row isn't guaranteed -- it's a specific fractional probability."},
+      {"text": "2/4", "isCorrect": false, "feedback": "This doesn't correctly result from multiplying the two individual 1/2 probabilities together."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A bag contains 5 red and 5 blue marbles. If you draw one marble, put it back, then draw again, what is the probability both draws are red? (This is 'with replacement,' keeping the draws independent)",
+    "options": [
+      {"text": "1/4", "isCorrect": true, "feedback": "Correct -- since the marble is replaced, each draw has 5/10 = 1/2 probability of red, and since draws are independent, 1/2 × 1/2 = 1/4."},
+      {"text": "1/2", "isCorrect": false, "feedback": "This is the probability of red on just ONE draw, not for two consecutive red draws."},
+      {"text": "2/9", "isCorrect": false, "feedback": "This would be relevant WITHOUT replacement (a dependent scenario), but here the marble is replaced, keeping draws independent at 1/2 each."},
+      {"text": "1/10", "isCorrect": false, "feedback": "This doesn't correctly result from multiplying the two individual 1/2 probabilities together."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This relationship holds when the occurrence of one event provides no information about the likelihood of the other.", "medium": "This means what happens in one event doesn't change the chances for the other event.", "easy": "This means one event doesn't affect the chances of the other event."},
+    "medium": {"hard": "For independent events, the combined probability equals the product of each individual event's probability.", "medium": "Multiply the probability of the first flip by the probability of the second flip.", "easy": "Multiply 1/2 by 1/2 to get the combined probability."},
+    "hard": {"hard": "Since replacement restores the original probabilities for each draw, the events remain independent, allowing you to multiply each draw's individual probability.", "medium": "Since the marble goes back in the bag, each draw still has the same 5 out of 10 chance of being red.", "easy": "Since the marble goes back in, each draw is 5 out of 10 (or 1/2) chance of red. Multiply 1/2 by 1/2."}
+  }
+}
+]

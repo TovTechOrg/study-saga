@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of independent vs. dependent events in probability",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Drawing a card from a deck, NOT replacing it, then drawing a second card describes what type of events?",
+    "options": [
+      {"text": "Dependent events, since the first draw affects the probabilities for the second draw", "isCorrect": true, "feedback": "Correct -- since the deck composition changes after the first card is removed (not replaced), the second draw's probabilities depend on the outcome of the first draw."},
+      {"text": "Independent events, since each draw has no effect on the other", "isCorrect": false, "feedback": "This isn't accurate -- since the card is NOT replaced, the deck composition genuinely changes, making these DEPENDENT (not independent) events."},
+      {"text": "Impossible events that could never actually happen", "isCorrect": false, "feedback": "This isn't accurate -- drawing cards without replacement is a completely valid, commonly analyzed probability scenario, not an impossible one."},
+      {"text": "Events that have no defined probability at all", "isCorrect": false, "feedback": "This isn't accurate -- these events DO have well-defined, calculable probabilities; they're specifically classified as dependent, not undefined."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A bag contains 4 red marbles and 6 blue marbles (10 total). If you draw one marble, don't replace it, then draw a second marble, what is the probability that BOTH marbles drawn are red?",
+    "options": [
+      {"text": "4/15 (calculated as 4/10 × 3/9)", "isCorrect": true, "feedback": "Correct -- first draw: 4/10 chance of red. Since not replaced, second draw (now 3 red out of 9 total): 3/9. Multiply: (4/10)×(3/9) = 12/90 = 4/15."},
+      {"text": "16/100 (calculated as 4/10 × 4/10)", "isCorrect": false, "feedback": "This incorrectly treats the events as INDEPENDENT (using 4/10 for both draws), but since the marble isn't replaced, the second draw's probability must account for one less red marble and one less total marble."},
+      {"text": "4/10", "isCorrect": false, "feedback": "This is just the probability of the FIRST draw alone, not the combined probability of BOTH draws being red."},
+      {"text": "1/2", "isCorrect": false, "feedback": "This doesn't correctly result from calculating and multiplying the two sequential (dependent) draw probabilities."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Using the same bag (4 red, 6 blue, no replacement), what is the probability of drawing a RED marble first, then a BLUE marble second?",
+    "options": [
+      {"text": "4/15 (calculated as 4/10 × 6/9)", "isCorrect": true, "feedback": "Correct -- first draw: 4/10 chance of red. Since not replaced, second draw (now 6 blue out of remaining 9 total): 6/9. Multiply: (4/10)×(6/9) = 24/90 = 4/15."},
+      {"text": "6/15 (calculated as 6/10 × 4/9)", "isCorrect": false, "feedback": "This calculates the probability for the REVERSE order (blue first, then red), not the specified order of red first, then blue."},
+      {"text": "4/10 × 6/10 = 24/100", "isCorrect": false, "feedback": "This incorrectly treats the events as INDEPENDENT, using the original 6/10 for the second draw, rather than correctly adjusting the denominator to 9 (since one marble was already removed)."},
+      {"text": "10/19", "isCorrect": false, "feedback": "This doesn't correctly result from applying the sequential dependent-event probability calculation for this specific scenario."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This event classification applies when the occurrence of one outcome demonstrably alters the probability distribution governing a subsequent outcome.", "medium": "Since the first card is gone and not put back, it actually changes the odds for the next draw.", "easy": "Since the first card isn't put back, it changes the odds for the next draw."},
+    "medium": {"hard": "Calculate the first event's probability using the original totals, then adjust both the numerator and denominator for the second event to reflect the removed item.", "medium": "Multiply the probability of red on the first draw by the probability of red on the second draw, remembering one red and one total marble are now gone.", "easy": "Multiply 4/10 by 3/9 (since one red marble and one total marble are now gone)."},
+    "hard": {"hard": "Sequentially apply the correct probability for each specified event in order, adjusting the second event's denominator (and relevant numerator) to reflect the marble removed by the first draw.", "medium": "Multiply the probability of red first (4/10) by the probability of blue second (6/9, since the total is now 9 after removing one marble).", "easy": "Multiply 4/10 by 6/9 (6 blue still there, but only 9 total marbles left)."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of simple harmonic motion (pendulums and springs)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is simple harmonic motion?",
+    "options": [
+      {"text": "A repetitive back-and-forth motion where the restoring force is proportional to displacement from equilibrium", "isCorrect": true, "feedback": "Correct -- this defining relationship between restoring force and displacement characterizes simple harmonic motion, as seen in pendulums and springs."},
+      {"text": "Motion that occurs only in a straight line at constant speed", "isCorrect": false, "feedback": "That describes uniform linear motion, a fundamentally different type of motion from the oscillating, back-and-forth pattern of simple harmonic motion."},
+      {"text": "Motion where an object continuously accelerates without ever slowing down", "isCorrect": false, "feedback": "This doesn't describe simple harmonic motion, which involves periodic acceleration and deceleration as the object oscillates back and forth."},
+      {"text": "Random, unpredictable motion with no repeating pattern", "isCorrect": false, "feedback": "Simple harmonic motion is actually highly predictable and PERIODIC (repeating), not random or unpredictable."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A mass on a spring is pulled away from its equilibrium (resting) position and released. Why does it oscillate back and forth rather than just returning to equilibrium and stopping?",
+    "options": [
+      {"text": "As the mass passes through equilibrium, its momentum carries it past that point, and the spring's restoring force then acts in the opposite direction, pulling it back again, creating continuous oscillation", "isCorrect": true, "feedback": "Correct -- this interplay between momentum (carrying the mass past equilibrium) and the restoring force (always pulling back toward equilibrium) is exactly what sustains the oscillatory motion characteristic of simple harmonic motion."},
+      {"text": "The spring's restoring force disappears completely once the mass reaches equilibrium", "isCorrect": false, "feedback": "This isn't accurate -- the restoring force continues to act based on displacement from equilibrium; the mass overshoots equilibrium due to its momentum, not due to a disappearing force."},
+      {"text": "The mass has no momentum as it passes through the equilibrium position", "isCorrect": false, "feedback": "This is backwards -- the mass actually has its MAXIMUM velocity (momentum) precisely AT the equilibrium position, which is exactly why it continues moving past that point rather than stopping there."},
+      {"text": "Oscillation occurs due to random external forces, unrelated to the spring's own restoring force", "isCorrect": false, "feedback": "Oscillation in this scenario is explained entirely by the spring's own restoring force combined with the mass's momentum -- no random external forces are needed to explain this behavior."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For a simple pendulum, the period (time for one full swing) depends on the pendulum's length and gravitational acceleration, but NOT on the mass of the bob or the amplitude (swing width), for small swing angles. Why might this be a surprising but useful physical result?",
+    "options": [
+      {"text": "It means a heavier pendulum bob doesn't swing back and forth any faster or slower than a lighter one with the same length, which allows pendulum clocks to keep consistent time regardless of small variations in amplitude or the exact mass used", "isCorrect": true, "feedback": "Correct -- this mass-independence and (approximate) amplitude-independence for small angles is precisely why simple pendulums have historically been valuable as relatively reliable timekeeping devices."},
+      {"text": "This result is actually completely false -- pendulum period always significantly depends on the mass of the bob", "isCorrect": false, "feedback": "This isn't accurate -- for a simple pendulum (small angles), period is genuinely independent of mass; this is a well-established, verifiable physical result, not a false claim."},
+      {"text": "Pendulum period actually depends most strongly on the amplitude of the swing, not on length", "isCorrect": false, "feedback": "This is backwards for the small-angle approximation -- period depends primarily on length and gravity, with amplitude having a negligible effect for small swings, not vice versa."},
+      {"text": "This mass-independence has no practical use or significance in real-world applications", "isCorrect": false, "feedback": "This mass-independence has actually been HISTORICALLY SIGNIFICANT and highly practical, forming the basis for reliable, consistent pendulum-based timekeeping devices for centuries."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This oscillatory motion pattern is defined by a restoring force whose magnitude scales directly with the object's displacement from its equilibrium position.", "medium": "This is a back-and-forth motion where the pulling-back force gets stronger the farther you move from the resting spot.", "easy": "This is a back-and-forth motion where the pull-back force gets stronger the farther you move away."},
+    "medium": {"hard": "Consider how kinetic energy (momentum) at the equilibrium point causes the object to continue moving past that point, even as the restoring force begins acting in the opposite direction.", "medium": "The mass is moving fastest right as it crosses the resting point, so it just keeps going past it before the spring pulls it back again.", "easy": "The mass is moving fastest at the resting point, so it just keeps going past it before getting pulled back."},
+    "hard": {"hard": "Consider how a physical quantity's independence from certain variables (like mass or amplitude, under specific conditions) can be exploited for practical, reliable engineering applications.", "medium": "Since the swing timing doesn't change based on how heavy the weight is, that consistency is exactly what makes pendulum clocks reliable.", "easy": "Since the swing timing doesn't depend on the weight's mass, that consistency makes pendulum clocks reliable."}
+  }
+}
+]

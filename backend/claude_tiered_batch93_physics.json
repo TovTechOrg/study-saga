@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between diffraction and interference of waves",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Diffraction refers to a wave's tendency to:",
+    "options": [
+      {"text": "Bend/spread out as it passes through a narrow opening or around an obstacle", "isCorrect": true, "feedback": "Correct -- diffraction describes how waves spread out from a narrow gap or bend around an obstacle's edges, most noticeable when the opening/obstacle is comparable in size to the wave's wavelength."},
+      {"text": "Combine with another wave to produce a larger or smaller resulting wave", "isCorrect": false, "feedback": "That describes INTERFERENCE, not diffraction -- diffraction specifically describes a single wave's bending/spreading behavior around obstacles/openings, not wave combination."},
+      {"text": "Completely stop moving once it reaches any obstacle", "isCorrect": false, "feedback": "This isn't accurate -- diffraction specifically describes waves CONTINUING to propagate (bending/spreading) around obstacles, not stopping completely."},
+      {"text": "Travel in a perfectly straight line with no bending whatsoever", "isCorrect": false, "feedback": "This is essentially the opposite of diffraction, which specifically describes wave BENDING/spreading, not perfectly straight-line travel with no bending."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In the famous 'double-slit experiment,' light passes through two closely-spaced narrow slits, producing an interference pattern (alternating bright and dark bands) on a screen behind them. Why does this experiment actually involve BOTH diffraction AND interference occurring together, rather than just one phenomenon alone?",
+    "options": [
+      {"text": "DIFFRACTION occurs as light bends/spreads out after passing through each individual narrow slit, and then INTERFERENCE occurs as these two now-overlapping, spread-out waves (one from each slit) combine and interact with each other, creating the observed pattern of constructive/destructive interference bands", "isCorrect": true, "feedback": "Correct -- this sequential combination of diffraction (individual wave spreading at each slit) followed by interference (the resulting overlapping waves combining) is precisely why the double-slit experiment beautifully demonstrates both phenomena working together to produce its famous characteristic pattern."},
+      {"text": "This experiment actually only involves diffraction, with no interference occurring at all", "isCorrect": false, "feedback": "This isn't accurate -- this experiment specifically demonstrates BOTH phenomena occurring together; the alternating bright/dark band PATTERN specifically results from INTERFERENCE between the two diffracted waves, not diffraction alone."},
+      {"text": "This experiment actually only involves interference, with no diffraction occurring at all", "isCorrect": false, "feedback": "This isn't accurate -- DIFFRACTION is also specifically involved, since each slit itself causes the light to bend/spread out (diffract) before those two now-spread-out waves subsequently interfere with each other."},
+      {"text": "Diffraction and interference are actually completely identical phenomena in this experiment, with no distinction between them", "isCorrect": false, "feedback": "This isn't accurate -- these are DISTINCT phenomena (individual wave spreading vs. multiple wave combination) that both specifically occur together in this classic experiment, not identical or indistinguishable processes."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Diffraction effects become most noticeable/significant when the size of an opening or obstacle is comparable to (or smaller than) the wavelength of the wave passing through/around it. Why does this specific size relationship explain why we don't typically notice sound waves being significantly blocked by small everyday obstacles (like a thin pole), while light waves ARE effectively blocked by that same obstacle?",
+    "options": [
+      {"text": "Sound waves typically have much LONGER wavelengths (often on the order of meters) compared to a thin pole's small diameter, causing significant diffraction (bending around the pole), while visible light waves have vastly SHORTER wavelengths (nanometers) compared to that same pole, resulting in minimal diffraction and effective blocking (shadow-casting) instead", "isCorrect": true, "feedback": "Correct -- this direct connection between wavelength-to-obstacle-size RATIO and the resulting degree of diffraction elegantly explains this everyday observed difference in how sound versus light waves interact with the same small-sized obstacle."},
+      {"text": "Sound waves and light waves actually have identical wavelengths, making this scenario impossible as described", "isCorrect": false, "feedback": "This isn't accurate -- sound waves and light waves have DRAMATICALLY DIFFERENT wavelengths (sound: meters, light: nanometers), which is precisely the key factor explaining their very different diffraction behavior around the same-sized obstacle."},
+      {"text": "Wavelength has no actual connection to how significantly a wave diffracts around a given obstacle size", "isCorrect": false, "feedback": "This isn't accurate -- wavelength (specifically its size RELATIVE to the obstacle) is DIRECTLY and centrally connected to and determines the resulting degree of diffraction observed."},
+      {"text": "Light waves would actually diffract MORE significantly around the pole than sound waves would, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- SOUND waves (with their much longer wavelengths relative to the pole) diffract SIGNIFICANTLY more around such an obstacle, while LIGHT waves (much shorter wavelength) diffract comparatively much LESS, resulting in effective shadow-casting instead."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This wave phenomenon describes the propagation-altering effect of an aperture or barrier comparable in scale to the wave's characteristic wavelength.", "medium": "This is when a wave bends and spreads out after squeezing through a gap or going around something.", "easy": "This is when a wave bends and spreads out after going through a gap or around something."},
+    "medium": {"hard": "Consider the sequential physical process: first, individual wave spreading at each aperture (diffraction), then the subsequent combination of those now-overlapping spread waves (interference).", "medium": "First each slit makes the light spread out on its own (that's diffraction), THEN those two spread-out waves overlap and mix together (that's interference) to make the pattern.", "easy": "First each slit spreads the light out (diffraction), then those waves overlap and mix (interference)."},
+    "hard": {"hard": "Compare the relative magnitude of each wave type's characteristic wavelength against the physical dimension of the obstacle to predict the resulting degree of diffraction bending around that obstacle.", "medium": "Sound waves are so much 'bigger' (longer wavelength) than a thin pole that they easily bend around it, but light waves are so much 'smaller' that they just get blocked, casting a shadow instead.", "easy": "Sound waves are so much longer than a thin pole that they bend around it, but light waves are too short and get blocked."}
+  }
+}
+]

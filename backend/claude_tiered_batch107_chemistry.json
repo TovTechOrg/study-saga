@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between Bronsted-Lowry and Lewis acid-base definitions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to the Bronsted-Lowry definition, an acid is a substance that:",
+    "options": [
+      {"text": "Donates a proton (H+ ion) to another substance", "isCorrect": true, "feedback": "Correct -- the Bronsted-Lowry definition specifically focuses on proton (H+) transfer, with acids as proton donors and bases as proton acceptors."},
+      {"text": "Accepts a proton (H+ ion) from another substance", "isCorrect": false, "feedback": "That describes a BRONSTED-LOWRY BASE, not an acid -- Bronsted-Lowry acids specifically DONATE protons, while bases ACCEPT them."},
+      {"text": "Never actually interacts with any other chemical substances", "isCorrect": false, "feedback": "This isn't accurate -- Bronsted-Lowry acids are SPECIFICALLY DEFINED by their proton-donating INTERACTION with another substance (a base), not by an absence of interaction."},
+      {"text": "Always has a bright, distinctly colored appearance", "isCorrect": false, "feedback": "This isn't accurate -- color isn't the defining characteristic of a Bronsted-Lowry acid, which is specifically defined by its PROTON-DONATING behavior."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The Lewis definition of acids/bases is BROADER than the Bronsted-Lowry definition, defining a Lewis ACID as an electron-pair ACCEPTOR (not necessarily involving a proton at all), while a Lewis BASE is an electron-pair DONOR. Why does this broader Lewis definition allow it to classify certain substances as 'acids' that the Bronsted-Lowry definition specifically could NOT classify this way?",
+    "options": [
+      {"text": "Since the Lewis definition doesn't specifically require PROTON involvement (only electron-pair acceptance), certain substances that can accept an electron pair but have NO acidic proton to donate (like boron trifluoride, BF3) can be classified as Lewis acids, even though they wouldn't qualify as Bronsted-Lowry acids (which specifically requires proton-donating capability)", "isCorrect": true, "feedback": "Correct -- this broader Lewis definition, focusing on electron-pair behavior rather than specifically requiring proton transfer, allows it to encompass a WIDER RANGE of acid-base-like chemical behavior, including certain substances that the more narrowly-defined Bronsted-Lowry framework specifically cannot classify as acids."},
+      {"text": "The Bronsted-Lowry and Lewis definitions are actually completely identical in scope, classifying the exact same set of substances as acids", "isCorrect": false, "feedback": "This isn't accurate -- the LEWIS definition is specifically BROADER in scope than Bronsted-Lowry, classifying certain substances (like BF3) as acids that Bronsted-Lowry specifically CANNOT, precisely because Lewis doesn't require proton involvement."},
+      {"text": "The Lewis definition is actually MORE RESTRICTIVE/narrower than the Bronsted-Lowry definition, not broader", "isCorrect": false, "feedback": "This is backwards -- the LEWIS definition is specifically BROADER (not more restrictive) than Bronsted-Lowry, since it doesn't require the specific proton-transfer mechanism that Bronsted-Lowry does, allowing it to encompass MORE types of acid-base behavior."},
+      {"text": "This difference in scope between these two definitions has no actual connection to whether proton involvement is specifically required or not", "isCorrect": false, "feedback": "This isn't accurate -- this difference in scope IS DIRECTLY and specifically connected to and EXPLAINED BY whether proton involvement is specifically required (Bronsted-Lowry) or not (Lewis, which focuses on electron-pair behavior instead)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Every Bronsted-Lowry acid-base reaction can ALSO be correctly described/classified using the Lewis definition (since proton transfer inherently involves electron-pair interactions too), but NOT every Lewis acid-base reaction can be described using the Bronsted-Lowry framework (since some Lewis reactions, like BF3 reacting with ammonia, don't involve proton transfer at all). Why does this specific relationship (Lewis definition encompassing ALL Bronsted-Lowry cases, PLUS additional cases) represent good scientific theory development/refinement?",
+    "options": [
+      {"text": "This relationship demonstrates that the LEWIS definition represents a successful GENERALIZATION/broadening of the more specific Bronsted-Lowry framework -- rather than CONTRADICTING or REPLACING the earlier, still-valid and useful Bronsted-Lowry concept, the Lewis definition specifically EXTENDS it to cover a wider range of chemically analogous acid-base behavior, exemplifying how scientific theories can be productively broadened/generalized while still fully preserving the validity of more specific, earlier frameworks within their own original, more limited scope", "isCorrect": true, "feedback": "Correct -- this pattern (a broader theory successfully encompassing and extending an earlier, more specific theory, without invalidating that earlier theory within its own appropriate scope) represents an excellent, instructive example of healthy, productive scientific theory development and refinement, exactly as seen in the specific relationship between the Lewis and Bronsted-Lowry acid-base definitions."},
+      {"text": "The Lewis definition actually CONTRADICTS and INVALIDATES the Bronsted-Lowry definition entirely, rather than extending/generalizing it", "isCorrect": false, "feedback": "This isn't accurate -- the Lewis definition specifically EXTENDS/GENERALIZES the Bronsted-Lowry framework (successfully encompassing ALL Bronsted-Lowry cases, PLUS additional ones), rather than contradicting or invalidating it -- the Bronsted-Lowry definition remains fully valid within its own more specific scope."},
+      {"text": "Every Lewis acid-base reaction can actually also be fully described using the Bronsted-Lowry framework, with no exceptions", "isCorrect": false, "feedback": "This isn't accurate -- SOME Lewis acid-base reactions (like BF3 with ammonia, not involving proton transfer) specifically CANNOT be described using the Bronsted-Lowry framework, which is precisely why the Lewis definition is considered BROADER in scope."},
+      {"text": "This relationship between these two acid-base definitions has no actual broader relevance to understanding how scientific theories generally develop over time", "isCorrect": false, "feedback": "This isn't accurate -- this specific relationship actually illustrates a BROADER, quite valuable and instructive general pattern in scientific theory development (successful generalization/extension of earlier frameworks), not narrowly limited to just this one chemistry example."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This chemical species specifically transfers a hydrogen cation to a suitable recipient molecule or ion.", "medium": "This is a substance that gives away a hydrogen ion to something else.", "easy": "This is a substance that gives away a hydrogen ion to something else."},
+    "medium": {"hard": "Consider how removing the specific proton-transfer requirement (retaining only the more general electron-pair-based criterion) would necessarily expand the range of substances qualifying under that broader classification.", "medium": "Since the Lewis rule only cares about accepting a pair of electrons (not specifically needing a proton to be involved at all), it can include some substances the stricter proton-based rule would leave out.", "easy": "Since the Lewis rule doesn't need a proton specifically, it includes substances the stricter rule would leave out."},
+    "hard": {"hard": "Consider how a more generally-defined theoretical framework can successfully subsume a more narrowly-defined predecessor framework as a special case, without invalidating that predecessor's continued validity and usefulness within its own original, appropriately limited scope.", "medium": "It's like discovering that 'squares' are actually just a special type of a bigger category called 'rectangles' -- the new bigger idea doesn't make the old idea about squares wrong, it just shows squares fit inside something even bigger.", "easy": "It's like discovering squares are a special type of the bigger category rectangles -- the old idea about squares isn't wrong, just part of something bigger."}
+  }
+}
+]

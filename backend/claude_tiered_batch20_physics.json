@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of resonance in sound and structures",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is resonance?",
+    "options": [
+      {"text": "When an object vibrates strongly in response to a matching external frequency", "isCorrect": true, "feedback": "Correct -- resonance occurs when an applied frequency matches an object's natural vibrating frequency, causing amplified vibration."},
+      {"text": "When an object stops vibrating entirely", "isCorrect": false, "feedback": "Resonance is about AMPLIFIED vibration, not the cessation of vibration."},
+      {"text": "The color an object appears under certain lighting", "isCorrect": false, "feedback": "Resonance is a vibrational/acoustic phenomenon, unrelated to an object's visual color."},
+      {"text": "The weight of a vibrating object", "isCorrect": false, "feedback": "Weight is a separate physical property, unrelated to the concept of resonance."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A singer can shatter a wine glass by singing a specific note. How does this demonstrate resonance?",
+    "options": [
+      {"text": "The singer's note matches the glass's natural vibrating frequency, causing the glass to vibrate with increasing amplitude until it breaks", "isCorrect": true, "feedback": "Correct -- this is a classic demonstration of how matching an object's natural frequency can cause dramatic, amplified vibration through resonance."},
+      {"text": "The singer's voice is simply loud enough to physically break the glass through volume alone", "isCorrect": false, "feedback": "Volume alone typically isn't enough -- it's specifically MATCHING the glass's natural frequency that causes the dramatic resonant vibration leading to breakage."},
+      {"text": "This phenomenon has nothing to do with sound frequency at all", "isCorrect": false, "feedback": "This phenomenon is entirely explained by sound frequency matching (resonance), not some unrelated mechanism."},
+      {"text": "The glass breaks due to the singer's breath physically touching it", "isCorrect": false, "feedback": "Physical breath contact isn't the mechanism here -- it's the sound wave's matching frequency causing resonant vibration."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The Tacoma Narrows Bridge famously collapsed in 1940 partly due to wind-induced resonance, causing the bridge to oscillate with increasing amplitude until structural failure. Why is this an important lesson for engineers designing structures?",
+    "options": [
+      {"text": "Engineers must consider a structure's natural vibrational frequencies and design to avoid or dampen conditions (like certain wind patterns) that could match and dangerously amplify those frequencies", "isCorrect": true, "feedback": "Correct -- this famous case study demonstrates why understanding and managing resonance is a critical safety consideration in structural engineering."},
+      {"text": "This collapse had nothing to do with resonance or vibration at all", "isCorrect": false, "feedback": "This collapse is actually one of the most famous historical examples specifically illustrating the destructive potential of resonance in engineering."},
+      {"text": "Wind can never cause meaningful vibration in large structures", "isCorrect": false, "feedback": "This event specifically demonstrated that wind absolutely CAN cause meaningful, even catastrophic, vibration when it matches a structure's natural frequency."},
+      {"text": "This lesson only applies to bridges, not any other type of structure", "isCorrect": false, "feedback": "The resonance principle demonstrated here applies broadly to many types of structures (buildings, aircraft, etc.), not exclusively bridges."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phenomenon occurs when an object's natural vibration is dramatically reinforced by a matching external oscillation.", "medium": "This happens when a pushing force matches an object's own natural \"wobble\" frequency, making it wobble much more.", "easy": "This happens when something vibrates a lot because the vibration matches its natural frequency."},
+    "medium": {"hard": "The vibrating sound wave and the glass's natural vibration frequency align, causing energy to build up in the glass over time.", "medium": "When the sound frequency matches the glass's own natural vibration, the glass starts shaking more and more.", "easy": "When the singer's note matches the glass's own natural vibration, the glass shakes more and more until it breaks."},
+    "hard": {"hard": "Unmitigated resonance can amplify a structure's oscillation to a destructive degree, so engineers must proactively identify natural frequencies and design safeguards (damping, structural changes) against environmental forces likely to trigger them.", "medium": "Engineers need to make sure winds or other forces don't accidentally match a structure's natural wobble frequency and shake it apart.", "easy": "Engineers need to make sure wind or other forces don't accidentally match a bridge's natural wobble and shake it apart."}
+  }
+}
+]

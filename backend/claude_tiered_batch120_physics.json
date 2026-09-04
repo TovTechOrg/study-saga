@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between speed and velocity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Velocity' differs from 'speed' because velocity specifically includes:",
+    "options": [
+      {"text": "A direction, in addition to a magnitude", "isCorrect": true, "feedback": "Correct -- velocity is a vector quantity that includes both magnitude (how fast) and direction, while speed is just the magnitude alone (a scalar)."},
+      {"text": "A measurement in different units than speed", "isCorrect": false, "feedback": "This isn't accurate -- velocity and speed can be measured using the same units (like m/s); the key difference is that velocity includes direction, not different units."},
+      {"text": "Information about the object's mass", "isCorrect": false, "feedback": "This isn't accurate -- neither velocity nor speed includes mass information; both describe motion, not how much matter an object contains."},
+      {"text": "A measurement that only applies to objects moving in a straight line", "isCorrect": false, "feedback": "This isn't accurate -- velocity can describe motion along any path (including curved paths), not exclusively straight-line motion."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A car traveling around a circular track at a perfectly constant speed still has a CHANGING velocity throughout the lap. Why does maintaining constant speed not guarantee constant velocity?",
+    "options": [
+      {"text": "Velocity is a vector quantity, meaning it depends on BOTH speed (magnitude) AND direction -- even if the speed itself never changes, as the car goes around the circular track, its direction of travel is CONSTANTLY changing, and since a change in either magnitude or direction constitutes a change in the vector quantity, the velocity is continuously changing even though speed remains constant", "isCorrect": true, "feedback": "Correct -- this explanation of velocity as a direction-dependent vector quantity correctly explains why circular motion at constant speed still involves continuously changing velocity, a key concept underlying centripetal acceleration."},
+      {"text": "Velocity would actually also remain perfectly constant in this scenario, identical to the car's constant speed", "isCorrect": false, "feedback": "This isn't accurate -- velocity is specifically CHANGING throughout the circular motion, precisely because the direction of travel keeps changing even as speed stays the same."},
+      {"text": "Speed is actually the vector quantity that includes direction, while velocity is simply the magnitude alone", "isCorrect": false, "feedback": "This is backwards -- VELOCITY is the vector quantity including direction, while SPEED is the scalar magnitude alone, the opposite of what's stated here."},
+      {"text": "Direction of travel has no actual bearing on whether an object's velocity is considered to be changing or constant", "isCorrect": false, "feedback": "This isn't accurate -- direction of travel DIRECTLY determines whether velocity is changing, since velocity is a vector quantity dependent on both magnitude and direction."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Since acceleration is defined as the rate of change of velocity (not speed), an object moving in a circle at constant speed is still accelerating (called 'centripetal acceleration'), even though its speed never changes. Explain why this seemingly counterintuitive fact is a direct and necessary consequence of how acceleration is formally defined in physics.",
+    "options": [
+      {"text": "Since acceleration is specifically defined based on velocity (a vector including direction), not just speed (a scalar magnitude), any change in direction alone -- even with unchanging speed -- constitutes a change in velocity, and therefore constitutes a nonzero acceleration by definition; this is why an object can be 'accelerating' in the formal physics sense purely by continuously changing direction, entirely independent of any speeding up or slowing down", "isCorrect": true, "feedback": "Correct -- this explanation grounding centripetal acceleration directly in the formal vector-based definition of acceleration (dependent on velocity, not merely speed) correctly resolves this classic counterintuitive result, essential for understanding circular motion and forces like centripetal force."},
+      {"text": "An object moving at constant speed in a circle would actually have zero acceleration, since its speed is not changing", "isCorrect": false, "feedback": "This isn't accurate -- this object specifically DOES have nonzero acceleration (centripetal acceleration), precisely because its velocity is changing due to the continuously changing direction, even though speed stays constant."},
+      {"text": "Acceleration is actually defined purely in terms of changing speed, with no dependence on velocity or direction at all", "isCorrect": false, "feedback": "This isn't accurate -- acceleration is specifically defined as the rate of change of VELOCITY (a vector), not simply speed, which is precisely why direction changes alone can produce acceleration."},
+      {"text": "This centripetal acceleration phenomenon has no actual connection to the formal, vector-based definition of acceleration used in physics", "isCorrect": false, "feedback": "This isn't accurate -- this phenomenon IS DIRECTLY and necessarily connected to and explained by the formal, vector-based definition of acceleration."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This kinematic quantity is characterized as a vector, incorporating both a scalar magnitude component and a directional component.", "medium": "This measurement includes not just how fast something's going, but also which way it's headed.", "easy": "This measurement includes not just how fast something's going, but which way it's headed."},
+    "medium": {"hard": "Consider how a vector quantity is defined by both its magnitude and direction, such that a change in direction alone, independent of magnitude, still constitutes a change in the vector itself.", "medium": "Since this measurement cares about direction too, not just how fast, constantly turning while keeping the same speed still counts as the measurement changing the whole time.", "easy": "Since this measurement cares about direction too, constantly turning while keeping the same speed still counts as changing."},
+    "hard": {"hard": "Consider how the formal definition ties acceleration strictly to velocity's rate of change, such that a purely directional change with zero magnitude change still yields a nonzero result by that definition.", "medium": "Since the official definition is built around the direction-including quantity, not just plain speed, constantly turning corners counts as 'accelerating' in physics even if you never speed up or slow down at all.", "easy": "Since acceleration is defined around the direction-including quantity, constantly turning counts as accelerating even without speeding up or slowing down."}
+  }
+}
+]

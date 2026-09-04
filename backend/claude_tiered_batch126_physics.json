@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between potential energy and kinetic energy",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Kinetic energy' is the energy an object has because of its:",
+    "options": [
+      {"text": "Motion", "isCorrect": true, "feedback": "Correct -- kinetic energy is specifically the energy of motion, depending on an object's mass and speed."},
+      {"text": "Position or configuration relative to other objects", "isCorrect": false, "feedback": "That describes POTENTIAL energy, not kinetic -- potential energy depends on position/configuration, while kinetic energy depends specifically on motion."},
+      {"text": "Chemical composition alone, regardless of motion or position", "isCorrect": false, "feedback": "This isn't accurate -- while chemical potential energy exists as one form of potential energy, kinetic energy itself specifically depends on MOTION, not chemical composition."},
+      {"text": "Temperature alone, independent of any motion", "isCorrect": false, "feedback": "This isn't accurate -- while temperature relates to the kinetic energy of particles at a microscopic level, an object's overall kinetic energy specifically depends on its bulk MOTION, not simply its temperature."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "As a ball falls from a height, its gravitational potential energy continuously decreases while its kinetic energy continuously increases, with the TOTAL of the two remaining constant (ignoring air resistance). Why does this specific trade-off pattern occur as the ball falls?",
+    "options": [
+      {"text": "Gravitational potential energy specifically depends on height above a reference point, so as the ball falls and loses height, its potential energy decreases -- by the law of conservation of energy, this 'lost' potential energy isn't destroyed but is instead converted directly into kinetic energy (energy of motion), causing the ball's speed and kinetic energy to increase by exactly the same amount that potential energy decreases", "isCorrect": true, "feedback": "Correct -- this explanation of potential-to-kinetic energy conversion, governed by conservation of total mechanical energy, correctly explains the falling ball's characteristic energy trade-off pattern."},
+      {"text": "The ball's potential energy and kinetic energy would actually both decrease simultaneously as it falls, rather than trading off against each other", "isCorrect": false, "feedback": "This isn't accurate -- as the ball falls, potential energy DECREASES while kinetic energy specifically INCREASES, a trade-off rather than both decreasing together."},
+      {"text": "The total combined energy (potential plus kinetic) would actually continuously decrease as the ball falls, rather than remaining constant", "isCorrect": false, "feedback": "This isn't accurate -- ignoring air resistance, the TOTAL combined energy remains CONSTANT throughout the fall, with potential energy converting directly into kinetic energy rather than being lost."},
+      {"text": "Height above a reference point has no actual connection to an object's gravitational potential energy", "isCorrect": false, "feedback": "This isn't accurate -- height above a reference point IS DIRECTLY connected to and is precisely what determines an object's gravitational potential energy."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "When a ball is thrown straight up, it momentarily stops completely at its highest point (zero kinetic energy) before falling back down. Explain why this moment of zero kinetic energy does NOT mean the ball has zero total mechanical energy at that instant.",
+    "options": [
+      {"text": "At the highest point, all of the ball's initial kinetic energy (from being thrown) has been completely converted into gravitational potential energy (due to reaching maximum height), rather than being lost -- since total mechanical energy is the SUM of kinetic and potential energy, and potential energy is at its maximum precisely when kinetic energy is at its minimum (zero), the total mechanical energy remains exactly the same constant value throughout the ball's flight, including at this exact moment", "isCorrect": true, "feedback": "Correct -- this explanation of full kinetic-to-potential energy conversion at the peak height (rather than energy simply vanishing) correctly explains why zero kinetic energy at the highest point is fully consistent with constant, nonzero total mechanical energy throughout the ball's flight, a key application of energy conservation."},
+      {"text": "The ball would actually have zero total mechanical energy at its highest point, since its kinetic energy is zero there", "isCorrect": false, "feedback": "This isn't accurate -- while KINETIC energy is zero at the highest point, POTENTIAL energy is at its MAXIMUM there, so total mechanical energy (their sum) remains nonzero and constant."},
+      {"text": "Gravitational potential energy would actually also be zero at the ball's highest point, matching its zero kinetic energy", "isCorrect": false, "feedback": "This isn't accurate -- gravitational potential energy is specifically at its MAXIMUM at the highest point (due to maximum height), not zero, even though kinetic energy is zero there."},
+      {"text": "Total mechanical energy has no actual connection to the sum of an object's kinetic and potential energy at any given moment", "isCorrect": false, "feedback": "This isn't accurate -- total mechanical energy IS DIRECTLY DEFINED as the sum of kinetic and potential energy at any given moment, which is precisely the basis for this explanation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This form of mechanical energy is attributable specifically to an object's translational or rotational motion.", "medium": "This is the energy something has just because it's moving.", "easy": "This is the energy something has just because it's moving."},
+    "medium": {"hard": "Consider how the height-dependent potential energy term and the speed-dependent kinetic energy term trade off in exact proportion, keeping their combined sum invariant throughout the fall.", "medium": "As the ball drops and loses height, that lost height-based energy doesn't just disappear, it turns directly into speed-based energy instead, so the two trade off perfectly.", "easy": "As the ball drops and loses height, that energy turns directly into speed-based energy instead of disappearing."},
+    "hard": {"hard": "Consider how total mechanical energy, defined as the sum of kinetic and potential terms, remains invariant even as the two terms individually trade places between their minimum and maximum values.", "medium": "Right at the top, all the moving-energy the ball started with has been completely turned into height-energy instead, so the total amount hasn't actually dropped to zero, it's just sitting in a different form for a moment.", "easy": "At the top, all the ball's moving-energy has turned into height-energy, so the total hasn't dropped to zero — it's just in a different form."}
+  }
+}
+]

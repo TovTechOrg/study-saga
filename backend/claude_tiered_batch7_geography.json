@@ -1,0 +1,619 @@
+[
+{
+  "topic": "the demographic transition model",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the demographic transition model describe?",
+    "options": [
+      {"text": "How a country's birth rates and death rates typically change as it develops economically over time", "isCorrect": true, "feedback": "Correct -- this model helps explain broad patterns in population growth as countries industrialize and develop."},
+      {"text": "How mountain ranges shift position over millions of years", "isCorrect": false, "feedback": "That describes plate tectonics and continental drift, not the demographic transition model, which concerns human population change."},
+      {"text": "How ocean currents change direction seasonally", "isCorrect": false, "feedback": "Ocean current patterns are a physical geography topic, unrelated to the demographic transition model's focus on population trends."},
+      {"text": "How river deltas form at a river's mouth", "isCorrect": false, "feedback": "River delta formation is a landform process, unrelated to the demographic transition model's focus on birth and death rates."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In the demographic transition model, what generally happens to death rates in the early stages of a country's development, even before birth rates start to fall?",
+    "options": [
+      {"text": "Death rates tend to drop first, often due to improvements in healthcare, sanitation, and food supply", "isCorrect": true, "feedback": "Correct -- this early drop in death rates, while birth rates remain high, is what typically causes a period of rapid population growth."},
+      {"text": "Death rates and birth rates always fall at exactly the same time, in perfect lockstep", "isCorrect": false, "feedback": "The model specifically highlights a lag -- death rates typically fall well before birth rates do, not simultaneously."},
+      {"text": "Death rates rise sharply as a country begins to develop economically", "isCorrect": false, "feedback": "This is the opposite of the typical pattern -- death rates tend to decline, not rise, as healthcare and living conditions improve early in development."},
+      {"text": "Death rates remain completely constant throughout every stage of development", "isCorrect": false, "feedback": "The model specifically describes death rates changing significantly across stages, not remaining constant throughout."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does the demographic transition model suggest rapid population growth typically occurs in the middle stages of a country's development, rather than at the very beginning or end?",
+    "options": [
+      {"text": "In the middle stages, death rates have already fallen significantly due to improved living conditions, but birth rates remain high because cultural norms and family-size preferences tend to adjust more slowly than mortality does", "isCorrect": true, "feedback": "Correct -- this gap between a fast-falling death rate and a slower-falling birth rate is exactly what drives the sharp population growth seen in this middle stage."},
+      {"text": "Population growth is actually highest in the very first stage, before any development has begun at all", "isCorrect": false, "feedback": "The model instead identifies the middle stages, once death rates have already fallen but birth rates haven't caught up yet, as the period of most rapid growth."},
+      {"text": "Population growth is entirely random and has no real connection to birth and death rate trends", "isCorrect": false, "feedback": "The model specifically explains population growth as a direct, predictable consequence of the gap between birth and death rate trends, not as something random."},
+      {"text": "Birth rates and death rates always change at an identical pace throughout every stage of the model", "isCorrect": false, "feedback": "The model's core insight is precisely that these two rates change at different paces across different stages -- not identically throughout."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This model tracks how many people are born and how many people die as a country changes economically over time.", "medium": "This model shows a typical pattern in birth and death rates as a nation moves through different stages of economic development.", "hard": "This model applies specifically to human population dynamics tied to economic development stages, not to any physical landform or ocean process."},
+    "medium": {"easy": "Better healthcare and sanitation usually mean fewer people are dying, and that tends to happen before people start having fewer babies.", "medium": "Improvements in health and living conditions tend to lower this rate well before family size preferences start shrinking to match.", "hard": "The key insight is a lag effect -- mortality decline driven by healthcare/sanitation improvements precedes fertility decline, rather than the two moving simultaneously, decline being reversed, or the rate remaining static."},
+    "hard": {"easy": "Fewer people dying, but families still having about the same number of kids as before, means the population grows fast for a while.", "medium": "Once fewer people are dying but families haven't yet adjusted to having fewer kids, the population keeps growing quickly during that in-between stretch.", "hard": "The mechanism is a temporal gap between an early, rapid mortality decline and a later, slower fertility decline (since cultural and economic adjustment to smaller family sizes takes longer than mortality improvements), producing a period of accelerated natural increase -- not growth concentrated at the very start, randomness, or perfectly synchronized rate changes."}
+  }
+},
+{
+  "topic": "birth rate and death rate",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the 'birth rate' of a country typically measured as?",
+    "options": [
+      {"text": "The number of live births per 1,000 people in a population over a given year", "isCorrect": true, "feedback": "Correct -- this standardized measure allows fair comparison between countries with very different total population sizes."},
+      {"text": "The total number of births that have ever occurred in a country's entire history", "isCorrect": false, "feedback": "Birth rate is a standardized annual measure relative to population size, not a cumulative historical total."},
+      {"text": "The average age at which people in a country get married", "isCorrect": false, "feedback": "Average marriage age is a different demographic statistic -- birth rate specifically measures the frequency of births relative to population."},
+      {"text": "The percentage of a country's population that is currently pregnant", "isCorrect": false, "feedback": "Birth rate measures actual live births per population over a year, not the percentage of the population currently pregnant at any moment."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What does 'natural increase' refer to in population geography?",
+    "options": [
+      {"text": "The difference between a population's birth rate and its death rate, excluding migration", "isCorrect": true, "feedback": "Correct -- a positive natural increase means births are outpacing deaths, though migration can separately affect a country's total population change."},
+      {"text": "The total number of people who immigrate into a country each year", "isCorrect": false, "feedback": "Immigration is a component of overall population change, but 'natural increase' specifically excludes migration, focusing only on births versus deaths."},
+      {"text": "The percentage increase in a country's average income over time", "isCorrect": false, "feedback": "Income growth is an economic measure, unrelated to the demographic concept of natural increase, which is about births and deaths."},
+      {"text": "The rate at which a country's urban areas are physically expanding", "isCorrect": false, "feedback": "Urban expansion relates to land use, not the demographic calculation of births minus deaths that defines natural increase."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can a country have a declining total population even while its birth rate remains higher than zero?",
+    "options": [
+      {"text": "If the death rate exceeds the birth rate, and net migration doesn't sufficiently offset the difference, the total population can shrink over time even with some ongoing births", "isCorrect": true, "feedback": "Correct -- several countries with aging populations and low birth rates today are experiencing exactly this kind of population decline."},
+      {"text": "A population can never decline as long as the birth rate is above zero, without exception", "isCorrect": false, "feedback": "This isn't accurate -- what matters is the birth rate RELATIVE to the death rate and migration, not simply whether the birth rate is above zero."},
+      {"text": "Population totals are only affected by migration and have no connection to birth or death rates", "isCorrect": false, "feedback": "Birth and death rates are, in fact, fundamental direct components of total population change, alongside migration."},
+      {"text": "Total population figures are recalculated only once every hundred years, so short-term changes don't matter", "isCorrect": false, "feedback": "Population figures are typically tracked and updated much more frequently than once a century -- this isn't an accurate description of demographic measurement."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This rate counts how many babies are born for every 1,000 people in a given year.", "medium": "This standardized rate lets you compare how many births happen in countries of very different sizes.", "hard": "This measure is annual and population-relative, not a lifetime cumulative count or a measure of marriage age."},
+    "medium": {"easy": "This is just births minus deaths, not counting anyone moving in or out of the country.", "medium": "This concept focuses purely on the gap between how many people are born and how many die, ignoring migration entirely.", "hard": "This term isolates the births-minus-deaths component of population change, explicitly excluding migration, income, or urban expansion factors."},
+    "hard": {"easy": "If more people are dying than being born, and not enough new people are moving in to make up the difference, the total number of people can still go down.", "medium": "Even with some births happening, if deaths outnumber them and migration doesn't make up the gap, the total population can still shrink.", "hard": "The key is the birth rate's relationship RELATIVE to the death rate and net migration -- a population can decline whenever deaths plus net emigration exceed births plus net immigration, regardless of the birth rate being nonzero."}
+  }
+},
+{
+  "topic": "life expectancy and geography",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'life expectancy' generally measure?",
+    "options": [
+      {"text": "The average number of years a person born in a given place and time is expected to live", "isCorrect": true, "feedback": "Correct -- life expectancy is a widely used statistic for comparing overall health and living conditions between countries and regions."},
+      {"text": "The exact number of years every single individual in a country will live", "isCorrect": false, "feedback": "Life expectancy is a population-wide average, not a guaranteed individual outcome -- actual lifespans vary widely around that average."},
+      {"text": "The average age at which people in a country retire from work", "isCorrect": false, "feedback": "Retirement age is a separate labor statistic -- life expectancy specifically measures expected lifespan, not working years."},
+      {"text": "The total population of elderly people living in a country", "isCorrect": false, "feedback": "Life expectancy is an average lifespan statistic, not a count of the elderly population."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these factors is commonly cited as strongly influencing differences in average life expectancy between countries?",
+    "options": [
+      {"text": "Access to healthcare, clean water, sanitation, and adequate nutrition", "isCorrect": true, "feedback": "Correct -- countries with stronger healthcare systems and infrastructure generally show notably higher average life expectancy."},
+      {"text": "The exact geographic size (total land area) of the country", "isCorrect": false, "feedback": "A country's total land area isn't a direct driver of life expectancy -- factors like healthcare access and living conditions matter far more."},
+      {"text": "The number of time zones a country spans", "isCorrect": false, "feedback": "The number of time zones a country spans has no meaningful connection to average life expectancy."},
+      {"text": "The specific map projection used to represent the country on maps", "isCorrect": false, "feedback": "Map projection is a cartographic choice for representing a country's shape -- it has no bearing on actual life expectancy."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can national average life expectancy figures sometimes obscure important disparities within a single country?",
+    "options": [
+      {"text": "A national average can mask significant differences between regions, urban and rural areas, or socioeconomic groups, meaning some populations within the country may have notably higher or lower actual life expectancy than the overall figure suggests", "isCorrect": true, "feedback": "Correct -- this is why researchers often examine life expectancy data broken down by region or income group, rather than relying solely on a single national figure."},
+      {"text": "National averages are always perfectly identical across every region and group within a country, with zero variation", "isCorrect": false, "feedback": "This is essentially never the case -- meaningful internal variation in life expectancy is a well-documented phenomenon within most countries."},
+      {"text": "Life expectancy data cannot be broken down by region or group under any circumstances", "isCorrect": false, "feedback": "Life expectancy data can, in fact, be and often is broken down by region, income group, and other factors -- this is a standard demographic research practice."},
+      {"text": "Averages have no real statistical meaning and provide no useful information about a country at all", "isCorrect": false, "feedback": "National averages are genuinely useful for broad comparisons -- the concern is simply that they can obscure internal variation, not that they're meaningless."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This number estimates how many years, on average, someone born in a certain place might expect to live.", "medium": "This average lifespan statistic is commonly used to compare overall health conditions between different countries.", "hard": "Ask yourself whether a statistic used to compare whole countries would need to hold true for literally every individual, or whether it could still be meaningful as a broader summary figure."},
+    "medium": {"easy": "Things like hospitals, clean drinking water, and enough good food to eat make a big difference here.", "medium": "Access to things like medical care, clean water, and proper nutrition tends to have a big effect on this statistic.", "hard": "Think about which kinds of factors would plausibly shape how long people in a population tend to live, versus factors that are more about how a country is measured or drawn on paper than about people's actual living conditions."},
+    "hard": {"easy": "One single number for the whole country can hide the fact that some areas or groups within that country actually live much longer or shorter lives than others.", "medium": "A single nationwide number can hide big differences between, say, richer and poorer regions, or city versus countryside, within that same country.", "hard": "Consider what a single nationwide summary number can and cannot tell you about the variety of experiences happening underneath it, rather than assuming that number applies identically to everyone or carries no useful meaning at all."}
+  }
+},
+{
+  "topic": "the Human Development Index",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the Human Development Index (HDI) attempt to measure about a country?",
+    "options": [
+      {"text": "Its overall level of human development, combining health, education, and standard of living", "isCorrect": true, "feedback": "Correct -- the HDI was created to provide a broader picture of development than economic output alone."},
+      {"text": "Only its total military spending each year", "isCorrect": false, "feedback": "Military spending isn't a component of the HDI -- it specifically combines health, education, and standard-of-living indicators."},
+      {"text": "Only the exact number of major cities within its borders", "isCorrect": false, "feedback": "City count isn't a component of the HDI -- it measures broader human development indicators like health and education."},
+      {"text": "Only its total land area and coastline length", "isCorrect": false, "feedback": "Physical geography measures like land area aren't part of the HDI -- it focuses instead on human development factors."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of the following are among the core components combined to calculate the Human Development Index? (Select all that apply)",
+    "options": [
+      {"text": "Life expectancy at birth", "isCorrect": true, "feedback": "Correct -- life expectancy represents the health dimension of the index."},
+      {"text": "Expected and average years of schooling", "isCorrect": true, "feedback": "Correct -- education indicators represent the knowledge dimension of the index."},
+      {"text": "Gross national income per capita", "isCorrect": true, "feedback": "Correct -- income per capita represents the standard-of-living dimension of the index."},
+      {"text": "The country's total number of airports", "isCorrect": false, "feedback": "Airport count isn't one of the HDI's core components -- the index focuses on health, education, and income."},
+      {"text": "The country's average annual rainfall", "isCorrect": false, "feedback": "Rainfall is a climate statistic, not one of the HDI's core human development components."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why was the Human Development Index specifically created as an alternative to relying solely on GDP or GDP per capita to assess a country's development?",
+    "options": [
+      {"text": "GDP per capita alone doesn't capture whether that economic wealth translates into better health outcomes or educational access, so a country could have high income yet lag significantly in those other areas", "isCorrect": true, "feedback": "Correct -- this is why two countries with similar GDP per capita can have noticeably different HDI rankings, if one invests far more in healthcare and education than the other."},
+      {"text": "GDP per capita and HDI always produce identical country rankings, making HDI simply a redundant duplicate measure", "isCorrect": false, "feedback": "GDP per capita and HDI rankings often diverge meaningfully -- this divergence is actually a key reason the HDI was developed as a complementary alternative."},
+      {"text": "GDP per capita is impossible to calculate for any country in the world", "isCorrect": false, "feedback": "GDP per capita is, in fact, a commonly calculated and widely used economic statistic -- the HDI's purpose is to supplement it with health and education data, not because it's uncalculatable."},
+      {"text": "The HDI was created purely to replace GDP as a measure of military strength", "isCorrect": false, "feedback": "The HDI focuses on human development (health, education, income), not military strength -- this isn't its stated purpose."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This index tries to capture how well people are actually doing in a country, not just how much money is made.", "medium": "This measure blends together health, schooling, and income data into one overall score for a country.", "hard": "Consider whether a measure meant to summarize how well people are living would be built primarily from statistics about a country's government spending or physical geography, or from statistics about people's own life outcomes."},
+    "medium": {"easy": "Think about health, learning, and money -- three big categories of human wellbeing get combined here.", "medium": "The three big categories are: how long people tend to live, how much schooling people get, and how much money people earn.", "hard": "For each item, ask yourself whether it's something that could meaningfully shape an individual person's day-to-day quality of life, or whether it's just an incidental fact about the country as a place."},
+    "hard": {"easy": "A country could have a lot of money overall but still not have great healthcare or schools, so just looking at money doesn't tell the whole story.", "medium": "A country can be economically wealthy overall while still lagging in things like healthcare and education, so income alone doesn't capture the full picture.", "hard": "Think about whether having a high income automatically guarantees a country also excels at turning that income into other things people value, or whether those outcomes might depend on choices a country makes beyond just how much money it has."}
+  }
+},
+{
+  "topic": "urban sprawl",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 'urban sprawl'?",
+    "options": [
+      {"text": "The rapid, spread-out expansion of a city's development into surrounding low-density suburban and rural areas", "isCorrect": true, "feedback": "Correct -- urban sprawl is often characterized by car-dependent development spreading outward from a city center."},
+      {"text": "The process of a city's population shrinking rapidly", "isCorrect": false, "feedback": "Urban sprawl refers to outward physical expansion, not a shrinking population."},
+      {"text": "The construction of tall, densely packed skyscrapers in a city center", "isCorrect": false, "feedback": "That describes dense vertical urban development, which is generally the opposite pattern from low-density outward sprawl."},
+      {"text": "The complete abandonment of a city, leaving it entirely empty", "isCorrect": false, "feedback": "Urban sprawl involves ongoing development and expansion, not abandonment of a city."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is a commonly cited downside associated with urban sprawl?",
+    "options": [
+      {"text": "Greater reliance on cars for transportation, often leading to increased traffic congestion and higher carbon emissions", "isCorrect": true, "feedback": "Correct -- because sprawling development is typically spread over a wide area with lower density, public transit becomes less efficient, increasing car dependence."},
+      {"text": "A significant decrease in the total distance people need to travel for daily activities", "isCorrect": false, "feedback": "This is the opposite of a common critique of sprawl -- spread-out development often INCREASES the distances people must travel."},
+      {"text": "A guaranteed reduction in a city's overall cost of infrastructure, like roads and utility lines", "isCorrect": false, "feedback": "Sprawling development often actually increases infrastructure costs, since roads, water lines, and utilities must extend over a much larger area."},
+      {"text": "An automatic increase in public transit ridership and efficiency", "isCorrect": false, "feedback": "Low-density sprawl typically makes public transit less efficient and less used, not more, since destinations are more spread out."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do urban planners sometimes advocate for 'smart growth' or dense, mixed-use development as an alternative strategy to combat the effects of urban sprawl?",
+    "options": [
+      {"text": "By concentrating housing, jobs, and services closer together, these approaches can reduce the need for long car trips, make public transit more viable, and use existing infrastructure more efficiently", "isCorrect": true, "feedback": "Correct -- this strategy is intended to address several sprawl-related concerns simultaneously, including traffic congestion, emissions, and rising infrastructure costs."},
+      {"text": "Smart growth strategies are designed specifically to increase a city's total geographic footprint as much as possible", "isCorrect": false, "feedback": "This is essentially the opposite goal -- smart growth strategies generally aim to concentrate development and limit outward geographic expansion, not maximize it."},
+      {"text": "Smart growth has no actual connection to transportation patterns or infrastructure costs", "isCorrect": false, "feedback": "Smart growth strategies are specifically designed with transportation and infrastructure efficiency as central goals, not as an unrelated afterthought."},
+      {"text": "Dense, mixed-use development is intended to eliminate all forms of public transit entirely", "isCorrect": false, "feedback": "Dense, mixed-use development is generally intended to make public transit MORE viable and heavily used, not to eliminate it."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This describes a city spreading outward into the suburbs and countryside, rather than growing tightly packed.", "medium": "This pattern of city growth spreads outward over a large area, often relying heavily on cars to get around.", "hard": "This pattern is defined by low-density outward expansion, the opposite of a shrinking city or a tightly packed vertical downtown."},
+    "medium": {"easy": "Since everything is spread out, people usually need to drive a lot more to get anywhere, which adds to traffic and pollution.", "medium": "Because destinations are spread so far apart, people generally end up driving much more, adding to traffic and emissions.", "hard": "The critique centers on increased automobile dependency stemming from low density, which drives up traffic congestion and emissions -- not a decrease in travel distance, cheaper infrastructure, or improved transit use."},
+    "hard": {"easy": "Putting homes, jobs, and shops closer together means people don't have to drive as far, and buses or trains work better too.", "medium": "By clustering homes, workplaces, and services closer together, people don't need to drive as far, and public transit becomes a much more practical option.", "hard": "The strategic goal is spatial concentration of uses to shorten trip distances, improve transit viability, and leverage existing infrastructure more efficiently -- not to expand a city's footprint further, sever the link to transportation planning, or eliminate transit altogether."}
+  }
+},
+{
+  "topic": "megacities",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is generally the defining criterion for classifying a city as a 'megacity'?",
+    "options": [
+      {"text": "Having a metropolitan population of at least 10 million people", "isCorrect": true, "feedback": "Correct -- this population threshold is the commonly used definition for classifying a metropolitan area as a megacity."},
+      {"text": "Being the official capital city of its country", "isCorrect": false, "feedback": "Many megacities are not their country's official capital -- the defining feature is population size, not political status."},
+      {"text": "Having the tallest single building in the world", "isCorrect": false, "feedback": "Building height isn't the defining criterion for a megacity -- total metropolitan population is."},
+      {"text": "Having a coastline directly on an ocean", "isCorrect": false, "feedback": "Many megacities are coastal, but coastal location isn't the defining criterion -- population size above a set threshold is."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which global trend is most closely associated with the dramatic increase in the number of megacities over the past several decades?",
+    "options": [
+      {"text": "Rapid rural-to-urban migration and overall global population growth, especially in developing regions", "isCorrect": true, "feedback": "Correct -- many of today's fastest-growing megacities are located in Asia and Africa, where urbanization has accelerated significantly in recent decades."},
+      {"text": "A global decline in total human population over the past several decades", "isCorrect": false, "feedback": "Global population has actually been growing, not declining, over this period -- this growth is part of what has fueled megacity expansion."},
+      {"text": "A worldwide shift of population specifically away from cities and toward rural areas", "isCorrect": false, "feedback": "This is the opposite of the actual trend -- migration toward cities (urbanization), not away from them, has driven megacity growth."},
+      {"text": "Improved agricultural technology causing people to move even farther into remote countryside", "isCorrect": false, "feedback": "Agricultural changes have historically been more associated with freeing up labor to migrate toward cities, not with people moving further into remote countryside."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do many megacities in developing regions face significant challenges with infrastructure, such as housing, water, sanitation, and transportation?",
+    "options": [
+      {"text": "Population growth in these cities has often outpaced the capacity of infrastructure and services to expand accordingly, leading to overcrowding, informal settlements, and strain on essential systems", "isCorrect": true, "feedback": "Correct -- this mismatch between rapid population growth and infrastructure investment is a widely studied challenge in the urban geography of many rapidly growing megacities."},
+      {"text": "These challenges are caused mainly by widespread government corruption diverting infrastructure funding, rather than by the pace of population growth itself", "isCorrect": false, "feedback": "Corruption can worsen infrastructure problems in some cities, but the driver most consistently identified across rapidly growing megacities is that population growth has outpaced the capacity of infrastructure and services to expand -- not corruption alone."},
+      {"text": "These challenges are temporary growing pains that fade away naturally within just a few years as a city adjusts to its new size", "isCorrect": false, "feedback": "In many rapidly growing megacities this gap between population growth and infrastructure capacity persists for decades rather than resolving quickly on its own, since demographic growth keeps outpacing expansion."},
+      {"text": "These challenges are caused primarily by difficult local geography, such as floodplains or mountainous terrain, that makes infrastructure construction physically impossible", "isCorrect": false, "feedback": "Difficult terrain can complicate specific projects in some places, but the infrastructure strain seen across megacities worldwide -- including those built on flat, easily developable land -- is most consistently linked to population growth outpacing planned expansion, not geography alone."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This classification hinges purely on population count, not on political status, building height, or coastal location.", "medium": "This classification is based on a specific population threshold that only the very largest metropolitan areas in the world surpass.", "hard": "This label applies to a metropolitan area once it crosses a huge population milestone."},
+    "medium": {"easy": "The driver is a combination of rural-to-urban migration and net population growth concentrated in developing regions, not global population decline, reverse (urban-to-rural) migration, or an agriculture-driven countryside pull.", "medium": "Think about two demographic shifts happening together: how the total number of people in the world has been changing, and where within countries people have been choosing to live.", "hard": "Consider what's changing both in how many people there are overall, and where they're settling."},
+    "hard": {"easy": "The core issue is a persistent gap between rapid demographic growth and the pace of infrastructure and service expansion, producing overcrowding and informal settlement growth -- not corruption, a short-lived adjustment phase, or difficult terrain making construction impossible.", "medium": "Consider how quickly people are arriving in these cities compared to how quickly new infrastructure can realistically be built to serve them.", "hard": "Think about what happens when a city's population climbs much faster than the systems meant to support it."}
+  }
+},
+{
+  "topic": "informal settlements (slums)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What generally characterizes an 'informal settlement,' sometimes called a slum?",
+    "options": [
+      {"text": "A densely populated urban area with substandard housing, often built without formal legal land rights or government planning", "isCorrect": true, "feedback": "Correct -- informal settlements often develop rapidly on the edges of expanding cities, frequently lacking reliable access to services like clean water and sanitation."},
+      {"text": "A wealthy, planned suburban neighborhood with large houses", "isCorrect": false, "feedback": "This describes a very different type of settlement -- an informal settlement is instead characterized by substandard housing and lack of formal planning, not wealth and formal planning."},
+      {"text": "A rural farming village with low population density", "isCorrect": false, "feedback": "Informal settlements are typically urban and densely populated -- a low-density rural village doesn't fit this description."},
+      {"text": "A government office building where legal documents are processed", "isCorrect": false, "feedback": "That describes an administrative building, unrelated to the concept of an informal residential settlement."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do informal settlements often develop rapidly on the outskirts of growing cities in many developing countries?",
+    "options": [
+      {"text": "Rapid rural-to-urban migration frequently outpaces the availability of formal, affordable housing, pushing many new arrivals to build makeshift housing on unused or unclaimed land", "isCorrect": true, "feedback": "Correct -- without enough affordable formal housing options, informal settlements often become the primary way many urban migrants can find shelter close to job opportunities."},
+      {"text": "Local governments specifically design and formally build these settlements as planned developments", "isCorrect": false, "feedback": "This contradicts their defining characteristic -- informal settlements specifically arise WITHOUT formal government planning, unlike officially designed developments."},
+      {"text": "These settlements arise only in regions with declining, shrinking populations", "isCorrect": false, "feedback": "Informal settlements typically arise in rapidly GROWING urban areas, driven by migration, not in areas with a shrinking population."},
+      {"text": "These settlements form exclusively in wealthy countries with strong social safety nets", "isCorrect": false, "feedback": "Informal settlements are far more commonly associated with rapid urbanization in developing countries facing housing shortages, not wealthy countries with strong safety nets."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do many urban planners argue that simply demolishing informal settlements, without providing viable alternative housing, often fails to solve the underlying problem?",
+    "options": [
+      {"text": "Because the settlements often emerge from a persistent gap between housing demand and affordable supply, displaced residents frequently end up forming new informal settlements elsewhere, rather than being absorbed into formal housing", "isCorrect": true, "feedback": "Correct -- this is why many contemporary policy approaches instead focus on upgrading existing informal settlements with services and legal recognition, rather than demolition alone."},
+      {"text": "Demolition always instantly and permanently solves informal housing shortages with no further issues", "isCorrect": false, "feedback": "This contradicts extensive documented evidence and policy analysis showing that demolition alone, without addressing the underlying housing shortage, tends not to be a lasting solution."},
+      {"text": "Informal settlements never actually reappear anywhere once they've been cleared away", "isCorrect": false, "feedback": "In many well-documented cases, displaced residents facing the same lack of affordable formal housing end up establishing new informal settlements elsewhere."},
+      {"text": "There is no actual housing shortage driving the formation of these settlements in the first place", "isCorrect": false, "feedback": "A shortage of affordable formal housing relative to demand is widely identified as a fundamental underlying driver of informal settlement formation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This kind of neighborhood often lacks official permission for the land it's built on and doesn't have full basic services.", "medium": "This type of dense urban neighborhood usually forms outside the formal legal housing system, often lacking secure land rights.", "hard": "This settlement type's defining trait is its position outside formal legal and planning systems, not its wealth level or rural setting."},
+    "medium": {"easy": "More people move to the city looking for housing than there is official, affordable housing available for them.", "medium": "When more people arrive in a city than there's affordable, formal housing to house them, many end up building their own housing informally.", "hard": "The driver is an imbalance between rapid urban in-migration and constrained affordable formal housing supply, not deliberate government planning, population decline, or a wealthy-country phenomenon."},
+    "hard": {"easy": "If you tear the housing down but don't fix the actual housing shortage, people often just end up building a similar settlement somewhere else nearby.", "medium": "Without addressing the actual shortage of affordable housing, people who are displaced often just end up forming a new informal settlement somewhere else instead.", "hard": "The critique is that demolition without addressing the root imbalance between housing demand and affordable supply merely displaces rather than resolves the issue, often causing settlement to recur elsewhere -- not a claim of permanent resolution, non-recurrence, or the absence of an underlying shortage."}
+  }
+},
+{
+  "topic": "food deserts",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a 'food desert'?",
+    "options": [
+      {"text": "An area, often urban or rural, where residents have limited access to affordable, healthy food, especially fresh produce", "isCorrect": true, "feedback": "Correct -- food deserts often lack full-service grocery stores within a reasonable distance, leaving residents reliant on more limited food options."},
+      {"text": "A literal sandy desert region that receives no rainfall at all", "isCorrect": false, "feedback": "'Food desert' is a figurative term about food access, not a literal description of an arid, sandy landscape."},
+      {"text": "A region where farming and agriculture are extremely productive and abundant", "isCorrect": false, "feedback": "A food desert refers to poor food ACCESS for residents, essentially the opposite of an area known for abundant agricultural productivity."},
+      {"text": "A specific government program that provides free groceries to all citizens", "isCorrect": false, "feedback": "A food desert describes a geographic access problem, not a specific government assistance program."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is a commonly cited contributing factor to the formation of food deserts in certain urban neighborhoods?",
+    "options": [
+      {"text": "Large supermarkets often avoid opening stores in lower-income neighborhoods due to perceived lower profitability, leaving residents with fewer nearby options for fresh, affordable food", "isCorrect": true, "feedback": "Correct -- this can leave residents reliant on smaller convenience stores or fast food outlets, which often offer more limited healthy food options."},
+      {"text": "These neighborhoods actually have an oversupply of full-service grocery stores", "isCorrect": false, "feedback": "This is the opposite of the defining characteristic of a food desert -- these areas specifically have LIMITED access to grocery stores, not an oversupply."},
+      {"text": "Residents in these areas have unlimited access to free public transportation to any grocery store", "isCorrect": false, "feedback": "Limited transportation options are often cited as compounding food access problems in these areas, not unlimited free transportation."},
+      {"text": "These neighborhoods are located exclusively in extremely wealthy areas with abundant retail investment", "isCorrect": false, "feedback": "Food deserts are more commonly associated with lower-income areas that receive less retail investment, not extremely wealthy areas."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do researchers studying food deserts increasingly emphasize considering both physical distance to healthy food AND affordability, rather than distance alone?",
+    "options": [
+      {"text": "Because a resident might live relatively close to a store, yet still lack meaningful access if the healthy food available there is priced beyond what they can afford, meaning true food access depends on more than just proximity", "isCorrect": true, "feedback": "Correct -- this broader view has led some researchers to also use the term 'food swamps' or emphasize economic access, in addition to simple geographic distance."},
+      {"text": "Affordability has absolutely no connection to whether someone can access healthy food", "isCorrect": false, "feedback": "Affordability is, in fact, a critical factor in real-world food access, alongside physical distance -- this claim contradicts that understanding."},
+      {"text": "Distance to a grocery store is the only factor that has ever mattered in any food access research", "isCorrect": false, "feedback": "This oversimplifies current understanding -- researchers increasingly recognize that affordability, transportation, and other factors matter alongside pure distance."},
+      {"text": "All grocery stores, regardless of location, charge the exact same prices for the same products", "isCorrect": false, "feedback": "Prices can vary meaningfully between stores and locations -- this uniform-pricing claim isn't accurate and ignores a key factor in real food access."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This term describes a place where it's hard to find fresh, healthy, affordable food nearby.", "medium": "This term is about food ACCESS being limited in a neighborhood, not about an actual dry, sandy landscape.", "hard": "This concept concerns food availability and affordability in a specific area, not literal precipitation or actual agricultural output."},
+    "medium": {"easy": "Big grocery stores sometimes choose not to open in certain neighborhoods because they don't expect to make as much money there.", "medium": "Larger supermarket chains sometimes avoid opening in certain neighborhoods due to concerns about profitability, leaving fewer healthy food options nearby.", "hard": "The mechanism involves retail investment patterns steering large grocery chains away from certain neighborhoods, not an oversupply of stores, unlimited free transit, or a wealthy-area phenomenon."},
+    "hard": {"easy": "Even if a store isn't that far away, someone still might not be able to actually afford the healthy food being sold there.", "medium": "Someone might technically live near a store, but if the healthy food there costs too much for them to afford, that's still a real barrier to access.", "hard": "The broader framework recognizes that meaningful food access requires both geographic proximity AND economic affordability, since either barrier alone can limit real access -- not a claim that affordability is irrelevant, that distance is the sole factor, or that prices are uniform everywhere."}
+  }
+},
+{
+  "topic": "gentrification",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 'gentrification'?",
+    "options": [
+      {"text": "A process where a lower-income urban neighborhood experiences an influx of wealthier residents and investment, often raising property values and living costs", "isCorrect": true, "feedback": "Correct -- gentrification often brings new businesses and renovated housing, but can also lead to the displacement of longtime lower-income residents."},
+      {"text": "A process where a wealthy neighborhood becomes poorer over time", "isCorrect": false, "feedback": "Gentrification describes the opposite pattern -- a lower-income area attracting wealthier residents and rising costs, not a wealthy area declining."},
+      {"text": "The construction of entirely new cities in previously uninhabited rural land", "isCorrect": false, "feedback": "Gentrification refers to change within an EXISTING neighborhood, not the founding of an entirely new city."},
+      {"text": "A government policy that provides free housing to all residents of a city", "isCorrect": false, "feedback": "Gentrification is a broader socioeconomic and demographic process, not a specific free-housing government program."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is a commonly cited concern associated with gentrification for a neighborhood's original, longtime residents?",
+    "options": [
+      {"text": "Rising rents and property values can make the neighborhood unaffordable, potentially displacing longtime lower-income residents", "isCorrect": true, "feedback": "Correct -- this displacement concern is central to many debates about the overall costs and benefits of gentrification for existing communities."},
+      {"text": "Gentrification always guarantees permanently lower housing costs for every resident", "isCorrect": false, "feedback": "This is the opposite of a commonly cited concern -- gentrification is typically associated with RISING costs, which can price out longtime residents."},
+      {"text": "Gentrification has no effect whatsoever on local property values", "isCorrect": false, "feedback": "Rising property values are, in fact, one of the most consistently observed and discussed effects associated with gentrification."},
+      {"text": "Gentrification only occurs in exclusively rural farming communities", "isCorrect": false, "feedback": "Gentrification is specifically an urban neighborhood phenomenon, not something occurring in rural farming communities."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is gentrification often described by urban geographers as a genuinely complex issue, involving real tradeoffs, rather than a simply good or bad process?",
+    "options": [
+      {"text": "It can bring beneficial investment, improved infrastructure, and reduced crime to a neighborhood, while simultaneously risking the displacement of longtime residents and the erosion of a community's existing social and cultural fabric", "isCorrect": true, "feedback": "Correct -- this tension between neighborhood improvement and resident displacement is why gentrification remains a genuinely debated and actively studied urban policy issue."},
+      {"text": "Gentrification is universally regarded as having zero negative consequences of any kind for any resident", "isCorrect": false, "feedback": "This ignores well-documented displacement and affordability concerns that are central to most serious analyses of gentrification."},
+      {"text": "Gentrification is universally regarded as having zero positive effects of any kind for any resident", "isCorrect": false, "feedback": "This ignores well-documented benefits, like increased investment and improved infrastructure, that are also part of most analyses of gentrification."},
+      {"text": "There is complete, unanimous agreement among researchers that gentrification should always be prevented", "isCorrect": false, "feedback": "This oversimplifies an area of genuine ongoing debate -- researchers and policymakers hold a range of views on how to balance gentrification's tradeoffs."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This is when a neighborhood that used to be lower-income starts attracting wealthier new residents and rising prices.", "medium": "This process involves an area becoming more expensive and attracting wealthier newcomers, changing its character over time.", "hard": "Consider whether wealth and investment are moving into this kind of area or away from it, and whether the term applies to a neighborhood that already exists or something built from scratch elsewhere."},
+    "medium": {"easy": "As prices go up in the neighborhood, the people who lived there before might not be able to afford to stay.", "medium": "As property values and rents climb, longtime residents can find it harder and harder to afford staying in their own neighborhood.", "hard": "Think about what usually happens to the cost of living in a neighborhood as it becomes more desirable to wealthier newcomers, and what that shift could mean for the people who were already living there."},
+    "hard": {"easy": "New investment can make a neighborhood nicer and safer, but it can also push out the people who lived there before -- so it's really a mix of good and bad.", "medium": "It can bring real improvements like new investment and safer streets, but it can also push out longtime residents and change the neighborhood's character -- so it cuts both ways.", "hard": "Rather than settling on a single, one-sided verdict, consider whether a changing neighborhood could gain something valuable at the same time some of its residents lose something valuable -- and what that tension implies about labeling the whole process simply good or simply bad."}
+  }
+},
+{
+  "topic": "brain drain",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the term 'brain drain' refer to?",
+    "options": [
+      {"text": "The emigration of highly skilled or educated people from their home country to other countries", "isCorrect": true, "feedback": "Correct -- brain drain is often discussed as a challenge for developing countries that invest in education but then see many graduates emigrate elsewhere."},
+      {"text": "A medical condition affecting a country's water supply", "isCorrect": false, "feedback": "'Brain drain' is a figurative term about skilled migration, not a literal medical or water-related condition."},
+      {"text": "A government policy that funds public education for all citizens", "isCorrect": false, "feedback": "Brain drain describes a migration pattern of skilled individuals leaving a country, not a specific government education-funding policy."},
+      {"text": "The process of building new universities in rural areas", "isCorrect": false, "feedback": "Brain drain concerns the departure of skilled people from a country, not the construction of new educational institutions."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is a commonly cited reason skilled workers might emigrate from their home country, contributing to brain drain?",
+    "options": [
+      {"text": "The pursuit of better job opportunities, higher wages, or more advanced research and career facilities available abroad", "isCorrect": true, "feedback": "Correct -- these economic and professional 'pull factors' abroad are frequently cited alongside 'push factors' at home, like limited opportunities."},
+      {"text": "A sudden, complete elimination of all universities in the home country", "isCorrect": false, "feedback": "Brain drain doesn't require a complete elimination of educational institutions -- it's typically driven by comparative differences in opportunity, wages, or career prospects."},
+      {"text": "A worldwide ban on international travel that forces emigration", "isCorrect": false, "feedback": "Brain drain is driven by voluntary migration decisions based on opportunity, not by a travel ban forcing emigration."},
+      {"text": "Brain drain occurs completely randomly and is not connected to any economic or professional factors", "isCorrect": false, "feedback": "Brain drain is closely tied to real economic and professional incentives, not random chance."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do some economists describe the relationship between brain drain and a developing country's economy as more complicated than a simple, one-directional loss?",
+    "options": [
+      {"text": "While the country does lose skilled workers, remittances sent home, returning migrants bringing back new skills, and international professional networks can sometimes provide meaningful benefits back to the origin country", "isCorrect": true, "feedback": "Correct -- this more nuanced view is sometimes referred to as 'brain circulation' rather than a purely one-way 'brain drain,' since skills and money can flow back as well as out."},
+      {"text": "Brain drain has been proven to have absolutely no economic effect on any country, positive or negative", "isCorrect": false, "feedback": "Brain drain is widely studied precisely because it does have measurable economic effects -- both potential costs and potential offsetting benefits."},
+      {"text": "Skilled emigrants who leave a country are always guaranteed to return home within exactly one year", "isCorrect": false, "feedback": "There's no such guarantee or fixed timeframe -- some emigrants return, others remain abroad long-term or permanently, which is part of what makes the overall dynamic complex."},
+      {"text": "Remittances sent home by emigrants are illegal in most countries and therefore economically irrelevant", "isCorrect": false, "feedback": "Remittances are legal and represent a substantial, well-documented source of income for many countries -- they are far from economically irrelevant."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This term describes highly educated or skilled people leaving their home country to work elsewhere.", "medium": "This term describes a country losing many of its skilled or educated workers to emigration.", "hard": "Consider what kind of process this term points to -- something happening to a group of people, versus something that's more like an infrastructure project or a policy decision."},
+    "medium": {"easy": "People often leave in search of better-paying jobs or stronger career opportunities somewhere else.", "medium": "A search for higher pay, better career opportunities, or stronger research facilities abroad often drives this kind of emigration.", "hard": "Think about whether people generally choose to relocate because something draws them elsewhere, because they're forced to by circumstances outside their control, or for no identifiable reason at all -- and which best fits typical human migration decisions."},
+    "hard": {"easy": "Even though skilled people leave, money sent back home and skills brought back by people who eventually return can still help the home country.", "medium": "Even though skilled workers leave, money sent back home and returning migrants bringing new skills and connections can still benefit the home country.", "hard": "Consider whether money and skills can only ever flow in one direction once someone emigrates, or whether value might still find ways to travel back to the home country afterward -- and what that possibility would mean for how one-sided this process really is."}
+  }
+},
+{
+  "topic": "remittances",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a 'remittance' in the context of international migration?",
+    "options": [
+      {"text": "Money sent by a migrant worker back to family or others in their home country", "isCorrect": true, "feedback": "Correct -- remittances are a major source of income for many families and even entire national economies around the world."},
+      {"text": "A tax charged by a government on all outgoing international flights", "isCorrect": false, "feedback": "Remittances are money transfers sent by individuals, not a government tax on flights."},
+      {"text": "A loan given by a bank to help someone emigrate to another country", "isCorrect": false, "feedback": "A remittance is money sent home by a migrant, not a loan for the purpose of emigrating."},
+      {"text": "A type of visa that allows temporary work in a foreign country", "isCorrect": false, "feedback": "A visa is a legal travel document -- a remittance specifically refers to money sent home by a migrant worker."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why can remittances be economically significant for certain developing countries?",
+    "options": [
+      {"text": "For some countries, total remittances sent home by citizens working abroad can represent a substantial share of the national economy, sometimes exceeding other major sources of foreign income", "isCorrect": true, "feedback": "Correct -- in several countries, remittance income is comparable to or even greater than revenue from foreign direct investment or international aid."},
+      {"text": "Remittances are always an insignificant, negligible amount of money with no measurable economic impact", "isCorrect": false, "feedback": "This significantly understates reality -- remittances represent a substantial and closely tracked economic factor for many countries."},
+      {"text": "Remittances are illegal in most countries that receive them", "isCorrect": false, "feedback": "Remittances are a legal, common, and economically significant practice in most receiving countries, not an illegal one."},
+      {"text": "Remittances only flow from developing countries to wealthy countries, never the reverse", "isCorrect": false, "feedback": "This misdescribes the typical direction -- remittances commonly flow FROM migrants working in wealthier countries back TO their home countries, which are often developing nations."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why might heavy reliance on remittance income create a potential economic vulnerability for a receiving country?",
+    "options": [
+      {"text": "Because remittance flows depend heavily on economic conditions in migrants' host countries, an economic downturn or stricter immigration policy abroad can sharply reduce this income source with little warning", "isCorrect": true, "feedback": "Correct -- this makes remittance-dependent economies sensitive to economic and policy conditions in other countries, factors largely outside their own government's control."},
+      {"text": "Remittance income is entirely guaranteed and completely immune to any external economic conditions", "isCorrect": false, "feedback": "This is inaccurate -- remittance flows can and do fluctuate meaningfully based on conditions in the countries where migrants are working."},
+      {"text": "Remittances are converted into a completely different currency that cannot be used domestically", "isCorrect": false, "feedback": "Remittances are typically converted into the local currency and used for everyday domestic expenses -- currency incompatibility isn't the relevant vulnerability here."},
+      {"text": "Countries that receive significant remittances are legally barred from using that money for any purpose", "isCorrect": false, "feedback": "There's no such universal legal restriction -- remittance income is generally used freely by recipient households and, in aggregate, contributes meaningfully to national economies."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This is money a worker abroad sends back home to family.", "medium": "This income flows from migrants working in another country back to their family in their home country.", "hard": "This concept is a direct money transfer tied to migration, not a tax, loan, or travel document."},
+    "medium": {"easy": "For some countries, this money adds up to a huge chunk of the entire national economy.", "medium": "In some countries, the total amount of this money sent home can rival or even beat other major sources of income for the whole country.", "hard": "The significance lies in aggregate remittance income sometimes rivaling or exceeding other major foreign income sources like FDI or aid, for the receiving national economy specifically, not the sending country."},
+    "hard": {"easy": "If migrant workers lose their jobs abroad or get sent home, the money they used to send back can suddenly drop a lot.", "medium": "If the economy where migrants work takes a hit, or immigration rules get tougher, the flow of money sent back home can drop suddenly.", "hard": "The vulnerability arises because remittance inflows are contingent on external economic and policy conditions in host countries, over which the receiving country has no control, making this income source susceptible to sudden disruption -- not because it's currency-incompatible, legally restricted, or immune to conditions elsewhere."}
+  }
+},
+{
+  "topic": "the Gini coefficient and income inequality",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does the Gini coefficient measure?",
+    "options": [
+      {"text": "The level of income (or wealth) inequality within a population", "isCorrect": true, "feedback": "Correct -- the Gini coefficient is one of the most widely used statistical measures for comparing income inequality between countries."},
+      {"text": "The average temperature of a country over the course of a year", "isCorrect": false, "feedback": "Average temperature is a climate statistic, unrelated to the Gini coefficient, which measures income or wealth inequality."},
+      {"text": "The total land area of a country", "isCorrect": false, "feedback": "Land area is a physical geography measure -- the Gini coefficient specifically concerns income or wealth distribution."},
+      {"text": "The percentage of a country's population living in cities", "isCorrect": false, "feedback": "That describes an urbanization rate, a different statistic from the Gini coefficient, which measures income inequality."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "On the standard Gini coefficient scale, what does a value closer to 1 (or 100, depending on the scale used) generally indicate?",
+    "options": [
+      {"text": "A high level of income inequality, with income concentrated among relatively few people", "isCorrect": true, "feedback": "Correct -- a value near 0 would instead indicate near-perfect income equality across the population."},
+      {"text": "A perfectly equal distribution of income across the entire population", "isCorrect": false, "feedback": "A value near 1 indicates HIGH inequality -- a value closer to 0 would instead represent near-perfect equality."},
+      {"text": "The country's total population size", "isCorrect": false, "feedback": "The Gini coefficient doesn't measure total population -- it specifically measures the degree of income or wealth inequality."},
+      {"text": "The country's overall unemployment rate", "isCorrect": false, "feedback": "Unemployment rate is a separate labor statistic -- the Gini coefficient specifically measures income distribution inequality."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do economists sometimes caution against using the Gini coefficient as the sole measure of a country's economic wellbeing?",
+    "options": [
+      {"text": "It measures relative income distribution but doesn't capture absolute living standards, meaning a country could have relatively low inequality while still having widespread poverty, or vice versa", "isCorrect": true, "feedback": "Correct -- this is why the Gini coefficient is often used alongside other measures, like GDP per capita or poverty rates, for a fuller economic picture."},
+      {"text": "The Gini coefficient is a flawless, all-encompassing measure that perfectly captures every aspect of economic wellbeing", "isCorrect": false, "feedback": "This overstates the Gini coefficient's scope -- it specifically measures relative inequality, not absolute prosperity or poverty levels, which is exactly the caution economists raise."},
+      {"text": "The Gini coefficient cannot be calculated for any country in the world", "isCorrect": false, "feedback": "The Gini coefficient is, in fact, calculated and published regularly for most countries -- this claim is inaccurate."},
+      {"text": "The Gini coefficient only applies to measuring rainfall distribution across a country's regions", "isCorrect": false, "feedback": "The Gini coefficient's standard economic application concerns income or wealth distribution, not rainfall distribution."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This measures how evenly, or unevenly, income is spread out across a country's population.", "medium": "This statistic captures whether a country's income is spread fairly evenly or concentrated among just a few people.", "hard": "Think about whether this kind of statistic more plausibly describes how resources are shared among a country's people, or something else entirely about the physical characteristics of the place itself."},
+    "medium": {"easy": "A higher number on this scale means income is more unevenly spread out, concentrated among fewer people.", "medium": "Getting closer to the top of the scale signals more concentrated, unevenly distributed income, rather than an even split.", "hard": "Consider what the very bottom of this scale would mean for how income is shared, and then reason about what a value climbing toward the opposite end must logically represent instead."},
+    "hard": {"easy": "This number only shows how evenly income is spread out -- it doesn't actually tell you if people overall are rich or poor.", "medium": "This measure only tells you about the SPREAD of income, not whether people overall are actually well-off or struggling financially.", "hard": "Think about the difference between a measure of how something is shared among a population and a measure of how much of that something there actually is to go around -- and what gap that difference could leave if you only looked at one of them."}
+  }
+},
+{
+  "topic": "subsistence versus commercial agriculture",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What best describes 'subsistence agriculture'?",
+    "options": [
+      {"text": "Farming primarily to feed the farmer's own family, with little or no surplus sold commercially", "isCorrect": true, "feedback": "Correct -- subsistence farming is common in many parts of the developing world, where farmers grow food mainly for their own household's needs."},
+      {"text": "Large-scale farming specifically designed to sell crops for maximum profit on the global market", "isCorrect": false, "feedback": "That describes commercial agriculture -- subsistence agriculture is instead focused on feeding the farmer's own household, not maximizing market profit."},
+      {"text": "Farming that occurs exclusively in greenhouses using hydroponic technology", "isCorrect": false, "feedback": "Subsistence agriculture is defined by its purpose (feeding the farmer's family), not by a specific farming technology like hydroponics."},
+      {"text": "A government program that pays farmers not to grow any crops", "isCorrect": false, "feedback": "Subsistence agriculture is about farming primarily for household consumption -- it isn't a government payment program to leave land unused."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does commercial agriculture typically differ from subsistence agriculture?",
+    "options": [
+      {"text": "Commercial agriculture is primarily oriented toward producing crops or livestock to sell for profit, often at a much larger scale and with greater use of machinery", "isCorrect": true, "feedback": "Correct -- commercial farms are typically geared toward efficiency and market sale, unlike subsistence farms, which prioritize feeding the farming household."},
+      {"text": "Commercial agriculture and subsistence agriculture are simply two names for the identical farming approach", "isCorrect": false, "feedback": "They differ significantly in scale, purpose, and methods -- one is market-oriented, the other is household-consumption-oriented."},
+      {"text": "Commercial agriculture only occurs in countries with no roads or infrastructure", "isCorrect": false, "feedback": "Commercial agriculture actually typically relies heavily on infrastructure, like roads and transport networks, to move goods to market -- the opposite of this claim."},
+      {"text": "Subsistence agriculture always produces a larger total crop yield than commercial agriculture", "isCorrect": false, "feedback": "Commercial agriculture, with its larger scale and mechanization, generally produces significantly higher total yields than subsistence farming, not the reverse."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why might a shift from subsistence to commercial agriculture in a developing region bring both economic benefits and new risks for local farmers?",
+    "options": [
+      {"text": "While commercial agriculture can raise farmer incomes and boost overall food production, it can also expose farmers to volatile global market prices and reduce the household's direct food security if crop sales fail or prices crash", "isCorrect": true, "feedback": "Correct -- this tradeoff is a key reason agricultural development policy often carefully weighs commercialization against maintaining food security for local farming communities."},
+      {"text": "Commercial agriculture provides only benefits for farmers, with absolutely no associated risks of any kind", "isCorrect": false, "feedback": "This ignores well-documented risks, such as market price volatility, that come with shifting toward commercially oriented farming."},
+      {"text": "Subsistence agriculture is always more profitable overall than commercial agriculture", "isCorrect": false, "feedback": "Commercial agriculture, oriented toward market sale, is generally associated with higher potential income than subsistence farming, which prioritizes household consumption over profit."},
+      {"text": "There is no meaningful difference in risk exposure between subsistence and commercial farming approaches", "isCorrect": false, "feedback": "These two approaches carry meaningfully different risk profiles -- commercial farming introduces market-price exposure that subsistence farming, focused on direct consumption, doesn't carry in the same way."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This type of farming is mainly meant to feed the farmer's own family, not to sell for profit.", "medium": "This approach to farming focuses on producing just enough food for the farming household itself.", "hard": "This farming type is defined by its purpose -- household consumption -- not by a specific technology or a government payment scheme."},
+    "medium": {"easy": "One type of farming is mainly about selling crops for money on a big scale; the other is mainly about feeding one's own family.", "medium": "One approach is oriented toward selling large volumes of crops on the market; the other is oriented toward feeding the farmer's own household.", "hard": "The distinction is one of purpose and scale -- market-oriented, often mechanized, large-scale production versus household-consumption-oriented, smaller-scale production -- not simply two names for an identical practice."},
+    "hard": {"easy": "Selling crops for money can help farmers earn more, but it also means their income can crash if market prices drop suddenly.", "medium": "Selling crops commercially can boost a farmer's income, but it can also leave them more exposed to big swings in market prices that subsistence farming wouldn't expose them to.", "hard": "The tradeoff involves potential income and productivity gains from market orientation weighed against new exposure to global price volatility and reduced direct household food security if sales underperform -- not a claim of pure benefit, guaranteed higher subsistence profitability, or equivalent risk exposure."}
+  }
+},
+{
+  "topic": "cash crops",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a 'cash crop'?",
+    "options": [
+      {"text": "A crop grown primarily to be sold for profit, rather than for the farmer's own direct consumption", "isCorrect": true, "feedback": "Correct -- common examples of cash crops include coffee, cotton, cocoa, and sugar, which are typically grown for sale rather than the farmer's own table."},
+      {"text": "A type of currency used exclusively in agricultural trading", "isCorrect": false, "feedback": "'Cash crop' refers to a type of crop grown for sale, not a form of currency."},
+      {"text": "A crop that can only be harvested using cash payments to workers", "isCorrect": false, "feedback": "The term describes the crop's economic PURPOSE (being grown for sale), not a specific payment method used to harvest it."},
+      {"text": "Any crop grown exclusively for a farmer's own household consumption", "isCorrect": false, "feedback": "This describes the opposite concept -- a cash crop is grown to be SOLD, not primarily for the farmer's own household consumption."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of the following are commonly grown around the world specifically as cash crops? (Select all that apply)",
+    "options": [
+      {"text": "Coffee", "isCorrect": true, "feedback": "Correct -- coffee is one of the most widely traded cash crops globally, grown across many tropical regions specifically for export sale."},
+      {"text": "Cotton", "isCorrect": true, "feedback": "Correct -- cotton is grown primarily to be sold and processed into textiles, making it a classic cash crop."},
+      {"text": "Cocoa", "isCorrect": true, "feedback": "Correct -- cocoa is grown largely for sale and export to be processed into chocolate and other products."},
+      {"text": "A home vegetable garden grown purely for a single family's own meals", "isCorrect": false, "feedback": "A small home garden grown only for a family's own consumption is the opposite of a cash crop, which is grown specifically to be sold."},
+      {"text": "Wild plants that grow without any human cultivation", "isCorrect": false, "feedback": "A cash crop is deliberately cultivated by farmers for sale -- uncultivated wild plants don't fit this definition."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can heavy reliance on a single cash crop for export create economic vulnerability for a developing country's economy?",
+    "options": [
+      {"text": "The country's export revenue becomes closely tied to that one crop's global market price, so a price crash or a bad harvest can significantly damage the national economy, with little built-in diversification to fall back on", "isCorrect": true, "feedback": "Correct -- this vulnerability is a key reason many development economists encourage countries to diversify their agricultural exports and broader economies, rather than depending heavily on a single cash crop."},
+      {"text": "Cash crop exports are always completely immune to any changes in global market prices", "isCorrect": false, "feedback": "This is inaccurate -- cash crop prices on the global market can and do fluctuate significantly, which is precisely the source of the economic vulnerability."},
+      {"text": "Countries that grow cash crops never engage in any international trade", "isCorrect": false, "feedback": "This is the opposite of reality -- cash crops are, by definition, grown specifically for sale, often through international trade and export."},
+      {"text": "Relying on a single cash crop guarantees permanent, steadily increasing national income with no risk", "isCorrect": false, "feedback": "This ignores the well-documented risk of price volatility and harvest failure associated with heavy reliance on a single export crop."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This kind of crop is grown mainly to be sold, not to be eaten by the farmer's own family.", "medium": "This type of crop is grown specifically with the intention of selling it for money, often as an export.", "hard": "Consider whether this term is naming a type of currency, a way of paying farm workers, or instead describing why a farmer chooses to grow a particular crop in the first place."},
+    "medium": {"easy": "Think about crops that get turned into things like chocolate, clothing, and your morning drink -- these are typically grown to be sold, not eaten by the farmer.", "medium": "Look for crops that are typically processed into traded goods like chocolate, textiles, or beverages, rather than a small garden grown just to feed one household.", "hard": "For each item, ask whether it's a crop deliberately planted with the intent of trading or selling it to others, or whether it's grown only for one household's own table, or not cultivated by people at all."},
+    "hard": {"easy": "If a country depends on selling just one type of crop, its whole economy can suffer a lot if that crop's price drops or the harvest fails.", "medium": "If a country's export income depends heavily on just one crop, a price crash or bad growing season for that crop can seriously hurt the whole economy.", "hard": "Think about what happens to a household's finances if nearly all of its income comes from a single source, then apply that same logic to a country whose export earnings depend heavily on one crop."}
+  }
+},
+{
+  "topic": "the informal economy",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the 'informal economy'?",
+    "options": [
+      {"text": "Economic activity that takes place outside of official government regulation, taxation, and record-keeping", "isCorrect": true, "feedback": "Correct -- the informal economy can include a wide range of activities, from street vending to unregistered small businesses and casual labor."},
+      {"text": "Economic activity that is fully registered, taxed, and regulated by the government", "isCorrect": false, "feedback": "That describes the FORMAL economy -- the informal economy is defined by operating largely outside of official government regulation and taxation."},
+      {"text": "A country's total amount of foreign aid received each year", "isCorrect": false, "feedback": "Foreign aid is a specific type of international financial flow, unrelated to the concept of unregulated informal economic activity."},
+      {"text": "The stock market and other formal financial trading systems", "isCorrect": false, "feedback": "Formal financial markets are a highly regulated part of the formal economy -- the informal economy is defined by its lack of official regulation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In many developing countries, why does the informal economy often make up a very large share of total employment?",
+    "options": [
+      {"text": "Formal job opportunities are often limited relative to the size of the workforce, so many people turn to informal work, like street vending or unregistered small trades, to earn a living", "isCorrect": true, "feedback": "Correct -- this is why the informal economy is frequently studied as a major, if difficult-to-measure, component of many developing economies."},
+      {"text": "Governments in these countries actively require all citizens to work only in the informal economy", "isCorrect": false, "feedback": "The informal economy typically emerges from a lack of sufficient formal opportunities, not from a government mandate requiring informal work."},
+      {"text": "The informal economy makes up a large share of employment only in the wealthiest countries in the world", "isCorrect": false, "feedback": "The informal economy is typically proportionally LARGER in developing economies, not concentrated in the wealthiest countries."},
+      {"text": "Informal economic activity is entirely illegal everywhere it occurs, with no legal gray areas", "isCorrect": false, "feedback": "Much informal economic activity exists in a legal gray area, being unregistered or untaxed rather than always being outright illegal."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does a large informal economy present a genuine policy challenge for national governments, beyond simply lost tax revenue?",
+    "options": [
+      {"text": "Because informal workers often lack legal protections, benefits, and access to formal credit, a large informal sector can also make it harder for governments to accurately measure economic conditions and design effective economic policy", "isCorrect": true, "feedback": "Correct -- this dual challenge, worker vulnerability and reduced government visibility into the true economy, is why many governments actively study ways to support a gradual transition toward greater formalization."},
+      {"text": "A large informal economy has no real connection to worker protections or government policy planning", "isCorrect": false, "feedback": "This significantly understates the issue -- a large informal sector is closely tied to worker vulnerability and reduced accuracy of national economic data used for policy planning."},
+      {"text": "Workers in the informal economy always receive identical legal protections and benefits as formal sector workers", "isCorrect": false, "feedback": "This is the opposite of a key concern -- informal sector workers typically LACK the legal protections and benefits available to formal sector workers."},
+      {"text": "Governments always have complete, perfectly accurate data on all informal economic activity", "isCorrect": false, "feedback": "By its nature, the informal economy is difficult to measure precisely, which is exactly why it complicates accurate government economic data collection."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This kind of economic activity happens outside official government registration, taxes, and records.", "medium": "This type of work often isn't officially registered, taxed, or tracked by the government.", "hard": "This concept concerns a lack of official regulation and record-keeping in economic activity, not foreign aid or formal stock markets."},
+    "medium": {"easy": "When there aren't enough official jobs for everyone, many people find work outside the official system just to get by.", "medium": "When the formal job market can't absorb everyone who needs work, many people turn to unregistered jobs and small trades instead.", "hard": "The driver is a shortfall of formal-sector job opportunities relative to the labor force, pushing workers toward unregistered economic activity, not a government mandate, wealthy-country concentration, or blanket illegality."},
+    "hard": {"easy": "Workers outside the official system often don't get legal protections or benefits, and it's harder for the government to even know what's really going on in the economy.", "medium": "Workers in this sector often lack legal protections and benefits, and it also makes it harder for the government to get an accurate picture of the overall economy.", "hard": "The challenge combines worker vulnerability (lack of legal protections, benefits, and credit access) with reduced governmental visibility into true economic conditions, complicating effective policymaking -- not an absence of connection, equal protections, or perfectly accurate government data."}
+  }
+}
+]

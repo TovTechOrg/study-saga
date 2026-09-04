@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the limit as x approaches infinity for rational functions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "For a rational function (a fraction of two polynomials), when finding the limit as x approaches infinity, you primarily need to focus on:",
+    "options": [
+      {"text": "The highest-degree (leading) terms in the numerator and denominator", "isCorrect": true, "feedback": "Correct -- as x grows extremely large, lower-degree terms become relatively insignificant compared to the highest-degree terms, which dominate the function's behavior at infinity."},
+      {"text": "Only the constant terms (terms with no x) in the numerator and denominator", "isCorrect": false, "feedback": "This is backwards -- constant terms actually become RELATIVELY INSIGNIFICANT as x approaches infinity; it's specifically the HIGHEST-DEGREE terms that dominate and determine the limit's behavior."},
+      {"text": "The exact numerical value of x itself at some specific finite point", "isCorrect": false, "feedback": "This isn't relevant for a limit AT INFINITY -- you're specifically examining behavior as x grows WITHOUT BOUND, not evaluating at some specific finite x value."},
+      {"text": "The color used to graph the function", "isCorrect": false, "feedback": "Graph color is a purely visual/stylistic choice with no mathematical bearing on the actual calculated limit value."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Find the limit as x approaches infinity of (3x²+5)/(x²-2).",
+    "options": [
+      {"text": "3", "isCorrect": true, "feedback": "Correct -- since both numerator and denominator have the same highest degree (x²), the limit equals the ratio of their leading coefficients: 3/1=3."},
+      {"text": "Infinity (no finite limit exists)", "isCorrect": false, "feedback": "This would be correct if the NUMERATOR had a HIGHER degree than the denominator, but here both have the SAME degree (x²), resulting in a finite limit (3), not infinity."},
+      {"text": "0", "isCorrect": false, "feedback": "This would be correct if the DENOMINATOR had a higher degree than the numerator, but here both have the SAME degree (x²), resulting in a finite nonzero limit (3), not 0."},
+      {"text": "5/-2 = -2.5", "isCorrect": false, "feedback": "This incorrectly uses only the CONSTANT terms (5 and -2), rather than correctly using the LEADING (highest-degree) coefficients (3 and 1), which actually determine the limit at infinity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For the limit as x approaches infinity of a rational function, there are three distinct cases based on comparing the numerator's and denominator's degrees: numerator degree HIGHER (limit is infinity), numerator degree LOWER (limit is 0), or EQUAL degrees (limit equals ratio of leading coefficients). Explain the underlying mathematical reasoning for why EQUAL degrees specifically produces a finite, nonzero limit (rather than 0 or infinity).",
+    "options": [
+      {"text": "When both the numerator and denominator have the SAME highest degree, their highest-degree terms grow at the exact SAME RATE as x approaches infinity, meaning their RATIO approaches a stable, finite, non-zero value (specifically, the ratio of their leading coefficients), rather than one 'winning out' completely over the other (which would happen with different, unequal degrees)", "isCorrect": true, "feedback": "Correct -- this understanding of RELATIVE GROWTH RATES (same-degree terms growing proportionally at the same rate, causing their ratio to stabilize at a finite value) provides the underlying mathematical justification for why equal numerator/denominator degrees specifically produce this particular type of finite, nonzero limit, distinct from the other two possible outcomes."},
+      {"text": "Equal degrees would actually always produce a limit of exactly infinity, identical to when the numerator has higher degree", "isCorrect": false, "feedback": "This isn't accurate -- EQUAL degrees specifically produce a FINITE, nonzero limit value (the ratio of leading coefficients), NOT infinity -- infinity specifically results when the numerator has a HIGHER degree than the denominator, a different scenario."},
+      {"text": "Equal degrees would actually always produce a limit of exactly 0, identical to when the denominator has higher degree", "isCorrect": false, "feedback": "This isn't accurate -- EQUAL degrees specifically produce a FINITE, nonzero limit (generally), NOT 0 -- a limit of 0 specifically results when the DENOMINATOR has a HIGHER degree than the numerator, a different scenario."},
+      {"text": "This mathematical reasoning about relative growth rates has no actual connection to explaining this specific limit behavior pattern", "isCorrect": false, "feedback": "This isn't accurate -- this reasoning about RELATIVE GROWTH RATES of same-degree terms is DIRECTLY and specifically connected to and PROVIDES THE UNDERLYING EXPLANATION for why equal-degree rational functions produce this particular finite, nonzero limit behavior at infinity."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "As the independent variable grows unboundedly, the polynomial terms of maximal degree asymptotically dominate the function's overall behavior.", "medium": "As x gets super huge, the terms with the biggest exponents matter way more than the smaller terms.", "easy": "As x gets huge, the terms with the biggest exponents matter most."},
+    "medium": {"hard": "Compare the highest-degree terms present in both the numerator and denominator, then form the ratio of their respective leading coefficients.", "medium": "Since both the top and bottom have an x² term, just divide their leading coefficients (the numbers in front) directly.", "easy": "Since both have x², divide the leading coefficients: 3 divided by 1 equals 3."},
+    "hard": {"hard": "Consider how identical polynomial degree between numerator and denominator implies their dominant terms increase proportionally at matching rates, causing their quotient to converge rather than diverge or vanish.", "medium": "When the top and bottom both have the same 'biggest' power of x, they grow at basically the same speed as x gets huge, so dividing them settles down to one steady number instead of blowing up or shrinking to zero.", "easy": "When top and bottom have the same biggest power, they grow at the same speed, settling to one steady number."}
+  }
+}
+]

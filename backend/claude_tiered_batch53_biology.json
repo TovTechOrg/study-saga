@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of cellular respiration converting glucose into usable energy",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main purpose of cellular respiration?",
+    "options": [
+      {"text": "To convert glucose and oxygen into usable energy (ATP) for the cell", "isCorrect": true, "feedback": "Correct -- cellular respiration breaks down glucose in the presence of oxygen to produce ATP, the cell's main energy currency."},
+      {"text": "To convert carbon dioxide into glucose using sunlight", "isCorrect": false, "feedback": "That describes photosynthesis, essentially the reverse process of cellular respiration."},
+      {"text": "To break down proteins into amino acids", "isCorrect": false, "feedback": "That describes protein digestion, a different process from cellular respiration, which specifically breaks down glucose for energy."},
+      {"text": "To copy a cell's DNA before division", "isCorrect": false, "feedback": "That describes DNA replication, an unrelated process to cellular respiration's energy-production function."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Cellular respiration can occur aerobically (with oxygen) or anaerobically (without oxygen, as in fermentation). Why does aerobic respiration produce far more ATP per glucose molecule than anaerobic respiration?",
+    "options": [
+      {"text": "Aerobic respiration fully breaks down glucose using oxygen through additional biochemical pathways (like the Krebs cycle and electron transport chain), extracting much more of the energy stored in glucose than the more limited anaerobic process", "isCorrect": true, "feedback": "Correct -- this more complete extraction of glucose's chemical energy, made possible by oxygen's role in additional respiratory pathways, is exactly why aerobic respiration yields significantly more ATP than anaerobic fermentation."},
+      {"text": "Anaerobic respiration actually produces more ATP than aerobic respiration", "isCorrect": false, "feedback": "This is backwards -- aerobic respiration produces SIGNIFICANTLY MORE ATP (about 15-18 times more) per glucose molecule than anaerobic respiration."},
+      {"text": "Oxygen has no actual role in how much ATP is produced during respiration", "isCorrect": false, "feedback": "Oxygen plays a CRUCIAL role -- its presence enables additional energy-extracting pathways that produce far more ATP than anaerobic processes alone."},
+      {"text": "Both types of respiration produce exactly the same amount of ATP per glucose molecule", "isCorrect": false, "feedback": "This isn't accurate -- aerobic and anaerobic respiration produce dramatically different amounts of ATP per glucose molecule, with aerobic being far more productive."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "During intense exercise, muscle cells sometimes switch to anaerobic respiration (producing lactic acid) even though oxygen is still available in the body. Why might muscle cells use this less energy-efficient pathway during intense exertion?",
+    "options": [
+      {"text": "Anaerobic respiration can produce ATP much more QUICKLY than aerobic respiration, even though it's less efficient overall, which helps meet the sudden, urgent energy demand during intense short-term exertion", "isCorrect": true, "feedback": "Correct -- this speed-versus-efficiency tradeoff explains why muscles rely on rapid (though less efficient) anaerobic respiration during intense, short bursts of activity when energy demand outpaces what aerobic respiration alone can quickly supply."},
+      {"text": "During intense exercise, the body actually has no oxygen available anywhere at all", "isCorrect": false, "feedback": "This isn't quite accurate -- oxygen is still present in the body during intense exercise; the muscle cells' demand for ATP can simply exceed what aerobic respiration alone can supply quickly enough."},
+      {"text": "Anaerobic respiration is always more efficient than aerobic respiration, so it's always the better choice", "isCorrect": false, "feedback": "This is inaccurate -- anaerobic respiration is actually LESS efficient (produces less ATP per glucose) than aerobic respiration; its main advantage is speed, not efficiency."},
+      {"text": "This switch to anaerobic respiration has no actual connection to the muscle's energy demands during exercise", "isCorrect": false, "feedback": "This switch is directly connected to meeting rapid energy demand -- it's precisely the muscle's need for quick ATP production during intense exertion that drives this shift."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This metabolic process oxidizes glucose to generate the cell's primary energy currency molecule.", "medium": "This process breaks down sugar to make energy the cell can actually use.", "easy": "This process breaks down sugar to make energy the cell can use."},
+    "medium": {"hard": "Consider how additional biochemical pathways enabled by oxygen allow for more thorough extraction of the chemical energy stored within a glucose molecule.", "medium": "Having oxygen lets the cell use extra steps to squeeze out a lot more energy from each sugar molecule.", "easy": "Having oxygen lets the cell squeeze a lot more energy out of each sugar molecule."},
+    "hard": {"hard": "Consider the tradeoff between the RATE of ATP production and the overall efficiency (total ATP yield) of a given metabolic pathway under conditions of urgent energy demand.", "medium": "The quicker (but less efficient) pathway can pump out energy faster, which really matters when muscles need energy fast during intense exercise.", "easy": "The quicker but less efficient pathway can make energy faster, which matters during intense exercise."}
+  }
+}
+]

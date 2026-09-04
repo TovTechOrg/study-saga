@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the distributive property",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The distributive property states that a(b + c) equals:",
+    "options": [
+      {"text": "ab + ac", "isCorrect": true, "feedback": "Correct -- the distributive property means multiplying 'a' by each term inside the parentheses separately, then adding the results."},
+      {"text": "a + b + c", "isCorrect": false, "feedback": "This doesn't correctly apply the multiplication of 'a' to both terms inside the parentheses -- it simply drops the multiplication entirely."},
+      {"text": "abc", "isCorrect": false, "feedback": "This incorrectly multiplies all three terms together, rather than distributing 'a' separately across the addition of b and c."},
+      {"text": "a(b) - a(c)", "isCorrect": false, "feedback": "This incorrectly uses subtraction instead of addition, which doesn't match the original expression's addition operation inside the parentheses."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Use the distributive property to expand: 4(x + 5)",
+    "options": [
+      {"text": "4x + 20", "isCorrect": true, "feedback": "Correct -- multiply 4 by x (getting 4x) and 4 by 5 (getting 20), then add the results together."},
+      {"text": "4x + 5", "isCorrect": false, "feedback": "This correctly distributes to the x term but forgets to also multiply the 4 by the 5."},
+      {"text": "x + 20", "isCorrect": false, "feedback": "This forgets to multiply the 4 by the x term, only applying it to the constant 5."},
+      {"text": "4x + 4 + 5", "isCorrect": false, "feedback": "This incorrectly adds an extra 4, rather than correctly multiplying 4 by 5 to get 20."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Use the distributive property to expand and simplify: 3(2x + 4) - 2(x - 1)",
+    "options": [
+      {"text": "4x + 14", "isCorrect": true, "feedback": "Correct -- 3(2x+4)=6x+12, and 2(x-1)=2x-2, so 6x+12-(2x-2)=6x+12-2x+2=4x+14."},
+      {"text": "4x + 10", "isCorrect": false, "feedback": "This doesn't correctly handle the subtraction sign when distributing the -2 across (x-1) -- check the sign on the constant term."},
+      {"text": "8x + 10", "isCorrect": false, "feedback": "This doesn't correctly combine the x terms (6x-2x=4x, not 8x)."},
+      {"text": "6x + 14", "isCorrect": false, "feedback": "This doesn't correctly subtract the 2x term from the first expression's 6x term."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This algebraic property permits multiplication across a sum by applying the multiplier individually to each addend before combining results.", "medium": "This property means multiplying the outside number by EACH term inside the parentheses separately.", "easy": "Multiply the outside number by each term inside the parentheses."},
+    "medium": {"hard": "Apply the outer coefficient individually to each term inside the parentheses, then combine the resulting products additively.", "medium": "Multiply 4 by x, then multiply 4 by 5, then add those two results.", "easy": "4 times x is 4x. 4 times 5 is 20. Add them: 4x+20."},
+    "hard": {"hard": "Distribute each coefficient across its respective parenthetical expression individually, carefully tracking sign changes, then combine like terms.", "medium": "Distribute the 3 into the first parentheses and the 2 into the second (watching the minus sign), then combine the x terms and the constants separately.", "easy": "3(2x+4)=6x+12. 2(x-1)=2x-2. Subtract: 6x+12-2x+2=4x+14."}
+  }
+}
+]

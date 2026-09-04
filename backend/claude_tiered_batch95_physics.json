@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between constructive and destructive wave interference in standing waves",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'standing wave' (like on a guitar string) is created when:",
+    "options": [
+      {"text": "Two identical waves traveling in opposite directions interfere with each other, creating a stable pattern that appears not to move", "isCorrect": true, "feedback": "Correct -- standing waves form from the interference of two waves of the same frequency/amplitude traveling in opposite directions, typically from a wave reflecting back on itself."},
+      {"text": "A single wave travels continuously in just one direction with no reflection at all", "isCorrect": false, "feedback": "This describes a simple traveling wave, not a standing wave, which specifically requires interference between waves moving in OPPOSITE directions."},
+      {"text": "All wave motion completely stops and the medium becomes perfectly still", "isCorrect": false, "feedback": "This isn't accurate -- a standing wave still involves active oscillation at many points (except at specific 'nodes'); it's the overall PATTERN that appears stationary, not literal cessation of all motion."},
+      {"text": "Two completely different, unrelated waves happen to be present simultaneously", "isCorrect": false, "feedback": "This isn't the defining characteristic -- specifically, a standing wave requires two IDENTICAL waves (same frequency/wavelength) traveling in OPPOSITE directions, not simply any two unrelated waves."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a standing wave, certain fixed points called 'nodes' show ZERO displacement/vibration at all times, while points called 'antinodes' show MAXIMUM displacement. Why do nodes specifically occur at these fixed locations, in terms of the interfering waves?",
+    "options": [
+      {"text": "At node locations, the two oppositely-traveling waves are always perfectly out of phase (crest meeting trough) at every moment in time, resulting in complete destructive interference (zero net displacement) at that specific fixed point", "isCorrect": true, "feedback": "Correct -- this specific, consistent destructive interference pattern occurring precisely at node locations (throughout the entire oscillation cycle) explains why these points show zero displacement, unlike antinodes, which experience consistent constructive interference instead."},
+      {"text": "Nodes actually occur where the two waves are perfectly IN phase (crest meeting crest) at all times", "isCorrect": false, "feedback": "This is backwards -- crest-meeting-crest (in phase) alignment specifically describes ANTINODES (maximum constructive interference), not nodes, which specifically result from crest-meeting-trough (out of phase) destructive interference."},
+      {"text": "The specific interference pattern between the two waves has no actual connection to where nodes and antinodes form", "isCorrect": false, "feedback": "This isn't accurate -- the SPECIFIC interference pattern (constructive vs. destructive) between the two component waves is DIRECTLY and centrally connected to and determines precisely where nodes and antinodes form along the standing wave."},
+      {"text": "Nodes and antinodes actually form completely randomly, with no predictable pattern or explanation", "isCorrect": false, "feedback": "This isn't accurate -- nodes and antinodes form at very PREDICTABLE, regularly-spaced locations, directly explained by the specific pattern of constructive/destructive interference between the two component waves, not randomly."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A guitar string fixed at both ends can only support standing wave patterns where NODES occur exactly at both fixed endpoints (since the string can't move at those fixed points). Why does this specific physical constraint (nodes required at both endpoints) explain why only certain specific wavelengths/frequencies ('harmonics') can actually form stable standing waves on that string, rather than any arbitrary wavelength?",
+    "options": [
+      {"text": "Since only certain specific wavelengths allow a node to naturally fall EXACTLY at both fixed endpoints simultaneously (given the string's fixed total length), only these specific 'allowed' wavelengths (and their corresponding frequencies, called harmonics) can form a stable, self-consistent standing wave pattern on that particular string, while other arbitrary wavelengths would fail to satisfy this required node-boundary condition at both ends", "isCorrect": true, "feedback": "Correct -- this crucial boundary condition requirement (nodes forced at both fixed endpoints) is exactly why musical instruments like guitars produce specific discrete, predictable harmonic frequencies rather than an arbitrary continuous range of possible frequencies for a given string length."},
+      {"text": "Any arbitrary wavelength can actually form a perfectly stable standing wave on a string fixed at both ends, with no restriction at all", "isCorrect": false, "feedback": "This isn't accurate -- this boundary condition (nodes required at both fixed ends) SPECIFICALLY RESTRICTS which wavelengths can form stable standing waves, meaning only certain specific 'allowed' wavelengths (harmonics) actually work, not any arbitrary wavelength."},
+      {"text": "This physical fixed-endpoint constraint has no actual connection to which specific frequencies/wavelengths can form on the string", "isCorrect": false, "feedback": "This isn't accurate -- this physical constraint (nodes required at both fixed endpoints) is DIRECTLY and specifically connected to and explains precisely which discrete frequencies/wavelengths (harmonics) can actually form stable standing waves on that string."},
+      {"text": "The string's fixed length has no actual connection to determining which specific wavelengths can form standing waves on it", "isCorrect": false, "feedback": "This isn't accurate -- the string's FIXED LENGTH is DIRECTLY and centrally connected to and specifically determines (in combination with the node-boundary requirement) exactly which specific wavelengths/harmonics can form stable standing waves on that particular string."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This stationary interference pattern emerges from the superposition of two counter-propagating waves sharing identical frequency and amplitude characteristics.", "medium": "This happens when a wave bounces back and combines with itself, creating a pattern that looks like it's staying still.", "easy": "This happens when a wave bounces back and combines with itself, creating a still-looking pattern."},
+    "medium": {"hard": "Consider the specific phase relationship (aligned crests/troughs vs. opposing crest-trough pairing) that would need to persist consistently at a fixed point for that location to always show zero net displacement.", "medium": "At these specific spots, one wave's high point always lines up with the other wave's low point, and they cancel each other out completely, every single time.", "easy": "At these spots, one wave's high point always lines up with the other's low point, canceling out."},
+    "hard": {"hard": "Consider how the requirement for the wave pattern to satisfy a fixed boundary condition (zero displacement) at two specific, separated points constrains the set of wavelengths capable of fitting that pattern consistently between those points.", "medium": "Only certain specific wave patterns actually 'fit' perfectly between the two fixed ends with a quiet spot exactly at each end -- other random wave sizes just wouldn't line up correctly.", "easy": "Only certain wave patterns fit perfectly between the two fixed ends with a quiet spot at each end."}
+  }
+}
+]

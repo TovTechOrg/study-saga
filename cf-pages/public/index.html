@@ -98,27 +98,6 @@
             z-index: 4;
         }
 
-        .neural-recent {
-            margin-top: 12px;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 6px;
-        }
-
-        .neural-recent-title {
-            font-size: 14px;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: #9ad1ff;
-            margin-bottom: 6px;
-        }
-
-        .recent-list-entry {
-            font-size: 13px;
-            color: #e7f5ff;
-            margin: 2px 0;
-        }
     </style>
 </head>
 
@@ -128,9 +107,41 @@
 
     <!-- Persistent navigation, hidden on the main menu -->
     <nav id="game-nav" class="game-nav" style="display: none;" aria-label="Game navigation">
-        <button type="button" id="game-nav-home-btn" class="game-nav-home-btn">Home</button>
+        <div class="game-nav-actions">
+            <button type="button" id="game-nav-home-btn" class="game-nav-home-btn">Home</button>
+            <button type="button" id="game-nav-help-btn" class="game-nav-home-btn">How to Play</button>
+        </div>
         <span id="game-nav-realm" class="game-nav-realm"></span>
     </nav>
+
+    <!-- How to Play (issue #17): content is rendered from COMBAT_STAT_EXPLANATIONS
+         in game-simple.js, the single source also used by the issue #16 tutorial,
+         so the two never drift apart. -->
+    <div id="how-to-play-modal" class="neural-modal" role="dialog" aria-modal="true" aria-labelledby="how-to-play-title">
+        <div class="neural-modal-content">
+            <div class="modal-label" id="how-to-play-title">How to Play</div>
+            <div id="how-to-play-body" class="how-to-play-body"></div>
+            <button id="replay-tutorial-btn" class="neural-btn" style="margin-top: 1.5rem;">Replay Tutorial</button>
+            <button id="close-how-to-play-btn" class="neural-btn" style="margin-top: 1rem;">Close</button>
+        </div>
+    </div>
+
+    <!-- First-run coach-mark tutorial (issue #16). Steps come from
+         TUTORIAL_STEPS in game-simple.js; content text doubles as the
+         accessible description since the highlight alone isn't a signal. -->
+    <div id="tutorial-overlay" class="tutorial-overlay" role="dialog" aria-modal="true" aria-labelledby="tutorial-step-text">
+        <div id="tutorial-highlight" class="tutorial-highlight" aria-hidden="true"></div>
+        <div id="tutorial-tooltip" class="tutorial-tooltip">
+            <p id="tutorial-step-text" class="tutorial-step-text"></p>
+            <div class="tutorial-tooltip-actions">
+                <!-- Next comes first in DOM order so trapFocus()'s auto-focus-first-
+                     focusable lands on Next (so Enter advances), not Skip; the
+                     "order" below keeps Skip appearing first visually anyway. -->
+                <button type="button" id="tutorial-next-btn" class="neural-btn">Next</button>
+                <button type="button" id="tutorial-skip-btn" class="tutorial-skip-btn">Skip tutorial</button>
+            </div>
+        </div>
+    </div>
 
     <!-- MAIN MENU SCREEN -->
     <div id="main-menu" data-screen="main_menu" style="display: block;">
@@ -139,16 +150,40 @@
                 KNOWLEDGE<span class="neural-subtitle">KEEPER</span>
             </h1>
             <p class="neural-version">Neural Intelligence v2.5</p>
-            <!-- VERSION label removed -->
             <button class="neural-btn" id="deploy-btn">
                 Deploy System
             </button>
             <p class="neural-btn-caption">Start a new game</p>
+            <p class="neural-btn-caption" id="test-output" role="status" aria-live="polite"></p>
             <div id="auth-status" style="margin-top: 2rem;">
                 <button type="button" id="sign-in-btn" class="game-nav-home-btn">Sign in with Google</button>
                 <p class="neural-btn-caption" id="auth-status-caption">Sign in to save your progress across devices</p>
                 <p class="auth-error" id="auth-status-error" role="alert" style="display: none;"></p>
             </div>
+            <button type="button" id="profile-panel-btn" class="game-nav-home-btn" style="margin-top: 1rem;">My Profile</button>
+            <button type="button" id="upgrade-shop-btn" class="game-nav-home-btn" style="margin-top: 1rem;">Upgrade Shop</button>
+        </div>
+    </div>
+
+    <!-- Profile / track record panel (issue #22) -->
+    <div id="profile-modal" class="neural-modal" role="dialog" aria-modal="true" aria-labelledby="profile-modal-title">
+        <div class="neural-modal-content">
+            <div class="modal-label" id="profile-modal-title">My Profile</div>
+            <div id="profile-modal-body" class="profile-modal-body"></div>
+            <button id="close-profile-btn" class="neural-btn" style="margin-top: 1.5rem;">Close</button>
+        </div>
+    </div>
+
+    <!-- Upgrade shop (issue #23): permanent, deterministic upgrades bought
+         with XP. Card grid populated from UPGRADE_CATALOG in game-simple.js
+         matching .syllabus-card's look so it reads as part of the same
+         product (style-neural.css). -->
+    <div id="upgrade-shop-modal" class="neural-modal" role="dialog" aria-modal="true" aria-labelledby="upgrade-shop-title">
+        <div class="neural-modal-content">
+            <div class="modal-label" id="upgrade-shop-title">Upgrade Shop</div>
+            <p class="upgrade-shop-balance">XP Balance: <span id="upgrade-shop-xp-balance">0</span></p>
+            <div id="upgrade-shop-grid" class="upgrade-shop-grid"></div>
+            <button id="close-upgrade-shop-btn" class="neural-btn" style="margin-top: 1.5rem;">Close</button>
         </div>
     </div>
 
@@ -171,14 +206,16 @@
                     <div class="hud-label">KnowledgeKeeper</div>
                     <img id="player-sprite" src="/static/images/player-sprite.png" alt="Player" class="neural-sprite">
                     <div class="player-info">
-                        <div class="hud-value">HP: <span id="player-hp">110/110</span></div>
+                        <div class="hud-value">Your HP: <span id="player-hp">110/110</span></div>
                         <div class="neural-progress-bar">
-                            <div id="player-hp-bar-inner" class="neural-progress-fill hp-fill" style="width: 100%;">
+                            <div id="player-hp-bar-inner" class="neural-progress-fill hp-fill" style="width: 100%;"
+                                role="progressbar" aria-valuemin="0" aria-valuemax="110" aria-valuenow="110" aria-label="Your HP">
                             </div>
                         </div>
-                        <div class="hud-value">CAP: <span id="player-cap">10/10</span></div>
+                        <div class="hud-value">CAP (actions): <span id="player-cap">10/10</span></div>
                         <div class="neural-progress-bar">
-                            <div id="player-cap-bar-inner" class="neural-progress-fill cap-fill" style="width: 100%;">
+                            <div id="player-cap-bar-inner" class="neural-progress-fill cap-fill" style="width: 100%;"
+                                role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="10" aria-label="Your CAP">
                             </div>
                         </div>
                     </div>
@@ -189,34 +226,62 @@
                     <div class="hud-label" id="enemy-name">Enemy</div>
                     <img id="enemy-sprite" src="/static/images/enemy-sprite.png" alt="Enemy" class="neural-sprite">
                     <div class="enemy-info">
-                        <div class="hud-value">HP: <span id="enemy-hp">80/80</span></div>
+                        <div class="hud-value">Enemy HP: <span id="enemy-hp">80/80</span></div>
                         <div class="neural-progress-bar">
-                            <div id="enemy-hp-bar-inner" class="neural-progress-fill hp-fill" style="width: 100%;">
+                            <div id="enemy-hp-bar-inner" class="neural-progress-fill hp-fill" style="width: 100%;"
+                                role="progressbar" aria-valuemin="0" aria-valuemax="80" aria-valuenow="80" aria-label="Enemy HP">
                             </div>
                         </div>
-                        <div class="hud-value">Resolve: <span id="enemy-resolve">50/100</span></div>
+                        <div class="hud-value">Resolve: <span id="enemy-resolve">50/100</span> <span id="enemy-resolve-annotation" class="resolve-annotation" aria-live="polite"></span></div>
                         <div class="neural-progress-bar">
-                            <div id="enemy-resolve-bar-inner" class="neural-progress-fill resolve-fill" style="width: 50%;">
+                            <div id="enemy-resolve-bar-inner" class="neural-progress-fill resolve-fill" style="width: 50%;"
+                                role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Enemy Resolve">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="combat-actions-row">
-                <button class="neural-action-btn" id="attack-btn">Attack</button>
-                <button class="neural-action-btn" id="defend-btn">Recharge (CAP)</button>
-                <button class="neural-action-btn" id="skill-btn">Use Ability</button>
+            <div id="score-display" class="score-display">
+                Score: <span id="player-score">0</span>
+                <span id="score-delta-annotation" class="score-delta-annotation" aria-live="polite"></span>
+                <span id="streak-display" class="streak-display" aria-live="polite"></span>
             </div>
+
+            <div class="combat-actions-row">
+                <button class="neural-action-btn" id="attack-btn" aria-describedby="attack-btn-desc">
+                    <span class="action-btn-label">Attack</span>
+                    <span class="action-btn-cost" aria-hidden="true" id="attack-btn-cost">3 CAP · 15 dmg</span>
+                </button>
+                <button class="neural-action-btn" id="defend-btn" aria-describedby="defend-btn-desc">
+                    <span class="action-btn-label">Recharge</span>
+                    <span class="action-btn-cost" aria-hidden="true" id="defend-btn-cost">free · +5 CAP</span>
+                </button>
+                <button class="neural-action-btn" id="skill-btn" aria-describedby="skill-btn-desc">
+                    <span class="action-btn-label">Use Ability</span>
+                    <span class="action-btn-cost" aria-hidden="true" id="skill-btn-cost">5 CAP · 25 dmg</span>
+                </button>
+            </div>
+            <span id="attack-btn-desc" class="sr-only">Costs 3 CAP, deals 15 damage</span>
+            <span id="defend-btn-desc" class="sr-only">Free, restores 5 CAP</span>
+            <span id="skill-btn-desc" class="sr-only">Costs 5 CAP, deals 25 damage</span>
+
+            <p id="action-afford-reason" class="action-afford-reason" role="status" aria-live="polite"></p>
+            <p class="cap-disclaimer">A wrong answer still costs CAP -- the risk is in answering, not just in missing.</p>
 
             <div id="hints-budget-bar" class="hints-budget-bar">
                 <span>Simple Hints: <b id="hints-simple-remaining">3</b></span>
                 <span>Deep Hints: <b id="hints-hard-remaining">1</b></span>
                 <span>Credits: <b id="hints-credits">0</b></span>
             </div>
+
+            <p id="idle-nudge-announcer" class="sr-only" role="status" aria-live="polite"></p>
         </div>
 
-        <div id="battle-log-content" class="battle-log"></div>
+        <div class="battle-log-panel">
+            <h3 class="battle-log-heading">Battle Log</h3>
+            <div id="battle-log-content" class="battle-log" role="log" aria-live="polite" aria-atomic="false" aria-relevant="additions"></div>
+        </div>
 
         <!-- Standardized Neural Modals -->
         <div id="feedback-modal" class="neural-modal" role="dialog" aria-modal="true" aria-labelledby="feedback-title">
@@ -230,6 +295,14 @@
         <div id="quiz-modal" class="neural-modal" role="dialog" aria-modal="true" aria-labelledby="quiz-modal-title">
             <div class="neural-modal-content">
                 <div class="modal-label" id="quiz-modal-title">Quiz Challenge</div>
+                <!-- Per-tier question timer (issue #29). Numeric text is the
+                     primary signal (works identically regardless of motion
+                     preference); the bar's sweep is decorative and disabled
+                     under prefers-reduced-motion in CSS. -->
+                <div id="quiz-timer" class="quiz-timer" style="display: none;">
+                    <div class="quiz-timer-track"><div id="quiz-timer-bar" class="quiz-timer-bar"></div></div>
+                    <span id="quiz-timer-text" class="quiz-timer-text" role="timer" aria-live="off"></span>
+                </div>
                 <div id="quiz-question" class="quiz-question"></div>
                 <div id="quiz-options" class="quiz-options-grid"></div>
                 <button id="close-quiz-btn" class="neural-btn" style="margin-top: 2rem;">Close</button>
@@ -237,13 +310,23 @@
         </div>
     </div>
 
-    <!-- Victory Screen -->
+    <!-- Victory / Defeat Screens (issue #21): identical structure, populated
+         by the one shared renderRunSummary()/handleRunOutcome() in
+         game-simple.js rather than two copies that could drift. -->
     <div id="victory-screen" data-screen="victory">
         <div class="victory-container">
             <h2>Victory!</h2>
-            <p>Congratulations, you have defeated the enemy!</p>
+            <div class="run-summary" id="victory-summary" tabindex="-1">
+                <div class="run-summary-score">Score: <span id="victory-summary-score">0</span></div>
+                <div class="run-summary-stats" id="victory-summary-stats"></div>
+            </div>
             <div id="victory-results-list" class="level-results-list"></div>
-            <button class="neural-btn" onclick="backToMenu()">Return to Main Menu</button>
+            <div class="end-screen-actions">
+                <button class="neural-btn" id="victory-play-again-btn">Play Again (Same Realm)</button>
+                <button class="neural-btn" id="victory-change-realm-btn">Change Realm</button>
+                <button class="neural-btn" id="victory-upgrade-shop-btn">Upgrade Shop</button>
+                <button class="neural-btn" onclick="backToMenu()">Return to Main Menu</button>
+            </div>
         </div>
     </div>
 
@@ -251,9 +334,17 @@
     <div id="defeat-screen" data-screen="defeat">
         <div class="defeat-container">
             <h2>Defeat</h2>
-            <p>Better luck next time!</p>
+            <div class="run-summary" id="defeat-summary" tabindex="-1">
+                <div class="run-summary-score">Score: <span id="defeat-summary-score">0</span></div>
+                <div class="run-summary-stats" id="defeat-summary-stats"></div>
+            </div>
             <div id="defeat-results-list" class="level-results-list"></div>
-            <button class="neural-btn" onclick="backToMenu()">Return to Main Menu</button>
+            <div class="end-screen-actions">
+                <button class="neural-btn" id="defeat-play-again-btn">Play Again (Same Realm)</button>
+                <button class="neural-btn" id="defeat-change-realm-btn">Change Realm</button>
+                <button class="neural-btn" id="defeat-upgrade-shop-btn">Upgrade Shop</button>
+                <button class="neural-btn" onclick="backToMenu()">Return to Main Menu</button>
+            </div>
         </div>
     </div>
 

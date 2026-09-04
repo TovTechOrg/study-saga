@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of power as the rate of doing work",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In physics, power is defined as:",
+    "options": [
+      {"text": "The rate at which work is done, or energy is transferred, per unit of time", "isCorrect": true, "feedback": "Correct -- power = work / time, measuring how quickly energy is transferred or work is accomplished."},
+      {"text": "The total amount of work done, regardless of how long it takes", "isCorrect": false, "feedback": "That describes work (or energy) itself, not power -- power specifically incorporates the TIME factor as well."},
+      {"text": "The distance an object travels", "isCorrect": false, "feedback": "Distance is a separate physical quantity from power, which specifically measures the rate of work/energy transfer over time."},
+      {"text": "The mass of an object being moved", "isCorrect": false, "feedback": "Mass is a separate physical property from power, which concerns the RATE of work being done, not simply an object's mass."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two workers each lift identical boxes to the same height, doing the same amount of work. Worker A takes 5 seconds, while Worker B takes 10 seconds. Which worker exerted more power, and why?",
+    "options": [
+      {"text": "Worker A, since power = work/time, and completing the same work in less time results in a higher power output", "isCorrect": true, "feedback": "Correct -- since both workers did the same amount of work, but Worker A did it in less time, Worker A's power output (work divided by time) is higher."},
+      {"text": "Worker B, since taking more time means using more power overall", "isCorrect": false, "feedback": "This is backwards -- taking MORE time to do the same work actually means LESS power (since power = work/time, and a larger time value in the denominator gives a smaller result)."},
+      {"text": "Both workers exerted exactly the same amount of power", "isCorrect": false, "feedback": "Since they did the same work in DIFFERENT amounts of time, their power outputs are actually different -- power specifically depends on time, not just the amount of work done."},
+      {"text": "Power cannot be determined without knowing the exact weight of the boxes", "isCorrect": false, "feedback": "Since the work done is stated to be equal for both workers, you can directly compare their power using just the given work and time values, without needing box weight specifically."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A machine performs 500 Joules of work in 5 seconds. It's then modified to perform the same 500 Joules of work in only 2 seconds. By what factor did the machine's power output increase?",
+    "options": [
+      {"text": "2.5 times (from 100 W to 250 W)", "isCorrect": true, "feedback": "Correct -- original power = 500/5 = 100 W; new power = 500/2 = 250 W; 250/100 = 2.5 times increase."},
+      {"text": "2 times", "isCorrect": false, "feedback": "This doesn't correctly calculate the ratio between the two power values (100 W and 250 W)."},
+      {"text": "5 times", "isCorrect": false, "feedback": "This doesn't correctly result from comparing the actual calculated power values before and after the modification."},
+      {"text": "It stayed exactly the same, since the work done didn't change", "isCorrect": false, "feedback": "This is incorrect -- while the WORK stayed the same, the TIME decreased significantly, which means the POWER (work/time) actually increased substantially."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity represents the temporal rate at which energy transfer or mechanical work is accomplished.", "medium": "This measures how quickly work gets done, not just how much work total.", "easy": "This measures how quickly work gets done, not just how much."},
+    "medium": {"hard": "Apply the power formula (work divided by time) to both scenarios, then compare the resulting values directly.", "medium": "Divide the same amount of work by each worker's respective time to compare their power outputs.", "easy": "Same work, less time means more power -- Worker A took less time."},
+    "hard": {"hard": "Calculate power for both scenarios using the formula, then determine the ratio between the resulting values.", "medium": "Calculate power before (500 divided by 5) and after (500 divided by 2), then find how many times bigger the second value is.", "easy": "500/5=100W before. 500/2=250W after. Divide 250 by 100 to find the factor."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between real and virtual images formed by lenses/mirrors",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What distinguishes a 'real' image from a 'virtual' image in optics?",
+    "options": [
+      {"text": "A real image is formed by actual converging light rays and can be projected onto a screen, while a virtual image cannot", "isCorrect": true, "feedback": "Correct -- real images form where light rays genuinely intersect/converge, allowing them to be captured on a screen, unlike virtual images."},
+      {"text": "A virtual image can always be projected onto a screen, while a real image cannot", "isCorrect": false, "feedback": "This is backwards -- REAL images can be projected onto a screen, while VIRTUAL images specifically cannot, since virtual images don't involve actual converging light rays at that location."},
+      {"text": "Real and virtual images are actually identical, with no meaningful optical difference", "isCorrect": false, "feedback": "These are genuinely DIFFERENT types of images with distinct optical properties -- specifically regarding whether light rays actually converge at the image location or not."},
+      {"text": "A real image can only be seen by looking directly into a mirror", "isCorrect": false, "feedback": "This isn't the defining characteristic -- the key distinction is whether light rays ACTUALLY CONVERGE (real) or only appear to diverge from a point (virtual), not simply whether you're looking into a mirror."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A flat (plane) mirror always produces a virtual image of an object, never a real one. Why does a flat mirror's optical geometry prevent it from ever forming a real image?",
+    "options": [
+      {"text": "Light rays reflecting off a flat mirror diverge (spread apart) after reflection, only appearing to an observer's eye to originate from a point BEHIND the mirror, rather than actually converging at any real point in front of the mirror", "isCorrect": true, "feedback": "Correct -- this specific reflective geometry of a flat mirror, causing rays to diverge rather than converge, is precisely why it can only ever produce virtual (not real) images, regardless of the object's position."},
+      {"text": "Flat mirrors actually always produce real images, never virtual ones", "isCorrect": false, "feedback": "This is backwards -- flat (plane) mirrors specifically and exclusively produce VIRTUAL images, never real ones, due to their particular light-reflecting geometry."},
+      {"text": "The type of image a mirror produces has no actual connection to the mirror's specific shape/geometry", "isCorrect": false, "feedback": "This isn't accurate -- a mirror's SPECIFIC SHAPE/GEOMETRY (flat vs. curved) is DIRECTLY connected to and determines whether it can produce real images, virtual images, or potentially both depending on conditions."},
+      {"text": "Virtual images are actually just as capable of being projected onto a screen as real images are", "isCorrect": false, "feedback": "This isn't accurate -- virtual images specifically CANNOT be projected onto a screen (since no actual light convergence occurs at that apparent image location), unlike real images, which can."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Unlike a flat mirror, a concave (curved inward) mirror CAN produce either a real OR a virtual image, depending specifically on whether the object is placed farther than or closer than the mirror's focal point. Why does this dependency on object position (relative to the focal point) make sense in terms of the mirror's light-converging geometry?",
+    "options": [
+      {"text": "When an object is beyond the focal point, reflected light rays actually converge in front of the mirror (forming a real image), but when the object is within the focal point, the reflected rays diverge in a way that only appears to converge behind the mirror (forming a virtual image), similar to a flat mirror's behavior", "isCorrect": true, "feedback": "Correct -- this position-dependent behavior, based specifically on whether the object is inside or outside the mirror's focal point, elegantly demonstrates how a single curved mirror's geometry can produce fundamentally different image types depending on this specific positional relationship."},
+      {"text": "A concave mirror's image type is actually completely independent of the object's specific position relative to the mirror", "isCorrect": false, "feedback": "This isn't accurate -- a concave mirror's resulting image type (real vs virtual) is SPECIFICALLY AND DIRECTLY dependent on the object's position relative to the mirror's focal point, not independent of it."},
+      {"text": "Concave mirrors can actually only ever produce virtual images, never real ones, just like flat mirrors", "isCorrect": false, "feedback": "This isn't accurate -- concave mirrors specifically CAN produce REAL images (unlike flat mirrors), depending on the object's position relative to the focal point."},
+      {"text": "The focal point has no actual connection to determining what type of image a concave mirror will produce", "isCorrect": false, "feedback": "This isn't accurate -- the focal point is actually THE key determining factor for whether a concave mirror produces a real or virtual image, based on the object's position relative to it."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This image classification depends on whether reflected or refracted light rays genuinely intersect at a physical location or merely appear to originate from an apparent source point.", "medium": "This kind of image is made from light rays that actually cross paths and meet at a real spot.", "easy": "This kind of image is made from light rays that actually meet at a real spot."},
+    "medium": {"hard": "Consider the geometric behavior of light rays reflecting off a flat surface, specifically whether they converge toward a point in front of the mirror or diverge away from one.", "medium": "Light bouncing off a flat mirror just spreads back out instead of actually crossing paths anywhere in front of the mirror.", "easy": "Light bouncing off a flat mirror just spreads back out instead of actually meeting anywhere."},
+    "hard": {"hard": "Consider how the object's position relative to the focal point determines whether the mirror's curvature causes reflected rays to actually converge in front of the mirror or instead diverge as if from a point behind it.", "medium": "Depending on where you put the object relative to a special point on the mirror, the reflected light either actually crosses paths in front (real image) or just seems to come from behind (virtual image).", "easy": "Depending on where the object is, reflected light either actually crosses in front (real image) or just seems to come from behind (virtual)."}
+  }
+}
+]

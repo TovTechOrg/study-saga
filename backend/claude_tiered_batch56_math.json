@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the mean, median, and mode",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "How do you calculate the mean (average) of a set of numbers?",
+    "options": [
+      {"text": "Add all the numbers together, then divide by how many numbers there are", "isCorrect": true, "feedback": "Correct -- the mean is the sum of all values divided by the count of values."},
+      {"text": "List the numbers in order and pick the middle one", "isCorrect": false, "feedback": "That describes finding the MEDIAN, not the mean, which requires summing and dividing."},
+      {"text": "Find the number that appears most often", "isCorrect": false, "feedback": "That describes finding the MODE, not the mean, which requires summing and dividing."},
+      {"text": "Subtract the smallest number from the largest number", "isCorrect": false, "feedback": "That describes finding the RANGE, not the mean, which requires summing all values and dividing by count."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Find the median of this data set: 12, 5, 8, 20, 15.",
+    "options": [
+      {"text": "12", "isCorrect": true, "feedback": "Correct -- sorting the data gives 5, 8, 12, 15, 20, and the middle value (3rd of 5) is 12."},
+      {"text": "5", "isCorrect": false, "feedback": "This is the smallest value in the set, not the middle (median) value after sorting."},
+      {"text": "20", "isCorrect": false, "feedback": "This is the largest value in the set, not the middle (median) value after sorting."},
+      {"text": "15", "isCorrect": false, "feedback": "This isn't the middle value -- after sorting (5,8,12,15,20), the middle (3rd) value is 12, not 15."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A data set is: 4, 4, 5, 6, 100. Why might the median (5) be a more useful measure of central tendency than the mean (23.8) for describing this particular data set?",
+    "options": [
+      {"text": "Because the outlier value (100) heavily skews the mean upward, making it unrepresentative of most of the data, while the median remains resistant to the outlier's influence", "isCorrect": true, "feedback": "Correct -- this resistance to outlier distortion is exactly why the median is often preferred over the mean when a data set contains extreme values that don't represent the typical/majority pattern."},
+      {"text": "The mean is always a better measure of central tendency in every single situation, without exception", "isCorrect": false, "feedback": "This isn't accurate -- while the mean is often useful, it can be significantly distorted by outliers (as in this example), making the median sometimes MORE representative of typical data."},
+      {"text": "The mean and median would actually be identical for this particular data set", "isCorrect": false, "feedback": "This isn't accurate -- calculating both shows they're quite different (mean=23.8, median=5) precisely BECAUSE of the outlier value's strong effect on the mean."},
+      {"text": "Outlier values have no actual effect on the calculated mean of a data set", "isCorrect": false, "feedback": "Outliers actually have a SIGNIFICANT effect on the mean (as clearly shown here), which is precisely the reason the median can sometimes be a more useful representative measure."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This central tendency measure is derived by aggregating all values additively and normalizing by the total count of observations.", "medium": "Add up all the numbers, then divide by the total count of numbers.", "easy": "Add up all the numbers, then divide by how many there are."},
+    "medium": {"hard": "Arrange the values in ascending numerical order, then identify the value occupying the exact middle position.", "medium": "Put the numbers in order from smallest to largest, then find the one right in the middle.", "easy": "Order them: 5,8,12,15,20. The middle one is 12."},
+    "hard": {"hard": "Consider how a value far removed from the rest of the data set disproportionately influences a sum-based average, unlike a position-based measure.", "medium": "Since 100 is so much bigger than the other numbers, it pulls the average way up, but the middle value doesn't get affected the same way.", "easy": "Since 100 is so much bigger than the rest, it pulls the average way up, but the middle value stays reasonable."}
+  }
+}
+]

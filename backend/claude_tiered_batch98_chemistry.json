@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between spontaneous and non-spontaneous reactions (Gibbs free energy)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'spontaneous' chemical reaction is one that:",
+    "options": [
+      {"text": "Occurs naturally on its own under given conditions, without requiring continuous outside energy input to proceed", "isCorrect": true, "feedback": "Correct -- spontaneous reactions proceed naturally in the favored direction once initiated, though they may still require some initial activation energy to get started."},
+      {"text": "Requires constant, continuous outside energy input to keep occurring", "isCorrect": false, "feedback": "That describes a NON-spontaneous reaction, not a spontaneous one, which specifically occurs naturally WITHOUT needing continuous outside energy input."},
+      {"text": "Always happens extremely quickly, within seconds", "isCorrect": false, "feedback": "This isn't accurate -- 'spontaneous' in this thermodynamic sense doesn't necessarily mean FAST -- some spontaneous reactions (like rusting) can actually occur very slowly, over months or years."},
+      {"text": "Never actually occurs under any circumstances", "isCorrect": false, "feedback": "This is essentially the opposite of what spontaneous means -- spontaneous reactions specifically DO occur naturally under the given conditions, not never occurring at all."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Whether a reaction is spontaneous depends on its Gibbs free energy change (ΔG), which combines both enthalpy (ΔH, heat) and entropy (ΔS, disorder) changes, via the equation ΔG=ΔH-TΔS. A reaction with NEGATIVE ΔG is spontaneous. Why can a reaction with a POSITIVE enthalpy change (endothermic, ΔH>0) still potentially be spontaneous overall?",
+    "options": [
+      {"text": "If the reaction's entropy INCREASE (ΔS) is sufficiently large (especially at higher temperatures, where the TΔS term becomes more significant), this positive entropy contribution can outweigh the positive enthalpy term, resulting in an overall NEGATIVE ΔG (spontaneous), despite the reaction being endothermic", "isCorrect": true, "feedback": "Correct -- this recognition that spontaneity depends on the COMBINED consideration of both enthalpy AND entropy changes (not enthalpy alone) explains why certain endothermic reactions can still be spontaneous, provided there's a sufficiently large accompanying entropy increase, particularly at higher temperatures."},
+      {"text": "A reaction with positive enthalpy change (endothermic) can actually never be spontaneous under any circumstances", "isCorrect": false, "feedback": "This isn't accurate -- certain endothermic reactions CAN still be spontaneous overall, specifically when accompanied by a sufficiently large entropy increase, which is precisely the point being illustrated by the ΔG=ΔH-TΔS equation."},
+      {"text": "Entropy change (ΔS) has no actual connection to whether an endothermic reaction might still be spontaneous overall", "isCorrect": false, "feedback": "This isn't accurate -- entropy change is DIRECTLY and centrally connected to and can specifically be the deciding factor explaining why certain endothermic reactions can still be spontaneous overall."},
+      {"text": "Temperature has no actual role in determining whether an endothermic reaction can become spontaneous", "isCorrect": false, "feedback": "This isn't accurate -- temperature (T) plays a DIRECT and significant role in the Gibbs free energy equation (via the TΔS term), specifically influencing whether a sufficiently large entropy contribution can overcome a positive enthalpy term to achieve overall spontaneity."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The dissolution of ammonium nitrate in water is a classic example of a spontaneous but endothermic process (it gets noticeably cold, yet occurs naturally without any prompting). Using the Gibbs free energy framework, explain why this specific process demonstrates that 'spontaneous' does NOT necessarily mean 'energetically favorable' in the simple sense of releasing heat.",
+    "options": [
+      {"text": "This example demonstrates that true thermodynamic spontaneity is determined by the COMBINED ΔG value (incorporating both enthalpy AND entropy), not by enthalpy (heat release) alone -- in this specific case, the significant entropy increase from the ordered solid dissolving into a more disordered solution state is large enough to make ΔG negative overall (spontaneous), DESPITE the process absorbing heat (positive ΔH) rather than releasing it", "isCorrect": true, "feedback": "Correct -- this classic, practical example (used in commercial instant cold packs) beautifully illustrates the important thermodynamic principle that true spontaneity depends on the complete Gibbs free energy calculation, not simply on whether a process releases or absorbs heat, correcting the common oversimplified assumption that spontaneous always means exothermic."},
+      {"text": "This process actually isn't truly spontaneous at all, despite appearing to occur naturally", "isCorrect": false, "feedback": "This isn't accurate -- this dissolution process IS genuinely, thermodynamically spontaneous (occurring naturally without external prompting), despite being endothermic -- this is precisely the interesting, instructive aspect of this classic example."},
+      {"text": "Entropy change actually plays no meaningful role in explaining this specific example's spontaneity", "isCorrect": false, "feedback": "This isn't accurate -- entropy change plays a CENTRAL, essential role in explaining this example's spontaneity, specifically being the key factor that outweighs the unfavorable (positive) enthalpy term to produce an overall negative, spontaneous ΔG value."},
+      {"text": "This example actually confirms that spontaneous processes must always release heat, contrary to what's being described", "isCorrect": false, "feedback": "This is exactly backwards from what this example demonstrates -- this example specifically shows that spontaneous processes do NOT necessarily need to release heat, since this particular process actually ABSORBS heat while still being genuinely spontaneous overall."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process proceeds under prevailing conditions without requiring sustained external energetic input to drive it forward.", "medium": "This is a reaction that just happens on its own, without needing continuous outside help to keep going.", "easy": "This is a reaction that happens on its own without continuous outside help."},
+    "medium": {"hard": "Consider how the temperature-multiplied entropy term in the Gibbs free energy equation can numerically dominate over an unfavorable enthalpy contribution when the entropy increase is substantial.", "medium": "If the disorder increase is big enough, especially at higher temperatures, it can outweigh the 'costs' of needing to absorb heat, still making the overall process spontaneous.", "easy": "If the disorder increase is big enough, it can outweigh needing to absorb heat, keeping the process spontaneous."},
+    "hard": {"hard": "Consider how the combined thermodynamic quantity (Gibbs free energy) integrates both energetic and entropic contributions, such that a process can be favorable overall even while individually unfavorable in one of those two component measures.", "medium": "Even though this process needs to soak up heat (which seems 'bad'), the huge jump in disorder from a neat solid becoming a messy dissolved solution is 'good' enough to make the whole thing happen naturally anyway.", "easy": "Even though this process absorbs heat, the big jump in disorder makes the whole thing happen naturally anyway."}
+  }
+}
+]

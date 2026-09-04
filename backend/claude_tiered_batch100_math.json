@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of matrix determinants and their geometric meaning",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "For a 2x2 matrix [[a,b],[c,d]], the determinant is calculated as:",
+    "options": [
+      {"text": "ad - bc", "isCorrect": true, "feedback": "Correct -- the determinant of a 2x2 matrix is found by multiplying the main diagonal elements and subtracting the product of the off-diagonal elements."},
+      {"text": "a + b + c + d", "isCorrect": false, "feedback": "This is simply adding all four elements together, not the correct determinant calculation, which specifically requires MULTIPLICATION (ad and bc) and subtraction."},
+      {"text": "ab - cd", "isCorrect": false, "feedback": "This doesn't correctly pair the elements -- the determinant specifically requires multiplying DIAGONAL elements (a×d and b×c), not elements from the same row."},
+      {"text": "a × b × c × d", "isCorrect": false, "feedback": "This multiplies all four elements together, not the correct determinant formula, which specifically requires TWO separate diagonal products (ad and bc) and then SUBTRACTION."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Calculate the determinant of the matrix [[4,3],[2,5]].",
+    "options": [
+      {"text": "14", "isCorrect": true, "feedback": "Correct -- using ad-bc: (4×5)-(3×2) = 20-6 = 14."},
+      {"text": "20", "isCorrect": false, "feedback": "This is just the value of 'ad' (4×5) alone, without subtracting 'bc' (3×2) as the full determinant formula requires."},
+      {"text": "26", "isCorrect": false, "feedback": "This incorrectly ADDS the two products (20+6) rather than correctly SUBTRACTING them (20-6) as the determinant formula requires."},
+      {"text": "6", "isCorrect": false, "feedback": "This is just the value of 'bc' (3×2) alone, not the correctly calculated full determinant."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Geometrically, a 2x2 matrix's determinant represents the (signed) area scaling factor applied to any shape when transformed by that matrix. If a matrix has a determinant of EXACTLY ZERO, what does this specifically indicate about the geometric transformation it represents?",
+    "options": [
+      {"text": "The transformation collapses/flattens any 2D shape down into a lower-dimensional form (like a line or a single point), since a zero area-scaling factor means all resulting shapes end up with zero actual area", "isCorrect": true, "feedback": "Correct -- a zero determinant indicates the matrix transformation is 'degenerate,' collapsing the normally 2-dimensional space down into a lower dimension (a line or point), which is precisely why such matrices also famously lack an inverse (since you can't 'un-collapse' a flattened shape back to its original form)."},
+      {"text": "A zero determinant actually indicates the transformation perfectly preserves the original shape's exact area, with no scaling occurring", "isCorrect": false, "feedback": "This isn't accurate -- a determinant of exactly 1 (not 0) would indicate area PRESERVATION -- a determinant of ZERO specifically indicates the resulting area becomes ZERO (a complete collapse/flattening), not exact preservation."},
+      {"text": "A zero determinant has no actual geometric meaning or interpretation at all", "isCorrect": false, "feedback": "This isn't accurate -- a zero determinant DOES have a very specific, meaningful geometric interpretation (indicating a dimension-collapsing, 'degenerate' transformation), not an absence of meaning."},
+      {"text": "A zero determinant indicates the transformation actually makes the resulting shape infinitely large", "isCorrect": false, "feedback": "This is backwards -- a zero determinant specifically indicates the resulting area becomes ZERO (shape collapses/flattens), not infinitely large -- an infinitely large scaling would correspond to a very different mathematical scenario."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This scalar value is computed via the cross-multiplication and subtraction of the matrix's diagonal element pairs.", "medium": "Multiply the two diagonal corners together, then subtract the product of the other two corners.", "easy": "Multiply the diagonal corners together, then subtract the other two corners' product."},
+    "medium": {"hard": "Substitute the specific matrix element values directly into the standard 2x2 determinant formula (ad-bc).", "medium": "Multiply 4 by 5, then multiply 3 by 2, then subtract the second result from the first.", "easy": "4×5=20, 3×2=6, then 20-6=14."},
+    "hard": {"hard": "Consider how a zero-valued area-scaling factor implies that the transformed image of any two-dimensional region necessarily occupies zero area, indicating a dimensional collapse.", "medium": "If the 'area multiplier' is zero, that means whatever shape you transform ends up completely flattened, with literally zero area left.", "easy": "If the area multiplier is zero, the shape ends up completely flattened with zero area."}
+  }
+}
+]

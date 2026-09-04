@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the sine, cosine, and tangent ratios (basic trigonometry)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a right triangle, the sine of an angle is defined as:",
+    "options": [
+      {"text": "The length of the opposite side divided by the length of the hypotenuse", "isCorrect": true, "feedback": "Correct -- sine (SOH from SOH-CAH-TOA) is Opposite over Hypotenuse."},
+      {"text": "The length of the adjacent side divided by the length of the hypotenuse", "isCorrect": false, "feedback": "That describes cosine (CAH), not sine."},
+      {"text": "The length of the opposite side divided by the length of the adjacent side", "isCorrect": false, "feedback": "That describes tangent (TOA), not sine."},
+      {"text": "The length of the hypotenuse divided by the length of the opposite side", "isCorrect": false, "feedback": "This is the reciprocal of the sine ratio (cosecant), not sine itself."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a right triangle, the side opposite a given angle is 6, and the hypotenuse is 10. What is the sine of that angle?",
+    "options": [
+      {"text": "0.6", "isCorrect": true, "feedback": "Correct -- sine = opposite/hypotenuse = 6/10 = 0.6."},
+      {"text": "1.67", "isCorrect": false, "feedback": "This results from dividing hypotenuse by opposite (10/6), which is the reciprocal of sine, not sine itself."},
+      {"text": "6", "isCorrect": false, "feedback": "This is just the opposite side length alone, without dividing by the hypotenuse as the sine ratio requires."},
+      {"text": "10", "isCorrect": false, "feedback": "This is just the hypotenuse length alone, without applying the sine ratio calculation."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A right triangle has a hypotenuse of 13 and one leg (adjacent to angle θ) of length 5. Using the Pythagorean theorem to find the missing leg (opposite to θ), what is tan(θ)?",
+    "options": [
+      {"text": "12/5 (2.4)", "isCorrect": true, "feedback": "Correct -- the missing leg is √(13²-5²)=√(169-25)=√144=12, so tan(θ) = opposite/adjacent = 12/5 = 2.4."},
+      {"text": "5/12", "isCorrect": false, "feedback": "This inverts the correct ratio -- tangent is opposite over adjacent (12/5), not adjacent over opposite."},
+      {"text": "5/13", "isCorrect": false, "feedback": "This is actually the cosine of θ (adjacent/hypotenuse), not the tangent."},
+      {"text": "12/13", "isCorrect": false, "feedback": "This is actually the sine of θ (opposite/hypotenuse), not the tangent."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This ratio relates the side facing away from the angle to the triangle's longest side, opposite the right angle.", "medium": "This ratio compares the side across from the angle to the longest side of the triangle.", "easy": "This ratio is the side across from the angle, divided by the longest side."},
+    "medium": {"hard": "Substitute the given opposite and hypotenuse lengths directly into the sine ratio definition.", "medium": "Divide the opposite side length by the hypotenuse length.", "easy": "Divide 6 by 10 to get 0.6."},
+    "hard": {"hard": "First apply the Pythagorean theorem to solve for the missing leg length, then substitute both legs into the tangent ratio definition (opposite over adjacent).", "medium": "First find the missing leg using a²+b²=c² (13²-5²), then divide that result by 5 for the tangent.", "easy": "First find the missing side: √(169-25)=12. Then tan(θ)=12/5."}
+  }
+}
+]

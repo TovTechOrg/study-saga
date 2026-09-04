@@ -1,0 +1,207 @@
+[
+{
+  "topic": "the difference between an element and a compound",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is an element?",
+    "options": [
+      {"text": "A pure substance made of only one type of atom", "isCorrect": true, "feedback": "Correct -- elements like oxygen or gold consist of a single type of atom."},
+      {"text": "A substance made of two or more different types of atoms chemically bonded", "isCorrect": false, "feedback": "That describes a compound, not an element."},
+      {"text": "A physical blend of two or more substances", "isCorrect": false, "feedback": "That describes a mixture, not an element."},
+      {"text": "Any liquid found in nature", "isCorrect": false, "feedback": "Elements aren't defined by being liquid -- they can be solid, liquid, or gas, and are defined by atom type."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Table salt (NaCl) is made of sodium and chlorine chemically bonded together. What is table salt classified as?",
+    "options": [
+      {"text": "A compound", "isCorrect": true, "feedback": "Correct -- it's made of two different elements chemically bonded in a fixed ratio."},
+      {"text": "An element", "isCorrect": false, "feedback": "Since it contains two different elements bonded together, it can't be classified as a single element."},
+      {"text": "A mixture", "isCorrect": false, "feedback": "Since sodium and chlorine are chemically bonded (not just physically combined), this is a compound, not a mixture."},
+      {"text": "An isotope", "isCorrect": false, "feedback": "An isotope refers to atoms of the same element with different neutron counts, unrelated to this scenario."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can't a compound be separated into its component elements by simple physical methods like filtering or evaporation?",
+    "options": [
+      {"text": "The elements are held together by chemical bonds, which require a chemical reaction to break", "isCorrect": true, "feedback": "Correct -- unlike a mixture, a compound's components are chemically joined and need a chemical process (not just physical separation) to split apart."},
+      {"text": "Compounds don't actually contain any real elements", "isCorrect": false, "feedback": "Compounds are indeed made of elements -- they're just chemically bonded together rather than loosely mixed."},
+      {"text": "Physical methods work perfectly fine to separate any compound", "isCorrect": false, "feedback": "This is incorrect -- physical methods like filtering work for mixtures, but compounds require chemical reactions to break their bonds."},
+      {"text": "Compounds have no measurable physical properties", "isCorrect": false, "feedback": "Compounds do have distinct measurable properties -- the separation issue is about chemical bonding, not a lack of properties."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This substance cannot be broken down further by ordinary chemical means -- it's already at its most basic form.", "medium": "This is a substance made of just one kind of atom.", "easy": "This is a substance made of only one type of atom, like pure gold."},
+    "medium": {"hard": "Since two different elements are chemically joined together in a fixed ratio, this fits a specific category distinct from a simple physical blend.", "medium": "Since two different elements are chemically bonded together here, this fits one specific category.", "easy": "Since two different elements are chemically joined together, this is a compound."},
+    "hard": {"hard": "Physical separation methods only work on components that are merely mixed, not chemically bonded -- breaking actual chemical bonds requires a chemical reaction instead.", "medium": "Since the elements are chemically stuck together, you need an actual chemical reaction, not just physical sorting, to pull them apart.", "easy": "Since the elements are chemically stuck together, you need a real chemical reaction to separate them, not just simple sorting."}
+  }
+},
+{
+  "topic": "chemical vs. physical properties",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a chemical property, not a physical one?",
+    "options": [
+      {"text": "Flammability (ability to burn)", "isCorrect": true, "feedback": "Correct -- burning transforms the substance into new substances, making flammability a chemical property."},
+      {"text": "Color", "isCorrect": false, "feedback": "Color can typically be observed without any chemical change occurring, making it a physical property."},
+      {"text": "Density", "isCorrect": false, "feedback": "Density is measurable without any chemical transformation, making it a physical property."},
+      {"text": "Melting point", "isCorrect": false, "feedback": "Melting point is observable without any chemical change occurring, making it a physical property."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why is 'reactivity with water' considered a chemical property rather than a physical one?",
+    "options": [
+      {"text": "Observing it requires the substance to undergo an actual chemical reaction, forming new substances", "isCorrect": true, "feedback": "Correct -- you can't observe this property without triggering an actual chemical change, which defines a chemical property."},
+      {"text": "Water is always involved in physical properties", "isCorrect": false, "feedback": "Water isn't specifically tied to physical properties in general -- what matters here is whether a reaction (chemical change) occurs."},
+      {"text": "Reactivity can be measured with just a ruler", "isCorrect": false, "feedback": "Measuring reactivity requires observing an actual reaction occurring, not simple physical measurement tools."},
+      {"text": "This is actually a physical property, not a chemical one", "isCorrect": false, "feedback": "Reactivity with water specifically requires a chemical transformation to observe, which is exactly what makes it a chemical property."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "You're given an unknown white powder and told to identify it using only physical properties. Which of the following tests would be appropriate to use?",
+    "options": [
+      {"text": "Measuring its melting point and density", "isCorrect": true, "feedback": "Correct -- these can be measured without permanently altering the substance's chemical identity."},
+      {"text": "Burning a sample of it to see if it ignites", "isCorrect": false, "feedback": "Burning triggers a chemical change, revealing a chemical property (flammability), not a physical one."},
+      {"text": "Mixing it with acid to see if it reacts", "isCorrect": false, "feedback": "Reacting with acid is a chemical property test, not a physical one."},
+      {"text": "Checking whether it decomposes when heated", "isCorrect": false, "feedback": "Decomposition is a chemical change, making this a chemical property test, not physical."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property can only be observed by actually transforming the substance into something new.", "medium": "This property involves the substance changing into a new substance to observe it.", "easy": "This property means the substance actually turns into something new when tested."},
+    "medium": {"hard": "The defining test for a chemical property is whether observing it necessarily involves the substance's molecules being rearranged into new substances.", "medium": "You can only see this property happen by letting the substance actually chemically transform.", "easy": "You have to let a real chemical change happen to observe this property."},
+    "hard": {"hard": "Choose the tests that reveal a measurable characteristic without permanently altering the substance's molecular identity.", "medium": "Look for the tests that don't require the substance to react or transform into something new.", "easy": "Pick the tests that don't involve burning, reacting, or breaking the substance apart."}
+  }
+},
+{
+  "topic": "the law of definite proportions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to the law of definite proportions, a specific chemical compound always contains its elements in what way?",
+    "options": [
+      {"text": "The same fixed ratio by mass, no matter the sample's source or size", "isCorrect": true, "feedback": "Correct -- every sample of a given pure compound has the same proportion of its component elements by mass."},
+      {"text": "A completely random ratio each time", "isCorrect": false, "feedback": "The whole point of this law is that the ratio is fixed and predictable, not random."},
+      {"text": "Different ratios depending on where the sample was collected", "isCorrect": false, "feedback": "The ratio stays the same regardless of the sample's source, which is the core idea of this law."},
+      {"text": "Equal amounts of every element in the periodic table", "isCorrect": false, "feedback": "This isn't what the law states -- it's about the fixed ratio between the SPECIFIC elements actually present in that compound."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If a sample of pure water always contains hydrogen and oxygen in a mass ratio of about 1:8, what does the law of definite proportions predict about a different water sample from a different source?",
+    "options": [
+      {"text": "It will also have hydrogen and oxygen in approximately a 1:8 mass ratio", "isCorrect": true, "feedback": "Correct -- pure water, regardless of source, always has this same fixed elemental mass ratio."},
+      {"text": "It could have any random ratio of hydrogen to oxygen", "isCorrect": false, "feedback": "The law specifically predicts a fixed, consistent ratio, not a random one."},
+      {"text": "It will contain no hydrogen at all", "isCorrect": false, "feedback": "Pure water always contains both hydrogen and oxygen in the same fixed ratio -- it wouldn't be water otherwise."},
+      {"text": "It will have a completely different chemical formula", "isCorrect": false, "feedback": "Pure water always has the same chemical formula (H₂O) and thus the same elemental mass ratio, regardless of source."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why was the law of definite proportions important historical evidence supporting the idea that matter is made of atoms?",
+    "options": [
+      {"text": "Fixed, consistent ratios suggested that elements combine in discrete, whole-number units (atoms) rather than in continuously variable amounts", "isCorrect": true, "feedback": "Correct -- if matter were infinitely divisible, there would be no clear reason for such consistent, fixed combining ratios."},
+      {"text": "It proved that atoms could be seen directly under a microscope", "isCorrect": false, "feedback": "This law was established well before atoms could be directly observed -- it was indirect evidence from mass ratios, not direct visual proof."},
+      {"text": "It showed that all elements have the exact same mass", "isCorrect": false, "feedback": "The law is about the ratio between elements in a specific compound, not about all elements sharing equal mass."},
+      {"text": "It disproved the existence of chemical compounds entirely", "isCorrect": false, "feedback": "This law actually supports and describes how compounds form, rather than disproving their existence."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This principle describes a consistent, unchanging mass relationship between the components of any pure sample of a given compound.", "medium": "The elements in a specific compound always combine in the exact same proportion by weight.", "easy": "The elements in a compound always combine in the exact same fixed proportion by weight."},
+    "medium": {"hard": "This law asserts the ratio remains fixed and reproducible across independent, unrelated samples of the same pure substance.", "medium": "Since it's the same pure compound, the elemental ratio should stay consistent no matter where the sample came from.", "easy": "Since it's still pure water, the ratio should stay the same no matter where the sample is from."},
+    "hard": {"hard": "Consistent, reproducible ratios across all samples are best explained if elements combine in fixed whole-number units, providing indirect support for particulate (atomic) matter.", "medium": "The fact that the ratio is always the exact same suggests elements combine in fixed little units, like atoms, rather than infinitely divisible amounts.", "easy": "The fact that the ratio never changes suggests elements combine in fixed small units, like atoms."}
+  }
+},
+{
+  "topic": "how temperature affects reaction rate at the particle level",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What generally happens to particles in a substance when its temperature increases?",
+    "options": [
+      {"text": "The particles move faster", "isCorrect": true, "feedback": "Correct -- higher temperature means particles have more kinetic energy and move more quickly."},
+      {"text": "The particles move slower", "isCorrect": false, "feedback": "Higher temperature actually speeds particles up, not slows them down."},
+      {"text": "The particles stop moving entirely", "isCorrect": false, "feedback": "Particles slow down and eventually approach minimal motion at very LOW temperatures, not high ones."},
+      {"text": "The particles change into a different substance", "isCorrect": false, "feedback": "Simple heating (without a chemical reaction) doesn't change what the particles chemically are -- it just increases their motion."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does increasing temperature generally speed up a chemical reaction?",
+    "options": [
+      {"text": "Faster-moving particles collide more often and with more energy, increasing the chance of successful reactions", "isCorrect": true, "feedback": "Correct -- both more frequent and more forceful collisions increase reaction rate."},
+      {"text": "Heat directly changes the chemical formula of the reactants", "isCorrect": false, "feedback": "Heat itself doesn't alter the reactants' formulas -- it increases their motion, leading to more effective collisions."},
+      {"text": "Heat removes all the reactant particles from the reaction", "isCorrect": false, "feedback": "Heat doesn't remove particles -- it increases their kinetic energy and collision frequency."},
+      {"text": "Heat has no real effect on particle behavior", "isCorrect": false, "feedback": "Heat directly increases particle motion, which is exactly why it affects reaction rate."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Not every collision between reactant particles results in a successful reaction, even at higher temperatures. Why?",
+    "options": [
+      {"text": "Particles must collide with enough energy (activation energy) and in the correct orientation for a reaction to occur", "isCorrect": true, "feedback": "Correct -- collision alone isn't enough; both sufficient energy and proper alignment of the colliding particles are needed."},
+      {"text": "All collisions always result in a successful reaction, without exception", "isCorrect": false, "feedback": "This isn't accurate -- many collisions fail to produce a reaction due to insufficient energy or poor orientation."},
+      {"text": "Only collisions happening at night are successful", "isCorrect": false, "feedback": "Time of day has no bearing on molecular collision success -- it depends on energy and orientation."},
+      {"text": "Reactions only occur if the container is a certain color", "isCorrect": false, "feedback": "Container color has no effect on whether a molecular collision leads to a successful reaction."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Added thermal energy translates directly into increased kinetic energy of the particles themselves.", "medium": "Heat energy gets converted into increased motion of the tiny particles.", "easy": "Heating something makes its tiny particles move around faster."},
+    "medium": {"hard": "Both collision frequency and the energy carried into each collision increase as temperature rises, both of which favor more successful reactions.", "medium": "Faster particles bump into each other more often and harder, which helps more reactions actually happen.", "easy": "Faster-moving particles bump into each other more often, which helps more reactions happen."},
+    "hard": {"hard": "A successful reaction requires both meeting a minimum energy threshold (activation energy) and colliding with the reactive parts of each molecule properly aligned.", "medium": "The colliding particles need enough energy AND need to hit each other at the right angle for a reaction to actually happen.", "easy": "The particles need enough energy and need to hit each other just right for a reaction to actually happen."}
+  }
+},
+{
+  "topic": "endothermic and exothermic changes of state",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Is melting an endothermic or exothermic process?",
+    "options": [
+      {"text": "Endothermic -- it absorbs energy from the surroundings", "isCorrect": true, "feedback": "Correct -- melting requires energy input to break the forces holding a solid's particles in fixed positions."},
+      {"text": "Exothermic -- it releases energy to the surroundings", "isCorrect": false, "feedback": "Melting actually absorbs energy to overcome the solid's particle bonds, making it endothermic, not exothermic."},
+      {"text": "Neither -- no energy is involved at all", "isCorrect": false, "feedback": "Energy is definitely involved in any state change -- melting specifically requires energy input."},
+      {"text": "It depends entirely on the substance's color", "isCorrect": false, "feedback": "Color has no bearing on whether melting is endothermic or exothermic -- this is a consistent property of the melting process itself."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Is freezing (liquid turning into solid) an endothermic or exothermic process?",
+    "options": [
+      {"text": "Exothermic -- it releases energy to the surroundings", "isCorrect": true, "feedback": "Correct -- particles slow down and release energy as they lock into a more ordered solid structure."},
+      {"text": "Endothermic -- it absorbs energy from the surroundings", "isCorrect": false, "feedback": "Freezing releases energy as particles settle into a more ordered solid arrangement, making it exothermic, not endothermic."},
+      {"text": "Neither -- freezing doesn't involve any energy transfer", "isCorrect": false, "feedback": "Freezing does involve an energy transfer -- specifically, energy is released to the surroundings."},
+      {"text": "It's always endothermic in cold climates and exothermic in warm ones", "isCorrect": false, "feedback": "The endothermic/exothermic classification of freezing doesn't depend on climate -- it's a consistent property of the process itself."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Sweating cools the human body as sweat evaporates from the skin. Based on this, is evaporation endothermic or exothermic, and why does it cool the skin?",
+    "options": [
+      {"text": "Endothermic -- evaporation absorbs heat energy from the skin to power the phase change, cooling the skin in the process", "isCorrect": true, "feedback": "Correct -- the energy needed to turn liquid sweat into vapor is drawn from the surrounding skin, lowering its temperature."},
+      {"text": "Exothermic -- evaporation releases heat onto the skin, which somehow cools it", "isCorrect": false, "feedback": "This is contradictory -- releasing heat onto skin would warm it, not cool it. Evaporation actually absorbs heat, which is why it's endothermic and cooling."},
+      {"text": "Neither -- the cooling sensation is purely psychological, unrelated to any real energy transfer", "isCorrect": false, "feedback": "This is a real physical effect due to a genuine energy transfer (heat absorption), not just a psychological sensation."},
+      {"text": "Exothermic, but the skin cools anyway due to sunlight exposure separately", "isCorrect": false, "feedback": "Sunlight isn't the relevant mechanism here -- the cooling directly results from evaporation absorbing heat from the skin, an endothermic process."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This state change requires energy input to overcome the forces holding particles in a rigid arrangement.", "medium": "This process needs added heat energy to loosen a solid's rigid particle arrangement.", "easy": "This process needs heat added to turn a solid into a liquid."},
+    "medium": {"hard": "This state change results in particles settling into a lower-energy, more ordered arrangement, releasing the difference as heat.", "medium": "As a liquid becomes a solid, its particles settle into place and release some energy as heat.", "easy": "As a liquid turns solid, it releases some heat energy into its surroundings."},
+    "hard": {"hard": "The phase change from liquid to gas requires energy input, and when that energy is drawn from the adjacent skin surface, the skin itself loses thermal energy and cools.", "medium": "Turning liquid sweat into vapor requires energy, and that energy gets pulled from the skin itself, cooling it down.", "easy": "Turning liquid sweat into vapor takes energy from the skin, which is what cools you down."}
+  }
+}
+]

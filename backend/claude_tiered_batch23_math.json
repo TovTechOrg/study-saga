@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of an outlier in a data set",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is an outlier in a data set?",
+    "options": [
+      {"text": "A value that is much higher or lower than most of the other values", "isCorrect": true, "feedback": "Correct -- outliers stand out as unusually different from the rest of the data."},
+      {"text": "The most common value in the data set", "isCorrect": false, "feedback": "That describes the mode, not an outlier."},
+      {"text": "The average of all the values", "isCorrect": false, "feedback": "That describes the mean, not an outlier."},
+      {"text": "The middle value when data is sorted", "isCorrect": false, "feedback": "That describes the median, not an outlier."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A data set is: 4, 5, 6, 5, 4, 45, 6. Which value is the outlier?",
+    "options": [
+      {"text": "45", "isCorrect": true, "feedback": "Correct -- 45 is dramatically larger than all the other values, which cluster between 4 and 6."},
+      {"text": "4", "isCorrect": false, "feedback": "4 appears multiple times and fits within the normal range of the rest of the data -- it isn't the outlier."},
+      {"text": "6", "isCorrect": false, "feedback": "6 appears multiple times and fits within the normal range of the rest of the data -- it isn't the outlier."},
+      {"text": "5", "isCorrect": false, "feedback": "5 appears multiple times and fits within the normal range of the rest of the data -- it isn't the outlier."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A data set has a mean of 20 without any outliers. If one extreme outlier value (like 200) is added, what generally happens to the mean, and why is the median often considered more resistant to this effect?",
+    "options": [
+      {"text": "The mean would increase significantly since it factors in every value's exact magnitude, while the median would shift much less since it only depends on the position of values, not their exact size", "isCorrect": true, "feedback": "Correct -- this is a key reason statisticians often prefer the median over the mean when a data set might contain outliers."},
+      {"text": "Both the mean and median would be affected identically by the outlier", "isCorrect": false, "feedback": "The mean and median actually respond very differently to outliers -- the mean is much more sensitive to extreme values than the median."},
+      {"text": "The mean would actually decrease significantly", "isCorrect": false, "feedback": "Adding a very large outlier value would pull the mean UP (increase it), not decrease it."},
+      {"text": "Neither the mean nor median would be affected by adding this outlier", "isCorrect": false, "feedback": "The mean, at least, would definitely be noticeably affected by adding such an extreme value -- it's the median that tends to resist this influence."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is a data point that deviates substantially from the overall pattern or cluster of the rest.", "medium": "This is a value that stands out as very different from the rest.", "easy": "This is the value that looks way different from all the others."},
+    "medium": {"hard": "Compare each value's magnitude to the general cluster of the rest of the data set.", "medium": "Look for the one number that doesn't fit in with the general cluster of the rest.", "easy": "Look for the one number that's way bigger than all the others."},
+    "hard": {"hard": "The mean incorporates the exact value of every data point (making it sensitive to extremes), while the median only depends on relative ORDER/position, largely insulating it from a single extreme value's magnitude.", "medium": "The mean gets pulled a lot by one huge number because it adds up every value, but the median barely changes since it just depends on the middle position.", "easy": "The mean gets pulled a lot by one huge number, but the median barely changes since it just cares about the middle position."}
+  }
+}
+]

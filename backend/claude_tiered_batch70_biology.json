@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the endocrine system's use of hormones for long-distance signaling",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What are hormones?",
+    "options": [
+      {"text": "Chemical messengers released into the bloodstream that regulate various body functions", "isCorrect": true, "feedback": "Correct -- hormones are produced by endocrine glands and travel through the blood to target cells elsewhere in the body."},
+      {"text": "Electrical signals that travel along nerve cells", "isCorrect": false, "feedback": "That describes nerve impulses (part of the nervous system), not hormones, which are specifically CHEMICAL messengers traveling via the bloodstream."},
+      {"text": "Structural proteins that make up muscle tissue", "isCorrect": false, "feedback": "Structural muscle proteins serve a different function -- hormones are specifically regulatory chemical messengers, not structural components."},
+      {"text": "Enzymes that break down food during digestion", "isCorrect": false, "feedback": "Digestive enzymes serve a different function -- hormones are specifically regulatory chemical messengers, not primarily digestive enzymes."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The nervous system uses fast electrical signals for rapid, short-term responses, while the endocrine system uses slower-acting hormones for more sustained, longer-term regulation. Why might the body benefit from having both of these distinct signaling systems, rather than relying on just one?",
+    "options": [
+      {"text": "Different physiological needs require different signaling speeds and durations -- rapid nerve signals are ideal for immediate reflexes, while hormones are better suited for gradual, sustained processes like growth or metabolism regulation", "isCorrect": true, "feedback": "Correct -- this complementary division of signaling roles allows the body to appropriately match its regulatory approach to the specific timescale and nature of what it needs to control."},
+      {"text": "The nervous and endocrine systems actually serve completely identical functions with no meaningful differences", "isCorrect": false, "feedback": "This isn't accurate -- these two systems have genuinely DIFFERENT characteristics (speed, duration) and are suited to different types of physiological regulation, not identical functions."},
+      {"text": "Having both systems provides no actual advantage over having just one signaling system", "isCorrect": false, "feedback": "This isn't accurate -- having both systems provides a significant advantage, allowing the body to appropriately handle both rapid, short-term needs AND slower, sustained regulatory needs."},
+      {"text": "The endocrine system is actually always faster-acting than the nervous system", "isCorrect": false, "feedback": "This is backwards -- the NERVOUS system is characteristically FASTER-acting (using rapid electrical signals), while the endocrine system is characteristically SLOWER but more sustained in its effects."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Hormones travel throughout the entire bloodstream, potentially reaching nearly every cell in the body, yet a specific hormone (like insulin) only affects certain target cells and not others. What explains this selective response, given that the hormone itself circulates everywhere?",
+    "options": [
+      {"text": "Only cells with the specific receptor proteins capable of binding that particular hormone will actually respond to its presence, meaning target specificity comes from receptor availability at the cellular level, not from the hormone's distribution pattern in the bloodstream", "isCorrect": true, "feedback": "Correct -- this receptor-based specificity mechanism explains how a hormone can circulate broadly throughout the body while still producing highly selective, targeted physiological effects only in cells equipped with the appropriate receptors."},
+      {"text": "The hormone actually only physically travels to certain specific parts of the body, never reaching other areas", "isCorrect": false, "feedback": "This isn't accurate -- hormones like insulin DO circulate throughout the ENTIRE bloodstream, reaching nearly all body regions; the SELECTIVITY comes from which cells have appropriate receptors, not from limited physical distribution."},
+      {"text": "All cells in the body actually respond identically to any given hormone that reaches them", "isCorrect": false, "feedback": "This isn't accurate -- cells respond SELECTIVELY based on whether they possess the appropriate receptor for a given hormone, not identically regardless of receptor presence."},
+      {"text": "Receptor proteins have no actual connection to explaining hormone target specificity", "isCorrect": false, "feedback": "Receptor proteins are actually THE central mechanism explaining hormone target specificity -- this is precisely why some cells respond to a circulating hormone while others do not."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These chemical signaling molecules are secreted by specialized glands and disseminated systemically via the circulatory system.", "medium": "These are chemical messages that travel through the blood to tell different parts of the body what to do.", "easy": "These are chemical messages that travel through the blood to different body parts."},
+    "medium": {"hard": "Consider how matching signaling speed and duration to the specific physiological need (immediate reflex vs. gradual, sustained regulation) optimizes overall bodily function.", "medium": "Quick nerve signals are great for split-second reactions, while slower hormone signals are better for things that need to happen gradually over time.", "easy": "Quick nerve signals work for split-second reactions, while hormones work better for gradual changes."},
+    "hard": {"hard": "Consider how the presence or absence of a specific molecular recognition site (receptor) on a cell's surface determines whether that cell can actually detect and respond to a given circulating signaling molecule.", "medium": "Only cells that have the right 'lock' (receptor) for that particular hormone 'key' will actually respond to it, even though the hormone reaches basically everywhere.", "easy": "Only cells with the right 'lock' (receptor) for that hormone will actually respond to it."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of arithmetic vs. geometric sequences",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In an arithmetic sequence, how do you get from one term to the next?",
+    "options": [
+      {"text": "By adding a constant value (the common difference)", "isCorrect": true, "feedback": "Correct -- arithmetic sequences increase or decrease by the same fixed amount between consecutive terms."},
+      {"text": "By multiplying by a constant value", "isCorrect": false, "feedback": "That describes a GEOMETRIC sequence, not an arithmetic one, which specifically uses addition, not multiplication."},
+      {"text": "By squaring the previous term", "isCorrect": false, "feedback": "Squaring isn't the defining operation for arithmetic sequences -- they use a constant additive difference between terms."},
+      {"text": "There is no consistent pattern between terms in an arithmetic sequence", "isCorrect": false, "feedback": "Arithmetic sequences DO have a consistent, defining pattern -- a constant value added between consecutive terms."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Given the sequence 3, 6, 12, 24, ..., is this an arithmetic or geometric sequence, and what is its common ratio or difference?",
+    "options": [
+      {"text": "Geometric, with a common ratio of 2 (each term is multiplied by 2)", "isCorrect": true, "feedback": "Correct -- checking: 6/3=2, 12/6=2, 24/12=2, confirming a consistent multiplicative ratio of 2, making this geometric."},
+      {"text": "Arithmetic, with a common difference of 3", "isCorrect": false, "feedback": "This isn't arithmetic -- the differences between terms (3, 6, 12) aren't constant, ruling out an arithmetic pattern; it's actually geometric with ratio 2."},
+      {"text": "Arithmetic, with a common difference of 2", "isCorrect": false, "feedback": "This isn't arithmetic at all -- the sequence has a constant RATIO (multiplication by 2), not a constant additive difference."},
+      {"text": "Geometric, with a common ratio of 3", "isCorrect": false, "feedback": "The common ratio here is actually 2 (each term doubles), not 3 -- check by dividing consecutive terms."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An arithmetic sequence starts at 5 with a common difference of 4. A geometric sequence starts at 5 with a common ratio of 2. What is the value of the 5th term in EACH sequence?",
+    "options": [
+      {"text": "Arithmetic: 21; Geometric: 80", "isCorrect": true, "feedback": "Correct -- Arithmetic: 5,9,13,17,21 (adding 4 each time). Geometric: 5,10,20,40,80 (multiplying by 2 each time)."},
+      {"text": "Arithmetic: 25; Geometric: 40", "isCorrect": false, "feedback": "This doesn't correctly compute either sequence's 5th term using the correct pattern rules."},
+      {"text": "Arithmetic: 20; Geometric: 160", "isCorrect": false, "feedback": "This doesn't correctly compute either sequence's 5th term -- recount using the correct starting value and pattern."},
+      {"text": "Arithmetic: 21; Geometric: 40", "isCorrect": false, "feedback": "The arithmetic value (21) is correct, but the geometric value should be 80 (5×2×2×2×2), not 40, which is only the 4th term."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This progression maintains a fixed additive increment between every pair of successive terms.", "medium": "Each term is found by adding the same fixed number to the term before it.", "easy": "Each term is found by adding the same number each time."},
+    "medium": {"hard": "Check whether the ratio between consecutive terms remains constant, which would indicate a geometric (multiplicative) rather than arithmetic (additive) pattern.", "medium": "Try dividing each term by the one before it -- if that ratio stays the same, it's geometric.", "easy": "Divide 6 by 3, then 12 by 6 -- both give 2, so it's geometric with ratio 2."},
+    "hard": {"hard": "Generate each sequence separately by repeatedly applying its respective rule (addition for arithmetic, multiplication for geometric) starting from the initial term.", "medium": "List out each sequence term by term: for arithmetic, keep adding 4; for geometric, keep multiplying by 2.", "easy": "Arithmetic: 5,9,13,17,21. Geometric: 5,10,20,40,80. Count to the 5th term in each."}
+  }
+}
+]

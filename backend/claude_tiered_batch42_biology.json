@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of osmosis and cell water balance",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is osmosis?",
+    "options": [
+      {"text": "The movement of water across a membrane from an area of lower solute concentration to higher solute concentration", "isCorrect": true, "feedback": "Correct -- osmosis is a special case of diffusion specifically involving water moving to balance solute concentrations."},
+      {"text": "The movement of solid particles through a cell wall", "isCorrect": false, "feedback": "Osmosis specifically concerns water movement, not solid particles."},
+      {"text": "The process of a cell dividing into two cells", "isCorrect": false, "feedback": "That describes cell division, an unrelated process to osmosis (which concerns water movement)."},
+      {"text": "The active transport of nutrients using energy", "isCorrect": false, "feedback": "Osmosis is a passive process (no energy required), unlike active transport."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A red blood cell is placed in a solution with a much higher solute concentration than the cell's interior. What will likely happen to the cell?",
+    "options": [
+      {"text": "The cell will shrink, as water moves out of the cell toward the higher solute concentration outside", "isCorrect": true, "feedback": "Correct -- since water moves toward higher solute concentration (via osmosis), the cell loses water and shrinks in this hypertonic environment."},
+      {"text": "The cell will swell and possibly burst, as water rushes into the cell", "isCorrect": false, "feedback": "This would occur in a solution with LOWER solute concentration than the cell (hypotonic), not higher -- here, water would move OUT of the cell instead."},
+      {"text": "The cell will remain completely unaffected, since solute concentration doesn't matter", "isCorrect": false, "feedback": "Solute concentration differences directly drive osmotic water movement -- the cell would definitely be affected in this scenario."},
+      {"text": "The cell will actively pump out its water content using energy", "isCorrect": false, "feedback": "Osmosis is a passive process that doesn't require the cell to expend energy -- water simply moves along its concentration gradient."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Freshwater fish constantly take in water via osmosis (since their body fluids are saltier than their surroundings), yet they don't swell up and burst. How do they typically manage this water balance?",
+    "options": [
+      {"text": "Their kidneys produce large amounts of dilute urine to actively excrete the excess water that continually enters via osmosis", "isCorrect": true, "feedback": "Correct -- freshwater fish have specialized kidney adaptations that allow them to expel large volumes of dilute urine, counteracting the constant osmotic water influx."},
+      {"text": "Freshwater fish don't actually experience any osmotic water influx at all", "isCorrect": false, "feedback": "Freshwater fish absolutely do experience constant osmotic water influx, due to their body fluids being saltier than their freshwater environment -- they've evolved mechanisms specifically to manage this."},
+      {"text": "Their cell membranes are completely impermeable to water", "isCorrect": false, "feedback": "Fish cell membranes are not impermeable to water -- osmosis still occurs, but the fish's kidneys actively compensate by excreting the excess water."},
+      {"text": "They periodically leave the water to avoid osmotic imbalance", "isCorrect": false, "feedback": "Freshwater fish don't need to leave the water to manage this -- they've evolved physiological adaptations (like producing dilute urine) that let them stay in water indefinitely."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the passive diffusion of water molecules specifically driven by differences in solute concentration across a semi-permeable membrane.", "medium": "This is water moving through a membrane toward the side with more dissolved stuff in it.", "easy": "This is water moving toward the side with more stuff dissolved in it."},
+    "medium": {"hard": "Since water follows its concentration gradient toward the region of higher solute concentration, determine which direction water would move relative to the cell.", "medium": "Water moves toward the saltier side, so figure out whether that means water leaves or enters the cell here.", "easy": "Water moves toward the saltier side -- here that's OUTSIDE the cell, so water leaves."},
+    "hard": {"hard": "Consider what physiological mechanism could continuously counteract a constant, unavoidable osmotic water influx without requiring the fish to alter its environment.", "medium": "Think about what organ the fish could use to actively get rid of extra water that keeps entering its body.", "easy": "Think about which organ could help the fish get rid of extra water that keeps coming in."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between simple harmonic motion period dependence for springs vs. pendulums",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "For a mass on a spring undergoing simple harmonic motion, the period (T=2π√(m/k)) depends on:",
+    "options": [
+      {"text": "The mass attached to the spring, and the spring's stiffness constant (k)", "isCorrect": true, "feedback": "Correct -- a spring's oscillation period specifically depends on both the attached mass and the spring's own stiffness (spring constant), unlike a pendulum's period."},
+      {"text": "Only the color of the spring", "isCorrect": false, "feedback": "Color has no physical bearing on oscillation period -- the period specifically depends on mass and spring stiffness (spring constant), not visual appearance."},
+      {"text": "Only the amplitude (how far the spring is stretched) of the oscillation", "isCorrect": false, "feedback": "For ideal simple harmonic motion, amplitude specifically does NOT affect the period -- the period depends instead on mass and spring constant, not on how far the spring happens to be stretched."},
+      {"text": "The exact time of day the experiment is performed", "isCorrect": false, "feedback": "Time of day has no physical bearing on a spring's oscillation period, which specifically depends on mass and spring stiffness (spring constant)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A simple pendulum's period (T=2π√(L/g)) depends specifically on its length (L) and local gravitational acceleration (g), but notably NOT on the mass of the pendulum bob. Why does this specific mass-independence for a PENDULUM contrast with a SPRING's period, which DOES specifically depend on mass?",
+    "options": [
+      {"text": "For a pendulum, the RESTORING FORCE (gravity's component along the swing path) and the pendulum's INERTIA (resistance to acceleration, also proportional to mass) both scale identically with mass, causing the mass terms to mathematically CANCEL OUT in the period formula -- unlike a spring, where the restoring force depends specifically on the SPRING'S properties (not the mass), while inertia still depends on mass, preventing this same cancellation", "isCorrect": true, "feedback": "Correct -- this specific mathematical/physical distinction (mass canceling out for a pendulum due to how gravity's force scales with mass, vs. not canceling out for a spring, where the restoring force comes from the spring itself rather than scaling with the oscillating mass) explains this genuinely interesting and non-obvious contrast between these two classic simple harmonic motion systems."},
+      {"text": "A pendulum's period actually also DOES depend significantly on the mass of its bob, contrary to what's described", "isCorrect": false, "feedback": "This isn't accurate -- a SIMPLE pendulum's period genuinely does NOT depend on bob mass (for the idealized case) -- this is a well-established, experimentally verified physical result, not an inaccurate claim."},
+      {"text": "A spring's period actually also does NOT depend on the attached mass, identical to a pendulum's mass-independence", "isCorrect": false, "feedback": "This isn't accurate -- a SPRING's period DOES specifically depend on the attached mass (unlike a pendulum's mass-independence), which is precisely the key contrasting difference being highlighted here between these two systems."},
+      {"text": "This contrast between spring and pendulum mass-dependence has no actual underlying physical/mathematical explanation", "isCorrect": false, "feedback": "This isn't accurate -- this contrast DOES have a specific, well-understood underlying physical/mathematical explanation, related to how the restoring force scales (or doesn't scale) with mass in each respective system."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A pendulum clock (relying on gravity-driven pendulum swings) would keep DIFFERENT time if moved to a location with different gravitational acceleration (like the Moon), while a mechanical watch using a balance wheel and SPRING (not dependent on gravity, per T=2π√(m/k)) would keep the SAME accurate time regardless of location/gravity. Why does this practical difference make engineering sense, based on each mechanism's underlying period formula?",
+    "options": [
+      {"text": "Since a pendulum's period formula explicitly includes gravitational acceleration (g) as a determining factor, changing the LOCAL gravity value (like on the Moon) would directly change the calculated period/timing, while a spring-based mechanism's period formula (depending only on mass and spring constant, NOT gravity) would remain completely unaffected by such a location/gravity change, explaining why spring-based watches are more reliably portable across different gravitational environments", "isCorrect": true, "feedback": "Correct -- this direct connection between each system's specific period formula (and which physical variables it actually depends on) and its resulting real-world PORTABILITY/reliability across different gravitational environments explains a genuinely practical, historically important engineering consideration in timekeeping device design."},
+      {"text": "Pendulum clocks would actually keep perfectly accurate, unchanged time regardless of being moved to a different gravitational environment", "isCorrect": false, "feedback": "This isn't accurate -- pendulum clocks WOULD keep DIFFERENT time in a different gravitational environment (like the Moon), precisely because their period formula directly depends on gravitational acceleration (g), unlike spring-based mechanisms."},
+      {"text": "Spring-based mechanical watches would actually also be significantly affected by changes in gravitational environment, identical to pendulum clocks", "isCorrect": false, "feedback": "This isn't accurate -- spring-based mechanisms specifically do NOT depend on gravitational acceleration in their period formula, meaning they would keep the SAME, unaffected accurate time even in different gravitational environments, unlike pendulum-based clocks."},
+      {"text": "This practical portability difference between pendulum and spring-based timekeeping mechanisms has no actual connection to their underlying period formulas", "isCorrect": false, "feedback": "This isn't accurate -- this practical portability difference is DIRECTLY and specifically connected to and EXPLAINED BY the different physical variables (gravity-dependent vs. gravity-independent) present in each mechanism's respective period formula."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This oscillatory period is governed jointly by the attached inertial mass and the restoring elastic constant characteristic of the spring itself.", "medium": "This depends on how heavy the object is and how stiff the spring itself is.", "easy": "This depends on how heavy the object is and how stiff the spring is."},
+    "medium": {"hard": "Compare how the mass variable appears (or fails to appear, due to cancellation) within each system's derivation, based on whether the restoring force itself is inherently mass-dependent (gravity) or mass-independent (spring stiffness).", "medium": "For a pendulum, gravity pulls harder on more mass, but more mass is also harder to move, so those two effects cancel out -- but a spring's pulling force doesn't care about mass at all, so there's nothing to cancel there.", "easy": "For a pendulum, the mass effects cancel out -- but a spring's force doesn't depend on mass, so nothing cancels."},
+    "hard": {"hard": "Consider how the presence or absence of a gravity-dependent term within each formula directly predicts whether relocating the device to a different gravitational field would alter its resulting oscillation period.", "medium": "Since the pendulum formula has gravity built right into it, moving somewhere with different gravity messes up its timing -- but the spring formula doesn't care about gravity at all, so it stays accurate anywhere.", "easy": "Since gravity is built into the pendulum formula, different gravity messes up its timing -- the spring formula doesn't care about gravity."}
+  }
+}
+]

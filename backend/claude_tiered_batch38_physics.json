@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a lens's focal length affecting magnification",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the 'focal length' of a lens?",
+    "options": [
+      {"text": "The distance from the lens at which parallel light rays converge to a single point", "isCorrect": true, "feedback": "Correct -- focal length is a key property determining how strongly a lens bends (converges or diverges) light."},
+      {"text": "The physical width of the lens itself", "isCorrect": false, "feedback": "Physical width is a separate dimension from focal length, which specifically relates to where light converges."},
+      {"text": "The weight of the lens", "isCorrect": false, "feedback": "Weight is unrelated to the optical property of focal length."},
+      {"text": "The color of light the lens can bend", "isCorrect": false, "feedback": "While different wavelengths can be focused slightly differently, focal length itself refers to a distance measurement, not a color property."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A lens with a very short focal length is often described as 'more powerful.' Why does a shorter focal length correspond to greater optical power?",
+    "options": [
+      {"text": "A shorter focal length means the lens bends light more sharply, converging it to a point more quickly and strongly", "isCorrect": true, "feedback": "Correct -- optical power is often defined as inversely related to focal length, so a shorter distance to the focal point indicates a stronger bending effect."},
+      {"text": "A shorter focal length means the lens bends light less, making it weaker", "isCorrect": false, "feedback": "This is backwards -- a SHORTER focal length actually indicates a MORE powerful lens that bends light more strongly, not less."},
+      {"text": "Focal length has no actual connection to a lens's optical power", "isCorrect": false, "feedback": "Focal length is actually directly and inversely related to a lens's optical power -- this is a fundamental relationship in optics."},
+      {"text": "A more powerful lens is always physically larger in size", "isCorrect": false, "feedback": "Physical size isn't necessarily what determines optical power -- it's specifically the focal length (how sharply the lens bends light) that determines power."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In a camera or telescope, using a lens with a longer focal length typically produces a more zoomed-in (magnified) image of a distant object, but with a narrower field of view. Why does increasing focal length trade off magnification against field of view in this way?",
+    "options": [
+      {"text": "A longer focal length spreads the projected image over a larger area for the same angular field, effectively 'zooming in' on a smaller portion of the original scene, which increases magnification but reduces the total scene captured", "isCorrect": true, "feedback": "Correct -- this trade-off between magnification and field of view is a fundamental optical relationship tied directly to focal length, applicable across cameras, telescopes, and other optical instruments."},
+      {"text": "Focal length has no actual connection to magnification or field of view", "isCorrect": false, "feedback": "Focal length is actually directly and fundamentally connected to both magnification and field of view in optical systems."},
+      {"text": "A longer focal length always captures a WIDER field of view, not narrower", "isCorrect": false, "feedback": "This is backwards -- a longer focal length typically narrows the field of view (more zoomed in), not widens it."},
+      {"text": "This trade-off only applies to telescopes, never to cameras", "isCorrect": false, "feedback": "This same fundamental optical trade-off applies broadly to cameras, telescopes, and other lens-based optical systems, not exclusively telescopes."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This distance measurement indicates where a lens brings parallel incoming light rays together.", "medium": "This is the distance from the lens to the point where light rays come together.", "easy": "This is the distance to where the lens focuses light to a point."},
+    "medium": {"hard": "A shorter distance to the convergence point implies a steeper bending angle applied to the incoming light rays.", "medium": "If light gets bent to a point more quickly (shorter distance), that means the lens is bending it more sharply.", "easy": "If light gets focused in a shorter distance, that means the lens is bending it more strongly."},
+    "hard": {"hard": "The relationship between focal length, image size, and angular field of view means that increasing focal length inherently magnifies a smaller angular slice of the scene onto the same sensor/film area, at the cost of overall scene coverage.", "medium": "A longer focal length essentially stretches out and zooms into a smaller part of the original view, which shows more detail but less of the overall scene.", "easy": "A longer focal length zooms into a smaller part of the view, showing more detail but less of the overall scene."}
+  }
+}
+]

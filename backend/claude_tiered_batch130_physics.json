@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between constructive interference and destructive interference",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Constructive interference' occurs when two overlapping waves combine to produce a resulting wave with:",
+    "options": [
+      {"text": "A larger amplitude than either individual wave alone", "isCorrect": true, "feedback": "Correct -- constructive interference occurs when waves combine in phase (crests aligning with crests), producing a resulting amplitude larger than either individual wave."},
+      {"text": "A smaller amplitude than either individual wave alone, potentially even zero", "isCorrect": false, "feedback": "That describes DESTRUCTIVE interference, not constructive -- destructive interference reduces amplitude, while constructive interference specifically increases it."},
+      {"text": "No change in amplitude at all compared to the individual waves", "isCorrect": false, "feedback": "This isn't accurate -- constructive interference specifically results in a LARGER combined amplitude, not an unchanged one."},
+      {"text": "A completely different frequency than either of the original individual waves", "isCorrect": false, "feedback": "This isn't accurate -- interference affects the resulting AMPLITUDE, not the frequency, which typically remains the same as the original overlapping waves (assuming they share the same frequency)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two identical waves interfere constructively when their crests align (in phase), but interfere destructively when one wave's crest aligns with the other's trough (completely out of phase). Why does this specific relative alignment (phase relationship) determine whether interference is constructive or destructive?",
+    "options": [
+      {"text": "When waves overlap, their displacement values (positive or negative from the equilibrium/rest position) add together at each point -- when crests align with crests (in phase), both displacements are positive together, adding up to a larger combined positive displacement (constructive), but when a crest aligns with a trough (out of phase), one positive and one negative displacement partially or completely cancel each other out (destructive)", "isCorrect": true, "feedback": "Correct -- this explanation of displacement addition (same-sign displacements reinforcing, opposite-sign displacements canceling) correctly explains why relative phase alignment between overlapping waves determines constructive versus destructive interference."},
+      {"text": "Crest-to-crest alignment would actually produce destructive interference, while crest-to-trough alignment would produce constructive interference", "isCorrect": false, "feedback": "This is backwards -- crest-to-crest alignment (in phase) produces CONSTRUCTIVE interference, while crest-to-trough alignment (out of phase) produces DESTRUCTIVE interference, the opposite of what's stated here."},
+      {"text": "The relative phase alignment between two overlapping waves has no actual connection to determining whether interference is constructive or destructive", "isCorrect": false, "feedback": "This isn't accurate -- relative phase alignment IS DIRECTLY connected to and is precisely what determines whether interference is constructive or destructive."},
+      {"text": "Wave displacements would actually always add together to increase amplitude, regardless of their relative phase alignment", "isCorrect": false, "feedback": "This isn't accurate -- displacements only reliably ADD to increase amplitude when in phase; when out of phase, displacements of opposite sign specifically CANCEL rather than add to increase amplitude."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Noise-cancelling headphones work by generating a sound wave that is the precise inverse (exactly out of phase) of unwanted incoming ambient noise, causing destructive interference that cancels much of that noise before it reaches your ear. Explain the physical requirement this technology must satisfy for the cancellation to work effectively.",
+    "options": [
+      {"text": "For destructive interference to effectively cancel a sound wave, the generated 'anti-noise' wave must match the incoming ambient noise's amplitude very closely while being almost exactly 180 degrees out of phase (crest aligning with trough) at the location of your ear -- since this cancellation must work continuously as ambient noise constantly changes, noise-cancelling technology must rapidly and continuously analyze incoming sound and generate a precisely matched, precisely inverted counter-wave in real time", "isCorrect": true, "feedback": "Correct -- this explanation of the precise amplitude-matching and phase-inversion requirement (maintained continuously in real time) correctly identifies the physical demands noise-cancelling technology must satisfy to achieve effective destructive interference against constantly changing ambient noise."},
+      {"text": "Noise-cancelling headphones would actually work by generating a wave identical in phase to the ambient noise, rather than an inverted, out-of-phase wave", "isCorrect": false, "feedback": "This isn't accurate -- noise-cancelling technology specifically generates a wave that is OUT OF PHASE with (inverted relative to) the ambient noise, not identical in phase, since identical-phase waves would reinforce rather than cancel the noise."},
+      {"text": "The amplitude of the generated anti-noise wave has no actual bearing on how effectively the destructive interference cancels the ambient noise", "isCorrect": false, "feedback": "This isn't accurate -- the amplitude of the generated wave DOES matter significantly; it must closely MATCH the ambient noise's amplitude for effective cancellation, not just be out of phase."},
+      {"text": "This noise-cancellation technology would actually work equally well using a single, unchanging generated wave, without needing continuous real-time adjustment", "isCorrect": false, "feedback": "This isn't accurate -- since ambient noise constantly changes, effective noise cancellation specifically REQUIRES continuous, real-time adjustment of the generated counter-wave, not a single static, unchanging wave."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This interference phenomenon manifests as an augmented resultant amplitude arising from the superposition of coincident wave crests.", "medium": "This is when two waves combine to make a bigger wave than either one alone.", "easy": "This is when two waves combine to make a bigger wave than either alone."},
+    "medium": {"hard": "Consider how the superposition principle sums instantaneous displacement values, such that same-sign displacements reinforce while opposite-sign displacements offset each other.", "medium": "When both waves are pushing up at the same spot at the same time, they add together into a bigger push, but when one's pushing up and the other's pushing down, they cancel each other out instead.", "easy": "When both waves push the same way, they add up; when one pushes up and the other down, they cancel out."},
+    "hard": {"hard": "Consider how effective real-time cancellation demands both amplitude parity and precise 180-degree phase inversion of the generated counter-wave relative to the continuously fluctuating ambient noise source.", "medium": "To actually cancel the noise out, the fake wave has to be just as loud as the real noise but flipped exactly upside down, and since the real noise keeps changing, the headphones have to keep re-flipping their fake wave constantly to keep up.", "easy": "To cancel noise, the fake wave has to match the real noise's loudness but flipped upside down, constantly adjusting as the noise changes."}
+  }
+}
+]

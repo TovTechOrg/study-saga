@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of piecewise functions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a piecewise function?",
+    "options": [
+      {"text": "A function defined by different expressions/rules depending on which interval the input value falls into", "isCorrect": true, "feedback": "Correct -- a piecewise function essentially combines multiple separate function 'pieces,' each applying only to a specific range of input values."},
+      {"text": "A function that only has a single, unchanging rule for all possible input values", "isCorrect": false, "feedback": "This describes a standard, non-piecewise function -- a PIECEWISE function specifically uses DIFFERENT rules depending on the input value's range."},
+      {"text": "A function that has no defined output for any input value", "isCorrect": false, "feedback": "This isn't accurate -- a piecewise function DOES have defined outputs; it just uses different specific rules for different input ranges."},
+      {"text": "A function that can only accept exactly one single specific input value", "isCorrect": false, "feedback": "This isn't accurate -- a piecewise function can accept a full range of different input values, just applying different rules across different portions of that overall range."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A piecewise function is defined as: f(x) = x+2 if x<0, and f(x) = x² if x≥0. What is f(-3)?",
+    "options": [
+      {"text": "-1", "isCorrect": true, "feedback": "Correct -- since -3 is less than 0, use the first rule: f(-3) = -3+2 = -1."},
+      {"text": "9", "isCorrect": false, "feedback": "This uses the WRONG rule (x²) -- since -3 is less than 0, the first rule (x+2) should be applied instead."},
+      {"text": "-3", "isCorrect": false, "feedback": "This is just the input value itself, without applying either piecewise rule at all."},
+      {"text": "1", "isCorrect": false, "feedback": "This doesn't correctly result from applying the first rule (x+2) to the input value -3."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Using the same piecewise function (f(x) = x+2 if x<0, and f(x) = x² if x≥0), evaluate f(-2) + f(2).",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- f(-2) uses the first rule (since -2<0): -2+2=0. f(2) uses the second rule (since 2≥0): 2²=4. Adding: 0+4=4."},
+      {"text": "8", "isCorrect": false, "feedback": "This doesn't correctly apply the appropriate rule to each input value before adding the results together."},
+      {"text": "0", "isCorrect": false, "feedback": "This correctly calculates f(-2)=0 but doesn't correctly add f(2)=4 to get the final total."},
+      {"text": "2", "isCorrect": false, "feedback": "This doesn't correctly result from applying both piecewise rules correctly and adding the two results."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This function type applies distinct algebraic sub-expressions contingent on which designated interval contains the independent variable's value.", "medium": "This function uses different formulas depending on which range the input number falls into.", "easy": "This function uses different formulas depending on the input number's range."},
+    "medium": {"hard": "Determine which defined interval condition the specific input value satisfies, then apply only that corresponding rule.", "medium": "Check whether -3 is less than 0 or greater/equal to 0, then use the matching rule.", "easy": "-3 is less than 0, so use the first rule: -3+2=-1."},
+    "hard": {"hard": "Evaluate each input independently by applying its correspondingly satisfied piecewise condition, then combine the two resulting outputs via the specified arithmetic operation.", "medium": "Check which rule applies to -2 and calculate it, then check which rule applies to 2 and calculate it, then add the two results.", "easy": "f(-2)=-2+2=0 (first rule). f(2)=2²=4 (second rule). Add: 0+4=4."}
+  }
+}
+]

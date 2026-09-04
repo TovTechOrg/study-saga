@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of similar triangles and proportional sides",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Two triangles are 'similar' if:",
+    "options": [
+      {"text": "Their corresponding angles are equal and their corresponding sides are proportional", "isCorrect": true, "feedback": "Correct -- similar triangles have the same shape (equal angles) but can differ in size, with sides scaled by a consistent ratio."},
+      {"text": "They are exactly the same size", "isCorrect": false, "feedback": "That describes CONGRUENT triangles, not similar ones -- similar triangles can be different sizes while maintaining the same shape."},
+      {"text": "They have completely different angle measures", "isCorrect": false, "feedback": "Similar triangles must have EQUAL corresponding angles, not different ones."},
+      {"text": "One triangle has more sides than the other", "isCorrect": false, "feedback": "All triangles have exactly 3 sides -- side count isn't a relevant factor for similarity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Triangle A has sides of length 3, 4, and 5. Triangle B is similar to Triangle A, with its shortest side measuring 6. What is the length of Triangle B's longest side?",
+    "options": [
+      {"text": "10", "isCorrect": true, "feedback": "Correct -- since 6 is double 3, the scale factor is 2, so the longest side (5 in Triangle A) becomes 5×2=10 in Triangle B."},
+      {"text": "8", "isCorrect": false, "feedback": "This doesn't correctly apply the scale factor of 2 to the original longest side of 5."},
+      {"text": "7", "isCorrect": false, "feedback": "This looks like it just adds a constant amount rather than correctly applying a proportional scale factor."},
+      {"text": "5", "isCorrect": false, "feedback": "This is Triangle A's original longest side length, not the correctly scaled length for Triangle B."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A 6-foot-tall person casts a 4-foot-long shadow at the same time a nearby tree casts a 20-foot-long shadow. Assuming similar triangles are formed by the sun's parallel rays, how tall is the tree?",
+    "options": [
+      {"text": "30 feet", "isCorrect": true, "feedback": "Correct -- setting up the proportion 6/4 = height/20, cross-multiplying gives height = (6×20)/4 = 30 feet."},
+      {"text": "24 feet", "isCorrect": false, "feedback": "This doesn't correctly result from setting up and solving the proportion between the person's and tree's height-to-shadow ratios."},
+      {"text": "13.3 feet", "isCorrect": false, "feedback": "This doesn't correctly result from the proportional relationship -- check the direction of the ratio being set up."},
+      {"text": "18 feet", "isCorrect": false, "feedback": "This doesn't correctly result from applying the correct proportional scale factor."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This geometric relationship holds when two figures share identical angle measures while their corresponding linear dimensions scale by a constant ratio.", "medium": "This means the triangles are the same shape, just possibly different sizes, with sides scaled evenly.", "easy": "This means the triangles are the same shape, just maybe different sizes."},
+    "medium": {"hard": "Determine the scale factor by comparing corresponding side lengths, then apply that same factor to the unknown side.", "medium": "Find out how many times bigger Triangle B's short side (6) is compared to Triangle A's short side (3), then apply that same multiplier.", "easy": "6 is 2 times bigger than 3, so multiply the longest side (5) by 2 to get 10."},
+    "hard": {"hard": "Set up a proportion comparing height-to-shadow ratios for both objects, then solve algebraically for the unknown tree height.", "medium": "Set up the fraction 6/4 equal to the tree's height over 20, then solve for the height.", "easy": "Set up 6/4 = height/20, then cross-multiply and divide to solve for height."}
+  }
+}
+]

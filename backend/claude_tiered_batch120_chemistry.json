@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between exothermic acid-base neutralization and pH change rate",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Neutralization reactions between a strong acid and a strong base are generally:",
+    "options": [
+      {"text": "Exothermic, releasing heat as water forms from H+ and OH- ions", "isCorrect": true, "feedback": "Correct -- the combination of H+ and OH- ions to form water releases energy, making strong acid-strong base neutralization an exothermic process."},
+      {"text": "Endothermic, absorbing heat as water forms", "isCorrect": false, "feedback": "This is backwards -- strong acid-strong base neutralization is specifically EXOTHERMIC (releasing heat), not endothermic."},
+      {"text": "Completely neutral in terms of energy, with no heat change at all", "isCorrect": false, "feedback": "This isn't accurate -- neutralization reactions DO involve a genuine, measurable heat change (specifically release, being exothermic), not zero energy change."},
+      {"text": "Only occur at extremely low temperatures", "isCorrect": false, "feedback": "This isn't accurate -- neutralization reactions can occur across a range of normal temperatures, not exclusively at extremely low temperatures."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When titrating a strong acid with a strong base, pH changes very GRADUALLY at first, then very RAPIDLY near the equivalence point, before leveling off again afterward. Why does this non-uniform pH-change pattern occur?",
+    "options": [
+      {"text": "Far from the equivalence point, a large excess of either H+ or OH- ions is present, so a small addition has only a small relative effect on concentration, but very near the equivalence point, both ion concentrations are very small, so even a tiny addition produces a proportionally huge relative change, causing the rapid pH swing", "isCorrect": true, "feedback": "Correct -- this understanding of relative concentration change explains this characteristic titration curve shape, fundamental to correctly interpreting acid-base titration experiments."},
+      {"text": "pH would actually change at a perfectly constant, steady rate throughout the entire titration process", "isCorrect": false, "feedback": "This isn't accurate -- pH change is specifically non-uniform, with a rapid change occurring near the equivalence point, not a constant steady rate."},
+      {"text": "This non-uniform pH-change pattern has no actual connection to the relative concentrations of H+ and OH- ions present", "isCorrect": false, "feedback": "This isn't accurate -- this pattern IS DIRECTLY connected to and EXPLAINED BY the changing relative concentrations of these ions throughout the titration."},
+      {"text": "The rapid pH change would actually occur far AWAY from the equivalence point, not near it", "isCorrect": false, "feedback": "This isn't accurate -- the rapid pH change specifically occurs NEAR the equivalence point, precisely because ion concentrations are lowest and most sensitive there."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An indicator (like phenolphthalein) is chosen for a titration specifically because it changes color within a narrow pH range that coincides with the steep, rapid portion of the titration curve near the equivalence point. Why does this specific timing requirement matter for accurately determining the equivalence point using a color-change indicator?",
+    "options": [
+      {"text": "Since pH changes VERY RAPIDLY near the equivalence point (a tiny volume of added titrant causes a large pH swing), an indicator changing color within this steep region will change color at a volume of titrant VERY CLOSE to the true equivalence point -- if the indicator instead changed color during the gradual, flat portion of the curve, a wide range of titrant volumes would trigger the same color change, making it impossible to pinpoint the equivalence point accurately", "isCorrect": true, "feedback": "Correct -- this careful matching between an indicator's color-change pH range and the titration curve's steep region is essential for achieving accurate, precise equivalence point determination, explaining why indicator selection is such a deliberate, important step in titration experiment design."},
+      {"text": "The indicator's specific color-change pH range would actually have no real effect on the accuracy of equivalence point determination", "isCorrect": false, "feedback": "This isn't accurate -- the indicator's pH range HAS a SIGNIFICANT effect on accuracy, which is precisely why matching it to the steep curve region matters so much."},
+      {"text": "An indicator changing color during the gradual, flat portion of the curve would actually provide MORE precise equivalence point determination", "isCorrect": false, "feedback": "This is backwards -- an indicator changing color during the flat, gradual portion would provide LESS precise determination, since a wide range of titrant volumes would trigger that same color change."},
+      {"text": "This timing requirement between indicator range and curve steepness has no actual practical importance for titration experiment design", "isCorrect": false, "feedback": "This isn't accurate -- this timing requirement has SIGNIFICANT practical importance, directly informing careful indicator selection in real titration experiment design."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This proton-hydroxide combination reaction liberates thermal energy as a water molecule is formed.", "medium": "Combining acid and base to form water gives off heat.", "easy": "Combining acid and base to form water gives off heat."},
+    "medium": {"hard": "Consider how the same absolute quantity of added titrant produces a vastly different proportional impact on ion concentration depending on how large that starting concentration already is.", "medium": "When there's already a ton of acid or base left, one more drop barely matters -- but when there's almost none left, that same one drop suddenly matters a whole lot.", "easy": "When there's a ton of acid or base left, one more drop barely matters -- but near the end, it matters a lot."},
+    "hard": {"hard": "Consider how aligning a color-change threshold with a region of maximal pH sensitivity to titrant volume minimizes the volume uncertainty associated with visually detecting that color transition.", "medium": "Since pH swings wildly right around the true equivalence point, having the color change happen exactly there means the indicator flips right when you want it to, not somewhere vague and spread out.", "easy": "Since pH swings wildly near the equivalence point, having the color change happen exactly there gives a precise reading."}
+  }
+}
+]

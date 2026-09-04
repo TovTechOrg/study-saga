@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between a function and its inverse function",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If a function f(x) takes an input and produces an output, its inverse function f⁻¹(x) is designed to:",
+    "options": [
+      {"text": "Take that output and return it back to the original input", "isCorrect": true, "feedback": "Correct -- an inverse function essentially 'undoes' the original function, mapping outputs back to their corresponding original inputs."},
+      {"text": "Produce exactly the same output as the original function, for any given input", "isCorrect": false, "feedback": "This isn't accurate -- an inverse function specifically REVERSES the original function's mapping (output back to input), not simply reproducing the SAME output for the same input."},
+      {"text": "Always multiply the original output by exactly -1", "isCorrect": false, "feedback": "This isn't the general definition of an inverse function -- an inverse function specifically REVERSES the input-output mapping relationship, not simply negating the value."},
+      {"text": "Have no actual mathematical relationship to the original function whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- an inverse function has a very SPECIFIC, DIRECT mathematical relationship to the original function (reversing its input-output mapping), not an absence of relationship."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If f(x) = 2x+3, find its inverse function f⁻¹(x).",
+    "options": [
+      {"text": "f⁻¹(x) = (x-3)/2", "isCorrect": true, "feedback": "Correct -- to find the inverse, swap x and y (y=2x+3 becomes x=2y+3), then solve for y: x-3=2y, so y=(x-3)/2."},
+      {"text": "f⁻¹(x) = 2x+3", "isCorrect": false, "feedback": "This is simply the ORIGINAL function unchanged, not the correctly calculated inverse function, which requires solving for the reversed input-output relationship."},
+      {"text": "f⁻¹(x) = (x+3)/2", "isCorrect": false, "feedback": "This has an incorrect sign -- the correct inverse requires SUBTRACTING 3 (not adding), based on correctly reversing the original function's operations."},
+      {"text": "f⁻¹(x) = 2x-3", "isCorrect": false, "feedback": "This doesn't correctly reverse the original operations (multiplication by 2, then addition of 3) -- it should specifically involve SUBTRACTING 3 and then DIVIDING by 2, in that reversed order."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Not every function has a valid inverse FUNCTION -- specifically, a function must be 'one-to-one' (each unique output corresponds to exactly one unique input) for its inverse to also qualify as a proper function. Why does the function f(x)=x² (for all real numbers x) specifically NOT have a valid inverse function, without first restricting its domain?",
+    "options": [
+      {"text": "Since f(x)=x² produces the SAME output value for two DIFFERENT inputs (for example, both x=3 and x=-3 produce output 9), attempting to 'invert' this relationship would require the resulting inverse to map a single input (9) to TWO DIFFERENT possible outputs (3 AND -3), which specifically violates the fundamental definition of a valid mathematical function (requiring exactly ONE output per input)", "isCorrect": true, "feedback": "Correct -- this violation of the 'one-to-one' requirement (multiple distinct inputs sharing the same output) is precisely why f(x)=x² over ALL real numbers doesn't have a straightforward valid inverse FUNCTION, which is exactly why mathematicians typically RESTRICT the domain (like x≥0 only) when defining the square root as a proper, valid inverse function of squaring."},
+      {"text": "f(x)=x² actually DOES have a perfectly valid inverse function without needing any domain restriction whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- f(x)=x² (over ALL real numbers) specifically does NOT have a valid inverse function without some domain restriction, precisely because it fails the essential 'one-to-one' requirement for invertibility."},
+      {"text": "The 'one-to-one' requirement for a function has no actual connection to whether a valid inverse function can be properly defined", "isCorrect": false, "feedback": "This isn't accurate -- the 'one-to-one' requirement IS DIRECTLY and fundamentally connected to and is PRECISELY THE KEY CRITERION determining whether a valid, properly-defined inverse function can actually exist for a given original function."},
+      {"text": "Every single mathematical function actually always has a valid inverse function, with no exceptions or special conditions required", "isCorrect": false, "feedback": "This isn't accurate -- NOT every function has a valid inverse FUNCTION -- specifically, only 'one-to-one' functions do, which is precisely why f(x)=x² (without domain restriction) fails to qualify."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This complementary mapping reverses the directional correspondence established by the original function, restoring outputs to their originating inputs.", "medium": "This function basically works backward from the original one, turning outputs back into inputs.", "easy": "This function works backward from the original, turning outputs back into inputs."},
+    "medium": {"hard": "Swap the roles of the input and output variables in the original equation, then algebraically isolate the new output variable to obtain the inverse function's formula.", "medium": "Swap x and y in the equation, then solve the new equation for y to get the inverse.", "easy": "Swap x and y: x=2y+3. Solve for y: y=(x-3)/2."},
+    "hard": {"hard": "Consider how a function failing the injective (one-to-one) property would necessarily require its proposed inverse to assign multiple distinct output values to a single shared input value, violating the fundamental single-valued nature of functions.", "medium": "Since squaring both 3 and -3 gives you the exact same answer (9), trying to reverse that would mean the number 9 would have to point back to BOTH 3 and -3 at once, which isn't allowed for a proper function.", "easy": "Since squaring both 3 and -3 gives 9, reversing that would mean 9 points to both, which isn't allowed."}
+  }
+}
+]

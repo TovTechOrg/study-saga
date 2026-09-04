@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of impulse and its relation to momentum",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is impulse, in physics terms?",
+    "options": [
+      {"text": "A force applied over a period of time, causing a change in momentum", "isCorrect": true, "feedback": "Correct -- impulse equals force multiplied by the time it acts, and it directly changes an object's momentum."},
+      {"text": "The total distance an object travels", "isCorrect": false, "feedback": "Distance is a separate concept from impulse, which specifically relates force, time, and momentum change."},
+      {"text": "The color of a moving object", "isCorrect": false, "feedback": "Color has no relevance to the physics concept of impulse."},
+      {"text": "The exact speed of an object at one instant", "isCorrect": false, "feedback": "Instantaneous speed is a different concept -- impulse specifically involves force acting over time."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do airbags and crumple zones in cars help reduce injury during a collision?",
+    "options": [
+      {"text": "They extend the time over which the force of impact is applied, reducing the peak force experienced by passengers for the same total change in momentum", "isCorrect": true, "feedback": "Correct -- since impulse (force × time) must equal the momentum change, stretching out the time reduces the force needed at any given instant."},
+      {"text": "They make the car heavier, which somehow reduces injury", "isCorrect": false, "feedback": "Added weight isn't the safety mechanism here -- extending the collision TIME to reduce peak force is what actually helps."},
+      {"text": "They completely eliminate the passenger's change in momentum", "isCorrect": false, "feedback": "The passenger's momentum still changes (they still stop) -- what changes is HOW QUICKLY that change happens, spreading it over more time to reduce force."},
+      {"text": "They have no actual effect on safety at all", "isCorrect": false, "feedback": "These safety features are specifically engineered and well-documented to meaningfully reduce injury by extending collision time."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A 1,000 kg car traveling at 20 m/s comes to a complete stop. If the collision (with a wall) takes 0.1 seconds, what is the average force experienced during the impact? (Using Impulse = Force × time = change in momentum)",
+    "options": [
+      {"text": "200,000 N", "isCorrect": true, "feedback": "Correct -- momentum change is 1000×20=20,000 kg·m/s, and force=20,000÷0.1=200,000 N."},
+      {"text": "2,000 N", "isCorrect": false, "feedback": "This doesn't match correctly dividing the momentum change by the very short collision time."},
+      {"text": "20,000 N", "isCorrect": false, "feedback": "This is the momentum change itself, not yet divided by the collision time to get force."},
+      {"text": "100 N", "isCorrect": false, "feedback": "This doesn't match correctly computing force from the given momentum change and time."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This quantity connects an applied force, the duration of its application, and the resulting change in an object's motion.", "medium": "This is a push or pull applied for some amount of time.", "easy": "This is a force applied over some period of time."},
+    "medium": {"hard": "Since the total momentum change is fixed, stretching the time of the collision proportionally reduces the average force required.", "medium": "Making the crash last a little longer means the force at any one moment doesn't have to be as intense.", "easy": "Making the crash last a bit longer spreads out the force so it's not as intense all at once."},
+    "hard": {"hard": "Calculate the total momentum change (mass × velocity), then divide by the given time to find the average force.", "medium": "Multiply mass by velocity to find the momentum change, then divide by the time of 0.1 seconds.", "easy": "Multiply 1000 by 20 to get 20,000, then divide by 0.1."}
+  }
+}
+]

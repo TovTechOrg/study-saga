@@ -1,0 +1,617 @@
+[
+{
+  "topic": "fjords",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a fjord?",
+    "options": [
+      {"text": "A long, narrow, steep-walled sea inlet carved by a glacier", "isCorrect": true, "feedback": "Correct -- fjords are glacially carved valleys that were later flooded by the sea."},
+      {"text": "A flat area of land built up where a river meets the sea", "isCorrect": false, "feedback": "That describes a delta, which is built by deposited sediment -- a fjord is carved out, not built up."},
+      {"text": "A large underground network of caves", "isCorrect": false, "feedback": "Underground caves are usually formed by dissolving rock (karst processes), not by glacial carving of a coastal inlet."},
+      {"text": "A wide, flat, dry desert basin", "isCorrect": false, "feedback": "A desert basin has nothing to do with glacial ice or the sea -- fjords are wet, steep-walled coastal features."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What process is primarily responsible for carving out a fjord's characteristic deep, U-shaped profile?",
+    "options": [
+      {"text": "Glacial erosion, as a massive slow-moving glacier grinds out a deep valley", "isCorrect": true, "feedback": "Correct -- glaciers are far heavier and wider than rivers, so they erode a broad U-shape rather than a river's narrower V-shape."},
+      {"text": "Wind erosion slowly sandblasting the coastline", "isCorrect": false, "feedback": "Wind erosion shapes some landforms, like dunes, but it isn't powerful enough to carve deep coastal valleys the way glacial ice is."},
+      {"text": "Volcanic eruptions building up new coastal cliffs", "isCorrect": false, "feedback": "Volcanic activity adds new material and builds land up -- a fjord's valley is instead carved away, not built."},
+      {"text": "Ocean waves alone eroding a straight coastline", "isCorrect": false, "feedback": "Wave erosion shapes many coastlines, but fjords specifically owe their deep, elongated valley shape to glacial carving, not surf action alone."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why are fjords concentrated at high latitudes, in places like Norway, Chile, and New Zealand, rather than distributed evenly worldwide?",
+    "options": [
+      {"text": "These regions were covered by large glaciers during past ice ages, and rising sea levels after the ice retreated flooded the deep valleys those glaciers had carved", "isCorrect": true, "feedback": "Correct -- without both a past glacier to carve the valley and a later sea-level rise to flood it, a true fjord can't form."},
+      {"text": "These regions currently have unusually high volcanic activity", "isCorrect": false, "feedback": "Volcanic activity isn't what shapes a fjord -- glacial carving followed by flooding is the actual mechanism, regardless of volcanism."},
+      {"text": "These regions simply receive far more rainfall than anywhere else on Earth", "isCorrect": false, "feedback": "Rainfall alone doesn't carve a deep U-shaped valley -- the defining process is glacial ice erosion, not precipitation."},
+      {"text": "These regions have unusually warm ocean currents passing nearby", "isCorrect": false, "feedback": "Warm currents don't explain a carved valley shape -- it's the historical presence of glaciers that matters, not current water temperature."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This is a long, narrow inlet of the sea with steep walls on both sides.", "medium": "This coastal feature was carved out by a moving glacier long ago.", "hard": "This feature's steep-walled, U-shaped valley was cut by ice, not built up by sediment."},
+    "medium": {"easy": "A huge, heavy, slow-moving mass of ice did the carving here.", "medium": "Think about which natural force is heavy and wide enough to grind out a deep, broad valley, rather than a narrow one.", "hard": "The eroding force here is solid and immense, unlike wind, waves, or volcanic material, and it produces a distinctively broad valley shape."},
+    "hard": {"easy": "Two things had to happen in order: ice carved a deep valley, and then the sea later rose to fill it.", "medium": "It's a two-step story: an ice age carved the valley, and later, melting ice raised sea levels enough to flood it.", "hard": "Think about what these regions shared in their deep past, and what had to occur afterward for today's sea to reach that carved-out shape -- the answer turns on two separate events stacked in sequence, not on anything about current climate or ongoing geologic activity."}
+  }
+},
+{
+  "topic": "mesas and buttes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a mesa?",
+    "options": [
+      {"text": "An isolated, flat-topped hill or small mountain with steep sides", "isCorrect": true, "feedback": "Correct -- 'mesa' means 'table' in Spanish, describing its flat top."},
+      {"text": "A deep valley carved by a river", "isCorrect": false, "feedback": "A deep valley carved by a river is a canyon -- a mesa is instead a raised, flat-topped landform."},
+      {"text": "A narrow strip of land connecting two larger landmasses", "isCorrect": false, "feedback": "That describes an isthmus -- unrelated to a flat-topped, steep-sided hill."},
+      {"text": "A large, low-lying wetland", "isCorrect": false, "feedback": "A wetland is low and waterlogged -- the opposite of an elevated, dry, flat-topped landform."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does a butte typically differ from a mesa?",
+    "options": [
+      {"text": "A butte is narrower, with its width roughly equal to or less than its height, while a mesa has a much broader, tabletop-like summit", "isCorrect": true, "feedback": "Correct -- both share the same flat-topped, steep-sided origin, but a butte is simply a smaller, more eroded remnant."},
+      {"text": "A butte is formed by deposition, while a mesa is formed by erosion", "isCorrect": false, "feedback": "Both landforms are shaped by erosion wearing away surrounding softer rock -- deposition isn't what forms either one."},
+      {"text": "A butte only occurs underwater, while a mesa only occurs on land", "isCorrect": false, "feedback": "Both buttes and mesas are land features -- underwater location isn't a distinction between them."},
+      {"text": "A butte and a mesa are simply two completely unrelated landforms with no shared origin", "isCorrect": false, "feedback": "They're actually closely related -- a butte is generally considered a smaller, narrower version of the same flat-topped erosional landform as a mesa."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do mesas and buttes typically retain a flat top instead of eroding into a rounded hill like many other landforms?",
+    "options": [
+      {"text": "A resistant, harder caprock layer on top protects the softer rock underneath from eroding as quickly as the surrounding land", "isCorrect": true, "feedback": "Correct -- as the softer surrounding rock erodes away faster, the caprock-protected column is left standing with a flat summit."},
+      {"text": "They are artificially flattened by human construction over centuries", "isCorrect": false, "feedback": "Mesas and buttes are natural erosional landforms, not artificially flattened structures."},
+      {"text": "They form only in regions with zero rainfall of any kind", "isCorrect": false, "feedback": "These landforms occur in arid and semi-arid regions with some precipitation and erosion -- their flat top comes from resistant caprock, not an absence of rain."},
+      {"text": "Wind alone flattens their tops evenly while leaving the sides untouched", "isCorrect": false, "feedback": "Wind contributes to erosion generally, but the specific flat-top preservation comes from a resistant caprock layer, not wind acting selectively only on top."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This landform has a flat top and steep sides, standing alone above the surrounding land.", "medium": "Its name comes from the Spanish word for 'table,' describing its flat summit.", "hard": "This isolated landform's summit stays broad and level rather than eroding into a rounded peak."},
+    "medium": {"easy": "One of these two landforms is simply smaller and narrower than the other.", "medium": "Picture the same flat-topped shape, just shrunk down -- narrower and taller relative to its width.", "hard": "The distinction is about scale and proportion of the same erosional landform, not about how each one formed or where it's located."},
+    "hard": {"easy": "A tough layer of rock on top protects the softer rock below it from wearing away as fast.", "medium": "A hard layer of rock sits on top like a shield, slowing erosion of the softer rock beneath it compared to the exposed land around it.", "hard": "The key is differential erosion -- a resistant caprock erodes much more slowly than the surrounding softer strata, leaving a flat-topped remnant standing higher than its surroundings."}
+  }
+},
+{
+  "topic": "karst topography and sinkholes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a sinkhole?",
+    "options": [
+      {"text": "A hole or depression in the ground formed when underlying rock dissolves and the surface collapses", "isCorrect": true, "feedback": "Correct -- sinkholes often form where soluble rock like limestone dissolves over time, leaving a cavity that eventually collapses."},
+      {"text": "A hill formed by a volcano erupting", "isCorrect": false, "feedback": "A volcanic hill is built UP by erupted material -- a sinkhole is a depression that forms as ground collapses DOWN."},
+      {"text": "A ridge of sand piled up by wind", "isCorrect": false, "feedback": "That describes a dune -- unrelated to dissolving rock and ground collapse."},
+      {"text": "A flat plain formed by a river depositing silt", "isCorrect": false, "feedback": "A depositional plain is built up from sediment -- a sinkhole instead forms from the ground collapsing downward."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What type of rock is most commonly associated with the formation of karst landscapes, including sinkholes and caves?",
+    "options": [
+      {"text": "Limestone, which slowly dissolves when exposed to slightly acidic water", "isCorrect": true, "feedback": "Correct -- limestone is primarily calcium carbonate, which reacts with and dissolves in mildly acidic groundwater over long periods."},
+      {"text": "Granite, an extremely erosion-resistant igneous rock", "isCorrect": false, "feedback": "Granite is notably resistant to dissolving and doesn't typically form karst landscapes -- limestone's solubility is what drives karst formation."},
+      {"text": "Basalt, a common volcanic rock", "isCorrect": false, "feedback": "Basalt doesn't dissolve readily in water the way limestone does -- karst topography specifically relates to soluble rock like limestone."},
+      {"text": "Sandstone formed purely from compacted sand grains", "isCorrect": false, "feedback": "While sandstone can be porous, it doesn't dissolve chemically the way limestone does -- karst landscapes are specifically tied to soluble rock."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can urban development and groundwater pumping increase the risk of sudden sinkhole collapses in karst regions?",
+    "options": [
+      {"text": "Pumping lowers the groundwater level that previously helped support underground cavities, and added surface weight or altered drainage can trigger the collapse of weakened rock roofs over these cavities", "isCorrect": true, "feedback": "Correct -- groundwater doesn't just fill space, it can help physically buoy and support the roof of a cavity, so removing it can destabilize the ground above."},
+      {"text": "Sinkholes are entirely random events with no connection to human activity whatsoever", "isCorrect": false, "feedback": "Human activities like groundwater extraction and construction are well-documented factors that can trigger or accelerate sinkhole collapses in karst terrain."},
+      {"text": "Development causes limestone to instantly transform into granite", "isCorrect": false, "feedback": "Rock type doesn't change instantly due to construction -- the risk instead comes from disturbing groundwater support and surface loading over existing dissolved cavities."},
+      {"text": "Groundwater pumping causes the local climate to become permanently tropical", "isCorrect": false, "feedback": "Groundwater pumping doesn't alter regional climate -- its sinkhole risk comes from destabilizing underground cavities, not changing weather patterns."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This is a hole that opens up in the ground when rock underneath dissolves away.", "medium": "This ground feature forms when underground rock slowly dissolves, leaving an empty space that eventually caves in.", "hard": "This depression forms from below rather than from anything landing on or building up the surface."},
+    "medium": {"easy": "This rock type is famous for slowly dissolving when water seeps through it over a long time.", "medium": "This rock is largely made of a mineral that reacts with mildly acidic water and gradually dissolves.", "hard": "The key property is chemical solubility in slightly acidic water, a trait this rock has that hard igneous rocks generally lack."},
+    "hard": {"easy": "Taking water out from underground can remove support that was helping hold up a hidden empty space beneath the surface.", "medium": "Removing groundwater can take away support that was helping keep a hidden underground cavity's roof from caving in.", "hard": "The mechanism involves the loss of hydrostatic support within existing subsurface voids combined with added surface load, not a literal rock-type transformation or a climate shift."}
+  }
+},
+{
+  "topic": "sand dune formation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What natural force is primarily responsible for shaping sand dunes?",
+    "options": [
+      {"text": "Wind, which picks up and deposits loose sand grains", "isCorrect": true, "feedback": "Correct -- wind transports sand and piles it up into dunes, especially in deserts and along coastlines."},
+      {"text": "Glaciers slowly grinding over the land", "isCorrect": false, "feedback": "Glaciers carve valleys and move rock through ice, not the light, wind-blown sand that builds dunes."},
+      {"text": "Underground volcanic activity", "isCorrect": false, "feedback": "Volcanic activity produces lava and ash landforms, not the wind-driven piling of loose sand."},
+      {"text": "Ocean tides pulling sand out to sea", "isCorrect": false, "feedback": "Tides mostly move sand along coastlines, but the characteristic shifting mounds of a dune are primarily built and shaped by wind."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why do sand dunes often have a gentle slope on one side (the windward side) and a steeper slope on the other (the leeward side)?",
+    "options": [
+      {"text": "Wind gradually pushes sand up the gentle windward slope, and the sand then slips down the steeper leeward slope once it passes the crest, out of the wind's direct force", "isCorrect": true, "feedback": "Correct -- this process causes dunes to slowly migrate over time in the direction the wind blows."},
+      {"text": "The steep side is always the side facing the ocean, regardless of wind direction", "isCorrect": false, "feedback": "A dune's asymmetry is determined by wind direction, not by its position relative to the ocean."},
+      {"text": "Rainfall erodes only one side of the dune evenly every year", "isCorrect": false, "feedback": "In the arid environments where dunes typically form, rainfall is rare -- the asymmetric shape comes from wind transport and deposition, not rain erosion."},
+      {"text": "Both sides of a dune are always equally steep, with no real difference", "isCorrect": false, "feedback": "Dunes typically do have a clear asymmetry between a gentler windward slope and a steeper leeward slope -- this isn't accurate."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can migrating sand dunes pose a long-term challenge for nearby infrastructure, farmland, or settlements in desert regions?",
+    "options": [
+      {"text": "Because prevailing winds continually erode sand from the windward side and deposit it on the leeward side, dunes can slowly but steadily advance over time and bury roads, fields, or buildings in their path", "isCorrect": true, "feedback": "Correct -- this slow migration is why some desert communities plant vegetation or build barriers specifically to stabilize dunes and slow their advance."},
+      {"text": "Dunes are always completely stationary and permanently fixed in place once formed", "isCorrect": false, "feedback": "Many dunes, especially in open desert with strong prevailing winds, do migrate over time -- they aren't necessarily fixed in place."},
+      {"text": "Dunes instantly dissolve any structure built near them through a chemical reaction", "isCorrect": false, "feedback": "Sand doesn't chemically dissolve structures -- the practical hazard is the sand physically burying things in its path as the dune migrates."},
+      {"text": "Dunes only form underwater and never affect any structures on land", "isCorrect": false, "feedback": "Dunes are a land and coastal feature that can directly threaten nearby structures -- they aren't confined to underwater environments."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This natural force blows loose sand grains through the air and piles them up.", "medium": "This is the same force that can also carve rock over long periods, but here it's moving loose grains of sand instead.", "hard": "This force is invisible but powerful enough to reshape entire landscapes of loose material grain by grain."},
+    "medium": {"easy": "Sand gets pushed gently up one side, then tumbles down more steeply on the far side, away from the wind.", "medium": "Picture sand being carried up one gentle slope and then sliding down a steeper slope on the far side, out of the wind's push.", "hard": "The asymmetry results from continuous transport up one face and gravity-driven slippage down the other once sand passes the crest -- not a fixed relationship to the coastline or an even rainfall pattern."},
+    "hard": {"easy": "Because wind keeps moving sand from one side of the dune to the other, the whole dune can slowly creep forward over time and cover things in its path.", "medium": "Since wind keeps eroding one side and piling sand on the other, the entire dune can gradually creep forward and bury things over months or years.", "hard": "Think about what's happening to individual sand grains on each side of the dune, little by little, and what that steady, repeated process adds up to over months or years of prevailing conditions."}
+  }
+},
+{
+  "topic": "the Great Rift Valley",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "On which continent is the Great Rift Valley, a massive system of connected valleys and fault lines, located?",
+    "options": [
+      {"text": "Africa", "isCorrect": true, "feedback": "Correct -- the Great Rift Valley stretches for thousands of kilometers through East Africa."},
+      {"text": "South America", "isCorrect": false, "feedback": "South America is home to features like the Andes and Amazon, not the Great Rift Valley."},
+      {"text": "Europe", "isCorrect": false, "feedback": "Europe doesn't contain the Great Rift Valley -- it's specifically located in East Africa."},
+      {"text": "Australia", "isCorrect": false, "feedback": "Australia doesn't contain the Great Rift Valley -- it's specifically located in East Africa."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What geological process is primarily responsible for creating the Great Rift Valley?",
+    "options": [
+      {"text": "Two tectonic plates slowly pulling apart from each other, causing the land between them to sink", "isCorrect": true, "feedback": "Correct -- the East African Rift is a classic example of continental crust being stretched and pulled apart at a divergent boundary."},
+      {"text": "Two tectonic plates colliding head-on and pushing land upward", "isCorrect": false, "feedback": "A head-on collision would push land UP into mountains, like the Himalayas -- the Rift Valley instead forms where land is pulled apart and sinks."},
+      {"text": "A massive meteorite impact millions of years ago", "isCorrect": false, "feedback": "The Rift Valley's long, connected valley system reflects ongoing tectonic plate movement, not a single meteorite impact event."},
+      {"text": "Repeated flooding from a nearby ocean over thousands of years", "isCorrect": false, "feedback": "Flooding doesn't create this kind of long, linear valley and fault system -- tectonic plate separation does."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the long-term geological significance of the East African Rift continuing to widen over millions of years?",
+    "options": [
+      {"text": "If the rifting process continues, part of East Africa could eventually separate entirely from the rest of the continent, potentially forming a new ocean basin", "isCorrect": true, "feedback": "Correct -- some geologists project that continued spreading could eventually split off a new landmass and let ocean water flood in, similar to how the Red Sea formed."},
+      {"text": "The rifting will eventually cause East Africa to merge completely with the Arabian Peninsula", "isCorrect": false, "feedback": "Rifting pulls land apart rather than merging it -- continued rifting is expected to separate land further, not join it to another landmass."},
+      {"text": "The process will have no long-term effect on the shape of the African continent", "isCorrect": false, "feedback": "Continued rifting over geological timescales is expected to significantly reshape part of the continent, not leave it unchanged."},
+      {"text": "The rift will fill in completely and disappear within the next few decades", "isCorrect": false, "feedback": "Rifting operates on a geological timescale of millions of years -- it won't reverse or disappear within just a few decades."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This massive valley system stretches through East African countries like Kenya and Ethiopia.", "medium": "This long system of valleys was formed by the land splitting apart deep underground.", "hard": "This feature marks where the continent itself is slowly being pulled in two different directions."},
+    "medium": {"easy": "The land here isn't crashing together -- it's actually being pulled apart, so the ground between sinks down.", "medium": "Think about what happens to the ground in the middle when two plates move away from each other instead of toward each other.", "hard": "The mechanism is extensional, not compressional -- picture plates separating and the crust between them stretching and dropping, the opposite of a mountain-building collision."},
+    "hard": {"easy": "If this splitting keeps going for millions of years, part of the continent could eventually break off and become surrounded by new ocean water.", "medium": "Given enough time, this process could eventually detach a piece of the continent and let seawater flood into the resulting gap.", "hard": "Projected over geological time, continued extension could progress from rifting to full continental breakup and seafloor spreading, echoing how existing narrow seas nearby are believed to have formed."}
+  }
+},
+{
+  "topic": "continental collision and the Himalayas",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The Himalayas, home to the world's tallest mountains, were formed primarily by which process?",
+    "options": [
+      {"text": "Two continental tectonic plates colliding and pushing land upward", "isCorrect": true, "feedback": "Correct -- the Himalayas formed from the collision of the Indian and Eurasian tectonic plates."},
+      {"text": "A single volcano erupting repeatedly in the same spot", "isCorrect": false, "feedback": "The Himalayas are a vast mountain range formed by plate collision, not a single volcanic peak."},
+      {"text": "Wind slowly piling up sand over millions of years", "isCorrect": false, "feedback": "Wind-piled sand would form dunes, not a massive, rocky mountain range like the Himalayas."},
+      {"text": "A glacier depositing rocky debris in one location", "isCorrect": false, "feedback": "Glacial deposits can build smaller ridges (moraines), but they don't explain the scale of an entire mountain range like the Himalayas."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which two tectonic plates collided to form the Himalayas?",
+    "options": [
+      {"text": "The Indian Plate and the Eurasian Plate", "isCorrect": true, "feedback": "Correct -- the Indian Plate, once a separate landmass, drifted north and collided with the Eurasian Plate."},
+      {"text": "The Pacific Plate and the North American Plate", "isCorrect": false, "feedback": "That collision zone relates to mountain building along North America's Pacific coast, not the Himalayas."},
+      {"text": "The African Plate and the Antarctic Plate", "isCorrect": false, "feedback": "These plates aren't the ones responsible for the Himalayas -- the Indian and Eurasian Plates are."},
+      {"text": "The South American Plate and the Nazca Plate", "isCorrect": false, "feedback": "That collision relates to the Andes mountain range in South America, not the Himalayas."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do the Himalayas continue to slowly grow taller even today?",
+    "options": [
+      {"text": "The Indian Plate is still actively pushing into and under the Eurasian Plate, continuing to compress and uplift the mountain range", "isCorrect": true, "feedback": "Correct -- ongoing plate convergence means the collision that built the Himalayas hasn't stopped, so uplift continues, even as erosion works against it."},
+      {"text": "The mountains are being built up entirely by accumulating snow and ice, with no tectonic contribution", "isCorrect": false, "feedback": "Snow and ice accumulate seasonally but don't structurally build a mountain range -- ongoing tectonic collision drives the real uplift."},
+      {"text": "Frequent volcanic eruptions in the region are adding new material to the peaks", "isCorrect": false, "feedback": "The Himalayas aren't primarily a volcanic mountain range -- their growth comes from ongoing tectonic plate collision, not volcanic material."},
+      {"text": "The mountains stopped growing millions of years ago and are now purely eroding", "isCorrect": false, "feedback": "While erosion does continuously wear the mountains down, measurements show ongoing tectonic uplift still slightly outpaces erosion in parts of the range."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This tallest mountain range on Earth was built by two huge pieces of Earth's crust smashing together.", "medium": "This mountain range rose up because one huge landmass crashed slowly into another one over millions of years.", "hard": "This range's incredible height comes from crustal material being crushed and pushed upward, not from any single eruption or gradual pile-up of loose material."},
+    "medium": {"easy": "One of these two plates carries India, and it slowly drifted north into the other.", "medium": "One plate used to carry a landmass that was once a separate island far to the south before drifting north.", "hard": "Identify the plate that historically carried a subcontinent northward from isolation until it met and pressed into the much larger neighboring plate to its north."},
+    "hard": {"easy": "The same collision that built these mountains in the first place is actually still happening right now, very slowly.", "medium": "The plates involved in the original collision are still pressing against each other today, so the uplift process never really stopped.", "hard": "The ongoing height increase reflects continuing plate convergence and crustal compression outpacing erosion in places, rather than snow accumulation, volcanic addition, or a process that has already fully ceased."}
+  }
+},
+{
+  "topic": "atoll formation",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is an atoll?",
+    "options": [
+      {"text": "A ring-shaped coral reef or island surrounding a central lagoon", "isCorrect": true, "feedback": "Correct -- atolls form a distinctive ring shape enclosing a lagoon of calmer water."},
+      {"text": "A tall, steep mountain range found only inland", "isCorrect": false, "feedback": "An atoll is a low-lying ocean feature, not a tall inland mountain range."},
+      {"text": "A deep trench found at the bottom of the ocean", "isCorrect": false, "feedback": "An ocean trench is a deep depression, essentially the opposite of an atoll's ring-shaped reef structure."},
+      {"text": "A large freshwater lake in a desert region", "isCorrect": false, "feedback": "An atoll is a coral-based marine feature, unrelated to a desert freshwater lake."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "According to the classic model of atoll formation, what typically happens first, before an atoll's ring shape develops?",
+    "options": [
+      {"text": "A coral reef forms around a volcanic island, growing as a fringing reef along its coastline", "isCorrect": true, "feedback": "Correct -- this fringing reef stage is the starting point, before the volcanic island gradually subsides and the reef becomes a separate ring."},
+      {"text": "A river delta builds up around a mountain peak", "isCorrect": false, "feedback": "River deltas involve freshwater sediment deposition -- atoll formation instead begins with coral reef growth around a volcanic island."},
+      {"text": "Wind deposits massive sand dunes in a circular pattern", "isCorrect": false, "feedback": "Atolls are built from living coral structures, not from wind-deposited sand dunes."},
+      {"text": "Glaciers carve a circular basin into solid rock", "isCorrect": false, "feedback": "Atolls form in warm tropical waters through coral growth, not through glacial carving, which requires cold conditions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In Charles Darwin's model of atoll formation, why does the ring-shaped reef eventually become separated from any central island by open water (a lagoon)?",
+    "options": [
+      {"text": "The volcanic island gradually subsides (sinks) beneath the sea over time, while the coral reef keeps growing upward toward sunlight, leaving a ring of reef around a sunken or vanished island", "isCorrect": true, "feedback": "Correct -- since coral needs sunlight to survive, it continues growing upward as the island sinks, eventually leaving just the encircling reef and a lagoon where the island once stood."},
+      {"text": "Ocean waves physically carve a lagoon into the center of a solid coral disk", "isCorrect": false, "feedback": "The lagoon's formation is explained by island subsidence beneath a growing reef, not by waves carving into an otherwise solid coral mass."},
+      {"text": "The island explodes in a volcanic eruption, leaving a crater that fills with seawater", "isCorrect": false, "feedback": "Darwin's classic explanation involves gradual subsidence and reef growth over a long period, not a sudden volcanic explosion."},
+      {"text": "Coral only ever grows in a ring shape from the very beginning and never surrounds a solid island", "isCorrect": false, "feedback": "In this model, the reef starts as a fringing reef directly against a solid island's coastline -- the ring shape and lagoon emerge only later, as the island sinks."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This ring-shaped reef surrounds a calm patch of water called a lagoon.", "medium": "This ring of coral often marks where a volcanic island used to stick out of the sea.", "hard": "This feature's shape reflects a slow, multi-stage story involving both living coral and a sinking landmass beneath it."},
+    "medium": {"easy": "Before the ring shape appears, coral first grows right up against the shore of an island poking out of the water.", "medium": "The very first stage is coral growing directly along the coastline of a volcanic island that's still sticking up above the water.", "hard": "Picture the very beginning of the story, well before any ring or lagoon exists -- what kind of landmass is still visible above the waterline at that point, and what's growing right along its edge?"},
+    "hard": {"easy": "The island slowly sinks below the water over a very long time, but the coral keeps growing upward to stay near the sunlight, leaving just the ring behind.", "medium": "As the volcanic island gradually sinks, the coral reef keeps racing upward toward the sunlight it needs, eventually leaving only the ring and an open lagoon where the island used to be.", "hard": "Two things are happening to this landscape at once, at very different rates -- one part is going down over a long span of time, while something living nearby keeps racing to stay near the surface. Think about what that combination would leave behind."}
+  }
+},
+{
+  "topic": "the Mariana Trench",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the Mariana Trench, located in the western Pacific Ocean?",
+    "options": [
+      {"text": "The deepest known point in Earth's oceans", "isCorrect": true, "feedback": "Correct -- its deepest section, the Challenger Deep, reaches nearly 11 kilometers (about 36,000 feet) below the surface."},
+      {"text": "The tallest mountain range on Earth", "isCorrect": false, "feedback": "A mountain range is a raised landform -- the Mariana Trench is instead the deepest known depression in the ocean floor."},
+      {"text": "The largest freshwater lake on Earth", "isCorrect": false, "feedback": "The Mariana Trench is a saltwater ocean feature, not a freshwater lake."},
+      {"text": "The widest desert on Earth", "isCorrect": false, "feedback": "A desert is a dry land biome -- the Mariana Trench is an underwater ocean feature, not a desert."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What tectonic process is responsible for creating the Mariana Trench?",
+    "options": [
+      {"text": "Subduction, where one tectonic plate is forced down beneath another at a convergent boundary", "isCorrect": true, "feedback": "Correct -- the Pacific Plate is being subducted beneath the smaller Mariana Plate, creating this deep trench."},
+      {"text": "Two plates spreading apart, allowing magma to rise and fill the gap", "isCorrect": false, "feedback": "That describes a divergent boundary, which typically creates a mid-ocean ridge, not a deep trench -- trenches form from plates colliding and subducting."},
+      {"text": "A massive meteorite impact millions of years ago", "isCorrect": false, "feedback": "The Mariana Trench's formation is explained by ongoing plate subduction, not a single meteorite impact."},
+      {"text": "Wind and wave erosion carving into the seafloor", "isCorrect": false, "feedback": "Surface wind and waves don't reach deep enough to carve a trench of this scale -- deep tectonic subduction does."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Despite the crushing pressure and complete darkness at the depth of the Mariana Trench, why do scientists still find life there?",
+    "options": [
+      {"text": "Some organisms have evolved specialized adaptations, like pressure-resistant cell structures and reliance on chemical or scavenged food sources, allowing survival without sunlight", "isCorrect": true, "feedback": "Correct -- specialized microbes, amphipods, and other organisms survive in this extreme environment through adaptations that let them cope with immense pressure and a lack of photosynthesis-based food."},
+      {"text": "The pressure at that depth is actually no different from the pressure at the ocean's surface", "isCorrect": false, "feedback": "Pressure at the trench's depth is immense, hundreds of times greater than at the surface -- this claim is factually incorrect."},
+      {"text": "Sunlight actually penetrates all the way down to the bottom of the trench", "isCorrect": false, "feedback": "Sunlight doesn't reach anywhere near that depth -- life there survives without relying on direct sunlight or photosynthesis."},
+      {"text": "No life of any kind has ever actually been found at the bottom of the trench", "isCorrect": false, "feedback": "Scientific expeditions have documented microbial life and other organisms at extreme ocean depths, including in the Mariana Trench."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This is the single deepest known spot in all of Earth's oceans.", "medium": "This deep-sea feature in the Pacific Ocean contains a spot called the Challenger Deep.", "hard": "This feature's extreme depth results from one plate being forced downward beneath another, not from any surface-level process."},
+    "medium": {"easy": "One plate is being pushed down and under a neighboring plate at this spot.", "medium": "This depth forms where one oceanic plate is shoved beneath a neighboring plate, rather than where plates pull apart or slide sideways.", "hard": "Consider what kind of long-term interaction between two neighboring plates could force one of them downward into the Earth over millions of years -- it isn't the kind of interaction where plates spread apart, nor a single sudden event, nor anything happening only at the surface."},
+    "hard": {"easy": "Life down there has developed special adaptations to handle huge pressure and to get food without needing sunlight at all.", "medium": "Certain organisms have evolved special traits allowing them to survive huge pressure and to find food without any sunlight reaching that far down.", "hard": "The explanation involves specialized biological adaptations -- to pressure tolerance and non-photosynthetic food sources like chemosynthesis or scavenging -- rather than any claim that pressure or darkness aren't actually extreme there."}
+  }
+},
+{
+  "topic": "floodplains",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a floodplain?",
+    "options": [
+      {"text": "The flat area of land next to a river that becomes covered with water when the river overflows", "isCorrect": true, "feedback": "Correct -- floodplains are low-lying areas regularly shaped by periodic flooding from a nearby river."},
+      {"text": "A dry, elevated plateau far from any river", "isCorrect": false, "feedback": "A floodplain is specifically low-lying land near a river, not a dry, elevated area far from water."},
+      {"text": "A deep underwater trench in the ocean", "isCorrect": false, "feedback": "A floodplain is a land feature next to a river, not a deep ocean depression."},
+      {"text": "A permanently frozen region near the poles", "isCorrect": false, "feedback": "A floodplain is defined by its relationship to a river's flooding, not by being permanently frozen."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why is the soil on a floodplain often especially fertile and attractive for farming?",
+    "options": [
+      {"text": "Periodic flooding deposits nutrient-rich sediment across the land, replenishing the soil naturally", "isCorrect": true, "feedback": "Correct -- this is why many of history's earliest agricultural civilizations settled along floodplains, like those of the Nile and Tigris-Euphrates."},
+      {"text": "Floodplain soil is naturally rich because it never receives any water at all", "isCorrect": false, "feedback": "This is the opposite of reality -- floodplain fertility comes specifically from periodic water and sediment deposits, not an absence of water."},
+      {"text": "Farmers artificially inject nutrients into floodplain soil before any natural process occurs", "isCorrect": false, "feedback": "While farmers may add fertilizer, the floodplain's natural fertility specifically comes from river-deposited sediment, not artificial injection alone."},
+      {"text": "Floodplain soil is fertile because it's located at extremely high elevation", "isCorrect": false, "feedback": "Floodplains are characteristically low-lying, not at high elevation -- their fertility comes from sediment deposits, not elevation."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why does building levees or other flood barriers along a river to protect a floodplain from flooding sometimes create unintended long-term problems?",
+    "options": [
+      {"text": "By preventing natural flooding, levees stop the annual deposit of fertile sediment and can cause sediment to build up in the riverbed itself, sometimes raising flood risk and reducing soil fertility over time", "isCorrect": true, "feedback": "Correct -- this tradeoff means engineered flood control can inadvertently increase long-term flood severity risk and diminish the floodplain's natural fertility benefits."},
+      {"text": "Levees have no effect whatsoever on sediment deposition or flood risk", "isCorrect": false, "feedback": "Levees actually can significantly alter natural sediment deposition patterns and flood dynamics -- they aren't neutral in their long-term effects."},
+      {"text": "Levees instantly and permanently eliminate any possibility of future flooding", "isCorrect": false, "feedback": "Levees reduce the likelihood of routine flooding, but they don't eliminate flood risk entirely, and can sometimes worsen the severity of rare, larger floods."},
+      {"text": "Levees cause the river to immediately dry up and disappear", "isCorrect": false, "feedback": "Levees redirect and contain water rather than eliminating the river -- this claim isn't accurate."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This flat land sits right next to a river and gets covered with water when the river rises too high.", "medium": "This is the low-lying land bordering a river that periodically gets submerged during high water.", "hard": "This land's character is defined by a repeating cycle of submersion and exposure, not by permanent dryness or permanent submersion."},
+    "medium": {"easy": "When the river floods, it leaves behind rich mud and silt that makes the soil great for growing crops.", "medium": "Every time the river overflows, it leaves behind a fresh layer of nutrient-packed mud on the land.", "hard": "The mechanism is repeated natural sediment deposition during overflow events, contrasted with a lack of water, purely artificial fertilization, or an unrelated elevation factor."},
+    "hard": {"easy": "Blocking floods also blocks the yearly delivery of rich mud, and can even make the river's bed rise, which can sometimes make bad floods even worse later on.", "medium": "Stopping regular floods also stops the yearly delivery of fertile mud, and can let sediment pile up inside the river channel itself, raising the risk of a worse flood down the road.", "hard": "The tradeoff involves disrupting the natural sediment-deposition cycle while altering the river channel's own sediment load, which can paradoxically elevate long-term flood severity risk even as it suppresses routine flooding -- not a claim of zero effect, total flood elimination, or the river disappearing."}
+  }
+},
+{
+  "topic": "oxbow lakes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is an oxbow lake?",
+    "options": [
+      {"text": "A curved, U-shaped lake formed when a bend in a river gets cut off from the river's main flow", "isCorrect": true, "feedback": "Correct -- oxbow lakes are named for their distinctive curved shape, resembling the U-shaped part of an old ox yoke."},
+      {"text": "A perfectly round lake formed inside a volcanic crater", "isCorrect": false, "feedback": "A crater lake forms in a volcanic depression -- an oxbow lake instead forms from a cut-off river bend and has a curved, not round, shape."},
+      {"text": "A deep lake formed by a glacier scooping out a valley", "isCorrect": false, "feedback": "That describes a type of glacial lake -- an oxbow lake specifically forms from a river's abandoned meander bend, not glacial carving."},
+      {"text": "A saltwater lake formed along a desert coastline", "isCorrect": false, "feedback": "Oxbow lakes typically form as freshwater features along winding rivers, not as saltwater desert coastal lakes."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What process typically leads to the formation of an oxbow lake?",
+    "options": [
+      {"text": "A meandering river erodes the outer bank of a tight bend so much that the river eventually cuts a new, straighter channel, isolating the old curved bend as a separate lake", "isCorrect": true, "feedback": "Correct -- as meanders grow more pronounced over time, floods can help the river 'shortcut' across a narrow neck of land, stranding the old loop."},
+      {"text": "Heavy snowfall accumulates in a curved valley and slowly melts into a lake", "isCorrect": false, "feedback": "Snowmelt isn't the defining process here -- an oxbow lake specifically forms from a river's meander being cut off from the main channel."},
+      {"text": "A volcanic eruption creates a curved crater that later fills with rainwater", "isCorrect": false, "feedback": "Volcanic activity isn't involved in oxbow lake formation -- it comes specifically from a river's own meandering and channel-cutting process."},
+      {"text": "Ocean tides erode a curved inlet along the coastline", "isCorrect": false, "feedback": "Oxbow lakes form inland, from a river's meandering process, not from ocean tidal erosion along a coast."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Once an oxbow lake forms and is cut off from the main river channel, what is its typical long-term fate?",
+    "options": [
+      {"text": "Without a continuous flow of water and fresh sediment, it gradually fills in with sediment and vegetation over time, potentially becoming a marsh and eventually dry land", "isCorrect": true, "feedback": "Correct -- oxbow lakes are typically a temporary landscape feature on a geological timescale, since they lack the constant water exchange of the main river."},
+      {"text": "It permanently connects to the ocean and becomes a saltwater bay", "isCorrect": false, "feedback": "Oxbow lakes form inland from a river's cut-off meander -- they don't spontaneously connect to the ocean and become a bay."},
+      {"text": "It grows continuously larger and deeper forever, without any natural limit", "isCorrect": false, "feedback": "Without the river's continuous flow, an oxbow lake generally shrinks and fills with sediment over time -- it doesn't grow indefinitely."},
+      {"text": "It immediately reconnects with the main river channel within a few days", "isCorrect": false, "feedback": "Oxbow lakes typically remain separated from the main channel for an extended period, gradually silting in, rather than reconnecting within days."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This curved lake used to be part of a winding river's loop before it got cut off.", "medium": "This lake's curved shape comes from an old river bend that got separated from the main flow.", "hard": "This lake's existence depends entirely on a river channel abandoning an old looping path."},
+    "medium": {"easy": "A river bends more and more over time until it eventually carves a shortcut, leaving the old loop stranded on its own.", "medium": "As a river's bend grows sharper over time, floodwater can eventually punch through a narrow neck of land, leaving the old loop behind as a separate body of water.", "hard": "The process hinges on progressive meander erosion culminating in channel avulsion across a narrowing neck of land, isolating the former loop -- not snowmelt, volcanism, or coastal tidal action."},
+    "hard": {"easy": "Since it's no longer connected to the flowing river, it slowly fills up with mud and plants over a long time and can eventually turn into dry land.", "medium": "Cut off from the river's constant flow, it slowly fills in with sediment and plant growth over the years, potentially becoming marshy and eventually dry.", "hard": "Isolation from the river's continuous flow and sediment renewal typically leads to gradual infilling and ecological succession toward marsh and then dry land over time -- not permanent oceanic connection, unlimited growth, or rapid reconnection."}
+  }
+},
+{
+  "topic": "permafrost",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is permafrost?",
+    "options": [
+      {"text": "Ground that stays frozen for at least two consecutive years", "isCorrect": true, "feedback": "Correct -- permafrost is defined by this sustained freezing, common in Arctic and high-altitude regions."},
+      {"text": "Any snow that has fallen within the last 24 hours", "isCorrect": false, "feedback": "Recent snowfall is temporary surface snow, not the sustained, multi-year frozen ground that defines permafrost."},
+      {"text": "A type of glacier found only in mountain valleys", "isCorrect": false, "feedback": "Permafrost is frozen ground, not a moving mass of ice like a glacier."},
+      {"text": "Ice that forms exclusively on the surface of lakes in winter", "isCorrect": false, "feedback": "Seasonal lake ice melts each year -- permafrost specifically refers to ground that stays frozen continuously for at least two years."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the 'active layer' in a permafrost region?",
+    "options": [
+      {"text": "The topmost layer of soil that thaws each summer and refreezes each winter, sitting above the permanently frozen ground below", "isCorrect": true, "feedback": "Correct -- plants and shallow-rooted vegetation can grow in this seasonally thawed layer, even though the deeper permafrost remains frozen year-round."},
+      {"text": "A layer of solid rock found only at the very bottom of the permafrost", "isCorrect": false, "feedback": "The active layer is specifically the seasonally thawing surface soil, not a rock layer at the base of the permafrost."},
+      {"text": "The portion of permafrost that never thaws under any circumstances", "isCorrect": false, "feedback": "This describes the deeper, permanently frozen layer -- the active layer is defined by the fact that it DOES thaw seasonally."},
+      {"text": "An artificial layer of insulation added by engineers to protect buildings", "isCorrect": false, "feedback": "The active layer is a natural seasonal feature of permafrost soil, not a man-made insulation layer."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is the thawing of permafrost due to climate warming considered a significant concern for accelerating global climate change?",
+    "options": [
+      {"text": "Thawing permafrost can release large amounts of previously trapped methane and carbon dioxide from decomposing organic matter, both of which are potent greenhouse gases", "isCorrect": true, "feedback": "Correct -- this creates a feedback loop, since warming causes thawing, which releases greenhouse gases that in turn contribute to further warming."},
+      {"text": "Thawing permafrost has no connection whatsoever to greenhouse gas levels", "isCorrect": false, "feedback": "Thawing permafrost is a well-documented source of greenhouse gas release, particularly methane and carbon dioxide, contrary to this claim."},
+      {"text": "Thawing permafrost immediately and permanently cools the atmosphere", "isCorrect": false, "feedback": "This is the opposite of the actual concern -- thawing permafrost is linked to releasing gases that contribute to warming, not cooling."},
+      {"text": "Thawing permafrost only affects a handful of uninhabited islands with no broader consequences", "isCorrect": false, "feedback": "Permafrost thaw is a widespread Arctic phenomenon with global climate implications, not one confined to a few isolated, inconsequential locations."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This is ground that stays frozen solid for at least two years in a row.", "medium": "This frozen ground is common in Arctic regions and stays frozen for a very long time, not just through one winter.", "hard": "This ground's defining trait is duration of freezing, not a single season's snow or a specific type of moving ice."},
+    "medium": {"easy": "This is the top part of the frozen ground that actually thaws out every summer, unlike what's deeper down.", "medium": "This is the shallow surface layer that seasonally thaws in summer and refreezes in winter, sitting above the permanently frozen material below.", "hard": "This zone is defined by its seasonal thaw-freeze cycle at the surface, distinct from the perpetually frozen material beneath it or any engineered insulation."},
+    "hard": {"easy": "As this frozen ground thaws, it can let out gases that were trapped inside for ages, and those gases help trap even more heat in the atmosphere.", "medium": "As this ground thaws, decomposing material trapped inside can release heat-trapping gases, which can then cause even more warming and thawing.", "hard": "The concern centers on a feedback loop -- warming triggers thaw, thaw releases trapped greenhouse gases from long-dormant organic matter, and those gases drive further warming -- not a claim of no connection, atmospheric cooling, or a narrowly localized effect."}
+  }
+},
+{
+  "topic": "barrier islands",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a barrier island?",
+    "options": [
+      {"text": "A long, narrow island running parallel to a coastline, separated from the mainland by a lagoon or bay", "isCorrect": true, "feedback": "Correct -- barrier islands help protect the mainland coast from the full force of ocean waves and storms."},
+      {"text": "A tall mountain range located far inland", "isCorrect": false, "feedback": "A barrier island is a low, coastal landform, not a tall inland mountain range."},
+      {"text": "A deep underwater canyon near the continental shelf", "isCorrect": false, "feedback": "A barrier island is an above-water landform running along a coast, not a deep underwater canyon."},
+      {"text": "A large island located in the middle of the open ocean, far from any coastline", "isCorrect": false, "feedback": "Barrier islands are specifically located close to and parallel with a mainland coast, not out in the open ocean."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What role do barrier islands typically play for the mainland coastline behind them?",
+    "options": [
+      {"text": "They act as a buffer, absorbing much of the force of ocean waves and storm surges before they reach the mainland", "isCorrect": true, "feedback": "Correct -- this protective role is why the loss or erosion of barrier islands is a major concern for coastal communities."},
+      {"text": "They intensify ocean waves before they reach the mainland, making storms worse", "isCorrect": false, "feedback": "Barrier islands generally reduce, rather than intensify, wave energy reaching the mainland -- they act as a protective buffer."},
+      {"text": "They have no interaction at all with waves or storms", "isCorrect": false, "feedback": "Barrier islands play an active, well-documented protective role by absorbing wave energy -- they aren't simply passive or unrelated to storm impact."},
+      {"text": "They block all sunlight from reaching the mainland coast", "isCorrect": false, "feedback": "Barrier islands don't block sunlight -- their main geographic role relates to buffering wave energy and storm surge, not shading the coast."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why are barrier islands considered naturally dynamic landforms that can shift position or shape significantly over time?",
+    "options": [
+      {"text": "Because they're built primarily from loose sand and sediment, they're highly susceptible to being reshaped, narrowed, or moved by storms, waves, and rising sea levels", "isCorrect": true, "feedback": "Correct -- this makes coastal development on barrier islands especially vulnerable to long-term erosion and storm damage."},
+      {"text": "Because they are made of solid granite bedrock that never changes shape", "isCorrect": false, "feedback": "Barrier islands are typically composed of loose sand and sediment, not solid granite bedrock -- this is what makes them dynamic rather than fixed."},
+      {"text": "Because they are artificially rebuilt by engineers every single year", "isCorrect": false, "feedback": "While some barrier islands do receive engineered sand replenishment, their fundamental dynamic nature comes from their loose natural sediment composition, not solely from human intervention."},
+      {"text": "Because they are not actually affected by waves or storms at all", "isCorrect": false, "feedback": "Barrier islands are, in fact, significantly affected and reshaped by wave action and storms -- that's precisely why they're considered dynamic landforms."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This long, thin island runs alongside the coast, with a lagoon between it and the mainland.", "medium": "This coastal landform sits just offshore, taking the brunt of waves before they reach the mainland.", "hard": "This landform's location and shape are entirely tied to the coastline it runs parallel to, not to being isolated far out at sea."},
+    "medium": {"easy": "This landform basically takes the hit from big waves and storms so the mainland doesn't get the full force.", "medium": "Think of this landform as a shield, soaking up a lot of wave energy before it can reach the coast behind it.", "hard": "The functional role is one of wave-energy attenuation and storm-surge buffering for the shoreline behind it, not amplification, blocked sunlight, or total non-interaction."},
+    "hard": {"easy": "Because it's mostly made of loose sand, storms and waves can actually move it around and reshape it over time.", "medium": "Because it's built from loose sand rather than solid rock, storms and rising seas can genuinely reshape, narrow, or shift it over the years.", "hard": "The dynamism stems from its predominantly unconsolidated sediment composition, making it inherently susceptible to reshaping by storm energy and sea-level change, rather than being an unyielding bedrock formation or immune to wave action."}
+  }
+},
+{
+  "topic": "the rock cycle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the 'rock cycle'?",
+    "options": [
+      {"text": "The continuous process by which rocks transform between igneous, sedimentary, and metamorphic types over time", "isCorrect": true, "feedback": "Correct -- rocks are constantly being formed, broken down, and reformed through geological processes."},
+      {"text": "The process by which water moves between the ocean, atmosphere, and land", "isCorrect": false, "feedback": "That describes the water cycle, a different process -- the rock cycle concerns rock transformation, not water movement."},
+      {"text": "The seasonal pattern of a mountain range receiving snow and losing it", "isCorrect": false, "feedback": "That describes a seasonal weather pattern, not the geological process of rock transformation over long time periods."},
+      {"text": "The process by which carbon moves through the atmosphere, oceans, and living organisms", "isCorrect": false, "feedback": "That describes the carbon cycle, a different natural cycle -- the rock cycle specifically concerns rock transformation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does igneous rock form, according to the rock cycle?",
+    "options": [
+      {"text": "From the cooling and solidification of molten rock (magma or lava)", "isCorrect": true, "feedback": "Correct -- igneous rock forms whether magma cools slowly underground or lava cools quickly at the surface."},
+      {"text": "From layers of sediment being compressed and cemented together over time", "isCorrect": false, "feedback": "That describes sedimentary rock formation -- igneous rock instead forms from cooling molten material."},
+      {"text": "From existing rock being transformed by intense heat and pressure without fully melting", "isCorrect": false, "feedback": "That describes metamorphic rock formation -- igneous rock specifically forms from fully molten material cooling and solidifying."},
+      {"text": "From ancient plant and animal remains decomposing underground", "isCorrect": false, "feedback": "Decomposing organic remains are more associated with fossil fuel formation, not the formation of igneous rock from cooling magma or lava."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is the rock cycle considered a cycle with no true fixed 'starting point,' rather than a strict one-way sequence?",
+    "options": [
+      {"text": "Any of the three rock types can transform into any other type (or even the same type) depending on the geological process it undergoes, such as melting, heat and pressure, or weathering and compaction", "isCorrect": true, "feedback": "Correct -- for example, metamorphic rock can melt into magma and later cool into igneous rock, or erode into sediment that eventually becomes sedimentary rock, showing there's no single required path."},
+      {"text": "Because only igneous rock can ever transform into a different rock type, while the others cannot change", "isCorrect": false, "feedback": "All three rock types -- igneous, sedimentary, and metamorphic -- can transform into other types, not just igneous rock specifically."},
+      {"text": "Because rocks never actually change from one type into another under any circumstances", "isCorrect": false, "feedback": "This contradicts the entire premise of the rock cycle -- rocks absolutely can and do transform between types over geological time."},
+      {"text": "Because the rock cycle only occurs once every million years and then permanently stops", "isCorrect": false, "feedback": "The rock cycle is an ongoing, continuous process, not a single one-time event followed by a permanent stop."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This describes rocks constantly changing from one type into another over huge stretches of time.", "medium": "This is the ongoing process where igneous, sedimentary, and metamorphic rocks can transform into each other.", "hard": "This process, unlike some other natural cycles, deals specifically with solid mineral material transforming under heat, pressure, or weathering."},
+    "medium": {"easy": "This rock type starts out as melted material that then cools down and hardens.", "medium": "This rock type comes directly from magma or lava cooling and turning solid.", "hard": "This rock type's formation hinges specifically on a molten-to-solid transition via cooling, distinct from compaction of particles or alteration of existing solid rock."},
+    "hard": {"easy": "Basically any type of rock can eventually turn into any other type, depending on what happens to it -- melting, heat and pressure, or wearing down.", "medium": "Since any rock type can eventually become any other type through melting, pressure, or weathering, there's no single fixed order it has to follow.", "hard": "The cycle's structure allows multiple possible transformation pathways among all three rock categories, rather than a rigid, one-directional sequence restricted to a single rock type, or a claim that transformation never happens at all."}
+  }
+},
+{
+  "topic": "seafloor spreading",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 'seafloor spreading'?",
+    "options": [
+      {"text": "The process by which new oceanic crust forms at a mid-ocean ridge and spreads outward in both directions", "isCorrect": true, "feedback": "Correct -- seafloor spreading provided major early evidence supporting the theory of plate tectonics."},
+      {"text": "The process by which ocean water evaporates and spreads across the atmosphere", "isCorrect": false, "feedback": "That describes evaporation, part of the water cycle -- seafloor spreading concerns the creation and movement of solid ocean crust, not water evaporation."},
+      {"text": "The gradual increase in the total volume of water in the world's oceans", "isCorrect": false, "feedback": "Seafloor spreading is about crust formation and movement at the ocean floor, not a change in total ocean water volume."},
+      {"text": "The process by which coral reefs expand across a wider area of seafloor", "isCorrect": false, "feedback": "Coral reef growth is a biological process -- seafloor spreading is a geological process involving new crust formation from magma."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Where does seafloor spreading primarily occur?",
+    "options": [
+      {"text": "At mid-ocean ridges, where two oceanic plates are diverging (moving apart)", "isCorrect": true, "feedback": "Correct -- as plates pull apart at these ridges, magma rises to fill the gap, cooling into new oceanic crust."},
+      {"text": "At subduction zones, where one plate sinks beneath another", "isCorrect": false, "feedback": "Subduction zones are where oceanic crust is destroyed and recycled, essentially the opposite process from where new crust is created."},
+      {"text": "At transform boundaries, where plates slide past each other", "isCorrect": false, "feedback": "Transform boundaries involve plates sliding sideways past one another, without creating or destroying significant crust, unlike a spreading ridge."},
+      {"text": "Only in shallow coastal waters near river deltas", "isCorrect": false, "feedback": "Seafloor spreading happens at deep mid-ocean ridges, often far from any coastline or river delta."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How did the discovery of symmetrical, alternating magnetic stripes on either side of mid-ocean ridges provide strong evidence for seafloor spreading?",
+    "options": [
+      {"text": "The stripes recorded periodic reversals in Earth's magnetic field as new crust formed and cooled at the ridge, with matching patterns appearing symmetrically on both sides as the seafloor spread outward over time", "isCorrect": true, "feedback": "Correct -- this discovery was one of the pivotal pieces of evidence that helped establish plate tectonics as a scientifically accepted theory in the mid-20th century."},
+      {"text": "The stripes were caused entirely by ocean currents depositing magnetic sand in alternating bands", "isCorrect": false, "feedback": "The magnetic stripes are explained by cooling crust recording Earth's shifting magnetic field, not by ocean currents depositing sand."},
+      {"text": "The stripes indicate that the ocean floor never actually changes or moves at all", "isCorrect": false, "feedback": "The symmetrical stripe pattern is exactly what indicates ongoing movement and spreading -- it wouldn't exist if the seafloor were static."},
+      {"text": "The stripes were found to be a printing error in early oceanographic survey maps", "isCorrect": false, "feedback": "The magnetic stripe pattern is a genuine, repeatedly confirmed scientific finding from real magnetic surveys, not a mapping error."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This process creates brand-new ocean floor at a spot where two plates are separating.", "medium": "This process happens at a long underwater ridge where magma rises up to form new crust.", "hard": "This process specifically ADDS new solid material to the ocean floor, rather than moving water or living organisms."},
+    "medium": {"easy": "This happens where two plates are pulling apart from each other, not where they're colliding or sliding sideways.", "medium": "Picture a long underwater mountain range where plates are separating and new crust keeps forming right in the gap.", "hard": "The setting is specifically a divergent oceanic plate boundary, distinct from a subduction zone, a transform boundary, or shallow coastal waters."},
+    "hard": {"easy": "The rock records a repeating pattern that matches up like a mirror image on both sides of the ridge, showing the crust really is spreading outward over time.", "medium": "As new rock cools at the ridge, it locks in a record of Earth's magnetic field at that moment, and this creates a mirrored pattern on both sides as spreading continues.", "hard": "The evidence lies in matched, mirror-symmetric bands recording historical reversals of Earth's magnetic field as newly formed crust cooled and moved outward from the ridge -- not ocean currents, an unchanging seafloor, or a mapping artifact."}
+  }
+},
+{
+  "topic": "volcanic hot spots",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a volcanic 'hot spot'?",
+    "options": [
+      {"text": "An area of unusually intense volcanic activity caused by a plume of hot material rising from deep within the Earth, independent of tectonic plate boundaries", "isCorrect": true, "feedback": "Correct -- hot spots can create volcanic activity in the middle of a tectonic plate, far from any plate boundary."},
+      {"text": "The single hottest recorded air temperature location on Earth's surface", "isCorrect": false, "feedback": "A volcanic hot spot refers to a source of underground volcanic activity, not simply a location with hot air temperatures."},
+      {"text": "A region where earthquakes never occur", "isCorrect": false, "feedback": "Hot spots are actually often associated with volcanic and some seismic activity -- they aren't defined by an absence of earthquakes."},
+      {"text": "An area where ocean water is unusually warm due to sunlight exposure", "isCorrect": false, "feedback": "A volcanic hot spot is a geological feature driven by heat from within the Earth, not a surface ocean-warming effect from sunlight."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The Hawaiian Islands are a classic example of volcanic activity from a hot spot. Why does this hot spot produce a chain of islands rather than just a single volcano?",
+    "options": [
+      {"text": "The hot spot itself stays relatively fixed while the Pacific Plate slowly moves over it, so new volcanoes form in sequence as older ones drift away from the hot spot and become inactive", "isCorrect": true, "feedback": "Correct -- this explains why the Hawaiian Islands get progressively older as you move away from the current location of active volcanism."},
+      {"text": "The hot spot itself physically moves in a long, straight line beneath the ocean, carving out several separate craters as it goes", "isCorrect": false, "feedback": "It's the tectonic plate that moves over a relatively fixed hot spot, not the hot spot itself traveling in a line."},
+      {"text": "Each island in the chain was formed by a completely unrelated, separate volcanic hot spot", "isCorrect": false, "feedback": "The islands in the chain share a single common hot spot source -- they aren't each the product of entirely separate, unrelated hot spots."},
+      {"text": "Ocean currents physically pushed a single volcanic island apart into several smaller pieces", "isCorrect": false, "feedback": "Ocean currents don't break apart volcanic islands this way -- the chain forms from sequential volcanic activity as a plate moves over a stationary hot spot."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do volcanic hot spots present a partial exception to the general rule that most volcanic activity occurs at tectonic plate boundaries?",
+    "options": [
+      {"text": "Hot spots are believed to be fed by rising plumes of unusually hot material originating deep in the mantle, a mechanism independent of the surface plate boundary processes that cause most other volcanism", "isCorrect": true, "feedback": "Correct -- this is why hot spot volcanoes, like those in Hawaii or Yellowstone, can occur in the middle of a plate, far from any boundary where plates are colliding, separating, or sliding."},
+      {"text": "Hot spots form where two plates are slowly pulling apart, acting as small-scale versions of the divergent boundaries that create mid-ocean ridges", "isCorrect": false, "feedback": "That describes divergent-boundary volcanism -- hot spots are notable precisely because they occur independent of any plate boundary, divergent or otherwise, powered instead by a deep mantle plume."},
+      {"text": "Hot spots form where a subducting plate melts deep underground, with the resulting magma rising back up through the plate above it", "isCorrect": false, "feedback": "That describes convergent-boundary (subduction zone) volcanism -- hot spots are distinctive because they don't require a subducting plate or any plate boundary at all."},
+      {"text": "Hot spots are remnants of ancient plate boundaries, where volcanic activity has simply continued long after the surrounding plates stopped moving apart", "isCorrect": false, "feedback": "Hot spots aren't leftover plate-boundary features -- they're driven by a deep mantle plume unrelated to any past or present plate boundary location."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This is a spot of intense volcanic activity that isn't located at the edge of a tectonic plate.", "medium": "This feature is powered by heat rising up from deep inside the Earth, not from the usual plate-edge activity.", "hard": "This feature's location is defined by a deep internal heat source, independent of where plates happen to meet."},
+    "medium": {"easy": "The heat source basically stays put while the huge slab of crust above it slowly slides across it over millions of years.", "medium": "It's not the heat source that travels -- it's the giant plate above it that drifts slowly across a relatively fixed spot.", "hard": "Think through why a chain of islands would grow progressively older moving away from the currently active volcano -- what would need to hold still, and what would need to be in motion, for that age pattern to emerge?"},
+    "hard": {"easy": "The heat for this comes from way down deep inside the Earth, not from wherever two plates happen to be touching each other.", "medium": "The source of the heat is a plume rising from deep within the mantle, a completely different mechanism from the usual plate-edge volcanic activity.", "hard": "Work out what would have to be different about a volcano's underlying heat source -- compared to the source that powers volcanoes at converging or diverging plate edges -- for that volcano to keep erupting in the middle of a plate rather than along its edge."}
+  }
+}
+]

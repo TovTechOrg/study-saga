@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between AC and DC electrical current",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In Direct Current (DC), electric current flows:",
+    "options": [
+      {"text": "Consistently in one single direction", "isCorrect": true, "feedback": "Correct -- DC current (like from a battery) flows steadily in a single direction, unlike alternating current."},
+      {"text": "Back and forth, periodically reversing direction", "isCorrect": false, "feedback": "That describes Alternating Current (AC), not Direct Current (DC), which specifically flows in ONE consistent direction."},
+      {"text": "In no particular direction at all, completely randomly", "isCorrect": false, "feedback": "This isn't accurate -- DC current flows in a specific, CONSISTENT single direction, not randomly."},
+      {"text": "Only through solid materials, never through liquids", "isCorrect": false, "feedback": "This isn't the defining characteristic of DC -- current direction consistency (not the specific conducting medium type) is what defines DC current."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Household electrical outlets typically supply AC (Alternating Current) power, which periodically reverses direction (e.g., 60 times per second in the US). Why might AC be particularly well-suited for long-distance electrical power transmission, compared to DC?",
+    "options": [
+      {"text": "AC voltage can be easily and efficiently increased or decreased using transformers, allowing power to be transmitted at very high voltage (reducing energy loss over long distances) and then safely stepped back down to usable levels near its destination", "isCorrect": true, "feedback": "Correct -- this ability to efficiently transform AC voltage levels (which is much more difficult to do with DC) is precisely why AC became the standard choice for long-distance electrical power transmission infrastructure."},
+      {"text": "AC power actually cannot be transmitted over long distances at all, unlike DC power", "isCorrect": false, "feedback": "This isn't accurate -- AC power is actually specifically WELL-SUITED (and historically preferred) for long-distance transmission, precisely due to the ease of voltage transformation."},
+      {"text": "Voltage transformation capability has no actual connection to why AC might be preferred for long-distance power transmission", "isCorrect": false, "feedback": "This isn't accurate -- voltage transformation capability is actually THE central, historically decisive reason why AC became the preferred choice for long-distance power transmission infrastructure."},
+      {"text": "DC power is actually much easier to transform to different voltage levels than AC power", "isCorrect": false, "feedback": "This is backwards -- AC power is specifically EASIER to transform to different voltage levels (using simple transformers) compared to DC power, which historically required more complex methods for voltage conversion."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Modern high-voltage direct current (HVDC) transmission lines are increasingly used for certain very long-distance power transmission applications, despite AC's traditional advantages for easy voltage transformation. Given that HVDC still requires specialized (though more complex) voltage conversion equipment, why might HVDC be chosen over traditional AC transmission for these particular long-distance applications?",
+    "options": [
+      {"text": "For very long transmission distances, HVDC generally experiences lower energy losses (compared to AC) due to specific technical factors related to how each current type behaves over extended cable/line lengths, making the increased complexity of DC conversion equipment worthwhile for maximizing overall transmission efficiency", "isCorrect": true, "feedback": "Correct -- this technical advantage of HVDC for very long-distance transmission, despite requiring more complex conversion equipment than traditional AC transformers, illustrates how engineering trade-offs can shift the optimal technology choice depending on the specific application scale and requirements."},
+      {"text": "HVDC transmission actually always has higher energy losses than AC transmission, regardless of distance", "isCorrect": false, "feedback": "This isn't accurate -- for sufficiently LONG transmission distances specifically, HVDC can actually achieve LOWER energy losses than traditional AC transmission, which is precisely why it's increasingly used for certain very long-distance applications."},
+      {"text": "HVDC conversion equipment is actually simpler and cheaper than standard AC transformer equipment", "isCorrect": false, "feedback": "This isn't accurate -- HVDC conversion equipment is generally MORE complex (and often more expensive) than standard AC transformers; its use is justified specifically by other efficiency advantages for particular very long-distance applications, not simplicity or lower cost of conversion equipment."},
+      {"text": "This choice between HVDC and AC transmission has no actual connection to distance or technical efficiency considerations", "isCorrect": false, "feedback": "This isn't accurate -- this choice is DIRECTLY and specifically connected to distance-dependent technical efficiency considerations, which is precisely why HVDC is selectively used for certain particular very long-distance transmission applications."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This current type maintains a temporally invariant, unidirectional charge flow pattern.", "medium": "This kind of electrical flow just goes one way, steady and constant.", "easy": "This kind of electrical flow just goes one steady direction."},
+    "medium": {"hard": "Consider how the ease of adjusting voltage magnitude for one current type (but not readily for the other) directly impacts practical long-distance transmission efficiency.", "medium": "Being able to easily crank voltage way up for the trip and then back down for use is a big advantage that this current type has over the other.", "easy": "Being able to easily adjust voltage up and down for transmission is a big advantage AC has."},
+    "hard": {"hard": "Consider how technical factors specific to very long transmission distances could shift the overall efficiency balance in favor of a technology requiring more complex conversion equipment but offering lower line losses.", "medium": "Even though the special equipment for this type of current is more complicated, it can actually lose less energy over really long distances, making it worth the extra complexity.", "easy": "Even though this equipment is more complicated, it loses less energy over really long distances."}
+  }
+}
+]

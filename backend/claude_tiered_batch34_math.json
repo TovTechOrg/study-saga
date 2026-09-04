@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of a system of equations with no solution or infinite solutions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Two lines are parallel (never intersect). How many solutions does this system of equations have?",
+    "options": [
+      {"text": "No solution", "isCorrect": true, "feedback": "Correct -- since parallel lines never cross, there's no point that satisfies both equations at once."},
+      {"text": "Exactly one solution", "isCorrect": false, "feedback": "One solution would require the lines to intersect at exactly one point, but parallel lines never intersect at all."},
+      {"text": "Infinitely many solutions", "isCorrect": false, "feedback": "Infinite solutions would require the lines to be identical (overlapping), not simply parallel and separate."},
+      {"text": "Exactly two solutions", "isCorrect": false, "feedback": "Two straight lines can share at most one intersection point (or be identical/parallel) -- \"exactly two\" isn't a possible outcome here."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two equations, when simplified, turn out to be exactly identical (like y=2x+3 and 2y=4x+6). How many solutions does this system have?",
+    "options": [
+      {"text": "Infinitely many solutions", "isCorrect": true, "feedback": "Correct -- since both equations describe the exact same line, every point on that line satisfies both equations."},
+      {"text": "No solution at all", "isCorrect": false, "feedback": "This would apply to parallel, non-identical lines -- identical lines actually share ALL their points in common, giving infinite solutions."},
+      {"text": "Exactly one solution", "isCorrect": false, "feedback": "One solution would apply to two distinct lines crossing at a single point -- identical lines share every point, not just one."},
+      {"text": "It cannot be determined", "isCorrect": false, "feedback": "This case can definitely be determined -- identical equations always represent the same line, giving infinitely many shared solutions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A system of equations is: 2x + 3y = 6 and 4x + 6y = 15. Without fully solving, how can you tell this system has no solution?",
+    "options": [
+      {"text": "Multiplying the first equation by 2 gives 4x+6y=12, but the second equation says 4x+6y=15 -- the left sides match but the right sides don't", "isCorrect": true, "feedback": "Correct -- since the left sides match but the right sides don't, the lines are parallel and distinct, meaning no solution exists."},
+      {"text": "This system definitely has exactly one solution", "isCorrect": false, "feedback": "This isn't correct -- checking the coefficient pattern reveals these lines are actually parallel (matching left sides, mismatched right sides), meaning no solution exists."},
+      {"text": "This system has infinitely many solutions", "isCorrect": false, "feedback": "This isn't correct -- infinite solutions would require the equations to be fully identical (including the right side), but here the right sides don't match up correctly."},
+      {"text": "There is no way to determine this without graphing both lines first", "isCorrect": false, "feedback": "This CAN be determined algebraically by comparing coefficient ratios, without necessarily needing to graph the lines first."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Consider the geometric relationship between two lines that maintain a constant separation and never meet.", "medium": "Think about what it means for two lines to never touch each other.", "easy": "Parallel lines never cross, so there's no shared point."},
+    "medium": {"hard": "Consider what it means geometrically for two equations to describe exactly the same line.", "medium": "If the equations describe the exact same line, then every single point on that line works for both.", "easy": "If both equations describe the exact same line, every point on it counts as a solution."},
+    "hard": {"hard": "Compare the ratio of coefficients on the left side of each equation to the ratio of the constant terms -- if the coefficient ratios match but the constant ratio doesn't, the lines are parallel and distinct.", "medium": "Try multiplying the first equation by a constant to match the second equation's left side, then compare the right sides to see if they also match up.", "easy": "Multiply the first equation by 2 to get 4x+6y=12, then compare that to the actual second equation's 15 -- they don't match, so no solution exists."}
+  }
+}
+]

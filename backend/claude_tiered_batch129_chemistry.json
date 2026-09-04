@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between an exact number and a measured number in significant figures",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An 'exact number' (like counting exactly 12 eggs in a carton, or a defined conversion like 100 cm = 1 m) is considered to have:",
+    "options": [
+      {"text": "An infinite number of significant figures, since there is no uncertainty in the value", "isCorrect": true, "feedback": "Correct -- exact numbers (from counting or exact definitions) carry no measurement uncertainty, so they're treated as having infinite significant figures and don't limit calculation precision."},
+      {"text": "Only one significant figure, regardless of the actual value", "isCorrect": false, "feedback": "This isn't accurate -- exact numbers are treated as having INFINITE significant figures (no uncertainty), not limited to just one significant figure."},
+      {"text": "Zero significant figures, since it doesn't come from a physical measurement", "isCorrect": false, "feedback": "This isn't accurate -- exact numbers aren't considered to have zero significant figures; they're treated as having infinite significant figures, since there's no uncertainty to limit them."},
+      {"text": "The same number of significant figures as whatever measured value it's used alongside in a calculation", "isCorrect": false, "feedback": "This isn't accurate -- exact numbers have their OWN fixed treatment (infinite significant figures) regardless of what measured values they appear alongside in a calculation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When performing a calculation that mixes an exact number with a measured number, the exact number is essentially ignored when determining the final answer's number of significant figures. Why does the exact number not limit the precision of the result, while a measured number does?",
+    "options": [
+      {"text": "Significant figure rules exist specifically to track and communicate MEASUREMENT UNCERTAINTY, but exact numbers carry no such uncertainty at all (they are precisely known, like counting a defined quantity), so only the measured number's actual precision/uncertainty needs to be considered when determining how precisely the final calculated result can genuinely be known", "isCorrect": true, "feedback": "Correct -- this explanation of significant figures as fundamentally about tracking measurement uncertainty (which exact numbers simply don't have) correctly explains why only measured numbers, not exact numbers, limit a calculation's final precision."},
+      {"text": "Exact numbers would actually limit the precision of a calculated result just as much as measured numbers do", "isCorrect": false, "feedback": "This isn't accurate -- exact numbers do NOT limit precision, unlike measured numbers, precisely because exact numbers carry no measurement uncertainty."},
+      {"text": "Significant figures have no actual connection to representing measurement uncertainty in a calculated result", "isCorrect": false, "feedback": "This isn't accurate -- significant figures ARE DIRECTLY intended to represent and communicate measurement uncertainty, which is the whole basis for this exact-versus-measured-number distinction."},
+      {"text": "Measured numbers would actually have no meaningful associated uncertainty, identical to exact numbers", "isCorrect": false, "feedback": "This isn't accurate -- measured numbers specifically DO carry genuine measurement uncertainty (limited precision), unlike exact numbers, which is precisely why they DO limit a calculation's final precision."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Calculating the average of three measured lengths (5.20 cm, 5.25 cm, 5.30 cm) requires dividing their sum by exactly 3 (an exact count of measurements, not a measured value itself). Explain why this exact divisor of 3 should NOT be treated as limiting the significant figures of the final averaged result, even though it appears directly in the calculation.",
+    "options": [
+      {"text": "The number 3 in this context represents an exact COUNT of how many measurements were taken (not itself a measured, uncertain quantity), so it carries no measurement uncertainty and should be treated as having infinite significant figures -- the final result's precision should instead be governed entirely by the actual measured values' precision (in this case, each measurement has 3 significant figures), not artificially limited by the exact count used in averaging", "isCorrect": true, "feedback": "Correct -- this explanation correctly distinguishes the exact, uncertainty-free divisor (a count) from the genuinely uncertain measured values being averaged, correctly explaining why only the measured values' precision should determine the final result's significant figures."},
+      {"text": "The divisor of 3 would actually need to be treated as a measured value with its own limited significant figures, restricting the final result's precision", "isCorrect": false, "feedback": "This isn't accurate -- the divisor of 3 is an EXACT COUNT (not a measured value), so it should NOT be treated as limiting the final result's significant figures."},
+      {"text": "This exact-count divisor has no actual connection to determining how significant figure rules should be correctly applied in an averaging calculation", "isCorrect": false, "feedback": "This isn't accurate -- correctly recognizing this divisor as an exact count IS DIRECTLY connected to and necessary for correctly applying significant figure rules in this calculation."},
+      {"text": "The final averaged result would actually need to have fewer significant figures than any of the individual measured values used in the calculation", "isCorrect": false, "feedback": "This isn't accurate -- the final result's significant figures should be governed by the PRECISION of the measured values themselves, not arbitrarily reduced below what those measurements support."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This numerical category possesses no inherent measurement uncertainty, as it arises from enumeration or formal definition rather than instrumental measurement.", "medium": "This is a number that comes from counting or a definition, so it has no uncertainty attached to it at all.", "easy": "This is a number that comes from counting or a definition, so it has no uncertainty attached."},
+    "medium": {"hard": "Consider how significant figure conventions exist to encode measurement uncertainty, a property entirely absent from numbers arising from exact counts or definitions.", "medium": "The whole point of counting significant figures is to track how UNCERTAIN a measurement is, and an exact number just doesn't have any uncertainty to track in the first place.", "easy": "Significant figures track how uncertain a measurement is, and an exact number has no uncertainty to track."},
+    "hard": {"hard": "Consider how distinguishing an exact enumerative divisor from the genuinely uncertain measured quantities being combined determines which values should govern the final result's precision.", "medium": "The number 3 here just counts how many measurements you took, it isn't itself a measurement, so it shouldn't be allowed to drag down the precision that the actual measured values support.", "easy": "The number 3 here just counts how many measurements you took, so it shouldn't drag down the precision the real measurements support."}
+  }
+}
+]

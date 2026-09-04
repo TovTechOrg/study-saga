@@ -1,0 +1,248 @@
+[
+{
+  "topic": "multiplying decimals",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 0.5 × 4?",
+    "options": [
+      {"text": "2.0", "isCorrect": true, "feedback": "Correct -- 0.5×4=2.0."},
+      {"text": "0.2", "isCorrect": false, "feedback": "This misplaces the decimal point."},
+      {"text": "20", "isCorrect": false, "feedback": "This misplaces the decimal point in the other direction."},
+      {"text": "4.5", "isCorrect": false, "feedback": "This adds the numbers instead of multiplying them."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 2.5 × 1.5?",
+    "options": [
+      {"text": "3.75", "isCorrect": true, "feedback": "Correct -- 2.5×1.5=3.75."},
+      {"text": "4.0", "isCorrect": false, "feedback": "This doesn't match the precise correct product of 2.5 and 1.5."},
+      {"text": "3.5", "isCorrect": false, "feedback": "This doesn't match the correct multiplication result."},
+      {"text": "37.5", "isCorrect": false, "feedback": "This misplaces the decimal point by one position."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is 0.24 × 0.3?",
+    "options": [
+      {"text": "0.072", "isCorrect": true, "feedback": "Correct -- multiply as whole numbers (24×3=72), then place the decimal 3 places from the right (2+1 decimal places total)."},
+      {"text": "0.72", "isCorrect": false, "feedback": "This misplaces the decimal by one position -- there should be 3 total decimal places, not 2."},
+      {"text": "7.2", "isCorrect": false, "feedback": "This misplaces the decimal significantly."},
+      {"text": "0.0072", "isCorrect": false, "feedback": "This places the decimal one position too far to the left."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply as if there were no decimal point, then place it back based on the total decimal places involved.", "medium": "Multiply 5 by 4 first, then place the decimal point.", "easy": "Multiply 5 by 4, then move the decimal point one place."},
+    "medium": {"hard": "Multiply as if there were no decimal points, then count the total decimal places in both original numbers.", "medium": "Multiply 25 by 15 first, then place the decimal point based on the total decimal places.", "easy": "Multiply 25 by 15 to get 375, then place the decimal point."},
+    "hard": {"hard": "Multiply as if there were no decimal points, then count the total decimal places across both original numbers to correctly place the decimal in the answer.", "medium": "Multiply 24 by 3 to get 72, then count a total of 3 decimal places (2 from 0.24, 1 from 0.3).", "easy": "Multiply 24 by 3 to get 72, then move the decimal point 3 places to the left."}
+  }
+},
+{
+  "topic": "dividing decimals",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 6.4 ÷ 2?",
+    "options": [
+      {"text": "3.2", "isCorrect": true, "feedback": "Correct -- 6.4÷2=3.2."},
+      {"text": "3.4", "isCorrect": false, "feedback": "This doesn't match the correct division result."},
+      {"text": "32", "isCorrect": false, "feedback": "This misplaces the decimal point."},
+      {"text": "12.8", "isCorrect": false, "feedback": "This multiplies instead of dividing."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 8.4 ÷ 0.4?",
+    "options": [
+      {"text": "21", "isCorrect": true, "feedback": "Correct -- shifting both decimals gives 84÷4=21."},
+      {"text": "2.1", "isCorrect": false, "feedback": "This misplaces the decimal point by one position."},
+      {"text": "3.36", "isCorrect": false, "feedback": "This multiplies instead of dividing."},
+      {"text": "8.0", "isCorrect": false, "feedback": "This doesn't correctly perform the division."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is 15.75 ÷ 2.5?",
+    "options": [
+      {"text": "6.3", "isCorrect": true, "feedback": "Correct -- shifting decimals gives 157.5÷25=6.3."},
+      {"text": "6.03", "isCorrect": false, "feedback": "This doesn't match the correct precise division result."},
+      {"text": "63", "isCorrect": false, "feedback": "This misplaces the decimal point by one position."},
+      {"text": "5.3", "isCorrect": false, "feedback": "This doesn't match the correct division result."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Divide the numbers just as you would whole numbers, keeping track of the decimal point's position.", "medium": "Divide 6.4 by 2 directly.", "easy": "Divide 6.4 by 2."},
+    "medium": {"hard": "Shift both decimal points the same number of places to turn the divisor into a whole number, then divide.", "medium": "Multiply both numbers by 10 to remove the decimals, then divide 84 by 4.", "easy": "Move both decimal points one place to the right, then divide 84 by 4."},
+    "hard": {"hard": "Shift both decimal points the same number of places to turn the divisor into a whole number, then divide.", "medium": "Multiply both numbers by 10 to remove the decimals, then divide 157.5 by 25.", "easy": "Move both decimal points one place to the right, then divide."}
+  }
+},
+{
+  "topic": "fundamental counting principle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A restaurant offers 3 appetizers and 4 main dishes. Using the fundamental counting principle, how many different appetizer-and-main combinations are possible?",
+    "options": [
+      {"text": "12", "isCorrect": true, "feedback": "Correct -- multiply the number of choices at each step: 3×4=12."},
+      {"text": "7", "isCorrect": false, "feedback": "This adds the choices instead of multiplying them."},
+      {"text": "1", "isCorrect": false, "feedback": "This doesn't reflect the actual number of possible combinations."},
+      {"text": "34", "isCorrect": false, "feedback": "This just concatenates the digits rather than performing the correct calculation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A license plate has 2 letters followed by 3 digits. If each letter and digit can repeat, how many possible letter combinations are there for just the 2-letter portion (assuming 26 letters)?",
+    "options": [
+      {"text": "676", "isCorrect": true, "feedback": "Correct -- 26×26=676 possible 2-letter combinations."},
+      {"text": "52", "isCorrect": false, "feedback": "This adds the choices (26+26) instead of multiplying them."},
+      {"text": "26", "isCorrect": false, "feedback": "This only accounts for one letter position, not both."},
+      {"text": "702", "isCorrect": false, "feedback": "This doesn't match correctly multiplying 26 by 26."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A pizza shop offers 4 crust types, 3 sauce types, and 5 topping choices (choosing exactly one of each). How many different pizzas can be made?",
+    "options": [
+      {"text": "60", "isCorrect": true, "feedback": "Correct -- multiply all three choice counts together: 4×3×5=60."},
+      {"text": "12", "isCorrect": false, "feedback": "This only multiplies two of the three choice categories, missing the third."},
+      {"text": "15", "isCorrect": false, "feedback": "This only multiplies two of the three choice categories, missing the first."},
+      {"text": "20", "isCorrect": false, "feedback": "This only multiplies two of the three choice categories, missing one."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply the number of choices at each independent decision step together.", "medium": "Multiply the number of appetizers by the number of main dishes.", "easy": "Multiply 3 by 4 to find the total combinations."},
+    "medium": {"hard": "Multiply the number of choices for each independent position together.", "medium": "Multiply the number of letter choices for each of the two positions.", "easy": "Multiply 26 by 26."},
+    "hard": {"hard": "Multiply the number of choices for each independent category together, one at a time.", "medium": "Multiply all three numbers of choices together: crusts, sauces, and toppings.", "easy": "Multiply 4, 3, and 5 together."}
+  }
+},
+{
+  "topic": "surface area of a rectangular prism",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does 'surface area' measure for a 3D shape?",
+    "options": [
+      {"text": "The total area of all the outer faces combined", "isCorrect": true, "feedback": "Correct -- surface area adds up the area of every face on the outside of the shape."},
+      {"text": "The amount of space inside the shape", "isCorrect": false, "feedback": "That describes volume, not surface area."},
+      {"text": "The weight of the shape", "isCorrect": false, "feedback": "Weight is unrelated to surface area -- surface area is about the outer face area."},
+      {"text": "The length of just one edge", "isCorrect": false, "feedback": "Surface area covers the entire outer surface, not just a single edge's length."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A rectangular prism has length 4, width 3, and height 2. What is its surface area? (Formula: 2(lw + lh + wh))",
+    "options": [
+      {"text": "52", "isCorrect": true, "feedback": "Correct -- 2((4×3)+(4×2)+(3×2))=2(12+8+6)=2(26)=52."},
+      {"text": "24", "isCorrect": false, "feedback": "This is the volume (4×3×2), not the surface area."},
+      {"text": "26", "isCorrect": false, "feedback": "This forgets to multiply the sum of the face areas by 2 for both sides of each pair of faces."},
+      {"text": "9", "isCorrect": false, "feedback": "This only adds the three dimensions together, rather than calculating face areas."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A cube has a surface area of 96 square units. What is the length of one side?",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- a cube has 6 equal faces, so 96÷6=16 per face, and √16=4."},
+      {"text": "16", "isCorrect": false, "feedback": "This is the area of ONE face, not the side length -- one more step (square root) is needed."},
+      {"text": "6", "isCorrect": false, "feedback": "This is the number of faces on a cube, not the side length."},
+      {"text": "8", "isCorrect": false, "feedback": "This doesn't match correctly dividing by 6 faces and taking the square root."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This measurement adds together the areas of every flat face on the outside of the 3D shape.", "medium": "This adds up the area of every outer face of the shape.", "easy": "This is the total area of all the outside faces added together."},
+    "medium": {"hard": "Calculate each pair of opposite face areas, add them together, then double the total.", "medium": "Find the area of each of the three different face types, add them, then multiply by 2.", "easy": "Multiply length×width, length×height, and width×height, add them up, then double the total."},
+    "hard": {"hard": "Divide the total surface area by the number of identical faces, then take the square root of that single face's area to find the side length.", "medium": "Divide 96 by 6 to find one face's area, then take the square root of that.", "easy": "Divide 96 by 6 to get 16, then find the square root of 16."}
+  }
+},
+{
+  "topic": "vertical angles",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is true about vertical angles (angles across from each other when two lines cross)?",
+    "options": [
+      {"text": "They are always equal to each other", "isCorrect": true, "feedback": "Correct -- vertical angles always have the exact same measure."},
+      {"text": "They always add up to 90 degrees", "isCorrect": false, "feedback": "That describes complementary angles, not vertical angles."},
+      {"text": "They are always different measures", "isCorrect": false, "feedback": "Vertical angles are always equal, not different, in measure."},
+      {"text": "They only exist in triangles", "isCorrect": false, "feedback": "Vertical angles form wherever two straight lines intersect, not specifically within triangles."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two lines intersect, forming an angle of 65 degrees. What is the measure of the vertical angle across from it?",
+    "options": [
+      {"text": "65 degrees", "isCorrect": true, "feedback": "Correct -- vertical angles are always equal to each other."},
+      {"text": "115 degrees", "isCorrect": false, "feedback": "This would be the measure of an adjacent angle (supplementary), not the vertical angle."},
+      {"text": "25 degrees", "isCorrect": false, "feedback": "This doesn't match the rule that vertical angles are equal."},
+      {"text": "180 degrees", "isCorrect": false, "feedback": "This is the sum for a straight line, not the measure of the vertical angle itself."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two intersecting lines form four angles. One angle measures (3x+10) degrees, and its vertical angle measures (5x-30) degrees. What is the value of x?",
+    "options": [
+      {"text": "20", "isCorrect": true, "feedback": "Correct -- since vertical angles are equal: 3x+10=5x-30, so 40=2x, x=20."},
+      {"text": "10", "isCorrect": false, "feedback": "This doesn't correctly solve the equation 3x+10=5x-30."},
+      {"text": "40", "isCorrect": false, "feedback": "This is the value of 2x, not x itself."},
+      {"text": "5", "isCorrect": false, "feedback": "This doesn't match correctly solving the vertical angle equation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These angles are formed directly opposite each other at the crossing point of two straight lines.", "medium": "These are the two angles directly across from each other when two lines cross.", "easy": "Angles directly across from each other where two lines cross are always equal."},
+    "medium": {"hard": "Since these angles form directly opposite each other from the same line intersection, they share the identical value.", "medium": "The angle directly across from a 65-degree angle at an intersection is always the same measure.", "easy": "Vertical angles are always equal -- so the answer is also 65 degrees."},
+    "hard": {"hard": "Set the two vertical angle expressions equal to each other, then solve the resulting equation for x.", "medium": "Set 3x+10 equal to 5x-30, then solve for x.", "easy": "Set 3x+10 equal to 5x-30, then solve step by step."}
+  }
+},
+{
+  "topic": "arithmetic sequences",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the next number in the arithmetic sequence: 3, 6, 9, 12, ...?",
+    "options": [
+      {"text": "15", "isCorrect": true, "feedback": "Correct -- each term increases by 3, so 12+3=15."},
+      {"text": "14", "isCorrect": false, "feedback": "This doesn't match the consistent pattern of adding 3 each time."},
+      {"text": "16", "isCorrect": false, "feedback": "This doesn't match the consistent pattern of adding 3 each time."},
+      {"text": "18", "isCorrect": false, "feedback": "This adds 6 instead of the consistent difference of 3."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the common difference in the sequence: 20, 15, 10, 5, ...?",
+    "options": [
+      {"text": "-5", "isCorrect": true, "feedback": "Correct -- each term decreases by 5, so the common difference is -5."},
+      {"text": "5", "isCorrect": false, "feedback": "The sequence is decreasing, so the common difference must be negative, not positive."},
+      {"text": "-10", "isCorrect": false, "feedback": "This doesn't match the actual consistent decrease of 5 between terms."},
+      {"text": "15", "isCorrect": false, "feedback": "This doesn't reflect the actual pattern -- the terms decrease by 5 each time, not increase by 15."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In the arithmetic sequence starting at 7 with a common difference of 4, what is the 10th term? (Formula: a_n = a_1 + (n-1)d)",
+    "options": [
+      {"text": "43", "isCorrect": true, "feedback": "Correct -- 7+(10-1)×4=7+36=43."},
+      {"text": "47", "isCorrect": false, "feedback": "This uses (n) instead of (n-1) in the formula, overcounting by one difference."},
+      {"text": "40", "isCorrect": false, "feedback": "This doesn't correctly apply the formula's addition of the starting term."},
+      {"text": "11", "isCorrect": false, "feedback": "This adds only the first term and common difference once, not scaled for the 10th position."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Determine the consistent amount being added between each term, then apply it once more.", "medium": "Find the pattern of how much is added each time, then apply it once more.", "easy": "Each number increases by 3 -- add 3 to 12."},
+    "medium": {"hard": "Subtract any term from the one immediately following it to find the consistent difference.", "medium": "Subtract 20 from 15 (or any consecutive pair) to find the difference.", "easy": "Subtract 20 from 15 to find how much each term changes by."},
+    "hard": {"hard": "Multiply the common difference by one less than the term number, then add that to the first term.", "medium": "Multiply 4 by 9 (one less than 10), then add that result to 7.", "easy": "Multiply 4 by 9, then add 7 to that result."}
+  }
+}
+]

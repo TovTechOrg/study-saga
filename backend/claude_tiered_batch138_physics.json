@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between angular velocity and linear velocity in circular motion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "'Angular velocity' measures:",
+    "options": [
+      {"text": "How quickly an object's angular position (angle) changes during rotation", "isCorrect": true, "feedback": "Correct -- angular velocity measures the rate of change of angular position, typically in radians per second, describing rotational speed."},
+      {"text": "How quickly an object's straight-line distance traveled changes", "isCorrect": false, "feedback": "That describes LINEAR velocity, not angular velocity -- linear velocity concerns straight-line distance over time, while angular velocity concerns angle over time."},
+      {"text": "The exact mass of a rotating object", "isCorrect": false, "feedback": "This isn't accurate -- angular velocity concerns rotational speed, entirely unrelated to an object's mass."},
+      {"text": "The total number of complete rotations an object has EVER made in its entire history", "isCorrect": false, "feedback": "This isn't accurate -- angular velocity specifically measures a RATE (angle per time) at a given moment, not a cumulative historical total of rotations."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "On a spinning merry-go-round, every point (regardless of distance from the center) has the exact same angular velocity, but points farther from the center have a LARGER linear velocity than points closer to the center. Why does distance from the rotation axis affect linear velocity but not angular velocity?",
+    "options": [
+      {"text": "Angular velocity measures how fast the ANGLE changes, which is the same for every point on a rigid rotating object regardless of distance from the axis (since the whole object sweeps through the same angle in the same time), but linear velocity measures actual straight-line DISTANCE traveled per unit time, and a point farther from the center must physically travel along a larger circle (covering more actual distance) to sweep through that same angle in the same time, resulting in a higher linear velocity", "isCorrect": true, "feedback": "Correct -- this explanation of angle-based uniformity (angular velocity) versus distance-dependent circumference (linear velocity) correctly explains why points at different radii on the same rotating object share angular velocity but differ in linear velocity."},
+      {"text": "Points farther from the center would actually have a SMALLER linear velocity than points closer to the center, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- points FARTHER from the center have a LARGER linear velocity, not smaller, since they must travel a greater distance (larger circle) in the same time to keep pace with the same angular velocity."},
+      {"text": "All points on a spinning merry-go-round would actually have identical linear velocity as well as identical angular velocity, regardless of their distance from the center", "isCorrect": false, "feedback": "This isn't accurate -- while angular velocity IS the same for all points, LINEAR velocity specifically DIFFERS depending on distance from the center, being larger farther out."},
+      {"text": "Distance from the rotation axis has no actual connection to explaining the difference between angular and linear velocity at different points", "isCorrect": false, "feedback": "This isn't accurate -- distance from the rotation axis IS DIRECTLY connected to and explains why linear velocity (but not angular velocity) differs at different points on a rotating object."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The mathematical relationship between linear velocity (v) and angular velocity (omega) is v = r times omega, where r is the distance from the rotation axis. Explain why this specific multiplicative relationship (rather than an additive one, or some other mathematical relationship) correctly connects these two related but distinct quantities.",
+    "options": [
+      {"text": "In one full rotation (one complete cycle of angle change), a point at distance r from the axis travels a circular path with circumference 2*pi*r, and this actual distance traveled is directly PROPORTIONAL to r -- since linear velocity is just this distance traveled divided by time, and angular velocity is the angle swept divided by that same time, the direct proportionality between distance traveled and radius (for a fixed angular sweep) mathematically translates into the multiplicative relationship v = r times omega connecting the two velocities", "isCorrect": true, "feedback": "Correct -- this explanation grounding the v = r*omega relationship in the direct proportionality between circular arc length (distance traveled) and radius, for a given angular sweep, correctly derives this fundamental formula connecting linear and angular velocity in circular motion."},
+      {"text": "Linear velocity and angular velocity would actually be entirely unrelated quantities with no meaningful mathematical relationship connecting them", "isCorrect": false, "feedback": "This isn't accurate -- linear velocity and angular velocity ARE DIRECTLY and mathematically related, specifically through the formula v = r times omega, not unrelated quantities."},
+      {"text": "The radius (distance from the rotation axis) has no actual role in mathematically connecting linear velocity to angular velocity", "isCorrect": false, "feedback": "This isn't accurate -- the radius IS DIRECTLY and centrally involved in the mathematical relationship connecting linear velocity to angular velocity, appearing explicitly in the formula v = r times omega."},
+      {"text": "This relationship would actually be more accurately described as an additive one (v = r plus omega) rather than a multiplicative one", "isCorrect": false, "feedback": "This isn't accurate -- the correct relationship is specifically MULTIPLICATIVE (v = r times omega), derived from the direct proportionality between circular distance traveled and radius, not an additive relationship."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This kinematic quantity quantifies the temporal rate at which an object's angular displacement about a rotational axis evolves.", "medium": "This measures how fast something's angle is changing as it spins around.", "easy": "This measures how fast something's angle is changing as it spins around."},
+    "medium": {"hard": "Consider how a fixed angular sweep corresponds to a circular arc length directly proportional to radial distance, so points farther out must cover proportionally more actual distance in the same time.", "medium": "Everyone on the merry-go-round sweeps through the same angle at the same time, but someone farther from the center has to cover a much bigger circle to do that, so they're actually moving faster in real distance.", "easy": "Everyone sweeps through the same angle at the same time, but someone farther out covers a bigger circle, so they're moving faster."},
+    "hard": {"hard": "Consider how the arc length swept in one full rotation scales linearly with radius, so dividing by the shared time factor translates that direct proportionality into the multiplicative velocity relationship.", "medium": "Since going all the way around at a bigger radius means covering a distance that scales directly with how big that radius is, dividing both sides by the same amount of time turns that direct scaling into the multiply-together formula.", "easy": "Since a bigger radius means covering proportionally more distance per rotation, dividing by time turns that into the multiply-together formula."}
+  }
+}
+]

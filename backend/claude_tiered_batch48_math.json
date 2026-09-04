@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of solving systems of linear equations by substitution",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the substitution method for solving a system of equations, what is the general first step?",
+    "options": [
+      {"text": "Solve one equation for one variable, then substitute that expression into the other equation", "isCorrect": true, "feedback": "Correct -- isolating one variable and substituting it into the other equation reduces the system to a single equation with one unknown."},
+      {"text": "Immediately graph both equations without any algebraic manipulation", "isCorrect": false, "feedback": "That describes the graphing method, a different approach from algebraic substitution."},
+      {"text": "Add both equations together directly", "isCorrect": false, "feedback": "That's characteristic of the elimination method, not substitution, which specifically involves solving for and substituting a variable."},
+      {"text": "Multiply both equations by the same random number", "isCorrect": false, "feedback": "This isn't the substitution method's approach -- substitution involves solving for a variable and substituting, not arbitrary multiplication."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Solve the system using substitution: y = 2x, and x + y = 9.",
+    "options": [
+      {"text": "x = 3, y = 6", "isCorrect": true, "feedback": "Correct -- substituting y=2x into x+y=9 gives x+2x=9, so 3x=9, x=3, and then y=2(3)=6."},
+      {"text": "x = 9, y = 18", "isCorrect": false, "feedback": "This doesn't correctly result from substituting y=2x into the second equation and solving for x."},
+      {"text": "x = 4.5, y = 4.5", "isCorrect": false, "feedback": "This doesn't satisfy the first equation (y=2x), since 4.5 isn't twice 4.5."},
+      {"text": "x = 6, y = 3", "isCorrect": false, "feedback": "This has the x and y values swapped from the correct solution -- checking y=2x with these values doesn't hold true (3 ≠ 2×6)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Solve the system using substitution: 2x + y = 10, and 3x - 2y = 1.",
+    "options": [
+      {"text": "x = 3, y = 4", "isCorrect": true, "feedback": "Correct -- from the first equation, y=10-2x. Substituting: 3x-2(10-2x)=1, so 3x-20+4x=1, 7x=21, x=3, and y=10-2(3)=4."},
+      {"text": "x = 4, y = 2", "isCorrect": false, "feedback": "Checking this in the first equation: 2(4)+2=10, which holds, but checking the second: 3(4)-2(2)=8, not 1 -- this doesn't satisfy both equations."},
+      {"text": "x = 2, y = 6", "isCorrect": false, "feedback": "Checking this in the first equation: 2(2)+6=10, which holds, but checking the second: 3(2)-2(6)=-6, not 1 -- this doesn't satisfy both equations."},
+      {"text": "x = 1, y = 8", "isCorrect": false, "feedback": "Checking this in the first equation: 2(1)+8=10, which holds, but checking the second: 3(1)-2(8)=-13, not 1 -- this doesn't satisfy both equations."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Isolate a single variable algebraically in one equation, then replace that same variable's occurrence in the second equation with the resulting expression.", "medium": "Get one variable by itself in one equation, then swap that expression into the other equation.", "easy": "Get one variable alone in one equation, then plug that into the other equation."},
+    "medium": {"hard": "Substitute the given expression for y directly into the second equation, then solve the resulting single-variable equation for x.", "medium": "Replace y with 2x in the second equation, then solve for x, then use that to find y.", "easy": "Replace y with 2x: x+2x=9. Solve: 3x=9, so x=3. Then y=2×3=6."},
+    "hard": {"hard": "Isolate one variable in the simpler equation, substitute into the second equation, solve for the remaining variable, then back-substitute to find the first.", "medium": "Solve the first equation for y, substitute that expression into the second equation, solve for x, then find y.", "easy": "From the first equation, y=10-2x. Substitute into the second equation and solve step by step."}
+  }
+}
+]

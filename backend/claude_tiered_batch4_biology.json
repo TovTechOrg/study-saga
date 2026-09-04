@@ -1,0 +1,212 @@
+[
+{
+  "topic": "plant cell characteristics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which structure is found in plant cells but NOT in animal cells?",
+    "options": [
+      {"text": "Cell wall", "isCorrect": true, "feedback": "Correct -- the rigid cell wall is a plant-cell-only structure."},
+      {"text": "Nucleus", "isCorrect": false, "feedback": "Both plant and animal cells have a nucleus -- it's not a distinguishing feature."},
+      {"text": "Cell membrane", "isCorrect": false, "feedback": "Every cell, plant or animal, has a cell membrane -- it's universal, not plant-specific."},
+      {"text": "Cytoplasm", "isCorrect": false, "feedback": "Cytoplasm is present in all cell types -- it doesn't distinguish plant cells from animal cells."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_multiple",
+    "text": "Which TWO of the following structures are found in plant cells but are absent from animal cells?",
+    "options": [
+      {"text": "Cell wall", "isCorrect": true, "feedback": "Right -- this rigid outer layer gives plant cells their fixed shape."},
+      {"text": "Chloroplasts", "isCorrect": true, "feedback": "Right -- these are the organelles where photosynthesis happens, unique to plant (and some protist) cells."},
+      {"text": "Mitochondria", "isCorrect": false, "feedback": "Mitochondria are found in both plant AND animal cells -- both need to release energy from food."},
+      {"text": "Flagellum", "isCorrect": false, "feedback": "Flagella appear in some animal cells (like sperm) and even some bacteria -- not a plant-specific structure."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of the following are characteristics of a plant cell?",
+    "options": [
+      {"text": "Cell wall", "isCorrect": true, "feedback": "Correct -- provides rigidity and structural support, absent in animal cells."},
+      {"text": "Chloroplasts", "isCorrect": true, "feedback": "Correct -- the site of photosynthesis, giving plant cells their food-making ability."},
+      {"text": "Mitochondria", "isCorrect": true, "feedback": "Correct -- though it's a common trap to think this is plant-exclusive, animal cells have mitochondria too since both need to release energy from glucose."},
+      {"text": "Flagellum", "isCorrect": false, "feedback": "This whip-like tail structure is more associated with certain animal cells and single-celled organisms, not a defining plant cell feature."},
+      {"text": "Cilia", "isCorrect": false, "feedback": "Cilia are hair-like structures found on some animal cells and microorganisms, not a standard plant cell feature."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This structure surrounds the cell membrane, adding rigidity, and is built from a tough carbohydrate called cellulose.", "medium": "This rigid outer layer gives plant cells their fixed, boxy shape -- animal cells don't have it.", "easy": "This is the tough outer layer that gives plant cells their rigid shape, which animal cells lack."},
+    "medium": {"hard": "One correct answer provides structural rigidity via a carbohydrate-based outer layer; the other is the green, light-capturing organelle -- both are absent in animal cells, unlike an energy-releasing organelle shared by both types.", "medium": "One correct answer is the rigid outer structural layer, the other is the organelle that captures sunlight -- both missing from animal cells.", "easy": "Pick the rigid outer layer plant cells have, and the green organelle that captures sunlight -- both are missing in animal cells."},
+    "hard": {"hard": "Three of these five are genuinely present in plant cells -- one providing rigidity, one capturing light, and one (often mistakenly assumed plant-exclusive) releasing energy that's actually shared with animal cells -- while the remaining two are structures more typically associated with certain animal cells or microorganisms instead.", "medium": "Three of these belong to plant cells, including one that's actually shared with animal cells too (a common mix-up) -- the other two are more typical of animal cells or microorganisms.", "easy": "Three of these five structures are found in plant cells -- watch out, one of them is also found in animal cells, it's not plant-exclusive."}
+  }
+},
+{
+  "topic": "cells as building blocks of life",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the basic building block of all living things?",
+    "options": [
+      {"text": "Cells", "isCorrect": true, "feedback": "Correct -- every living thing is made of one or more cells."},
+      {"text": "Organs", "isCorrect": false, "feedback": "Organs are made of many cells working together -- they're a larger structure, not the basic unit."},
+      {"text": "Tissues", "isCorrect": false, "feedback": "Tissues are groups of similar cells -- still built from cells, not the most basic unit itself."},
+      {"text": "Molecules", "isCorrect": false, "feedback": "Molecules make up cells, but they aren't themselves considered 'alive' the way a cell is."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In order from smallest to largest, where does a 'cell' sit in the body's levels of organization?",
+    "options": [
+      {"text": "Below tissues, organs, and systems -- but above individual molecules", "isCorrect": true, "feedback": "Correct -- cells are built from molecules, and cells in turn build up into tissues, organs, and systems."},
+      {"text": "Above organs but below whole systems", "isCorrect": false, "feedback": "Cells are actually far more basic than organs -- many cells combine to form even a single tissue, let alone an organ."},
+      {"text": "The single largest unit of organization in the body", "isCorrect": false, "feedback": "Cells are actually the smallest living unit in this hierarchy -- systems, organs, and tissues are all built from many cells."},
+      {"text": "Equivalent in scale to a whole organ system", "isCorrect": false, "feedback": "There's a large scale difference -- a system contains organs, which contain tissues, which contain enormous numbers of cells."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the term for the 'building blocks of life' in human anatomy?",
+    "options": [
+      {"text": "Tissues", "isCorrect": false, "feedback": "Tissues are a step up in organization -- groups of similar cells working together, not the most basic living unit."},
+      {"text": "Organs", "isCorrect": false, "feedback": "Organs are structures made of multiple tissue types working together -- several levels above the most basic living unit."},
+      {"text": "Cells", "isCorrect": true, "feedback": "Correct -- the smallest unit capable of independently carrying out all the basic processes of life."},
+      {"text": "Systems", "isCorrect": false, "feedback": "Organ systems are the highest level of this organizational hierarchy, made of multiple organs -- the furthest thing from the basic building block."},
+      {"text": "Molecules", "isCorrect": false, "feedback": "Molecules are the chemical components that cells are built from, but a molecule alone doesn't perform the functions that define something as 'living.'"}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This is the smallest unit that can independently carry out all life processes on its own.", "medium": "Every living organism, from a single-celled bacterium to a human, is made up of at least one of these.", "easy": "This is the basic unit that every living thing, big or small, is made of."},
+    "medium": {"hard": "This unit sits one level above the chemical components that build it, and several levels below the grouped structures (tissues, organs, systems) that it in turn builds up into.", "medium": "This unit is bigger than a single molecule but far smaller than a tissue, organ, or whole system.", "easy": "This unit is small enough that thousands of them make up just one tissue -- and tissues combine to make organs."},
+    "hard": {"hard": "This is the smallest self-sufficient living unit -- built from molecules below it, and itself building up into tissues, organs, and systems above it in the body's hierarchy of organization.", "medium": "This term describes the smallest living unit -- below it are just chemical molecules, above it are tissues, organs, and systems built from many of these.", "easy": "This is the smallest living unit of the body -- smaller than a tissue, organ, or system, but bigger than a single molecule."}
+  }
+},
+{
+  "topic": "B cell and antibody production",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which immune cell is responsible for producing antibodies?",
+    "options": [
+      {"text": "B cell", "isCorrect": true, "feedback": "Correct -- B cells are the antibody factories of the immune system."},
+      {"text": "Neutrophil", "isCorrect": false, "feedback": "Neutrophils directly engulf and destroy invaders -- they don't produce antibodies."},
+      {"text": "Macrophage", "isCorrect": false, "feedback": "Macrophages engulf pathogens and debris -- antibody production isn't their role."},
+      {"text": "T cell", "isCorrect": false, "feedback": "T cells directly attack infected cells or help coordinate the immune response -- antibody production is a different cell type's job."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What do antibodies produced by B cells actually do?",
+    "options": [
+      {"text": "Bind specifically to a pathogen to mark it for destruction or block its activity", "isCorrect": true, "feedback": "Correct -- each antibody is shaped to recognize a specific target and either neutralizes it directly or flags it for other immune cells."},
+      {"text": "Physically engulf and digest the pathogen themselves", "isCorrect": false, "feedback": "That engulf-and-digest action describes cells like macrophages -- antibodies are proteins, not cells, and don't engulf anything themselves."},
+      {"text": "Regulate the body's internal temperature during infection", "isCorrect": false, "feedback": "Fever is a separate immune response mechanism -- it isn't caused directly by the antibodies themselves."},
+      {"text": "Repair damaged tissue after an infection clears", "isCorrect": false, "feedback": "Tissue repair involves different cell types entirely -- antibodies are specifically about targeting pathogens, not healing tissue."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the name of the human immune system cell responsible for antibody production?",
+    "options": [
+      {"text": "Neutrophil", "isCorrect": false, "feedback": "Neutrophils are typically the first responders to infection, engulfing pathogens directly rather than producing antibodies."},
+      {"text": "Macrophage", "isCorrect": false, "feedback": "Macrophages engulf pathogens and cellular debris, and also present pieces of them to other immune cells -- but they don't produce antibodies themselves."},
+      {"text": "B cell", "isCorrect": true, "feedback": "Correct -- once activated, B cells can mature into plasma cells, which then mass-produce antibodies specific to the triggering pathogen."},
+      {"text": "T cell", "isCorrect": false, "feedback": "T cells either directly destroy infected cells or help regulate the overall immune response -- antibody production specifically belongs to a different cell line."},
+      {"text": "Eosinophil", "isCorrect": false, "feedback": "Eosinophils are mainly involved in combating parasitic infections and allergic responses, not antibody production."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This white blood cell type, upon activation, matures into a plasma cell dedicated to mass-producing one specific antibody.", "medium": "This immune cell type is the one that manufactures antibodies targeted at a specific invader.", "easy": "This immune cell makes the antibodies your body uses to fight off specific germs."},
+    "medium": {"hard": "Focus on the cell type whose defining specialty is generating the antibody proteins themselves, as distinct from cells that engulf pathogens directly or that regulate/attack via other mechanisms.", "medium": "This is the one cell type whose main job is manufacturing antibody proteins, not directly attacking pathogens itself.", "easy": "This is the immune cell whose specific job is making antibodies -- other immune cells attack germs directly instead."},
+    "hard": {"hard": "This lymphocyte type's defining specialty, upon activation and maturation into a plasma cell, is the mass production of a specific antibody -- distinct from cells that engulf pathogens directly, present antigens, coordinate the response, or target parasites.", "medium": "This is the specific white blood cell type dedicated to producing antibodies, distinct from cells that directly engulf pathogens or coordinate other immune responses.", "easy": "This is the specific immune cell whose job is producing antibodies -- not engulfing germs directly like some other immune cells do."}
+  }
+},
+{
+  "topic": "testis (sperm production)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which structure in the male reproductive system produces sperm?",
+    "options": [
+      {"text": "Testis", "isCorrect": true, "feedback": "Correct -- the testes are where sperm cells are produced."},
+      {"text": "Ovary", "isCorrect": false, "feedback": "The ovary is part of the FEMALE reproductive system and produces eggs, not sperm."},
+      {"text": "Uterus", "isCorrect": false, "feedback": "The uterus is where a fertilized egg develops -- it's part of the female reproductive system, not sperm production."},
+      {"text": "Vas deferens", "isCorrect": false, "feedback": "The vas deferens is a tube that transports sperm, but it doesn't produce sperm itself."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Besides producing sperm, what other important role does the testis play?",
+    "options": [
+      {"text": "Producing testosterone", "isCorrect": true, "feedback": "Correct -- the testis also produces testosterone, the primary male sex hormone."},
+      {"text": "Storing the egg cells after ovulation", "isCorrect": false, "feedback": "Egg storage is part of the female reproductive system, entirely separate from testis function."},
+      {"text": "Producing bile for digestion", "isCorrect": false, "feedback": "Bile production is the liver's job, unrelated to reproductive organs."},
+      {"text": "Filtering waste out of the bloodstream", "isCorrect": false, "feedback": "Blood filtration is handled by the kidneys, not the testis."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the name of the human reproductive structure responsible for producing sperm?",
+    "options": [
+      {"text": "Ovary", "isCorrect": false, "feedback": "The ovary is the female counterpart, producing eggs and hormones like estrogen -- structurally and functionally distinct from where sperm is made."},
+      {"text": "Uterus", "isCorrect": false, "feedback": "The uterus is where a fertilized egg implants and develops during pregnancy -- entirely unrelated to sperm production."},
+      {"text": "Testis", "isCorrect": true, "feedback": "Correct -- sperm are produced within tightly coiled seminiferous tubules inside the testis, which also produces testosterone."},
+      {"text": "Vas deferens", "isCorrect": false, "feedback": "This duct transports mature sperm from storage toward ejaculation -- it's a pathway, not a production site."},
+      {"text": "Epididymis", "isCorrect": false, "feedback": "This coiled structure is where sperm mature and are stored after being produced -- close in the process, but not the actual production site."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This organ contains tightly coiled tubules where sperm cells are generated, and it also produces a key male hormone.", "medium": "This is the male organ where sperm cells are actually made, and it also makes testosterone.", "easy": "This is the organ in the male body that makes sperm."},
+    "medium": {"hard": "Distinguish this organ's dual role (production of both sperm and its hormone) from other structures nearby that only store, mature, or transport sperm afterward.", "medium": "This structure both produces sperm and produces a hormone -- a different nearby structure just stores and matures what's already made.", "easy": "This organ makes both sperm AND the male hormone testosterone -- other nearby parts just store or transport what it makes."},
+    "hard": {"hard": "This is specifically the production site, distinct from the female reproductive organs entirely, and distinct from nearby male structures that store/mature sperm after production or transport it afterward -- production itself happens in coiled tubules within this organ.", "medium": "Distinguish the actual sperm-production organ from nearby structures that only store, mature, or transport sperm after it's made, and from the entirely separate female reproductive organs.", "easy": "This is specifically where sperm is made -- not where it's stored afterward, and not any female reproductive organ."}
+  }
+},
+{
+  "topic": "adaptive immunity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is it called when your immune system learns to recognize and remember a specific germ?",
+    "options": [
+      {"text": "Adaptive immunity", "isCorrect": true, "feedback": "Correct -- adaptive immunity is your body's specific, learned defense."},
+      {"text": "Innate immunity", "isCorrect": false, "feedback": "Innate immunity is your body's general, immediate defense that doesn't target specific germs -- it doesn't 'learn' or remember."},
+      {"text": "Digestion", "isCorrect": false, "feedback": "Digestion is about breaking down food, completely unrelated to immune defense."},
+      {"text": "Circulation", "isCorrect": false, "feedback": "Circulation is blood movement around the body -- it supports immunity by transporting cells, but isn't itself a form of immune recognition."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What key advantage does adaptive immunity have over innate immunity?",
+    "options": [
+      {"text": "It creates memory, allowing a faster, stronger response the next time the same pathogen appears", "isCorrect": true, "feedback": "Correct -- this memory is exactly why vaccines work, priming adaptive immunity in advance."},
+      {"text": "It responds instantly, within seconds of exposure", "isCorrect": false, "feedback": "That instant, immediate response is actually the hallmark of innate immunity -- adaptive immunity takes longer to activate the first time."},
+      {"text": "It works the same way against every type of pathogen without distinction", "isCorrect": false, "feedback": "That generalized, non-specific response describes innate immunity -- adaptive immunity is defined by being highly specific to one particular pathogen."},
+      {"text": "It doesn't require any prior exposure to be effective", "isCorrect": false, "feedback": "The opposite is true -- adaptive immunity's strength specifically comes from prior exposure creating memory cells."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the term for the human immune system's ability to recognize and respond to specific pathogens?",
+    "options": [
+      {"text": "Innate immunity", "isCorrect": false, "feedback": "Innate immunity is the body's fast, general-purpose first line of defense -- it doesn't target specific pathogens or improve with repeated exposure."},
+      {"text": "Adaptive immunity", "isCorrect": true, "feedback": "Correct -- adaptive immunity is pathogen-specific and improves with exposure, forming the basis of immunological memory and vaccination."},
+      {"text": "Active immunity", "isCorrect": false, "feedback": "Active immunity describes HOW the immune memory was acquired (through actual infection or vaccination), a subcategory that falls under adaptive immunity, not the overall specific-recognition system itself."},
+      {"text": "Passive immunity", "isCorrect": false, "feedback": "Passive immunity is temporary protection received from an outside source (like antibodies from a mother to a baby), rather than the body's own specific-recognition system."},
+      {"text": "Cell-mediated immunity", "isCorrect": false, "feedback": "Cell-mediated immunity is one specific branch of adaptive immunity (via T cells), not the umbrella term for pathogen-specific immune recognition as a whole."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This branch of immunity gets stronger and faster with repeated exposure to the same specific invader.", "medium": "This is the type of immunity that specifically remembers a germ it has fought before.", "easy": "This is the kind of immunity where your body learns to recognize one specific germ."},
+    "medium": {"hard": "The defining trait is specificity plus memory -- getting faster and stronger with repeat exposure -- unlike a fast but non-specific first-response system that doesn't improve over time.", "medium": "The key feature is remembering a specific past invader, which makes the second response faster than the first.", "easy": "This kind of immunity remembers a germ so the next fight against it is faster and easier."},
+    "hard": {"hard": "This is the overarching pathogen-specific, memory-forming immune category -- distinct from the fast non-specific first responders, and distinct from its own subcategories describing how the memory was acquired or which specific cell type carries it out.", "medium": "This is the broad, pathogen-specific immune category with memory, as opposed to the fast general-purpose response, and as opposed to its own narrower subcategories.", "easy": "This is the overall term for pathogen-specific, memory-based immunity -- broader than terms describing just how it was acquired or which cells carry it out."}
+  }
+}
+]

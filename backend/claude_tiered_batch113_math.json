@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between a system of equations having one, no, or infinite solutions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "When graphed, a system of two linear equations that intersect at exactly ONE point has:",
+    "options": [
+      {"text": "Exactly one solution", "isCorrect": true, "feedback": "Correct -- a single intersection point represents the one (x,y) pair that satisfies both equations simultaneously."},
+      {"text": "No solution at all", "isCorrect": false, "feedback": "That describes PARALLEL lines (which never intersect), not lines that DO intersect at one specific point -- an intersection point means a solution DOES exist."},
+      {"text": "Infinitely many solutions", "isCorrect": false, "feedback": "That describes two IDENTICAL/overlapping lines (which share every point), not two lines intersecting at just ONE specific point, which represents exactly ONE solution."},
+      {"text": "Exactly two solutions", "isCorrect": false, "feedback": "This isn't accurate -- two straight lines can intersect at MOST at one single point, not two -- a single intersection means exactly ONE solution."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The system: y=2x+3 and y=2x+7 has NO solution. Explain why, by examining these two equations' slopes and y-intercepts.",
+    "options": [
+      {"text": "Both equations have the IDENTICAL slope (2), meaning the two lines are PARALLEL, but they have DIFFERENT y-intercepts (3 vs. 7), meaning these parallel lines are actually DIFFERENT, never-intersecting lines -- since parallel, non-identical lines never cross, there's no (x,y) point that could satisfy BOTH equations simultaneously", "isCorrect": true, "feedback": "Correct -- this specific combination (identical slope, but different y-intercept) is exactly the condition producing PARALLEL, non-intersecting lines, which is precisely why this system has NO solution."},
+      {"text": "These two lines would actually intersect at exactly one specific point, contrary to what's being described", "isCorrect": false, "feedback": "This isn't accurate -- these two lines are PARALLEL (identical slope, different intercept) and therefore NEVER intersect, which is precisely why this system has no solution."},
+      {"text": "The specific slopes and y-intercepts of these two equations have no actual connection to explaining why this system lacks a solution", "isCorrect": false, "feedback": "This isn't accurate -- the specific slope/intercept VALUES are DIRECTLY and specifically connected to and EXPLAIN precisely why this particular system has no solution (identical slope, different intercept, producing parallel lines)."},
+      {"text": "This system would actually have infinitely many solutions, not zero, based on these two equations", "isCorrect": false, "feedback": "This isn't accurate -- infinitely many solutions would require IDENTICAL equations (same slope AND same intercept), but these two equations have DIFFERENT y-intercepts, producing PARALLEL (never-intersecting) lines with NO solution instead."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The system: y=3x+5 and 2y=6x+10 has INFINITELY MANY solutions. Explain why, after simplifying the second equation.",
+    "options": [
+      {"text": "Dividing the second equation (2y=6x+10) by 2 gives y=3x+5, which is EXACTLY IDENTICAL to the first equation -- since both equations actually represent the exact SAME line (just written in different but equivalent forms), EVERY point on that shared line satisfies BOTH equations simultaneously, resulting in infinitely many valid solutions", "isCorrect": true, "feedback": "Correct -- this recognition that these two seemingly different-looking equations are actually algebraically EQUIVALENT (representing the identical line) explains why this system has infinitely many solutions -- every single point on that one shared line works as a valid solution for both equations."},
+      {"text": "These two equations actually represent two genuinely different, distinct lines, contrary to what's being described", "isCorrect": false, "feedback": "This isn't accurate -- after properly simplifying, these two equations reveal themselves to be EXACTLY THE SAME line (not different lines), which is precisely why this system has infinitely many solutions."},
+      {"text": "This system would actually have exactly ONE solution, not infinitely many, based on these two equations", "isCorrect": false, "feedback": "This isn't accurate -- since these equations represent the SAME identical line (not two distinct intersecting lines), this system specifically has INFINITELY MANY solutions, not just one single solution."},
+      {"text": "Simplifying the second equation has no actual connection to determining how many solutions this specific system has" ,"isCorrect": false, "feedback": "This isn't accurate -- simplifying the second equation IS DIRECTLY and specifically connected to and IS PRECISELY THE KEY STEP revealing that these two equations are actually equivalent, which is essential for correctly determining that this system has infinitely many solutions."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "A singular point of geometric intersection between two distinct linear graphs corresponds to a unique ordered-pair solution satisfying both equations.", "medium": "Where the two lines cross on the graph is the one answer that works for both equations.", "easy": "Where the two lines cross is the one answer that works for both equations."},
+    "medium": {"hard": "Compare the slope and intercept coefficients of both equations to determine whether the resulting lines are parallel, identical, or intersecting at a single point.", "medium": "Check if both lines have the same steepness (slope) but start at different heights (intercepts) -- that combination means they're parallel and never meet.", "easy": "Same slope but different starting height means the lines are parallel and never meet."},
+    "hard": {"hard": "Algebraically simplify each equation to its standard form and directly compare the resulting coefficients to determine whether the two equations describe the identical line.", "medium": "Divide the second equation all the way down and see if it turns into the exact same equation as the first one -- if it does, they're really just the same line in disguise.", "easy": "Simplify the second equation and see if it turns into the exact same line as the first."}
+  }
+}
+]

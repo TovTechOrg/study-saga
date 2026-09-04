@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding weighted averages",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A student's grade is 80% from tests and 20% from homework. If they scored 90 on tests and 100 on homework, what is their weighted average grade?",
+    "options": [
+      {"text": "92", "isCorrect": true, "feedback": "Correct -- (90×0.80)+(100×0.20)=72+20=92."},
+      {"text": "95", "isCorrect": false, "feedback": "This is just the simple average of 90 and 100, ignoring the different weights."},
+      {"text": "90", "isCorrect": false, "feedback": "This only reflects the test score, ignoring the homework score's contribution."},
+      {"text": "100", "isCorrect": false, "feedback": "This only reflects the homework score, ignoring the test score's much larger weight."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A final grade is 50% exam, 30% projects, and 20% quizzes. A student scores 80 on the exam, 90 on projects, and 70 on quizzes. What is their weighted final grade?",
+    "options": [
+      {"text": "81", "isCorrect": true, "feedback": "Correct -- (80×0.5)+(90×0.3)+(70×0.2)=40+27+14=81."},
+      {"text": "80", "isCorrect": false, "feedback": "This just repeats the exam score alone, ignoring the other weighted components."},
+      {"text": "240", "isCorrect": false, "feedback": "This adds the raw scores together without applying the weight percentages first."},
+      {"text": "85", "isCorrect": false, "feedback": "This doesn't match correctly applying all three weighted percentages."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A student needs a weighted average of at least 90 to earn an A. Their grade is 60% exam and 40% project, and they've already scored 85 on the project. What minimum exam score do they need to reach exactly 90 overall?",
+    "options": [
+      {"text": "93.33", "isCorrect": true, "feedback": "Correct -- 90=(x×0.6)+(85×0.4), so 90=0.6x+34, 56=0.6x, x=93.33."},
+      {"text": "95", "isCorrect": false, "feedback": "This doesn't match correctly solving the weighted average equation for the needed exam score."},
+      {"text": "90", "isCorrect": false, "feedback": "This just repeats the target overall grade rather than solving for the specific exam score needed."},
+      {"text": "85", "isCorrect": false, "feedback": "This just repeats the project score rather than solving for the required exam score."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply each score by its corresponding weight (as a decimal), then add all the results together.", "medium": "Multiply 90 by 0.80, multiply 100 by 0.20, then add the results.", "easy": "Multiply 90 by 0.8, multiply 100 by 0.2, then add them together."},
+    "medium": {"hard": "Multiply each score by its corresponding weight (as a decimal), then add all the results together.", "medium": "Multiply each score by its weight, then add all three results together.", "easy": "Multiply 80 by 0.5, 90 by 0.3, and 70 by 0.2, then add them all up."},
+    "hard": {"hard": "Set up the weighted average equation with the unknown exam score, substitute the known project contribution, then solve algebraically for the exam score.", "medium": "Set up 90=(x×0.6)+(85×0.4), then solve step by step for x.", "easy": "Set up the equation 90=0.6x+34, then solve for x."}
+  }
+}
+]

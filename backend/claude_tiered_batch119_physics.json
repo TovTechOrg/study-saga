@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between mass and weight",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An object's 'mass' is:",
+    "options": [
+      {"text": "A measure of the amount of matter in the object, which stays the same regardless of location", "isCorrect": true, "feedback": "Correct -- mass measures the amount of matter in an object and remains constant regardless of gravitational environment, unlike weight."},
+      {"text": "The gravitational force acting on the object, which changes depending on location", "isCorrect": false, "feedback": "That describes WEIGHT, not mass -- weight depends on gravitational force and changes with location, while mass stays constant."},
+      {"text": "The exact physical size or volume of the object", "isCorrect": false, "feedback": "This isn't accurate -- mass measures amount of matter, not size or volume; two objects can have very different volumes but the same mass, or vice versa."},
+      {"text": "A property that only exists when the object is on Earth's surface", "isCorrect": false, "feedback": "This isn't accurate -- mass is an intrinsic property of an object that exists regardless of location, including in space where there's no Earth surface at all."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "An astronaut has the same mass on the Moon as on Earth, but weighs significantly less on the Moon. Why does gravitational field strength affect weight but not mass?",
+    "options": [
+      {"text": "Mass is an intrinsic property representing the amount of matter in an object, independent of gravity, while weight is specifically defined as the gravitational FORCE acting on that mass (weight = mass times local gravitational field strength) -- since the Moon has weaker gravity than Earth, the same mass experiences a smaller gravitational force there, resulting in less weight even though the amount of matter (mass) hasn't changed", "isCorrect": true, "feedback": "Correct -- this explanation correctly distinguishes mass (an intrinsic, gravity-independent property) from weight (a gravity-dependent force), explaining why weight varies with location while mass remains constant."},
+      {"text": "The astronaut's mass would actually also decrease on the Moon, proportional to the decrease in weight", "isCorrect": false, "feedback": "This isn't accurate -- mass specifically remains CONSTANT regardless of location; only weight changes with the local gravitational field strength."},
+      {"text": "Weight and mass are actually just two different names for the exact same physical quantity", "isCorrect": false, "feedback": "This isn't accurate -- weight and mass are GENUINELY DIFFERENT physical quantities (a force versus an amount of matter), not simply two names for the same thing."},
+      {"text": "Gravitational field strength has no actual connection to explaining why weight differs between the Earth and the Moon", "isCorrect": false, "feedback": "This isn't accurate -- gravitational field strength IS DIRECTLY connected to and is precisely why weight differs between locations with different gravity, like Earth and the Moon."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An astronaut in a spacecraft in orbit around Earth experiences 'weightlessness' (apparent zero weight), even though Earth's actual gravitational pull at that altitude is still quite significant (not zero). Explain why the astronaut experiences apparent weightlessness despite this substantial gravitational force still acting on them.",
+    "options": [
+      {"text": "Weightlessness in orbit results from the astronaut and the spacecraft both being in continuous FREE FALL together (both accelerating toward Earth at the same rate due to gravity), so there's no relative force between the astronaut and their surroundings (like a floor pushing up on them) -- this apparent weightlessness reflects the ABSENCE of a supporting normal force, not an actual absence of the underlying gravitational force, which is still very much present and is in fact what keeps the orbit going", "isCorrect": true, "feedback": "Correct -- this explanation of orbital weightlessness as free fall (absence of a supporting normal force, not absence of gravity itself) correctly resolves this apparent paradox, an important and often counterintuitive concept in understanding orbital mechanics."},
+      {"text": "Earth's gravitational pull would actually become essentially zero at typical orbital altitudes, which is why the astronaut experiences weightlessness", "isCorrect": false, "feedback": "This isn't accurate -- Earth's gravity at typical orbital altitudes is still quite substantial (not zero); it's specifically what keeps the spacecraft in orbit in the first place, not something that has vanished."},
+      {"text": "Weightlessness in orbit has no actual connection to the astronaut and spacecraft both undergoing continuous free-fall acceleration together", "isCorrect": false, "feedback": "This isn't accurate -- weightlessness in orbit IS DIRECTLY connected to and explained by this shared free-fall condition between astronaut and spacecraft."},
+      {"text": "The astronaut's mass would actually become zero while in orbit, which is why they experience weightlessness", "isCorrect": false, "feedback": "This isn't accurate -- the astronaut's mass remains completely unchanged in orbit; weightlessness is about the absence of a supporting force, not any change in mass."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This physical quantity quantifies the intrinsic matter content of an object, invariant with respect to gravitational environment.", "medium": "This is how much actual 'stuff' is in an object, and it doesn't change no matter where the object is.", "easy": "This is how much stuff is in an object, and it doesn't change no matter where it is."},
+    "medium": {"hard": "Consider how weight is derived as the product of an invariant mass and a location-dependent gravitational field strength, explaining why only the latter quantity varies across locations.", "medium": "How much matter you're made of stays exactly the same everywhere, but how hard gravity pulls on that matter depends on where you are, and that pull is what weight actually is.", "easy": "How much matter you're made of stays the same everywhere, but how hard gravity pulls on it depends on where you are."},
+    "hard": {"hard": "Consider how weightlessness reflects the absence of a normal contact force during free fall, rather than the absence of the gravitational force actually responsible for maintaining the orbital trajectory.", "medium": "The astronaut feels weightless because nothing is pushing back up against them as they and the ship fall together, not because gravity has actually gone away, since gravity is exactly what's keeping them circling the planet.", "easy": "The astronaut feels weightless because nothing pushes back against them as they and the ship fall together, not because gravity is gone."}
+  }
+}
+]

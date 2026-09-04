@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between mutually exclusive and independent events",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Two events are 'mutually exclusive' if:",
+    "options": [
+      {"text": "They cannot both happen at the same time (if one occurs, the other cannot)", "isCorrect": true, "feedback": "Correct -- mutually exclusive events have no overlap; the occurrence of one completely rules out the other happening simultaneously."},
+      {"text": "They have absolutely no effect on each other's individual probabilities", "isCorrect": false, "feedback": "That describes INDEPENDENT events, not mutually exclusive ones -- mutually exclusive specifically means they CANNOT both occur together, a different concept from independence."},
+      {"text": "They always occur together, every single time", "isCorrect": false, "feedback": "This is essentially the opposite of mutually exclusive -- mutually exclusive events specifically CANNOT occur together at all, not that they always occur together."},
+      {"text": "They have identical, exactly equal probabilities of occurring", "isCorrect": false, "feedback": "This isn't the definition of mutually exclusive -- that concept concerns whether events can co-occur, not whether their individual probabilities happen to be numerically equal."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Rolling a single die and getting an EVEN number, versus rolling that same single die and getting an ODD number, are mutually exclusive events (a single roll can't be both even AND odd). Are these two events also INDEPENDENT of each other?",
+    "options": [
+      {"text": "No -- since these events are mutually exclusive, they are actually the OPPOSITE of independent; knowing one occurred tells you with certainty that the other did NOT occur", "isCorrect": true, "feedback": "Correct -- mutually exclusive events (that aren't impossible) are actually always DEPENDENT on each other in a very strong sense, since the occurrence of one guarantees the non-occurrence of the other, which is the complete opposite of true independence (where one event's occurrence provides NO information about the other)."},
+      {"text": "Yes, these two events are also completely independent of each other", "isCorrect": false, "feedback": "This isn't accurate -- mutually exclusive events (excluding trivial/impossible cases) are actually NEVER independent -- knowing one occurred gives you COMPLETE, certain information about the other (that it did NOT occur), which is the opposite of independence."},
+      {"text": "Mutually exclusive and independent are actually just two different names for the exact same concept", "isCorrect": false, "feedback": "This isn't accurate -- these are GENUINELY DIFFERENT, in fact largely OPPOSING concepts in probability -- mutually exclusive concerns whether events CAN co-occur, while independence concerns whether one event's occurrence affects the other's PROBABILITY, and these two specific properties are actually incompatible with each other (except in trivial cases)."},
+      {"text": "This question cannot actually be answered without additional information about the specific die being used", "isCorrect": false, "feedback": "This isn't accurate -- this CAN be definitively answered using the given information alone -- since these events are mutually exclusive (and neither is impossible), they are NECESSARILY dependent, not independent, regardless of any specific die details."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Explain mathematically WHY two mutually exclusive events (each with a nonzero individual probability) can NEVER be independent, using the standard definitions/formulas for these two probability concepts.",
+    "options": [
+      {"text": "For independent events, P(A and B) = P(A)×P(B) (a nonzero value, since both individual probabilities are nonzero), but for mutually exclusive events, P(A and B) = 0 (since they cannot co-occur) -- since P(A)×P(B) cannot simultaneously equal both a nonzero value AND zero, these two conditions (independence and mutual exclusivity) are mathematically INCOMPATIBLE for events with nonzero individual probabilities", "isCorrect": true, "feedback": "Correct -- this direct mathematical contradiction (the required P(A and B) value for independence being nonzero, while the required value for mutual exclusivity is exactly zero) rigorously proves that these two properties cannot coexist for events with nonzero individual probabilities, confirming why mutually exclusive events are inherently dependent, not independent."},
+      {"text": "This mathematical relationship actually shows that mutually exclusive events CAN sometimes also be independent, under certain specific conditions", "isCorrect": false, "feedback": "This isn't accurate (for events with nonzero individual probabilities) -- the mathematical contradiction demonstrated here shows these two properties are fundamentally INCOMPATIBLE in that case, not merely conditionally compatible under certain circumstances."},
+      {"text": "The formulas for independence (P(A)×P(B)) and mutual exclusivity (P(A and B)=0) are actually mathematically identical formulas", "isCorrect": false, "feedback": "This isn't accurate -- these are GENUINELY DIFFERENT formulas/conditions, and it's PRECISELY their mathematical incompatibility (one requiring a nonzero value, the other requiring exactly zero) that proves these two properties cannot coexist."},
+      {"text": "This mathematical proof has no actual connection to explaining why mutually exclusive events cannot also be independent", "isCorrect": false, "feedback": "This isn't accurate -- this mathematical proof is DIRECTLY and specifically connected to and PROVIDES THE RIGOROUS EXPLANATION for why mutually exclusive events (with nonzero individual probabilities) cannot also be independent."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This categorization applies when the occurrence of one outcome from a sample space definitively precludes the co-occurrence of another specified outcome.", "medium": "These are events where if one happens, the other one just can't happen at the same time.", "easy": "These are events where if one happens, the other can't happen at the same time."},
+    "medium": {"hard": "Consider what definitive information the occurrence of one mutually exclusive event provides about the certain non-occurrence of the other, and how this relates to the formal definition of independence.", "medium": "If you know for a fact the roll was even, that tells you with 100% certainty it wasn't odd -- knowing one COMPLETELY determines the other, which is the opposite of them being unrelated (independent).", "easy": "Knowing it was even tells you for certain it wasn't odd -- that's the opposite of unrelated."},
+    "hard": {"hard": "Compare the specific numerical requirement placed on P(A and B) by each definition (nonzero product for independence versus exactly zero for mutual exclusivity) to establish their fundamental incompatibility.", "medium": "The independence rule needs P(A and B) to be some nonzero number, but the mutually-exclusive rule needs that exact same thing to be zero -- those two requirements just can't both be true at once.", "easy": "Independence needs P(A and B) to be nonzero, but mutual exclusivity needs it to be zero -- can't both be true."}
+  }
+}
+]

@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of biodiversity and ecosystem stability",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does biodiversity refer to?",
+    "options": [
+      {"text": "The variety of different species and genetic variation within an ecosystem", "isCorrect": true, "feedback": "Correct -- biodiversity encompasses species richness, genetic diversity, and ecosystem variety within a given area."},
+      {"text": "The total number of individual organisms in one specific location", "isCorrect": false, "feedback": "That describes population size or density, not biodiversity, which is about VARIETY of species, not raw individual counts."},
+      {"text": "The size of a single organism's habitat", "isCorrect": false, "feedback": "Habitat size is a separate concept from biodiversity, which concerns the variety of species and genetics present."},
+      {"text": "The weight of all organisms combined in an area", "isCorrect": false, "feedback": "That describes biomass, a different concept from biodiversity, which is about SPECIES VARIETY, not total mass."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Ecosystems with higher biodiversity tend to be more resilient to disturbances (like disease outbreaks or environmental changes) than ecosystems with low biodiversity. Why might this be the case?",
+    "options": [
+      {"text": "With many different species present, if one species is severely affected, others can often fill similar ecological roles, helping maintain overall ecosystem function", "isCorrect": true, "feedback": "Correct -- this redundancy and functional diversity across multiple species is exactly why higher biodiversity generally provides greater ecosystem stability and resilience."},
+      {"text": "Higher biodiversity actually makes ecosystems MORE vulnerable to disturbances, not less", "isCorrect": false, "feedback": "This is generally backwards -- higher biodiversity typically provides greater resilience and stability, due to functional redundancy across species, not increased vulnerability."},
+      {"text": "Biodiversity has no actual connection to ecosystem resilience or stability", "isCorrect": false, "feedback": "Biodiversity is actually a significant, well-documented factor influencing ecosystem resilience and stability."},
+      {"text": "All species in an ecosystem perform completely identical, interchangeable roles", "isCorrect": false, "feedback": "Species typically occupy distinct ecological niches with somewhat different (though sometimes overlapping) roles -- it's this overlapping redundancy across DIFFERENT species that provides resilience, not identical roles."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A 'monoculture' farm (growing only a single crop species over a large area) is particularly vulnerable to being wiped out entirely by a single pest or disease, compared to a more biodiverse farming system. What ecological principle does this illustrate?",
+    "options": [
+      {"text": "Low biodiversity reduces a system's overall resilience, since a threat effective against the single dominant species has no natural barrier (like resistant alternative species) to limit its overall impact", "isCorrect": true, "feedback": "Correct -- this vulnerability in monocultures directly illustrates how a lack of biodiversity removes the natural 'buffering' effect that a more diverse system would otherwise provide against a single threat."},
+      {"text": "Monocultures are actually MORE resilient to pests and disease than biodiverse systems", "isCorrect": false, "feedback": "This is backwards -- monocultures are generally LESS resilient to a single threat, since that threat can spread unchecked without more resistant species types interrupting it, unlike more biodiverse systems."},
+      {"text": "This scenario has no actual connection to the general concept of biodiversity and ecosystem stability", "isCorrect": false, "feedback": "This is actually a direct, real-world illustration of the broader ecological principle connecting biodiversity to ecosystem (or agricultural system) stability and resilience."},
+      {"text": "Pest and disease vulnerability is completely unrelated to how many different species are present in a given system", "isCorrect": false, "feedback": "Pest/disease vulnerability is actually directly related to species diversity -- a monoculture's uniform vulnerability versus a diverse system's varied resistance is a central example of this relationship."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term encompasses the range of species, genetic variation, and ecological communities present within a defined area.", "medium": "This is about how many different kinds of living things exist in one area.", "easy": "This is about how many different kinds of living things exist in one place."},
+    "medium": {"hard": "Consider how having multiple species capable of performing similar ecological functions provides a buffer against the loss of any single species.", "medium": "If lots of different species can do similar jobs in the ecosystem, losing one species doesn't break everything.", "easy": "If lots of different species can do similar jobs, losing one doesn't break everything."},
+    "hard": {"hard": "Consider how a lack of species variety removes any natural resistance diversity that could otherwise limit a single threat's ability to spread unchecked.", "medium": "With only ONE type of crop everywhere, a pest that can hurt that one crop can spread through the whole farm unopposed.", "easy": "With only one type of crop everywhere, a pest that hurts that crop can spread through the whole farm."}
+  }
+}
+]

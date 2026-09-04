@@ -1,0 +1,207 @@
+[
+{
+  "topic": "Newton's third law of motion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Newton's third law states that for every action, there is:",
+    "options": [
+      {"text": "An equal and opposite reaction", "isCorrect": true, "feedback": "Correct -- forces always come in equal, opposite pairs."},
+      {"text": "A smaller, delayed reaction", "isCorrect": false, "feedback": "The reaction force is equal in size, not smaller, and happens simultaneously, not delayed."},
+      {"text": "No reaction at all", "isCorrect": false, "feedback": "The third law specifically states that a reaction force always exists."},
+      {"text": "A reaction in the same direction", "isCorrect": false, "feedback": "The reaction force points in the opposite direction, not the same one."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When a swimmer pushes backward against the water, what pushes the swimmer forward?",
+    "options": [
+      {"text": "The water pushing forward on the swimmer with an equal, opposite force", "isCorrect": true, "feedback": "Correct -- this is a direct example of Newton's third law in action."},
+      {"text": "The swimmer's own muscles alone, without any outside force", "isCorrect": false, "feedback": "Muscles apply the initial push, but it's the water's reaction force that actually propels the swimmer."},
+      {"text": "Gravity pulling the swimmer forward", "isCorrect": false, "feedback": "Gravity pulls straight down, not horizontally forward through water."},
+      {"text": "Friction between the swimmer and the pool floor", "isCorrect": false, "feedback": "Swimmers are usually not touching the pool floor while swimming, so this isn't the relevant force."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A rocket expels exhaust gas downward at high speed. According to Newton's third law, why does the rocket move upward?",
+    "options": [
+      {"text": "The gas pushes down on the rocket's surroundings, and an equal, opposite force pushes the rocket up", "isCorrect": true, "feedback": "Correct -- the rocket exerts force on the expelled gas, and the gas exerts an equal, opposite force back on the rocket."},
+      {"text": "The rocket is being pulled up by low air pressure above it", "isCorrect": false, "feedback": "Rockets work even in the vacuum of space with no air at all, so air pressure isn't the explanation."},
+      {"text": "The exhaust gas becomes lighter than air and rises, carrying the rocket with it", "isCorrect": false, "feedback": "This describes buoyancy, which isn't how rocket propulsion works, especially in space."},
+      {"text": "Gravity from the exhaust cloud pulls the rocket upward", "isCorrect": false, "feedback": "Gravitational attraction from exhaust gas would be far too weak to explain rocket motion."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Whatever force one object applies, a matching force in the opposite direction comes right back at it.", "medium": "Whatever force you apply to something, that thing applies the same force right back at you.", "easy": "Every push has an equal push back in the opposite direction."},
+    "medium": {"hard": "The swimmer applies a backward force on the water, and by the third law, the water applies an equal forward force back on the swimmer.", "medium": "Whatever force the swimmer applies to the water comes right back at them in the opposite direction.", "easy": "The water pushes back on the swimmer just as hard as the swimmer pushed on the water."},
+    "hard": {"hard": "The rocket exerts a force on the exhaust gas to push it out; by the third law, the gas exerts an equal and opposite force back on the rocket, propelling it forward, with no need for air.", "medium": "The rocket pushes the gas one way, and the gas pushes the rocket the opposite way with equal force -- no air is needed for this to work.", "easy": "The rocket pushes gas down, and the gas pushes the rocket up just as hard -- this works even with no air around."}
+  }
+},
+{
+  "topic": "series vs. parallel circuits",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In a series circuit, how are components connected?",
+    "options": [
+      {"text": "Along a single path, one after another", "isCorrect": true, "feedback": "Correct -- series circuits have only one path for current to flow through all components in sequence."},
+      {"text": "Along multiple separate paths", "isCorrect": false, "feedback": "Multiple separate paths describes a parallel circuit, not a series circuit."},
+      {"text": "Not connected at all", "isCorrect": false, "feedback": "A circuit requires connected components to allow current to flow."},
+      {"text": "Randomly, with no defined path", "isCorrect": false, "feedback": "Circuits follow defined paths, not random arrangements."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What happens to the other bulbs in a series circuit if one bulb burns out?",
+    "options": [
+      {"text": "All the other bulbs go out too, since the single path is broken", "isCorrect": true, "feedback": "Correct -- a break anywhere in a series circuit's single path stops current everywhere."},
+      {"text": "Only the burned-out bulb is affected, the rest stay lit", "isCorrect": false, "feedback": "In a series circuit, there's only one path -- breaking it stops the whole circuit."},
+      {"text": "The other bulbs get brighter", "isCorrect": false, "feedback": "With the circuit broken, no current flows at all, so no bulbs would get brighter."},
+      {"text": "The circuit automatically switches to parallel", "isCorrect": false, "feedback": "A circuit's basic wiring layout doesn't change on its own during operation."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do household electrical outlets typically use parallel circuits rather than series circuits?",
+    "options": [
+      {"text": "So each appliance can operate independently, and one device failing doesn't shut off the others", "isCorrect": true, "feedback": "Correct -- parallel wiring gives each device its own path, so they work independently of each other."},
+      {"text": "Because parallel circuits use less wire overall", "isCorrect": false, "feedback": "Parallel circuits typically use more wire, not less, since each path needs its own connection."},
+      {"text": "Because parallel circuits can't carry electricity as well", "isCorrect": false, "feedback": "Parallel circuits carry electricity effectively -- that's part of why they're the practical choice."},
+      {"text": "Because series circuits are illegal in most buildings", "isCorrect": false, "feedback": "This isn't the reason -- it's a practical/functional choice, not a legal restriction."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "There is only one continuous route for current to travel through every component in turn.", "medium": "Every component sits on the same single loop, one after the other.", "easy": "All the parts are connected in one single line, one after another."},
+    "medium": {"hard": "Since there's only one path in this type of circuit, any break anywhere interrupts current for every component on that path.", "medium": "Since there's only one path for current, breaking it anywhere stops the flow everywhere on that path.", "easy": "Since there's only one path, breaking it anywhere stops everything on that path."},
+    "hard": {"hard": "Multiple independent paths mean current can keep flowing through unaffected branches even if one branch's device fails or is switched off.", "medium": "Each appliance gets its own separate path, so one device turning off or breaking doesn't affect the others.", "easy": "Each device gets its own separate path, so one going out doesn't turn off the rest."}
+  }
+},
+{
+  "topic": "pitch and frequency of sound",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What determines the pitch of a sound?",
+    "options": [
+      {"text": "The frequency of the sound wave", "isCorrect": true, "feedback": "Correct -- higher frequency sound waves are perceived as higher pitch."},
+      {"text": "The color of the object making the sound", "isCorrect": false, "feedback": "Color is a visual property, unrelated to how sound pitch is perceived."},
+      {"text": "The temperature of the room", "isCorrect": false, "feedback": "Room temperature can slightly affect sound speed, but pitch itself is determined by frequency."},
+      {"text": "The weight of the sound wave", "isCorrect": false, "feedback": "Sound waves don't have a 'weight' in this sense -- pitch depends on frequency."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A guitar string is tightened, increasing its vibration frequency. What happens to the pitch?",
+    "options": [
+      {"text": "The pitch gets higher", "isCorrect": true, "feedback": "Correct -- increased frequency directly corresponds to higher pitch."},
+      {"text": "The pitch gets lower", "isCorrect": false, "feedback": "Lower pitch would correspond to decreased frequency, the opposite of what's happening here."},
+      {"text": "The pitch stays exactly the same", "isCorrect": false, "feedback": "Pitch is directly tied to frequency, so a frequency change must change the pitch."},
+      {"text": "The volume increases, but pitch is unaffected", "isCorrect": false, "feedback": "Frequency changes affect pitch specifically, not volume (which relates to amplitude)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two identical guitar strings are stretched to different tensions and plucked. The tighter string produces a higher-pitched sound. What does this tell you about the relationship between tension and frequency?",
+    "options": [
+      {"text": "Higher tension increases the vibration frequency of the string", "isCorrect": true, "feedback": "Correct -- more tension makes the string vibrate faster, raising both frequency and pitch."},
+      {"text": "Higher tension decreases the vibration frequency of the string", "isCorrect": false, "feedback": "This is the opposite -- higher pitch here indicates higher, not lower, frequency."},
+      {"text": "Tension has no relationship with frequency at all", "isCorrect": false, "feedback": "The pitch difference observed directly demonstrates that tension does affect frequency."},
+      {"text": "Tension only affects volume, not pitch", "isCorrect": false, "feedback": "The scenario describes a pitch change, which is tied to frequency, not simply volume."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property is measured in how many wave cycles occur each second.", "medium": "This is how many times the sound wave repeats each second.", "easy": "How high or low a sound seems depends on how fast the wave vibrates."},
+    "medium": {"hard": "A rise in vibration rate translates directly into a rise in how the sound is perceived.", "medium": "Faster vibration means a higher-sounding pitch.", "easy": "A faster vibration makes the pitch sound higher, not lower."},
+    "hard": {"hard": "Since pitch directly reflects frequency, and the tighter string sounds higher-pitched, tension must be increasing the string's vibration rate.", "medium": "A higher pitch directly means a higher vibration frequency, so more tension must be raising the frequency.", "easy": "Since higher pitch means higher frequency, more tension must be making the string vibrate faster."}
+  }
+},
+{
+  "topic": "reflection vs. refraction of light",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is reflection?",
+    "options": [
+      {"text": "Light bouncing off a surface", "isCorrect": true, "feedback": "Correct -- reflection occurs when light bounces back off a surface, like a mirror."},
+      {"text": "Light bending as it passes into a new material", "isCorrect": false, "feedback": "That describes refraction, not reflection."},
+      {"text": "Light being completely absorbed by a surface", "isCorrect": false, "feedback": "Absorption means the light doesn't bounce back at all, the opposite of reflection."},
+      {"text": "Light disappearing entirely", "isCorrect": false, "feedback": "Light energy doesn't just vanish -- it's reflected, absorbed, or transmitted."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does a straw appear bent when placed in a glass of water?",
+    "options": [
+      {"text": "Light refracts (bends) as it passes from water into air", "isCorrect": true, "feedback": "Correct -- light changes speed and direction when moving between water and air, creating the bent appearance."},
+      {"text": "The straw physically bends when it touches water", "isCorrect": false, "feedback": "The straw itself doesn't actually bend -- it's an optical effect from light bending."},
+      {"text": "Light reflects entirely off the surface of the water", "isCorrect": false, "feedback": "Reflection alone wouldn't create the appearance of a bent straw below the surface -- refraction does."},
+      {"text": "The water's color distorts the straw's image", "isCorrect": false, "feedback": "Water's clarity or color isn't what causes this bending effect -- it's the change in light's speed and direction."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Light travels from air into glass and bends toward the normal (an imaginary line perpendicular to the surface). What does this indicate about the light's speed in glass?",
+    "options": [
+      {"text": "The light slows down in glass", "isCorrect": true, "feedback": "Correct -- bending toward the normal occurs when light slows down entering a denser medium like glass."},
+      {"text": "The light speeds up in glass", "isCorrect": false, "feedback": "Speeding up would bend the light away from the normal, not toward it."},
+      {"text": "The light's speed is unaffected by entering glass", "isCorrect": false, "feedback": "If speed were unaffected, the light wouldn't bend at all -- refraction only occurs due to a speed change."},
+      {"text": "The light stops moving entirely inside the glass", "isCorrect": false, "feedback": "The light continues traveling through the glass, just at a reduced speed, not stopped entirely."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phenomenon involves light staying in the same medium and bouncing back rather than passing through.", "medium": "This is what happens when light hits a mirror and comes back toward you.", "easy": "This is when light bounces off something, like a mirror."},
+    "medium": {"hard": "Light travels at different speeds in air versus water, and this speed change bends its path at the boundary.", "medium": "Light bends when it moves from one material into a different one, like from water to air.", "easy": "Light changes direction slightly as it moves from water into the air, making the straw look bent."},
+    "hard": {"hard": "Bending toward the normal is the signature of light entering an optically denser medium, where its speed decreases.", "medium": "When light bends toward the normal line, it means the light has slowed down in the new material.", "easy": "Bending toward that imaginary straight line means the light has slowed down."}
+  }
+},
+{
+  "topic": "magnetism basics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What happens when two magnets are placed with their like poles (e.g., north to north) facing each other?",
+    "options": [
+      {"text": "They repel each other", "isCorrect": true, "feedback": "Correct -- like poles repel, while opposite poles attract."},
+      {"text": "They attract each other", "isCorrect": false, "feedback": "Attraction happens between opposite poles, not like poles."},
+      {"text": "Nothing happens at all", "isCorrect": false, "feedback": "Magnets always exert some force on each other when close, whether repelling or attracting."},
+      {"text": "They both lose their magnetism", "isCorrect": false, "feedback": "Simply bringing magnets near each other doesn't erase their magnetism."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following materials is most strongly attracted to a magnet?",
+    "options": [
+      {"text": "Iron", "isCorrect": true, "feedback": "Correct -- iron is one of the most magnetically attractive common metals."},
+      {"text": "Wood", "isCorrect": false, "feedback": "Wood is not magnetic and isn't attracted to magnets."},
+      {"text": "Plastic", "isCorrect": false, "feedback": "Plastic is not magnetic and isn't attracted to magnets."},
+      {"text": "Glass", "isCorrect": false, "feedback": "Glass is not magnetic and isn't attracted to magnets."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A wire carrying an electric current creates a magnetic field around it. What does this demonstrate?",
+    "options": [
+      {"text": "Electricity and magnetism are closely linked phenomena", "isCorrect": true, "feedback": "Correct -- moving electric charge generates a magnetic field, showing the deep connection between electricity and magnetism (electromagnetism)."},
+      {"text": "All wires are naturally magnetic even without current", "isCorrect": false, "feedback": "A plain wire with no current flowing doesn't produce this magnetic field -- current is required."},
+      {"text": "Magnetism can only exist near permanent magnets", "isCorrect": false, "feedback": "This example specifically shows magnetism arising from electric current, not from a permanent magnet."},
+      {"text": "The wire must be made of a magnetic metal like iron to show this effect", "isCorrect": false, "feedback": "This effect occurs in ordinary conductive wires (like copper) simply due to current flow, not because the wire itself is magnetic."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Identical poles push away from each other rather than pulling together.", "medium": "Matching poles push each other away, they don't pull together.", "easy": "Same poles push apart from each other."},
+    "medium": {"hard": "This metal is commonly used in magnetic applications and is a key ingredient in many everyday magnets.", "medium": "This metal is one of the most common materials that magnets stick to.", "easy": "This is the metal that fridge magnets often stick to."},
+    "hard": {"hard": "This phenomenon is the basis of electromagnetism, showing that a moving electric charge inherently produces a magnetic effect, independent of the wire's material.", "medium": "This shows that moving electric current itself creates magnetism, not that the wire material is inherently magnetic.", "easy": "This shows that electricity moving through a wire can create magnetism all on its own."}
+  }
+}
+]

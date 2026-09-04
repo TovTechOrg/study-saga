@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of geometric series and their sum formula",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A geometric series is the sum of terms in a geometric sequence, where each term is found by:",
+    "options": [
+      {"text": "Multiplying the previous term by a constant ratio", "isCorrect": true, "feedback": "Correct -- a geometric sequence (and thus the series formed by summing it) uses a fixed multiplicative ratio between consecutive terms."},
+      {"text": "Adding a constant value to the previous term", "isCorrect": false, "feedback": "That describes an ARITHMETIC sequence/series, not a geometric one, which specifically uses MULTIPLICATION by a constant ratio, not addition."},
+      {"text": "Squaring the previous term each time", "isCorrect": false, "feedback": "Squaring isn't the defining operation for a geometric sequence -- it specifically uses multiplication by a FIXED constant ratio, not squaring."},
+      {"text": "There is no consistent pattern between terms", "isCorrect": false, "feedback": "A geometric sequence DOES have a very definite, consistent pattern -- a fixed multiplicative ratio between consecutive terms."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Find the sum of the first 4 terms of the geometric series: 2+6+18+54... (using the formula Sn=a(1-r^n)/(1-r), where a=first term, r=common ratio, n=number of terms)",
+    "options": [
+      {"text": "80", "isCorrect": true, "feedback": "Correct -- with a=2, r=3, n=4: S4=2(1-3⁴)/(1-3)=2(1-81)/(-2)=2(-80)/(-2)=80."},
+      {"text": "81", "isCorrect": false, "feedback": "This is close to 3⁴ but doesn't correctly apply the full sum formula for this geometric series."},
+      {"text": "162", "isCorrect": false, "feedback": "This doesn't correctly result from applying the geometric series sum formula with these specific values."},
+      {"text": "2", "isCorrect": false, "feedback": "This is just the first term (a) alone, not the correctly calculated sum of all 4 terms."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "An INFINITE geometric series (with infinitely many terms) can have a finite sum ONLY if the absolute value of the common ratio (|r|) is less than 1, using the formula S=a/(1-r). Why does this specific condition (|r|<1) matter for whether an infinite sum can actually converge to a finite value?",
+    "options": [
+      {"text": "When |r|<1, each successive term becomes progressively smaller in magnitude, causing the total sum to approach (converge toward) a specific finite value as more terms are added, whereas if |r|≥1, terms would stay the same size or grow, causing the sum to grow without bound (diverge) rather than converging", "isCorrect": true, "feedback": "Correct -- this specific mathematical condition (|r|<1) is precisely what determines whether an infinite geometric series will converge to a finite, well-defined sum, or instead diverge toward infinity (or oscillate without settling to a specific value)."},
+      {"text": "An infinite series can actually always be summed to a finite value, regardless of the common ratio's magnitude", "isCorrect": false, "feedback": "This isn't accurate -- an infinite geometric series can ONLY be summed to a finite value specifically when |r|<1; otherwise, the sum diverges (grows without bound or doesn't settle to a specific value)."},
+      {"text": "The magnitude of the common ratio has no actual connection to whether an infinite series converges or diverges", "isCorrect": false, "feedback": "This isn't accurate -- the magnitude of the common ratio is actually THE central, determining factor for whether an infinite geometric series converges (to a finite sum) or diverges."},
+      {"text": "When |r|<1, the terms actually get progressively LARGER, which is why the sum can be finite", "isCorrect": false, "feedback": "This is backwards -- when |r|<1, terms get progressively SMALLER (not larger), which is precisely why the total sum can approach and converge to a finite value."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Each successive term in this progression is generated via multiplication by an invariant scalar ratio applied to its predecessor.", "medium": "Each new term comes from multiplying the previous term by the same fixed number each time.", "easy": "Each new term comes from multiplying the previous term by the same fixed number."},
+    "medium": {"hard": "Substitute the identified first term, common ratio, and desired term count directly into the finite geometric series sum formula.", "medium": "Identify a=2 and r=3, then plug both values along with n=4 into the sum formula.", "easy": "Plug a=2, r=3, n=4 into the formula: 2(1-81)/(1-3)=80."},
+    "hard": {"hard": "Consider how the magnitude of the common ratio determines whether successive term contributions shrink toward zero (enabling convergence) or fail to diminish (causing divergence).", "medium": "If each new piece you're adding keeps getting smaller and smaller, the running total can eventually settle down to one specific number instead of growing forever.", "easy": "If each new piece keeps getting smaller, the running total can settle down to one specific number."}
+  }
+}
+]

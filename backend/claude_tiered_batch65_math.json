@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of rational vs. irrational numbers",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What defines a rational number?",
+    "options": [
+      {"text": "A number that can be expressed as a fraction of two integers (a/b, where b is not 0)", "isCorrect": true, "feedback": "Correct -- rational numbers include whole numbers, fractions, and terminating or repeating decimals, all expressible as a ratio of integers."},
+      {"text": "A number that cannot be expressed as a simple fraction at all", "isCorrect": false, "feedback": "That describes an IRRATIONAL number, not a rational one, which specifically CAN be expressed as a fraction of two integers."},
+      {"text": "A number that is always negative", "isCorrect": false, "feedback": "Sign (positive/negative) isn't the defining characteristic of rational numbers -- being expressible as a fraction of integers is the defining feature."},
+      {"text": "A number that only exists as a decimal, never as a fraction", "isCorrect": false, "feedback": "This isn't accurate -- rational numbers CAN be expressed as decimals, but they're specifically defined by their ability to ALSO be expressed as a fraction of integers."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these numbers is irrational?",
+    "options": [
+      {"text": "√2 (the square root of 2)", "isCorrect": true, "feedback": "Correct -- √2 cannot be expressed as a simple fraction of two integers; its decimal expansion is non-terminating and non-repeating."},
+      {"text": "0.75", "isCorrect": false, "feedback": "This is a rational number -- it can be expressed as the fraction 3/4."},
+      {"text": "5", "isCorrect": false, "feedback": "This is a rational number -- whole numbers can always be expressed as a fraction (5/1)."},
+      {"text": "1/3", "isCorrect": false, "feedback": "This is a rational number by definition -- it's already expressed as a fraction of two integers."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The famous mathematical proof that √2 is irrational uses a method called 'proof by contradiction.' It starts by ASSUMING √2 IS rational (expressible as a fraction p/q in lowest terms), then shows this assumption leads to a logical contradiction. Why does successfully reaching a contradiction from this initial assumption prove that √2 must actually be irrational?",
+    "options": [
+      {"text": "If assuming √2 is rational leads to a logically impossible or contradictory result, then that initial assumption must have been false, meaning the only remaining logical possibility is that √2 is actually irrational", "isCorrect": true, "feedback": "Correct -- this classic logical technique (proof by contradiction) is a powerful and rigorous mathematical method: if an assumption leads to an impossible conclusion, the assumption itself must be false, definitively establishing the opposite conclusion (here, √2's irrationality)."},
+      {"text": "Reaching a contradiction actually proves that √2 IS rational after all", "isCorrect": false, "feedback": "This is backwards -- reaching a logical CONTRADICTION from an assumption specifically proves that the assumption was FALSE, meaning √2 is NOT rational (it's irrational), not the other way around."},
+      {"text": "This proof technique has no actual logical validity in mathematics", "isCorrect": false, "feedback": "This isn't accurate -- proof by contradiction is a well-established, logically rigorous, and widely used proof technique throughout mathematics, not an invalid method."},
+      {"text": "The contradiction reached in this proof has no actual connection to whether √2 is rational or irrational", "isCorrect": false, "feedback": "This isn't accurate -- the specific contradiction reached is DIRECTLY and logically connected to disproving the initial 'rational' assumption, which is the entire point and mechanism of this classic proof."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This number classification requires representability as a precise ratio between two whole-number integer values.", "medium": "This is a number that can be written as a simple fraction, like one whole number over another.", "easy": "This is a number that can be written as a simple fraction."},
+    "medium": {"hard": "Identify which value's decimal representation is non-terminating and non-repeating, indicating it cannot be expressed as a ratio of two integers.", "medium": "Look for the number whose decimal goes on forever without ever repeating a pattern, and can't be written as a simple fraction.", "easy": "√2's decimal goes on forever without repeating, and can't be written as a simple fraction."},
+    "hard": {"hard": "Apply the logical principle that a false conclusion derived from valid reasoning steps necessarily indicates a flaw in the original starting assumption itself.", "medium": "If starting with 'it IS rational' leads to something impossible, that just means the starting assumption itself must have been wrong all along.", "easy": "If starting with 'it IS rational' leads to something impossible, the starting assumption must have been wrong."}
+  }
+}
+]

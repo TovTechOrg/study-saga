@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a chemical reaction reaching completion vs. equilibrium",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean for a chemical reaction to 'go to completion'?",
+    "options": [
+      {"text": "Essentially all of the reactants are converted into products", "isCorrect": true, "feedback": "Correct -- a reaction that goes to completion uses up nearly all the starting materials."},
+      {"text": "The reaction never actually starts", "isCorrect": false, "feedback": "Going to completion means the reaction DOES occur, and occurs fully, not that it never starts."},
+      {"text": "Only half of the reactants are converted into products", "isCorrect": false, "feedback": "That would describe a partial reaction, not one that has gone to full completion."},
+      {"text": "The products immediately turn back into reactants", "isCorrect": false, "feedback": "This describes a reverse reaction, not the forward completion of the original reaction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a reaction at chemical equilibrium, what is happening at the molecular level, even though the observable amounts of reactants and products appear constant?",
+    "options": [
+      {"text": "The forward and reverse reactions are still occurring, but at equal rates, so there's no net change in the amounts present", "isCorrect": true, "feedback": "Correct -- equilibrium is a dynamic, ongoing balance, not a static state where nothing is happening."},
+      {"text": "All chemical activity has completely stopped", "isCorrect": false, "feedback": "Equilibrium doesn't mean activity has stopped -- the forward and reverse reactions are both still actively occurring, just at matching rates."},
+      {"text": "Only the forward reaction is still occurring", "isCorrect": false, "feedback": "At equilibrium, BOTH the forward and reverse reactions are occurring simultaneously, at equal rates."},
+      {"text": "The reactants have all been completely used up", "isCorrect": false, "feedback": "At equilibrium, typically both reactants AND products remain present in a stable, ongoing balance, not fully depleted reactants."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Some reactions go essentially to completion (like burning), while others reach a stable equilibrium with significant amounts of both reactants and products remaining. What generally determines which outcome occurs?",
+    "options": [
+      {"text": "It depends on the relative favorability (energetics) of the forward versus reverse reaction -- if the forward reaction is overwhelmingly favored, the reaction proceeds essentially to completion rather than settling into a balanced equilibrium", "isCorrect": true, "feedback": "Correct -- the relative thermodynamic favorability of forward versus reverse processes determines whether a reaction is best described as going to completion or reaching a true equilibrium with both sides significantly present."},
+      {"text": "All chemical reactions always go to 100% completion, with no exceptions", "isCorrect": false, "feedback": "This isn't correct -- many important reactions specifically reach a stable equilibrium rather than going to full completion."},
+      {"text": "This distinction is completely random with no underlying chemical principle", "isCorrect": false, "feedback": "This distinction is actually explained by real, well-understood chemical principles related to reaction favorability and energetics, not randomness."},
+      {"text": "Temperature has absolutely no effect on whether a reaction reaches equilibrium or goes to completion", "isCorrect": false, "feedback": "Temperature actually can significantly influence a reaction's equilibrium position and how strongly it favors products versus reactants."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This describes a reaction where the starting materials have been almost entirely transformed into new substances.", "medium": "This means almost all of the starting materials have turned into new substances.", "easy": "This means almost all the starting stuff turned into new stuff."},
+    "medium": {"hard": "Even when overall amounts appear stable, the forward and reverse chemical processes continue actively, just perfectly balancing each other's rate.", "medium": "Both directions of the reaction are still happening at the same time, just at matching speeds.", "easy": "Both directions of the reaction are still happening, just at the same speed, so nothing looks like it's changing."},
+    "hard": {"hard": "The position of equilibrium (heavily product-favored vs. balanced) reflects how much more thermodynamically favorable the forward reaction is compared to the reverse.", "medium": "It depends on how much more \"favorable\" it is for the reaction to go forward compared to going backward.", "easy": "It depends on how much more favorable it is for the reaction to go forward versus going back to the starting materials."}
+  }
+}
+]

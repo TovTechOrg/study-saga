@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of gravitational potential energy",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Gravitational potential energy depends on which factors?",
+    "options": [
+      {"text": "An object's mass, its height above a reference point, and gravitational acceleration", "isCorrect": true, "feedback": "Correct -- gravitational potential energy is calculated as PE = mgh, depending on mass, gravity, and height."},
+      {"text": "Only an object's color", "isCorrect": false, "feedback": "Color has no bearing on gravitational potential energy, which specifically depends on mass, height, and gravitational acceleration."},
+      {"text": "Only an object's temperature", "isCorrect": false, "feedback": "Temperature isn't a factor in gravitational potential energy calculations -- mass, height, and gravity are the relevant factors."},
+      {"text": "Only the object's speed", "isCorrect": false, "feedback": "Speed relates to KINETIC energy, not gravitational potential energy, which specifically depends on height, mass, and gravity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A 2 kg object is raised to a height of 5 meters. Using PE = mgh (with g ≈ 10 m/s²), what is its gravitational potential energy?",
+    "options": [
+      {"text": "100 Joules", "isCorrect": true, "feedback": "Correct -- PE = 2 × 10 × 5 = 100 Joules."},
+      {"text": "10 Joules", "isCorrect": false, "feedback": "This doesn't correctly multiply all three factors (mass, gravity, and height) together."},
+      {"text": "50 Joules", "isCorrect": false, "feedback": "This only multiplies mass and height together (2×5=10, doubled to 20, still not matching), missing the correct full calculation including gravitational acceleration."},
+      {"text": "20 Joules", "isCorrect": false, "feedback": "This only accounts for mass times height (2×5=10) doubled, but doesn't correctly incorporate the full gravitational acceleration value of 10."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two identical balls are dropped from different heights: Ball A from 10 meters, Ball B from 20 meters. Using conservation of energy (potential energy converts fully to kinetic energy), how does Ball B's velocity just before impact compare to Ball A's?",
+    "options": [
+      {"text": "Ball B's velocity is about 1.41 times greater (√2), NOT twice as great, since kinetic energy depends on velocity SQUARED, while potential energy depends linearly on height", "isCorrect": true, "feedback": "Correct -- since PE=mgh converts to KE=½mv², doubling height doubles PE and thus KE, but since KE depends on v², velocity only increases by a factor of √2 (approximately 1.41), not by a full factor of 2."},
+      {"text": "Ball B's velocity is exactly twice as great as Ball A's, since it fell from twice the height", "isCorrect": false, "feedback": "This is a common misconception -- while POTENTIAL ENERGY doubles with double the height, VELOCITY only increases by a factor of √2 (about 1.41), not a full factor of 2, due to the squared relationship between velocity and kinetic energy."},
+      {"text": "Both balls would have exactly the same velocity upon impact, regardless of height", "isCorrect": false, "feedback": "This isn't accurate -- greater height does result in greater impact velocity, though the relationship isn't directly proportional (it involves a square root relationship), not equal velocities regardless of height."},
+      {"text": "Height has no actual effect on a falling object's final velocity", "isCorrect": false, "feedback": "Height very much affects final velocity -- a greater drop height does result in greater final velocity, following the square-root relationship derived from energy conservation, not zero effect."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This energy form is proportional to the product of an object's mass, gravitational acceleration, and vertical displacement relative to a defined reference level.", "medium": "How high something is, how heavy it is, and how strong gravity is -- these all play a role.", "easy": "How high something is and how heavy it is both matter here."},
+    "medium": {"hard": "Substitute the given mass, gravitational acceleration, and height values directly into the potential energy formula.", "medium": "Multiply mass (2) by gravity (10) by height (5) together.", "easy": "Multiply 2 times 10 times 5 to get 100."},
+    "hard": {"hard": "Set the potential energy expression equal to the kinetic energy expression, then solve for velocity, noting the square root relationship that emerges when height doubles.", "medium": "Since kinetic energy involves velocity squared, doubling the energy (from doubling height) doesn't simply double the velocity -- it multiplies it by the square root of 2 instead.", "easy": "Doubling the height doesn't double the velocity -- it multiplies velocity by about 1.41 (the square root of 2) instead."}
+  }
+}
+]

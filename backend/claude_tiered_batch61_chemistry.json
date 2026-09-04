@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between homogeneous and heterogeneous mixtures",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What characterizes a homogeneous mixture?",
+    "options": [
+      {"text": "It has a uniform composition throughout, with components not visibly distinguishable from each other", "isCorrect": true, "feedback": "Correct -- homogeneous mixtures, like saltwater or air, look completely uniform throughout, with no visible separate parts."},
+      {"text": "It has visibly distinct parts or regions that can be seen with the naked eye", "isCorrect": false, "feedback": "That describes a HETEROGENEOUS mixture, not a homogeneous one, which specifically has uniform, indistinguishable composition."},
+      {"text": "It only exists in the solid state", "isCorrect": false, "feedback": "Homogeneous mixtures can exist in any physical state (solid, liquid, gas) -- it's not defined by a specific state of matter."},
+      {"text": "It always consists of exactly one single pure substance", "isCorrect": false, "feedback": "A homogeneous MIXTURE still contains multiple different substances -- it's just that they're uniformly distributed, unlike a single pure substance which contains only one type of particle."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Salad dressing made of oil and vinegar (which separates into visible layers) is a heterogeneous mixture, while saltwater is homogeneous. What key difference between these two examples explains this classification?",
+    "options": [
+      {"text": "In saltwater, the salt is uniformly dissolved throughout the water at a molecular level, while in the salad dressing, the oil and vinegar remain visibly separated into distinct layers/regions", "isCorrect": true, "feedback": "Correct -- this difference in whether the components achieve uniform, indistinguishable distribution (homogeneous) or remain visibly separated (heterogeneous) is the key classifying factor between these two mixture types."},
+      {"text": "Saltwater is actually a heterogeneous mixture, not homogeneous", "isCorrect": false, "feedback": "This isn't accurate -- saltwater IS a classic example of a homogeneous mixture, since salt dissolves uniformly and completely throughout the water."},
+      {"text": "Salad dressing is actually a pure substance, not a mixture at all", "isCorrect": false, "feedback": "Salad dressing (oil and vinegar) is definitely a MIXTURE of multiple substances -- specifically a heterogeneous one, due to its visible separation into distinct layers."},
+      {"text": "There is actually no meaningful difference between these two examples", "isCorrect": false, "feedback": "There IS a meaningful, observable difference -- specifically whether the components are uniformly mixed (homogeneous) or visibly separated (heterogeneous)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Milk appears completely uniform to the naked eye, suggesting it might be a homogeneous mixture, but under a microscope, tiny fat globules can be seen dispersed throughout the liquid. Why is milk actually classified as a special type of heterogeneous mixture called a colloid, rather than a true homogeneous solution?",
+    "options": [
+      {"text": "Even though the mixture appears uniform to the naked eye, the dispersed fat particles are still large enough (compared to individual dissolved molecules in a true solution) to be seen under magnification and to scatter light, distinguishing it from a truly homogeneous solution at the molecular level", "isCorrect": true, "feedback": "Correct -- this distinction between a true solution (uniform down to the molecular level) and a colloid (uniform only to the naked eye, but with larger dispersed particles detectable microscopically or via light scattering) is exactly why milk is classified differently from something like saltwater."},
+      {"text": "Milk is actually a true homogeneous solution, identical in classification to saltwater", "isCorrect": false, "feedback": "This isn't accurate -- milk is specifically classified as a colloid (a distinct category), due to its dispersed particle size being larger than what's found in a true homogeneous solution like saltwater."},
+      {"text": "The appearance of a mixture to the naked eye is the ONLY factor that matters for its scientific classification", "isCorrect": false, "feedback": "This isn't accurate -- while naked-eye appearance is one consideration, particle size and behavior (like light scattering, visible under magnification) are also scientifically relevant factors distinguishing colloids from true solutions."},
+      {"text": "Milk contains absolutely no distinguishable component particles at any scale of observation", "isCorrect": false, "feedback": "This isn't accurate -- milk DOES contain distinguishable fat globule particles, visible specifically under microscopic magnification, which is precisely why it's classified as a colloid rather than a true homogeneous solution."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This mixture classification requires indistinguishable uniformity of composition at a scale perceptible to unaided observation.", "medium": "This type of mixture looks completely the same all throughout -- you can't see separate parts.", "easy": "This type of mixture looks completely the same throughout -- no separate parts visible."},
+    "medium": {"hard": "Consider the difference between complete molecular-level dissolution versus a persistent physical separation between two immiscible substances.", "medium": "In one case, the substance fully blends in at a tiny level; in the other, the two liquids just don't mix and stay apart.", "easy": "In saltwater, the salt fully blends in; in dressing, the liquids just don't mix and stay apart."},
+    "hard": {"hard": "Consider the scale at which uniformity is being assessed -- naked-eye appearance versus microscopic particle size and light-scattering behavior compared to true molecular-level solutions.", "medium": "Even though milk looks totally smooth to your eyes, under a microscope you can actually see tiny fat droplets floating around, unlike a true solution.", "easy": "Even though milk looks smooth to your eyes, a microscope reveals tiny fat droplets, unlike a true solution."}
+  }
+}
+]

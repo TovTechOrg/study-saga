@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of mitosis and its role in growth and repair",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the primary purpose of mitosis?",
+    "options": [
+      {"text": "To produce two genetically identical daughter cells from one parent cell, for growth and repair", "isCorrect": true, "feedback": "Correct -- mitosis creates identical copies of cells, essential for an organism's growth, tissue repair, and replacement of old cells."},
+      {"text": "To produce sex cells (sperm and egg) with half the normal chromosome number", "isCorrect": false, "feedback": "That describes meiosis, a different type of cell division, not mitosis."},
+      {"text": "To combine two cells into one larger cell", "isCorrect": false, "feedback": "Mitosis is a division process that creates MORE cells from one, not a combination process that merges cells together."},
+      {"text": "To break down cellular waste products", "isCorrect": false, "feedback": "That describes a function of organelles like lysosomes, unrelated to mitosis, which is about cell division."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "After mitosis, the two resulting daughter cells are genetically identical to each other and to the original parent cell. Why is this genetic identity crucial for tissue repair, like healing a skin wound?",
+    "options": [
+      {"text": "Because the new cells need to be fully functional replacements with the exact same genetic instructions as the surrounding tissue, to properly restore normal function", "isCorrect": true, "feedback": "Correct -- genetic identity ensures the newly created cells can seamlessly integrate and function just like the original tissue they're replacing."},
+      {"text": "Genetic identity is actually irrelevant to how well tissue repair works", "isCorrect": false, "feedback": "Genetic identity is actually crucial -- it ensures new cells produced can properly replace damaged ones with matching function, rather than potentially malfunctioning."},
+      {"text": "The new cells need to be genetically DIFFERENT from the original tissue to repair a wound properly", "isCorrect": false, "feedback": "This is backwards -- genetic difference could actually cause problems (like improper tissue function); identical genetics ensures proper integration and function."},
+      {"text": "Mitosis actually produces genetically different daughter cells each time", "isCorrect": false, "feedback": "This is incorrect -- mitosis is specifically defined by producing genetically IDENTICAL daughter cells, which is exactly why it's suited to growth and repair."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Cancer often results from uncontrolled mitotic cell division, where cells continue dividing without the normal regulatory checks. Why does this loss of regulation, rather than mitosis itself, represent the fundamental problem in cancer?",
+    "options": [
+      {"text": "Because mitosis is a normal, necessary process, but cancer occurs specifically when the cell cycle's regulatory checkpoints fail, allowing cells to divide excessively and form tumors instead of stopping when appropriate", "isCorrect": true, "feedback": "Correct -- mitosis itself is a healthy, essential process; cancer specifically arises from a breakdown in the normal regulatory mechanisms that control when and how often mitosis should occur."},
+      {"text": "Mitosis itself is inherently dangerous and should be considered abnormal whenever it occurs", "isCorrect": false, "feedback": "Mitosis is a completely normal and essential process for healthy growth and repair -- the problem specifically arises from a lack of regulatory control, not from mitosis occurring at all."},
+      {"text": "Cancer actually has no connection whatsoever to the process of mitosis", "isCorrect": false, "feedback": "Cancer is very much connected to mitosis -- specifically, it involves uncontrolled (unregulated) mitotic division, which is the central issue."},
+      {"text": "Cancer cells actually stop dividing completely, which is what causes the disease", "isCorrect": false, "feedback": "This is backwards -- cancer is characterized by EXCESSIVE, uncontrolled cell division (mitosis), not a cessation of division."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process yields two daughter cells with genomes identical to the original parent cell, supporting tissue maintenance and expansion.", "medium": "This process makes two identical copies of a cell, used for growing and fixing tissues.", "easy": "This process makes two identical copies of a cell, for growing and fixing tissue."},
+    "medium": {"hard": "Consider what functional consequence would result if replacement cells carried genetic instructions different from those of the surrounding, undamaged tissue.", "medium": "New cells need to match the genetics of the surrounding tissue so they can function properly as replacements.", "easy": "New cells need to match the tissue around them so they can work properly as replacements."},
+    "hard": {"hard": "Separate the cell division process itself (mitosis, a normal mechanism) from the regulatory system that governs WHEN and HOW OFTEN that mechanism should be triggered.", "medium": "The actual copying process is fine -- the real problem is that something goes wrong with the 'stop' signals that should normally control it.", "easy": "The copying process itself is fine -- the problem is that something goes wrong with the signals that should control it."}
+  }
+}
+]

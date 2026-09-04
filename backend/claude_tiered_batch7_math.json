@@ -1,0 +1,248 @@
+[
+{
+  "topic": "multiplying multi-digit whole numbers",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 23 × 4?",
+    "options": [
+      {"text": "92", "isCorrect": true, "feedback": "Correct -- 23 × 4 = 92."},
+      {"text": "82", "isCorrect": false, "feedback": "This doesn't match the correct multiplication result."},
+      {"text": "27", "isCorrect": false, "feedback": "This adds the numbers instead of multiplying them."},
+      {"text": "96", "isCorrect": false, "feedback": "This is close but doesn't match the correct product of 23 and 4."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 34 × 12?",
+    "options": [
+      {"text": "408", "isCorrect": true, "feedback": "Correct -- 34 × 12 = 408."},
+      {"text": "384", "isCorrect": false, "feedback": "This doesn't match the correct product of 34 and 12."},
+      {"text": "46", "isCorrect": false, "feedback": "This adds the numbers instead of multiplying them."},
+      {"text": "340", "isCorrect": false, "feedback": "This only multiplies 34 by 10, forgetting the extra 2."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is 47 × 23?",
+    "options": [
+      {"text": "1,081", "isCorrect": true, "feedback": "Correct -- 47 × 23 = 1,081."},
+      {"text": "1,061", "isCorrect": false, "feedback": "This is close but doesn't match the correct product of 47 and 23."},
+      {"text": "970", "isCorrect": false, "feedback": "This doesn't match the correct product of 47 and 23."},
+      {"text": "70", "isCorrect": false, "feedback": "This adds the numbers instead of multiplying them."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Combine the two numbers using repeated addition, or the standard multiplication algorithm.", "medium": "Multiply 23 by 4 directly.", "easy": "Multiply 23 by 4."},
+    "medium": {"hard": "Break the multiplication into parts: multiply by the tens digit, then the ones digit, then add the results.", "medium": "Multiply 34 by 10, then multiply 34 by 2, then add the two results.", "easy": "Multiply 34 by 12 using long multiplication."},
+    "hard": {"hard": "Break the multiplication into parts: multiply by the tens digit, then the ones digit, then add the results.", "medium": "Multiply 47 by 20, then multiply 47 by 3, then add the two results.", "easy": "Multiply 47 by 23 using long multiplication."}
+  }
+},
+{
+  "topic": "dividing multi-digit numbers",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is 84 ÷ 4?",
+    "options": [
+      {"text": "21", "isCorrect": true, "feedback": "Correct -- 4 × 21 = 84."},
+      {"text": "20", "isCorrect": false, "feedback": "4 × 20 = 80, not 84 -- this is one short."},
+      {"text": "22", "isCorrect": false, "feedback": "4 × 22 = 88, not 84 -- this is one too many."},
+      {"text": "24", "isCorrect": false, "feedback": "4 × 24 = 96, not 84."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 156 ÷ 12?",
+    "options": [
+      {"text": "13", "isCorrect": true, "feedback": "Correct -- 12 × 13 = 156."},
+      {"text": "12", "isCorrect": false, "feedback": "12 × 12 = 144, not 156."},
+      {"text": "14", "isCorrect": false, "feedback": "12 × 14 = 168, not 156."},
+      {"text": "16", "isCorrect": false, "feedback": "12 × 16 = 192, not 156."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is 918 ÷ 27?",
+    "options": [
+      {"text": "34", "isCorrect": true, "feedback": "Correct -- 27 × 34 = 918."},
+      {"text": "33", "isCorrect": false, "feedback": "27 × 33 = 891, not 918."},
+      {"text": "36", "isCorrect": false, "feedback": "27 × 36 = 972, not 918."},
+      {"text": "24", "isCorrect": false, "feedback": "27 × 24 = 648, not 918."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Find the number that, multiplied by 4, gives exactly this total.", "medium": "Find how many times 4 fits into 84.", "easy": "Think: what times 4 equals 84?"},
+    "medium": {"hard": "Find the number that, multiplied by 12, gives exactly this total.", "medium": "Find how many times 12 fits into 156.", "easy": "Think: what times 12 equals 156?"},
+    "hard": {"hard": "Find the number that, multiplied by 27, gives exactly this total.", "medium": "Find how many times 27 fits into 918.", "easy": "Think: what times 27 equals 918?"}
+  }
+},
+{
+  "topic": "percent increase and decrease",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A shirt's price increases from $20 to $25. What is the percent increase?",
+    "options": [
+      {"text": "25%", "isCorrect": true, "feedback": "Correct -- the increase of $5 divided by the original $20 is 0.25, or 25%."},
+      {"text": "5%", "isCorrect": false, "feedback": "This is just the dollar amount of the increase, not converted to a percentage of the original."},
+      {"text": "20%", "isCorrect": false, "feedback": "This divides the increase by the new price instead of the original price."},
+      {"text": "125%", "isCorrect": false, "feedback": "This represents the new price as a percent of the original, not just the increase."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A population decreases from 500 to 400. What is the percent decrease?",
+    "options": [
+      {"text": "20%", "isCorrect": true, "feedback": "Correct -- the decrease of 100 divided by the original 500 is 0.20, or 20%."},
+      {"text": "25%", "isCorrect": false, "feedback": "This divides the decrease by the new value instead of the original value."},
+      {"text": "100%", "isCorrect": false, "feedback": "This is just the raw decrease amount, not converted to a percentage."},
+      {"text": "80%", "isCorrect": false, "feedback": "This is the percentage of the population that REMAINS, not the percent decrease itself."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A stock price increases by 20% one month, then decreases by 20% the next month. Compared to the original price, is the final price higher, lower, or the same?",
+    "options": [
+      {"text": "Lower than the original price", "isCorrect": true, "feedback": "Correct -- a 20% increase followed by a 20% decrease doesn't cancel out, since the decrease is applied to a larger number, resulting in a net loss."},
+      {"text": "Exactly the same as the original price", "isCorrect": false, "feedback": "Percent changes of the same size don't cancel out when applied sequentially, since the base amount changes in between."},
+      {"text": "Higher than the original price", "isCorrect": false, "feedback": "The math actually works out to a net decrease, not an increase, due to how percentages compound."},
+      {"text": "It's impossible to determine without the actual starting price", "isCorrect": false, "feedback": "The percentage relationship holds regardless of the actual starting value -- the result is always a net decrease."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Divide the change in value by the ORIGINAL value, then convert to a percentage.", "medium": "Divide the amount of increase by the original price.", "easy": "Divide 5 by 20 to find the percent increase."},
+    "medium": {"hard": "Divide the change in value by the ORIGINAL value, then convert to a percentage.", "medium": "Divide the amount of decrease by the original population.", "easy": "Divide 100 by 500 to find the percent decrease."},
+    "hard": {"hard": "Apply each percentage change sequentially to the running value rather than to the original, since the base amount changes between the two steps.", "medium": "Try it with a real number: increasing 100 by 20% gives 120, then decreasing 120 by 20% gives 96 -- less than the original 100.", "easy": "Try starting with 100: it goes up to 120, then down 20% of 120 (which is 24) to 96 -- lower than where it started."}
+  }
+},
+{
+  "topic": "types of angles",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is an angle called if it measures exactly 90 degrees?",
+    "options": [
+      {"text": "A right angle", "isCorrect": true, "feedback": "Correct -- a right angle measures exactly 90 degrees."},
+      {"text": "An acute angle", "isCorrect": false, "feedback": "An acute angle measures less than 90 degrees, not exactly 90."},
+      {"text": "An obtuse angle", "isCorrect": false, "feedback": "An obtuse angle measures more than 90 degrees, not exactly 90."},
+      {"text": "A straight angle", "isCorrect": false, "feedback": "A straight angle measures exactly 180 degrees, not 90."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "An angle measures 130 degrees. What type of angle is this?",
+    "options": [
+      {"text": "Obtuse", "isCorrect": true, "feedback": "Correct -- obtuse angles measure more than 90 but less than 180 degrees."},
+      {"text": "Acute", "isCorrect": false, "feedback": "Acute angles measure less than 90 degrees -- 130 degrees is far larger than that."},
+      {"text": "Right", "isCorrect": false, "feedback": "A right angle is exactly 90 degrees, not 130."},
+      {"text": "Straight", "isCorrect": false, "feedback": "A straight angle is exactly 180 degrees, not 130."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two angles on a straight line measure x degrees and 3x degrees. What is the value of x?",
+    "options": [
+      {"text": "45", "isCorrect": true, "feedback": "Correct -- angles on a straight line sum to 180, so x+3x=180, 4x=180, x=45."},
+      {"text": "60", "isCorrect": false, "feedback": "This doesn't correctly solve x+3x=180."},
+      {"text": "90", "isCorrect": false, "feedback": "This doesn't match dividing 180 by 4."},
+      {"text": "180", "isCorrect": false, "feedback": "This is the total sum, not the value of x itself."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This angle forms a perfect square corner.", "medium": "This is the angle you see at the corner of a square or rectangle.", "easy": "This is the square-corner angle, like the corner of a piece of paper."},
+    "medium": {"hard": "Compare this measurement to the 90-degree threshold for a right angle and the 180-degree threshold for a straight angle.", "medium": "This angle is bigger than a right angle (90°) but smaller than a straight line (180°).", "easy": "This angle is bigger than a square corner but smaller than a straight line."},
+    "hard": {"hard": "Set up an equation where the two angle expressions sum to 180, then solve for the variable.", "medium": "Add x and 3x together, set the sum equal to 180, then solve for x.", "easy": "Add x and 3x to get 4x, set that equal to 180, then divide to find x."}
+  }
+},
+{
+  "topic": "complementary and supplementary angles",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Two angles are complementary. If one angle is 30 degrees, what is the other angle?",
+    "options": [
+      {"text": "60 degrees", "isCorrect": true, "feedback": "Correct -- complementary angles add up to 90 degrees, so 90-30=60."},
+      {"text": "150 degrees", "isCorrect": false, "feedback": "This would be correct for supplementary angles (summing to 180), not complementary angles (summing to 90)."},
+      {"text": "30 degrees", "isCorrect": false, "feedback": "This would make the total only 60 degrees, not the required 90 for complementary angles."},
+      {"text": "90 degrees", "isCorrect": false, "feedback": "This is the TOTAL sum needed, not the value of the other individual angle."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Two angles are supplementary. If one angle is 110 degrees, what is the other angle?",
+    "options": [
+      {"text": "70 degrees", "isCorrect": true, "feedback": "Correct -- supplementary angles add up to 180 degrees, so 180-110=70."},
+      {"text": "80 degrees", "isCorrect": false, "feedback": "This doesn't match subtracting 110 from 180 correctly."},
+      {"text": "110 degrees", "isCorrect": false, "feedback": "This would make the total 220 degrees, more than the required 180."},
+      {"text": "180 degrees", "isCorrect": false, "feedback": "This is the TOTAL sum needed, not the value of the other individual angle."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two supplementary angles are in a ratio of 2:3. What is the measure of the smaller angle?",
+    "options": [
+      {"text": "72 degrees", "isCorrect": true, "feedback": "Correct -- dividing 180 into 5 equal parts (2+3) gives 36 per part, so the smaller angle is 2×36=72."},
+      {"text": "60 degrees", "isCorrect": false, "feedback": "This doesn't match correctly applying the 2:3 ratio to a total of 180."},
+      {"text": "90 degrees", "isCorrect": false, "feedback": "This would only be correct if the ratio were 1:1, not 2:3."},
+      {"text": "108 degrees", "isCorrect": false, "feedback": "This is actually the LARGER angle in this ratio, not the smaller one."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This pair of angles always sums to exactly a right angle's measure.", "medium": "These two angles always add up to 90 degrees total.", "easy": "Complementary angles always add up to 90 -- subtract 30 from 90."},
+    "medium": {"hard": "This pair of angles always sums to exactly a straight angle's measure.", "medium": "These two angles always add up to 180 degrees total.", "easy": "Supplementary angles always add up to 180 -- subtract 110 from 180."},
+    "hard": {"hard": "Divide the total (180) by the sum of the ratio parts to find the value of one part, then multiply by the smaller ratio number.", "medium": "Add 2 and 3 to get 5 parts total, divide 180 by 5, then multiply by 2 for the smaller angle.", "easy": "Divide 180 by 5 (2+3) to get 36, then multiply by 2 for the smaller angle."}
+  }
+},
+{
+  "topic": "reciprocals of numbers",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the reciprocal of 4?",
+    "options": [
+      {"text": "1/4", "isCorrect": true, "feedback": "Correct -- the reciprocal of a number is 1 divided by that number."},
+      {"text": "4", "isCorrect": false, "feedback": "This is the number itself, not its reciprocal."},
+      {"text": "-4", "isCorrect": false, "feedback": "The reciprocal doesn't simply flip the sign -- it inverts the value."},
+      {"text": "0", "isCorrect": false, "feedback": "The reciprocal of 4 isn't zero -- it's 1 divided by 4."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the reciprocal of 3/5?",
+    "options": [
+      {"text": "5/3", "isCorrect": true, "feedback": "Correct -- to find a fraction's reciprocal, simply flip the numerator and denominator."},
+      {"text": "3/5", "isCorrect": false, "feedback": "This is the original fraction, not its reciprocal."},
+      {"text": "-3/5", "isCorrect": false, "feedback": "The reciprocal doesn't simply flip the sign -- it inverts the fraction."},
+      {"text": "1/15", "isCorrect": false, "feedback": "This doesn't correctly flip the numerator and denominator of 3/5."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the product of any nonzero number and its reciprocal?",
+    "options": [
+      {"text": "1", "isCorrect": true, "feedback": "Correct -- by definition, a number multiplied by its reciprocal always equals 1."},
+      {"text": "0", "isCorrect": false, "feedback": "The product of a number and its reciprocal is always 1, not 0."},
+      {"text": "The original number squared", "isCorrect": false, "feedback": "This doesn't match the defining property of reciprocals."},
+      {"text": "It depends on which number you start with", "isCorrect": false, "feedback": "This result is always exactly 1, regardless of the starting nonzero number."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value is found by dividing 1 by the original number.", "medium": "Put 1 over the original number to find its reciprocal.", "easy": "Put 1 over 4 to get the reciprocal."},
+    "medium": {"hard": "Swap the positions of the numerator and denominator to find the reciprocal of a fraction.", "medium": "Flip the fraction upside down.", "easy": "Turn 3/5 upside down to get its reciprocal."},
+    "hard": {"hard": "By definition, multiplying a fraction by its flipped version always cancels out to a single unit value.", "medium": "Try an example: 3/5 times 5/3 -- the numerators and denominators cancel out completely.", "easy": "Try multiplying 3/5 by 5/3 -- everything cancels out to a clean whole number."}
+  }
+}
+]

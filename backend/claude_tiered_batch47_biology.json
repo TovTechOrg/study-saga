@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the carbon cycle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which process removes carbon dioxide from the atmosphere and incorporates it into living organisms?",
+    "options": [
+      {"text": "Photosynthesis", "isCorrect": true, "feedback": "Correct -- plants and other photosynthetic organisms absorb CO2 and convert it into organic compounds (sugars)."},
+      {"text": "Respiration", "isCorrect": false, "feedback": "Respiration actually RELEASES CO2 back into the atmosphere, the opposite of what's described here."},
+      {"text": "Combustion", "isCorrect": false, "feedback": "Combustion (burning) also RELEASES CO2 into the atmosphere, not removes it."},
+      {"text": "Erosion", "isCorrect": false, "feedback": "Erosion relates to the physical breakdown of rock/soil, not the carbon cycle's process of removing atmospheric CO2."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Both plants and animals perform cellular respiration, releasing CO2 back into the atmosphere. How does this fit into a balanced carbon cycle alongside photosynthesis?",
+    "options": [
+      {"text": "Respiration acts as a counterbalance to photosynthesis, returning carbon to the atmosphere that photosynthesis had removed, keeping the cycle roughly balanced over time", "isCorrect": true, "feedback": "Correct -- this ongoing balance between carbon removal (photosynthesis) and carbon release (respiration) is central to how the natural carbon cycle maintains relative stability."},
+      {"text": "Respiration and photosynthesis are actually completely unrelated processes with no connection to each other", "isCorrect": false, "feedback": "These processes are deeply interconnected -- photosynthesis removes CO2 while respiration releases it, together forming a key balancing mechanism in the carbon cycle."},
+      {"text": "Respiration removes carbon from the atmosphere, just like photosynthesis does", "isCorrect": false, "feedback": "This is incorrect -- respiration actually RELEASES carbon into the atmosphere, the opposite of what photosynthesis does."},
+      {"text": "The carbon cycle would function identically even without any respiration occurring at all", "isCorrect": false, "feedback": "Without respiration returning carbon to the atmosphere, the cycle would be fundamentally unbalanced, since photosynthesis would continuously remove carbon without anything replacing it."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Human activities like burning fossil fuels release large amounts of stored ('sequestered') carbon that had been locked away underground for millions of years. Why does this disrupt the natural carbon cycle balance more than the ongoing balance between photosynthesis and respiration?",
+    "options": [
+      {"text": "Because fossil fuel combustion introduces ADDITIONAL carbon into the active atmospheric-biological cycle from long-term underground storage, rather than simply recycling carbon that was already actively cycling between organisms and the atmosphere", "isCorrect": true, "feedback": "Correct -- unlike the natural photosynthesis-respiration balance (which recycles existing atmospheric carbon), fossil fuel burning adds NEW carbon into circulation that had been removed from the active cycle for geological timescales, disrupting the pre-existing equilibrium."},
+      {"text": "Burning fossil fuels actually doesn't release any carbon dioxide at all", "isCorrect": false, "feedback": "Burning fossil fuels is a major, well-documented source of CO2 emissions -- this is precisely why it disrupts the carbon cycle's balance."},
+      {"text": "Fossil fuel combustion is chemically identical to natural respiration, so it has no additional disruptive effect", "isCorrect": false, "feedback": "While both release CO2, the crucial difference is that fossil fuel combustion introduces ADDITIONAL long-sequestered carbon into the cycle, unlike respiration, which simply recycles already-circulating carbon."},
+      {"text": "The carbon cycle is completely unaffected by any human activities", "isCorrect": false, "feedback": "Human activities, especially fossil fuel combustion, are widely recognized as significantly disrupting the natural balance of the carbon cycle."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This biochemical process converts atmospheric carbon dioxide and light energy into organic compounds within an organism.", "medium": "This is the process plants use to take in carbon dioxide and turn it into food using sunlight.", "easy": "This is the process plants use to take in carbon dioxide using sunlight."},
+    "medium": {"hard": "Consider the cyclical relationship where one process removes a substance from a shared reservoir while another process returns it, maintaining overall equilibrium.", "medium": "Photosynthesis takes carbon out of the air, and respiration puts some of it back in, balancing things out.", "easy": "Photosynthesis takes carbon out of the air, and respiration puts some back in."},
+    "hard": {"hard": "Distinguish between carbon that continuously cycles within the active biosphere-atmosphere system versus carbon that had been removed from that active cycle entirely for extremely long timescales.", "medium": "Fossil fuels contain carbon that's been locked away underground for a very long time, so burning them adds 'new' carbon rather than just recycling what's already there.", "easy": "Fossil fuels have carbon locked away for a very long time, so burning them adds extra carbon that wasn't already cycling around."}
+  }
+}
+]

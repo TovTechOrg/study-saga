@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of sound as a longitudinal pressure wave",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Sound waves are classified as which type of wave?",
+    "options": [
+      {"text": "Longitudinal waves, where particle vibration occurs parallel to the direction of wave travel", "isCorrect": true, "feedback": "Correct -- sound waves cause air particles to compress and expand in the same direction the wave is traveling."},
+      {"text": "Transverse waves, where particle vibration occurs perpendicular to wave travel", "isCorrect": false, "feedback": "That describes waves like light or waves on a string, not sound waves, which are specifically LONGITUDINAL."},
+      {"text": "Sound doesn't actually involve any wave motion at all", "isCorrect": false, "feedback": "Sound is fundamentally a wave phenomenon, specifically a longitudinal pressure wave traveling through a medium."},
+      {"text": "Sound waves can travel equally well through a complete vacuum", "isCorrect": false, "feedback": "Sound specifically REQUIRES a medium (like air, water, or solid) to travel -- it cannot travel through a vacuum, unlike electromagnetic waves such as light."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Sound travels faster through water than through air, and even faster through solids like steel. What generally explains this pattern of increasing sound speed based on the medium's state?",
+    "options": [
+      {"text": "In denser, more tightly packed media (like solids), particles are closer together, allowing pressure disturbances (vibrations) to transfer between neighboring particles more quickly than in less densely packed media like gases", "isCorrect": true, "feedback": "Correct -- this relationship between particle spacing/density and how quickly vibrational energy can transfer between neighboring particles is the general reason sound typically travels faster through solids than liquids, and faster through liquids than gases."},
+      {"text": "Sound actually travels at exactly the same speed in all types of media, regardless of density", "isCorrect": false, "feedback": "This isn't accurate -- sound speed varies significantly based on the medium's properties (particularly density and elasticity), traveling notably faster in denser solids than in gases like air."},
+      {"text": "Sound travels faster in less dense media because there's more empty space for it to move through", "isCorrect": false, "feedback": "This is backwards -- sound actually travels FASTER in MORE densely packed media (like solids), not less dense media, since closely-spaced particles transmit vibrations more efficiently."},
+      {"text": "The medium a sound wave travels through has no actual effect on its speed", "isCorrect": false, "feedback": "The medium has a very significant, well-documented effect on sound speed -- denser, more tightly bonded media generally allow for faster sound transmission."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In outer space, which is essentially a vacuum, sound cannot travel at all -- famously, 'no one can hear you scream in space.' Why does the fundamental nature of sound as a wave type explain this?",
+    "options": [
+      {"text": "Since sound is a pressure wave that requires physical particles to compress and transmit vibrational energy between them, the near-total absence of particles in a vacuum means there's no medium available to carry the sound wave at all", "isCorrect": true, "feedback": "Correct -- this dependency on a physical medium (unlike electromagnetic waves such as light, which CAN travel through a vacuum) is exactly why sound cannot propagate through the vacuum of space."},
+      {"text": "Sound actually travels perfectly well through the vacuum of space, contrary to popular belief", "isCorrect": false, "feedback": "This isn't accurate -- sound genuinely CANNOT travel through a true vacuum, since it fundamentally requires a physical medium (particles) to propagate, unlike electromagnetic waves like light."},
+      {"text": "This has nothing to do with sound's fundamental nature as a mechanical wave requiring a medium", "isCorrect": false, "feedback": "This is DIRECTLY explained by sound's fundamental nature as a mechanical (particle-dependent) wave, which distinguishes it from electromagnetic waves that don't require a medium."},
+      {"text": "Space actually contains plenty of matter for sound to travel through effectively", "isCorrect": false, "feedback": "This isn't accurate -- the vacuum of space contains an extremely low density of matter, far too sparse to effectively transmit sound waves in any meaningful way."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This wave classification describes oscillation occurring along the same axis as the wave's overall direction of energy transfer.", "medium": "In this type of wave, the particles squeeze and stretch back and forth in the SAME direction the wave is moving.", "easy": "In this wave type, particles squish and stretch in the same direction the wave moves."},
+    "medium": {"hard": "Consider how the physical proximity of particles within a medium affects the speed at which a mechanical disturbance can be transferred from one particle to its neighbor.", "medium": "When particles are packed closer together (like in a solid), a vibration can hop from one to the next much more quickly.", "easy": "When particles are packed closer together, a vibration can hop from one to the next more quickly."},
+    "hard": {"hard": "Recognize sound's dependence on a physical medium composed of matter, in contrast to wave types that can propagate through the complete absence of matter.", "medium": "Since sound needs actual particles bumping into each other to travel, and space is basically empty, there's nothing there for the sound to travel through.", "easy": "Since sound needs actual particles to travel, and space is basically empty, sound can't travel through it."}
+  }
+}
+]

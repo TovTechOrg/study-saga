@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of Doppler radar used in weather forecasting",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What physical effect does Doppler radar rely on to detect the movement of storms?",
+    "options": [
+      {"text": "The Doppler effect -- shifts in wave frequency caused by relative motion between the radar and moving objects (like rain)", "isCorrect": true, "feedback": "Correct -- Doppler radar detects shifts in the frequency of reflected radio waves to determine if precipitation is moving toward or away from the radar."},
+      {"text": "The greenhouse effect", "isCorrect": false, "feedback": "The greenhouse effect relates to atmospheric heat retention, unrelated to how Doppler radar detects motion."},
+      {"text": "The photoelectric effect", "isCorrect": false, "feedback": "The photoelectric effect involves electron emission from light exposure, unrelated to radar's motion-detection principle."},
+      {"text": "Magnetism", "isCorrect": false, "feedback": "Magnetism isn't the physical principle behind Doppler radar -- it's specifically based on wave frequency shifts (the Doppler effect)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If Doppler radar detects that reflected radio waves from a storm have a HIGHER frequency than the waves sent out, what does this suggest about the storm's motion?",
+    "options": [
+      {"text": "The storm (or precipitation within it) is moving toward the radar", "isCorrect": true, "feedback": "Correct -- an increased (blue-shifted) frequency indicates the reflecting object is approaching the radar source."},
+      {"text": "The storm is moving away from the radar", "isCorrect": false, "feedback": "This would actually correspond to a LOWER returned frequency, not higher -- moving away causes a frequency decrease."},
+      {"text": "The storm is completely stationary", "isCorrect": false, "feedback": "A stationary storm would reflect waves back at essentially the SAME frequency, not a higher one -- a frequency shift specifically indicates relative motion."},
+      {"text": "Frequency shifts have nothing to do with storm motion", "isCorrect": false, "feedback": "Frequency shifts are precisely the key data Doppler radar uses to determine a storm's motion, particularly important for predicting rotation and severe weather like tornadoes."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Doppler radar can detect the rotational pattern within a severe thunderstorm, which is crucial for identifying potential tornado formation. How does this rotational detection work, based on the Doppler principle?",
+    "options": [
+      {"text": "Since one side of a rotating storm moves toward the radar while the opposite side moves away, the radar detects a corresponding pattern of both increased and decreased frequency shifts across the storm, revealing the rotation", "isCorrect": true, "feedback": "Correct -- this ability to detect opposing frequency shifts on either side of a rotating system is exactly how meteorologists identify a mesocyclone (rotating storm structure) associated with tornado risk."},
+      {"text": "Doppler radar can only detect a storm's overall speed, never its internal rotation", "isCorrect": false, "feedback": "Doppler radar actually CAN detect internal rotational patterns within a storm, which is precisely its value for tornado warning systems."},
+      {"text": "Rotation detection has nothing to do with frequency shifts", "isCorrect": false, "feedback": "Rotation detection is actually entirely based on analyzing the pattern of frequency shifts (Doppler effect) across different parts of the storm."},
+      {"text": "This detection method works by measuring the storm's temperature directly", "isCorrect": false, "feedback": "Temperature measurement isn't how Doppler radar detects rotation -- it specifically relies on analyzing patterns of wave frequency shift caused by relative motion."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phenomenon involves a shift in wave frequency due to relative motion between a wave source/reflector and an observer.", "medium": "This is the same effect that makes a siren sound different as a vehicle passes by.", "easy": "This is the same effect that changes a siren's pitch as it drives past you."},
+    "medium": {"hard": "A frequency increase corresponds to the source of reflection moving closer to the observing radar.", "medium": "A higher returned frequency means whatever reflected the wave is getting closer to the radar.", "easy": "A higher returned frequency means the storm is getting closer to the radar."},
+    "hard": {"hard": "Radar can simultaneously measure frequency shifts from different points across the storm's structure -- opposing shifts (one side toward, one side away) on either side of a rotational axis reveal the storm's internal rotation.", "medium": "One side of the spinning storm moves toward the radar while the other side moves away, creating two different frequency shift patterns that reveal the spin.", "easy": "One side of the spinning storm moves toward the radar while the other moves away, and that pattern reveals the spin."}
+  }
+}
+]

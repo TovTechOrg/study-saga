@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of dilation (scale transformation) on a coordinate plane",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "If point (2, 3) is dilated by a scale factor of 2 (centered at the origin), what is the new point?",
+    "options": [
+      {"text": "(4, 6)", "isCorrect": true, "feedback": "Correct -- multiply each coordinate by the scale factor: 2×2=4, and 3×2=6."},
+      {"text": "(4, 3)", "isCorrect": false, "feedback": "This only scales the x-coordinate, forgetting to also scale the y-coordinate."},
+      {"text": "(1, 1.5)", "isCorrect": false, "feedback": "This divides by the scale factor instead of multiplying by it."},
+      {"text": "(2, 6)", "isCorrect": false, "feedback": "This only scales the y-coordinate, forgetting to also scale the x-coordinate."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "If point (-4, 6) is dilated by a scale factor of 0.5 (centered at the origin), what is the new point?",
+    "options": [
+      {"text": "(-2, 3)", "isCorrect": true, "feedback": "Correct -- multiply each coordinate by 0.5: -4×0.5=-2, and 6×0.5=3."},
+      {"text": "(-8, 12)", "isCorrect": false, "feedback": "This doubles the coordinates instead of halving them -- a scale factor of 0.5 should shrink the point, not enlarge it."},
+      {"text": "(-4.5, 5.5)", "isCorrect": false, "feedback": "This subtracts instead of multiplying by the scale factor."},
+      {"text": "(-2, 6)", "isCorrect": false, "feedback": "This only scales the x-coordinate, forgetting to also scale the y-coordinate."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A triangle has vertices at (0,0), (4,0), and (0,6). If this triangle is dilated by a scale factor of 3 (centered at the origin), what is the area of the new, larger triangle? (Original area = ½×4×6=12)",
+    "options": [
+      {"text": "108", "isCorrect": true, "feedback": "Correct -- area scales with the SQUARE of the linear scale factor: 12×3²=12×9=108."},
+      {"text": "36", "isCorrect": false, "feedback": "This only multiplies the original area by the scale factor (3) instead of the scale factor squared (9)."},
+      {"text": "15", "isCorrect": false, "feedback": "This just adds the scale factor to the original area, rather than correctly scaling it."},
+      {"text": "12", "isCorrect": false, "feedback": "This ignores the dilation entirely, just repeating the original area."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply every coordinate of the point by the given scale factor.", "medium": "Multiply both the x and y coordinates by 2.", "easy": "Multiply 2 by 2 and 3 by 2."},
+    "medium": {"hard": "Multiply every coordinate of the point by the given scale factor.", "medium": "Multiply both the x and y coordinates by 0.5.", "easy": "Multiply -4 by 0.5 and 6 by 0.5."},
+    "hard": {"hard": "Since area is a two-dimensional measurement, it scales with the square of the linear dilation factor, not the factor itself.", "medium": "Square the scale factor first, then multiply by the original area.", "easy": "Square 3 to get 9, then multiply by 12."}
+  }
+}
+]

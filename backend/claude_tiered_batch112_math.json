@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of the difference between a function's domain restrictions and range restrictions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The 'range' of a function refers to:",
+    "options": [
+      {"text": "The complete set of all possible output (y) values the function can produce", "isCorrect": true, "feedback": "Correct -- range describes every possible output value, in contrast to domain, which describes every possible input value."},
+      {"text": "The complete set of all possible input (x) values for the function", "isCorrect": false, "feedback": "That describes the DOMAIN, not the range -- range specifically concerns OUTPUT values, while domain concerns INPUT values."},
+      {"text": "A single specific numerical value representing the function's maximum output only", "isCorrect": false, "feedback": "This isn't accurate -- range refers to the ENTIRE SET of possible outputs, not just a single maximum value."},
+      {"text": "The distance between the function's highest and lowest input values", "isCorrect": false, "feedback": "This describes something more like a domain span/width, not range, which specifically concerns the SET of possible OUTPUT values."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For the function f(x) = x² (with domain being all real numbers), why is the range restricted to only NON-NEGATIVE numbers (y≥0), even though the domain includes negative numbers?",
+    "options": [
+      {"text": "Squaring ANY real number (whether positive, negative, or zero) always produces a result that is zero or positive -- negative numbers become positive when squared, so the function can NEVER actually output a negative value, restricting the range to non-negative numbers only", "isCorrect": true, "feedback": "Correct -- this mathematical property of squaring (always producing non-negative results) directly explains why this function's range is restricted to y≥0, even though its domain freely includes negative input values."},
+      {"text": "The domain and range of this function would actually always be identical to each other, with no restriction difference", "isCorrect": false, "feedback": "This isn't accurate -- this function's domain (all real numbers) and range (only non-negative numbers) are GENUINELY DIFFERENT, illustrating exactly why these two concepts require separate consideration."},
+      {"text": "This range restriction has no actual mathematical connection to the specific squaring operation performed by this function", "isCorrect": false, "feedback": "This isn't accurate -- this range restriction IS DIRECTLY caused by and connected to the specific mathematical squaring operation, which inherently cannot produce negative outputs."},
+      {"text": "Negative input values would actually produce negative output values when squared, contrary to what's described", "isCorrect": false, "feedback": "This isn't accurate -- squaring a NEGATIVE number always produces a POSITIVE result (e.g., (-3)²=9), not a negative one -- this is precisely why the range excludes negative values."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "For the function g(x) = √(x-4), the DOMAIN is specifically restricted to x≥4 (to avoid taking the square root of a negative number), while the RANGE is separately restricted to y≥0 (since square roots produce only non-negative results). Explain why these represent two DIFFERENT, independently-arising restrictions, rather than being the same restriction described twice.",
+    "options": [
+      {"text": "The DOMAIN restriction (x≥4) arises from a constraint on valid INPUTS (avoiding an undefined negative-square-root operation), while the RANGE restriction (y≥0) arises SEPARATELY from an inherent property of the square root OUTPUT itself (which is mathematically always non-negative) -- these are two DISTINCT mathematical constraints operating on two DIFFERENT aspects of the function (input validity vs. output behavior), which simply happen to both apply to this particular function simultaneously", "isCorrect": true, "feedback": "Correct -- this careful distinction (recognizing domain restrictions as INPUT-VALIDITY constraints and range restrictions as OUTPUT-BEHAVIOR constraints, which are conceptually independent even when both apply to the same function) is important for correctly and precisely analyzing more complex functions with restrictions potentially affecting both their domain AND range simultaneously."},
+      {"text": "These two restrictions are actually just two different ways of describing the exact same single underlying mathematical constraint", "isCorrect": false, "feedback": "This isn't accurate -- these are GENUINELY DIFFERENT, independently-arising constraints (one concerning valid INPUTS, the other concerning inherent OUTPUT behavior), not simply the same constraint restated twice."},
+      {"text": "Domain restrictions and range restrictions actually always must be identical to each other for any given function", "isCorrect": false, "feedback": "This isn't accurate -- domain and range restrictions are GENERALLY INDEPENDENT of each other and often take different forms/values, as clearly demonstrated by this exact example (x≥4 for domain vs. y≥0 for range)."},
+      {"text": "This function actually only has a domain restriction, with no separate range restriction applying to it at all", "isCorrect": false, "feedback": "This isn't accurate -- this function has BOTH a domain restriction (x≥4) AND a SEPARATE range restriction (y≥0), which are the two distinct constraints being specifically discussed here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This set comprises every attainable dependent-variable value producible by the function's mapping rule.", "medium": "This is the full list of possible output values a function can actually produce.", "easy": "This is the full list of possible output values a function can produce."},
+    "medium": {"hard": "Consider the universal sign-behavior of the squaring operation applied to any real input, regardless of that input's own sign.", "medium": "No matter if you square a positive or a negative number, the result always comes out zero or positive, never negative.", "easy": "Squaring any number, positive or negative, always gives a result of zero or positive."},
+    "hard": {"hard": "Distinguish between a restriction imposed to preserve the well-definedness of the input expression versus a restriction arising intrinsically from the mathematical behavior of the output-generating operation itself.", "medium": "One rule is about which starting numbers are even ALLOWED (so you don't break the square root), and the other rule is just about what KIND of answers a square root can ever spit out.", "easy": "One rule is about which starting numbers are allowed; the other is about what kind of answers a square root gives."}
+  }
+}
+]

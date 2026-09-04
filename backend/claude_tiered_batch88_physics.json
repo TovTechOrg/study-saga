@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between free-body diagrams and actual physical forces",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A free-body diagram is used to:",
+    "options": [
+      {"text": "Visually represent all the forces acting on a single object, shown as arrows", "isCorrect": true, "feedback": "Correct -- free-body diagrams simplify complex physical situations by isolating a single object and showing every force acting on it as a labeled arrow."},
+      {"text": "Show the exact physical appearance/shape of an object in fine detail", "isCorrect": false, "feedback": "Free-body diagrams intentionally simplify the object (often to just a dot or simple shape) -- their purpose is to show FORCES, not represent detailed physical appearance."},
+      {"text": "Calculate an object's exact chemical composition", "isCorrect": false, "feedback": "Chemical composition is unrelated to a free-body diagram, which is specifically a tool for visualizing and analyzing physical FORCES acting on an object."},
+      {"text": "Display an object's color and texture", "isCorrect": false, "feedback": "Color and texture are irrelevant to a free-body diagram's purpose, which specifically concerns representing FORCES acting on the object, not visual/physical surface properties."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A free-body diagram deliberately simplifies an object into just a single point or basic shape, ignoring its actual detailed size, shape, and internal structure. Why is this simplification useful, rather than being a problematic oversimplification?",
+    "options": [
+      {"text": "Since the diagram's specific purpose is to analyze the NET EFFECT of forces on the object's overall motion (not its detailed physical structure), removing unnecessary structural details allows for clearer focus specifically on the relevant force vectors and their directions/magnitudes", "isCorrect": true, "feedback": "Correct -- this deliberate simplification is precisely what makes free-body diagrams such an effective, widely-used analytical tool in physics, by focusing attention specifically on the forces relevant to determining an object's resulting motion, without unnecessary visual clutter."},
+      {"text": "This simplification actually makes free-body diagrams significantly less useful and accurate for physics analysis", "isCorrect": false, "feedback": "This isn't accurate -- this simplification is actually widely recognized as making free-body diagrams MORE useful (not less) for their specific analytical purpose, by removing distracting, analytically irrelevant structural details."},
+      {"text": "Free-body diagrams actually need to include full structural detail to be considered valid or useful", "isCorrect": false, "feedback": "This isn't accurate -- free-body diagrams are SPECIFICALLY designed to intentionally OMIT unnecessary structural detail, focusing instead on the relevant forces, which is precisely what makes them a valid and useful analytical tool."},
+      {"text": "This simplification has no actual connection to the diagram's intended analytical purpose", "isCorrect": false, "feedback": "This isn't accurate -- this simplification is DIRECTLY and purposefully connected to the diagram's specific analytical goal of clearly representing relevant forces, without distraction from unnecessary structural details."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "When drawing a free-body diagram for a book resting on an inclined ramp, forces like gravity are typically decomposed into perpendicular COMPONENTS (parallel to the incline surface and perpendicular to it), rather than just showing gravity as a single straight-down arrow. Why is this component decomposition particularly useful for analyzing motion on an inclined surface?",
+    "options": [
+      {"text": "Since the normal force from the ramp surface acts specifically perpendicular to the incline (not straight up), and any resulting sliding motion would occur specifically ALONG the incline's surface, decomposing gravity into components aligned with these same directions (parallel and perpendicular to the incline) allows for much more straightforward separate analysis of the forces relevant to each specific direction of potential motion/constraint", "isCorrect": true, "feedback": "Correct -- this strategic choice of a coordinate system aligned with the incline (rather than simple horizontal/vertical) is a common, powerful problem-solving technique that significantly simplifies the mathematical analysis of forces and resulting motion on inclined surfaces."},
+      {"text": "This component decomposition actually makes analyzing motion on an inclined surface significantly MORE complicated, not simpler", "isCorrect": false, "feedback": "This isn't accurate -- this component decomposition strategy actually SIMPLIFIES (not complicates) the analysis of inclined-surface problems, which is precisely why it's such a commonly taught and widely used physics problem-solving technique."},
+      {"text": "Gravity actually cannot be mathematically decomposed into different directional components at all", "isCorrect": false, "feedback": "This isn't accurate -- gravity (like any vector force) CAN absolutely be mathematically decomposed into different directional components, which is precisely the useful technique being described here for inclined-surface analysis."},
+      {"text": "This component decomposition strategy has no actual connection to correctly analyzing the specific direction of potential sliding motion on the incline", "isCorrect": false, "feedback": "This isn't accurate -- this component decomposition strategy is DIRECTLY and specifically connected to and useful for correctly analyzing the particular directions relevant to motion and constraint forces on an inclined surface."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This schematic tool graphically depicts all force vectors acting upon an isolated object, abstracted from its detailed physical form.", "medium": "This is a simple drawing that shows all the pushes and pulls acting on an object, using arrows.", "easy": "This is a simple drawing showing all the pushes and pulls on an object using arrows."},
+    "medium": {"hard": "Consider how eliminating analytically irrelevant structural details allows the diagram to more effectively serve its specific purpose of clearly conveying force information relevant to motion analysis.", "medium": "Since the diagram is just about showing the forces (not what the object actually looks like), leaving out unnecessary details makes it clearer and easier to work with.", "easy": "Since the diagram is just about forces, leaving out unnecessary details makes it clearer."},
+    "hard": {"hard": "Consider how aligning your chosen coordinate axes with the physically relevant directions of constraint (perpendicular to incline) and potential motion (along incline) simplifies the resulting force equations for each independent direction.", "medium": "By splitting gravity into a 'along the slope' piece and a 'into the slope' piece, it becomes much easier to separately figure out sliding motion and the ramp's supporting push.", "easy": "Splitting gravity into 'along the slope' and 'into the slope' pieces makes it easier to analyze."}
+  }
+}
+]

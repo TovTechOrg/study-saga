@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between a compound and a mixture",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What distinguishes a chemical compound from a simple mixture?",
+    "options": [
+      {"text": "A compound has elements chemically bonded together in a fixed ratio, while a mixture's components remain chemically separate and can be in variable proportions", "isCorrect": true, "feedback": "Correct -- compounds are held together by actual chemical bonds with a fixed composition, while mixtures are simply physical combinations that can vary in proportion."},
+      {"text": "A compound can be easily separated by physical means, while a mixture cannot", "isCorrect": false, "feedback": "This is backwards -- MIXTURES can typically be separated by simple physical means (like filtering or evaporation), while COMPOUNDS require chemical reactions to break their bonds and separate their elements."},
+      {"text": "A mixture always contains only one single element", "isCorrect": false, "feedback": "This isn't accurate -- mixtures can contain multiple different substances (elements or compounds) combined together, not restricted to just one single element."},
+      {"text": "There is actually no meaningful difference between a compound and a mixture", "isCorrect": false, "feedback": "There IS a meaningful, fundamental difference -- specifically whether the components are chemically bonded (compound) or simply physically combined (mixture)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Table salt (NaCl, a compound) always has the exact same 1:1 ratio of sodium to chlorine atoms, no matter its source. Salad dressing (a mixture of oil and vinegar), however, can be made with varying ratios of oil to vinegar. Why does this variability difference matter for distinguishing compounds from mixtures?",
+    "options": [
+      {"text": "A compound's fixed composition reflects genuine chemical bonding with a specific, unchanging atomic ratio, while a mixture's variable composition reflects the fact that its components are simply physically combined without any such fixed chemical constraint", "isCorrect": true, "feedback": "Correct -- this fundamental difference in compositional consistency (fixed for compounds, variable for mixtures) directly reflects the underlying difference between chemical bonding and simple physical combination."},
+      {"text": "This variability difference has no actual connection to whether something is classified as a compound or mixture", "isCorrect": false, "feedback": "This isn't accurate -- this variability difference is actually DIRECTLY connected to and diagnostic of whether a substance is a compound (fixed ratio) or a mixture (variable ratio)."},
+      {"text": "Compounds can actually also have variable, non-fixed atomic ratios, just like mixtures", "isCorrect": false, "feedback": "This isn't accurate -- compounds specifically have a FIXED, consistent atomic ratio (like NaCl's 1:1 ratio) due to their chemical bonding nature, unlike mixtures which can have variable component ratios."},
+      {"text": "Salad dressing is actually a compound, not a mixture, contrary to standard chemistry classification", "isCorrect": false, "feedback": "This isn't accurate -- salad dressing (oil and vinegar) is correctly classified as a MIXTURE, precisely because its components aren't chemically bonded and can be combined in variable proportions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Water (H2O) is a compound formed from hydrogen and oxygen, but its properties (like being a liquid that can extinguish fire) are dramatically different from the properties of its constituent elements (hydrogen, a flammable gas, and oxygen, which supports combustion). Why does this dramatic property difference illustrate a key characteristic distinguishing compounds from simple mixtures?",
+    "options": [
+      {"text": "When elements chemically bond to form a compound, they create an entirely NEW substance with genuinely new properties, unlike in a mixture, where each component substance typically retains its own original, individual properties even while combined", "isCorrect": true, "feedback": "Correct -- this emergence of entirely new properties upon compound formation (versus the retained individual properties within a mixture) is a fundamental characteristic distinguishing true chemical compounds from simple physical mixtures."},
+      {"text": "Water actually retains all of the exact same properties as both hydrogen and oxygen individually", "isCorrect": false, "feedback": "This isn't accurate -- water has DRAMATICALLY DIFFERENT properties from both hydrogen and oxygen individually, which is precisely the point being illustrated about how compounds form genuinely new substances."},
+      {"text": "This property difference has no actual connection to whether water is properly classified as a compound", "isCorrect": false, "feedback": "This isn't accurate -- this dramatic property difference is DIRECTLY connected to and characteristic of compound formation, distinguishing it from a simple mixture where components would retain their original properties."},
+      {"text": "Mixtures also always produce entirely new properties, completely different from their individual component substances", "isCorrect": false, "feedback": "This isn't accurate -- MIXTURES typically retain the individual properties of their components (unlike compounds, which form genuinely new substances with new properties) -- this is precisely the key distinguishing difference being highlighted."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This substance category results specifically from elements combining through chemical bonding to form a consistent, invariant compositional ratio.", "medium": "In this type of substance, atoms are actually chemically stuck together in a fixed, unchanging ratio.", "easy": "In this type of substance, atoms are chemically stuck together in a fixed ratio."},
+    "medium": {"hard": "Consider how the presence (or absence) of genuine chemical bonding directly determines whether a substance's composition must remain fixed or can vary freely.", "medium": "A compound's atoms are actually chemically locked together in one specific ratio, but a mixture's ingredients can just be combined in whatever amounts you want.", "easy": "A compound's atoms are locked together in one ratio, but a mixture's ingredients can be combined in any amount."},
+    "hard": {"hard": "Consider how chemical bonding fundamentally reorganizes electron interactions between atoms, producing a substance with intrinsically new properties, unlike the simple physical juxtaposition of substances in a mixture.", "medium": "When atoms actually bond together chemically, they create a totally new substance with its own new properties, unlike just physically stirring two things together.", "easy": "When atoms bond together chemically, they create a totally new substance with new properties."}
+  }
+}
+]

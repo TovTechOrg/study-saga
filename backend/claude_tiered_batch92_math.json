@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of exponential decay and half-life applications",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Exponential decay describes a quantity that:",
+    "options": [
+      {"text": "Decreases by a consistent PERCENTAGE (proportional amount) over equal time periods", "isCorrect": true, "feedback": "Correct -- exponential decay involves multiplying by the same fractional/percentage reduction factor repeatedly, unlike linear decay's fixed subtraction amount."},
+      {"text": "Decreases by the exact same fixed NUMBER each time period", "isCorrect": false, "feedback": "That describes LINEAR decay, not exponential decay, which specifically involves a consistent PERCENTAGE reduction, not a fixed numerical subtraction."},
+      {"text": "Increases continuously without any limit", "isCorrect": false, "feedback": "This describes exponential GROWTH, essentially the opposite of exponential DECAY, which specifically describes a quantity DECREASING over time."},
+      {"text": "Remains exactly constant, with absolutely no change over time", "isCorrect": false, "feedback": "This describes a constant/unchanging quantity, not exponential decay, which specifically involves ongoing, consistent proportional DECREASE."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A radioactive substance has a half-life of 20 years, starting with 320 grams. How much will remain after 60 years?",
+    "options": [
+      {"text": "40 grams", "isCorrect": true, "feedback": "Correct -- 60 years is 3 half-lives (60÷20=3): 320→160→80→40 grams."},
+      {"text": "80 grams", "isCorrect": false, "feedback": "This is the amount remaining after only 2 half-lives (40 years), not after 3 half-lives (60 years)."},
+      {"text": "160 grams", "isCorrect": false, "feedback": "This is the amount remaining after only 1 half-life (20 years), not after 3 half-lives (60 years)."},
+      {"text": "0 grams", "isCorrect": false, "feedback": "Exponential decay approaches but never mathematically reaches exactly zero after a finite number of half-lives -- there's always some remaining amount, however small."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A medication's concentration in the bloodstream decreases exponentially, with a 'biological half-life' of 4 hours. If a patient needs the concentration to drop below 6.25% of the original dose before it's safe to take another dose, approximately how many hours must they wait? (Hint: figure out how many half-lives are needed to reach 6.25%)",
+    "options": [
+      {"text": "16 hours", "isCorrect": true, "feedback": "Correct -- 6.25% equals 1/16 of the original amount, and since each half-life halves the amount (1/2, 1/4, 1/8, 1/16), reaching 1/16 requires 4 half-lives: 4×4 hours=16 hours."},
+      {"text": "4 hours", "isCorrect": false, "feedback": "This is just ONE half-life, which would only reduce the concentration to 50%, far more than the required 6.25% threshold."},
+      {"text": "8 hours", "isCorrect": false, "feedback": "This is only 2 half-lives, reducing concentration to 25%, which is still more than the required 6.25% threshold."},
+      {"text": "6.25 hours", "isCorrect": false, "feedback": "This incorrectly treats the 6.25% value directly as a time value, rather than correctly determining how many half-life PERIODS are needed to reach that percentage."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This decline pattern involves a consistent proportional reduction factor applied repeatedly across successive equal time intervals.", "medium": "This is when something shrinks by the same percentage each time period, not the same fixed amount.", "easy": "This is when something shrinks by the same percentage each time, not the same fixed amount."},
+    "medium": {"hard": "Determine the number of complete half-life intervals within the elapsed time, then apply that many successive halving operations to the starting quantity.", "medium": "Figure out how many 20-year periods fit into 60 years, then cut the starting amount in half that many times.", "easy": "60 divided by 20 is 3 half-lives: 320→160→80→40."},
+    "hard": {"hard": "Express the target percentage as a power of one-half, then determine the corresponding number of half-life periods and convert to actual elapsed time.", "medium": "Figure out how many times you need to cut something in half to get down to 6.25% (that's 1/16), then multiply that count by the 4-hour half-life.", "easy": "1/16 requires cutting in half 4 times, and 4 half-lives × 4 hours = 16 hours."}
+  }
+}
+]

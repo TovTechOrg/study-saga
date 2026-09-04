@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of buoyant force and Archimedes' principle",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "According to Archimedes' principle, the buoyant force on an object submerged in a fluid equals:",
+    "options": [
+      {"text": "The weight of the fluid displaced by the object", "isCorrect": true, "feedback": "Correct -- Archimedes' principle states that buoyant force equals exactly the weight of the fluid volume the object pushes out of the way."},
+      {"text": "The exact weight of the object itself, regardless of the fluid", "isCorrect": false, "feedback": "This isn't accurate -- buoyant force specifically depends on the weight of DISPLACED FLUID, not the object's own weight directly."},
+      {"text": "The total volume of the fluid in the container", "isCorrect": false, "feedback": "This isn't accurate -- buoyant force specifically relates to the WEIGHT of the fluid displaced BY THE OBJECT, not the total volume of fluid in the entire container."},
+      {"text": "Zero, since buoyant force doesn't actually exist as a real physical force", "isCorrect": false, "feedback": "This isn't accurate -- buoyant force IS a real, measurable physical force, specifically equal to the weight of the fluid displaced by the submerged object."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A solid block has a volume of 2 cubic meters and is fully submerged in water (density 1000 kg/m³). Using Archimedes' principle, what is the buoyant force acting on it? (Use g≈10 m/s², and buoyant force = displaced fluid mass × g = fluid density × volume × g)",
+    "options": [
+      {"text": "20,000 Newtons", "isCorrect": true, "feedback": "Correct -- Buoyant force = 1000 kg/m³ × 2 m³ × 10 m/s² = 20,000 N."},
+      {"text": "2,000 Newtons", "isCorrect": false, "feedback": "This doesn't correctly include the water density factor (1000 kg/m³) in the full calculation."},
+      {"text": "10,000 Newtons", "isCorrect": false, "feedback": "This doesn't correctly multiply all three factors (density, volume, and gravitational acceleration) together."},
+      {"text": "1,000 Newtons", "isCorrect": false, "feedback": "This is just the water density value alone, without multiplying by the object's volume and gravitational acceleration."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A ship floats partially submerged in water, with only a portion of its total volume actually below the waterline. Using Archimedes' principle, explain why the ship only needs to displace a volume of water with a WEIGHT equal to the ship's own total weight, rather than needing to displace water equal to its FULL physical volume.",
+    "options": [
+      {"text": "Since the ship floats in equilibrium (buoyant force = ship's weight), it only needs to submerge (and thus displace) ENOUGH volume of water so that the WEIGHT of that displaced water exactly matches the ship's own weight -- once that balance point is reached, the ship stops sinking further, regardless of how much of its total volume remains above water", "isCorrect": true, "feedback": "Correct -- this equilibrium condition (buoyant force exactly balancing the ship's weight) is precisely why a floating object only submerges as much as needed to displace a water weight matching its own weight, explaining why ships float with much of their volume remaining above the waterline."},
+      {"text": "The ship would actually need to be completely, fully submerged for Archimedes' principle to apply at all", "isCorrect": false, "feedback": "This isn't accurate -- Archimedes' principle applies to BOTH fully and partially submerged objects; a floating (partially submerged) ship reaches equilibrium once displaced water weight matches its own weight, without needing full submersion."},
+      {"text": "Archimedes' principle actually doesn't apply at all to large floating objects like ships", "isCorrect": false, "feedback": "This isn't accurate -- Archimedes' principle applies universally to submerged or floating objects of any size, including large ships, explaining precisely why and how much they float."},
+      {"text": "The ship's weight has no actual connection to how much water volume it needs to displace while floating", "isCorrect": false, "feedback": "This isn't accurate -- the ship's WEIGHT is DIRECTLY connected to and determines exactly how much water volume (and thus how much of the ship) needs to be submerged to achieve floating equilibrium."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This upward force exerted by a fluid on a submerged object corresponds precisely to the weight of the fluid volume that object has displaced.", "medium": "This upward push from the water equals the weight of the water the object pushed out of the way.", "easy": "This upward push equals the weight of water the object pushed out of the way."},
+    "medium": {"hard": "Substitute the given fluid density, object volume, and gravitational acceleration values directly into the buoyant force formula.", "medium": "Multiply the water's density (1000) by the object's volume (2) by gravity (10).", "easy": "Multiply 1000 by 2 by 10 to get 20,000."},
+    "hard": {"hard": "Apply the floating equilibrium condition (buoyant force equals object weight) to determine the minimum submerged volume required, rather than assuming full-volume displacement is necessary.", "medium": "The ship only sinks down until the water it's pushing aside weighs exactly as much as the whole ship -- then it just stays floating right there.", "easy": "The ship only sinks until the water it pushes aside weighs as much as the whole ship, then it stays floating."}
+  }
+}
+]

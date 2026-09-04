@@ -1,0 +1,84 @@
+[
+{
+  "topic": "the function of the large intestine",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a main function of the large intestine?",
+    "options": [
+      {"text": "Absorbing water from digested food waste", "isCorrect": true, "feedback": "Correct -- the large intestine absorbs remaining water, forming solid waste for elimination."},
+      {"text": "Breaking down food with strong acid", "isCorrect": false, "feedback": "That's the stomach's role, not the large intestine's."},
+      {"text": "Producing insulin", "isCorrect": false, "feedback": "Insulin is produced by the pancreas, not the large intestine."},
+      {"text": "Absorbing most nutrients from food", "isCorrect": false, "feedback": "Most nutrient absorption happens in the small intestine, not the large intestine."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Besides absorbing water, what other important role do bacteria in the large intestine play?",
+    "options": [
+      {"text": "They help break down some remaining food material and produce certain vitamins", "isCorrect": true, "feedback": "Correct -- beneficial gut bacteria assist digestion and can synthesize vitamins like vitamin K."},
+      {"text": "They produce stomach acid", "isCorrect": false, "feedback": "Stomach acid is produced in the stomach, not by bacteria in the large intestine."},
+      {"text": "They filter the blood", "isCorrect": false, "feedback": "Blood filtration is the kidneys' job, unrelated to large intestine bacteria."},
+      {"text": "They control heart rate", "isCorrect": false, "feedback": "Heart rate regulation is unrelated to large intestine bacteria."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Taking antibiotics can sometimes cause digestive issues, partly because antibiotics can kill beneficial gut bacteria along with harmful ones. Why might this side effect occur, based on the large intestine's normal function?",
+    "options": [
+      {"text": "Beneficial gut bacteria normally assist digestion and vitamin production, so losing them can disrupt these processes and cause digestive discomfort", "isCorrect": true, "feedback": "Correct -- antibiotics aren't always selective, so they can disrupt this normally helpful bacterial community, temporarily impairing its beneficial functions."},
+      {"text": "Antibiotics have no real effect on gut bacteria at all", "isCorrect": false, "feedback": "Antibiotics are well known to affect gut bacteria populations, sometimes causing digestive side effects as a result."},
+      {"text": "The large intestine doesn't actually contain any bacteria", "isCorrect": false, "feedback": "The large intestine is well known to host a large, diverse population of bacteria that play helpful roles."},
+      {"text": "This side effect has nothing to do with bacteria at all", "isCorrect": false, "feedback": "This side effect is specifically and directly linked to the disruption of the large intestine's normal bacterial population."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This organ pulls remaining fluid out of digestive waste before it's eliminated.", "medium": "This organ removes extra water from waste before it leaves the body.", "easy": "This organ soaks up leftover water from digested food waste."},
+    "medium": {"hard": "These microorganisms contribute additional digestive assistance and synthesize certain essential nutrients not otherwise obtained from food.", "medium": "These tiny organisms help finish digesting some food and make some vitamins for you.", "easy": "These tiny organisms help digest leftover food and even make some vitamins."},
+    "hard": {"hard": "Since antibiotics broadly target bacteria without perfect selectivity, they can inadvertently reduce populations of beneficial bacteria that normally contribute to digestion and vitamin synthesis, leading to temporary digestive disruption.", "medium": "Since antibiotics kill bacteria in general, they can accidentally wipe out the helpful bacteria that normally assist with digestion.", "easy": "Since antibiotics kill bacteria in general, they can accidentally wipe out the helpful ones that assist digestion too."}
+  }
+},
+{
+  "topic": "the concept of a keystone species",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a keystone species?",
+    "options": [
+      {"text": "A species that has an unusually large effect on its ecosystem relative to its population size", "isCorrect": true, "feedback": "Correct -- removing a keystone species can dramatically change or collapse an ecosystem's balance."},
+      {"text": "The most numerous species in an ecosystem", "isCorrect": false, "feedback": "A keystone species isn't necessarily the most abundant -- its importance comes from its outsized ecological IMPACT, not population size."},
+      {"text": "A species that has no real effect on its ecosystem", "isCorrect": false, "feedback": "This is the opposite of a keystone species, which has an especially significant effect on its ecosystem."},
+      {"text": "A species found only in zoos", "isCorrect": false, "feedback": "Keystone species are found in natural wild ecosystems -- this term isn't about captivity."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Sea otters are considered a keystone species in kelp forest ecosystems because they eat sea urchins, which would otherwise overgraze and destroy kelp forests. What would likely happen if sea otters disappeared from this ecosystem?",
+    "options": [
+      {"text": "Sea urchin populations would likely explode, leading to overgrazing and potential collapse of the kelp forest", "isCorrect": true, "feedback": "Correct -- this cascading effect (called a trophic cascade) demonstrates exactly why sea otters are considered a keystone species."},
+      {"text": "Nothing would change in the ecosystem at all", "isCorrect": false, "feedback": "Since sea otters are a keystone species with an outsized ecological role, their removal would likely trigger significant, cascading changes."},
+      {"text": "The kelp forest would grow even larger and healthier", "isCorrect": false, "feedback": "Without otters controlling urchins, urchin overgrazing would likely damage rather than benefit the kelp forest."},
+      {"text": "Sea urchins would also disappear from the ecosystem", "isCorrect": false, "feedback": "Without their main predator (otters), sea urchin populations would likely increase, not disappear."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is the term 'keystone' (referring to the central stone in an arch that holds the whole structure together) a fitting metaphor for this type of species?",
+    "options": [
+      {"text": "Just as removing a keystone can cause an entire arch to collapse, removing a keystone species can cause disproportionate, cascading changes throughout the whole ecosystem", "isCorrect": true, "feedback": "Correct -- this architectural metaphor captures how a keystone species' influence on ecosystem stability is far greater than its size or abundance alone would suggest."},
+      {"text": "Keystone species are always physically shaped like a stone arch", "isCorrect": false, "feedback": "The metaphor is about their functional ROLE in ecosystem stability, not their physical shape."},
+      {"text": "Keystone species are always the largest animals in an ecosystem", "isCorrect": false, "feedback": "Keystone species aren't necessarily the largest -- their defining trait is disproportionate ecological impact, regardless of size."},
+      {"text": "This metaphor has no real connection to how these species actually function", "isCorrect": false, "feedback": "This metaphor is actually a very apt, widely used description of exactly how these species function within their ecosystems."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of organism exerts ecological influence far exceeding what its numbers alone would suggest.", "medium": "This species has a huge impact on its ecosystem, even if there aren't very many of them.", "easy": "This species has a big effect on its ecosystem, even if there aren't a lot of them."},
+    "medium": {"hard": "Consider the predator-prey relationship being disrupted and how that would ripple through to affect the vegetation those prey animals consume.", "medium": "Without otters eating them, urchins would multiply a lot and eat way more of the kelp.", "easy": "Without otters eating them, sea urchins would multiply and eat way more of the kelp."},
+    "hard": {"hard": "The architectural keystone's structural role (holding the whole arch together despite being just one stone) directly parallels how a keystone species maintains ecosystem stability disproportionate to its own population size.", "medium": "Just like pulling out the central stone can collapse a whole arch, removing this species can cause the whole ecosystem to fall out of balance.", "easy": "Just like pulling out the center stone can collapse a whole arch, removing this species can throw off the whole ecosystem."}
+  }
+}
+]

@@ -1,0 +1,209 @@
+[
+{
+  "topic": "mitosis (phases of cell division)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What do we call the process where one cell divides to produce two identical daughter cells?",
+    "options": [
+      {"text": "Mitosis", "isCorrect": true, "feedback": "Correct -- mitosis produces two genetically identical cells."},
+      {"text": "Meiosis", "isCorrect": false, "feedback": "Meiosis produces four genetically different sex cells, not two identical ones."},
+      {"text": "Osmosis", "isCorrect": false, "feedback": "Osmosis is the movement of water across a membrane, unrelated to cell division."},
+      {"text": "Digestion", "isCorrect": false, "feedback": "Digestion breaks down food, it has nothing to do with a cell dividing."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "During which phase of mitosis do the chromosomes line up in the middle of the cell?",
+    "options": [
+      {"text": "Metaphase", "isCorrect": true, "feedback": "Correct -- 'meta' refers to the middle, where chromosomes align before separating."},
+      {"text": "Prophase", "isCorrect": false, "feedback": "In prophase, chromosomes are condensing but haven't lined up in the middle yet."},
+      {"text": "Anaphase", "isCorrect": false, "feedback": "In anaphase, the chromosomes are already being pulled apart toward opposite ends."},
+      {"text": "Telophase", "isCorrect": false, "feedback": "In telophase, two new nuclei are forming at opposite ends of the cell."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which TWO of the following are phases of mitosis itself?",
+    "options": [
+      {"text": "Prophase", "isCorrect": true, "feedback": "Correct -- one of the four true phases of mitosis."},
+      {"text": "Anaphase", "isCorrect": true, "feedback": "Correct -- the phase where sister chromatids are pulled apart."},
+      {"text": "Interphase", "isCorrect": false, "feedback": "Interphase is the growth/DNA-replication stage that happens BEFORE mitosis starts, not a phase of mitosis itself."},
+      {"text": "Meiosis I", "isCorrect": false, "feedback": "Meiosis I belongs to a completely different kind of division that produces sex cells."},
+      {"text": "Cytokinesis", "isCorrect": false, "feedback": "Cytokinesis is the splitting of the cytoplasm that follows mitosis, technically a separate process."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process results in two cells with identical genetic material, unlike its close cousin that makes four different sex cells.", "medium": "This is the type of cell division most cells in your body use to grow and repair themselves.", "easy": "This is how one cell becomes two identical copies of itself."},
+    "medium": {"hard": "This is the phase where the cell's already-condensed genetic material aligns itself right at the cell's equator before being pulled apart.", "medium": "Picture chromosomes lining up in a single file down the middle of the cell -- what's this stage called?", "easy": "This is the stage where the chromosomes gather in the center of the cell."},
+    "hard": {"hard": "Two of these five happen strictly within mitosis itself; the others describe the resting/growth stage before mitosis begins, division specific to sex cells, or the separate process of splitting the cytoplasm.", "medium": "Two of the five options are true mitotic phases; the rest describe what happens before mitosis, what happens in a different kind of division, or a related-but-separate process.", "easy": "Two of these are actual steps within mitosis -- the others happen either before mitosis starts or belong to a different process."}
+  }
+},
+{
+  "topic": "DNA base pairing rules",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In DNA, which base always pairs with Adenine?",
+    "options": [
+      {"text": "Thymine", "isCorrect": true, "feedback": "Correct -- Adenine always pairs with Thymine in DNA."},
+      {"text": "Guanine", "isCorrect": false, "feedback": "Guanine pairs with Cytosine, not Adenine."},
+      {"text": "Cytosine", "isCorrect": false, "feedback": "Cytosine pairs with Guanine, not Adenine."},
+      {"text": "Uracil", "isCorrect": false, "feedback": "Uracil replaces Thymine in RNA, not DNA."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which base pair forms three hydrogen bonds, making it slightly stronger than the other DNA base pair?",
+    "options": [
+      {"text": "Guanine and Cytosine", "isCorrect": true, "feedback": "Correct -- G-C pairs form three hydrogen bonds, one more than A-T pairs."},
+      {"text": "Adenine and Thymine", "isCorrect": false, "feedback": "A-T pairs form only two hydrogen bonds, making this pair weaker, not stronger."},
+      {"text": "Adenine and Guanine", "isCorrect": false, "feedback": "These two bases don't pair with each other at all in DNA."},
+      {"text": "Thymine and Cytosine", "isCorrect": false, "feedback": "These two bases don't pair with each other at all in DNA."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If one strand of DNA reads A-T-G-C, what is the base sequence of its complementary strand?",
+    "options": [
+      {"text": "T-A-C-G", "isCorrect": true, "feedback": "Correct -- each base is swapped for its fixed partner: A→T, T→A, G→C, C→G."},
+      {"text": "A-T-G-C", "isCorrect": false, "feedback": "This is identical to the original strand, not its complement -- DNA strands are never copies of themselves."},
+      {"text": "G-C-A-T", "isCorrect": false, "feedback": "This doesn't correctly swap each base for its fixed partner in order."},
+      {"text": "C-G-T-A", "isCorrect": false, "feedback": "This scrambles the order rather than pairing each base correctly in place."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This base is the smaller, single-ring type that consistently bonds with the same partner across the entire DNA molecule.", "medium": "This is the base that always pairs with Adenine in DNA, using two hydrogen bonds.", "easy": "Every Adenine pairs with the same partner base every single time -- which one?"},
+    "medium": {"hard": "This pair forms one extra hydrogen bond compared to the other standard DNA base pair, making it slightly more stable.", "medium": "One base pair uses two hydrogen bonds, the other uses three -- which pair is the stronger one?", "easy": "Two of the four DNA bases bond more tightly together than the other two -- which pair is that?"},
+    "hard": {"hard": "Match each base to its fixed partner (A↔T, G↔C) one at a time, keeping the same left-to-right order as the original strand.", "medium": "Swap each letter for its fixed partner, keeping the same order as the original sequence.", "easy": "Replace each letter with its matching partner base, in the same order as given."}
+  }
+},
+{
+  "topic": "neuron structure and function",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main function of a neuron?",
+    "options": [
+      {"text": "Transmitting electrical and chemical signals", "isCorrect": true, "feedback": "Correct -- neurons are specialized for sending messages through the nervous system."},
+      {"text": "Storing fat for long-term energy", "isCorrect": false, "feedback": "That's the role of adipose cells, not neurons."},
+      {"text": "Producing digestive enzymes", "isCorrect": false, "feedback": "Digestive enzymes are made by cells in glands like the pancreas, not neurons."},
+      {"text": "Filtering waste from the blood", "isCorrect": false, "feedback": "That's the job of cells in the kidneys, not neurons."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which part of a neuron is primarily responsible for receiving signals from other neurons?",
+    "options": [
+      {"text": "Dendrites", "isCorrect": true, "feedback": "Correct -- dendrites branch out to catch incoming signals from neighboring neurons."},
+      {"text": "Axon", "isCorrect": false, "feedback": "The axon sends signals away from the cell body, the opposite job."},
+      {"text": "Myelin sheath", "isCorrect": false, "feedback": "The myelin sheath insulates the axon to speed up signals, it doesn't receive anything."},
+      {"text": "Nucleus", "isCorrect": false, "feedback": "The nucleus houses the cell's DNA and manages cell activity, but isn't the signal-receiving structure."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the primary function of the myelin sheath surrounding some axons?",
+    "options": [
+      {"text": "It insulates the axon, speeding up electrical signal transmission", "isCorrect": true, "feedback": "Correct -- myelin lets signals jump between gaps, traveling much faster."},
+      {"text": "It produces the neurotransmitters used to communicate with other cells", "isCorrect": false, "feedback": "Neurotransmitters are produced and stored near the axon terminal, not by the myelin sheath."},
+      {"text": "It stores the neuron's genetic information", "isCorrect": false, "feedback": "Genetic information is stored in the nucleus, not in the myelin sheath."},
+      {"text": "It generates the energy the neuron uses to function", "isCorrect": false, "feedback": "That's the role of mitochondria within the cell, not the myelin sheath."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This cell type doesn't store fat, make enzymes, or filter anything -- its entire job is carrying messages quickly.", "medium": "This cell's job is sending and receiving electrical and chemical messages throughout the body.", "easy": "This special cell sends messages around your body and brain."},
+    "medium": {"hard": "This branching structure is shaped to catch incoming signals from many other cells at once, unlike the single long fiber that sends signals away.", "medium": "This is the branch-like part of the neuron built to catch incoming messages, not send them out.", "easy": "This part looks like tree branches and catches signals coming in."},
+    "hard": {"hard": "This fatty coating acts like insulation on a wire, letting the electrical signal jump between gaps rather than travel continuously along the whole length.", "medium": "This coating helps the signal travel much faster by letting it 'jump' along the axon instead of moving continuously.", "easy": "This fatty covering helps signals zip down the neuron faster."}
+  }
+},
+{
+  "topic": "enzymes in digestion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the main job of digestive enzymes?",
+    "options": [
+      {"text": "Breaking down food into smaller molecules", "isCorrect": true, "feedback": "Correct -- enzymes chemically break large food molecules into absorbable pieces."},
+      {"text": "Storing food for later use", "isCorrect": false, "feedback": "Storage isn't an enzyme's job -- that's more the role of the liver or fat cells."},
+      {"text": "Killing harmful bacteria in food", "isCorrect": false, "feedback": "That's more the role of stomach acid and the immune system, not digestive enzymes."},
+      {"text": "Absorbing nutrients into the bloodstream", "isCorrect": false, "feedback": "Absorption happens through the intestinal walls, not through the enzymes themselves."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which enzyme, found in saliva, begins breaking down starches in the mouth?",
+    "options": [
+      {"text": "Amylase", "isCorrect": true, "feedback": "Correct -- salivary amylase starts breaking down starch as soon as you begin chewing."},
+      {"text": "Pepsin", "isCorrect": false, "feedback": "Pepsin breaks down proteins in the stomach, not starches in the mouth."},
+      {"text": "Lipase", "isCorrect": false, "feedback": "Lipase breaks down fats, mainly later in the small intestine."},
+      {"text": "Trypsin", "isCorrect": false, "feedback": "Trypsin breaks down proteins in the small intestine, not starches in the mouth."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which TWO of the following enzymes are involved in breaking down proteins?",
+    "options": [
+      {"text": "Pepsin", "isCorrect": true, "feedback": "Correct -- pepsin breaks down proteins in the acidic environment of the stomach."},
+      {"text": "Trypsin", "isCorrect": true, "feedback": "Correct -- trypsin continues protein breakdown in the small intestine."},
+      {"text": "Amylase", "isCorrect": false, "feedback": "Amylase targets starches, not proteins."},
+      {"text": "Lipase", "isCorrect": false, "feedback": "Lipase targets fats, not proteins."},
+      {"text": "Lactase", "isCorrect": false, "feedback": "Lactase targets the sugar lactose, not proteins."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These molecules don't store, kill, or absorb anything -- they chemically cut large food molecules into smaller usable pieces.", "medium": "These are the molecules that chemically break large food particles into smaller, absorbable pieces.", "easy": "These help break your food down into tiny pieces your body can use."},
+    "medium": {"hard": "This enzyme is secreted by the salivary glands and specifically targets the same type of molecule found abundantly in bread and pasta.", "medium": "This enzyme starts working the moment food enters your mouth, targeting starchy foods specifically.", "easy": "This is the enzyme in your spit that starts breaking down starchy foods like bread."},
+    "hard": {"hard": "One of these two works in the highly acidic environment of the stomach; the other works in the more neutral small intestine -- both target the same type of macronutrient, just at different digestive stages.", "medium": "Two of these five specifically target protein molecules, just in different parts of the digestive tract.", "easy": "Two of these enzymes are protein-breakers -- one works in the stomach, one in the small intestine."}
+  }
+},
+{
+  "topic": "carrying capacity (population ecology)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes the maximum population size an environment can sustainably support?",
+    "options": [
+      {"text": "Carrying capacity", "isCorrect": true, "feedback": "Correct -- carrying capacity is the population limit an environment's resources can sustain."},
+      {"text": "Biodiversity", "isCorrect": false, "feedback": "Biodiversity refers to the variety of species in an area, not a population limit."},
+      {"text": "Food chain", "isCorrect": false, "feedback": "A food chain describes feeding relationships between organisms, not a population limit."},
+      {"text": "Habitat", "isCorrect": false, "feedback": "A habitat is the place where an organism lives, not a measure of population limit."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What typically happens to a population when it exceeds its environment's carrying capacity?",
+    "options": [
+      {"text": "The population tends to decline due to limited resources", "isCorrect": true, "feedback": "Correct -- scarce resources increase competition, causing the population to shrink back down."},
+      {"text": "The population grows indefinitely", "isCorrect": false, "feedback": "Unlimited growth isn't sustainable -- resource limits eventually cause a decline."},
+      {"text": "The environment's carrying capacity automatically increases", "isCorrect": false, "feedback": "Carrying capacity is set by available resources, it doesn't just rise to match population size."},
+      {"text": "Nothing changes for the population", "isCorrect": false, "feedback": "Exceeding resource limits does have a real effect -- it triggers a population decline."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Carrying capacity is best defined as a population limit set primarily by which of the following?",
+    "options": [
+      {"text": "Available resources such as food, water, and space", "isCorrect": true, "feedback": "Correct -- carrying capacity reflects the combined limits of all resources an environment provides."},
+      {"text": "The number of predators alone", "isCorrect": false, "feedback": "Predation is only one possible limiting factor, not the full definition."},
+      {"text": "The species' reproduction rate alone", "isCorrect": false, "feedback": "Reproduction rate affects how fast a population grows, but not the resource ceiling itself."},
+      {"text": "Random chance events alone", "isCorrect": false, "feedback": "Random events can affect populations, but they don't define the resource-based ceiling itself."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term names the ceiling an ecosystem places on how many individuals it can support long-term, not a measure of variety or a description of where something lives.", "medium": "This is the largest population size an environment can support long-term without running out of what that population needs.", "easy": "This is the biggest number of a species an area can support without running out of resources."},
+    "medium": {"hard": "When numbers exceed what resources can support, competition increases and resources become scarcer, pushing the population back down rather than letting it keep climbing.", "medium": "Resources become scarce when there are too many individuals, which tends to shrink the population back down.", "easy": "Too many individuals means not enough resources to go around, so the population usually shrinks."},
+    "hard": {"hard": "The best definition accounts for the full set of resources (food, water, space, etc.) an environment provides, rather than isolating just one single factor like predators or reproduction alone.", "medium": "The most complete answer covers multiple resource types together, not just one single factor in isolation.", "easy": "The best answer mentions several resources together (food, water, space), not just one thing by itself."}
+  }
+}
+]

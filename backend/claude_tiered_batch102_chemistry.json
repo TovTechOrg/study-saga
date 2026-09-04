@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between chain reactions and single-step reactions",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'chain reaction' is characterized by:",
+    "options": [
+      {"text": "A self-sustaining sequence of reactions, where products from one step trigger the next step to occur", "isCorrect": true, "feedback": "Correct -- chain reactions (like nuclear fission chain reactions or certain combustion processes) continue propagating because each reaction step generates something that triggers the subsequent step."},
+      {"text": "A reaction that occurs in exactly one single, isolated step, with no follow-on effects", "isCorrect": false, "feedback": "That describes a SINGLE-STEP reaction, not a chain reaction, which specifically involves a SELF-PROPAGATING SEQUENCE of multiple linked reaction steps."},
+      {"text": "A reaction that requires a physical metal chain to occur", "isCorrect": false, "feedback": "This is a literal misinterpretation -- 'chain reaction' is a CONCEPTUAL term describing a self-propagating REACTION SEQUENCE, not a reference to a literal physical metal chain."},
+      {"text": "A reaction that can never actually be stopped once it begins", "isCorrect": false, "feedback": "This isn't accurate -- while SOME chain reactions can be difficult to stop, they CAN be controlled/stopped under appropriate conditions (like in nuclear reactors using control rods) -- this isn't the DEFINING characteristic of a chain reaction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a nuclear fission chain reaction, each fission event releases multiple neutrons, which can then trigger additional fission events in nearby fissile atoms, potentially releasing even MORE neutrons each time. Why does this specific multiplicative pattern (each event potentially triggering MULTIPLE subsequent events) explain why chain reactions can rapidly become extremely intense if left uncontrolled?",
+    "options": [
+      {"text": "Since each single fission event can potentially trigger MULTIPLE additional fission events (not just one), the number of ongoing reactions can multiply/grow EXPONENTIALLY with each successive generation of reactions, rather than simply staying constant or growing at a steady, LINEAR rate", "isCorrect": true, "feedback": "Correct -- this exponential growth pattern (each event triggering multiple subsequent events, compounding rapidly across generations) is precisely why uncontrolled nuclear chain reactions can escalate so rapidly and dramatically, which is exactly why careful control mechanisms are essential in nuclear reactor design."},
+      {"text": "Each fission event can actually only ever trigger exactly ONE additional fission event, not multiple ones", "isCorrect": false, "feedback": "This isn't accurate -- each fission event specifically CAN release MULTIPLE neutrons, potentially triggering MULTIPLE subsequent fission events (not just one), which is precisely the key characteristic driving the potential for rapid exponential escalation."},
+      {"text": "This multiplicative pattern has no actual connection to why chain reactions can escalate so rapidly if left uncontrolled", "isCorrect": false, "feedback": "This isn't accurate -- this specific multiplicative pattern (one event triggering multiple subsequent events) is DIRECTLY and specifically connected to and explains precisely WHY uncontrolled chain reactions can escalate so rapidly (exponential, not merely linear, growth)."},
+      {"text": "Chain reactions would actually grow at a slow, steady LINEAR rate, not an exponential one", "isCorrect": false, "feedback": "This isn't accurate -- chain reactions specifically have the potential for EXPONENTIAL (not merely linear) growth, precisely because each individual event can trigger MULTIPLE subsequent events, compounding rapidly across successive generations."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Nuclear reactors use 'control rods' (materials that absorb neutrons) to precisely regulate a fission chain reaction, keeping it at a stable, sustained rate rather than allowing uncontrolled exponential growth. Why does controlling the AVERAGE NUMBER of neutrons that successfully go on to trigger a NEW fission event (rather than simply eliminating neutrons randomly) represent the key precise mechanism for achieving this stable control?",
+    "options": [
+      {"text": "By precisely adjusting control rod position to absorb just enough neutrons so that, ON AVERAGE, each fission event results in exactly ONE subsequent fission event (rather than multiple), the reaction can be maintained at a stable, sustained ('critical') rate, neither growing exponentially (multiple average subsequent events) nor dying out completely (less than one average subsequent event)", "isCorrect": true, "feedback": "Correct -- this precise control over the AVERAGE neutron multiplication factor (aiming for exactly 1, called 'criticality') is precisely the sophisticated engineering principle that allows nuclear reactors to maintain a stable, controlled, sustained fission reaction rate, rather than experiencing dangerous uncontrolled exponential growth or an undesirable complete reaction shutdown."},
+      {"text": "Control rods actually work by completely stopping ALL neutrons from causing any further fission events whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- control rods specifically absorb just ENOUGH neutrons to precisely regulate the reaction rate to a stable, sustained level, not to completely stop ALL neutrons/fission events (which would simply shut down the reactor entirely, not maintain a controlled sustained reaction)."},
+      {"text": "This precise average-based control mechanism has no actual connection to achieving stable, sustained nuclear reactor operation", "isCorrect": false, "feedback": "This isn't accurate -- this precise average-based control mechanism (targeting an average multiplication factor of exactly 1) is DIRECTLY and specifically connected to and IS the fundamental principle underlying stable, sustained nuclear reactor operation (criticality)."},
+      {"text": "Nuclear reactors actually don't need any precise control mechanism at all to operate safely and stably", "isCorrect": false, "feedback": "This isn't accurate -- nuclear reactors ABSOLUTELY require PRECISE control mechanisms (like control rods) to operate safely and maintain a stable, sustained reaction rate, rather than risking dangerous uncontrolled exponential growth."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This reaction pattern involves a self-perpetuating cascade wherein each reactive event generates the conditions necessary to trigger subsequent events.", "medium": "This is a reaction where one step causes the next step, which causes the next, and so on, keeping itself going.", "easy": "This is a reaction where one step causes the next, keeping itself going."},
+    "medium": {"hard": "Consider the mathematical distinction between additive (linear) growth and multiplicative (exponential) growth, based on whether each event produces one or multiple subsequent triggering events.", "medium": "If each fission makes just ONE more fission happen, things grow steadily -- but if each fission can make TWO OR MORE new fissions happen, that growth can snowball incredibly fast.", "easy": "If each fission can trigger multiple new fissions, that growth can snowball incredibly fast."},
+    "hard": {"hard": "Consider how targeting an average neutron multiplication factor of precisely one (rather than zero or greater than one) achieves the delicate balance point between reaction extinction and uncontrolled exponential escalation.", "medium": "The trick isn't to stop ALL the neutrons -- it's to let through just the right amount so that, on average, each fission leads to exactly one more fission, keeping things steady instead of exploding or fizzling out.", "easy": "The trick is letting through just enough neutrons so each fission leads to exactly one more, keeping things steady."}
+  }
+}
+]

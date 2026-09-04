@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between static equilibrium and dynamic equilibrium in mechanics",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "An object is in 'static equilibrium' when:",
+    "options": [
+      {"text": "The net force and net torque on it are both zero, and it remains completely at rest", "isCorrect": true, "feedback": "Correct -- static equilibrium specifically describes a stationary object with balanced forces/torques, resulting in no motion at all."},
+      {"text": "It is moving at a constant, unchanging velocity", "isCorrect": false, "feedback": "That describes DYNAMIC equilibrium (or more specifically, constant-velocity motion with balanced forces), not STATIC equilibrium, which specifically means the object is at REST."},
+      {"text": "It is accelerating rapidly in one specific direction", "isCorrect": false, "feedback": "This isn't equilibrium at all -- an accelerating object specifically has an UNBALANCED net force acting on it, which is the opposite of an equilibrium condition."},
+      {"text": "The object's mass is constantly changing over time", "isCorrect": false, "feedback": "Mass change isn't the defining characteristic of static equilibrium -- static equilibrium specifically concerns balanced forces/torques on a STATIONARY object, not changing mass."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "A book resting motionless on a table is in static equilibrium, while a car cruising at a perfectly constant velocity on a straight highway is in 'dynamic equilibrium.' What do these two seemingly different scenarios actually have in common, in terms of the forces involved?",
+    "options": [
+      {"text": "In BOTH cases, the net force acting on the object is zero (forces are balanced), even though one object remains stationary (static) while the other continues moving at constant velocity (dynamic)", "isCorrect": true, "feedback": "Correct -- this shared characteristic (zero net force, per Newton's first law) is the common underlying thread connecting both static and dynamic equilibrium, despite one object being at rest and the other in constant motion."},
+      {"text": "These two scenarios actually have no meaningful physical similarities whatsoever", "isCorrect": false, "feedback": "This isn't accurate -- these two scenarios DO share a fundamental underlying similarity: in BOTH cases, the net force acting on the respective object is zero (balanced forces), despite their different states of motion."},
+      {"text": "The car actually has an unbalanced net force acting on it, unlike the book", "isCorrect": false, "feedback": "This isn't accurate -- since the car maintains CONSTANT velocity (no acceleration), its net force is ALSO zero (balanced), just like the stationary book, not unbalanced."},
+      {"text": "Only the book (static equilibrium case) actually has zero net force acting on it", "isCorrect": false, "feedback": "This isn't accurate -- BOTH the book AND the car (moving at constant velocity) have zero net force acting on them; this zero-net-force condition is precisely the shared characteristic connecting both equilibrium types."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "According to Newton's first law, an object with zero net force will maintain whatever velocity it currently has (whether zero, for static equilibrium, or some constant nonzero value, for dynamic equilibrium). Why is it important to recognize that 'equilibrium' in physics doesn't necessarily mean an object is motionless, contrary to how the everyday word 'equilibrium' might sometimes be casually used?",
+    "options": [
+      {"text": "Recognizing that physics equilibrium specifically refers to a state of ZERO NET FORCE (which can occur whether an object is at rest OR moving at constant velocity) prevents the common misconception that 'equilibrium' always implies a complete absence of motion, allowing for accurate analysis of both stationary and constant-velocity-motion physical scenarios using the same fundamental force-balance principle", "isCorrect": true, "feedback": "Correct -- this important conceptual clarification (physics equilibrium = zero net force, not necessarily zero motion) prevents a common point of confusion and enables consistent application of Newton's first law across both static and dynamic equilibrium scenarios."},
+      {"text": "Physics equilibrium actually always requires an object to be completely motionless, with no exceptions", "isCorrect": false, "feedback": "This isn't accurate -- physics equilibrium SPECIFICALLY includes both static (motionless) AND dynamic (constant velocity) cases, not exclusively motionless situations."},
+      {"text": "This distinction between the physics and everyday meanings of 'equilibrium' has no actual practical importance for correctly applying physics principles", "isCorrect": false, "feedback": "This isn't accurate -- this distinction has SIGNIFICANT practical importance for accurately applying physics principles and avoiding a common conceptual misconception about what 'equilibrium' technically means in a physics context."},
+      {"text": "Newton's first law actually only applies specifically to stationary (static equilibrium) objects, not to objects in constant-velocity motion", "isCorrect": false, "feedback": "This isn't accurate -- Newton's first law applies EQUALLY to both stationary objects AND objects moving at constant velocity (both are consistent with zero net force), not exclusively to stationary objects."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This mechanical state describes a stationary object experiencing precisely balanced translational and rotational net forces.", "medium": "This is when something isn't moving at all because all the pushes and pulls on it perfectly cancel out.", "easy": "This is when something isn't moving because all the forces on it cancel out."},
+    "medium": {"hard": "Consider the shared underlying condition (regarding net force) implied by Newton's first law for any object, regardless of whether its resulting constant velocity happens to be zero or nonzero.", "medium": "Whether something is standing perfectly still or cruising along steadily, the forces pushing and pulling on it are actually balanced out to zero in both cases.", "easy": "Whether standing still or cruising steadily, the forces on both are actually balanced to zero."},
+    "hard": {"hard": "Consider how correctly identifying the technical physics criterion for equilibrium (zero net force) as distinct from the colloquial notion of stillness prevents misapplying force-balance analysis only to stationary scenarios.", "medium": "Understanding that 'balanced forces' can happen whether something is sitting still OR moving steadily helps you correctly analyze BOTH types of situations using the same basic force rule.", "easy": "Understanding that balanced forces can happen whether something is still or moving steadily helps you analyze both correctly."}
+  }
+}
+]

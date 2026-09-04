@@ -1,0 +1,1517 @@
+[
+  {
+    "topic": "merge sort",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the basic strategy behind the merge sort algorithm?",
+      "options": [
+        {
+          "text": "Repeatedly split the list into halves until each piece has one element, then merge the pieces back together in sorted order",
+          "isCorrect": true,
+          "feedback": "Correct -- merge sort is a classic 'divide and conquer' sorting algorithm built around splitting and then merging."
+        },
+        {
+          "text": "Repeatedly swap any two adjacent elements that are out of order until nothing is left to swap",
+          "isCorrect": false,
+          "feedback": "That describes something closer to bubble sort's approach -- merge sort instead splits the list apart and merges it back together."
+        },
+        {
+          "text": "Pick one element and move every smaller element before it and every larger element after it",
+          "isCorrect": false,
+          "feedback": "That describes the partitioning idea used in quicksort, not merge sort's split-then-merge approach."
+        },
+        {
+          "text": "Randomly shuffle the list repeatedly until it happens to end up sorted",
+          "isCorrect": false,
+          "feedback": "Merge sort is a deliberate, structured algorithm -- it doesn't rely on random shuffling to reach a sorted result."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "During the 'merge' step of merge sort, how are two already-sorted sublists combined into one sorted list?",
+      "options": [
+        {
+          "text": "By repeatedly comparing the smallest remaining elements of each sublist and appending the smaller of the two to the result",
+          "isCorrect": true,
+          "feedback": "Correct -- this comparison process is what lets the merge step build a fully sorted list from two already-sorted pieces."
+        },
+        {
+          "text": "By joining the two sublists end to end and leaving the combined list unsorted",
+          "isCorrect": false,
+          "feedback": "Simply joining the lists end to end wouldn't guarantee a sorted result -- the merge step specifically compares elements to interleave them correctly."
+        },
+        {
+          "text": "By discarding one of the two sublists entirely and keeping only the other",
+          "isCorrect": false,
+          "feedback": "Both sublists' elements are kept and combined -- nothing is discarded during a merge."
+        },
+        {
+          "text": "By sorting only the first sublist and ignoring the second one",
+          "isCorrect": false,
+          "feedback": "Both sublists are actively compared and combined together -- the second sublist isn't ignored."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is the time complexity of merge sort in the average and worst cases, and why does it stay consistent across both?",
+      "options": [
+        {
+          "text": "O(n log n) in both cases, because the split-and-merge structure doesn't depend on the initial arrangement of the input data",
+          "isCorrect": true,
+          "feedback": "Correct -- unlike some other sorting algorithms, merge sort's performance doesn't degrade on already-sorted or adversarial input, since splitting and merging always take the same shape."
+        },
+        {
+          "text": "O(n) in both cases, because merging two lists together only requires looking at each element a single time",
+          "isCorrect": false,
+          "feedback": "While merging two sublists is O(n) by itself, the SPLITTING step happens log n times, giving an overall O(n log n), not just O(n)."
+        },
+        {
+          "text": "O(n^2) in the worst case but O(n) on average, similar to some simpler sorting algorithms",
+          "isCorrect": false,
+          "feedback": "Merge sort's complexity doesn't swing between these extremes -- it stays at O(n log n) in both average and worst cases specifically because of its consistent divide-and-merge structure."
+        },
+        {
+          "text": "It varies unpredictably and cannot be expressed using Big O notation at all",
+          "isCorrect": false,
+          "feedback": "Merge sort's time complexity is well-defined and predictable -- it can absolutely be expressed in Big O notation, specifically as O(n log n)."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's a 'divide and conquer' approach: split down to single elements, then merge those pieces back together in sorted order.",
+        "medium": "The approach splits the list apart repeatedly, then combines the pieces back in the right order.",
+        "hard": "Think about breaking a big pile into tiny pieces first, then putting them back together carefully."
+      },
+      "medium": {
+        "easy": "The smaller of the two sublists' current front elements is repeatedly chosen and appended, until both sublists are fully consumed.",
+        "medium": "At each step, the smallest unused element from either sublist gets placed next into the growing result.",
+        "hard": "Think about looking at the front of each of the two sorted piles and picking whichever is smaller."
+      },
+      "hard": {
+        "easy": "The consistent O(n log n) bound comes from a fixed number of splitting levels (log n) each requiring an O(n) merge pass, regardless of input arrangement.",
+        "medium": "Splitting always happens the same number of times regardless of the data's starting order, which is why the performance doesn't swing between cases.",
+        "hard": "Think about whether the initial order of the input data changes how many times the list gets split and merged."
+      }
+    }
+  },
+  {
+    "topic": "quicksort",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the basic strategy behind the quicksort algorithm?",
+      "options": [
+        {
+          "text": "Pick a 'pivot' element, then rearrange the list so smaller elements come before it and larger elements come after it, and repeat on each side",
+          "isCorrect": true,
+          "feedback": "Correct -- this pivot-based partitioning is the defining idea behind quicksort."
+        },
+        {
+          "text": "Split the list exactly in half every time, regardless of the actual values, then merge the halves back together",
+          "isCorrect": false,
+          "feedback": "That description is closer to merge sort's even splitting-and-merging approach, not quicksort's pivot-based partitioning."
+        },
+        {
+          "text": "Repeatedly scan the list and swap only the very first two elements",
+          "isCorrect": false,
+          "feedback": "Quicksort's core idea is partitioning around a pivot value, not repeatedly swapping just the first two elements."
+        },
+        {
+          "text": "Create a completely new, empty list and insert every element one at a time in random positions",
+          "isCorrect": false,
+          "feedback": "Quicksort works by partitioning the existing list around a pivot, not by building a new list with random insertions."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In quicksort, what is the role of the 'partition' step?",
+      "options": [
+        {
+          "text": "It rearranges elements around the chosen pivot so that everything smaller ends up on one side and everything larger ends up on the other",
+          "isCorrect": true,
+          "feedback": "Correct -- after partitioning, the pivot sits in its final sorted position, with smaller and larger elements properly separated."
+        },
+        {
+          "text": "It permanently removes the pivot element from the list",
+          "isCorrect": false,
+          "feedback": "The pivot stays in the list -- it ends up placed in its correct final sorted position rather than being removed."
+        },
+        {
+          "text": "It merges two already-sorted lists into a single sorted list",
+          "isCorrect": false,
+          "feedback": "Merging two already-sorted lists is what merge sort's merge step does -- quicksort's partition step instead rearranges elements around a pivot."
+        },
+        {
+          "text": "It counts how many elements are in the list",
+          "isCorrect": false,
+          "feedback": "Partitioning is about REARRANGING elements relative to the pivot, not simply counting them."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can quicksort degrade to O(n^2) worst-case performance, even though its average-case performance is O(n log n)?",
+      "options": [
+        {
+          "text": "If the chosen pivot is consistently one of the most extreme values (like the smallest or largest remaining element), the partitions become very unbalanced, requiring many more partitioning steps",
+          "isCorrect": true,
+          "feedback": "Correct -- this happens, for example, when quicksort always picks the first element as pivot on data that's already sorted, producing lopsided partitions each time."
+        },
+        {
+          "text": "Because quicksort is only able to sort lists containing fewer than 100 elements",
+          "isCorrect": false,
+          "feedback": "Quicksort has no such fixed size limit -- the worst-case slowdown comes from consistently unbalanced partitioning, not list length."
+        },
+        {
+          "text": "Because quicksort requires extra memory equal to the size of the original list for every partition step",
+          "isCorrect": false,
+          "feedback": "Quicksort is typically praised for sorting largely in place with modest extra memory -- its worst-case slowdown is about unbalanced partitions, not memory use."
+        },
+        {
+          "text": "Because quicksort cannot handle lists containing duplicate values",
+          "isCorrect": false,
+          "feedback": "Quicksort can handle duplicate values -- the worst-case degradation specifically comes from repeatedly poor, unbalanced pivot choices."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about choosing one element as a reference point, then sorting everyone else relative to it.",
+        "medium": "One chosen element becomes a dividing line: smaller values to one side, larger values to the other.",
+        "easy": "The chosen 'pivot' element splits the remaining elements into a smaller-than group and a larger-than group, and the process repeats on each group."
+      },
+      "medium": {
+        "hard": "Think about the moment right after the pivot has been placed and everyone else has been sorted relative to it.",
+        "medium": "This step is what actually moves elements around so they end up on the correct side of the pivot.",
+        "easy": "After this step, the pivot sits exactly where it belongs in the final sorted order, with smaller elements to its left and larger elements to its right."
+      },
+      "hard": {
+        "hard": "Think about what happens if the 'dividing line' element chosen each time is a really bad, lopsided choice.",
+        "medium": "Picking a pivot that's always near one extreme of the remaining values leads to very uneven splits.",
+        "easy": "Choosing an extreme value as the pivot over and over again -- like on data that's already sorted -- creates lopsided splits that need many more rounds of partitioning to finish."
+      }
+    }
+  },
+  {
+    "topic": "insertion sort",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the basic idea behind the insertion sort algorithm?",
+      "options": [
+        {
+          "text": "Build up a sorted portion of the list one element at a time, inserting each new element into its correct position within that sorted portion",
+          "isCorrect": true,
+          "feedback": "Correct -- insertion sort grows a sorted section of the list step by step, much like sorting playing cards in your hand."
+        },
+        {
+          "text": "Repeatedly divide the list in half until each piece has only one element",
+          "isCorrect": false,
+          "feedback": "Repeated halving describes merge sort or quicksort's divide-and-conquer style, not insertion sort's one-at-a-time approach."
+        },
+        {
+          "text": "Find the single smallest and single largest values, then swap only those two",
+          "isCorrect": false,
+          "feedback": "Insertion sort works through the list building a sorted section incrementally, not by finding and swapping only the extreme values."
+        },
+        {
+          "text": "Randomly reorder the entire list repeatedly until it happens to be sorted",
+          "isCorrect": false,
+          "feedback": "Insertion sort follows a deliberate, structured process -- it doesn't rely on random reordering."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is insertion sort often a reasonable choice for very small lists or nearly-sorted data, despite having a worse worst-case time complexity than algorithms like merge sort?",
+      "options": [
+        {
+          "text": "Its simplicity gives it low overhead, and when data is already close to sorted, it requires very few element shifts to finish",
+          "isCorrect": true,
+          "feedback": "Correct -- insertion sort's practical performance on small or nearly-sorted data can beat theoretically faster algorithms that carry more overhead."
+        },
+        {
+          "text": "Because insertion sort actually has a better worst-case time complexity than merge sort",
+          "isCorrect": false,
+          "feedback": "Insertion sort's worst-case time complexity, O(n^2), is actually worse than merge sort's O(n log n) -- its practical advantage is elsewhere, on small or nearly-sorted input."
+        },
+        {
+          "text": "Because insertion sort automatically switches to a faster algorithm once the list gets small enough",
+          "isCorrect": false,
+          "feedback": "Insertion sort doesn't switch strategies mid-sort -- it uses the same insert-into-place approach throughout; its advantage on small or nearly-sorted data comes from low overhead, not a built-in switch."
+        },
+        {
+          "text": "Because insertion sort always finishes in a fixed amount of time no matter how large the list is",
+          "isCorrect": false,
+          "feedback": "Insertion sort's running time still grows with list size -- it isn't constant-time; its practical edge is specifically on small or already-sorted data."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What causes insertion sort's worst-case time complexity to be O(n^2)?",
+      "options": [
+        {
+          "text": "When the input is sorted in reverse order, every new element must be shifted past nearly all previously sorted elements to reach its correct position",
+          "isCorrect": true,
+          "feedback": "Correct -- this worst-case scenario forces close to n shifts for each of the n elements being inserted, yielding roughly n^2 total operations."
+        },
+        {
+          "text": "Because insertion sort must always create an entirely new, second list to store its results in",
+          "isCorrect": false,
+          "feedback": "Insertion sort is typically performed in place on the original list -- the O(n^2) worst case comes from shifting, not from allocating a whole extra list."
+        },
+        {
+          "text": "Because insertion sort has to restart the entire sort from scratch whenever a new element needs to be inserted",
+          "isCorrect": false,
+          "feedback": "Insertion sort never restarts -- it keeps extending the same growing sorted section; the O(n^2) cost comes from how far each element must shift, not from restarting."
+        },
+        {
+          "text": "Because comparing two elements is itself a slow operation that dominates the total runtime regardless of ordering",
+          "isCorrect": false,
+          "feedback": "A single comparison is cheap and takes the same time regardless of input order -- the worst case comes from how many shifts are needed, not from comparisons being slow."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It builds a sorted section incrementally, inserting each newly-considered element into its rightful position within that growing sorted section.",
+        "medium": "A sorted section grows one element at a time, with each new element slotted into its correct spot.",
+        "hard": "Picture sorting playing cards in your hand, placing each new card exactly where it belongs among the ones you're already holding."
+      },
+      "medium": {
+        "hard": "Think about how little work is needed when the data is already almost in the right order.",
+        "medium": "With data that's nearly sorted already, very few elements actually need to move to reach their correct spot.",
+        "easy": "Less overhead than fancier algorithms, combined with barely any shifting needed when the data starts out nearly sorted, is exactly why this one can win in that situation."
+      },
+      "hard": {
+        "hard": "Think about the absolute worst possible starting order the input could be in.",
+        "medium": "With close to n shifts needed for each of the n elements in that worst case, the total work comes out proportional to n multiplied by itself.",
+        "easy": "Reverse-sorted input forces almost every new element to travel nearly all the way across the already-processed section."
+      }
+    }
+  },
+  {
+    "topic": "selection sort",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the basic idea behind the selection sort algorithm?",
+      "options": [
+        {
+          "text": "Repeatedly find the smallest remaining element and swap it into its correct position at the front of the unsorted portion",
+          "isCorrect": true,
+          "feedback": "Correct -- selection sort repeatedly 'selects' the minimum from what's left and places it correctly."
+        },
+        {
+          "text": "Repeatedly split the list into two halves and merge them back together",
+          "isCorrect": false,
+          "feedback": "That describes merge sort's approach, not selection sort's repeated 'find the minimum and swap' process."
+        },
+        {
+          "text": "Compare every pair of adjacent elements and swap any pair that's out of order",
+          "isCorrect": false,
+          "feedback": "That describes bubble sort's adjacent-swap approach, not selection sort's find-the-minimum approach."
+        },
+        {
+          "text": "Choose a random pivot element and partition the list around it",
+          "isCorrect": false,
+          "feedback": "Choosing a pivot and partitioning describes quicksort, not selection sort's find-the-minimum approach."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How many total swaps does selection sort perform, at most, when sorting a list of n elements?",
+      "options": [
+        {
+          "text": "At most n-1 swaps, since only one swap is needed per pass to place that pass's minimum element",
+          "isCorrect": true,
+          "feedback": "Correct -- selection sort is often noted for making relatively few swaps, since it only swaps once per pass, unlike some other simple sorts."
+        },
+        {
+          "text": "Exactly n^2 swaps every single time, regardless of the data's starting order",
+          "isCorrect": false,
+          "feedback": "Selection sort's swap count doesn't reach n^2 -- it makes at most one swap per pass, giving at most n-1 total swaps."
+        },
+        {
+          "text": "Zero swaps in total, because selection sort only ever compares elements without moving them",
+          "isCorrect": false,
+          "feedback": "Selection sort does perform swaps -- specifically, one swap per pass to move each pass's minimum into place."
+        },
+        {
+          "text": "A number of swaps that depends only on how many total elements are duplicates",
+          "isCorrect": false,
+          "feedback": "The number of swaps in selection sort is tied to the number of passes through the list, not specifically to how many duplicate values exist."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Even though selection sort makes relatively few swaps, why is its time complexity still O(n^2) in every case, regardless of the input's initial order?",
+      "options": [
+        {
+          "text": "Because each pass must still scan through all remaining unsorted elements to find the minimum, regardless of whether the data is already sorted",
+          "isCorrect": true,
+          "feedback": "Correct -- selection sort always performs the same number of comparisons per pass no matter how the input starts out, unlike some algorithms that can finish early on nearly-sorted data."
+        },
+        {
+          "text": "Because selection sort always performs exactly n^2 swaps no matter what",
+          "isCorrect": false,
+          "feedback": "Selection sort's SWAP count stays low (at most n-1) -- its O(n^2) complexity comes from the number of COMPARISONS needed to find each pass's minimum, not from swap count."
+        },
+        {
+          "text": "Because selection sort must convert the entire list into a different data structure before sorting",
+          "isCorrect": false,
+          "feedback": "Selection sort operates directly on the original list -- no conversion to another data structure is required, and that's not the source of its O(n^2) complexity."
+        },
+        {
+          "text": "Because selection sort only works correctly on lists with an even number of elements",
+          "isCorrect": false,
+          "feedback": "Selection sort works on lists of any length, odd or even -- its O(n^2) complexity comes from the repeated full scans needed to find each minimum."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about repeatedly picking out the smallest item from what's left and putting it where it belongs.",
+        "medium": "Each pass hunts for the current minimum among the unsorted remainder, then places it correctly.",
+        "easy": "Each pass hunts down whichever value is smallest among what's left, then moves it up to sit right after the already-sorted part."
+      },
+      "medium": {
+        "hard": "Think about how many actual swaps happen versus how many comparisons happen.",
+        "medium": "Only one swap is needed at the end of each pass, once that pass's minimum has been found.",
+        "easy": "Since each pass only ever needs a single swap to drop its minimum into place, the grand total can't climb higher than one fewer than the list's length."
+      },
+      "hard": {
+        "hard": "Think about whether the algorithm can 'notice' that the data is already sorted and skip ahead.",
+        "medium": "Every pass still scans the full remaining unsorted section to find the minimum, no matter how the data started out.",
+        "easy": "Every single pass still has to scan the whole shrinking remainder to locate its minimum, no matter how the input started out -- and that scanning cost is what keeps the total near n-squared."
+      }
+    }
+  },
+  {
+    "topic": "breadth-first search",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In breadth-first search (BFS) on a graph or tree, what order are nodes generally visited in?",
+      "options": [
+        {
+          "text": "All nodes at the current distance ('level') from the starting node are visited before moving on to nodes farther away",
+          "isCorrect": true,
+          "feedback": "Correct -- BFS expands outward level by level from the starting node."
+        },
+        {
+          "text": "Nodes are visited in a completely random order with no defined pattern",
+          "isCorrect": false,
+          "feedback": "BFS follows a specific, deterministic level-by-level order -- it isn't random."
+        },
+        {
+          "text": "The algorithm dives as deep as possible down one path before backtracking",
+          "isCorrect": false,
+          "feedback": "That describes depth-first search's approach, not breadth-first search's level-by-level expansion."
+        },
+        {
+          "text": "Only the single farthest node from the start is ever visited",
+          "isCorrect": false,
+          "feedback": "BFS visits every reachable node, expanding level by level outward, not just the single farthest one."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Which data structure is typically used to keep track of which nodes to visit next during a breadth-first search?",
+      "options": [
+        {
+          "text": "A queue (first-in, first-out)",
+          "isCorrect": true,
+          "feedback": "Correct -- a queue ensures nodes are processed in the order they were discovered, which is exactly what produces BFS's level-by-level pattern."
+        },
+        {
+          "text": "A stack (last-in, first-out)",
+          "isCorrect": false,
+          "feedback": "A stack is the structure typically associated with depth-first search, not breadth-first search."
+        },
+        {
+          "text": "A single standalone variable holding one node",
+          "isCorrect": false,
+          "feedback": "BFS needs to track potentially many pending nodes at once, which a single variable can't hold -- a queue is used instead."
+        },
+        {
+          "text": "A sorted array that must be re-sorted after every single node visited",
+          "isCorrect": false,
+          "feedback": "BFS doesn't require continuously re-sorting an array -- a queue's simple first-in-first-out order is what's needed."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is breadth-first search a natural choice for finding the shortest path between two nodes in an unweighted graph?",
+      "options": [
+        {
+          "text": "Because BFS explores nodes in increasing order of distance (number of edges) from the start, the first time it reaches the target node, that must be via a shortest possible path",
+          "isCorrect": true,
+          "feedback": "Correct -- since BFS fully processes each distance level before moving to the next, the target can't be reached through a shorter route that BFS would have found first."
+        },
+        {
+          "text": "Because BFS only works correctly on graphs with fewer than 100 total nodes",
+          "isCorrect": false,
+          "feedback": "BFS scales to graphs of essentially any size -- its shortest-path guarantee for unweighted graphs comes from its level-by-level exploration order, not a node count limit."
+        },
+        {
+          "text": "Because BFS assigns random weights to each edge before starting its search",
+          "isCorrect": false,
+          "feedback": "BFS doesn't assign or need edge weights at all -- its shortest-path property specifically applies to unweighted graphs, based on edge COUNT."
+        },
+        {
+          "text": "Because BFS always visits every single node in the graph before stopping, even after finding the target",
+          "isCorrect": false,
+          "feedback": "BFS can stop as soon as the target node is first reached -- it doesn't need to continue visiting every remaining node afterward."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about spreading outward evenly in rings, like ripples from a dropped stone.",
+        "medium": "Everything at the current 'ring' of distance from the start gets visited before moving one ring farther out.",
+        "easy": "Nodes that are the same number of steps away from the start all get visited together, as a full batch, before the search moves one step farther out."
+      },
+      "medium": {
+        "hard": "Think about a waiting line where whoever got in line first gets served first.",
+        "medium": "This structure lets discovered-but-not-yet-visited nodes wait in the exact order they were found.",
+        "easy": "A structure that lets whoever got in line first also leave first keeps discovery order intact, which produces the level-by-level pattern."
+      },
+      "hard": {
+        "hard": "Think about whether it's possible for this algorithm to discover a shorter route to the target AFTER it has already found a longer one.",
+        "medium": "Because every closer node gets fully explored before any farther node, a shorter path to the target would always be found first.",
+        "easy": "Because this search always finishes with all closer nodes before touching farther ones, the very first time it lands on the target, there's no way a shorter route could exist."
+      }
+    }
+  },
+  {
+    "topic": "depth-first search",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In depth-first search (DFS) on a graph or tree, what is the general exploration strategy?",
+      "options": [
+        {
+          "text": "Follow a single path as far as possible before backtracking to explore other branches",
+          "isCorrect": true,
+          "feedback": "Correct -- DFS commits to going deep down one path first, only backing up once it hits a dead end."
+        },
+        {
+          "text": "Visit every node at the same distance from the start before going any farther",
+          "isCorrect": false,
+          "feedback": "That describes breadth-first search's level-by-level approach, not depth-first search's deep-dive-first strategy."
+        },
+        {
+          "text": "Visit nodes in a completely random order with no defined pattern",
+          "isCorrect": false,
+          "feedback": "DFS follows a specific, deterministic deep-first order -- it isn't random."
+        },
+        {
+          "text": "Only visit the single node closest to the starting point",
+          "isCorrect": false,
+          "feedback": "DFS aims to explore as much of the graph as it can reach, diving deep along paths, not stopping at just the closest node."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Which data structure or mechanism is naturally associated with implementing depth-first search?",
+      "options": [
+        {
+          "text": "A stack (last-in, first-out), whether used explicitly or implicitly via function call recursion",
+          "isCorrect": true,
+          "feedback": "Correct -- DFS's 'go deep, then backtrack' behavior naturally matches a stack's last-in-first-out order, which is also how recursive function calls behave."
+        },
+        {
+          "text": "A queue (first-in, first-out)",
+          "isCorrect": false,
+          "feedback": "A queue is the structure typically associated with breadth-first search, not depth-first search."
+        },
+        {
+          "text": "A fixed-size grid with a set number of rows and columns",
+          "isCorrect": false,
+          "feedback": "A fixed grid isn't the mechanism behind DFS's traversal order -- a stack (or equivalent recursion) is."
+        },
+        {
+          "text": "A single variable that can only ever hold one value at a time",
+          "isCorrect": false,
+          "feedback": "DFS needs to track potentially many nodes waiting to be explored or backtracked to, which a single variable can't hold -- a stack-like structure is needed."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "When performing depth-first search on a graph that contains cycles, what precaution must be taken to prevent the algorithm from running forever?",
+      "options": [
+        {
+          "text": "The algorithm must keep track of already-visited nodes and avoid revisiting them",
+          "isCorrect": true,
+          "feedback": "Correct -- without tracking visited nodes, a cycle could cause DFS to loop back around the same nodes endlessly."
+        },
+        {
+          "text": "The graph must be converted into a tree before DFS can be run on it at all",
+          "isCorrect": false,
+          "feedback": "DFS can be run directly on general graphs, including ones with cycles -- it just needs to track visited nodes, not require converting the graph into a tree first."
+        },
+        {
+          "text": "Every edge in the graph must first be removed and re-added in a specific new order",
+          "isCorrect": false,
+          "feedback": "There's no need to restructure the graph's edges -- simply tracking visited nodes is sufficient to handle cycles safely."
+        },
+        {
+          "text": "The algorithm must only be allowed to run for a fixed number of seconds before being forcibly stopped",
+          "isCorrect": false,
+          "feedback": "A time-based cutoff isn't the standard solution -- properly tracking visited nodes correctly prevents infinite looping in the first place."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Picture diving all the way down one single path before ever trying a different branch.",
+        "medium": "This strategy commits to one direction fully, backing up only once it truly can't go any farther.",
+        "easy": "It goes as far down one single branch as it possibly can, and only turns back to try a different branch once that path is fully exhausted."
+      },
+      "medium": {
+        "hard": "Think about a pile where you can only add or remove from the very top.",
+        "medium": "This structure's last-in-first-out behavior naturally matches the 'go deep, then back up' pattern of this search.",
+        "easy": "Whether it's built directly or comes for free through how recursive function calls pile up and then unwind, that piling-up-and-peeling-back behavior is what drives the dive-then-backtrack pattern."
+      },
+      "hard": {
+        "hard": "Think about what could go wrong if the algorithm followed a loop of connections back to somewhere it had already been.",
+        "medium": "Without remembering where it's already been, the search could keep circling the same loop of nodes forever.",
+        "easy": "Explicitly marking and checking for already-visited nodes is what prevents the search from endlessly circling back through a cycle."
+      }
+    }
+  },
+  {
+    "topic": "dynamic programming",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the core idea behind dynamic programming as a problem-solving technique?",
+      "options": [
+        {
+          "text": "Breaking a problem into overlapping subproblems and storing (or 'remembering') their solutions to avoid recomputing them",
+          "isCorrect": true,
+          "feedback": "Correct -- dynamic programming's key insight is reusing previously computed results for subproblems that recur."
+        },
+        {
+          "text": "Randomly guessing possible solutions until one happens to work",
+          "isCorrect": false,
+          "feedback": "Dynamic programming is a systematic, deliberate technique -- it doesn't rely on random guessing."
+        },
+        {
+          "text": "Always picking whichever option looks best at the current single step, without reconsidering it later",
+          "isCorrect": false,
+          "feedback": "That describes a greedy algorithm's approach -- dynamic programming instead carefully solves and stores results for subproblems that may recur."
+        },
+        {
+          "text": "Running a program on multiple separate computers connected over a network",
+          "isCorrect": false,
+          "feedback": "Dynamic programming is an algorithmic technique, not a description of running code across networked machines."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What kind of problem structure is generally required for dynamic programming to be an effective technique?",
+      "options": [
+        {
+          "text": "The problem must have overlapping subproblems and 'optimal substructure', where an optimal solution can be built from optimal solutions to smaller subproblems",
+          "isCorrect": true,
+          "feedback": "Correct -- without subproblems recurring and combining nicely, there's nothing to save and reuse, so dynamic programming loses its advantage."
+        },
+        {
+          "text": "The problem must involve exclusively sorting numbers into ascending order",
+          "isCorrect": false,
+          "feedback": "Dynamic programming applies to many kinds of problems beyond just sorting -- what matters is overlapping subproblems and optimal substructure, not the specific task of sorting."
+        },
+        {
+          "text": "The problem must have no more than two possible solutions to choose between",
+          "isCorrect": false,
+          "feedback": "Dynamic programming can handle problems with vastly more than two possible solutions -- the key requirement is about subproblem structure, not solution count."
+        },
+        {
+          "text": "The problem must be solvable using only a single line of code",
+          "isCorrect": false,
+          "feedback": "Code length has nothing to do with whether dynamic programming applies -- the requirement is about the problem's underlying subproblem structure."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is the key difference between the 'memoization' (top-down) and 'tabulation' (bottom-up) approaches to implementing dynamic programming?",
+      "options": [
+        {
+          "text": "Memoization solves the problem recursively, caching results for subproblems as they're first encountered, while tabulation iteratively builds up a table of results starting from the smallest subproblems",
+          "isCorrect": true,
+          "feedback": "Correct -- both approaches avoid redundant recomputation, but they differ in whether they start from the top and recurse down, or start from the bottom and build up."
+        },
+        {
+          "text": "Memoization is only usable on numbers, while tabulation is only usable on text",
+          "isCorrect": false,
+          "feedback": "Both approaches apply broadly to many kinds of problems and data -- the real difference is recursive-and-cached versus iterative-and-built-up, not the data type involved."
+        },
+        {
+          "text": "Memoization and tabulation are simply two different names for the exact same identical process",
+          "isCorrect": false,
+          "feedback": "They're related but structurally distinct approaches -- one works top-down and recursively, the other bottom-up and iteratively."
+        },
+        {
+          "text": "Memoization requires no extra memory at all, while tabulation always uses more memory than the original problem itself",
+          "isCorrect": false,
+          "feedback": "Both approaches typically use extra memory to store subproblem results -- the real distinction between them is about their top-down/recursive versus bottom-up/iterative structure, not this claimed memory usage difference."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about what happens to a naive recursive solution's runtime when it keeps solving the exact same smaller question again and again.",
+        "medium": "The technique's core trick is to avoid ever solving the same smaller version of the problem twice.",
+        "easy": "Once a smaller piece of the problem has been solved, its answer gets tucked away and reused instead of being worked out all over again each time it comes up."
+      },
+      "medium": {
+        "hard": "Think about whether solving smaller versions of the problem actually helps you build the full answer.",
+        "medium": "The problem needs to keep generating the exact same smaller subproblems over and over as you work through it.",
+        "easy": "It needs subproblems that keep repeating again and again, plus the property that stitching together the best answers to the small pieces always gives you the best answer to the whole thing."
+      },
+      "hard": {
+        "hard": "Think about whether the solving process starts from the original big problem, or starts from the tiniest pieces first.",
+        "medium": "One version works top-down with recursion, saving answers as it goes; the other works bottom-up instead.",
+        "easy": "Recursing top-down while caching results as they're discovered describes one approach; iteratively filling in a table bottom-up from the smallest subproblems describes the other."
+      }
+    }
+  },
+  {
+    "topic": "greedy algorithms",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the defining approach of a 'greedy' algorithm?",
+      "options": [
+        {
+          "text": "At each step, it picks whatever option looks best right now, without reconsidering that choice later",
+          "isCorrect": true,
+          "feedback": "Correct -- a greedy algorithm commits to locally optimal choices step by step, hoping they add up to a good overall solution."
+        },
+        {
+          "text": "It tries every single possible combination of choices before picking the best one",
+          "isCorrect": false,
+          "feedback": "Trying every possible combination describes an exhaustive or brute-force approach -- a greedy algorithm instead commits to the best-looking LOCAL choice at each step."
+        },
+        {
+          "text": "It solves a problem by breaking it into overlapping subproblems and storing their results",
+          "isCorrect": false,
+          "feedback": "That describes dynamic programming's approach, not a greedy algorithm's step-by-step local decision-making."
+        },
+        {
+          "text": "It randomly selects choices with no regard for which option looks better",
+          "isCorrect": false,
+          "feedback": "A greedy algorithm deliberately picks whichever option looks best at each step -- it isn't random."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why can a greedy algorithm sometimes fail to produce the truly optimal overall solution to a problem?",
+      "options": [
+        {
+          "text": "Because committing to the best-looking local choice at one step can rule out a better overall combination of choices later on",
+          "isCorrect": true,
+          "feedback": "Correct -- greedy algorithms don't reconsider earlier decisions, so a locally attractive choice can end up blocking the globally best solution."
+        },
+        {
+          "text": "Because greedy algorithms are physically incapable of running on modern computers",
+          "isCorrect": false,
+          "feedback": "Greedy algorithms run perfectly well on ordinary computers -- their limitation is about the QUALITY of solution they can guarantee, not whether they can execute."
+        },
+        {
+          "text": "Because greedy algorithms always take longer to run than any other kind of algorithm",
+          "isCorrect": false,
+          "feedback": "Greedy algorithms are often notably FAST precisely because they don't reconsider past choices -- their risk is suboptimal results, not slow speed."
+        },
+        {
+          "text": "Because greedy algorithms require a problem to have absolutely no possible solutions",
+          "isCorrect": false,
+          "feedback": "Greedy algorithms are applied specifically to problems that do have solutions -- their limitation is that the solution reached might not be the best possible one."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_multiple",
+      "text": "Which of the following are examples of classic problems where a greedy algorithm is known to produce a provably optimal solution? Select all that apply.",
+      "options": [
+        {
+          "text": "Finding a minimum spanning tree of a weighted graph, using an algorithm like Kruskal's or Prim's",
+          "isCorrect": true,
+          "feedback": "Correct -- both of these classic algorithms are greedy and are proven to find a truly optimal (minimum-weight) spanning tree."
+        },
+        {
+          "text": "Making change for a currency using the fewest coins, when the coin denominations follow certain well-behaved systems (like many real-world currencies)",
+          "isCorrect": true,
+          "feedback": "Correct -- for many standard coin systems, greedily picking the largest usable coin at each step does yield the fewest total coins."
+        },
+        {
+          "text": "Solving the general 0/1 knapsack problem (where each item can only be taken whole or not at all) to guarantee the truly optimal solution in every case",
+          "isCorrect": false,
+          "feedback": "The 0/1 knapsack problem is a classic example where a greedy approach can fail to find the truly optimal solution -- it's typically solved with dynamic programming instead."
+        },
+        {
+          "text": "Finding the single absolute shortest route that visits every city exactly once and returns to the start (the traveling salesman problem), guaranteed optimally",
+          "isCorrect": false,
+          "feedback": "The traveling salesman problem has no known efficient greedy method guaranteed to find the truly optimal route -- greedy approaches there only give approximate solutions."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about grabbing whatever looks like the best deal right this second, without worrying about what comes after.",
+        "medium": "The approach never goes back to reconsider a decision it already made at an earlier step.",
+        "easy": "Step by step, it locks in whatever choice seems best at that exact moment and never looks back to second-guess it."
+      },
+      "medium": {
+        "hard": "Think about a choice that seems great right now but that quietly closes off a better path later on.",
+        "medium": "Because earlier choices are never revisited, a locally great pick can end up blocking an even better overall combination.",
+        "easy": "Because there's no going back to undo an earlier pick, a choice that looked great in the moment can quietly close the door on a better combination further down the line."
+      },
+      "hard": {
+        "hard": "Think about which classic problems are famous for greedy approaches actually working perfectly, versus ones famous for greedy approaches falling short.",
+        "medium": "Two of the four listed problems are textbook successes for greedy methods; the other two are textbook cases where greedy approaches are known to fall short of the truly optimal answer.",
+        "easy": "The two genuine greedy success stories here are ones like building a network by always grabbing the cheapest available connection next, and giving change by always grabbing the largest coin that still fits."
+      }
+    }
+  },
+  {
+    "topic": "backtracking algorithms",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general idea behind a 'backtracking' algorithm?",
+      "options": [
+        {
+          "text": "It builds a solution step by step, and whenever it reaches a dead end, it undoes ('backtracks') the last step and tries a different option",
+          "isCorrect": true,
+          "feedback": "Correct -- backtracking explores possible solutions incrementally, abandoning paths that can't lead to success and trying alternatives instead."
+        },
+        {
+          "text": "It solves a problem by trying every possible option all at once, in parallel, with no undoing involved",
+          "isCorrect": false,
+          "feedback": "Backtracking specifically involves undoing choices that lead to dead ends, one step at a time -- it isn't about trying everything simultaneously."
+        },
+        {
+          "text": "It only ever tries a single fixed sequence of steps, with no ability to change course",
+          "isCorrect": false,
+          "feedback": "The defining feature of backtracking is precisely its ability to change course and try alternatives after hitting a dead end."
+        },
+        {
+          "text": "It requires the problem to already have exactly one possible solution before starting",
+          "isCorrect": false,
+          "feedback": "Backtracking is commonly used on problems with many possible candidate solutions, actively searching among them, not requiring exactly one to already be known."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In a classic backtracking example like solving a Sudoku puzzle, what triggers the algorithm to backtrack?",
+      "options": [
+        {
+          "text": "Placing a number that leads to a state where no valid number can be placed in some later cell, given the current constraints",
+          "isCorrect": true,
+          "feedback": "Correct -- hitting a dead end where the current partial solution can't be completed validly is exactly what triggers a backtrack to try a different earlier choice."
+        },
+        {
+          "text": "Successfully filling in every single cell in the entire puzzle correctly",
+          "isCorrect": false,
+          "feedback": "Successfully completing the puzzle is the desired end goal, not a trigger for backtracking -- backtracking is triggered by hitting dead ends, not by success."
+        },
+        {
+          "text": "Reaching the very first cell of the puzzle before placing any numbers at all",
+          "isCorrect": false,
+          "feedback": "Backtracking is triggered by hitting an unsolvable dead end partway through, not simply by starting at the first cell."
+        },
+        {
+          "text": "The puzzle being printed out on paper instead of solved on a computer",
+          "isCorrect": false,
+          "feedback": "Whether the puzzle is on paper or a computer has nothing to do with what triggers a backtracking step -- a dead end in the current partial solution does."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How does backtracking typically avoid the full cost of exhaustively trying every possible combination of choices?",
+      "options": [
+        {
+          "text": "By abandoning ('pruning') a partial solution as soon as it's clear that it cannot possibly lead to a valid complete solution, rather than continuing to build it out further",
+          "isCorrect": true,
+          "feedback": "Correct -- this early pruning is what makes backtracking generally much faster in practice than a naive brute-force search that always builds out every combination fully."
+        },
+        {
+          "text": "By skipping the vast majority of valid solutions entirely, without ever checking whether they're valid",
+          "isCorrect": false,
+          "feedback": "Backtracking aims to still find valid solutions if they exist -- it prunes only paths already known to be dead ends, not valid candidate paths."
+        },
+        {
+          "text": "By reducing the size of the original problem before the algorithm even begins running",
+          "isCorrect": false,
+          "feedback": "Backtracking doesn't shrink the original problem beforehand -- it prunes hopeless partial solutions DURING the search itself, as it goes."
+        },
+        {
+          "text": "By running many separate copies of the algorithm on many different computers simultaneously",
+          "isCorrect": false,
+          "feedback": "Backtracking's typical efficiency gain comes from pruning dead-end paths early during a single search process, not from distributing work across multiple machines."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about building something step by step, and being willing to undo a step if it turns out to be a mistake.",
+        "medium": "When a chosen path leads nowhere useful, this approach steps back and tries a different option instead.",
+        "easy": "It builds a candidate solution incrementally, undoing the most recent step and trying an alternative whenever it hits a dead end."
+      },
+      "medium": {
+        "hard": "Think about the specific moment where continuing down the current path becomes clearly impossible.",
+        "medium": "The trigger is discovering that some later requirement simply can't be satisfied given the choices made so far.",
+        "easy": "Reaching a state where no valid choice remains for some later cell, given the current partial arrangement, is exactly what triggers stepping back to try a different earlier choice."
+      },
+      "hard": {
+        "hard": "Think about not bothering to keep building out a path once you already know it's doomed.",
+        "medium": "Recognizing early that a partial attempt can't possibly succeed lets the algorithm skip a lot of wasted further effort on it.",
+        "easy": "Cutting off a doomed partial attempt the moment it's recognized as unsalvageable is what saves this technique from having to fully explore every possible combination."
+      }
+    }
+  },
+  {
+    "topic": "divide and conquer",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general strategy behind a 'divide and conquer' algorithm?",
+      "options": [
+        {
+          "text": "Break a problem into smaller subproblems of the same type, solve each subproblem, and then combine their solutions into the overall answer",
+          "isCorrect": true,
+          "feedback": "Correct -- this break-solve-combine pattern is the defining structure of divide and conquer algorithms."
+        },
+        {
+          "text": "Solve the exact same single problem repeatedly, expecting a different answer each time",
+          "isCorrect": false,
+          "feedback": "Divide and conquer specifically breaks the ORIGINAL problem into smaller pieces rather than repeatedly re-solving the same unchanged problem."
+        },
+        {
+          "text": "Always pick whichever choice looks best at the current step, without splitting the problem into pieces at all",
+          "isCorrect": false,
+          "feedback": "That describes a greedy algorithm's approach -- divide and conquer specifically involves splitting the problem into smaller subproblems first."
+        },
+        {
+          "text": "Store solutions to overlapping subproblems to avoid recomputing them",
+          "isCorrect": false,
+          "feedback": "That describes dynamic programming's defining trait -- divide and conquer's core idea is splitting into independent subproblems, solving, and combining."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Both merge sort and quicksort are commonly cited as examples of divide and conquer algorithms. What do they have in common that fits this pattern?",
+      "options": [
+        {
+          "text": "Both break the list into smaller pieces, sort each piece (often by recursively applying the same approach), and combine the results into a fully sorted list",
+          "isCorrect": true,
+          "feedback": "Correct -- despite differing in HOW they split and combine, both algorithms follow the same divide-solve-combine structural pattern."
+        },
+        {
+          "text": "Both algorithms always achieve the same O(n log n) running time no matter how the input happens to be arranged",
+          "isCorrect": false,
+          "feedback": "Their actual running times can differ noticeably depending on input and implementation -- what they share structurally is the divide-solve-combine pattern, not identical timing."
+        },
+        {
+          "text": "Both algorithms sort by making repeated passes and swapping any two adjacent elements that are found out of order",
+          "isCorrect": false,
+          "feedback": "That describes a simpler approach like bubble sort's adjacent-swap process -- merge sort and quicksort instead split the list into pieces, sort each piece, and combine the results."
+        },
+        {
+          "text": "Both algorithms need the entire list to already fit in memory before they can process any of it",
+          "isCorrect": false,
+          "feedback": "That's a consideration for external sorting on huge datasets, not what defines these two -- what unites merge sort and quicksort here is their shared divide-solve-combine structure."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Divide and conquer algorithms are often analyzed using a 'recurrence relation' describing their running time. Why is this analysis useful?",
+      "options": [
+        {
+          "text": "It captures how the cost of splitting and combining at each level, together with how many smaller subproblems are created, determines the algorithm's overall time complexity",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of analysis (sometimes solved using tools like the Master Theorem) is exactly how the O(n log n) bounds for algorithms like merge sort are derived."
+        },
+        {
+          "text": "It tells you the exact worst-case running time in seconds on any specific computer",
+          "isCorrect": false,
+          "feedback": "A recurrence relation captures an algorithm's TIME complexity as an abstract growth rate -- it deliberately ignores hardware specifics, so it can't give you an exact number of seconds."
+        },
+        {
+          "text": "It only works for algorithms that never use recursion",
+          "isCorrect": false,
+          "feedback": "Recurrence relations are specifically built to describe recursive processes -- they model exactly this kind of self-referential splitting, not non-recursive algorithms."
+        },
+        {
+          "text": "It only counts how many times the problem gets divided, without factoring in the cost of combining the results back together",
+          "isCorrect": false,
+          "feedback": "A recurrence relation captures both how many subproblems are created AND the cost of splitting/combining at each level -- it isn't limited to just counting divisions while ignoring combine overhead."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about how you'd manage an overwhelming task by not tackling it all at once, but instead working with smaller, similar-shaped versions of it that get pulled back together at the end.",
+        "medium": "Smaller versions of the SAME kind of problem get solved individually, and their answers are then combined.",
+        "easy": "The pattern is: divide into smaller same-type subproblems, conquer (solve) each one, then combine the results into the final answer."
+      },
+      "medium": {
+        "hard": "Focus on the shared shape of their process, even though the details of splitting and combining differ between them.",
+        "medium": "Both take the original list, work on smaller pieces of it (often via recursion), and then bring the pieces back together into a full result.",
+        "easy": "Both follow the exact same underlying pattern -- split into smaller pieces, solve each piece, recombine -- even though their specific splitting and combining steps differ."
+      },
+      "hard": {
+        "hard": "Think about expressing 'the cost of the whole problem' in terms of 'the cost of its smaller pieces, plus a bit extra.'",
+        "medium": "This kind of expression relates the running time of the full-size problem to the running time of its smaller subproblems, plus the overhead of splitting and combining.",
+        "easy": "Because it expresses total cost in terms of subproblem count, subproblem size, and split/combine overhead, this analysis is exactly how bounds like O(n log n) get derived for these algorithms."
+      }
+    }
+  },
+  {
+    "topic": "Dijkstra's algorithm",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What problem is Dijkstra's algorithm designed to solve?",
+      "options": [
+        {
+          "text": "Finding the shortest path from a starting node to other nodes in a graph with non-negative edge weights",
+          "isCorrect": true,
+          "feedback": "Correct -- Dijkstra's algorithm efficiently computes shortest paths in graphs where edges carry non-negative weighted costs."
+        },
+        {
+          "text": "Sorting a list of numbers into ascending order",
+          "isCorrect": false,
+          "feedback": "Sorting numbers is a different kind of problem entirely -- Dijkstra's algorithm is specifically about finding shortest paths in a weighted graph."
+        },
+        {
+          "text": "Compressing a file to take up less storage space",
+          "isCorrect": false,
+          "feedback": "File compression is unrelated to Dijkstra's algorithm, which is about shortest paths through a weighted graph."
+        },
+        {
+          "text": "Encrypting a message so it can only be read by an intended recipient",
+          "isCorrect": false,
+          "feedback": "Encryption is a separate concern from Dijkstra's algorithm, which focuses on finding shortest paths in a graph."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does Dijkstra's algorithm decide which node to explore next at each step?",
+      "options": [
+        {
+          "text": "It always picks the unvisited node with the smallest currently-known total distance from the starting node",
+          "isCorrect": true,
+          "feedback": "Correct -- greedily expanding the closest known unvisited node first is the key mechanism behind Dijkstra's algorithm."
+        },
+        {
+          "text": "It picks a node completely at random from among all unvisited nodes",
+          "isCorrect": false,
+          "feedback": "Dijkstra's algorithm makes a deliberate choice based on currently-known shortest distance, not a random pick."
+        },
+        {
+          "text": "It always explores the node that is alphabetically first by name",
+          "isCorrect": false,
+          "feedback": "Node names and alphabetical order play no role -- the algorithm is driven entirely by currently-known distance values."
+        },
+        {
+          "text": "It picks whichever node has the most total connections (edges) to other nodes",
+          "isCorrect": false,
+          "feedback": "The number of connections a node has isn't the deciding factor -- current known distance from the start is."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why does Dijkstra's algorithm fail to guarantee correct results on a graph that contains negative edge weights?",
+      "options": [
+        {
+          "text": "Because once a node's shortest distance is finalized, the algorithm never revisits it, but a later negative-weight edge could actually offer an even shorter path to that already-finalized node",
+          "isCorrect": true,
+          "feedback": "Correct -- Dijkstra's greedy 'finalize and move on' approach assumes distances can only increase as you explore further, an assumption that negative weights can violate."
+        },
+        {
+          "text": "Because negative weights would force the algorithm into an infinite loop it has no way to detect",
+          "isCorrect": false,
+          "feedback": "Dijkstra's algorithm still terminates on a finite graph regardless of edge weights -- its actual problem with negative weights is the greedy finalize-and-never-revisit assumption, not looping forever."
+        },
+        {
+          "text": "Because the sum of a negative and a positive edge weight is mathematically undefined",
+          "isCorrect": false,
+          "feedback": "Adding a negative and a positive number is perfectly well-defined arithmetic -- the algorithm's failure with negative weights is a logical limitation of its greedy approach, not a math problem."
+        },
+        {
+          "text": "Because exploring negative weights would require checking exponentially many possible paths",
+          "isCorrect": false,
+          "feedback": "The number of paths considered doesn't explode because of negative weights -- the real issue is that the algorithm's greedy 'finalize and never revisit' rule can be invalidated by a later negative-weight edge."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about a map application trying to compute the quickest route between two points, where each road segment has a cost.",
+        "medium": "It works on graphs where edges carry a cost (weight) and finds the least-costly route from a starting point.",
+        "easy": "It specifically finds shortest paths in graphs where edge weights are never negative."
+      },
+      "medium": {
+        "hard": "Think about which unvisited node currently looks 'closest so far' based on everything explored up to this point.",
+        "medium": "The algorithm greedily commits to whichever unvisited node has the smallest known distance-so-far.",
+        "easy": "Whichever unvisited node currently has the lowest total distance tallied up from the start gets picked next, every single time."
+      },
+      "hard": {
+        "hard": "Think about what could go wrong if a path's cost could actually go DOWN later on, contradicting an earlier assumption.",
+        "medium": "The algorithm assumes that once it locks in a node's shortest distance, nothing encountered later could ever beat it -- negative weights break that assumption.",
+        "easy": "Once the algorithm has locked in and moved past a node's distance, it has no way to go back and fix it -- even if a negative-weight edge shows up later offering a cheaper route to that same node."
+      }
+    }
+  },
+  {
+    "topic": "space complexity",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does an algorithm's 'space complexity' measure?",
+      "options": [
+        {
+          "text": "How much additional memory the algorithm needs, as a function of the size of its input",
+          "isCorrect": true,
+          "feedback": "Correct -- space complexity is the memory analog of time complexity, describing how memory usage scales with input size."
+        },
+        {
+          "text": "How many seconds the algorithm takes to finish running",
+          "isCorrect": false,
+          "feedback": "That describes TIME complexity, not space complexity -- space complexity is about memory usage, not runtime duration."
+        },
+        {
+          "text": "How many lines of code the algorithm's source file contains",
+          "isCorrect": false,
+          "feedback": "Source code line count is a separate measure of a program's text length, not a measure of the memory it uses while actually running."
+        },
+        {
+          "text": "How many programmers were involved in writing the algorithm",
+          "isCorrect": false,
+          "feedback": "The number of contributing programmers has nothing to do with space complexity, which is strictly about memory usage during execution."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What does it mean when an algorithm is described as having O(1) ('constant') space complexity?",
+      "options": [
+        {
+          "text": "The amount of additional memory it uses doesn't grow as the input size increases",
+          "isCorrect": true,
+          "feedback": "Correct -- an O(1) space algorithm might use a small, fixed handful of extra variables regardless of how large the input gets."
+        },
+        {
+          "text": "The algorithm uses exactly one byte of memory in total, no matter what",
+          "isCorrect": false,
+          "feedback": "O(1) doesn't mean literally 'one byte' -- it means the extra memory used stays constant (doesn't grow) as input size increases, whatever that fixed amount happens to be."
+        },
+        {
+          "text": "The algorithm can only process a single input value at a time",
+          "isCorrect": false,
+          "feedback": "O(1) space complexity describes memory usage scaling, not a restriction on how many input values can be processed."
+        },
+        {
+          "text": "The algorithm finishes running in exactly one second",
+          "isCorrect": false,
+          "feedback": "Running time in seconds is a time complexity concern, not what O(1) SPACE complexity describes."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Consider two different approaches to computing a value: one using recursion, and one using an equivalent loop-based (iterative) version. Why might the recursive version have notably higher space complexity, even if both compute the same result?",
+      "options": [
+        {
+          "text": "Each recursive call typically adds a new frame to the call stack, so the memory used by pending recursive calls can grow with the depth of the recursion, unlike a loop which can often reuse the same few variables",
+          "isCorrect": true,
+          "feedback": "Correct -- this is a common tradeoff between recursion and iteration: recursion's readability can come at the cost of extra stack memory proportional to recursion depth."
+        },
+        {
+          "text": "Because recursive functions are always written in a completely different programming language than loop-based code",
+          "isCorrect": false,
+          "feedback": "Recursion and iteration are both just different control-flow techniques available within the SAME programming language -- the memory difference comes from the call stack, not a language difference."
+        },
+        {
+          "text": "Because loops are physically incapable of solving the same problems that recursive functions can solve",
+          "isCorrect": false,
+          "feedback": "Loops and recursion can very often solve the very same problems -- the difference being discussed is about memory usage patterns, not raw capability."
+        },
+        {
+          "text": "Because recursive functions must always store their entire input data set twice",
+          "isCorrect": false,
+          "feedback": "Recursive functions don't inherently duplicate the whole input twice -- the extra memory usage specifically comes from the growing stack of pending call frames."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about how much extra memory gets used up as the amount of input data grows.",
+        "medium": "This measure tracks memory usage as a function of input size, the memory-focused sibling of time complexity.",
+        "easy": "It's specifically about additional memory required, scaling with input size, distinct from how long the algorithm takes to run."
+      },
+      "medium": {
+        "hard": "Think about whether the extra memory used grows at all as the input gets bigger and bigger.",
+        "medium": "This label means the extra memory usage stays flat, not growing no matter how large the input becomes.",
+        "easy": "A fixed, non-growing amount of extra memory usage, regardless of input size, is exactly what this specific space complexity label describes."
+      },
+      "hard": {
+        "hard": "Think about what has to be remembered while a function is 'waiting' for a call it made to itself to finish.",
+        "medium": "Each pending call adds its own tracked frame, and those frames pile up until the deepest call finally returns.",
+        "easy": "Because every pending call sits there waiting until its inner call finishes, the deeper the recursion goes, the more of these waiting frames pile up -- something a loop simply doesn't accumulate."
+      }
+    }
+  },
+  {
+    "topic": "memoization",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'memoization' in programming?",
+      "options": [
+        {
+          "text": "Caching (storing) the results of expensive function calls so that the same inputs don't need to be recomputed later",
+          "isCorrect": true,
+          "feedback": "Correct -- memoization trades some extra memory for avoiding repeated, costly recomputation."
+        },
+        {
+          "text": "Writing comments in code to help other programmers understand it",
+          "isCorrect": false,
+          "feedback": "Writing explanatory comments is a documentation practice -- memoization specifically refers to caching computed results for reuse."
+        },
+        {
+          "text": "Memorizing an entire program's source code by hand",
+          "isCorrect": false,
+          "feedback": "Memoization is a caching technique applied within a program, not a person memorizing code by heart."
+        },
+        {
+          "text": "Permanently deleting a function's results immediately after they are used once",
+          "isCorrect": false,
+          "feedback": "Memoization is about KEEPING results around for reuse -- it's the opposite of immediately discarding them."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is memoization especially helpful when computing something like the Fibonacci sequence using naive recursion?",
+      "options": [
+        {
+          "text": "Naive recursive Fibonacci recomputes the same smaller Fibonacci values repeatedly, and memoization avoids that redundant recomputation by reusing cached results",
+          "isCorrect": true,
+          "feedback": "Correct -- without memoization, naive recursive Fibonacci grows exponentially slower due to massively repeated subcomputations."
+        },
+        {
+          "text": "Because memoization changes the actual mathematical definition of the Fibonacci sequence",
+          "isCorrect": false,
+          "feedback": "Memoization is purely an implementation optimization -- it doesn't alter the underlying mathematical definition of the sequence being computed."
+        },
+        {
+          "text": "Because memoization allows a program to skip computing the Fibonacci sequence entirely",
+          "isCorrect": false,
+          "feedback": "Memoization still computes each distinct required value at least once -- it just avoids recomputing values that have already been calculated."
+        },
+        {
+          "text": "Because memoization requires converting the entire program into a completely different programming language",
+          "isCorrect": false,
+          "feedback": "Memoization is applied within a single program in whatever language it's already written in -- it doesn't require switching languages."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a potential downside to be aware of when applying memoization to a function?",
+      "options": [
+        {
+          "text": "The cache of stored results consumes additional memory, which can grow significantly if there are many distinct input values to remember",
+          "isCorrect": true,
+          "feedback": "Correct -- memoization is a classic time-versus-memory tradeoff: faster repeated calls, at the cost of memory spent storing cached results."
+        },
+        {
+          "text": "Memoization always makes a function's results become incorrect",
+          "isCorrect": false,
+          "feedback": "When applied correctly, memoization preserves a function's correctness -- it just avoids recomputing already-known correct results; the tradeoff is memory usage, not correctness."
+        },
+        {
+          "text": "Memoization requires permanently disabling recursion in the entire codebase",
+          "isCorrect": false,
+          "feedback": "Memoization can be applied to recursive functions directly, and doesn't require disabling recursion elsewhere in the codebase."
+        },
+        {
+          "text": "Memoization can only be used on functions that take zero arguments",
+          "isCorrect": false,
+          "feedback": "Memoization is commonly applied to functions that take one or more arguments, caching results keyed by those argument values."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about jotting down an answer you've already worked out, so you don't have to work it out again later.",
+        "medium": "This technique stores previously computed results so they can simply be looked up again instead of recalculated.",
+        "easy": "It's a caching technique: once a function's result for a given input is computed, that result gets stored for instant reuse later."
+      },
+      "medium": {
+        "hard": "Think about how many times the exact same smaller calculation gets repeated in a naive recursive approach.",
+        "medium": "Without this technique, naive recursive approaches to problems like this one can end up solving identical smaller subproblems over and over again.",
+        "easy": "Caching already-computed smaller values prevents the massive redundant recomputation that naive recursive approaches to problems like this one are prone to."
+      },
+      "hard": {
+        "hard": "Think about what has to be paid for in order to gain the benefit of not recomputing things.",
+        "medium": "The savings in repeated computation time come at a cost measured in a different resource entirely.",
+        "easy": "Every cached answer takes up memory of its own, and if the function gets called with a large number of different inputs, that stash of saved answers can balloon considerably."
+      }
+    }
+  },
+  {
+    "topic": "topological sorting",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What kind of graph can a topological sort be performed on?",
+      "options": [
+        {
+          "text": "A directed graph with no cycles (a 'directed acyclic graph', or DAG)",
+          "isCorrect": true,
+          "feedback": "Correct -- topological sorting specifically requires a directed graph free of cycles, so a consistent ordering respecting all edge directions can exist."
+        },
+        {
+          "text": "Any undirected graph, regardless of whether it contains cycles",
+          "isCorrect": false,
+          "feedback": "Topological sorting specifically requires DIRECTED edges to define an ordering -- it doesn't apply to undirected graphs."
+        },
+        {
+          "text": "A graph that contains no edges at all",
+          "isCorrect": false,
+          "feedback": "A topological sort is meaningful precisely because of the directed edges present -- a graph with literally no edges wouldn't need this concept."
+        },
+        {
+          "text": "A graph where every node connects to every other node directly",
+          "isCorrect": false,
+          "feedback": "That describes a fully-connected graph, not specifically the directed-acyclic requirement that topological sorting depends on."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What property must the resulting order satisfy after a topological sort of a directed acyclic graph?",
+      "options": [
+        {
+          "text": "For every directed edge from node A to node B, node A must appear before node B in the resulting order",
+          "isCorrect": true,
+          "feedback": "Correct -- this ordering constraint is exactly what defines a valid topological sort."
+        },
+        {
+          "text": "Every node must appear in alphabetical order by its name",
+          "isCorrect": false,
+          "feedback": "Alphabetical ordering by name isn't the requirement -- the constraint is purely about respecting the direction of every edge."
+        },
+        {
+          "text": "Nodes must be grouped so that all nodes with the same number of connections appear together",
+          "isCorrect": false,
+          "feedback": "Grouping by connection count isn't the requirement for a topological sort -- the actual requirement is respecting edge direction."
+        },
+        {
+          "text": "The order must place the node with the most incoming edges first",
+          "isCorrect": false,
+          "feedback": "Incoming edge count isn't what determines the order -- respecting every directed edge's 'before' relationship is."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Topological sorting is often used to determine a valid order for completing tasks with dependencies (like steps in a build process or course prerequisites). Why does the graph representing such dependencies need to be acyclic for a valid ordering to exist?",
+      "options": [
+        {
+          "text": "A cycle would mean some task indirectly depends on itself being completed first, making it logically impossible to find any order that satisfies every dependency",
+          "isCorrect": true,
+          "feedback": "Correct -- if task A depends on B, B depends on C, and C depends back on A, there's no way to schedule any of them first without violating some dependency."
+        },
+        {
+          "text": "Because a cycle would make the graph contain too many nodes for a computer to process",
+          "isCorrect": false,
+          "feedback": "Node count isn't the issue with cycles -- the issue is a fundamental logical contradiction in ordering, not a size or performance limitation."
+        },
+        {
+          "text": "Because directed edges are not allowed to exist in graphs that contain cycles at all",
+          "isCorrect": false,
+          "feedback": "Directed edges can exist in graphs with cycles just fine -- the issue is specifically that a valid topological ORDER cannot exist when a cycle is present, not that the edges themselves are disallowed."
+        },
+        {
+          "text": "Because a cycle would require every task to be completed at the exact same time",
+          "isCorrect": false,
+          "feedback": "A cycle doesn't demand simultaneous completion -- rather, it creates a circular dependency that makes ANY valid sequential order impossible to construct."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about arrows pointing one way between steps, with no way to loop back around to where you started.",
+        "medium": "The graph's connections must point in a specific direction, and following them can never lead back to where you began.",
+        "easy": "It needs a graph whose connections all point in a consistent direction with absolutely no loop leading back to an earlier point -- a specific, well-known category of graph structure."
+      },
+      "medium": {
+        "hard": "Think about what 'comes before what' according to each arrow in the graph.",
+        "medium": "Whenever one node points to another, the pointing node must show up earlier in the final order.",
+        "easy": "Whenever there's an arrow going from one node to another, the order has to place the arrow's starting point somewhere before its ending point -- for every single arrow in the graph."
+      },
+      "hard": {
+        "hard": "Think about trying to schedule three tasks where each one secretly requires the one before it, in an endless loop.",
+        "medium": "A loop of dependencies means there's no valid starting point -- everything ends up requiring something that requires it back.",
+        "easy": "If a loop of dependencies exists, some task ends up secretly requiring its own prior completion -- and there's simply no place you could put such a task in a straight-line sequence."
+      }
+    }
+  },
+  {
+    "topic": "brute-force algorithms",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What defines a 'brute-force' approach to solving a problem?",
+      "options": [
+        {
+          "text": "Systematically trying all (or nearly all) possible solutions until the correct one is found",
+          "isCorrect": true,
+          "feedback": "Correct -- brute-force approaches rely on exhaustive checking rather than any clever shortcut."
+        },
+        {
+          "text": "Using a clever mathematical shortcut to instantly jump to the correct answer",
+          "isCorrect": false,
+          "feedback": "A clever shortcut is the opposite of brute force -- brute force instead exhaustively checks possibilities without such shortcuts."
+        },
+        {
+          "text": "Guessing a single answer completely at random and stopping immediately, without checking it",
+          "isCorrect": false,
+          "feedback": "Brute force involves systematically checking possibilities, not stopping after a single unchecked random guess."
+        },
+        {
+          "text": "Refusing to attempt to solve the problem at all",
+          "isCorrect": false,
+          "feedback": "A brute-force approach absolutely attempts to solve the problem -- just through exhaustive checking, rather than skipping it."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is a major drawback of using a brute-force approach on a large problem?",
+      "options": [
+        {
+          "text": "The number of possibilities to check can grow extremely large, making the approach impractically slow",
+          "isCorrect": true,
+          "feedback": "Correct -- brute force's exhaustive nature means its running time can explode as the problem size grows, especially for combinatorial problems."
+        },
+        {
+          "text": "A brute-force approach always produces an incorrect final answer",
+          "isCorrect": false,
+          "feedback": "Brute force, by exhaustively checking all possibilities, typically does find a correct answer if one exists -- its drawback is SPEED, not correctness."
+        },
+        {
+          "text": "A brute-force approach cannot be implemented in any programming language",
+          "isCorrect": false,
+          "feedback": "Brute-force approaches can be implemented in virtually any programming language -- the practical drawback is how slow they can become on large inputs."
+        },
+        {
+          "text": "A brute-force approach requires a specialized, one-of-a-kind computer to run",
+          "isCorrect": false,
+          "feedback": "Brute-force approaches run on ordinary computers -- their main drawback is scalability (speed on large inputs), not requiring special hardware."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "In what kind of situation might a programmer deliberately choose a brute-force approach, despite its known scalability drawbacks?",
+      "options": [
+        {
+          "text": "When the problem's input size is small enough that exhaustive checking remains fast enough in practice, or when establishing a simple, clearly-correct baseline to compare cleverer algorithms against",
+          "isCorrect": true,
+          "feedback": "Correct -- for small inputs, brute force can be perfectly practical, and as a baseline, its simplicity makes it easy to trust as a correctness reference."
+        },
+        {
+          "text": "When the problem is guaranteed to have no correct solution at all",
+          "isCorrect": false,
+          "feedback": "Brute force is applied to problems believed to have a findable solution -- choosing it isn't related to a problem having no solution."
+        },
+        {
+          "text": "When the programmer wants the slowest possible program, on purpose, with no other benefit",
+          "isCorrect": false,
+          "feedback": "The realistic reasons to choose brute force are things like small input size or use as a correctness baseline, not simply wanting slowness for its own sake."
+        },
+        {
+          "text": "When the problem must be solved without ever running any code on a computer",
+          "isCorrect": false,
+          "feedback": "Brute-force approaches are still implemented and run as actual code on a computer -- this isn't a scenario that avoids using a computer at all."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about trying every key on a huge keyring, one after another, until one finally opens the door -- no shortcuts, just persistence.",
+        "medium": "This approach relies on exhaustively going through options rather than using any shortcut or insight.",
+        "easy": "Every single plausible answer gets checked, one after another in turn, right up until the correct one is finally located."
+      },
+      "medium": {
+        "hard": "Think about how the number of things to check can balloon as the problem gets bigger.",
+        "medium": "The concern isn't about getting a wrong answer -- it's about how long checking every possibility can take as things scale up.",
+        "easy": "The pile of options that must be checked one by one can balloon so fast as the problem grows that the wait becomes unbearable, long before accuracy is ever in question."
+      },
+      "hard": {
+        "hard": "Think about situations where being slow simply doesn't matter much, or where simplicity itself is the whole point.",
+        "medium": "Small problem sizes keep the slowness from ever becoming an issue -- and sometimes correctness matters more than speed anyway.",
+        "easy": "Either the problem is tiny enough that checking everything doesn't take long, or the point is to have a dead-simple, obviously-correct answer on hand to sanity-check something fancier."
+      }
+    }
+  }
+]

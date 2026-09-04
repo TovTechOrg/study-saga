@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a redox reaction in everyday rusting",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Rusting of iron is an example of what type of chemical reaction?",
+    "options": [
+      {"text": "An oxidation-reduction (redox) reaction", "isCorrect": true, "feedback": "Correct -- rusting involves iron losing electrons (oxidizing) while oxygen gains them (reducing)."},
+      {"text": "A neutralization reaction", "isCorrect": false, "feedback": "Neutralization specifically involves an acid and a base reacting -- rusting is a different category (oxidation-reduction) of reaction."},
+      {"text": "A nuclear reaction", "isCorrect": false, "feedback": "Rusting is an ordinary chemical process, not a nuclear reaction, which would involve changes to atomic nuclei."},
+      {"text": "No reaction occurs during rusting", "isCorrect": false, "feedback": "Rusting is very much a real, observable chemical reaction between iron and oxygen (often with water present)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does rusting typically happen faster in humid or wet environments compared to very dry ones?",
+    "options": [
+      {"text": "Water acts as a medium that facilitates the electron transfer (redox) process between iron and oxygen, speeding up the reaction", "isCorrect": true, "feedback": "Correct -- water helps ions move and interact more effectively, accelerating the overall rusting reaction."},
+      {"text": "Water actually prevents rusting from happening at all", "isCorrect": false, "feedback": "This is backwards -- water generally SPEEDS UP rusting, rather than preventing it, by facilitating the necessary electron transfer process."},
+      {"text": "Humidity has no actual effect on the rusting process", "isCorrect": false, "feedback": "Humidity does have a significant, well-documented effect on rusting rate, generally accelerating it."},
+      {"text": "Rusting only happens underwater, never in humid air", "isCorrect": false, "feedback": "Rusting can happen in humid air (not just fully submerged underwater) -- moisture in the air is enough to facilitate and speed up the reaction."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Galvanized steel (steel coated with a layer of zinc) resists rusting even if the zinc coating gets scratched, exposing the steel underneath. Why does this protection persist even after the coating is damaged?",
+    "options": [
+      {"text": "Zinc is more easily oxidized than iron, so the zinc will preferentially corrode (sacrificially) instead of the exposed iron, as long as some zinc remains in contact", "isCorrect": true, "feedback": "Correct -- this 'sacrificial protection' strategy relies on zinc's greater tendency to oxidize, protecting the iron underneath even with some coating damage."},
+      {"text": "The scratch actually makes the zinc coating irrelevant, and rusting proceeds unaffected regardless", "isCorrect": false, "feedback": "This is incorrect -- the remaining zinc coating continues to provide meaningful sacrificial protection even after a scratch, as long as it's still in electrical contact with the exposed steel."},
+      {"text": "Zinc is less reactive than iron, which is why it protects the steel", "isCorrect": false, "feedback": "This is backwards -- zinc is actually MORE reactive (more easily oxidized) than iron, and this greater reactivity is exactly why it sacrificially protects the steel."},
+      {"text": "This protective effect has nothing to do with the relative reactivity of the two metals", "isCorrect": false, "feedback": "This protective effect is actually directly and specifically explained by the relative reactivity difference between zinc and iron."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This reaction category is defined by simultaneous electron loss and electron gain between two participating substances.", "medium": "This is the same broad category of reaction as electron transfer between substances.", "easy": "This reaction involves iron and oxygen swapping electrons."},
+    "medium": {"hard": "Ionic movement and interaction, which drive electron transfer, are facilitated by the presence of a liquid medium like water.", "medium": "Water helps the electrons and ions involved move around more easily, speeding up the whole process.", "easy": "Water helps speed up the electron-swapping process that causes rust."},
+    "hard": {"hard": "A more reactive metal (zinc) will preferentially undergo oxidation ahead of a less reactive one (iron) when both are exposed and electrically connected, providing ongoing protection to the iron as long as sacrificial zinc remains available.", "medium": "Since zinc reacts more easily than iron, it 'takes the hit' and corrodes first, protecting the iron underneath even if the coating gets scratched.", "easy": "Since zinc reacts more easily than iron, it corrodes first instead, protecting the iron underneath."}
+  }
+}
+]

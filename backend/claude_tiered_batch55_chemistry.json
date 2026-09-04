@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the states of matter and phase changes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What happens to the particles in a substance as it changes from a solid to a liquid (melting)?",
+    "options": [
+      {"text": "The particles gain energy and begin moving more freely, though they still remain relatively close together", "isCorrect": true, "feedback": "Correct -- melting involves particles gaining enough thermal energy to overcome some of the rigid structural forces holding them in a fixed solid arrangement."},
+      {"text": "The particles completely stop moving entirely", "isCorrect": false, "feedback": "This is backwards -- melting involves particles gaining MORE energy and movement, not stopping entirely."},
+      {"text": "The particles move much farther apart than in the gas state", "isCorrect": false, "feedback": "Liquid particles are actually closer together than gas particles -- it's the transition to a GAS (not liquid) that involves much greater particle separation."},
+      {"text": "The particles lose energy and become more tightly packed", "isCorrect": false, "feedback": "This is backwards -- melting requires particles to GAIN energy, allowing them to move more freely, not lose energy and pack tighter (that describes freezing)."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "While ice is melting at exactly 0°C, its temperature stays constant even though heat is continuously being added. Why doesn't the temperature rise during this phase change?",
+    "options": [
+      {"text": "The added heat energy is being used entirely to break the intermolecular forces holding the solid structure together, rather than to increase the average kinetic energy (temperature) of the particles", "isCorrect": true, "feedback": "Correct -- this energy, known as latent heat, is used specifically for the phase transition itself, which is exactly why temperature plateaus during melting until the phase change is complete."},
+      {"text": "No heat is actually being added to the ice during this process", "isCorrect": false, "feedback": "Heat IS being continuously added -- the key insight is that this heat energy goes toward breaking intermolecular bonds during the phase change, rather than increasing temperature."},
+      {"text": "Temperature actually does rise significantly during melting, contrary to what's observed", "isCorrect": false, "feedback": "This isn't accurate -- temperature genuinely remains constant during a phase change at a substance's melting point, a well-documented and measurable phenomenon."},
+      {"text": "This phenomenon has no connection to the energy needed to change intermolecular forces", "isCorrect": false, "feedback": "This phenomenon is directly explained by the energy needed to overcome intermolecular forces during the phase transition (latent heat), not by anything unrelated."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Sublimation is the direct transition from solid to gas, without passing through the liquid phase (as seen with dry ice, solid CO2). Why can some substances sublimate under normal atmospheric pressure while most solids must first melt into a liquid?",
+    "options": [
+      {"text": "For substances like dry ice, the solid's vapor pressure reaches atmospheric pressure before the substance's melting point is reached, causing it to transition directly to gas rather than first becoming liquid", "isCorrect": true, "feedback": "Correct -- this specific relationship between a substance's vapor pressure curve and atmospheric pressure conditions determines whether sublimation (bypassing the liquid phase) or normal melting will occur."},
+      {"text": "Sublimation is actually impossible and dry ice doesn't really sublimate", "isCorrect": false, "feedback": "Sublimation is a real, well-documented phenomenon -- dry ice is a classic, everyday example of a substance that sublimates under normal atmospheric conditions."},
+      {"text": "All solids sublimate identically under any atmospheric conditions", "isCorrect": false, "feedback": "This isn't accurate -- whether a substance sublimates or melts first depends specifically on its unique vapor pressure characteristics relative to atmospheric pressure, which varies significantly between substances."},
+      {"text": "This phenomenon has no connection to a substance's vapor pressure characteristics", "isCorrect": false, "feedback": "This phenomenon is DIRECTLY explained by a substance's specific vapor pressure behavior relative to atmospheric pressure at a given temperature."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This phase transition involves particles overcoming rigid structural constraints to gain increased translational freedom while retaining relative proximity.", "medium": "The particles get more energy and start moving around more freely, though they're still pretty close together.", "easy": "The particles get more energy and start moving around more freely."},
+    "medium": {"hard": "Consider how energy input during a phase transition is directed toward overcoming intermolecular attractive forces rather than increasing average particle kinetic energy.", "medium": "All the extra heat energy is going toward breaking apart the solid's structure, not toward making the particles move faster (which is what temperature measures).", "easy": "The extra heat energy is going toward breaking apart the ice's structure, not making it hotter."},
+    "hard": {"hard": "Consider how a substance's characteristic vapor pressure curve, compared against the surrounding atmospheric pressure, determines which phase transition pathway will actually occur.", "medium": "For dry ice, going straight to gas happens before it would even have a chance to become liquid, based on its specific pressure properties.", "easy": "For dry ice, it turns straight to gas before it would even have a chance to become liquid."}
+  }
+}
+]

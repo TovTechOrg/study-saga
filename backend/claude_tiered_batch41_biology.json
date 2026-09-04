@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of natural selection acting on a trait",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is natural selection?",
+    "options": [
+      {"text": "The process by which organisms with traits better suited to their environment tend to survive and reproduce more successfully", "isCorrect": true, "feedback": "Correct -- this differential survival and reproduction based on inherited traits is the core mechanism of natural selection."},
+      {"text": "The process by which organisms choose which traits to pass on", "isCorrect": false, "feedback": "Organisms don't consciously choose their traits -- natural selection is a passive, unguided process based on survival and reproductive success."},
+      {"text": "The process of humans breeding animals for specific traits", "isCorrect": false, "feedback": "That describes artificial selection (selective breeding), a human-directed process, not natural selection."},
+      {"text": "The random mixing of genes during reproduction", "isCorrect": false, "feedback": "That describes genetic recombination, a distinct process from natural selection, which specifically concerns differential survival/reproduction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a population of moths, individuals with darker coloring are better camouflaged against predators on soot-darkened tree bark. Over many generations, why would the population's average coloring likely shift darker?",
+    "options": [
+      {"text": "Darker moths survive predation more often and thus reproduce more, passing on their darker-coloring genes to a greater share of offspring", "isCorrect": true, "feedback": "Correct -- this is a classic natural selection scenario (based on the real peppered moth example), where a survival advantage leads to a shift in the population's genetic makeup over time."},
+      {"text": "Moths consciously decide to change their color to survive better", "isCorrect": false, "feedback": "Moths cannot consciously alter their coloring -- the shift happens across generations due to differential survival and reproduction, not individual choice."},
+      {"text": "Coloring in moths has no connection to survival or predation at all", "isCorrect": false, "feedback": "Coloring can have a very direct connection to survival via camouflage effectiveness against predators, as in this classic example."},
+      {"text": "This population shift would happen equally regardless of coloring differences", "isCorrect": false, "feedback": "The shift specifically depends on the survival advantage that darker coloring provides in this environment -- it wouldn't happen the same way without that trait difference."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "If tree bark later became lighter again (e.g., due to pollution reduction), why would we expect the moth population's average coloring to shift back toward lighter over time?",
+    "options": [
+      {"text": "Because the selective advantage would reverse -- lighter moths would now be better camouflaged and survive/reproduce more, shifting the population's genetic makeup back toward lighter coloring", "isCorrect": true, "feedback": "Correct -- natural selection responds dynamically to changing environmental conditions, meaning the direction of trait selection can reverse if the environment changes."},
+      {"text": "The population's coloring would stay dark forever, regardless of environmental changes", "isCorrect": false, "feedback": "This isn't accurate -- since natural selection responds to current environmental pressures, a change in environment (lighter bark) would favor different traits (lighter coloring) going forward."},
+      {"text": "Environmental changes have no effect on which traits are favored by natural selection", "isCorrect": false, "feedback": "Environmental context is central to natural selection -- which traits are favored directly depends on current environmental conditions, which is why a change would shift the selective pressure."},
+      {"text": "Individual moths would actively change their own coloring in response to the environment", "isCorrect": false, "feedback": "Individual moths cannot change their own genetically-determined coloring -- the population-level shift occurs across generations via differential survival and reproduction."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This describes differential survival and reproduction among organisms based on how well-suited their inherited traits are to their environment.", "medium": "This is when organisms with traits that help them survive tend to have more offspring.", "easy": "This is when organisms best suited to their surroundings tend to survive and have more babies."},
+    "medium": {"hard": "Consider how a survival advantage translates into greater reproductive success and thus greater representation of a trait in the next generation.", "medium": "Moths that survive longer because of their coloring get more chances to reproduce and pass on that coloring.", "easy": "Moths that survive longer because of their coloring get more chances to have babies with that same coloring."},
+    "hard": {"hard": "Since the selective pressure driving trait frequency is tied directly to the current environmental context, a reversal in that context should reverse which trait variant is favored.", "medium": "Since which coloring survives best depends on the bark's color, changing the bark back would flip which moths do better.", "easy": "Since which coloring survives best depends on the bark's color, changing the bark back would flip which moths survive better."}
+  }
+}
+]

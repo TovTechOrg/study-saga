@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between specific latent heat of fusion and vaporization",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The 'specific latent heat of fusion' refers to the energy required to:",
+    "options": [
+      {"text": "Change a unit mass of a substance from solid to liquid, at its melting point, without changing temperature", "isCorrect": true, "feedback": "Correct -- latent heat of fusion specifically concerns the solid-to-liquid phase transition, with the energy going toward breaking the solid's structure, not raising temperature."},
+      {"text": "Change a unit mass of a substance from liquid to gas, at its boiling point", "isCorrect": false, "feedback": "That describes the LATENT HEAT OF VAPORIZATION, not fusion -- latent heat of fusion specifically concerns the SOLID-TO-LIQUID transition, not liquid-to-gas."},
+      {"text": "Raise a substance's temperature by exactly one degree", "isCorrect": false, "feedback": "That describes SPECIFIC HEAT CAPACITY, a different thermal property -- latent heat of fusion specifically concerns a PHASE CHANGE (at constant temperature), not a temperature increase."},
+      {"text": "Completely destroy a substance's molecular structure permanently", "isCorrect": false, "feedback": "This isn't accurate -- latent heat of fusion specifically concerns a REVERSIBLE phase change (melting), not permanent molecular destruction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For water, the specific latent heat of vaporization (turning liquid water into steam) is significantly LARGER than the specific latent heat of fusion (turning ice into liquid water) for the same mass of substance. Why does this difference make physical sense, considering what's happening to the water molecules' interactions during each specific phase change?",
+    "options": [
+      {"text": "Melting (fusion) only requires PARTIALLY overcoming the rigid, ordered molecular arrangement of a solid (allowing molecules to move more freely as a liquid, while still remaining relatively close together), while vaporization requires COMPLETELY overcoming essentially ALL remaining intermolecular attractive forces (allowing molecules to separate completely and move independently as a gas), representing a much more substantial change in molecular interaction/freedom, thus requiring significantly more energy", "isCorrect": true, "feedback": "Correct -- this understanding of the different DEGREES of intermolecular interaction change occurring during each specific phase transition (partial disruption for melting vs. complete separation for vaporization) explains why vaporization generally requires substantially more energy input than fusion for the same substance."},
+      {"text": "Latent heat of fusion is actually always LARGER than latent heat of vaporization for any given substance, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- for water (and many other substances), latent heat of VAPORIZATION is typically significantly LARGER than latent heat of FUSION, not the reverse."},
+      {"text": "This energy difference has no actual connection to the different degrees of molecular interaction change occurring during each specific phase transition", "isCorrect": false, "feedback": "This isn't accurate -- this energy difference IS DIRECTLY and specifically connected to and EXPLAINED BY the different degrees of intermolecular interaction change occurring during melting (partial) versus vaporization (complete/total separation)."},
+      {"text": "Melting and vaporization actually involve identical, equivalent changes to water molecules' interactions with each other", "isCorrect": false, "feedback": "This isn't accurate -- these two phase transitions involve GENUINELY DIFFERENT degrees of molecular interaction change (partial disruption for melting vs. complete separation for vaporization), which is precisely why they require substantially different amounts of energy."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Steam at 100°C can cause significantly more severe burns than an equivalent mass/temperature of liquid water at 100°C, even though both are at the exact same temperature. Using your understanding of latent heat of vaporization, explain why steam poses this particularly greater danger.",
+    "options": [
+      {"text": "When steam contacts skin and condenses back into liquid water, it releases its substantial stored latent heat of vaporization (in addition to then cooling from 100°C, just like the liquid water would) -- this ADDITIONAL released energy from the condensation process itself (on top of the temperature-related heat transfer) is what makes steam burns particularly severe compared to equivalent-temperature liquid water, which doesn't have this additional phase-change energy to release", "isCorrect": true, "feedback": "Correct -- this crucial additional energy release from the phase change itself (condensation releasing the substantial latent heat of vaporization, on top of standard thermal energy transfer) explains why steam burns are notably more dangerous than equivalent-temperature liquid water burns, despite both starting at the identical 100°C temperature."},
+      {"text": "Steam and liquid water at the same temperature actually transfer identical amounts of total heat energy to skin upon contact", "isCorrect": false, "feedback": "This isn't accurate -- steam transfers SIGNIFICANTLY MORE total heat energy upon contact (due to releasing its additional latent heat of vaporization during condensation), unlike liquid water at the same temperature, which doesn't have this additional phase-change energy to release."},
+      {"text": "This burn severity difference has no actual connection to the concept of latent heat of vaporization", "isCorrect": false, "feedback": "This isn't accurate -- this burn severity difference is DIRECTLY and specifically connected to and EXPLAINED BY the concept of latent heat of vaporization being released during steam's condensation upon contact with skin."},
+      {"text": "Steam actually causes LESS severe burns than equivalent-temperature liquid water, contrary to what's being described", "isCorrect": false, "feedback": "This is backwards -- steam burns are well-documented to be typically MORE severe (not less) than equivalent-temperature liquid water burns, precisely due to the additional latent heat energy released during steam's condensation."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This thermal quantity denotes the energy input required per unit mass to transition a substance from its crystalline solid form to its liquid form isothermally.", "medium": "This is the energy needed to turn a certain amount of solid into liquid, without changing its temperature.", "easy": "This is the energy needed to turn a solid into liquid without changing temperature."},
+    "medium": {"hard": "Consider the relative extent of intermolecular bond/attraction disruption required to transition from a rigid, ordered structure to a loosely-associated liquid, versus completely separating molecules into an independent gaseous state.", "medium": "Melting just loosens up the solid a bit so molecules can move around while still close together, but turning into gas means completely breaking free from ALL the neighboring pulls -- that's a much bigger change needing more energy.", "easy": "Melting just loosens the solid a bit, but turning to gas means completely breaking free -- a much bigger change."},
+    "hard": {"hard": "Consider how the phase transition from gas back to liquid (condensation) inherently releases the same substantial energy quantity that was originally required to vaporize that liquid, in addition to any subsequent temperature-based heat transfer.", "medium": "When steam turns back into water on your skin, it dumps out a big EXTRA chunk of energy from that phase change itself, on top of just being hot -- that's the extra punch that makes steam burns worse.", "easy": "When steam turns back into water on your skin, it releases extra energy from that phase change, on top of just being hot."}
+  }
+}
+]

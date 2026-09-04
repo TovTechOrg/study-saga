@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between angular velocity and linear (tangential) velocity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Angular velocity (measured in radians per second) describes:",
+    "options": [
+      {"text": "How quickly an object rotates through an angle, around a central axis", "isCorrect": true, "feedback": "Correct -- angular velocity specifically measures rotational speed (how fast the angle changes), unlike linear velocity, which measures straight-line speed."},
+      {"text": "How fast an object moves in a straight line, without any rotation", "isCorrect": false, "feedback": "That describes LINEAR velocity, not angular velocity, which specifically concerns ROTATIONAL motion around an axis, not straight-line movement."},
+      {"text": "The exact mass of a rotating object", "isCorrect": false, "feedback": "Mass is an unrelated physical property from angular velocity, which specifically measures ROTATIONAL SPEED, not an object's mass."},
+      {"text": "A quantity that has no actual connection to any kind of motion", "isCorrect": false, "feedback": "This isn't accurate -- angular velocity is DIRECTLY a measure OF motion, specifically ROTATIONAL motion, not disconnected from motion concepts."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "For a rotating object (like a spinning merry-go-round), all points share the SAME angular velocity, but points FARTHER from the center have a LARGER linear (tangential) velocity than points closer to the center. Why does this relationship (v=ωr, where v=linear velocity, ω=angular velocity, r=distance from center) make physical sense?",
+    "options": [
+      {"text": "Since all points complete the SAME rotational angle in the SAME time period (shared angular velocity), a point FARTHER from the center must physically travel a LONGER actual distance (a larger circle's circumference) in that same time period compared to a point closer to the center, meaning it must move at a correspondingly FASTER linear speed to cover that greater distance in the same amount of time", "isCorrect": true, "feedback": "Correct -- this direct relationship between angular velocity (shared by all points) and linear velocity (which specifically scales with distance from the center) explains this classic physics phenomenon -- for example, why a point at the very outer edge of a merry-go-round moves faster (in a straight-line sense) than a point near the center, even though they both complete each full rotation in exactly the same amount of time."},
+      {"text": "All points on a rotating object actually also share exactly the same LINEAR velocity, identical to their shared angular velocity", "isCorrect": false, "feedback": "This isn't accurate -- while all points DO share the same angular velocity, they specifically do NOT share the same linear velocity -- linear velocity specifically INCREASES with greater distance from the center, unlike angular velocity, which remains constant throughout the object."},
+      {"text": "Points closer to the center actually have a LARGER linear velocity than points farther away, contrary to what's described", "isCorrect": false, "feedback": "This is backwards -- points FARTHER from the center have the LARGER linear velocity (not smaller), precisely because they must travel a greater distance to complete the same rotational angle in the same time period."},
+      {"text": "This relationship between angular velocity, linear velocity, and radius has no actual underlying physical explanation", "isCorrect": false, "feedback": "This isn't accurate -- this relationship (v=ωr) DOES have a clear, intuitive underlying physical explanation, directly related to how far a given point must actually travel to complete the same angular rotation, depending on its specific distance from the center."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A spinning ice skater who pulls their arms in close to their body spins FASTER (increased angular velocity), even without any external torque being applied. Given the relationship v=ωr, explain what happens to a POINT on the skater's HAND specifically (in terms of its linear velocity), as the skater pulls that hand inward toward their body during this spin-up.",
+    "options": [
+      {"text": "As the hand moves closer to the body's central rotation axis (decreasing r), even though the skater's OVERALL angular velocity (ω) is increasing significantly (due to conservation of angular momentum), the hand's specific LINEAR velocity change depends on the COMBINED effect of both increasing ω AND decreasing r simultaneously -- in this specific physical scenario (conservation of angular momentum, L=Iω=mvr=constant), it turns out the hand's LINEAR velocity actually stays relatively similar/comparable throughout this specific process, since the increasing ω and decreasing r effects on linear velocity partially counteract each other", "isCorrect": true, "feedback": "Correct -- this more sophisticated analysis (carefully considering how BOTH the changing radius AND the changing angular velocity simultaneously affect a specific point's actual linear velocity, in the context of angular momentum conservation) demonstrates the added complexity when multiple physical quantities are changing together, requiring careful, combined consideration rather than looking at just one changing factor (like angular velocity alone) in isolation."},
+      {"text": "The hand's linear velocity would actually simply increase in DIRECT PROPORTION to the increased angular velocity alone, with no other complicating factors", "isCorrect": false, "feedback": "This isn't accurate -- this scenario is actually MORE COMPLEX than that, since the hand's DISTANCE from the center (r) is ALSO simultaneously changing (decreasing) as the arm is pulled in, meaning BOTH factors (ω increasing AND r decreasing) must be considered together, not simply ω's increase in isolation."},
+      {"text": "This scenario involving both changing angular velocity and changing radius has no actual connection to the fundamental v=ωr relationship", "isCorrect": false, "feedback": "This isn't accurate -- this scenario IS DIRECTLY connected to and requires careful application of the v=ωr relationship, specifically accounting for how BOTH variables (ω and r) are changing SIMULTANEOUSLY in this dynamic situation."},
+      {"text": "The skater's arm position (and thus the hand's specific distance from the rotation axis) has no actual relevance to analyzing the hand's linear velocity in this scenario", "isCorrect": false, "feedback": "This isn't accurate -- the hand's SPECIFIC DISTANCE from the rotation axis (r) is DIRECTLY and centrally relevant to and is one of the two key changing factors that must be considered together (along with ω) when analyzing the hand's actual linear velocity throughout this dynamic process."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This kinematic quantity characterizes the temporal rate of angular displacement about a fixed rotational axis.", "medium": "This measures how fast something is spinning around, in terms of angle covered per second.", "easy": "This measures how fast something spins in terms of angle per second."},
+    "medium": {"hard": "Consider how covering the same angular sweep in identical time intervals necessitates a proportionally greater physical path length (and thus speed) for points situated farther from the rotational center.", "medium": "A point way out on the edge has to travel around a much BIGGER circle to keep up with a point near the center, but they both have to finish that full circle trip in the exact same amount of time.", "easy": "A point on the edge travels a bigger circle in the same time as a point near the center, so it must move faster."},
+    "hard": {"hard": "Consider how simultaneously accounting for both the increasing angular velocity and the decreasing radial distance, within the constraint of conserved angular momentum, determines the net resulting change (or lack thereof) in the specific point's tangential velocity.", "medium": "Since both the spin speed AND the hand's distance from the center are changing at the SAME time in opposite ways, you have to think about both effects together rather than just one -- and in this specific case, they end up roughly balancing each other out.", "easy": "Since both spin speed and distance change at once in opposite ways, they roughly balance out for the hand's speed."}
+  }
+}
+]

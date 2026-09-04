@@ -1,0 +1,43 @@
+[
+{
+  "topic": "understanding the concept of a linear equation's x- and y-intercepts",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the y-intercept of the line y = 4x + 7?",
+    "options": [
+      {"text": "7", "isCorrect": true, "feedback": "Correct -- the y-intercept is the constant term in y=mx+b form, which occurs when x=0."},
+      {"text": "4", "isCorrect": false, "feedback": "4 is the slope of the line, not the y-intercept."},
+      {"text": "0", "isCorrect": false, "feedback": "The y-intercept is where the line crosses the y-axis, which is at y=7 here, not 0."},
+      {"text": "-7", "isCorrect": false, "feedback": "This has the wrong sign -- the y-intercept is positive 7, matching the equation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the x-intercept of the line y = 2x - 8 (the point where the line crosses the x-axis, meaning y=0)?",
+    "options": [
+      {"text": "4", "isCorrect": true, "feedback": "Correct -- set y=0: 0=2x-8, so 8=2x, and x=4."},
+      {"text": "-8", "isCorrect": false, "feedback": "This is the y-intercept (when x=0), not the x-intercept."},
+      {"text": "2", "isCorrect": false, "feedback": "This is the slope of the line, not the x-intercept."},
+      {"text": "8", "isCorrect": false, "feedback": "This doesn't match correctly dividing 8 by 2 after setting y=0."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "A line has an x-intercept of 6 and a y-intercept of -3. What is the equation of this line in slope-intercept form?",
+    "options": [
+      {"text": "y = 0.5x - 3", "isCorrect": true, "feedback": "Correct -- the y-intercept gives b=-3; using the x-intercept point (6,0), the slope is (0-(-3))/(6-0)=3/6=0.5."},
+      {"text": "y = 2x - 3", "isCorrect": false, "feedback": "This doesn't match correctly calculating the slope using both given intercept points."},
+      {"text": "y = 0.5x + 6", "isCorrect": false, "feedback": "This uses the x-intercept value as the y-intercept, which is incorrect -- the y-intercept should be -3."},
+      {"text": "y = -3x + 6", "isCorrect": false, "feedback": "This swaps the roles of the slope and y-intercept entirely."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This value corresponds to the output when the input variable equals zero.", "medium": "This is the constant term in the y=mx+b equation.", "easy": "This is the number added at the end of the equation."},
+    "medium": {"hard": "Set y equal to zero in the equation, then solve for x.", "medium": "Set y=0, then solve the resulting equation for x.", "easy": "Set y to 0, then solve 0=2x-8 for x."},
+    "hard": {"hard": "Use the two given intercept points to calculate the slope, then combine with the known y-intercept to write the full equation.", "medium": "Use the two points (0,-3) and (6,0) to find the slope, then write the equation using the y-intercept.", "easy": "Find the slope between (0,-3) and (6,0), then use -3 as the y-intercept in the equation."}
+  }
+}
+]

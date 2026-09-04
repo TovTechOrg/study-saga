@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of a chemical reaction's stoichiometric ratio",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In the balanced equation 2H₂ + O₂ → 2H₂O, what is the mole ratio of hydrogen gas to oxygen gas used?",
+    "options": [
+      {"text": "2:1", "isCorrect": true, "feedback": "Correct -- the coefficients directly give the mole ratio: 2 moles of H₂ for every 1 mole of O₂."},
+      {"text": "1:1", "isCorrect": false, "feedback": "This doesn't match the actual coefficients shown in the balanced equation."},
+      {"text": "1:2", "isCorrect": false, "feedback": "This has the ratio backwards -- there are twice as many H₂ molecules as O₂ molecules, not the reverse."},
+      {"text": "2:2", "isCorrect": false, "feedback": "This doesn't match the actual coefficients (2 for H₂, 1 for O₂) shown in the equation."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Using the equation 2H₂ + O₂ → 2H₂O, if you have 6 moles of H₂ reacting completely, how many moles of O₂ are needed?",
+    "options": [
+      {"text": "3 moles", "isCorrect": true, "feedback": "Correct -- using the 2:1 ratio, divide 6 by 2 to find the required O₂: 6÷2=3."},
+      {"text": "6 moles", "isCorrect": false, "feedback": "This ignores the 2:1 ratio, treating it as though it were 1:1."},
+      {"text": "12 moles", "isCorrect": false, "feedback": "This doubles instead of halving the hydrogen amount to find the oxygen needed."},
+      {"text": "2 moles", "isCorrect": false, "feedback": "This just repeats the coefficient value rather than correctly scaling it to match 6 moles of H₂."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Using the equation 2H₂ + O₂ → 2H₂O, if 10 moles of H₂ react with 3 moles of O₂, which reactant is the limiting reactant, and how much water (in moles) is produced?",
+    "options": [
+      {"text": "Oxygen is limiting; 6 moles of water are produced", "isCorrect": true, "feedback": "Correct -- 3 moles of O₂ would need 6 moles of H₂ (2:1 ratio), but 10 are available, so oxygen runs out first, and 3 moles O₂ produces 2×3=6 moles of H₂O."},
+      {"text": "Hydrogen is limiting; 10 moles of water are produced", "isCorrect": false, "feedback": "There's actually more than enough hydrogen available relative to the oxygen present -- oxygen is the one that runs out first."},
+      {"text": "Oxygen is limiting; 3 moles of water are produced", "isCorrect": false, "feedback": "While oxygen is correctly identified as limiting, the water produced should be DOUBLE the oxygen amount (2:2 ratio in the equation), giving 6, not 3."},
+      {"text": "Neither reactant is limiting; both are used up completely", "isCorrect": false, "feedback": "One reactant must run out first in this scenario -- checking the required ratio shows oxygen is the limiting reactant, with hydrogen left over."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "The numbers written directly in front of each substance's formula represent this ratio.", "medium": "Look at the coefficients (the numbers in front of each formula) in the equation.", "easy": "Look at the numbers in front of H₂ and O₂ in the equation -- 2 and 1."},
+    "medium": {"hard": "Use the mole ratio from the balanced equation to scale the known amount to find the corresponding required amount.", "medium": "Since the ratio is 2:1, divide the hydrogen amount by 2 to find the oxygen needed.", "easy": "Divide 6 by 2."},
+    "hard": {"hard": "Determine how much of one reactant would be needed to fully react with the given amount of the other, then compare against what's actually available to identify the limiting reactant and calculate the resulting product amount.", "medium": "Figure out how much hydrogen would be needed to use up all 3 moles of oxygen, then compare that to the 10 moles available.", "easy": "Check how much hydrogen 3 moles of oxygen would need (6), then compare to the 10 available -- oxygen runs out first."}
+  }
+}
+]

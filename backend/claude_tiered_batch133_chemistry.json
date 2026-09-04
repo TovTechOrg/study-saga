@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between an addition reaction and a substitution reaction in organic chemistry",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In an 'addition reaction,' new atoms are added to a molecule by:",
+    "options": [
+      {"text": "Breaking a double or triple bond and attaching new atoms to each of the previously multiply-bonded carbons", "isCorrect": true, "feedback": "Correct -- addition reactions specifically break a double or triple bond, allowing new atoms to attach without removing any atoms already present."},
+      {"text": "Replacing an existing atom or group already attached to the molecule with a new one", "isCorrect": false, "feedback": "That describes a SUBSTITUTION reaction, not addition -- substitution replaces an existing atom/group, while addition adds new atoms without removing any existing ones."},
+      {"text": "Removing two adjacent atoms to form a new double bond", "isCorrect": false, "feedback": "This describes an ELIMINATION reaction, not addition -- addition specifically involves ADDING atoms across a multiple bond, not removing atoms to form one."},
+      {"text": "Combining two entirely separate, complete molecules with no bonds broken at all", "isCorrect": false, "feedback": "This isn't accurate -- an addition reaction specifically requires breaking a multiple bond (pi bond) within one molecule to accommodate the newly added atoms."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Addition reactions are characteristic of molecules containing double or triple bonds (like alkenes and alkynes), while substitution reactions are characteristic of saturated molecules (like alkanes) that contain only single bonds. Why does the presence or absence of a multiple bond determine which reaction type is possible?",
+    "options": [
+      {"text": "A double or triple bond contains a reactive pi bond that can be readily broken, freeing up bonding capacity on each carbon to accommodate new atoms without removing any existing ones (addition), but a fully saturated molecule with only single (sigma) bonds has no such extra bonding capacity available, so introducing a new atom REQUIRES first removing (substituting out) an existing atom to make room", "isCorrect": true, "feedback": "Correct -- this explanation of pi-bond reactivity (enabling addition) versus saturated single-bond structure (requiring substitution to make room) correctly explains why molecular saturation determines which reaction pathway is structurally possible."},
+      {"text": "Saturated molecules like alkanes would actually also readily undergo addition reactions, identical to alkenes and alkynes", "isCorrect": false, "feedback": "This isn't accurate -- saturated molecules like alkanes specifically CANNOT undergo simple addition reactions, since they lack the reactive pi bond that addition requires; they characteristically undergo substitution instead."},
+      {"text": "The presence of a double or triple bond has no actual connection to whether a molecule can undergo an addition reaction", "isCorrect": false, "feedback": "This isn't accurate -- the presence of a double or triple bond IS DIRECTLY connected to and is a required prerequisite for a molecule to undergo an addition reaction."},
+      {"text": "Alkenes and alkynes would actually characteristically undergo substitution reactions rather than addition reactions", "isCorrect": false, "feedback": "This isn't accurate -- alkenes and alkynes characteristically undergo ADDITION reactions (due to their reactive pi bonds), not substitution reactions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Addition reactions to alkenes are generally thermodynamically favorable (energy-releasing) because they convert a weaker pi bond into two new, stronger sigma bonds. Explain the bond-energy reasoning behind why this specific bond-type conversion tends to release net energy overall.",
+    "options": [
+      {"text": "A pi bond is inherently weaker (lower bond energy, easier to break) than a sigma bond, so breaking one relatively weak pi bond while forming two new, stronger sigma bonds releases more energy (from forming the two strong new bonds) than is required to break the single weaker pi bond in the first place, resulting in a net release of energy overall, making the addition reaction thermodynamically favorable", "isCorrect": true, "feedback": "Correct -- this bond-energy accounting (breaking one weak bond while forming two strong bonds) correctly explains why addition reactions to alkenes are generally thermodynamically favorable, a useful general principle connecting bond strength to reaction energetics."},
+      {"text": "Pi bonds are actually stronger than sigma bonds, which is why addition reactions require significant energy input rather than releasing energy", "isCorrect": false, "feedback": "This is backwards -- pi bonds are generally WEAKER than sigma bonds, not stronger, which is precisely why breaking a pi bond to form new sigma bonds tends to release energy rather than requiring significant input."},
+      {"text": "The relative strength of pi bonds versus sigma bonds has no actual connection to whether an addition reaction releases or requires energy overall", "isCorrect": false, "feedback": "This isn't accurate -- the relative bond strengths IS DIRECTLY connected to and explains the net energy change of an addition reaction."},
+      {"text": "Addition reactions to alkenes would actually generally be thermodynamically unfavorable, requiring significant energy input rather than releasing energy", "isCorrect": false, "feedback": "This isn't accurate -- addition reactions to alkenes are generally thermodynamically FAVORABLE (energy-releasing), precisely because of the pi-to-sigma bond conversion described."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This reaction category proceeds via disruption of a multiple bond, enabling incorporation of supplementary atomic substituents at each formerly multiply-bonded carbon.", "medium": "This kind of reaction breaks apart a double or triple bond so new atoms can attach without taking anything away.", "easy": "This kind of reaction breaks a double or triple bond so new atoms can attach without removing anything."},
+    "medium": {"hard": "Consider how the presence of a reactive pi bond provides available bonding capacity for incoming atoms, a capacity structurally absent in fully saturated single-bonded molecules.", "medium": "A double or triple bond has some extra bonding room built in that can be opened up for new atoms, but a molecule with only single bonds has no such extra room, so something has to be swapped out instead.", "easy": "A double or triple bond has extra bonding room for new atoms; a single-bonded molecule has no such room, so something must be swapped out instead."},
+    "hard": {"hard": "Consider how the comparatively low bond energy of a pi bond, relative to the sigma bonds formed in its place, yields a net exothermic balance when one weak bond is traded for two strong ones.", "medium": "Since the bond being broken is the weaker type and the two bonds being formed are the stronger type, you come out ahead energy-wise overall, and that's why the reaction tends to release energy.", "easy": "Since the bond broken is weaker and the two bonds formed are stronger, the reaction tends to release energy overall."}
+  }
+}
+]

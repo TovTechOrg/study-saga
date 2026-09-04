@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the difference between scalar quantities and vector quantities",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A 'vector' quantity is characterized by having:",
+    "options": [
+      {"text": "Both a magnitude and a direction", "isCorrect": true, "feedback": "Correct -- a vector quantity is specifically defined by having both magnitude (size) and direction, like force or velocity."},
+      {"text": "Only a magnitude, with no associated direction", "isCorrect": false, "feedback": "That describes a SCALAR quantity, not a vector -- scalars have only magnitude, while vectors specifically also have a direction."},
+      {"text": "Neither a magnitude nor a direction", "isCorrect": false, "feedback": "This isn't accurate -- a vector quantity specifically DOES have both a magnitude and a direction; it's not lacking both properties."},
+      {"text": "A value that can only ever be measured in meters", "isCorrect": false, "feedback": "This isn't accurate -- vectors can be measured in many different units (like m/s for velocity or Newtons for force), not exclusively meters."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Adding two scalar quantities (like 3 kg + 5 kg = 8 kg) simply involves normal arithmetic addition, but adding two vector quantities (like two forces) generally requires accounting for their directions, often using geometric methods rather than simple arithmetic. Why does direction fundamentally complicate vector addition in this way?",
+    "options": [
+      {"text": "Since vectors have both magnitude and direction, two vectors pointing in DIFFERENT directions cannot simply have their magnitudes added directly (unlike scalars, which have no direction to account for) -- instead, their combined effect depends on the specific angle between them, requiring geometric or component-based methods to correctly determine the resulting combined vector's true magnitude and direction", "isCorrect": true, "feedback": "Correct -- this explanation of direction dependence complicating vector combination (versus scalars' direction-free simple arithmetic) correctly explains why vector addition generally requires more sophisticated geometric or component-based methods."},
+      {"text": "Vector addition would actually always be identical to simple scalar arithmetic addition, regardless of the vectors' directions", "isCorrect": false, "feedback": "This isn't accurate -- vector addition generally requires accounting for DIRECTION (via geometric or component methods), unlike simple scalar arithmetic, except in the special case where vectors point in the exact same direction."},
+      {"text": "Direction has no actual connection to explaining why vector addition differs from scalar addition", "isCorrect": false, "feedback": "This isn't accurate -- direction IS DIRECTLY connected to and is precisely why vector addition differs so significantly from simple scalar addition."},
+      {"text": "Scalar quantities would actually also require geometric methods for addition, identical to vector quantities", "isCorrect": false, "feedback": "This isn't accurate -- scalar quantities specifically use SIMPLE arithmetic addition, unlike vectors, precisely because scalars have no direction to account for."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Two forces of equal magnitude (say, 10 N each) can combine to produce a resultant force anywhere between 0 N (if they point in exactly opposite directions) and 20 N (if they point in exactly the same direction), depending on the angle between them. Explain the underlying geometric principle that allows the exact same two magnitudes to produce such a wide range of possible resultant magnitudes.",
+    "options": [
+      {"text": "Vector addition combines both magnitude AND direction information using geometric principles (like the parallelogram or triangle method), where the resultant vector's magnitude specifically depends on the angle between the two original vectors -- when vectors point in the same direction, their effects fully reinforce each other (maximum resultant), when they point in opposite directions, they fully cancel each other out (minimum, possibly zero, resultant), and intermediate angles produce intermediate resultant magnitudes between these two extremes", "isCorrect": true, "feedback": "Correct -- this explanation of angle-dependent reinforcement (same direction) versus cancellation (opposite direction) versus partial combination (intermediate angles) correctly explains the full range of possible resultant magnitudes from combining two fixed-magnitude vectors, a fundamental principle in vector addition."},
+      {"text": "The resultant magnitude from combining two vectors would actually always be a single fixed value, regardless of the angle between them", "isCorrect": false, "feedback": "This isn't accurate -- the resultant magnitude specifically VARIES depending on the angle between the two vectors, ranging anywhere between their difference and their sum, not a single fixed value."},
+      {"text": "The angle between two vectors has no actual connection to determining the magnitude of their combined resultant vector", "isCorrect": false, "feedback": "This isn't accurate -- the angle between two vectors IS DIRECTLY connected to and is precisely what determines the magnitude of their resultant when combined."},
+      {"text": "Two vectors pointing in exactly opposite directions would actually produce the MAXIMUM possible resultant magnitude, not the minimum", "isCorrect": false, "feedback": "This is backwards -- vectors pointing in exactly OPPOSITE directions produce the MINIMUM possible resultant magnitude (since they cancel each other out), not the maximum."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This class of physical quantity is fully specified only by conjointly stipulating both its magnitude and its directional orientation.", "medium": "This kind of measurement needs both a size AND a direction to fully describe it.", "easy": "This kind of measurement needs both a size and a direction to describe it."},
+    "medium": {"hard": "Consider how the presence of a directional component necessitates angle-dependent geometric combination rules, in contrast to the direction-agnostic arithmetic sufficient for scalar summation.", "medium": "Since these measurements point somewhere, combining two of them depends a lot on which ways they're pointing relative to each other, unlike plain numbers which just add up directly no matter what.", "easy": "Since these measurements point somewhere, combining two depends on which way they're pointing, unlike plain numbers."},
+    "hard": {"hard": "Consider how the geometric combination rule scales the resultant magnitude continuously between full reinforcement at zero relative angle and full cancellation at 180 degrees relative angle.", "medium": "Pointing the same way, the two forces add up to their biggest possible total, pointing opposite ways they cancel out to the smallest possible total, and anywhere in between gives you something in between those two extremes.", "easy": "Pointing the same way gives the biggest total, pointing opposite ways cancels out, and angles in between give something in between."}
+  }
+}
+]

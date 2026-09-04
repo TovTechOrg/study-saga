@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of the structure and function of the cell membrane (fluid mosaic model)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the primary function of the cell membrane?",
+    "options": [
+      {"text": "To control what substances enter and exit the cell", "isCorrect": true, "feedback": "Correct -- the cell membrane acts as a selective barrier, regulating the movement of substances into and out of the cell."},
+      {"text": "To store all of the cell's genetic information", "isCorrect": false, "feedback": "That's the function of the nucleus (in eukaryotic cells), not the cell membrane, which is about controlling substance movement."},
+      {"text": "To produce all of the cell's energy through respiration", "isCorrect": false, "feedback": "That's primarily the function of mitochondria, not the cell membrane, which serves a regulatory/barrier function."},
+      {"text": "To break down waste products within the cell", "isCorrect": false, "feedback": "That's a function of lysosomes, not the cell membrane, which specifically regulates substance passage into and out of the cell."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The 'fluid mosaic model' describes the cell membrane as a flexible, dynamic structure with proteins embedded throughout a lipid bilayer, rather than a rigid, fixed structure. Why is this fluidity important for the membrane's function?",
+    "options": [
+      {"text": "Fluidity allows membrane components (like proteins and lipids) to move and rearrange as needed, enabling processes like cell signaling, transport, and membrane repair", "isCorrect": true, "feedback": "Correct -- this dynamic flexibility is essential for many critical cellular processes, distinguishing the fluid mosaic model from an outdated, more rigid conception of the membrane."},
+      {"text": "Fluidity has no actual functional importance for the cell membrane", "isCorrect": false, "feedback": "Fluidity is actually crucial to the membrane's proper functioning -- it enables essential processes like protein movement, cell signaling, and membrane repair."},
+      {"text": "A rigid, fixed membrane structure would actually work exactly as well as a fluid one", "isCorrect": false, "feedback": "This isn't accurate -- the membrane's fluidity provides essential functional flexibility that a rigid structure would not allow, such as enabling dynamic protein rearrangement."},
+      {"text": "The fluid mosaic model describes the membrane as being made entirely of a single uniform substance", "isCorrect": false, "feedback": "This is incorrect -- the model specifically describes a MOSAIC of different components (various lipids and proteins), not a single uniform substance."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Membrane proteins can act as channels, receptors, or transporters, each performing specific functions. Why is it significant that these proteins are able to move somewhat freely within the fluid lipid bilayer, rather than being fixed in one spot?",
+    "options": [
+      {"text": "This mobility allows proteins to cluster together when needed for specific functions (like forming larger complexes for signal transduction or transport), and also allows for membrane self-repair and adaptation to changing conditions", "isCorrect": true, "feedback": "Correct -- this protein mobility within the fluid membrane structure is essential for dynamic cellular processes that require proteins to interact, cluster, or relocate as functional needs arise."},
+      {"text": "Protein mobility within the membrane actually serves no functional purpose at all", "isCorrect": false, "feedback": "This isn't accurate -- protein mobility is functionally significant, enabling processes like protein clustering for signaling, membrane repair, and adaptive responses to cellular needs."},
+      {"text": "If proteins were completely fixed in place, cell membrane function would remain completely unaffected", "isCorrect": false, "feedback": "This isn't accurate -- fixed, immobile proteins would significantly limit crucial dynamic processes like signal transduction complex formation and membrane repair capabilities."},
+      {"text": "Membrane proteins actually never move at all once they are embedded in the membrane", "isCorrect": false, "feedback": "This is incorrect -- membrane proteins CAN and DO move within the fluid lipid bilayer, which is a central, defining feature of the fluid mosaic model."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This structure functions as a selectively permeable boundary regulating molecular traffic across the cell's exterior.", "medium": "This structure acts like a gatekeeper, controlling what goes in and out of the cell.", "easy": "This structure acts like a gatekeeper for what goes in and out of the cell."},
+    "medium": {"hard": "Consider how structural flexibility at the molecular level enables dynamic biological processes that a rigid, static structure could not accommodate.", "medium": "Being flexible lets the different pieces of the membrane move around and do their jobs, like signaling and fixing damage.", "easy": "Being flexible lets pieces of the membrane move around to do jobs like signaling and repair."},
+    "hard": {"hard": "Consider how the capacity for proteins to relocate and cluster within a fluid environment supports complex, coordinated cellular functions requiring multiple protein interactions.", "medium": "Being able to move around lets proteins team up together when the cell needs them to work as a group for a specific job.", "easy": "Being able to move lets proteins team up together when the cell needs them for a specific job."}
+  }
+}
+]

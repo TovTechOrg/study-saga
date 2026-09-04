@@ -1,0 +1,43 @@
+[
+{
+  "topic": "the concept of coevolution between interacting species",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is coevolution?",
+    "options": [
+      {"text": "A process where two or more species reciprocally influence each other's evolution over time", "isCorrect": true, "feedback": "Correct -- coevolution occurs when evolutionary changes in one species create selective pressure that drives evolutionary changes in another interacting species, and vice versa."},
+      {"text": "The evolution of a single species with no connection to any other species", "isCorrect": false, "feedback": "This describes standard, independent evolution -- coevolution specifically involves RECIPROCAL influence BETWEEN two or more interacting species."},
+      {"text": "The instant extinction of two species at exactly the same time", "isCorrect": false, "feedback": "Coevolution isn't about simultaneous extinction -- it specifically describes reciprocal evolutionary CHANGE between interacting species over time, not extinction."},
+      {"text": "A process where species stop evolving entirely once they start interacting", "isCorrect": false, "feedback": "This is essentially the opposite of coevolution -- interacting species specifically CONTINUE evolving (in response to each other), rather than stopping evolution altogether."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Many flowering plants and their specific pollinators (like certain bees or hummingbirds) have evolved closely matched physical traits -- for example, a flower's exact shape closely matching a particular pollinator's body or beak shape. How does coevolution help explain this close matching?",
+    "options": [
+      {"text": "Over time, plants with flower shapes better suited to a particular pollinator would be more successfully pollinated (increasing plant reproductive success), while pollinators better suited to accessing a particular flower shape would gain a feeding advantage, driving reciprocal evolutionary refinement in both species", "isCorrect": true, "feedback": "Correct -- this reciprocal selective pressure, benefiting both plant reproduction and pollinator feeding efficiency, is a classic example of coevolution producing closely matched physical adaptations between interacting species."},
+      {"text": "This close matching is actually purely coincidental, with no connection to any evolutionary process", "isCorrect": false, "feedback": "This isn't accurate -- this close matching is actually a well-documented result of the specific evolutionary process of COEVOLUTION, not mere coincidence."},
+      {"text": "Only the plant species evolves in this relationship, while the pollinator species remains completely unaffected", "isCorrect": false, "feedback": "This isn't accurate -- coevolution specifically involves BOTH species evolving in response to each other, not just one species changing while the other remains static."},
+      {"text": "Coevolution has no actual connection to explaining matched physical traits between interacting species", "isCorrect": false, "feedback": "This isn't accurate -- coevolution is precisely THE concept that explains this kind of closely matched trait development between interacting species like plants and their specific pollinators."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "In predator-prey coevolution (sometimes called an 'evolutionary arms race'), a predator species might evolve improved hunting abilities, which then creates selective pressure favoring prey with improved evasion abilities, which in turn favors predators with even better hunting abilities, and so on. Why might this ongoing cycle NOT necessarily result in the predator eventually just wiping out the prey species entirely?",
+    "options": [
+      {"text": "Since both species face continuous selective pressure to improve in response to the other, the RELATIVE balance between predator and prey capabilities can remain roughly stable over time, even as the ABSOLUTE capabilities of both species continue increasing together", "isCorrect": true, "feedback": "Correct -- this dynamic, ongoing reciprocal adaptation (sometimes called the 'Red Queen' effect, since both species must constantly evolve just to maintain their relative position) helps explain why predator-prey coevolutionary arms races often reach a sustained dynamic equilibrium, rather than resulting in one species' extinction."},
+      {"text": "Predator-prey coevolution actually always inevitably results in the complete extinction of the prey species", "isCorrect": false, "feedback": "This isn't accurate -- while possible in some cases, predator-prey coevolution frequently results in an ONGOING dynamic balance between the two species, not necessarily inevitable extinction of the prey."},
+      {"text": "Prey species actually never evolve any adaptations in response to predator pressure", "isCorrect": false, "feedback": "This isn't accurate -- prey species DO evolve adaptations in response to predator pressure, which is precisely the reciprocal process at the core of predator-prey coevolution being described here."},
+      {"text": "This ongoing evolutionary cycle has no actual connection to the relative balance of capabilities between the two species over time", "isCorrect": false, "feedback": "This isn't accurate -- this ongoing cycle is DIRECTLY connected to and helps explain how a relative balance CAN be maintained between the two species' capabilities over time, despite both continuously evolving."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This evolutionary process describes mutual, reciprocal adaptive change occurring between two or more ecologically interdependent species.", "medium": "This is when two different species end up shaping each other's evolution over time.", "easy": "This is when two species shape each other's evolution over time."},
+    "medium": {"hard": "Consider how reciprocal selective advantages for both parties involved in an interaction could drive their respective traits to become progressively better matched to each other over successive generations.", "medium": "Plants that fit their pollinator better get pollinated more, and pollinators that fit a flower better get more food -- so both keep getting better matched over time.", "easy": "Plants that fit their pollinator better get pollinated more, and pollinators that fit a flower better get more food."},
+    "hard": {"hard": "Consider how a dynamic where both parties continuously improve in tandem could preserve a stable RELATIVE competitive balance, even as their ABSOLUTE capabilities both continue to increase over time.", "medium": "Even though both sides keep getting better and better at their thing, they're kind of staying evenly matched with each other the whole time, like a never-ending tie.", "easy": "Even though both sides keep getting better, they stay evenly matched with each other, like a never-ending tie."}
+  }
+}
+]

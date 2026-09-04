@@ -1,0 +1,125 @@
+[
+{
+  "topic": "the difference between a physical and chemical property of metals",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is a physical property of a metal?",
+    "options": [
+      {"text": "Its luster (shininess)", "isCorrect": true, "feedback": "Correct -- luster can be observed just by looking at the metal, without any chemical change."},
+      {"text": "Its tendency to rust", "isCorrect": false, "feedback": "Rusting forms a new chemical substance, making this a chemical property, not physical."},
+      {"text": "Its reaction with acid", "isCorrect": false, "feedback": "Reacting with acid causes a chemical change, making this a chemical property, not physical."},
+      {"text": "Its flammability", "isCorrect": false, "feedback": "Flammability involves burning (a chemical reaction), making this a chemical property, not physical."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Malleability (the ability to be hammered into thin sheets) is what type of property?",
+    "options": [
+      {"text": "A physical property", "isCorrect": true, "feedback": "Correct -- hammering a metal into a new shape doesn't change its chemical identity, making this a physical property."},
+      {"text": "A chemical property", "isCorrect": false, "feedback": "Since no new substance forms when a metal is hammered into a new shape, this is a physical, not chemical, property."},
+      {"text": "A nuclear property", "isCorrect": false, "feedback": "Nuclear properties relate to the atom's nucleus, unrelated to a metal's shaping ability."},
+      {"text": "Not a real property at all", "isCorrect": false, "feedback": "Malleability is a well-recognized, measurable physical property of many metals."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Gold is prized partly because it resists corrosion (doesn't easily react with oxygen or other substances). Is corrosion resistance a physical or chemical property, and why?",
+    "options": [
+      {"text": "It's a chemical property, because it describes how the metal behaves (or doesn't) in a potential chemical reaction", "isCorrect": true, "feedback": "Correct -- even though it describes what DOESN'T happen, corrosion resistance is fundamentally about reactivity, which is a chemical property category."},
+      {"text": "It's a physical property, since you can see the metal directly", "isCorrect": false, "feedback": "Being visually observable isn't the deciding factor -- corrosion resistance is fundamentally about chemical reactivity, not appearance."},
+      {"text": "It's neither a physical nor chemical property", "isCorrect": false, "feedback": "Corrosion resistance is a legitimate property of the metal -- specifically classified as chemical, since it concerns reactivity."},
+      {"text": "It changes between physical and chemical depending on the weather", "isCorrect": false, "feedback": "The classification of a property type (physical vs. chemical) doesn't change based on weather -- it's a fixed way of categorizing what KIND of characteristic it is."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This property can be observed without the substance chemically transforming into something new.", "medium": "This is something you can see about the metal without it reacting or changing into anything new.", "easy": "This is something you can just look at, without the metal changing into something new."},
+    "medium": {"hard": "Reshaping a substance without altering its chemical composition falls under one specific property category.", "medium": "Changing a metal's shape doesn't create a new substance, which is the hallmark of one specific property type.", "easy": "Since hammering doesn't create a new substance, this fits one specific kind of property."},
+    "hard": {"hard": "Properties describing how a substance behaves (or resists behaving) in a chemical reaction fall into the chemical property category, regardless of whether the described outcome is a reaction occurring or not occurring.", "medium": "Even though it's about resisting a reaction rather than causing one, it's still fundamentally about chemical reactivity.", "easy": "Even though it's about NOT reacting, it's still about chemical reactivity, so it counts as a chemical property."}
+  }
+},
+{
+  "topic": "the difference between an exothermic and endothermic process using ice and steam",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Is melting ice an endothermic or exothermic process?",
+    "options": [
+      {"text": "Endothermic -- it absorbs heat from its surroundings", "isCorrect": true, "feedback": "Correct -- melting requires energy input to break the forces holding the solid ice structure together."},
+      {"text": "Exothermic -- it releases heat", "isCorrect": false, "feedback": "Melting ice absorbs heat from its surroundings (which is why it feels cold), making it endothermic, not exothermic."},
+      {"text": "Neither -- no energy is involved", "isCorrect": false, "feedback": "Energy is definitely involved -- specifically, heat is absorbed during melting."},
+      {"text": "It depends on the color of the ice", "isCorrect": false, "feedback": "Color has no bearing on whether melting is endothermic or exothermic -- this is a consistent physical property of the process."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Is steam condensing back into liquid water an endothermic or exothermic process?",
+    "options": [
+      {"text": "Exothermic -- it releases heat to its surroundings", "isCorrect": true, "feedback": "Correct -- as water vapor molecules slow down and form liquid, they release energy, which is why steam burns can be so severe."},
+      {"text": "Endothermic -- it absorbs heat", "isCorrect": false, "feedback": "Condensation actually releases heat as vapor molecules settle into a liquid state, making it exothermic, not endothermic."},
+      {"text": "Neither -- condensation doesn't involve any energy change", "isCorrect": false, "feedback": "Condensation does involve a real energy transfer -- specifically, energy is released to the surroundings."},
+      {"text": "It's the same as sublimation", "isCorrect": false, "feedback": "Condensation (gas to liquid) is a completely different process from sublimation (solid directly to gas)."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Steam at 100°C can cause more severe burns than boiling water at the same 100°C temperature. Based on the energy involved in condensation, why is this the case?",
+    "options": [
+      {"text": "As steam condenses on skin, it releases a large amount of additional latent heat energy beyond what the water temperature alone would suggest, transferring more total energy to the skin", "isCorrect": true, "feedback": "Correct -- the energy released specifically from the phase change (condensation) adds significantly to the total heat transferred, beyond just the temperature-based heat."},
+      {"text": "Steam is actually much hotter than 100°C in this comparison", "isCorrect": false, "feedback": "The scenario specifies both are at the same 100°C -- the extra danger comes from the additional energy released during the phase change itself, not a higher temperature."},
+      {"text": "Steam doesn't actually contain any heat energy at all", "isCorrect": false, "feedback": "Steam contains both thermal energy from its temperature AND additional latent heat energy tied to its gaseous phase, which is exactly why it's so dangerous when it condenses."},
+      {"text": "This has nothing to do with energy transfer, only appearance", "isCorrect": false, "feedback": "This phenomenon is a real, well-documented physics/chemistry effect related to the extra energy released during condensation (a phase change), not just visual appearance."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This state change requires energy input to loosen a solid's fixed particle arrangement.", "medium": "This process needs added heat energy to turn a solid into a liquid.", "easy": "This process needs heat added to turn ice into water."},
+    "medium": {"hard": "This state change results in particles settling into a lower-energy, more ordered liquid arrangement, releasing the difference as heat.", "medium": "As gas particles slow down and become liquid, they release some energy as heat.", "easy": "As steam turns back into liquid water, it releases heat into its surroundings."},
+    "hard": {"hard": "Phase changes involve a fixed amount of latent heat exchanged in addition to any temperature-based heat, and condensation releases this extra latent heat directly onto whatever surface it contacts.", "medium": "On top of the regular heat from being hot, condensing steam releases EXTRA hidden energy from changing from a gas back into a liquid.", "easy": "Steam releases extra hidden energy as it turns back into liquid, on top of just being hot."}
+  }
+},
+{
+  "topic": "the concept of a limiting reactant",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a limiting reactant in a chemical reaction?",
+    "options": [
+      {"text": "The reactant that runs out first, stopping the reaction from producing more product", "isCorrect": true, "feedback": "Correct -- once the limiting reactant is used up, the reaction can't continue, regardless of how much of the other reactant remains."},
+      {"text": "The reactant present in the largest amount", "isCorrect": false, "feedback": "That describes the excess reactant, the opposite of the limiting reactant."},
+      {"text": "A reactant that never actually reacts", "isCorrect": false, "feedback": "The limiting reactant does react -- it's simply the one that gets fully used up first."},
+      {"text": "The product formed at the end of the reaction", "isCorrect": false, "feedback": "A limiting reactant is a STARTING material, not a product formed from the reaction."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a reaction requiring 2 hydrogen molecules for every 1 oxygen molecule, you start with 8 hydrogen molecules and 3 oxygen molecules. Which is the limiting reactant?",
+    "options": [
+      {"text": "Oxygen, because the 8 hydrogen molecules would need 4 oxygen molecules to fully react, but only 3 are available", "isCorrect": true, "feedback": "Correct -- with only 3 oxygen molecules available, just 6 of the 8 hydrogen molecules can react (2:1 ratio), leaving hydrogen in excess and oxygen as the limiting reactant."},
+      {"text": "Hydrogen, because there are more molecules of it", "isCorrect": false, "feedback": "Having a larger quantity doesn't automatically mean it's the limiting reactant -- the required ratio must be considered."},
+      {"text": "Neither is limiting -- they will both be used up exactly evenly", "isCorrect": false, "feedback": "Based on the 2:1 ratio needed, these starting amounts don't allow for a perfectly even, simultaneous depletion of both reactants."},
+      {"text": "This cannot be determined without knowing the reaction's temperature", "isCorrect": false, "feedback": "The limiting reactant can be determined directly from the given quantities and the required reaction ratio, without needing temperature information."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why is understanding the limiting reactant important in industrial chemical manufacturing?",
+    "options": [
+      {"text": "It determines the maximum amount of product that can actually be made, helping manufacturers optimize reactant quantities and minimize wasted excess material", "isCorrect": true, "feedback": "Correct -- knowing the limiting reactant helps calculate theoretical yield and avoid wasting money on excess reactants that won't fully react."},
+      {"text": "It has no practical importance in real manufacturing", "isCorrect": false, "feedback": "This concept is actually critical in industrial chemistry for cost control, yield prediction, and efficient resource use."},
+      {"text": "It only matters for reactions that happen in outer space", "isCorrect": false, "feedback": "This concept applies to virtually all chemical reactions with multiple reactants, not specifically to space-related chemistry."},
+      {"text": "It determines the color of the final product only", "isCorrect": false, "feedback": "While the concept relates to product formation, its primary importance is about MAXIMUM QUANTITY of product, not specifically color."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This substance's depletion is what ultimately halts the reaction's progress.", "medium": "This is the ingredient that gets used up first, stopping the reaction.", "easy": "This is the ingredient that runs out first, stopping the reaction."},
+    "medium": {"hard": "Compare the actual amounts present against the required reaction ratio to see which reactant would be exhausted first.", "medium": "Figure out how much of each reactant is actually needed based on the ratio, then see which one falls short.", "easy": "Using the 2:1 ratio, figure out which one would run out first based on what's available."},
+    "hard": {"hard": "Accurately predicting product yield and reactant consumption directly informs cost-efficient sourcing and minimizes wasted excess reactant in large-scale production.", "medium": "Knowing which ingredient runs out first helps companies figure out exactly how much product they can make and avoid buying more of the other ingredient than needed.", "easy": "Knowing which ingredient runs out first helps companies avoid wasting money buying extra of the other one."}
+  }
+}
+]

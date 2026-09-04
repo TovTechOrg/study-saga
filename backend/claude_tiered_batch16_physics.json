@@ -1,0 +1,84 @@
+[
+{
+  "topic": "the difference between mechanical and electromagnetic waves",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What does a mechanical wave require to travel?",
+    "options": [
+      {"text": "A physical medium, like air, water, or a solid", "isCorrect": true, "feedback": "Correct -- mechanical waves, like sound, need particles of matter to transmit their energy."},
+      {"text": "Nothing at all -- it can travel through a vacuum", "isCorrect": false, "feedback": "That describes electromagnetic waves, not mechanical waves, which specifically need a medium."},
+      {"text": "Extremely high temperatures", "isCorrect": false, "feedback": "Temperature isn't a requirement for mechanical wave travel -- having a medium of matter is."},
+      {"text": "A source of light", "isCorrect": false, "feedback": "Light isn't required for mechanical waves -- they need physical matter to propagate through."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is an example of an electromagnetic wave, capable of traveling through a vacuum?",
+    "options": [
+      {"text": "Visible light", "isCorrect": true, "feedback": "Correct -- light is an electromagnetic wave and can travel through the vacuum of space, unlike sound."},
+      {"text": "Sound waves", "isCorrect": false, "feedback": "Sound waves are mechanical and require a medium -- they cannot travel through a vacuum."},
+      {"text": "Ocean waves", "isCorrect": false, "feedback": "Ocean waves are mechanical waves in water, requiring a medium, unlike electromagnetic waves."},
+      {"text": "Seismic waves", "isCorrect": false, "feedback": "Seismic waves travel through the earth and require a medium, unlike electromagnetic waves."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Astronauts on the Moon (which has no atmosphere) cannot hear each other speak directly, even standing close together, but they can see each other and communicate using radio. What does this demonstrate about the two wave types involved?",
+    "options": [
+      {"text": "Sound (mechanical waves) cannot travel through the vacuum-like lunar environment, while light and radio waves (electromagnetic) can travel without any medium at all", "isCorrect": true, "feedback": "Correct -- this scenario is a clear real-world demonstration of the fundamental difference between mechanical and electromagnetic wave requirements."},
+      {"text": "Sound and light behave identically in this environment", "isCorrect": false, "feedback": "This scenario actually clearly shows they behave very differently -- sound fails without a medium, while light/radio waves succeed."},
+      {"text": "The Moon actually has enough atmosphere for sound to travel normally", "isCorrect": false, "feedback": "The Moon's negligible atmosphere is precisely why sound can't travel there in the usual way -- this supports, rather than contradicts, the described scenario."},
+      {"text": "Radio waves require a medium just like sound does", "isCorrect": false, "feedback": "Radio waves are electromagnetic waves, which specifically do NOT require a medium -- that's exactly why they work fine on the Moon."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This type of wave depends entirely on particles of matter bumping into each other to transmit its energy.", "medium": "This type of wave needs actual particles of matter to travel through.", "easy": "This type of wave needs air, water, or something physical to travel through."},
+    "medium": {"hard": "This type of wave travels as oscillating electric and magnetic fields, needing no physical medium whatsoever.", "medium": "This type of wave can travel through completely empty space, unlike sound.", "easy": "This is the kind of wave that can reach us through empty space, like sunlight."},
+    "hard": {"hard": "The absence of a lunar atmosphere removes the medium mechanical (sound) waves require, while electromagnetic waves (light, radio) are entirely unaffected by this absence since they never needed a medium in the first place.", "medium": "Since there's basically no air on the Moon, sound has nothing to travel through, but light and radio waves don't need any medium at all.", "easy": "Since there's basically no air on the Moon, sound can't travel, but light and radio waves don't need air at all."}
+  }
+},
+{
+  "topic": "the difference between speed of sound and speed of light",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which travels faster: light or sound?",
+    "options": [
+      {"text": "Light", "isCorrect": true, "feedback": "Correct -- light travels dramatically faster than sound, which is why you see lightning before you hear thunder."},
+      {"text": "Sound", "isCorrect": false, "feedback": "Sound is actually far slower than light -- this is backwards."},
+      {"text": "They travel at exactly the same speed", "isCorrect": false, "feedback": "There's a massive difference in speed between light and sound -- they aren't equal."},
+      {"text": "Neither actually moves at any measurable speed", "isCorrect": false, "feedback": "Both light and sound travel at specific, well-measured speeds -- they aren't instantaneous or speedless."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "During a thunderstorm, you see a lightning flash and then hear thunder several seconds later. What does this delay demonstrate?",
+    "options": [
+      {"text": "Light reaches your eyes almost instantly, while sound takes noticeably longer to travel the same distance", "isCorrect": true, "feedback": "Correct -- this time difference is a direct, observable demonstration of light's vastly greater speed compared to sound."},
+      {"text": "The lightning and thunder actually happen at completely different times", "isCorrect": false, "feedback": "Lightning and its accompanying thunder actually occur at essentially the same moment -- it's the differing travel speeds of light and sound that create the perceived delay."},
+      {"text": "Sound travels faster than light in stormy weather specifically", "isCorrect": false, "feedback": "Light is always faster than sound, in any weather condition -- this isn't a special exception during storms."},
+      {"text": "This has nothing to do with the speed of light or sound", "isCorrect": false, "feedback": "This delay is actually a classic, direct real-world example specifically demonstrating the vast speed difference between light and sound."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "You can estimate how far away a lightning strike is by counting the seconds between seeing the flash and hearing the thunder, then dividing by about 5 (since sound travels roughly 1 mile every 5 seconds). Why can you essentially ignore the travel time of light in this calculation?",
+    "options": [
+      {"text": "Light travels so incredibly fast (about 186,000 miles per second) that its travel time over typical storm distances is negligible compared to sound's much slower travel time", "isCorrect": true, "feedback": "Correct -- for any practical storm distance, light arrives essentially instantaneously compared to the noticeably slower sound, so the timing delay is almost entirely due to sound's travel time."},
+      {"text": "Light doesn't actually travel at any finite speed at all", "isCorrect": false, "feedback": "Light does travel at a very large but finite speed -- it's just so fast that its delay is negligible at these everyday distances."},
+      {"text": "Sound actually travels faster than light over long distances", "isCorrect": false, "feedback": "Light is always faster than sound, regardless of distance -- this isn't a distance-dependent reversal."},
+      {"text": "This method doesn't actually provide any useful distance estimate", "isCorrect": false, "feedback": "This method is actually a well-established, reasonably accurate real-world technique for estimating lightning distance."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One of these forms of energy travels at an almost unimaginably fast, near-instantaneous speed over everyday distances.", "medium": "One of these travels so fast it seems almost instant; the other takes a noticeable amount of time.", "easy": "Light seems to arrive instantly; sound takes a bit to catch up."},
+    "medium": {"hard": "The time gap you perceive directly reflects the vastly different travel speeds of these two types of waves over the same distance.", "medium": "Since light arrives almost instantly, the delay you notice is basically just how long the sound took to catch up.", "easy": "Since light arrives almost instantly, the delay is basically just how long the sound took to arrive."},
+    "hard": {"hard": "Light's speed is roughly a million times faster than sound's, so for any distance relevant to a thunderstorm, light's travel time rounds down to essentially zero compared to sound's.", "medium": "Light travels so incredibly fast compared to sound that its tiny travel time barely matters next to how long the sound takes.", "easy": "Light travels so incredibly fast that its tiny travel time barely matters compared to sound's much slower speed."}
+  }
+}
+]
