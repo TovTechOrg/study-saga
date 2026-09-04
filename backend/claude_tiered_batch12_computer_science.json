@@ -1,0 +1,1517 @@
+[
+  {
+    "topic": "edge computing",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general idea behind 'edge computing'?",
+      "options": [
+        {
+          "text": "Processing data closer to where it's actually generated, rather than sending everything to a distant central data center",
+          "isCorrect": true,
+          "feedback": "Correct -- edge computing pushes some processing work out toward the 'edge' of the network, near the data source, instead of relying solely on a distant central location."
+        },
+        {
+          "text": "Placing servers physically near the edge of a city, regardless of where the data is actually generated",
+          "isCorrect": false,
+          "feedback": "The relevant idea is processing data close to its actual SOURCE, not near a city's geographic edge specifically -- the data's origin, not city geography, is what matters."
+        },
+        {
+          "text": "Encrypting data so heavily that only nearby local devices are able to decrypt it",
+          "isCorrect": false,
+          "feedback": "Edge computing is about WHERE data gets processed, not about a particular encryption scheme -- encryption strength isn't what defines this concept."
+        },
+        {
+          "text": "Running all of a company's processing on a single centralized mainframe, regardless of where the data originates",
+          "isCorrect": false,
+          "feedback": "That describes centralizing processing in one place -- edge computing is about the opposite: pushing processing out closer to where the data is actually generated."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might processing data locally, near where it's generated, rather than sending everything to a distant central data center, be advantageous for certain applications, like a factory sensor needing to react quickly?",
+      "options": [
+        {
+          "text": "Processing locally can reduce the delay involved in sending data all the way to a distant location and back, allowing for a faster response time for time-sensitive tasks",
+          "isCorrect": true,
+          "feedback": "Correct -- avoiding that round-trip delay to a distant data center is a key motivation behind edge computing for applications where a fast response is particularly important."
+        },
+        {
+          "text": "Because edge devices are physically incapable of connecting to the internet at all",
+          "isCorrect": false,
+          "feedback": "Edge devices typically do connect to the internet, often to sync with the cloud when needed -- the benefit of local processing is reduced round-trip delay, not an inability to connect at all."
+        },
+        {
+          "text": "Because edge computing eliminates the need for any data to ever be encrypted",
+          "isCorrect": false,
+          "feedback": "Data still commonly needs encryption regardless of where it's processed -- the key benefit of local processing discussed here is reduced delay, not an exemption from encryption."
+        },
+        {
+          "text": "Because a distant central data center is physically incapable of storing any data at all",
+          "isCorrect": false,
+          "feedback": "Central data centers are certainly capable of storing data -- the advantage of edge computing is specifically about REDUCING RESPONSE DELAY for time-sensitive local processing, not about a data center's storage capability."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a system that combines edge computing with centralized cloud computing be a practical middle ground for certain applications, rather than relying exclusively on one approach or the other?",
+      "options": [
+        {
+          "text": "Edge computing can handle time-sensitive, local processing needs quickly, while the centralized cloud can handle broader, less time-sensitive tasks, such as aggregating and analyzing data across many different edge locations",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of hybrid approach lets each part of the system play to its own particular strengths, combining the speed benefits of local processing with the broader analytical and storage capabilities of centralized cloud computing."
+        },
+        {
+          "text": "Because edge computing alone is always sufficient for every kind of data processing task, making cloud computing unnecessary",
+          "isCorrect": false,
+          "feedback": "Edge computing excels at fast, local processing, but broader tasks like aggregating data across many locations are typically better suited to centralized cloud computing -- it isn't a full replacement for the cloud."
+        },
+        {
+          "text": "Because combining both approaches guarantees a system will never experience any downtime whatsoever",
+          "isCorrect": false,
+          "feedback": "While combining these approaches can improve overall resilience in some respects, it doesn't provide an absolute guarantee against every conceivable kind of downtime."
+        },
+        {
+          "text": "Because edge computing and cloud computing are simply two different names describing the exact identical single approach",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different, complementary approaches, differing specifically in where processing takes place -- they aren't simply the same single approach under two different names."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Rather than shipping everything off to a faraway data center, this approach handles data right where -- or very near where -- it was actually generated.",
+        "medium": "This approach processes data closer to where it's actually generated, rather than sending it all to a distant central data center.",
+        "hard": "Think about handling data right where it's created, rather than shipping it all the way off to some faraway central location first."
+      },
+      "medium": {
+        "easy": "Skipping that long round trip to a faraway server and back is exactly what shaves off the delay for tasks that need a fast response.",
+        "medium": "Processing things locally cuts out that long round trip to a faraway server and back, which is exactly what shaves time off the response.",
+        "hard": "Think about how much time is saved by not having to send data on a long round trip before getting a useful response back."
+      },
+      "hard": {
+        "easy": "One handles the quick, local, time-critical work; the other steps back and looks at the bigger picture by pulling together data from many locations at once.",
+        "medium": "One part can handle fast, time-sensitive local needs, while the other handles broader tasks like aggregating and analyzing data more centrally.",
+        "hard": "Think about letting each part of a system handle the job it's naturally best suited for."
+      }
+    }
+  },
+  {
+    "topic": "data vs information",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In computer science, how is 'data' generally distinguished from 'information'?",
+      "options": [
+        {
+          "text": "Data refers to raw, unprocessed facts or values, while information refers to data that has been organized or processed in a way that gives it meaning or context",
+          "isCorrect": true,
+          "feedback": "Correct -- this distinction highlights that raw data alone doesn't necessarily convey useful meaning until it's organized, interpreted, or given context."
+        },
+        {
+          "text": "Data and information are simply two different names describing the exact identical concept, with no distinction between them",
+          "isCorrect": false,
+          "feedback": "While closely related, they're generally understood as distinct concepts -- one refers to raw values, the other to those values once given meaningful context or organization."
+        },
+        {
+          "text": "Data refers only to numbers, while information refers only to text",
+          "isCorrect": false,
+          "feedback": "Both data and information can encompass many different kinds of content, including numbers and text -- the actual distinction is about RAW VALUES versus PROCESSED, MEANINGFUL CONTEXT, not a split by numeric versus textual content."
+        },
+        {
+          "text": "Data is always stored on paper, while information is always stored electronically",
+          "isCorrect": false,
+          "feedback": "Both data and information can be stored in either paper or electronic form -- the real distinction concerns whether the content is raw and unprocessed or has been given organized meaning, not the specific storage medium used."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a raw list of numbers, like [72, 68, 75, 70], be considered just 'data' on its own, but become meaningful 'information' once labeled as 'daily temperatures in degrees Fahrenheit for a specific week'?",
+      "options": [
+        {
+          "text": "The added context and organization gives the previously raw numbers a clear, interpretable meaning, transforming them from isolated values into something genuinely useful and understandable",
+          "isCorrect": true,
+          "feedback": "Correct -- this transformation, from raw values into something meaningfully interpretable through added context, captures the essential difference commonly drawn between plain data and true information."
+        },
+        {
+          "text": "Because adding a label physically changes the actual numeric values themselves",
+          "isCorrect": false,
+          "feedback": "Adding a label or context doesn't change the actual underlying VALUES themselves -- it's specifically the added CONTEXT AND MEANING that transforms how those same values are understood and used, not any change to the numbers."
+        },
+        {
+          "text": "Because raw numbers are incapable of being stored in a computer without an accompanying label",
+          "isCorrect": false,
+          "feedback": "Raw numbers can certainly be stored in a computer perfectly well without any accompanying label -- the distinction here is about whether that stored data carries clear, interpretable MEANING, not about basic storage capability."
+        },
+        {
+          "text": "Because a list of numbers can only ever contain a single value at a time",
+          "isCorrect": false,
+          "feedback": "A list, by definition, can hold multiple values at once -- this isn't the relevant distinction here, which concerns whether meaning and context have been added, not the sheer number of values present."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might the distinction between raw data and meaningful information be particularly relevant when designing a data-driven decision-making system, such as a business analytics dashboard?",
+      "options": [
+        {
+          "text": "Simply collecting and storing large amounts of raw data isn't inherently useful for making good decisions until that data is properly processed, organized, and contextualized into meaningful information that people can actually interpret and act on",
+          "isCorrect": true,
+          "feedback": "Correct -- this distinction underscores why data analysis, visualization, and proper context matter so much in practice; raw data alone, without appropriate processing and framing, often isn't directly actionable for real-world decision-making."
+        },
+        {
+          "text": "Because raw data is illegal to collect or store in most countries",
+          "isCorrect": false,
+          "feedback": "There's no such general legal prohibition against collecting or storing raw data -- the relevant point here concerns the practical USEFULNESS of raw data alone for decision-making, not any legal restriction."
+        },
+        {
+          "text": "Because a decision-making system can only ever process information, and is completely incapable of processing raw data at all",
+          "isCorrect": false,
+          "feedback": "Many systems actually start by ingesting RAW DATA and then process it INTO more meaningful information -- it isn't accurate to say such systems are incapable of handling raw data at all; that processing step is precisely the point being made."
+        },
+        {
+          "text": "Because collecting large amounts of raw data always guarantees that better business decisions will automatically follow",
+          "isCorrect": false,
+          "feedback": "This significantly overstates the case -- simply having lots of raw data doesn't automatically guarantee good decisions; it must first be properly turned into meaningful, well-contextualized information to be genuinely useful for decision-making."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "One term is just raw, unorganized facts on their own; the other is what you get once those same facts have been arranged to actually mean something.",
+        "medium": "One term describes the raw material before anything's been done to it; the other describes that same material once it's been shaped into something a person can actually use.",
+        "hard": "Think about a giant pile of numbers sitting in a spreadsheet versus a well-labeled chart that actually tells you a story."
+      },
+      "medium": {
+        "easy": "Attaching context and structure is exactly what turns a pile of disconnected numbers into something a person can actually interpret and use.",
+        "medium": "Wrapping raw numbers in context and structure is exactly what turns them into something a person can actually interpret and act on.",
+        "hard": "Think about what changes when you attach a clear label explaining exactly what a list of numbers actually represents."
+      },
+      "hard": {
+        "easy": "Just having a mountain of raw numbers sitting around doesn't help anyone decide anything -- it has to first be organized and given context before it's actually usable.",
+        "medium": "On its own, a pile of unprocessed numbers doesn't help anyone make a decision -- it needs to be organized and given context first before it's genuinely useful.",
+        "hard": "Think about whether just collecting a huge pile of raw numbers automatically leads to good decisions on its own."
+      }
+    }
+  },
+  {
+    "topic": "email protocols (SMTP)",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is SMTP primarily used for?",
+      "options": [
+        {
+          "text": "Sending email messages from a client or server to a recipient's mail server",
+          "isCorrect": true,
+          "feedback": "Correct -- SMTP (Simple Mail Transfer Protocol) is the standard protocol responsible for the outgoing transmission of email messages across the internet."
+        },
+        {
+          "text": "Displaying web pages inside a web browser",
+          "isCorrect": false,
+          "feedback": "Displaying web pages is generally handled by protocols like HTTP/HTTPS -- SMTP is specifically for SENDING email messages, a different function entirely."
+        },
+        {
+          "text": "Storing files permanently on a hard drive",
+          "isCorrect": false,
+          "feedback": "SMTP is a protocol for TRANSMITTING email messages -- it isn't a mechanism for permanently storing files on a hard drive."
+        },
+        {
+          "text": "Retrieving previously stored messages from a mailbox",
+          "isCorrect": false,
+          "feedback": "Retrieving already-stored messages is handled by different protocols, like POP3 or IMAP -- SMTP's job is specifically SENDING a message onward, not retrieving one."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Email systems commonly use SMTP for sending messages, but often rely on a different protocol, like IMAP or POP3, for retrieving messages from a mail server. Why are separate protocols typically used for these two different tasks?",
+      "options": [
+        {
+          "text": "Sending a message and later retrieving a stored message from a mailbox are functionally different tasks, so specialized protocols have been designed to each handle their own specific part of the overall process efficiently",
+          "isCorrect": true,
+          "feedback": "Correct -- this specialization allows each aspect of email handling, sending versus retrieving, to be optimized specifically for its own particular requirements."
+        },
+        {
+          "text": "Because sending and retrieving email are actually the exact same single task, just given two different confusing names",
+          "isCorrect": false,
+          "feedback": "Sending a message and retrieving a stored one from a mailbox are genuinely different tasks with different technical requirements -- they aren't simply the same task described using two different names."
+        },
+        {
+          "text": "Because a single protocol handling both tasks would use too much computer memory to be practical",
+          "isCorrect": false,
+          "feedback": "Memory usage isn't the reason -- sending and retrieving are simply functionally different tasks, which is why specialized protocols were designed for each, not a memory limitation."
+        },
+        {
+          "text": "Because retrieving a message requires an entirely different kind of network connection than sending one does",
+          "isCorrect": false,
+          "feedback": "Both sending and retrieving typically use standard network connections -- the real reason for separate protocols is that the two tasks are functionally different jobs, not that they need fundamentally different network hardware."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might an email system rely on multiple intermediate mail servers to relay a message from the original sender to the final recipient, rather than always delivering it directly in one single hop?",
+      "options": [
+        {
+          "text": "Relaying through intermediate mail servers can help route the message efficiently across different networks and organizational boundaries, especially since the sender's and recipient's mail servers might not have a direct connection to each other",
+          "isCorrect": true,
+          "feedback": "Correct -- this relay-based approach, which mirrors packet-switching's general routing philosophy, allows email to be reliably delivered even between mail servers that aren't directly connected to one another."
+        },
+        {
+          "text": "Because direct connections between two arbitrary mail servers are blocked by default across the modern internet",
+          "isCorrect": false,
+          "feedback": "Direct connections between mail servers are technically possible -- relaying is used because it helps route messages efficiently across networks that may lack a direct connection, not because direct connections are universally blocked."
+        },
+        {
+          "text": "Because relaying through intermediate servers makes a message travel with stronger encryption at every hop",
+          "isCorrect": false,
+          "feedback": "Relaying doesn't inherently add encryption -- its main benefit is helping route a message efficiently across networks that lack a direct connection between sender and recipient."
+        },
+        {
+          "text": "Because using multiple mail servers guarantees an email will never be lost or delayed",
+          "isCorrect": false,
+          "feedback": "Using multiple relaying mail servers can certainly improve overall routing flexibility and reach, but it doesn't provide some absolute, ironclad guarantee against every possible loss or delay."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is the protocol that actually carries an outgoing email message from a sender's system over to the recipient's mail server.",
+        "medium": "This protocol sends email messages from a client or server to a recipient's mail server.",
+        "hard": "Think about the underlying protocol responsible for actually sending an email message on its way to its destination."
+      },
+      "medium": {
+        "easy": "Getting a message out the door and later pulling an already-delivered message out of a mailbox are genuinely different jobs, so different protocols were built to specialize in each.",
+        "medium": "Sending a message and retrieving an already-stored message are functionally different tasks, each handled by its own specialized protocol.",
+        "hard": "Think about sending a letter versus checking your own mailbox for letters that have already arrived -- two genuinely different jobs."
+      },
+      "hard": {
+        "easy": "Hopping through a few intermediate servers lets the message find its way across networks that don't have a direct line between the original sender and the final recipient.",
+        "medium": "Relaying through intermediate servers helps route the message efficiently, especially when the sender's and recipient's servers aren't directly connected.",
+        "hard": "Think about a letter passing through several post offices along its route, rather than being delivered in one single direct hop."
+      }
+    }
+  },
+  {
+    "topic": "digital forensics",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'digital forensics' generally concerned with?",
+      "options": [
+        {
+          "text": "Investigating and analyzing digital devices or data, often to uncover evidence related to a crime, security incident, or other investigation",
+          "isCorrect": true,
+          "feedback": "Correct -- digital forensics applies careful, methodical investigative techniques to digital evidence, such as computers, phones, or network logs."
+        },
+        {
+          "text": "Designing more visually appealing computer keyboards",
+          "isCorrect": false,
+          "feedback": "Digital forensics concerns investigating digital evidence -- it isn't concerned with the visual design of physical keyboards."
+        },
+        {
+          "text": "Writing new video game software",
+          "isCorrect": false,
+          "feedback": "Digital forensics is an investigative field focused on analyzing digital evidence, entirely distinct from writing video game software."
+        },
+        {
+          "text": "Physically repairing damaged computer hardware",
+          "isCorrect": false,
+          "feedback": "Digital forensics is about ANALYZING digital data and devices to uncover evidence -- it isn't primarily about physically repairing damaged hardware components."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a digital forensics investigator take great care to make an exact, verified copy of a device's storage before analyzing it, rather than analyzing the original storage directly?",
+      "options": [
+        {
+          "text": "Working from a verified copy helps preserve the original evidence in its unaltered state, which can be important for maintaining the integrity and credibility of any findings, especially in a legal context",
+          "isCorrect": true,
+          "feedback": "Correct -- this careful preservation of original evidence, often documented through a formal 'chain of custody', helps ensure that findings are considered trustworthy and defensible if they're later needed for legal proceedings."
+        },
+        {
+          "text": "Because analyzing the original storage device would immediately and permanently destroy all of its data",
+          "isCorrect": false,
+          "feedback": "Simply analyzing the original storage doesn't inherently guarantee its immediate, permanent destruction -- the real motivation for using a verified copy is preserving the ORIGINAL EVIDENCE's integrity and credibility for legal or investigative purposes, not an assumption of automatic destruction."
+        },
+        {
+          "text": "Because making a copy is required in order for a computer's storage device to be legally sold afterward",
+          "isCorrect": false,
+          "feedback": "Making a forensic copy isn't tied to some requirement for later reselling a storage device -- the actual purpose is EVIDENCE PRESERVATION and maintaining credibility for an investigation, unrelated to any future resale of the hardware."
+        },
+        {
+          "text": "Because copies of a storage device always take up significantly less space than the original",
+          "isCorrect": false,
+          "feedback": "A forensic copy is typically an exact, faithful duplicate of the original data -- it generally doesn't take up meaningfully LESS space than the original; the actual motivation for making a copy is about preserving evidence integrity, not saving storage space."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is maintaining a clear, well-documented 'chain of custody' considered especially important in a digital forensics investigation intended to support a legal case?",
+      "options": [
+        {
+          "text": "A well-documented chain of custody helps establish that the digital evidence was properly handled, hasn't been tampered with, and can be reliably traced from its original collection all the way through analysis, which is often essential for it to be considered credible and admissible in legal proceedings",
+          "isCorrect": true,
+          "feedback": "Correct -- without such clear, careful documentation, the reliability and legal admissibility of digital evidence could be seriously called into question during a legal proceeding."
+        },
+        {
+          "text": "Because maintaining a chain of custody guarantees that a case will always be won in court",
+          "isCorrect": false,
+          "feedback": "A carefully maintained chain of custody supports the CREDIBILITY and ADMISSIBILITY of evidence -- it doesn't guarantee a particular case OUTCOME will always be won."
+        },
+        {
+          "text": "Because a chain of custody refers to a physical metal chain used to lock up a computer",
+          "isCorrect": false,
+          "feedback": "A 'chain of custody' in this forensic context refers to a documented RECORD of how evidence was handled over time -- it isn't a literal physical metal chain used to secure a computer."
+        },
+        {
+          "text": "Because maintaining a chain of custody is only relevant for cases involving physical, non-digital evidence",
+          "isCorrect": false,
+          "feedback": "A well-documented chain of custody is very much relevant and important for DIGITAL evidence specifically, not just for physical, non-digital evidence -- it's a core forensic practice applied broadly across many types of evidence, including digital."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This field is about digging through digital devices and data to turn up evidence connected to a crime, breach, or other investigation.",
+        "medium": "This field investigates and analyzes digital devices or data, often to uncover evidence related to a crime or investigation.",
+        "hard": "Think about carefully investigating a computer or phone to uncover evidence related to a crime or security incident."
+      },
+      "medium": {
+        "easy": "Working on a copy keeps the original evidence exactly as it was found, which matters a lot if the findings ever need to hold up in court.",
+        "medium": "Working from a verified copy helps preserve the original evidence's unaltered state, important for maintaining credibility of findings.",
+        "hard": "Think about wanting to keep the original evidence completely untouched, working instead from a carefully verified duplicate."
+      },
+      "hard": {
+        "easy": "A clear paper trail showing exactly who touched the evidence and when is often what makes the difference between evidence being taken seriously in court or getting thrown out.",
+        "medium": "This documented record helps establish that the evidence was properly handled, wasn't tampered with, and can be reliably traced from collection through analysis.",
+        "hard": "Think about needing a clear, unbroken record proving exactly who handled the evidence and when, every step of the way."
+      }
+    }
+  },
+  {
+    "topic": "semantic versioning",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of 'semantic versioning' (often written as version numbers like 2.4.1)?",
+      "options": [
+        {
+          "text": "To communicate, through a structured version number, what kind of changes have been made to a piece of software, such as whether they might break existing compatibility",
+          "isCorrect": true,
+          "feedback": "Correct -- semantic versioning uses a structured format, commonly major.minor.patch, to convey meaningful information about the nature of changes made in a given release."
+        },
+        {
+          "text": "To indicate exactly how many total lines of code a piece of software contains",
+          "isCorrect": false,
+          "feedback": "A semantic version number doesn't represent a raw line-of-code count -- it specifically communicates the NATURE of changes made between different released versions."
+        },
+        {
+          "text": "To indicate how many total downloads or installations the software has received",
+          "isCorrect": false,
+          "feedback": "Download counts aren't tracked by the version number -- semantic versioning instead signals what kind of changes were made in each release."
+        },
+        {
+          "text": "To indicate which operating system the software is compatible with",
+          "isCorrect": false,
+          "feedback": "Compatibility with an operating system isn't what the version number communicates -- it signals what kind of changes (and possible breakage) a given update introduces."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In a typical semantic versioning scheme (major.minor.patch), what does incrementing the 'major' version number generally signal?",
+      "options": [
+        {
+          "text": "That a significant change has been made that may break compatibility with how the software was previously used",
+          "isCorrect": true,
+          "feedback": "Correct -- a major version bump is generally meant to warn developers relying on that software that they may need to review and possibly update how they're using it, due to potentially breaking changes."
+        },
+        {
+          "text": "That only a very minor typo was fixed somewhere in the software's documentation",
+          "isCorrect": false,
+          "feedback": "A very minor documentation typo fix would typically be reflected by incrementing the 'patch' number instead, not the 'major' version number, which is reserved for more significant, potentially breaking changes."
+        },
+        {
+          "text": "That the version number has wrapped back around to zero after reaching some internal limit",
+          "isCorrect": false,
+          "feedback": "Version numbers don't wrap around after hitting a limit -- incrementing the major number specifically signals a change that may break backward compatibility."
+        },
+        {
+          "text": "That only cosmetic changes were made to the software's user interface",
+          "isCorrect": false,
+          "feedback": "Cosmetic-only changes would typically bump a smaller part of the version number -- incrementing the major number specifically signals a potentially compatibility-breaking change."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might other developers who depend on a particular software library pay close attention to that library's semantic version number when deciding whether it's safe to update to a newer release?",
+      "options": [
+        {
+          "text": "The semantic versioning convention gives them a quick, structured signal about whether a given update is likely to be a safe, backward-compatible improvement or one that might require them to adjust their own code to accommodate breaking changes",
+          "isCorrect": true,
+          "feedback": "Correct -- this predictable signaling is precisely the practical value semantic versioning is intended to provide, helping downstream developers gauge the likely risk and impact of adopting a particular library update."
+        },
+        {
+          "text": "Because semantic versioning guarantees that every single update will be entirely free of any bugs",
+          "isCorrect": false,
+          "feedback": "Semantic versioning communicates the general NATURE of changes made -- it doesn't provide an absolute guarantee that any specific update will be completely free of bugs."
+        },
+        {
+          "text": "Because semantic versioning is only relevant for open-source software, not commercial products",
+          "isCorrect": false,
+          "feedback": "Semantic versioning is used across both open-source and commercial software -- what matters here is that it gives developers a quick signal about update safety, regardless of licensing."
+        },
+        {
+          "text": "Because a higher version number always indicates a faster-performing piece of software",
+          "isCorrect": false,
+          "feedback": "A version number signals the kind of change made, like compatibility risk -- it says nothing about performance, which a higher number doesn't guarantee."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "The structure of the version number itself is meant to signal what kind of update just happened, including whether it might break anything that depended on the old behavior.",
+        "medium": "The structured format of the number itself is designed to signal what category of update just happened underneath.",
+        "hard": "Think about a structured version number designed to hint at what kind of update actually happened underneath."
+      },
+      "medium": {
+        "easy": "Bumping this particular part of the number is the convention's way of warning that something potentially compatibility-breaking has changed.",
+        "medium": "Bumping this specific segment of the number is the convention's way of flagging a substantial change that might not play nicely with how things worked before.",
+        "hard": "Think about which specific part of the version number is reserved for signaling a bigger, potentially disruptive kind of change."
+      },
+      "hard": {
+        "easy": "At a glance, the version number tells a developer whether it's probably safe to just update, or whether they should brace for having to adjust their own code first.",
+        "medium": "This numbering convention offers a quick, structured heads-up on whether an update is probably safe to grab, or whether it might demand some code changes on your end.",
+        "hard": "Think about wanting a quick, reliable signal for 'is this update likely safe, or should I be more careful before adopting it?'"
+      }
+    }
+  },
+  {
+    "topic": "text editors vs IDEs",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a basic 'text editor', in the context of writing code?",
+      "options": [
+        {
+          "text": "A relatively simple program for creating and editing plain text files, including source code",
+          "isCorrect": true,
+          "feedback": "Correct -- a basic text editor focuses primarily on letting a user view and modify plain text content, which can include program source code."
+        },
+        {
+          "text": "A specialized tool used exclusively for editing video files",
+          "isCorrect": false,
+          "feedback": "A text editor is specifically for creating and editing plain TEXT content -- it isn't a specialized tool for editing video files."
+        },
+        {
+          "text": "A tool used to design a website's visual layout and graphics",
+          "isCorrect": false,
+          "feedback": "That describes a web design tool -- a basic text editor is a general-purpose program for creating and editing plain text, including source code, not specifically for visual page design."
+        },
+        {
+          "text": "A cloud storage service used only for automatically backing up files",
+          "isCorrect": false,
+          "feedback": "That describes a backup service, not a text editor -- a text editor is software for creating and modifying plain text content, including source code."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does an 'IDE' (Integrated Development Environment) generally differ from a basic, simple text editor?",
+      "options": [
+        {
+          "text": "An IDE typically bundles together additional tools helpful for software development, such as a debugger, build tools, and code-completion features, beyond just basic text editing capability",
+          "isCorrect": true,
+          "feedback": "Correct -- this bundling of multiple integrated development tools is exactly what distinguishes a full IDE from a more minimal, basic text editor."
+        },
+        {
+          "text": "An IDE and a basic text editor are simply two different names describing the exact identical single tool",
+          "isCorrect": false,
+          "feedback": "They're related but genuinely different in SCOPE -- an IDE bundles together significantly more integrated development tools and features beyond what a basic text editor typically provides."
+        },
+        {
+          "text": "An IDE is simply a text editor with a different color scheme applied",
+          "isCorrect": false,
+          "feedback": "The difference is about ADDED FUNCTIONALITY, like debuggers and build tools, not just a cosmetic color scheme change."
+        },
+        {
+          "text": "A basic text editor always includes considerably more built-in features than a full IDE",
+          "isCorrect": false,
+          "feedback": "This actually reverses the typical, well-known relationship -- a full IDE generally includes considerably MORE built-in development tools and features than a comparatively minimal, basic text editor."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a developer sometimes deliberately choose a lightweight text editor over a full-featured IDE for certain specific tasks, despite an IDE's more extensive built-in feature set?",
+      "options": [
+        {
+          "text": "A lightweight text editor can start up faster and use fewer system resources, which can be preferable for quick edits or working with a project that doesn't require an IDE's more extensive, resource-intensive integrated tooling",
+          "isCorrect": true,
+          "feedback": "Correct -- this practical tradeoff between an IDE's rich integrated feature set and a text editor's comparative speed and lower resource usage is a common consideration developers weigh depending on the specific task at hand."
+        },
+        {
+          "text": "Because lightweight text editors are only able to save files in one single specific file format",
+          "isCorrect": false,
+          "feedback": "Lightweight text editors can generally save plain text in whatever format or extension you choose -- their real advantage here is starting up faster and using fewer system resources."
+        },
+        {
+          "text": "Because a lightweight text editor cannot be used to edit more than one file at a time",
+          "isCorrect": false,
+          "feedback": "Most lightweight text editors can open and edit multiple files -- the real advantage for quick tasks is faster startup and lower resource use, not a single-file limitation."
+        },
+        {
+          "text": "Because IDEs are only compatible with one single specific programming language, unlike text editors",
+          "isCorrect": false,
+          "feedback": "Many IDEs actually support multiple different programming languages, sometimes through extensions or plugins -- language support alone isn't the key practical tradeoff being discussed here between these two kinds of tools."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is a lightweight program built mainly around typing and modifying plain text -- source code counts -- without any bundled extra features.",
+        "medium": "This tool sticks to a fairly simple job: letting you write and modify text-based files, source code included, without much else layered on.",
+        "hard": "Think about a no-frills tool whose whole job is just letting you type things out and change them, nothing fancier attached."
+      },
+      "medium": {
+        "easy": "This fuller tool wraps a bunch of developer conveniences around basic text editing -- catching bugs as you type, automating builds, and finishing your code for you.",
+        "medium": "This kind of tool comes loaded with extra development helpers layered on top of plain text editing, things like a debugger, build automation, and smart code suggestions.",
+        "hard": "Think about a toolbox that comes packed with several extra specialized tools, rather than just a single basic instrument."
+      },
+      "hard": {
+        "easy": "For a quick edit or a small project, the lighter option loads almost instantly and doesn't tie up nearly as much of the system's resources.",
+        "medium": "Skipping all that extra bundled tooling means the lighter option launches quicker and asks less of the system, which suits a quick edit or a small project just fine.",
+        "hard": "Think about wanting something quick and lightweight for a small task, rather than a heavier, more full-featured tool."
+      }
+    }
+  },
+  {
+    "topic": "big data",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does the term 'big data' generally refer to?",
+      "options": [
+        {
+          "text": "Data sets so large or complex that they require specialized tools and approaches to store, process, and analyze effectively",
+          "isCorrect": true,
+          "feedback": "Correct -- 'big data' describes situations where the scale, speed, or variety of data exceeds what traditional, simpler tools can conveniently handle."
+        },
+        {
+          "text": "Any data that is stored in the cloud rather than on a local computer",
+          "isCorrect": false,
+          "feedback": "Cloud storage is about WHERE data lives, not about its scale or complexity -- plenty of cloud-stored data is small and simple, and plenty of big data is processed on local clusters."
+        },
+        {
+          "text": "A database that has existed for a long time and accumulated many years of historical records",
+          "isCorrect": false,
+          "feedback": "Age isn't what defines 'big data' -- a brand-new data set can already be 'big' if it's large, fast-moving, or complex enough, regardless of how long it's been collected."
+        },
+        {
+          "text": "Data that is owned specifically by a large, well-known technology company",
+          "isCorrect": false,
+          "feedback": "'Big data' describes a data set's own scale and complexity -- it isn't defined by which company happens to own or collect it."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Big data is sometimes described using characteristics like 'volume', 'velocity', and 'variety'. What does 'velocity' generally refer to, in this context?",
+      "options": [
+        {
+          "text": "The speed at which data is generated, collected, or needs to be processed",
+          "isCorrect": true,
+          "feedback": "Correct -- 'velocity' captures how quickly data flows in and often needs to be handled, which can be a significant challenge alongside a data set's overall size and diversity."
+        },
+        {
+          "text": "The total amount of storage space the overall data set occupies",
+          "isCorrect": false,
+          "feedback": "That description matches 'volume,' the size dimension of big data -- 'velocity' is specifically about SPEED, not how much total storage the data takes up."
+        },
+        {
+          "text": "The number of different formats or types of data being combined",
+          "isCorrect": false,
+          "feedback": "That description matches 'variety,' the diversity-of-data-types dimension -- 'velocity' is specifically about SPEED, not how many different formats are involved."
+        },
+        {
+          "text": "How accurate and trustworthy the incoming data is",
+          "isCorrect": false,
+          "feedback": "That describes data quality (sometimes called 'veracity') -- 'velocity' is specifically about SPEED, not how reliable or error-free the data is."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might traditional, single-machine data processing tools sometimes struggle with certain big data challenges, motivating the development of distributed processing approaches (which spread work across many machines)?",
+      "options": [
+        {
+          "text": "Some data sets can be so large or arrive so quickly that a single machine's processing power, memory, or storage capacity isn't sufficient to handle them efficiently, making it necessary to distribute the work across many machines working together",
+          "isCorrect": true,
+          "feedback": "Correct -- this need to scale beyond what any single machine can practically handle is a core motivation behind distributed big data processing frameworks and approaches."
+        },
+        {
+          "text": "Because network bandwidth between machines is always the single biggest bottleneck, regardless of how much data there is",
+          "isCorrect": false,
+          "feedback": "Bandwidth can matter, but it isn't the universal, defining bottleneck -- the core motivation is that a single machine's own processing power, memory, or storage runs out at large enough scale or speed, not a fixed rule about networking specifically."
+        },
+        {
+          "text": "Because distributed systems are always cheaper to build and maintain than a single powerful machine",
+          "isCorrect": false,
+          "feedback": "Distributed systems aren't necessarily cheaper -- they're often adopted despite added complexity and cost, specifically because a single machine's capacity is genuinely insufficient, not because distribution is a budget-saving choice."
+        },
+        {
+          "text": "Because a single machine's software cannot be updated to support new data formats over time",
+          "isCorrect": false,
+          "feedback": "Software on a single machine can generally be updated to handle new formats -- the actual challenge motivating distributed processing is raw scale or speed exceeding one machine's capacity, not an inability to support new formats."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This term describes data that's grown so large or tangled that regular, everyday tools just aren't up to storing or making sense of it.",
+        "medium": "This is the term for datasets that have grown so massive or tangled that ordinary tools simply can't keep up with storing, working through, or making sense of them.",
+        "hard": "Think about data sets so large or complicated that ordinary, simple tools just aren't enough to handle them well."
+      },
+      "medium": {
+        "easy": "This particular characteristic is all about how fast new data keeps showing up and how quickly it needs to be dealt with.",
+        "medium": "This dimension is all about the pace -- how rapidly new data shows up and how quickly it demands a response.",
+        "hard": "Think about how quickly new data keeps pouring in, and how fast it might need to be handled."
+      },
+      "hard": {
+        "easy": "Once a dataset gets bigger or faster-moving than what one computer can realistically keep up with, spreading that workload across a group of machines becomes the practical fix.",
+        "medium": "Some datasets grow so big, or arrive so fast, that no single machine can realistically keep up, which is exactly when spreading the work across many machines becomes necessary.",
+        "hard": "Think about a job so large that one single worker simply can't get through it fast enough alone, no matter how capable they are."
+      }
+    }
+  },
+  {
+    "topic": "assembly language",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'assembly language'?",
+      "options": [
+        {
+          "text": "A low-level programming language that uses human-readable mnemonics to represent a processor's specific machine instructions",
+          "isCorrect": true,
+          "feedback": "Correct -- assembly language sits just above raw machine code, using readable symbolic names in place of raw binary instruction codes."
+        },
+        {
+          "text": "A high-level programming language primarily used for building mobile apps",
+          "isCorrect": false,
+          "feedback": "Assembly language is specifically a LOW-level language closely tied to a processor's actual instructions -- it isn't a high-level language typically used for building mobile apps."
+        },
+        {
+          "text": "A markup language used for structuring web pages",
+          "isCorrect": false,
+          "feedback": "Assembly language is a low-level programming language for representing processor instructions -- it isn't a markup language used for structuring web page content."
+        },
+        {
+          "text": "A tool used to physically assemble computer hardware components",
+          "isCorrect": false,
+          "feedback": "Assembly LANGUAGE is a software programming concept -- it isn't a physical tool used for assembling hardware components."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does assembly language generally relate to a processor's raw machine code?",
+      "options": [
+        {
+          "text": "Assembly language uses readable mnemonic names to closely represent the same underlying machine instructions a processor executes, typically translated into actual machine code by a tool called an assembler",
+          "isCorrect": true,
+          "feedback": "Correct -- this close, largely one-to-one relationship between assembly language and machine code is what makes assembly a low-level language, in contrast to higher-level programming languages."
+        },
+        {
+          "text": "Assembly language and machine code are simply two different names for the exact identical binary format, with zero difference",
+          "isCorrect": false,
+          "feedback": "While closely and directly related, they aren't identical in FORM -- assembly language uses human-readable mnemonics, while machine code consists of raw binary instructions; assembly still needs to be translated into that binary form."
+        },
+        {
+          "text": "Assembly language is a much higher-level language than languages like Python or Java",
+          "isCorrect": false,
+          "feedback": "This reverses the actual typical relationship -- assembly language is generally considered a much LOWER-level language than higher-level languages like Python or Java, being closely tied to a processor's specific raw instructions."
+        },
+        {
+          "text": "Assembly language has no relationship whatsoever to a processor's actual machine instructions",
+          "isCorrect": false,
+          "feedback": "Assembly language is actually very closely and directly tied to a processor's specific machine instructions -- that close relationship is precisely what defines assembly language as a low-level language in the first place."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a programmer occasionally still choose to write certain performance-critical or hardware-specific code directly in assembly language, even though most modern software is written in considerably higher-level languages?",
+      "options": [
+        {
+          "text": "Assembly language allows for very precise, direct control over a processor's specific instructions and hardware resources, which can occasionally be valuable for squeezing out maximum performance or directly interacting with particular hardware features in specialized situations",
+          "isCorrect": true,
+          "feedback": "Correct -- while this level of low-level control comes at the cost of considerably more effort and reduced portability across different processors, it remains valuable for a narrow set of highly specialized, performance- or hardware-critical situations."
+        },
+        {
+          "text": "Because writing in assembly language is required by law for any commercially released software",
+          "isCorrect": false,
+          "feedback": "There's no legal requirement mandating assembly language use for any commercial software -- choosing to write in assembly is a PRACTICAL, situational engineering decision, not a legal mandate."
+        },
+        {
+          "text": "Because assembly language automatically runs on any type of processor, regardless of its specific architecture",
+          "isCorrect": false,
+          "feedback": "Assembly language is actually typically tied very closely and specifically to one PARTICULAR processor architecture -- it generally does NOT automatically and portably run across different, differing processor architectures without modification."
+        },
+        {
+          "text": "Because higher-level programming languages are completely incapable of ever being compiled into working, executable programs",
+          "isCorrect": false,
+          "feedback": "Higher-level programming languages are absolutely capable of being compiled (or interpreted) into fully functioning executable programs -- that's precisely how the vast majority of modern software is actually built and run."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This language lets a programmer write short, readable names that stand in directly for a processor's raw machine instructions.",
+        "medium": "This is the language where readable short names stand in directly for a processor's own built-in instruction set.",
+        "hard": "Think about writing short, memorable nicknames for a machine's most basic building-block operations, instead of typing out raw binary directly."
+      },
+      "medium": {
+        "easy": "Its readable names map almost one-to-one onto the processor's actual instructions, and a program called an assembler converts them into the real machine code.",
+        "medium": "Its readable names stand in for the exact same underlying instructions the processor runs, and a dedicated conversion tool turns them into that raw machine code.",
+        "hard": "Think about a close, almost one-to-one relationship between readable short names and the processor's actual underlying binary instructions."
+      },
+      "hard": {
+        "easy": "Because it lets a programmer control the processor's instructions and hardware directly, it still earns its keep in situations demanding maximum performance or very close hardware interaction.",
+        "medium": "It hands a programmer an unusually fine-grained, direct handle on exactly what the processor does and how its hardware resources get used.",
+        "hard": "Think about needing extremely precise, direct control over exactly what the processor does, down to the smallest possible detail."
+      }
+    }
+  },
+  {
+    "topic": "network switches",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general role of a network 'switch'?",
+      "options": [
+        {
+          "text": "Connecting multiple devices within the same local network and forwarding data specifically to the device it's actually intended for",
+          "isCorrect": true,
+          "feedback": "Correct -- a switch efficiently directs incoming data specifically to the correct connected device, rather than broadcasting it to every device on the local network."
+        },
+        {
+          "text": "Translating human-readable website names into numeric IP addresses",
+          "isCorrect": false,
+          "feedback": "That describes DNS's role -- a network switch is instead concerned with directing data between locally connected devices within the same network."
+        },
+        {
+          "text": "Physically printing documents sent over a network",
+          "isCorrect": false,
+          "feedback": "A network switch directs data traffic between connected devices -- printing physical documents is the role of a separate device, a printer."
+        },
+        {
+          "text": "Encrypting all data traveling across the internet",
+          "isCorrect": false,
+          "feedback": "A network switch's core role is directing data between locally connected devices -- encrypting internet traffic broadly is a separate concern, generally handled by other specific protocols or tools."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does a network switch generally differ from a network hub, an older and now less commonly used networking device?",
+      "options": [
+        {
+          "text": "A switch intelligently directs data specifically to the intended recipient device, while a hub simply broadcasts incoming data to every device connected to it",
+          "isCorrect": true,
+          "feedback": "Correct -- this targeted forwarding makes a switch generally more efficient than a hub, particularly as more devices are connected to the same local network."
+        },
+        {
+          "text": "A switch and a hub are simply two different names describing the exact identical piece of networking hardware",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different approaches to handling network traffic -- one directs data specifically to its intended recipient, the other broadcasts to every connected device indiscriminately."
+        },
+        {
+          "text": "A hub intelligently directs data to its intended recipient, while a switch broadcasts to every device",
+          "isCorrect": false,
+          "feedback": "This reverses their actual typical roles -- it's the SWITCH that intelligently directs data to a specific intended recipient, while the older HUB broadcasts indiscriminately to every connected device."
+        },
+        {
+          "text": "A switch can only connect exactly two devices together at once, while a hub can connect many more",
+          "isCorrect": false,
+          "feedback": "A switch is typically capable of connecting MANY MORE than just two devices at once -- that isn't the actual distinguishing factor here; the real difference concerns targeted forwarding versus indiscriminate broadcasting of data."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why does a switch's more targeted approach to forwarding data (compared to a hub's simple broadcasting) generally lead to better overall network performance as more devices are added to a local network?",
+      "options": [
+        {
+          "text": "By sending data only to its intended recipient rather than broadcasting to every device, a switch reduces unnecessary network traffic and potential collisions, allowing the network's available capacity to be used more efficiently as device count grows",
+          "isCorrect": true,
+          "feedback": "Correct -- this efficiency advantage becomes increasingly significant as more devices are added to a local network, which is a major reason switches have largely replaced hubs in modern networking setups."
+        },
+        {
+          "text": "Because a switch physically increases the total number of network cables a building can use",
+          "isCorrect": false,
+          "feedback": "A switch's efficiency advantage comes from HOW it directs data traffic, not from directly increasing the total number of physical cables a building could theoretically support."
+        },
+        {
+          "text": "Because a switch requires every connected device to use an identical brand of computer",
+          "isCorrect": false,
+          "feedback": "A switch works with a wide range of devices connecting to it, regardless of brand -- there's no such uniform brand requirement involved in how a switch functions."
+        },
+        {
+          "text": "Because a switch guarantees a network connection will never experience even a moment of downtime",
+          "isCorrect": false,
+          "feedback": "Using a switch can improve overall network performance and efficiency considerably, but it doesn't provide an absolute guarantee against every possible instance of downtime."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This device links several devices on the same local network together and makes sure incoming data actually reaches the one device it's meant for.",
+        "medium": "This device connects multiple devices within the same local network and forwards data specifically to its intended recipient.",
+        "hard": "Think about a networking device that connects several nearby devices and sends data specifically to the one it's actually meant for."
+      },
+      "medium": {
+        "easy": "Rather than blasting data out to every connected device like its older counterpart, this device figures out exactly which one should actually receive it.",
+        "medium": "One device sends data specifically to its intended recipient; the older device simply broadcasts to every connected device indiscriminately.",
+        "hard": "Think about sending a message directly to one specific person, versus shouting it out to an entire room and letting everyone hear it."
+      },
+      "hard": {
+        "easy": "By only sending data to the one device that actually needs it, far less traffic and collision-risk piles up as more devices get added to the network.",
+        "medium": "Sending data only to its intended recipient reduces unnecessary traffic and collisions, letting the network's capacity be used more efficiently.",
+        "hard": "Think about how much unnecessary noise and potential collision gets avoided by only sending a message to the one person who actually needs to hear it."
+      }
+    }
+  },
+  {
+    "topic": "character encoding (ASCII and Unicode)",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does a 'character encoding' scheme, such as ASCII, generally define?",
+      "options": [
+        {
+          "text": "A mapping between specific numeric values and the text characters (like letters, digits, or symbols) those numbers represent inside a computer",
+          "isCorrect": true,
+          "feedback": "Correct -- since computers ultimately store everything as numbers, a character encoding scheme is what defines which specific number corresponds to which specific text character."
+        },
+        {
+          "text": "The specific font and visual style used to display text on a screen",
+          "isCorrect": false,
+          "feedback": "That describes typography/font rendering -- a character encoding is instead about which numeric values map to which characters in the first place."
+        },
+        {
+          "text": "The maximum number of characters allowed in a single line of a text file",
+          "isCorrect": false,
+          "feedback": "Line-length limits aren't what a character encoding defines -- it's specifically the mapping between numeric values and the characters they represent."
+        },
+        {
+          "text": "A way to reduce a text file's overall storage size through compression",
+          "isCorrect": false,
+          "feedback": "Compression is a separate concern from character encoding -- encoding defines how numbers map to characters, regardless of whether the file is also compressed."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why was Unicode developed as an extension beyond the earlier ASCII character encoding standard?",
+      "options": [
+        {
+          "text": "ASCII could only represent a relatively small, limited set of characters (primarily basic English letters, digits, and symbols), while Unicode was designed to represent a much broader range of characters, symbols, and scripts from many of the world's different languages",
+          "isCorrect": true,
+          "feedback": "Correct -- this significant expansion in character coverage is exactly why Unicode became so important as computing spread globally across many different languages and writing systems, well beyond what ASCII alone could originally handle."
+        },
+        {
+          "text": "Because ASCII characters take up more storage space per character than Unicode characters do",
+          "isCorrect": false,
+          "feedback": "It's actually the opposite in the common case -- basic ASCII characters typically take up less space (1 byte) than many Unicode characters. Unicode was developed to represent far more characters and scripts than ASCII could."
+        },
+        {
+          "text": "Because Unicode can only be used by certain specific web browsers, not general software",
+          "isCorrect": false,
+          "feedback": "Unicode is broadly supported across operating systems and software, not just specific browsers -- it was developed to represent far more characters and scripts than ASCII could."
+        },
+        {
+          "text": "Because Unicode requires significantly more expensive computer hardware to use than ASCII does",
+          "isCorrect": false,
+          "feedback": "Using Unicode doesn't require special or more expensive hardware -- the real distinction is the much broader range of characters and scripts Unicode was designed to represent."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can correctly identifying and respecting a text file's specific character encoding be important when that file is opened or processed by different software or systems?",
+      "options": [
+        {
+          "text": "If the wrong encoding is assumed while interpreting the file's underlying numeric byte values, the resulting displayed text can be garbled or completely incorrect, since the same numeric values can represent different characters depending on which encoding is in use",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of encoding mismatch is a well-known, common source of garbled or corrupted-looking text, particularly when exchanging files between systems that might assume different default character encodings."
+        },
+        {
+          "text": "Because every character encoding scheme in existence is required to represent text using exactly one single universal number for every possible character, with no differences at all between schemes",
+          "isCorrect": false,
+          "feedback": "Different character encoding schemes can actually assign DIFFERENT numbers to represent the very same character -- that potential mismatch is precisely why correctly identifying the encoding in use matters so much."
+        },
+        {
+          "text": "Because every text file explicitly stores its own encoding scheme as its very first character, making mismatches impossible",
+          "isCorrect": false,
+          "feedback": "Files don't reliably self-declare their encoding this way -- software often has to guess or be told the encoding, which is exactly why assuming the wrong one can garble the text."
+        },
+        {
+          "text": "Because modern software always correctly assumes the right encoding automatically, with no possibility of error",
+          "isCorrect": false,
+          "feedback": "Encoding mismatches still happen in practice -- software doesn't always guess correctly, which is exactly why an incorrect assumption can still garble displayed text."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Since computers ultimately just store numbers, this is the lookup table connecting particular numbers to the specific letters, digits, or symbols they're meant to represent.",
+        "medium": "This is the lookup system tying particular numbers to the specific characters a computer displays when it encounters them.",
+        "hard": "Think about a lookup table connecting specific numbers to specific letters, digits, or symbols, since computers ultimately just store numbers."
+      },
+      "medium": {
+        "easy": "The older standard could only handle a small, mostly English-centric set of characters, so a newer one was built to cover vastly more of the world's languages and symbols.",
+        "medium": "The older standard was limited to a fairly small, mostly English-only set of characters, while the newer one was built to cover a much wider swath of the world's writing systems.",
+        "hard": "Think about needing to represent far more of the world's different alphabets and symbols than a much older, more limited standard ever could."
+      },
+      "hard": {
+        "easy": "The exact same number can stand for completely different characters under different encoding schemes, so guessing the wrong one turns the text into garbage.",
+        "medium": "Guess the wrong encoding, and the exact same underlying numbers get reinterpreted as the wrong characters entirely, turning the displayed text into garbage.",
+        "hard": "Think about the exact same underlying number meaning one letter under one scheme, but a completely different letter under a different scheme."
+      }
+    }
+  },
+  {
+    "topic": "pixels and image resolution",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'pixel', in the context of digital images and screens?",
+      "options": [
+        {
+          "text": "The smallest individual controllable unit of a digital image or display, each typically holding its own color value",
+          "isCorrect": true,
+          "feedback": "Correct -- a digital image is essentially built up from a grid of many individual pixels, each contributing its own small piece of color information to the overall picture."
+        },
+        {
+          "text": "A unit used to measure a computer's processing speed",
+          "isCorrect": false,
+          "feedback": "A pixel is a unit related to IMAGES AND DISPLAYS, specifically the smallest controllable point of a picture -- it isn't a measurement of a computer's processing speed."
+        },
+        {
+          "text": "A specific brand of computer monitor",
+          "isCorrect": false,
+          "feedback": "A pixel is the smallest individual unit making up a digital image or display -- it isn't a specific brand name for monitor hardware."
+        },
+        {
+          "text": "A unit used to measure how much storage space a hard drive has",
+          "isCorrect": false,
+          "feedback": "A pixel specifically relates to IMAGE composition -- it isn't the unit typically used to measure a hard drive's overall storage capacity."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What does an image's 'resolution' generally refer to?",
+      "options": [
+        {
+          "text": "The number of pixels that make up the image, often expressed as a width by height measurement (such as 1920 by 1080)",
+          "isCorrect": true,
+          "feedback": "Correct -- resolution describes how many individual pixels are packed into the image overall, which relates directly to how much fine visual detail it can potentially display."
+        },
+        {
+          "text": "The exact file format used to save the image, such as JPEG or PNG",
+          "isCorrect": false,
+          "feedback": "File format is a separate, distinct property from resolution -- resolution specifically refers to the NUMBER OF PIXELS making up the image, not which file format it happens to be saved in."
+        },
+        {
+          "text": "The specific colors used within the image",
+          "isCorrect": false,
+          "feedback": "The specific colors chosen are a separate property from resolution -- resolution specifically concerns the total NUMBER OF PIXELS composing the image."
+        },
+        {
+          "text": "The exact date and time the image was originally created",
+          "isCorrect": false,
+          "feedback": "The image's creation date and time is unrelated to its resolution, which is specifically about the total number of pixels composing that image."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a photograph with a higher resolution generally be capable of displaying finer visual detail than the same photograph at a much lower resolution, when both are viewed at the exact same physical size?",
+      "options": [
+        {
+          "text": "More individual pixels packed into the same physical area of image allow for finer, more precise gradations in captured color and detail, since each additional pixel can represent a smaller, more specific portion of the overall scene",
+          "isCorrect": true,
+          "feedback": "Correct -- this relationship between pixel count and captured detail is exactly why resolution matters so much for image quality, particularly for larger prints or displays, or when zooming in closely on an image."
+        },
+        {
+          "text": "Because a higher resolution image is always physically larger in overall printed size than a lower resolution one",
+          "isCorrect": false,
+          "feedback": "Resolution and physical print size are actually two SEPARATE, INDEPENDENT properties -- an image can be printed at a range of different physical sizes regardless of its underlying pixel resolution, though print quality can be affected accordingly."
+        },
+        {
+          "text": "Because higher resolution images are required by law to use a specific, particular file format",
+          "isCorrect": false,
+          "feedback": "There's no legal requirement dictating that higher-resolution images must use any particular specific file format -- resolution and file format are independent, separate properties of a digital image."
+        },
+        {
+          "text": "Because resolution has absolutely no actual effect on an image's visual detail or quality",
+          "isCorrect": false,
+          "feedback": "Resolution actually has a very direct and significant effect on an image's potential visual detail -- more pixels packed into the same physical viewing area generally allow for meaningfully finer captured detail."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is the smallest single dot a digital image or screen can control on its own, each one carrying its own color.",
+        "medium": "Think of it as the smallest single building-block a digital picture is made of -- each one carries its own bit of color information.",
+        "hard": "Think about the tiniest single colored dot making up a digital picture or screen display."
+      },
+      "medium": {
+        "easy": "This is simply a count of how many of those tiny dots make up the image, usually given as a width times height.",
+        "medium": "Think of it as a count of how many of those tiny building blocks are packed into the image overall.",
+        "hard": "Think about counting up all the tiny individual dots that together make up the whole picture."
+      },
+      "hard": {
+        "easy": "Squeezing more of those tiny dots into the same physical space means each one can capture a smaller, more precise sliver of the scene, which is what higher resolution buys you.",
+        "medium": "Packing more of those tiny building blocks into the same physical space lets each one capture a smaller slice of the scene.",
+        "hard": "Think about how much finer a mosaic can look when it's built from many tiny tiles, compared to the same size mosaic built from just a few large ones."
+      }
+    }
+  },
+  {
+    "topic": "file formats",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does a 'file format' generally define?",
+      "options": [
+        {
+          "text": "The specific way data is structured and encoded within a file, determining how that data should be interpreted by software",
+          "isCorrect": true,
+          "feedback": "Correct -- a file format specifies the internal structure and encoding rules a piece of software needs to follow in order to correctly read and interpret that file's contents."
+        },
+        {
+          "text": "The exact physical size of the storage device the file is saved on",
+          "isCorrect": false,
+          "feedback": "A file format concerns how DATA WITHIN A FILE is structured and encoded -- it isn't about the physical size of the underlying storage device it happens to be saved to."
+        },
+        {
+          "text": "The specific person who most recently opened the file",
+          "isCorrect": false,
+          "feedback": "A file format defines the internal structure and encoding of the file's own data -- it isn't a record of which specific individual most recently opened it."
+        },
+        {
+          "text": "The exact color scheme of a computer's overall desktop background",
+          "isCorrect": false,
+          "feedback": "A file format concerns a FILE'S internal data structure -- it's unrelated to a computer's separate desktop background color scheme setting."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a photo saved specifically as a '.png' file sometimes fail to open correctly if a program mistakenly assumes it's actually a '.docx' word processing document?",
+      "options": [
+        {
+          "text": "Each file format encodes its data according to its own specific internal structure and rules, so a program expecting one particular format may fail to correctly interpret data that was actually structured according to a completely different format",
+          "isCorrect": true,
+          "feedback": "Correct -- this is exactly why file extensions and internal format headers matter so much: they help software correctly identify which specific set of interpretation rules should actually be applied to a given file's contents."
+        },
+        {
+          "text": "Because image files are physically incapable of being stored on the exact same storage device as any word processing documents",
+          "isCorrect": false,
+          "feedback": "Different types of files, like images and word processing documents, can certainly be stored side by side on the very same storage device without issue -- the actual problem described here concerns a MISMATCH in how the underlying data is INTERPRETED, not where it happens to be physically stored."
+        },
+        {
+          "text": "Because photos are not permitted to be saved using any format other than '.docx'",
+          "isCorrect": false,
+          "feedback": "Photos are commonly saved using an image-specific format such as '.png' or '.jpg', not a word-processing format like '.docx' -- this option describes an artificial restriction that doesn't reflect how file formats actually work in practice."
+        },
+        {
+          "text": "Because all file formats are actually completely identical to one another underneath, with zero real differences",
+          "isCorrect": false,
+          "feedback": "Different file formats actually structure and encode their underlying data in genuinely DIFFERENT ways -- that real difference is precisely why a program expecting one specific format can fail when given a file in a different one instead."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a software application specifically check a file's internal structure or header information, in addition to just looking at its file extension (like '.jpg' or '.pdf'), before attempting to open and interpret that file?",
+      "options": [
+        {
+          "text": "Because a file's extension can sometimes be inaccurate, missing, or even deliberately misleading, checking the file's actual internal structure provides a more reliable way to correctly determine its real underlying format before attempting to interpret it",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of deeper internal verification helps a program avoid errors or unexpected behavior that could result from blindly trusting a potentially incorrect or misleading file extension alone."
+        },
+        {
+          "text": "Because file extensions are illegal to use as an indicator of a file's format in most countries",
+          "isCorrect": false,
+          "feedback": "There's no such legal restriction on relying on file extensions -- checking a file's actual internal structure is instead a PRACTICAL RELIABILITY measure taken because extensions alone aren't always fully trustworthy indicators."
+        },
+        {
+          "text": "Because checking a file's internal structure guarantees that file can never contain any errors whatsoever",
+          "isCorrect": false,
+          "feedback": "Examining a file's internal structure can help correctly identify its actual format, but it doesn't provide some absolute guarantee against every possible kind of error that file might contain."
+        },
+        {
+          "text": "Because file extensions have been completely phased out and are no longer used by any modern operating system",
+          "isCorrect": false,
+          "feedback": "File extensions are actually still very widely used today, across essentially all modern operating systems and applications -- checking a file's internal structure serves as a complementary reliability check, not a full replacement for extensions, which are certainly still in active use."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is the specific internal blueprint dictating how a file's data is laid out, which is exactly what software needs to know to read it correctly.",
+        "medium": "This is the particular blueprint a file follows internally -- how its data is laid out and encoded -- which tells software exactly how to make sense of it.",
+        "hard": "Think about the specific internal rules dictating how a file's data is actually organized and should be read."
+      },
+      "medium": {
+        "easy": "Because every format follows its own internal rulebook, a program built to expect one specific rulebook will stumble on data that's actually organized under a different one.",
+        "medium": "Every format has its own internal rulebook for laying out data, so software built around one rulebook can choke on data organized under a different one.",
+        "hard": "Think about trying to read a letter written in one specific alphabet, while mistakenly assuming it uses a completely different alphabet's rules."
+      },
+      "hard": {
+        "easy": "Since the extension on a file can be wrong, missing, or even deliberately faked, actually peeking at the file's real internal structure is the more trustworthy way to know what you're dealing with.",
+        "medium": "Since a file's extension can be wrong or misleading, looking directly at what's actually inside gives you a far more trustworthy read on its true format.",
+        "hard": "Think about double-checking what's actually inside an envelope, rather than trusting only the label written on the outside."
+      }
+    }
+  },
+  {
+    "topic": "metadata",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'metadata', generally speaking?",
+      "options": [
+        {
+          "text": "Data that describes or provides additional information about other data, such as a photo's capture date or a document's author",
+          "isCorrect": true,
+          "feedback": "Correct -- metadata is often described as 'data about data', providing extra descriptive context surrounding a primary piece of content."
+        },
+        {
+          "text": "A specific type of computer virus that hides inside metadata fields",
+          "isCorrect": false,
+          "feedback": "Metadata is a legitimate, ordinary concept describing supplementary information about other data -- it isn't inherently a type of malicious computer virus."
+        },
+        {
+          "text": "The exact same thing as encryption, applied to a piece of data",
+          "isCorrect": false,
+          "feedback": "Metadata is DESCRIPTIVE, supplementary information about other data -- it's a fundamentally different concept from encryption, which is instead about encoding data for confidentiality."
+        },
+        {
+          "text": "A programming language specifically designed for web development",
+          "isCorrect": false,
+          "feedback": "Metadata refers to a category of descriptive supplementary information, not a specific programming language."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a digital photo's metadata, such as the date it was taken or the camera settings used, be useful information to have attached to that photo?",
+      "options": [
+        {
+          "text": "It provides additional context about the photo without needing to be manually noted down elsewhere, making it easier to organize, search for, or understand the circumstances of that specific photo later",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of embedded descriptive information can be genuinely valuable for organizing photo collections or later understanding exactly how or when a particular photo was actually taken."
+        },
+        {
+          "text": "Because metadata physically changes the visual colors displayed within the photo itself",
+          "isCorrect": false,
+          "feedback": "Metadata is SUPPLEMENTARY DESCRIPTIVE INFORMATION attached to the photo file -- it doesn't alter the photo's actual visual content or displayed colors."
+        },
+        {
+          "text": "Because a photo without any attached metadata cannot be opened or viewed by any software at all",
+          "isCorrect": false,
+          "feedback": "A photo lacking any metadata can generally still be perfectly viewable -- metadata provides useful additional CONTEXT, but its absence doesn't typically prevent a photo file from being opened and viewed."
+        },
+        {
+          "text": "Because metadata is required by law to be physically printed alongside every photo",
+          "isCorrect": false,
+          "feedback": "There's no such legal requirement mandating that metadata be physically printed alongside every photo -- metadata is typically stored digitally, embedded within or alongside the file itself, rather than mandated for physical printing."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might someone concerned about privacy want to review or remove certain metadata (such as embedded GPS location information) from a photo before sharing it publicly online?",
+      "options": [
+        {
+          "text": "Because that embedded metadata could reveal more information than intended, such as the precise physical location where the photo was taken, potentially exposing details the person didn't necessarily want to share publicly",
+          "isCorrect": true,
+          "feedback": "Correct -- this specific privacy consideration is a well-known, commonly discussed reason people sometimes choose to strip certain metadata before broadly and publicly sharing photos online."
+        },
+        {
+          "text": "Because metadata always makes a photo's underlying file size significantly larger than the actual visible image content itself",
+          "isCorrect": false,
+          "feedback": "While metadata does typically add SOME extra data to a file, that's generally not the primary practical PRIVACY concern being described here -- the real concern is about unintentionally revealing sensitive information, like embedded location data, not primarily about file size."
+        },
+        {
+          "text": "Because sharing a photo containing any metadata at all is illegal in every country",
+          "isCorrect": false,
+          "feedback": "There's no such blanket legal prohibition against sharing photos that contain metadata -- the genuine concern here is a PRACTICAL PRIVACY consideration about specific sensitive information potentially being unintentionally revealed, not a legal restriction."
+        },
+        {
+          "text": "Because removing metadata always significantly improves a photo's overall visual quality",
+          "isCorrect": false,
+          "feedback": "Removing metadata doesn't inherently improve a photo's actual VISUAL QUALITY -- metadata is separate, supplementary descriptive information, and removing it is specifically a PRIVACY-related consideration, not a visual quality improvement technique."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is extra descriptive information riding along with a piece of data, describing it rather than being the actual content itself.",
+        "medium": "This is extra descriptive information attached to another piece of data -- think a photo's timestamp or a document's listed author -- that describes it rather than being the content itself.",
+        "hard": "Think about extra descriptive information attached to a piece of data, describing that data rather than being the actual content itself."
+      },
+      "medium": {
+        "easy": "That extra information just comes along for free with the photo, sparing you from having to separately jot down the same details yourself.",
+        "medium": "It tags along with the photo automatically, giving you useful context later without ever having to jot those details down separately yourself.",
+        "hard": "Think about extra descriptive labels attached to a photo, saving you from having to separately remember or note down those same details yourself."
+      },
+      "hard": {
+        "easy": "That quietly embedded information could give away more than a person meant to share, like the exact spot they were standing in when the photo was taken.",
+        "medium": "That quietly attached information could disclose more about the circumstances of a photo than the person realized was being shared.",
+        "hard": "Think about what kind of hidden information attached to a photo someone might not want strangers to see."
+      }
+    }
+  },
+  {
+    "topic": "multitasking vs multiprocessing",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does 'multitasking', in the context of an operating system, generally refer to?",
+      "options": [
+        {
+          "text": "The ability of an operating system to manage and run multiple tasks or programs seemingly at the same time on a system",
+          "isCorrect": true,
+          "feedback": "Correct -- multitasking gives the appearance of many programs running simultaneously, often by rapidly switching between them, even on hardware that might have limited processing resources."
+        },
+        {
+          "text": "The ability of a single program to use significantly more memory than it normally would",
+          "isCorrect": false,
+          "feedback": "Multitasking is about running multiple programs seemingly at once -- it isn't about a single program's memory usage."
+        },
+        {
+          "text": "The ability of a single processor core to run at a much higher clock speed than normal",
+          "isCorrect": false,
+          "feedback": "Clock speed is a separate hardware characteristic -- multitasking specifically refers to an operating system managing multiple tasks seemingly simultaneously, not raw processor speed."
+        },
+        {
+          "text": "The ability of a computer to physically fold in half for portability",
+          "isCorrect": false,
+          "feedback": "Multitasking is a software/operating-system concept regarding running multiple programs concurrently -- it has nothing to do with a computer's physical, foldable hardware design."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does 'multiprocessing' generally differ from 'multitasking'?",
+      "options": [
+        {
+          "text": "Multiprocessing typically involves using multiple physical processors (or processor cores) to genuinely execute multiple tasks in parallel at the same time, while multitasking can create an appearance of simultaneity even on a single processor by rapidly switching between tasks",
+          "isCorrect": true,
+          "feedback": "Correct -- with multiple actual processing units, tasks under multiprocessing can be TRULY simultaneous, rather than only appearing that way through fast switching on a single processing unit."
+        },
+        {
+          "text": "Multiprocessing and multitasking are simply two different names describing the exact identical concept, with no real distinction",
+          "isCorrect": false,
+          "feedback": "They represent related but genuinely distinct concepts -- one concerns the operating system MANAGING multiple tasks (potentially via rapid switching), the other concerns actually having and using multiple physical processing units."
+        },
+        {
+          "text": "Multiprocessing can only ever be performed using a single processor with just one core",
+          "isCorrect": false,
+          "feedback": "Multiprocessing generally specifically involves using MULTIPLE actual physical processors or processor cores -- it isn't restricted to using just a single processor with only one core."
+        },
+        {
+          "text": "Multitasking requires a computer to have at least four separate physical processors installed",
+          "isCorrect": false,
+          "feedback": "Multitasking can actually be achieved even on a single processor, through rapid switching between tasks -- it doesn't specifically require four or more separate physical processors to be present."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a computer with multiple processor cores be able to achieve genuinely better overall performance for certain kinds of workloads, compared to a single-core computer relying purely on rapid task-switching (multitasking) to handle multiple programs?",
+      "options": [
+        {
+          "text": "With multiple cores, some tasks can execute truly simultaneously and independently, rather than sharing a single processor's attention through rapid switching, which can reduce the delays associated with constantly switching context between different tasks",
+          "isCorrect": true,
+          "feedback": "Correct -- this genuine parallelism, made possible only by having multiple actual physical processing units, is why multi-core systems can offer real performance advantages for suitable workloads, beyond what rapid single-core switching alone can achieve."
+        },
+        {
+          "text": "Because a single-core computer using multitasking is limited to running only two programs at once, never more",
+          "isCorrect": false,
+          "feedback": "There's no fixed cap of exactly two programs -- a single core can rapidly switch among many more tasks than that, creating the appearance of running them all at once."
+        },
+        {
+          "text": "Because having multiple cores automatically increases a computer's total physical storage capacity",
+          "isCorrect": false,
+          "feedback": "The number of processor cores relates to a computer's raw PROCESSING capability -- it doesn't directly determine or increase the computer's separate physical STORAGE capacity."
+        },
+        {
+          "text": "Because multitasking requires every running program to use the exact same amount of memory",
+          "isCorrect": false,
+          "feedback": "Programs running under multitasking can use very different amounts of memory -- there's no requirement that they be equal; the real advantage of multiple cores is genuinely simultaneous execution, not equal memory use."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is what lets an operating system juggle several programs so it looks like they're all running at once, even on modest hardware.",
+        "medium": "This refers to the operating system managing and running multiple tasks or programs seemingly at the same time.",
+        "hard": "Think about an operating system juggling several different programs at once, even if it's really just switching between them very quickly."
+      },
+      "medium": {
+        "easy": "One genuinely runs tasks in parallel across separate physical processing units; the other just fakes that same appearance by switching rapidly on a single unit.",
+        "medium": "One typically involves multiple actual physical processing units genuinely working in parallel; the other can create an appearance of simultaneity even using just one.",
+        "hard": "Think about genuinely doing two things AT THE EXACT SAME MOMENT using two separate workers, versus one single worker switching back and forth extremely quickly."
+      },
+      "hard": {
+        "easy": "When separate cores are each genuinely running their own task at once, instead of one core splitting its attention through rapid switching, that real parallelism is what delivers an actual performance boost.",
+        "medium": "With multiple cores, some tasks can execute truly simultaneously and independently, reducing the delays associated with constantly switching between tasks.",
+        "hard": "Think about two separate workers each fully focused on their own task, versus one worker rapidly darting back and forth between two tasks."
+      }
+    }
+  },
+  {
+    "topic": "the kernel",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the 'kernel' of an operating system?",
+      "options": [
+        {
+          "text": "The core part of an operating system responsible for directly managing a computer's hardware resources and mediating between hardware and running programs",
+          "isCorrect": true,
+          "feedback": "Correct -- the kernel sits at the very heart of an operating system, handling essential low-level tasks like managing memory, the CPU, and other hardware resources on behalf of running programs."
+        },
+        {
+          "text": "A specific brand of computer keyboard",
+          "isCorrect": false,
+          "feedback": "The kernel is a core software component of an operating system -- it isn't a brand name for a physical keyboard."
+        },
+        {
+          "text": "A user-facing application used for writing documents",
+          "isCorrect": false,
+          "feedback": "The kernel operates at a low, foundational level within the operating system, managing hardware resources -- it isn't itself a user-facing document-writing application."
+        },
+        {
+          "text": "A type of computer virus that specifically targets operating systems",
+          "isCorrect": false,
+          "feedback": "The kernel is a legitimate, essential core component of an operating system -- it isn't inherently a type of malicious software."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is the kernel often described as running with special, elevated privileges compared to most ordinary application programs?",
+      "options": [
+        {
+          "text": "Because it needs direct, low-level access to sensitive hardware resources and critical system functions, which ordinary application programs generally shouldn't be allowed to access directly for safety and stability reasons",
+          "isCorrect": true,
+          "feedback": "Correct -- this privilege separation helps protect overall system stability and security, since directly and freely allowing every ordinary application unrestricted hardware access could easily lead to conflicts, instability, or serious security vulnerabilities."
+        },
+        {
+          "text": "Because the kernel is the only part of a computer that is allowed to display any visual output on the screen",
+          "isCorrect": false,
+          "feedback": "Displaying visual output is typically handled through other parts of the software stack working together, often with kernel support underneath -- but that specific function isn't THE defining reason the kernel itself needs elevated privileges."
+        },
+        {
+          "text": "Because ordinary application programs are incapable of running on a computer without any elevated privileges",
+          "isCorrect": false,
+          "feedback": "Ordinary application programs generally run perfectly well with more LIMITED, restricted privileges -- the elevated privileges the kernel specifically needs relate to its role of directly managing sensitive hardware and critical system functions, not a general inability for other programs to run without such elevated access."
+        },
+        {
+          "text": "Because the kernel requires a subscription fee to be paid before it can properly function",
+          "isCorrect": false,
+          "feedback": "A kernel's operation isn't tied to any ongoing subscription fee -- its elevated privileges are about its essential ROLE in directly managing hardware and critical system functions, an architectural design choice rather than something related to payment."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a bug or crash occurring specifically within the kernel tend to be considerably more serious than a bug occurring within an ordinary individual application program?",
+      "options": [
+        {
+          "text": "Because the kernel underlies and directly manages the entire system's core hardware resources, a serious failure there can potentially destabilize or crash the whole system, whereas a single misbehaving application can often be more safely isolated and closed on its own",
+          "isCorrect": true,
+          "feedback": "Correct -- this heightened, systemwide potential impact is exactly why kernel-level code is generally developed, reviewed, and tested with especially great care, given how central and foundational its correct, stable operation is to the entire running system."
+        },
+        {
+          "text": "Because the kernel is physically located in a completely different, entirely separate section of a computer's actual hard drive",
+          "isCorrect": false,
+          "feedback": "The kernel's greater seriousness when it fails isn't fundamentally about its physical storage LOCATION on a hard drive -- it's about its foundational, systemwide functional ROLE in directly managing critical hardware and system resources for everything else running on top of it."
+        },
+        {
+          "text": "Because application programs are incapable of ever containing any bugs of their own",
+          "isCorrect": false,
+          "feedback": "Application programs can certainly contain bugs of their own too -- the actual key distinction being highlighted here concerns the SCOPE OF POTENTIAL IMPACT: kernel bugs can affect the ENTIRE system, while an application-level bug is often more effectively contained to just that one specific misbehaving program."
+        },
+        {
+          "text": "Because the kernel is only ever used while a computer is actively being manufactured in a factory",
+          "isCorrect": false,
+          "feedback": "The kernel is actively and continuously in operation any time the computer is running normally in everyday use -- it isn't something used only during a one-time manufacturing process."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is the innermost part of the operating system that talks to the hardware directly and acts as the go-between for every running program.",
+        "medium": "This core part of the operating system directly manages a computer's hardware resources and mediates between hardware and running programs.",
+        "hard": "Think about the innermost, most essential core part of the operating system that directly deals with the computer's hardware."
+      },
+      "medium": {
+        "easy": "It needs a level of trusted, low-level access to hardware and core system functions that regular applications simply aren't allowed to touch, for the sake of overall safety and stability.",
+        "medium": "It needs direct, low-level access to sensitive hardware resources and critical system functions, access ordinary programs generally shouldn't have.",
+        "hard": "Think about needing special, trusted access to sensitive hardware controls that most ordinary programs simply shouldn't be allowed to touch directly."
+      },
+      "hard": {
+        "easy": "Because it sits underneath and manages the entire system's hardware, a serious failure here can bring the whole system down, unlike one misbehaving app, which can usually just be shut down on its own.",
+        "medium": "A serious failure here can potentially destabilize or crash the WHOLE system, whereas a single misbehaving application can often be isolated and closed more safely on its own.",
+        "hard": "Think about one single misbehaving guest causing trouble in just their own room, versus a serious problem striking the building's central foundation itself."
+      }
+    }
+  }
+]

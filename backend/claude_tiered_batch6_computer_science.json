@@ -1,0 +1,1517 @@
+[
+  {
+    "topic": "garbage collection",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of 'garbage collection' in a programming language?",
+      "options": [
+        {
+          "text": "To automatically free up memory that is no longer being used by a program",
+          "isCorrect": true,
+          "feedback": "Correct -- garbage collection reclaims memory occupied by data the program can no longer reach or use."
+        },
+        {
+          "text": "To automatically delete a program's source code files from the disk",
+          "isCorrect": false,
+          "feedback": "Garbage collection manages memory used while a program RUNS -- it doesn't delete source code files on disk."
+        },
+        {
+          "text": "To automatically translate a program into a faster programming language",
+          "isCorrect": false,
+          "feedback": "Garbage collection is about reclaiming unused memory during execution, not about translating a program into a different language."
+        },
+        {
+          "text": "To automatically remove bugs from a program's logic",
+          "isCorrect": false,
+          "feedback": "Garbage collection deals specifically with memory management, not with detecting or fixing logical bugs."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In a garbage-collected language, how does the garbage collector generally determine that a piece of allocated memory can be safely reclaimed?",
+      "options": [
+        {
+          "text": "It determines that the memory is no longer reachable from any active part of the program, meaning nothing can use it anymore",
+          "isCorrect": true,
+          "feedback": "Correct -- once no reachable reference points to a piece of data anymore, it's safe to reclaim that memory."
+        },
+        {
+          "text": "It reclaims memory purely at random, regardless of whether the program might still need it",
+          "isCorrect": false,
+          "feedback": "Garbage collectors use reachability analysis to decide what's safe to reclaim -- they don't reclaim memory purely at random."
+        },
+        {
+          "text": "It only reclaims memory once the entire program has completely finished running",
+          "isCorrect": false,
+          "feedback": "Garbage collection commonly runs periodically WHILE the program is still executing, not only after the program has fully finished."
+        },
+        {
+          "text": "It reclaims memory based solely on how long ago the data was originally created",
+          "isCorrect": false,
+          "feedback": "Age alone isn't the deciding factor -- REACHABILITY, whether something can still be accessed or used, is what typically determines if memory can be reclaimed."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a potential downside of automatic garbage collection, compared to manual memory management?",
+      "options": [
+        {
+          "text": "Garbage collection can introduce unpredictable pauses in a program's execution while it periodically scans for and reclaims unused memory",
+          "isCorrect": true,
+          "feedback": "Correct -- these pauses can matter a lot for applications with strict timing requirements, which is part of why some performance-critical or real-time software still favors manual memory management."
+        },
+        {
+          "text": "Garbage collection makes it completely impossible for a program to ever run out of memory",
+          "isCorrect": false,
+          "feedback": "Garbage collection can still leave a program running out of memory, particularly if references to unused data are unintentionally kept alive -- it isn't an absolute guarantee against running out."
+        },
+        {
+          "text": "Garbage collection requires every variable in a program to be a global variable",
+          "isCorrect": false,
+          "feedback": "Garbage collection works regardless of whether variables are local or global -- there's no such requirement tying it specifically to global variables."
+        },
+        {
+          "text": "Garbage collection can only be used in programs that don't create any objects",
+          "isCorrect": false,
+          "feedback": "Garbage collection is specifically designed to manage memory FOR objects and other allocated data -- it isn't limited to programs that avoid creating objects."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about a helper that cleans up memory a program isn't using anymore, without the programmer having to ask for it directly.",
+        "medium": "This automatically reclaims memory that a program no longer needs, freeing it up for future use.",
+        "easy": "It's the automatic process of reclaiming memory that has become unreachable or unused by the running program."
+      },
+      "medium": {
+        "hard": "Think about whether anything in the program could still possibly reach or use a given piece of data.",
+        "medium": "Once nothing active in the program can reach a piece of data anymore, it becomes a safe candidate to reclaim.",
+        "easy": "Reachability -- whether some active part of the program could still get to that data -- is the key criterion, not simply the data's age."
+      },
+      "hard": {
+        "hard": "Think about what the collector actually has to stop and do periodically while the program is still running.",
+        "medium": "Scanning for and reclaiming unused memory takes some time, which can occasionally interrupt the program's normal flow.",
+        "easy": "The periodic scanning-and-reclaiming work can introduce unpredictable pauses, a real concern for applications with strict timing needs."
+      }
+    }
+  },
+  {
+    "topic": "stack memory vs heap memory",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In many programming languages, what is 'stack memory' typically used for?",
+      "options": [
+        {
+          "text": "Storing local variables and tracking function calls, generally following a strict last-in-first-out order",
+          "isCorrect": true,
+          "feedback": "Correct -- the stack grows and shrinks in a predictable, orderly way as functions are called and return."
+        },
+        {
+          "text": "Storing every image and video file a program will ever use",
+          "isCorrect": false,
+          "feedback": "Stack memory is specifically for local variables and function call tracking -- large media files are typically handled through other means, like heap-allocated memory or disk storage."
+        },
+        {
+          "text": "Permanently storing a program's entire source code after it has been compiled",
+          "isCorrect": false,
+          "feedback": "Stack memory holds data used WHILE a program runs, like local variables -- it isn't where compiled source code itself is permanently stored."
+        },
+        {
+          "text": "Storing a user's saved passwords for later use",
+          "isCorrect": false,
+          "feedback": "Stack memory is a general-purpose region for local variables and function-call tracking during execution, not a mechanism specifically for storing passwords."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does 'heap memory' typically differ from stack memory in terms of how it's managed?",
+      "options": [
+        {
+          "text": "Heap memory allows more flexible allocation and deallocation, often lasting beyond a single function call, whereas stack memory is automatically reclaimed in a strict, last-in-first-out order as functions return",
+          "isCorrect": true,
+          "feedback": "Correct -- this flexibility is why the heap is commonly used for data whose size or lifetime isn't known simply from the current function call."
+        },
+        {
+          "text": "Heap memory is only usable for storing single characters, one at a time",
+          "isCorrect": false,
+          "feedback": "Heap memory can hold data of many types and sizes, not just single characters -- the real distinction from the stack is about allocation flexibility and lifetime."
+        },
+        {
+          "text": "Heap memory and stack memory are simply two different names referring to the exact identical region of a computer's memory",
+          "isCorrect": false,
+          "feedback": "They're genuinely distinct regions, managed in different ways -- one follows strict last-in-first-out order, the other allows more flexible, longer-lived allocation."
+        },
+        {
+          "text": "Heap memory is reclaimed the instant the function that allocated it returns, just like the stack",
+          "isCorrect": false,
+          "feedback": "That describes typical STACK behavior -- heap-allocated memory can persist well beyond the function call that created it, until it's explicitly freed or garbage collected."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can excessive recursion sometimes cause a 'stack overflow' error, while heap memory issues tend to manifest differently (such as running out of heap space, but not typically producing a 'stack overflow' specifically)?",
+      "options": [
+        {
+          "text": "Each recursive call adds a new frame to the relatively limited stack, so very deep recursion can exhaust the stack's available space, whereas the heap is a separate, generally much larger region not tied to function call depth in the same way",
+          "isCorrect": true,
+          "feedback": "Correct -- the stack's size is typically much more constrained than the heap's, and it's specifically tied to nested function calls, making deep recursion a distinct risk factor for it."
+        },
+        {
+          "text": "Because heap memory is always smaller in total size than stack memory in every computer system",
+          "isCorrect": false,
+          "feedback": "Heap memory is typically MUCH LARGER than stack memory in most systems, not smaller -- that size difference is part of why deep recursion specifically threatens the stack."
+        },
+        {
+          "text": "Because recursion is not permitted to allocate anything on the heap at all",
+          "isCorrect": false,
+          "feedback": "Recursive functions can still allocate heap memory as needed -- the stack overflow risk described here is specifically about the STACK frames used to track the recursive calls themselves, not a restriction on heap use."
+        },
+        {
+          "text": "Because a stack overflow and running out of heap space are simply two different names for the exact same underlying problem",
+          "isCorrect": false,
+          "feedback": "They're genuinely different problems tied to two separate memory regions with very different size constraints and management styles."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about a memory region that automatically grows when a function starts running and shrinks again the moment that function returns.",
+        "medium": "This region is organized so whatever was placed there most recently also tends to be removed first, closely tied to the sequence of function calls.",
+        "easy": "It holds a function's local variables and keeps track of active calls, cleared out in reverse of the order things were added."
+      },
+      "medium": {
+        "hard": "Think about which region lets data live on well past the specific function call that first created it.",
+        "medium": "One region is reclaimed strictly and automatically as functions return; the other allows data to persist more flexibly, for as long as it's actually needed.",
+        "easy": "Flexible allocation and a lifetime that isn't tied strictly to a single function call is the key contrast with the stack's automatic, order-based reclamation."
+      },
+      "hard": {
+        "hard": "Think about which memory region is directly tied to how deeply nested your function calls have become.",
+        "medium": "Every additional level of recursion adds another tracked frame specifically to the more limited of these two regions.",
+        "easy": "Because each recursive call adds a frame specifically to the comparatively small stack, very deep recursion can exhaust it, a risk not shared in the same way by the much larger, differently-managed heap."
+      }
+    }
+  },
+  {
+    "topic": "constructors",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In object-oriented programming, what is a 'constructor'?",
+      "options": [
+        {
+          "text": "A special method that runs automatically when a new object is created, typically used to set up its initial state",
+          "isCorrect": true,
+          "feedback": "Correct -- a constructor's main job is initializing a newly created object, such as setting default values for its properties."
+        },
+        {
+          "text": "A method that permanently deletes an object once it's no longer needed",
+          "isCorrect": false,
+          "feedback": "That describes something closer to a destructor's role in some languages -- a constructor is specifically about SETTING UP a new object, not deleting one."
+        },
+        {
+          "text": "A tool used to physically assemble computer hardware components",
+          "isCorrect": false,
+          "feedback": "In programming, a 'constructor' is a code concept about initializing objects, unrelated to assembling physical hardware."
+        },
+        {
+          "text": "A method that can only ever be called manually by the programmer, never automatically",
+          "isCorrect": false,
+          "feedback": "A constructor typically runs AUTOMATICALLY at the moment an object is created, rather than needing to be manually invoked separately."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a class define multiple different constructors (a pattern sometimes called 'constructor overloading')?",
+      "options": [
+        {
+          "text": "To allow objects of that class to be created in different ways, using different combinations or numbers of initial arguments",
+          "isCorrect": true,
+          "feedback": "Correct -- offering multiple constructors gives more flexibility in how an object's initial state can be specified when it's created."
+        },
+        {
+          "text": "Because a class is only allowed to be used if it defines at least two constructors",
+          "isCorrect": false,
+          "feedback": "A class can function perfectly well with just a single constructor -- offering multiple constructors is a flexibility choice, not a hard requirement."
+        },
+        {
+          "text": "Because each constructor must create a completely different, unrelated class",
+          "isCorrect": false,
+          "feedback": "All constructors defined for a given class still create instances of that SAME class -- they don't each define a separate, unrelated class."
+        },
+        {
+          "text": "Because constructors must be renamed differently from each other in every class",
+          "isCorrect": false,
+          "feedback": "In many languages, multiple constructors actually share the same name as the class itself, distinguished instead by their differing argument lists -- they aren't necessarily renamed."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What responsibility does a constructor typically have with respect to a class's invariants (the conditions that should always hold true for valid objects of that class)?",
+      "options": [
+        {
+          "text": "The constructor should ensure that a newly created object starts out in a valid state, satisfying the class's invariants from the very moment it's created",
+          "isCorrect": true,
+          "feedback": "Correct -- if a constructor allows an object to be created in an invalid state, it undermines the guarantees the rest of the class's code might otherwise be relying on."
+        },
+        {
+          "text": "A constructor has no responsibility at all regarding whether an object starts out valid",
+          "isCorrect": false,
+          "feedback": "A constructor's initialization role is directly tied to ensuring a newly created object begins life in a valid state -- that IS one of its core responsibilities."
+        },
+        {
+          "text": "A constructor is responsible for validating every other unrelated class defined anywhere else in the program",
+          "isCorrect": false,
+          "feedback": "A constructor is responsible for properly initializing instances of its OWN class -- not for validating unrelated classes elsewhere in the program."
+        },
+        {
+          "text": "A constructor's only responsibility is to print a confirmation message to the screen",
+          "isCorrect": false,
+          "feedback": "While a constructor certainly could include a printed message, its core defined responsibility is properly initializing the new object's state, not specifically printing output."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about the moment a brand-new object first comes into existence, and what sets up its starting details.",
+        "medium": "This special method runs automatically right when a new object is created, to set it up properly.",
+        "easy": "It's the special method responsible for initializing a newly created object's starting state, run automatically at creation time."
+      },
+      "medium": {
+        "hard": "Think about wanting more than one way to specify an object's starting details when it's first created.",
+        "medium": "Different versions offer different combinations of starting information you can provide when creating the object.",
+        "easy": "Offering multiple versions lets objects be created flexibly, using differing combinations or counts of initial arguments."
+      },
+      "hard": {
+        "hard": "Think about what could go wrong later if an object were allowed to start out in a broken or inconsistent state.",
+        "medium": "Its initialization role directly ties into making sure a brand-new object begins its life already satisfying the class's basic rules.",
+        "easy": "Guaranteeing that a new object satisfies the class's invariants right from creation is a core part of a constructor's responsibility, protecting assumptions the rest of the class's code may rely on."
+      }
+    }
+  },
+  {
+    "topic": "interfaces (programming)",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In object-oriented programming, what does an 'interface' generally define?",
+      "options": [
+        {
+          "text": "A set of methods that a class must implement, without specifying how those methods actually work internally",
+          "isCorrect": true,
+          "feedback": "Correct -- an interface defines a contract of expected behavior, leaving the actual implementation details up to whichever class adopts it."
+        },
+        {
+          "text": "The exact internal implementation details of every method in a class",
+          "isCorrect": false,
+          "feedback": "That describes an implementation, which is precisely what an interface deliberately leaves OUT -- an interface only defines the expected method signatures, not their internal workings."
+        },
+        {
+          "text": "A fixed list of numeric values a program is allowed to use",
+          "isCorrect": false,
+          "feedback": "An interface defines expected methods and behavior contracts, not a restricted list of allowed numeric values."
+        },
+        {
+          "text": "The visual design of a program's on-screen buttons and menus",
+          "isCorrect": false,
+          "feedback": "That describes a USER interface in the visual sense -- a programming 'interface' in this context refers to a contract of methods a class must implement, a related but distinct concept."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "If two very different classes, like 'Duck' and 'RobotDuck', both implement the same 'Quackable' interface, what does that guarantee about them?",
+      "options": [
+        {
+          "text": "Both classes provide their own implementation of whatever methods the 'Quackable' interface requires, such as a 'quack()' method, even though the two classes may otherwise be very different",
+          "isCorrect": true,
+          "feedback": "Correct -- implementing a shared interface guarantees a common set of expected behavior across otherwise unrelated classes."
+        },
+        {
+          "text": "Both classes must be otherwise completely identical in every other respect",
+          "isCorrect": false,
+          "feedback": "Implementing the same interface only guarantees the SHARED required methods are present -- the two classes can otherwise differ completely in every other way."
+        },
+        {
+          "text": "Neither class is allowed to implement any other interface besides this one",
+          "isCorrect": false,
+          "feedback": "A class can typically implement multiple different interfaces at once -- implementing 'Quackable' doesn't prevent it from also implementing others."
+        },
+        {
+          "text": "Both classes must inherit directly from one another",
+          "isCorrect": false,
+          "feedback": "Implementing a shared interface doesn't require one class to inherit from the other -- they can be entirely unrelated in their inheritance while still sharing the interface's required methods."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How do interfaces support polymorphism when working with a collection of otherwise unrelated objects that all implement the same interface?",
+      "options": [
+        {
+          "text": "Code can call the interface's defined methods on each object without needing to know its specific concrete class, since every implementing class guarantees those methods exist",
+          "isCorrect": true,
+          "feedback": "Correct -- this lets code be written more generally against the interface's contract, rather than against a single specific class's implementation."
+        },
+        {
+          "text": "Interfaces force every implementing class to become the exact same single class",
+          "isCorrect": false,
+          "feedback": "Interfaces let genuinely different, distinct classes each implement the same required methods -- they don't merge those classes into one."
+        },
+        {
+          "text": "Interfaces eliminate the need for any class to implement the interface's required methods at all",
+          "isCorrect": false,
+          "feedback": "Implementing classes are still required to actually define the interface's specified methods -- an interface doesn't remove that obligation, it defines it."
+        },
+        {
+          "text": "Interfaces guarantee every implementing class will produce identical output when their methods are called",
+          "isCorrect": false,
+          "feedback": "Different classes can implement the same required method very differently -- the interface only guarantees the method's presence and expected role, not identical results."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's a contract defining required methods that an implementing class must provide, without specifying their internal implementation.",
+        "medium": "This specifies a set of expected method names and behaviors, leaving their actual internal workings up to the implementing class.",
+        "hard": "Think about a contract listing WHAT a class must be able to do, without dictating exactly HOW it does it."
+      },
+      "medium": {
+        "easy": "The only real guarantee is that both classes supply their own implementation of the interface's required methods -- everything else about the classes can otherwise differ.",
+        "medium": "Both classes are guaranteed to provide their own version of the specific methods the shared contract requires.",
+        "hard": "Think about what's actually guaranteed to be shared between two otherwise very different classes."
+      },
+      "hard": {
+        "easy": "Relying only on the interface's guaranteed methods lets code treat a mix of otherwise unrelated objects uniformly, without needing to check or know each one's specific concrete class.",
+        "medium": "Because every object in the group is guaranteed to have the required methods, the calling code doesn't need to know each object's specific exact class.",
+        "hard": "Think about writing code that treats a whole group of different objects the exact same way, based only on a shared guarantee."
+      }
+    }
+  },
+  {
+    "topic": "syntax errors vs logic errors",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'syntax error' in programming?",
+      "options": [
+        {
+          "text": "A mistake that violates the grammatical rules of the programming language, typically preventing the code from running or compiling at all",
+          "isCorrect": true,
+          "feedback": "Correct -- syntax errors are structural mistakes, like a missing bracket or misspelled keyword, that the language itself refuses to accept."
+        },
+        {
+          "text": "A mistake where the code runs successfully but produces an incorrect result",
+          "isCorrect": false,
+          "feedback": "Code producing an incorrect result while still running successfully describes a LOGIC error, not a syntax error."
+        },
+        {
+          "text": "A mistake that only occurs on Tuesdays",
+          "isCorrect": false,
+          "feedback": "Syntax errors aren't tied to the day of the week -- they're structural violations of the language's grammar rules, occurring whenever that flawed code is processed."
+        },
+        {
+          "text": "A mistake made only by beginner programmers, never by experienced ones",
+          "isCorrect": false,
+          "feedback": "Syntax errors can happen to programmers of any experience level -- experience reduces how often they occur, but doesn't make them impossible."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does a 'logic error' typically differ from a syntax error?",
+      "options": [
+        {
+          "text": "A logic error allows the code to run without crashing, but produces an incorrect or unintended result, while a syntax error usually prevents the code from running at all",
+          "isCorrect": true,
+          "feedback": "Correct -- this is precisely why logic errors can be trickier to catch: the program appears to work, just not correctly."
+        },
+        {
+          "text": "A logic error is always caught automatically before the program even runs, just like most syntax errors",
+          "isCorrect": false,
+          "feedback": "Logic errors are typically NOT automatically caught before running -- unlike many syntax errors, they can slip through and only reveal themselves through unexpected behavior."
+        },
+        {
+          "text": "A logic error and a syntax error are simply two different names for the exact same kind of mistake",
+          "isCorrect": false,
+          "feedback": "They're genuinely different kinds of mistakes -- one is a grammar violation caught before or during execution, the other is a flaw in the program's actual reasoning that lets it run but misbehave."
+        },
+        {
+          "text": "A logic error only happens in programs that don't use any loops",
+          "isCorrect": false,
+          "feedback": "Logic errors can occur in code with or without loops -- their defining trait is a flawed underlying reasoning that produces a wrong result, not the presence or absence of loops specifically."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can logic errors sometimes be considerably harder to find and fix than syntax errors?",
+      "options": [
+        {
+          "text": "Because the code runs without crashing, so there's no automatic error message pointing to the mistake -- the wrong result has to be manually noticed and traced back to its actual cause",
+          "isCorrect": true,
+          "feedback": "Correct -- without an obvious crash or error signal, tracking down a logic error often relies on careful testing, tracing through the code's actual behavior, and comparing it against the intended behavior."
+        },
+        {
+          "text": "Because logic errors are only possible in programs written in extremely rare, obscure programming languages",
+          "isCorrect": false,
+          "feedback": "Logic errors can occur in virtually any programming language -- the difficulty in finding them comes from the lack of an automatic error signal, not the rarity of the language."
+        },
+        {
+          "text": "Because logic errors are always caught and flagged automatically by the compiler with a specific error message, just like syntax errors are",
+          "isCorrect": false,
+          "feedback": "That's actually characteristic of many syntax errors -- logic errors don't trigger an automatic error message in the same way, which is exactly why they can be so much harder to track down."
+        },
+        {
+          "text": "Because logic errors can only be fixed by completely rewriting the entire program from scratch",
+          "isCorrect": false,
+          "feedback": "Logic errors are usually fixable with a targeted correction to the flawed part of the reasoning, once found -- a full rewrite isn't generally required."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about the kind of mistake that would trip up a translator before it even gets to see what your code is trying to accomplish.",
+        "medium": "This kind of mistake is caught by the language's own rules for how code must be structured, often before the code can even start running.",
+        "easy": "It's when code breaks the required structural rules of the language itself, like a missing bracket, which stops it from compiling or running at all."
+      },
+      "medium": {
+        "hard": "Think about code that runs just fine but quietly gives you the wrong answer anyway.",
+        "medium": "This kind of mistake lets the program run without crashing, but the actual RESULT ends up wrong or unintended.",
+        "easy": "Running successfully but producing an incorrect result is the hallmark here, contrasting with a syntax error's tendency to block execution altogether."
+      },
+      "hard": {
+        "hard": "Think about whether there's an obvious red flag pointing you directly at the mistake, or whether you have to go hunting for it yourself.",
+        "medium": "Without an automatic alert stopping the program, you typically need to notice something is off first, then work backward to find the cause.",
+        "easy": "The complete absence of an automatic error signal, combined with the program otherwise appearing to run fine, is exactly what makes tracking this kind of mistake down so much harder."
+      }
+    }
+  },
+  {
+    "topic": "the GPU",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does 'GPU' stand for, and what is it primarily designed to do?",
+      "options": [
+        {
+          "text": "Graphics Processing Unit -- a component specialized for handling graphics rendering and highly parallel calculations",
+          "isCorrect": true,
+          "feedback": "Correct -- a GPU is optimized to perform many similar calculations simultaneously, which suits rendering images as well as certain other parallel workloads."
+        },
+        {
+          "text": "General Purpose Utility -- a component that replaces the need for a CPU entirely",
+          "isCorrect": false,
+          "feedback": "A GPU generally complements a CPU rather than replacing it entirely -- most computers still rely on a CPU for general-purpose processing alongside the GPU."
+        },
+        {
+          "text": "Global Positioning Unit -- a component used to determine a device's physical location",
+          "isCorrect": false,
+          "feedback": "Determining physical location is the job of GPS-related hardware, not a GPU, which is specifically about graphics and parallel processing."
+        },
+        {
+          "text": "Gigabyte Processing Utility -- a component that measures how much storage a device has",
+          "isCorrect": false,
+          "feedback": "Measuring storage capacity isn't what a GPU does -- a GPU is specifically a processing component focused on graphics and parallel computation."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is a GPU generally well suited to rendering computer graphics, compared to relying solely on a CPU for the same task?",
+      "options": [
+        {
+          "text": "A GPU contains many smaller processing cores designed to perform the same kind of calculation on many pieces of data simultaneously, which matches how pixels and graphical elements can be processed in parallel",
+          "isCorrect": true,
+          "feedback": "Correct -- graphics rendering often involves applying similar operations across huge numbers of pixels or vertices, a workload that plays to a GPU's strength in massive parallelism."
+        },
+        {
+          "text": "A GPU contains far fewer processing cores than a CPU, but each core runs at a much higher clock speed",
+          "isCorrect": false,
+          "feedback": "This reverses the typical hardware tradeoff -- GPUs generally have MANY MORE, comparatively simpler cores than CPUs, rather than fewer cores at drastically higher speeds."
+        },
+        {
+          "text": "A GPU is physically incapable of performing any mathematical calculations",
+          "isCorrect": false,
+          "feedback": "Performing calculations, especially many similar ones in parallel, is precisely what a GPU is built to do well -- it's not incapable of math at all."
+        },
+        {
+          "text": "A GPU can only be used while a computer is turned off",
+          "isCorrect": false,
+          "feedback": "A GPU actively performs its processing work while the computer is running and in active use, not while it's turned off."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Beyond graphics rendering, why have GPUs also become widely used for tasks like training machine learning models?",
+      "options": [
+        {
+          "text": "Training many machine learning models involves performing huge numbers of similar mathematical operations (like matrix multiplications) that can be executed in parallel, which plays directly to a GPU's core architectural strength",
+          "isCorrect": true,
+          "feedback": "Correct -- this overlap between graphics-style parallel workloads and machine learning's heavy matrix computation needs is a major reason GPUs became central to modern machine learning."
+        },
+        {
+          "text": "Because GPUs are the only computer component capable of storing any data at all",
+          "isCorrect": false,
+          "feedback": "Storage is handled by other components like RAM and disk drives -- a GPU's advantage for machine learning specifically comes from its parallel processing strength, not data storage capability."
+        },
+        {
+          "text": "Because CPUs are physically incapable of performing any mathematical operations required by machine learning",
+          "isCorrect": false,
+          "feedback": "CPUs CAN perform the mathematical operations needed for machine learning -- they're just typically much slower at the massively parallel version of that work compared to a GPU, not incapable of it."
+        },
+        {
+          "text": "Because machine learning models are required by law to only run on GPU hardware",
+          "isCorrect": false,
+          "feedback": "There's no such legal requirement -- GPUs are chosen for machine learning primarily because their parallel architecture happens to suit the heavy, repetitive math involved, a practical engineering fit rather than a legal mandate."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about the specialized component that helps a computer draw images and video smoothly on screen.",
+        "medium": "This component is optimized for graphics rendering and for performing many similar calculations at the same time.",
+        "easy": "It stands for a specific kind of processing unit specialized in graphics rendering and highly parallel computation."
+      },
+      "medium": {
+        "hard": "Think about how many pixels on a screen might need a very similar calculation applied to each of them, all at once.",
+        "medium": "Having many smaller cores that can each handle a similar piece of the same overall task in parallel is the key architectural advantage here.",
+        "easy": "A large number of simpler cores tuned for doing the SAME kind of operation across huge amounts of data simultaneously is exactly the strength that suits rendering many pixels or vertices at once."
+      },
+      "hard": {
+        "hard": "Think about what kind of math shows up over and over again both in rendering graphics and in training certain kinds of models.",
+        "medium": "A huge volume of similar, repetitive mathematical operations happening in parallel is common to both graphics rendering and training these kinds of models.",
+        "easy": "The heavy matrix-style computations at the heart of training many machine learning models line up closely with the same massively parallel processing strength that originally made GPUs valuable for graphics."
+      }
+    }
+  },
+  {
+    "topic": "cache memory",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of 'cache memory' in a computer?",
+      "options": [
+        {
+          "text": "To store frequently or recently used data closer to the processor, so it can be accessed much faster than fetching it from main memory (RAM) every time",
+          "isCorrect": true,
+          "feedback": "Correct -- cache memory acts as a small, very fast buffer that helps avoid the relatively slower process of repeatedly fetching the same data from RAM."
+        },
+        {
+          "text": "To permanently store a computer's entire operating system",
+          "isCorrect": false,
+          "feedback": "An entire operating system is typically stored on a device's longer-term storage (like an SSD or hard drive), not held permanently in the much smaller and faster cache."
+        },
+        {
+          "text": "To physically cool down the computer's processor",
+          "isCorrect": false,
+          "feedback": "Cache memory is about speeding up data access, not a cooling mechanism -- cooling is handled by separate hardware like fans and heat sinks."
+        },
+        {
+          "text": "To connect a computer to the internet",
+          "isCorrect": false,
+          "feedback": "Connecting to the internet involves separate networking hardware -- cache memory specifically deals with speeding up access to frequently used data."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why does a computer typically have multiple levels of cache (such as L1, L2, and L3), rather than just one single cache?",
+      "options": [
+        {
+          "text": "Each level offers a different tradeoff between speed and size, with smaller, faster caches (like L1) sitting closer to the processor, and larger, somewhat slower caches (like L3) providing a bigger buffer before reaching main memory",
+          "isCorrect": true,
+          "feedback": "Correct -- this tiered structure lets the system balance ultra-fast access to the most frequently used data against the practical limits of how much extremely fast memory can be built cheaply."
+        },
+        {
+          "text": "Because a computer's processor is physically incapable of using just a single cache level",
+          "isCorrect": false,
+          "feedback": "Using a single cache level is technically possible -- multiple tiers are a deliberate engineering tradeoff between speed and size, not a hard technical impossibility."
+        },
+        {
+          "text": "Because each cache level is used to store an entirely different program",
+          "isCorrect": false,
+          "feedback": "Different cache levels aren't dedicated to storing separate whole programs -- they're organized by a speed-versus-size tradeoff for the SAME running program's frequently used data."
+        },
+        {
+          "text": "Because having multiple cache levels is required in order to connect to the internet",
+          "isCorrect": false,
+          "feedback": "Cache levels are unrelated to internet connectivity -- they exist specifically to speed up a processor's access to frequently used data."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What does it mean when a requested piece of data results in a 'cache miss'?",
+      "options": [
+        {
+          "text": "The requested data was not found in the cache, so the system must retrieve it from a slower level of memory (such as RAM), typically taking noticeably longer than a cache hit would",
+          "isCorrect": true,
+          "feedback": "Correct -- cache misses are generally costlier in time than cache hits, which is why software and hardware designers often try to structure data access patterns to minimize how often misses occur."
+        },
+        {
+          "text": "The requested data was found instantly in the cache, with no delay at all",
+          "isCorrect": false,
+          "feedback": "That describes a CACHE HIT, the opposite situation -- a cache miss specifically refers to the data NOT being found in the cache."
+        },
+        {
+          "text": "The cache has been physically damaged and can no longer be used at all",
+          "isCorrect": false,
+          "feedback": "A cache miss is a routine, expected event describing where data happens to be located -- it doesn't imply any physical damage to the hardware."
+        },
+        {
+          "text": "The computer has run out of electrical power",
+          "isCorrect": false,
+          "feedback": "A cache miss is unrelated to a computer's power supply -- it specifically describes requested data not being present in the cache."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about keeping frequently used items close at hand, instead of walking all the way to a distant storage room every time.",
+        "medium": "This memory holds frequently or recently used data very close to the processor, for much quicker access than main memory allows.",
+        "easy": "It's a small, very fast memory layer that stores frequently or recently used data to speed up access compared to fetching from main RAM every time."
+      },
+      "medium": {
+        "hard": "Think about having a tiny, super-fast drawer right next to you, plus a bigger, slightly-less-fast drawer just a bit farther away.",
+        "medium": "Different levels balance size against speed: smaller and faster ones sit closest to the processor, larger and somewhat slower ones sit a bit farther out.",
+        "easy": "The tiered structure balances ultra-fast, small storage closest to the processor against progressively larger but comparatively slower buffers before reaching main memory."
+      },
+      "hard": {
+        "hard": "Think about reaching for something in your closest, fastest storage and simply not finding it there.",
+        "medium": "This term describes the situation where the needed data wasn't present in the cache, forcing a slower fetch elsewhere.",
+        "easy": "Not finding the requested data in the cache, and therefore having to retrieve it from slower memory, is exactly what this term describes."
+      }
+    }
+  },
+  {
+    "topic": "the motherboard",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general role of a computer's 'motherboard'?",
+      "options": [
+        {
+          "text": "It is the main circuit board that connects and allows communication between the computer's major components, like the CPU, RAM, and storage",
+          "isCorrect": true,
+          "feedback": "Correct -- the motherboard acts as the central hub tying together a computer's essential hardware components."
+        },
+        {
+          "text": "It is a type of software used to browse the internet",
+          "isCorrect": false,
+          "feedback": "The motherboard is a physical hardware component -- browsing the internet is done through separate software, like a web browser."
+        },
+        {
+          "text": "It is the part of a computer that displays images on the screen",
+          "isCorrect": false,
+          "feedback": "Displaying images on screen is primarily handled by the GPU together with the monitor -- the motherboard's role is to physically connect and enable communication between major hardware components."
+        },
+        {
+          "text": "It is a backup copy of a computer's files stored in the cloud",
+          "isCorrect": false,
+          "feedback": "A motherboard is physical hardware inside the computer -- cloud backups are a completely separate concept involving remote data storage."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why does a motherboard typically need to be compatible with a specific CPU 'socket type' when a computer is being built or upgraded?",
+      "options": [
+        {
+          "text": "The physical socket on the motherboard must match the physical pin layout and connection standard of the specific CPU being installed",
+          "isCorrect": true,
+          "feedback": "Correct -- a mismatched socket type generally means the CPU physically cannot be installed or properly connected to that particular motherboard at all."
+        },
+        {
+          "text": "Because all CPUs and all motherboards are universally interchangeable, with no compatibility concerns whatsoever",
+          "isCorrect": false,
+          "feedback": "CPU and motherboard compatibility is actually a well-known, real practical concern when building or upgrading a computer -- they are NOT universally interchangeable."
+        },
+        {
+          "text": "Because the socket type only affects which color the motherboard is manufactured in",
+          "isCorrect": false,
+          "feedback": "Socket type is a functional, physical/electrical compatibility specification, not simply a matter of the motherboard's color."
+        },
+        {
+          "text": "Because socket type determines how much electricity the entire house consumes",
+          "isCorrect": false,
+          "feedback": "Socket type governs CPU-to-motherboard physical and electrical compatibility specifically, not a household's overall electricity consumption."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "The motherboard's 'chipset' plays a significant role in determining a computer's capabilities. What is the general function of a chipset?",
+      "options": [
+        {
+          "text": "It manages communication and data flow between the CPU and other components, such as RAM, storage devices, and peripheral connections, and can determine which specific features and expansion options the motherboard supports",
+          "isCorrect": true,
+          "feedback": "Correct -- the chipset is a key factor in what a given motherboard can actually support, such as certain memory speeds or numbers of expansion slots."
+        },
+        {
+          "text": "It is a small, separate battery that keeps the motherboard's clock running when the computer is unplugged",
+          "isCorrect": false,
+          "feedback": "That describes the motherboard's separate CMOS battery -- the chipset instead manages communication and capabilities across the board's major components."
+        },
+        {
+          "text": "It is a piece of software that must be manually rewritten by the user every time the computer starts",
+          "isCorrect": false,
+          "feedback": "A chipset is a physical hardware component, and it doesn't need to be manually rewritten by the user each time the computer starts."
+        },
+        {
+          "text": "It determines the exact wallpaper image displayed on the computer's desktop",
+          "isCorrect": false,
+          "feedback": "Desktop wallpaper is a software/operating-system-level setting, entirely unrelated to the chipset's hardware role in managing communication between components."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the main circuit board connecting components like the CPU, RAM, and storage, allowing them to communicate with each other.",
+        "medium": "This physical circuit board ties together and enables communication between a computer's essential hardware components.",
+        "hard": "Think about the central board inside a computer's case that all the other important parts plug into."
+      },
+      "medium": {
+        "easy": "A mismatch between the board's specific connector standard and the processor's own physical connector standard would prevent proper installation entirely.",
+        "medium": "The physical connector on the board has to precisely match the connector style of the specific processor being installed.",
+        "hard": "Think about needing the exact right shape of plug to fit into a particular kind of outlet."
+      },
+      "hard": {
+        "easy": "Managing communication among major components while also gating which specific features and expansion capabilities are supported is exactly this component's role.",
+        "medium": "This component manages data flow between major parts and can determine which specific capabilities, like certain memory speeds, are actually supported.",
+        "hard": "Think about a component that quietly governs how well the different major parts of the board can talk to each other, and what features are even possible."
+      }
+    }
+  },
+  {
+    "topic": "input devices",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the defining role of a computer 'input device'?",
+      "options": [
+        {
+          "text": "It allows a user to send data or commands into a computer system",
+          "isCorrect": true,
+          "feedback": "Correct -- input devices like keyboards and mice are the primary way people feed information and instructions into a computer."
+        },
+        {
+          "text": "It allows a computer to display information back to the user",
+          "isCorrect": false,
+          "feedback": "Displaying information back to the user describes an OUTPUT device's role -- an input device is specifically about sending data INTO the computer."
+        },
+        {
+          "text": "It permanently stores a computer's files for long-term use",
+          "isCorrect": false,
+          "feedback": "Long-term file storage is the role of a storage device, like a hard drive or SSD, not an input device."
+        },
+        {
+          "text": "It cools down a computer's internal components",
+          "isCorrect": false,
+          "feedback": "Cooling internal components is handled by dedicated cooling hardware, unrelated to an input device's role of sending data into the system."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "A keyboard, mouse, microphone, and scanner are all commonly cited examples of input devices. What do they have in common?",
+      "options": [
+        {
+          "text": "Each one captures some form of data or command from the outside world and sends it into the computer for processing",
+          "isCorrect": true,
+          "feedback": "Correct -- despite capturing very different kinds of data (keystrokes, movement, sound, images), all of them share this same fundamental role of feeding information into the system."
+        },
+        {
+          "text": "Each one is exclusively used to display visual output back to the user",
+          "isCorrect": false,
+          "feedback": "Displaying visual output describes output devices like a monitor -- none of these examples are primarily about displaying output."
+        },
+        {
+          "text": "Each one can only be used while the computer is turned off",
+          "isCorrect": false,
+          "feedback": "These devices are used WHILE the computer is turned on and actively running, in order to send data or commands into it."
+        },
+        {
+          "text": "Each one physically stores the computer's operating system permanently",
+          "isCorrect": false,
+          "feedback": "Permanently storing the operating system is the role of a storage device -- these examples are about capturing data and sending it in, not long-term storage."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "A touchscreen is sometimes described as both an input device and an output device simultaneously. Why is that description accurate?",
+      "options": [
+        {
+          "text": "It functions as an output device by displaying visual information, while also functioning as an input device by detecting and capturing the user's touches as commands sent into the system",
+          "isCorrect": true,
+          "feedback": "Correct -- a touchscreen combines the display capability of a screen with the ability to register the user's touch as direct input, making it dual-purpose."
+        },
+        {
+          "text": "Because a touchscreen physically contains two entirely separate, unrelated computers stacked inside it",
+          "isCorrect": false,
+          "feedback": "A touchscreen isn't two separate computers -- it's a single combined component that both displays output and captures touch-based input."
+        },
+        {
+          "text": "Because a touchscreen can only be classified as an input device, never as an output device",
+          "isCorrect": false,
+          "feedback": "That would ignore its clear output-device role of displaying visual information -- it genuinely serves both purposes at once, which is exactly the point being illustrated."
+        },
+        {
+          "text": "Because a touchscreen requires a completely separate keyboard to function as an input device at all",
+          "isCorrect": false,
+          "feedback": "A touchscreen can register input directly through touch, without necessarily needing a separate physical keyboard to serve its input role."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about the tools you use to actually type, click, or speak information into a computer.",
+        "medium": "This kind of device is how data and commands get sent INTO a computer system from the outside.",
+        "easy": "It's the category of device responsible for sending data or commands into the computer system, as opposed to displaying results back out."
+      },
+      "medium": {
+        "hard": "Think about the common thread connecting typing, clicking, speaking, and scanning: what direction is the data traveling?",
+        "medium": "Despite capturing very different kinds of data, all of these examples share the same basic role of feeding information into the computer.",
+        "easy": "Regardless of the specific kind of data captured -- keystrokes, movement, sound, or images -- all of them share the role of sending that data INTO the computer for processing."
+      },
+      "hard": {
+        "hard": "Think about a single device that both shows you something on screen AND reacts when you touch it.",
+        "medium": "One role involves displaying visuals outward; the other role involves capturing your touch as a command going inward.",
+        "easy": "Displaying visual information (an output role) while simultaneously capturing touch-based commands (an input role) is exactly why a touchscreen is described as serving both functions at once."
+      }
+    }
+  },
+  {
+    "topic": "output devices",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the defining role of a computer 'output device'?",
+      "options": [
+        {
+          "text": "It presents information or results from the computer back to the user, such as visually or audibly",
+          "isCorrect": true,
+          "feedback": "Correct -- monitors, printers, and speakers are classic examples of devices that communicate the computer's output to a person."
+        },
+        {
+          "text": "It allows a user to send new data or commands into the computer",
+          "isCorrect": false,
+          "feedback": "Sending data or commands INTO the computer describes an INPUT device's role -- an output device instead presents results back OUT to the user."
+        },
+        {
+          "text": "It permanently stores a computer's files for long-term use",
+          "isCorrect": false,
+          "feedback": "Long-term file storage is the role of a storage device, not specifically an output device, whose role is presenting information to the user."
+        },
+        {
+          "text": "It connects two separate computers directly together with a single cable",
+          "isCorrect": false,
+          "feedback": "Directly connecting two computers together describes networking hardware, not the role of an output device presenting results to a user."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "A monitor, printer, and speaker are all commonly cited examples of output devices. What do they have in common?",
+      "options": [
+        {
+          "text": "Each one takes information processed by the computer and presents it to the user in some perceivable form, whether visual, printed, or audible",
+          "isCorrect": true,
+          "feedback": "Correct -- despite differing in the FORM of output they produce, all of them share the role of communicating the computer's results back to a person."
+        },
+        {
+          "text": "Each one is exclusively used to capture new data from the user and send it into the computer",
+          "isCorrect": false,
+          "feedback": "Capturing data and sending it INTO the computer describes input devices -- none of these examples are primarily about capturing new input."
+        },
+        {
+          "text": "Each one can only be used while the computer is completely powered off",
+          "isCorrect": false,
+          "feedback": "These devices are actively used WHILE the computer is powered on and running, in order to present information to the user."
+        },
+        {
+          "text": "Each one is required in order for a computer to have any internal memory at all",
+          "isCorrect": false,
+          "feedback": "Internal memory (like RAM) is a separate hardware component -- none of these output devices are what provide a computer with internal memory."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a device like a 3D printer or a haptic feedback controller (one that produces physical vibrations) be classified as an output device, even though they don't display information visually on a screen?",
+      "options": [
+        {
+          "text": "Because they still take processed information from the computer and convert it into a perceivable result for the user -- a physical object in one case, and a felt vibration in the other -- fitting the broader definition of presenting computed output",
+          "isCorrect": true,
+          "feedback": "Correct -- 'output' isn't limited strictly to a visual screen display; it broadly covers any way the computer communicates results outward to be perceived by the user."
+        },
+        {
+          "text": "Because these devices are actually classified as input devices, not output devices, despite common terminology",
+          "isCorrect": false,
+          "feedback": "These devices are generally classified as output devices precisely because they present the computer's processed results outward to the user, even in physical or tactile form rather than visually."
+        },
+        {
+          "text": "Because these devices don't require the computer to process any information beforehand",
+          "isCorrect": false,
+          "feedback": "The computer does process information beforehand in each case -- a 3D printer needs a processed model to print, and a haptic controller needs a processed signal to produce a specific vibration pattern."
+        },
+        {
+          "text": "Because 'output' strictly and only ever refers to information displayed on a screen",
+          "isCorrect": false,
+          "feedback": "The broader concept of output covers any perceivable result presented to the user, not just visual screen displays -- that's exactly why these non-visual examples still count as output devices."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about the tools that show you, print out, or play back a computer's results.",
+        "medium": "This kind of device presents the computer's processed information back OUT to the user in some perceivable way.",
+        "easy": "It's the category of device responsible for presenting the computer's results to the user, the reverse role of an input device."
+      },
+      "medium": {
+        "hard": "Think about the common thread connecting seeing an image, reading a printed page, and hearing a sound: what direction is the information traveling?",
+        "medium": "Despite producing very different kinds of output, all of these examples share the same basic role of presenting the computer's results to the user.",
+        "easy": "Regardless of the specific FORM the output takes -- visual, printed, or audible -- all of them share the role of presenting the computer's processed results to a person."
+      },
+      "hard": {
+        "hard": "Think about whether 'output' has to mean something shown on a screen, or whether it could mean something broader happening in the real world.",
+        "medium": "A physical printed object, or a felt vibration, can both still count as a perceivable result the computer produced for the user.",
+        "easy": "Converting processed computer information into ANY perceivable form for the user -- whether visual, physical, or tactile -- is what qualifies these devices as output devices, beyond just screen displays."
+      }
+    }
+  },
+  {
+    "topic": "storage devices (HDD vs SSD)",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the primary purpose of a storage device like a hard disk drive (HDD) or solid-state drive (SSD) in a computer?",
+      "options": [
+        {
+          "text": "To store data persistently, so it remains available even after the computer is turned off",
+          "isCorrect": true,
+          "feedback": "Correct -- unlike RAM, which loses its contents when powered off, storage devices like HDDs and SSDs are designed to keep data long-term."
+        },
+        {
+          "text": "To temporarily hold data only while a specific program is actively running, then erase it the instant that program closes",
+          "isCorrect": false,
+          "feedback": "That temporary, program-specific behavior is closer to how RAM works -- persistent storage devices like HDDs and SSDs are meant to keep data around even after programs close and the computer shuts down."
+        },
+        {
+          "text": "To physically cool down the computer's other internal components",
+          "isCorrect": false,
+          "feedback": "Cooling internal components is a separate hardware function -- storage devices are specifically for persistently holding data."
+        },
+        {
+          "text": "To display visual output directly onto a computer screen",
+          "isCorrect": false,
+          "feedback": "Displaying visual output is the job of a GPU together with a monitor -- a storage device's role is persistently storing data, not displaying it."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is a key physical difference between a traditional hard disk drive (HDD) and a solid-state drive (SSD)?",
+      "options": [
+        {
+          "text": "An HDD stores data on spinning magnetic disks read by a moving mechanical arm, while an SSD stores data electronically with no moving parts",
+          "isCorrect": true,
+          "feedback": "Correct -- this fundamental difference in physical mechanism is a major reason SSDs are generally faster and more resistant to physical shock than HDDs."
+        },
+        {
+          "text": "An SSD stores data on spinning magnetic disks, while an HDD stores data electronically with no moving parts",
+          "isCorrect": false,
+          "feedback": "This reverses the actual mechanisms -- it's the HDD that uses spinning magnetic disks, while the SSD is the one with no moving parts."
+        },
+        {
+          "text": "An HDD and an SSD are simply two different names for the exact identical physical storage mechanism",
+          "isCorrect": false,
+          "feedback": "They use genuinely different physical mechanisms to store data -- one relies on spinning magnetic disks, the other on purely electronic storage with no moving parts."
+        },
+        {
+          "text": "An HDD can only store text files, while an SSD can only store image files",
+          "isCorrect": false,
+          "feedback": "Both HDDs and SSDs can store virtually any kind of file, including text and images -- their real difference is in physical storage mechanism, not the type of file allowed."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why do SSDs typically offer significantly faster data access speeds than traditional HDDs?",
+      "options": [
+        {
+          "text": "Because SSDs read and write data electronically, with no need to physically move a mechanical read/write arm or wait for a spinning disk to rotate into position",
+          "isCorrect": true,
+          "feedback": "Correct -- eliminating that mechanical movement removes a major source of delay that HDDs inherently have, letting SSDs access data far more quickly."
+        },
+        {
+          "text": "Because SSDs are always physically larger in size than HDDs",
+          "isCorrect": false,
+          "feedback": "Physical size isn't what drives the speed advantage -- SSDs' speed comes specifically from their electronic, moving-parts-free storage mechanism."
+        },
+        {
+          "text": "Because SSDs are connected to the computer using a completely different, non-electrical connection method",
+          "isCorrect": false,
+          "feedback": "SSDs still connect to a computer through standard electrical/data connections, just like HDDs -- their speed advantage comes from their internal storage mechanism, not a fundamentally different type of external connection."
+        },
+        {
+          "text": "Because SSDs require the computer to be connected to the internet at all times to function",
+          "isCorrect": false,
+          "feedback": "SSDs function fully as local storage without requiring any internet connection -- their speed advantage is purely about their internal electronic storage mechanism."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about where your files actually live so they're still there the next time you turn the computer back on.",
+        "medium": "This kind of device holds data persistently, unlike memory that gets wiped when the power turns off.",
+        "easy": "It's the hardware responsible for persistently storing data so it survives even after the computer has been shut down."
+      },
+      "medium": {
+        "hard": "Think about whether the storage mechanism involves any physically spinning or moving parts.",
+        "medium": "One relies on a spinning disk and a moving arm; the other stores everything purely electronically, with nothing mechanically moving.",
+        "easy": "Spinning magnetic disks and a moving read/write arm characterize one type, while purely electronic storage with no moving parts characterizes the other."
+      },
+      "hard": {
+        "hard": "Think about how much time it takes to physically move something into position, versus simply reading an electrical signal.",
+        "medium": "Skipping the need to wait for a mechanical arm or a spinning disk to get into position removes a significant built-in source of delay.",
+        "easy": "Eliminating the mechanical wait for a moving arm or spinning disk is exactly why an all-electronic storage mechanism achieves noticeably faster access speeds."
+      }
+    }
+  },
+  {
+    "topic": "the system bus",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In computer architecture, what is a 'bus' generally used for?",
+      "options": [
+        {
+          "text": "Transferring data between different components inside a computer, such as between the CPU, memory, and other hardware",
+          "isCorrect": true,
+          "feedback": "Correct -- a bus acts as a shared pathway that different components use to communicate and exchange data."
+        },
+        {
+          "text": "Physically transporting a computer to a different building",
+          "isCorrect": false,
+          "feedback": "In computer architecture, a 'bus' refers to an internal data pathway, not a vehicle for physically transporting the computer itself."
+        },
+        {
+          "text": "Permanently storing a computer's files after it's been turned off",
+          "isCorrect": false,
+          "feedback": "Persistent file storage is the role of a storage device -- a bus specifically refers to the pathway used to TRANSFER data between components."
+        },
+        {
+          "text": "Displaying images directly on a computer's monitor",
+          "isCorrect": false,
+          "feedback": "Displaying images is primarily the GPU's role -- a bus is the internal pathway used to move data between components generally."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "A computer's system bus is sometimes described as being made up of separate parts, such as a 'data bus', an 'address bus', and a 'control bus'. What is the general purpose of the 'address bus'?",
+      "options": [
+        {
+          "text": "It carries information specifying which particular memory location or device a given operation should target",
+          "isCorrect": true,
+          "feedback": "Correct -- the address bus tells the system WHERE data should be read from or written to, working alongside the data bus, which carries the actual data itself."
+        },
+        {
+          "text": "It carries the actual data values being read or written during an operation",
+          "isCorrect": false,
+          "feedback": "That's the role of the DATA bus -- the address bus instead carries information about WHERE that data should go or come from."
+        },
+        {
+          "text": "It carries signals that turn the computer's power supply on and off",
+          "isCorrect": false,
+          "feedback": "Turning the power supply on and off is handled by separate power-management hardware, not the address bus, which is specifically about specifying target memory locations."
+        },
+        {
+          "text": "It permanently stores a backup copy of every file on the computer",
+          "isCorrect": false,
+          "feedback": "Permanent file backups are the role of a storage device -- the address bus is about identifying WHERE within memory or devices an operation should target, not long-term storage."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can a system bus's width (the number of bits it can transfer simultaneously) and speed act as a bottleneck on a computer's overall performance?",
+      "options": [
+        {
+          "text": "Even if the CPU itself is very fast, its ability to send and receive data to other components is ultimately limited by how much data the bus can move at once and how quickly it can do so",
+          "isCorrect": true,
+          "feedback": "Correct -- if the bus can't keep up with the CPU's processing speed, the CPU can end up waiting on data transfers, limiting how much of its raw speed actually translates into overall system performance."
+        },
+        {
+          "text": "Because a system bus is only capable of transferring data one single time during a computer's entire lifetime",
+          "isCorrect": false,
+          "feedback": "A system bus is used continuously throughout a computer's operation for ongoing data transfers -- it isn't limited to a single one-time use."
+        },
+        {
+          "text": "Because a wider or faster bus always makes a computer's CPU run at a slower clock speed",
+          "isCorrect": false,
+          "feedback": "Bus width and speed characteristics don't directly force a CPU's clock speed to slow down -- the actual bottleneck concern is about how much data can move between components, not about capping CPU clock speed."
+        },
+        {
+          "text": "Because the system bus is responsible for cooling the computer's internal components",
+          "isCorrect": false,
+          "feedback": "Cooling is handled by separate hardware -- the system bus's role and potential bottleneck concern is specifically about moving data between components, not temperature management."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about the internal 'roads' data travels along to get from one part of the computer to another.",
+        "medium": "This pathway is used for transferring data between the computer's major internal components.",
+        "easy": "It's the shared internal pathway used to transfer data between components like the CPU, memory, and other hardware."
+      },
+      "medium": {
+        "hard": "Think about needing to specify WHERE something should be read from or written to, separately from WHAT is actually being read or written.",
+        "medium": "This part specifically carries information about the target location for an operation, working alongside a separate part that carries the actual data.",
+        "easy": "Carrying information about which specific memory location or device an operation should target is exactly this particular part's job, distinct from the data bus carrying the actual values."
+      },
+      "hard": {
+        "hard": "Think about a very fast worker who still has to wait on a narrow doorway before getting more materials delivered.",
+        "medium": "Even a very fast processing component can end up waiting if the pathway moving data to and from it can't keep pace.",
+        "easy": "The CPU's raw processing speed can only translate into overall performance up to the point that the pathway moving data to and from it can actually keep up."
+      }
+    }
+  },
+  {
+    "topic": "clock speed",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does a CPU's 'clock speed' (measured in units like gigahertz, GHz) generally represent?",
+      "options": [
+        {
+          "text": "Roughly how many basic processing cycles the CPU can perform per second",
+          "isCorrect": true,
+          "feedback": "Correct -- clock speed describes the rate at which the CPU's internal clock signal ticks, coordinating its basic operations."
+        },
+        {
+          "text": "How many total files are currently stored on the computer",
+          "isCorrect": false,
+          "feedback": "The number of stored files relates to storage capacity and usage, not the CPU's internal cycle rate described by clock speed."
+        },
+        {
+          "text": "How many minutes it takes the computer to fully start up (boot)",
+          "isCorrect": false,
+          "feedback": "Boot time depends on many different factors, but clock speed specifically refers to the RATE of the CPU's internal processing cycles, not startup duration."
+        },
+        {
+          "text": "How fast data can move between the CPU and main memory (RAM)",
+          "isCorrect": false,
+          "feedback": "That's closer to describing memory bus speed -- clock speed specifically measures the CPU's own internal processing cycle rate, separate from how quickly data moves to RAM."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why can't clock speed alone reliably predict which of two different CPUs will perform better overall?",
+      "options": [
+        {
+          "text": "Other factors, such as the CPU's architecture, number of cores, and how efficiently it executes instructions per clock cycle, also significantly affect real-world performance",
+          "isCorrect": true,
+          "feedback": "Correct -- a CPU with a lower clock speed but a more efficient design or more cores can often outperform one with a higher clock speed but a less efficient design."
+        },
+        {
+          "text": "Because clock speed has absolutely no relationship to CPU performance whatsoever",
+          "isCorrect": false,
+          "feedback": "Clock speed does play SOME role in performance -- the point is that it isn't the ONLY relevant factor, not that it's completely irrelevant."
+        },
+        {
+          "text": "Because all CPUs on the market today have the exact same clock speed",
+          "isCorrect": false,
+          "feedback": "CPUs on the market vary quite a bit in clock speed -- the actual point is that clock speed alone doesn't fully determine overall performance, due to other contributing factors."
+        },
+        {
+          "text": "Because clock speed only matters for a computer's storage devices, not its CPU",
+          "isCorrect": false,
+          "feedback": "Clock speed specifically describes the CPU's processing cycle rate -- it isn't a measurement associated with storage devices."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why do modern CPU manufacturers often focus on improving factors like instructions-per-cycle efficiency and adding more processing cores, rather than solely pushing clock speeds ever higher?",
+      "options": [
+        {
+          "text": "Pushing clock speeds much higher tends to significantly increase heat generation and power consumption, hitting practical physical limits, so other improvements can offer better overall performance gains without those same drawbacks",
+          "isCorrect": true,
+          "feedback": "Correct -- this shift reflects real engineering tradeoffs, since simply cranking up clock speed runs into diminishing returns and mounting heat/power challenges well before other approaches do."
+        },
+        {
+          "text": "Because chips built for much higher clock speeds become extremely unreliable and prone to random errors during normal use",
+          "isCorrect": false,
+          "feedback": "While pushing clock speed to extremes can affect stability in some cases, the primary, well-documented limiting factors manufacturers weigh are heat generation and power consumption, not general unreliability."
+        },
+        {
+          "text": "Because higher clock speeds always make a computer completely incompatible with all existing software",
+          "isCorrect": false,
+          "feedback": "Higher clock speeds don't inherently break compatibility with existing software -- the real concern manufacturers weigh is heat and power consumption tradeoffs, not software compatibility."
+        },
+        {
+          "text": "Because instructions-per-cycle efficiency and core count have absolutely no effect on a CPU's real-world performance",
+          "isCorrect": false,
+          "feedback": "These factors DO meaningfully affect real-world performance -- that's precisely why manufacturers invest in improving them rather than relying on clock speed alone."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about how many basic 'ticks' or cycles happen inside the processor every single second.",
+        "medium": "This measurement reflects roughly how many basic processing cycles occur per second inside the CPU.",
+        "easy": "It's a measurement of the rate of the CPU's internal processing cycles per second, often expressed in gigahertz."
+      },
+      "medium": {
+        "hard": "Think about two workers: one takes fewer steps to finish a task, even if they don't move quite as fast per step.",
+        "medium": "How efficiently each processing cycle is actually used, along with how many cores are available, also plays a major role in real performance.",
+        "easy": "Architecture, per-cycle efficiency, and core count all meaningfully affect real-world performance alongside clock speed, which is why speed alone doesn't tell the whole story."
+      },
+      "hard": {
+        "hard": "Think about what happens to heat and power use as you keep pushing a processor's ticking rate higher and higher.",
+        "medium": "Chasing ever-higher ticking rates runs into real physical costs in heat and power that other kinds of improvements can sidestep.",
+        "easy": "Because pushing clock speed higher runs into steep heat and power costs, improving per-cycle efficiency and adding cores can offer better performance gains without hitting those same physical limits as quickly."
+      }
+    }
+  },
+  {
+    "topic": "machine code and instruction sets",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'machine code'?",
+      "options": [
+        {
+          "text": "The low-level set of binary instructions that a computer's processor can directly execute",
+          "isCorrect": true,
+          "feedback": "Correct -- machine code is the most basic form of instructions a CPU understands and runs directly, without any further translation needed."
+        },
+        {
+          "text": "A high-level programming language designed to be easily readable by humans",
+          "isCorrect": false,
+          "feedback": "Machine code is specifically the LOW-level, directly-executable form -- easily human-readable languages are high-level languages, which typically need to be translated into machine code first."
+        },
+        {
+          "text": "An intermediate, human-readable representation used only for debugging, and never actually executed",
+          "isCorrect": false,
+          "feedback": "Machine code is what's actually executed by the processor -- it isn't merely a human-readable debugging aid, and most people find it very difficult to read directly."
+        },
+        {
+          "text": "A type of computer virus",
+          "isCorrect": false,
+          "feedback": "Machine code itself is simply the low-level instruction format a processor executes -- it isn't inherently a virus, though malicious programs could certainly also be compiled down to machine code, just like any other program."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is an 'instruction set' (or 'instruction set architecture'), in the context of a CPU?",
+      "options": [
+        {
+          "text": "The specific collection of basic operations (like adding numbers or moving data) that a given CPU is designed to understand and execute",
+          "isCorrect": true,
+          "feedback": "Correct -- an instruction set defines the vocabulary of low-level operations a particular processor design supports."
+        },
+        {
+          "text": "A list of every file currently saved on the computer's hard drive",
+          "isCorrect": false,
+          "feedback": "A list of saved files describes file storage contents, not the fundamental operations a CPU is built to execute."
+        },
+        {
+          "text": "A schedule listing when the computer will automatically restart",
+          "isCorrect": false,
+          "feedback": "Restart scheduling is an operating-system-level setting, unrelated to a CPU's fundamental instruction set."
+        },
+        {
+          "text": "A set of rules for how a user is allowed to name their files",
+          "isCorrect": false,
+          "feedback": "File naming rules are a filesystem-level convention, entirely separate from a CPU's instruction set, which defines its supported basic operations."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why does code compiled for one CPU's specific instruction set architecture typically fail to run directly on a CPU built around a fundamentally different instruction set architecture?",
+      "options": [
+        {
+          "text": "The compiled machine code consists of specific binary instructions matched to one architecture's supported operations, and a CPU built around a different architecture may not recognize or support those exact same instructions",
+          "isCorrect": true,
+          "feedback": "Correct -- this is why software is often compiled separately for different processor architectures, or run through emulation/translation layers to bridge the gap."
+        },
+        {
+          "text": "Because machine code is always stored using a completely different file format depending on which programming language originally produced it",
+          "isCorrect": false,
+          "feedback": "Machine code's compatibility issue is about the target CPU's SUPPORTED INSTRUCTIONS, not about which higher-level language originally produced it."
+        },
+        {
+          "text": "Because compiled machine code always includes a small translation table that automatically converts it for any processor",
+          "isCorrect": false,
+          "feedback": "There's no automatic built-in translation table -- code compiled for one architecture typically needs to be recompiled, emulated, or translated through separate tools to run on a different architecture."
+        },
+        {
+          "text": "Because a CPU's instruction set only affects how much storage space the computer has available",
+          "isCorrect": false,
+          "feedback": "Available storage space is determined by separate storage hardware -- an instruction set specifically defines which basic operations a CPU can execute, unrelated to storage capacity."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about the most basic, directly-understandable set of commands a processor can run, with no translation needed.",
+        "medium": "This is the lowest-level form of instructions, expressed in binary, that a CPU can execute directly.",
+        "easy": "It's the binary-level instruction format that a processor executes directly, without needing any further translation step."
+      },
+      "medium": {
+        "hard": "Think about the specific vocabulary of basic operations -- like 'add' or 'move data' -- that a given processor design actually understands.",
+        "medium": "This defines exactly which basic operations a specific CPU design is built to recognize and carry out.",
+        "easy": "It's the defined collection of basic operations that a particular CPU design is built to understand and execute."
+      },
+      "hard": {
+        "hard": "Think about trying to speak a very specific dialect to someone who was never taught that dialect's particular words.",
+        "medium": "The compiled instructions are matched to one specific processor design's vocabulary, which a differently-designed processor might not recognize at all.",
+        "easy": "Because compiled machine code consists of instructions tailored to one specific architecture's supported vocabulary, a CPU built around a differing architecture may simply not recognize those same instructions."
+      }
+    }
+  },
+  {
+    "topic": "von Neumann architecture",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a defining feature of the 'von Neumann architecture', a foundational computer design concept?",
+      "options": [
+        {
+          "text": "A single shared memory space stores both a program's instructions and the data that program operates on",
+          "isCorrect": true,
+          "feedback": "Correct -- this shared storage of instructions and data in the same memory is the hallmark that distinguishes von Neumann architecture from some alternative designs."
+        },
+        {
+          "text": "Programs and data must always be stored on two entirely separate, physically distinct types of hardware",
+          "isCorrect": false,
+          "feedback": "That describes a Harvard-style architecture with separate memory for instructions and data -- von Neumann architecture is specifically defined by storing BOTH in the SAME shared memory."
+        },
+        {
+          "text": "Each instruction must be physically rewired into the hardware before the computer can run it",
+          "isCorrect": false,
+          "feedback": "That describes older, pre-von-Neumann style computers that had to be physically rewired for each new program -- von Neumann architecture's key innovation was storing instructions in memory instead, so they could be loaded and changed without rewiring hardware."
+        },
+        {
+          "text": "The computer must use two entirely separate processors, one dedicated only to instructions and another dedicated only to data",
+          "isCorrect": false,
+          "feedback": "That describes a different kind of design choice altogether -- von Neumann architecture's defining trait is a single shared memory for both instructions and data, not separate dedicated processors."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "The 'von Neumann bottleneck' is a term used to describe a performance limitation related to this architecture. What does it refer to?",
+      "options": [
+        {
+          "text": "The shared pathway between the processor and the single memory holding both instructions and data can limit overall performance, since both must often be fetched through that same shared channel",
+          "isCorrect": true,
+          "feedback": "Correct -- because instructions and data compete for access through the same channel, this can become a limiting factor on how fast the whole system can operate."
+        },
+        {
+          "text": "A limitation that only occurs in computers manufactured before the 1990s",
+          "isCorrect": false,
+          "feedback": "The von Neumann bottleneck isn't limited to older hardware -- it's a structural consequence of the shared instruction/data memory pathway that can still matter in modern designs, not a problem confined to a particular era."
+        },
+        {
+          "text": "A limitation that only affects how many files a hard drive can store",
+          "isCorrect": false,
+          "feedback": "The von Neumann bottleneck specifically concerns the shared pathway between processor and memory for instructions and data, not a hard drive's storage capacity."
+        },
+        {
+          "text": "A rule preventing more than one person from using the computer at the same time",
+          "isCorrect": false,
+          "feedback": "That describes a very different kind of restriction (single-user access) -- the von Neumann bottleneck is specifically about the shared instruction/data memory pathway limiting throughput."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How does a 'Harvard architecture' design, which uses physically separate memory and pathways for instructions versus data, attempt to address the classic von Neumann bottleneck?",
+      "options": [
+        {
+          "text": "By allowing the processor to fetch an instruction and a piece of data at the same time through separate channels, rather than competing for a single shared pathway",
+          "isCorrect": true,
+          "feedback": "Correct -- separating these paths can reduce the contention that causes the von Neumann bottleneck, which is part of why some specialized systems, like certain embedded processors, use Harvard-style designs."
+        },
+        {
+          "text": "By using a single, larger unified memory space that combines instructions and data even more tightly than before",
+          "isCorrect": false,
+          "feedback": "That's actually the opposite of the Harvard approach -- Harvard architecture separates instruction and data memory rather than combining them even more tightly."
+        },
+        {
+          "text": "By storing every program permanently inside the processor itself with no external memory needed",
+          "isCorrect": false,
+          "feedback": "Harvard architecture still relies on external memory for both instructions and data -- it just keeps them physically separate, rather than eliminating external memory altogether."
+        },
+        {
+          "text": "By running instructions and data through the exact same single pathway, just twice as fast as before",
+          "isCorrect": false,
+          "feedback": "Simply speeding up the same shared pathway doesn't eliminate the contention -- Harvard architecture's actual approach is to provide separate, independent pathways for instructions and data."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about a single shared storage area holding both 'what to do' and 'what to do it to'.",
+        "medium": "One shared memory space holds both the program's own instructions and the data those instructions work on.",
+        "easy": "The defining trait is storing both instructions and data together within a single shared memory space."
+      },
+      "medium": {
+        "hard": "Think about a single narrow doorway that both 'the instructions' and 'the data' have to pass through, one at a time.",
+        "medium": "Because both instructions and data have to travel through the same shared pathway, that shared pathway can become a limiting factor.",
+        "easy": "This term names the performance limit caused by instructions and data having to compete for access through that same single shared pathway to memory."
+      },
+      "hard": {
+        "hard": "Think about giving instructions and data their own separate doorways instead of forcing them to share just one.",
+        "medium": "Separate pathways let the processor grab an instruction and a piece of data at the same moment, rather than one at a time through a shared channel.",
+        "easy": "Physically separating the memory and pathways for instructions and data lets both be fetched simultaneously, directly reducing the contention that the shared single pathway would otherwise cause."
+      }
+    }
+  }
+]

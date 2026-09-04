@@ -1,0 +1,1517 @@
+[
+  {
+    "topic": "linked lists",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a linked list, as a data structure?",
+      "options": [
+        {
+          "text": "A sequence of nodes where each node holds data and a pointer to the next node",
+          "isCorrect": true,
+          "feedback": "Correct -- a linked list chains nodes together using pointers rather than storing elements side by side."
+        },
+        {
+          "text": "A single number stored in one memory location",
+          "isCorrect": false,
+          "feedback": "A linked list is a whole structure of connected nodes, not a single stored number."
+        },
+        {
+          "text": "A fixed grid of rows and columns used to store a table",
+          "isCorrect": false,
+          "feedback": "A grid of rows and columns describes something more like a 2D array or table, not a linked list."
+        },
+        {
+          "text": "A block of code that repeats a set of instructions",
+          "isCorrect": false,
+          "feedback": "That describes a loop, not a data structure made of connected nodes."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is a key structural difference between a linked list and an array?",
+      "options": [
+        {
+          "text": "A linked list's nodes are connected by pointers and don't need to sit in contiguous memory, unlike an array",
+          "isCorrect": true,
+          "feedback": "Correct -- this is the defining structural difference between the two."
+        },
+        {
+          "text": "A linked list must always be stored in sorted order, while an array can never be sorted",
+          "isCorrect": false,
+          "feedback": "Neither structure is required to be sorted or forbidden from being sorted -- that's not the real distinction."
+        },
+        {
+          "text": "A linked list can only hold numbers, while an array can hold any data type",
+          "isCorrect": false,
+          "feedback": "Both structures can hold many different data types -- storage layout, not allowed content, is the real distinction."
+        },
+        {
+          "text": "A linked list and an array are simply two names for the same underlying storage method",
+          "isCorrect": false,
+          "feedback": "They use genuinely different memory layouts -- contiguous versus scattered-and-linked."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can inserting a new element at the very front of a linked list be done in constant time, O(1), while doing the same in an array typically takes O(n) time?",
+      "options": [
+        {
+          "text": "Inserting at the front of a linked list only requires updating a couple of pointers, whereas an array must shift every existing element over by one position",
+          "isCorrect": true,
+          "feedback": "Correct -- the linked list avoids the shifting cost entirely because nothing needs to move, only pointers change."
+        },
+        {
+          "text": "Because linked lists are always stored on faster physical memory chips than arrays",
+          "isCorrect": false,
+          "feedback": "Both structures live in the same ordinary memory -- speed differences come from the algorithm, not different hardware."
+        },
+        {
+          "text": "Because arrays are not allowed to have new elements added to them after creation",
+          "isCorrect": false,
+          "feedback": "Elements can be added to arrays -- it's just that doing so at the front is costly, not impossible."
+        },
+        {
+          "text": "Because a linked list automatically keeps itself sorted whenever a new element is added",
+          "isCorrect": false,
+          "feedback": "Linked lists don't auto-sort -- the speed advantage comes from pointer updates, not ordering."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Think about a chain of connected pieces, where each piece knows where the next one is.",
+        "medium": "Each element in this structure is called a node, and every node holds a link pointing to the next node.",
+        "hard": "The structure is defined by nodes connected via pointers, rather than being packed into one contiguous block of memory."
+      },
+      "medium": {
+        "easy": "Think about how the elements sit in memory -- packed right next to each other, or scattered and connected by links?",
+        "medium": "One structure keeps its elements in one continuous block; the other scatters nodes and connects them with pointers.",
+        "hard": "Because its nodes are connected via pointers rather than sitting in contiguous memory, this structure's elements don't need to be right next to each other."
+      },
+      "hard": {
+        "easy": "Adding to the front of one of these structures just rewires a couple of connections, without touching anything else.",
+        "medium": "One operation only needs to update a couple of pointers; the other has to physically shift every remaining element over by one spot.",
+        "hard": "The constant-time insertion comes from only updating the head pointer and the new node's own pointer -- no shifting of other elements required."
+      }
+    }
+  },
+  {
+    "topic": "doubly linked lists",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What makes a 'doubly' linked list different from a standard (singly) linked list?",
+      "options": [
+        {
+          "text": "Each node holds a pointer to both the next node AND the previous node",
+          "isCorrect": true,
+          "feedback": "Correct -- the 'doubly' in the name refers to links running in both directions."
+        },
+        {
+          "text": "Each node stores its data value written twice",
+          "isCorrect": false,
+          "feedback": "The 'doubly' refers to pointer directions, not the data being duplicated."
+        },
+        {
+          "text": "It contains exactly double the number of nodes as a singly linked list",
+          "isCorrect": false,
+          "feedback": "Node count isn't fixed by the type of list -- the difference is about pointer direction, not quantity."
+        },
+        {
+          "text": "It can only be used to store even numbers",
+          "isCorrect": false,
+          "feedback": "A doubly linked list can store any kind of data -- this has nothing to do with even numbers."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is a practical advantage a doubly linked list has over a singly linked list?",
+      "options": [
+        {
+          "text": "It allows traversal in both the forward and backward directions",
+          "isCorrect": true,
+          "feedback": "Correct -- because each node knows its previous node too, you can walk the list in reverse without extra work."
+        },
+        {
+          "text": "It uses less memory per node than a singly linked list",
+          "isCorrect": false,
+          "feedback": "A doubly linked list actually uses MORE memory per node, since it stores an extra backward pointer."
+        },
+        {
+          "text": "It guarantees the data stays sorted automatically",
+          "isCorrect": false,
+          "feedback": "Neither list type sorts itself automatically -- the advantage is about traversal direction, not ordering."
+        },
+        {
+          "text": "It removes the need for a head pointer to the first node",
+          "isCorrect": false,
+          "feedback": "A doubly linked list still needs a reference to its starting node, just like a singly linked list."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a notable tradeoff of using a doubly linked list instead of a singly linked list?",
+      "options": [
+        {
+          "text": "Each node requires extra memory for the additional backward pointer, and that pointer must be kept updated during insertions and deletions",
+          "isCorrect": true,
+          "feedback": "Correct -- the backward-traversal benefit comes at the cost of extra memory and extra pointer bookkeeping on every modification."
+        },
+        {
+          "text": "It becomes impossible to insert new nodes once the list has been created",
+          "isCorrect": false,
+          "feedback": "Insertion is still fully possible in a doubly linked list -- it just requires updating one extra pointer per operation."
+        },
+        {
+          "text": "It can no longer store more than a fixed maximum number of elements",
+          "isCorrect": false,
+          "feedback": "There's no such fixed cap introduced by adding backward pointers -- the tradeoff is memory and bookkeeping overhead, not a size limit."
+        },
+        {
+          "text": "Searching for an element becomes an O(1) constant-time operation",
+          "isCorrect": false,
+          "feedback": "Searching still requires walking node by node, so it remains an O(n) operation, same as in a singly linked list."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "The defining feature is a second pointer per node, aimed at the previous node in the sequence.",
+        "medium": "Each link in the chain points to its neighbor on both sides, not just the one ahead of it.",
+        "hard": "Picture a chain where you can walk not just forward, but also backward."
+      },
+      "medium": {
+        "easy": "Because each node also references its previous neighbor, you can walk the sequence backward as easily as forward.",
+        "medium": "This benefit is about which directions you can travel through the structure, not about memory usage or automatic sorting.",
+        "hard": "Think about which direction you're able to walk through the sequence."
+      },
+      "hard": {
+        "easy": "Every node now carries a second pointer that must be updated on every insertion or deletion, at the cost of additional memory per node.",
+        "medium": "The cost shows up as more memory per node and more pointers to keep in sync, not as a hard limit on size or search speed.",
+        "hard": "Extra convenience for traversal comes with an extra cost that has to be paid on every node."
+      }
+    }
+  },
+  {
+    "topic": "binary trees",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In a binary tree, what is the maximum number of children a single node can have?",
+      "options": [
+        {
+          "text": "Two",
+          "isCorrect": true,
+          "feedback": "Correct -- 'binary' refers to each node having at most two children, typically called left and right."
+        },
+        {
+          "text": "One",
+          "isCorrect": false,
+          "feedback": "A binary tree node can have up to two children, not just one."
+        },
+        {
+          "text": "Four",
+          "isCorrect": false,
+          "feedback": "Four children would describe a different kind of tree -- a binary tree caps each node at two children."
+        },
+        {
+          "text": "An unlimited number",
+          "isCorrect": false,
+          "feedback": "An unlimited number of children isn't allowed in a binary tree -- that's the defining limit of two."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In binary tree terminology, what is a 'leaf' node?",
+      "options": [
+        {
+          "text": "A node that has no children",
+          "isCorrect": true,
+          "feedback": "Correct -- leaf nodes sit at the ends of the tree's branches, with nothing growing below them."
+        },
+        {
+          "text": "The topmost node in the entire tree",
+          "isCorrect": false,
+          "feedback": "The topmost node is called the 'root', not a 'leaf'."
+        },
+        {
+          "text": "Any node that has exactly two children",
+          "isCorrect": false,
+          "feedback": "A node with two children is often called a 'full' or 'internal' node -- a leaf specifically has zero children."
+        },
+        {
+          "text": "A node that stores a decimal number instead of an integer",
+          "isCorrect": false,
+          "feedback": "The term 'leaf' describes a node's position in the tree structure, not the data type it stores."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What distinguishes a 'balanced' binary tree from an unbalanced one?",
+      "options": [
+        {
+          "text": "In a balanced tree, the heights of the left and right subtrees of every node differ by no more than a small, bounded amount",
+          "isCorrect": true,
+          "feedback": "Correct -- balance keeps the tree's height close to logarithmic in the number of nodes, keeping operations fast."
+        },
+        {
+          "text": "A balanced tree must contain an equal number of leaf nodes and internal nodes",
+          "isCorrect": false,
+          "feedback": "Balance is about subtree HEIGHT being kept even, not about leaf and internal node counts matching."
+        },
+        {
+          "text": "A balanced tree is one where every node holds the exact same value",
+          "isCorrect": false,
+          "feedback": "Nodes holding identical values isn't what 'balanced' refers to -- it's about the tree's shape and height."
+        },
+        {
+          "text": "An unbalanced tree is simply one that has more than one root node",
+          "isCorrect": false,
+          "feedback": "A tree, balanced or not, has exactly one root -- 'unbalanced' describes uneven subtree heights, not multiple roots."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "The name of this structure hints at a specific small number as the cap on children per node.",
+        "medium": "The word 'binary' itself signals the maximum branching factor allowed per node here.",
+        "easy": "Each node can have at most a left child and a right child -- and no more than that."
+      },
+      "medium": {
+        "hard": "Think about which nodes sit at the very ends of the tree's branches, with nothing beneath them.",
+        "medium": "This term names a node at the bottom of a branch -- one that doesn't have anything branching further beneath it.",
+        "easy": "This is a node with zero children -- contrast that with the 'root' at the top or a 'full' node with two children."
+      },
+      "hard": {
+        "hard": "Think about how evenly the tree's branches grow on each side of every node.",
+        "medium": "This property is about keeping the left and right subtree heights close to each other at every node, not about counting nodes or matching values.",
+        "easy": "Bounding how much the left and right subtree heights can differ at every node is exactly what keeps operations fast on this kind of tree."
+      }
+    }
+  },
+  {
+    "topic": "binary search trees",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What ordering rule defines a binary search tree?",
+      "options": [
+        {
+          "text": "For every node, all values in its left subtree are smaller, and all values in its right subtree are larger",
+          "isCorrect": true,
+          "feedback": "Correct -- this ordering rule is what makes searching in the tree efficient."
+        },
+        {
+          "text": "Every node must hold a value larger than all other nodes in the tree",
+          "isCorrect": false,
+          "feedback": "Only the single largest value can satisfy that, not every node -- the rule applies relative to each node's own subtrees."
+        },
+        {
+          "text": "Nodes are arranged in the exact order they were originally typed into a list",
+          "isCorrect": false,
+          "feedback": "Insertion order isn't what defines the structure -- the value-based left/right ordering rule is what matters."
+        },
+        {
+          "text": "All nodes at the same depth must hold identical values",
+          "isCorrect": false,
+          "feedback": "Nodes don't need matching values at any depth -- ordering is based on comparing values via the left/right rule."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why does searching for a value in a well-balanced binary search tree tend to be much faster than searching an unsorted list of the same size?",
+      "options": [
+        {
+          "text": "At each step, comparing against a node lets you eliminate an entire subtree, roughly halving the remaining search space",
+          "isCorrect": true,
+          "feedback": "Correct -- this halving behavior is what gives balanced binary search trees their logarithmic search time."
+        },
+        {
+          "text": "Because binary search trees store their data using less memory than a list does",
+          "isCorrect": false,
+          "feedback": "Memory usage per element isn't what drives the search speed advantage -- it's the ability to skip entire subtrees."
+        },
+        {
+          "text": "Because every node in a binary search tree is checked at the exact same time in parallel",
+          "isCorrect": false,
+          "feedback": "Searching a tree is typically done step by step, not by checking every node simultaneously."
+        },
+        {
+          "text": "Because binary search trees never contain duplicate values",
+          "isCorrect": false,
+          "feedback": "Whether duplicates are allowed isn't what makes searches fast -- the ordering rule that lets you skip subtrees is."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What happens to a binary search tree's search efficiency if values are inserted in already-sorted order (e.g., 1, 2, 3, 4, 5, ...)?",
+      "options": [
+        {
+          "text": "The tree degenerates into something resembling a single chain of nodes, making search take O(n) time instead of O(log n)",
+          "isCorrect": true,
+          "feedback": "Correct -- without rebalancing, sorted-order insertion produces a lopsided tree that loses the usual logarithmic search speed."
+        },
+        {
+          "text": "The tree automatically rebalances itself to stay efficient, regardless of insertion order",
+          "isCorrect": false,
+          "feedback": "A plain binary search tree does not automatically rebalance -- that behavior specifically requires a self-balancing variant."
+        },
+        {
+          "text": "Search efficiency is completely unaffected by the order values are inserted in",
+          "isCorrect": false,
+          "feedback": "Insertion order matters a great deal for a plain binary search tree's shape and resulting search speed."
+        },
+        {
+          "text": "The tree simply refuses to insert any values that arrive in sorted order",
+          "isCorrect": false,
+          "feedback": "A binary search tree will still accept sorted-order insertions -- it just ends up shaped inefficiently as a result."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Compare a value against a node: smaller values go one direction, larger values go the other.",
+        "medium": "At every node, one whole side of the tree holds only smaller values, and the other side holds only larger ones.",
+        "easy": "Every node's left branch holds only smaller values than it, and its right branch holds only larger ones."
+      },
+      "medium": {
+        "hard": "Each comparison lets you throw away a big chunk of the remaining nodes at once.",
+        "medium": "Because one comparison rules out an entire subtree, the amount of data left to search shrinks quickly with each step.",
+        "easy": "This step-by-step process of cutting away half of what's left to search, again and again, is what makes lookups so fast."
+      },
+      "hard": {
+        "hard": "Think about what shape the tree ends up taking if every new value is always bigger than the last one added.",
+        "medium": "Without any rebalancing step, inserting already-sorted values tends to produce a long, lopsided shape rather than a bushy one.",
+        "easy": "The tree can end up shaped almost like a straight line of nodes, which erases the usual speed advantage over a plain list."
+      }
+    }
+  },
+  {
+    "topic": "tree traversal",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does it mean to 'traverse' a tree data structure?",
+      "options": [
+        {
+          "text": "To visit every node in the tree, following some defined order",
+          "isCorrect": true,
+          "feedback": "Correct -- traversal is the process of systematically visiting each node."
+        },
+        {
+          "text": "To permanently delete every node in the tree",
+          "isCorrect": false,
+          "feedback": "Traversal is about visiting nodes, not deleting them."
+        },
+        {
+          "text": "To copy the tree's nodes into a completely different data structure called a stack",
+          "isCorrect": false,
+          "feedback": "A stack might be used as a tool during traversal, but traversal itself just means visiting nodes in order, not converting the tree."
+        },
+        {
+          "text": "To count only the leaf nodes and ignore the rest",
+          "isCorrect": false,
+          "feedback": "Traversal generally visits ALL relevant nodes, not just the leaves."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In an 'in-order' traversal of a binary search tree, in what order are the nodes visited?",
+      "options": [
+        {
+          "text": "Left subtree, then the current node, then the right subtree",
+          "isCorrect": true,
+          "feedback": "Correct -- for a binary search tree, this specific order happens to visit nodes in ascending sorted order."
+        },
+        {
+          "text": "Current node, then left subtree, then right subtree",
+          "isCorrect": false,
+          "feedback": "That visiting order describes a 'pre-order' traversal, not an 'in-order' one."
+        },
+        {
+          "text": "Left subtree, then right subtree, then the current node",
+          "isCorrect": false,
+          "feedback": "That visiting order describes a 'post-order' traversal, not an 'in-order' one."
+        },
+        {
+          "text": "Only the root node, skipping every other node entirely",
+          "isCorrect": false,
+          "feedback": "In-order traversal visits every node in the tree, not just the root."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why does an in-order traversal of a valid binary search tree always produce its values in ascending sorted order?",
+      "options": [
+        {
+          "text": "Because at every node, the traversal fully visits the smaller left subtree before the node itself, and the node before the larger right subtree, mirroring the tree's own ordering rule",
+          "isCorrect": true,
+          "feedback": "Correct -- the left-node-right visiting pattern lines up exactly with the tree's own smaller-left, larger-right structure."
+        },
+        {
+          "text": "Because binary search trees secretly store their values in an array behind the scenes",
+          "isCorrect": false,
+          "feedback": "A binary search tree is made of linked nodes, not a hidden array -- the sorted output comes from the traversal order matching the tree's structure."
+        },
+        {
+          "text": "Because the traversal randomly shuffles values until they happen to land in order",
+          "isCorrect": false,
+          "feedback": "The traversal follows a fixed, deterministic order -- there's no randomness or shuffling involved."
+        },
+        {
+          "text": "Because every binary search tree is required to already be a straight line of nodes",
+          "isCorrect": false,
+          "feedback": "Binary search trees can take many shapes, not just a straight line -- the sorted result comes from the traversal order, not from the tree being a chain."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Think of it as a systematic walk through the tree, stopping at each node along the way.",
+        "medium": "This is the general process of visiting every node in the tree according to some chosen order.",
+        "hard": "The word describes visiting, not deleting, copying, or filtering down to only certain nodes."
+      },
+      "medium": {
+        "hard": "This order visits one side, then the middle, then the other side.",
+        "medium": "The pattern is: left side first, then the current node itself, then the right side.",
+        "easy": "Picture visiting everything on the left branch first, then the node itself, then everything on the right branch -- in that exact order."
+      },
+      "hard": {
+        "hard": "Notice how the traversal's own left-then-node-then-right pattern lines up with how the tree was built.",
+        "medium": "Because smaller values always sit to the left and larger ones to the right at every node, visiting left-node-right naturally outputs values from smallest to largest.",
+        "easy": "The match between the tree's own smaller-left/larger-right ordering rule and the traversal's left-node-right visiting pattern is exactly why the output comes out sorted."
+      }
+    }
+  },
+  {
+    "topic": "graphs",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In computer science, what is a graph made up of?",
+      "options": [
+        {
+          "text": "A set of nodes (vertices) connected by edges",
+          "isCorrect": true,
+          "feedback": "Correct -- a graph is fundamentally a collection of vertices linked together by edges."
+        },
+        {
+          "text": "A single continuous line drawn on a chart to show trends over time",
+          "isCorrect": false,
+          "feedback": "That describes a line chart used for visualizing data, not the graph data structure used in computer science."
+        },
+        {
+          "text": "A list of numbers sorted from smallest to largest",
+          "isCorrect": false,
+          "feedback": "A sorted list of numbers doesn't involve vertices and edges -- that's not what a graph data structure is."
+        },
+        {
+          "text": "A fixed grid of exactly 8 rows and 8 columns",
+          "isCorrect": false,
+          "feedback": "A graph's shape isn't fixed to any particular grid size -- it's defined by its vertices and edges instead."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What distinguishes a 'directed' graph from an 'undirected' graph?",
+      "options": [
+        {
+          "text": "In a directed graph, each edge points from one vertex to another in a specific direction, while undirected edges can be traveled either way",
+          "isCorrect": true,
+          "feedback": "Correct -- direction on an edge means the connection only goes one way, unlike a two-way undirected edge."
+        },
+        {
+          "text": "A directed graph must always contain more vertices than an undirected graph",
+          "isCorrect": false,
+          "feedback": "Vertex count has nothing to do with the directed/undirected distinction -- it's about whether edges have a direction."
+        },
+        {
+          "text": "An undirected graph cannot contain any cycles, while a directed graph always must",
+          "isCorrect": false,
+          "feedback": "Both directed and undirected graphs can contain cycles or be free of them -- that's not the defining difference."
+        },
+        {
+          "text": "A directed graph is only used for storing text data, while undirected graphs store numbers",
+          "isCorrect": false,
+          "feedback": "The type of data stored isn't related to whether a graph is directed -- the distinction is about edge direction."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a key structural difference between a 'tree' and a general graph?",
+      "options": [
+        {
+          "text": "A tree is a specific kind of graph that is connected and contains no cycles, while a general graph can have cycles and disconnected parts",
+          "isCorrect": true,
+          "feedback": "Correct -- every tree is technically a graph, but not every graph qualifies as a tree, precisely because of the no-cycles, fully-connected requirement."
+        },
+        {
+          "text": "A tree can only have one single vertex in total, while a graph can have many",
+          "isCorrect": false,
+          "feedback": "A tree can have many vertices, just like a graph -- the real distinction is about cycles and connectivity."
+        },
+        {
+          "text": "A graph must always be drawn with straight lines, while a tree can use curved lines",
+          "isCorrect": false,
+          "feedback": "How something is visually drawn isn't a structural property -- the actual distinction concerns cycles and connectivity."
+        },
+        {
+          "text": "A tree allows an edge to connect a vertex to itself, while a graph never allows that",
+          "isCorrect": false,
+          "feedback": "This reverses the general rule -- graphs, not trees, are the ones that can permit self-loops depending on the graph type."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Picture dots connected by lines -- that's the basic shape of this structure.",
+        "medium": "This structure is built from two ingredients: points, and the connections drawn between them.",
+        "easy": "Formally, this is a set of points (vertices) together with a set of connections (edges) linking pairs of them."
+      },
+      "medium": {
+        "hard": "Consider whether following a connection from one point to another also guarantees you could follow it back the other way.",
+        "medium": "One type's connections work like a one-way street; the other type's connections work like a two-way street.",
+        "easy": "The key is whether each edge has an arrow-like direction attached to it, restricting travel to one way, or allows travel both ways."
+      },
+      "hard": {
+        "hard": "One of these structures is really just a special, more restricted case of the other.",
+        "medium": "The special case adds two extra requirements on top of being a graph -- something about how its pieces stay linked, and something about paths that loop back.",
+        "easy": "Staying connected with zero loops that circle back on themselves is exactly what turns a general graph into this more restricted structure."
+      }
+    }
+  },
+  {
+    "topic": "adjacency lists and matrices",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is an 'adjacency list' used for in computer science?",
+      "options": [
+        {
+          "text": "Representing which vertices in a graph are connected to which other vertices",
+          "isCorrect": true,
+          "feedback": "Correct -- an adjacency list stores, for each vertex, the other vertices it's directly connected to."
+        },
+        {
+          "text": "Sorting a list of numbers into ascending order",
+          "isCorrect": false,
+          "feedback": "Sorting numbers is unrelated to representing connections between vertices in a graph."
+        },
+        {
+          "text": "Storing the login passwords for a website's users",
+          "isCorrect": false,
+          "feedback": "An adjacency list is a way of representing graph connections, not a place to store passwords."
+        },
+        {
+          "text": "Keeping track of a program's variable names alphabetically",
+          "isCorrect": false,
+          "feedback": "Alphabetizing variable names isn't related to representing which vertices connect to which."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does an 'adjacency matrix' represent a graph's connections?",
+      "options": [
+        {
+          "text": "As a grid where each cell indicates whether an edge exists between the corresponding pair of vertices",
+          "isCorrect": true,
+          "feedback": "Correct -- rows and columns represent vertices, and each cell marks the presence or absence of a connecting edge."
+        },
+        {
+          "text": "As a single sorted list of all the vertex names, with no information about edges at all",
+          "isCorrect": false,
+          "feedback": "An adjacency matrix specifically encodes edge connections in its grid, not just a bare list of vertex names."
+        },
+        {
+          "text": "As a chain of nodes where each node points only to the very next vertex added",
+          "isCorrect": false,
+          "feedback": "That describes something closer to a linked list, not the row-and-column grid structure of an adjacency matrix."
+        },
+        {
+          "text": "As a single number representing the total count of vertices in the graph",
+          "isCorrect": false,
+          "feedback": "A single count wouldn't capture which specific vertices connect to which -- that's what the full grid is for."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "For a graph with many vertices but relatively few edges (a 'sparse' graph), why is an adjacency list typically more memory-efficient than an adjacency matrix?",
+      "options": [
+        {
+          "text": "An adjacency list only stores space for edges that actually exist, while an adjacency matrix reserves space for every possible pair of vertices regardless of whether an edge connects them",
+          "isCorrect": true,
+          "feedback": "Correct -- a matrix's size grows with the square of the vertex count, wasting space on pairs with no edge, while a list scales with the actual number of edges."
+        },
+        {
+          "text": "An adjacency matrix can only represent graphs with fewer than ten vertices",
+          "isCorrect": false,
+          "feedback": "An adjacency matrix can represent graphs of any size -- the issue is wasted space for missing edges, not a hard vertex limit."
+        },
+        {
+          "text": "An adjacency list is incapable of representing directed graphs",
+          "isCorrect": false,
+          "feedback": "Adjacency lists can represent directed graphs just fine -- efficiency for sparse graphs is the actual point of comparison here."
+        },
+        {
+          "text": "An adjacency matrix requires the graph's edges to all have the exact same weight",
+          "isCorrect": false,
+          "feedback": "Adjacency matrices can store varying edge weights -- the memory tradeoff is about representing existing versus all-possible connections."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Picture describing a network of connections without drawing out every possible pair -- what's the minimal way to note who's linked to whom?",
+        "medium": "This structure stores, per vertex, a list of that vertex's direct neighbors.",
+        "easy": "It's a per-vertex list of directly connected neighbors, used to represent a graph's edges."
+      },
+      "medium": {
+        "hard": "Picture a table where rows and columns are both labeled with the same set of points.",
+        "medium": "Each cell in this grid corresponds to one specific pair of vertices -- one from the row, one from the column -- and holds some kind of marker about that pair.",
+        "easy": "The grid's rows and columns both represent vertices, and each cell marks whether an edge connects that specific pair."
+      },
+      "hard": {
+        "hard": "Think about what happens to a full grid's size when there are many points but few connections between them.",
+        "medium": "One representation's size depends only on how many connections there really are, while the other's size depends on how many points there are, connected or not.",
+        "easy": "A grid-based representation's size grows with vertices squared no matter how many edges exist, while a per-vertex list only grows with the edges that are truly there."
+      }
+    }
+  },
+  {
+    "topic": "heaps",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the defining property of a 'min-heap'?",
+      "options": [
+        {
+          "text": "Every parent node's value is less than or equal to the values of its children",
+          "isCorrect": true,
+          "feedback": "Correct -- this ordering rule guarantees the smallest value in the whole structure always sits at the root."
+        },
+        {
+          "text": "Every node in the heap must hold a negative number",
+          "isCorrect": false,
+          "feedback": "A min-heap can store any comparable values, not just negative numbers -- the rule is about parent-child ordering."
+        },
+        {
+          "text": "The heap must contain exactly the same number of nodes at every level",
+          "isCorrect": false,
+          "feedback": "A heap is generally kept 'complete' in a specific structural sense, but the defining ordering property is about parent-versus-children values."
+        },
+        {
+          "text": "Values must be stored in a chain, with each node pointing only to the previous one",
+          "isCorrect": false,
+          "feedback": "That describes something closer to a linked list, not the parent-smaller-than-children rule that defines a min-heap."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is a heap well-suited for efficiently retrieving the minimum (or maximum) value from a collection?",
+      "options": [
+        {
+          "text": "Because the ordering property guarantees the minimum (or maximum) value is always located at the root, retrievable in constant time",
+          "isCorrect": true,
+          "feedback": "Correct -- you never need to search the whole structure just to find the current smallest or largest value."
+        },
+        {
+          "text": "Because a heap keeps all of its values in fully sorted order from smallest to largest at all times",
+          "isCorrect": false,
+          "feedback": "A heap is only partially ordered -- only the parent-child relationship is guaranteed, not a fully sorted sequence."
+        },
+        {
+          "text": "Because a heap only ever stores a single value at any given time",
+          "isCorrect": false,
+          "feedback": "A heap can hold many values simultaneously -- efficient min/max retrieval comes from the ordering rule, not from limiting size to one."
+        },
+        {
+          "text": "Because every value in a heap must be unique, with no duplicates permitted",
+          "isCorrect": false,
+          "feedback": "Heaps can absolutely contain duplicate values -- the retrieval efficiency comes from the parent-child ordering rule, not uniqueness."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why does removing the root element from a heap and restoring its ordering property typically take O(log n) time rather than O(1) or O(n)?",
+      "options": [
+        {
+          "text": "Because after removal, a replacement value must be 'sifted down' level by level to restore the ordering property, and the number of levels in the heap grows logarithmically with the number of elements",
+          "isCorrect": true,
+          "feedback": "Correct -- the sift-down operation only has to travel down the heap's height, which stays proportional to log n because the heap remains a balanced, complete structure."
+        },
+        {
+          "text": "Because the entire heap must be fully re-sorted from scratch after every single removal",
+          "isCorrect": false,
+          "feedback": "A full re-sort would take longer than necessary -- only a sift-down along one path is required to restore the heap property."
+        },
+        {
+          "text": "Because removing the root requires searching every single node in the heap one at a time",
+          "isCorrect": false,
+          "feedback": "There's no need to search every node -- restoring the property only follows a path down through the heap's levels."
+        },
+        {
+          "text": "Because a heap only allows removals to happen at fixed time intervals, not on demand",
+          "isCorrect": false,
+          "feedback": "Removals happen on demand whenever requested -- the log n cost purely reflects the sift-down operation's path length."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about a rule comparing each 'parent' spot in the structure to its 'children' spots below it.",
+        "medium": "The rule says every parent must be no greater than (or, in the other variant, no less than) its own children.",
+        "easy": "In the 'min' version specifically, no parent is ever allowed to hold a bigger number than the values sitting right below it."
+      },
+      "medium": {
+        "hard": "Think about which single spot in the structure is guaranteed to hold the smallest (or largest) value.",
+        "medium": "One particular position -- the very top of the structure -- is always guaranteed to hold the extreme value.",
+        "easy": "Because the structure's ordering rule always pins the smallest (or largest) value to that one top spot, you never have to search around for it."
+      },
+      "hard": {
+        "hard": "After removing the top value, some value has to move down through the levels to fix the ordering rule again.",
+        "medium": "This fix-up step travels downward one level at a time, and the number of levels available is what limits how long it takes.",
+        "easy": "The sifting-down process only ever has to move through the heap's height, and that height grows in proportion to the log of how many elements are stored."
+      }
+    }
+  },
+  {
+    "topic": "priority queues",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What makes a 'priority queue' different from a regular queue?",
+      "options": [
+        {
+          "text": "Each element has an associated priority, and elements with higher priority are served before elements with lower priority, regardless of arrival order",
+          "isCorrect": true,
+          "feedback": "Correct -- a priority queue serves based on priority value, not strictly on first-come-first-served order."
+        },
+        {
+          "text": "A priority queue can only ever hold a single element at any given time",
+          "isCorrect": false,
+          "feedback": "A priority queue can hold many elements at once -- the difference is about the ORDER they get served in."
+        },
+        {
+          "text": "A priority queue always serves elements in the exact order they arrived, just like a regular queue",
+          "isCorrect": false,
+          "feedback": "That describes ordinary first-in-first-out behavior -- a priority queue instead serves based on priority, not arrival order."
+        },
+        {
+          "text": "A priority queue is simply another name for a stack",
+          "isCorrect": false,
+          "feedback": "A stack serves the most recently added element first (last-in-first-out) -- a priority queue serves based on priority value instead."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Which underlying data structure is commonly used to efficiently implement a priority queue?",
+      "options": [
+        {
+          "text": "A heap",
+          "isCorrect": true,
+          "feedback": "Correct -- a heap's ordering property makes it efficient to repeatedly retrieve and remove the highest (or lowest) priority element."
+        },
+        {
+          "text": "A simple unordered list with no particular structure",
+          "isCorrect": false,
+          "feedback": "An unordered list would require scanning every element just to find the highest priority one, making it far less efficient than a heap-based implementation."
+        },
+        {
+          "text": "A single standalone variable holding one value",
+          "isCorrect": false,
+          "feedback": "A single variable can't hold a whole collection of prioritized elements -- an actual data structure like a heap is needed."
+        },
+        {
+          "text": "A fixed-size grid with a fixed number of rows and columns",
+          "isCorrect": false,
+          "feedback": "A fixed grid isn't the typical efficient backing structure for a priority queue -- a heap is the standard choice."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "In a real-world scenario like an operating system's task scheduler, why might a priority queue be preferred over a plain first-in-first-out queue?",
+      "options": [
+        {
+          "text": "It lets more urgent or important tasks be handled before less urgent ones, even if those less urgent tasks arrived earlier",
+          "isCorrect": true,
+          "feedback": "Correct -- this is exactly the kind of scenario where serving strictly by arrival order would be undesirable, since urgency should matter more than arrival time."
+        },
+        {
+          "text": "Because a plain first-in-first-out queue is physically incapable of storing more than a few tasks",
+          "isCorrect": false,
+          "feedback": "A plain queue can store as many tasks as memory allows -- the real benefit of a priority queue is ordering by importance, not raw storage capacity."
+        },
+        {
+          "text": "Because tasks in a priority queue are guaranteed to complete instantly regardless of their actual workload",
+          "isCorrect": false,
+          "feedback": "A priority queue affects the ORDER tasks are handled in -- it doesn't change how long any individual task actually takes to complete."
+        },
+        {
+          "text": "Because a priority queue removes the need for the operating system to track tasks at all",
+          "isCorrect": false,
+          "feedback": "Tasks still need to be tracked in a priority queue -- it simply tracks and serves them according to priority rather than arrival time."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Each item waiting in line here carries an extra piece of information: how important or urgent it is.",
+        "medium": "Think about a waiting line where some people get called up sooner because of how urgent their situation is, not just who arrived first.",
+        "easy": "Elements marked as higher priority jump ahead of lower-priority elements, even ones that arrived earlier."
+      },
+      "medium": {
+        "hard": "Think back to a structure where the most extreme (highest or lowest) value always sits in one easy-to-reach spot.",
+        "medium": "This structure's built-in ordering rule makes it efficient to repeatedly grab the top-priority item.",
+        "easy": "Its parent-versus-children ordering rule is exactly why it's the go-to structure for backing a priority-based queue."
+      },
+      "hard": {
+        "hard": "Think about a case where handling things strictly in arrival order would clearly be the wrong approach.",
+        "medium": "Urgency, not arrival time, decides who gets handled next in this kind of scenario.",
+        "easy": "Serving by importance rather than strictly by arrival time lets more critical work jump ahead of less critical work that arrived earlier."
+      }
+    }
+  },
+  {
+    "topic": "tries",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'trie' (prefix tree) primarily used to store efficiently?",
+      "options": [
+        {
+          "text": "A set of strings, organized so that strings sharing a common prefix share the same path in the tree",
+          "isCorrect": true,
+          "feedback": "Correct -- a trie is specifically built around organizing text by shared prefixes."
+        },
+        {
+          "text": "A single large image file",
+          "isCorrect": false,
+          "feedback": "A trie is built for organizing text-like data by shared prefixes, not for storing image files."
+        },
+        {
+          "text": "A fixed collection of exactly two numeric values",
+          "isCorrect": false,
+          "feedback": "A trie's purpose is prefix-based string storage, not holding a small fixed number of numeric values."
+        },
+        {
+          "text": "An unordered pile of unrelated random values with no shared structure",
+          "isCorrect": false,
+          "feedback": "A trie specifically organizes strings around SHARED prefixes -- it isn't just an unordered pile of unrelated values."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why are tries especially useful for implementing features like autocomplete?",
+      "options": [
+        {
+          "text": "Because all strings sharing a given prefix are grouped along the same path, making it fast to find every word starting with that prefix",
+          "isCorrect": true,
+          "feedback": "Correct -- once you've walked down to a given prefix's node, everything below it in the trie shares that same starting text."
+        },
+        {
+          "text": "Because a trie stores every possible word in the English language by default, with no data entry required",
+          "isCorrect": false,
+          "feedback": "A trie only contains whatever strings have actually been inserted into it -- it doesn't come pre-loaded with a full language's vocabulary."
+        },
+        {
+          "text": "Because a trie can only ever store a single word at a time",
+          "isCorrect": false,
+          "feedback": "A trie is built to store many words at once, organized by shared prefixes -- that's precisely what makes it useful for autocomplete."
+        },
+        {
+          "text": "Because a trie automatically corrects any spelling mistakes in a given search term",
+          "isCorrect": false,
+          "feedback": "A trie helps find matches quickly based on prefixes -- automatic spelling correction is a separate feature, not an inherent trie property."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a common space-related tradeoff of using a trie to store a large set of strings, compared to storing them in a simple list?",
+      "options": [
+        {
+          "text": "A trie can use considerably more memory than a plain list, since it creates and links a separate node for shared prefix characters across many strings",
+          "isCorrect": true,
+          "feedback": "Correct -- while shared prefixes are only stored once along a shared path, all the individual node objects and their many pointers can still add up to real overhead."
+        },
+        {
+          "text": "A trie always uses strictly less memory than any other way of storing the same set of strings",
+          "isCorrect": false,
+          "feedback": "Tries can actually be memory-heavy due to their many linked nodes -- they don't universally guarantee the least memory usage."
+        },
+        {
+          "text": "A trie is physically incapable of storing more than 26 strings total",
+          "isCorrect": false,
+          "feedback": "A trie's capacity isn't capped at 26 strings -- that number might describe branching per node for lowercase letters, not overall string capacity."
+        },
+        {
+          "text": "A trie requires every stored string to be exactly the same length",
+          "isCorrect": false,
+          "feedback": "A trie can store strings of varying lengths without any such restriction."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about organizing words by their shared starting letters.",
+        "medium": "Words that begin the same way share the same early path through this structure.",
+        "easy": "It's a tree-shaped structure specifically organized around shared prefixes of stored strings."
+      },
+      "medium": {
+        "hard": "Think about how quickly you could find every word that starts with, say, 'pre-'.",
+        "medium": "Because shared beginnings share the same path, everything reachable below a given point already starts the same way.",
+        "easy": "Walking down to a given prefix's node instantly narrows you down to only the words that begin with exactly that prefix."
+      },
+      "hard": {
+        "hard": "Think about the cost of building a whole tree of individual letter-by-letter nodes and connections.",
+        "medium": "Even though shared prefixes are stored just once, the sheer number of separate node objects and pointers can add up.",
+        "easy": "Building this structure means creating and connecting a fresh node for every shared starting character across all the stored strings -- and that overhead can really pile up."
+      }
+    }
+  },
+  {
+    "topic": "self-balancing trees (AVL trees)",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What problem do self-balancing trees like AVL trees primarily solve?",
+      "options": [
+        {
+          "text": "They prevent a binary search tree from becoming lopsided and slow after many insertions or deletions",
+          "isCorrect": true,
+          "feedback": "Correct -- a plain binary search tree can degrade into a slow, chain-like shape, and self-balancing trees actively correct for that."
+        },
+        {
+          "text": "They allow a tree to store data types that a regular tree cannot store",
+          "isCorrect": false,
+          "feedback": "Self-balancing trees can generally store the same kinds of data as regular binary search trees -- the improvement is about SHAPE, not allowed data types."
+        },
+        {
+          "text": "They eliminate the need for a root node entirely",
+          "isCorrect": false,
+          "feedback": "Self-balancing trees still have a root node, just like any other tree -- they don't remove that concept."
+        },
+        {
+          "text": "They make it impossible to ever delete a node once added",
+          "isCorrect": false,
+          "feedback": "Self-balancing trees fully support deletion -- in fact, they specifically rebalance themselves after deletions too."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In an AVL tree, what condition must hold true for the tree to remain 'balanced'?",
+      "options": [
+        {
+          "text": "For every node, the heights of its left and right subtrees differ by at most one",
+          "isCorrect": true,
+          "feedback": "Correct -- this is the specific balance condition that gives AVL trees their name and guarantees fast operations."
+        },
+        {
+          "text": "Every node must have exactly two children, with none missing",
+          "isCorrect": false,
+          "feedback": "AVL trees can have nodes with fewer than two children -- the balance condition is about subtree HEIGHT difference, not child count."
+        },
+        {
+          "text": "The tree must contain an even total number of nodes",
+          "isCorrect": false,
+          "feedback": "An AVL tree's total node count can be odd or even -- balance is judged by subtree height difference at each node, not overall node count."
+        },
+        {
+          "text": "All values in the tree must be positive numbers",
+          "isCorrect": false,
+          "feedback": "AVL trees can store negative values too -- the balance condition concerns subtree heights, not the sign of stored values."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How does an AVL tree maintain its balance condition after an insertion or deletion that would otherwise violate it?",
+      "options": [
+        {
+          "text": "It performs one or more 'rotations' -- restructuring operations that rearrange a small number of nodes to restore the height-balance condition",
+          "isCorrect": true,
+          "feedback": "Correct -- rotations are the mechanism AVL trees use to fix imbalance without giving up the underlying binary search tree ordering."
+        },
+        {
+          "text": "It deletes random nodes from the tree until the balance condition happens to be satisfied again",
+          "isCorrect": false,
+          "feedback": "Randomly deleting nodes would lose data -- AVL trees instead use targeted rotations that preserve every stored value."
+        },
+        {
+          "text": "It simply ignores the imbalance and continues operating exactly as before",
+          "isCorrect": false,
+          "feedback": "Ignoring the imbalance would defeat the purpose of a self-balancing tree -- AVL trees specifically detect and correct imbalance via rotations."
+        },
+        {
+          "text": "It rebuilds the entire tree completely from scratch after every single insertion or deletion",
+          "isCorrect": false,
+          "feedback": "A full rebuild would be far more costly than necessary -- AVL trees use small, local rotations rather than starting over."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Think about what tends to go wrong with an ordinary binary search tree after many insertions in a bad order.",
+        "medium": "Without help, a plain binary search tree can end up shaped like a long lopsided chain instead of a bushy tree.",
+        "hard": "This kind of tree actively steps in to keep its shape close to balanced, avoiding the slow, chain-like degeneration a plain binary search tree can suffer."
+      },
+      "medium": {
+        "easy": "Focus on comparing the heights of the two subtrees hanging off of any single node.",
+        "medium": "The rule caps how different the left and right subtree heights are allowed to be, at any given node.",
+        "hard": "Specifically, at every node, the left and right subtree heights can differ by no more than exactly one."
+      },
+      "hard": {
+        "easy": "Think about a small, local restructuring move rather than starting over or deleting data.",
+        "medium": "This fix rearranges just a handful of nodes' connections, without discarding any of the stored values.",
+        "hard": "The move is called a rotation -- a targeted restructuring of a few nodes that restores the height-balance condition after it's been violated."
+      }
+    }
+  },
+  {
+    "topic": "circular linked lists",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What makes a 'circular' linked list different from a standard linked list?",
+      "options": [
+        {
+          "text": "The last node's pointer links back to the first node instead of pointing to nothing",
+          "isCorrect": true,
+          "feedback": "Correct -- this circular connection is exactly what distinguishes it from a standard, non-circular linked list."
+        },
+        {
+          "text": "It can only store circular shapes as its data, such as circles or spheres",
+          "isCorrect": false,
+          "feedback": "A circular linked list can store any kind of data -- 'circular' describes the shape of the LINKS, not the data type stored."
+        },
+        {
+          "text": "Every node in it must point to itself instead of to the next node",
+          "isCorrect": false,
+          "feedback": "In a circular linked list, each node still points to the NEXT node in sequence -- it's only the very last node that loops back to the start."
+        },
+        {
+          "text": "It does not allow any new nodes to ever be added to it",
+          "isCorrect": false,
+          "feedback": "New nodes can absolutely be added to a circular linked list, just as with any other linked list."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is one practical use case where a circular linked list is a natural fit?",
+      "options": [
+        {
+          "text": "Implementing a repeating cycle of items, such as players taking turns in a round-robin game",
+          "isCorrect": true,
+          "feedback": "Correct -- since the last element links back to the first, the structure naturally supports endlessly cycling through a fixed group of items."
+        },
+        {
+          "text": "Storing values that must always remain in strictly descending numerical order",
+          "isCorrect": false,
+          "feedback": "Maintaining strict descending numeric order isn't related to the circular connection -- that's a separate sorting concern."
+        },
+        {
+          "text": "Guaranteeing that a program can never enter an infinite loop",
+          "isCorrect": false,
+          "feedback": "A circular linked list can actually make it easier to accidentally write an infinite loop if traversal isn't stopped carefully -- it doesn't prevent them."
+        },
+        {
+          "text": "Storing a single fixed value that can never be changed",
+          "isCorrect": false,
+          "feedback": "A circular linked list is meant to store a sequence of multiple, changeable nodes, not just one unchangeable value."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What extra care must be taken when writing code to traverse a circular linked list, compared to traversing a standard linked list?",
+      "options": [
+        {
+          "text": "The traversal must track a specific stopping condition (such as returning to the starting node), since there is no natural 'null' end to signal the list is finished",
+          "isCorrect": true,
+          "feedback": "Correct -- without an explicit stopping condition, a naive traversal loop could run forever, since the 'next' pointer chain never reaches a natural end."
+        },
+        {
+          "text": "The traversal must convert every node's data into text before visiting it",
+          "isCorrect": false,
+          "feedback": "There's no requirement to convert data to text -- the real added concern is detecting where to stop, since there's no natural ending point."
+        },
+        {
+          "text": "The traversal is required to visit nodes in strictly random order",
+          "isCorrect": false,
+          "feedback": "Traversal order in a circular linked list still follows the pointer chain in sequence -- it isn't randomized."
+        },
+        {
+          "text": "The traversal can only be performed a single time for the entire lifetime of the list",
+          "isCorrect": false,
+          "feedback": "A circular linked list can be traversed repeatedly, any number of times -- the key concern is just knowing when to stop each traversal."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "The last node connects back to the first node, forming a loop rather than a dead-ending chain.",
+        "medium": "Instead of ending in a dead end, the very last node's pointer loops back around.",
+        "hard": "Think about what happens at the very last node's pointer -- does it point to nothing, or somewhere specific?"
+      },
+      "medium": {
+        "easy": "Because the last node loops back to the first, this structure is a natural fit for endlessly cycling through a fixed group, like turns in a game.",
+        "medium": "This structure fits situations where, after reaching the last item, you want to naturally continue right back to the first one again.",
+        "hard": "Think of a situation that naturally repeats over and over, cycling back to the start."
+      },
+      "hard": {
+        "easy": "Because there's no natural dead end to signal 'stop', the traversal code has to explicitly track when it's arrived back at its starting node.",
+        "medium": "A standard linked list's final pointer naturally points to 'nothing,' but this structure's final pointer instead points right back to the start.",
+        "hard": "Think about what would normally tell you a linked list has ended, and whether that signal still exists here."
+      }
+    }
+  },
+  {
+    "topic": "hash collisions",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'hash collision'?",
+      "options": [
+        {
+          "text": "When two different keys are mapped by a hash function to the same storage slot",
+          "isCorrect": true,
+          "feedback": "Correct -- a collision happens when the hash function assigns the same slot to more than one distinct key."
+        },
+        {
+          "text": "When a computer's hard drive physically crashes",
+          "isCorrect": false,
+          "feedback": "A hash collision is a data-structure concept about two keys landing in the same slot, not a physical hardware failure."
+        },
+        {
+          "text": "When a program successfully finds the exact key it was searching for",
+          "isCorrect": false,
+          "feedback": "Successfully finding a key is the desired, non-colliding outcome -- a collision refers to two DIFFERENT keys landing in the same slot."
+        },
+        {
+          "text": "When two entirely separate programs are run at the exact same time",
+          "isCorrect": false,
+          "feedback": "Running two programs simultaneously is unrelated to hash collisions, which are specifically about keys mapping to the same storage slot."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why do hash collisions happen even with a well-designed hash function?",
+      "options": [
+        {
+          "text": "Because a hash function typically maps a much larger set of possible keys onto a smaller, fixed number of storage slots",
+          "isCorrect": true,
+          "feedback": "Correct -- with more possible keys than available slots, some keys are mathematically guaranteed to share a slot eventually."
+        },
+        {
+          "text": "Because hash functions are required by definition to always produce the exact same output for every different input",
+          "isCorrect": false,
+          "feedback": "A hash function producing identical output for every different input would make it useless -- collisions occur despite hash functions trying to spread keys out, not because they're forced to repeat one output."
+        },
+        {
+          "text": "Because hash tables are not allowed to store more than a single key at once",
+          "isCorrect": false,
+          "feedback": "Hash tables are designed to store many keys -- collisions are about the mapping into slots, not a one-key limit."
+        },
+        {
+          "text": "Because computers cannot process more than one hashing operation per second",
+          "isCorrect": false,
+          "feedback": "Processing speed has nothing to do with why collisions mathematically occur -- it's the mismatch between key-space size and slot count."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is 'chaining' as a strategy for handling hash collisions?",
+      "options": [
+        {
+          "text": "Each storage slot holds a small linked list (or similar structure) of all the keys that hashed to that same slot",
+          "isCorrect": true,
+          "feedback": "Correct -- chaining resolves collisions by letting a slot hold multiple entries instead of just one."
+        },
+        {
+          "text": "The hash function is run repeatedly until it happens to stop producing any collisions at all",
+          "isCorrect": false,
+          "feedback": "Chaining doesn't try to eliminate collisions by re-running the hash function -- it accepts that collisions happen and stores multiple entries per slot instead."
+        },
+        {
+          "text": "Colliding keys are simply discarded and never stored anywhere",
+          "isCorrect": false,
+          "feedback": "Discarding data would lose information -- chaining specifically preserves every colliding key by linking them together at the same slot."
+        },
+        {
+          "text": "The entire hash table is resized to have exactly one slot per possible key in the universe",
+          "isCorrect": false,
+          "feedback": "That would require an impractically enormous table -- chaining instead handles collisions locally, within the existing slot structure."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about two different pieces of data ending up assigned to the very same storage spot.",
+        "medium": "This happens when a mapping process assigns the same output slot to two different inputs.",
+        "easy": "It specifically describes two distinct keys being routed to the identical slot inside a hash-based structure."
+      },
+      "medium": {
+        "hard": "Think about how many possible inputs there could be, versus how many storage slots actually exist.",
+        "medium": "There are usually far more possible keys than there are available slots to place them in.",
+        "easy": "Because the pool of possible keys vastly outnumbers the fixed number of available slots, some overlap becomes mathematically unavoidable eventually."
+      },
+      "hard": {
+        "hard": "Think about letting a single storage slot hold more than one item instead of just one.",
+        "medium": "Rather than fighting collisions directly, this strategy just lets each slot hold a small list of everything that landed there.",
+        "easy": "Each slot ends up holding a small chain of entries, one for every key that happened to land there."
+      }
+    }
+  },
+  {
+    "topic": "dynamic arrays",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a key advantage of a 'dynamic array' over a plain, fixed-size array?",
+      "options": [
+        {
+          "text": "A dynamic array can automatically grow to hold more elements than it originally had room for",
+          "isCorrect": true,
+          "feedback": "Correct -- a dynamic array resizes itself as needed, unlike a fixed-size array whose capacity is set once and stays constant."
+        },
+        {
+          "text": "A dynamic array can never run out of available memory under any circumstances",
+          "isCorrect": false,
+          "feedback": "A dynamic array can still eventually run into memory limits -- its advantage is flexible resizing, not unlimited memory."
+        },
+        {
+          "text": "A dynamic array always uses less total memory than a fixed-size array holding the same data",
+          "isCorrect": false,
+          "feedback": "A dynamic array can actually use somewhat more memory due to reserved extra capacity -- its real advantage is the ability to grow, not guaranteed lower memory use."
+        },
+        {
+          "text": "A dynamic array cannot store more than a single data type",
+          "isCorrect": false,
+          "feedback": "Whether an array can mix data types is a separate language feature, not what defines a 'dynamic' array -- the defining trait is its ability to resize."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "When a dynamic array runs out of room and needs to grow, what typically happens behind the scenes?",
+      "options": [
+        {
+          "text": "A new, larger block of memory is allocated, and the existing elements are copied over into it",
+          "isCorrect": true,
+          "feedback": "Correct -- because the original memory block can't simply be extended in place, growth requires allocating a new block and copying existing data across."
+        },
+        {
+          "text": "The array's existing elements are permanently deleted to make room for new ones",
+          "isCorrect": false,
+          "feedback": "Existing elements are preserved by copying them into the new, larger block -- they aren't deleted during a resize."
+        },
+        {
+          "text": "The computer's operating system is reinstalled to free up additional space",
+          "isCorrect": false,
+          "feedback": "Reinstalling an operating system is unrelated to a dynamic array resizing -- resizing is a much smaller, routine memory operation."
+        },
+        {
+          "text": "The array converts itself into a linked list to gain more capacity",
+          "isCorrect": false,
+          "feedback": "A dynamic array stays a dynamic array through a resize -- it doesn't transform into a different data structure like a linked list."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Many dynamic array implementations double their capacity each time they need to grow, rather than growing by just one slot at a time. Why is this typically more efficient overall?",
+      "options": [
+        {
+          "text": "Doubling means resizing operations happen far less often, so the average (amortized) cost of adding an element stays low even though occasional resizes are individually expensive",
+          "isCorrect": true,
+          "feedback": "Correct -- this is the idea behind 'amortized' constant-time appends: costly resizes happen rarely enough that their cost, spread out over many cheap appends, averages out to be small."
+        },
+        {
+          "text": "Doubling capacity guarantees that a resize will never be needed again for the rest of the program's lifetime",
+          "isCorrect": false,
+          "feedback": "Even with doubling, further resizes can still eventually be needed as more elements keep being added -- it just makes resizes much less frequent, not eliminated entirely."
+        },
+        {
+          "text": "Doubling capacity is required in order for the array to support more than one data type",
+          "isCorrect": false,
+          "feedback": "Supporting multiple data types is unrelated to the doubling growth strategy -- doubling is specifically about resize frequency and average cost."
+        },
+        {
+          "text": "Doubling capacity makes each individual element take up half as much memory",
+          "isCorrect": false,
+          "feedback": "Doubling the array's overall capacity doesn't shrink the memory used per individual element -- the benefit is about how often costly resizes occur."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Think about what happens when a plain array is completely full and one more item needs to be added.",
+        "medium": "Unlike a fixed-size array, this structure can expand its own capacity automatically as needed.",
+        "hard": "The specific advantage is automatic growth in capacity, something a strictly fixed-size array cannot do on its own."
+      },
+      "medium": {
+        "easy": "Since the surrounding memory might already be in use by something else, growing in place usually isn't possible.",
+        "medium": "Growth typically involves finding a fresh, bigger chunk of memory and moving everything over to it.",
+        "hard": "A new larger memory block gets allocated, and every existing element is copied over into that new block."
+      },
+      "hard": {
+        "easy": "Think about how often a costly resize needs to happen if capacity grows by a lot each time, versus just a little.",
+        "medium": "Growing capacity aggressively means the expensive resize step happens rarely, even though each occurrence costs more.",
+        "hard": "Spreading a rare, expensive resize's cost out over many cheap appends is what keeps the AVERAGE cost per append low, even though any single resize is itself costly."
+      }
+    }
+  },
+  {
+    "topic": "abstract data types",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is an 'abstract data type' (ADT)?",
+      "options": [
+        {
+          "text": "A conceptual description of a data structure's allowed operations and behavior, without specifying exactly how it's implemented",
+          "isCorrect": true,
+          "feedback": "Correct -- an ADT defines WHAT operations are available and how they should behave, leaving the HOW up to a specific implementation."
+        },
+        {
+          "text": "A data type that a program is physically incapable of ever using",
+          "isCorrect": false,
+          "feedback": "An abstract data type is fully usable in programs -- 'abstract' here refers to hiding implementation detail, not being unusable."
+        },
+        {
+          "text": "A synonym for the number data type specifically",
+          "isCorrect": false,
+          "feedback": "An abstract data type is a general concept about behavior and operations, not a name specifically tied to numbers."
+        },
+        {
+          "text": "A data type that can only ever store a single, unchangeable value",
+          "isCorrect": false,
+          "feedback": "An abstract data type can describe structures holding many values, like a whole stack or queue, not just one fixed unchangeable value."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "A 'stack' is often described as an abstract data type. What does that mean, specifically?",
+      "options": [
+        {
+          "text": "A stack is defined by the behavior of its operations (like push and pop) rather than by one single required underlying implementation",
+          "isCorrect": true,
+          "feedback": "Correct -- a stack can be implemented using an array or a linked list underneath, as long as it honors the expected push/pop behavior."
+        },
+        {
+          "text": "A stack can only ever be implemented using a linked list, with no other implementation allowed",
+          "isCorrect": false,
+          "feedback": "A stack's behavior can be implemented in more than one way, such as with an array OR a linked list -- that flexibility is exactly the point of calling it an ADT."
+        },
+        {
+          "text": "A stack must always be implemented directly in a computer's hardware circuitry",
+          "isCorrect": false,
+          "feedback": "A stack is typically implemented in software, not hardware circuitry -- being an ADT is about behavior being implementation-independent, not about hardware."
+        },
+        {
+          "text": "A stack refers only to a physical, stacked pile of paper documents",
+          "isCorrect": false,
+          "feedback": "In computer science, a 'stack' refers to the abstract behavior of last-in-first-out access, not literal paper documents."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is the practical benefit of programming against an abstract data type's interface (like 'enqueue' and 'dequeue' for a queue), rather than directly against one specific underlying implementation?",
+      "options": [
+        {
+          "text": "The underlying implementation can later be swapped out for a more efficient one without needing to rewrite the code that uses the ADT's operations",
+          "isCorrect": true,
+          "feedback": "Correct -- this separation between defined behavior and implementation detail is a core reason abstract data types are useful in real software design."
+        },
+        {
+          "text": "It guarantees the program will run instantly, regardless of what implementation is chosen underneath",
+          "isCorrect": false,
+          "feedback": "Performance still depends on the actual implementation chosen -- programming against an ADT's interface doesn't guarantee any particular speed."
+        },
+        {
+          "text": "It makes it impossible for the program to ever contain a bug",
+          "isCorrect": false,
+          "feedback": "Using an ADT's interface doesn't eliminate bugs -- the real benefit is being able to change implementations without touching the code that just uses the defined operations."
+        },
+        {
+          "text": "It requires the programmer to rewrite the entire program every time the ADT is used",
+          "isCorrect": false,
+          "feedback": "Programming against an ADT's interface actually reduces how much code needs to change later, rather than requiring a full rewrite every time it's used."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Think about describing WHAT something does, without pinning down exactly HOW it does it internally.",
+        "medium": "This concept focuses on defining allowed operations and expected behavior, leaving implementation details open.",
+        "hard": "There's a way of thinking about data that focuses on the outside view rather than anything happening under the hood."
+      },
+      "medium": {
+        "easy": "Think about more than one possible way you could actually build the same expected behavior underneath.",
+        "medium": "The underlying implementation could be an array, or a linked list, or something else entirely, as long as the expected behavior holds.",
+        "hard": "What matters here isn't which building blocks are used, but whether the end result behaves the way it's supposed to."
+      },
+      "hard": {
+        "easy": "Think about what stays the same for code using this concept, even if something changes deep underneath it.",
+        "medium": "Code that only relies on the defined operations doesn't need to change even if the underlying implementation is later replaced.",
+        "hard": "There's a reason changing what's running behind the scenes doesn't always mean rewriting everything that depends on it."
+      }
+    }
+  }
+]

@@ -1,0 +1,1517 @@
+[
+  {
+    "topic": "device drivers",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'device driver' in computing?",
+      "options": [
+        {
+          "text": "Software that allows an operating system to communicate with and control a specific piece of hardware",
+          "isCorrect": true,
+          "feedback": "Correct -- a device driver acts as a translator between the operating system's general commands and a specific hardware device's particular requirements."
+        },
+        {
+          "text": "A physical cable used to connect a printer to a computer",
+          "isCorrect": false,
+          "feedback": "A device driver is SOFTWARE enabling communication with hardware -- it isn't a physical cable itself, though a driver often works alongside such a physical connection."
+        },
+        {
+          "text": "A person who transports computer hardware between warehouses",
+          "isCorrect": false,
+          "feedback": "In computing, a 'device driver' specifically refers to a piece of software -- it isn't a person involved in physically transporting hardware."
+        },
+        {
+          "text": "A type of computer virus that specifically targets printers",
+          "isCorrect": false,
+          "feedback": "A device driver is a legitimate, necessary piece of software for hardware communication -- it isn't inherently a type of malicious software."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why does a specific piece of hardware, like a printer, typically require its own particular device driver to be installed on a computer?",
+      "options": [
+        {
+          "text": "Different hardware devices can have their own specific commands, features, and communication requirements, and a driver translates the operating system's general requests into the specific instructions that particular device understands",
+          "isCorrect": true,
+          "feedback": "Correct -- without an appropriate driver, the operating system generally wouldn't know how to properly communicate with that specific device's particular requirements and capabilities."
+        },
+        {
+          "text": "Because all hardware devices from every manufacturer are actually completely identical to one another underneath",
+          "isCorrect": false,
+          "feedback": "Different hardware devices, even ones serving a similar general purpose, can vary considerably in their specific underlying commands and requirements -- that real variation is precisely why individual, device-specific drivers are typically needed."
+        },
+        {
+          "text": "Because device drivers are required by law for every single piece of computer hardware",
+          "isCorrect": false,
+          "feedback": "There's no such legal requirement mandating device drivers -- they're a PRACTICAL, TECHNICAL necessity for enabling proper communication with hardware, not a requirement dictated by law."
+        },
+        {
+          "text": "Because installing a driver is the only way to physically power on a piece of hardware",
+          "isCorrect": false,
+          "feedback": "A driver's role concerns enabling proper SOFTWARE COMMUNICATION with a device -- it isn't what physically supplies power to turn a piece of hardware on in the first place."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can an outdated or incompatible device driver sometimes cause instability or crashes, given that many drivers run with a significant level of direct access to hardware and system resources?",
+      "options": [
+        {
+          "text": "Because a device driver often operates with a high level of direct access to hardware and system resources, an error within it can potentially disrupt or destabilize the surrounding system more broadly, not just the specific application that was using that device",
+          "isCorrect": true,
+          "feedback": "Correct -- this elevated level of privileged access is exactly why driver quality and proper compatibility matter so much for overall system stability, and it's part of why operating systems often carefully vet or sandbox certain classes of drivers."
+        },
+        {
+          "text": "Because outdated device drivers are physically incapable of being replaced or updated once installed",
+          "isCorrect": false,
+          "feedback": "Device drivers can generally be updated or replaced with a newer, compatible version -- there's no fundamental technical barrier making them impossible to update once initially installed."
+        },
+        {
+          "text": "Because device drivers are only ever used while a computer is completely powered off",
+          "isCorrect": false,
+          "feedback": "Device drivers are actively used specifically WHILE a computer is powered on and running, enabling ongoing communication with hardware -- they aren't relevant only when the computer is turned off."
+        },
+        {
+          "text": "Because an outdated driver always automatically deletes the operating system entirely",
+          "isCorrect": false,
+          "feedback": "An outdated or incompatible driver can potentially cause INSTABILITY or a CRASH -- but it doesn't automatically or inherently delete the entire operating system as a matter of course."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is the specific piece of software that lets an operating system send commands to, and get responses from, one particular hardware component.",
+        "medium": "This is the software layer that lets the operating system actually talk to and manage one particular hardware device.",
+        "hard": "Think about a piece of software that acts as a translator between the operating system and one specific gadget plugged into the computer."
+      },
+      "medium": {
+        "easy": "Each device has its own particular commands and quirks, so this software's job is translating the OS's general requests into the exact instructions that specific device needs.",
+        "medium": "Because hardware devices vary in their own commands and requirements, this software converts the OS's generic requests into whatever specific instructions that device actually understands.",
+        "hard": "Think about needing a dedicated interpreter for each device, since they don't all speak quite the same technical language."
+      },
+      "hard": {
+        "easy": "Since this software runs with an unusually high level of direct access to hardware and system internals, a bug here can destabilize the whole system, not merely the single application that triggered it.",
+        "medium": "Because this software operates with deep, direct access to hardware and system resources, a bug in it can potentially affect more than just the one application using that device.",
+        "hard": "Think about giving someone unusually deep, trusted access to sensitive systems, and what could go wrong system-wide if that trusted access is misused or buggy."
+      }
+    }
+  },
+  {
+    "topic": "computer viruses and malware",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'malware'?",
+      "options": [
+        {
+          "text": "Software specifically designed to cause harm, gain unauthorized access, or otherwise act against the interests of a computer's legitimate user",
+          "isCorrect": true,
+          "feedback": "Correct -- 'malware' is a broad umbrella term covering many kinds of malicious software, including viruses, ransomware, and spyware, among others."
+        },
+        {
+          "text": "Any software that happens to contain an unintentional programming bug",
+          "isCorrect": false,
+          "feedback": "An unintentional bug is a mistake in otherwise legitimate software -- malware specifically refers to software DELIBERATELY DESIGNED to be malicious, a fundamentally different concept."
+        },
+        {
+          "text": "A physical piece of computer hardware that has malfunctioned",
+          "isCorrect": false,
+          "feedback": "Malware refers specifically to malicious SOFTWARE -- it isn't a term describing a physically malfunctioning piece of hardware."
+        },
+        {
+          "text": "Software that has been officially certified as completely safe by a government agency",
+          "isCorrect": false,
+          "feedback": "Malware is the OPPOSITE of safe, certified software -- it's specifically software designed to cause harm or gain unauthorized access."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does a computer 'virus', specifically, typically differ from malware in general?",
+      "options": [
+        {
+          "text": "A virus is a specific type of malware that can replicate itself by attaching to and infecting other legitimate files or programs, spreading further when those infected files are run or shared",
+          "isCorrect": true,
+          "feedback": "Correct -- this self-replicating, attachment-based spreading behavior is what specifically characterizes a 'virus' as one particular category within the broader, more general category of malware."
+        },
+        {
+          "text": "A virus and malware are simply two different names describing the exact identical single concept, with no distinction at all",
+          "isCorrect": false,
+          "feedback": "A virus is more accurately understood as one SPECIFIC TYPE or category within the broader, more general term 'malware', rather than being a perfectly interchangeable synonym for the entire category."
+        },
+        {
+          "text": "A virus refers exclusively to a physical illness a computer's user might catch",
+          "isCorrect": false,
+          "feedback": "In a computing context, a 'virus' specifically refers to a type of malicious self-replicating software -- it isn't a literal reference to a human physical illness."
+        },
+        {
+          "text": "A virus can only affect a computer's physical hardware, never its software",
+          "isCorrect": false,
+          "feedback": "A computer virus specifically infects and spreads through SOFTWARE, such as files and programs -- it isn't defined as something that directly damages physical hardware components."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might 'ransomware', a particular category of malware, be considered especially disruptive compared to some other kinds of malware that might, for example, quietly steal data in the background?",
+      "options": [
+        {
+          "text": "Ransomware typically encrypts a victim's files or otherwise blocks access to their own system, demanding payment for their release, which can immediately and directly halt a person's or organization's ability to use their own data or systems",
+          "isCorrect": true,
+          "feedback": "Correct -- this immediate, direct denial of access to one's own critical data or systems is a key reason ransomware attacks can be so disruptive and often prompt urgent responses, in contrast to some other malware that might operate more quietly and go undetected for longer."
+        },
+        {
+          "text": "Because ransomware is completely incapable of infecting more than a single computer at a time",
+          "isCorrect": false,
+          "feedback": "Ransomware can actually spread to and impact many different computers or even entire networks -- it isn't inherently restricted to affecting just one single machine at a time."
+        },
+        {
+          "text": "Because ransomware always physically destroys a computer's actual hardware components",
+          "isCorrect": false,
+          "feedback": "Ransomware primarily targets and restricts access to DATA AND SYSTEMS through encryption or similar blocking mechanisms -- it doesn't typically cause direct PHYSICAL DESTRUCTION of the underlying hardware components themselves."
+        },
+        {
+          "text": "Because ransomware is the only type of malware that requires an internet connection to spread at all",
+          "isCorrect": false,
+          "feedback": "Various OTHER types of malware can also spread via an internet or network connection, not just ransomware specifically -- an internet connection requirement isn't the distinguishing characteristic that makes ransomware notably disruptive."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This describes software that's intentionally created to damage a system, sneak in unauthorized access, or otherwise act against the legitimate user's own interests.",
+        "medium": "This is software built on purpose to hurt the user, break into a system without permission, or otherwise work against the person who's actually supposed to be in control.",
+        "hard": "Think about software deliberately built with bad intentions, rather than a program that's simply buggy or poorly written by accident."
+      },
+      "medium": {
+        "easy": "This particular type of malware copies itself by latching onto legitimate files or programs, then spreads onward whenever those infected files are opened or passed along.",
+        "medium": "This specific category spreads by attaching itself to otherwise legitimate files or programs, infecting them so the infection travels further whenever those files get run or shared.",
+        "hard": "Think about one particular kind of malicious software that needs to hitch a ride on something else to get around."
+      },
+      "hard": {
+        "easy": "This type locks a victim out of their own files or system, often by encrypting them, and demands payment before restoring access -- immediately cutting off the victim's ability to use their own data.",
+        "medium": "This kind locks up a victim's own files or system access and demands payment before releasing them, which stops the victim from using their own data right away.",
+        "hard": "Think about the difference between a thief quietly copying your files without you noticing, versus someone locking you out of your own house and demanding money to let you back in."
+      }
+    }
+  },
+  {
+    "topic": "floating-point representation",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of 'floating-point' representation in computing?",
+      "options": [
+        {
+          "text": "Representing numbers with a fractional (decimal) component, allowing computers to work with a wide range of very large and very small non-whole numbers",
+          "isCorrect": true,
+          "feedback": "Correct -- floating-point representation is the standard way most computers internally store and work with numbers that have a decimal component."
+        },
+        {
+          "text": "Representing only whole numbers, with absolutely no decimal component allowed",
+          "isCorrect": false,
+          "feedback": "Representing only whole numbers, with no decimal component, describes an integer data type -- floating-point representation is specifically designed for numbers WITH a fractional, decimal component."
+        },
+        {
+          "text": "Storing a computer's list of currently installed software programs",
+          "isCorrect": false,
+          "feedback": "Floating-point representation is a numeric data storage format -- it isn't a method for tracking a computer's list of installed software programs."
+        },
+        {
+          "text": "Determining how a computer's screen displays its background wallpaper image",
+          "isCorrect": false,
+          "feedback": "Floating-point representation is a numeric data format used for computation -- it's unrelated to how a screen's background wallpaper image gets displayed."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why can floating-point representation sometimes introduce small rounding errors when performing certain arithmetic operations on decimal numbers?",
+      "options": [
+        {
+          "text": "Because a computer's floating-point format uses a fixed, limited number of bits to approximate numbers, some decimal values can't be represented perfectly exactly, leading to small approximation errors in certain calculations",
+          "isCorrect": true,
+          "feedback": "Correct -- this is a well-known characteristic of floating-point arithmetic, similar to how some fractions can't be represented exactly using a finite number of decimal digits, causing certain calculations to accumulate small rounding discrepancies."
+        },
+        {
+          "text": "Because computers are completely incapable of performing any arithmetic involving decimal numbers whatsoever",
+          "isCorrect": false,
+          "feedback": "Computers can certainly perform arithmetic involving decimal numbers using floating-point representation -- the actual issue is that this representation can occasionally introduce SMALL ROUNDING ERRORS due to its inherently limited precision, not a complete inability to work with decimals at all."
+        },
+        {
+          "text": "Because floating-point representation is illegal to use in financial software",
+          "isCorrect": false,
+          "feedback": "There's no legal prohibition against using floating-point representation in financial software -- though because of its potential rounding-error issues, other more precise numeric representations are sometimes specifically preferred for certain sensitive financial applications, as a PRACTICAL, TECHNICAL choice rather than a legal one."
+        },
+        {
+          "text": "Because floating-point numbers always take up significantly less memory than integer numbers",
+          "isCorrect": false,
+          "feedback": "The relative memory usage of floating-point versus integer numbers isn't really the source of these particular rounding errors -- the actual cause is floating-point representation's inherently limited PRECISION when trying to approximate certain decimal values with a fixed, finite number of bits."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a financial application specifically choose to use a different numeric representation (such as a fixed-point or decimal-specific type), rather than relying on standard floating-point representation, when handling monetary values?",
+      "options": [
+        {
+          "text": "Standard floating-point representation's potential for small rounding errors could accumulate over many calculations or comparisons, and even tiny discrepancies can be unacceptable when dealing with exact monetary amounts that must precisely balance and reconcile",
+          "isCorrect": true,
+          "feedback": "Correct -- this sensitivity to even tiny rounding discrepancies is a well-known, common practical reason financial software often deliberately avoids standard floating-point representation in favor of alternatives specifically designed for exact decimal precision."
+        },
+        {
+          "text": "Because standard floating-point representation is physically incapable of representing any monetary values whatsoever",
+          "isCorrect": false,
+          "feedback": "Floating-point representation CAN technically represent monetary-looking values -- the real practical concern is its potential for SMALL ROUNDING ERRORS accumulating in ways that are simply unacceptable for financial precision requirements, not a complete inability to represent such values in the first place."
+        },
+        {
+          "text": "Because using floating-point representation for money is illegal under international financial regulations",
+          "isCorrect": false,
+          "feedback": "There's no direct, universal legal prohibition specifically banning floating-point representation for monetary values -- avoiding it is instead a widely recommended PRACTICAL, TECHNICAL best practice, motivated by precision concerns, rather than something dictated purely by legal requirement."
+        },
+        {
+          "text": "Because fixed-point or decimal-specific numeric types always require significantly more total computer memory than floating-point",
+          "isCorrect": false,
+          "feedback": "While there can be some difference in resource usage between different numeric representations, the PRIMARY reason for preferring alternatives to floating-point in financial applications is specifically about achieving EXACT PRECISION for monetary calculations, not primarily about minimizing memory usage."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is the way computers represent decimal, non-whole numbers, letting them handle both extremely large and extremely small values that aren't whole numbers.",
+        "medium": "This format is built to handle numbers that include a decimal part, covering everything from very large to very tiny non-whole values.",
+        "hard": "Think about needing a way to write down numbers that aren't whole, like 3.14, not just plain whole numbers."
+      },
+      "medium": {
+        "easy": "Because this format only has a fixed, limited number of bits to approximate a value, some decimal numbers can't be stored perfectly exactly, which is where small rounding errors sneak in.",
+        "medium": "Since only a fixed, limited number of bits is available to approximate a number, certain decimal values simply can't be stored with perfect precision, which can introduce tiny errors.",
+        "hard": "Think about trying to write down certain fractions with only a limited, fixed number of decimal digits, and never quite landing on the exact value."
+      },
+      "hard": {
+        "easy": "Because small rounding errors from this format can accumulate over repeated calculations, even a tiny discrepancy becomes unacceptable when exact amounts of money need to balance perfectly.",
+        "medium": "Small rounding errors from this format can pile up across many calculations, and even a tiny discrepancy is a problem when money has to balance to the exact cent.",
+        "hard": "Think about how even a tiny, seemingly harmless rounding error could actually matter a great deal when every single penny needs to balance perfectly."
+      }
+    }
+  },
+  {
+    "topic": "virtual memory",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'virtual memory' in an operating system generally used for?",
+      "options": [
+        {
+          "text": "Allowing a computer to use a portion of its storage drive as an extension of its physical RAM, giving programs the illusion of having more available memory than is physically installed",
+          "isCorrect": true,
+          "feedback": "Correct -- virtual memory lets an operating system extend a program's usable memory beyond just the physical RAM chips actually installed, using storage space as a supplemental extension."
+        },
+        {
+          "text": "Allowing a computer to physically add more RAM chips automatically, without any hardware installation",
+          "isCorrect": false,
+          "feedback": "Virtual memory doesn't physically add actual RAM hardware chips to a computer -- instead, it uses existing STORAGE space as a software-based extension supplementing the physical RAM already installed."
+        },
+        {
+          "text": "Allowing a computer to run multiple separate operating systems at the same time",
+          "isCorrect": false,
+          "feedback": "That describes virtualization/virtual machines, a related but different concept -- virtual memory specifically uses storage drive space to extend available RAM."
+        },
+        {
+          "text": "Allowing a computer to permanently delete unused files automatically",
+          "isCorrect": false,
+          "feedback": "Virtual memory concerns extending available usable memory beyond physical RAM -- it isn't a mechanism for automatically deleting a computer's unused files."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might using virtual memory (which relies partly on a storage drive) generally result in noticeably slower performance compared to relying purely on physical RAM alone?",
+      "options": [
+        {
+          "text": "Storage drives are typically significantly slower to read from and write to than physical RAM, so relying on that storage as an extension of memory introduces additional delay compared to accessing physical RAM directly",
+          "isCorrect": true,
+          "feedback": "Correct -- this speed difference between storage and RAM is exactly why heavy reliance on virtual memory (sometimes called excessive 'swapping' or 'paging') can noticeably slow down a system's overall performance."
+        },
+        {
+          "text": "Because virtual memory settings must be manually reconfigured by hand every time the computer restarts",
+          "isCorrect": false,
+          "feedback": "Virtual memory is typically managed automatically by the operating system, not manually reconfigured on every restart -- the real slowdown comes from storage drives being much slower than RAM."
+        },
+        {
+          "text": "Because virtual memory only becomes active once physical RAM usage reaches exactly 100 percent",
+          "isCorrect": false,
+          "feedback": "Operating systems typically start using virtual memory proactively before RAM is completely full, not only at exactly 100 percent -- the real reason for the slowdown is that storage drives are much slower than RAM."
+        },
+        {
+          "text": "Because virtual memory requires all data to be compressed before it can be stored, adding processing overhead",
+          "isCorrect": false,
+          "feedback": "Virtual memory doesn't require compression to function -- the slowdown comes specifically from storage drives being significantly slower to read and write than physical RAM."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might an operating system's virtual memory system need to select and temporarily move ('swap out') some currently less-actively-used data from RAM to a storage drive, in order to make room for other data that's needed more urgently?",
+      "options": [
+        {
+          "text": "Because the total amount of physical RAM actually installed is limited, and if the combined memory needs of currently running programs exceed that physical capacity, the operating system needs a strategy for deciding what to temporarily move out of RAM to accommodate more pressing demands",
+          "isCorrect": true,
+          "feedback": "Correct -- this dynamic 'swapping' or 'paging' strategy, choosing what to temporarily move out of RAM based on which data is less actively needed at that particular moment, is central to how virtual memory helps manage genuinely limited physical RAM resources effectively."
+        },
+        {
+          "text": "Because swapping data out is done purely at random, unrelated to how urgently other data is actually needed",
+          "isCorrect": false,
+          "feedback": "Swapping decisions are generally based on things like how recently or often data has been used, not pure randomness -- and the underlying reason is limited physical RAM capacity."
+        },
+        {
+          "text": "Because the operating system swaps out data solely to prevent the storage drive from becoming fragmented over time",
+          "isCorrect": false,
+          "feedback": "Fragmentation isn't the reason for swapping -- the operating system swaps data out specifically because physical RAM capacity is limited and currently needed data must be prioritized."
+        },
+        {
+          "text": "Because every running program is required to use exactly the same fixed amount of RAM, regardless of its actual needs",
+          "isCorrect": false,
+          "feedback": "Programs can use varying amounts of RAM based on their actual needs -- swapping happens because total physical RAM is limited relative to what's currently demanded, not because of a fixed per-program allocation."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This technique lets a computer borrow space from its storage drive to act as extra RAM, making programs believe there's more physical memory available than actually exists.",
+        "medium": "This lets a computer treat part of its storage drive as bonus memory, creating the illusion that programs have more room to work with than is physically installed.",
+        "hard": "Think about borrowing a bit of storage drive space to act like extra memory, when the physical memory chips alone aren't quite enough."
+      },
+      "medium": {
+        "easy": "Since a storage drive is much slower to read from and write to than actual RAM chips, using drive space as memory introduces a real, noticeable slowdown compared to true RAM access.",
+        "medium": "Storage drives are considerably slower to read and write than physical RAM, so leaning on that drive space as memory adds noticeable delay compared to using real RAM directly.",
+        "hard": "Think about how much longer it takes to grab something from a storage closet down the hall, compared to something already sitting right on your desk."
+      },
+      "hard": {
+        "easy": "Since the amount of physical RAM is fixed and limited, whenever running programs together need more than that, the operating system has to choose what to temporarily push out to make space for what's needed right now.",
+        "medium": "Because installed RAM is limited, once running programs' combined needs exceed that capacity, the system has to decide what to temporarily shuffle out to make room.",
+        "hard": "Think about a limited desk with only so much room, needing to temporarily set aside less urgent papers to make space for something more pressing right now."
+      }
+    }
+  },
+  {
+    "topic": "the client-server model",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general idea behind the 'client-server' model in networking and computing?",
+      "options": [
+        {
+          "text": "A 'client' requests a service or resource, and a 'server' responds by providing that requested service or resource",
+          "isCorrect": true,
+          "feedback": "Correct -- this basic request-and-response relationship between a client and a server underlies a huge amount of everyday networked computing, including ordinary web browsing."
+        },
+        {
+          "text": "Both the client and the server always perform the exact identical role at every moment, with no distinction between them at all",
+          "isCorrect": false,
+          "feedback": "The client-server model specifically defines two DISTINCT roles -- one REQUESTS a service, the other PROVIDES it -- rather than both performing exactly the same role at every moment."
+        },
+        {
+          "text": "A client is a piece of computer hardware, while a server is exclusively a piece of software with no associated hardware at all",
+          "isCorrect": false,
+          "feedback": "Both 'client' and 'server' can refer to combinations of hardware and software working together -- the real distinguishing factor here is their functional ROLE (requesting versus providing a service), not a strict hardware-versus-software-only split."
+        },
+        {
+          "text": "A client can only ever run on a mobile phone, while a server can only ever run on a desktop computer",
+          "isCorrect": false,
+          "feedback": "Clients and servers aren't tied to specific device types this way -- what actually defines the roles is that a client requests a service or resource and a server responds by providing it."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "When you use a web browser to visit a website, how does that everyday interaction illustrate the client-server model?",
+      "options": [
+        {
+          "text": "Your web browser acts as the client, sending a request for a specific web page, while a remote web server responds by providing that requested page's content back to your browser",
+          "isCorrect": true,
+          "feedback": "Correct -- this everyday web-browsing interaction is one of the most common, familiar real-world examples of the client-server model in action."
+        },
+        {
+          "text": "Your web browser acts as the server in this interaction, while the remote website's server acts as the client",
+          "isCorrect": false,
+          "feedback": "This reverses their actual, typical roles in this specific everyday scenario -- your BROWSER is the one REQUESTING the page (acting as the client), while the remote website's server is the one PROVIDING that requested page's content."
+        },
+        {
+          "text": "Neither your web browser nor the remote website's server plays any distinguishable client or server role at all in this exchange",
+          "isCorrect": false,
+          "feedback": "This everyday interaction is actually a very clear, classic illustration of the client-server model, with your browser clearly acting as the requesting client and the remote website clearly acting as the responding server."
+        },
+        {
+          "text": "Your web browser and the remote website's server must always be running on the exact same, single physical computer",
+          "isCorrect": false,
+          "feedback": "In typical everyday web browsing, your browser (the client) and the remote website's server are generally running on entirely SEPARATE physical computers, often located far apart from one another, communicating over a network."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a single physical server need to be carefully designed to handle many simultaneous client requests at once, rather than processing requests only one at a time in a simple sequential order?",
+      "options": [
+        {
+          "text": "A popular server may receive requests from many different clients at nearly the same moment, and if it could only handle one client at a time strictly sequentially, other clients could experience significant, undesirable delays waiting for their turn to be served",
+          "isCorrect": true,
+          "feedback": "Correct -- this is exactly why server software is often specifically designed to handle multiple client connections concurrently, whether through techniques like multithreading or other suitable concurrency approaches, in order to remain responsive under a realistic real-world load."
+        },
+        {
+          "text": "Because handling requests strictly in the order they arrive would cause the server to run out of available memory almost immediately",
+          "isCorrect": false,
+          "feedback": "Processing requests in order doesn't inherently exhaust memory -- the real issue is that handling clients strictly one at a time would leave everyone else waiting, causing significant delays."
+        },
+        {
+          "text": "Because a server handling multiple simultaneous requests will always crash immediately, without exception",
+          "isCorrect": false,
+          "feedback": "A properly and carefully designed server can actually handle multiple simultaneous client requests quite reliably and successfully -- the entire underlying concern here is specifically about DESIGNING that server well in order to handle such simultaneous requests effectively, not an inevitability of it always crashing."
+        },
+        {
+          "text": "Because most servers are only able to maintain a single active network connection at any given time",
+          "isCorrect": false,
+          "feedback": "Modern servers are specifically designed to maintain many simultaneous connections -- the challenge being addressed here is handling many requests arriving at nearly the same moment without causing long delays."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "One side sends a request for a service or resource, and the other side responds by actually delivering what was asked for.",
+        "medium": "In this relationship, one party asks for something it needs, and the other party responds by supplying it.",
+        "hard": "Think about one side asking for something, and the other side providing exactly what was asked for."
+      },
+      "medium": {
+        "easy": "Your browser takes on the requesting role by asking for a specific page, while a remote machine takes on the responding role by delivering that page's content back to you.",
+        "medium": "Here, your browser plays the role of the requester, asking for a page, while a machine elsewhere plays the role of responder, sending that page's content back.",
+        "hard": "Think about your browser being the one that asks for a page, and a remote machine somewhere else being the one that sends it back."
+      },
+      "hard": {
+        "easy": "When a popular server receives requests from many clients at nearly the same time, only serving them one at a time in sequence would cause everyone else to face real, frustrating delays.",
+        "medium": "A busy server can get hit with requests from many different clients almost simultaneously, and handling them one at a time in strict order would leave everyone else waiting a while.",
+        "hard": "Think about many different customers all wanting service from the very same single cashier, all at nearly the exact same moment."
+      }
+    }
+  },
+  {
+    "topic": "load balancing",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of 'load balancing' in computing?",
+      "options": [
+        {
+          "text": "Distributing incoming work or network traffic across multiple servers or resources, rather than overloading just one",
+          "isCorrect": true,
+          "feedback": "Correct -- load balancing helps spread demand evenly, improving overall reliability and responsiveness by avoiding any single overloaded point."
+        },
+        {
+          "text": "Randomly selecting one single server to handle all future requests, ignoring the others entirely",
+          "isCorrect": false,
+          "feedback": "That describes the OPPOSITE of load balancing's purpose -- load balancing specifically distributes work ACROSS multiple servers, rather than concentrating everything onto just one while ignoring the rest."
+        },
+        {
+          "text": "Deleting older files to free up storage space on a single server",
+          "isCorrect": false,
+          "feedback": "Load balancing is about DISTRIBUTING WORK across multiple resources -- it isn't specifically about deleting old files to free up storage space."
+        },
+        {
+          "text": "Encrypting data before it's sent across a network",
+          "isCorrect": false,
+          "feedback": "Load balancing concerns distributing work or traffic across resources -- ENCRYPTING data for security is a separate, unrelated concern."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a popular website use a load balancer to distribute incoming user requests across several different web servers, rather than directing all traffic to just one single server?",
+      "options": [
+        {
+          "text": "Spreading requests across multiple servers helps prevent any single server from becoming overwhelmed, improving overall responsiveness and helping the website reliably handle a much larger number of simultaneous users",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of distributed handling of incoming traffic is a common, practical strategy for helping a popular website scale to serve very large numbers of users reliably."
+        },
+        {
+          "text": "Because a single server automatically duplicates itself into multiple identical copies once traffic gets too high",
+          "isCorrect": false,
+          "feedback": "Servers don't automatically duplicate themselves -- deliberately setting up multiple servers and a load balancer to distribute traffic between them is a deliberate infrastructure decision, not something that happens on its own."
+        },
+        {
+          "text": "Because a load balancer automatically writes new website content for visitors to view",
+          "isCorrect": false,
+          "feedback": "A load balancer's core role is distributing incoming traffic across available servers -- it isn't a tool for automatically generating or writing new website content itself."
+        },
+        {
+          "text": "Because a single server is physically incapable of ever responding to more than one single request in its entire existence",
+          "isCorrect": false,
+          "feedback": "A single server can typically handle SOME meaningful number of requests over time on its own -- the real motivation for load balancing is about the PRACTICAL LIMITS of a single server's overall capacity under heavy simultaneous load, not a claim that it could only ever handle a single request total."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Beyond simply improving performance under heavy traffic, how can load balancing also contribute to a website's overall reliability if one of its several backend servers unexpectedly fails?",
+      "options": [
+        {
+          "text": "A load balancer can typically detect that a particular server has become unavailable and redirect traffic to the other remaining healthy servers, allowing the overall website to keep functioning despite that individual failure",
+          "isCorrect": true,
+          "feedback": "Correct -- this ability to route around an individual failed server is a significant reliability benefit of using multiple servers together with load balancing, helping avoid a single point of failure for the website as a whole."
+        },
+        {
+          "text": "Because a load balancer prevents a server from ever being taken down for scheduled maintenance",
+          "isCorrect": false,
+          "feedback": "A load balancer doesn't prevent servers from being taken down for maintenance -- its reliability benefit comes from rerouting traffic AROUND a server that becomes unavailable, whether due to failure or planned maintenance, not from preventing maintenance itself."
+        },
+        {
+          "text": "Because a load balancer guarantees that no server will ever fail in the first place",
+          "isCorrect": false,
+          "feedback": "A load balancer doesn't prevent individual server failures from happening in the first place -- its reliability benefit comes from how it helps the overall SYSTEM gracefully cope WITH a failure once it does occur, by redirecting traffic elsewhere."
+        },
+        {
+          "text": "Because a load balancer requires all of a website's servers to be located in the exact same physical building",
+          "isCorrect": false,
+          "feedback": "Load-balanced servers can actually be located across different, geographically separated physical facilities entirely -- there's no requirement that they all be located within a single, exact same specific building."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This practice spreads incoming traffic or work across a group of servers, rather than letting it all pile up on just one.",
+        "medium": "Picture demand being divided up across a group of resources rather than concentrated in one place.",
+        "hard": "Think about how work might be divided among a group instead of handled by just one."
+      },
+      "medium": {
+        "easy": "Spreading requests out across multiple servers keeps any single one from becoming overloaded, which is what lets the site stay responsive under a much bigger crowd of simultaneous users.",
+        "medium": "Dividing incoming demand across several resources keeps any one from being overwhelmed, supporting far more simultaneous users overall.",
+        "hard": "Think about many customers being spread out across several open checkout lines, instead of forcing everyone through just one single cashier."
+      },
+      "hard": {
+        "easy": "This tool can detect when a specific server stops responding and automatically reroute its traffic to the remaining healthy servers, keeping the site running despite that one failure.",
+        "medium": "Detecting an unavailable resource and shifting its share of the work elsewhere is what keeps things running despite that one failure.",
+        "hard": "Think about one checkout line suddenly closing, and shoppers simply being redirected to one of the other still-open lines instead."
+      }
+    }
+  },
+  {
+    "topic": "network ports",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In computer networking, what is a 'port' generally used for?",
+      "options": [
+        {
+          "text": "Identifying a specific application or service on a device that network traffic should be directed to",
+          "isCorrect": true,
+          "feedback": "Correct -- a port number, combined with an IP address, helps route incoming network traffic to the correct specific application or service running on a given device."
+        },
+        {
+          "text": "Physically connecting a network cable to a router",
+          "isCorrect": false,
+          "feedback": "A network 'port', in this software/networking sense, refers to a numbered logical identifier for directing traffic -- a physical cable connector on hardware is a related but distinctly different, physical concept, sometimes also called a port in a hardware context."
+        },
+        {
+          "text": "Storing a backup copy of a computer's entire operating system",
+          "isCorrect": false,
+          "feedback": "A network port is about DIRECTING NETWORK TRAFFIC to a specific application or service -- it isn't a mechanism for storing an entire backup copy of an operating system."
+        },
+        {
+          "text": "Determining the exact color scheme used in a network router's user interface",
+          "isCorrect": false,
+          "feedback": "A network port concerns directing traffic to a specific application or service -- it's unrelated to a router's visual user interface color scheme."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a single computer be able to run a web server and an email server at the same time, both accessible over the same network connection, without their traffic getting confused?",
+      "options": [
+        {
+          "text": "Each service can be associated with its own distinct port number, allowing incoming network traffic to be correctly directed to the specific service that particular port number is associated with",
+          "isCorrect": true,
+          "feedback": "Correct -- this port-based addressing lets a single device run and distinguish between multiple different network services simultaneously, each identified by its own specific port number."
+        },
+        {
+          "text": "Because a computer is only capable of running a single network service at any given time, so this scenario couldn't actually happen",
+          "isCorrect": false,
+          "feedback": "A single computer is very much capable of running multiple different network services simultaneously -- that capability is precisely made possible by each service being assigned its own distinct PORT NUMBER."
+        },
+        {
+          "text": "Because web servers and email servers are actually required to run on two entirely separate, different physical computers",
+          "isCorrect": false,
+          "feedback": "A web server and an email server can in fact run together on the very same single physical computer -- there's no such requirement forcing them onto two entirely separate physical machines."
+        },
+        {
+          "text": "Because network traffic is randomly and unpredictably assigned to whichever service happens to be running at that particular moment",
+          "isCorrect": false,
+          "feedback": "Network traffic is directed based on a well-defined, specific PORT NUMBER associated with each particular service -- it isn't assigned randomly or unpredictably among whichever services happen to be running."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why do certain well-known network services, such as standard web traffic, conventionally use specific, well-established port numbers (like port 80 for standard HTTP), rather than each individual server administrator simply picking an arbitrary port number of their own choosing?",
+      "options": [
+        {
+          "text": "Following these widely agreed-upon conventions lets client software, like web browsers, correctly connect to a given service by default without needing to be told a special, unusual, non-standard port number for every single server it happens to be visiting",
+          "isCorrect": true,
+          "feedback": "Correct -- this shared, agreed-upon convention around certain well-known port numbers significantly simplifies how client software can reliably discover and connect to conventional, well-known services without requiring extra unique manual configuration for each server."
+        },
+        {
+          "text": "Because using a non-standard port number for a service is illegal under international networking law",
+          "isCorrect": false,
+          "feedback": "There's no legal prohibition against using a non-standard port number for a particular service -- following the well-known, agreed-upon convention is chosen for genuine PRACTICAL CONVENIENCE and interoperability reasons, not because non-standard choices are somehow illegal."
+        },
+        {
+          "text": "Because a computer is only physically capable of using one single specific port number, ever, in its entire existence",
+          "isCorrect": false,
+          "feedback": "A computer can actually use and support many different available port numbers, well beyond just one single specific fixed value -- the practical value of certain WELL-KNOWN, CONVENTIONAL port numbers is about consistency and ease of default discovery, not a hardware limitation restricting a computer to only one particular port."
+        },
+        {
+          "text": "Because well-known port numbers automatically encrypt all network traffic passing through them",
+          "isCorrect": false,
+          "feedback": "A specific well-known port number by itself doesn't automatically apply encryption to associated traffic -- ENCRYPTION is a separate concern, generally handled by other protocols or specific configuration choices (like using HTTPS), not something automatically bestowed simply by the choice of port number."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This number pinpoints exactly which application or service running on a device a piece of incoming network traffic should be delivered to.",
+        "medium": "This identifies which particular application or service on a device incoming network traffic is actually meant for.",
+        "hard": "Think about a specific numbered doorway on a device, each one dedicated to a particular kind of service or application."
+      },
+      "medium": {
+        "easy": "Because each service on a device gets its own distinct number, incoming traffic can be correctly routed to exactly the service that number is tied to.",
+        "medium": "Every service gets tied to its own number, so incoming traffic can be routed to whichever service that particular number happens to point to.",
+        "hard": "Think about two separate mailboxes at the very same house, each clearly labeled for its own specific kind of mail."
+      },
+      "hard": {
+        "easy": "Sticking to these widely agreed-upon standard numbers means client software like a browser can connect correctly by default, without needing a special non-standard number spelled out for every server it visits.",
+        "medium": "Because everyone follows the same standard conventions, client software like a browser can just connect to the right service by default, without needing special instructions every time.",
+        "hard": "Think about how much easier it is when everyone already agrees which specific numbered doorway is used for a particular common purpose, by default."
+      }
+    }
+  },
+  {
+    "topic": "network topology",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does 'network topology' generally refer to?",
+      "options": [
+        {
+          "text": "The arrangement or layout describing how devices in a network are connected to one another",
+          "isCorrect": true,
+          "feedback": "Correct -- network topology describes the structural pattern of connections among devices, such as a star, ring, bus, or mesh arrangement."
+        },
+        {
+          "text": "The specific type of software installed on each connected device",
+          "isCorrect": false,
+          "feedback": "Network topology concerns the ARRANGEMENT OF CONNECTIONS between devices -- it isn't about which software happens to be installed on each individual device."
+        },
+        {
+          "text": "The specific brand of computer used on a network",
+          "isCorrect": false,
+          "feedback": "Network topology describes the STRUCTURAL LAYOUT of connections between devices -- it isn't about which specific brand of computer hardware happens to be used."
+        },
+        {
+          "text": "The total amount of data a network can transmit per second",
+          "isCorrect": false,
+          "feedback": "That describes BANDWIDTH -- network topology instead specifically concerns the structural ARRANGEMENT of how devices are connected to one another."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In a 'star' network topology, all devices connect to a single central hub or switch. What is a potential downside of this particular arrangement?",
+      "options": [
+        {
+          "text": "If that central hub or switch fails, it can potentially disrupt communication for every device connected through it, since they all depend on that one central point",
+          "isCorrect": true,
+          "feedback": "Correct -- this reliance on a single central point is a well-known tradeoff of a star topology, even though it also offers certain practical benefits, like generally simpler management and more straightforward troubleshooting."
+        },
+        {
+          "text": "Because every device in a star topology can communicate directly with every other device without passing through the central hub",
+          "isCorrect": false,
+          "feedback": "In a star topology, devices specifically communicate THROUGH the central hub or switch -- they don't have direct device-to-device connections bypassing it, which is exactly why that central point becomes a single point of failure."
+        },
+        {
+          "text": "Because a star topology requires every single connected device to be manufactured by the exact same company",
+          "isCorrect": false,
+          "feedback": "A star topology doesn't require all connected devices to come from the same specific manufacturer -- the real potential downside concerns the central hub or switch representing a single point of failure for the network."
+        },
+        {
+          "text": "Because a star topology makes it impossible for any two connected devices to ever communicate with each other at all",
+          "isCorrect": false,
+          "feedback": "Devices connected in a star topology can very much communicate with one another, generally by routing their communication through that shared central hub or switch -- that isn't made IMPOSSIBLE by this arrangement at all."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a 'mesh' network topology, where many devices have multiple direct connections to several other devices, generally offer better fault tolerance than a simple star topology?",
+      "options": [
+        {
+          "text": "With multiple redundant paths available between devices, the failure of any single connection or device is less likely to completely disrupt communication across the whole network, since traffic can often be rerouted through an alternative available path",
+          "isCorrect": true,
+          "feedback": "Correct -- this redundancy is a key reason mesh topologies are often specifically chosen for situations demanding especially high reliability, despite the topology's typically greater complexity and cost compared to simpler network arrangements."
+        },
+        {
+          "text": "Because a mesh topology requires significantly fewer total network cables than a star topology",
+          "isCorrect": false,
+          "feedback": "A mesh topology actually typically requires considerably MORE total connections and cables than a simpler star topology, not fewer -- its fault-tolerance benefit specifically comes from having multiple redundant paths available, not from using less overall physical cabling."
+        },
+        {
+          "text": "Because a mesh topology guarantees that a network will never experience even a single failure of any kind",
+          "isCorrect": false,
+          "feedback": "A mesh topology can meaningfully improve overall fault tolerance, but it doesn't provide an absolute, ironclad guarantee against every single conceivable kind of failure occurring."
+        },
+        {
+          "text": "Because a mesh topology can only be used for networks containing fewer than three total devices",
+          "isCorrect": false,
+          "feedback": "A mesh topology can actually scale up to and support considerably more than just three total devices -- there's no such small, fixed device-count limitation inherent to this particular topology."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This term refers to the specific layout or pattern that describes how a network's devices are actually wired together.",
+        "medium": "Picture the overall shape formed by how a network's devices connect to each other -- star, ring, bus, or mesh, for instance.",
+        "hard": "Think about the general shape or arrangement question, apart from which specific brand or type of hardware is involved."
+      },
+      "medium": {
+        "easy": "If that one shared connection point goes down, everyone relying on it loses their link to the rest of the network at the same time.",
+        "medium": "Consider what all the connected devices have in common that they each depend on to reach one another.",
+        "hard": "Think about what a group of people sharing one single point of contact might have to worry about."
+      },
+      "hard": {
+        "easy": "With several redundant paths available between devices, one connection failing is less likely to fully disrupt the network, since traffic can typically be rerouted along another available path.",
+        "medium": "Because there are multiple backup paths connecting devices, losing any single connection is less likely to fully break communication, since traffic can usually take another route.",
+        "hard": "Think about having several different possible routes between two points, so that losing just one particular route doesn't cut off communication entirely."
+      }
+    }
+  },
+  {
+    "topic": "Wi-Fi",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'Wi-Fi' generally used for?",
+      "options": [
+        {
+          "text": "Connecting devices to a network wirelessly, typically over relatively short distances, using radio waves",
+          "isCorrect": true,
+          "feedback": "Correct -- Wi-Fi lets devices like laptops, phones, and smart appliances connect to a local network and often the wider internet without needing a physical cable."
+        },
+        {
+          "text": "Physically connecting two computers together using an ethernet cable",
+          "isCorrect": false,
+          "feedback": "Wi-Fi is specifically a WIRELESS networking technology -- using a physical ethernet cable describes a different, WIRED connection method entirely."
+        },
+        {
+          "text": "Encrypting files stored on a computer's local hard drive",
+          "isCorrect": false,
+          "feedback": "Wi-Fi is a wireless networking connectivity technology -- it isn't a mechanism for encrypting files stored locally on a hard drive."
+        },
+        {
+          "text": "Printing documents directly from a smartphone",
+          "isCorrect": false,
+          "feedback": "Wi-Fi is fundamentally about wireless network CONNECTIVITY -- it might be used as part of enabling wireless printing, but printing itself is a separate, distinct function from Wi-Fi's core connectivity role."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might the Wi-Fi signal strength, and therefore connection quality, generally weaken as a device moves farther away from its wireless router?",
+      "options": [
+        {
+          "text": "Radio waves naturally lose strength (a phenomenon often called attenuation) as they travel farther from their source, and physical obstacles like walls can further weaken the resulting signal",
+          "isCorrect": true,
+          "feedback": "Correct -- this natural, physical weakening of a wireless signal over distance and through obstacles is exactly why Wi-Fi coverage and performance can vary meaningfully in different parts of a home or building."
+        },
+        {
+          "text": "Because Wi-Fi signals are illegal to transmit over long distances in most countries",
+          "isCorrect": false,
+          "feedback": "There's no legal restriction limiting how far Wi-Fi signals can travel -- signal weakening over distance is a natural PHYSICAL PROPERTY of radio wave propagation, not something caused by any legal restriction."
+        },
+        {
+          "text": "Because Wi-Fi routers are only capable of transmitting a signal for one single second at a time",
+          "isCorrect": false,
+          "feedback": "A Wi-Fi router continuously transmits its signal on an ongoing basis, not just for a single fleeting second at a time -- signal weakening over distance is instead a natural physical property of how radio waves themselves travel and attenuate, unrelated to any such brief transmission time limit."
+        },
+        {
+          "text": "Because moving farther away from a router automatically disconnects a device from the internet entirely and immediately",
+          "isCorrect": false,
+          "feedback": "Moving farther away GRADUALLY WEAKENS the signal and connection quality -- it doesn't necessarily and immediately disconnect the device entirely and outright the moment it moves even slightly farther away."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a household experiencing significant Wi-Fi interference or congestion, such as from many nearby overlapping wireless networks, consider using a less crowded Wi-Fi frequency band or channel?",
+      "options": [
+        {
+          "text": "Multiple wireless networks operating on the exact same or an overlapping frequency channel can interfere with one another, so switching to a comparatively less congested frequency band or channel can help reduce that interference and potentially improve overall connection performance",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of channel or band congestion is a common, well-documented practical Wi-Fi performance issue, particularly in crowded environments like apartment buildings with many overlapping wireless networks nearby."
+        },
+        {
+          "text": "Because switching to a different channel guarantees a Wi-Fi connection will never experience any interference whatsoever, ever again",
+          "isCorrect": false,
+          "feedback": "Switching to a less congested channel can meaningfully help REDUCE interference, but it doesn't provide some absolute, ironclad guarantee against every possible future source of interference under all circumstances."
+        },
+        {
+          "text": "Because Wi-Fi routers are only legally permitted to broadcast on one single fixed frequency channel",
+          "isCorrect": false,
+          "feedback": "Wi-Fi routers are generally designed to support and allow selection among multiple different available frequency channels -- they aren't legally restricted to broadcasting on just one single, fixed channel."
+        },
+        {
+          "text": "Because using a less congested frequency channel automatically increases a household's overall internet subscription speed",
+          "isCorrect": false,
+          "feedback": "Switching to a different Wi-Fi channel doesn't change the underlying INTERNET SUBSCRIPTION SPEED itself, which is a separate matter determined by the actual internet service plan -- it can instead help improve local wireless signal quality and reduce interference specifically within the home network."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This connects devices to a network without any cables, using radio waves to communicate over generally short distances.",
+        "medium": "This links devices to a network without any physical cable, relying on radio waves over generally short distances.",
+        "hard": "Think about connecting your laptop or phone to a network without needing any physical cable at all, using radio waves instead."
+      },
+      "medium": {
+        "easy": "Radio waves lose strength the farther they travel from their source, and physical barriers like walls weaken that signal even more, which is why distance and obstacles both matter.",
+        "medium": "A radio signal naturally weakens the farther it travels from its source, and things like walls in the way can weaken it even further.",
+        "hard": "Think about shouting to someone standing right next to you versus trying to shout the same message to someone standing very far away."
+      },
+      "hard": {
+        "easy": "Nearby networks sharing the same or an overlapping frequency channel can interfere with one another, so switching to a less congested channel can noticeably improve performance.",
+        "medium": "When nearby wireless networks share the same or an overlapping channel, they can interfere with each other, so moving to a less crowded channel can ease that problem.",
+        "hard": "Think about many different radio stations all trying to broadcast on the exact same frequency at once, causing static and interference for everyone."
+      }
+    }
+  },
+  {
+    "topic": "data warehousing",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of a 'data warehouse'?",
+      "options": [
+        {
+          "text": "Storing large amounts of structured data, often gathered from multiple different sources, specifically organized to support analysis and reporting",
+          "isCorrect": true,
+          "feedback": "Correct -- a data warehouse is typically designed and optimized specifically for supporting large-scale analysis and historical reporting, rather than for handling a business's everyday, ongoing transactional operations."
+        },
+        {
+          "text": "Storing a single company's live, day-to-day transactional records for immediate operational use, updated in real time",
+          "isCorrect": false,
+          "feedback": "That describes an operational/transactional database -- a data warehouse instead specifically consolidates data from multiple sources for later analysis and reporting, not real-time day-to-day transaction processing."
+        },
+        {
+          "text": "Encrypting a company's sensitive files for security purposes",
+          "isCorrect": false,
+          "feedback": "A data warehouse concerns ORGANIZING data specifically to support analysis and reporting -- ENCRYPTION for security is a separate, distinct concern."
+        },
+        {
+          "text": "Running a company's day-to-day website hosting operations",
+          "isCorrect": false,
+          "feedback": "A data warehouse is specifically optimized for ANALYSIS and REPORTING purposes -- it's a different concern from the everyday operational hosting of a company's live website."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a company gather data from multiple different operational systems (such as sales records, inventory data, and customer service logs) into one centralized data warehouse?",
+      "options": [
+        {
+          "text": "Combining data from multiple different sources into one place makes it considerably easier to analyze relationships and generate more comprehensive reports across the whole business, rather than analyzing each individual source separately in isolation",
+          "isCorrect": true,
+          "feedback": "Correct -- this ability to combine and analyze data from many different areas of a business together is a major reason organizations invest in building a centralized data warehouse in the first place."
+        },
+        {
+          "text": "Because storing data in a data warehouse is required by law for any company that keeps records of any kind",
+          "isCorrect": false,
+          "feedback": "There's no such legal requirement mandating that a company build and use a data warehouse for its records -- doing so is a PRACTICAL business decision made to support better data analysis, not something dictated purely by legal requirements."
+        },
+        {
+          "text": "Because combining data from multiple sources into a data warehouse automatically deletes the original individual source systems entirely",
+          "isCorrect": false,
+          "feedback": "The original individual operational source systems generally continue to exist and keep operating on their own -- the data warehouse typically pulls in and stores a COPY of relevant data drawn from them, rather than deleting those original systems altogether."
+        },
+        {
+          "text": "Because a data warehouse can only ever store a single, one specific type of data at any given time",
+          "isCorrect": false,
+          "feedback": "A data warehouse is specifically designed and intended to combine and store MULTIPLE different types of data, often gathered from a variety of different underlying sources -- it isn't restricted to holding just one single specific type of data at a time."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is a data warehouse often specifically optimized for read-heavy analytical queries, rather than for the kind of fast, frequent read-and-write transactional operations a live operational database (such as one processing individual customer orders in real time) needs to handle well?",
+      "options": [
+        {
+          "text": "A data warehouse is generally designed to efficiently support complex queries scanning across large amounts of historical data for analysis and reporting purposes, while an operational database is instead optimized for quickly and reliably processing many individual, frequent, real-time transactions",
+          "isCorrect": true,
+          "feedback": "Correct -- these two rather different kinds of workloads have distinctly different performance requirements, which is exactly why systems are often specifically optimized differently depending on which particular kind of workload, analytical or transactional, they're primarily intended to handle well."
+        },
+        {
+          "text": "Because a data warehouse is physically incapable of storing any data whatsoever related to individual customer orders",
+          "isCorrect": false,
+          "feedback": "A data warehouse can very well store data that originated from and relates to individual customer orders -- however, it's typically structured and optimized quite differently from a live, real-time transactional system, with a stronger analytical query focus rather than an inability to include such order-related data at all."
+        },
+        {
+          "text": "Because operational databases are illegal to use for processing any actual customer transactions",
+          "isCorrect": false,
+          "feedback": "Operational databases are specifically designed and very widely used precisely FOR reliably processing real, live customer transactions -- there's no legal prohibition whatsoever against this common, standard use."
+        },
+        {
+          "text": "Because a data warehouse and an operational database are simply two different names describing the exact identical single kind of system",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different kinds of systems, each specifically optimized for a distinctly different type of workload -- one for complex analytical queries over larger amounts of historical data, the other for fast, frequent, individual real-time transactions."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is a big organized store for a company's data, pulled together from lots of different systems so it can all be looked at together.",
+        "medium": "Picture a large, organized collection point where data from many different systems gets gathered for closer study.",
+        "hard": "Think about a single place a company might gather data from lots of different systems before trying to make sense of it all."
+      },
+      "medium": {
+        "easy": "Bringing data together from multiple different sources into one place makes it far easier to analyze relationships across the business and produce comprehensive reports, rather than examining each source in isolation.",
+        "medium": "Pulling data from several different sources into a single place makes it much easier to spot relationships and produce broader reports, instead of analyzing each source on its own.",
+        "hard": "Think about how much easier it is to spot a big-picture pattern once scattered pieces of information are finally brought together in one single place."
+      },
+      "hard": {
+        "easy": "One system is optimized to efficiently run complex analytical queries across large amounts of historical data, while the other is optimized to quickly handle many individual, frequent, real-time transactions.",
+        "medium": "One kind of system is built to efficiently scan through large amounts of historical data for analysis, while the other is built to quickly process lots of individual, real-time transactions.",
+        "hard": "Think about a system built for quickly processing one order at a time, versus a completely different system built for scanning through years of accumulated historical records all at once."
+      }
+    }
+  },
+  {
+    "topic": "content management systems",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'content management system' (CMS) generally used for?",
+      "options": [
+        {
+          "text": "Allowing users to create, manage, and modify digital content, such as a website's text and images, often without needing to write code directly",
+          "isCorrect": true,
+          "feedback": "Correct -- a CMS provides a more user-friendly interface for managing content, making website maintenance more accessible even to people without a strong coding background."
+        },
+        {
+          "text": "A tool used exclusively to manage a company's internal email communications",
+          "isCorrect": false,
+          "feedback": "That describes email management software, not a CMS -- a content management system is specifically for creating and editing digital content like a website's text and images."
+        },
+        {
+          "text": "A programming language specifically designed for building mobile applications",
+          "isCorrect": false,
+          "feedback": "A CMS isn't a programming language -- it's a system that lets users create and manage digital content, often without writing code at all."
+        },
+        {
+          "text": "A service that automatically translates a website into every possible language",
+          "isCorrect": false,
+          "feedback": "Automatic translation isn't what a CMS is for -- it's specifically about letting users create, manage, and modify content like a website's text and images."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a content management system be particularly appealing to someone who wants to maintain a website but doesn't have extensive coding or web development experience?",
+      "options": [
+        {
+          "text": "A CMS often provides user-friendly tools and interfaces for creating and editing content, handling much of the underlying technical complexity automatically, without requiring the user to write code directly",
+          "isCorrect": true,
+          "feedback": "Correct -- this accessibility for non-technical users is a major reason content management systems have become so widely popular for building and maintaining websites."
+        },
+        {
+          "text": "Because a content management system automatically generates all of a website's written content without any user input",
+          "isCorrect": false,
+          "feedback": "A CMS doesn't write the content for you -- it provides user-friendly tools that make it easier for a person to create and edit content themselves, without needing to code."
+        },
+        {
+          "text": "Because a content management system eliminates the need for a website to have any visual design at all",
+          "isCorrect": false,
+          "feedback": "A CMS still involves visual design, often through themes or templates -- its real appeal is providing user-friendly tools that handle technical complexity automatically."
+        },
+        {
+          "text": "Because content management systems can only be used by professional software developers with advanced coding expertise",
+          "isCorrect": false,
+          "feedback": "This is essentially the opposite of a defining characteristic of a CMS -- content management systems are specifically designed and intended to be accessible and usable even by people WITHOUT extensive coding expertise, not restricted only to professional developers."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a website built and heavily customized using a popular, widely-used content management system need to carefully manage compatibility when installing third-party plugins or themes?",
+      "options": [
+        {
+          "text": "Different plugins or themes, often each created independently by different developers, may not always interact perfectly well together or with a specific CMS version, potentially causing conflicts, unexpected behavior, or vulnerabilities if compatibility isn't carefully checked and properly maintained",
+          "isCorrect": true,
+          "feedback": "Correct -- this compatibility management concern is a very common, well-known practical challenge for maintaining a CMS-based website over time, particularly when relying on numerous third-party plugins or themes."
+        },
+        {
+          "text": "Because every plugin or theme must be personally approved by the CMS's original creators before it can be used at all",
+          "isCorrect": false,
+          "feedback": "Most CMS platforms allow installing third-party plugins and themes without requiring direct approval from the original creators -- the real concern is that independently built add-ons don't always interact well together or with a specific version."
+        },
+        {
+          "text": "Because a content management system can only ever support a single plugin or theme installed at any given time",
+          "isCorrect": false,
+          "feedback": "Many content management systems can actually support numerous plugins and themes running together simultaneously -- the real, genuine concern is specifically about how well they interact and remain COMPATIBLE with each other, not a hard, fixed limitation to just one at a time."
+        },
+        {
+          "text": "Because plugins and themes are purely cosmetic and can never actually affect a website's underlying functionality",
+          "isCorrect": false,
+          "feedback": "Plugins and themes can very much affect functionality, not just appearance -- which is exactly why compatibility conflicts between independently built ones are a real concern."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This kind of system lets users create, manage, and change digital content -- a website's text and images, for instance -- typically without ever having to write code directly.",
+        "medium": "This lets users create and update digital content, like the text and images on a website, generally without having to write code themselves.",
+        "hard": "Think about a tool letting someone update a website's text and images without needing to know how to write actual code."
+      },
+      "medium": {
+        "easy": "It generally offers user-friendly tools for creating and editing content, automatically handling much of the underlying technical work so the user doesn't have to write code themselves.",
+        "medium": "It typically offers easy-to-use tools for creating and editing content, quietly handling a lot of the technical complexity behind the scenes.",
+        "hard": "Think about a much friendlier, simpler set of tools handling the tricky technical details behind the scenes automatically for you."
+      },
+      "hard": {
+        "easy": "Since different plugins or themes are typically built independently by separate developers, they don't always mesh well with each other or with a specific system version, which can lead to conflicts or unexpected problems.",
+        "medium": "Because plugins and themes are often built independently by different developers, they don't always play nicely together or with a particular system version, which can cause real problems.",
+        "hard": "Think about several separately built add-ons, each made by a different developer, not always necessarily playing nicely together."
+      }
+    }
+  },
+  {
+    "topic": "web hosting",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does 'web hosting' generally provide?",
+      "options": [
+        {
+          "text": "Storage space and infrastructure on a server, making a website's files accessible over the internet",
+          "isCorrect": true,
+          "feedback": "Correct -- web hosting services provide the server space and infrastructure needed to store a website's files and make them accessible to visitors online."
+        },
+        {
+          "text": "A guarantee that a website will always rank first in search engine results",
+          "isCorrect": false,
+          "feedback": "Web hosting provides the server storage and infrastructure that makes a website accessible online -- it has no bearing on search engine ranking, which depends on many separate factors unrelated to hosting."
+        },
+        {
+          "text": "A backup copy of a website's files stored locally on the business owner's own computer",
+          "isCorrect": false,
+          "feedback": "Web hosting specifically means storing a website's files on a server that's accessible over the internet -- a backup saved locally on someone's own computer isn't accessible to the public and doesn't serve the same purpose."
+        },
+        {
+          "text": "A programming language used for building mobile apps",
+          "isCorrect": false,
+          "feedback": "Web hosting is a service providing server storage and infrastructure for websites -- it isn't itself a specific programming language."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a small business choose to use a web hosting provider's servers, rather than setting up and maintaining its own physical servers in-house to host its website?",
+      "options": [
+        {
+          "text": "Using a hosting provider can avoid the significant upfront cost, technical expertise, and ongoing maintenance responsibility of purchasing, configuring, and maintaining physical server hardware and its connectivity directly",
+          "isCorrect": true,
+          "feedback": "Correct -- this practical advantage in cost, convenience, and reduced technical burden is a major reason many businesses, especially smaller ones, choose to rely on a specialized hosting provider rather than managing their own physical infrastructure."
+        },
+        {
+          "text": "Because a hosting provider's servers automatically write and update a business's website content on their behalf",
+          "isCorrect": false,
+          "feedback": "A hosting provider supplies server space and infrastructure -- it doesn't automatically create or update a website's actual content, which is still the business's own responsibility."
+        },
+        {
+          "text": "Because a hosting provider's servers are physically incapable of ever going offline for any reason",
+          "isCorrect": false,
+          "feedback": "Even a professional hosting provider's servers can occasionally experience downtime for various reasons -- reliable hosting doesn't provide some absolute, ironclad guarantee of one hundred percent uptime under every conceivable circumstance."
+        },
+        {
+          "text": "Because a website can only be accessed by internet users if it's hosted directly in-house by the business itself",
+          "isCorrect": false,
+          "feedback": "A website can actually be very reliably and successfully accessed by internet users when it's hosted by an external, third-party provider -- there's no such requirement mandating in-house hosting for a website to be genuinely accessible online."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a rapidly growing website consider switching from a basic, 'shared' web hosting plan (where server resources are shared among many different websites) to a more dedicated or cloud-based hosting solution?",
+      "options": [
+        {
+          "text": "A shared hosting plan's resources are split among many different websites, which can become a performance bottleneck as traffic grows, whereas dedicated or cloud-based hosting can offer more resources and greater scalability specifically suited to handling a larger, growing amount of traffic",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of upgrade path, moving toward greater available resources and scalability as a website's traffic and demands genuinely grow, is a very common and expected consideration in typical web hosting strategy."
+        },
+        {
+          "text": "Because shared hosting automatically upgrades itself into dedicated hosting once a site becomes popular enough",
+          "isCorrect": false,
+          "feedback": "Shared hosting doesn't automatically upgrade itself -- moving to a dedicated or cloud-based plan is a deliberate decision and change made by the website owner, not something that happens on its own as traffic grows."
+        },
+        {
+          "text": "Because dedicated or cloud-based hosting guarantees a website will never experience any downtime whatsoever, under any circumstances",
+          "isCorrect": false,
+          "feedback": "While dedicated or cloud-based hosting can often meaningfully improve overall reliability, it doesn't provide some absolute, ironclad guarantee against every single possible instance of downtime under any and all circumstances."
+        },
+        {
+          "text": "Because shared hosting is physically incapable of hosting more than a single website's files in total",
+          "isCorrect": false,
+          "feedback": "This actually describes the OPPOSITE of how shared hosting fundamentally works -- shared hosting specifically involves MULTIPLE different websites sharing the SAME underlying server resources together, rather than being restricted to hosting just one single website's files in total."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is the service that gives a website's files somewhere to live so that anyone online can reach them.",
+        "medium": "This is what stands between a website's files and the wider internet, making them reachable to visitors.",
+        "hard": "Think about renting space on someone else's powerful computer specifically so your website's files can be reached by anyone online."
+      },
+      "medium": {
+        "easy": "Letting someone else handle the server hardware saves a business from a lot of upfront cost and ongoing technical upkeep it would otherwise have to manage itself.",
+        "medium": "Outsourcing this to a provider sidesteps a lot of the cost and technical burden a business would otherwise carry alone.",
+        "hard": "Think about how much easier it is to rent a fully equipped, already-set-up space, rather than building and maintaining your own entire facility from scratch."
+      },
+      "hard": {
+        "easy": "Sharing server resources among many sites works fine at a small scale, but a fast-growing site can start needing more room to breathe than a shared plan can comfortably offer.",
+        "medium": "A plan built for splitting resources among many tenants can start to strain once one of them grows large enough to need more room.",
+        "hard": "Think about outgrowing a small, shared apartment and needing considerably more dedicated space of your own as your needs keep growing."
+      }
+    }
+  },
+  {
+    "topic": "web caching",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of 'web caching'?",
+      "options": [
+        {
+          "text": "Temporarily storing copies of frequently accessed web content closer to the user, so it can be retrieved more quickly on subsequent requests",
+          "isCorrect": true,
+          "feedback": "Correct -- web caching helps avoid repeatedly re-fetching identical content all the way from its original source server every single time, speeding up subsequent access."
+        },
+        {
+          "text": "Permanently deleting old web pages that are no longer being visited by anyone",
+          "isCorrect": false,
+          "feedback": "Web caching is specifically about temporarily STORING copies of content for faster future access -- it isn't a mechanism for permanently deleting old, unvisited web pages."
+        },
+        {
+          "text": "Compressing images on a website to reduce their overall file size",
+          "isCorrect": false,
+          "feedback": "That describes image optimization, a separate technique -- web caching is specifically about temporarily storing copies of content closer to the user for faster retrieval."
+        },
+        {
+          "text": "Automatically deleting a user's entire browsing history at the end of each session",
+          "isCorrect": false,
+          "feedback": "That describes a privacy feature, not caching -- web caching is about storing copies of frequently accessed content so it can be retrieved more quickly later."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a web browser store a local cache of images and other files from websites a user has recently visited?",
+      "options": [
+        {
+          "text": "If the user revisits that same website again soon afterward, the browser can quickly reuse those already-downloaded files from its local cache instead of downloading them all over again from the original server",
+          "isCorrect": true,
+          "feedback": "Correct -- this local, browser-based caching can noticeably speed up page loading on repeat visits and can also help reduce unnecessary, redundant network traffic."
+        },
+        {
+          "text": "Because storing a local copy also makes the original website's server respond faster for every other visitor as well",
+          "isCorrect": false,
+          "feedback": "A browser's local cache only speeds things up for that one browser -- it doesn't affect how the server responds to other visitors. The real benefit is avoiding a redundant re-download for the same user."
+        },
+        {
+          "text": "Because a browser can only cache files from websites using a secure HTTPS connection",
+          "isCorrect": false,
+          "feedback": "Browsers can generally cache files regardless of whether a connection is secured with HTTPS -- caching is about reusing already-downloaded files to avoid a redundant download, not about connection security."
+        },
+        {
+          "text": "Because re-downloading the exact same file twice in a row would corrupt the browser's entire cache",
+          "isCorrect": false,
+          "feedback": "Re-downloading a file doesn't corrupt the cache -- browsers cache files specifically to avoid needing to re-download them unnecessarily on a repeat visit."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why must a web caching system have some mechanism for determining when a previously cached piece of content has become outdated (or 'stale') and needs to be re-fetched from the original source, rather than simply caching content indefinitely?",
+      "options": [
+        {
+          "text": "Underlying website content can change over time, so continuing to serve an old, cached version indefinitely could show users outdated or incorrect information, rather than the website's actual current, up-to-date content",
+          "isCorrect": true,
+          "feedback": "Correct -- this is exactly why caching systems commonly rely on mechanisms like expiration times or explicit validation checks, in order to balance the meaningful performance benefits of caching against the need to still serve reasonably current, accurate content."
+        },
+        {
+          "text": "Because limited storage space means cached files must constantly be deleted regardless of whether they're actually outdated",
+          "isCorrect": false,
+          "feedback": "Cache entries are typically removed based on relevance and staleness, not purely due to running out of space -- the real concern is serving genuinely outdated content to users."
+        },
+        {
+          "text": "Because only a website's original creator has the technical ability to determine when its cached content has become outdated",
+          "isCorrect": false,
+          "feedback": "Caching systems themselves (browsers, CDNs) typically use technical signals like expiration times to judge staleness -- they don't rely solely on the original creator's direct involvement."
+        },
+        {
+          "text": "Because website content, once originally published, can never actually change again afterward",
+          "isCorrect": false,
+          "feedback": "Website content can very much change again after its initial publication, quite often in fact -- that real possibility of ongoing change is precisely why a proper mechanism for detecting staleness in cached content is genuinely needed in the first place."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This temporarily keeps local copies of frequently visited web content close to the user, so later requests for it can be served much faster.",
+        "medium": "This keeps temporary local copies of content people access a lot, so it can be pulled up more quickly the next time around.",
+        "hard": "Think about keeping a nearby copy of something you use often, so you don't have to fetch it from far away every single time."
+      },
+      "medium": {
+        "easy": "If a user comes back to the same site soon afterward, the browser can simply reuse the files it already downloaded from its local cache, rather than pulling everything again from the original server.",
+        "medium": "Visit the same site again soon after, and the browser can just reuse what it already downloaded last time, instead of fetching everything all over again.",
+        "hard": "Think about not needing to redownload the exact same picture again if you already have a copy of it saved from your last visit."
+      },
+      "hard": {
+        "easy": "Since a website's actual content can change over time, continuing to serve an old cached copy indefinitely risks showing outdated or incorrect information instead of what's really there now.",
+        "medium": "Because the actual content on a site can change, holding onto an old cached copy forever risks showing visitors stale or wrong information instead of what's currently there.",
+        "hard": "Think about a stored copy slowly becoming outdated over time, if the original somewhere else has since changed but the copy never gets refreshed."
+      }
+    }
+  },
+  {
+    "topic": "HTTP status codes",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of an 'HTTP status code' (such as 200 or 404) returned by a web server?",
+      "options": [
+        {
+          "text": "To indicate the outcome or result of a browser's request to a web server, such as whether it succeeded, failed, or encountered some other specific condition",
+          "isCorrect": true,
+          "feedback": "Correct -- an HTTP status code is a standardized, numeric way for a server to communicate back to the requesting client exactly what happened with its particular request."
+        },
+        {
+          "text": "To indicate the exact number of images displayed on a specific web page",
+          "isCorrect": false,
+          "feedback": "An HTTP status code communicates the OUTCOME of a request -- it isn't a count of how many images happen to be displayed on any particular page."
+        },
+        {
+          "text": "To indicate a website's current stock price, if it happens to be a publicly traded company",
+          "isCorrect": false,
+          "feedback": "HTTP status codes are a fundamental, standardized web protocol concept unrelated to a company's specific stock price -- they specifically communicate the result of a given request."
+        },
+        {
+          "text": "To indicate the specific programming language a website's backend was originally written in",
+          "isCorrect": false,
+          "feedback": "An HTTP status code communicates the RESULT of a specific request -- it doesn't indicate which particular programming language a website's underlying backend happens to be written in."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "The HTTP status code '404' is a very commonly recognized one. What does it generally indicate?",
+      "options": [
+        {
+          "text": "That the requested resource, such as a specific web page, could not be found on the server",
+          "isCorrect": true,
+          "feedback": "Correct -- a '404 Not Found' status code is one of the most widely recognized and commonly encountered HTTP status codes, typically shown when a requested URL doesn't correspond to any resource the server actually has available."
+        },
+        {
+          "text": "That the request was completed entirely successfully, with absolutely no issues encountered",
+          "isCorrect": false,
+          "feedback": "A fully successful request without any issues is instead typically indicated by a status code like '200', not '404' -- '404' specifically signals that the requested resource could not be located."
+        },
+        {
+          "text": "That the server has become permanently and completely disconnected from the entire internet",
+          "isCorrect": false,
+          "feedback": "A '404' status code specifically means the particular REQUESTED RESOURCE couldn't be found -- it doesn't necessarily indicate that the server itself has become entirely disconnected from the internet as a whole."
+        },
+        {
+          "text": "That the user's web browser has a serious security vulnerability",
+          "isCorrect": false,
+          "feedback": "A '404' status code specifically relates to a requested resource not being found on the server -- it says nothing at all about the security status of the user's own particular web browser."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "HTTP status codes are commonly grouped into different ranges, such as codes starting with 2 (like 200) generally indicating success, codes starting with 4 (like 404) generally indicating a client-side error, and codes starting with 5 (like 500) generally indicating a server-side error. Why is this kind of range-based categorization useful?",
+      "options": [
+        {
+          "text": "It gives developers and systems a quick, consistent, general sense of the broad category a particular response falls into, even before examining the exact specific status code number in more careful detail",
+          "isCorrect": true,
+          "feedback": "Correct -- this range-based grouping convention provides a helpful, quick, high-level signal about the general nature of a response, which can be useful for things like automated error handling or troubleshooting, in addition to the more precise meaning conveyed by each individual specific status code."
+        },
+        {
+          "text": "Because every single website in the world is legally required to return the exact identical single status code for every single response",
+          "isCorrect": false,
+          "feedback": "This significantly misrepresents how the system actually works -- websites return an appropriately DIFFERENT status code depending on the SPECIFIC actual outcome of that particular request, rather than being legally forced to return one single identical code every single time regardless of the situation."
+        },
+        {
+          "text": "Because status codes starting with different leading digits are actually processed by entirely separate, completely different computers",
+          "isCorrect": false,
+          "feedback": "The full range of HTTP status codes, regardless of which leading digit they start with, are all generated and returned by the very same originating web server responding to a given request -- they aren't routed through separate, completely different physical computers based purely on that leading digit alone."
+        },
+        {
+          "text": "Because grouping status codes this way guarantees a website will never experience any errors of any kind whatsoever",
+          "isCorrect": false,
+          "feedback": "This categorization scheme is purely about clearly and consistently COMMUNICATING what actually happened with a given request -- it doesn't provide any kind of guarantee that errors won't occur; errors can certainly still happen, and when they do, they get communicated through this same organized system."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This communicates the outcome of a browser's request to a server -- whether it succeeded, failed outright, or ran into some other specific condition.",
+        "medium": "This tells the browser what happened with its request to the server -- essentially whether things worked, failed, or hit some other specific outcome.",
+        "hard": "Think about a short, standardized numeric signal a server sends back saying exactly what happened with your specific request."
+      },
+      "medium": {
+        "easy": "This code specifically means the resource being requested, such as a particular web page, couldn't be located on the server.",
+        "medium": "This particular code signals that whatever was being asked for -- a specific page, say -- simply wasn't found on the server.",
+        "hard": "Think about the very familiar error message that pops up when a specific web page just can't be located."
+      },
+      "hard": {
+        "easy": "This gives developers a quick, consistent read on the broad category a response falls into -- success, error, and so on -- even before checking the exact specific code.",
+        "medium": "It gives a fast, consistent sense of which broad category a response falls into, even before you dig into the precise specific number.",
+        "hard": "Think about being able to tell at a quick glance which general 'family' of outcome a response belongs to, before even checking the precise exact number."
+      }
+    }
+  },
+  {
+    "topic": "web accessibility",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'web accessibility' generally concerned with?",
+      "options": [
+        {
+          "text": "Designing websites and web content so that people with a wide range of abilities and disabilities can effectively perceive, understand, navigate, and interact with them",
+          "isCorrect": true,
+          "feedback": "Correct -- web accessibility aims to make sure websites can be genuinely used by as broad a range of people as reasonably possible, including those using assistive technologies like screen readers."
+        },
+        {
+          "text": "Making a website load faster on a very slow internet connection",
+          "isCorrect": false,
+          "feedback": "Faster loading on a slow connection is a related but distinct PERFORMANCE consideration -- web accessibility specifically concerns usability for people with a wide range of abilities and disabilities."
+        },
+        {
+          "text": "Making a website's URL easier for search engines to find",
+          "isCorrect": false,
+          "feedback": "That describes a different, distinct concern known as search engine optimization -- web accessibility is specifically about USABILITY for people with varying abilities and disabilities."
+        },
+        {
+          "text": "Making a website available in as many different written languages as possible",
+          "isCorrect": false,
+          "feedback": "Offering multiple written languages is a related but ultimately distinct concern known as internationalization -- accessibility more specifically concerns USABILITY for people with varying abilities and disabilities."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might including descriptive 'alt text' (alternative text) for images on a website be an important web accessibility practice?",
+      "options": [
+        {
+          "text": "Alt text can be read aloud by a screen reader, allowing a person who is blind or has low vision to understand what a given image conveys, even though they can't see it directly",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of practical accommodation is a very common, well-established example of a web accessibility best practice, helping ensure images convey their intended information to a much broader range of users."
+        },
+        {
+          "text": "Because alt text is required by law to be included in absolutely every single website in the entire world, with zero exceptions",
+          "isCorrect": false,
+          "feedback": "While various regions do have accessibility-related laws or specific guidelines, alt text isn't universally, unconditionally mandated for literally every single website everywhere with absolutely zero exceptions -- its PRACTICAL VALUE for accessibility is the more directly relevant point being emphasized here."
+        },
+        {
+          "text": "Because alt text automatically makes an image display in noticeably higher visual resolution",
+          "isCorrect": false,
+          "feedback": "Alt text is specifically TEXTUAL, descriptive information ABOUT an image -- it has no effect whatsoever on that image's actual underlying visual resolution or quality."
+        },
+        {
+          "text": "Because alt text is only relevant for websites that don't contain any images at all",
+          "isCorrect": false,
+          "feedback": "This gets things backwards -- alt text is specifically relevant and useful precisely FOR websites that DO contain images, providing a helpful textual description of that image's content or purpose for users who can't otherwise see it."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might designing a website to be genuinely navigable using only a keyboard (without requiring a mouse) be considered an important web accessibility consideration?",
+      "options": [
+        {
+          "text": "Some users, due to certain motor impairments or their reliance on particular assistive technologies, may be unable to use a mouse effectively, so full keyboard navigability helps ensure the website remains genuinely usable for them as well",
+          "isCorrect": true,
+          "feedback": "Correct -- full keyboard navigability is a foundational web accessibility principle, since some users genuinely rely entirely on a keyboard (or an assistive device that specifically emulates keyboard input) rather than a traditional mouse."
+        },
+        {
+          "text": "Because computer mice are illegal to manufacture or sell in most countries",
+          "isCorrect": false,
+          "feedback": "Computer mice are, of course, entirely legal to manufacture and sell -- the genuine accessibility concern here is instead about ensuring the website remains fully usable for people who, for various reasons, can't effectively use a mouse, not about any legal restriction on mice themselves."
+        },
+        {
+          "text": "Because keyboards are always significantly faster to use than a mouse for absolutely every single user, without exception",
+          "isCorrect": false,
+          "feedback": "Ease and preferred speed of use can genuinely vary quite a bit from person to person -- the real underlying accessibility point here is about ensuring GENUINE USABILITY specifically for people who can't effectively use a mouse, not a broad, blanket claim that keyboards are universally faster for literally everyone."
+        },
+        {
+          "text": "Because websites are only legally permitted to be navigated using a keyboard, with mice being disallowed entirely",
+          "isCorrect": false,
+          "feedback": "Both a mouse and a keyboard are, of course, entirely legal and normal ways to navigate a typical website -- the actual accessibility goal here is ensuring both remain genuinely viable navigation options, not disallowing mouse use altogether."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Think about designing a website so it genuinely works well for people with many different abilities, not just one narrow, specific group of users.",
+        "medium": "This concerns designing websites so people with a wide range of abilities and disabilities can effectively perceive, understand, and interact with them.",
+        "hard": "It's concerned with designing websites and content so people with a wide range of abilities and disabilities can effectively perceive, understand, navigate, and interact with them."
+      },
+      "medium": {
+        "easy": "Think about a spoken description standing in for a picture, for someone who genuinely can't see that picture directly at all.",
+        "medium": "This descriptive text can be read aloud by assistive technology, allowing a person who can't see an image to still understand what it conveys.",
+        "hard": "Being read aloud by assistive technology, allowing someone who can't see an image to still understand what it conveys, is exactly why this kind of descriptive text matters so much for accessibility."
+      },
+      "hard": {
+        "easy": "Think about someone who, for various reasons, genuinely can't use a mouse at all, and what that would mean for their ability to use a typical website.",
+        "medium": "Some users may be unable to use a mouse effectively due to certain impairments or their reliance on particular assistive technologies, so full keyboard navigability helps keep the site usable for them.",
+        "hard": "Ensuring the website remains genuinely usable for people who, due to certain impairments or reliance on assistive technologies, may be unable to effectively use a mouse is exactly why full keyboard navigability matters so much for accessibility."
+      }
+    }
+  }
+]

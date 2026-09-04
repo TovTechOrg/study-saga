@@ -1,0 +1,617 @@
+[
+{
+  "topic": "the jet stream",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the jet stream?",
+    "options": [
+      {"text": "A fast-flowing, narrow band of strong winds high in the atmosphere", "isCorrect": true, "feedback": "Correct -- jet streams flow near the top of the troposphere and can significantly influence weather patterns below."},
+      {"text": "A fast-flowing underground river of freshwater", "isCorrect": false, "feedback": "The jet stream is an atmospheric wind current, not an underground water feature."},
+      {"text": "A narrow band of unusually warm ocean water", "isCorrect": false, "feedback": "The jet stream occurs high in the atmosphere, not in the ocean -- that description fits something like a warm ocean current instead."},
+      {"text": "A stream of lava flowing rapidly down a volcano", "isCorrect": false, "feedback": "Lava flow is a volcanic phenomenon on the ground -- the jet stream is a high-altitude wind current in the atmosphere."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What primarily causes the jet stream to form?",
+    "options": [
+      {"text": "Large temperature differences between cold polar air and warmer air at lower latitudes", "isCorrect": true, "feedback": "Correct -- the greater this temperature contrast, the stronger the resulting jet stream winds tend to be."},
+      {"text": "The gravitational pull of the moon on the atmosphere", "isCorrect": false, "feedback": "The moon's gravity primarily affects ocean tides, not the formation of the jet stream, which is driven by temperature contrasts."},
+      {"text": "Volcanic eruptions releasing hot gas high into the atmosphere", "isCorrect": false, "feedback": "While volcanic eruptions can affect climate temporarily, they aren't the underlying cause of the persistent jet stream, which forms from polar-to-tropical temperature differences."},
+      {"text": "Ocean currents pushing air masses from below the surface", "isCorrect": false, "feedback": "Ocean currents can influence broader climate patterns, but the jet stream itself forms high in the atmosphere due to temperature contrasts, not currents pushing from the ocean."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How can a weaker or more 'wavy' polar jet stream contribute to unusual or extreme weather events at lower latitudes?",
+    "options": [
+      {"text": "A weaker jet stream can develop large, slow-moving loops that allow cold Arctic air to plunge farther south, or let weather systems stall in one place for longer than usual", "isCorrect": true, "feedback": "Correct -- some researchers link a wavier jet stream, potentially influenced by a warming Arctic, to prolonged cold snaps, heat waves, or stalled storm systems."},
+      {"text": "A weaker jet stream has no possible connection to weather patterns at any latitude", "isCorrect": false, "feedback": "The jet stream's behavior is closely studied specifically because of its significant connection to weather patterns far from the poles."},
+      {"text": "A weaker jet stream always makes weather more stable and predictable everywhere", "isCorrect": false, "feedback": "A weaker, wavier jet stream is more commonly associated with increased weather variability and prolonged extreme events, not universal stability."},
+      {"text": "A weaker jet stream immediately stops all storms from forming anywhere on Earth", "isCorrect": false, "feedback": "The jet stream's strength influences storm tracks and persistence, but it doesn't halt storm formation across the entire globe."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This is a fast river of wind blowing high up in the sky.", "medium": "This fast-moving band of air flows near the top of the lower atmosphere, influencing weather below.", "hard": "This feature moves air, not water or molten rock, and does so at a very high altitude."},
+    "medium": {"easy": "Cold air near the poles meeting much warmer air farther away creates this fast-moving band of wind.", "medium": "The bigger the temperature gap between polar and tropical air, the stronger this band of wind tends to blow.", "hard": "The driving factor is a thermal contrast between air masses at very different latitudes, not gravitational, volcanic, or oceanic forces."},
+    "hard": {"easy": "When this band of wind gets weaker and loopier, it can let cold air dip much farther south than usual, or let storms just sit in place longer.", "medium": "A weaker, loopier version of this wind pattern can let cold Arctic air spill much farther south, or cause weather systems to get stuck in one place.", "hard": "The mechanism involves a weakened, meandering flow allowing meridional (north-south) air mass excursions and stalled weather systems, rather than a claim of no connection, universal stability, or storm suppression."}
+  }
+},
+{
+  "topic": "tropical cyclones and regional naming",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "A powerful rotating storm that forms over warm tropical ocean waters is called a 'hurricane' in the Atlantic and what in the Northwest Pacific?",
+    "options": [
+      {"text": "Typhoon", "isCorrect": true, "feedback": "Correct -- 'hurricane,' 'typhoon,' and 'cyclone' all describe the same type of storm, just named differently depending on the region."},
+      {"text": "Tornado", "isCorrect": false, "feedback": "A tornado is a much smaller, land-based rotating column of air -- a different phenomenon from a large ocean-formed tropical storm."},
+      {"text": "Monsoon", "isCorrect": false, "feedback": "A monsoon is a seasonal wind and rainfall pattern, not the name for this specific type of powerful rotating storm."},
+      {"text": "Blizzard", "isCorrect": false, "feedback": "A blizzard is a severe snowstorm, unrelated to a warm-water tropical rotating storm."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What do hurricanes, typhoons, and cyclones all have in common, despite their different regional names?",
+    "options": [
+      {"text": "They are all the same type of storm -- a powerful rotating system that forms over warm tropical ocean waters", "isCorrect": true, "feedback": "Correct -- the name used simply depends on which ocean basin the storm forms in."},
+      {"text": "They are all names for tornadoes forming over land", "isCorrect": false, "feedback": "These storms specifically form over warm ocean water, not over land like a tornado does."},
+      {"text": "They are entirely different, unrelated types of storms with different formation mechanisms", "isCorrect": false, "feedback": "They actually share the identical underlying storm mechanism -- only the regional name differs."},
+      {"text": "They only occur in cold polar regions", "isCorrect": false, "feedback": "These storms specifically require warm tropical ocean water to form -- they don't occur in cold polar regions."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do tropical cyclones require sufficiently warm ocean water (typically at least around 26-27°C / 80°F) to form and intensify?",
+    "options": [
+      {"text": "Warm water evaporates more readily, fueling the storm with the moisture and latent heat energy it needs to strengthen", "isCorrect": true, "feedback": "Correct -- this is also why these storms rapidly weaken once they move over land or cooler water, cutting off their energy supply."},
+      {"text": "Warm water's main role is to directly lower surface air pressure, which is what actually spins up the storm's rotation", "isCorrect": false, "feedback": "Surface pressure does drop as the storm intensifies, but that drop is a downstream result of the storm's heat engine at work -- warm water's direct contribution is supplying evaporated moisture and latent heat, not lowering pressure by itself."},
+      {"text": "Warm water just needs to heat the air directly above it; that heat alone, with no moisture involved, is enough to power the storm", "isCorrect": false, "feedback": "Heat alone isn't sufficient -- it's specifically the evaporation of warm water into moisture, and the latent heat later released when that moisture condenses higher up, that fuels the storm."},
+      {"text": "Warm water just needs to be a little warmer than the surrounding air; there's no specific minimum ocean temperature involved", "isCorrect": false, "feedback": "There's actually a fairly specific minimum ocean temperature, around 26-27°C, needed regardless of how it compares to the surrounding air -- it isn't simply a relative difference."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This same kind of powerful storm has different names depending on which part of the world it forms in.", "medium": "This storm goes by one name in the Atlantic and a different name in the Northwest Pacific, even though it's the same phenomenon.", "hard": "This naming difference is purely regional convention, not a sign of a genuinely different storm type."},
+    "medium": {"easy": "All three of these names describe the exact same kind of storm, just called something different depending on where it forms.", "medium": "Despite sounding like different storms, all three names refer to a single type of storm that forms over warm tropical water.", "hard": "The unifying feature is a shared formation mechanism over warm tropical ocean water, with naming varying purely by geographic region, not storm type, land origin, or polar occurrence."},
+    "hard": {"easy": "Warm water turns into vapor more easily than cool water does, and that change of state is closely tied to what actually powers a storm like this -- more than any drop in air pressure, or heat by itself.", "medium": "Think about what a storm needs to keep drawing on as it moves over the ocean: not just heat in the surrounding air, and not simply a pressure difference, but something specific that warm water releases as it evaporates.", "hard": "Consider what physically happens as water changes from liquid to vapor over a sufficiently warm surface, and why that process -- not a pressure drop being the root cause, not heat alone without moisture, and not just a relative comparison to air temperature -- would set a real minimum water temperature for the storm to sustain itself."}
+  }
+},
+{
+  "topic": "the water table",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the 'water table'?",
+    "options": [
+      {"text": "The upper level of underground soil or rock that is fully saturated with water", "isCorrect": true, "feedback": "Correct -- below the water table, spaces in the soil and rock are filled with groundwater."},
+      {"text": "A large, flat piece of furniture used to store bottled water", "isCorrect": false, "feedback": "This is a play on words -- geographically, 'the water table' refers to an underground level of saturation, not a physical piece of furniture."},
+      {"text": "The highest point a river can rise to during a flood", "isCorrect": false, "feedback": "That describes a flood stage or flood level -- the water table specifically refers to underground saturation, not surface river levels."},
+      {"text": "A chart showing ocean tide times", "isCorrect": false, "feedback": "That describes a tide table -- the water table is a groundwater concept, unrelated to ocean tide charts."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What typically happens to the depth of the water table during a prolonged drought?",
+    "options": [
+      {"text": "It tends to drop, or fall deeper underground, as less precipitation infiltrates to recharge it while extraction continues", "isCorrect": true, "feedback": "Correct -- this is why wells can run dry during severe or extended droughts, as the water table falls below the well's depth."},
+      {"text": "It always rises higher during a drought, since demand for water decreases", "isCorrect": false, "feedback": "This is the opposite of reality -- during a drought, the water table typically drops due to reduced recharge from precipitation."},
+      {"text": "It stays exactly the same regardless of precipitation levels", "isCorrect": false, "feedback": "The water table is directly influenced by precipitation and recharge rates -- it doesn't remain static during a drought."},
+      {"text": "It instantly disappears completely and permanently", "isCorrect": false, "feedback": "The water table drops during drought, but it doesn't vanish permanently -- it can recover once normal precipitation patterns resume."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can excessive groundwater pumping near a coastline cause saltwater to contaminate a freshwater aquifer, a problem known as saltwater intrusion?",
+    "options": [
+      {"text": "Pumping lowers the freshwater water table, reducing the pressure that normally holds denser saltwater back, allowing seawater to migrate inland into the freshwater aquifer", "isCorrect": true, "feedback": "Correct -- this is a serious, often difficult-to-reverse concern for coastal communities that rely heavily on groundwater for drinking water."},
+      {"text": "Groundwater pumping has no possible connection to saltwater contamination", "isCorrect": false, "feedback": "Groundwater pumping is actually a well-documented, direct cause of saltwater intrusion in coastal aquifers."},
+      {"text": "Saltwater intrusion happens because pumping causes rainfall to become salty", "isCorrect": false, "feedback": "Rainfall itself doesn't become salty -- the contamination happens underground, as pumping alters the balance between freshwater and adjacent seawater."},
+      {"text": "Saltwater intrusion only occurs in landlocked regions far from any coastline", "isCorrect": false, "feedback": "This is the opposite of reality -- saltwater intrusion specifically occurs near coastlines, where freshwater aquifers are adjacent to seawater."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This marks the underground boundary between soil that's soaked with water and soil that isn't.", "medium": "Below this underground level, all the gaps in soil and rock are filled with water.", "hard": "This concept concerns saturation depth underground, not surface water levels or man-made objects."},
+    "medium": {"easy": "With less rain to refill it and water still being used, this level tends to sink lower underground.", "medium": "Less rain means less refilling, so while water keeps getting used, this underground level tends to drop.", "hard": "The mechanism is a recharge deficit relative to ongoing extraction, causing gradual depletion rather than stability, disappearance, or an inverse relationship with drought."},
+    "hard": {"easy": "Pumping out too much fresh groundwater can remove the 'push back' that normally keeps saltwater from creeping in from the coast.", "medium": "Pumping too much fresh groundwater lowers the pressure that normally holds saltwater at bay, letting it creep inland underground.", "hard": "The mechanism involves reduced freshwater hydraulic pressure allowing denser adjacent seawater to migrate into the aquifer, a coastal-specific phenomenon unrelated to rainfall salinity or landlocked settings."}
+  }
+},
+{
+  "topic": "the Dead Sea's salinity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is notable about the Dead Sea, located between Israel, Jordan, and the West Bank?",
+    "options": [
+      {"text": "It's one of the saltiest bodies of water on Earth", "isCorrect": true, "feedback": "Correct -- its extremely high salt content makes it much easier for people to float in than in ordinary seawater."},
+      {"text": "It's the largest freshwater lake on Earth", "isCorrect": false, "feedback": "The Dead Sea is a highly saline body of water, not a freshwater lake."},
+      {"text": "It's the deepest ocean trench on Earth", "isCorrect": false, "feedback": "The Dead Sea is a landlocked body of water, not an ocean trench."},
+      {"text": "It's the coldest body of water on Earth", "isCorrect": false, "feedback": "The Dead Sea is known for its extreme salinity, not for being unusually cold."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does the Dead Sea have such an exceptionally high salt concentration compared to typical seawater?",
+    "options": [
+      {"text": "It's a landlocked, low-lying basin with no natural outlet, so water only leaves by evaporation, which concentrates the minerals and salts left behind over time", "isCorrect": true, "feedback": "Correct -- water flows in from rivers like the Jordan River but has no way to flow back out except through evaporation, steadily raising the salt concentration."},
+      {"text": "Salt is regularly added to it artificially by nearby industries", "isCorrect": false, "feedback": "The Dead Sea's extreme salinity is a natural result of its enclosed basin and evaporation, not the result of artificial salt addition."},
+      {"text": "It's directly connected to the open ocean, which constantly supplies extra salt", "isCorrect": false, "feedback": "The Dead Sea is landlocked with no outlet to the open ocean -- its salinity comes from evaporation concentrating minerals, not an ocean connection."},
+      {"text": "It receives an unusually high volume of salty rainfall compared to other regions", "isCorrect": false, "feedback": "Rainfall in the region isn't salty -- the high salinity results from mineral-laden inflow becoming concentrated through evaporation in an outlet-less basin."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The Dead Sea has been shrinking significantly in recent decades. What is a major human-related factor commonly cited as contributing to this decline?",
+    "options": [
+      {"text": "Upstream diversion of water from the Jordan River and other tributaries for agriculture and drinking water, which has sharply reduced the freshwater inflow that once helped balance evaporation", "isCorrect": true, "feedback": "Correct -- with less inflow to offset the constant evaporation in this hot, arid basin, the Dead Sea's water level has dropped dramatically over recent decades."},
+      {"text": "The Dead Sea's shrinking is caused entirely by a sudden, permanent decrease in regional evaporation rates", "isCorrect": false, "feedback": "Evaporation in the region hasn't decreased -- if anything, the imbalance is driven by reduced inflow relative to ongoing evaporation, not a drop in evaporation itself."},
+      {"text": "The Dead Sea's shrinking is entirely unrelated to any human water use", "isCorrect": false, "feedback": "Upstream water diversion for human use is widely cited as a major contributing factor to the Dead Sea's declining water level."},
+      {"text": "The Dead Sea has actually been growing larger, not shrinking, over recent decades", "isCorrect": false, "feedback": "This contradicts well-documented monitoring -- the Dead Sea's surface level has been dropping substantially over recent decades."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This is famous for having such salty water that people float extremely easily in it.", "medium": "This body of water between Israel, Jordan, and the West Bank is known for its extremely high salt content.", "hard": "This water body's defining trait is chemical -- mineral concentration -- rather than size, depth, or temperature."},
+    "medium": {"easy": "Water flows in but has no river flowing back out, so only evaporation removes water, leaving the salt behind and building up over time.", "medium": "Since water can only leave by evaporating, and evaporation leaves the dissolved minerals behind, salt just keeps concentrating over time.", "hard": "The mechanism is an endorheic (outlet-less) basin where evaporation is the sole water-loss pathway, progressively concentrating naturally occurring minerals -- not artificial addition, an oceanic connection, or salty precipitation."},
+    "hard": {"easy": "People upstream are taking a lot of water out of the river that normally flows into it, so less fresh water arrives to balance out evaporation.", "medium": "Because upstream users are diverting a lot of the river water that used to flow in, there's less fresh water arriving to offset the ongoing evaporation.", "hard": "The key factor is a human-driven reduction in freshwater inflow via upstream diversion, disrupting the historical balance with the basin's persistent evaporation -- not a change in evaporation rate itself, an absence of human impact, or an actual increase in water level."}
+  }
+},
+{
+  "topic": "the Great Barrier Reef",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Off the coast of which country is the Great Barrier Reef, the world's largest coral reef system, located?",
+    "options": [
+      {"text": "Australia", "isCorrect": true, "feedback": "Correct -- the Great Barrier Reef stretches along Australia's northeastern coast in the Coral Sea."},
+      {"text": "Brazil", "isCorrect": false, "feedback": "Brazil is home to the Amazon rainforest, not the Great Barrier Reef."},
+      {"text": "Egypt", "isCorrect": false, "feedback": "Egypt does have coral reefs in the Red Sea, but the Great Barrier Reef specifically is located off Australia's coast."},
+      {"text": "Canada", "isCorrect": false, "feedback": "Canada's coastal waters are too cold to support a coral reef system like the Great Barrier Reef."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why is the Great Barrier Reef notable even beyond simply being the world's largest coral reef system?",
+    "options": [
+      {"text": "It's actually made up of thousands of individual reefs and hundreds of islands, and is large enough to be visible from space", "isCorrect": true, "feedback": "Correct -- its immense scale, spanning well over 2,000 kilometers, makes it one of the most complex natural structures on Earth."},
+      {"text": "It's a single, solid, continuous slab of coral with no separate reefs or islands", "isCorrect": false, "feedback": "The Great Barrier Reef is actually composed of thousands of distinct reefs and islands, not one single continuous slab."},
+      {"text": "It's entirely man-made, built by engineers over the past century", "isCorrect": false, "feedback": "The Great Barrier Reef is a natural formation built by living coral organisms over thousands of years, not a man-made structure."},
+      {"text": "It's located entirely underground, invisible from the ocean surface", "isCorrect": false, "feedback": "The Great Barrier Reef includes visible structures and islands at and near the surface -- it isn't hidden entirely underground."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why have repeated mass coral bleaching events posed such a serious long-term threat to the Great Barrier Reef's overall health?",
+    "options": [
+      {"text": "Corals need time to recover between stressful heat events, and increasingly frequent bleaching caused by rising ocean temperatures gives reefs less recovery time, leading to cumulative coral death and habitat loss", "isCorrect": true, "feedback": "Correct -- this cumulative stress is why scientists closely monitor bleaching frequency, not just individual bleaching events in isolation."},
+      {"text": "Coral bleaching events have no measurable long-term effect on reef health", "isCorrect": false, "feedback": "Repeated bleaching is well documented to have serious cumulative long-term effects, including coral death and habitat degradation."},
+      {"text": "Bleaching events always occur decades apart, giving reefs ample recovery time", "isCorrect": false, "feedback": "A key concern is that bleaching events have become more frequent in recent years, reducing the recovery time reefs previously had between events."},
+      {"text": "Bleaching only affects coral color and has zero connection to coral survival", "isCorrect": false, "feedback": "Bleaching involves losing the coral's energy-providing algae partners, which can lead directly to coral starvation and death if prolonged, not just a cosmetic color change."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This natural wonder lies along the northeastern coast of a country famous for kangaroos and koalas.", "medium": "This massive reef system stretches along the coast of the country that's also home to the Sydney Opera House.", "hard": "This structure's location is defined by a specific national coastline in the Southern Hemisphere, not South America or North Africa."},
+    "medium": {"easy": "It's actually a huge collection of many separate smaller reefs and islands, not just one single piece.", "medium": "Rather than being a single continuous structure, it's really thousands of connected reefs and hundreds of islands all together.", "hard": "The defining scale characteristic is its composite structure -- a vast interconnected system of many reefs and islands -- rather than being singular, artificial, or hidden from view."},
+    "hard": {"easy": "When this happens too often, the coral doesn't get enough time to recover between stressful hot spells, so more and more of it ends up dying.", "medium": "If these stressful heat events happen too close together, the coral doesn't get enough time in between to bounce back, leading to more permanent damage.", "hard": "The threat is cumulative -- insufficient recovery time between increasingly frequent thermal stress events leads to progressive coral mortality and habitat degradation, rather than being inconsequential, well-spaced, or purely cosmetic."}
+  }
+},
+{
+  "topic": "mangrove forests",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is a mangrove forest?",
+    "options": [
+      {"text": "A coastal forest ecosystem made up of salt-tolerant trees that grow in shallow, brackish tidal waters", "isCorrect": true, "feedback": "Correct -- mangroves are specially adapted to survive in salty, waterlogged coastal conditions where most other trees cannot."},
+      {"text": "A dry, high-altitude forest found far from any coastline", "isCorrect": false, "feedback": "Mangrove forests are specifically a coastal, salt-tolerant ecosystem, not a dry, high-altitude one."},
+      {"text": "A frozen forest found only in polar regions", "isCorrect": false, "feedback": "Mangroves grow in warm, tropical and subtropical coastal regions, not in cold polar areas."},
+      {"text": "An entirely underwater forest of coral formations", "isCorrect": false, "feedback": "A coral formation is a different type of ecosystem -- mangroves are actual trees rooted partly in tidal water and partly above it."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What key coastal protection service do mangrove forests provide to nearby communities?",
+    "options": [
+      {"text": "Their dense root systems help absorb wave energy and stabilize shorelines, reducing damage from storm surges and coastal erosion", "isCorrect": true, "feedback": "Correct -- this is why the loss of mangrove forests is often linked to increased vulnerability to coastal flooding and storm damage."},
+      {"text": "They actively increase the speed and force of incoming waves before they reach the shore", "isCorrect": false, "feedback": "This is the opposite of their actual effect -- mangrove roots help absorb and dampen wave energy, not amplify it."},
+      {"text": "They have no measurable effect on coastal erosion or storm damage", "isCorrect": false, "feedback": "Mangroves are well documented to provide significant, measurable coastal protection benefits, not to have no effect at all."},
+      {"text": "They primarily function to increase local air temperature along the coast", "isCorrect": false, "feedback": "Mangroves' key recognized service relates to physical coastal protection from waves and erosion, not raising air temperature."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Beyond coastal protection, why are mangrove forests considered especially valuable in efforts to mitigate climate change?",
+    "options": [
+      {"text": "They are exceptionally efficient at storing carbon (known as 'blue carbon') in their root systems and the waterlogged soil beneath them, often storing more carbon per unit area than many terrestrial forests", "isCorrect": true, "feedback": "Correct -- this makes mangrove conservation and restoration a significant strategy for carbon sequestration, in addition to their coastal protection and biodiversity benefits."},
+      {"text": "Mangroves actually release far more carbon dioxide than they absorb, worsening climate change", "isCorrect": false, "feedback": "This is the opposite of their recognized role -- mangroves are considered particularly efficient carbon sinks, not net carbon emitters."},
+      {"text": "Mangroves have no measurable role in the global carbon cycle at all", "isCorrect": false, "feedback": "Mangroves are actually recognized as playing a significant, well-studied role in carbon storage, often called 'blue carbon' ecosystems."},
+      {"text": "Mangroves only matter for climate because they reflect sunlight back into space", "isCorrect": false, "feedback": "Their climate value is tied to carbon storage in roots and soil, not to reflecting sunlight, which is more associated with features like ice and snow."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "These trees grow right where salty tidal water meets the coastline.", "medium": "These salt-tolerant trees have roots that sit partly in shallow, salty coastal water.", "hard": "Think about what a tree living right at the edge of land and sea would have to physically tolerate on a daily basis, rather than needing to survive drought, freezing cold, or being entirely submerged like a reef."},
+    "medium": {"easy": "Their tangled roots act like a cushion, soaking up a lot of the force from incoming waves.", "medium": "Their tangled root systems help absorb wave energy before it can fully hit the shore, reducing erosion.", "hard": "Consider what generally happens to the force of moving water when it has to push through something dense and rooted instead of open water, rather than that force being increased, left completely unchanged, or the main benefit being about temperature."},
+    "hard": {"easy": "Their roots and the mud around them are really good at locking away carbon, often even better than regular forests on land.", "medium": "Their roots and the waterlogged soil beneath them are unusually effective at storing carbon long-term, sometimes more so than typical land forests.", "hard": "Think about what tends to happen to plant material -- and the carbon locked inside it -- when it decomposes very slowly in wet, low-oxygen soil instead of breaking down quickly out in the open air, rather than this ecosystem being a net source of emissions, playing no real role in the carbon cycle, or working through reflected sunlight."}
+  }
+},
+{
+  "topic": "wetlands and marshes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What defines a wetland?",
+    "options": [
+      {"text": "An area of land that is saturated with water, either permanently or seasonally, supporting water-adapted plants and wildlife", "isCorrect": true, "feedback": "Correct -- wetlands include marshes, swamps, and bogs, all sharing this defining characteristic of persistent or seasonal water saturation."},
+      {"text": "A dry, elevated area with little to no vegetation", "isCorrect": false, "feedback": "A wetland is defined by water saturation, essentially the opposite of a dry, elevated, sparsely vegetated area."},
+      {"text": "A deep section of open ocean far from any coastline", "isCorrect": false, "feedback": "Wetlands are typically found at the edges of land and water, not out in deep open ocean."},
+      {"text": "A permanently frozen area near the poles", "isCorrect": false, "feedback": "A wetland's defining trait is water saturation, not being permanently frozen."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What important water-filtering service do wetlands typically provide?",
+    "options": [
+      {"text": "They act as natural filters, trapping sediment and absorbing excess nutrients and pollutants before water reaches rivers, lakes, or the ocean", "isCorrect": true, "feedback": "Correct -- this natural filtration role is one major reason wetland destruction is a significant environmental concern for downstream water quality."},
+      {"text": "They actively add large amounts of pollution to any water passing through them", "isCorrect": false, "feedback": "This is the opposite of their actual ecological role -- wetlands generally remove pollutants and sediment, rather than adding them."},
+      {"text": "They have no effect whatsoever on water quality passing through them", "isCorrect": false, "feedback": "Wetlands are well documented to have a significant, measurable filtering effect on water quality, not zero effect."},
+      {"text": "They exclusively filter air pollution, with no connection to water quality", "isCorrect": false, "feedback": "While vegetation can have some air quality benefits, wetlands' primary recognized filtering role specifically concerns water quality."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do wetlands play a particularly significant role in reducing flood damage to nearby communities?",
+    "options": [
+      {"text": "They act like natural sponges, temporarily storing and slowly releasing large volumes of excess water during heavy rainfall or storms, reducing the peak severity of downstream flooding", "isCorrect": true, "feedback": "Correct -- this is why converting wetlands to farmland or urban development often increases flood risk for communities downstream."},
+      {"text": "Wetlands immediately redirect all floodwater directly into the ocean, bypassing any nearby communities", "isCorrect": false, "feedback": "Wetlands don't simply redirect water elsewhere -- they actually absorb and temporarily store it, reducing peak flood flow rather than just relocating it."},
+      {"text": "Wetlands have absolutely no effect on flood severity in any circumstances", "isCorrect": false, "feedback": "Wetlands are well documented to meaningfully reduce flood severity through water absorption and storage -- this claim is inaccurate."},
+      {"text": "Wetlands actually increase flood severity by blocking natural water drainage", "isCorrect": false, "feedback": "This is the opposite of their recognized function -- wetlands generally reduce flood severity by absorbing and slowly releasing excess water."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This kind of land stays soaked with water, at least part of the year, and supports plants that thrive in wet soil.", "medium": "This land feature is defined by water saturation, either all year or during certain seasons.", "hard": "Think about what single physical condition of the ground itself -- more than any particular plant or animal living there -- would have to hold true, at least part of the year, before a place could earn this label at all, rather than the place being simply dry, entirely underwater, or frozen solid."},
+    "medium": {"easy": "As water passes through, this land traps dirt and soaks up extra nutrients and pollution before it goes any further.", "medium": "Water slows down as it passes through, letting sediment settle out and letting the vegetation absorb excess nutrients and pollutants.", "hard": "Consider what tends to happen to particles and dissolved substances carried by moving water once that water is forced to slow down and pass through dense vegetation, rather than the water picking up extra contamination there, passing through completely unaffected, or the benefit being about air rather than water."},
+    "hard": {"easy": "This land soaks up a ton of extra water like a sponge during storms, then lets it out slowly instead of all at once.", "medium": "This land soaks up excess rainwater like a giant sponge, then releases it slowly, instead of letting it all rush downstream at once.", "hard": "Think about what generally happens to a large surge of water when it suddenly has somewhere to spread out and linger, rather than that water being funneled straight along its original path untouched, having no interaction with it at all, or being physically dammed up in a way that backs up flooding."}
+  }
+},
+{
+  "topic": "the rain shadow effect",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the 'rain shadow effect'?",
+    "options": [
+      {"text": "When one side of a mountain range receives significantly less rainfall than the other side because the mountains block moist air", "isCorrect": true, "feedback": "Correct -- the side facing incoming moist air typically gets much wetter, while the far side stays notably drier."},
+      {"text": "The pattern of a rainstorm's shadow moving visibly across the ground", "isCorrect": false, "feedback": "This describes a literal visual shadow, not the climate phenomenon of dramatically uneven rainfall across a mountain range."},
+      {"text": "The seasonal darkening of the sky just before a storm arrives", "isCorrect": false, "feedback": "That describes storm clouds darkening the sky, unrelated to the geographic rainfall pattern caused by mountains blocking moist air."},
+      {"text": "An eclipse that occurs only during the rainy season", "isCorrect": false, "feedback": "An eclipse is an astronomical event unrelated to how mountains affect regional rainfall distribution."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What atmospheric process explains why the windward side of a mountain range gets more rain, while the leeward side stays dry?",
+    "options": [
+      {"text": "Moist air is forced upward on the windward side, cools, and releases its moisture as precipitation, leaving drier air to descend and warm on the leeward side", "isCorrect": true, "feedback": "Correct -- by the time the air reaches the far side, it has already lost most of its moisture, creating a much drier climate there, sometimes even a desert."},
+      {"text": "The leeward side simply receives less sunlight than the windward side", "isCorrect": false, "feedback": "Sunlight exposure isn't the driving mechanism here -- it's the moisture loss from air rising, cooling, and precipitating on the windward side."},
+      {"text": "Mountains physically block all wind from reaching the leeward side", "isCorrect": false, "feedback": "Wind can still cross the mountain range -- what's blocked and depleted is the air's moisture content, not the wind itself entirely."},
+      {"text": "The windward and leeward sides actually receive identical rainfall on average", "isCorrect": false, "feedback": "This contradicts the defining feature of the rain shadow effect, which is a substantial rainfall difference between the two sides."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can the rain shadow effect help explain the existence of arid deserts located relatively close to a coastline or large body of water?",
+    "options": [
+      {"text": "A mountain range between the coast and the desert region can strip incoming moist air of most of its moisture before it ever reaches the desert side, despite the nearby water source", "isCorrect": true, "feedback": "Correct -- this is why some deserts, despite being geographically near an ocean, remain extremely dry, since a mountain barrier intercepts the moisture first."},
+      {"text": "Deserts near coastlines are never actually affected by rain shadow effects", "isCorrect": false, "feedback": "The rain shadow effect is, in fact, a well-documented explanation for several notably dry regions located near a coastline but behind a mountain barrier."},
+      {"text": "The nearby ocean actively pulls all moisture away from the desert region instead of contributing any", "isCorrect": false, "feedback": "The ocean itself isn't the active cause here -- rather, a mountain range intercepts and removes moisture from air before it reaches the desert side."},
+      {"text": "Deserts near coastlines form only because of extremely high average temperatures, unrelated to airflow patterns", "isCorrect": false, "feedback": "Temperature alone doesn't explain a dry rain shadow desert -- the key factor is the mountain barrier's effect on moisture-laden airflow."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "One side of a mountain gets a lot of rain, while the other side stays surprisingly dry.", "medium": "Mountains can block moisture from reaching the far side, leaving that side much drier than the near side.", "hard": "This effect describes an uneven rainfall pattern tied specifically to mountain terrain, not visual shadows or eclipses."},
+    "medium": {"easy": "Air rises and cools on one side, dumping its moisture as rain, then comes down the other side already dried out.", "medium": "As air is pushed up and over the mountain, it cools and drops its moisture on the way up, leaving much less moisture for the way down.", "hard": "The mechanism is orographic lift causing adiabatic cooling and precipitation on the windward slope, leaving a moisture-depleted airmass to descend and warm on the leeward slope -- not a sunlight, total-wind-blockage, or equal-rainfall explanation."},
+    "hard": {"easy": "A mountain range in between can soak up almost all the moisture from the air before it ever gets to the dry area, even if the ocean isn't that far away.", "medium": "Even with an ocean nearby, a mountain range positioned in between can strip most of the moisture out of incoming air before it reaches the drier region beyond it.", "hard": "The explanation is that a mountain barrier positioned between a moisture source and the region beyond depletes incoming air of moisture via orographic precipitation, regardless of the region's proximity to that moisture source -- not an absence of the effect, an active 'pulling' by the ocean, or a temperature-only explanation."}
+  }
+},
+{
+  "topic": "the Mediterranean climate",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the defining seasonal pattern of a Mediterranean climate?",
+    "options": [
+      {"text": "Hot, dry summers and mild, wetter winters", "isCorrect": true, "feedback": "Correct -- this pattern is named after the Mediterranean Basin, though it also occurs in parts of California, Chile, and South Africa."},
+      {"text": "Hot, wet summers and cold, dry winters", "isCorrect": false, "feedback": "This pattern describes something closer to a monsoon or humid subtropical climate, not the Mediterranean pattern's dry summers."},
+      {"text": "Cold and snowy all year round with no real summer", "isCorrect": false, "feedback": "A Mediterranean climate has a distinct warm/hot summer -- it isn't cold and snowy year-round like a polar or subarctic climate."},
+      {"text": "Constant heat and heavy rain every single month of the year", "isCorrect": false, "feedback": "That describes a tropical climate -- the Mediterranean climate specifically has a pronounced dry summer season, unlike constant year-round rain."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Besides the Mediterranean Basin itself, which of these regions is also known for having a Mediterranean-type climate?",
+    "options": [
+      {"text": "Coastal California", "isCorrect": true, "feedback": "Correct -- coastal California shares the same hot, dry summer and mild, wetter winter pattern found around the Mediterranean Sea."},
+      {"text": "The Amazon rainforest basin", "isCorrect": false, "feedback": "The Amazon has a tropical climate with heavy year-round rain, not the seasonal dry-summer pattern of a Mediterranean climate."},
+      {"text": "Central Siberia", "isCorrect": false, "feedback": "Central Siberia has an extremely cold continental climate, nothing like the mild, dry-summer Mediterranean pattern."},
+      {"text": "The Arabian Desert's interior", "isCorrect": false, "feedback": "The Arabian Desert's interior is defined by extreme, near-constant aridity, not the Mediterranean pattern's wetter winter season."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why are Mediterranean-climate regions, including California and parts of Australia, particularly prone to large, fast-spreading wildfires?",
+    "options": [
+      {"text": "The long, hot, dry summers dry out vegetation extensively, creating abundant fuel that can ignite easily and burn rapidly, especially when combined with strong seasonal winds", "isCorrect": true, "feedback": "Correct -- this seasonal fire risk is a well-recognized natural characteristic of Mediterranean climates, though human factors can also significantly influence fire frequency and severity."},
+      {"text": "These regions experience constant rainfall throughout the year, which paradoxically increases fire risk", "isCorrect": false, "feedback": "This is inaccurate -- the Mediterranean climate's DRY summer season, not constant rainfall, is what dries out vegetation and elevates wildfire risk."},
+      {"text": "Wildfires in these regions are entirely unrelated to seasonal climate patterns", "isCorrect": false, "feedback": "The seasonal dry-summer pattern is, in fact, a major recognized natural driver of wildfire risk in Mediterranean climates."},
+      {"text": "These regions never experience any vegetation growth, eliminating any fuel for fires", "isCorrect": false, "feedback": "Mediterranean climates support significant vegetation growth, especially during the wetter winter season -- that vegetation is exactly what becomes fire fuel once dried out in summer."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "Picture hot, dry summer months followed by milder, rainier winter months.", "medium": "This climate has a distinct dry season in summer, unlike a tropical climate that stays wet all year.", "hard": "This climate is defined by a seasonal contrast between dry heat and mild wetness, not by constant conditions in either direction."},
+    "medium": {"easy": "This is a US state on the Pacific coast, known for its beaches and a climate a lot like southern Europe's.", "medium": "This US region's coastline shares the same hot-dry-summer, mild-wet-winter pattern found around the Mediterranean Sea.", "hard": "Look for a region sharing the same seasonal rainfall-and-temperature signature as the Mediterranean Basin, rather than a constantly wet, constantly cold, or constantly arid region."},
+    "hard": {"easy": "The long dry summer dries out a lot of plants, and all that dried-out plant material can catch fire really easily.", "medium": "Months of hot, dry summer weather dry out a lot of vegetation, turning it into fuel that can catch fire and spread quickly, especially with strong winds.", "hard": "The fire risk stems from the seasonal buildup of desiccated vegetative fuel during the characteristic dry summer, often exacerbated by wind, rather than from constant rain, no seasonal link, or an absence of vegetation."}
+  }
+},
+{
+  "topic": "alpine climate zones",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What best describes an 'alpine' climate zone?",
+    "options": [
+      {"text": "A cold climate found at high elevations in mountainous regions, regardless of latitude", "isCorrect": true, "feedback": "Correct -- alpine climates can occur even near the equator, as long as the elevation is high enough."},
+      {"text": "A hot, dry climate found only in low-elevation desert basins", "isCorrect": false, "feedback": "Alpine climates are specifically cold and found at high elevation, not in hot, low-lying desert basins."},
+      {"text": "A tropical climate found only near sea level along the equator", "isCorrect": false, "feedback": "Alpine climates occur at high elevation and are cold, the opposite of a warm, low-elevation tropical climate."},
+      {"text": "A climate found exclusively at the North and South Poles", "isCorrect": false, "feedback": "Alpine climates are defined by elevation, not strictly by polar latitude -- they can occur on high mountains anywhere in the world."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why can a mountain located near the equator still have an alpine climate with snow-capped peaks?",
+    "options": [
+      {"text": "Temperature generally decreases with increasing elevation, so a sufficiently tall mountain can be cold enough for snow and ice even in a tropical latitude", "isCorrect": true, "feedback": "Correct -- this is why mountains like Kilimanjaro in Africa, despite being near the equator, can have glaciers near their summits."},
+      {"text": "Temperature always increases with elevation, regardless of latitude", "isCorrect": false, "feedback": "This is the opposite of reality -- temperature generally decreases as elevation increases, which is exactly why high mountains near the equator can still be cold at their peaks."},
+      {"text": "Equatorial mountains are artificially cooled by nearby ocean currents", "isCorrect": false, "feedback": "Ocean currents aren't the mechanism here -- elevation's effect on temperature is what allows equatorial mountains to have cold, snowy peaks."},
+      {"text": "Mountains near the equator never actually have cold temperatures at their peaks", "isCorrect": false, "feedback": "This contradicts real, well-documented examples of equatorial mountains with glaciers and snow-capped peaks, like Kilimanjaro."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why can a single tall mountain, especially near the equator, display several distinct climate and vegetation zones from its base to its summit?",
+    "options": [
+      {"text": "As elevation increases up the mountain, temperature steadily decreases, creating a sequence of climate zones -- from tropical vegetation at the base to alpine tundra and permanent snow near the summit", "isCorrect": true, "feedback": "Correct -- this vertical zonation means a single mountainside can pass through climate zones similar to what you'd otherwise only see by traveling thousands of kilometers toward the poles."},
+      {"text": "Each climate zone on the mountain is entirely random and unrelated to elevation", "isCorrect": false, "feedback": "The climate zones on a mountainside actually follow a predictable pattern directly tied to elevation, not a random distribution."},
+      {"text": "The zones exist purely because of differences in soil color at different heights", "isCorrect": false, "feedback": "Soil color isn't the driving mechanism -- temperature change with elevation is what creates these distinct vertical climate zones."},
+      {"text": "All points on the mountain, regardless of elevation, actually share the exact same climate", "isCorrect": false, "feedback": "This contradicts the well-documented pattern of vertical climate zonation, where conditions change substantially from base to summit."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This cold climate type shows up high on mountains, no matter how close to the equator they are.", "medium": "This climate type depends on how high up you are, not on how far you are from the equator.", "hard": "This zone's defining variable is elevation, not the latitude-based zones like tropical or polar climates."},
+    "medium": {"easy": "The higher up you go on a mountain, the colder it generally gets, no matter where that mountain is located.", "medium": "Elevation itself cools the air, so a tall enough mountain can have icy peaks even if it's located right near the equator.", "hard": "The principle is that temperature decreases with elevation (the environmental lapse rate) independent of latitude, allowing sufficiently tall equatorial peaks to sustain permanent snow and ice."},
+    "hard": {"easy": "As you climb higher, it keeps getting colder, so the plants and climate change step by step from the bottom to the very top.", "medium": "Climbing the mountain is like traveling toward the poles, but instead it happens through elevation -- it just keeps getting colder as you go up, changing the climate and plants at each level.", "hard": "The vertical zonation results from progressively decreasing temperature with elevation producing a sequence of climate belts analogous to latitudinal climate zones, rather than random variation, soil color effects, or climate uniformity across elevation."}
+  }
+},
+{
+  "topic": "Lake Baikal as the world's deepest lake",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Lake Baikal, the world's deepest lake, is located in which country?",
+    "options": [
+      {"text": "Russia", "isCorrect": true, "feedback": "Correct -- Lake Baikal is located in Siberia, in southern Russia."},
+      {"text": "Canada", "isCorrect": false, "feedback": "Canada has many large lakes, but Lake Baikal, the world's deepest, is located in Russia."},
+      {"text": "Brazil", "isCorrect": false, "feedback": "Brazil is known for the Amazon River, not Lake Baikal, which is located in Russia."},
+      {"text": "China", "isCorrect": false, "feedback": "Lake Baikal is located in Russia, in Siberia, not in China."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Besides being the world's deepest lake, what else makes Lake Baikal ecologically significant?",
+    "options": [
+      {"text": "It holds roughly one-fifth of the world's unfrozen freshwater and is home to many species found nowhere else on Earth", "isCorrect": true, "feedback": "Correct -- Lake Baikal's age, depth, and isolation have allowed a remarkably unique ecosystem to evolve over millions of years."},
+      {"text": "It's entirely saltwater, similar to an ocean", "isCorrect": false, "feedback": "Lake Baikal is a freshwater lake, not a saltwater body -- its freshwater volume is actually part of what makes it so significant."},
+      {"text": "It has no fish or aquatic life of any kind", "isCorrect": false, "feedback": "Lake Baikal actually supports a rich and unique ecosystem, including numerous endemic species, not an absence of aquatic life."},
+      {"text": "It's a completely artificial lake created by a dam in the 20th century", "isCorrect": false, "feedback": "Lake Baikal is a natural, ancient lake believed to be tens of millions of years old, not an artificial reservoir."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Lake Baikal is estimated to be around 25 million years old, making it one of the oldest lakes on Earth. Why is its age considered significant for its ecosystem?",
+    "options": [
+      {"text": "Its immense age has given species an unusually long, continuous period to evolve in isolation, resulting in extremely high rates of endemism (species found nowhere else)", "isCorrect": true, "feedback": "Correct -- most lakes are geologically short-lived by comparison, so Baikal's long-term stability allowed for extensive, unique evolutionary diversification."},
+      {"text": "Its age has no real connection to its level of biodiversity", "isCorrect": false, "feedback": "Lake Baikal's exceptional age is, in fact, closely linked by scientists to its unusually high level of endemic biodiversity."},
+      {"text": "Older lakes are always less biodiverse than younger lakes, without exception", "isCorrect": false, "feedback": "This is the opposite of the pattern seen at Lake Baikal, where its great age is associated with unusually high biodiversity and endemism."},
+      {"text": "Its age means it is expected to disappear completely within the next few decades", "isCorrect": false, "feedback": "Lake Baikal's great age reflects long-term geological stability, not an imminent risk of disappearing within just a few decades."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This lake is located in Siberia, a vast region of a country that spans Europe and Asia.", "medium": "This is the world's deepest lake, found in the same country as Siberia.", "hard": "This lake's home country is famous for spanning two continents and having the most time zones of any country."},
+    "medium": {"easy": "It holds an enormous share of ALL the fresh, unfrozen water on the entire planet, and hosts creatures found nowhere else.", "medium": "A huge fraction of the world's unfrozen fresh water sits in this one lake, which also hosts many species unique to it.", "hard": "The two-part significance rests on an outsized contribution to one specific category of Earth's water supply, paired with a biological pattern that tends to emerge when living things stay cut off from other populations for a very long time -- not on salt content, an absence of life, or a human-made origin."},
+    "hard": {"easy": "Because it's been around for so long without drying up or changing much, species there had a huge amount of time to evolve into forms found nowhere else.", "medium": "Because the lake has stayed stable for such an enormous stretch of time, species there had far more time than usual to evolve into forms unique to that lake.", "hard": "Consider what an unusually long, uninterrupted stretch of stability might let a cut-off population of organisms do that a much younger body of water simply wouldn't have had time for -- rather than there being no link at all, a link running the opposite direction, or the lake being on the verge of vanishing."}
+  }
+},
+{
+  "topic": "the Caspian Sea",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is notable about the Caspian Sea, despite its name?",
+    "options": [
+      {"text": "It's the largest inland body of water on Earth, and is technically classified as a lake", "isCorrect": true, "feedback": "Correct -- though called a 'sea,' the Caspian is entirely enclosed by land, with no natural connection to the world's oceans."},
+      {"text": "It's actually the smallest body of water classified as a sea", "isCorrect": false, "feedback": "The Caspian Sea is in fact the largest inland body of water on Earth by surface area, not the smallest."},
+      {"text": "It's entirely composed of freshwater, exactly like a typical freshwater lake", "isCorrect": false, "feedback": "The Caspian Sea actually has brackish (somewhat salty) water, unlike a typical fully freshwater lake."},
+      {"text": "It's directly connected to the Pacific Ocean by a natural strait", "isCorrect": false, "feedback": "The Caspian Sea is landlocked, with no natural direct connection to the Pacific Ocean or any other ocean."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these countries does NOT border the Caspian Sea?",
+    "options": [
+      {"text": "Turkey", "isCorrect": true, "feedback": "Correct -- Turkey does not border the Caspian Sea, even though it's a nearby regional country."},
+      {"text": "Russia", "isCorrect": false, "feedback": "Russia does border the Caspian Sea, along its northwestern shore."},
+      {"text": "Iran", "isCorrect": false, "feedback": "Iran does border the Caspian Sea, along its southern shore."},
+      {"text": "Kazakhstan", "isCorrect": false, "feedback": "Kazakhstan does border the Caspian Sea, along a large stretch of its northeastern shore."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why has the legal status of the Caspian Sea, whether it should be classified as a 'sea' or a 'lake,' been a genuinely significant and long-running diplomatic issue among its bordering countries?",
+    "options": [
+      {"text": "International law treats seas and lakes differently for dividing resource rights, so the classification directly affects how valuable oil, gas, and fishing resources are divided among the surrounding nations", "isCorrect": true, "feedback": "Correct -- this dispute took decades to largely resolve through a dedicated multinational agreement, given the substantial energy resources at stake beneath the Caspian's waters."},
+      {"text": "The classification issue is purely a matter of scientific curiosity with no real economic or legal consequences", "isCorrect": false, "feedback": "This significantly understates the issue -- the sea-versus-lake classification has real, substantial legal and economic consequences for resource division among bordering countries."},
+      {"text": "All bordering countries have always fully agreed on its classification without any historical dispute", "isCorrect": false, "feedback": "This contradicts the well-documented decades-long diplomatic dispute among Caspian-bordering nations over its legal classification."},
+      {"text": "The dispute is entirely about which country gets to rename the body of water", "isCorrect": false, "feedback": "The core dispute concerns resource rights and territorial boundaries, not simply a naming disagreement."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "Despite its name, this body of water has no natural link to any of the world's oceans.", "medium": "Though called a 'sea,' this water body is completely surrounded by land, making it technically a giant lake.", "hard": "This water body's classification is contested precisely because it straddles the definitions of two different geographic terms."},
+    "medium": {"easy": "This country lies to the west of this body of water but doesn't actually touch its shoreline.", "medium": "This country is a major regional power connecting Europe and the Middle East, but its coastline is on different seas entirely.", "hard": "Identify the country geographically close to the region but whose coastline lies on the Mediterranean, Aegean, and Black Seas instead."},
+    "hard": {"easy": "Whether it counts as a 'sea' or a 'lake' actually changes how the valuable oil and gas underneath get divided up between the countries around it.", "medium": "Calling it a sea versus a lake actually changes the legal rules for splitting up valuable resources like oil, gas, and fish among the surrounding countries.", "hard": "The dispute centers on how differing international legal frameworks for seas versus lakes govern the division of subsurface energy resources and fishing rights among the five bordering states -- not a purely academic question, universal past agreement, or a simple naming dispute."}
+  }
+},
+{
+  "topic": "the Great Lakes",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The Great Lakes, a group of five massive freshwater lakes, are located on the border between the United States and which other country?",
+    "options": [
+      {"text": "Canada", "isCorrect": true, "feedback": "Correct -- four of the five Great Lakes straddle the U.S.-Canada border, with Lake Michigan located entirely within the United States."},
+      {"text": "Mexico", "isCorrect": false, "feedback": "Mexico shares a southern border with the United States, but the Great Lakes are located along the northern U.S.-Canada border."},
+      {"text": "Russia", "isCorrect": false, "feedback": "Russia doesn't border the United States in this way -- the Great Lakes sit along the U.S.-Canada border."},
+      {"text": "Cuba", "isCorrect": false, "feedback": "Cuba is a Caribbean island nation, unrelated to the U.S.-Canada border region where the Great Lakes are located."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Together, why are the Great Lakes considered so significant on a global scale?",
+    "options": [
+      {"text": "They collectively hold roughly one-fifth of the world's surface freshwater supply", "isCorrect": true, "feedback": "Correct -- this makes the Great Lakes one of the most important freshwater resources on the entire planet."},
+      {"text": "They are entirely saltwater and connect directly to the open Atlantic Ocean without any locks or canals", "isCorrect": false, "feedback": "The Great Lakes are freshwater, and while they do connect to the Atlantic via the St. Lawrence Seaway, that route involves locks -- their key significance is their sheer freshwater volume."},
+      {"text": "They are the smallest group of connected lakes in the world", "isCorrect": false, "feedback": "The Great Lakes are actually among the largest connected groups of freshwater lakes by total area and volume, not the smallest."},
+      {"text": "They contain no fish or aquatic wildlife of any kind", "isCorrect": false, "feedback": "The Great Lakes support significant fisheries and aquatic ecosystems -- this claim is inaccurate."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why has the introduction of invasive species, like zebra mussels, had such a significant and lasting ecological and economic impact on the Great Lakes?",
+    "options": [
+      {"text": "These invasive species can reproduce rapidly and lack natural predators in this new environment, allowing them to outcompete native species, clog water infrastructure, and disrupt the existing food web", "isCorrect": true, "feedback": "Correct -- this combination of rapid, unchecked reproduction and disruption to established ecosystems is a common pattern behind why invasive species often cause severe, difficult-to-reverse damage."},
+      {"text": "Invasive species in the Great Lakes have had no measurable ecological or economic effect at all", "isCorrect": false, "feedback": "Invasive species like zebra mussels are well documented to have caused substantial ecological disruption and significant economic costs in the Great Lakes region."},
+      {"text": "These invasive species arrived naturally through ocean currents with no human involvement whatsoever", "isCorrect": false, "feedback": "Zebra mussels and similar invasive species are generally believed to have been introduced via human activity, such as ship ballast water, not through natural ocean currents alone."},
+      {"text": "These species are actually native to the Great Lakes and always have been", "isCorrect": false, "feedback": "Species like zebra mussels are classified as invasive precisely because they are not native to the Great Lakes -- they were introduced from elsewhere."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This country's flag features a red maple leaf, and it shares these lakes with its southern neighbor.", "medium": "This country is home to cities like Toronto and Ottawa, near the shores of these lakes.", "hard": "This is the country sharing a lengthy northern border with the United States along these lakes."},
+    "medium": {"easy": "All together, these lakes hold an enormous chunk of ALL the fresh surface water on planet Earth.", "medium": "As a group, these lakes contain an outsized share of the entire planet's surface freshwater supply.", "hard": "Ask what these lakes would need to hold, in what quantity relative to the whole planet, for scientists to call them one of Earth's most important resources -- the answer concerns a raw quantity being compared globally, not a description of the water's composition or the lakes' ecology."},
+    "hard": {"easy": "These new species multiply really fast and don't have natural enemies there, so they crowd out native species and clog up water systems.", "medium": "Without natural predators to keep them in check, these species multiply rapidly, crowding out native wildlife and clogging water intake systems.", "hard": "Think through the chain reaction that follows when an organism arrives somewhere it has no natural checks on its numbers -- what tends to happen to its population first, and how that growth could then cascade into effects on both the surrounding ecosystem and human-built infrastructure."}
+  }
+},
+{
+  "topic": "avalanches",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is an avalanche?",
+    "options": [
+      {"text": "A rapid flow of snow, ice, and debris down a mountainside", "isCorrect": true, "feedback": "Correct -- avalanches can be triggered naturally or by human activity, like skiing on an unstable slope."},
+      {"text": "A slow-moving river of melted glacial ice", "isCorrect": false, "feedback": "A slow-moving flow of ice describes a glacier, not the rapid, sudden downhill movement of an avalanche."},
+      {"text": "A sudden, violent shaking of the ground", "isCorrect": false, "feedback": "That describes an earthquake -- an avalanche instead involves snow, ice, and debris sliding rapidly down a slope."},
+      {"text": "A powerful rotating storm that forms over warm ocean water", "isCorrect": false, "feedback": "That describes a hurricane or typhoon -- an avalanche is a rapid downhill movement of snow and debris on a mountainside."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is a common factor that can trigger an avalanche on a snow-covered slope?",
+    "options": [
+      {"text": "A weak, unstable layer within the snowpack failing under added stress, such as new snowfall, wind loading, or the weight of a skier", "isCorrect": true, "feedback": "Correct -- avalanche forecasters closely study snowpack layering because a weak buried layer can suddenly give way under just the right amount of added stress."},
+      {"text": "Warm sunny weather with absolutely no snow present on the slope at all", "isCorrect": false, "feedback": "An avalanche requires an existing snowpack to occur -- it can't happen on a slope with no snow present."},
+      {"text": "The gravitational pull of the moon directly triggering the snow to slide", "isCorrect": false, "feedback": "Lunar gravity mainly affects ocean tides, not avalanche triggering -- snowpack instability is the relevant mechanism."},
+      {"text": "Volcanic activity deep beneath the mountain", "isCorrect": false, "feedback": "While some avalanches can be triggered by nearby seismic activity, the primary factor is typically snowpack instability, not volcanic activity specifically."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why do avalanche forecasters pay particularly close attention to buried 'weak layers' within a snowpack, rather than just the total depth of snow?",
+    "options": [
+      {"text": "A weak layer, such as loosely bonded or granular snow, can act like a hidden fault line -- even a small added stress on top can cause the layers above it to suddenly slide as a unit, regardless of how deep the overall snowpack is", "isCorrect": true, "feedback": "Correct -- this is why a slope can appear stable on the surface while still harboring a dangerous, hidden structural weakness underneath."},
+      {"text": "Total snow depth is actually the only factor that matters for avalanche risk", "isCorrect": false, "feedback": "This contradicts standard avalanche science -- the internal structure and layering of the snowpack, not just total depth, is critical to assessing risk."},
+      {"text": "Weak layers make an avalanche completely impossible, no matter how much snow accumulates above them", "isCorrect": false, "feedback": "This is the opposite of reality -- weak layers are precisely what makes an avalanche MORE likely, not impossible."},
+      {"text": "Weak layers only occur in warm, tropical mountain environments", "isCorrect": false, "feedback": "Avalanche-prone weak layers occur in cold, snow-covered mountain environments generally, not specifically in warm tropical settings."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "This is a fast, sudden slide of snow and ice rushing down a mountain slope.", "medium": "This hazard involves large amounts of snow suddenly giving way and rushing downhill.", "hard": "This event involves solid frozen material moving rapidly downhill under gravity, distinct from flowing lava, shaking ground, or rotating ocean storms."},
+    "medium": {"easy": "Somewhere hidden inside the snow, a weaker layer can suddenly give way under just a little extra weight or pressure.", "medium": "A hidden weaker section within the layers of snow can suddenly collapse when just a bit more weight or stress gets added on top.", "hard": "The trigger mechanism involves failure of a structurally weak buried snow layer under added mechanical stress, not an absence of snow, lunar gravity, or volcanic causation."},
+    "hard": {"easy": "A weak spot buried inside the snow can suddenly break, and everything sitting on top of it can slide all at once, even if the snow looks totally fine from the surface.", "medium": "A hidden weak spot inside the snowpack can suddenly fail, sending everything stacked above it sliding all at once, even if the surface looks perfectly stable.", "hard": "The critical factor is the internal structural integrity of specific buried layers, which can catastrophically fail under added load regardless of total snowpack depth, rather than total depth alone, an impossibility given a weak layer, or a claim restricted to warm environments."}
+  }
+},
+{
+  "topic": "sea level rise",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What are the two main causes commonly cited for global sea level rise in recent decades?",
+    "options": [
+      {"text": "Melting land ice (like glaciers and ice sheets) and the thermal expansion of seawater as it warms", "isCorrect": true, "feedback": "Correct -- both processes add volume to the world's oceans, contributing to a measurable rise in average sea level."},
+      {"text": "Increased rainfall directly falling into the ocean", "isCorrect": false, "feedback": "Rainfall directly over the ocean isn't the primary driver of long-term sea level rise -- melting land ice and thermal expansion are the main recognized causes."},
+      {"text": "Ships displacing more water as global shipping traffic increases", "isCorrect": false, "feedback": "Ship displacement doesn't meaningfully contribute to global sea level rise -- melting land ice and thermal expansion of water are the primary drivers."},
+      {"text": "A decrease in the total surface area of the world's oceans", "isCorrect": false, "feedback": "Ocean surface area isn't shrinking in this way -- rising sea level instead reflects added water volume from melting ice and warming-driven expansion."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does melting sea ice, like floating Arctic ice, contribute much less to sea level rise than melting land-based ice, like glaciers or the Greenland ice sheet?",
+    "options": [
+      {"text": "Sea ice already displaces its own weight in water while floating, so its melting adds comparatively little additional volume, while land ice melting adds entirely new water to the ocean that wasn't previously part of it", "isCorrect": true, "feedback": "Correct -- this is a similar principle to how a floating ice cube melting in a full glass doesn't cause the glass to overflow, unlike water poured in from an outside source."},
+      {"text": "Sea ice melting actually causes sea levels to drop rather than rise", "isCorrect": false, "feedback": "Sea ice melting has a roughly neutral effect on sea level (not a significant drop), while land ice melting is the more significant contributor to sea level rise."},
+      {"text": "Sea ice and land ice contribute exactly the same amount to sea level rise when they melt", "isCorrect": false, "feedback": "They don't contribute equally -- floating sea ice melting has a much smaller effect on sea level than land-based ice melting, because of the displacement principle."},
+      {"text": "Land ice melting has no measurable effect on sea level at all", "isCorrect": false, "feedback": "Land ice melting, from sources like glaciers and ice sheets, is actually one of the most significant contributors to global sea level rise."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Why are low-lying island nations and river delta regions considered especially vulnerable to even modest amounts of global sea level rise?",
+    "options": [
+      {"text": "Because their elevation above current sea level is often extremely small, even a relatively modest rise can lead to permanent flooding, saltwater contamination of freshwater supplies, and loss of habitable land", "isCorrect": true, "feedback": "Correct -- this outsized vulnerability is why sea level rise is a major and urgent geopolitical and humanitarian concern for these specific regions."},
+      {"text": "These regions are actually located at unusually high elevation, making them naturally safe from any sea level changes", "isCorrect": false, "feedback": "This is the opposite of reality -- these regions are specifically vulnerable because of their low elevation relative to sea level, not high elevation."},
+      {"text": "Sea level rise has no realistic connection to flooding risk in these regions", "isCorrect": false, "feedback": "Sea level rise is, in fact, directly and significantly connected to increased flooding risk in low-lying coastal and delta regions."},
+      {"text": "These regions are entirely unaffected because they are located far from any ocean", "isCorrect": false, "feedback": "Low-lying island nations and coastal delta regions are, by definition, located near the ocean -- proximity to the sea is exactly what makes them vulnerable."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"easy": "One cause involves ice on land melting; the other involves ocean water simply taking up more space as it warms.", "medium": "One factor is ice melting from places like mountains and polar land ice sheets; the other is water physically expanding as its temperature rises.", "hard": "Both contributing factors add net new volume to the ocean system, unlike rainfall falling directly on the ocean or changes in shipping traffic."},
+    "medium": {"easy": "Ice already floating in the water barely changes the water level when it melts, kind of like an ice cube melting in an already-full glass.", "medium": "Ice that's already floating doesn't add much extra volume when it melts, similar to how a floating ice cube melting doesn't overflow a full glass -- but ice that starts out sitting on land is a different story.", "hard": "The distinction hinges on Archimedes' principle -- floating sea ice already displaces its own mass in water, so its melt contributes minimally to sea level, unlike land-based ice, which adds genuinely new water volume to the ocean system."},
+    "hard": {"easy": "Because the land there sits so close to sea level already, even a small rise can flood a lot of it and make the fresh water salty.", "medium": "Since this land sits just barely above sea level, even a small rise can permanently flood large areas and let saltwater seep into freshwater supplies.", "hard": "The vulnerability stems from minimal elevation margin above current sea level, meaning even modest sea level increases translate to disproportionate flooding, land loss, and saltwater intrusion into freshwater systems -- not high elevation, no connection to flooding, or distance from the ocean."}
+  }
+}
+]

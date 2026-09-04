@@ -1,0 +1,1517 @@
+[
+  {
+    "topic": "the Turing machine",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'Turing machine'?",
+      "options": [
+        {
+          "text": "A theoretical, abstract model of computation used to reason about what problems can, in principle, be solved by any computer",
+          "isCorrect": true,
+          "feedback": "Correct -- the Turing machine is a foundational concept in computer science, used as a simplified theoretical model for exploring the limits and capabilities of computation."
+        },
+        {
+          "text": "A specific physical machine currently sold in stores today",
+          "isCorrect": false,
+          "feedback": "A Turing machine is a theoretical, abstract MODEL used for reasoning about computation -- it isn't a specific physical product sold commercially today."
+        },
+        {
+          "text": "A type of computer virus named after its creator",
+          "isCorrect": false,
+          "feedback": "The Turing machine is a foundational theoretical concept in computer science, not a computer virus."
+        },
+        {
+          "text": "A programming language used to build modern mobile apps",
+          "isCorrect": false,
+          "feedback": "A Turing machine is an abstract theoretical model of computation, not a specific programming language used for building applications."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is the Turing machine considered useful as a theoretical model, even though no one builds and uses an actual physical Turing machine for everyday practical computing?",
+      "options": [
+        {
+          "text": "It provides a simple yet powerful theoretical framework for reasoning about what is fundamentally computable, helping researchers understand the theoretical limits and capabilities of computation in general",
+          "isCorrect": true,
+          "feedback": "Correct -- the Turing machine's abstract simplicity is precisely what makes it such a valuable tool for exploring deep theoretical questions about computation itself, independent of specific real-world hardware."
+        },
+        {
+          "text": "Because it is secretly used as the literal internal design for every modern smartphone",
+          "isCorrect": false,
+          "feedback": "Modern smartphones use much more specialized and practically engineered hardware -- the Turing machine's real value is as an ABSTRACT theoretical model for reasoning about computation, not as an actual internal smartphone design."
+        },
+        {
+          "text": "Because using it is a legal requirement for any computer science research paper",
+          "isCorrect": false,
+          "feedback": "There's no such legal requirement -- the Turing machine is used because of its genuine THEORETICAL usefulness for reasoning about computation, not because of any legal mandate."
+        },
+        {
+          "text": "Because it guarantees that any program run on it will execute instantly with no delay",
+          "isCorrect": false,
+          "feedback": "The Turing machine's usefulness is about reasoning theoretically over what's computable at all, not about providing any guarantee of instant execution speed."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "The idea of 'Turing completeness' is often used to describe whether a given programming language or system is theoretically as powerful as a Turing machine. What does it generally mean for a system to be 'Turing complete'?",
+      "options": [
+        {
+          "text": "The system is, in principle, capable of performing any computation that a Turing machine could perform, given sufficient time and memory",
+          "isCorrect": true,
+          "feedback": "Correct -- many widely used programming languages are considered Turing complete, meaning they share this same fundamental theoretical computational power, even though they may differ enormously in practical convenience, speed, or intended use."
+        },
+        {
+          "text": "The system is physically capable of running forever without ever needing electricity",
+          "isCorrect": false,
+          "feedback": "Turing completeness is a THEORETICAL property about computational capability -- it says nothing about a system's practical need for an electrical power source."
+        },
+        {
+          "text": "The system can only be used by someone with an advanced computer science degree",
+          "isCorrect": false,
+          "feedback": "Turing completeness describes a system's theoretical COMPUTATIONAL power -- it has nothing to do with the qualifications required of the person using that system."
+        },
+        {
+          "text": "The system is guaranteed to solve any given computational problem in a fixed, small amount of time",
+          "isCorrect": false,
+          "feedback": "Turing completeness concerns theoretical computational capability GIVEN ENOUGH time and memory -- it makes no guarantee about a fixed, small time bound for solving every problem."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This abstract computing model exists purely to help reason about what's possible for any computer, not to be built and used for everyday tasks.",
+        "medium": "This is a simplified stand-in for 'a computer' that lets theorists reason about which problems could ever be solved at all, given unlimited time and memory.",
+        "hard": "Think about a simplified, abstract idea of 'a computer' used mainly for reasoning about computation itself, not for actual everyday use."
+      },
+      "medium": {
+        "easy": "Because it's stripped down to bare essentials, it becomes a clean tool for asking big-picture questions about computing in general, separate from any particular real machine.",
+        "medium": "Its simplicity is exactly what makes it so useful for reasoning generally about what is and isn't fundamentally computable.",
+        "hard": "Think about the value of a simplified thought experiment for exploring deep, general questions, rather than for practical everyday use."
+      },
+      "hard": {
+        "easy": "A system described this way could, given enough time and memory, work through anything that this classic abstract model could ever work through.",
+        "medium": "Sharing the same fundamental theoretical computational power as this abstract model, assuming unlimited time and memory, is what this specific term describes.",
+        "hard": "Think about a system being theoretically just as powerful, in principle, as this foundational abstract model, given enough time and resources."
+      }
+    }
+  },
+  {
+    "topic": "the Turing test",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general idea behind the 'Turing test', proposed by Alan Turing?",
+      "options": [
+        {
+          "text": "A test of whether a machine can exhibit conversational behavior indistinguishable from that of a human, as judged by a human evaluator",
+          "isCorrect": true,
+          "feedback": "Correct -- the Turing test proposes evaluating a machine's apparent intelligence based on whether its conversational responses can be reliably distinguished from a human's."
+        },
+        {
+          "text": "A test measuring exactly how fast a computer's processor can perform calculations",
+          "isCorrect": false,
+          "feedback": "The Turing test is about evaluating conversational, humanlike BEHAVIOR -- it isn't a raw speed benchmark for processing calculations."
+        },
+        {
+          "text": "A physical durability test performed by dropping a computer from a height",
+          "isCorrect": false,
+          "feedback": "The Turing test evaluates conversational behavior, not a computer's physical durability under a drop test."
+        },
+        {
+          "text": "A legal requirement that all software companies must satisfy before releasing a product",
+          "isCorrect": false,
+          "feedback": "The Turing test is a THEORETICAL AND philosophical concept for evaluating machine behavior, not a legally mandated requirement for releasing software."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In a classic setup of the Turing test, a human judge converses (often via text) with both a human and a machine, without knowing which is which. What outcome would be considered a 'success' for the machine, according to this test?",
+      "options": [
+        {
+          "text": "The judge is unable to reliably distinguish which conversational partner is the machine and which is the human",
+          "isCorrect": true,
+          "feedback": "Correct -- 'passing' the Turing test in this classic sense means the machine's conversational responses were convincing enough that the judge couldn't reliably tell it apart from the human."
+        },
+        {
+          "text": "The machine responds to every single question in under one second",
+          "isCorrect": false,
+          "feedback": "Response speed alone isn't the criterion for this test -- success is specifically about whether the judge can reliably tell apart the machine from the human based on the conversation's content and style."
+        },
+        {
+          "text": "The machine correctly answers every mathematical question with perfect accuracy",
+          "isCorrect": false,
+          "feedback": "The Turing test isn't specifically about mathematical accuracy -- it's about whether the machine's overall conversational behavior is indistinguishable from a human's."
+        },
+        {
+          "text": "The human judge is informed in advance about which conversational partner is the machine",
+          "isCorrect": false,
+          "feedback": "The classic Turing test setup specifically involves the judge NOT knowing in advance which partner is the machine -- that's central to fairly testing whether they can be told apart."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why has the Turing test been criticized by some as an incomplete or imperfect measure of genuine machine 'intelligence' or 'understanding'?",
+      "options": [
+        {
+          "text": "Some argue a machine could potentially mimic convincing conversational patterns without possessing genuine understanding or reasoning, meaning passing the test doesn't necessarily prove true comprehension is present",
+          "isCorrect": true,
+          "feedback": "Correct -- this criticism, echoed in thought experiments like the 'Chinese Room' argument, suggests that convincingly imitating conversation and genuinely understanding meaning might not actually be the same thing."
+        },
+        {
+          "text": "Because the Turing test has never actually been formally proposed by anyone in the history of computer science",
+          "isCorrect": false,
+          "feedback": "The Turing test was a well-documented concept formally proposed by Alan Turing -- the actual criticism is about whether PASSING the test truly proves genuine understanding, not about whether the test itself was ever proposed."
+        },
+        {
+          "text": "Because the Turing test can only ever be conducted using the Spanish language",
+          "isCorrect": false,
+          "feedback": "The Turing test isn't restricted to any single specific human language -- the genuine criticism concerns whether convincing conversational imitation actually reflects true understanding, unrelated to any particular language requirement."
+        },
+        {
+          "text": "Because passing the Turing test requires a machine to physically move around a room",
+          "isCorrect": false,
+          "feedback": "The classic Turing test is centered on CONVERSATIONAL behavior, typically through text -- it doesn't require any physical movement around a room."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "A machine passes this classic test when a human judge chatting with it can't reliably tell it apart from a real person.",
+        "medium": "This test evaluates whether a machine's conversational behavior can be reliably told apart from a human's, by a human judge.",
+        "hard": "Think about a human judge trying to guess which of two conversation partners is a machine and which is a real person."
+      },
+      "medium": {
+        "easy": "If the judge simply can't reliably guess which partner is the machine, that counts as a win for the machine in this scenario.",
+        "medium": "The judge failing to reliably tell the machine and human apart is exactly what counts as passing this test.",
+        "hard": "Think about what it would take for the judge to genuinely be fooled into not knowing which is which."
+      },
+      "hard": {
+        "easy": "Critics point out that a system could fake its way through a convincing chat using clever pattern-matching alone, without anything like real understanding going on underneath.",
+        "medium": "Some argue a machine could produce convincing conversational patterns without actually possessing genuine understanding or reasoning at all.",
+        "hard": "Think about whether convincingly imitating a conversation truly proves that real understanding is happening underneath."
+      }
+    }
+  },
+  {
+    "topic": "the halting problem",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does the 'halting problem' in computer science ask?",
+      "options": [
+        {
+          "text": "Whether it's possible to create a general algorithm that can always correctly determine, for any given program and input, whether that program will eventually finish running or continue forever",
+          "isCorrect": true,
+          "feedback": "Correct -- the halting problem is a famous theoretical question about the fundamental limits of what can be determined algorithmically about other programs."
+        },
+        {
+          "text": "Whether a specific computer's hardware will physically overheat during use",
+          "isCorrect": false,
+          "feedback": "The halting problem is a theoretical question about program behavior and computability -- it isn't about a computer's physical hardware temperature."
+        },
+        {
+          "text": "Whether a specific website will ever go offline",
+          "isCorrect": false,
+          "feedback": "The halting problem specifically concerns whether a program will finish running or continue forever, a theoretical computability question, not whether a website goes offline."
+        },
+        {
+          "text": "Whether a given piece of software contains any spelling errors in its user interface text",
+          "isCorrect": false,
+          "feedback": "The halting problem is about a program's fundamental execution behavior (whether it finishes or runs forever), not about spelling errors in an interface's displayed text."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is the well-known conclusion regarding the halting problem, first proven by Alan Turing?",
+      "options": [
+        {
+          "text": "It is provably impossible to create a single general algorithm that can correctly solve the halting problem for every possible program and input",
+          "isCorrect": true,
+          "feedback": "Correct -- this is a landmark result in computer science, showing that there are fundamental limits to what can be determined algorithmically, even in principle."
+        },
+        {
+          "text": "It has been definitively proven that such a general algorithm absolutely does exist and has already been built",
+          "isCorrect": false,
+          "feedback": "This is the opposite of Turing's actual result -- he proved that no such general algorithm CAN exist, not that one has been successfully built."
+        },
+        {
+          "text": "The halting problem was proven trivially easy to solve using basic arithmetic",
+          "isCorrect": false,
+          "feedback": "The halting problem is famously proven to be UNSOLVABLE in general -- it's not a trivial arithmetic problem with an easy known solution."
+        },
+        {
+          "text": "The halting problem only applies to programs written before the year 1980",
+          "isCorrect": false,
+          "feedback": "The halting problem is a general theoretical result applying to programs and computation broadly -- it isn't limited to programs written before some specific historical date."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is the halting problem's proven unsolvability considered significant for computer science more broadly, beyond just the specific question of whether a program halts?",
+      "options": [
+        {
+          "text": "It demonstrates that there are fundamental, provable limits to what can be determined algorithmically about programs in general, which has broader implications for understanding the theoretical boundaries of automated program analysis and verification",
+          "isCorrect": true,
+          "feedback": "Correct -- this result has influenced how computer scientists think about the fundamental theoretical limits of what can be automatically verified or analyzed about arbitrary programs, beyond just the halting question itself."
+        },
+        {
+          "text": "Because it proves that computers can never perform any useful calculations whatsoever",
+          "isCorrect": false,
+          "feedback": "Computers clearly can and do perform enormous numbers of useful calculations every day -- the halting problem's significance is about a SPECIFIC, narrower kind of fundamental limitation on algorithmic determinability, not a blanket claim that computation itself is useless."
+        },
+        {
+          "text": "Because it means every computer program ever written contains an undetectable bug",
+          "isCorrect": false,
+          "feedback": "The halting problem doesn't imply every single program contains an undetectable bug -- it specifically concerns the impossibility of a general algorithm that could correctly determine halting behavior for ALL possible programs and inputs."
+        },
+        {
+          "text": "Because it shows that no programming language can ever be successfully created",
+          "isCorrect": false,
+          "feedback": "Countless programming languages have clearly been successfully created and used -- the halting problem's significance concerns a specific theoretical limit on algorithmic determinability, not the feasibility of creating programming languages at all."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's asking whether one universal method could ever exist that reliably tells you, for absolutely any program, whether it will stop or loop forever.",
+        "medium": "The question here is whether some single method could reliably tell, for any program you hand it, if that program eventually stops or keeps running forever.",
+        "hard": "Think about trying to predict, in general, whether any given program will ever actually finish running."
+      },
+      "medium": {
+        "easy": "Turing proved that no single universal method could ever pull this off correctly for every possible program out there -- it's simply not achievable.",
+        "medium": "It's been proven that no single universal method can correctly handle this question for every possible program and input you could throw at it.",
+        "hard": "Think about a landmark theoretical result showing that a certain kind of general prediction method simply cannot exist."
+      },
+      "hard": {
+        "easy": "It shows there's a hard ceiling on what any algorithm could ever figure out about other programs in general, which matters a lot for tools that try to automatically check or verify code.",
+        "medium": "It shows there's a hard, provable ceiling on what any algorithm could ever figure out about other programs, not just for this one particular question.",
+        "hard": "Think about what this result reveals about the fundamental boundaries of what ANY algorithm could ever determine about other programs in general."
+      }
+    }
+  },
+  {
+    "topic": "computability",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In theoretical computer science, what does 'computability' generally study?",
+      "options": [
+        {
+          "text": "Which problems can, in principle, be solved by some algorithm at all, regardless of how much time or memory that algorithm might require",
+          "isCorrect": true,
+          "feedback": "Correct -- computability theory focuses on the fundamental question of whether a solution exists at all algorithmically, separate from questions of practical efficiency."
+        },
+        {
+          "text": "How fast a specific computer's processor runs, measured in gigahertz",
+          "isCorrect": false,
+          "feedback": "Processor clock speed is a hardware performance measurement -- computability specifically studies which problems CAN be solved by an algorithm in principle, a more fundamental, theoretical question."
+        },
+        {
+          "text": "Whether a particular algorithm has already been implemented in a popular programming language",
+          "isCorrect": false,
+          "feedback": "Computability is about whether a solvable procedure could exist in principle -- it doesn't depend on whether someone has actually implemented it in a specific language yet."
+        },
+        {
+          "text": "Whether a problem has already been proven using a formal mathematical proof",
+          "isCorrect": false,
+          "feedback": "Computability concerns whether an algorithm could exist for a problem at all -- that's a distinct question from whether a particular proof about it has already been written."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does 'computability' differ from 'computational complexity' (which is often studied alongside it)?",
+      "options": [
+        {
+          "text": "Computability asks WHETHER a problem can be solved by any algorithm at all, while computational complexity asks HOW EFFICIENTLY a solvable problem can be solved, in terms of time or memory required",
+          "isCorrect": true,
+          "feedback": "Correct -- these are related but distinct questions: one is about fundamental solvability, and the other is about the practical cost of achieving that solution."
+        },
+        {
+          "text": "Computability and computational complexity are simply two different names describing the exact identical theoretical question",
+          "isCorrect": false,
+          "feedback": "They address genuinely different, though related, theoretical questions -- one about fundamental solvability, the other about the efficiency of a solution."
+        },
+        {
+          "text": "Computability determines whether a solution merely exists, while computational complexity determines whether that solution is correct",
+          "isCorrect": false,
+          "feedback": "Correctness is a separate concern from both -- computational complexity specifically asks how EFFICIENTLY an already-known-to-be-correct solution can run, not whether it's correct."
+        },
+        {
+          "text": "Computability is an older field that has been entirely replaced by computational complexity today",
+          "isCorrect": false,
+          "feedback": "Both fields are still active areas of study today -- computability and computational complexity address different, complementary questions rather than one having replaced the other."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "The halting problem is a classic example used within the study of computability. Why is it specifically relevant to this particular field, as opposed to being a question about computational efficiency?",
+      "options": [
+        {
+          "text": "The halting problem is fundamentally about whether a certain kind of question can be answered by ANY algorithm at all, making it a question about solvability itself, rather than about how quickly or efficiently an already-solvable problem could be solved",
+          "isCorrect": true,
+          "feedback": "Correct -- because the halting problem is proven to be entirely unsolvable by any algorithm, it sits squarely within computability theory's focus on fundamental solvability, rather than within computational complexity's focus on the efficiency of already-solvable problems."
+        },
+        {
+          "text": "Because the halting problem specifically measures how many seconds a particular algorithm takes to run",
+          "isCorrect": false,
+          "feedback": "Measuring exact runtime in seconds would be more characteristic of an efficiency-focused study -- the halting problem is instead about fundamental SOLVABILITY, which is precisely why it belongs to computability theory rather than efficiency-focused complexity theory."
+        },
+        {
+          "text": "Because the halting problem is actually a question about efficiency, asking how quickly a solution could be found if one existed",
+          "isCorrect": false,
+          "feedback": "The halting problem is about whether a solution can exist AT ALL, not about how quickly one could run -- that distinction is precisely why it belongs to computability rather than complexity theory."
+        },
+        {
+          "text": "Because the halting problem was solved efficiently using a well-known fast algorithm",
+          "isCorrect": false,
+          "feedback": "The halting problem has actually been proven to be UNSOLVABLE by any general algorithm at all -- it wasn't solved efficiently, which is exactly why it's such a significant and famous result within computability theory."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This area of study cares only about whether a solution exists in principle at all, setting aside entirely how long or how much memory it might take.",
+        "medium": "This field is concerned with whether some algorithm could solve a problem at all, setting time and memory limits completely aside.",
+        "hard": "Think about asking a totally different kind of question than 'how fast' -- something more fundamental about whether a solution could even exist, given unlimited time."
+      },
+      "medium": {
+        "easy": "One field asks the yes-or-no question of whether a solution can exist at all; a separate field only kicks in afterward, asking how efficiently that existing solution can run.",
+        "medium": "One question is about fundamental solvability; the other is about how efficiently an already-solvable problem can actually be solved.",
+        "hard": "Think about the difference between asking 'can this be done at all?' versus 'how quickly or efficiently can this be done?'"
+      },
+      "hard": {
+        "easy": "Since this classic example is about whether an answer can be found by any method whatsoever -- and it turns out none can -- it sits squarely in the solvability camp rather than the efficiency camp.",
+        "medium": "This classic example turns on whether an answer can be produced by any algorithm whatsoever, which is exactly the kind of fundamental solvability question this field studies.",
+        "hard": "Think about whether this classic example is fundamentally about 'can it be solved at all', or 'how fast can it be solved'."
+      }
+    }
+  },
+  {
+    "topic": "artificial neural networks",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is an 'artificial neural network', broadly speaking?",
+      "options": [
+        {
+          "text": "A computing model loosely inspired by the structure of biological brains, made up of interconnected layers of simple processing units ('neurons')",
+          "isCorrect": true,
+          "feedback": "Correct -- artificial neural networks are structured around interconnected nodes, loosely inspired by biological neurons, that pass and transform signals through connected layers."
+        },
+        {
+          "text": "A physical network of actual biological neurons extracted from an animal's brain",
+          "isCorrect": false,
+          "feedback": "An artificial neural network is a computational model INSPIRED BY biological neurons -- it doesn't literally consist of actual extracted biological neurons."
+        },
+        {
+          "text": "A type of statistical formula used only to calculate simple averages across a large dataset",
+          "isCorrect": false,
+          "feedback": "That describes a basic statistical calculation, not a neural network -- a neural network is a layered computing model loosely inspired by how neurons in a brain connect."
+        },
+        {
+          "text": "A physical cable used to connect multiple computers in a local network",
+          "isCorrect": false,
+          "feedback": "An artificial neural network refers to a computational MODEL loosely inspired by brain structure -- it isn't a physical network cable."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In an artificial neural network, what is the general role of the connections ('weights') between the simple processing units?",
+      "options": [
+        {
+          "text": "They determine how strongly a signal from one unit influences the units it's connected to, and adjusting these weights through training is how the network 'learns'",
+          "isCorrect": true,
+          "feedback": "Correct -- the process of iteratively adjusting these weighted connections, based on training data, is central to how many artificial neural networks improve their performance on a given task over time."
+        },
+        {
+          "text": "They physically wire different computers together across a room",
+          "isCorrect": false,
+          "feedback": "These weighted connections are internal, mathematical relationships within the computational model -- they aren't physical cables wiring separate computers together across a room."
+        },
+        {
+          "text": "They represent how much memory the network needs to store its training data",
+          "isCorrect": false,
+          "feedback": "These connection strengths control how much one unit's signal influences another -- they aren't a measure of the memory needed to store training data."
+        },
+        {
+          "text": "They are fixed permanently at the network's creation and can never be changed afterward",
+          "isCorrect": false,
+          "feedback": "These weighted connections are typically ADJUSTED during a process called training -- they're generally not fixed permanently and unchangeable from the moment of creation."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why are artificial neural networks with many stacked layers (an approach often called 'deep learning') able to model especially complex patterns, compared to networks with just a single simple layer?",
+      "options": [
+        {
+          "text": "Additional layers allow the network to learn increasingly abstract, higher-level representations of the input data, building on simpler patterns detected in earlier layers",
+          "isCorrect": true,
+          "feedback": "Correct -- this layered, hierarchical structure of increasingly abstract representations is a key reason deep neural networks have proven so effective at handling complex tasks like image or speech recognition."
+        },
+        {
+          "text": "Because additional layers mostly just make the network run faster on the same hardware, without changing what it's able to learn",
+          "isCorrect": false,
+          "feedback": "Additional layers primarily change what the network CAN represent and learn -- increasingly abstract patterns -- rather than simply making existing computations run faster."
+        },
+        {
+          "text": "Because having more layers guarantees the network will never make an incorrect prediction",
+          "isCorrect": false,
+          "feedback": "Additional layers can improve a network's ability to model complex patterns, but they don't provide any absolute guarantee against ever making an incorrect prediction."
+        },
+        {
+          "text": "Because additional layers mostly just take up more storage space, without providing any real learning benefit",
+          "isCorrect": false,
+          "feedback": "Additional layers do use more resources, but their real purpose is enabling the network to represent increasingly abstract patterns -- it isn't merely wasted storage with no learning benefit."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Loosely borrowing the idea of connected brain cells, this computing approach stacks up layers of simple units that pass signals to each other.",
+        "medium": "This system is built from layers of simple units wired together, echoing -- in a rough, simplified way -- how neurons connect inside a biological brain.",
+        "hard": "Think about a computing approach loosely modeled after how neurons in a brain are structured and connected."
+      },
+      "medium": {
+        "easy": "These connection strengths control how much influence one unit's output has on the next, and tweaking them during training is literally how the whole system improves.",
+        "medium": "How strongly a signal carries from one unit to the next is controlled by these connection values, and shifting them over time is the mechanism behind the network's learning.",
+        "hard": "Think about how strongly one unit's signal actually influences the next unit it's connected to."
+      },
+      "hard": {
+        "easy": "Each added layer can combine what earlier layers already noticed into bigger, more abstract ideas, which is why depth helps with genuinely complex patterns.",
+        "medium": "Each new layer builds on what previous ones already picked up on, letting the network represent progressively more abstract concepts the more of them you stack together.",
+        "hard": "Think about building up increasingly complex, abstract ideas out of simpler ones detected earlier in the process."
+      }
+    }
+  },
+  {
+    "topic": "natural language processing",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'natural language processing' (NLP) generally concerned with?",
+      "options": [
+        {
+          "text": "Enabling computers to process, analyze, and generate human language, such as text or speech",
+          "isCorrect": true,
+          "feedback": "Correct -- NLP is a field within computer science and artificial intelligence focused specifically on working with human language."
+        },
+        {
+          "text": "Enabling computers to physically translate written documents into braille",
+          "isCorrect": false,
+          "feedback": "Producing braille is a specific accessibility application, not the general definition of natural language processing, which broadly concerns computers working with human language."
+        },
+        {
+          "text": "Automatically translating any human language directly into programming code",
+          "isCorrect": false,
+          "feedback": "NLP is about processing and generating human language itself -- translating language into programming code isn't what the field is generally about."
+        },
+        {
+          "text": "Compressing audio and video files so they take up less storage space",
+          "isCorrect": false,
+          "feedback": "Compressing audio or video is a separate media-processing concern -- NLP is specifically about processing and generating human language like text or speech."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is processing human language a particularly challenging task for computers, compared to processing more strictly structured data like numbers in a spreadsheet?",
+      "options": [
+        {
+          "text": "Human language is often ambiguous, context-dependent, and full of nuance, idioms, and varying structure, making it much harder to interpret reliably than strictly structured, unambiguous numeric data",
+          "isCorrect": true,
+          "feedback": "Correct -- this inherent complexity and ambiguity of natural human language is exactly why natural language processing has historically been, and continues to be, such a challenging and active area of research."
+        },
+        {
+          "text": "Because human language always follows completely fixed grammatical rules with no exceptions",
+          "isCorrect": false,
+          "feedback": "Human language is actually full of irregularities and exceptions to its grammatical rules -- that inconsistency is part of why it's harder to process reliably than structured numeric data, not a sign of it being perfectly rule-bound."
+        },
+        {
+          "text": "Because human language rarely changes over time, unlike numeric data formats which update frequently",
+          "isCorrect": false,
+          "feedback": "Human language actually evolves constantly -- new slang, idioms, and usage patterns emerge all the time, which is part of what makes it hard to process reliably, not a fixed target."
+        },
+        {
+          "text": "Because numeric data is actually just as ambiguous and context-dependent as human language",
+          "isCorrect": false,
+          "feedback": "Structured numeric data is generally far less ambiguous than human language -- that relative lack of ambiguity is exactly what makes it easier to process reliably."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might understanding context be especially important for a natural language processing system trying to correctly interpret a word with multiple possible meanings (such as 'bank', which could refer to a riverbank or a financial institution)?",
+      "options": [
+        {
+          "text": "Without considering the surrounding words and overall context, the system risks selecting the wrong meaning, since the correct interpretation often depends heavily on how the word is being used in that specific instance",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of contextual ambiguity is a classic, well-known challenge in natural language processing, and effectively resolving it usually requires considering much more than just the isolated word itself."
+        },
+        {
+          "text": "Because every word in every human language only ever has exactly one single possible meaning",
+          "isCorrect": false,
+          "feedback": "Many words in human language actually DO have multiple possible meanings depending on context -- that's precisely the challenge being described here, not a claim that words only ever have one meaning."
+        },
+        {
+          "text": "Because considering context always slows down a natural language processing system so much that it becomes unusable",
+          "isCorrect": false,
+          "feedback": "While incorporating context does add complexity, it's what allows for more accurate interpretation -- the value of considering context significantly outweighs simply ignoring it, rather than making the system unusable."
+        },
+        {
+          "text": "Because context is only relevant when processing languages other than English",
+          "isCorrect": false,
+          "feedback": "Contextual ambiguity in word meaning is a challenge across many different human languages, not one limited specifically to languages other than English."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This field is all about getting computers to make sense of and produce ordinary human language, spoken or written.",
+        "medium": "This field centers on getting machines to work with everyday human language -- reading it, making sense of it, and even producing it themselves, in text or speech.",
+        "hard": "Think about a computer trying to understand and work with ordinary human language, like text or spoken words."
+      },
+      "medium": {
+        "easy": "Everyday language bends and shifts meaning depending on context and phrasing, which is a much messier problem than crunching tidy, well-defined numbers.",
+        "medium": "Everyday language is loaded with nuance and shifting meaning depending on context, which makes it a much messier target than clean, well-defined numeric data.",
+        "hard": "Think about how messy and context-dependent everyday language can be, compared to clean rows of numbers in a spreadsheet."
+      },
+      "hard": {
+        "easy": "Looking at the words around it is what tells you which of several possible meanings actually applies in that particular sentence.",
+        "medium": "Without considering the surrounding words, the system risks picking the wrong one of several possible meanings for that word.",
+        "hard": "Think about a single word that could mean two very different things, depending entirely on the sentence surrounding it."
+      }
+    }
+  },
+  {
+    "topic": "bitwise operations",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'bitwise operation' in programming?",
+      "options": [
+        {
+          "text": "An operation that directly manipulates individual bits (the 0s and 1s) making up a value, rather than treating the value as a whole number",
+          "isCorrect": true,
+          "feedback": "Correct -- bitwise operations like AND, OR, and XOR work directly on a value's underlying binary representation, bit by bit."
+        },
+        {
+          "text": "An operation that can only be performed on text data, never on numbers",
+          "isCorrect": false,
+          "feedback": "Bitwise operations specifically manipulate the underlying binary representation of a value, which is commonly applied to NUMERIC data, not exclusively text."
+        },
+        {
+          "text": "An operation used exclusively for formatting a document's visual appearance",
+          "isCorrect": false,
+          "feedback": "Bitwise operations manipulate binary representations of data at a low level -- they aren't a tool for formatting a document's visual appearance."
+        },
+        {
+          "text": "An operation that physically rewires a computer's internal circuitry",
+          "isCorrect": false,
+          "feedback": "A bitwise operation is a software-level operation on data's binary representation -- it doesn't involve physically rewiring a computer's actual internal circuitry."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What does a bitwise 'AND' operation do when applied to two binary values?",
+      "options": [
+        {
+          "text": "It compares the values bit by bit, producing a 1 in each position only where both corresponding bits are 1",
+          "isCorrect": true,
+          "feedback": "Correct -- this bit-by-bit comparison is a fundamental building block for many low-level operations, such as masking specific bits within a value."
+        },
+        {
+          "text": "It compares the values bit by bit, producing a 1 in each position where at least one of the corresponding bits is 1",
+          "isCorrect": false,
+          "feedback": "That describes a bitwise OR operation -- a bitwise AND specifically requires BOTH corresponding bits to be 1 in order to produce a 1 in that position."
+        },
+        {
+          "text": "It reverses every single bit in both values, flipping every 0 to a 1 and every 1 to a 0",
+          "isCorrect": false,
+          "feedback": "That describes a bitwise NOT operation applied individually -- a bitwise AND specifically combines two values together bit by bit, rather than flipping bits in just one value."
+        },
+        {
+          "text": "It adds the two binary values together using standard binary addition rules",
+          "isCorrect": false,
+          "feedback": "Standard binary addition is a separate arithmetic operation -- a bitwise AND instead performs a bit-by-bit logical comparison, not numeric addition."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a programmer use bitwise operations to efficiently pack and check several true/false flags together within a single integer variable, rather than using several separate boolean variables?",
+      "options": [
+        {
+          "text": "Bitwise operations allow individual bits within one integer to represent separate flags compactly, and specific bits can be efficiently set, cleared, or checked using operations like AND, OR, and shifts, often using less memory than several separate variables",
+          "isCorrect": true,
+          "feedback": "Correct -- this technique, sometimes called using a value as a 'bitmask', can be a compact and efficient way to represent and manipulate multiple boolean flags together, particularly valuable in memory-constrained or performance-sensitive contexts."
+        },
+        {
+          "text": "Because using several separate boolean variables is against the rules in every programming language",
+          "isCorrect": false,
+          "feedback": "Using separate boolean variables is a perfectly valid and extremely common approach in virtually every programming language -- packing flags into bits using bitwise operations is instead a specific, situational EFFICIENCY technique, not a mandatory requirement."
+        },
+        {
+          "text": "Because bitwise operations can only be used to store a single flag at a time",
+          "isCorrect": false,
+          "feedback": "Bitwise operations, particularly used together as a bitmask, can actually represent and manipulate MULTIPLE flags packed together within one single integer -- they aren't limited to storing just a single flag."
+        },
+        {
+          "text": "Because packing flags using bitwise operations guarantees a program will never contain a single bug",
+          "isCorrect": false,
+          "feedback": "Using bitwise operations for flag packing is a memory-efficiency and performance technique -- it doesn't provide any guarantee against a program containing other kinds of bugs."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This kind of operation reaches into the 0s and 1s that make up a value directly, rather than treating that value as a single combined number.",
+        "medium": "This kind of operation directly manipulates individual bits making up a value, instead of treating that value as a whole number.",
+        "hard": "Think about working directly with a value's individual 0s and 1s, rather than treating it as one whole number."
+      },
+      "medium": {
+        "easy": "Only positions where both values already have a 1 end up as 1 in the result -- everywhere else comes out 0.",
+        "medium": "This produces a result bit only where BOTH corresponding input bits are set to 1.",
+        "hard": "Think about requiring BOTH of two corresponding positions to match a specific condition before producing a particular result."
+      },
+      "hard": {
+        "easy": "Instead of many separate variables, a whole set of on/off flags can live inside the individual bits of one number, and specific ones can be flipped or checked directly.",
+        "medium": "Individual bits within one number can compactly represent several separate flags, each one efficiently set, cleared, or checked.",
+        "hard": "Think about squeezing several separate yes/no switches together into the individual bits of just one single number."
+      }
+    }
+  },
+  {
+    "topic": "big-endian vs little-endian",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What do the terms 'big-endian' and 'little-endian' generally describe in computing?",
+      "options": [
+        {
+          "text": "Two different conventions for the order in which the individual bytes of a multi-byte value are stored in a computer's memory",
+          "isCorrect": true,
+          "feedback": "Correct -- these two conventions describe whether the most significant or least significant byte of a value is stored first in memory."
+        },
+        {
+          "text": "Two different methods for compressing image files",
+          "isCorrect": false,
+          "feedback": "Big-endian and little-endian concern the ORDER bytes are stored in memory -- they aren't methods for compressing image files."
+        },
+        {
+          "text": "Two different network protocols used for sending email",
+          "isCorrect": false,
+          "feedback": "These terms describe a low-level memory storage convention for multi-byte values -- they aren't email transmission protocols."
+        },
+        {
+          "text": "Two different character encoding standards for representing text",
+          "isCorrect": false,
+          "feedback": "Byte order conventions govern how multi-byte VALUES are stored in memory -- they're a distinct concept from character encodings like ASCII or Unicode."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is the key distinguishing difference between 'big-endian' and 'little-endian' byte order?",
+      "options": [
+        {
+          "text": "Big-endian stores the most significant byte of a value first, while little-endian stores the least significant byte first",
+          "isCorrect": true,
+          "feedback": "Correct -- this is the defining distinction, and it can matter significantly when different systems using different conventions need to correctly exchange or interpret the same binary data."
+        },
+        {
+          "text": "Big-endian is the standard used by all modern processors, while little-endian is now obsolete and unused",
+          "isCorrect": false,
+          "feedback": "Both conventions remain in active use today across different processor architectures and file formats -- neither one has become obsolete."
+        },
+        {
+          "text": "Big-endian and little-endian are simply two different names describing the exact identical byte-ordering convention",
+          "isCorrect": false,
+          "feedback": "They describe genuinely different, opposite conventions for byte order -- one starting with the most significant byte, the other with the least significant byte."
+        },
+        {
+          "text": "Big-endian stores a value using more total bits than little-endian does for the same value",
+          "isCorrect": false,
+          "feedback": "Both conventions store the exact same number of bits for a given value -- they only differ in the ORDER those bytes are arranged in, not the total amount of data stored."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why does the difference between big-endian and little-endian byte order matter when two different computer systems need to exchange binary data directly?",
+      "options": [
+        {
+          "text": "If one system writes multi-byte data using one byte order convention and the other reads it assuming the opposite convention, the resulting value can be misinterpreted, producing incorrect data",
+          "isCorrect": true,
+          "feedback": "Correct -- this is why network protocols and file formats intended to work reliably across different kinds of systems often specify a particular, agreed-upon byte order (sometimes called 'network byte order') to avoid this kind of misinterpretation."
+        },
+        {
+          "text": "Because using different byte order conventions makes it physically impossible for two computers to ever connect over a network at all",
+          "isCorrect": false,
+          "feedback": "Two computers with different byte order conventions can still physically connect and communicate over a network -- the practical concern is specifically about correctly INTERPRETING exchanged multi-byte values, not an inability to connect at all."
+        },
+        {
+          "text": "Because byte order conventions are only a legacy concern for very old computers, and no longer matter for modern software",
+          "isCorrect": false,
+          "feedback": "Byte order still matters today, especially whenever data is exchanged between different systems or architectures -- it isn't a purely historical concern that no longer applies."
+        },
+        {
+          "text": "Because a checksum will automatically fix any byte order mismatch before the data is used",
+          "isCorrect": false,
+          "feedback": "A checksum can detect that data was corrupted, but it doesn't correct a byte order mismatch -- avoiding the mismatch requires both systems to agree on the same byte order in the first place."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This describes the two different orderings computers can use to lay out the individual bytes of a multi-byte value in memory.",
+        "medium": "These are two opposite rules for deciding, when a value spans several bytes, which one gets placed into memory first.",
+        "hard": "Think about two different ways you could physically arrange a number's building blocks in memory, starting from either end."
+      },
+      "medium": {
+        "easy": "One convention writes the 'biggest' byte down first; the other convention starts with the 'smallest' byte instead.",
+        "medium": "One scheme leads with the byte holding the largest place value; the other scheme leads with the byte holding the smallest.",
+        "hard": "Think about which byte -- the 'most important' one or the 'least important' one -- gets placed first."
+      },
+      "hard": {
+        "easy": "When the writer and reader disagree about which byte comes first, the number gets reconstructed completely wrong, which is exactly why shared data formats usually pick one convention and stick to it.",
+        "medium": "If the two systems disagree on which byte comes first, the resulting interpreted value can come out completely wrong.",
+        "hard": "Think about two people reading the exact same sequence of digits, but assuming opposite reading directions."
+      }
+    }
+  },
+  {
+    "topic": "parity bits and checksums",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of a 'checksum' when transmitting or storing data?",
+      "options": [
+        {
+          "text": "To help detect whether the data has been accidentally corrupted or altered, by comparing a computed summary value against an expected one",
+          "isCorrect": true,
+          "feedback": "Correct -- a checksum is a value calculated from the data itself, and comparing it before and after transmission or storage can reveal whether the data was accidentally changed."
+        },
+        {
+          "text": "To encrypt data so that only an authorized recipient can read it",
+          "isCorrect": false,
+          "feedback": "Encryption is a separate security mechanism aimed at confidentiality -- a checksum's specific purpose is detecting accidental data corruption, not encrypting content for confidentiality."
+        },
+        {
+          "text": "To permanently compress a file to reduce its total storage size",
+          "isCorrect": false,
+          "feedback": "A checksum is a small value used for verifying data integrity -- it isn't a method for compressing and reducing a file's overall storage size."
+        },
+        {
+          "text": "To physically repair a damaged storage device",
+          "isCorrect": false,
+          "feedback": "A checksum helps DETECT that data may have been corrupted -- it doesn't physically repair damaged storage hardware."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is a simple 'parity bit', and what is its basic role in error detection?",
+      "options": [
+        {
+          "text": "An extra bit added to a group of data bits, set so that the total count of 1-bits (including the parity bit itself) is either always even or always odd, helping detect certain simple errors",
+          "isCorrect": true,
+          "feedback": "Correct -- if the parity doesn't match the expected even or odd pattern after transmission, it signals that at least one bit was likely flipped somewhere along the way."
+        },
+        {
+          "text": "A bit that permanently disables a computer's storage device",
+          "isCorrect": false,
+          "feedback": "A parity bit is specifically an error-detection mechanism added to data -- it doesn't function to disable a storage device."
+        },
+        {
+          "text": "A bit used exclusively to store a file's creation date",
+          "isCorrect": false,
+          "feedback": "A parity bit specifically supports basic error detection related to the surrounding data bits -- it isn't used for storing something like a file's creation date."
+        },
+        {
+          "text": "A bit that automatically encrypts all of a file's other bits",
+          "isCorrect": false,
+          "feedback": "A parity bit's role is basic error DETECTION through a simple count-based check -- it doesn't perform encryption on the surrounding data."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can a simple parity bit fail to detect certain kinds of errors, such as when exactly two bits within the same group happen to flip during transmission?",
+      "options": [
+        {
+          "text": "Because flipping exactly two bits can leave the overall count of 1-bits at the same even or odd status as before, meaning the parity check would appear valid even though the data was actually altered",
+          "isCorrect": true,
+          "feedback": "Correct -- this specific limitation of simple parity checking is a key reason more robust error-detection techniques, like more sophisticated checksums or error-correcting codes, are often used in situations demanding stronger error detection reliability."
+        },
+        {
+          "text": "Because a parity bit can only ever be applied to text data, never to any other type of data",
+          "isCorrect": false,
+          "feedback": "A parity bit can be applied broadly to binary data representing many different types of information -- the actual limitation being described here is about detecting a SPECIFIC PATTERN of errors (an even number of flipped bits), not a restriction to text data."
+        },
+        {
+          "text": "Because a parity bit is recalculated correctly only once per day",
+          "isCorrect": false,
+          "feedback": "A parity bit is calculated fresh for each relevant piece of data being checked, not limited to being recalculated only once per day -- the actual limitation is about a specific PATTERN of errors it can miss, not calculation frequency."
+        },
+        {
+          "text": "Because two-bit errors are physically impossible to occur in any real computer system",
+          "isCorrect": false,
+          "feedback": "Two-bit errors, while perhaps less common than single-bit errors in some contexts, are certainly not physically impossible -- that's precisely why this scenario represents a genuine, meaningful limitation of simple parity checking."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "A small summary value gets computed from the data, and comparing it later against what's expected reveals whether anything got quietly corrupted.",
+        "medium": "By comparing a freshly computed value against what was expected, this technique can flag data that got silently altered or damaged along the way.",
+        "hard": "Think about computing a small summary value from data, so you can check later whether that data still matches."
+      },
+      "medium": {
+        "easy": "Whenever the total number of 1-bits, counting this extra bit, doesn't come out even (or odd, depending on the scheme), that mismatch signals something went wrong.",
+        "medium": "This extra bit gets set so that, counting it along with the rest, the total number of 1-bits always lands on the same parity -- consistently even, or consistently odd.",
+        "hard": "Think about tacking on one extra signal that's set based on a simple property of all the other bits combined, so a checker can later spot if something doesn't add up."
+      },
+      "hard": {
+        "easy": "If two bits happen to flip at once, they can cancel each other's effect on the overall count, so this basic check has no way of noticing anything changed.",
+        "medium": "Two flipped bits can leave the overall even/odd count of 1-bits unchanged, letting the error slip past this simple check undetected.",
+        "hard": "Think about two separate flips canceling each other out, leaving the overall count exactly where it started."
+      }
+    }
+  },
+  {
+    "topic": "data compression",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of 'data compression'?",
+      "options": [
+        {
+          "text": "Reducing the size of data so it takes up less storage space or transmits more quickly, while still allowing the original information to be reconstructed (fully or approximately)",
+          "isCorrect": true,
+          "feedback": "Correct -- compression techniques encode data more compactly, saving storage space and transmission time."
+        },
+        {
+          "text": "Permanently deleting a file so it can never be recovered",
+          "isCorrect": false,
+          "feedback": "Data compression is about REDUCING a file's size while preserving its recoverable information -- it isn't about permanently deleting data with no way to recover it."
+        },
+        {
+          "text": "Encrypting a file so only an authorized person can read it",
+          "isCorrect": false,
+          "feedback": "Encryption is a separate security-focused technique aimed at confidentiality -- compression instead focuses on reducing size, not restricting who can read the content."
+        },
+        {
+          "text": "Physically making a computer's hard drive smaller in size",
+          "isCorrect": false,
+          "feedback": "Data compression reduces the LOGICAL size of stored data -- it doesn't physically shrink a hard drive's actual hardware dimensions."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is the key difference between 'lossless' and 'lossy' data compression?",
+      "options": [
+        {
+          "text": "Lossless compression allows the original data to be perfectly reconstructed exactly as it was, while lossy compression permanently discards some information to achieve greater size reduction",
+          "isCorrect": true,
+          "feedback": "Correct -- lossy compression (commonly used for things like some image or audio formats) trades off perfect fidelity for a smaller resulting file size, while lossless compression preserves every bit of the original data."
+        },
+        {
+          "text": "Lossless compression always makes a file larger, while lossy compression always makes a file smaller",
+          "isCorrect": false,
+          "feedback": "Both lossless and lossy compression are specifically intended to REDUCE a file's size -- lossless doesn't inherently make a file larger; the real distinction between them is about perfect reconstruction versus permanently discarded information."
+        },
+        {
+          "text": "Lossless compression and lossy compression are simply two different names for the exact identical process",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different approaches with a real, meaningful tradeoff -- one preserves all original information perfectly, the other permanently discards some of it."
+        },
+        {
+          "text": "Lossy compression can only be applied to text files, while lossless compression can only be applied to image files",
+          "isCorrect": false,
+          "feedback": "Both lossless and lossy approaches can be applied across various different types of data -- the actual distinguishing factor is about PERFECT reconstruction versus discarded information, not a restriction to specific file types."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a photo intended for casual online sharing commonly use a lossy compression format, while an important legal document might instead use a lossless compression approach (or no compression at all)?",
+      "options": [
+        {
+          "text": "For the photo, a small amount of imperceptible quality loss in exchange for a much smaller file size is often an acceptable tradeoff, whereas a legal document typically requires every detail to be preserved exactly, making any loss of information unacceptable",
+          "isCorrect": true,
+          "feedback": "Correct -- this contrast highlights how the appropriate compression approach often depends heavily on whether perfect fidelity to the original data is actually required for the specific use case at hand."
+        },
+        {
+          "text": "Because lossy compression is illegal to use for any type of image file",
+          "isCorrect": false,
+          "feedback": "Lossy compression is legal and extremely widely used for many kinds of images -- the actual consideration here is about the ACCEPTABLE TRADEOFF between file size and preserved detail for a given specific use case, not any legal restriction."
+        },
+        {
+          "text": "Because legal documents are physically incapable of being stored in any digital file format",
+          "isCorrect": false,
+          "feedback": "Legal documents are very commonly stored digitally -- the real consideration is about choosing compression that PRESERVES every detail exactly, given how critical accuracy is for that kind of document, not an inability to be stored digitally at all."
+        },
+        {
+          "text": "Because lossless compression always produces a smaller file than lossy compression",
+          "isCorrect": false,
+          "feedback": "This actually reverses the typical, well-known relationship -- lossy compression generally achieves SMALLER file sizes than lossless compression, precisely because it's willing to permanently discard some information to get there."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This process shrinks a file down for faster transfer or smaller storage, while still leaving a way to rebuild the original content, exactly or closely.",
+        "medium": "This process shrinks data down to save on storage or speed up transfers, all while keeping enough information around to rebuild it afterward.",
+        "hard": "Think about squeezing a file down to take up less space, while still being able to get the original information back."
+      },
+      "medium": {
+        "easy": "One method hands you back the exact original, bit for bit; the other throws away some information for good in exchange for shrinking the file further.",
+        "medium": "One approach reconstructs the original perfectly; the other permanently gives up some information to shrink the file size further.",
+        "hard": "Think about whether you get back the EXACT original, or something close to it but not perfectly identical."
+      },
+      "hard": {
+        "easy": "It comes down to whether losing a tiny, unnoticeable amount of detail is an acceptable price for a smaller file, or whether every single detail absolutely has to survive intact.",
+        "medium": "A small, likely unnoticeable quality tradeoff might be perfectly fine for a casual photo, but entirely unacceptable for a document where every detail truly matters.",
+        "hard": "Think about how much it matters whether every single tiny detail survives perfectly intact, depending on what the data is actually used for."
+      }
+    }
+  },
+  {
+    "topic": "virtual machines",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'virtual machine' (VM) in computing?",
+      "options": [
+        {
+          "text": "A software-based emulation of a computer system, allowing it to run its own operating system and programs as if it were a separate, physical machine",
+          "isCorrect": true,
+          "feedback": "Correct -- a virtual machine behaves like an independent computer, even though it's actually running as software on top of underlying physical hardware."
+        },
+        {
+          "text": "A physical robot that assembles computer hardware on a factory floor",
+          "isCorrect": false,
+          "feedback": "A virtual machine is a SOFTWARE-based emulation of a computer system -- it isn't a physical robot used in hardware manufacturing."
+        },
+        {
+          "text": "A brand of laptop computer sold in stores",
+          "isCorrect": false,
+          "feedback": "A virtual machine is a software concept for emulating a computer system, not a specific brand of physical laptop hardware."
+        },
+        {
+          "text": "A type of computer virus that spreads through email",
+          "isCorrect": false,
+          "feedback": "A virtual machine is a legitimate computing technology used for emulation and isolation -- it isn't inherently a type of malicious computer virus."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a developer use a virtual machine to test software intended for a different operating system than the one installed on their own physical computer?",
+      "options": [
+        {
+          "text": "The virtual machine can emulate that different operating system's environment, letting the developer test how the software behaves there without needing a separate physical computer running that other operating system",
+          "isCorrect": true,
+          "feedback": "Correct -- this flexibility to run and test multiple different operating system environments on one physical machine is a major practical benefit of virtual machines for developers and testers."
+        },
+        {
+          "text": "Because virtual machines are required by law for testing any commercial software",
+          "isCorrect": false,
+          "feedback": "There's no legal requirement mandating virtual machine use for software testing -- using a VM here is a practical convenience choice, not a legal mandate."
+        },
+        {
+          "text": "Because a virtual machine physically transforms one computer into two separate, entirely distinct physical machines",
+          "isCorrect": false,
+          "feedback": "A virtual machine doesn't physically split hardware into two literal separate physical machines -- it creates a software-based EMULATED environment running on top of the existing single physical machine."
+        },
+        {
+          "text": "Because virtual machines eliminate the need for any operating system to be installed at all",
+          "isCorrect": false,
+          "feedback": "A virtual machine actually runs its OWN operating system within its emulated environment -- it doesn't eliminate the need for one; rather, it enables running various different ones flexibly."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can running multiple virtual machines on a single physical server be an efficient way to make use of that server's hardware resources?",
+      "options": [
+        {
+          "text": "Multiple virtual machines can share the same underlying physical hardware, each utilizing a portion of its resources as needed, rather than requiring separate dedicated physical hardware for each individual workload",
+          "isCorrect": true,
+          "feedback": "Correct -- this ability to run multiple isolated environments on shared physical hardware is a major reason virtual machines became foundational to modern cloud computing infrastructure, improving hardware utilization efficiency."
+        },
+        {
+          "text": "Because virtual machines guarantee that a physical server can never fail or experience any hardware problems",
+          "isCorrect": false,
+          "feedback": "Virtual machines don't provide an absolute guarantee against underlying physical hardware failures -- their efficiency benefit is about SHARING hardware resources across multiple workloads, not eliminating hardware failure risk altogether."
+        },
+        {
+          "text": "Because each virtual machine physically adds more RAM chips to the server automatically",
+          "isCorrect": false,
+          "feedback": "A virtual machine doesn't automatically add PHYSICAL memory hardware to a server -- it shares and allocates a portion of the EXISTING physical resources already present."
+        },
+        {
+          "text": "Because running multiple virtual machines requires disconnecting the server from all networks",
+          "isCorrect": false,
+          "feedback": "Running virtual machines doesn't require disconnecting a server from networks -- in fact, VMs are commonly used specifically in networked, cloud-based server environments."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This creates a simulated machine, complete with its own operating system and programs, that acts and feels just like a genuine standalone computer.",
+        "medium": "This is a software layer that mimics an entire computer, convincingly enough that its own operating system runs inside it as though on real hardware.",
+        "hard": "Think about a computer running INSIDE another computer, behaving as if it were its own separate, independent machine."
+      },
+      "medium": {
+        "easy": "Because it can simulate that other operating system's environment, a developer gets to test there without ever buying separate hardware just for that purpose.",
+        "medium": "The emulated environment lets the developer test the software's behavior under that other operating system, without needing separate dedicated hardware for it.",
+        "hard": "Think about trying something out inside a safe, self-contained sandbox, without needing to buy or set up any extra physical equipment for it."
+      },
+      "hard": {
+        "easy": "Several separate, isolated workloads can all draw from the same underlying physical machine instead of each one needing its own dedicated box, which is what makes this so resource-efficient.",
+        "medium": "A number of these emulated systems can all draw from one shared pool of physical hardware, with each one claiming only the resources it actually needs at a given moment.",
+        "hard": "Think about several separate workloads sharing the same underlying physical hardware resources, instead of each needing its own dedicated machine."
+      }
+    }
+  },
+  {
+    "topic": "containerization (Docker)",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general idea behind 'containerization' in software deployment (popularized by tools like Docker)?",
+      "options": [
+        {
+          "text": "Packaging an application together with everything it needs to run (like its dependencies and configuration) into a single, portable unit called a 'container'",
+          "isCorrect": true,
+          "feedback": "Correct -- containerization aims to make an application run consistently across different computing environments by bundling it with its necessary dependencies."
+        },
+        {
+          "text": "Installing a completely separate operating system for every single application that needs to run",
+          "isCorrect": false,
+          "feedback": "That describes a full virtual machine's approach -- containerization instead bundles an application with its dependencies while sharing the host's existing operating system, rather than installing a whole separate OS per application."
+        },
+        {
+          "text": "Compressing an application's files into a single zip archive for easier storage",
+          "isCorrect": false,
+          "feedback": "Containerization does bundle files together, but it's about packaging a runnable application with everything it needs to execute, not simply compressing files into an archive for storage."
+        },
+        {
+          "text": "Automatically translating an application's code into a different programming language",
+          "isCorrect": false,
+          "feedback": "Containerization packages an application together with its existing dependencies as-is -- it doesn't translate or rewrite the application's code into a different language."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why does packaging an application's dependencies together with the application itself, as containerization does, help avoid the common 'it works on my machine' problem?",
+      "options": [
+        {
+          "text": "Because the container includes everything the application needs to run consistently, it's less likely to behave differently due to variations in the underlying environment's installed software or configuration",
+          "isCorrect": true,
+          "feedback": "Correct -- by bundling dependencies together with the application, containerization helps ensure the application behaves consistently, regardless of small differences between the various environments it might be deployed to."
+        },
+        {
+          "text": "Because the container includes a full backup of the host machine's hardware drivers, ensuring identical device support everywhere",
+          "isCorrect": false,
+          "feedback": "Containers bundle an application's software dependencies, not the host's hardware drivers -- consistency comes from packaging the application's own runtime environment, not from replicating hardware-level drivers."
+        },
+        {
+          "text": "Because containerization automatically tests the application on every possible operating system before it's deployed anywhere",
+          "isCorrect": false,
+          "feedback": "Containerization doesn't run automated cross-OS testing -- it achieves consistency by bundling the application with its own dependencies so it doesn't rely on whatever happens to already be installed on a given machine."
+        },
+        {
+          "text": "Because containerization automatically rewrites an application's source code to fix any bugs",
+          "isCorrect": false,
+          "feedback": "Containerization packages an application along with its dependencies for consistent deployment -- it doesn't automatically detect or rewrite code to fix underlying bugs."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How does a container generally differ from a full virtual machine, in terms of what it virtualizes?",
+      "options": [
+        {
+          "text": "A container typically shares the host operating system's kernel and virtualizes at the application level, while a full virtual machine emulates an entire separate operating system on top of virtualized hardware",
+          "isCorrect": true,
+          "feedback": "Correct -- this difference in what's actually being virtualized is why containers are often significantly more lightweight and faster to start than full virtual machines, though VMs can offer stronger isolation in certain respects."
+        },
+        {
+          "text": "A container and a virtual machine are simply two different names describing the exact identical underlying technology",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different approaches to virtualization, differing specifically in what layer of the system is actually being virtualized."
+        },
+        {
+          "text": "A container requires its own completely separate physical computer for every single instance",
+          "isCorrect": false,
+          "feedback": "Containers are specifically designed to be lightweight and to share resources efficiently on the SAME underlying host system -- they don't each require a separate dedicated physical computer."
+        },
+        {
+          "text": "A full virtual machine is always faster to start up than a container",
+          "isCorrect": false,
+          "feedback": "This reverses the typical, well-known relationship -- containers are generally significantly FASTER to start up than full virtual machines, precisely because of their more lightweight, application-level virtualization approach."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Think of it as packing an app together with its own toolkit -- everything it needs to run -- into one container that can be moved and run almost anywhere without extra setup.",
+        "medium": "It's a way of shipping software that keeps the app bundled with its own runtime environment, so it isn't left depending on whatever happens to already be installed on a given machine.",
+        "hard": "Think about a shipping metaphor: instead of hoping the destination already has the right tools, you pack your own toolkit along with what you're shipping."
+      },
+      "medium": {
+        "easy": "Because the package already carries what it needs, it isn't as exposed to whatever software happens to be installed (or not) on whatever machine it lands on.",
+        "medium": "Bundling everything the application needs directly with it makes it much less likely to behave differently across different environments.",
+        "hard": "Think about carrying your own complete toolkit with you, instead of hoping the right tools already happen to be available wherever you go."
+      },
+      "hard": {
+        "easy": "One method reuses the host's existing operating system core and only isolates the application on top of it; the other builds an entirely separate operating system on emulated hardware.",
+        "medium": "Think about how much of the underlying operating system needs to be duplicated by each approach, versus how much can simply be shared from the host machine.",
+        "hard": "Think about two different ways of achieving isolation between running programs that differ in exactly how much of the system underneath they need to virtualize."
+      }
+    }
+  },
+  {
+    "topic": "regular expressions",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'regular expression' generally used for?",
+      "options": [
+        {
+          "text": "Defining a pattern used to search for, match, or manipulate specific sequences of text",
+          "isCorrect": true,
+          "feedback": "Correct -- regular expressions provide a compact, flexible syntax for describing text patterns, widely used for searching and validating text."
+        },
+        {
+          "text": "Performing complex 3D graphics rendering calculations",
+          "isCorrect": false,
+          "feedback": "Regular expressions are specifically for describing and matching TEXT patterns -- they aren't a tool for 3D graphics rendering calculations."
+        },
+        {
+          "text": "Physically connecting a keyboard to a computer",
+          "isCorrect": false,
+          "feedback": "A regular expression is a software concept for pattern matching in text -- it's unrelated to physically connecting hardware like a keyboard."
+        },
+        {
+          "text": "Encrypting an entire hard drive's contents",
+          "isCorrect": false,
+          "feedback": "Regular expressions are used for matching and manipulating text patterns -- encrypting a hard drive's contents is an entirely separate security-focused task."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a regular expression be a useful tool for validating that a piece of user-submitted text, like an email address, roughly follows an expected format?",
+      "options": [
+        {
+          "text": "A regular expression can define the general expected pattern (such as characters, followed by an '@' symbol, followed by more characters and a domain), and then check whether the submitted text matches that pattern",
+          "isCorrect": true,
+          "feedback": "Correct -- this kind of pattern-based validation is a very common practical use of regular expressions in software, especially for validating text input against a known expected structure."
+        },
+        {
+          "text": "Because regular expressions can only be used to validate exactly one specific email address, hardcoded in advance",
+          "isCorrect": false,
+          "feedback": "A regular expression can define a general PATTERN that flexibly matches MANY different valid inputs sharing that same general structure -- it isn't restricted to checking against just one specific, hardcoded value."
+        },
+        {
+          "text": "Because regular expressions automatically send a confirmation email to the submitted address",
+          "isCorrect": false,
+          "feedback": "A regular expression is only concerned with checking whether submitted TEXT matches an expected pattern -- it doesn't perform actions like sending emails on its own."
+        },
+        {
+          "text": "Because regular expressions can only process text written in the English language",
+          "isCorrect": false,
+          "feedback": "Regular expressions can operate on text patterns across many different languages and character sets -- they aren't restricted specifically to English."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can overly complex regular expressions sometimes become difficult to read, maintain, or debug, even though they can be extremely powerful for matching text?",
+      "options": [
+        {
+          "text": "Regular expressions use a dense, symbolic syntax that can become hard for a person to parse visually once the pattern grows sufficiently complex, making the underlying intended matching logic difficult to quickly understand",
+          "isCorrect": true,
+          "feedback": "Correct -- this readability tradeoff is a commonly acknowledged practical downside of regular expressions, which is why developers often try to keep them as simple as reasonably possible, or add clear comments explaining a complex pattern's intent."
+        },
+        {
+          "text": "Because regular expressions are only capable of matching a single character at a time, no matter how they're written",
+          "isCorrect": false,
+          "feedback": "Regular expressions can actually match complex, multi-character patterns, including repeated sequences and various alternatives -- they aren't limited to matching just a single character at a time."
+        },
+        {
+          "text": "Because using a regular expression is illegal in certain countries",
+          "isCorrect": false,
+          "feedback": "There's no legal prohibition on using regular expressions -- the real, practical downside being described is about READABILITY and MAINTAINABILITY as the underlying pattern grows more complex, not any legal restriction."
+        },
+        {
+          "text": "Because regular expressions can only be written using a programming language invented specifically for that sole purpose",
+          "isCorrect": false,
+          "feedback": "Regular expressions are actually supported as a feature WITHIN many different general-purpose programming languages -- they aren't restricted to one single language created solely for that purpose."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This defines a search pattern -- a set of rules describing what to look for -- that lets a program find, match, or edit particular pieces of text.",
+        "medium": "This is a way of writing out a pattern so a program can go find, match up, or tweak specific stretches of text that fit that shape.",
+        "hard": "Think about writing a compact recipe that describes the general shape you're looking for in some text, rather than spelling out one exact fixed string."
+      },
+      "medium": {
+        "easy": "Rather than checking against one exact example, it describes the general shape something should follow, then tests whether the actual text fits that shape.",
+        "medium": "The pattern can define the general expected structure, then check whether submitted text actually matches that general structure.",
+        "hard": "Think about describing the general SHAPE an email address usually follows, rather than checking against one specific hardcoded example."
+      },
+      "hard": {
+        "easy": "The compact symbols pack a lot of meaning into a small space, which is exactly why a sufficiently complicated pattern can turn into a visual puzzle to read back later.",
+        "medium": "The compact, symbolic syntax can become difficult for a person to read and understand once the underlying pattern grows sufficiently complex.",
+        "hard": "Think about a dense string of symbols that becomes genuinely hard to visually parse once it grows long and complicated."
+      }
+    }
+  },
+  {
+    "topic": "open source software",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What generally defines 'open source' software?",
+      "options": [
+        {
+          "text": "Its source code is made publicly available, typically allowing others to view, use, modify, and often redistribute it under certain license terms",
+          "isCorrect": true,
+          "feedback": "Correct -- open source software stands in contrast to proprietary software, where the underlying source code is typically kept closed and restricted."
+        },
+        {
+          "text": "Software that is always completely free to use, with no license terms of any kind attached",
+          "isCorrect": false,
+          "feedback": "Open source software is defined specifically by its publicly available SOURCE CODE -- it commonly does come with SPECIFIC license terms attached, even if many such licenses do happen to be free of charge."
+        },
+        {
+          "text": "Software that can only be run on one single specific operating system",
+          "isCorrect": false,
+          "feedback": "Open source software isn't restricted specifically to running on a single operating system -- being open source is about the availability of the underlying source code, unrelated to platform compatibility."
+        },
+        {
+          "text": "Software created exclusively by a single specific company",
+          "isCorrect": false,
+          "feedback": "Open source projects are often actually developed collaboratively by many different contributors, sometimes from many different organizations -- they aren't necessarily tied to a single specific company."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a community of independent developers around the world be able to collaboratively contribute to and improve an open source software project over time?",
+      "options": [
+        {
+          "text": "Because the source code is publicly available, developers can inspect it, propose changes, fix bugs, or add new features, often through some shared, coordinated contribution process",
+          "isCorrect": true,
+          "feedback": "Correct -- this open, collaborative development model is a defining characteristic of many successful open source projects, allowing contributions from a broad, distributed community."
+        },
+        {
+          "text": "Because open source software is required by law to be maintained exclusively by government employees",
+          "isCorrect": false,
+          "feedback": "There's no such legal requirement -- open source projects are typically maintained by a mix of volunteers, independent contributors, and sometimes company-employed developers, not exclusively by government employees."
+        },
+        {
+          "text": "Because open source software cannot be modified by anyone under any circumstances",
+          "isCorrect": false,
+          "feedback": "This is essentially the opposite of open source software's actual defining trait -- it specifically ALLOWS modification (often under certain license terms), rather than forbidding it entirely."
+        },
+        {
+          "text": "Because contributing to an open source project requires purchasing a special paid license first",
+          "isCorrect": false,
+          "feedback": "Contributing to many open source projects doesn't require any purchase at all -- the collaborative aspect comes from the code being openly available for anyone to inspect and potentially contribute to."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a company choose to release some of its own software as open source, rather than keeping the source code entirely proprietary and closed?",
+      "options": [
+        {
+          "text": "Reasons can include benefiting from a broader community's contributions and bug fixes, building goodwill and trust, or encouraging wider adoption of a related technology or platform",
+          "isCorrect": true,
+          "feedback": "Correct -- there are various strategic and practical reasons companies choose to open source certain projects, often weighing the benefits of broader collaboration and adoption against the value of keeping other software proprietary."
+        },
+        {
+          "text": "Because releasing software as open source is legally mandated for every company in every country",
+          "isCorrect": false,
+          "feedback": "There's no universal legal mandate requiring companies to open source their software -- it's a strategic, voluntary business decision made for various practical reasons, not a legal requirement."
+        },
+        {
+          "text": "Because open source software is always guaranteed to generate more direct revenue than proprietary software",
+          "isCorrect": false,
+          "feedback": "Open sourcing software doesn't guarantee greater direct revenue -- companies often have other more strategic and less directly financial motivations, like fostering community involvement or wider ecosystem adoption."
+        },
+        {
+          "text": "Because open sourcing software automatically transfers all legal liability for the software to its individual users",
+          "isCorrect": false,
+          "feedback": "Legal liability considerations for open source software are typically addressed within the specific chosen license's terms -- open sourcing doesn't automatically or universally transfer all liability directly onto users in some blanket fashion."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Anyone can look at this software's underlying code, and depending on its specific license, often use, change, and share it too.",
+        "medium": "With this kind of software, anyone can openly access the underlying code itself, and licenses generally let people look at it, use it, and tweak it further.",
+        "hard": "Think about software where anyone can actually look at, and often modify, the underlying source code itself."
+      },
+      "medium": {
+        "easy": "Because anyone can see the code, a wide community of contributors can spot issues, suggest fixes, and add features through some kind of shared process.",
+        "medium": "With the underlying code sitting out in the open, developers everywhere can pore over it, suggest tweaks, and pitch in fixes or new capabilities collaboratively.",
+        "hard": "Think about many different people around the world being able to actually look at and work on the same shared underlying code."
+      },
+      "hard": {
+        "easy": "A company might do this hoping outside contributors will pitch in for free, that it builds a favorable reputation, or that it nudges more people toward a related product or platform.",
+        "medium": "Common strategic motives include tapping into free outside labor, earning goodwill within a developer community, and steering more people toward a connected product or platform.",
+        "hard": "Think about what a company might gain strategically by inviting outside contributions and wider adoption, rather than keeping everything closed off."
+      }
+    }
+  },
+  {
+    "topic": "finite state machines",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'finite state machine' (FSM)?",
+      "options": [
+        {
+          "text": "An abstract model of computation consisting of a limited number of distinct 'states', where the system transitions between states based on specific inputs or events",
+          "isCorrect": true,
+          "feedback": "Correct -- a finite state machine is a widely used conceptual model for describing systems that can be in exactly one of a limited number of specific states at any given moment."
+        },
+        {
+          "text": "A physical machine that manufactures computer chips",
+          "isCorrect": false,
+          "feedback": "A finite state machine is an abstract, conceptual computational model -- it isn't a physical machine used for manufacturing computer chips."
+        },
+        {
+          "text": "A programming language used specifically for web development",
+          "isCorrect": false,
+          "feedback": "A finite state machine is a general conceptual model of computation, not a specific programming language."
+        },
+        {
+          "text": "A type of computer virus that changes its own code to avoid detection",
+          "isCorrect": false,
+          "feedback": "A finite state machine is a legitimate, widely used conceptual modeling tool in computer science -- it isn't a type of malicious software."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "A traffic light cycling through red, yellow, and green is often used as an intuitive example of a finite state machine. Why does this example fit the concept well?",
+      "options": [
+        {
+          "text": "The traffic light can only be in one of a limited, fixed set of distinct states at any given time, and it transitions between them in a well-defined, predictable order based on specific triggers, like a timer",
+          "isCorrect": true,
+          "feedback": "Correct -- the light's fixed set of states, along with clear, predictable rules for transitioning between them, closely mirrors the core structure of a finite state machine."
+        },
+        {
+          "text": "Because a traffic light can display an unlimited, infinite number of completely different colors simultaneously",
+          "isCorrect": false,
+          "feedback": "A traffic light specifically has a small, FIXED, finite set of distinct states (like red, yellow, and green) -- it isn't capable of displaying an unlimited, infinite number of colors at once."
+        },
+        {
+          "text": "Because a traffic light never actually changes from one state to another",
+          "isCorrect": false,
+          "feedback": "A traffic light is a particularly good example precisely BECAUSE it does regularly transition between its distinct states -- if it never changed states at all, it wouldn't illustrate the transitioning aspect of this concept well."
+        },
+        {
+          "text": "Because a traffic light can be in multiple different states at the exact same time, such as red and green together",
+          "isCorrect": false,
+          "feedback": "A core property of a finite state machine is that it can only be in exactly ONE state at a time -- a traffic light can't actually be both red and green simultaneously, which is part of what makes it fit this model well."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a finite state machine be a useful conceptual tool for designing and reasoning about certain kinds of software, such as a simple game character's behavior (like 'idle', 'walking', 'jumping', and 'attacking')?",
+      "options": [
+        {
+          "text": "It provides a clear, structured way to define exactly which states are possible and exactly which transitions between them are valid, helping prevent the character from ending up in an unintended or inconsistent combination of behaviors",
+          "isCorrect": true,
+          "feedback": "Correct -- explicitly modeling a system's possible states and transitions like this can help make its expected behavior clearer, more predictable, and easier to reason about and debug."
+        },
+        {
+          "text": "Because a finite state machine automatically optimizes a game's graphics rendering performance",
+          "isCorrect": false,
+          "feedback": "Modeling behavior with a finite state machine helps organize and clarify expected behavior -- it doesn't have anything to do with automatically optimizing graphics rendering performance, which is an unrelated concern."
+        },
+        {
+          "text": "Because a finite state machine requires the game character to always remain in the same single state throughout the entire game",
+          "isCorrect": false,
+          "feedback": "A finite state machine is specifically valuable BECAUSE it models transitions BETWEEN different states over time -- requiring a character to stay in just one single state the whole time would defeat the entire purpose of using this modeling approach."
+        },
+        {
+          "text": "Because a finite state machine requires an unlimited, infinite number of possible states to function properly",
+          "isCorrect": false,
+          "feedback": "This directly contradicts the concept's own defining name -- a finite state machine specifically involves a LIMITED, FINITE number of possible states, not an unlimited or infinite number."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This model can only ever be in one of a fixed handful of conditions at once, switching between them only when a specific trigger occurs.",
+        "medium": "Picture something that's always in exactly one of a small, fixed set of conditions -- never more than one at a time -- and only switches when something specific happens.",
+        "hard": "Think about a system whose possible conditions are countable and fixed in advance, rather than open-ended or unlimited."
+      },
+      "medium": {
+        "easy": "The traffic light only ever shows one color at a time, cycling through a small fixed set on a predictable timer -- that's exactly the pattern this concept describes.",
+        "medium": "A small, fixed set of conditions with predictable, well-defined switches between them is exactly why this everyday example fits so well.",
+        "hard": "Think about what it would mean for something to switch between a small number of possible conditions, always following the same predictable order."
+      },
+      "hard": {
+        "easy": "Spelling out in advance exactly which conditions are allowed, and exactly which switches between them make sense, is what keeps a character's behavior predictable instead of glitching into some nonsensical combination.",
+        "medium": "Clearly defining which conditions are possible and which transitions between them are valid helps prevent unpredictable or glitchy combinations of behavior.",
+        "hard": "Think about what could go wrong if a system's possible conditions and the moves between them were never clearly spelled out in advance."
+      }
+    }
+  }
+]

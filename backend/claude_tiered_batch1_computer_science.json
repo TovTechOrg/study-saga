@@ -1,0 +1,2042 @@
+[
+  {
+    "topic": "variables",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In programming, what term describes a named storage location that can hold a value and be changed while a program runs?",
+      "options": [
+        {
+          "text": "Variable",
+          "isCorrect": true,
+          "feedback": "Correct -- a variable is a named container for a value that can change during a program's execution."
+        },
+        {
+          "text": "Function",
+          "isCorrect": false,
+          "feedback": "A function is a reusable block of code that performs a task -- not a storage location for a value."
+        },
+        {
+          "text": "Loop",
+          "isCorrect": false,
+          "feedback": "A loop repeats instructions -- it isn't a storage location for a value."
+        },
+        {
+          "text": "Comment",
+          "isCorrect": false,
+          "feedback": "A comment is a note in code ignored by the program -- it doesn't store a value."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does a 'constant' typically differ from a variable in programming?",
+      "options": [
+        {
+          "text": "A constant's value cannot be changed once it is set, while a variable's value can be changed",
+          "isCorrect": true,
+          "feedback": "Correct -- constants are used specifically for values that should remain fixed throughout a program."
+        },
+        {
+          "text": "A constant can only store numbers, while a variable can only store text",
+          "isCorrect": false,
+          "feedback": "Both constants and variables can typically store many different data types, not just numbers or text specifically."
+        },
+        {
+          "text": "A constant is always faster to access than a variable",
+          "isCorrect": false,
+          "feedback": "Speed of access isn't the defining distinction -- whether the value can change after being set is."
+        },
+        {
+          "text": "A constant can only be used inside loops",
+          "isCorrect": false,
+          "feedback": "Constants can be used anywhere in a program, not just inside loops."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is the distinction between 'declaring' a variable and 'initializing' it?",
+      "options": [
+        {
+          "text": "Declaring creates the named storage location (and often its type), while initializing assigns it its first actual value",
+          "isCorrect": true,
+          "feedback": "Correct -- a variable can be declared without yet being initialized, depending on the language."
+        },
+        {
+          "text": "Declaring deletes a variable, while initializing creates one",
+          "isCorrect": false,
+          "feedback": "Declaring creates a variable, it doesn't delete one -- initializing is about assigning its first value."
+        },
+        {
+          "text": "Declaring only applies to functions, while initializing only applies to loops",
+          "isCorrect": false,
+          "feedback": "Both declaring and initializing apply specifically to variables, not functions or loops."
+        },
+        {
+          "text": "There is no real difference between the two terms",
+          "isCorrect": false,
+          "feedback": "The two terms describe distinct steps -- creating the variable versus giving it its first value."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This concept refers to a named container whose contents can be reassigned as a program runs.",
+        "medium": "This term describes something in code that holds a value, and that value can change.",
+        "easy": "This is a named 'box' in code that holds a value, and the value inside can change."
+      },
+      "medium": {
+        "hard": "The distinction is about whether reassignment is allowed after the initial value is set, not data type restrictions, access speed, or where it can be used.",
+        "medium": "The distinction is about whether the value can be changed later, not what type of data it holds.",
+        "easy": "One of these keeps the same value forever once it's set; the other can be changed."
+      },
+      "hard": {
+        "hard": "One step creates the named storage location itself; the other step is the separate act of giving it its first actual value -- not deletion, and not something limited to functions or loops.",
+        "medium": "One step is about CREATING the variable; the other is about giving it its first VALUE.",
+        "easy": "First you create the variable, then, as a separate step, you can give it its very first value."
+      }
+    }
+  },
+  {
+    "topic": "loops",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "Which programming structure is used to repeat a set of instructions multiple times?",
+      "options": [
+        {
+          "text": "Loop",
+          "isCorrect": true,
+          "feedback": "Correct -- loops (like 'for' or 'while') repeat a block of instructions."
+        },
+        {
+          "text": "Variable",
+          "isCorrect": false,
+          "feedback": "A variable stores a value -- it doesn't repeat instructions."
+        },
+        {
+          "text": "Function",
+          "isCorrect": false,
+          "feedback": "A function is a named, reusable block of code -- it doesn't specifically repeat instructions by itself."
+        },
+        {
+          "text": "Comment",
+          "isCorrect": false,
+          "feedback": "A comment is a note in code that the program ignores -- it doesn't repeat anything."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "When would a programmer typically prefer a 'for' loop over a 'while' loop?",
+      "options": [
+        {
+          "text": "When the number of repetitions is known in advance",
+          "isCorrect": true,
+          "feedback": "Correct -- 'for' loops are well-suited to a known, fixed number of iterations, such as looping through a list of a specific length."
+        },
+        {
+          "text": "When the program should never repeat any instructions",
+          "isCorrect": false,
+          "feedback": "Both loop types are used specifically to repeat instructions -- this doesn't describe either one."
+        },
+        {
+          "text": "When the loop should run only if a variable has not yet been declared",
+          "isCorrect": false,
+          "feedback": "This isn't a standard use case that distinguishes 'for' from 'while' loops."
+        },
+        {
+          "text": "When the program needs to store a single unchanging value",
+          "isCorrect": false,
+          "feedback": "Storing an unchanging value describes a constant, not a reason to choose between loop types."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a common cause of an unintended 'infinite loop' in a program?",
+      "options": [
+        {
+          "text": "The loop's exit condition never becomes false, often because a counter variable is never updated",
+          "isCorrect": true,
+          "feedback": "Correct -- if the condition controlling the loop never changes to false, the loop will keep running indefinitely."
+        },
+        {
+          "text": "The program has too many variables declared",
+          "isCorrect": false,
+          "feedback": "The number of variables in a program doesn't cause infinite loops -- an unchanging exit condition does."
+        },
+        {
+          "text": "The loop is written using a 'for' loop instead of a 'while' loop",
+          "isCorrect": false,
+          "feedback": "Either loop type can become infinite if its exit condition is never met -- the loop type itself isn't the cause."
+        },
+        {
+          "text": "The program was written in an interpreted language rather than a compiled one",
+          "isCorrect": false,
+          "feedback": "Whether a language is interpreted or compiled doesn't cause infinite loops -- a faulty exit condition does."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This structure repeats a block of code, checking a condition or count to decide how many times.",
+        "medium": "This structure runs the same instructions over and over, often a set number of times or until a condition changes.",
+        "easy": "This structure repeats the same instructions multiple times, instead of writing them out over and over."
+      },
+      "medium": {
+        "hard": "The deciding factor is whether the exact number of repetitions is already known ahead of time, rather than depending on a condition that might change unpredictably.",
+        "medium": "The deciding factor is whether you already know exactly how many times to repeat something.",
+        "easy": "Use this loop type when you already know exactly how many times something needs to repeat."
+      },
+      "hard": {
+        "hard": "The root cause is a loop condition that is never updated to eventually become false, not the number of variables, the choice of loop syntax, or interpreted-versus-compiled execution.",
+        "medium": "The root cause is the loop's stopping condition never actually changing to false -- not the number of variables or type of loop used.",
+        "easy": "This usually happens when the program forgets to update the value that would eventually stop the loop."
+      }
+    }
+  },
+  {
+    "topic": "conditionals",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "Which programming structure lets a program choose between different actions depending on whether something is true or false?",
+      "options": [
+        {
+          "text": "Conditional (if-statement)",
+          "isCorrect": true,
+          "feedback": "Correct -- conditionals like 'if' statements let a program branch based on whether a condition is true or false."
+        },
+        {
+          "text": "Loop",
+          "isCorrect": false,
+          "feedback": "A loop repeats instructions -- it doesn't specifically choose between different actions based on a true/false condition."
+        },
+        {
+          "text": "Array",
+          "isCorrect": false,
+          "feedback": "An array stores a collection of values -- it doesn't make decisions based on a condition."
+        },
+        {
+          "text": "Variable",
+          "isCorrect": false,
+          "feedback": "A variable stores a value -- it doesn't make decisions based on a condition."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does an 'if-else' statement typically differ from a plain 'if' statement?",
+      "options": [
+        {
+          "text": "An if-else provides an alternate block of code to run when the condition is false, while a plain if only runs code when the condition is true",
+          "isCorrect": true,
+          "feedback": "Correct -- the 'else' branch gives the program something specific to do when the condition doesn't hold."
+        },
+        {
+          "text": "An if-else can only be used inside loops, while a plain if cannot",
+          "isCorrect": false,
+          "feedback": "Both if and if-else statements can be used inside or outside of loops -- this isn't the distinguishing feature."
+        },
+        {
+          "text": "An if-else always runs both branches every time",
+          "isCorrect": false,
+          "feedback": "Only one branch of an if-else runs on a given execution, depending on the condition -- not both."
+        },
+        {
+          "text": "An if-else statement cannot use variables in its condition",
+          "isCorrect": false,
+          "feedback": "Both if and if-else conditions commonly use variables -- this isn't a real restriction."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What advantage does a 'switch' statement typically offer over writing a long chain of 'else if' conditions?",
+      "options": [
+        {
+          "text": "It offers a cleaner, more readable way to compare one single variable against many possible fixed values",
+          "isCorrect": true,
+          "feedback": "Correct -- switch statements are especially well-suited when checking one variable against a list of specific expected values."
+        },
+        {
+          "text": "It allows a program to run without ever checking any conditions",
+          "isCorrect": false,
+          "feedback": "A switch statement still evaluates conditions -- it's an alternative structure for doing so, not a way to avoid conditions."
+        },
+        {
+          "text": "It permanently changes the value of the variable being checked",
+          "isCorrect": false,
+          "feedback": "A switch statement checks a variable's value -- it doesn't inherently change that value."
+        },
+        {
+          "text": "It removes the need to ever use loops in a program",
+          "isCorrect": false,
+          "feedback": "Switch statements and loops serve different purposes -- one doesn't replace the need for the other."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This structure branches program execution based on whether a given expression evaluates to true or false.",
+        "medium": "This structure lets a program do one thing if something is true, and something else if it's false.",
+        "easy": "This structure lets a program make a decision -- like 'if this is true, do one thing; otherwise, do another.'"
+      },
+      "medium": {
+        "hard": "The distinguishing feature is having a defined alternate path for when the condition is false, not a restriction to loops or running both paths simultaneously.",
+        "medium": "The distinguishing feature is having a specific alternate action for when the condition is false.",
+        "easy": "One version gives you something specific to do if the condition ISN'T true; the other doesn't."
+      },
+      "hard": {
+        "hard": "The advantage is readability when comparing a single value against several specific possibilities, not about skipping conditions entirely, altering the variable, or replacing loops.",
+        "medium": "The advantage is about readability, specifically when checking one variable against many specific values.",
+        "easy": "This structure is handy when you're comparing ONE variable against a bunch of specific possible values."
+      }
+    }
+  },
+  {
+    "topic": "functions",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What term describes a named, reusable block of code that performs a specific task and can be run whenever it is called?",
+      "options": [
+        {
+          "text": "Function",
+          "isCorrect": true,
+          "feedback": "Correct -- a function packages code into a reusable, callable unit."
+        },
+        {
+          "text": "Variable",
+          "isCorrect": false,
+          "feedback": "A variable stores a value -- it isn't a reusable block of code that performs a task."
+        },
+        {
+          "text": "Array",
+          "isCorrect": false,
+          "feedback": "An array stores a collection of values -- it isn't a reusable block of code that performs a task."
+        },
+        {
+          "text": "Comment",
+          "isCorrect": false,
+          "feedback": "A comment is a note ignored by the program -- it doesn't perform any task."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is the difference between a function's 'parameters' and its 'return value'?",
+      "options": [
+        {
+          "text": "Parameters are inputs passed INTO the function, while the return value is the output sent BACK after the function runs",
+          "isCorrect": true,
+          "feedback": "Correct -- parameters feed data in, and the return value hands a result back out."
+        },
+        {
+          "text": "Parameters and return values are simply two names for the exact same thing",
+          "isCorrect": false,
+          "feedback": "They serve distinct roles -- one is data going in, the other is a result coming out."
+        },
+        {
+          "text": "Parameters are only used in loops, while return values are only used in conditionals",
+          "isCorrect": false,
+          "feedback": "Both parameters and return values are specifically features of functions, not loops or conditionals."
+        },
+        {
+          "text": "A function must have a return value, but can never have parameters",
+          "isCorrect": false,
+          "feedback": "Functions can have any combination of parameters and return values, including neither, either, or both."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "In object-oriented programming, how does a 'method' typically differ from a standalone function?",
+      "options": [
+        {
+          "text": "A method is a function that is associated with (and belongs to) an object or class, while a standalone function exists independently",
+          "isCorrect": true,
+          "feedback": "Correct -- methods are accessed through an object or class, giving them access to that object's own data."
+        },
+        {
+          "text": "A method can never accept any parameters, while a function always must",
+          "isCorrect": false,
+          "feedback": "Both methods and standalone functions can accept parameters -- this isn't the distinguishing feature."
+        },
+        {
+          "text": "A method always runs faster than a standalone function",
+          "isCorrect": false,
+          "feedback": "Execution speed isn't the defining distinction -- association with an object or class is."
+        },
+        {
+          "text": "A method and a function are simply two different names for the identical concept in every language",
+          "isCorrect": false,
+          "feedback": "While related, most object-oriented languages draw a meaningful distinction based on the object/class association."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This is a named, callable unit of code, distinct from something that simply stores a value.",
+        "medium": "This is a block of code you can name once and then run again whenever you need it.",
+        "easy": "This is a reusable chunk of code that does a specific job, which you can run just by calling its name."
+      },
+      "medium": {
+        "hard": "One term describes data flowing INTO a function; the other describes a result flowing back OUT, and neither is inherently required for a function to exist.",
+        "medium": "One is data going INTO the function; the other is a result coming back OUT of it.",
+        "easy": "One of these is information you GIVE to the function; the other is information the function GIVES BACK to you."
+      },
+      "hard": {
+        "hard": "The distinguishing feature is whether the code is tied to a specific object or class, granting it access to that object's own data, rather than execution speed or parameter rules.",
+        "medium": "The distinguishing feature is whether the code belongs to a specific object or class, not speed or parameter rules.",
+        "easy": "One of these 'belongs to' an object or class; the other just exists on its own."
+      }
+    }
+  },
+  {
+    "topic": "arrays",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "Which data structure stores an ordered collection of values, where each value can be accessed using a numbered position called an index?",
+      "options": [
+        {
+          "text": "Array",
+          "isCorrect": true,
+          "feedback": "Correct -- an array stores values in order, each accessible by its numbered index."
+        },
+        {
+          "text": "Variable",
+          "isCorrect": false,
+          "feedback": "A variable typically stores a single value, not an ordered collection of many values."
+        },
+        {
+          "text": "Function",
+          "isCorrect": false,
+          "feedback": "A function performs a task -- it doesn't itself store an ordered collection of values."
+        },
+        {
+          "text": "Loop",
+          "isCorrect": false,
+          "feedback": "A loop repeats instructions -- it isn't a data structure for storing a collection of values."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In most programming languages, what is the index of the FIRST element in an array?",
+      "options": [
+        {
+          "text": "0",
+          "isCorrect": true,
+          "feedback": "Correct -- most programming languages use zero-based indexing, so the first element is at index 0."
+        },
+        {
+          "text": "1",
+          "isCorrect": false,
+          "feedback": "While intuitive, most common programming languages actually start array indexing at 0, not 1."
+        },
+        {
+          "text": "-1",
+          "isCorrect": false,
+          "feedback": "A negative starting index isn't standard for the first element in most languages' array indexing."
+        },
+        {
+          "text": "It depends on the number of elements in the array",
+          "isCorrect": false,
+          "feedback": "The starting index is a fixed convention of the language (usually 0), not something that depends on array length."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How does an array typically differ from a linked list as a way to store an ordered collection of values?",
+      "options": [
+        {
+          "text": "An array stores elements in contiguous memory for fast indexed access, while a linked list stores elements as separate nodes connected by pointers",
+          "isCorrect": true,
+          "feedback": "Correct -- this structural difference gives arrays fast indexed lookups, while linked lists offer more flexible insertion and removal."
+        },
+        {
+          "text": "An array can only store numbers, while a linked list can only store text",
+          "isCorrect": false,
+          "feedback": "Both arrays and linked lists can store many different data types -- this isn't the actual distinction."
+        },
+        {
+          "text": "A linked list can only ever contain exactly one element",
+          "isCorrect": false,
+          "feedback": "Linked lists can contain any number of elements, just like arrays -- this isn't a real limitation."
+        },
+        {
+          "text": "An array and a linked list are simply two names for the identical underlying structure",
+          "isCorrect": false,
+          "feedback": "They are genuinely different underlying structures, with different memory layouts and performance tradeoffs."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This structure lets you retrieve any stored value directly by its position number.",
+        "medium": "This structure holds a list of values, each one reachable by its position number.",
+        "easy": "This structure holds a list of values in order, where each one has its own numbered position."
+      },
+      "medium": {
+        "hard": "Most programming languages count starting from this number rather than from 1 when referring to the first position in an ordered collection.",
+        "medium": "Most programming languages consider this number to be the position of the very first item in a list.",
+        "easy": "Most programming languages start counting positions from this number, not from 1."
+      },
+      "hard": {
+        "hard": "Think about what happens when you need to jump straight to the 50th item versus squeezing a brand-new item into the middle of the collection -- one of these two structures handles each operation far more efficiently than the other, for reasons rooted in how it's built.",
+        "medium": "The key difference comes down to whether elements sit right next to each other in memory or are scattered and connected by links to each other.",
+        "easy": "One structure keeps its items packed together in one memory block for quick access by position; the other keeps items as separate pieces connected by links."
+      }
+    }
+  },
+  {
+    "topic": "algorithms",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general term for a step-by-step set of instructions used to solve a problem or complete a task?",
+      "options": [
+        {
+          "text": "Algorithm",
+          "isCorrect": true,
+          "feedback": "Correct -- an algorithm is a defined sequence of steps for solving a problem."
+        },
+        {
+          "text": "Variable",
+          "isCorrect": false,
+          "feedback": "A variable stores a value -- it isn't itself a set of steps for solving a problem."
+        },
+        {
+          "text": "Array",
+          "isCorrect": false,
+          "feedback": "An array stores a collection of values -- it isn't itself a set of steps for solving a problem."
+        },
+        {
+          "text": "Comment",
+          "isCorrect": false,
+          "feedback": "A comment is a note ignored by the program -- it isn't a set of steps for solving a problem."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does an 'algorithm' typically differ from a 'program'?",
+      "options": [
+        {
+          "text": "An algorithm is the abstract, step-by-step logical plan, while a program is that plan actually implemented in a specific programming language",
+          "isCorrect": true,
+          "feedback": "Correct -- the same algorithm could be implemented as many different programs, in many different languages."
+        },
+        {
+          "text": "An algorithm can only be written in binary, while a program can be written in any language",
+          "isCorrect": false,
+          "feedback": "Algorithms are typically described in plain language, pseudocode, or diagrams -- not specifically in binary."
+        },
+        {
+          "text": "An algorithm always runs faster than a program",
+          "isCorrect": false,
+          "feedback": "Speed isn't the distinguishing factor -- an algorithm is the abstract plan, while a program is its concrete implementation."
+        },
+        {
+          "text": "There is no meaningful difference between the two terms",
+          "isCorrect": false,
+          "feedback": "They describe genuinely different things -- an abstract plan versus its concrete implementation in code."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What does it generally mean for an algorithm to be described as 'efficient'?",
+      "options": [
+        {
+          "text": "It uses a reasonably small amount of time and/or memory relative to the size of its input",
+          "isCorrect": true,
+          "feedback": "Correct -- efficiency is typically measured in terms of how resource usage scales as input size grows."
+        },
+        {
+          "text": "It was written using the fewest possible total lines of code",
+          "isCorrect": false,
+          "feedback": "Line count doesn't necessarily reflect efficiency -- resource usage relative to input size does."
+        },
+        {
+          "text": "It never produces an incorrect result under any circumstances",
+          "isCorrect": false,
+          "feedback": "Correctness and efficiency are related but distinct concerns -- efficiency specifically concerns resource usage."
+        },
+        {
+          "text": "It was written by an experienced programmer",
+          "isCorrect": false,
+          "feedback": "The programmer's experience level doesn't define efficiency -- the algorithm's actual resource usage does."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This concept describes the logical steps behind a solution, independent of any specific programming language.",
+        "medium": "This is the general plan or recipe of steps used to solve a problem.",
+        "easy": "This is a step-by-step plan for solving a problem -- like a recipe."
+      },
+      "medium": {
+        "hard": "The distinction is between an abstract logical plan and its concrete realization in actual code, not about the language used to write it or its execution speed.",
+        "medium": "The distinction is between an abstract PLAN and its actual, written-out IMPLEMENTATION in code.",
+        "easy": "One is the general idea or plan; the other is that plan actually typed out as working code."
+      },
+      "hard": {
+        "hard": "The measure concerns how time and memory usage scale as input size grows, not code length, correctness alone, or the programmer's skill level.",
+        "medium": "The measure is about how time and memory usage grow as the input gets bigger, not about code length or the programmer's skill.",
+        "easy": "An efficient algorithm doesn't waste too much time or memory, especially as the amount of data it handles grows."
+      }
+    }
+  },
+  {
+    "topic": "bubble sort",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "Which simple sorting method repeatedly compares pairs of neighboring items in a list and swaps them if they are in the wrong order?",
+      "options": [
+        {
+          "text": "Bubble sort",
+          "isCorrect": true,
+          "feedback": "Correct -- bubble sort repeatedly steps through the list, swapping adjacent out-of-order pairs."
+        },
+        {
+          "text": "Binary search",
+          "isCorrect": false,
+          "feedback": "Binary search is a way to FIND an item in a sorted list -- it doesn't sort a list itself."
+        },
+        {
+          "text": "Linear search",
+          "isCorrect": false,
+          "feedback": "Linear search is a way to FIND an item by checking each one in order -- it doesn't sort a list."
+        },
+        {
+          "text": "Big O notation",
+          "isCorrect": false,
+          "feedback": "Big O notation describes an algorithm's efficiency -- it isn't itself a sorting method."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is bubble sort's approximate time complexity in the worst case, for a list of n items?",
+      "options": [
+        {
+          "text": "O(n squared)",
+          "isCorrect": true,
+          "feedback": "Correct -- bubble sort's repeated nested comparisons give it a worst-case time complexity of O(n squared)."
+        },
+        {
+          "text": "O(1)",
+          "isCorrect": false,
+          "feedback": "O(1) describes constant time, unaffected by input size -- bubble sort's time grows significantly as the list grows."
+        },
+        {
+          "text": "O(log n)",
+          "isCorrect": false,
+          "feedback": "O(log n) describes a much more efficient growth rate than bubble sort actually has in its worst case."
+        },
+        {
+          "text": "O(n)",
+          "isCorrect": false,
+          "feedback": "O(n) would mean time grows directly with list size -- bubble sort's worst case actually grows quadratically, not linearly."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How does bubble sort's basic approach differ from selection sort's approach?",
+      "options": [
+        {
+          "text": "Bubble sort repeatedly swaps adjacent out-of-order pairs, while selection sort repeatedly finds the minimum remaining element and moves it into its correct position",
+          "isCorrect": true,
+          "feedback": "Correct -- both are simple O(n squared) sorting methods, but they use different underlying strategies to reach a sorted list."
+        },
+        {
+          "text": "Bubble sort can only sort numbers, while selection sort can only sort text",
+          "isCorrect": false,
+          "feedback": "Both sorting methods can generally sort any comparable data type -- this isn't the actual distinction."
+        },
+        {
+          "text": "Bubble sort requires the list to already be sorted before it starts",
+          "isCorrect": false,
+          "feedback": "Bubble sort is specifically designed to sort an UNSORTED list -- it doesn't require pre-sorted input."
+        },
+        {
+          "text": "There is no meaningful difference between bubble sort and selection sort",
+          "isCorrect": false,
+          "feedback": "While both are simple O(n squared) sorts, their underlying strategies for moving elements into place are genuinely different."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This method's name comes from how larger values gradually 'bubble up' toward the end of the list with each pass.",
+        "medium": "This method makes repeated passes through a list, swapping neighboring items that are out of order.",
+        "easy": "This method's name describes how out-of-order items slowly 'bubble' toward their correct position."
+      },
+      "medium": {
+        "hard": "This complexity reflects nested comparisons across the list, growing quadratically rather than constantly, logarithmically, or linearly with input size.",
+        "medium": "This complexity means the time grows roughly with the SQUARE of the list size, not just proportionally.",
+        "easy": "As the list gets bigger, this sorting method's time grows much faster than just 'a little bit more' -- it grows by a squared amount."
+      },
+      "hard": {
+        "hard": "The distinction is in the underlying strategy -- repeated adjacent swaps versus repeatedly selecting and placing the minimum remaining value -- not data type restrictions or a requirement for pre-sorted input.",
+        "medium": "The distinction is in the STRATEGY used -- swapping neighbors repeatedly, versus repeatedly picking out the smallest remaining item.",
+        "easy": "One method keeps swapping neighboring items; the other keeps picking out the smallest remaining item and placing it directly."
+      }
+    }
+  },
+  {
+    "topic": "linear search",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "Which searching method checks every item in a list one at a time, in order, until it finds a match?",
+      "options": [
+        {
+          "text": "Linear search",
+          "isCorrect": true,
+          "feedback": "Correct -- linear search checks each item sequentially until the target is found or the list ends."
+        },
+        {
+          "text": "Binary search",
+          "isCorrect": false,
+          "feedback": "Binary search repeatedly cuts the search area in half -- it doesn't check every item one by one."
+        },
+        {
+          "text": "Bubble sort",
+          "isCorrect": false,
+          "feedback": "Bubble sort is a sorting method, not a way to search for an item."
+        },
+        {
+          "text": "Big O notation",
+          "isCorrect": false,
+          "feedback": "Big O notation describes an algorithm's efficiency -- it isn't itself a searching method."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is linear search's time complexity in the worst case, for a list of n items?",
+      "options": [
+        {
+          "text": "O(n)",
+          "isCorrect": true,
+          "feedback": "Correct -- in the worst case, linear search may need to check every single one of the n items."
+        },
+        {
+          "text": "O(1)",
+          "isCorrect": false,
+          "feedback": "O(1) would mean constant time regardless of list size -- linear search's worst case actually depends directly on the list's length."
+        },
+        {
+          "text": "O(log n)",
+          "isCorrect": false,
+          "feedback": "O(log n) describes a much faster search, like binary search -- not linear search's worst case."
+        },
+        {
+          "text": "O(n squared)",
+          "isCorrect": false,
+          "feedback": "O(n squared) describes a slower growth rate than linear search actually has -- linear search grows directly with n, not n squared."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "In which scenario would linear search typically be preferred over binary search?",
+      "options": [
+        {
+          "text": "When the list is unsorted, since binary search requires the list to already be sorted",
+          "isCorrect": true,
+          "feedback": "Correct -- binary search's speed advantage only works because it relies on the list already being in sorted order."
+        },
+        {
+          "text": "When the list contains only numbers, never text",
+          "isCorrect": false,
+          "feedback": "Both linear and binary search can work on numeric or text data -- data type isn't the deciding factor here."
+        },
+        {
+          "text": "When the list is extremely large and already sorted",
+          "isCorrect": false,
+          "feedback": "For a large, already-sorted list, binary search is typically far more efficient than linear search, not the other way around."
+        },
+        {
+          "text": "When the program needs the fastest possible search speed",
+          "isCorrect": false,
+          "feedback": "For raw search speed on a sorted list, binary search generally outperforms linear search."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This method makes no assumption about the list's order, simply checking items one after another.",
+        "medium": "This method starts at the beginning of a list and checks each item in turn.",
+        "easy": "This method checks items one by one, from the start of the list, until it finds what it's looking for."
+      },
+      "medium": {
+        "hard": "This complexity reflects a search that scales directly, one-to-one, with the number of items in the list, without any faster shortcut.",
+        "medium": "This complexity means the time grows directly, one-to-one, with the size of the list.",
+        "easy": "In the worst case, this search might have to look at every single item, so its time grows right along with the list size."
+      },
+      "hard": {
+        "hard": "The deciding factor is whether the list is sorted, since binary search's efficiency specifically depends on that precondition -- not data type, list size alone, or a general desire for speed.",
+        "medium": "The deciding factor is whether the list is already SORTED -- binary search needs that; linear search doesn't.",
+        "easy": "One search method needs the list to be sorted first; the other one works fine even if the list is all jumbled up."
+      }
+    }
+  },
+  {
+    "topic": "binary search",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "Which searching method only works on a sorted list and finds an item by repeatedly cutting the remaining search area in half?",
+      "options": [
+        {
+          "text": "Binary search",
+          "isCorrect": true,
+          "feedback": "Correct -- binary search repeatedly halves the search range, requiring the list to be sorted beforehand."
+        },
+        {
+          "text": "Linear search",
+          "isCorrect": false,
+          "feedback": "Linear search checks every item in order -- it doesn't specifically cut the search area in half."
+        },
+        {
+          "text": "Bubble sort",
+          "isCorrect": false,
+          "feedback": "Bubble sort is a sorting method, not a way to search for an item."
+        },
+        {
+          "text": "Big O notation",
+          "isCorrect": false,
+          "feedback": "Big O notation describes an algorithm's efficiency -- it isn't itself a searching method."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is a required precondition for binary search to work correctly on a list?",
+      "options": [
+        {
+          "text": "The list must already be sorted",
+          "isCorrect": true,
+          "feedback": "Correct -- binary search relies on the list's order to correctly decide which half to search next."
+        },
+        {
+          "text": "The list must contain fewer than 10 items",
+          "isCorrect": false,
+          "feedback": "Binary search works efficiently on lists of any size -- there's no such small-size limit."
+        },
+        {
+          "text": "The list must contain only whole numbers",
+          "isCorrect": false,
+          "feedback": "Binary search can work on any comparable data type, not just whole numbers -- the real requirement is that it's sorted."
+        },
+        {
+          "text": "The list must be stored using a linked list, not an array",
+          "isCorrect": false,
+          "feedback": "Binary search is commonly implemented on arrays -- the real requirement is that the list is sorted, not a specific data structure."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is binary search's time complexity, making it far more efficient than linear search on large sorted lists?",
+      "options": [
+        {
+          "text": "O(log n)",
+          "isCorrect": true,
+          "feedback": "Correct -- by cutting the search space in half each time, binary search needs only a logarithmic number of steps."
+        },
+        {
+          "text": "O(n)",
+          "isCorrect": false,
+          "feedback": "O(n) describes linear search's complexity, not binary search's much faster halving approach."
+        },
+        {
+          "text": "O(n squared)",
+          "isCorrect": false,
+          "feedback": "O(n squared) is far slower than binary search's actual complexity."
+        },
+        {
+          "text": "O(n!) (n factorial)",
+          "isCorrect": false,
+          "feedback": "O(n!) describes an extremely slow-growing algorithm, far slower than binary search's efficient logarithmic approach."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This method's efficiency comes specifically from discarding half of the remaining possibilities at each step.",
+        "medium": "This method repeatedly checks the middle item and eliminates half of the remaining list each time.",
+        "easy": "This method works like searching a phone book by jumping to the middle and eliminating half the remaining pages each time."
+      },
+      "medium": {
+        "hard": "This precondition is about the list's ORDER, not its size, its data type, or the specific data structure used to store it.",
+        "medium": "This precondition is about whether the list is already in ORDER, not its size or data type.",
+        "easy": "Before you can search this way, the list needs to already be arranged in order, smallest to largest (or similar)."
+      },
+      "hard": {
+        "hard": "This complexity reflects halving the search space at each step, growing far more slowly than a linear or quadratic search as input size increases.",
+        "medium": "This complexity grows very slowly compared to linear search, since the search area keeps getting cut in half.",
+        "easy": "Because it keeps cutting the remaining list in half, this method barely slows down even as the list gets much bigger."
+      }
+    }
+  },
+  {
+    "topic": "Big O notation",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does 'Big O notation' describe about an algorithm?",
+      "options": [
+        {
+          "text": "How its running time or resource usage grows as the size of its input increases",
+          "isCorrect": true,
+          "feedback": "Correct -- Big O notation gives a general sense of how an algorithm scales with larger inputs."
+        },
+        {
+          "text": "The exact number of seconds it takes to run on any computer",
+          "isCorrect": false,
+          "feedback": "Big O notation describes a general growth pattern, not an exact, hardware-specific runtime in seconds."
+        },
+        {
+          "text": "How many lines of code the algorithm contains",
+          "isCorrect": false,
+          "feedback": "Big O notation is about resource usage as input grows, not about counting lines of code."
+        },
+        {
+          "text": "Which programming language the algorithm is written in",
+          "isCorrect": false,
+          "feedback": "Big O notation is language-independent -- it describes growth behavior, not implementation language."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Among O(1), O(log n), O(n), and O(n squared), which represents the LEAST efficient (slowest-growing... meaning fastest-growing runtime) algorithm as input size increases?",
+      "options": [
+        {
+          "text": "O(n squared)",
+          "isCorrect": true,
+          "feedback": "Correct -- among these four, O(n squared) grows the fastest as input size increases, making it the least efficient here."
+        },
+        {
+          "text": "O(1)",
+          "isCorrect": false,
+          "feedback": "O(1), constant time, is actually the MOST efficient of these four -- it doesn't grow with input size at all."
+        },
+        {
+          "text": "O(log n)",
+          "isCorrect": false,
+          "feedback": "O(log n) grows very slowly as input increases -- it's one of the more efficient options here, not the least efficient."
+        },
+        {
+          "text": "O(n)",
+          "isCorrect": false,
+          "feedback": "O(n) grows proportionally with input size, which is faster-growing than O(1) or O(log n), but still more efficient than O(n squared)."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "For a very large input size, which of these grows more slowly (and is therefore more efficient): O(log n) or O(n)?",
+      "options": [
+        {
+          "text": "O(log n) grows more slowly than O(n)",
+          "isCorrect": true,
+          "feedback": "Correct -- as n gets very large, O(log n) increases far more gradually than O(n), which is why algorithms like binary search scale so well."
+        },
+        {
+          "text": "O(n) grows more slowly than O(log n)",
+          "isCorrect": false,
+          "feedback": "This reverses the actual relationship -- O(log n) grows more slowly than O(n) as input size increases."
+        },
+        {
+          "text": "They always grow at exactly the same rate",
+          "isCorrect": false,
+          "feedback": "These two complexities grow at meaningfully different rates -- O(log n) scales much more gradually than O(n)."
+        },
+        {
+          "text": "Neither grows at all as input size increases",
+          "isCorrect": false,
+          "feedback": "Both complexities do grow as input size increases -- O(log n) simply grows much more slowly than O(n)."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This notation abstracts away hardware and implementation details, focusing purely on scaling behavior with input size.",
+        "medium": "This notation is a general way to describe how an algorithm slows down (or doesn't) as its input gets bigger.",
+        "easy": "This notation describes how much slower an algorithm gets as you give it more and more data to work on."
+      },
+      "medium": {
+        "hard": "Among these four, this one involves comparing every item against every other item, causing its runtime to increase by the square of the input size.",
+        "medium": "This one grows the fastest of these four options as input size increases -- think of nested loops comparing everything to everything.",
+        "easy": "This one is the slowest-growing option -- as input size grows, its time increases dramatically compared to the others listed."
+      },
+      "hard": {
+        "hard": "One of these grows by repeatedly HALVING the relevant portion of the problem at each step, while the other scales directly, one-to-one, with the full input size.",
+        "medium": "One of these keeps cutting the problem in half at each step; the other scales directly with the full size of the input.",
+        "easy": "One of these is the same kind of growth rate as binary search (very slow-growing); the other is the same as linear search (steady, direct growth)."
+      }
+    }
+  },
+  {
+    "topic": "the binary number system",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "Computers store and process all data using a number system made up of only 0s and 1s. What is this system called?",
+      "options": [
+        {
+          "text": "Binary",
+          "isCorrect": true,
+          "feedback": "Correct -- binary is a base-2 number system using only the digits 0 and 1."
+        },
+        {
+          "text": "Decimal",
+          "isCorrect": false,
+          "feedback": "Decimal is the base-10 system humans typically use day-to-day, with digits 0 through 9 -- not the 0s-and-1s system computers use internally."
+        },
+        {
+          "text": "Hexadecimal",
+          "isCorrect": false,
+          "feedback": "Hexadecimal is a base-16 system, often used as compact shorthand for binary, but it uses more than just 0s and 1s."
+        },
+        {
+          "text": "Roman numerals",
+          "isCorrect": false,
+          "feedback": "Roman numerals are an ancient numbering system using letters -- unrelated to how computers store data internally."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is the decimal value of the binary number 1010?",
+      "options": [
+        {
+          "text": "10",
+          "isCorrect": true,
+          "feedback": "Correct -- 1010 in binary equals (1x8) + (0x4) + (1x2) + (0x1) = 10 in decimal."
+        },
+        {
+          "text": "4",
+          "isCorrect": false,
+          "feedback": "This undercounts the value -- 1010 in binary actually equals 10 in decimal."
+        },
+        {
+          "text": "12",
+          "isCorrect": false,
+          "feedback": "This overcounts the value -- 1010 in binary actually equals 10 in decimal."
+        },
+        {
+          "text": "1010",
+          "isCorrect": false,
+          "feedback": "This treats the binary digits as if they were already decimal -- but 1010 in binary actually converts to 10 in decimal."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Besides binary, which number system do computer scientists often use as compact shorthand for binary values, grouping bits into sets of four?",
+      "options": [
+        {
+          "text": "Hexadecimal (base-16)",
+          "isCorrect": true,
+          "feedback": "Correct -- each hexadecimal digit represents exactly 4 bits, making it a convenient shorthand for long binary values."
+        },
+        {
+          "text": "Roman numerals",
+          "isCorrect": false,
+          "feedback": "Roman numerals aren't used as a computing shorthand for binary values -- hexadecimal is."
+        },
+        {
+          "text": "Decimal (base-10)",
+          "isCorrect": false,
+          "feedback": "Decimal doesn't map as cleanly onto groups of 4 bits as hexadecimal does, which is why hexadecimal is the preferred shorthand."
+        },
+        {
+          "text": "Octal (base-8), grouping bits into sets of four",
+          "isCorrect": false,
+          "feedback": "Octal does group bits, but into sets of THREE, not four -- hexadecimal is the system that groups bits into sets of four."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This number system underlies all digital computation, using only two possible digit values.",
+        "medium": "This number system has only two possible digits: 0 and 1.",
+        "easy": "This number system only uses two digits -- 0 and 1 -- unlike the ten digits we normally count with."
+      },
+      "medium": {
+        "hard": "Convert by adding up the place values (8s, 4s, 2s, 1s) where a 1 appears in the binary digits.",
+        "medium": "Add up the place values -- 8, 4, 2, and 1 -- but only for the positions where there's a 1.",
+        "easy": "In binary, the digit positions represent 8, 4, 2, and 1 -- add up the ones where there's a 1 digit."
+      },
+      "hard": {
+        "hard": "This system's base value is a power of 2 that divides evenly into groups of exactly four binary digits, unlike octal's groups of three or decimal's non-power-of-2 base.",
+        "medium": "This system's digits each represent exactly 4 binary digits at once -- unlike octal, which represents 3 at a time.",
+        "easy": "This system groups binary digits four at a time, which is different from another number system that groups them three at a time."
+      }
+    }
+  },
+  {
+    "topic": "bits and bytes",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "How many bits are grouped together to make one byte?",
+      "options": [
+        {
+          "text": "8",
+          "isCorrect": true,
+          "feedback": "Correct -- 8 bits make up 1 byte, a standard unit for measuring digital storage."
+        },
+        {
+          "text": "4",
+          "isCorrect": false,
+          "feedback": "4 bits is only half a byte, sometimes called a 'nibble' -- a full byte is 8 bits."
+        },
+        {
+          "text": "16",
+          "isCorrect": false,
+          "feedback": "16 bits is double a byte (sometimes called a 'word' in some systems) -- a single byte is 8 bits."
+        },
+        {
+          "text": "2",
+          "isCorrect": false,
+          "feedback": "2 bits is far fewer than a byte -- a byte is made up of 8 bits."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How many possible distinct values can a single byte (8 bits) represent?",
+      "options": [
+        {
+          "text": "256",
+          "isCorrect": true,
+          "feedback": "Correct -- with 8 bits, each having 2 possible states, there are 2 to the power of 8, or 256, total combinations."
+        },
+        {
+          "text": "8",
+          "isCorrect": false,
+          "feedback": "8 is the number of BITS in a byte, not the number of possible VALUES it can represent."
+        },
+        {
+          "text": "64",
+          "isCorrect": false,
+          "feedback": "64 would be 2 to the power of 6 -- a full byte (8 bits) actually represents 2 to the power of 8, or 256, values."
+        },
+        {
+          "text": "100",
+          "isCorrect": false,
+          "feedback": "100 isn't a power of 2 and doesn't match a byte's actual range -- the correct value is 256."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "In the strict binary-based convention traditionally used in computer science (as opposed to the decimal-based SI convention), how many bytes make up one kilobyte?",
+      "options": [
+        {
+          "text": "1,024",
+          "isCorrect": true,
+          "feedback": "Correct -- 1,024 is 2 to the power of 10, reflecting computing's binary-based convention for this unit."
+        },
+        {
+          "text": "1,000",
+          "isCorrect": false,
+          "feedback": "1,000 reflects the decimal SI convention, not the traditional binary-based computing convention, which uses 1,024."
+        },
+        {
+          "text": "100",
+          "isCorrect": false,
+          "feedback": "100 is far too small -- a kilobyte, in the binary convention, is 1,024 bytes."
+        },
+        {
+          "text": "10,000",
+          "isCorrect": false,
+          "feedback": "10,000 overstates the value -- a kilobyte, in the binary convention, is 1,024 bytes."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This is the standard grouping size used to measure a single unit of digital storage.",
+        "medium": "This is the number of individual 0s-and-1s that make up one standard unit of digital storage.",
+        "easy": "This number of individual bits are grouped together to form one byte."
+      },
+      "medium": {
+        "hard": "Calculate 2 raised to the power matching the number of bits in a byte.",
+        "medium": "Think of it as 2 multiplied by itself 8 times, since each bit has 2 possible states.",
+        "easy": "Each of the 8 bits can be either 0 or 1, so multiply 2 by itself 8 times to get the total possible values."
+      },
+      "hard": {
+        "hard": "This value is a power of 2 close to, but distinct from, the round decimal number used in the everyday SI convention for the same unit name.",
+        "medium": "This value is a power of 2, close to but not exactly the round number used in everyday, non-computing contexts.",
+        "easy": "This number is close to 1,000, but it's actually a power of 2 instead of a round decimal number."
+      }
+    }
+  },
+  {
+    "topic": "the CPU",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "Which computer component is often described as the 'brain' of the computer because it carries out instructions and calculations?",
+      "options": [
+        {
+          "text": "CPU (Central Processing Unit)",
+          "isCorrect": true,
+          "feedback": "Correct -- the CPU executes instructions and performs the calculations that drive a computer's operations."
+        },
+        {
+          "text": "RAM",
+          "isCorrect": false,
+          "feedback": "RAM temporarily holds data being used -- it doesn't itself execute instructions the way the CPU does."
+        },
+        {
+          "text": "Hard drive",
+          "isCorrect": false,
+          "feedback": "A hard drive stores data long-term -- it doesn't execute instructions the way the CPU does."
+        },
+        {
+          "text": "Monitor",
+          "isCorrect": false,
+          "feedback": "A monitor displays visual output -- it doesn't execute instructions or perform calculations."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does the CPU's role typically differ from RAM's role in a computer?",
+      "options": [
+        {
+          "text": "The CPU executes instructions and performs calculations, while RAM temporarily holds the data and instructions currently being used",
+          "isCorrect": true,
+          "feedback": "Correct -- the CPU does the 'thinking,' while RAM acts as its fast, temporary workspace."
+        },
+        {
+          "text": "The CPU stores data permanently, while RAM executes instructions",
+          "isCorrect": false,
+          "feedback": "This reverses their actual roles -- the CPU executes instructions, while RAM is temporary (not permanent) storage."
+        },
+        {
+          "text": "The CPU and RAM perform the exact same function",
+          "isCorrect": false,
+          "feedback": "They serve genuinely different roles -- execution versus temporary data storage."
+        },
+        {
+          "text": "The CPU is used only for displaying graphics, while RAM is used only for audio",
+          "isCorrect": false,
+          "feedback": "Neither component is limited to graphics or audio specifically -- the CPU executes general instructions, and RAM temporarily stores active data."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What term describes a CPU's ability to execute more than one instruction stream simultaneously, often achieved through multiple processing 'cores'?",
+      "options": [
+        {
+          "text": "Multi-core (or parallel) processing",
+          "isCorrect": true,
+          "feedback": "Correct -- modern CPUs often contain multiple cores, each capable of independently executing instructions at the same time."
+        },
+        {
+          "text": "Binary processing",
+          "isCorrect": false,
+          "feedback": "Binary processing simply refers to using the 0s-and-1s number system -- it doesn't describe running multiple instruction streams at once."
+        },
+        {
+          "text": "Volatile processing",
+          "isCorrect": false,
+          "feedback": "'Volatile' describes memory that loses data without power, like RAM -- it isn't a term for simultaneous instruction execution."
+        },
+        {
+          "text": "Sequential processing",
+          "isCorrect": false,
+          "feedback": "Sequential processing describes executing instructions one after another -- the opposite of running multiple streams simultaneously."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This component is where a computer's actual computation and instruction execution takes place.",
+        "medium": "This component carries out the actual calculations and instructions a program requires.",
+        "easy": "This is the component that actually 'thinks' and does the calculations inside a computer."
+      },
+      "medium": {
+        "hard": "One component performs the actual computation; the other serves as fast, temporary working space for data currently in use -- neither is limited to graphics or audio specifically.",
+        "medium": "One component DOES the computing; the other just temporarily HOLDS the data being used.",
+        "easy": "One of these actually carries out instructions; the other just temporarily holds onto data and instructions while they're being used."
+      },
+      "hard": {
+        "hard": "This term describes running multiple independent instruction streams truly simultaneously via separate processing units, distinct from a number system, a memory volatility property, or one-instruction-at-a-time execution.",
+        "medium": "This term describes running multiple instruction streams AT THE SAME TIME, not one after another.",
+        "easy": "Modern CPUs often have multiple 'cores' that can each work on separate tasks all at the same time."
+      }
+    }
+  },
+  {
+    "topic": "RAM",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "Which type of computer memory temporarily holds data a program is actively using, and loses its contents when the power is turned off?",
+      "options": [
+        {
+          "text": "RAM (Random Access Memory)",
+          "isCorrect": true,
+          "feedback": "Correct -- RAM is fast, temporary memory that clears when the computer loses power."
+        },
+        {
+          "text": "Hard drive",
+          "isCorrect": false,
+          "feedback": "A hard drive stores data permanently, even without power -- unlike RAM, which is temporary."
+        },
+        {
+          "text": "CPU",
+          "isCorrect": false,
+          "feedback": "The CPU executes instructions -- it isn't primarily a memory storage component like RAM."
+        },
+        {
+          "text": "Monitor",
+          "isCorrect": false,
+          "feedback": "A monitor displays visual output -- it doesn't store data being actively used by a program."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does RAM typically differ from a hard drive or SSD in terms of data storage?",
+      "options": [
+        {
+          "text": "RAM is volatile and temporary, losing its data without power, while a hard drive or SSD is non-volatile, retaining data even when powered off",
+          "isCorrect": true,
+          "feedback": "Correct -- this is why unsaved work in RAM can be lost, while files saved to a hard drive or SSD persist after shutdown."
+        },
+        {
+          "text": "RAM stores data permanently, while a hard drive or SSD is temporary",
+          "isCorrect": false,
+          "feedback": "This reverses their actual roles -- RAM is the temporary one, while a hard drive or SSD retains data permanently."
+        },
+        {
+          "text": "RAM and a hard drive or SSD store data in exactly the same way",
+          "isCorrect": false,
+          "feedback": "They differ meaningfully in volatility -- RAM clears without power, while a hard drive or SSD does not."
+        },
+        {
+          "text": "RAM is only used for storing photos, while a hard drive is only used for text documents",
+          "isCorrect": false,
+          "feedback": "Neither is restricted to a specific file type -- the real distinction is about volatility and permanence of storage."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "DRAM, the most common type of RAM, must be 'refreshed' thousands of times per second to keep its data intact. Why is this refresh necessary?",
+      "options": [
+        {
+          "text": "Because each bit is stored as a tiny electrical charge in a capacitor, and that charge naturally leaks away over time unless it's periodically rewritten",
+          "isCorrect": true,
+          "feedback": "Correct -- DRAM stores each bit as a fading charge, so the memory controller must rewrite it again and again before it drains away completely."
+        },
+        {
+          "text": "Because the memory chips would overheat and shut down if they weren't periodically reset",
+          "isCorrect": false,
+          "feedback": "Refreshing isn't about temperature control -- it exists to counteract a physical property of how each bit is stored, not to manage heat."
+        },
+        {
+          "text": "Because it needs to resynchronize with the CPU's clock signal to avoid timing errors",
+          "isCorrect": false,
+          "feedback": "That describes clock synchronization, a separate concept -- DRAM refresh exists to counteract fading electrical charges, not timing drift."
+        },
+        {
+          "text": "Because refreshing lets the memory controller reorganize stored data to reduce fragmentation",
+          "isCorrect": false,
+          "feedback": "That describes fragmentation cleanup on storage drives -- DRAM refresh has nothing to do with reorganizing data, only preventing charge loss."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This memory's contents exist only as long as electrical power is actively supplied.",
+        "medium": "This memory clears out completely whenever the computer is shut off.",
+        "easy": "This memory forgets everything the moment the computer loses power."
+      },
+      "medium": {
+        "hard": "Think about what happens to each type of storage during something like a sudden power outage, and what kind of information each one is really built to hold onto.",
+        "medium": "The distinction is about whether data survives being shut off, not about what kind of files are stored.",
+        "easy": "One of these loses everything when you turn the computer off; the other keeps its data even then."
+      },
+      "hard": {
+        "hard": "Think about the physical component used to store each single bit in this kind of memory, and what tends to happen to that component's stored state if nothing ever acts on it.",
+        "medium": "Each bit is held as a tiny electrical charge, and that kind of charge is naturally unstable over time without help.",
+        "easy": "Each bit's electrical charge slowly drains away on its own, so the memory must be rewritten very frequently to prevent that stored data from vanishing."
+      }
+    }
+  },
+  {
+    "topic": "computer hardware",
+    "easy": {
+      "type": "multiple_choice_multiple",
+      "text": "Which of the following are examples of computer hardware? (Select all that apply)",
+      "options": [
+        {
+          "text": "CPU",
+          "isCorrect": true,
+          "feedback": "Correct -- the CPU is a physical component of a computer."
+        },
+        {
+          "text": "Keyboard",
+          "isCorrect": true,
+          "feedback": "Correct -- a keyboard is a physical input device."
+        },
+        {
+          "text": "Python",
+          "isCorrect": false,
+          "feedback": "Python is a programming language -- software, not a physical hardware component."
+        },
+        {
+          "text": "An operating system",
+          "isCorrect": false,
+          "feedback": "An operating system is software that manages hardware -- it isn't hardware itself."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_multiple",
+      "text": "If every piece of software were wiped from a computer, which of the following would still remain as distinct physical components? (Select all that apply)",
+      "options": [
+        {
+          "text": "RAM",
+          "isCorrect": true,
+          "feedback": "Correct -- RAM is a physical memory component installed in a computer."
+        },
+        {
+          "text": "Monitor",
+          "isCorrect": true,
+          "feedback": "Correct -- a monitor is a physical output device."
+        },
+        {
+          "text": "Hard drive",
+          "isCorrect": true,
+          "feedback": "Correct -- a hard drive is a physical storage device."
+        },
+        {
+          "text": "A word processor application",
+          "isCorrect": false,
+          "feedback": "A word processor is software that runs ON hardware -- it isn't hardware itself."
+        },
+        {
+          "text": "An algorithm",
+          "isCorrect": false,
+          "feedback": "An algorithm is an abstract set of logical steps -- not a physical hardware component."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_multiple",
+      "text": "Which of the following would remain fully intact as physical objects even if a computer's operating system, drivers, and firmware were all completely erased? (Select all that apply)",
+      "options": [
+        {
+          "text": "CPU",
+          "isCorrect": true,
+          "feedback": "Correct -- the CPU is a physical processing chip."
+        },
+        {
+          "text": "Motherboard",
+          "isCorrect": true,
+          "feedback": "Correct -- the motherboard is the physical circuit board connecting a computer's components."
+        },
+        {
+          "text": "Hard drive",
+          "isCorrect": true,
+          "feedback": "Correct -- a hard drive is a physical storage device."
+        },
+        {
+          "text": "The BIOS/firmware that runs when a computer first powers on",
+          "isCorrect": false,
+          "feedback": "Firmware is software, even though it's stored on a hardware chip -- it's a set of instructions, not the physical chip itself, which is what distinguishes it from the CPU, motherboard, and hard drive."
+        },
+        {
+          "text": "A sorting algorithm",
+          "isCorrect": false,
+          "feedback": "A sorting algorithm is an abstract, logical procedure -- not a physical hardware component."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about which of these could exist as a physical object sitting on a table, versus which only exist as instructions a computer executes.",
+        "medium": "Two of these four are tangible components; the other two are software you install or run.",
+        "easy": "Both correct answers are things you could physically pick up and hold in your hands -- the other two only exist as code."
+      },
+      "hard": {
+        "hard": "Think about which of these you could physically unplug or remove, versus which are really just instructions -- even if those instructions happen to be stored on a physical chip.",
+        "medium": "Three of these are physical components; firmware and a sorting algorithm are both non-physical -- one is a set of stored instructions, the other an abstract logical procedure.",
+        "easy": "Three of these you could physically pull out of the machine and hold in your hand; firmware is a set of instructions (even though it lives on a chip), and a sorting algorithm is just an abstract idea -- neither one is itself a physical object."
+      },
+      "medium": {
+        "hard": "Think about which of these you could drop on the floor, versus which only exist as instructions running on a machine.",
+        "medium": "Three of these four are physical components you could touch; the other two are pieces of software or abstract logic.",
+        "easy": "All three correct answers are things you could physically hold; the word processor and algorithm exist only as software or logic, not physical objects."
+      }
+    }
+  },
+  {
+    "topic": "programming languages",
+    "easy": {
+      "type": "multiple_choice_multiple",
+      "text": "Which of the following are examples of programming languages used to write software? (Select all that apply)",
+      "options": [
+        {
+          "text": "Python",
+          "isCorrect": true,
+          "feedback": "Correct -- Python is a widely used programming language."
+        },
+        {
+          "text": "Java",
+          "isCorrect": true,
+          "feedback": "Correct -- Java is a widely used programming language."
+        },
+        {
+          "text": "Windows",
+          "isCorrect": false,
+          "feedback": "Windows is an operating system -- it isn't itself a programming language."
+        },
+        {
+          "text": "A monitor",
+          "isCorrect": false,
+          "feedback": "A monitor is a physical hardware device -- it isn't a programming language."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_multiple",
+      "text": "Which of these are considered general-purpose programming languages? (Select all that apply)",
+      "options": [
+        {
+          "text": "C++",
+          "isCorrect": true,
+          "feedback": "Correct -- C++ is a widely used general-purpose programming language."
+        },
+        {
+          "text": "JavaScript",
+          "isCorrect": true,
+          "feedback": "Correct -- JavaScript is a widely used general-purpose programming language, common in web development."
+        },
+        {
+          "text": "HTML",
+          "isCorrect": false,
+          "feedback": "HTML is a markup language used to structure web content -- it isn't a general-purpose programming language, since it lacks features like loops or conditionals on its own."
+        },
+        {
+          "text": "A CPU",
+          "isCorrect": false,
+          "feedback": "A CPU is a physical hardware component, not a programming language."
+        },
+        {
+          "text": "RAM",
+          "isCorrect": false,
+          "feedback": "RAM is a physical hardware component, not a programming language."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_multiple",
+      "text": "Which of these are considered general-purpose programming languages, as opposed to markup languages or hardware? (Select all that apply)",
+      "options": [
+        {
+          "text": "Python",
+          "isCorrect": true,
+          "feedback": "Correct -- Python is a general-purpose programming language."
+        },
+        {
+          "text": "C++",
+          "isCorrect": true,
+          "feedback": "Correct -- C++ is a general-purpose programming language."
+        },
+        {
+          "text": "Java",
+          "isCorrect": true,
+          "feedback": "Correct -- Java is a general-purpose programming language."
+        },
+        {
+          "text": "HTML",
+          "isCorrect": false,
+          "feedback": "HTML structures web page content -- it's classified as a markup language, not a general-purpose programming language, since it lacks core programming features like loops."
+        },
+        {
+          "text": "A hard drive",
+          "isCorrect": false,
+          "feedback": "A hard drive is a physical hardware component, not a programming language."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Both correct answers are Turing-complete languages used to write general software logic, unlike an OS or a physical device.",
+        "medium": "Both correct answers are languages programmers use to write software logic -- the others are an OS and a physical device.",
+        "easy": "Both correct answers are languages used to write software -- the others are an operating system and a physical device."
+      },
+      "medium": {
+        "hard": "Both correct answers support core programming features like loops and conditionals, unlike a markup language that only structures content, and unlike physical hardware components.",
+        "medium": "Both correct answers support things like loops and conditionals -- unlike a markup language or physical hardware.",
+        "easy": "Both correct answers are true programming languages -- the others are a markup language and physical hardware parts."
+      },
+      "hard": {
+        "hard": "All three correct answers support core programming constructs like loops and conditionals, unlike a markup language limited to structuring content, and unlike a physical storage device.",
+        "medium": "All three correct answers are true programming languages -- the others are a markup language and a physical hardware component.",
+        "easy": "Three of these are real programming languages; the other two are a markup language and a physical hardware part."
+      }
+    }
+  },
+  {
+    "topic": "URLs",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does the abbreviation 'URL' stand for?",
+      "options": [
+        {
+          "text": "Uniform Resource Locator",
+          "isCorrect": true,
+          "feedback": "Correct -- a URL is the address used to locate a specific resource, like a webpage, on the internet."
+        },
+        {
+          "text": "Universal Reading List",
+          "isCorrect": false,
+          "feedback": "This isn't the actual meaning -- URL stands for Uniform Resource Locator."
+        },
+        {
+          "text": "United Reference Link",
+          "isCorrect": false,
+          "feedback": "This isn't the actual meaning -- URL stands for Uniform Resource Locator."
+        },
+        {
+          "text": "User Response Layer",
+          "isCorrect": false,
+          "feedback": "This isn't the actual meaning -- URL stands for Uniform Resource Locator."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In a URL such as 'https://www.example.com,' what does the 'https' part indicate?",
+      "options": [
+        {
+          "text": "The protocol used to access the resource",
+          "isCorrect": true,
+          "feedback": "Correct -- 'https' specifies the (secure) protocol used to communicate with the web server."
+        },
+        {
+          "text": "The specific file name being requested",
+          "isCorrect": false,
+          "feedback": "The file name or path typically comes later in the URL -- 'https' specifically indicates the protocol."
+        },
+        {
+          "text": "The country where the website's server is located",
+          "isCorrect": false,
+          "feedback": "Server location isn't indicated by 'https' -- that part specifies the communication protocol."
+        },
+        {
+          "text": "The exact date the website was created",
+          "isCorrect": false,
+          "feedback": "A URL's 'https' portion doesn't encode a creation date -- it indicates the protocol used."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How does a full URL typically differ from just a 'domain name,' such as 'example.com'?",
+      "options": [
+        {
+          "text": "A domain name is only one part of a URL, identifying the server, while the full URL also includes the protocol and often a specific path to a resource",
+          "isCorrect": true,
+          "feedback": "Correct -- the domain name gets you to the right server, while the rest of the URL specifies how to connect and exactly what resource to retrieve."
+        },
+        {
+          "text": "A domain name and a URL are always exactly identical",
+          "isCorrect": false,
+          "feedback": "A domain name is generally just one component within a larger URL, not identical to the full URL."
+        },
+        {
+          "text": "A domain name can only be used for email, while a URL is only used for websites",
+          "isCorrect": false,
+          "feedback": "Domain names are used for both websites and email addresses -- this isn't the actual distinction."
+        },
+        {
+          "text": "A URL is always shorter than a domain name",
+          "isCorrect": false,
+          "feedback": "A full URL is typically longer than just the domain name, since it includes additional information like the protocol and path."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This term expands into a phrase describing a standardized way to locate a specific resource.",
+        "medium": "This is the technical name for a web address, like the one you type into a browser.",
+        "easy": "This is just the technical term for what we usually call a 'web address.'"
+      },
+      "medium": {
+        "hard": "This portion specifies HOW the connection to the resource should be made, not which specific file, server location, or creation date.",
+        "medium": "This portion specifies the METHOD used to connect, not the specific file being requested.",
+        "easy": "This part of the address tells your browser which method to use to connect to the site."
+      },
+      "hard": {
+        "hard": "The domain name identifies WHICH server to contact, while the full URL layers on top of that the protocol and often a specific resource path -- they aren't identical, restricted to one use case, or reliably comparable in length.",
+        "medium": "The domain name identifies the SERVER; the full URL adds more details on top, like the protocol and the specific page.",
+        "easy": "The domain name is just one piece of the puzzle; the full URL includes that piece plus some extra information."
+      }
+    }
+  },
+  {
+    "topic": "IP addresses",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What term describes the unique numerical address assigned to a device so it can be identified on a network?",
+      "options": [
+        {
+          "text": "IP address",
+          "isCorrect": true,
+          "feedback": "Correct -- an IP address uniquely identifies a device on a network."
+        },
+        {
+          "text": "URL",
+          "isCorrect": false,
+          "feedback": "A URL is a web address used to locate a resource -- not the same as a device's numerical network address."
+        },
+        {
+          "text": "Byte",
+          "isCorrect": false,
+          "feedback": "A byte is a basic unit of digital storage -- unrelated to identifying a device on a network."
+        },
+        {
+          "text": "Algorithm",
+          "isCorrect": false,
+          "feedback": "An algorithm is a set of steps for solving a problem -- unrelated to identifying a device on a network."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How many numbers, separated by dots, make up a typical IPv4 address, such as 192.168.1.1?",
+      "options": [
+        {
+          "text": "4",
+          "isCorrect": true,
+          "feedback": "Correct -- a standard IPv4 address consists of four numbers, each separated by a dot."
+        },
+        {
+          "text": "2",
+          "isCorrect": false,
+          "feedback": "A standard IPv4 address has more than 2 numbers -- it has 4, separated by dots."
+        },
+        {
+          "text": "6",
+          "isCorrect": false,
+          "feedback": "A standard IPv4 address has fewer than 6 numbers -- it has 4, separated by dots."
+        },
+        {
+          "text": "8",
+          "isCorrect": false,
+          "feedback": "A standard IPv4 address has fewer than 8 numbers -- it has 4, separated by dots."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why was IPv6 introduced as a successor to the older IPv4 addressing system?",
+      "options": [
+        {
+          "text": "To provide a vastly larger number of possible addresses, since IPv4's limited address space was running out",
+          "isCorrect": true,
+          "feedback": "Correct -- the explosive growth in internet-connected devices made IPv4's roughly 4.3 billion possible addresses insufficient."
+        },
+        {
+          "text": "To make internet addresses easier for humans to memorize",
+          "isCorrect": false,
+          "feedback": "IPv6 addresses are actually longer and generally harder to memorize than IPv4 addresses -- the main motivation was expanding the total address space."
+        },
+        {
+          "text": "To remove the need for domain names entirely",
+          "isCorrect": false,
+          "feedback": "Domain names are still used and translated into IP addresses under IPv6, just as with IPv4 -- IPv6 didn't eliminate that system."
+        },
+        {
+          "text": "To make websites load without needing any internet connection",
+          "isCorrect": false,
+          "feedback": "IPv6, like IPv4, is a networking protocol that still requires an internet connection -- it doesn't enable offline browsing."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This is the numerical equivalent of a street address, but for a device connected to a network.",
+        "medium": "This is a device's unique numerical 'address' on a network, similar to a street address for a house.",
+        "easy": "Think of this as a device's own unique 'street address,' but for the internet instead of a physical location."
+      },
+      "medium": {
+        "hard": "Count the individual numbers, separated by dots, in an address like 192.168.1.1.",
+        "medium": "Count the individual numbers separated by dots in a typical address like 192.168.1.1.",
+        "easy": "Look at an example address like 192.168.1.1 and count how many separate numbers are in it."
+      },
+      "hard": {
+        "hard": "The motivation was running out of unique addresses under the older system, due to the sheer number of devices needing one, not memorability, eliminating domain names, or enabling offline use.",
+        "medium": "The motivation was simply running out of enough unique addresses for all the devices that needed one.",
+        "easy": "So many devices now connect to the internet that the older system was running out of unique addresses to give them."
+      }
+    }
+  },
+  {
+    "topic": "Tim Berners-Lee and the World Wide Web",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "Who is credited with inventing the World Wide Web in 1989?",
+      "options": [
+        {
+          "text": "Tim Berners-Lee",
+          "isCorrect": true,
+          "feedback": "Correct -- Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN."
+        },
+        {
+          "text": "Bill Gates",
+          "isCorrect": false,
+          "feedback": "Bill Gates co-founded Microsoft, but he did not invent the World Wide Web -- that was Tim Berners-Lee."
+        },
+        {
+          "text": "Steve Jobs",
+          "isCorrect": false,
+          "feedback": "Steve Jobs co-founded Apple, but he did not invent the World Wide Web -- that was Tim Berners-Lee."
+        },
+        {
+          "text": "Alan Turing",
+          "isCorrect": false,
+          "feedback": "Alan Turing made foundational contributions to computer science decades earlier, but he did not invent the World Wide Web -- that was Tim Berners-Lee."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "At which organization was Tim Berners-Lee working when he invented the World Wide Web?",
+      "options": [
+        {
+          "text": "CERN (the European Organization for Nuclear Research)",
+          "isCorrect": true,
+          "feedback": "Correct -- Berners-Lee developed the Web while working as a scientist at CERN in Switzerland."
+        },
+        {
+          "text": "NASA",
+          "isCorrect": false,
+          "feedback": "NASA is the U.S. space agency, unrelated to Berners-Lee's actual employer, CERN, when he invented the Web."
+        },
+        {
+          "text": "Microsoft",
+          "isCorrect": false,
+          "feedback": "Microsoft did not employ Berners-Lee when he invented the Web -- that was CERN."
+        },
+        {
+          "text": "MIT",
+          "isCorrect": false,
+          "feedback": "Berners-Lee later became involved with MIT (through the W3C), but he actually invented the Web while working at CERN."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How does the 'World Wide Web' technically differ from 'the Internet,' two terms often used interchangeably?",
+      "options": [
+        {
+          "text": "The Internet is the underlying global network infrastructure, while the Web is a system of interlinked documents built on top of that infrastructure",
+          "isCorrect": true,
+          "feedback": "Correct -- the Internet existed before the Web and supports many other services (like email) besides it."
+        },
+        {
+          "text": "The Web is the physical cabling and hardware, while the Internet is the software running on top of it",
+          "isCorrect": false,
+          "feedback": "This reverses the actual relationship -- the Internet is the underlying network infrastructure, while the Web is a system built on top of it."
+        },
+        {
+          "text": "The Internet was invented after the Web, as a way to make websites load faster",
+          "isCorrect": false,
+          "feedback": "This reverses the actual timeline -- the Internet's underlying infrastructure existed before Berners-Lee built the Web on top of it."
+        },
+        {
+          "text": "There is no real difference; the two terms describe the exact same thing",
+          "isCorrect": false,
+          "feedback": "While closely related, the terms describe genuinely different things -- the underlying network versus a system built on top of it."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This individual's 1989 invention is now used by billions of people daily to browse interlinked documents.",
+        "medium": "This person invented the system of linked web pages we now browse every day.",
+        "easy": "This person invented the World Wide Web -- the linked pages you browse when you go online."
+      },
+      "medium": {
+        "hard": "This organization is a major European scientific research institution, distinct from a U.S. space agency, a software company, or a university.",
+        "medium": "This organization is a scientific research institution in Europe, not a space agency or software company.",
+        "easy": "This organization is a big European scientific research lab, known for physics research like particle accelerators."
+      },
+      "hard": {
+        "hard": "One term names the underlying global network infrastructure that predates the other, while the second term names a system of interlinked documents built ON TOP of that infrastructure -- not the reverse, and not simply identical concepts.",
+        "medium": "One term is the underlying NETWORK; the other is a system of linked DOCUMENTS built on top of that network.",
+        "easy": "One of these existed first, as the basic network connecting computers; the other was built later, on top of it, as a way to link documents together."
+      }
+    }
+  },
+  {
+    "topic": "pioneers of computer science",
+    "easy": {
+      "type": "multiple_choice_multiple",
+      "text": "Which of the following people are considered important pioneers in the history of computer science? (Select all that apply)",
+      "options": [
+        {
+          "text": "Ada Lovelace",
+          "isCorrect": true,
+          "feedback": "Correct -- Ada Lovelace is often credited with writing what's considered the first algorithm intended for a machine."
+        },
+        {
+          "text": "Alan Turing",
+          "isCorrect": true,
+          "feedback": "Correct -- Alan Turing made foundational contributions to computer science and the theory of computation."
+        },
+        {
+          "text": "Isaac Newton",
+          "isCorrect": false,
+          "feedback": "Isaac Newton was a foundational physicist and mathematician, but he isn't considered a pioneer of computer science specifically."
+        },
+        {
+          "text": "Albert Einstein",
+          "isCorrect": false,
+          "feedback": "Albert Einstein was a foundational physicist, but he isn't considered a pioneer of computer science specifically."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_multiple",
+      "text": "Which of these figures made foundational contributions specifically to computer science or computing? (Select all that apply)",
+      "options": [
+        {
+          "text": "Grace Hopper",
+          "isCorrect": true,
+          "feedback": "Correct -- Grace Hopper pioneered early programming languages and helped develop the concept of the compiler."
+        },
+        {
+          "text": "Alan Turing",
+          "isCorrect": true,
+          "feedback": "Correct -- Turing's work laid theoretical foundations for modern computing."
+        },
+        {
+          "text": "Charles Darwin",
+          "isCorrect": false,
+          "feedback": "Charles Darwin is known for his work in evolutionary biology, not computer science."
+        },
+        {
+          "text": "Marie Curie",
+          "isCorrect": false,
+          "feedback": "Marie Curie is known for her pioneering work in physics and chemistry (radioactivity), not computer science."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_multiple",
+      "text": "Which of the following statements accurately describe genuine pioneers of computer science? (Select all that apply)",
+      "options": [
+        {
+          "text": "Ada Lovelace wrote detailed notes describing an algorithm intended to be run on Charles Babbage's proposed Analytical Engine",
+          "isCorrect": true,
+          "feedback": "Correct -- this is often cited as the first published algorithm designed for a machine, decades before electronic computers existed."
+        },
+        {
+          "text": "Grace Hopper helped develop early compilers, tools that translate human-readable code into machine-executable instructions",
+          "isCorrect": true,
+          "feedback": "Correct -- Hopper's work on compilers was foundational to making programming more accessible."
+        },
+        {
+          "text": "Charles Babbage completed and successfully ran his Analytical Engine during his own lifetime",
+          "isCorrect": false,
+          "feedback": "Babbage designed the Analytical Engine, but it was never actually built or run during his lifetime -- it remained an unrealized design, unlike the real, completed contributions of Lovelace and Hopper."
+        },
+        {
+          "text": "Alan Turing built the first working stored-program electronic computer",
+          "isCorrect": false,
+          "feedback": "Turing made foundational theoretical contributions to computing, but the first working stored-program electronic computers were built by other teams -- this specific claim about Turing personally building one is inaccurate."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about which of these four fields relates directly to computing, and which figures belong to an entirely different scientific discipline.",
+        "medium": "Two of these four are known specifically for computing contributions; the other two are famous for work in physics instead.",
+        "easy": "Look for the two remembered specifically for computing work -- one for an early program, one for foundational computing theory -- not the two physicists."
+      },
+      "medium": {
+        "hard": "Think about which of these four fields is directly related to computing, versus fields like biology or chemistry.",
+        "medium": "Two of these four made contributions specifically to computing; the other two are known for entirely different scientific fields.",
+        "easy": "Look for the two remembered specifically for computing contributions -- one for early programming languages, one for computing theory -- not the biologist or the physicist/chemist."
+      },
+      "hard": {
+        "hard": "The two correct statements accurately describe real historical computing contributions by their named figures, while the two incorrect statements misattribute achievements to figures whose real work lay elsewhere.",
+        "medium": "The two correct statements accurately describe real computing achievements -- the other two misattribute an achievement to someone whose real, documented work doesn't actually match that claim.",
+        "easy": "Watch out for statements that credit a real computing achievement to the WRONG historical figure -- two of these are correctly matched, two are not."
+      }
+    }
+  }
+]

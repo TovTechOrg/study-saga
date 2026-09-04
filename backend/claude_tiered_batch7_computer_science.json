@@ -1,0 +1,1517 @@
+[
+  {
+    "topic": "parallel processing",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does 'parallel processing' generally mean in computing?",
+      "options": [
+        {
+          "text": "Performing multiple computations at the same time, rather than one after another",
+          "isCorrect": true,
+          "feedback": "Correct -- parallel processing splits work across multiple processing units so pieces of it can run simultaneously."
+        },
+        {
+          "text": "Performing a single computation extremely slowly, one small step at a time",
+          "isCorrect": false,
+          "feedback": "Parallel processing is specifically about doing MULTIPLE things at once, the opposite of a single slow, purely sequential process."
+        },
+        {
+          "text": "Deleting old files to free up storage space",
+          "isCorrect": false,
+          "feedback": "Deleting files to free storage is unrelated to parallel processing, which is about running multiple computations simultaneously."
+        },
+        {
+          "text": "Connecting a computer to a printer",
+          "isCorrect": false,
+          "feedback": "Connecting to a printer is a peripheral/output concern, unrelated to parallel processing's focus on running multiple computations at once."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why can having a CPU with multiple 'cores' help enable effective parallel processing?",
+      "options": [
+        {
+          "text": "Each core can independently execute its own instructions, letting genuinely separate computations run at the same physical moment",
+          "isCorrect": true,
+          "feedback": "Correct -- multiple cores provide the actual physical hardware capability needed to truly run different computations simultaneously, rather than just switching between them very quickly."
+        },
+        {
+          "text": "Because having more cores automatically makes every single-threaded program run proportionally faster with no other changes needed",
+          "isCorrect": false,
+          "feedback": "A program specifically has to be designed to make use of multiple cores (for example, by dividing its work into parallel tasks) -- simply having more cores doesn't automatically speed up every existing single-threaded program."
+        },
+        {
+          "text": "Because more cores means the computer can store more files permanently",
+          "isCorrect": false,
+          "feedback": "The number of cores relates to processing capability, not to a computer's file storage capacity."
+        },
+        {
+          "text": "Because more cores allow a computer to use less electricity overall",
+          "isCorrect": false,
+          "feedback": "Having more cores doesn't inherently reduce electricity usage -- in fact, more active cores can often increase power consumption; the benefit described here is about processing capability, not efficiency."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can't every computational problem be sped up proportionally just by throwing more parallel processing cores at it (a limitation often discussed in relation to Amdahl's Law)?",
+      "options": [
+        {
+          "text": "Some portion of many problems is inherently sequential (each step depends on the previous one's result), and that sequential portion cannot be sped up no matter how many parallel cores are made available",
+          "isCorrect": true,
+          "feedback": "Correct -- this sequential bottleneck limits the maximum possible speedup achievable through parallelization alone, regardless of how many additional cores are added."
+        },
+        {
+          "text": "Because computers are only allowed to contain a maximum of two processing cores",
+          "isCorrect": false,
+          "feedback": "Modern computers can contain many more than two cores -- the actual limitation described here is about the inherently SEQUENTIAL portion of a problem's logic, not a hard cap on core count."
+        },
+        {
+          "text": "Because parallel processing always produces a completely incorrect final result",
+          "isCorrect": false,
+          "feedback": "Parallel processing, when implemented correctly, can produce entirely correct results -- the limitation being described is about the SPEEDUP achievable, not about correctness."
+        },
+        {
+          "text": "Because adding more cores always makes a computation run slower rather than faster",
+          "isCorrect": false,
+          "feedback": "Adding more cores can genuinely speed up the parallelizable portion of a computation -- the limitation is that a problem's inherently sequential portion caps how much total speedup is achievable, not that more cores always backfire."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the practice of running multiple computations at the same physical moment, rather than one after another sequentially.",
+        "medium": "Multiple computations happen simultaneously, rather than strictly one at a time in sequence.",
+        "hard": "Think about several workers tackling different parts of a job all at the very same time."
+      },
+      "medium": {
+        "easy": "Because each core can independently execute instructions simultaneously, multiple cores provide the physical hardware capability truly needed for genuine parallel execution.",
+        "medium": "Each of these independent units can run its own instructions at the same time as the others.",
+        "hard": "Think about needing multiple separate 'workers' inside the processor, each able to act independently at the same moment."
+      },
+      "hard": {
+        "easy": "The inherently sequential portion of a problem -- steps that must happen strictly in order -- caps how much total speedup adding more parallel cores can ever achieve.",
+        "medium": "A portion of many problems can't be split up across workers at all, since each step there depends directly on the one before it.",
+        "hard": "Think about a recipe where some steps absolutely must happen in order, no matter how many extra cooks you bring in."
+      }
+    }
+  },
+  {
+    "topic": "embedded systems",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is an 'embedded system'?",
+      "options": [
+        {
+          "text": "A small computer system built into a larger device to perform a specific, dedicated function",
+          "isCorrect": true,
+          "feedback": "Correct -- embedded systems are purpose-built computing components found inside everyday devices like microwaves, cars, and thermostats."
+        },
+        {
+          "text": "A general-purpose desktop computer used for a wide variety of tasks",
+          "isCorrect": false,
+          "feedback": "A general-purpose desktop computer is designed to handle MANY varied tasks -- an embedded system is specifically dedicated to one narrow, specific function."
+        },
+        {
+          "text": "A type of computer virus that hides inside other files",
+          "isCorrect": false,
+          "feedback": "An embedded system is a legitimate piece of purpose-built computing hardware, not a type of malicious software."
+        },
+        {
+          "text": "A backup copy of a website stored on a remote server",
+          "isCorrect": false,
+          "feedback": "An embedded system is a physical computing component built into a device -- it isn't a backup copy of a website."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why are embedded systems, such as the computer controlling a car's anti-lock braking system, often designed with very specific, limited functionality rather than being general-purpose?",
+      "options": [
+        {
+          "text": "Focusing narrowly on one specific task allows for more predictable, efficient, and often more reliable performance for that particular function",
+          "isCorrect": true,
+          "feedback": "Correct -- being purpose-built lets an embedded system's hardware and software be closely tailored to its one job, often improving reliability and efficiency for that specific task."
+        },
+        {
+          "text": "Because embedded systems are incapable of running any software whatsoever",
+          "isCorrect": false,
+          "feedback": "Embedded systems absolutely run software -- it's typically specialized, dedicated software suited to their one specific task, not an absence of software."
+        },
+        {
+          "text": "Because a general-purpose computer could never physically fit inside a car",
+          "isCorrect": false,
+          "feedback": "Physical size isn't really the core reason -- the emphasis is on dedicated, reliable performance suited to the specific narrow task, not simply a size constraint."
+        },
+        {
+          "text": "Because embedded systems are required to have a keyboard and monitor attached at all times",
+          "isCorrect": false,
+          "feedback": "Embedded systems very often have no traditional keyboard or monitor at all -- they're built for a specific dedicated function, not for general interactive use."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Many embedded systems, particularly ones used in safety-critical contexts like automotive braking or medical devices, must operate in 'real-time'. What does this generally mean in this context?",
+      "options": [
+        {
+          "text": "The system must respond to certain inputs or events within a strict, guaranteed time limit, since a late response could be just as harmful as an incorrect one",
+          "isCorrect": true,
+          "feedback": "Correct -- real-time requirements mean correctness includes not just producing the right output, but doing so within a required, bounded time window."
+        },
+        {
+          "text": "The system must display the current date and time on a screen at all times",
+          "isCorrect": false,
+          "feedback": "Displaying a clock is unrelated to what 'real-time' means for an embedded system -- it refers to guaranteed, bounded response timing for critical operations."
+        },
+        {
+          "text": "The system must be manually operated by a human at every single step, with no automation",
+          "isCorrect": false,
+          "feedback": "Real-time embedded systems are generally highly automated, precisely to guarantee fast, predictable responses -- requiring manual operation at every step would work against that goal."
+        },
+        {
+          "text": "The system must be connected to the internet at all times to function correctly",
+          "isCorrect": false,
+          "feedback": "Many real-time embedded systems function correctly with no internet connection at all -- the defining trait is guaranteed, bounded response timing, not internet connectivity."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's a small computing component built into a larger device specifically to carry out one dedicated function.",
+        "medium": "This is a purpose-built piece of computing hardware living inside something bigger, dedicated to a single task rather than many.",
+        "hard": "Think about the tiny brain quietly controlling just one job inside something like a microwave or a car dashboard, without you ever really noticing it's there."
+      },
+      "medium": {
+        "easy": "Being narrowly purpose-built for one specific function is exactly what allows for the tailored efficiency and reliability that a general-purpose design wouldn't provide as well.",
+        "medium": "Focusing tightly on a single specific task allows for more tailored, predictable, and reliable performance at that one task.",
+        "hard": "Think about designing something to do exactly one job extremely well, rather than trying to do everything."
+      },
+      "hard": {
+        "easy": "A response arriving even slightly too late can be just as harmful as an outright wrong response, which is exactly why a strict, guaranteed time limit matters here.",
+        "medium": "The key requirement is a guaranteed, bounded time limit for responding, not just eventually producing a correct answer.",
+        "hard": "Think about a braking system that computes the exact right response, but delivers it a moment too late to matter."
+      }
+    }
+  },
+  {
+    "topic": "the BIOS/UEFI",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general role of a computer's BIOS or UEFI firmware?",
+      "options": [
+        {
+          "text": "It initializes and tests hardware components and starts the process of loading the operating system when the computer powers on",
+          "isCorrect": true,
+          "feedback": "Correct -- BIOS (or its modern successor, UEFI) is the low-level firmware that runs first, before any operating system takes over."
+        },
+        {
+          "text": "It is the operating system that manages all of a computer's files and running applications",
+          "isCorrect": false,
+          "feedback": "BIOS/UEFI runs before and separately from the operating system -- it hands off control to the OS rather than being the OS that manages files and applications itself."
+        },
+        {
+          "text": "It is a settings menu used only for adjusting the computer's date, time, and display brightness",
+          "isCorrect": false,
+          "feedback": "Adjusting a few settings is just one small part of a BIOS/UEFI setup screen -- its actual core role is initializing hardware and starting the operating system's loading process."
+        },
+        {
+          "text": "It is a physical chip that exclusively controls how the keyboard and mouse connect to the computer",
+          "isCorrect": false,
+          "feedback": "BIOS/UEFI's role goes far beyond just keyboard and mouse connections -- it broadly initializes hardware and starts the operating-system loading process at power-on."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is 'UEFI' generally considered to be, in relation to traditional BIOS?",
+      "options": [
+        {
+          "text": "A more modern replacement for traditional BIOS, offering features like faster startup, support for larger storage drives, and a more advanced user interface",
+          "isCorrect": true,
+          "feedback": "Correct -- UEFI (Unified Extensible Firmware Interface) was developed to address several limitations of older BIOS-based firmware."
+        },
+        {
+          "text": "An older, now-obsolete firmware standard that came before BIOS existed",
+          "isCorrect": false,
+          "feedback": "This reverses the actual chronological and functional relationship -- UEFI came AFTER BIOS, as its more modern replacement, not before it."
+        },
+        {
+          "text": "A small backup battery on the motherboard that keeps the system clock running while the computer is unplugged",
+          "isCorrect": false,
+          "feedback": "That describes the CMOS battery, a separate motherboard component -- UEFI is the firmware itself, not the battery that helps preserve its settings and the system clock."
+        },
+        {
+          "text": "A partition table format used only for external USB flash drives, unrelated to how a computer starts up",
+          "isCorrect": false,
+          "feedback": "UEFI is closely associated with a certain partitioning scheme (GPT), but UEFI itself is the startup firmware -- it's not merely a partition format for USB drives, and it's central to how a computer boots."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a computer's boot process fail if the BIOS/UEFI cannot properly detect or initialize a critical piece of hardware, such as the primary storage drive?",
+      "options": [
+        {
+          "text": "Because the operating system itself is typically loaded from that storage drive, so if the firmware can't detect or access it properly, there's nothing for it to hand control over to",
+          "isCorrect": true,
+          "feedback": "Correct -- BIOS/UEFI's job includes locating and preparing to hand off control to the operating system, and it can't do that if it can't first properly detect the drive holding that operating system."
+        },
+        {
+          "text": "The system would automatically restart into a small backup operating system stored directly on the motherboard itself",
+          "isCorrect": false,
+          "feedback": "There's typically no hidden backup operating system built into the motherboard for BIOS/UEFI to fall back on -- if it can't detect the expected storage drive, the boot process generally fails or halts instead."
+        },
+        {
+          "text": "All previously saved files on that drive would be immediately and permanently deleted",
+          "isCorrect": false,
+          "feedback": "A failed hardware detection during boot doesn't erase the drive's stored data -- it simply prevents the system from completing its normal startup sequence, since it has nothing to hand control over to."
+        },
+        {
+          "text": "Because BIOS/UEFI is only used after the operating system has already fully finished loading",
+          "isCorrect": false,
+          "feedback": "This reverses the actual order -- BIOS/UEFI specifically runs BEFORE the operating system loads, which is precisely why a hardware detection failure at that early stage can prevent the operating system from ever starting."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the firmware responsible for hardware initialization and starting the operating-system loading process at power-on.",
+        "medium": "This low-level firmware checks and prepares the computer's hardware, then begins loading the operating system.",
+        "hard": "Think about the very first thing that runs the instant you press the power button, before anything else appears on screen."
+      },
+      "medium": {
+        "easy": "This modern option offers improvements like quicker startup and better support for newer, larger hardware, compared to the older standard it succeeds.",
+        "medium": "It's the more modern successor to older BIOS firmware, addressing several of that older standard's practical limitations.",
+        "hard": "Think about a newer version of the same basic idea, built to fix some of the older version's limitations."
+      },
+      "hard": {
+        "easy": "Because the operating system is typically loaded from that same storage drive, a failure to detect it at this early stage leaves nothing for the firmware to hand control over to, halting the boot process.",
+        "medium": "The firmware needs to properly locate that critical storage before it has anything to hand control over to.",
+        "hard": "Think about where the operating system itself is actually stored, and what has to happen before it can even be found."
+      }
+    }
+  },
+  {
+    "topic": "logic gates",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'logic gate' in computer hardware?",
+      "options": [
+        {
+          "text": "A basic electronic component that takes one or more binary inputs and produces a binary output, based on a specific logical rule",
+          "isCorrect": true,
+          "feedback": "Correct -- logic gates like AND, OR, and NOT are the fundamental physical building blocks used to implement digital logic in hardware."
+        },
+        {
+          "text": "A physical door used to enter a computer server room",
+          "isCorrect": false,
+          "feedback": "In computer hardware, a 'logic gate' is a tiny electronic component implementing a logical rule -- not a physical door for a room."
+        },
+        {
+          "text": "A piece of software used to block unwanted internet traffic",
+          "isCorrect": false,
+          "feedback": "Blocking unwanted internet traffic describes a firewall -- a logic gate is a fundamental electronic hardware component, a distinct concept."
+        },
+        {
+          "text": "A type of file format used for storing images",
+          "isCorrect": false,
+          "feedback": "A logic gate is a basic hardware component implementing logical operations, entirely unrelated to a file format for images."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does an 'AND' logic gate's output behave, given its two binary inputs?",
+      "options": [
+        {
+          "text": "It outputs a true (1) result only when both of its inputs are true (1)",
+          "isCorrect": true,
+          "feedback": "Correct -- an AND gate requires every input to be true for its output to also be true, mirroring the logical 'and' operation."
+        },
+        {
+          "text": "It outputs a true (1) result whenever at least one of its inputs is true (1)",
+          "isCorrect": false,
+          "feedback": "That describes an OR gate's behavior -- an AND gate specifically requires BOTH inputs to be true for its output to be true."
+        },
+        {
+          "text": "It always outputs a true (1) result, regardless of its inputs",
+          "isCorrect": false,
+          "feedback": "An AND gate's output genuinely depends on its inputs -- it isn't unconditionally true regardless of what's fed into it."
+        },
+        {
+          "text": "It outputs a true (1) result only when both of its inputs are false (0)",
+          "isCorrect": false,
+          "feedback": "That description doesn't match an AND gate's actual rule -- an AND gate requires BOTH inputs to be true, not both to be false, for its output to be true."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why are logic gates considered foundational building blocks for constructing much more complex digital circuits, like the arithmetic circuits inside a CPU?",
+      "options": [
+        {
+          "text": "Combinations of simple logic gates can be wired together to implement more complex logical and arithmetic operations, such as adding binary numbers",
+          "isCorrect": true,
+          "feedback": "Correct -- this is the essential principle behind digital circuit design: simple gates combine into progressively more complex functional units, eventually building up to something as sophisticated as a modern CPU."
+        },
+        {
+          "text": "Because logic gates can only be used one single time before needing to be physically replaced",
+          "isCorrect": false,
+          "feedback": "Logic gates function repeatedly and continuously as part of ongoing circuit operation -- there's no such one-time-use limitation."
+        },
+        {
+          "text": "Because a single logic gate alone is powerful enough to perform every calculation a CPU can perform",
+          "isCorrect": false,
+          "feedback": "A single logic gate performs a very simple, specific logical operation -- the actual power comes from COMBINING many gates together to build up more complex functionality, not from any single gate alone."
+        },
+        {
+          "text": "Because logic gates are only used in printers, never in a CPU",
+          "isCorrect": false,
+          "feedback": "Logic gates are foundational to CPUs specifically, among many other kinds of digital hardware -- they aren't limited to printers."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's a fundamental electronic component implementing a basic logical rule on binary inputs to produce a binary output.",
+        "medium": "This basic hardware component takes simple true/false inputs and produces a true/false output, following a specific logical rule.",
+        "hard": "Think about a tiny electronic switch that follows a simple logical rule, like 'true only if both inputs are true'."
+      },
+      "medium": {
+        "easy": "Requiring BOTH inputs to be true before producing a true output is exactly the defining rule for this particular gate.",
+        "medium": "This gate's output only becomes true if every one of its inputs is also true.",
+        "hard": "Think about needing every single ingredient present before a recipe actually counts as complete."
+      },
+      "hard": {
+        "easy": "Combining many simple gates together is exactly how far more complex operations, like binary addition, and ultimately an entire CPU, get built up from these basic building blocks.",
+        "medium": "Wiring together many simple gates lets you build up progressively more complex logical and arithmetic operations.",
+        "hard": "Think about stacking together many very simple building blocks to eventually construct something far more sophisticated."
+      }
+    }
+  },
+  {
+    "topic": "binary arithmetic and two's complement",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In binary arithmetic, what is the result of adding the binary numbers 1 + 1?",
+      "options": [
+        {
+          "text": "10 (which represents the decimal value 2)",
+          "isCorrect": true,
+          "feedback": "Correct -- just as adding 5 + 5 in decimal carries over into the next digit (producing 10), adding 1 + 1 in binary carries over, producing 10 in binary, equal to decimal 2."
+        },
+        {
+          "text": "2 (written using the digit '2' directly)",
+          "isCorrect": false,
+          "feedback": "Binary only uses the digits 0 and 1 -- the digit '2' itself never appears; the value two is instead represented as '10' in binary."
+        },
+        {
+          "text": "11 (which would represent the decimal value 3)",
+          "isCorrect": false,
+          "feedback": "That would be the binary result of 1 + 1 + 1, or equivalently decimal 3 -- but 1 + 1 alone equals binary 10, representing decimal 2."
+        },
+        {
+          "text": "0 (which represents the decimal value 0)",
+          "isCorrect": false,
+          "feedback": "Adding two nonzero binary values together shouldn't collapse to zero -- 1 + 1 in binary equals 10, representing decimal 2, not 0."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why do computers commonly need a way to represent negative numbers in binary, given that a plain binary number itself only naturally represents non-negative values?",
+      "options": [
+        {
+          "text": "Because many computations legitimately involve negative values (like subtraction results or negative measurements), and the hardware needs a consistent binary scheme to represent and calculate with them correctly",
+          "isCorrect": true,
+          "feedback": "Correct -- without an agreed-upon scheme, there would be no consistent way for hardware circuits to correctly interpret and compute with negative values."
+        },
+        {
+          "text": "Because negative numbers are actually never used in any real computer program",
+          "isCorrect": false,
+          "feedback": "Negative numbers show up constantly in real programs, from financial calculations to physics simulations -- there's a genuine, common need to represent them correctly in binary."
+        },
+        {
+          "text": "Because computers are physically incapable of performing subtraction of any kind",
+          "isCorrect": false,
+          "feedback": "Computers definitely can perform subtraction -- part of what makes that work smoothly in hardware is having a consistent scheme (like two's complement) for representing negative values in the first place."
+        },
+        {
+          "text": "Because representing negative numbers requires an entirely different, non-binary storage format",
+          "isCorrect": false,
+          "feedback": "Negative numbers are still represented using ordinary binary digits -- schemes like two's complement encode them within standard binary representation, not some entirely separate non-binary format."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a key practical advantage of the 'two's complement' representation for negative binary numbers, widely used in modern computer hardware?",
+      "options": [
+        {
+          "text": "It allows addition and subtraction to be performed using the same basic binary addition circuitry, without needing separate special-case hardware logic just for handling negative numbers",
+          "isCorrect": true,
+          "feedback": "Correct -- this unification simplifies CPU hardware design significantly, since the same adder circuit can correctly handle both positive and negative values without extra special-case logic."
+        },
+        {
+          "text": "It allows a computer to represent an unlimited, infinite range of numbers with no upper or lower bound at all",
+          "isCorrect": false,
+          "feedback": "Two's complement representation is still constrained by a fixed number of bits, giving it a definite representable range -- it doesn't allow a truly unlimited range."
+        },
+        {
+          "text": "It still requires a completely separate, dedicated subtraction circuit distinct from the addition circuitry, just organized more efficiently",
+          "isCorrect": false,
+          "feedback": "This is actually backwards -- two's complement's whole advantage is that it avoids needing a separate dedicated subtraction circuit, since the same addition hardware can handle both operations."
+        },
+        {
+          "text": "It means arithmetic using two's complement numbers can never experience overflow, since the representation itself automatically prevents it",
+          "isCorrect": false,
+          "feedback": "Overflow can still occur with two's complement arithmetic when a result exceeds the range a fixed number of bits can represent -- the representation doesn't eliminate that risk on its own."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Binary carries the same way decimal does when a column is full, so 1 + 1 produces a two-digit binary result equal to the very next whole number after 1.",
+        "medium": "Just like decimal digits carry over past 9, binary digits carry over past 1.",
+        "hard": "Think about how adding 5 plus 5 in ordinary decimal carries over into a new digit place."
+      },
+      "medium": {
+        "easy": "Because negative values show up constantly in real computations, hardware needs an agreed-upon, consistent binary scheme to represent and compute with them correctly.",
+        "medium": "Real calculations frequently need to represent and work correctly with values below zero.",
+        "hard": "Think about how often subtraction or measurements naturally produce a result below zero."
+      },
+      "hard": {
+        "easy": "One same set of addition hardware can correctly process both positive and negative values, with no extra circuitry required just for negative cases.",
+        "medium": "This scheme lets the same basic addition hardware correctly handle both positive and negative values, without extra special-case logic.",
+        "hard": "Think about being able to use one single, ordinary tool for two different jobs, rather than needing a completely separate specialized tool for each one."
+      }
+    }
+  },
+  {
+    "topic": "DNS",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of DNS (Domain Name System)?",
+      "options": [
+        {
+          "text": "Translating human-readable website names (like example.com) into the numeric IP addresses computers use to locate each other",
+          "isCorrect": true,
+          "feedback": "Correct -- DNS acts like a phonebook, letting people use memorable names instead of needing to remember numeric IP addresses."
+        },
+        {
+          "text": "Encrypting data sent between a web browser and a website",
+          "isCorrect": false,
+          "feedback": "Encrypting data in transit is generally the role of protocols like HTTPS -- DNS specifically handles translating domain names into IP addresses."
+        },
+        {
+          "text": "Storing a backup copy of every website's actual content",
+          "isCorrect": false,
+          "feedback": "DNS translates domain names into IP addresses -- it doesn't store a backup of websites' actual content."
+        },
+        {
+          "text": "Automatically writing the code for a new website",
+          "isCorrect": false,
+          "feedback": "DNS is a translation and lookup service for domain names -- it has nothing to do with automatically generating website code."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "When you type a website's domain name into a browser, what generally happens first, before the browser can actually connect to that website's server?",
+      "options": [
+        {
+          "text": "A DNS lookup occurs to resolve the domain name into the corresponding numeric IP address",
+          "isCorrect": true,
+          "feedback": "Correct -- this lookup step is what lets the browser figure out exactly which server, identified by its IP address, it should actually connect to."
+        },
+        {
+          "text": "The website's entire content is instantly downloaded before any lookup even happens",
+          "isCorrect": false,
+          "feedback": "Downloading the website's actual content only happens AFTER the browser has first resolved the domain name to an IP address via DNS."
+        },
+        {
+          "text": "The domain name is immediately deleted from the browser's memory",
+          "isCorrect": false,
+          "feedback": "The domain name isn't deleted -- it's used as the basis for the DNS lookup that resolves it into a usable IP address."
+        },
+        {
+          "text": "The browser skips any lookup process entirely and connects using the domain name text directly, as-is",
+          "isCorrect": false,
+          "feedback": "Underlying network connections are made using IP addresses, not the raw domain name text -- a DNS lookup step first converts the name into the needed IP address."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "DNS lookups are often described as happening through a hierarchical, distributed system rather than one single central database. Why is this distributed structure beneficial?",
+      "options": [
+        {
+          "text": "It spreads the responsibility and load of handling lookups across many different servers worldwide, improving reliability, scalability, and resilience compared to relying on one single central point that could fail or become overwhelmed",
+          "isCorrect": true,
+          "feedback": "Correct -- distributing the work in this hierarchical way lets the system handle the massive, ever-growing volume of lookups happening across the internet without a single central point of failure."
+        },
+        {
+          "text": "Because a single centralized database would be more efficient, but is technically impossible to build with today's technology",
+          "isCorrect": false,
+          "feedback": "It isn't a matter of technical impossibility -- the DISTRIBUTED design is specifically favored for the reliability, scalability, and resilience benefits it provides, which a single centralized point wouldn't offer as robustly."
+        },
+        {
+          "text": "Because DNS lookups are only ever needed once per website in a person's entire lifetime",
+          "isCorrect": false,
+          "feedback": "DNS lookups happen quite frequently as people visit various websites repeatedly -- that ongoing high volume is actually part of why a distributed, scalable structure is so beneficial."
+        },
+        {
+          "text": "Because a hierarchical structure automatically encrypts all of a user's browsing data",
+          "isCorrect": false,
+          "feedback": "The hierarchical, distributed structure specifically addresses reliability and scalability of NAME LOOKUPS -- it doesn't provide encryption of browsing data on its own."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It translates human-readable domain names into the numeric IP addresses that computers use to locate each other.",
+        "medium": "This system converts a friendly, memorable website name into the numeric address computers actually use to connect.",
+        "hard": "Think about a phonebook that converts a person's name into their actual phone number."
+      },
+      "medium": {
+        "easy": "Resolving the domain name into its corresponding IP address is exactly the step that has to happen first, before the browser can connect to that address.",
+        "medium": "A lookup step converts the typed name into a usable numeric address, before any real connection to the website's server happens.",
+        "hard": "Think about needing to look up a specific address before you can actually drive there."
+      },
+      "hard": {
+        "easy": "Spreading responsibility across a hierarchy of many servers worldwide is exactly what provides the reliability, scalability, and resilience that one single centralized database wouldn't offer as well.",
+        "medium": "Distributing the load across many servers helps the system stay reliable and scalable, rather than depending on one single central point.",
+        "hard": "Think about spreading the responsibility for handling requests across many different helpers around the world, instead of relying on just one."
+      }
+    }
+  },
+  {
+    "topic": "HTTP and HTTPS",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is HTTP primarily used for?",
+      "options": [
+        {
+          "text": "It's a protocol used for transferring web page data between a web browser and a web server",
+          "isCorrect": true,
+          "feedback": "Correct -- HTTP (HyperText Transfer Protocol) is the foundational protocol underlying how web pages are requested and delivered."
+        },
+        {
+          "text": "It's a protocol used exclusively for sending emails",
+          "isCorrect": false,
+          "feedback": "Sending email typically relies on different protocols, like SMTP -- HTTP is specifically used for transferring web page data between browsers and servers."
+        },
+        {
+          "text": "It's a type of file format for storing images",
+          "isCorrect": false,
+          "feedback": "HTTP is a communication protocol for transferring data, not a file format for storing images specifically."
+        },
+        {
+          "text": "It's a programming language used to build mobile apps",
+          "isCorrect": false,
+          "feedback": "HTTP is a network communication protocol, not a programming language used for building applications."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is the key difference between HTTP and HTTPS?",
+      "options": [
+        {
+          "text": "HTTPS encrypts the data exchanged between the browser and server, while standard HTTP transmits that data without encryption",
+          "isCorrect": true,
+          "feedback": "Correct -- the 'S' in HTTPS stands for 'Secure', reflecting the added encryption layer that protects data in transit from being read by outside parties."
+        },
+        {
+          "text": "HTTP can only be used on mobile devices, while HTTPS can only be used on desktop computers",
+          "isCorrect": false,
+          "feedback": "Both HTTP and HTTPS can be used on essentially any device capable of network communication -- the real distinction between them is about encryption, not device type."
+        },
+        {
+          "text": "HTTPS is an older, now-obsolete version of HTTP that is no longer used",
+          "isCorrect": false,
+          "feedback": "This reverses their actual relationship -- HTTPS is the more secure, still very much actively used approach, not an obsolete predecessor to plain HTTP."
+        },
+        {
+          "text": "HTTP and HTTPS are simply two different names referring to the exact identical protocol",
+          "isCorrect": false,
+          "feedback": "They're related but meaningfully different -- specifically, HTTPS adds an encryption layer that plain HTTP lacks."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is using HTTPS instead of plain HTTP especially important when submitting sensitive information, like a password or credit card number, through a website?",
+      "options": [
+        {
+          "text": "Because without HTTPS's encryption, that sensitive data could potentially be intercepted and read by an unauthorized third party while traveling across the network",
+          "isCorrect": true,
+          "feedback": "Correct -- HTTPS's encryption is specifically designed to prevent eavesdroppers from being able to read the actual content of the data being transmitted."
+        },
+        {
+          "text": "Because HTTPS makes a website's images and videos load in higher resolution",
+          "isCorrect": false,
+          "feedback": "HTTPS's core benefit is encrypting transmitted data for security -- it isn't primarily about improving image or video resolution."
+        },
+        {
+          "text": "Because plain HTTP websites are incapable of accepting any typed input from a user at all",
+          "isCorrect": false,
+          "feedback": "A plain HTTP website can absolutely accept typed input, like a form submission -- the real security concern is that such data would travel unencrypted and could potentially be intercepted, not that it can't be submitted at all."
+        },
+        {
+          "text": "Because HTTPS is required in order for a website to display any text content whatsoever",
+          "isCorrect": false,
+          "feedback": "Plain HTTP websites can display text content just fine -- HTTPS's specific advantage is the added encryption protecting data in transit, not a requirement for displaying text."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the protocol responsible for transferring web page data between a browser and a web server.",
+        "medium": "This protocol governs how web page data is requested and delivered between a browser and a server.",
+        "hard": "Think about the underlying protocol your browser uses every time it fetches a web page for you to view."
+      },
+      "medium": {
+        "easy": "Encrypting the data exchanged between browser and server is exactly the added feature that distinguishes the more secure version from the plain, unencrypted version.",
+        "medium": "One version adds an encryption layer protecting the data in transit; the other transmits that data without any such protection.",
+        "hard": "Think about whether the data traveling back and forth is scrambled so outsiders can't read it, or sent in plain readable form."
+      },
+      "hard": {
+        "easy": "The encryption specifically prevents an unauthorized third party from being able to read the actual content of sensitive data as it travels across the network.",
+        "medium": "Without the encryption layer, sensitive typed information could potentially be read by an unauthorized eavesdropper along the way.",
+        "hard": "Think about someone secretly watching the network traffic and being able to read exactly what you typed into a form."
+      }
+    }
+  },
+  {
+    "topic": "firewalls",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of a computer 'firewall'?",
+      "options": [
+        {
+          "text": "To monitor and control incoming and outgoing network traffic based on defined security rules",
+          "isCorrect": true,
+          "feedback": "Correct -- a firewall acts as a protective barrier, deciding which network traffic should be allowed through and which should be blocked."
+        },
+        {
+          "text": "To physically prevent a computer from overheating",
+          "isCorrect": false,
+          "feedback": "Preventing physical overheating is handled by cooling hardware like fans -- a firewall's role is specifically about controlling network traffic, not thermal management."
+        },
+        {
+          "text": "To automatically translate a program's code into a different programming language",
+          "isCorrect": false,
+          "feedback": "A firewall filters network traffic based on security rules -- it has nothing to do with translating a program's source code into another language."
+        },
+        {
+          "text": "To permanently delete a computer's files after a set period of time",
+          "isCorrect": false,
+          "feedback": "A firewall's job is monitoring and controlling network traffic -- it isn't a tool for automatically deleting a computer's stored files."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does a basic firewall commonly decide whether to allow or block a piece of network traffic?",
+      "options": [
+        {
+          "text": "By checking the traffic against a set of configured rules, such as which ports, IP addresses, or types of connections are permitted",
+          "isCorrect": true,
+          "feedback": "Correct -- these configured rules define the firewall's policy for what traffic should be allowed through versus blocked."
+        },
+        {
+          "text": "By randomly allowing or blocking traffic with no consistent rule involved",
+          "isCorrect": false,
+          "feedback": "A firewall's decisions are based on consistent, configured security rules -- they aren't random."
+        },
+        {
+          "text": "By checking the current time of day only, ignoring the actual content or source of the traffic entirely",
+          "isCorrect": false,
+          "feedback": "While time-based rules can sometimes be one factor in more advanced configurations, a firewall's core decision-making is based on the traffic's characteristics, like source, destination, and port, not purely on the time of day."
+        },
+        {
+          "text": "By physically inspecting the network cables for damage",
+          "isCorrect": false,
+          "feedback": "A firewall operates on the level of digital traffic rules -- it isn't a tool for physically inspecting the condition of network cables."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might relying on a firewall alone be insufficient to fully protect a network from all types of security threats?",
+      "options": [
+        {
+          "text": "A firewall primarily filters traffic based on rules like addresses and ports, but it may not fully protect against threats hidden within otherwise 'allowed' traffic, such as malicious content inside a permitted connection or human-focused tricks like phishing",
+          "isCorrect": true,
+          "feedback": "Correct -- this is why firewalls are typically used as just one layer within a broader, multi-layered security strategy, rather than as a sole, complete defense."
+        },
+        {
+          "text": "Because a firewall can only be used to protect exactly one single computer at a time, and never a whole network",
+          "isCorrect": false,
+          "feedback": "Firewalls can absolutely be configured to protect an entire network, not just a single computer -- the actual limitation being described is about the TYPES of threats a firewall's traffic-filtering approach may not fully catch."
+        },
+        {
+          "text": "Because installing a firewall makes a computer's other security software stop working entirely",
+          "isCorrect": false,
+          "feedback": "A firewall generally works alongside other security tools rather than disabling them -- the limitation here is about the specific KINDS of threats a firewall alone may not catch, not about conflicts with other tools."
+        },
+        {
+          "text": "Because firewalls are illegal to use in most countries",
+          "isCorrect": false,
+          "feedback": "Firewalls are a completely standard, legal security tool used very widely -- the actual limitation is about the specific kinds of threats they may not fully address alone."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It monitors and controls incoming and outgoing network traffic based on configured security rules.",
+        "medium": "This tool monitors and filters network traffic according to a set of defined security rules.",
+        "hard": "Think about a protective barrier that decides which network traffic gets let in or kept out."
+      },
+      "medium": {
+        "easy": "Checking traffic against configured rules involving elements like ports, addresses, and connection types is exactly how this decision typically gets made.",
+        "medium": "Configured rules about things like source, destination, and port are what actually drive the allow-or-block decision.",
+        "hard": "Think about specific criteria, like where the traffic is coming from or which door (port) it's trying to use."
+      },
+      "hard": {
+        "easy": "Malicious content riding along inside traffic that matches an 'allowed' rule, or human-focused tricks like phishing, are exactly the kinds of threats a rules-based firewall alone may not fully catch.",
+        "medium": "Threats hidden inside otherwise permitted traffic, or ones that trick a person directly, can slip past rules based only on addresses and ports.",
+        "hard": "Think about a threat that sneaks in disguised as traffic the firewall was already told to allow through."
+      }
+    }
+  },
+  {
+    "topic": "packet switching",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'packet switching' in computer networking?",
+      "options": [
+        {
+          "text": "Breaking data into smaller pieces called 'packets' and sending them independently across a network, to be reassembled at the destination",
+          "isCorrect": true,
+          "feedback": "Correct -- packet switching is the foundational approach the modern internet uses to move data across shared network connections."
+        },
+        {
+          "text": "Physically swapping network cables between two different computers",
+          "isCorrect": false,
+          "feedback": "Packet switching describes a data transmission technique, not literally swapping physical cables between computers."
+        },
+        {
+          "text": "Permanently storing an entire file on a single computer with no transmission involved",
+          "isCorrect": false,
+          "feedback": "Packet switching is specifically about TRANSMITTING data across a network by breaking it into pieces -- it isn't about simply storing a whole file with no transmission at all."
+        },
+        {
+          "text": "Switching a computer's power source from battery to a wall outlet",
+          "isCorrect": false,
+          "feedback": "Packet switching is a networking data-transmission concept, entirely unrelated to switching a computer's power source."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might different packets belonging to the same overall message potentially travel across different physical paths through a network before being reassembled at the destination?",
+      "options": [
+        {
+          "text": "Packet-switched networks can route each packet independently, often based on current network conditions, allowing for more efficient and resilient use of available network paths",
+          "isCorrect": true,
+          "feedback": "Correct -- this flexibility lets a network route around congestion or failures, since packets aren't rigidly locked to one single fixed path from source to destination."
+        },
+        {
+          "text": "Because every single packet is required to travel through every single computer connected to the entire internet",
+          "isCorrect": false,
+          "feedback": "Packets are routed efficiently toward their destination, not forced through every computer on the whole internet -- that would be enormously wasteful and impractical."
+        },
+        {
+          "text": "Because packets are physically incapable of following the exact same path more than once",
+          "isCorrect": false,
+          "feedback": "There's no such rule against packets following the same path repeatedly -- routing decisions are typically based on current network conditions, not an artificial restriction on reusing the same path."
+        },
+        {
+          "text": "Because sending packets along different paths guarantees the message will always arrive in the correct order automatically, with no further steps needed",
+          "isCorrect": false,
+          "feedback": "Packets arriving via different paths can actually arrive out of order, which is exactly why the receiving system typically needs a mechanism to correctly reassemble them back into the proper original sequence."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a key practical advantage of packet switching over an alternative approach like traditional circuit switching (which reserves a single dedicated path for an entire ongoing connection)?",
+      "options": [
+        {
+          "text": "Packet switching allows a shared network's capacity to be used more efficiently, since packets from many different communications can share the same underlying links rather than each needing a fully dedicated, reserved path",
+          "isCorrect": true,
+          "feedback": "Correct -- this efficient sharing of network capacity is a major reason packet switching became the foundation of the modern internet, rather than traditional dedicated-circuit approaches."
+        },
+        {
+          "text": "Packet switching guarantees zero possibility of any data ever being lost or delayed",
+          "isCorrect": false,
+          "feedback": "Packet switching doesn't guarantee against all loss or delay -- networks still need additional mechanisms to handle occasional lost or delayed packets; the core advantage described is about efficient shared use of network capacity."
+        },
+        {
+          "text": "Packet switching requires a completely separate physical cable to be installed for every single individual packet sent",
+          "isCorrect": false,
+          "feedback": "Packet switching specifically avoids needing a dedicated physical path for each individual transmission -- that requirement is closer to describing traditional circuit switching, the alternative being contrasted here."
+        },
+        {
+          "text": "Packet switching can only be used for sending image files, never text or other data types",
+          "isCorrect": false,
+          "feedback": "Packet switching is used for transmitting virtually any kind of digital data, including text, images, video, and more -- it isn't restricted specifically to image files."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the technique of breaking data into independently-routed packets that get reassembled once they reach their destination.",
+        "medium": "Data gets broken into smaller pieces that travel independently across the network before being put back together at the destination.",
+        "hard": "Think about breaking a big letter into several smaller postcards, each mailed separately, then reassembled once they all arrive."
+      },
+      "medium": {
+        "easy": "Independent, condition-based routing of each packet is exactly what allows different packets from the same message to take different physical paths, needing reassembly at the end.",
+        "medium": "Since each packet can be routed independently based on current conditions, they don't all have to stick to one single fixed path.",
+        "hard": "Think about a delivery service that lets each individual package take whichever route looks quickest at that moment."
+      },
+      "hard": {
+        "easy": "Letting packets from many different communications share the same underlying network links, instead of each requiring its own fully dedicated reserved path, is exactly the efficiency advantage over traditional circuit switching.",
+        "medium": "Sharing the same underlying network links among many different communications, rather than reserving a dedicated path for each one, is the key efficiency benefit here.",
+        "hard": "Think about many different callers sharing the same set of roads, versus each caller getting their own permanently reserved private road."
+      }
+    }
+  },
+  {
+    "topic": "bandwidth",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In networking, what does 'bandwidth' generally refer to?",
+      "options": [
+        {
+          "text": "The maximum amount of data that can be transferred over a network connection in a given amount of time",
+          "isCorrect": true,
+          "feedback": "Correct -- bandwidth is often described using an analogy to a pipe's width: a wider pipe (higher bandwidth) can carry more data at once."
+        },
+        {
+          "text": "The total number of websites a person has ever visited",
+          "isCorrect": false,
+          "feedback": "The number of websites visited is unrelated to bandwidth, which specifically measures a connection's maximum data transfer capacity over time."
+        },
+        {
+          "text": "The physical distance between two connected computers",
+          "isCorrect": false,
+          "feedback": "Physical distance is a separate networking factor (which can affect latency) -- bandwidth specifically measures maximum data transfer capacity, not distance."
+        },
+        {
+          "text": "The exact number of devices connected to a single Wi-Fi router",
+          "isCorrect": false,
+          "feedback": "Device count on a network is a separate concern from bandwidth, which specifically measures the maximum data transfer capacity of a connection."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a household with a high-bandwidth internet connection still experience noticeably slower performance if many devices are streaming video simultaneously?",
+      "options": [
+        {
+          "text": "Because the available bandwidth has to be shared among all the devices actively using the connection at the same time, reducing how much each individual device effectively gets",
+          "isCorrect": true,
+          "feedback": "Correct -- even a large total bandwidth capacity gets divided among competing simultaneous uses, which can leave each individual stream with a smaller effective share."
+        },
+        {
+          "text": "Because bandwidth only affects how fast a computer's internal processor runs, not network performance at all",
+          "isCorrect": false,
+          "feedback": "Bandwidth is specifically a NETWORKING measurement about data transfer capacity -- it isn't related to a computer's internal processor speed."
+        },
+        {
+          "text": "Because streaming video is completely incapable of using any network bandwidth at all",
+          "isCorrect": false,
+          "feedback": "Streaming video is actually one of the more bandwidth-intensive common activities -- it very much does consume network bandwidth, which is exactly why many simultaneous streams can strain a shared connection."
+        },
+        {
+          "text": "Because having a high-bandwidth connection automatically limits a household to using only a single device at a time",
+          "isCorrect": false,
+          "feedback": "A high-bandwidth connection can certainly support multiple devices -- the issue described is about that available bandwidth being SHARED among simultaneous users, not a hard limit to one device."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is bandwidth alone not always a reliable predictor of how 'fast' or responsive an internet connection will feel for tasks like real-time video calls or online gaming?",
+      "options": [
+        {
+          "text": "Other factors, such as latency (delay) and packet loss, also significantly affect the perceived responsiveness of a connection, separate from its raw maximum data-carrying capacity",
+          "isCorrect": true,
+          "feedback": "Correct -- a connection can have plenty of raw bandwidth capacity while still feeling sluggish or unresponsive due to high latency or unreliable packet delivery, which matter a great deal for real-time interactive tasks."
+        },
+        {
+          "text": "Because bandwidth and speed are simply two completely different, entirely unrelated concepts with no connection to each other whatsoever",
+          "isCorrect": false,
+          "feedback": "Bandwidth does relate meaningfully to overall connection performance -- the actual point is that OTHER factors like latency also matter significantly, not that bandwidth is entirely disconnected from performance."
+        },
+        {
+          "text": "Because a connection's bandwidth changes randomly every single second with no predictable pattern at all",
+          "isCorrect": false,
+          "feedback": "While bandwidth CAN fluctuate somewhat due to network conditions, the key point here is that latency and packet loss are SEPARATE contributing factors to perceived responsiveness, not that bandwidth itself is simply unpredictable."
+        },
+        {
+          "text": "Because real-time video calls and online gaming don't actually require any network connection at all",
+          "isCorrect": false,
+          "feedback": "Both real-time video calls and online gaming absolutely rely on an active network connection -- the point being made is about which specific connection QUALITIES matter most for those particular use cases."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the maximum data transfer capacity of a network connection, measured over a given amount of time.",
+        "medium": "This measures the maximum amount of data a connection can carry over a given period of time.",
+        "hard": "Think about the width of a pipe: a wider pipe can carry more water flowing through it at once."
+      },
+      "medium": {
+        "easy": "Because the available capacity has to be shared among every device using the connection simultaneously, each individual device effectively gets a smaller portion during heavy simultaneous use.",
+        "medium": "The total available capacity gets divided up among every device actively competing for it at the same moment.",
+        "hard": "Think about several people trying to talk through the same single pipe all at the same time."
+      },
+      "hard": {
+        "easy": "Latency (delay) and packet loss are separate factors from raw bandwidth capacity, and both can significantly affect how responsive a connection feels for real-time interactive tasks.",
+        "medium": "Delay and dropped data along the way can matter just as much as raw carrying capacity for how responsive a connection actually feels.",
+        "hard": "Think about a wide pipe that still has an annoyingly long delay before anything actually starts flowing through it."
+      }
+    }
+  },
+  {
+    "topic": "routers",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general role of a network 'router'?",
+      "options": [
+        {
+          "text": "It directs data packets between different networks, such as forwarding traffic between a home network and the wider internet",
+          "isCorrect": true,
+          "feedback": "Correct -- a router's core job is figuring out where to send each packet of data so it reaches the correct destination network."
+        },
+        {
+          "text": "It assigns each device on the network a permanent, unchanging IP address for life",
+          "isCorrect": false,
+          "feedback": "Routers commonly assign addresses dynamically (often via DHCP) and these can change over time -- a router's defining role is directing traffic between networks, not permanently fixing a device's address forever."
+        },
+        {
+          "text": "It only manages Wi-Fi signal strength and has no role in directing traffic to other networks",
+          "isCorrect": false,
+          "feedback": "Providing Wi-Fi is a common router feature, but its core defining role is actually directing data packets between different networks -- not merely managing wireless signal strength."
+        },
+        {
+          "text": "It stores and serves the actual web pages that a browser requests",
+          "isCorrect": false,
+          "feedback": "Storing and serving web pages is the role of a web server -- a router's role is directing data packets between networks, an entirely different function."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does a router generally decide where to send an incoming data packet?",
+      "options": [
+        {
+          "text": "It examines the packet's destination address information and uses that, along with its routing information, to determine the best path to forward it along",
+          "isCorrect": true,
+          "feedback": "Correct -- routers maintain information about network paths and use a packet's destination details to make forwarding decisions."
+        },
+        {
+          "text": "It relies solely on the packet's source address, ignoring where the packet is actually trying to go",
+          "isCorrect": false,
+          "feedback": "A router specifically needs the packet's DESTINATION information to decide where to forward it -- relying only on the source address wouldn't be enough to determine the correct path."
+        },
+        {
+          "text": "It sends every packet to one central relay computer, which is then responsible for figuring out the real final destination",
+          "isCorrect": false,
+          "feedback": "There's no single central relay that every packet must pass through -- each router examines the destination address itself and consults its own routing information to forward the packet along."
+        },
+        {
+          "text": "It only forwards packets that use the HTTP protocol, blocking every other type of network traffic by default",
+          "isCorrect": false,
+          "feedback": "A router forwards many different types of network traffic, not just HTTP -- its forwarding decision is driven by destination address and routing information, not by restricting to one single protocol."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "In a typical home setup, a router often also performs a function called 'NAT' (Network Address Translation). What does NAT generally accomplish?",
+      "options": [
+        {
+          "text": "It allows multiple devices on a private home network to share a single public IP address when communicating with the wider internet",
+          "isCorrect": true,
+          "feedback": "Correct -- NAT translates between the private addresses used internally on the home network and the single public address the outside internet sees, letting many devices share that one public address."
+        },
+        {
+          "text": "It assigns a unique, permanent public IP address to each individual device on the home network",
+          "isCorrect": false,
+          "feedback": "This is actually the opposite of NAT's purpose -- NAT lets multiple devices SHARE one single public address, rather than giving each device its own separate public address."
+        },
+        {
+          "text": "It physically increases the maximum download speed a household's internet plan provides",
+          "isCorrect": false,
+          "feedback": "NAT is about address translation for shared internet access -- it doesn't inherently increase the raw download speed provided by an internet plan."
+        },
+        {
+          "text": "It encrypts all outgoing traffic so that it cannot be read by anyone outside the home network",
+          "isCorrect": false,
+          "feedback": "Encrypting traffic is generally the role of protocols like a VPN or HTTPS -- NAT itself is specifically about translating private addresses to a shared public address, not about encryption."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It directs data packets between different networks, forwarding traffic toward its intended destination.",
+        "medium": "This device directs data traffic between different networks, like a home network and the broader internet.",
+        "hard": "Think about a traffic director standing at an intersection, sending each vehicle toward its correct destination."
+      },
+      "medium": {
+        "easy": "Examining the packet's destination address and consulting routing information is exactly how the best forwarding path gets determined.",
+        "medium": "The packet's own destination address information, combined with known routing details, drives the forwarding decision.",
+        "hard": "Think about checking a package's shipping label before deciding which delivery truck it should go on."
+      },
+      "hard": {
+        "easy": "Allowing many devices on a private network to share a single public-facing address for internet communication is exactly what this function accomplishes.",
+        "medium": "This function lets many separate devices inside the home share one single address as seen by the outside internet.",
+        "hard": "Think about an entire household sharing just one single mailing address when sending letters out into the world."
+      }
+    }
+  },
+  {
+    "topic": "TCP/IP",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is TCP/IP?",
+      "options": [
+        {
+          "text": "A foundational suite of networking protocols that governs how data is transmitted and addressed across the internet",
+          "isCorrect": true,
+          "feedback": "Correct -- TCP/IP (Transmission Control Protocol/Internet Protocol) is the core set of rules underlying how devices communicate across the modern internet."
+        },
+        {
+          "text": "A brand of network cable used to physically connect computers",
+          "isCorrect": false,
+          "feedback": "TCP/IP is a set of communication protocols, not a specific brand of physical network cable."
+        },
+        {
+          "text": "A programming language used to build websites",
+          "isCorrect": false,
+          "feedback": "TCP/IP is a networking protocol suite governing data transmission, not a programming language used to build websites."
+        },
+        {
+          "text": "A type of antivirus software",
+          "isCorrect": false,
+          "feedback": "TCP/IP is foundational networking protocol technology, unrelated to antivirus software, which addresses a different concern (malware protection)."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Within TCP/IP, what is the general role of IP (Internet Protocol), as distinct from TCP?",
+      "options": [
+        {
+          "text": "IP is primarily responsible for addressing and routing packets to their correct destination across the network",
+          "isCorrect": true,
+          "feedback": "Correct -- IP handles the addressing and forwarding of packets, while TCP (layered on top of IP) handles reliable delivery, ordering, and error-checking of the data within those packets."
+        },
+        {
+          "text": "IP is responsible for ensuring that all packets arrive in the exact correct order, with none lost",
+          "isCorrect": false,
+          "feedback": "Ensuring reliable, ordered delivery is primarily TCP's job -- IP itself is focused on addressing and routing packets toward their destination."
+        },
+        {
+          "text": "IP is a programming language used specifically for writing mobile apps",
+          "isCorrect": false,
+          "feedback": "IP is a network addressing and routing protocol, not a programming language used for building applications."
+        },
+        {
+          "text": "IP and TCP are simply two completely different, entirely unrelated technologies with no connection to each other",
+          "isCorrect": false,
+          "feedback": "They are closely related and commonly used together as a suite -- IP handles addressing and routing, while TCP builds reliable delivery on top of that addressing foundation."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why does TCP (as opposed to a simpler alternative like UDP) add mechanisms like acknowledgments and retransmission of lost packets?",
+      "options": [
+        {
+          "text": "To guarantee reliable, ordered delivery of data, ensuring that even if individual packets are lost or arrive out of order across the underlying network, the receiving application still gets a complete, correctly ordered stream of data",
+          "isCorrect": true,
+          "feedback": "Correct -- this reliability guarantee is TCP's defining feature, making it well suited to applications (like file transfers or web pages) where receiving complete, correctly ordered data matters more than minimizing delay."
+        },
+        {
+          "text": "Because without these mechanisms, no data could ever be transmitted over the internet at all",
+          "isCorrect": false,
+          "feedback": "Data can absolutely be transmitted without these specific mechanisms too -- for example, UDP transmits data without these reliability guarantees, favoring speed and simplicity instead -- so these mechanisms aren't a strict prerequisite for transmission to occur at all."
+        },
+        {
+          "text": "To make data transmission slower on purpose, for no practical benefit",
+          "isCorrect": false,
+          "feedback": "These mechanisms do add some overhead, but that overhead exists specifically to guarantee reliability and correct ordering, not simply to slow things down with no benefit."
+        },
+        {
+          "text": "Because TCP is physically incapable of transmitting more than one packet at a time",
+          "isCorrect": false,
+          "feedback": "TCP is fully capable of managing the transmission of many packets as part of an ongoing connection -- the acknowledgment and retransmission mechanisms exist to guarantee reliability, not because of some one-packet-at-a-time limitation."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the foundational networking protocol suite governing how data is addressed and transmitted across the internet.",
+        "medium": "This foundational suite of protocols governs how data is addressed and transmitted across the internet.",
+        "hard": "Think about the fundamental rulebook that lets computers all over the world successfully talk to each other online."
+      },
+      "medium": {
+        "easy": "Addressing and routing packets toward their correct destination is specifically this part's role, distinct from TCP's separate job of ensuring reliable, ordered delivery.",
+        "medium": "One part focuses specifically on addressing and routing packets toward their destination.",
+        "hard": "Think about who's responsible for figuring out WHERE a packet should go, versus who's responsible for making sure it actually arrives correctly."
+      },
+      "hard": {
+        "easy": "Guaranteeing reliable, correctly-ordered delivery -- even when the underlying network loses or reorders individual packets -- is exactly what these extra mechanisms are designed to accomplish.",
+        "medium": "These extra steps exist specifically to guarantee that the receiving side ends up with a complete, correctly-ordered copy of the data.",
+        "hard": "Think about double-checking that every single piece of a message actually made it, and asking for a resend if something's missing."
+      }
+    }
+  },
+  {
+    "topic": "LANs and WANs",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does 'LAN' stand for, and what does it generally describe?",
+      "options": [
+        {
+          "text": "Local Area Network -- a network confined to a relatively small geographic area, like a single home, office, or building",
+          "isCorrect": true,
+          "feedback": "Correct -- a LAN connects devices that are physically close together, such as computers within the same building."
+        },
+        {
+          "text": "Large Area Network -- a network that always spans multiple entire countries",
+          "isCorrect": false,
+          "feedback": "That description doesn't match LAN at all -- a LAN specifically refers to a network confined to a small, local area, not one spanning multiple countries."
+        },
+        {
+          "text": "Long-distance Access Node -- a single physical device used to boost Wi-Fi signal strength",
+          "isCorrect": false,
+          "feedback": "LAN refers to the overall scope and scale of a network (a small local area), not to a single specific Wi-Fi signal-boosting device."
+        },
+        {
+          "text": "Licensed Application Network -- a network reserved exclusively for officially licensed software",
+          "isCorrect": false,
+          "feedback": "LAN describes a network's geographic scope, unrelated to any concept of software licensing."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does a WAN (Wide Area Network) generally differ from a LAN?",
+      "options": [
+        {
+          "text": "A WAN spans a much larger geographic area, potentially connecting multiple LANs across cities, countries, or even globally, while a LAN is confined to a small local area",
+          "isCorrect": true,
+          "feedback": "Correct -- the internet itself is often described as the largest example of a WAN, connecting countless smaller LANs together."
+        },
+        {
+          "text": "A WAN can only ever connect exactly two devices at a time",
+          "isCorrect": false,
+          "feedback": "A WAN can connect vast numbers of devices and networks together, far more than just two -- its defining trait is its large geographic scope, not a device-count limitation."
+        },
+        {
+          "text": "A WAN and a LAN are simply two different names describing the exact identical network scope",
+          "isCorrect": false,
+          "feedback": "They describe genuinely different scopes -- a LAN is confined to a small local area, while a WAN spans a much larger geographic area, potentially connecting many LANs together."
+        },
+        {
+          "text": "A WAN requires every connected device to be physically located within the same building",
+          "isCorrect": false,
+          "feedback": "That requirement actually describes a LAN's typical scope -- a WAN is specifically defined by spanning a much LARGER geographic area, often connecting devices across many different physical locations."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a large company with offices in multiple cities need to rely on WAN technology to connect its various office LANs together, rather than simply extending a single LAN across all locations?",
+      "options": [
+        {
+          "text": "LAN technologies are generally designed for smaller, localized networks and aren't practical for connecting devices across the large physical distances separating different cities, so WAN technology (often using specialized long-distance links) is needed instead to bridge those separate local networks",
+          "isCorrect": true,
+          "feedback": "Correct -- WAN technologies and infrastructure are specifically built to handle communication across those much greater distances, which typical LAN equipment and protocols aren't designed for."
+        },
+        {
+          "text": "Because it's against the law for a company to use LAN technology in more than one physical office",
+          "isCorrect": false,
+          "feedback": "There's no such legal prohibition -- the actual limitation is a practical and technical one, since LAN technology isn't designed to efficiently span very large geographic distances."
+        },
+        {
+          "text": "Because a LAN is only capable of connecting a maximum of two total devices",
+          "isCorrect": false,
+          "feedback": "A LAN can typically connect many devices, well beyond just two -- the real limitation being discussed here is about the practical GEOGRAPHIC SCOPE a LAN's technology is designed to cover, not a strict device-count cap."
+        },
+        {
+          "text": "Because WAN technology is exactly identical to LAN technology, just given a different marketing name",
+          "isCorrect": false,
+          "feedback": "WAN and LAN involve genuinely different underlying technologies and infrastructure suited to their very different distance and scale requirements -- they aren't simply the same thing rebranded."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's a network confined to a small local area, like a single home, office, or building.",
+        "medium": "This kind of network is confined to a relatively small, local geographic area.",
+        "hard": "Think about the network connecting the computers within just one single house or office building."
+      },
+      "medium": {
+        "easy": "Spanning a much larger geographic area -- potentially connecting many separate local networks together -- is exactly what distinguishes this from a small, locally confined network.",
+        "medium": "This kind of network spans a much larger geographic area, often connecting multiple smaller local networks together.",
+        "hard": "Think about a network that stretches across many buildings, cities, or even countries, rather than staying local."
+      },
+      "hard": {
+        "easy": "Because local-network technology isn't designed for such large distances, a specialized wide-area technology is needed instead to properly bridge the separate local networks across those distant office locations.",
+        "medium": "Local-network technology isn't built to efficiently span the much greater distances separating offices in different cities.",
+        "hard": "Think about whether the technology built for connecting devices within one single building would still work well stretched across an entire country."
+      }
+    }
+  },
+  {
+    "topic": "VPNs",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of a VPN (Virtual Private Network)?",
+      "options": [
+        {
+          "text": "To create a secure, encrypted connection over a public or untrusted network, helping to protect a user's data and privacy",
+          "isCorrect": true,
+          "feedback": "Correct -- a VPN routes a user's traffic through an encrypted tunnel, helping shield it from being easily read by others on the same network."
+        },
+        {
+          "text": "To permanently increase a computer's total storage capacity",
+          "isCorrect": false,
+          "feedback": "A VPN is about securing and routing network traffic -- it doesn't increase a computer's physical or logical storage capacity."
+        },
+        {
+          "text": "To physically repair a damaged network cable",
+          "isCorrect": false,
+          "feedback": "A VPN is a software/network-based tool for secure connections, unrelated to physically repairing damaged hardware like cables."
+        },
+        {
+          "text": "To automatically translate a website's text into a different language",
+          "isCorrect": false,
+          "feedback": "A VPN's role is securing network traffic and connections -- it isn't a language translation tool for website content."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might someone use a VPN when connecting to the internet through a public Wi-Fi network, such as at a coffee shop?",
+      "options": [
+        {
+          "text": "To help protect their data from being easily intercepted or read by others on that same potentially untrusted public network",
+          "isCorrect": true,
+          "feedback": "Correct -- public Wi-Fi networks can be more vulnerable to eavesdropping, and a VPN's encryption helps guard against that specific risk."
+        },
+        {
+          "text": "Because a VPN is required in order for a coffee shop's Wi-Fi to function at all",
+          "isCorrect": false,
+          "feedback": "A coffee shop's Wi-Fi network functions on its own without requiring a VPN -- a VPN is instead an OPTIONAL extra layer of protection a user can choose to add for their own security."
+        },
+        {
+          "text": "Because using a VPN guarantees free, unlimited internet access anywhere in the world",
+          "isCorrect": false,
+          "feedback": "A VPN doesn't grant free internet access -- it specifically helps secure and route existing internet traffic, requiring an underlying internet connection to already be present."
+        },
+        {
+          "text": "Because a VPN physically boosts the strength of a Wi-Fi signal",
+          "isCorrect": false,
+          "feedback": "A VPN operates at the software/network level to secure traffic -- it doesn't physically strengthen a wireless signal's range or power."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How does a VPN's encrypted 'tunnel' help protect a user's privacy from, for example, their local internet service provider (ISP) directly observing which specific websites they visit?",
+      "options": [
+        {
+          "text": "By encrypting the user's traffic and routing it through the VPN provider's server, the user's own ISP can generally see that a connection to the VPN is happening, but not the specific details of the traffic being tunneled through it",
+          "isCorrect": true,
+          "feedback": "Correct -- this shifts visibility of the actual traffic details away from the local ISP toward the VPN provider instead, which is why the trustworthiness of the VPN provider itself becomes an important separate consideration."
+        },
+        {
+          "text": "By making the user's internet connection completely untraceable by absolutely anyone under any circumstances",
+          "isCorrect": false,
+          "feedback": "A VPN can meaningfully improve privacy from certain observers like a local ISP, but it doesn't make a connection completely untraceable in an absolute sense -- for instance, the VPN provider itself could still potentially observe the tunneled traffic."
+        },
+        {
+          "text": "By physically disconnecting the user's device from their local internet service provider's network entirely",
+          "isCorrect": false,
+          "feedback": "The user's device generally still connects through their local ISP's network initially -- the VPN instead encrypts and reroutes the traffic passing through that same underlying connection, rather than disconnecting from the ISP altogether."
+        },
+        {
+          "text": "By deleting the user's browsing history from their own device automatically",
+          "isCorrect": false,
+          "feedback": "A VPN's core function is encrypting and rerouting network traffic -- it isn't specifically a tool for deleting a user's locally stored browsing history."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It creates a secure, encrypted connection over a public or untrusted network, helping protect data and privacy.",
+        "medium": "This tool creates a secure, encrypted connection to help protect a user's data and privacy over a network.",
+        "hard": "Think about a private, locked tunnel your data travels through, even while crossing a shared public road."
+      },
+      "medium": {
+        "easy": "Protecting data from being easily intercepted by others sharing that same untrusted public network is exactly the benefit being sought here.",
+        "medium": "This tool helps guard against others on that same shared, potentially less trustworthy public network being able to read your data.",
+        "hard": "Think about who else might be able to see your data while you're connected to a shared network at a public location."
+      },
+      "hard": {
+        "easy": "Because the traffic itself is encrypted and routed through the VPN provider's own server, the user's local ISP loses visibility into the specific tunneled traffic details, shifting that visibility to the VPN provider instead.",
+        "medium": "The local network provider can typically see that a connection to this kind of service is happening, but not the specific details of what's being sent through it.",
+        "hard": "Think about who can see WHAT is inside a locked, opaque delivery truck, versus who can just see that the truck exists and is moving."
+      }
+    }
+  },
+  {
+    "topic": "network latency",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does 'latency' generally refer to in a network connection?",
+      "options": [
+        {
+          "text": "The delay between sending a piece of data and it actually arriving at its destination",
+          "isCorrect": true,
+          "feedback": "Correct -- latency measures the TIME DELAY involved in data transmission, distinct from bandwidth, which measures data-carrying capacity."
+        },
+        {
+          "text": "The total amount of data a connection can carry at once",
+          "isCorrect": false,
+          "feedback": "That describes BANDWIDTH, a related but distinct measurement -- latency specifically refers to the DELAY in data transmission, not carrying capacity."
+        },
+        {
+          "text": "The physical color of the network cable being used",
+          "isCorrect": false,
+          "feedback": "A cable's physical color has no bearing on network latency, which specifically measures transmission delay."
+        },
+        {
+          "text": "The number of devices connected to a single router",
+          "isCorrect": false,
+          "feedback": "The number of connected devices is a separate networking detail -- latency specifically refers to the delay in data transmission."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a video call feel noticeably laggy or awkward even if the connection has plenty of available bandwidth?",
+      "options": [
+        {
+          "text": "High latency can cause a delay between when something is said or shown and when it's actually received on the other end, which feels disruptive regardless of how much raw data-carrying capacity is available",
+          "isCorrect": true,
+          "feedback": "Correct -- for real-time interactive uses like video calls, the delay itself (latency) can matter just as much as, or more than, the connection's raw bandwidth capacity."
+        },
+        {
+          "text": "Because bandwidth and latency are simply two different names for the exact same underlying measurement",
+          "isCorrect": false,
+          "feedback": "They measure genuinely different things -- bandwidth is about data-carrying CAPACITY, while latency is about transmission DELAY, and a connection can have plenty of one while still suffering from the other."
+        },
+        {
+          "text": "Because video calls are physically incapable of experiencing any latency at all, by definition",
+          "isCorrect": false,
+          "feedback": "Video calls are just as susceptible to latency as any other kind of network traffic -- in fact, latency is often especially noticeable in real-time interactive uses like video calls."
+        },
+        {
+          "text": "Because having ample bandwidth automatically eliminates all possible network delay",
+          "isCorrect": false,
+          "feedback": "Ample bandwidth doesn't automatically eliminate delay -- latency can stem from other factors, like physical distance or network congestion along the path, separate from how much raw capacity is available."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why does the physical distance data must travel (such as between a user and a distant server) contribute to network latency, even when the connection itself has high bandwidth?",
+      "options": [
+        {
+          "text": "Signals still take a certain amount of time to physically travel across a distance (bounded by physical limits like the speed of light in the transmission medium), so greater physical distance generally means a longer minimum delay, regardless of the connection's carrying capacity",
+          "isCorrect": true,
+          "feedback": "Correct -- this is why services often use servers located geographically closer to users, specifically to help minimize this distance-related component of latency."
+        },
+        {
+          "text": "Because physical distance has absolutely no effect on latency whatsoever, since bandwidth is the only relevant factor",
+          "isCorrect": false,
+          "feedback": "Physical distance does meaningfully contribute to latency, due to the real minimum travel time signals require to cover distance -- it isn't irrelevant just because bandwidth is high."
+        },
+        {
+          "text": "Because greater physical distance always increases a connection's bandwidth as a side effect",
+          "isCorrect": false,
+          "feedback": "Physical distance and bandwidth are largely separate concerns -- greater distance doesn't inherently increase carrying capacity; if anything, distance is more closely tied to latency, the delay component."
+        },
+        {
+          "text": "Because signals sent over long distances are required to stop completely at every single city along the way",
+          "isCorrect": false,
+          "feedback": "There's no such requirement for signals to fully stop at every city along a route -- the actual reason distance adds delay is the fundamental physical travel time signals require to cover that distance."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the delay between sending data and that data actually arriving at its destination.",
+        "medium": "This measures the time delay involved in data actually reaching its destination, distinct from carrying capacity.",
+        "hard": "Think about the gap in time between sending a message and it actually showing up on the other end."
+      },
+      "medium": {
+        "easy": "A delay in when something is actually received can feel disruptive for real-time interaction, independent of how much raw carrying capacity the connection happens to have.",
+        "medium": "A high-capacity connection can still suffer from delay, since capacity and delay measure genuinely different things.",
+        "hard": "Think about a wide, high-capacity road that's still just really long, adding travel TIME regardless of how many lanes it has."
+      },
+      "hard": {
+        "easy": "A greater physical distance a signal must travel generally imposes a longer minimum delay, due to fundamental physical travel-time limits, independent of the connection's bandwidth.",
+        "medium": "Covering a greater physical distance takes a certain minimum amount of time, bounded by real physical limits, regardless of the connection's overall capacity.",
+        "hard": "Think about the minimum physical travel time a signal needs, no matter how wide or fast the 'road' carrying it is."
+      }
+    }
+  }
+]

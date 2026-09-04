@@ -1,0 +1,617 @@
+[
+{
+  "topic": "recursion",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a function that calls itself in order to solve a problem?",
+    "options": [
+      {"text": "Recursion", "isCorrect": true, "feedback": "Correct -- a recursive function solves a problem by calling itself on smaller versions of that problem."},
+      {"text": "Iteration", "isCorrect": false, "feedback": "Iteration describes repeating steps using a loop, not a function calling itself."},
+      {"text": "Encryption", "isCorrect": false, "feedback": "Encryption converts data into a coded form -- unrelated to a function calling itself."},
+      {"text": "Compilation", "isCorrect": false, "feedback": "Compilation is the process of translating code into a runnable form -- unrelated to a function calling itself."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is a 'base case' in a recursive function?",
+    "options": [
+      {"text": "The condition that stops the recursion from continuing indefinitely", "isCorrect": true, "feedback": "Correct -- the base case gives the recursive calls a stopping point, preventing endless self-calling."},
+      {"text": "The very first line of code in any program", "isCorrect": false, "feedback": "A base case is specific to recursive functions, not just any program's first line of code."},
+      {"text": "A case where the function deliberately produces an error", "isCorrect": false, "feedback": "A base case is meant to correctly stop the recursion, not to deliberately trigger an error."},
+      {"text": "The name of the variable holding the function's final result", "isCorrect": false, "feedback": "A base case is a stopping CONDITION, not simply a variable name."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What typically happens if a recursive function lacks a proper base case?",
+    "options": [
+      {"text": "It calls itself infinitely, eventually causing a stack overflow error", "isCorrect": true, "feedback": "Correct -- without a stopping condition, the recursive calls pile up until the program runs out of memory allocated for tracking them."},
+      {"text": "The program automatically fixes the missing base case on its own", "isCorrect": false, "feedback": "Programs don't automatically repair missing logic -- a missing base case leads to infinite recursion, not automatic correction."},
+      {"text": "The function simply runs once and stops normally", "isCorrect": false, "feedback": "Without a base case, the function keeps calling itself rather than stopping normally after one run."},
+      {"text": "The computer's hardware is permanently damaged", "isCorrect": false, "feedback": "A stack overflow crashes the program, but it doesn't cause permanent physical hardware damage."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This technique solves a problem by having a function invoke itself on a smaller version of that same problem.", "medium": "This technique has a function call itself, usually to solve a smaller piece of the same problem.", "easy": "This technique is when a function calls itself again and again to solve a problem."},
+    "medium": {"hard": "This is the specific condition that tells the function when to STOP calling itself.", "medium": "This is the condition that tells the recursive calls when to stop.", "easy": "This is the part of a recursive function that says 'stop calling yourself now.'"},
+    "hard": {"hard": "The consequence is a buildup of unfinished recursive calls exhausting the memory reserved for tracking them, not automatic repair, a normal single run, or physical hardware harm.", "medium": "The consequence is the program running out of memory from too many unfinished calls piling up.", "easy": "The function just keeps calling itself forever, until the program runs out of memory and crashes."}
+  }
+},
+{
+  "topic": "classes and objects (object-oriented programming)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "In object-oriented programming, what term describes a blueprint or template used to create objects?",
+    "options": [
+      {"text": "Class", "isCorrect": true, "feedback": "Correct -- a class defines the properties and behaviors that objects created from it will have."},
+      {"text": "Loop", "isCorrect": false, "feedback": "A loop repeats instructions -- it isn't a blueprint for creating objects."},
+      {"text": "Variable", "isCorrect": false, "feedback": "A variable stores a single value -- it isn't a blueprint for creating objects."},
+      {"text": "Comment", "isCorrect": false, "feedback": "A comment is a note ignored by the program -- it isn't a blueprint for creating objects."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does a 'class' typically differ from an 'object' in object-oriented programming?",
+    "options": [
+      {"text": "A class is the blueprint or template, while an object is a specific instance created from that class", "isCorrect": true, "feedback": "Correct -- many different objects, each with their own specific data, can be created from a single class."},
+      {"text": "A class and an object are simply two names for the exact same thing", "isCorrect": false, "feedback": "They describe genuinely different things -- a template versus a specific instance made from it."},
+      {"text": "A class can only exist inside a loop, while an object can only exist inside a function", "isCorrect": false, "feedback": "Neither classes nor objects are restricted to existing only inside loops or functions specifically."},
+      {"text": "A class is always smaller in size than an object", "isCorrect": false, "feedback": "Size isn't the distinguishing factor -- the real distinction is 'blueprint' versus 'specific instance created from that blueprint.'"}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What object-oriented programming concept allows a new class to inherit properties and behaviors from an existing class?",
+    "options": [
+      {"text": "Inheritance", "isCorrect": true, "feedback": "Correct -- inheritance lets a new ('child') class reuse and extend the properties and methods of an existing ('parent') class."},
+      {"text": "Iteration", "isCorrect": false, "feedback": "Iteration describes repeating steps using a loop -- unrelated to one class inheriting from another."},
+      {"text": "Compilation", "isCorrect": false, "feedback": "Compilation is the process of translating code into a runnable form -- unrelated to one class inheriting from another."},
+      {"text": "Encryption", "isCorrect": false, "feedback": "Encryption converts data into a coded form -- unrelated to one class inheriting from another."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This concept defines the shared structure and behavior that every object created from it will follow.", "medium": "This concept is like a cookie-cutter template used to make many similar objects.", "easy": "This is a template used to create objects, like a blueprint for a house."},
+    "medium": {"hard": "One term names the template itself; the other names an actual, specific item built FROM that template, and neither is restricted to loops or functions specifically.", "medium": "One is the TEMPLATE itself; the other is an actual specific ITEM created from that template.", "easy": "One of these is the general blueprint; the other is an actual specific thing built using that blueprint."},
+    "hard": {"hard": "This concept lets one class reuse and extend another's structure and behavior, distinct from repeating instructions, translating code, or securing data.", "medium": "This concept lets one class REUSE features from another class, rather than repeating instructions or translating code.", "easy": "This lets a new class borrow features from an already-existing class, instead of writing everything again from scratch."}
+  }
+},
+{
+  "topic": "databases",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes an organized collection of structured data, typically stored and accessed electronically?",
+    "options": [
+      {"text": "Database", "isCorrect": true, "feedback": "Correct -- a database organizes data so it can be efficiently stored, retrieved, and managed."},
+      {"text": "Algorithm", "isCorrect": false, "feedback": "An algorithm is a set of steps for solving a problem -- not a collection of stored data."},
+      {"text": "Function", "isCorrect": false, "feedback": "A function is a reusable block of code -- not a collection of stored data."},
+      {"text": "Loop", "isCorrect": false, "feedback": "A loop repeats instructions -- not a collection of stored data."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "In a typical relational database, how is data commonly organized within a single table?",
+    "options": [
+      {"text": "Into rows and columns", "isCorrect": true, "feedback": "Correct -- each row typically represents one record, while columns represent specific fields of data for that record."},
+      {"text": "Into a single, unstructured block of text", "isCorrect": false, "feedback": "Relational database tables use a structured rows-and-columns format, not one unstructured block of text."},
+      {"text": "Into audio files only", "isCorrect": false, "feedback": "Relational databases can store many data types, but their structural organization is specifically rows and columns, not audio files."},
+      {"text": "Into a single number representing the entire table", "isCorrect": false, "feedback": "A table holds structured data across rows and columns, not a single summary number."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does a relational database typically differ from a NoSQL database?",
+    "options": [
+      {"text": "A relational database uses structured tables with a fixed schema and defined relationships, while a NoSQL database offers more flexible schemas, often better suited to varied or unstructured data", "isCorrect": true, "feedback": "Correct -- this flexibility tradeoff is a key reason developers choose one approach over the other, depending on their data's structure."},
+      {"text": "A relational database can only store numbers, while a NoSQL database can only store images", "isCorrect": false, "feedback": "Both types of databases can store a wide range of data types -- this isn't the actual distinction between them."},
+      {"text": "A relational database and a NoSQL database are simply two names for the identical technology", "isCorrect": false, "feedback": "They represent genuinely different approaches to organizing and storing data."},
+      {"text": "A relational database requires no structure at all, while a NoSQL database requires a rigid, fixed structure", "isCorrect": false, "feedback": "This reverses the actual relationship -- relational databases use a fixed, structured schema, while NoSQL databases are typically more flexible."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This system organizes data so it can be reliably stored, searched, and retrieved by software.", "medium": "This system is a structured way of storing and organizing large amounts of data.", "easy": "This is an organized system for storing lots of data so it can be found and used easily."},
+    "medium": {"hard": "Each individual record typically occupies one of these, while specific data fields occupy the other.", "medium": "One of these represents a single record; the other represents a specific piece of information about that record.", "easy": "Think of a spreadsheet -- data is split into horizontal lines that each hold one record, and vertical lines that each hold one field, arranged like a grid."},
+    "hard": {"hard": "The distinction is about schema flexibility -- fixed and structured versus adaptable to varied data -- not data type restrictions or an identical-technology claim.", "medium": "The distinction is about how FLEXIBLE or FIXED the data's structure is allowed to be.", "easy": "One type keeps data in a strict, fixed format; the other is more flexible about how data can be organized."}
+  }
+},
+{
+  "topic": "SQL",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What language is commonly used to manage and query data stored in relational databases?",
+    "options": [
+      {"text": "SQL (Structured Query Language)", "isCorrect": true, "feedback": "Correct -- SQL is the standard language for interacting with relational databases."},
+      {"text": "HTML", "isCorrect": false, "feedback": "HTML structures web page content -- it isn't used to query relational databases."},
+      {"text": "Binary", "isCorrect": false, "feedback": "Binary is the base-2 number system computers use internally -- it isn't a database query language."},
+      {"text": "Morse code", "isCorrect": false, "feedback": "Morse code is a historical communication system using dots and dashes -- unrelated to querying databases."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which SQL command is used to retrieve data from a database table?",
+    "options": [
+      {"text": "SELECT", "isCorrect": true, "feedback": "Correct -- the SELECT command specifies which data to retrieve from one or more tables."},
+      {"text": "DELETE", "isCorrect": false, "feedback": "DELETE removes data from a table -- it doesn't retrieve data."},
+      {"text": "PRINT", "isCorrect": false, "feedback": "'PRINT' isn't a standard SQL command for retrieving data -- SELECT is used for that."},
+      {"text": "LOOP", "isCorrect": false, "feedback": "'LOOP' isn't the standard SQL command for retrieving data -- SELECT is."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is 'SQL injection,' a common security vulnerability associated with databases?",
+    "options": [
+      {"text": "When malicious input is inserted into a query, tricking the database into executing unintended commands", "isCorrect": true, "feedback": "Correct -- SQL injection exploits improperly handled user input to manipulate or expose database data."},
+      {"text": "A method for making database queries run faster", "isCorrect": false, "feedback": "SQL injection is a security vulnerability, not a legitimate performance-improvement technique."},
+      {"text": "A type of database backup performed automatically every night", "isCorrect": false, "feedback": "SQL injection is a security exploit, not a scheduled backup process."},
+      {"text": "A feature that automatically translates SQL into another programming language", "isCorrect": false, "feedback": "SQL injection is a security vulnerability involving malicious input, not a language-translation feature."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This language's name reflects its core purpose: structured requests for data.", "medium": "This language is specifically designed for interacting with relational databases.", "easy": "This is the standard language programmers use to ask a database for information."},
+    "medium": {"hard": "This command specifies exactly which columns and rows a program wants returned from a table.", "medium": "This command asks the database to give back specific pieces of data.", "easy": "This command is used to ask a database to fetch and show you some data."},
+    "hard": {"hard": "The vulnerability involves exploiting improperly sanitized input to alter a query's intended behavior, not a performance feature, a scheduled backup, or an automatic language translator.", "medium": "The vulnerability involves sneaking harmful input into a query to make it do something unintended.", "easy": "This vulnerability happens when someone tricks a database into running commands it wasn't supposed to, by typing something sneaky into an input field."}
+  }
+},
+{
+  "topic": "encryption",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes the process of converting data into a coded form to prevent unauthorized access?",
+    "options": [
+      {"text": "Encryption", "isCorrect": true, "feedback": "Correct -- encryption scrambles data so that only someone with the proper key can read it."},
+      {"text": "Compilation", "isCorrect": false, "feedback": "Compilation translates code into a runnable form -- unrelated to protecting data from unauthorized access."},
+      {"text": "Debugging", "isCorrect": false, "feedback": "Debugging is finding and fixing errors in a program -- unrelated to protecting data from unauthorized access."},
+      {"text": "Recursion", "isCorrect": false, "feedback": "Recursion is a function calling itself -- unrelated to protecting data from unauthorized access."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is 'decryption,' relative to encryption?",
+    "options": [
+      {"text": "The reverse process, converting coded (encrypted) data back into its original, readable form using the proper key", "isCorrect": true, "feedback": "Correct -- decryption undoes encryption, but typically only for someone possessing the correct decryption key."},
+      {"text": "A completely unrelated process with no connection to encryption at all", "isCorrect": false, "feedback": "Decryption is directly related to encryption -- it's the specific process of reversing it."},
+      {"text": "The process of making data even MORE scrambled than it already was", "isCorrect": false, "feedback": "Decryption reverses scrambling to restore readability -- it doesn't add further scrambling."},
+      {"text": "A type of computer virus that scrambles files permanently", "isCorrect": false, "feedback": "Decryption is a legitimate data-recovery process, not a type of malicious virus."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does symmetric encryption typically differ from asymmetric (public-key) encryption?",
+    "options": [
+      {"text": "Symmetric encryption uses the same key for both encrypting and decrypting data, while asymmetric encryption uses a public key to encrypt and a separate private key to decrypt", "isCorrect": true, "feedback": "Correct -- asymmetric encryption's two-key system allows secure communication without needing to share a single secret key in advance."},
+      {"text": "Symmetric encryption can only encrypt images, while asymmetric encryption can only encrypt text", "isCorrect": false, "feedback": "Both encryption types can be applied to many kinds of data -- data type isn't the actual distinction."},
+      {"text": "Symmetric and asymmetric encryption are simply two names for the identical technique", "isCorrect": false, "feedback": "They are genuinely different approaches -- one shared key versus a public/private key pair."},
+      {"text": "Symmetric encryption requires no key at all, while asymmetric encryption requires exactly three keys", "isCorrect": false, "feedback": "Symmetric encryption does require a key (just a single shared one) -- and asymmetric encryption specifically uses a pair of two keys, not three."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process transforms readable information into an unreadable, coded form, reversible only with the right key.", "medium": "This process scrambles data so that only someone with the right key can read it.", "easy": "This process turns readable information into secret, coded information that needs a special key to unlock."},
+    "medium": {"hard": "This process is the specific reversal of the scrambling process, restoring the original readable data using the correct key.", "medium": "This process turns scrambled data back into its original, readable form.", "easy": "This is the opposite of scrambling data -- it turns the scrambled version back into something readable again."},
+    "hard": {"hard": "The distinction is the number and type of keys involved -- one shared secret key versus a public/private key pair -- not data type restrictions or a fixed key count of three.", "medium": "The distinction is whether ONE shared key is used for both steps, or a PAIR of different keys is used instead.", "easy": "One method uses the exact same key to lock and unlock; the other uses two different keys -- one public, one private."}
+  }
+},
+{
+  "topic": "phishing and cybersecurity",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a scam where attackers impersonate trustworthy sources to trick people into revealing sensitive information?",
+    "options": [
+      {"text": "Phishing", "isCorrect": true, "feedback": "Correct -- phishing attacks impersonate a trusted source, like a bank or coworker, to steal sensitive information."},
+      {"text": "Debugging", "isCorrect": false, "feedback": "Debugging is finding and fixing errors in a program -- unrelated to impersonation scams."},
+      {"text": "Compiling", "isCorrect": false, "feedback": "Compiling translates code into a runnable form -- unrelated to impersonation scams."},
+      {"text": "Encrypting", "isCorrect": false, "feedback": "Encrypting scrambles data for protection -- unrelated to impersonation scams, though good security practices can help defend against phishing."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is a common way phishing attacks are typically delivered?",
+    "options": [
+      {"text": "Deceptive emails designed to look like they're from a trustworthy source", "isCorrect": true, "feedback": "Correct -- phishing emails often mimic legitimate organizations to trick recipients into clicking malicious links or sharing information."},
+      {"text": "Through printed newspaper advertisements only", "isCorrect": false, "feedback": "Phishing is a digital-era scam, primarily delivered through channels like email, not print newspaper ads."},
+      {"text": "Only through in-person conversations with no digital component", "isCorrect": false, "feedback": "Phishing specifically relies on digital communication, most commonly deceptive emails, not purely in-person conversation."},
+      {"text": "Through official government mail exclusively", "isCorrect": false, "feedback": "Phishing isn't restricted to (or typically delivered through) official government mail -- deceptive emails are a far more common vector."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does 'spear phishing' typically differ from generic phishing attacks?",
+    "options": [
+      {"text": "Spear phishing is a highly targeted, often personalized attack aimed at a specific individual or organization, unlike generic phishing sent broadly to many random recipients", "isCorrect": true, "feedback": "Correct -- the personalization in spear phishing, often using real details about the target, makes it especially convincing and dangerous."},
+      {"text": "Spear phishing only targets fish-related businesses", "isCorrect": false, "feedback": "The term 'spear phishing' doesn't refer to any specific industry -- it describes a highly targeted attack style, applicable to any individual or organization."},
+      {"text": "Spear phishing and generic phishing are simply two names for the identical attack method", "isCorrect": false, "feedback": "They differ meaningfully in scope and personalization -- one broad and generic, the other narrowly targeted."},
+      {"text": "Spear phishing can only be carried out over the phone, never by email", "isCorrect": false, "feedback": "Spear phishing frequently occurs via email, just like generic phishing -- the real distinction is its targeted, personalized nature."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This scam relies on impersonating a trusted identity to manipulate a target into revealing private data.", "medium": "This scam pretends to be from someone trustworthy to trick you into giving up private information.", "easy": "This scam pretends to be a trustworthy source, like your bank, to trick you into sharing private information."},
+    "medium": {"hard": "This delivery method is a digital communication channel, distinct from print media, purely in-person contact, or official government mail specifically.", "medium": "This delivery method is a digital message, made to look like it's from someone you trust.", "easy": "This kind of scam is usually sent as a fake message, made to look like it's from your bank or a coworker."},
+    "hard": {"hard": "The distinction is about scope and personalization -- a broad, generic attempt versus a narrowly targeted, individualized one -- not industry restriction or a fixed delivery channel.", "medium": "The distinction is about how TARGETED and PERSONALIZED the attack is, aimed at one specific person or company.", "easy": "One version is sent out broadly to lots of random people; the other is carefully aimed at one specific person or organization."}
+  }
+},
+{
+  "topic": "version control",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a system that tracks and manages changes to files over time, commonly used by programmers?",
+    "options": [
+      {"text": "Version control", "isCorrect": true, "feedback": "Correct -- version control systems, like Git, help programmers track and manage changes to their code over time."},
+      {"text": "Encryption", "isCorrect": false, "feedback": "Encryption converts data into a coded form -- unrelated to tracking changes over time."},
+      {"text": "Compilation", "isCorrect": false, "feedback": "Compilation translates code into a runnable form -- unrelated to tracking changes over time."},
+      {"text": "Recursion", "isCorrect": false, "feedback": "Recursion is a function calling itself -- unrelated to tracking changes over time."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is a 'commit' in a version control system like Git?",
+    "options": [
+      {"text": "A saved snapshot of changes at a specific point in time", "isCorrect": true, "feedback": "Correct -- a commit records a specific set of changes, which developers can later review or revert to if needed."},
+      {"text": "A permanent deletion of a file from the entire project", "isCorrect": false, "feedback": "A commit records changes -- it isn't specifically about permanently deleting files."},
+      {"text": "A type of error message shown when code fails to run", "isCorrect": false, "feedback": "A commit is a deliberate save action, not an error message."},
+      {"text": "The final release version of a piece of software", "isCorrect": false, "feedback": "A commit is one of potentially many saved snapshots throughout development, not necessarily a final release."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What does creating a 'branch' in Git allow a developer to do?",
+    "options": [
+      {"text": "Work on a separate line of development, like a new feature, without affecting the main codebase, until ready to merge those changes back", "isCorrect": true, "feedback": "Correct -- branching lets developers experiment or build new features in isolation, keeping the main codebase stable in the meantime."},
+      {"text": "Permanently delete the entire project's history", "isCorrect": false, "feedback": "Branching creates a new line of development -- it doesn't delete any existing project history."},
+      {"text": "Automatically fix all bugs in the code", "isCorrect": false, "feedback": "Branching organizes development work -- it doesn't automatically detect or fix bugs."},
+      {"text": "Convert the project's code into a different programming language", "isCorrect": false, "feedback": "Branching manages different lines of development within the same codebase -- it doesn't translate code into another language."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This system preserves a full history of changes, letting developers review or revert past states of a project.", "medium": "This system keeps track of every change made to a project's files over time.", "easy": "This system saves a history of changes to code, so you can go back to earlier versions if needed."},
+    "medium": {"hard": "This action captures a specific, named snapshot of the project's state, which can later be reviewed or reverted to.", "medium": "This action saves a snapshot of the current changes, with a description of what changed.", "easy": "This action is like saving a labeled checkpoint of your code at a specific moment."},
+    "hard": {"hard": "This action creates an isolated line of development that diverges from the main codebase, later reconciled through merging, rather than deleting history, auto-fixing bugs, or translating languages.", "medium": "This action creates a SEPARATE, isolated line of work, kept apart from the main codebase until it's ready.", "easy": "This lets a developer work on something new off to the side, without messing up the main version everyone else is using, until it's ready to be combined back in."}
+  }
+},
+{
+  "topic": "APIs (Application Programming Interfaces)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a set of rules that allows different software applications to communicate with each other?",
+    "options": [
+      {"text": "API (Application Programming Interface)", "isCorrect": true, "feedback": "Correct -- an API defines how one piece of software can request services or data from another."},
+      {"text": "CPU", "isCorrect": false, "feedback": "A CPU is a physical hardware component -- not a set of communication rules between software applications."},
+      {"text": "URL", "isCorrect": false, "feedback": "A URL is a web address used to locate a resource -- related to, but not the same as, the broader concept of an API."},
+      {"text": "RAM", "isCorrect": false, "feedback": "RAM is a physical memory component -- not a set of communication rules between software applications."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "When a weather app on a phone displays real-time weather data from a remote server, what is it most likely using to retrieve that data?",
+    "options": [
+      {"text": "An API", "isCorrect": true, "feedback": "Correct -- the app likely sends a request through a weather service's API and receives structured data back in response."},
+      {"text": "A physical cable directly connected to the weather server", "isCorrect": false, "feedback": "Mobile apps retrieve remote data over the internet through an API, not a direct physical cable connection."},
+      {"text": "A printed weather report mailed to the user", "isCorrect": false, "feedback": "Real-time app data isn't retrieved through physical mail -- it's retrieved through an API over the internet."},
+      {"text": "A CPU installed inside the weather company's building", "isCorrect": false, "feedback": "While the weather company's servers do use CPUs, what the app itself actually interacts with to get data is an API, not a specific physical chip."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean for an API to be described as 'RESTful'?",
+    "options": [
+      {"text": "It follows a set of architectural conventions for communication over HTTP, typically using standard methods like GET, POST, PUT, and DELETE", "isCorrect": true, "feedback": "Correct -- REST (Representational State Transfer) is a widely adopted architectural style for designing predictable, standardized web APIs."},
+      {"text": "It only works while the device is fully powered off", "isCorrect": false, "feedback": "An API requires an active connection and running software to function -- it doesn't operate while a device is powered off."},
+      {"text": "It requires the API to pause and rest for several seconds between every request", "isCorrect": false, "feedback": "'RESTful' doesn't refer to literal pauses -- it refers to a specific architectural style for structuring web communication."},
+      {"text": "It means the API can only be used once per day", "isCorrect": false, "feedback": "'RESTful' doesn't impose any such usage-frequency restriction -- it refers to an architectural style for web communication."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This concept defines a structured way for one program to request services or data from another, without needing to know its internal workings.", "medium": "This concept lets one piece of software ask another piece of software for information or services.", "easy": "This is a set of rules that lets one app talk to another app or service to get information."},
+    "medium": {"hard": "The app communicates over the internet using a defined interface belonging to the weather service, rather than a physical connection or a specific chip.", "medium": "The app talks to the weather service's system over the internet using a defined set of communication rules.", "easy": "The app is 'asking' a remote weather service for data using an agreed-upon set of rules for communication."},
+    "hard": {"hard": "The term describes a specific architectural style governing how clients and servers exchange requests over the web, unrelated to power state, literal pauses, or a usage-frequency cap.", "medium": "The term describes a specific STYLE of organizing web communication, not a literal pause or a usage limit.", "easy": "This term just describes a common, standardized STYLE for how web-based APIs are built and organized -- it has nothing to do with taking breaks."}
+  }
+},
+{
+  "topic": "cloud computing",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes accessing computing resources like storage and processing power over the internet, rather than from a local device?",
+    "options": [
+      {"text": "Cloud computing", "isCorrect": true, "feedback": "Correct -- cloud computing lets users access computing resources hosted remotely, over the internet."},
+      {"text": "Local storage", "isCorrect": false, "feedback": "Local storage refers to data kept directly on a personal device -- the opposite of accessing resources remotely over the internet."},
+      {"text": "Binary code", "isCorrect": false, "feedback": "Binary code is the 0s-and-1s system computers use internally -- unrelated to accessing remote computing resources."},
+      {"text": "A firewall", "isCorrect": false, "feedback": "A firewall is a security tool that filters network traffic -- unrelated to the general concept of remote computing access."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is a key advantage of cloud computing over relying solely on local, physical infrastructure?",
+    "options": [
+      {"text": "It offers greater scalability and flexibility, without organizations needing to buy and maintain their own physical servers", "isCorrect": true, "feedback": "Correct -- cloud providers let organizations scale resources up or down as needed, without large upfront hardware investments."},
+      {"text": "It guarantees that internet access is never required", "isCorrect": false, "feedback": "Cloud computing specifically relies on an internet connection to access remote resources -- it doesn't eliminate that requirement."},
+      {"text": "It makes all data permanently and instantly public to everyone", "isCorrect": false, "feedback": "Cloud services are typically designed with access controls and security measures -- data isn't automatically made public."},
+      {"text": "It eliminates the need for any software to be written at all", "isCorrect": false, "feedback": "Cloud computing still requires software to run on its infrastructure -- it doesn't eliminate the need for programming."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does a 'public cloud' typically differ from a 'private cloud'?",
+    "options": [
+      {"text": "A public cloud shares infrastructure across many different customers, while a private cloud's infrastructure is dedicated to a single organization", "isCorrect": true, "feedback": "Correct -- organizations sometimes choose a private cloud for greater control or specific security/compliance needs, despite its typically higher cost."},
+      {"text": "A public cloud and a private cloud are simply two names for the identical infrastructure setup", "isCorrect": false, "feedback": "They represent genuinely different infrastructure models -- shared versus dedicated to one organization."},
+      {"text": "A public cloud can only store text files, while a private cloud can only store images", "isCorrect": false, "feedback": "Both types of cloud infrastructure can store many kinds of data -- data type isn't the distinguishing feature."},
+      {"text": "A public cloud requires no internet connection, while a private cloud requires a direct physical cable to every user", "isCorrect": false, "feedback": "Both public and private clouds are typically accessed over a network connection -- this isn't the actual distinction between them."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This concept shifts computing resources away from a local device and onto remote, internet-accessible infrastructure.", "medium": "This concept lets you use storage and processing power that lives on the internet, not on your own device.", "easy": "This lets you use storage and computing power that lives out on the internet, instead of just on your own device."},
+    "medium": {"hard": "This advantage centers on avoiding large upfront hardware investment while easily adjusting capacity as needs change.", "medium": "This advantage is about easily scaling resources up or down without buying your own physical servers.", "easy": "You can use more or less computing power as needed, without having to buy and maintain your own physical machines."},
+    "hard": {"hard": "The distinction is about whether infrastructure is shared among many customers or dedicated to one organization, not data type restrictions or a fixed connectivity requirement.", "medium": "The distinction is about whether the infrastructure is SHARED among many customers, or DEDICATED to just one organization.", "easy": "One type is shared space used by lots of different customers; the other is space set aside just for one specific organization."}
+  }
+},
+{
+  "topic": "machine learning",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a branch of artificial intelligence in which computer systems learn patterns from data rather than being explicitly programmed with fixed rules?",
+    "options": [
+      {"text": "Machine learning", "isCorrect": true, "feedback": "Correct -- machine learning systems improve their performance by learning from data, rather than following only fixed, hand-written rules."},
+      {"text": "Binary code", "isCorrect": false, "feedback": "Binary code is the 0s-and-1s system computers use internally -- unrelated to learning patterns from data."},
+      {"text": "Version control", "isCorrect": false, "feedback": "Version control tracks changes to files over time -- unrelated to learning patterns from data."},
+      {"text": "Encryption", "isCorrect": false, "feedback": "Encryption converts data into a coded form -- unrelated to learning patterns from data."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What role does 'training data' play in building a machine learning model?",
+    "options": [
+      {"text": "It's the data used to teach the model to recognize patterns, before the model is applied to new, unseen data", "isCorrect": true, "feedback": "Correct -- the model adjusts itself based on patterns found in the training data, aiming to generalize to new examples later."},
+      {"text": "It's a type of data that a model is legally forbidden from ever using", "isCorrect": false, "feedback": "Training data is specifically the data a model DOES use to learn -- it isn't forbidden data."},
+      {"text": "It's the final answer the model is expected to produce for every single input", "isCorrect": false, "feedback": "Training data is the input material used for learning, not simply a fixed final answer for every case."},
+      {"text": "It has no actual effect on how the model behaves", "isCorrect": false, "feedback": "Training data has a very significant effect -- it directly shapes the patterns the model learns to recognize."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What does it mean for a machine learning model to be 'overfit' to its training data?",
+    "options": [
+      {"text": "It has learned the training data too specifically, including its noise and quirks, performing well on that data but poorly on new, unseen data", "isCorrect": true, "feedback": "Correct -- an overfit model essentially 'memorizes' its training examples rather than learning generalizable patterns, hurting its real-world performance."},
+      {"text": "It has been trained using too little data and performs poorly on the training data itself", "isCorrect": false, "feedback": "Overfitting actually describes STRONG performance on training data specifically -- the problem is poor performance on new, unseen data."},
+      {"text": "It has been physically damaged during the training process", "isCorrect": false, "feedback": "Overfitting is a conceptual, statistical issue with how a model learns -- not physical damage to hardware."},
+      {"text": "It refers to a model that runs too slowly to be useful", "isCorrect": false, "feedback": "Overfitting concerns a model's ability to generalize to new data, not its processing speed."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This field involves systems that adjust their own internal patterns based on exposure to examples, rather than fixed hand-written rules.", "medium": "This field involves computer systems that get better at a task by learning from examples, not fixed rules.", "easy": "This is when computers learn to do things by looking at lots of examples, instead of following rules a person wrote out."},
+    "medium": {"hard": "This data serves as the model's learning material, directly shaping the patterns it later applies to new inputs.", "medium": "This data is what the model actually learns FROM, before being used on new examples.", "easy": "This is the data the model studies to learn patterns, kind of like a student studying practice problems."},
+    "hard": {"hard": "The issue is learning training-specific quirks so precisely that generalization to new data suffers, not insufficient training, physical damage, or slow processing speed.", "medium": "The issue is the model learning the training data TOO WELL, including its quirks, hurting performance on NEW data.", "easy": "The model basically 'memorizes' its practice examples too closely, so it does great on those but poorly on new examples it hasn't seen before."}
+  }
+},
+{
+  "topic": "Boolean logic",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes a system of logic using only two possible values, true and false, often combined with operators like AND, OR, and NOT?",
+    "options": [
+      {"text": "Boolean logic", "isCorrect": true, "feedback": "Correct -- Boolean logic underlies how computers evaluate conditions and make decisions."},
+      {"text": "Binary search", "isCorrect": false, "feedback": "Binary search is a method for finding an item in a sorted list -- a different concept from true/false logical operations."},
+      {"text": "Recursion", "isCorrect": false, "feedback": "Recursion is a function calling itself -- unrelated to true/false logical operations."},
+      {"text": "Encryption", "isCorrect": false, "feedback": "Encryption converts data into a coded form -- unrelated to true/false logical operations."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What does the AND operator require for a combined condition to evaluate as true?",
+    "options": [
+      {"text": "Both individual conditions must be true", "isCorrect": true, "feedback": "Correct -- an AND condition only evaluates to true when every one of its parts is true."},
+      {"text": "Only one of the two conditions needs to be true", "isCorrect": false, "feedback": "Requiring only one true condition describes the OR operator, not AND."},
+      {"text": "Neither condition can be true", "isCorrect": false, "feedback": "This describes something closer to a NOT-based condition -- AND specifically requires both parts to be true."},
+      {"text": "Exactly one condition must be true, but not both", "isCorrect": false, "feedback": "This describes the XOR (exclusive or) operator, not the AND operator."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does the OR operator typically differ from the XOR (exclusive or) operator?",
+    "options": [
+      {"text": "OR is true if at least one condition is true (including when both are true), while XOR is true only when exactly one condition is true, not both", "isCorrect": true, "feedback": "Correct -- this distinction matters in cases where both conditions happen to be true at once, which OR allows but XOR excludes."},
+      {"text": "OR and XOR are simply two names for the identical logical operator", "isCorrect": false, "feedback": "They behave differently specifically in the case where both conditions are true -- OR allows it, XOR does not."},
+      {"text": "OR can only be used with numbers, while XOR can only be used with text", "isCorrect": false, "feedback": "Both operators work with true/false logical values, regardless of the underlying data type being compared -- this isn't the actual distinction."},
+      {"text": "OR always requires exactly three conditions, while XOR only ever uses one", "isCorrect": false, "feedback": "Neither operator has a fixed requirement of three or one conditions -- both commonly combine two (or more) conditions."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This system reduces every condition down to one of exactly two possible states.", "medium": "This system only has two possible values for any condition: true or false.", "easy": "This system only works with two values -- true or false -- kind of like a light switch being on or off."},
+    "medium": {"hard": "This operator demands that every single one of its conditions individually evaluate to true, with no exceptions.", "medium": "This operator needs ALL of its conditions to be true at the same time.", "easy": "This operator needs BOTH things to be true at once, not just one of them."},
+    "hard": {"hard": "The distinction hinges specifically on the case where both conditions are true simultaneously -- one operator allows this case, the other specifically excludes it.", "medium": "The distinction shows up specifically when BOTH conditions happen to be true at the same time.", "easy": "The difference only really shows up in one specific situation: when BOTH things are true. One operator still says 'true' then; the other says 'false.'"}
+  }
+},
+{
+  "topic": "debugging",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes the process of finding and fixing errors, or 'bugs,' in a computer program?",
+    "options": [
+      {"text": "Debugging", "isCorrect": true, "feedback": "Correct -- debugging is the essential process of locating and correcting mistakes in code."},
+      {"text": "Compiling", "isCorrect": false, "feedback": "Compiling translates code into a runnable form -- it's a separate step from finding and fixing errors."},
+      {"text": "Encrypting", "isCorrect": false, "feedback": "Encrypting converts data into a coded form -- unrelated to finding and fixing program errors."},
+      {"text": "Recursing", "isCorrect": false, "feedback": "This describes a function calling itself -- unrelated to finding and fixing program errors."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is a common technique programmers use to help locate the source of a bug?",
+    "options": [
+      {"text": "Adding print statements or using a debugger tool to inspect the program's state at various points", "isCorrect": true, "feedback": "Correct -- observing variable values and program flow at specific points helps pinpoint exactly where things go wrong."},
+      {"text": "Deleting the entire program and starting over from a blank file every time", "isCorrect": false, "feedback": "While a last resort in extreme cases, this isn't the standard, efficient technique for locating a specific bug -- targeted inspection is."},
+      {"text": "Waiting for the bug to disappear on its own without any changes", "isCorrect": false, "feedback": "Bugs generally don't resolve themselves without some active investigation and correction."},
+      {"text": "Renaming all the variables in the program randomly", "isCorrect": false, "feedback": "Random renaming doesn't help locate or fix a bug's actual root cause -- inspecting program state does."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "How does a 'syntax error' typically differ from a 'logic error'?",
+    "options": [
+      {"text": "A syntax error violates the programming language's grammatical rules, preventing the code from running at all, while a logic error lets the code run but produces incorrect results", "isCorrect": true, "feedback": "Correct -- syntax errors are usually caught immediately, while logic errors can be much trickier to spot since the program runs without crashing."},
+      {"text": "A syntax error and a logic error are simply two names for the identical problem", "isCorrect": false, "feedback": "They are genuinely different kinds of problems -- one prevents the code from running at all, the other doesn't."},
+      {"text": "A syntax error can only occur in Python, while a logic error can only occur in Java", "isCorrect": false, "feedback": "Both types of errors can occur in any programming language -- this isn't the actual distinction."},
+      {"text": "A syntax error is always more serious and harder to fix than a logic error", "isCorrect": false, "feedback": "Logic errors can actually be much harder to detect and fix than syntax errors, since the program still runs without an obvious crash."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This process involves systematically investigating a program's behavior to isolate the exact source of unexpected results.", "medium": "This process is about finding out exactly why a program isn't behaving the way it should.", "easy": "This is the process of hunting down and fixing mistakes in a computer program."},
+    "medium": {"hard": "This technique involves observing the program's actual internal state and values as it runs, rather than randomly modifying it or simply waiting.", "medium": "This technique involves peeking at what the program's variables actually contain while it runs.", "easy": "Programmers often add little messages in the code to see what's happening step by step while the program runs."},
+    "hard": {"hard": "The distinction is whether the program fails to run at all versus runs but produces a wrong result, not language restriction or a fixed severity ranking.", "medium": "The distinction is whether the program CRASHES and won't run at all, versus running but giving a WRONG answer.", "easy": "One type of error stops the program from running in the first place; the other lets it run, but the answer comes out wrong."}
+  }
+},
+{
+  "topic": "operating systems",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes the software that manages a computer's hardware and provides a platform for running other programs?",
+    "options": [
+      {"text": "Operating system", "isCorrect": true, "feedback": "Correct -- the operating system manages hardware resources and lets other software run on top of it."},
+      {"text": "A web browser", "isCorrect": false, "feedback": "A web browser is a specific application that runs ON an operating system -- it isn't the operating system itself."},
+      {"text": "A spreadsheet program", "isCorrect": false, "feedback": "A spreadsheet program is a specific application that runs ON an operating system -- it isn't the operating system itself."},
+      {"text": "A hard drive", "isCorrect": false, "feedback": "A hard drive is a physical storage component -- not the software that manages a computer's hardware."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is a widely used operating system for personal computers?",
+    "options": [
+      {"text": "Windows", "isCorrect": true, "feedback": "Correct -- Windows is one of the most widely used personal computer operating systems."},
+      {"text": "Python", "isCorrect": false, "feedback": "Python is a programming language, not an operating system."},
+      {"text": "Microsoft Excel", "isCorrect": false, "feedback": "Excel is a spreadsheet application that runs on an operating system -- it isn't an operating system itself."},
+      {"text": "Google Chrome", "isCorrect": false, "feedback": "Chrome is a web browser application that runs on an operating system -- it isn't an operating system itself."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is the 'kernel,' the most fundamental part of an operating system?",
+    "options": [
+      {"text": "The core component that directly manages the computer's hardware resources (like the CPU and memory) and mediates communication between hardware and software", "isCorrect": true, "feedback": "Correct -- the kernel operates at the lowest level, handling critical tasks that everything else in the operating system depends on."},
+      {"text": "A decorative visual theme applied to the desktop background", "isCorrect": false, "feedback": "A desktop theme is a cosmetic feature -- the kernel is a deep, functional core component managing hardware resources."},
+      {"text": "A type of computer virus that operating systems are designed to detect", "isCorrect": false, "feedback": "The kernel is a legitimate, essential part of the operating system itself, not a virus."},
+      {"text": "The physical casing that houses a computer's internal components", "isCorrect": false, "feedback": "The kernel is a software component, not the physical outer casing of a computer."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This software layer sits between a computer's physical components and every other program running on top of it.", "medium": "This software manages the computer's hardware and lets other programs run on top of it.", "easy": "This is the main software that runs your computer and lets other programs, like apps, work on it."},
+    "medium": {"hard": "This option manages a computer's hardware and applications directly, distinct from a programming language or specific applications that run on top of it.", "medium": "This option is the OS itself, not a programming language or a specific app that runs on top of it.", "easy": "This is a full operating system, not a specific app like a spreadsheet or web browser, or a programming language."},
+    "hard": {"hard": "This is the lowest-level software component directly interfacing with hardware, distinct from cosmetic visual features, malicious software, or the computer's physical enclosure.", "medium": "This is the lowest-level part of the OS, directly managing hardware -- not a visual theme or a virus.", "easy": "This is the deep, essential 'core' of the operating system that directly talks to the computer's hardware -- not a visual style or a virus."}
+  }
+},
+{
+  "topic": "stacks and queues",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which data structure follows a 'Last In, First Out' (LIFO) principle, like a stack of plates where you take from the top?",
+    "options": [
+      {"text": "Stack", "isCorrect": true, "feedback": "Correct -- a stack adds and removes items from the same end, so the most recently added item is the first one removed."},
+      {"text": "Queue", "isCorrect": false, "feedback": "A queue follows 'First In, First Out' (FIFO), not 'Last In, First Out' -- that's a stack."},
+      {"text": "Array", "isCorrect": false, "feedback": "An array is a general ordered collection accessed by index -- it doesn't specifically enforce a LIFO order."},
+      {"text": "Hash table", "isCorrect": false, "feedback": "A hash table stores key-value pairs for fast lookup -- it doesn't specifically enforce a LIFO order."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "How does a 'queue' data structure typically behave, in contrast to a stack?",
+    "options": [
+      {"text": "It follows a 'First In, First Out' (FIFO) principle, like a line of people waiting -- the first one in line is served first", "isCorrect": true, "feedback": "Correct -- items are added at one end and removed from the other, preserving their original order."},
+      {"text": "It removes the most recently added item first, just like a stack", "isCorrect": false, "feedback": "This describes LIFO behavior, characteristic of a stack -- a queue instead follows FIFO order."},
+      {"text": "It only stores exactly one item at a time", "isCorrect": false, "feedback": "A queue can hold many items at once, processed in order -- it isn't limited to a single item."},
+      {"text": "It removes items in a completely random order", "isCorrect": false, "feedback": "A queue removes items in a specific, predictable FIFO order -- not randomly."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of these real-world scenarios is best modeled by a queue rather than a stack?",
+    "options": [
+      {"text": "People waiting in line at a ticket counter, served in the order they arrived", "isCorrect": true, "feedback": "Correct -- this is a classic FIFO scenario, matching a queue's first-in, first-out behavior."},
+      {"text": "The 'undo' history in a text editor, where the most recent action is undone first", "isCorrect": false, "feedback": "This is a classic LIFO scenario, matching a STACK's last-in, first-out behavior, not a queue."},
+      {"text": "A stack of dinner plates, where you always take the top plate first", "isCorrect": false, "feedback": "This is literally the classic real-world example of a stack, not a queue."},
+      {"text": "Reversing the order of letters in a word", "isCorrect": false, "feedback": "Reversing order is typically associated with LIFO (stack) behavior, since the most recently added item comes out first, effectively reversing the input order."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This structure removes items in the exact reverse order they were added.", "medium": "This structure removes the most recently added item first, before any older ones.", "easy": "This structure works like a stack of plates -- you take the top one off first, which was the last one placed there."},
+    "medium": {"hard": "This structure preserves original order strictly, removing from the opposite end where items are added.", "medium": "This structure adds items at one end and removes them from the OTHER end, keeping their original order.", "easy": "This structure works like a line at a store -- whoever got in line first gets served first."},
+    "hard": {"hard": "The correct scenario preserves arrival order strictly (first come, first served), unlike the other options, which each reverse the order of the most recent action or item.", "medium": "The correct scenario serves people in the order they ARRIVED, not in reverse order.", "easy": "Look for the scenario where whoever showed up FIRST gets handled FIRST -- not the ones where the most RECENT thing gets handled first."}
+  }
+},
+{
+  "topic": "hash tables",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What data structure stores key-value pairs and uses a special function to quickly locate values based on their key?",
+    "options": [
+      {"text": "Hash table", "isCorrect": true, "feedback": "Correct -- a hash table uses a hash function to map each key to a specific storage location, enabling fast lookups."},
+      {"text": "Stack", "isCorrect": false, "feedback": "A stack follows a Last In, First Out order -- it doesn't store key-value pairs using a hash function."},
+      {"text": "Queue", "isCorrect": false, "feedback": "A queue follows a First In, First Out order -- it doesn't store key-value pairs using a hash function."},
+      {"text": "Bubble sort", "isCorrect": false, "feedback": "Bubble sort is a sorting algorithm, not a data structure for storing key-value pairs."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the main advantage of a hash table over a simple array when looking up a value by a specific key?",
+    "options": [
+      {"text": "Much faster average lookup time, often close to constant time, rather than needing to scan through every item", "isCorrect": true, "feedback": "Correct -- the hash function quickly narrows down roughly where a value should be, avoiding the need to check every single entry."},
+      {"text": "A hash table can only ever store exactly one item total", "isCorrect": false, "feedback": "Hash tables can store many key-value pairs -- this isn't a real limitation, and it isn't the advantage being described."},
+      {"text": "A hash table automatically sorts all of its keys alphabetically", "isCorrect": false, "feedback": "Hash tables don't inherently maintain sorted order -- their advantage is fast lookup speed, not automatic sorting."},
+      {"text": "A hash table uses less memory than any other data structure in all cases", "isCorrect": false, "feedback": "Memory usage isn't the defining advantage here, and hash tables don't universally use less memory than every other structure -- their key benefit is fast lookup speed."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What is a 'hash collision,' and why does it matter for hash tables?",
+    "options": [
+      {"text": "It occurs when two different keys produce the same hash value (storage location), requiring a strategy like chaining to resolve the conflict", "isCorrect": true, "feedback": "Correct -- handling collisions well is essential to keeping a hash table's lookups fast and reliable, even as it fills up with more data."},
+      {"text": "It occurs when a hash table runs out of available keys to use", "isCorrect": false, "feedback": "A collision is about two keys mapping to the same location, not about running out of possible keys."},
+      {"text": "It is a type of computer virus that specifically targets hash tables", "isCorrect": false, "feedback": "A hash collision is a normal data-structure phenomenon, not a type of malicious software."},
+      {"text": "It occurs only when a hash table contains exactly zero items", "isCorrect": false, "feedback": "A collision requires at least two keys mapping to the same location -- it can't occur in a completely empty hash table."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This structure uses a mathematical function to compute roughly where a given key's value should be stored.", "medium": "This structure uses a special function to quickly figure out where to store or find a value.", "easy": "This structure uses a special trick to jump almost straight to where a piece of data is stored, instead of searching one by one."},
+    "medium": {"hard": "The advantage involves the SPEED of locating a specific value, thanks to the hash function narrowing down the search almost immediately.", "medium": "The advantage is about SPEED -- finding a value quickly, without checking every single item.", "easy": "Instead of checking every single item one by one, a hash table can usually jump almost straight to the right spot."},
+    "hard": {"hard": "The issue arises when the hash function maps two distinct keys to the same storage slot, requiring an explicit conflict-resolution strategy, not key exhaustion, malware, or an empty-table-only scenario.", "medium": "The issue is two DIFFERENT keys accidentally landing in the SAME storage spot.", "easy": "Sometimes two different pieces of data end up wanting the exact same storage spot -- the hash table needs a plan for handling that clash."}
+  }
+}
+]

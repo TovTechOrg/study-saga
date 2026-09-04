@@ -1,0 +1,1517 @@
+[
+  {
+    "topic": "inheritance",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In object-oriented programming, what does 'inheritance' allow a new class to do?",
+      "options": [
+        {
+          "text": "Reuse the properties and methods of an existing class",
+          "isCorrect": true,
+          "feedback": "Correct -- inheritance lets a new ('child' or 'subclass') class build on top of an existing ('parent' or 'superclass') class."
+        },
+        {
+          "text": "Permanently delete another class from the program",
+          "isCorrect": false,
+          "feedback": "Inheritance is about reusing and building on another class, not deleting it."
+        },
+        {
+          "text": "Run twice as fast as classes that don't use it",
+          "isCorrect": false,
+          "feedback": "Inheritance is a structural code-reuse tool, not a guaranteed performance boost."
+        },
+        {
+          "text": "Store twice as much data as a normal class",
+          "isCorrect": false,
+          "feedback": "Inheritance is about reusing structure and behavior, not about doubling how much data a class can hold."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "If a 'Dog' class inherits from an 'Animal' class, what does that relationship typically represent?",
+      "options": [
+        {
+          "text": "A 'Dog' is a more specific kind of 'Animal', and automatically gets the general properties and behaviors defined on 'Animal'",
+          "isCorrect": true,
+          "feedback": "Correct -- this 'is-a' relationship is the classic way inheritance is used to model specialized versions of a more general concept."
+        },
+        {
+          "text": "An 'Animal' is a more specific kind of 'Dog'",
+          "isCorrect": false,
+          "feedback": "This reverses the actual direction of the relationship -- the more general class ('Animal') is the parent, and the more specific class ('Dog') is the child."
+        },
+        {
+          "text": "'Dog' and 'Animal' must be completely unrelated classes with nothing shared between them",
+          "isCorrect": false,
+          "feedback": "Inheriting specifically means the classes ARE related, sharing structure and behavior -- they aren't unrelated."
+        },
+        {
+          "text": "'Dog' replaces 'Animal' entirely, so 'Animal' no longer exists once 'Dog' is defined",
+          "isCorrect": false,
+          "feedback": "The parent class ('Animal') continues to exist independently -- inheritance doesn't erase or replace the class it inherits from."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What does it mean when a subclass 'overrides' a method it inherited from its parent class?",
+      "options": [
+        {
+          "text": "The subclass provides its own specific implementation of that method, replacing the inherited behavior when called on an instance of the subclass",
+          "isCorrect": true,
+          "feedback": "Correct -- overriding lets a subclass customize inherited behavior to better suit its own specific needs, while keeping the same method name and general role."
+        },
+        {
+          "text": "The subclass permanently deletes that method from the parent class as well",
+          "isCorrect": false,
+          "feedback": "Overriding only affects how the method behaves for the subclass -- it doesn't remove or change the method as defined on the parent class itself."
+        },
+        {
+          "text": "The subclass is no longer allowed to use any other methods inherited from the parent",
+          "isCorrect": false,
+          "feedback": "Overriding one specific method doesn't block access to the rest of the inherited methods -- those remain available as normal."
+        },
+        {
+          "text": "The subclass must rename the method to something completely different",
+          "isCorrect": false,
+          "feedback": "Overriding specifically keeps the same method name and signature -- that's exactly what allows it to replace the inherited version for that subclass."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about a new class getting to reuse features that already exist somewhere else, without rewriting them.",
+        "medium": "One class builds on top of another, automatically picking up its properties and behaviors.",
+        "easy": "It's the mechanism that lets a 'child' class reuse and extend an existing 'parent' class's structure and behavior."
+      },
+      "medium": {
+        "hard": "Think about which one is the broader, general category, and which one is the narrower, more specific case.",
+        "medium": "The more specific class automatically gains the general traits defined on the broader class.",
+        "easy": "This is a classic 'is-a' relationship: the specific class ('Dog') is a kind of the general class ('Animal'), inheriting its shared traits."
+      },
+      "hard": {
+        "hard": "Think about a child class deciding to do things its own way for one particular behavior, while still fitting the same overall role.",
+        "medium": "The method's name stays the same, but its actual behavior gets swapped out for a new version defined specifically on the child class.",
+        "easy": "The subclass writes its own version of that identically-named method, and instances of the subclass use that new version instead of falling back to the parent's original code."
+      }
+    }
+  },
+  {
+    "topic": "polymorphism",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In object-oriented programming, what does 'polymorphism' broadly refer to?",
+      "options": [
+        {
+          "text": "The ability for objects of different classes to be treated through a common interface, each responding to the same method call in its own way",
+          "isCorrect": true,
+          "feedback": "Correct -- 'polymorphism' literally means 'many forms', reflecting how the same call can behave differently depending on the object."
+        },
+        {
+          "text": "The ability to store multiple values inside a single variable at the same time",
+          "isCorrect": false,
+          "feedback": "Storing multiple values in one variable is a different concept -- polymorphism is about objects of different types responding to a shared interface in their own way."
+        },
+        {
+          "text": "The requirement that every class in a program must have an identical set of methods with identical behavior",
+          "isCorrect": false,
+          "feedback": "Polymorphism is valuable precisely because different classes can implement the SAME method call DIFFERENTLY, not identically."
+        },
+        {
+          "text": "The process of converting a program's source code into machine code",
+          "isCorrect": false,
+          "feedback": "Converting code into machine code describes compilation, an unrelated concept to polymorphism."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Suppose both a 'Circle' class and a 'Square' class have their own version of a method called 'area()'. If code calls 'shape.area()' without needing to know whether 'shape' is a Circle or a Square, what concept does this illustrate?",
+      "options": [
+        {
+          "text": "Polymorphism",
+          "isCorrect": true,
+          "feedback": "Correct -- the calling code can treat different shape types uniformly, and each object's own version of area() runs appropriately."
+        },
+        {
+          "text": "Encapsulation",
+          "isCorrect": false,
+          "feedback": "Encapsulation is about bundling data and restricting direct access to it -- this scenario is specifically about one method call behaving differently per object type, which is polymorphism."
+        },
+        {
+          "text": "Recursion",
+          "isCorrect": false,
+          "feedback": "Recursion is a function calling itself -- this scenario describes different classes responding differently to the same method call, which is polymorphism."
+        },
+        {
+          "text": "Garbage collection",
+          "isCorrect": false,
+          "feedback": "Garbage collection is about automatically reclaiming unused memory -- unrelated to different classes each implementing area() their own way."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is the key practical benefit of polymorphism for code that works with a collection of objects from different, related classes?",
+      "options": [
+        {
+          "text": "The code can call the same method on every object in the collection without needing special-case logic for each specific class, since each object handles the call in its own appropriate way",
+          "isCorrect": true,
+          "feedback": "Correct -- this lets code be written more generally and be more easily extended with new subclasses later, without modifying the existing calling code."
+        },
+        {
+          "text": "It guarantees every object in the collection will produce the exact same numeric result when the shared method is called",
+          "isCorrect": false,
+          "feedback": "Different objects are expected to produce DIFFERENT results appropriate to their own type -- polymorphism doesn't force identical output."
+        },
+        {
+          "text": "It removes the need for the different classes to share any common method names at all",
+          "isCorrect": false,
+          "feedback": "Polymorphism specifically relies on the different classes sharing a common method name (or interface) that each implements its own way -- it doesn't eliminate that need."
+        },
+        {
+          "text": "It automatically converts all the different classes into a single identical class",
+          "isCorrect": false,
+          "feedback": "The classes remain genuinely distinct -- polymorphism lets them be treated uniformly through a shared interface without merging them into one class."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the ability for a shared interface, like a common method name, to behave differently depending on the specific object it's called on.",
+        "medium": "This lets different kinds of objects respond to the identical method call, each in its own appropriate way.",
+        "hard": "The word itself hints at 'many forms' -- think about the same action looking different depending on who's doing it."
+      },
+      "medium": {
+        "easy": "Each shape type supplies its OWN version of the shared method name, and the correct version automatically runs depending on the object's actual type.",
+        "medium": "The calling code doesn't need to know or check which specific shape it has -- it just calls the shared method name.",
+        "hard": "Think about calling the exact same-named method on two genuinely different kinds of objects."
+      },
+      "hard": {
+        "easy": "New classes implementing the same shared method can be added later without requiring any changes to the existing code that calls that method on a collection of objects.",
+        "medium": "Because each object handles the shared method call appropriately on its own, the calling code doesn't need extra special-case branches for every class.",
+        "hard": "Think about writing one simple piece of calling code that still works correctly even if new related classes get added later."
+      }
+    }
+  },
+  {
+    "topic": "encapsulation",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In object-oriented programming, what does 'encapsulation' generally refer to?",
+      "options": [
+        {
+          "text": "Bundling data together with the methods that operate on that data, often restricting direct outside access to the data itself",
+          "isCorrect": true,
+          "feedback": "Correct -- encapsulation groups related data and behavior together while controlling how that data can be accessed or modified from outside."
+        },
+        {
+          "text": "Making a program run using less electricity",
+          "isCorrect": false,
+          "feedback": "Encapsulation is a code-organization concept -- it isn't related to a program's electrical power consumption."
+        },
+        {
+          "text": "Translating a program's code from one programming language into another",
+          "isCorrect": false,
+          "feedback": "Translating between languages is unrelated to encapsulation, which is about bundling data with related behavior and controlling access to it."
+        },
+        {
+          "text": "Automatically finding and fixing bugs in a program",
+          "isCorrect": false,
+          "feedback": "Encapsulation is about how data and behavior are organized and access-controlled, not an automatic bug-fixing process."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a class mark some of its internal data as 'private', accessible only through specific methods (like 'getters' and 'setters') rather than being directly modified from outside?",
+      "options": [
+        {
+          "text": "To control and validate how that data can be changed, preventing outside code from putting the object into an invalid or inconsistent state",
+          "isCorrect": true,
+          "feedback": "Correct -- restricting direct access lets the class enforce its own rules about what values are valid, protecting its internal consistency."
+        },
+        {
+          "text": "Because private data uses noticeably less computer memory than public data",
+          "isCorrect": false,
+          "feedback": "Marking data private doesn't inherently reduce its memory usage -- the purpose is controlling and validating access, not saving memory."
+        },
+        {
+          "text": "Because a program is not allowed to compile at all if it contains any public data",
+          "isCorrect": false,
+          "feedback": "Programs can absolutely compile and run with public data -- marking data private is a deliberate design choice about controlling access, not a compilation requirement."
+        },
+        {
+          "text": "Because private data automatically gets encrypted for security purposes",
+          "isCorrect": false,
+          "feedback": "Marking data 'private' in this object-oriented sense controls which code can access it directly -- it doesn't automatically apply encryption."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How does encapsulation support making later changes to a class's internal implementation without breaking code elsewhere that uses the class?",
+      "options": [
+        {
+          "text": "As long as the class's public methods keep the same behavior and interface, its internal (private) data and logic can be changed freely, since outside code never depended on those internal details directly",
+          "isCorrect": true,
+          "feedback": "Correct -- this separation between a stable public interface and a changeable private implementation is a central practical benefit of encapsulation."
+        },
+        {
+          "text": "Because encapsulation prevents a class from ever being modified again once it's first written",
+          "isCorrect": false,
+          "feedback": "Encapsulation doesn't freeze a class from ever changing -- it specifically supports SAFELY changing internal details, as long as the public interface stays consistent."
+        },
+        {
+          "text": "Because encapsulation requires all code in a program to be rewritten every time any single class changes",
+          "isCorrect": false,
+          "feedback": "Encapsulation's whole point is to LIMIT how much other code needs to change -- outside code that only relies on the public interface shouldn't need to be rewritten."
+        },
+        {
+          "text": "Because encapsulation makes every variable in the entire program globally accessible",
+          "isCorrect": false,
+          "feedback": "Encapsulation does the opposite -- it restricts direct access to a class's internal data, rather than making everything globally accessible."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about wrapping data and the actions that work on it into one single, protected package.",
+        "medium": "This bundles related data and behavior together, and controls how outside code is allowed to reach that data.",
+        "easy": "It's the practice of grouping data with its related methods while restricting direct outside access to that data."
+      },
+      "medium": {
+        "hard": "Think about what could go wrong if any outside code could set a value to literally anything, with no checks.",
+        "medium": "Routing changes through specific methods lets the class check and enforce which values are actually allowed.",
+        "easy": "Sending changes through dedicated methods lets the class double-check each one, which keeps the object from ever ending up in a broken or contradictory condition."
+      },
+      "hard": {
+        "hard": "Think about what outside code actually relies on: the public methods, or the hidden internal details?",
+        "medium": "As long as the publicly visible behavior stays consistent, what happens behind the scenes can be swapped out freely.",
+        "easy": "Because external code only ever touches the class through its stable public methods, whatever's hidden behind them is free to be rewritten at will, with nothing on the outside needing to change."
+      }
+    }
+  },
+  {
+    "topic": "abstraction (object-oriented programming)",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In object-oriented programming, what does 'abstraction' generally mean?",
+      "options": [
+        {
+          "text": "Hiding complex internal implementation details and exposing only the essential features or operations that a user of a class needs to know about",
+          "isCorrect": true,
+          "feedback": "Correct -- abstraction lets someone use a class's functionality without needing to understand every detail of how it works internally."
+        },
+        {
+          "text": "Making a program's code deliberately harder to read for other programmers",
+          "isCorrect": false,
+          "feedback": "Abstraction is meant to simplify how a class is USED by hiding unnecessary detail, not to intentionally make code harder to read."
+        },
+        {
+          "text": "Storing data using an abstract, non-numeric format only",
+          "isCorrect": false,
+          "feedback": "Abstraction is a design concept about hiding implementation complexity, not a restriction on which data formats can be used."
+        },
+        {
+          "text": "Combining two entirely separate programs into a single executable file",
+          "isCorrect": false,
+          "feedback": "Merging separate programs into one file is unrelated to the concept of abstraction in object-oriented design."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "When you use a method like 'sort()' on a list without needing to know the specific sorting algorithm it uses internally, what concept does this illustrate?",
+      "options": [
+        {
+          "text": "Abstraction",
+          "isCorrect": true,
+          "feedback": "Correct -- you're relying on the essential behavior (the list becomes sorted) without needing to understand the internal implementation details."
+        },
+        {
+          "text": "Inheritance",
+          "isCorrect": false,
+          "feedback": "Inheritance is about one class reusing another class's properties and methods -- this scenario is about hiding implementation detail behind a simple interface, which is abstraction."
+        },
+        {
+          "text": "Recursion",
+          "isCorrect": false,
+          "feedback": "Recursion is a function calling itself -- using a method without knowing its internal algorithm illustrates abstraction, not recursion."
+        },
+        {
+          "text": "Garbage collection",
+          "isCorrect": false,
+          "feedback": "Garbage collection is about automatically reclaiming unused memory -- unrelated to not needing to know a sort method's internal algorithm."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How does abstraction differ from encapsulation, even though the two concepts are closely related and often used together?",
+      "options": [
+        {
+          "text": "Abstraction focuses on exposing only the essential 'what' (the interface and behavior a user needs), while encapsulation focuses on the mechanism of bundling data with methods and restricting direct access to that data",
+          "isCorrect": true,
+          "feedback": "Correct -- abstraction is about a simplified conceptual view, while encapsulation is the specific implementation mechanism (like private fields and public methods) that helps achieve it."
+        },
+        {
+          "text": "Abstraction and encapsulation are simply two completely different names for the exact identical concept, with no distinction at all",
+          "isCorrect": false,
+          "feedback": "While closely related and often used together, they describe distinct aspects -- one is about hiding complexity behind a simple interface, the other is about the bundling-and-access-control mechanism."
+        },
+        {
+          "text": "Abstraction only applies to numbers, while encapsulation only applies to text",
+          "isCorrect": false,
+          "feedback": "Neither concept is restricted to a specific data type -- both apply broadly across different kinds of data and objects."
+        },
+        {
+          "text": "Abstraction requires a program to have zero private data at all, while encapsulation requires the opposite",
+          "isCorrect": false,
+          "feedback": "Abstraction doesn't forbid private data -- in fact, private data controlled through encapsulation is often exactly what helps achieve a clean abstraction."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about using something useful without needing to understand every gear turning inside it.",
+        "medium": "This hides unnecessary internal complexity, showing only the essential features someone actually needs to use.",
+        "easy": "It's about showing only the essential 'what this does' on the surface, while tucking away the messy 'how it's built' underneath."
+      },
+      "medium": {
+        "hard": "Think about relying on a result without needing to know the specific method used to reach it.",
+        "medium": "You only care that the outcome (a sorted list) happens correctly, not which specific technique produced it.",
+        "easy": "Using the essential behavior of a method while remaining unaware of its internal algorithm is a textbook example of this concept."
+      },
+      "hard": {
+        "hard": "Think about the difference between the goal (a simple, understandable interface) and the specific tool used to help achieve that goal.",
+        "medium": "One concept is about the simplified conceptual view being presented; the other is the specific bundling-and-restricting mechanism that helps make that simplified view possible.",
+        "easy": "One of the two is about presenting just the essential outward interface; the other is about the specific technique -- like private fields paired with public methods -- used to make that clean interface possible."
+      }
+    }
+  },
+  {
+    "topic": "exception handling",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of 'exception handling' in a program?",
+      "options": [
+        {
+          "text": "To detect and respond to errors or unexpected conditions during a program's execution, without necessarily crashing the whole program",
+          "isCorrect": true,
+          "feedback": "Correct -- exception handling lets a program react gracefully to problems like invalid input or failed operations, instead of simply crashing."
+        },
+        {
+          "text": "To make a program run faster by skipping unnecessary calculations",
+          "isCorrect": false,
+          "feedback": "Exception handling is about managing errors gracefully, not a technique for improving raw execution speed."
+        },
+        {
+          "text": "To automatically translate a program's code into a different programming language",
+          "isCorrect": false,
+          "feedback": "Exception handling deals with responding to runtime errors -- it has nothing to do with translating code between languages."
+        },
+        {
+          "text": "To permanently prevent any errors from ever occurring in a program",
+          "isCorrect": false,
+          "feedback": "Exception handling helps a program RESPOND to errors gracefully once they occur -- it doesn't prevent every possible error from ever happening in the first place."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In a common 'try/catch' structure for exception handling, what is the general role of the 'try' block versus the 'catch' block?",
+      "options": [
+        {
+          "text": "The 'try' block contains code that might raise an error, while the 'catch' block contains code that runs specifically to handle that error if it occurs",
+          "isCorrect": true,
+          "feedback": "Correct -- this separation lets a program isolate risky operations and define a clear response if something goes wrong."
+        },
+        {
+          "text": "The 'try' block runs only after an error has already occurred, and the 'catch' block runs before it",
+          "isCorrect": false,
+          "feedback": "This reverses their actual order -- the 'try' block is attempted FIRST, and the 'catch' block only runs if an error occurs during that attempt."
+        },
+        {
+          "text": "The 'try' block and 'catch' block always execute simultaneously, at the exact same time",
+          "isCorrect": false,
+          "feedback": "They aren't executed simultaneously -- the 'catch' block only runs if the 'try' block's code raises an error."
+        },
+        {
+          "text": "The 'try' block is used only for storing variables, while the 'catch' block is used only for printing output",
+          "isCorrect": false,
+          "feedback": "Both blocks can contain a wide variety of code -- their distinguishing roles are about handling potential errors, not being limited to variable storage or printing."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is it generally considered poor practice to 'catch' an overly broad category of exceptions and silently ignore them, rather than handling specific, expected error types?",
+      "options": [
+        {
+          "text": "It can accidentally hide genuine, unexpected bugs by suppressing their error signals, making problems much harder to detect and diagnose later",
+          "isCorrect": true,
+          "feedback": "Correct -- overly broad, silent exception handling can mask real problems, letting a program continue running in a broken or inconsistent state without any visible warning."
+        },
+        {
+          "text": "Because catching exceptions broadly is against the fundamental rules of every programming language and will always fail to compile",
+          "isCorrect": false,
+          "feedback": "Most languages allow catching broad exception categories syntactically -- the concern is a PRACTICE and DESIGN issue about hiding bugs, not a hard compilation restriction."
+        },
+        {
+          "text": "Because a program is only allowed to contain a single try/catch block in its entire codebase",
+          "isCorrect": false,
+          "feedback": "Programs can contain many try/catch blocks throughout their codebase -- the concern here is specifically about broad, silent catching, not the overall number of such blocks."
+        },
+        {
+          "text": "Because catching exceptions broadly always makes a program run substantially slower",
+          "isCorrect": false,
+          "feedback": "The core issue with overly broad, silent exception handling is masking bugs and making them hard to diagnose, not primarily a performance slowdown."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about a program noticing something has gone wrong, and being able to respond instead of just crashing.",
+        "medium": "This lets a program detect problems during execution and react to them in a controlled way.",
+        "easy": "It's the mechanism for detecting and responding to runtime errors, allowing controlled recovery instead of an abrupt crash."
+      },
+      "medium": {
+        "hard": "Think about which part is the 'attempt' and which part is the 'plan for if that attempt goes wrong'.",
+        "medium": "One part holds the code that's being attempted; the other part only springs into action if that attempt fails.",
+        "easy": "The risky code being attempted lives in one block, and the response that runs specifically if an error occurs lives in the other."
+      },
+      "hard": {
+        "hard": "Think about what happens to a genuine bug's warning signal if it just gets swallowed silently.",
+        "medium": "Suppressing the error without examining or logging it means a real, unexpected problem can go completely unnoticed.",
+        "easy": "Silently catching broad categories of errors can mask genuine unexpected bugs, letting the program keep running in a broken state without any visible signal that something is actually wrong."
+      }
+    }
+  },
+  {
+    "topic": "data types",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does a variable's 'data type' generally specify?",
+      "options": [
+        {
+          "text": "What kind of value the variable can hold, such as a whole number, decimal number, text, or true/false value",
+          "isCorrect": true,
+          "feedback": "Correct -- the data type tells the program (and the programmer) what kind of value to expect and what operations make sense on it."
+        },
+        {
+          "text": "The exact physical computer the program is running on",
+          "isCorrect": false,
+          "feedback": "A data type describes the KIND of value stored, not which physical machine the program happens to be running on."
+        },
+        {
+          "text": "How many total variables exist in the entire program",
+          "isCorrect": false,
+          "feedback": "A data type describes an individual variable's kind of value -- it isn't a count of how many variables exist overall."
+        },
+        {
+          "text": "The specific name chosen for the variable",
+          "isCorrect": false,
+          "feedback": "A variable's chosen name is a separate detail from its data type, which instead describes what kind of value it holds."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might attempting to add a text string like '5' directly to an integer like 5 cause an error or unexpected behavior in many programming languages?",
+      "options": [
+        {
+          "text": "Because the operation '+' can behave differently (or be disallowed) depending on the data types involved, and many languages don't automatically treat text and numbers as interchangeable",
+          "isCorrect": true,
+          "feedback": "Correct -- this is a common source of bugs, since '+' might mean numeric addition for numbers but concatenation for text, and mixing the two types isn't always handled automatically."
+        },
+        {
+          "text": "Because computers are only capable of storing a single data type across an entire program",
+          "isCorrect": false,
+          "feedback": "Most programming languages readily support multiple different data types coexisting within the same program -- that's not the source of this specific issue."
+        },
+        {
+          "text": "Because the number '5' secretly does not exist as a valid number in computer memory",
+          "isCorrect": false,
+          "feedback": "The number 5 is a perfectly valid stored value -- the issue described is about combining differing data types with an ambiguous operation, not the number itself being invalid."
+        },
+        {
+          "text": "Because every programming language automatically converts all data into text before doing anything with it",
+          "isCorrect": false,
+          "feedback": "Many languages do NOT automatically convert everything to text -- this behavior actually varies significantly between languages, which is part of why mixing types like this can cause issues."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is the difference between a 'primitive' data type (like an integer or boolean) and a 'composite' (or 'compound') data type in many programming languages?",
+      "options": [
+        {
+          "text": "A primitive data type represents a single basic value, while a composite data type groups multiple values (possibly of different types) together into one structure",
+          "isCorrect": true,
+          "feedback": "Correct -- an example of a composite type would be something like a record or object combining several individual pieces of data, like a name and an age, into a single unit."
+        },
+        {
+          "text": "A primitive data type can only be used in older programming languages, while composite data types can only be used in newer ones",
+          "isCorrect": false,
+          "feedback": "Both primitive and composite data types coexist across many programming languages, old and new alike -- the actual distinction is about single basic values versus grouped combinations of values."
+        },
+        {
+          "text": "A primitive data type must always be a decimal number, while a composite data type must always be a whole number",
+          "isCorrect": false,
+          "feedback": "Primitive types include more than just decimal numbers, and composite types aren't restricted to being whole numbers -- the real distinction is single value versus grouped combination of values."
+        },
+        {
+          "text": "A primitive data type takes up more memory than any composite data type",
+          "isCorrect": false,
+          "feedback": "Composite data types typically end up using MORE memory overall, since they bundle multiple individual values together -- this reverses the usual relationship."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Think about what kind of value is allowed to be stored: a whole number, a decimal, some text, or a true/false answer.",
+        "medium": "This tells the program what category of value a given variable is meant to hold.",
+        "hard": "It specifically categorizes what kind of value a variable holds, distinct from the variable's chosen name or the machine running the program."
+      },
+      "medium": {
+        "hard": "Think about what the same symbol, like a plus sign, is actually supposed to mean for different kinds of values.",
+        "medium": "The same operation can mean something different -- like combining numbers versus joining pieces of text -- depending on the types involved.",
+        "easy": "Because an operation like '+' doesn't always mean the same thing -- what it actually does can shift depending on which data types are being combined, and plenty of languages refuse to silently mix text with numbers."
+      },
+      "hard": {
+        "hard": "Think about a single simple value versus a bundle made up of several individual values combined together.",
+        "medium": "One category holds just one basic piece of data; the other groups several pieces, possibly of different kinds, into a single structure.",
+        "easy": "A single basic value defines one category, while grouping multiple values -- potentially of differing types -- into one combined structure defines the other."
+      }
+    }
+  },
+  {
+    "topic": "pointers and references",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In programming, what does a 'pointer' or 'reference' generally store?",
+      "options": [
+        {
+          "text": "The memory address (location) of where a piece of data is actually stored, rather than the data's value itself",
+          "isCorrect": true,
+          "feedback": "Correct -- a pointer or reference points TO the data's location, instead of directly containing the data's value."
+        },
+        {
+          "text": "A copy of the data's exact value, with no connection to memory location at all",
+          "isCorrect": false,
+          "feedback": "That describes an ordinary value-holding variable -- a pointer or reference specifically stores a memory ADDRESS, not the value itself."
+        },
+        {
+          "text": "The data type of the variable, such as int or string, rather than where it is stored",
+          "isCorrect": false,
+          "feedback": "That describes the variable's data type, not a pointer -- a pointer specifically stores a memory address, not type information."
+        },
+        {
+          "text": "The total number of bytes the variable's value occupies in memory",
+          "isCorrect": false,
+          "feedback": "That describes the size of the data, not its location -- a pointer specifically stores the address where the data lives, not its size."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might passing a large data structure to a function 'by reference' be more efficient than passing it 'by value'?",
+      "options": [
+        {
+          "text": "Passing by reference avoids copying the entire large data structure, instead just passing along its memory address",
+          "isCorrect": true,
+          "feedback": "Correct -- for large structures, copying the whole thing 'by value' can be far more costly in time and memory than simply passing a reference to its existing location."
+        },
+        {
+          "text": "Because passing by reference makes a data structure permanently read-only afterward",
+          "isCorrect": false,
+          "feedback": "Whether data becomes read-only depends on separate language rules, not simply on the choice between passing by reference or by value."
+        },
+        {
+          "text": "Because passing by reference automatically compresses the data structure to take up less memory",
+          "isCorrect": false,
+          "feedback": "Passing by reference doesn't compress or transform the data -- it simply avoids copying it by sharing its memory address instead."
+        },
+        {
+          "text": "Because most modern languages no longer allow large data structures to be passed by value at all",
+          "isCorrect": false,
+          "feedback": "Passing by value is still fully supported in modern languages -- it's just less efficient for large structures, which is why passing by reference is often preferred instead."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a classic risk associated with using raw pointers in languages that allow manual memory management, such as accidentally using a 'dangling pointer'?",
+      "options": [
+        {
+          "text": "A dangling pointer refers to memory that has already been freed or deallocated, so using it can lead to unpredictable behavior or crashes",
+          "isCorrect": true,
+          "feedback": "Correct -- once memory is freed, a pointer still referencing that old address no longer points to valid, reserved data, making its use unsafe."
+        },
+        {
+          "text": "A dangling pointer always automatically points to the number zero, and using it is completely harmless",
+          "isCorrect": false,
+          "feedback": "A dangling pointer doesn't reliably point to any particular safe value like zero -- it points to memory that's no longer validly reserved, which is exactly the danger."
+        },
+        {
+          "text": "A dangling pointer is a pointer that was never initialized with any valid memory address in the first place",
+          "isCorrect": false,
+          "feedback": "That describes an uninitialized (or 'wild') pointer. A dangling pointer specifically refers to memory that was once valid but has since been freed."
+        },
+        {
+          "text": "Using a dangling pointer always causes an immediate compile-time error, so the program can never actually run",
+          "isCorrect": false,
+          "feedback": "Using a dangling pointer is undefined behavior discovered (if at all) at runtime -- most languages can't catch it during compilation, which is part of what makes it risky."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about a note that says 'the data you want is over there' rather than holding the data itself.",
+        "medium": "Instead of holding a value directly, this holds the memory location where that value can be found.",
+        "easy": "It's a stored memory address pointing to where actual data lives, distinct from directly holding the data's value."
+      },
+      "medium": {
+        "hard": "Think about the cost of duplicating a huge amount of data versus just sharing directions to where it already sits.",
+        "medium": "Only a memory address needs to be passed along, sidestepping the cost of copying every piece of a potentially large structure.",
+        "easy": "Sharing just the memory address avoids the cost of duplicating that large chunk of data all over again."
+      },
+      "hard": {
+        "hard": "Think about what happens if you keep directions to a location, but whatever was there has since been cleared away.",
+        "medium": "Once the referenced memory has been freed, the pointer no longer points to valid reserved data, making any further use of it unpredictable or unsafe.",
+        "easy": "It specifically points at memory that was already handed back to the system for reuse elsewhere, rather than memory currently reserved for it."
+      }
+    }
+  },
+  {
+    "topic": "compilers vs interpreters",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the basic role of a 'compiler'?",
+      "options": [
+        {
+          "text": "It translates a program's entire source code into machine code (or another lower-level form) before the program is run",
+          "isCorrect": true,
+          "feedback": "Correct -- compiling happens as a distinct, separate step that produces a runnable program ahead of time."
+        },
+        {
+          "text": "It runs a program's source code directly, one line at a time, without producing a separate translated file first",
+          "isCorrect": false,
+          "feedback": "Executing code directly, line by line, without a separate translation step describes an INTERPRETER's role, not a compiler's."
+        },
+        {
+          "text": "It deletes unused variables from a program's source code automatically",
+          "isCorrect": false,
+          "feedback": "A compiler's core role is translation of code into a runnable form, not automatically deleting unused variables."
+        },
+        {
+          "text": "It formats a program's code to look visually neat and consistent",
+          "isCorrect": false,
+          "feedback": "Visual code formatting is a separate tool or feature -- a compiler's defining role is translating source code into a lower-level runnable form."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does an 'interpreter' typically differ from a compiler in how it processes a program?",
+      "options": [
+        {
+          "text": "An interpreter executes source code directly, translating and running it on the fly (often line by line or statement by statement), rather than producing a separate compiled file beforehand",
+          "isCorrect": true,
+          "feedback": "Correct -- this is the key contrast: a compiler translates the whole program ahead of time, while an interpreter translates and executes incrementally as it goes."
+        },
+        {
+          "text": "An interpreter can only process programs written entirely in machine code from the start",
+          "isCorrect": false,
+          "feedback": "An interpreter works directly with a program's higher-level source code, translating and running it on the fly -- it doesn't require the source to already be machine code."
+        },
+        {
+          "text": "An interpreter and a compiler are simply two different names for the exact same process",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different processing strategies -- one translates everything upfront, the other translates and executes incrementally."
+        },
+        {
+          "text": "An interpreter physically cannot run any program containing a loop",
+          "isCorrect": false,
+          "feedback": "Interpreters run programs containing loops all the time -- there's no such restriction, and this isn't a real distinguishing trait between interpreters and compilers."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a practical tradeoff often associated with interpreted execution compared to compiled execution?",
+      "options": [
+        {
+          "text": "Interpreted code often runs somewhat slower at execution time, since translation happens on the fly repeatedly, but it can offer faster development iteration since there's no separate compile step required before testing changes",
+          "isCorrect": true,
+          "feedback": "Correct -- this speed-versus-iteration-convenience tradeoff is a classic distinction discussed when comparing interpreted and compiled approaches."
+        },
+        {
+          "text": "Interpreted code always runs faster than compiled code in every single case",
+          "isCorrect": false,
+          "feedback": "Interpreted code commonly runs somewhat SLOWER at execution time than compiled code, precisely because translation work happens repeatedly during execution rather than once beforehand."
+        },
+        {
+          "text": "Compiled code can never be updated or changed once it has been compiled a single time",
+          "isCorrect": false,
+          "feedback": "Compiled code can absolutely be changed -- doing so just requires recompiling the updated source code, rather than being permanently frozen."
+        },
+        {
+          "text": "Interpreted languages are incapable of being used to build any real-world applications",
+          "isCorrect": false,
+          "feedback": "Many widely used real-world applications are built with interpreted (or partially interpreted) languages -- this claim vastly overstates the actual tradeoff involved."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about translating a whole recipe into a different language before ever starting to cook.",
+        "medium": "This tool converts the entire program into a lower-level, runnable form as a separate step, done ahead of time.",
+        "easy": "It's the tool that turns a program's whole source code into a lower-level form like machine code before the program ever runs."
+      },
+      "medium": {
+        "hard": "Executing and translating incrementally, on the fly, is the key contrast with a compiler's approach of translating everything upfront.",
+        "medium": "Think about translating and following instructions one at a time, on the spot, instead of translating the whole thing first.",
+        "easy": "This style translates and runs the code as it goes, rather than compiling everything into its own separate file ahead of time."
+      },
+      "hard": {
+        "hard": "Think about what you gain in convenience by skipping a separate translation step, and what you might lose in raw speed.",
+        "medium": "Skipping the upfront translation step can make testing changes quicker, though it can cost some raw execution speed since translation keeps happening as the program runs.",
+        "easy": "The convenience of testing changes without a separate compile step tends to trade off against somewhat slower execution speed, since translation work repeats during each run."
+      }
+    }
+  },
+  {
+    "topic": "static vs dynamic typing",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In a 'statically typed' programming language, when is a variable's data type generally determined and checked?",
+      "options": [
+        {
+          "text": "Before the program runs, typically at compile time",
+          "isCorrect": true,
+          "feedback": "Correct -- static typing checks types ahead of time, which can catch certain kinds of errors before the program is ever executed."
+        },
+        {
+          "text": "Only while the program is actively running, and never before",
+          "isCorrect": false,
+          "feedback": "That describes DYNAMIC typing's approach -- static typing instead determines and checks types before the program runs."
+        },
+        {
+          "text": "Only after the program has already finished running completely",
+          "isCorrect": false,
+          "feedback": "Type checking in a statically typed language happens before execution, not after the program has already finished running."
+        },
+        {
+          "text": "Static typing means types are never checked at all, under any circumstances",
+          "isCorrect": false,
+          "feedback": "Static typing specifically means types ARE checked, just at an earlier point (before running) rather than never being checked."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In a 'dynamically typed' language, what generally happens when a variable's data type doesn't match what an operation expects?",
+      "options": [
+        {
+          "text": "The mismatch is typically only discovered while the program is actually running, potentially causing a runtime error",
+          "isCorrect": true,
+          "feedback": "Correct -- dynamic typing defers type checking until the actual moment code executes, rather than catching mismatches beforehand."
+        },
+        {
+          "text": "The program automatically corrects the mismatch and continues flawlessly, with no possible errors",
+          "isCorrect": false,
+          "feedback": "Dynamically typed languages don't automatically fix every mismatch -- a genuine mismatch can still result in a runtime error."
+        },
+        {
+          "text": "The mismatch is always caught before the program even starts running, exactly like in a statically typed language",
+          "isCorrect": false,
+          "feedback": "That describes static typing's behavior -- dynamically typed languages generally discover such mismatches only once the relevant code actually executes."
+        },
+        {
+          "text": "The program refuses to even save the source code file if any mismatch exists anywhere",
+          "isCorrect": false,
+          "feedback": "Saving a source file doesn't involve running any type-checking logic -- a dynamically typed language's checks only happen once the relevant code is actually executed."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a commonly cited tradeoff between static and dynamic typing?",
+      "options": [
+        {
+          "text": "Static typing can catch certain type-related errors earlier, before the program runs, while dynamic typing often allows for faster, more flexible prototyping at the potential cost of catching such errors later",
+          "isCorrect": true,
+          "feedback": "Correct -- this reflects a classic tradeoff between earlier error detection and development flexibility, and different projects may weigh these priorities differently."
+        },
+        {
+          "text": "Static typing means a program can never contain a single bug of any kind",
+          "isCorrect": false,
+          "feedback": "Static typing can catch certain TYPE-related errors early, but it doesn't prevent every possible kind of bug -- many other bug categories remain entirely possible."
+        },
+        {
+          "text": "Dynamic typing means a program is not allowed to use variables at all",
+          "isCorrect": false,
+          "feedback": "Dynamically typed languages still use variables extensively -- the distinction is about WHEN their types get checked, not whether variables are permitted."
+        },
+        {
+          "text": "Static and dynamic typing produce programs that are completely indistinguishable from one another in every respect",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different approaches with real practical differences in error detection timing and development flexibility -- they aren't indistinguishable."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about whether type-checking happens ahead of time, before the program is even run.",
+        "medium": "This approach determines and checks types before execution ever begins, often as part of compiling.",
+        "easy": "Type-checking happens ahead of time here, typically during a compile step, rather than only while the program actually runs."
+      },
+      "medium": {
+        "hard": "Think about whether a mismatch gets caught early, or only once the program is actually mid-execution.",
+        "medium": "A mismatch in this style of language often only surfaces once the relevant code actually gets executed.",
+        "easy": "Since type-checking is deferred, this kind of mismatch tends to surface only once the program is already executing -- as an error encountered during that run."
+      },
+      "hard": {
+        "hard": "Think about what you gain by catching problems earlier, versus what you gain by being more flexible while writing code quickly.",
+        "medium": "One approach favors catching certain issues sooner; the other favors quicker, more flexible development at the cost of catching those same issues later.",
+        "easy": "Catching certain type mismatches sooner is the tradeoff against a looser, quicker-to-prototype style that puts off those same checks until the code actually runs."
+      }
+    }
+  },
+  {
+    "topic": "variable scope",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does a variable's 'scope' refer to in programming?",
+      "options": [
+        {
+          "text": "The region of a program's code where that variable can be accessed or referenced",
+          "isCorrect": true,
+          "feedback": "Correct -- scope defines the boundaries within which a particular variable is visible and usable."
+        },
+        {
+          "text": "The exact numeric value currently stored in the variable",
+          "isCorrect": false,
+          "feedback": "A variable's current value is a separate concept from its scope, which is about WHERE in the code it can be accessed."
+        },
+        {
+          "text": "How much memory the variable's data type takes up",
+          "isCorrect": false,
+          "feedback": "Memory size relates to a variable's data type, not to the scope describing where it can be accessed in the code."
+        },
+        {
+          "text": "The order in which the variable was declared relative to other variables",
+          "isCorrect": false,
+          "feedback": "Declaration order is a separate detail -- scope specifically concerns the region of code where the variable is accessible."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is the general difference between a 'local' variable and a 'global' variable?",
+      "options": [
+        {
+          "text": "A local variable is only accessible within the specific function or block where it's defined, while a global variable can be accessed from many different parts of the program",
+          "isCorrect": true,
+          "feedback": "Correct -- this difference in reach is the defining distinction between local and global scope."
+        },
+        {
+          "text": "A local variable can only ever store text, while a global variable can only ever store numbers",
+          "isCorrect": false,
+          "feedback": "Both local and global variables can store many different data types -- the distinction between them is about ACCESSIBILITY, not what kind of data they can hold."
+        },
+        {
+          "text": "A global variable disappears the moment the function that created it finishes running",
+          "isCorrect": false,
+          "feedback": "That behavior actually describes many LOCAL variables -- a global variable typically persists and remains accessible well beyond any single function's execution."
+        },
+        {
+          "text": "There is no meaningful difference between local and global variables at all",
+          "isCorrect": false,
+          "feedback": "There's a real and often important difference -- specifically, how widely across the program each one can be accessed."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why do many programmers consider relying heavily on global variables to be risky in larger programs?",
+      "options": [
+        {
+          "text": "Because any part of the program can potentially modify a global variable, making it harder to track down where and why its value unexpectedly changed",
+          "isCorrect": true,
+          "feedback": "Correct -- this lack of containment can make bugs involving global variables especially difficult to trace, since the source of a problematic change could be almost anywhere in the program."
+        },
+        {
+          "text": "Because global variables are physically incapable of storing more than a single character of text",
+          "isCorrect": false,
+          "feedback": "Global variables can store the same range of data types and sizes as local variables -- storage capacity isn't the concern here."
+        },
+        {
+          "text": "Because using a global variable causes a program to fail to compile in every programming language",
+          "isCorrect": false,
+          "feedback": "Global variables are fully supported and compile successfully in virtually every mainstream programming language -- the concern is about maintainability and traceability, not compilation failure."
+        },
+        {
+          "text": "Because global variables must always be given a numeric name instead of a descriptive one",
+          "isCorrect": false,
+          "feedback": "Naming rules for variables are a separate, general language convention -- they aren't specifically dictated by whether a variable is global or local."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about the specific area of code where a particular variable's name actually makes sense to use.",
+        "medium": "This describes the boundaries of where in the code a given variable can be seen and used.",
+        "easy": "It specifically names the section of code where that variable's name stays valid and can actually be used, as opposed to just its value."
+      },
+      "medium": {
+        "hard": "Think about how far a variable's visibility reaches: just one small area, or the whole program?",
+        "medium": "One kind is confined to a specific function or block; the other is reachable from many different places throughout the program.",
+        "easy": "A local variable stays confined to just the function or block it's declared in, while a global one can be reached from all over the rest of the program."
+      },
+      "hard": {
+        "hard": "Think about how many different places in a large program could potentially be the culprit behind an unexpected change.",
+        "medium": "Because so many different parts of the program could touch it, tracking down exactly where an unwanted change came from can become genuinely difficult.",
+        "easy": "It's the fact that virtually anything elsewhere in the codebase is free to modify it that makes pinpointing the real source of an unexpected change so difficult."
+      }
+    }
+  },
+  {
+    "topic": "constants",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'constant' in programming?",
+      "options": [
+        {
+          "text": "A named value that, once set, is not intended to be changed for the rest of the program's execution",
+          "isCorrect": true,
+          "feedback": "Correct -- unlike a regular variable, a constant's value is fixed once it's been assigned."
+        },
+        {
+          "text": "A value that changes randomly every time the program runs",
+          "isCorrect": false,
+          "feedback": "Random, changing values are the opposite of what a constant represents -- a constant is meant to stay fixed."
+        },
+        {
+          "text": "A synonym for any variable that stores a number",
+          "isCorrect": false,
+          "feedback": "A constant isn't defined by storing a number specifically -- it can hold text or other data types too; what defines it is being unchanging once set."
+        },
+        {
+          "text": "A piece of code that runs only once when the program is compiled",
+          "isCorrect": false,
+          "feedback": "A constant is about a fixed, unchanging VALUE, not specifically about a piece of code that runs during compilation."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a programmer choose to define a fixed value like the mathematical constant pi as a named constant, rather than typing the literal number everywhere it's needed?",
+      "options": [
+        {
+          "text": "It makes the code more readable and easier to update in one place if the value ever needs to change",
+          "isCorrect": true,
+          "feedback": "Correct -- using a descriptively named constant clarifies intent and centralizes any future update to a single location."
+        },
+        {
+          "text": "Because typing a literal number directly into code is not permitted in any programming language",
+          "isCorrect": false,
+          "feedback": "Directly typing a literal number is permitted in virtually every programming language -- the benefit of a named constant is about readability and easier maintenance, not a restriction on literal numbers."
+        },
+        {
+          "text": "Because using a named constant makes the program run at a completely different speed than using the literal number",
+          "isCorrect": false,
+          "feedback": "Using a named constant doesn't inherently make meaningful performance difference in most cases -- the benefit is about clarity and maintainability, not execution speed."
+        },
+        {
+          "text": "Because a named constant is required in order for a program to be considered 'object-oriented'",
+          "isCorrect": false,
+          "feedback": "Using named constants is a general good coding practice, unrelated specifically to whether a program follows an object-oriented style."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "In many programming languages, attempting to reassign a value to a properly declared constant results in a compile-time or runtime error. Why is enforcing this restriction useful, even though it adds a constraint compared to using an ordinary variable?",
+      "options": [
+        {
+          "text": "It helps prevent accidental, unintended changes to a value that's supposed to remain fixed throughout the program, catching a class of bugs early",
+          "isCorrect": true,
+          "feedback": "Correct -- explicitly marking a value as unchangeable lets the language itself help guard against a whole category of accidental-modification bugs."
+        },
+        {
+          "text": "It guarantees the constant's value will be encrypted automatically for security purposes",
+          "isCorrect": false,
+          "feedback": "Enforcing immutability protects against accidental modification -- it doesn't automatically apply encryption to the value."
+        },
+        {
+          "text": "It makes the constant's value become invisible to the rest of the program",
+          "isCorrect": false,
+          "feedback": "A constant's value generally remains fully readable throughout its scope -- the restriction specifically prevents changing it, not hiding it from view."
+        },
+        {
+          "text": "It allows the constant to be converted freely into any other data type at will",
+          "isCorrect": false,
+          "feedback": "Enforcing immutability is about preventing reassignment of the VALUE -- it isn't related to allowing free conversion between different data types."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about a labeled value that's meant to stay exactly the same throughout the whole program.",
+        "medium": "Once given its value, this kind of named item is not meant to be reassigned later on.",
+        "easy": "It's a named, fixed value that stays unchanged for the entirety of the program's run, in contrast to an ordinary variable."
+      },
+      "medium": {
+        "hard": "Imagine the same raw number typed out in dozens of different spots throughout a program, and think about what that would mean if it ever needed to change.",
+        "medium": "Giving a fixed value a clear, descriptive name also makes the code's intent easier for other people to follow.",
+        "easy": "A single, clearly-named update point, plus improved readability of the code's intent, are the key practical benefits here."
+      },
+      "hard": {
+        "hard": "Think about a category of bug where a value that was never supposed to change gets accidentally altered somewhere.",
+        "medium": "Enforcing that the value truly cannot be reassigned helps the language itself catch accidental modification bugs, rather than relying on the programmer to never make that mistake.",
+        "easy": "By flatly disallowing reassignment, the language itself helps catch this specific kind of accidental-change mistake early."
+      }
+    }
+  },
+  {
+    "topic": "string manipulation",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "In programming, what is a 'string'?",
+      "options": [
+        {
+          "text": "A sequence of characters, such as letters, numbers, or symbols, typically used to represent text",
+          "isCorrect": true,
+          "feedback": "Correct -- a string is the standard data type used to hold text-like data in most programming languages."
+        },
+        {
+          "text": "A single whole number with no decimal point",
+          "isCorrect": false,
+          "feedback": "A single whole number describes an integer, a different data type from a string, which represents a sequence of characters."
+        },
+        {
+          "text": "A physical cable connecting two computers together",
+          "isCorrect": false,
+          "feedback": "In programming, a 'string' refers to a sequence of text characters, not a physical cable."
+        },
+        {
+          "text": "A true or false value used in conditional logic",
+          "isCorrect": false,
+          "feedback": "A true/false value describes a boolean, a different data type from a string, which represents a sequence of characters."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What does a common string manipulation operation like 'concatenation' typically do?",
+      "options": [
+        {
+          "text": "It joins two or more strings together end to end into a single combined string",
+          "isCorrect": true,
+          "feedback": "Correct -- concatenation is one of the most common string operations, used to build up combined text from smaller pieces."
+        },
+        {
+          "text": "It permanently deletes all the characters within a string",
+          "isCorrect": false,
+          "feedback": "Concatenation specifically COMBINES strings together -- it doesn't erase or delete characters."
+        },
+        {
+          "text": "It converts every letter in a string into a number",
+          "isCorrect": false,
+          "feedback": "Converting letters to numbers describes a different kind of operation (like character encoding) -- concatenation is specifically about joining strings together."
+        },
+        {
+          "text": "It reverses the order of a program's entire source code file",
+          "isCorrect": false,
+          "feedback": "Concatenation operates on string VALUES during execution -- it has nothing to do with reversing an entire source code file."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is it generally a bad idea to build up a very large piece of text by repeatedly concatenating strings one small piece at a time inside a large loop, in many programming languages?",
+      "options": [
+        {
+          "text": "In many languages, strings are immutable, so each concatenation can create an entirely new string in memory, and doing this repeatedly in a loop can become surprisingly slow and memory-intensive",
+          "isCorrect": true,
+          "feedback": "Correct -- this is a well-known performance pitfall, and many languages provide more efficient tools (like a 'string builder' or joining a list of pieces at once) specifically to avoid it."
+        },
+        {
+          "text": "Because strings are not allowed to be combined with each other more than a single time in any program",
+          "isCorrect": false,
+          "feedback": "Strings can be concatenated repeatedly without any hard limit on the number of times -- the concern here is about performance and memory efficiency, not a prohibition on repeated concatenation."
+        },
+        {
+          "text": "Because concatenating strings inside a loop always produces a syntax error",
+          "isCorrect": false,
+          "feedback": "Concatenating strings inside a loop is syntactically valid in virtually every mainstream language -- the concern raised here is about performance, not a syntax problem."
+        },
+        {
+          "text": "Because only numeric data types are allowed to be used inside of loops",
+          "isCorrect": false,
+          "feedback": "Loops can freely process strings just as easily as numbers -- there's no such restriction limiting loops to numeric data types only."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "This is the standard data type used to hold and represent pieces of text.",
+        "medium": "Think about a sequence of letters and symbols strung together to form a piece of text.",
+        "easy": "It's made up of an ordered sequence of individual characters -- like letters, digits, and punctuation -- that together spell out a piece of text."
+      },
+      "medium": {
+        "hard": "Think about taking two separate pieces of text and gluing them together into one.",
+        "medium": "This operation joins multiple pieces of text end to end into a single resulting piece of text.",
+        "easy": "It stitches multiple strings together, one right after another, forming one longer combined string."
+      },
+      "hard": {
+        "hard": "Think about what has to happen behind the scenes every single time a piece of unchangeable text gets 'added onto'.",
+        "medium": "Since the original piece of text can't actually be changed in place, each addition can quietly create a whole new copy in memory.",
+        "easy": "Because strings are often immutable, repeatedly joining small pieces inside a loop can mean creating and discarding many intermediate full copies, which adds up to real memory and performance overhead."
+      }
+    }
+  },
+  {
+    "topic": "pseudocode",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'pseudocode' generally used for?",
+      "options": [
+        {
+          "text": "Describing the logic and steps of an algorithm in a plain, informal way, without following the strict syntax of any specific programming language",
+          "isCorrect": true,
+          "feedback": "Correct -- pseudocode lets someone sketch out a solution's logic clearly, without getting bogged down in a particular language's exact syntax rules."
+        },
+        {
+          "text": "Running directly on a computer as a fully executable program",
+          "isCorrect": false,
+          "feedback": "Pseudocode is meant for planning and communicating logic on paper or in discussion -- it isn't written to be directly executed by a computer as-is."
+        },
+        {
+          "text": "Encrypting a program's actual source code so it can't be read",
+          "isCorrect": false,
+          "feedback": "Pseudocode is about clearly describing logic for humans to read, not about encrypting or obscuring code."
+        },
+        {
+          "text": "Automatically converting one programming language's code into another language",
+          "isCorrect": false,
+          "feedback": "Pseudocode is a human-readable planning tool -- it isn't a mechanism for automatically translating between actual programming languages."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is a key benefit of sketching out an algorithm in pseudocode before writing actual code in a specific programming language?",
+      "options": [
+        {
+          "text": "It lets someone focus on the algorithm's logical structure and correctness first, without getting distracted by a specific language's exact syntax rules",
+          "isCorrect": true,
+          "feedback": "Correct -- separating the planning of logic from the details of a particular language's syntax can make the overall design process clearer and easier to communicate."
+        },
+        {
+          "text": "Because pseudocode can be directly compiled and run exactly like a normal programming language",
+          "isCorrect": false,
+          "feedback": "Pseudocode generally isn't written to be directly compiled and executed -- its usefulness comes from planning, not from being production-runnable code."
+        },
+        {
+          "text": "Because pseudocode guarantees an algorithm has zero errors before it's even implemented",
+          "isCorrect": false,
+          "feedback": "Writing an algorithm in pseudocode doesn't guarantee it's free of logical errors -- it's a planning aid, not a correctness guarantee."
+        },
+        {
+          "text": "Because pseudocode is a formally standardized language with one single official specification used worldwide",
+          "isCorrect": false,
+          "feedback": "Pseudocode is intentionally informal and doesn't follow one single universally standardized specification -- that flexibility is part of its usefulness for quick planning."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might pseudocode be especially useful when discussing an algorithm's design with people who work in different programming languages?",
+      "options": [
+        {
+          "text": "Because pseudocode isn't tied to any one specific language's syntax, it can communicate an algorithm's core logic in a way that's understandable regardless of which language each person actually codes in",
+          "isCorrect": true,
+          "feedback": "Correct -- pseudocode acts as a kind of common ground, letting the underlying logic be discussed and agreed upon before anyone commits to a specific language's implementation details."
+        },
+        {
+          "text": "Because pseudocode automatically translates itself into whichever language each team member happens to prefer",
+          "isCorrect": false,
+          "feedback": "Pseudocode doesn't perform automatic translation into a specific language -- its usefulness for a mixed-language team is about being language-agnostic in the first place, not automatic conversion."
+        },
+        {
+          "text": "Because pseudocode can only be understood by people who already know every programming language",
+          "isCorrect": false,
+          "feedback": "Pseudocode is deliberately designed to be broadly understandable BECAUSE it avoids tying itself to any one specific language's syntax, not because it requires knowing every language."
+        },
+        {
+          "text": "Because pseudocode requires every team member to first agree on a single actual programming language before it can be written",
+          "isCorrect": false,
+          "feedback": "Pseudocode specifically avoids that requirement -- its value for a mixed-language team is precisely that no such prior agreement on one specific language is needed."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about sketching out a plan for a recipe's steps in plain language, before actually cooking anything.",
+        "medium": "This describes an algorithm's steps informally, in a way meant for people to read and understand, not for a computer to directly run.",
+        "easy": "It's a plain-language sketch of an algorithm's logic and steps that deliberately skips any single language's exact syntax rules."
+      },
+      "medium": {
+        "hard": "Think about being able to focus purely on 'what should happen next' without worrying about exact punctuation rules.",
+        "medium": "Separating the logical plan from a specific language's syntax details can make the design process itself clearer.",
+        "easy": "The core benefit is being able to nail down the algorithm's structure and correctness before getting bogged down in any one language's precise syntax."
+      },
+      "hard": {
+        "hard": "Think about what would happen if you tried to explain an algorithm's logic to a room of programmers who each use a completely different language.",
+        "medium": "Because it isn't locked to one language's specific rules, it can act as a shared reference point that any programmer can follow, whatever language they normally use.",
+        "easy": "Its independence from any single language's syntax is exactly what lets it convey the core logic of an algorithm to a team whose members each code in different languages."
+      }
+    }
+  },
+  {
+    "topic": "functional programming",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a central idea behind the 'functional programming' style?",
+      "options": [
+        {
+          "text": "Building programs primarily by composing functions, favoring functions that avoid changing external state ('side effects') where possible",
+          "isCorrect": true,
+          "feedback": "Correct -- functional programming emphasizes treating computation as the evaluation of functions, ideally without unexpected side effects."
+        },
+        {
+          "text": "Writing programs where variables, once assigned, can be freely reassigned and mutated as often as needed",
+          "isCorrect": false,
+          "feedback": "That describes a mutable, imperative style -- functional programming instead favors minimizing changes to shared state, not maximizing them."
+        },
+        {
+          "text": "Structuring a program as a single long sequence of step-by-step instructions that modify a shared set of variables",
+          "isCorrect": false,
+          "feedback": "That describes an imperative, step-by-step style. Functional programming instead builds behavior by composing smaller functions and avoiding shared mutable state."
+        },
+        {
+          "text": "Organizing code entirely around classes and objects that bundle data with the methods that operate on it",
+          "isCorrect": false,
+          "feedback": "That describes object-oriented programming. Functional programming instead centers on composing functions rather than bundling data with methods inside objects."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What does it mean for a function to be a 'pure' function, a concept emphasized in functional programming?",
+      "options": [
+        {
+          "text": "Given the same inputs, it always produces the same output, and it doesn't cause any observable side effects outside of itself",
+          "isCorrect": true,
+          "feedback": "Correct -- purity makes a function's behavior predictable and easier to reason about, since it doesn't depend on or alter anything beyond its own inputs and output."
+        },
+        {
+          "text": "It is a function that has no parameters and takes its values directly from global variables instead",
+          "isCorrect": false,
+          "feedback": "That's actually closer to the opposite -- pure functions avoid relying on global state and depend only on their explicit input parameters."
+        },
+        {
+          "text": "It is a function that is guaranteed to run faster than any equivalent non-pure function",
+          "isCorrect": false,
+          "feedback": "Purity is about predictability and lack of side effects, not a guarantee of speed -- a pure function isn't inherently faster than an impure one."
+        },
+        {
+          "text": "It is a function written without using any loops or conditional statements",
+          "isCorrect": false,
+          "feedback": "Purity has nothing to do with avoiding loops or conditionals -- a pure function can use either, as long as its output depends only on its inputs and it has no side effects."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can code written in a heavily functional style, relying on pure functions and avoiding shared mutable state, be easier to test and reason about than code that relies extensively on shared mutable state?",
+      "options": [
+        {
+          "text": "Because a pure function's output depends only on its given inputs, its behavior can be verified in isolation without worrying about the surrounding program's changing state",
+          "isCorrect": true,
+          "feedback": "Correct -- this predictability is a major reason functional programming techniques are often highlighted as helpful for writing more reliable, testable code."
+        },
+        {
+          "text": "Because functional programming completely removes the need to write any tests for the code at all",
+          "isCorrect": false,
+          "feedback": "Testing is still valuable and commonly done for functionally written code -- the benefit described is that pure functions are simply easier and more reliable to test, not that testing becomes unnecessary."
+        },
+        {
+          "text": "Because functional programming guarantees a program will run faster than any other style",
+          "isCorrect": false,
+          "feedback": "Functional programming's typical benefit relates to predictability and testability, not a guarantee of superior raw execution speed in every case."
+        },
+        {
+          "text": "Because functional programming requires every value in the program to be printed to the screen",
+          "isCorrect": false,
+          "feedback": "Functional programming's emphasis is on avoiding side effects and mutable state -- it doesn't require printing every value to the screen."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about building a program mostly out of small building-block functions, rather than a lot of changing shared data.",
+        "medium": "The emphasis is on combining functions together, while trying to avoid functions that quietly alter things outside themselves.",
+        "easy": "The central idea is building up programs by chaining functions together, while steering clear of functions that quietly change external state along the way."
+      },
+      "medium": {
+        "hard": "Think about a function whose answer never depends on anything except exactly what you handed it.",
+        "medium": "This kind of function always gives back the same result for the same input, and doesn't quietly change anything else along the way.",
+        "easy": "Consistent output for the same input, combined with a complete absence of observable side effects, is what defines this specific kind of function."
+      },
+      "hard": {
+        "hard": "Think about testing a function whose result depends only on what you pass in, versus testing one that depends on the entire rest of the program's current state.",
+        "medium": "A function like this can be checked entirely on its own since its result only depends on what's passed in, with no need to track the rest of the program's shifting state.",
+        "easy": "Because its output relies solely on the inputs it's given and never secretly changes anything else, such a function can be checked all by itself, apart from whatever else the rest of the program is doing."
+      }
+    }
+  },
+  {
+    "topic": "multithreading and concurrency",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does it mean for a program to use 'multithreading'?",
+      "options": [
+        {
+          "text": "The program runs multiple sequences of instructions ('threads') that can execute concurrently, potentially overlapping in time",
+          "isCorrect": true,
+          "feedback": "Correct -- multithreading lets different parts of a program's work make progress around the same time, rather than being strictly one-thing-at-a-time."
+        },
+        {
+          "text": "The program can only ever run one single instruction for its entire lifetime",
+          "isCorrect": false,
+          "feedback": "Multithreading is specifically about running MULTIPLE sequences of instructions concurrently, the opposite of being limited to just one instruction."
+        },
+        {
+          "text": "The program requires exactly two separate physical computers to run at all",
+          "isCorrect": false,
+          "feedback": "Multithreading can happen within a single computer (even a single processor core, via time-slicing) -- it doesn't require multiple separate physical machines."
+        },
+        {
+          "text": "The program automatically translates itself into a different programming language while running",
+          "isCorrect": false,
+          "feedback": "Multithreading is about running multiple instruction sequences concurrently -- it has nothing to do with translating the program into another language."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'race condition', a common problem that can arise in multithreaded programs?",
+      "options": [
+        {
+          "text": "A situation where the program's outcome depends on the unpredictable timing or ordering of multiple threads accessing shared data",
+          "isCorrect": true,
+          "feedback": "Correct -- race conditions can lead to inconsistent or incorrect results specifically because the exact interleaving of threads isn't guaranteed to be the same every time."
+        },
+        {
+          "text": "A situation where a program runs its threads in a perfectly predictable order every single time it runs",
+          "isCorrect": false,
+          "feedback": "A race condition specifically involves UNPREDICTABLE timing among threads -- perfectly predictable ordering wouldn't itself be described as a race condition."
+        },
+        {
+          "text": "A competition between two entirely separate programs to see which one finishes installing first",
+          "isCorrect": false,
+          "feedback": "A race condition specifically concerns threads WITHIN a program interacting unpredictably around shared data, not a competition between separate installed programs."
+        },
+        {
+          "text": "A deliberate feature that intentionally slows a program down for benchmarking purposes",
+          "isCorrect": false,
+          "feedback": "A race condition is an unintended bug arising from unsynchronized shared data access, not a deliberate slowdown feature for benchmarking."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is a tool like a 'mutex' (mutual exclusion lock) often used to help prevent race conditions in multithreaded programs?",
+      "options": [
+        {
+          "text": "A mutex ensures that only one thread at a time can access a particular piece of shared data, preventing threads from interfering with each other's reads and writes at the same moment",
+          "isCorrect": true,
+          "feedback": "Correct -- by enforcing exclusive access to a critical section of code or data, a mutex removes the unpredictable overlapping access that causes race conditions."
+        },
+        {
+          "text": "A mutex permanently merges all of a program's threads into a single thread",
+          "isCorrect": false,
+          "feedback": "A mutex doesn't merge threads together -- it coordinates their ACCESS to shared data, while the threads themselves remain distinct and can still run concurrently elsewhere."
+        },
+        {
+          "text": "A mutex guarantees a multithreaded program will always run faster than a single-threaded version",
+          "isCorrect": false,
+          "feedback": "A mutex can actually introduce some waiting time as threads take turns, and multithreading isn't guaranteed to always be faster -- a mutex's purpose is correctness around shared data, not a speed guarantee."
+        },
+        {
+          "text": "A mutex is a tool used exclusively for encrypting data sent over a network",
+          "isCorrect": false,
+          "feedback": "A mutex is a synchronization tool for coordinating access to shared data among threads -- it's unrelated to network encryption."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "hard": "Think about a program juggling more than one sequence of steps happening around the same time.",
+        "medium": "Multiple separate sequences of instructions can make progress concurrently rather than strictly one after another.",
+        "easy": "It's the ability to run multiple threads of execution that can overlap in time, rather than being confined to a single strict sequence."
+      },
+      "medium": {
+        "hard": "Think about two runners both racing to update the same finish-line sign at almost the exact same moment.",
+        "medium": "This problem happens when the final outcome depends on the unpredictable order in which multiple threads happen to touch shared data.",
+        "easy": "It's specifically about unpredictable timing among several threads that are all touching the same piece of shared data at once, which is exactly what defines this kind of problem."
+      },
+      "hard": {
+        "hard": "Think about a single key that only one person can hold at a time before entering a shared room.",
+        "medium": "Enforcing exclusive, one-at-a-time access to a shared piece of data or code is exactly how this tool prevents threads from clashing over that data.",
+        "easy": "This tool makes sure a single thread has exclusive access to a sensitive section involving shared data at any given moment, blocking every other thread until it's done."
+      }
+    }
+  }
+]

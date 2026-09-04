@@ -1,0 +1,625 @@
+[
+{
+  "topic": "rivers of South America",
+  "easy": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of these rivers are located in South America? (Select all that apply)",
+    "options": [
+      {"text": "Amazon", "isCorrect": true, "feedback": "Correct -- the Amazon flows through Brazil and several neighboring South American countries."},
+      {"text": "Orinoco", "isCorrect": true, "feedback": "Correct -- the Orinoco flows mainly through Venezuela and Colombia, both in South America."},
+      {"text": "Nile", "isCorrect": false, "feedback": "The Nile flows through northeastern Africa, not South America."},
+      {"text": "Mississippi", "isCorrect": false, "feedback": "The Mississippi is in North America, not South America."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of these rivers flow through South America? (Select all that apply)",
+    "options": [
+      {"text": "Amazon", "isCorrect": true, "feedback": "Correct -- the Amazon's basin covers much of the continent's interior."},
+      {"text": "Orinoco", "isCorrect": true, "feedback": "Correct -- the Orinoco is one of South America's longest rivers."},
+      {"text": "Parana", "isCorrect": true, "feedback": "Correct -- the Parana flows through Brazil, Paraguay, and Argentina."},
+      {"text": "Yangtze", "isCorrect": false, "feedback": "The Yangtze is in Asia, flowing through China."},
+      {"text": "Danube", "isCorrect": false, "feedback": "The Danube flows through Europe, not South America."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of the following rivers are located in South America? (Select all that apply)",
+    "options": [
+      {"text": "Amazon", "isCorrect": true, "feedback": "Correct -- and by discharge volume, it's the largest river in the world."},
+      {"text": "Magdalena", "isCorrect": true, "feedback": "Correct -- the Magdalena is Colombia's principal river, running most of the length of the country."},
+      {"text": "Parana", "isCorrect": true, "feedback": "Correct -- second only to the Amazon in size among South American rivers."},
+      {"text": "Congo", "isCorrect": false, "feedback": "The Congo flows through central Africa, not South America."},
+      {"text": "Mekong", "isCorrect": false, "feedback": "The Mekong flows through Southeast Asia, not South America."},
+      {"text": "Mississippi", "isCorrect": false, "feedback": "The Mississippi is a North American river."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This continent's rivers are separate from Africa's and North America's river systems entirely.", "medium": "Look for the rivers whose home continent is South America, not Africa or North America.", "easy": "South America is home to the world's largest river by water volume."},
+    "medium": {"hard": "Three of these rivers share a home continent that is neither Asia nor Europe -- it's the one dominated by the Amazon basin.", "medium": "Rule out the river in Asia and the one in Europe -- the rest are all South American.", "easy": "Think about which of these rivers you'd find on a map of South America, not Asia or Europe."},
+    "hard": {"hard": "One correct option is a less-famous national river of a single Andean country, while the other two are the continent's largest systems by length and discharge -- all three share a continent that the African and Asian rivers here do not.", "medium": "One of the correct rivers is less famous than the others -- it's the primary river running through Colombia specifically.", "easy": "Besides the Amazon, look for a major Colombian river and one running through Brazil, Paraguay, and Argentina."}
+  }
+},
+{
+  "topic": "rural-to-urban migration (urbanization)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes people moving from rural areas into cities?",
+    "options": [
+      {"text": "Urbanization", "isCorrect": true, "feedback": "Correct -- urbanization describes population shifting from the countryside into cities."},
+      {"text": "Emigration", "isCorrect": false, "feedback": "Emigration is leaving one's country entirely -- this is about moving within a country, from rural to urban areas."},
+      {"text": "Desertification", "isCorrect": false, "feedback": "Desertification is land turning into desert -- an environmental process, not a population movement."},
+      {"text": "Deforestation", "isCorrect": false, "feedback": "Deforestation is the clearing of forests -- unrelated to where people choose to live."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is a common driving factor behind urbanization in developing countries?",
+    "options": [
+      {"text": "The search for better job opportunities and services in cities", "isCorrect": true, "feedback": "Correct -- cities often concentrate jobs, healthcare, and education, pulling people from rural areas."},
+      {"text": "Cities offering more farmland per person than rural areas", "isCorrect": false, "feedback": "Cities have far less available farmland than rural areas -- this isn't a pull factor toward cities."},
+      {"text": "Rural areas banning permanent residency", "isCorrect": false, "feedback": "Rural areas don't typically ban residency -- urbanization is driven by opportunity, not exclusion from the countryside."},
+      {"text": "A government requirement that all citizens live in cities", "isCorrect": false, "feedback": "Urbanization is generally driven by voluntary economic and social pull factors, not a blanket residency mandate."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following is a common consequence of rapid, unplanned urbanization in many developing-country cities?",
+    "options": [
+      {"text": "Growth of informal settlements (slums) as housing and infrastructure fail to keep pace with the influx of new residents", "isCorrect": true, "feedback": "Correct -- when migration outpaces a city's ability to build housing, roads, and utilities, unplanned informal settlements often expand rapidly."},
+      {"text": "A shrinking urban population as cities empty out", "isCorrect": false, "feedback": "Rapid urbanization means the urban population is growing, not shrinking -- that describes counter-urbanization instead."},
+      {"text": "Automatic improvement in per-capita access to housing and clean water", "isCorrect": false, "feedback": "Fast, unplanned population growth typically strains housing and water infrastructure rather than improving per-capita access to it."},
+      {"text": "A slowdown in rural-to-urban migration rates", "isCorrect": false, "feedback": "Rapid urbanization is driven by migration accelerating, not slowing down."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "The word describing this shares a root with 'urban.'", "medium": "This term is about cities growing as their share of a country's population.", "easy": "This word starts with 'urban' and describes cities growing as people move there."},
+    "medium": {"hard": "The driver is about what cities concentrate that rural areas typically lack -- not land, legal residency rules, or mandates.", "medium": "Think about what cities have more of than the countryside -- jobs and services, not farmland.", "easy": "People often move to cities because that's where more jobs, schools, and hospitals are concentrated."},
+    "hard": {"hard": "This is about what often goes wrong when a city's population grows faster than its planners can build housing and infrastructure for.", "medium": "Think about housing and services -- when people arrive faster than a city can build for them, what tends to spring up in the gaps?", "easy": "When cities grow too fast for planners to keep up, unofficial, under-resourced housing areas often expand rapidly to absorb the newcomers."}
+  }
+},
+{
+  "topic": "refugees",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes people forced to leave their home country due to war or persecution?",
+    "options": [
+      {"text": "Refugees", "isCorrect": true, "feedback": "Correct -- refugees flee their home country to escape danger such as war or persecution."},
+      {"text": "Tourists", "isCorrect": false, "feedback": "Tourists travel voluntarily for leisure -- refugees are forced to flee for safety."},
+      {"text": "Immigrants seeking better weather", "isCorrect": false, "feedback": "Moving for climate preference is a personal choice, not the forced flight that defines a refugee."},
+      {"text": "Diplomats", "isCorrect": false, "feedback": "Diplomats are official government representatives stationed abroad -- unrelated to fleeing danger."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What key distinction separates a 'refugee' from an 'internally displaced person' (IDP)?",
+    "options": [
+      {"text": "A refugee has crossed an international border; an IDP has not", "isCorrect": true, "feedback": "Correct -- an IDP remains displaced within their own country's borders, while a refugee has fled across a border into another country."},
+      {"text": "A refugee travels by sea, while an IDP always travels by land", "isCorrect": false, "feedback": "The method of travel isn't the defining distinction -- whether an international border was crossed is."},
+      {"text": "An IDP is always fleeing a natural disaster, while a refugee always flees war", "isCorrect": false, "feedback": "Both refugees and IDPs can be displaced by war, persecution, or disaster -- the cause isn't what separates the two terms."},
+      {"text": "A refugee has been granted citizenship in a new country, while an IDP has not", "isCorrect": false, "feedback": "Citizenship status isn't what defines refugee status -- crossing an international border while fleeing danger is."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Under international law, which of the following is the defining criterion for someone to be legally classified as a refugee?",
+    "options": [
+      {"text": "A well-founded fear of persecution based on race, religion, nationality, political opinion, or social group, combined with being outside their home country", "isCorrect": true, "feedback": "Correct -- this is the core definition from the 1951 Refugee Convention."},
+      {"text": "Having lived abroad for at least five consecutive years", "isCorrect": false, "feedback": "Duration of time abroad isn't part of the legal refugee definition -- the well-founded fear of persecution is."},
+      {"text": "Being unemployed in their country of origin", "isCorrect": false, "feedback": "Economic hardship alone doesn't meet the legal refugee criteria, which center on persecution and danger, not employment status."},
+      {"text": "Holding a valid passport from a recognized country", "isCorrect": false, "feedback": "Passport status isn't the defining legal criterion -- many refugees flee without valid travel documents at all."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This term applies specifically to those who have crossed into another country to escape danger.", "medium": "These are people who flee across a border to escape war or persecution in their home country.", "easy": "This word describes people who flee their home country because it's not safe there."},
+    "medium": {"hard": "The distinguishing factor is geographic and legal -- whether an international boundary was crossed -- not the cause of displacement or mode of travel.", "medium": "The key difference is whether someone left their country entirely, or is still displaced but within it.", "easy": "One term is for people still inside their own country; the other is for people who left it entirely."},
+    "hard": {"hard": "The legally defining element is a well-founded fear of persecution on specific protected grounds, paired with being outside one's home country -- not duration abroad, employment status, or documentation.", "medium": "The legal definition centers on fear of persecution and being outside one's home country -- not how long someone's been away or what documents they carry.", "easy": "The official legal test is about fearing persecution and being outside your home country -- not passports or how long you've been gone."}
+  }
+},
+{
+  "topic": "landlocked countries",
+  "easy": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of the following countries are landlocked, meaning they have no ocean coastline? (Select all that apply)",
+    "options": [
+      {"text": "Switzerland", "isCorrect": true, "feedback": "Correct -- Switzerland is entirely surrounded by other countries with no sea access."},
+      {"text": "Bolivia", "isCorrect": true, "feedback": "Correct -- Bolivia lost its coastline to Chile in the 19th century and remains landlocked today."},
+      {"text": "Brazil", "isCorrect": false, "feedback": "Brazil has an extensive Atlantic coastline -- it is not landlocked."},
+      {"text": "Japan", "isCorrect": false, "feedback": "Japan is an island nation entirely surrounded by ocean -- the opposite of landlocked."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of these countries have no direct access to the ocean? (Select all that apply)",
+    "options": [
+      {"text": "Mongolia", "isCorrect": true, "feedback": "Correct -- Mongolia is landlocked between Russia and China."},
+      {"text": "Austria", "isCorrect": true, "feedback": "Correct -- Austria is landlocked in central Europe."},
+      {"text": "Chad", "isCorrect": true, "feedback": "Correct -- Chad, in central Africa, has no ocean coastline."},
+      {"text": "Egypt", "isCorrect": false, "feedback": "Egypt borders both the Mediterranean and Red Seas -- it is not landlocked."},
+      {"text": "Vietnam", "isCorrect": false, "feedback": "Vietnam has a long coastline along the South China Sea -- it is not landlocked."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of the following are 'doubly landlocked' countries -- landlocked nations entirely surrounded by other landlocked countries? (Select all that apply)",
+    "options": [
+      {"text": "Liechtenstein", "isCorrect": true, "feedback": "Correct -- Liechtenstein is surrounded only by Switzerland and Austria, both themselves landlocked."},
+      {"text": "Uzbekistan", "isCorrect": true, "feedback": "Correct -- Uzbekistan is bordered entirely by other landlocked Central Asian countries."},
+      {"text": "Bolivia", "isCorrect": false, "feedback": "Bolivia is landlocked, but it borders Brazil and Peru, which have coastlines -- so it isn't 'doubly' landlocked."},
+      {"text": "Nepal", "isCorrect": false, "feedback": "Nepal is landlocked, but it borders India and China, both of which have coastlines -- not doubly landlocked."},
+      {"text": "Paraguay", "isCorrect": false, "feedback": "Paraguay is landlocked, but neighboring Brazil and Argentina both have coastlines -- it's not doubly landlocked."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These nations have no border touching any sea or ocean at all, unlike the island and coastal countries listed.", "medium": "Look for the countries fully surrounded by land, with no coastline on any sea.", "easy": "These countries have no coastline -- they're completely surrounded by other countries."},
+    "medium": {"hard": "All three correct answers sit on different continents but share the same trait -- zero coastline -- while the incorrect options each border a sea.", "medium": "Three of these five have no coastline at all; the other two clearly do.", "easy": "Rule out the country bordering two seas and the one with a long Asian coastline -- the rest are landlocked."},
+    "hard": {"hard": "The defining test is whether every single neighboring country is ALSO landlocked -- Bolivia, Nepal, and Paraguay are landlocked but each borders at least one coastal neighbor, disqualifying them from this stricter 'doubly landlocked' category.", "medium": "The two correct answers are surrounded ONLY by other landlocked countries -- the three wrong answers each touch at least one coastal neighbor.", "easy": "Only two of these are landlocked AND surrounded entirely by other landlocked countries -- the rest border at least one country with a coastline."}
+  }
+},
+{
+  "topic": "capital of Australia",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What is the capital city of Australia?",
+    "options": [
+      {"text": "Canberra", "isCorrect": true, "feedback": "Correct -- Canberra is Australia's capital city."},
+      {"text": "Sydney", "isCorrect": false, "feedback": "Sydney is Australia's largest and most famous city, but it is not the capital."},
+      {"text": "Melbourne", "isCorrect": false, "feedback": "Melbourne is a major Australian city, but it is not the capital."},
+      {"text": "Perth", "isCorrect": false, "feedback": "Perth is a large city on Australia's west coast, but not the capital."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why was Canberra chosen as Australia's capital instead of one of the country's already-established major cities?",
+    "options": [
+      {"text": "It was a compromise location built between the rival cities of Sydney and Melbourne", "isCorrect": true, "feedback": "Correct -- Canberra was purpose-built as a neutral capital to settle the rivalry between Australia's two largest cities."},
+      {"text": "It was Australia's oldest European settlement", "isCorrect": false, "feedback": "Canberra was actually built specifically to be the capital -- it isn't the country's oldest settlement."},
+      {"text": "It has Australia's largest population", "isCorrect": false, "feedback": "Canberra is far smaller in population than Sydney or Melbourne -- population size isn't why it was chosen."},
+      {"text": "It was the only coastal city available at the time", "isCorrect": false, "feedback": "Canberra is actually inland, not coastal -- this isn't the reason it was selected."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Canberra was purpose-built as Australia's capital largely to resolve a rivalry between which two cities over which should hold that title?",
+    "options": [
+      {"text": "Sydney and Melbourne", "isCorrect": true, "feedback": "Correct -- as a compromise, the newly built Canberra was chosen instead of either rival city."},
+      {"text": "Perth and Adelaide", "isCorrect": false, "feedback": "Perth and Adelaide were not the cities competing for capital status -- that rivalry was between Sydney and Melbourne."},
+      {"text": "Brisbane and Darwin", "isCorrect": false, "feedback": "Brisbane and Darwin were not part of the historic capital rivalry -- Sydney and Melbourne were."},
+      {"text": "Hobart and Canberra", "isCorrect": false, "feedback": "Canberra was the solution to the rivalry, not one of the two original rival cities -- that was Sydney and Melbourne."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This planned city is smaller and less famous than Australia's two largest metropolitan areas.", "medium": "This is a purpose-built capital, distinct from Australia's largest and most famous cities.", "easy": "This capital city is not the same as Australia's biggest or most famous city."},
+    "medium": {"hard": "The reason relates to two specific rival cities, not to age of settlement, population size, or coastal access.", "medium": "Two of Australia's biggest cities each wanted to be the capital, so a new city was built instead.", "easy": "Sydney and Melbourne both wanted to be the capital, so a brand new city was built as a compromise."},
+    "hard": {"hard": "The two cities in question are Australia's largest and most historically prominent, whose rivalry over primacy was resolved by constructing an entirely new, geographically compromise capital rather than granting the title to either.", "medium": "These are Australia's two largest and most prominent cities -- not the smaller ones listed as distractors.", "easy": "The two rival cities are Australia's biggest and most famous ones -- not the smaller cities in the other options."}
+  }
+},
+{
+  "topic": "Egypt as a transcontinental country",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Egypt is considered a transcontinental country because its territory lies on which two continents?",
+    "options": [
+      {"text": "Africa and Asia", "isCorrect": true, "feedback": "Correct -- most of Egypt is in Africa, while the Sinai Peninsula lies in Asia."},
+      {"text": "Africa and Europe", "isCorrect": false, "feedback": "Egypt doesn't extend into Europe -- its second continent is Asia, via the Sinai Peninsula."},
+      {"text": "Asia and Europe", "isCorrect": false, "feedback": "Egypt's mainland is in Africa, not Europe -- the two continents involved are Africa and Asia."},
+      {"text": "Africa and South America", "isCorrect": false, "feedback": "Egypt has no territory in South America -- its two continents are Africa and Asia."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Which specific region of Egypt is located in Asia rather than Africa?",
+    "options": [
+      {"text": "The Sinai Peninsula", "isCorrect": true, "feedback": "Correct -- the Sinai Peninsula sits east of the Suez Canal, which is often used as the dividing line between the continents here."},
+      {"text": "The Nile Delta", "isCorrect": false, "feedback": "The Nile Delta is in northern Egypt, on the African side of the Suez Canal."},
+      {"text": "The Western Desert", "isCorrect": false, "feedback": "The Western Desert is deep in Egypt's African territory, far from the Asian side."},
+      {"text": "Cairo", "isCorrect": false, "feedback": "Cairo lies on the African side of the Suez Canal, not the Asian side."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "What geographic feature is commonly used as the continental dividing line that places most of Egypt in Africa while its Sinai Peninsula lies in Asia?",
+    "options": [
+      {"text": "The Suez Canal", "isCorrect": true, "feedback": "Correct -- the Suez Canal is conventionally treated as the boundary between Africa and Asia at this point."},
+      {"text": "The Nile River", "isCorrect": false, "feedback": "The Nile runs north-south through African Egypt -- it isn't the Africa/Asia dividing line."},
+      {"text": "The Red Sea coastline", "isCorrect": false, "feedback": "The Red Sea borders Egypt but isn't the conventional Africa/Asia divider used for Egypt's territory -- the Suez Canal is."},
+      {"text": "The Mediterranean coastline", "isCorrect": false, "feedback": "The Mediterranean coast runs east-west along Egypt's north -- it isn't the continental dividing line here."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "One of Egypt's continents is home to the Sahara; the other is home to most of the Middle East.", "medium": "One continent holds most of Egypt's land; the other holds just the Sinai Peninsula.", "easy": "Most of Egypt is on one continent, but a small peninsula puts part of it on another."},
+    "medium": {"hard": "This region sits east of a famous man-made waterway that conventionally marks the continental boundary here.", "medium": "This peninsula is east of the Suez Canal, which is treated as the continental divide.", "easy": "This triangular peninsula sits between the Mediterranean and Red Seas, east of the Suez Canal."},
+    "hard": {"hard": "This feature is a constructed waterway, not a river or coastline, and it is the conventional marker separating Egypt's African mainland from its Asian peninsula.", "medium": "This is a man-made waterway, not a natural river or sea coast.", "easy": "This is a famous canal, not a river or a sea -- it connects the Mediterranean and Red Seas."}
+  }
+},
+{
+  "topic": "longest international border in the world",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which two countries share the longest international border in the world?",
+    "options": [
+      {"text": "Canada and the United States", "isCorrect": true, "feedback": "Correct -- the Canada-U.S. border is the longest international border in the world."},
+      {"text": "Russia and China", "isCorrect": false, "feedback": "The Russia-China border is long, but it's shorter than the Canada-U.S. border."},
+      {"text": "Brazil and Argentina", "isCorrect": false, "feedback": "The Brazil-Argentina border is far shorter than the Canada-U.S. border."},
+      {"text": "India and China", "isCorrect": false, "feedback": "The India-China border, while long, is not the longest in the world."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "The Canada-U.S. border, the longest in the world, includes a separate, disconnected segment where these two countries also share a border. Which U.S. state borders Canada far from the other 48 contiguous states?",
+    "options": [
+      {"text": "Alaska", "isCorrect": true, "feedback": "Correct -- Alaska borders Canada as well, separate from the main stretch of the border along the lower 48 states."},
+      {"text": "Hawaii", "isCorrect": false, "feedback": "Hawaii is an island state in the Pacific with no land border with Canada."},
+      {"text": "Florida", "isCorrect": false, "feedback": "Florida is far from Canada and shares no border with it."},
+      {"text": "Texas", "isCorrect": false, "feedback": "Texas borders Mexico, not Canada."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Approximately how long is the total Canada-U.S. border, including the Alaska segment, making it the longest international border in the world?",
+    "options": [
+      {"text": "Around 8,891 kilometers (about 5,525 miles)", "isCorrect": true, "feedback": "Correct -- this combined length, including the Alaska-Yukon/British Columbia segment, makes it the longest border on Earth."},
+      {"text": "Around 3,000 kilometers (about 1,864 miles)", "isCorrect": false, "feedback": "This underestimates the true length -- the actual border, including Alaska, is considerably longer."},
+      {"text": "Around 500 kilometers (about 311 miles)", "isCorrect": false, "feedback": "This is far too short -- the real Canada-U.S. border is many times this length."},
+      {"text": "Around 15,000 kilometers (about 9,321 miles)", "isCorrect": false, "feedback": "This overstates the actual length -- the true figure is under 9,000 kilometers."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These two North American neighbors share more border length than any other pair of countries on Earth.", "medium": "This is the longest border in the world, shared by two neighboring North American countries.", "easy": "These are two large North American countries that share a very long border with each other."},
+    "medium": {"hard": "This U.S. state is separated from the other 48 by Canadian territory, yet still shares its own border with Canada.", "medium": "This U.S. state is in the far northwest, next to Canada, but not connected to the other 48 states.", "easy": "This U.S. state is way up in the northwest, separated from the rest of the country by Canada."},
+    "hard": {"hard": "The correct figure sits between eight and nine thousand kilometers -- meaningfully longer than the more conservative estimate but well short of the inflated one.", "medium": "The real number is under 9,000 km but well over 3,000 km.", "easy": "The real length is closer to 9,000 kilometers than to 3,000 or 15,000."}
+  }
+},
+{
+  "topic": "the equator",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which imaginary line divides the Earth into the Northern and Southern Hemispheres?",
+    "options": [
+      {"text": "The Equator", "isCorrect": true, "feedback": "Correct -- the Equator circles the Earth at 0 degrees latitude, splitting it into Northern and Southern Hemispheres."},
+      {"text": "The Prime Meridian", "isCorrect": false, "feedback": "The Prime Meridian divides the Earth into Eastern and Western Hemispheres, not Northern and Southern."},
+      {"text": "The Tropic of Cancer", "isCorrect": false, "feedback": "The Tropic of Cancer is a specific line of latitude north of the Equator, not the North-South dividing line itself."},
+      {"text": "The International Date Line", "isCorrect": false, "feedback": "The International Date Line marks where the calendar day changes -- it doesn't divide North from South."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "At what line of latitude is the Equator located?",
+    "options": [
+      {"text": "0 degrees latitude", "isCorrect": true, "feedback": "Correct -- the Equator defines the 0-degree latitude line, the reference point for measuring all other latitudes."},
+      {"text": "0 degrees longitude", "isCorrect": false, "feedback": "0 degrees longitude describes the Prime Meridian, not the Equator."},
+      {"text": "90 degrees latitude", "isCorrect": false, "feedback": "90 degrees latitude marks the North or South Pole, not the Equator."},
+      {"text": "45 degrees latitude", "isCorrect": false, "feedback": "45 degrees latitude is halfway between the Equator and a pole -- not the Equator itself."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Which of the following countries does the Equator NOT pass through?",
+    "options": [
+      {"text": "Argentina", "isCorrect": true, "feedback": "Correct -- Argentina lies entirely south of the Equator, well within the Southern Hemisphere, and the line does not cross it."},
+      {"text": "Brazil", "isCorrect": false, "feedback": "The Equator does pass through northern Brazil."},
+      {"text": "Kenya", "isCorrect": false, "feedback": "The Equator does pass through Kenya, giving the country its name relevance to the line."},
+      {"text": "Indonesia", "isCorrect": false, "feedback": "The Equator does pass through Indonesia, crossing several of its islands."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This line is defined at exactly 0 degrees of one coordinate, distinct from the line used to measure east-west position.", "medium": "This line sits exactly halfway between the North and South Poles.", "easy": "This is the line that separates the top half of the Earth from the bottom half."},
+    "medium": {"hard": "This latitude value is the reference point from which all other latitude measurements -- both north and south -- are counted.", "medium": "This latitude number is the starting point, with all others measured as degrees north or south of it.", "easy": "This latitude number is zero -- every other latitude is measured as degrees away from it."},
+    "hard": {"hard": "This country lies far enough south that the Equator never crosses its territory, unlike the others listed, each of which the line does cross.", "medium": "This South American country is located well south of where the Equator crosses the continent.", "easy": "This country is in the far south of South America, below where the Equator actually crosses that continent."}
+  }
+},
+{
+  "topic": "the Prime Meridian",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which city does the Prime Meridian, or 0 degrees longitude, pass through?",
+    "options": [
+      {"text": "Greenwich, London", "isCorrect": true, "feedback": "Correct -- the Prime Meridian passes through the Royal Observatory in Greenwich, London."},
+      {"text": "Paris", "isCorrect": false, "feedback": "France briefly used its own meridian through Paris historically, but the internationally adopted Prime Meridian passes through Greenwich."},
+      {"text": "New York City", "isCorrect": false, "feedback": "New York is west of the Prime Meridian, not on it."},
+      {"text": "Tokyo", "isCorrect": false, "feedback": "Tokyo is far east of the Prime Meridian, not on it."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the primary function of the Prime Meridian on a world map?",
+    "options": [
+      {"text": "It serves as the 0-degree reference line for measuring longitude", "isCorrect": true, "feedback": "Correct -- all longitude is measured as degrees east or west of this line."},
+      {"text": "It marks the boundary between the Northern and Southern Hemispheres", "isCorrect": false, "feedback": "That's the role of the Equator -- the Prime Meridian instead divides East and West."},
+      {"text": "It marks the warmest region of the Earth", "isCorrect": false, "feedback": "Temperature zones relate to latitude and the Equator, not the Prime Meridian."},
+      {"text": "It shows where all time zones are exactly the same", "isCorrect": false, "feedback": "Time zones vary in relation to the Prime Meridian -- it doesn't mean uniform time everywhere."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The Prime Meridian was internationally standardized to pass through Greenwich at an 1884 conference. What two hemispheres does it divide the Earth into?",
+    "options": [
+      {"text": "Eastern and Western Hemispheres", "isCorrect": true, "feedback": "Correct -- longitude east or west of the Prime Meridian defines the Eastern and Western Hemispheres."},
+      {"text": "Northern and Southern Hemispheres", "isCorrect": false, "feedback": "That division belongs to the Equator, not the Prime Meridian."},
+      {"text": "Upper and Lower Hemispheres", "isCorrect": false, "feedback": "This isn't a standard hemispheric division used in geography."},
+      {"text": "Tropical and Polar Hemispheres", "isCorrect": false, "feedback": "This isn't a standard hemispheric pairing -- hemispheres are divided as North/South or East/West."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This location hosts the historic observatory that lends its name to world standard time.", "medium": "This city in England is home to the Royal Observatory, the reference point for 0 degrees longitude.", "easy": "This city is in England, and it gives its name to the time zone used as the world's reference point."},
+    "medium": {"hard": "This function is about east-west position measurement, distinct from the Equator's north-south role, temperature zones, or time zone uniformity.", "medium": "This line is used to measure how far east or west a place is -- not north-south position or temperature.", "easy": "Just like the Equator measures north-south position, this line measures east-west position."},
+    "hard": {"hard": "This pairing corresponds to longitude specifically, contrasting with the Equator's latitude-based North/South division and with non-standard groupings like upper/lower or tropical/polar.", "medium": "This pairing corresponds to east-west position, not north-south, and not any temperature-based grouping.", "easy": "Since this line runs north-south itself, it splits the world into an east side and a west side."}
+  }
+},
+{
+  "topic": "map projection distortion (Mercator)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which map projection is known for distorting the size of landmasses near the poles, making Greenland appear much larger than it actually is?",
+    "options": [
+      {"text": "Mercator projection", "isCorrect": true, "feedback": "Correct -- the Mercator projection famously exaggerates the size of landmasses far from the Equator."},
+      {"text": "Robinson projection", "isCorrect": false, "feedback": "The Robinson projection is designed to reduce this kind of distortion, not cause it."},
+      {"text": "Peters projection", "isCorrect": false, "feedback": "The Peters projection prioritizes accurate area, specifically to avoid the Mercator's size distortion."},
+      {"text": "Globe projection", "isCorrect": false, "feedback": "A globe isn't a flat projection at all, so it doesn't suffer from this kind of distortion."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does the Mercator projection make landmasses near the poles appear larger than they truly are?",
+    "options": [
+      {"text": "It stretches the map to keep lines of longitude parallel, exaggerating area near the poles", "isCorrect": true, "feedback": "Correct -- this stretching is the tradeoff that lets the Mercator projection preserve angles and straight-line navigation routes."},
+      {"text": "It intentionally shrinks landmasses near the Equator", "isCorrect": false, "feedback": "Equatorial regions are actually shown fairly accurately -- it's the polar regions that get stretched and exaggerated."},
+      {"text": "It uses satellite imagery that distorts polar regions", "isCorrect": false, "feedback": "The Mercator projection predates satellites by centuries -- the distortion is a mathematical tradeoff of the projection method, not an imaging artifact."},
+      {"text": "It was designed specifically to make Greenland look impressive", "isCorrect": false, "feedback": "The projection wasn't designed around Greenland specifically -- the distortion is a side effect of preserving straight-line navigation angles."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "The Mercator projection was originally designed for which practical purpose, which explains why it preserves angles at the cost of area accuracy?",
+    "options": [
+      {"text": "Nautical navigation, since straight lines on the map represent constant compass bearings", "isCorrect": true, "feedback": "Correct -- sailors could plot a straight-line course of constant direction, making the projection extremely useful at sea despite its size distortions."},
+      {"text": "Accurately depicting country populations", "isCorrect": false, "feedback": "Population accuracy has nothing to do with the projection's original design goal, which was navigational."},
+      {"text": "Showing accurate travel time between cities", "isCorrect": false, "feedback": "Travel time isn't what the projection preserves -- it preserves angles, useful for compass-based navigation, not time estimates."},
+      {"text": "Making all continents appear the same size", "isCorrect": false, "feedback": "The projection does the opposite -- it distorts relative size rather than equalizing it."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This map style was designed centuries ago for a very specific practical use at sea.", "medium": "This is the same map style that makes Greenland look almost as big as Africa, which it isn't.", "easy": "This map style makes places near the poles look bigger than they really are."},
+    "medium": {"hard": "The distortion is a geometric side effect of a design choice made to preserve straight-line compass bearings, not an intentional exaggeration of any one region.", "medium": "The stretching happens because the map keeps longitude lines parallel, which was useful for a specific old-fashioned purpose.", "easy": "The map stretches things near the poles as a side effect of trying to keep certain lines straight and useful for sailors."},
+    "hard": {"hard": "The purpose relates to angle preservation enabling a constant compass heading to be plotted as a straight line -- not population data, travel time, or making landmasses uniform in size.", "medium": "The purpose is about navigation and compass directions, not population, travel time, or uniform continent sizes.", "easy": "Old sailors used this map because a straight line on it meant 'keep this compass direction' the whole way."}
+  }
+},
+{
+  "topic": "map scale (ratio conversion)",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "On a map with a scale of 1:100,000, one centimeter on the map represents how much real-world distance?",
+    "options": [
+      {"text": "1 kilometer", "isCorrect": true, "feedback": "Correct -- 100,000 cm converts to 1,000 meters, which is 1 kilometer."},
+      {"text": "100 meters", "isCorrect": false, "feedback": "100,000 centimeters is 1,000 meters, not 100 meters -- check the unit conversion again."},
+      {"text": "10 kilometers", "isCorrect": false, "feedback": "This overstates the distance -- 100,000 cm converts to exactly 1 kilometer, not 10."},
+      {"text": "1 meter", "isCorrect": false, "feedback": "This drastically understates the distance -- 100,000 centimeters is far more than 1 meter."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "On a map with a scale of 1:50,000, a distance of 4 centimeters on the map represents what real-world distance?",
+    "options": [
+      {"text": "2 kilometers", "isCorrect": true, "feedback": "Correct -- 4 cm times 50,000 equals 200,000 cm, which converts to 2,000 meters, or 2 kilometers."},
+      {"text": "4 kilometers", "isCorrect": false, "feedback": "This is double the correct distance -- recheck the multiplication and the centimeter-to-kilometer conversion."},
+      {"text": "20 kilometers", "isCorrect": false, "feedback": "This is ten times too large -- the correct real-world distance is 2 kilometers, not 20."},
+      {"text": "200 meters", "isCorrect": false, "feedback": "This is ten times too small -- 200,000 centimeters converts to 2,000 meters, not 200."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "On a map with a scale of 1:250,000, a measured distance of 3.5 centimeters between two towns represents approximately what real-world distance?",
+    "options": [
+      {"text": "8.75 kilometers", "isCorrect": true, "feedback": "Correct -- 3.5 cm times 250,000 equals 875,000 cm, which converts to 8,750 meters, or 8.75 kilometers."},
+      {"text": "3.5 kilometers", "isCorrect": false, "feedback": "This forgets to apply the 250,000 scale factor at all -- the real distance is considerably larger."},
+      {"text": "87.5 kilometers", "isCorrect": false, "feedback": "This is ten times too large -- recheck the centimeter-to-kilometer conversion after multiplying by the scale factor."},
+      {"text": "0.875 kilometers", "isCorrect": false, "feedback": "This is ten times too small -- the correct real-world distance is 8.75 kilometers, not 0.875."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "Multiply the map distance by the scale's second number, then convert the resulting centimeters into a more familiar unit.", "medium": "Multiply 1 cm by 100,000 to get the real-world distance in centimeters, then convert to meters or kilometers.", "easy": "The scale means every 1 cm on the map equals 100,000 cm in real life -- convert that to kilometers."},
+    "medium": {"hard": "Multiply the map distance by the scale factor to get centimeters, then divide by 100,000 to convert to kilometers.", "medium": "Multiply 4 by 50,000 to get the real distance in centimeters, then convert that to kilometers.", "easy": "Multiply the map distance (4 cm) by the scale number (50,000), then convert centimeters to kilometers."},
+    "hard": {"hard": "Multiply 3.5 by 250,000 to get centimeters, then divide by 100,000 to convert to kilometers -- watch for off-by-a-factor-of-ten errors in the final conversion step.", "medium": "Multiply 3.5 by 250,000 for centimeters, then convert carefully to kilometers -- don't shift the decimal point by an extra place.", "easy": "Multiply the map distance by the scale factor, then convert to kilometers -- be careful not to be off by a factor of ten."}
+  }
+},
+{
+  "topic": "renewable natural resources",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "Which of these is considered a renewable natural resource?",
+    "options": [
+      {"text": "Solar energy", "isCorrect": true, "feedback": "Correct -- sunlight is continuously available and doesn't get depleted by use."},
+      {"text": "Coal", "isCorrect": false, "feedback": "Coal takes millions of years to form and is considered a nonrenewable fossil fuel."},
+      {"text": "Natural gas", "isCorrect": false, "feedback": "Natural gas is a fossil fuel that forms over geological timescales -- it's nonrenewable."},
+      {"text": "Petroleum", "isCorrect": false, "feedback": "Petroleum is a fossil fuel that takes millions of years to form -- it's nonrenewable."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "What is the key characteristic that makes a natural resource 'renewable'?",
+    "options": [
+      {"text": "It can be replenished naturally within a relatively short amount of time", "isCorrect": true, "feedback": "Correct -- renewable resources regenerate at a pace that can keep up with reasonable human use."},
+      {"text": "It never runs out no matter how quickly it's used", "isCorrect": false, "feedback": "Even renewable resources like forests or fish stocks can be depleted if used faster than they regenerate -- 'renewable' means replenishable, not infinite regardless of use rate."},
+      {"text": "It was formed from decomposed organic matter", "isCorrect": false, "feedback": "That description fits fossil fuels, which are actually nonrenewable due to how long they take to form."},
+      {"text": "It is only found underground", "isCorrect": false, "feedback": "Location underground isn't what determines renewability -- the replenishment rate is."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Under what condition can a normally 'renewable' resource, such as a forest or fish population, effectively become depleted like a nonrenewable one?",
+    "options": [
+      {"text": "When it is harvested or consumed faster than it can naturally regenerate", "isCorrect": true, "feedback": "Correct -- overfishing or overharvesting can collapse even a renewable resource if the extraction rate outpaces natural replenishment."},
+      {"text": "When it is located in a country with strict environmental laws", "isCorrect": false, "feedback": "Strict environmental laws typically protect renewable resources rather than deplete them -- overuse is the actual risk factor."},
+      {"text": "When it is used to generate electricity instead of heat", "isCorrect": false, "feedback": "The type of energy output doesn't affect a resource's renewability -- the harvesting rate relative to regeneration does."},
+      {"text": "When it is renamed as a 'sustainable' resource", "isCorrect": false, "feedback": "A label doesn't change the underlying ecological reality -- only the actual balance between use and regeneration rate does."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This resource is continuously supplied by a natural process that never stops, unlike resources formed over geological time.", "medium": "This resource comes from the sun and is available every day without running out.", "easy": "This resource comes from sunlight, which is available basically every day."},
+    "medium": {"hard": "The defining trait is regeneration speed relative to human use, not infinite availability, formation process, or physical location.", "medium": "The key idea is how fast it can grow back or refill, not whether it can ever be overused.", "easy": "A renewable resource can grow back or refill itself in a reasonably short time -- but that doesn't mean it's impossible to use up too fast."},
+    "hard": {"hard": "The mechanism is a mismatch between extraction rate and natural regeneration rate -- unrelated to a country's laws, the resource's end use, or any relabeling of the resource.", "medium": "The mechanism is about using it up faster than nature can replace it -- not laws, end use, or labeling.", "easy": "Even a resource that normally grows back can run out if people take it faster than nature can replace it."}
+  }
+},
+{
+  "topic": "estuaries",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "What term describes an area where freshwater from rivers mixes with saltwater from the ocean, creating a highly productive ecosystem?",
+    "options": [
+      {"text": "Estuary", "isCorrect": true, "feedback": "Correct -- estuaries form where rivers meet the sea, and the resulting brackish water supports rich biodiversity."},
+      {"text": "Glacier", "isCorrect": false, "feedback": "A glacier is a large body of moving ice -- unrelated to river-ocean mixing."},
+      {"text": "Plateau", "isCorrect": false, "feedback": "A plateau is an elevated, flat landform -- it has nothing to do with water mixing."},
+      {"text": "Isthmus", "isCorrect": false, "feedback": "An isthmus is a narrow strip of land connecting two larger landmasses -- unrelated to river and ocean water mixing."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why are estuaries often described as among the most biologically productive ecosystems on Earth?",
+    "options": [
+      {"text": "The mixing of nutrient-rich fresh and saltwater supports abundant plant and animal life", "isCorrect": true, "feedback": "Correct -- the nutrient influx from rivers combined with tidal ocean water creates ideal conditions for a dense food web."},
+      {"text": "They contain no predators, allowing populations to grow unchecked", "isCorrect": false, "feedback": "Estuaries have plenty of predators as part of a rich food web -- productivity comes from nutrient abundance, not an absence of predators."},
+      {"text": "The water there is always warmer than either the river or ocean alone", "isCorrect": false, "feedback": "Temperature isn't the key productivity driver here -- nutrient mixing from both fresh and saltwater sources is."},
+      {"text": "They receive more sunlight than open ocean water", "isCorrect": false, "feedback": "Sunlight exposure isn't notably different in estuaries -- the productivity driver is the nutrient-rich mixing of fresh and saltwater."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Because an estuary's salinity constantly shifts with the tides and river flow, what must the organisms living there be adapted to survive?",
+    "options": [
+      {"text": "Wide, rapid swings in the water's salt concentration", "isCorrect": true, "feedback": "Correct -- estuarine species must be able to tolerate salinity that ranges from nearly fresh to nearly seawater within a single tidal cycle, unlike species confined to a stable open-ocean or freshwater environment."},
+      {"text": "A complete absence of predators", "isCorrect": false, "feedback": "Estuaries have plenty of predators as part of a dense food web -- the defining survival challenge is the fluctuating salinity, not a lack of threats."},
+      {"text": "Total darkness for most of the year", "isCorrect": false, "feedback": "Estuaries are shallow and sunlit, not dark -- the key adaptation challenge is tolerating changing salt levels, not light deprivation."},
+      {"text": "Consistently freezing water temperatures", "isCorrect": false, "feedback": "Estuaries aren't defined by freezing conditions -- the defining stress on their organisms is the constantly shifting salinity."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This partially enclosed coastal zone is defined by the meeting of two different water sources, one flowing from land and one tidal.", "medium": "This is the coastal area where a river's fresh water meets and mixes with the ocean's salt water.", "easy": "This is where a river flows into the sea and the two kinds of water mix together."},
+    "medium": {"hard": "The driver is the combined nutrient supply from two different water sources, not an absence of predators, warmer temperatures, or extra sunlight.", "medium": "It's about the mix of nutrients from both the river and the ocean feeding a rich food web, not sunlight or temperature.", "easy": "Mixing nutrients from both the river and the ocean gives lots of food for plants and animals to thrive on."},
+    "hard": {"hard": "This has to do with a physical property of the water that keeps changing throughout the day, not with light, temperature, or predation.", "medium": "Think about salt content -- unlike the open ocean or a river far upstream, it doesn't stay at one steady level here.", "easy": "The water's saltiness rises and falls with the tide, so estuary organisms need to handle a wide range of salt levels, not just one fixed level."}
+  }
+},
+{
+  "topic": "freshwater ecosystems",
+  "easy": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of the following are examples of freshwater ecosystems? (Select all that apply)",
+    "options": [
+      {"text": "Lakes", "isCorrect": true, "feedback": "Correct -- lakes are a classic example of a freshwater ecosystem."},
+      {"text": "Rivers", "isCorrect": true, "feedback": "Correct -- rivers are flowing freshwater ecosystems."},
+      {"text": "Coral reefs", "isCorrect": false, "feedback": "Coral reefs form in saltwater marine environments, not freshwater."},
+      {"text": "Open ocean", "isCorrect": false, "feedback": "The open ocean is a saltwater ecosystem, not a freshwater one."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of these bodies of water are classified as freshwater ecosystems? (Select all that apply)",
+    "options": [
+      {"text": "Ponds", "isCorrect": true, "feedback": "Correct -- ponds are small, still-water freshwater ecosystems."},
+      {"text": "Wetlands (freshwater marshes)", "isCorrect": true, "feedback": "Correct -- freshwater wetlands and marshes are classified as freshwater ecosystems."},
+      {"text": "Streams", "isCorrect": true, "feedback": "Correct -- streams are small flowing freshwater ecosystems."},
+      {"text": "Mangrove forests", "isCorrect": false, "feedback": "Mangroves typically grow in brackish or saltwater coastal zones, not pure freshwater."},
+      {"text": "Salt marshes", "isCorrect": false, "feedback": "Salt marshes are, as the name suggests, saline coastal ecosystems, not freshwater."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_multiple",
+    "text": "Which of the following are typically classified as freshwater ecosystems, as opposed to marine or brackish ones? (Select all that apply)",
+    "options": [
+      {"text": "Lakes", "isCorrect": true, "feedback": "Correct -- lakes hold standing freshwater with minimal salt content."},
+      {"text": "Freshwater swamps", "isCorrect": true, "feedback": "Correct -- freshwater swamps, distinct from coastal mangrove swamps, are classified as freshwater ecosystems."},
+      {"text": "Rivers", "isCorrect": true, "feedback": "Correct -- rivers are flowing freshwater systems."},
+      {"text": "Estuaries", "isCorrect": false, "feedback": "Estuaries are brackish -- a mix of fresh and saltwater -- not classified purely as freshwater ecosystems."},
+      {"text": "Coral reefs", "isCorrect": false, "feedback": "Coral reefs require saltwater marine conditions to survive."},
+      {"text": "Open ocean", "isCorrect": false, "feedback": "The open ocean is entirely a saltwater ecosystem."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "These ecosystems contain water with little to no salt content, unlike marine environments.", "medium": "Look for the ecosystems made of freshwater, not the ones that need saltwater to exist.", "easy": "This type of ecosystem holds still or flowing water with almost no salt in it -- picture the kind of water you'd find well away from any coast."},
+    "medium": {"hard": "Three of these five are true freshwater habitats; the other two are brackish or saline coastal ecosystems -- exclude the ones defined by salt content.", "medium": "Rule out the two options defined by salt or brackish water -- the rest are freshwater.", "easy": "Skip the coastal, salty options here -- the correct answers are all inland freshwater habitats."},
+    "hard": {"hard": "Three options are strictly freshwater (standing, flowing, or swamp), while the other three each involve significant salt or brackish content, disqualifying them from a strict freshwater classification.", "medium": "Three of these are purely freshwater; the other three involve salt or a fresh-salt mix.", "easy": "Three of these six have no significant salt content at all -- the rest are salty, or a fresh-and-salt mix."}
+  }
+},
+{
+  "topic": "the Ring of Fire",
+  "easy": {
+    "type": "multiple_choice_single",
+    "text": "The 'Ring of Fire,' a zone with frequent earthquakes and volcanic eruptions, encircles which ocean?",
+    "options": [
+      {"text": "The Pacific Ocean", "isCorrect": true, "feedback": "Correct -- the Ring of Fire traces the boundary of tectonic plates surrounding the Pacific Ocean."},
+      {"text": "The Atlantic Ocean", "isCorrect": false, "feedback": "The Atlantic Ocean is not associated with the Ring of Fire -- that's the Pacific."},
+      {"text": "The Indian Ocean", "isCorrect": false, "feedback": "The Indian Ocean isn't the one associated with the Ring of Fire -- the Pacific is."},
+      {"text": "The Arctic Ocean", "isCorrect": false, "feedback": "The Arctic Ocean is not the Ring of Fire's location -- that distinction belongs to the Pacific."}
+    ],
+    "difficulty": "easy"
+  },
+  "medium": {
+    "type": "multiple_choice_single",
+    "text": "Why does the Ring of Fire experience such frequent earthquakes and volcanic activity?",
+    "options": [
+      {"text": "It follows a chain of tectonic plate boundaries where plates collide, subduct, or slide past one another", "isCorrect": true, "feedback": "Correct -- most of the world's subduction zones and active volcanoes line up along this plate-boundary chain."},
+      {"text": "It is located directly above the Earth's molten core", "isCorrect": false, "feedback": "The Earth's core is deep beneath the entire planet, not uniquely beneath the Pacific rim -- plate boundaries are the real driver here."},
+      {"text": "It receives unusually high rainfall that triggers seismic activity", "isCorrect": false, "feedback": "Rainfall doesn't cause earthquakes or volcanic eruptions -- tectonic plate movement does."},
+      {"text": "It is where ocean currents are strongest", "isCorrect": false, "feedback": "Ocean current strength isn't related to seismic or volcanic activity -- tectonic plate boundaries are the cause."}
+    ],
+    "difficulty": "medium"
+  },
+  "hard": {
+    "type": "multiple_choice_single",
+    "text": "Approximately what percentage of the world's active volcanoes are located along the Ring of Fire?",
+    "options": [
+      {"text": "About 75 percent", "isCorrect": true, "feedback": "Correct -- roughly three-quarters of the world's active volcanoes lie along this Pacific plate-boundary chain."},
+      {"text": "About 10 percent", "isCorrect": false, "feedback": "This significantly understates the concentration -- the real figure is around 75 percent."},
+      {"text": "About 25 percent", "isCorrect": false, "feedback": "This understates the true figure, which is closer to 75 percent."},
+      {"text": "Nearly 100 percent", "isCorrect": false, "feedback": "This overstates it slightly -- some active volcanoes exist outside the Ring of Fire, such as in Africa's Rift Valley and Iceland."}
+    ],
+    "difficulty": "hard"
+  },
+  "hints": {
+    "easy": {"hard": "This ocean's surrounding plate boundaries host most of the planet's active volcanoes and subduction-zone earthquakes.", "medium": "This is the largest ocean on Earth, bordered by countries like Japan, Chile, and Indonesia.", "easy": "This is the largest ocean in the world, and its edges are especially prone to earthquakes and volcanoes."},
+    "medium": {"hard": "The mechanism is tectonic -- plates interacting along their boundaries -- not anything related to the planet's core, weather, or ocean currents.", "medium": "It's about tectonic plates grinding, colliding, or sliding along their edges -- not weather or currents.", "easy": "It's caused by tectonic plates bumping into and sliding past each other along this ring-shaped boundary."},
+    "hard": {"hard": "The correct figure is a strong majority but leaves meaningful room for volcanoes elsewhere, like Iceland and the African Rift Valley -- ruling out both the near-total and the low-minority estimates.", "medium": "The correct figure is a strong majority, but not literally all of them -- some volcanoes exist elsewhere, like Iceland.", "easy": "Most of the world's active volcanoes are here, but not literally every single one -- a few exist elsewhere too."}
+  }
+}
+]

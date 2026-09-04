@@ -1,0 +1,1517 @@
+[
+  {
+    "topic": "unit testing",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'unit test' in software development?",
+      "options": [
+        {
+          "text": "A small, automated test that checks whether one specific piece of code (like a single function) behaves as expected",
+          "isCorrect": true,
+          "feedback": "Correct -- unit tests target small, isolated pieces of a program, verifying their behavior independently of the rest of the system."
+        },
+        {
+          "text": "A test performed by physically shaking a computer to check its durability",
+          "isCorrect": false,
+          "feedback": "Unit testing is a software verification practice, not a physical durability test performed on hardware."
+        },
+        {
+          "text": "A test that can only be performed once a program has been fully released to the public",
+          "isCorrect": false,
+          "feedback": "Unit tests are typically written and run continuously during development, well before public release, not only afterward."
+        },
+        {
+          "text": "A measurement of how many total lines of code a program contains",
+          "isCorrect": false,
+          "feedback": "Counting lines of code is a separate metric -- a unit test specifically verifies the correctness of a small piece of code's behavior."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why do developers often write unit tests alongside their regular code, rather than only manually checking that a program seems to work?",
+      "options": [
+        {
+          "text": "Automated unit tests can be re-run quickly and repeatedly, helping catch regressions (newly introduced bugs) whenever the code changes later",
+          "isCorrect": true,
+          "feedback": "Correct -- this repeatability makes unit tests especially valuable for catching problems introduced by future changes, long after the original code was written."
+        },
+        {
+          "text": "Because manually checking a program is against the law in professional software development",
+          "isCorrect": false,
+          "feedback": "There's no legal prohibition on manual checking -- automated unit tests are simply a more efficient, repeatable complement to manual verification, not a mandated replacement for it."
+        },
+        {
+          "text": "Because unit tests automatically fix any bugs they happen to find",
+          "isCorrect": false,
+          "feedback": "Unit tests detect and report failures -- they don't automatically repair the underlying bug themselves; a developer still has to fix the code."
+        },
+        {
+          "text": "Because writing unit tests is required in order for code to be saved to a hard drive",
+          "isCorrect": false,
+          "feedback": "Saving code to a hard drive doesn't require any unit tests to exist -- writing tests is a development practice choice, not a technical requirement for saving files."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is the general idea behind 'test-driven development' (TDD), a practice closely associated with unit testing?",
+      "options": [
+        {
+          "text": "Writing a failing unit test for a desired piece of functionality first, then writing just enough code to make that test pass",
+          "isCorrect": true,
+          "feedback": "Correct -- this write-test-first cycle is meant to keep development tightly focused on meeting clearly defined, verifiable requirements."
+        },
+        {
+          "text": "Writing all of a program's code first, and only writing any tests after the entire program has been fully completed",
+          "isCorrect": false,
+          "feedback": "That describes a more traditional 'test-after' approach -- TDD specifically emphasizes writing the test BEFORE the corresponding implementation code."
+        },
+        {
+          "text": "Only writing tests for code that has already been proven to contain bugs",
+          "isCorrect": false,
+          "feedback": "TDD involves writing tests proactively, before code even exists, rather than reactively only after bugs have already been found."
+        },
+        {
+          "text": "Deleting all existing tests before starting work on a new feature",
+          "isCorrect": false,
+          "feedback": "TDD is centered on writing NEW tests to drive new development, not on deleting any existing tests beforehand."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's a small, automated test verifying that one specific piece of code, like a single function, behaves correctly on its own.",
+        "medium": "This automated check targets one small, specific piece of code, verifying it behaves as expected in isolation.",
+        "hard": "Think about checking just one small gear of a machine, rather than the whole machine at once."
+      },
+      "medium": {
+        "easy": "Quick, repeatable re-running of these checks is exactly what helps catch regressions introduced by later code changes, something manual checking alone struggles to keep up with.",
+        "medium": "Being able to quickly and repeatedly re-run these checks helps catch newly introduced problems whenever the code changes.",
+        "hard": "Think about how much faster it is to re-run an automated check than to manually retest a program by hand every time."
+      },
+      "hard": {
+        "easy": "Writing a failing test for the desired behavior FIRST, then writing just enough code to satisfy it, is the defining discipline of this specific development practice.",
+        "medium": "The test comes first, deliberately failing at the start, and code is then written specifically to make that test pass.",
+        "hard": "Think about writing down exactly what 'success' looks like before you've even built the thing that's supposed to succeed."
+      }
+    }
+  },
+  {
+    "topic": "agile methodology",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a central idea behind 'agile' software development methodology?",
+      "options": [
+        {
+          "text": "Developing software through short, iterative cycles, allowing for frequent reassessment and adaptation to changing requirements",
+          "isCorrect": true,
+          "feedback": "Correct -- agile emphasizes flexibility and incremental progress, rather than planning out every detail of a project rigidly from the very start."
+        },
+        {
+          "text": "Planning out every single detail of a project completely upfront, with absolutely no changes allowed afterward",
+          "isCorrect": false,
+          "feedback": "That rigid, fully-upfront-planning approach is more characteristic of a traditional waterfall-style process -- agile specifically embraces iterative reassessment and change instead."
+        },
+        {
+          "text": "Writing an entire program's code in a single sitting, without ever pausing to review it",
+          "isCorrect": false,
+          "feedback": "Agile is a structured methodology involving planning, review, and iteration -- it isn't about writing an entire program in one uninterrupted sitting."
+        },
+        {
+          "text": "Avoiding any communication with the people who will actually use the finished software",
+          "isCorrect": false,
+          "feedback": "Agile methodologies typically emphasize frequent feedback and communication, including with stakeholders and users, rather than avoiding it."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In many agile frameworks, work is organized into short, fixed-length periods often called 'sprints'. What is the general purpose of a sprint?",
+      "options": [
+        {
+          "text": "To deliver a small, workable increment of the product within a limited, fixed timeframe, allowing for regular review and adjustment",
+          "isCorrect": true,
+          "feedback": "Correct -- breaking work into these short cycles supports agile's emphasis on frequent reassessment, feedback, and adaptability."
+        },
+        {
+          "text": "To permanently freeze a project's requirements for its entire multi-year duration",
+          "isCorrect": false,
+          "feedback": "Sprints are specifically meant to support ongoing reassessment and adaptation -- they don't permanently lock requirements in place for years at a time."
+        },
+        {
+          "text": "To ensure that no software is delivered until the absolute final day of the entire project",
+          "isCorrect": false,
+          "feedback": "Agile sprints are specifically designed to deliver small, working increments ALONG THE WAY, rather than withholding any delivery until one single final day."
+        },
+        {
+          "text": "To require every team member to work in complete isolation, with no team meetings of any kind",
+          "isCorrect": false,
+          "feedback": "Agile sprints commonly involve regular team meetings, like planning sessions and reviews -- they don't mandate complete isolation among team members."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might agile methodology be considered particularly well suited to projects where requirements are expected to evolve or aren't fully known at the very start?",
+      "options": [
+        {
+          "text": "Its short, iterative cycles allow the team to incorporate new information, feedback, and changing requirements throughout the project, rather than being locked into an initial plan made before much was actually known",
+          "isCorrect": true,
+          "feedback": "Correct -- this adaptability is a central selling point of agile methodology, especially compared to approaches that commit heavily to a detailed upfront plan."
+        },
+        {
+          "text": "Because agile methodology guarantees that requirements will never change once a project has started",
+          "isCorrect": false,
+          "feedback": "Agile methodology actually EXPECTS and accommodates changing requirements -- it doesn't guarantee that requirements will stay frozen; that expectation would be more characteristic of a rigid upfront-planning approach."
+        },
+        {
+          "text": "Because agile projects are not permitted to have a definition of what 'finished' looks like",
+          "isCorrect": false,
+          "feedback": "Agile projects still work toward clear goals and increments, even amid evolving requirements -- the lack of an ultimate definition of 'finished' isn't actually a defining feature of agile."
+        },
+        {
+          "text": "Because agile methodology requires a project's entire budget to be spent before any work can begin",
+          "isCorrect": false,
+          "feedback": "Agile emphasizes incremental delivery and adaptability -- it doesn't require spending an entire budget upfront before any actual work starts."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "Iterative, adaptable development in short cycles, allowing frequent reassessment of changing requirements, is the central idea here.",
+        "medium": "Short, repeated cycles allow the team to reassess and adapt as the project unfolds, rather than locking everything in from day one.",
+        "hard": "Think about building something in small pieces, checking in often, and adjusting course as you learn more."
+      },
+      "medium": {
+        "easy": "Delivering a small, workable increment within a fixed, limited timeframe, followed by review, is exactly this short cycle's core purpose.",
+        "medium": "This short, fixed period is meant to deliver a small working piece of the product, followed by review and adjustment.",
+        "hard": "Think about a short, fixed chunk of time dedicated to producing one small, usable piece of the overall product."
+      },
+      "hard": {
+        "easy": "This methodology bends around fresh information and shifting needs as work moves forward, instead of committing early to a rigid plan drawn up when the team still had a lot left to learn.",
+        "medium": "Because the cycles are short and repeated, new information and changing needs can be incorporated as the project actually unfolds.",
+        "hard": "Think about a plan that's specifically built to bend and adjust as new information comes in, rather than one locked in from day one."
+      }
+    }
+  },
+  {
+    "topic": "technical debt",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does the term 'technical debt' generally refer to in software development?",
+      "options": [
+        {
+          "text": "The implied future cost of extra rework created by choosing a quick or easy solution now, instead of a better long-term approach",
+          "isCorrect": true,
+          "feedback": "Correct -- much like financial debt, technical debt tends to accumulate 'interest', in the form of added difficulty or cost, if left unaddressed."
+        },
+        {
+          "text": "The extra money a company owes for financing new servers over multiple years",
+          "isCorrect": false,
+          "feedback": "That describes financing physical hardware -- technical debt is a metaphor for the future rework cost of code shortcuts, not literal equipment financing."
+        },
+        {
+          "text": "A score assigned by a manager rating how many bugs a developer has personally introduced",
+          "isCorrect": false,
+          "feedback": "Technical debt describes a property of the CODEBASE resulting from design tradeoffs, not a personal scorecard tracking an individual developer's bug count."
+        },
+        {
+          "text": "The time it takes for a computer to boot up before a developer can start working",
+          "isCorrect": false,
+          "feedback": "Boot-up time is a hardware performance detail -- technical debt is about the future cost of past shortcuts taken in the code itself, unrelated to startup speed."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might a development team knowingly choose to take on some technical debt, such as implementing a quick, less-than-ideal solution to meet an important deadline?",
+      "options": [
+        {
+          "text": "To deliver value or hit a critical deadline sooner, with the understanding that the shortcut may need to be revisited and improved later",
+          "isCorrect": true,
+          "feedback": "Correct -- taking on technical debt is sometimes a deliberate, reasonable tradeoff, as long as the team is aware of it and plans to address it appropriately later."
+        },
+        {
+          "text": "Because taking on technical debt automatically improves the software's test coverage",
+          "isCorrect": false,
+          "feedback": "Technical debt doesn't improve test coverage -- it describes a shortcut in the implementation, which is a separate concern from how thoroughly that code is tested."
+        },
+        {
+          "text": "Because once a deadline is announced, a team is no longer permitted to change its original design",
+          "isCorrect": false,
+          "feedback": "Teams remain free to adjust their design at any point -- taking on technical debt is a deliberate choice to ship a shortcut now, not a rule about being locked out of redesigning later."
+        },
+        {
+          "text": "Because a shortcut solution always takes the exact same amount of time to build as the ideal solution would",
+          "isCorrect": false,
+          "feedback": "The whole point of the shortcut is that it's typically FASTER to build than the ideal solution -- if it took the same amount of time, there would be no reason to prefer it."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why can accumulating too much unaddressed technical debt significantly slow down a team's ability to develop new features over time?",
+      "options": [
+        {
+          "text": "As shortcuts and quick fixes pile up, the codebase can become more complex, fragile, and harder to understand, making even small new changes riskier and more time-consuming to implement safely",
+          "isCorrect": true,
+          "feedback": "Correct -- this compounding effect is often compared to financial debt's interest: the longer technical debt goes unaddressed, the more it can weigh down future development efforts."
+        },
+        {
+          "text": "Because paying down technical debt requires purchasing an entirely new codebase from a different vendor",
+          "isCorrect": false,
+          "feedback": "Addressing technical debt means improving or restructuring the EXISTING code -- it doesn't require replacing the codebase with one purchased from someone else."
+        },
+        {
+          "text": "Because a fragile, complex codebase automatically rewrites its own documentation incorrectly",
+          "isCorrect": false,
+          "feedback": "Technical debt doesn't cause documentation to rewrite itself -- the slowdown comes from the code itself becoming harder to safely understand and change, documentation aside."
+        },
+        {
+          "text": "Because every new feature added to a codebase counts as technical debt, regardless of how well it's built",
+          "isCorrect": false,
+          "feedback": "Technical debt specifically comes from shortcuts or less-than-ideal choices -- a well-built new feature doesn't automatically count as debt just by being added."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the future cost you end up owing in extra rework because a faster, less-ideal fix was chosen over the more thorough one.",
+        "medium": "This describes the future cost of extra rework owed because of a quick shortcut taken earlier, instead of a more thorough solution.",
+        "hard": "Think about borrowing time now by taking a shortcut, with a cost to pay back later."
+      },
+      "medium": {
+        "easy": "Delivering something sooner and planning to circle back and improve it properly later is often a legitimate reason to accept this kind of tradeoff.",
+        "medium": "Delivering something sooner, with a planned intention to improve it properly later, is a common and often reasonable reason to accept this kind of debt.",
+        "hard": "Think about a reasonable tradeoff: accepting a cost later in exchange for a real benefit right now, like hitting a deadline."
+      },
+      "hard": {
+        "easy": "A codebase weighed down by piled-up shortcuts tends to become harder to safely modify, which is exactly the slowdown this kind of debt causes over time.",
+        "medium": "As shortcuts accumulate, the underlying code becomes harder to safely understand and modify, slowing down future work.",
+        "hard": "Think about a messy pile of shortcuts making even a small new change feel much riskier than it should be."
+      }
+    }
+  },
+  {
+    "topic": "code review",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'code review' in software development?",
+      "options": [
+        {
+          "text": "A process where other developers examine a piece of newly written code before it's merged, checking for bugs, style issues, or improvements",
+          "isCorrect": true,
+          "feedback": "Correct -- code review is a common quality-assurance practice, letting a second set of eyes catch problems the original author might have missed."
+        },
+        {
+          "text": "A performance evaluation of an employee conducted once per year",
+          "isCorrect": false,
+          "feedback": "Code review is a technical practice focused on examining written CODE -- not a general annual employee performance evaluation."
+        },
+        {
+          "text": "A review of a computer's physical hardware components for damage",
+          "isCorrect": false,
+          "feedback": "Code review specifically examines written source code -- it isn't a physical inspection of hardware."
+        },
+        {
+          "text": "A tool that automatically deletes unused code from a program",
+          "isCorrect": false,
+          "feedback": "A code review is a human (or sometimes automated-assisted) examination process -- it isn't specifically a tool that deletes unused code automatically."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is having someone other than the original author review a piece of code often valuable?",
+      "options": [
+        {
+          "text": "A different reviewer can catch mistakes, unclear logic, or edge cases the original author might have overlooked, having been closely focused on writing that same code",
+          "isCorrect": true,
+          "feedback": "Correct -- a fresh perspective can help spot issues that are easy to miss when you've been deeply immersed in writing the code yourself."
+        },
+        {
+          "text": "Because the original author is legally forbidden from checking their own code for mistakes",
+          "isCorrect": false,
+          "feedback": "There's no legal prohibition on self-review -- the real benefit of an independent reviewer is a fresh perspective that can catch things the original author might have missed, not a legal restriction."
+        },
+        {
+          "text": "Because having a second reviewer guarantees the code will run twice as fast",
+          "isCorrect": false,
+          "feedback": "A code review's main value is CATCHING issues like bugs or unclear logic -- it doesn't inherently make the resulting code run any faster."
+        },
+        {
+          "text": "Because code reviews are required in order for a computer to compile the code at all",
+          "isCorrect": false,
+          "feedback": "A compiler doesn't require a code review to have happened -- code review is a team practice for QUALITY, separate from whether the code technically compiles."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Beyond catching bugs, what is another commonly cited benefit of a regular code review practice within a development team?",
+      "options": [
+        {
+          "text": "It helps spread knowledge of the codebase across the team and encourages more consistent coding standards and practices among different contributors",
+          "isCorrect": true,
+          "feedback": "Correct -- regular code review can reduce the risk of only one person understanding a given part of the code, and it helps keep the team's overall coding style more consistent."
+        },
+        {
+          "text": "It guarantees that the reviewed code will never need to be changed again in the future",
+          "isCorrect": false,
+          "feedback": "Code review improves quality and catches issues at a point in time -- it doesn't guarantee the code will remain unchanged forever, since requirements and understanding can evolve."
+        },
+        {
+          "text": "It eliminates the need for the team to ever write any documentation for the project",
+          "isCorrect": false,
+          "feedback": "Code review and documentation serve different, complementary purposes -- reviewing code doesn't replace the need for separate project documentation."
+        },
+        {
+          "text": "It allows the reviewer to legally claim ownership of the code being reviewed",
+          "isCorrect": false,
+          "feedback": "Reviewing someone else's code doesn't transfer legal ownership or authorship to the reviewer -- code review is a quality and knowledge-sharing practice, unrelated to ownership claims."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the practice of having other developers examine newly written code before merging it, checking for problems or improvements.",
+        "medium": "Other developers examine newly written code, looking for bugs, style issues, or possible improvements.",
+        "hard": "Think about a second pair of eyes checking over a piece of written code before it becomes official."
+      },
+      "medium": {
+        "easy": "A fresh, independent perspective is exactly what helps catch mistakes or unclear logic the original author, deeply immersed in writing it, might have overlooked.",
+        "medium": "Someone who wasn't the one writing the code in the first place can spot things the original author might have missed.",
+        "hard": "Think about how easy it is to overlook your own mistake after staring at the same piece of writing for a long time."
+      },
+      "hard": {
+        "easy": "Spreading codebase knowledge more broadly and encouraging more consistent coding standards across the team is a benefit that goes beyond simply catching individual bugs.",
+        "medium": "Regularly having others look at the code helps knowledge and consistent style spread more broadly across the team.",
+        "hard": "Think about more than one person on a team becoming familiar with any given part of the codebase, rather than just one."
+      }
+    }
+  },
+  {
+    "topic": "refactoring",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'refactoring' in software development?",
+      "options": [
+        {
+          "text": "Restructuring existing code to improve its internal design or readability, without changing its external behavior",
+          "isCorrect": true,
+          "feedback": "Correct -- refactoring is specifically about improving code's internal quality, while keeping what the code actually does, from the outside, exactly the same."
+        },
+        {
+          "text": "Adding entirely new features that a program didn't previously have",
+          "isCorrect": false,
+          "feedback": "Adding new functionality describes new feature development -- refactoring specifically means improving existing code's structure WITHOUT changing its external behavior."
+        },
+        {
+          "text": "Permanently deleting a program with no way to recover it",
+          "isCorrect": false,
+          "feedback": "Refactoring is about IMPROVING and restructuring existing code -- it isn't about deleting a program entirely."
+        },
+        {
+          "text": "Translating a program's code into a completely different programming language",
+          "isCorrect": false,
+          "feedback": "Refactoring generally happens within the same programming language, improving the existing code's internal structure, not translating it into another language."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is it important that refactoring not change a piece of code's external behavior?",
+      "options": [
+        {
+          "text": "Because the goal of refactoring is specifically to improve the code's internal structure and maintainability, while preserving its existing functionality exactly as it already was",
+          "isCorrect": true,
+          "feedback": "Correct -- if the external behavior changed too, that would really be introducing new functionality or fixing a bug, a different activity from pure refactoring."
+        },
+        {
+          "text": "Because if the behavior changed too, users and other code relying on it could break without warning",
+          "isCorrect": false,
+          "feedback": "This is closer to the real reason, but refactoring's defining goal is simply to improve structure while functionality stays exactly the same -- not a rule about avoiding legal risk."
+        },
+        {
+          "text": "Because any behavior change automatically counts as fixing a bug rather than adding a feature",
+          "isCorrect": false,
+          "feedback": "A behavior change could be a bug fix, a new feature, or neither -- the point is that refactoring specifically is defined as NOT changing behavior, regardless of what category a change would otherwise fall into."
+        },
+        {
+          "text": "Because tools that automatically restructure code are only able to preserve behavior, never able to change it",
+          "isCorrect": false,
+          "feedback": "Automated refactoring tools are one way to restructure code, but plenty of refactoring is done manually -- the requirement to preserve behavior comes from the definition of refactoring itself, not a limitation of any particular tool."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why do many teams rely heavily on a solid suite of automated tests specifically when performing significant refactoring?",
+      "options": [
+        {
+          "text": "The tests provide confidence that the code's external behavior has genuinely remained unchanged after the internal restructuring, helping catch any accidental behavioral changes introduced during the process",
+          "isCorrect": true,
+          "feedback": "Correct -- without reliable tests, it becomes much harder to be sure that a refactoring effort hasn't accidentally altered the code's actual behavior, defeating its whole purpose."
+        },
+        {
+          "text": "Because automated tests run faster when a codebase has recently been refactored",
+          "isCorrect": false,
+          "feedback": "Test speed isn't the reason teams rely on tests during refactoring -- tests matter because they verify the code's behavior is unchanged, regardless of how fast they run."
+        },
+        {
+          "text": "Because a test suite is what actually decides which parts of the code are allowed to be restructured",
+          "isCorrect": false,
+          "feedback": "Tests don't decide what can be restructured -- developers choose what to restructure, and the tests simply confirm afterward that behavior wasn't accidentally changed."
+        },
+        {
+          "text": "Because refactoring without tests is considered a form of plagiarism in professional teams",
+          "isCorrect": false,
+          "feedback": "Refactoring without tests isn't an ethical or authorship issue -- it's a practical risk, since without tests it's harder to confirm the code's behavior genuinely stayed the same."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's restructuring existing code to improve its internal design or readability, without altering its external, observable behavior.",
+        "medium": "This process improves code's internal structure and readability, while what the code actually does on the outside stays the same.",
+        "hard": "Think about reorganizing a messy closet so it's easier to use, without changing which clothes are actually in it."
+      },
+      "medium": {
+        "easy": "Preserving the exact existing functionality while improving internal structure is precisely what defines this activity, distinguishing it from adding features or fixing bugs.",
+        "medium": "The whole point here is improving structure and maintainability while what the code actually accomplishes stays exactly the same as before.",
+        "hard": "Think about the specific goal of this activity: improving internal quality, versus a completely different goal like adding new capabilities."
+      },
+      "hard": {
+        "easy": "Providing confidence that behavior has genuinely stayed the same throughout the restructuring is exactly the role these automated checks serve, since accidentally altering behavior would defeat the whole purpose of this activity.",
+        "medium": "A reliable set of automated checks can confirm the code's actual behavior hasn't quietly changed during the restructuring.",
+        "hard": "Think about how you'd want some kind of proof that reorganizing something didn't accidentally break what it used to do."
+      }
+    }
+  },
+  {
+    "topic": "the software development life cycle",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does the 'software development life cycle' (SDLC) generally describe?",
+      "options": [
+        {
+          "text": "The overall structured process of stages a software project typically goes through, from initial planning to eventual maintenance",
+          "isCorrect": true,
+          "feedback": "Correct -- the SDLC provides a general framework describing phases like planning, design, implementation, testing, deployment, and maintenance."
+        },
+        {
+          "text": "The physical lifespan of a computer's hardware components before they need replacing",
+          "isCorrect": false,
+          "feedback": "The SDLC describes the process stages of building SOFTWARE -- it isn't about the physical wear-and-tear lifespan of hardware components."
+        },
+        {
+          "text": "A single specific programming language used only for large projects",
+          "isCorrect": false,
+          "feedback": "The SDLC is a general process framework, not a specific programming language."
+        },
+        {
+          "text": "The amount of time a user spends actively using a finished application each day",
+          "isCorrect": false,
+          "feedback": "The SDLC describes stages of BUILDING and maintaining software -- it isn't a measurement of a user's daily usage time of a finished app."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Common stages often described as part of the SDLC include requirements gathering, design, implementation, testing, deployment, and maintenance. Why is 'maintenance' typically included as an ongoing stage, rather than the process simply ending once a product is deployed?",
+      "options": [
+        {
+          "text": "Because software generally continues to need bug fixes, updates, and improvements even after it's initially released and being actively used",
+          "isCorrect": true,
+          "feedback": "Correct -- most real-world software needs continued attention after release, whether to fix newly discovered bugs, adapt to changing needs, or add further improvements."
+        },
+        {
+          "text": "Because maintenance is actually the very first stage that happens, before any other stage in the SDLC",
+          "isCorrect": false,
+          "feedback": "Maintenance is typically considered a LATER, ongoing stage that follows deployment -- it isn't the first stage of the overall process."
+        },
+        {
+          "text": "Because software, once deployed, is required by law to never be changed again",
+          "isCorrect": false,
+          "feedback": "There's no such legal requirement -- in fact, ongoing maintenance work, including further changes after deployment, is a very common and expected part of a software product's life cycle."
+        },
+        {
+          "text": "Because maintenance specifically refers only to physically cleaning computer hardware",
+          "isCorrect": false,
+          "feedback": "In the SDLC context, 'maintenance' refers to ongoing software-related work like bug fixes and updates -- not physically cleaning hardware."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Different SDLC models, such as waterfall versus agile, structure these stages quite differently. What is a key structural distinction between them?",
+      "options": [
+        {
+          "text": "A waterfall-style model tends to move through the stages in a mostly linear, sequential order, while an agile-style model repeats through many of the stages in short, iterative cycles",
+          "isCorrect": true,
+          "feedback": "Correct -- this difference in structure -- linear-and-sequential versus iterative-and-cyclical -- is one of the most fundamental distinctions between these two general approaches to organizing the SDLC."
+        },
+        {
+          "text": "A waterfall-style model and an agile-style model are simply two different names describing the exact identical process structure",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different structural approaches to organizing the same general set of SDLC stages -- one largely linear, the other iterative."
+        },
+        {
+          "text": "An agile-style model skips the testing stage of the SDLC entirely",
+          "isCorrect": false,
+          "feedback": "Agile approaches still incorporate testing -- often quite frequently, within each short iterative cycle -- rather than skipping it altogether."
+        },
+        {
+          "text": "A waterfall-style model requires the project to have absolutely no requirements gathering stage at all",
+          "isCorrect": false,
+          "feedback": "Waterfall-style models still include a requirements gathering stage -- typically completed thoroughly upfront, before moving linearly into the following stages."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the overall structured process framework describing a software project's typical stages, from initial planning to eventual ongoing maintenance.",
+        "medium": "This describes the general structured stages a software project passes through, from planning all the way to maintenance.",
+        "hard": "Think about the whole overall journey a software project takes, from the very first idea to ongoing upkeep afterward."
+      },
+      "medium": {
+        "easy": "The ongoing, common need for bug fixes, updates, and improvements even after initial release is exactly why this final stage tends to continue well past deployment.",
+        "medium": "Bug fixes, updates, and improvements are commonly still needed well after a piece of software is first released and in active use.",
+        "hard": "Think about whether a piece of software is really 'finished forever' the moment it's first released to users."
+      },
+      "hard": {
+        "easy": "A mostly linear, sequential path through the stages versus repeated, short, iterative cycles through many of the same stages is exactly the key structural contrast between these two general approaches.",
+        "medium": "One general approach favors a mostly straight-line, sequential path through the stages; the other favors repeating through many of the same stages in short cycles.",
+        "hard": "Think about moving through steps strictly one after another in order, versus cycling back through similar steps again and again."
+      }
+    }
+  },
+  {
+    "topic": "the waterfall model",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general structure of the 'waterfall' software development model?",
+      "options": [
+        {
+          "text": "Development proceeds through a fixed sequence of stages, one after another, generally without going back to an earlier stage",
+          "isCorrect": true,
+          "feedback": "Correct -- the waterfall model gets its name from this linear, one-directional flow, much like water flowing downhill through a sequence of stages."
+        },
+        {
+          "text": "Development happens in short, repeated cycles, with frequent reassessment throughout the project",
+          "isCorrect": false,
+          "feedback": "That describes an agile-style approach -- the waterfall model instead follows a mostly linear, one-directional sequence of stages."
+        },
+        {
+          "text": "Development is performed entirely by a single person working completely alone, with no team involved at all",
+          "isCorrect": false,
+          "feedback": "The waterfall model describes a STRUCTURE of sequential stages -- it doesn't specifically require the work to be done by only a single person."
+        },
+        {
+          "text": "Development skips designing the software entirely and goes straight to writing code",
+          "isCorrect": false,
+          "feedback": "The waterfall model typically DOES include an explicit design stage, occurring before implementation, as one of its sequential stages."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is a commonly cited drawback of the waterfall model, particularly for projects where requirements might change during development?",
+      "options": [
+        {
+          "text": "Because stages are completed largely in a strict sequence, it can be difficult and costly to go back and revise earlier decisions once later stages are already underway",
+          "isCorrect": true,
+          "feedback": "Correct -- this rigidity is a key reason more iterative approaches like agile are often preferred for projects expecting evolving requirements."
+        },
+        {
+          "text": "Because the waterfall model requires an unlimited, ever-growing budget with no fixed plan at all",
+          "isCorrect": false,
+          "feedback": "The waterfall model actually tends to emphasize a fairly fixed, upfront plan -- the concern here is about difficulty adapting to CHANGE, not about having an unlimited or undefined budget."
+        },
+        {
+          "text": "Because the waterfall model does not allow any testing to occur at any point in the project",
+          "isCorrect": false,
+          "feedback": "The waterfall model does typically include a distinct testing stage -- it's simply positioned as one sequential stage among several, not omitted altogether."
+        },
+        {
+          "text": "Because the waterfall model can only be used for extremely small projects with fewer than five total tasks",
+          "isCorrect": false,
+          "feedback": "The waterfall model has historically been applied to projects of many different sizes, including quite large ones -- its drawback is about difficulty accommodating CHANGE, not a restriction on project size."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "In what kind of project might the waterfall model's linear, sequential structure actually be a reasonable or even preferable choice, despite its known rigidity?",
+      "options": [
+        {
+          "text": "A project where requirements are very well understood and unlikely to change significantly, making a thorough upfront plan followed by sequential execution both practical and efficient",
+          "isCorrect": true,
+          "feedback": "Correct -- the waterfall model's predictability can be a genuine strength when requirements are stable and well-defined from the start, reducing the practical need for the flexibility that iterative approaches provide."
+        },
+        {
+          "text": "A project where the requirements are completely unknown and expected to change dramatically throughout development",
+          "isCorrect": false,
+          "feedback": "That kind of high-uncertainty, frequently-changing scenario is generally where the waterfall model's rigidity becomes more of a liability -- an iterative approach tends to be a better fit there instead."
+        },
+        {
+          "text": "A project that must be completed with absolutely no planning stage at all",
+          "isCorrect": false,
+          "feedback": "The waterfall model actually places a strong emphasis on thorough upfront planning -- a total absence of any planning stage wouldn't align with its actual structure."
+        },
+        {
+          "text": "A project where the development team is legally forbidden from using any other development model",
+          "isCorrect": false,
+          "feedback": "Choosing the waterfall model is a practical, project-specific engineering decision -- it isn't dictated by any legal restriction forbidding the use of other development models."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "A mostly linear, one-directional flow through a fixed sequence of stages is exactly what gives this model its name.",
+        "medium": "Development proceeds through a fixed sequence of stages, moving generally in one direction without looping back.",
+        "hard": "Think about water flowing downhill through a series of steps, never flowing back uphill again."
+      },
+      "medium": {
+        "easy": "The difficulty and cost of revising an earlier stage's decisions once later stages are already well underway is exactly the drawback that emerges from this model's strict sequential structure.",
+        "medium": "Because the stages happen largely in strict sequence, revisiting an earlier decision partway through later stages can become difficult and costly.",
+        "hard": "Think about how hard it might be to go back and redo an earlier decision once you're already several steps further down the line."
+      },
+      "hard": {
+        "easy": "Well-understood, stable requirements are exactly the scenario where this model's predictable, sequential structure becomes a genuine strength rather than a liability.",
+        "medium": "Stable, well-understood requirements make a thorough upfront plan followed by a strict sequential execution both practical and efficient.",
+        "hard": "Think about a situation where you're already highly confident about exactly what needs to be built, with little chance of that changing."
+      }
+    }
+  },
+  {
+    "topic": "continuous integration",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general idea behind 'continuous integration' (CI) in software development?",
+      "options": [
+        {
+          "text": "Frequently merging small code changes into a shared codebase, often automatically building and testing the project each time",
+          "isCorrect": true,
+          "feedback": "Correct -- continuous integration emphasizes integrating changes often and in small increments, rather than merging large batches of changes infrequently."
+        },
+        {
+          "text": "Waiting until a project is 100% complete before merging any code changes together at all",
+          "isCorrect": false,
+          "feedback": "That describes the opposite of continuous integration's actual approach -- CI specifically favors merging small changes FREQUENTLY, rather than saving up all merges until the very end."
+        },
+        {
+          "text": "Manually rewriting an entire project's source code from scratch every single day",
+          "isCorrect": false,
+          "feedback": "Continuous integration is about frequently merging and testing incremental CHANGES -- it doesn't involve manually rewriting an entire project from scratch daily."
+        },
+        {
+          "text": "Permanently disconnecting a development team's computers from the internet",
+          "isCorrect": false,
+          "feedback": "Continuous integration is a software development and automation practice, unrelated to disconnecting computers from the internet."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why does continuous integration typically rely heavily on an automated build-and-test process each time new code is merged?",
+      "options": [
+        {
+          "text": "To quickly catch integration problems or broken functionality as soon as possible after a change is introduced, rather than letting issues accumulate unnoticed",
+          "isCorrect": true,
+          "feedback": "Correct -- catching problems soon after they're introduced, while the relevant change is still fresh and easy to trace, is a central benefit of frequent automated verification."
+        },
+        {
+          "text": "Because manually testing code is against the rules of continuous integration",
+          "isCorrect": false,
+          "feedback": "Manual testing can still exist alongside CI -- the emphasis in CI is specifically on ADDING frequent AUTOMATED checks, not on outright forbidding manual testing elsewhere in the process."
+        },
+        {
+          "text": "Because an automated build-and-test process guarantees software will have zero bugs forever",
+          "isCorrect": false,
+          "feedback": "Automated builds and tests can catch many issues, but they don't provide an absolute guarantee against every possible future bug -- their value is EARLY detection of certain classes of problems, not a total guarantee."
+        },
+        {
+          "text": "Because continuous integration requires the entire team to stop writing any new code permanently",
+          "isCorrect": false,
+          "feedback": "Continuous integration is meant to support ONGOING development by making frequent merging safer and more manageable -- it doesn't require the team to stop writing new code."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "How does frequent, small-scale integration of code changes, as practiced in continuous integration, help reduce the pain often associated with merging large, long-lived branches of code all at once?",
+      "options": [
+        {
+          "text": "Smaller, more frequent changes create fewer opportunities for conflicting edits to pile up, and any conflicts or issues that do arise tend to be smaller in scope and easier to resolve quickly",
+          "isCorrect": true,
+          "feedback": "Correct -- this is a major reason CI is favored over infrequent, large 'big bang' merges, which can otherwise result in extensive, difficult-to-resolve conflicts."
+        },
+        {
+          "text": "Because continuous integration eliminates the need for more than one developer to ever work on the same project",
+          "isCorrect": false,
+          "feedback": "CI is specifically designed to support MULTIPLE developers actively working together on a shared codebase -- it doesn't eliminate the need for more than one contributor."
+        },
+        {
+          "text": "Because frequent integration automatically deletes any code that might cause a conflict",
+          "isCorrect": false,
+          "feedback": "CI doesn't automatically delete conflicting code -- conflicts, when they do arise, still generally need to be reviewed and resolved by a developer, just more manageably because they tend to be smaller in scope."
+        },
+        {
+          "text": "Because continuous integration requires all developers to write in a shared single file at the exact same time",
+          "isCorrect": false,
+          "feedback": "Developers typically work on their own separate changes independently, merging them frequently -- CI doesn't require everyone editing a single shared file simultaneously."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the practice of frequently merging small code changes into a shared codebase, typically with automated building and testing at each step.",
+        "medium": "Small code changes get merged into a shared codebase frequently, often with automatic building and testing each time.",
+        "hard": "Think about merging small pieces of work together often, instead of saving up one giant merge for the very end."
+      },
+      "medium": {
+        "easy": "Quickly catching integration problems shortly after a change is made, rather than letting issues quietly pile up unnoticed, is exactly why this automated verification happens so frequently.",
+        "medium": "Catching problems soon after a change is introduced, while it's still fresh and easy to trace, is the key motivation here.",
+        "hard": "Think about wanting to know right away if something broke, rather than discovering it much later."
+      },
+      "hard": {
+        "easy": "Fewer opportunities for conflicts to build up, plus smaller and more manageable conflicts when they do occur, is exactly how frequent small-scale integration avoids the pain of infrequent, large-scale merges.",
+        "medium": "Smaller, more frequent merges create fewer chances for conflicting changes to accumulate, and any conflicts that do occur tend to stay small and manageable.",
+        "hard": "Think about combining a few small puzzle pieces at a time, versus dumping an entire jumbled puzzle out all at once."
+      }
+    }
+  },
+  {
+    "topic": "requirements gathering",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is the general purpose of the 'requirements gathering' stage in a software project?",
+      "options": [
+        {
+          "text": "To understand and document what the software actually needs to do, based on the needs of its intended users or stakeholders",
+          "isCorrect": true,
+          "feedback": "Correct -- requirements gathering aims to clearly capture what a piece of software should accomplish, before significant design or implementation work begins."
+        },
+        {
+          "text": "To write all of the software's final source code",
+          "isCorrect": false,
+          "feedback": "Writing the actual source code happens in a later implementation stage -- requirements gathering is about understanding and documenting WHAT the software should do, not writing its code."
+        },
+        {
+          "text": "To physically install computer hardware at a company's office",
+          "isCorrect": false,
+          "feedback": "Requirements gathering is about understanding a software project's needed functionality -- it isn't about physically installing hardware equipment."
+        },
+        {
+          "text": "To permanently delete a project's earlier draft designs",
+          "isCorrect": false,
+          "feedback": "Requirements gathering is a process of documenting desired functionality -- it isn't specifically about deleting earlier draft designs."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why can skipping or rushing through the requirements gathering stage lead to significant problems later in a software project?",
+      "options": [
+        {
+          "text": "Without clearly understanding what's actually needed, the team risks building software that doesn't properly meet the real needs of its users, potentially requiring costly rework later",
+          "isCorrect": true,
+          "feedback": "Correct -- misunderstandings or gaps in requirements discovered late in a project are often far more expensive to fix than if they had been caught early on, during requirements gathering."
+        },
+        {
+          "text": "Because skipping this stage always makes the project finish measurably faster overall, with no real downsides",
+          "isCorrect": false,
+          "feedback": "While skipping this stage might seem to save time initially, it often leads to costly rework or a poor final product, undermining any perceived time savings later on."
+        },
+        {
+          "text": "Because requirements gathering has no real effect on the eventual quality of the finished software",
+          "isCorrect": false,
+          "feedback": "Requirements gathering has a very real and significant effect on the eventual quality and fit of the finished software -- inadequate requirements gathering is a well-known source of downstream problems."
+        },
+        {
+          "text": "Because requirements gathering is only relevant for projects that don't involve any actual users",
+          "isCorrect": false,
+          "feedback": "Requirements gathering is specifically about understanding the needs of intended users or stakeholders -- it's especially relevant precisely BECAUSE real users are typically involved."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a technique like interviewing actual future users or stakeholders be considered a valuable part of requirements gathering, rather than relying solely on assumptions made internally by the development team?",
+      "options": [
+        {
+          "text": "Direct input from the people who will actually use or rely on the software can surface real needs, priorities, and edge cases that internal assumptions alone might miss or get wrong",
+          "isCorrect": true,
+          "feedback": "Correct -- involving actual users or stakeholders helps ground the requirements in genuine, real-world needs, reducing the risk of building something that technically works but doesn't actually solve the right problem."
+        },
+        {
+          "text": "Because interviewing users guarantees the software will be built with zero bugs",
+          "isCorrect": false,
+          "feedback": "Interviewing users helps ensure the RIGHT things get built -- it doesn't provide any guarantee against implementation bugs, which are a separate concern handled through good engineering practices and testing."
+        },
+        {
+          "text": "Because relying on internal assumptions is against the law in professional software development",
+          "isCorrect": false,
+          "feedback": "There's no legal prohibition against using internal assumptions -- the actual concern is a PRACTICAL one, about the risk of assumptions missing real user needs, not a legal restriction."
+        },
+        {
+          "text": "Because interviewing users eliminates the need for a design stage entirely",
+          "isCorrect": false,
+          "feedback": "Requirements gathering, even when done well through user interviews, still generally precedes and informs a separate design stage -- it doesn't eliminate the need for that later stage."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the stage focused on understanding and documenting what the software actually needs to do, based on real user or stakeholder needs.",
+        "medium": "This stage focuses on understanding and documenting what the software should accomplish, based on real user or stakeholder needs.",
+        "hard": "Think about figuring out exactly what a piece of software actually needs to do, before you start building it."
+      },
+      "medium": {
+        "easy": "Building software that fails to properly meet real user needs, and the costly rework that can follow, is exactly the risk of skipping or rushing this early stage.",
+        "medium": "Misunderstanding what was actually needed can lead to a finished product that doesn't properly serve its real users, prompting costly rework.",
+        "hard": "Think about discovering, only after most of the work is already done, that you built the wrong thing."
+      },
+      "hard": {
+        "easy": "Surfacing real needs, priorities, and edge cases that internal assumptions alone might overlook is exactly the value that direct input from actual users or stakeholders provides.",
+        "medium": "Direct input from real users can reveal genuine needs and edge cases that internal guesses alone might miss entirely.",
+        "hard": "Think about the difference between guessing what people want and actually asking them directly."
+      }
+    }
+  },
+  {
+    "topic": "design patterns",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is a 'design pattern' in software engineering?",
+      "options": [
+        {
+          "text": "A general, reusable solution template for a commonly recurring problem in software design",
+          "isCorrect": true,
+          "feedback": "Correct -- design patterns capture proven approaches to common design problems, offering a shared vocabulary and template rather than a specific finished piece of code."
+        },
+        {
+          "text": "A specific finished piece of code that can be copied directly into any program with no adjustments",
+          "isCorrect": false,
+          "feedback": "A design pattern is more of a general TEMPLATE or approach to a recurring problem -- it typically needs to be adapted to a specific situation, rather than copied verbatim."
+        },
+        {
+          "text": "A rule enforced by a programming language's compiler",
+          "isCorrect": false,
+          "feedback": "Design patterns are conceptual, reusable design approaches followed by developers -- they aren't rules enforced directly by a compiler."
+        },
+        {
+          "text": "The visual color scheme used in a program's user interface",
+          "isCorrect": false,
+          "feedback": "A design pattern refers to a reusable software design approach, not specifically a visual color scheme."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why might learning common design patterns be useful for communication among a team of developers?",
+      "options": [
+        {
+          "text": "Referring to a well-known pattern by name gives developers a shared vocabulary for discussing a design approach, without needing to fully re-explain the underlying concept every time",
+          "isCorrect": true,
+          "feedback": "Correct -- widely recognized pattern names act as convenient shorthand, letting developers communicate design ideas more efficiently."
+        },
+        {
+          "text": "Because using design patterns is a legal requirement for professional software development",
+          "isCorrect": false,
+          "feedback": "There's no legal requirement to use design patterns -- their value is as a PRACTICAL shared vocabulary and set of proven templates, not a legal mandate."
+        },
+        {
+          "text": "Because design patterns eliminate the need for any other form of project documentation",
+          "isCorrect": false,
+          "feedback": "Design patterns can support clearer communication, but they don't eliminate the broader need for other kinds of project documentation."
+        },
+        {
+          "text": "Because every design pattern can only be implemented in exactly one specific programming language",
+          "isCorrect": false,
+          "feedback": "Design patterns are generally conceptual and can often be implemented across many different programming languages, not restricted to just one."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why is it generally considered a mistake to force a design pattern into a solution simply for its own sake, rather than because it genuinely fits the problem at hand?",
+      "options": [
+        {
+          "text": "Applying a pattern where it doesn't truly fit can add unnecessary complexity to the code without providing the intended real benefit that the pattern is meant to offer",
+          "isCorrect": true,
+          "feedback": "Correct -- design patterns are tools meant to solve SPECIFIC kinds of recurring problems well, and misapplying them can make code more complicated without actually improving it."
+        },
+        {
+          "text": "Because using a design pattern incorrectly will always prevent a program from being compiled at all",
+          "isCorrect": false,
+          "feedback": "Misapplying a design pattern doesn't necessarily prevent compilation -- the more common practical concern is about needlessly ADDED COMPLEXITY without real benefit, not a compilation failure."
+        },
+        {
+          "text": "Because design patterns can only be legally used with explicit written permission from their original creators",
+          "isCorrect": false,
+          "feedback": "Design patterns are freely available, well-documented concepts in the software engineering community -- there's no such legal permission requirement for using them."
+        },
+        {
+          "text": "Because every design pattern automatically makes code run more slowly, regardless of the situation",
+          "isCorrect": false,
+          "feedback": "A design pattern's actual PERFORMANCE impact varies by pattern and context -- the concern about misapplying a pattern is fundamentally about added, unnecessary COMPLEXITY, not a blanket claim that all patterns slow code down."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's a reusable, general solution template addressing a commonly recurring problem in software design, rather than one specific finished piece of code.",
+        "medium": "This is a general, reusable template offering a proven approach to a commonly recurring software design problem.",
+        "hard": "Think about a proven, reusable blueprint for solving a kind of design problem that keeps coming up again and again."
+      },
+      "medium": {
+        "easy": "Providing a shared vocabulary through a widely recognized name is exactly what makes discussing a design approach faster and clearer among a team.",
+        "medium": "A shared, recognized name for a design approach lets developers communicate that idea quickly, without repeating the full explanation each time.",
+        "hard": "Think about how much easier it is to say one recognized name instead of fully re-explaining an entire idea every single time."
+      },
+      "hard": {
+        "easy": "Adding unnecessary complexity without gaining the pattern's intended real benefit is exactly the risk of applying a design pattern where it doesn't genuinely fit the problem.",
+        "medium": "Forcing a design approach where it doesn't truly fit tends to add complexity without delivering the real benefit that approach is supposed to provide.",
+        "hard": "Think about using a specific tool just because it's popular, even when it isn't actually the right tool for the job at hand."
+      }
+    }
+  },
+  {
+    "topic": "software licensing",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What does a 'software license' generally define?",
+      "options": [
+        {
+          "text": "The legal terms and conditions under which a piece of software can be used, modified, or distributed",
+          "isCorrect": true,
+          "feedback": "Correct -- a software license is a legal agreement specifying what users are permitted (and not permitted) to do with a given piece of software."
+        },
+        {
+          "text": "The physical size of a software's installation file",
+          "isCorrect": false,
+          "feedback": "A software license concerns legal usage terms, not the technical file size of an installation package."
+        },
+        {
+          "text": "The programming language a piece of software happens to be written in",
+          "isCorrect": false,
+          "feedback": "A software license is about the legal terms governing use and distribution -- it's unrelated to which specific programming language the software is written in."
+        },
+        {
+          "text": "The specific colors used in a software's user interface design",
+          "isCorrect": false,
+          "feedback": "A software license concerns legal permissions and restrictions -- it has nothing to do with an interface's visual color scheme."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What is a key distinction between a 'proprietary' software license and an 'open-source' software license?",
+      "options": [
+        {
+          "text": "A proprietary license typically restricts access to the software's source code and limits how it can be modified or redistributed, while many open-source licenses allow broader access to the source code and permit modification or redistribution under certain conditions",
+          "isCorrect": true,
+          "feedback": "Correct -- this difference in how openly the source code and usage rights are shared is one of the most fundamental distinctions between these two general licensing approaches."
+        },
+        {
+          "text": "A proprietary license and an open-source license are simply two different names describing the exact identical set of legal terms",
+          "isCorrect": false,
+          "feedback": "They represent genuinely different sets of legal terms and permissions -- one is generally much more restrictive about source code access and redistribution than the other."
+        },
+        {
+          "text": "An open-source license always requires users to pay a mandatory fee, while a proprietary license is always completely free",
+          "isCorrect": false,
+          "feedback": "This reverses a common general pattern -- many open-source licenses are actually free of charge, while many proprietary licenses do require payment, though there are exceptions on both sides."
+        },
+        {
+          "text": "A proprietary license only applies to software running on mobile phones",
+          "isCorrect": false,
+          "feedback": "Proprietary licenses can apply to software running on many kinds of devices, not just mobile phones -- the real distinction is about source code access and modification/redistribution rights."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might a business carefully review a software license's terms before incorporating a particular open-source component into one of its own commercial products?",
+      "options": [
+        {
+          "text": "Different open-source licenses impose different obligations, and some require that any software incorporating that licensed code also be released under similar open terms, which could have significant implications for a commercial, closed-source product",
+          "isCorrect": true,
+          "feedback": "Correct -- this concern, sometimes discussed in relation to certain 'copyleft' licenses, is a real practical reason companies pay close attention to the specific licensing terms of any open-source code they use."
+        },
+        {
+          "text": "Because all open-source software is illegal to use in any commercial product whatsoever",
+          "isCorrect": false,
+          "feedback": "Open-source software is broadly legal to use in commercial products -- the real practical concern is understanding and complying with each SPECIFIC license's particular terms and obligations, not a blanket illegality."
+        },
+        {
+          "text": "Because using open-source software always requires paying the original creator a licensing fee",
+          "isCorrect": false,
+          "feedback": "Many open-source licenses do NOT require any payment to the original creator -- the actual concern for a business is about COMPLIANCE OBLIGATIONS in the license terms, like potential source-sharing requirements, not a payment requirement."
+        },
+        {
+          "text": "Because open-source licenses never place any conditions or obligations whatsoever on how the code can be used",
+          "isCorrect": false,
+          "feedback": "Many open-source licenses DO place specific conditions on use, modification, or redistribution -- reviewing those conditions carefully is exactly why a business would want to check the license terms before use."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is the binding legal agreement spelling out exactly what you're permitted to do with a given piece of software -- installing it, changing it, or passing it along to others.",
+        "medium": "This legal agreement defines the terms and conditions for using, modifying, or distributing a piece of software.",
+        "hard": "Think about the legal rulebook specifying what you're actually allowed to do with a piece of software you've obtained."
+      },
+      "medium": {
+        "easy": "Restricted access with limited modification/redistribution rights characterizes one style, while broader source code access with conditional modification/redistribution rights characterizes the other.",
+        "medium": "One style tends to keep the source code closed and tightly restricted; the other tends to share it more openly under certain specified conditions.",
+        "hard": "Think about how openly the underlying source code is shared, and what you're actually permitted to do with it afterward."
+      },
+      "hard": {
+        "easy": "Some open-source licenses come with a 'share-alike' style requirement: build a commercial product on top of that code, and you may be forced to release your own product's source under those same open terms.",
+        "medium": "Certain open-source licenses attach conditions to any code that incorporates them, sometimes requiring the resulting work to be released under similarly open terms.",
+        "hard": "Think about a condition buried in the fine print that could require you to share your own company's code more openly than you'd planned."
+      }
+    }
+  },
+  {
+    "topic": "pair programming",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'pair programming'?",
+      "options": [
+        {
+          "text": "A practice where two developers work together at one workstation, with one typically writing code while the other reviews it in real time",
+          "isCorrect": true,
+          "feedback": "Correct -- pair programming involves close, real-time collaboration between two developers on the same task."
+        },
+        {
+          "text": "A practice where two entirely separate programs are run on the same computer simultaneously",
+          "isCorrect": false,
+          "feedback": "Pair programming describes a collaborative practice between two PEOPLE writing code together -- it isn't about running two separate programs at once."
+        },
+        {
+          "text": "A practice where a developer is only allowed to work using two separate monitors",
+          "isCorrect": false,
+          "feedback": "Pair programming is defined by collaboration between two developers, not by a requirement to use exactly two monitors."
+        },
+        {
+          "text": "A practice of writing a program's code exactly twice, in two different programming languages",
+          "isCorrect": false,
+          "feedback": "Pair programming is about two developers collaborating on ONE piece of code together in real time -- it isn't about writing the same program twice, in two different languages."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "In a common pair programming setup, roles are often described as the 'driver' and the 'navigator'. What does the 'navigator' typically do?",
+      "options": [
+        {
+          "text": "Reviews the code being written in real time, thinks about the bigger picture, and offers suggestions or catches mistakes as they happen",
+          "isCorrect": true,
+          "feedback": "Correct -- while the 'driver' focuses on typing the actual code, the 'navigator' can focus on reviewing, strategizing, and catching issues without being bogged down in typing."
+        },
+        {
+          "text": "Is the only one of the two people allowed to actually type any code at all",
+          "isCorrect": false,
+          "feedback": "That describes the 'driver' role -- the 'navigator' is instead the one reviewing and providing input while the driver does the actual typing."
+        },
+        {
+          "text": "Leaves the room entirely while the other person writes the entire program alone",
+          "isCorrect": false,
+          "feedback": "Pair programming specifically involves both people staying actively engaged together -- the navigator role doesn't involve leaving the room."
+        },
+        {
+          "text": "Is responsible for physically repairing the computer's hardware during the session",
+          "isCorrect": false,
+          "feedback": "The navigator's role is about reviewing and providing input on the code being written -- not about physically repairing hardware."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "What is a commonly cited benefit of pair programming, beyond simply catching bugs faster than solo programming might?",
+      "options": [
+        {
+          "text": "It facilitates real-time knowledge sharing between the two developers, helping spread understanding of the codebase and different problem-solving approaches across the team",
+          "isCorrect": true,
+          "feedback": "Correct -- this ongoing knowledge transfer is often highlighted as a valuable side effect of pair programming, alongside its more direct benefit of catching mistakes in real time."
+        },
+        {
+          "text": "It guarantees that a piece of software will be completed in exactly half the time compared to one person working alone",
+          "isCorrect": false,
+          "feedback": "Pair programming doesn't guarantee a strict halving of completion time -- its actual commonly cited benefits are things like catching mistakes early and spreading knowledge across the team, not a fixed, guaranteed speed multiplier."
+        },
+        {
+          "text": "It eliminates the need for the resulting code to ever be tested afterward",
+          "isCorrect": false,
+          "feedback": "Pair programming doesn't replace the need for proper testing afterward -- it's a complementary practice that can help improve initial code quality, not a substitute for testing."
+        },
+        {
+          "text": "It requires that only one of the two developers involved ever needs to fully understand the code afterward",
+          "isCorrect": false,
+          "feedback": "A key benefit of pair programming is actually the OPPOSITE of this -- it tends to help BOTH developers gain a solid understanding of the resulting code, rather than leaving just one person knowledgeable about it."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the practice of two developers collaborating closely at one workstation, typically with one writing code while the other reviews it in real time.",
+        "medium": "One developer typically types the code, while the other actively reviews it in real time, working closely together.",
+        "hard": "Think about two developers sitting at the same computer, working closely together on the exact same piece of code."
+      },
+      "medium": {
+        "easy": "Reviewing the code in real time, thinking about the bigger picture, and catching mistakes as they happen is exactly this particular role's job.",
+        "medium": "This role focuses on reviewing, strategizing, and catching issues, while the other person handles the actual typing.",
+        "hard": "Think about the one who's watching the bigger picture and giving input, rather than the one whose hands are on the keyboard."
+      },
+      "hard": {
+        "easy": "Facilitating real-time knowledge sharing and spreading understanding of the codebase across the team is a benefit that goes beyond simply catching bugs faster.",
+        "medium": "Working closely together in real time helps both developers come away with a better shared understanding of the code and different problem-solving approaches.",
+        "hard": "Think about a side benefit beyond just catching mistakes: what happens to how much each developer understands afterward."
+      }
+    }
+  },
+  {
+    "topic": "regression testing",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is 'regression testing' meant to check for?",
+      "options": [
+        {
+          "text": "That previously working functionality hasn't been accidentally broken by a recent code change",
+          "isCorrect": true,
+          "feedback": "Correct -- regression testing specifically aims to catch cases where a new change accidentally reintroduces a bug or breaks something that used to work correctly."
+        },
+        {
+          "text": "That a brand-new feature, never tested before, works correctly for the very first time",
+          "isCorrect": false,
+          "feedback": "Testing a brand-new feature for the first time describes new functional testing -- regression testing specifically focuses on confirming EXISTING, previously working functionality still works after a change."
+        },
+        {
+          "text": "That a computer's hardware components are all functioning properly",
+          "isCorrect": false,
+          "feedback": "Regression testing is a software verification practice checking for broken functionality after a code change -- it isn't a check of physical hardware components."
+        },
+        {
+          "text": "That a program's source code follows a specific visual formatting style",
+          "isCorrect": false,
+          "feedback": "Checking visual code formatting style is a different kind of check (often called linting) -- regression testing specifically verifies that existing behavior hasn't broken."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "Why is regression testing particularly important to perform after making changes to an existing, actively used piece of software?",
+      "options": [
+        {
+          "text": "Because a change intended to fix one issue or add a new feature can sometimes unintentionally break other, previously working parts of the software",
+          "isCorrect": true,
+          "feedback": "Correct -- regression testing helps catch this kind of unintended side effect before it reaches users, protecting functionality that was previously working correctly."
+        },
+        {
+          "text": "Because regression testing is required by law before any software update can be released",
+          "isCorrect": false,
+          "feedback": "There's no legal mandate requiring regression testing -- it's a widely recommended quality-assurance best practice, valuable because of the real risk of unintended side effects, not a legal requirement."
+        },
+        {
+          "text": "Because regression testing automatically writes new features for the software",
+          "isCorrect": false,
+          "feedback": "Regression testing VERIFIES existing behavior -- it doesn't write new features; that's a separate development activity."
+        },
+        {
+          "text": "Because regression testing only needs to be performed a single time, during a software's very first release",
+          "isCorrect": false,
+          "feedback": "Regression testing is actually valuable on an ONGOING basis, ideally repeated after each significant change, not just a single time during the very first release."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why do many teams try to automate their regression tests, rather than relying solely on manually re-checking previously working functionality after every change?",
+      "options": [
+        {
+          "text": "Automated regression tests can be re-run quickly and consistently every time the code changes, which would be impractically time-consuming and error-prone to repeat manually on a large or frequently updated codebase",
+          "isCorrect": true,
+          "feedback": "Correct -- automation makes it far more practical to regularly re-verify a large amount of existing functionality, especially as a codebase grows and changes frequently over time."
+        },
+        {
+          "text": "Because manually checking for regressions always produces completely incorrect results",
+          "isCorrect": false,
+          "feedback": "Manual checking CAN find regressions -- the issue is more about it being impractically SLOW and error-prone to repeat consistently at scale, not that it inherently produces wrong results."
+        },
+        {
+          "text": "Because automating regression tests is a legal requirement for releasing any software update",
+          "isCorrect": false,
+          "feedback": "There's no legal requirement mandating automated regression tests -- automation is chosen for practical efficiency and consistency reasons, not due to any legal mandate."
+        },
+        {
+          "text": "Because automated regression tests eliminate the need for a codebase to ever be changed again",
+          "isCorrect": false,
+          "feedback": "Automated regression tests support ONGOING changes by making it safer and more efficient to verify existing behavior after each change -- they don't eliminate the need for further changes."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It specifically verifies that previously working functionality hasn't been unintentionally broken by a recent code change.",
+        "medium": "This kind of check verifies that previously working functionality hasn't been accidentally broken by a recent change.",
+        "hard": "Think about making sure something that used to work correctly still works correctly, after a change was made elsewhere."
+      },
+      "medium": {
+        "easy": "Catching an unintended side effect on previously working functionality, caused by a recent change, is exactly why this kind of testing matters so much after updates.",
+        "medium": "A change meant to fix one issue can sometimes unintentionally affect other, previously working parts of the software.",
+        "hard": "Think about fixing one thing but accidentally breaking something else that used to work just fine."
+      },
+      "hard": {
+        "easy": "The ability to quickly and consistently re-run these checks after every change is exactly what makes automating them so much more practical than relying on manual re-checking at scale.",
+        "medium": "Quick, consistent, repeatable re-running of these checks is exactly the practical advantage that automation provides at scale.",
+        "hard": "Think about how impractical it would be to manually re-check every single existing feature by hand, every single time even a small change is made."
+      }
+    }
+  },
+  {
+    "topic": "HTML",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is HTML primarily used for?",
+      "options": [
+        {
+          "text": "Structuring the content of a web page, such as headings, paragraphs, links, and images",
+          "isCorrect": true,
+          "feedback": "Correct -- HTML (HyperText Markup Language) defines the basic structural building blocks that make up a web page's content."
+        },
+        {
+          "text": "Performing complex mathematical calculations inside a program",
+          "isCorrect": false,
+          "feedback": "HTML is a markup language for STRUCTURING web page content -- it isn't designed for performing complex mathematical calculations, which is more the role of a general-purpose programming language."
+        },
+        {
+          "text": "Managing a computer's operating system processes",
+          "isCorrect": false,
+          "feedback": "Managing operating system processes is unrelated to HTML, which specifically structures the content of web pages."
+        },
+        {
+          "text": "Encrypting data sent between a browser and a server",
+          "isCorrect": false,
+          "feedback": "Encrypting data in transit is generally handled by protocols like HTTPS, not by HTML, which is about structuring a web page's content."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "How does HTML typically relate to CSS when building a web page?",
+      "options": [
+        {
+          "text": "HTML defines the page's structure and content, while CSS is typically used to control its visual presentation, such as colors, fonts, and layout",
+          "isCorrect": true,
+          "feedback": "Correct -- HTML and CSS are commonly used together, with HTML handling the underlying content structure and CSS handling how that structure is visually styled."
+        },
+        {
+          "text": "HTML and CSS are simply two different names referring to the exact identical technology",
+          "isCorrect": false,
+          "feedback": "They serve genuinely different, complementary roles -- HTML for content structure, CSS for visual styling -- rather than being the same technology under two names."
+        },
+        {
+          "text": "CSS is used to structure a page's content, while HTML is used to control its visual styling",
+          "isCorrect": false,
+          "feedback": "This reverses their actual typical roles -- HTML structures the content, while CSS is what's typically used to control visual styling."
+        },
+        {
+          "text": "HTML is only used for mobile apps, while CSS is only used for websites",
+          "isCorrect": false,
+          "feedback": "Both HTML and CSS are core web technologies commonly used together for websites -- this description doesn't reflect their actual typical roles or usage."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "HTML documents are described as being structured hierarchically, using nested elements (tags containing other tags). Why does this hierarchical structure matter for how a browser interprets and displays a page?",
+      "options": [
+        {
+          "text": "The nesting relationships define how content is logically grouped and related, which browsers use to determine the page's structure and, combined with CSS, its visual layout",
+          "isCorrect": true,
+          "feedback": "Correct -- the parent-child relationships between elements are fundamental to how a browser builds its internal representation of the page, often referred to as the Document Object Model, and ultimately how it renders that page visually."
+        },
+        {
+          "text": "Because nesting elements has absolutely no effect on how a browser interprets or displays a page at all",
+          "isCorrect": false,
+          "feedback": "Nesting DOES meaningfully affect how a browser interprets a page's structure and, in combination with CSS, its resulting layout -- it isn't purely cosmetic or irrelevant to interpretation."
+        },
+        {
+          "text": "Because deeply nested elements always cause a web browser to permanently crash",
+          "isCorrect": false,
+          "feedback": "Reasonably nested HTML elements are extremely common and don't inherently cause browsers to crash -- nesting is in fact a normal, expected part of well-structured HTML."
+        },
+        {
+          "text": "Because HTML's hierarchical structure is required in order for a web page to load any images at all",
+          "isCorrect": false,
+          "feedback": "Loading images depends on separate image-related tags and their attributes, not fundamentally on the page's overall hierarchical nesting structure."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "It's the markup language responsible for structuring a web page's content, such as its headings, paragraphs, links, and images.",
+        "medium": "This markup language structures a web page's content, defining elements like headings, paragraphs, and links.",
+        "hard": "Think about the underlying markup that defines a web page's headings, paragraphs, links, and images."
+      },
+      "medium": {
+        "easy": "Defining a page's structural content is this technology's typical role, distinct from CSS's typical role of controlling visual presentation like colors and layout.",
+        "medium": "One handles the underlying content structure; the other is typically used to control that content's visual appearance.",
+        "hard": "Think about one technology defining WHAT content is on the page, and a different technology defining HOW it visually looks."
+      },
+      "hard": {
+        "easy": "The nesting relationships define logical grouping that browsers rely on to build their internal structural representation of the page, which then informs the visual layout when combined with CSS.",
+        "medium": "The nested, parent-child relationships between elements are exactly what a browser uses to build its internal understanding of the page's structure.",
+        "hard": "Think about how grouping things inside other things creates a kind of family tree that a browser can read and understand."
+      }
+    }
+  },
+  {
+    "topic": "CSS",
+    "easy": {
+      "type": "multiple_choice_single",
+      "text": "What is CSS primarily used for on the web?",
+      "options": [
+        {
+          "text": "Controlling the visual presentation and styling of a web page, such as colors, fonts, spacing, and layout",
+          "isCorrect": true,
+          "feedback": "Correct -- CSS (Cascading Style Sheets) is specifically designed to control how a web page's structured content actually looks."
+        },
+        {
+          "text": "Structuring the basic content of a web page, such as its headings and paragraphs",
+          "isCorrect": false,
+          "feedback": "That describes HTML's typical role -- CSS is specifically used for controlling the visual STYLING of that already-structured content, not defining the content structure itself."
+        },
+        {
+          "text": "Storing a website's data in a structured database",
+          "isCorrect": false,
+          "feedback": "Storing structured data in a database is a separate backend concern, unrelated to CSS's role of controlling a web page's visual presentation."
+        },
+        {
+          "text": "Encrypting a user's login password",
+          "isCorrect": false,
+          "feedback": "Encrypting sensitive data like passwords is generally handled through other security mechanisms, not CSS, which specifically governs visual presentation."
+        }
+      ],
+      "difficulty": "easy"
+    },
+    "medium": {
+      "type": "multiple_choice_single",
+      "text": "What does the 'cascading' part of 'Cascading Style Sheets' (CSS) generally refer to?",
+      "options": [
+        {
+          "text": "The way multiple style rules can apply to the same element, with a defined set of rules determining which specific styles ultimately take precedence",
+          "isCorrect": true,
+          "feedback": "Correct -- when several CSS rules could apply to the same element, the 'cascade' determines which rule wins out, based on factors like specificity and the order rules are defined."
+        },
+        {
+          "text": "The way a browser decides whether to load a stylesheet from an external file or from within the HTML document itself",
+          "isCorrect": false,
+          "feedback": "That describes where styles are loaded FROM -- 'cascading' specifically refers to how competing style rules for the same element are resolved, not the source location of a stylesheet."
+        },
+        {
+          "text": "The way styles applied to a parent element automatically get removed if a child element defines any styles of its own",
+          "isCorrect": false,
+          "feedback": "Child elements don't erase a parent's styles just by having their own -- 'cascading' refers to competing rules being resolved by precedence, not styles being wiped out by nested elements."
+        },
+        {
+          "text": "The way a single CSS file must be duplicated separately for every individual page of a website",
+          "isCorrect": false,
+          "feedback": "A single stylesheet can typically be shared across many pages without duplication -- 'cascading' instead describes how multiple applicable rules for one element get resolved."
+        }
+      ],
+      "difficulty": "medium"
+    },
+    "hard": {
+      "type": "multiple_choice_single",
+      "text": "Why might using a CSS feature like classes or IDs to target specific HTML elements be preferred over applying inline styles directly within the HTML for every single element?",
+      "options": [
+        {
+          "text": "Using classes or IDs in a separate stylesheet allows the same styling to be reused consistently across many elements or pages, and makes future style updates easier since they can be made in one central place",
+          "isCorrect": true,
+          "feedback": "Correct -- this separation of content (HTML) from a more centrally reusable presentation layer (CSS) is a key reason CSS is generally preferred over scattering individual inline styles throughout HTML."
+        },
+        {
+          "text": "Because an inline style only takes effect the first time a page loads, and is ignored on any later visits",
+          "isCorrect": false,
+          "feedback": "Inline styles apply every time the page loads, not just the first visit -- the real advantage of classes and IDs is centralized reuse and easier maintenance, not how often inline styles take effect."
+        },
+        {
+          "text": "Because a browser can only apply a limited number of total inline styles before it stops rendering the page",
+          "isCorrect": false,
+          "feedback": "There's no such rendering limit on inline styles -- classes and IDs are preferred for maintainability and reuse, not because of any cap on how many inline styles a browser can handle."
+        },
+        {
+          "text": "Because modifying an inline style automatically updates every other element that happens to share the exact same styling values",
+          "isCorrect": false,
+          "feedback": "Inline styles are applied one element at a time -- changing one element's inline style has no effect on any other element, even if they currently look identical."
+        }
+      ],
+      "difficulty": "hard"
+    },
+    "hints": {
+      "easy": {
+        "easy": "This is the styling language responsible for a webpage's look and feel -- how its text, color palette, and overall layout come together visually.",
+        "medium": "This technology controls a web page's visual presentation, like colors, fonts, and spacing, applied to already-structured content.",
+        "hard": "Think about the technology responsible for a web page's colors, fonts, and overall visual layout."
+      },
+      "medium": {
+        "easy": "Determining which of several potentially applicable style rules ultimately wins out for a given element is exactly what this 'cascading' behavior refers to.",
+        "medium": "This describes how, among potentially several applicable style rules for one element, a defined process determines which one actually takes precedence.",
+        "hard": "Think about several competing rules all wanting to style the very same element, and needing a clear way to decide which one wins."
+      },
+      "hard": {
+        "easy": "Reusability across many elements or pages, plus easier centralized future updates, is exactly the maintainability advantage of using classes or IDs over scattering individual inline styles.",
+        "medium": "A centrally reusable style rule lets the same styling be applied consistently and updated in just one place, rather than everywhere it's used.",
+        "hard": "Think about updating one central style rule versus manually hunting down and editing the same style scattered across many individual elements."
+      }
+    }
+  }
+]
