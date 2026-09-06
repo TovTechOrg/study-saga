@@ -13,10 +13,18 @@ export async function onRequestGet() {
             const tier = ['easy', 'medium', 'hard'].includes(q.difficulty) ? q.difficulty : 'medium';
             tierCounts[tier] += 1;
         });
+        // Title-case every word and swap underscores for spaces, so
+        // "computer_science" reads as "Computer Science" rather than
+        // "Computer_science" (charAt(0)-only capitalization missed this).
+        const displayName = name
+            .split('_')
+            .filter(Boolean)
+            .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+            .join(' ');
         return {
             id: name.toLowerCase(),
-            name: name.charAt(0).toUpperCase() + name.slice(1),
-            description: `${name.charAt(0).toUpperCase() + name.slice(1)} realm`,
+            name: displayName,
+            description: `${displayName} realm`,
             question_count: questions.length,
             tier_counts: tierCounts,
             min_tier_questions: MIN_TIER_QUESTIONS,
