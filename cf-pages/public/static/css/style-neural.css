@@ -266,6 +266,22 @@ body {
     opacity: 0.5;
 }
 
+.dev-watermark {
+    position: fixed;
+    right: 16px;
+    bottom: 12px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748b;
+    opacity: 0.4;
+    pointer-events: none;
+    user-select: none;
+    z-index: 5;
+}
+
 .neural-btn {
     position: relative;
     z-index: 10;
